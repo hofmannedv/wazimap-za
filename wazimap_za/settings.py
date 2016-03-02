@@ -4,20 +4,36 @@ from wazimap.settings import *  # noqa
 # install this app before Wazimap
 INSTALLED_APPS = ['wazimap_za'] + INSTALLED_APPS
 
+DATABASE_URL = os.environ.get('DATABASE_URL', 'postgresql://census:census@localhost/census_2011')
+DATABASES['default'] = dj_database_url.parse(DATABASE_URL)
+DATABASES['default']['ATOMIC_REQUESTS'] = True
+
+
 # Localise this instance of Wazimap
-WAZIMAP['name'] = 'Wazimap Sout Africa'
+WAZIMAP['name'] = 'Wazimap South Africa'
 WAZIMAP['url'] = 'http://wazimap.co.za'
 WAZIMAP['country_code'] = 'ZA'
+WAZIMAP['comparative_levels'] = ['province', 'country']
 
-
-if DEBUG:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'census_2011',
-            'USER': 'census',
-            'PASSWORD': 'census',
-            'HOST': '127.0.0.1',
-            'PORT': '5432',
-        }
+WAZIMAP['levels'] = {
+    'country': {
+        'plural': 'countries',
+        'children': ['province'],
+    },
+    'province': {
+        'plural': 'provinces',
+        'children': ['municipality'],
+    },
+    'municipality': {
+        'plural': 'municipalities',
+        'children': ['ward'],
+    },
+    'ward': {
+        'plural': 'wards',
+        'children': [],
     }
+}
+
+wazi_profile = os.environ.get('WAZI_PROFILE', 'census')
+
+WAZIMAP['profile_builder'] = 'wazimap_za.profiles.{}.get_profile'.format(wazi_profile)
