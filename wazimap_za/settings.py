@@ -38,3 +38,7 @@ wazi_profile = os.environ.get('WAZI_PROFILE', 'census')
 WAZIMAP['default_profile'] = wazi_profile
 
 WAZIMAP['profile_builder'] = 'wazimap_za.profiles.{}.get_profile'.format(wazi_profile)
+
+LANGUAGE_CODE = 'en-za'
+USE_THOUSAND_SEPARATOR = True
+FORMAT_MODULE_PATH = 'wazimap_za.formats'
