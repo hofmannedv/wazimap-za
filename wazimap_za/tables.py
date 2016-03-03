@@ -60,8 +60,8 @@ FieldTable(['party'], universe='Votes', id='party_votes_municipal_2011', descrip
            dataset='2011 Municipal Elections', year='2011')
 
 # ECD
-FieldTable(['age groups in 5 years'], id='womenagegroupsin5years15to44', universe='Women 15 to 44', description='Women of child bearing age', year='2011', table_per_level=True)
-FieldTable(['gender'], id='genderunder9', universe='Children under 9', year='2011', table_per_level=True)
+FieldTable(['age groups in 5 years'], id='womenagegroupsin5years15to44', universe='Women 15 to 44', description='Women of child bearing age', year='2011')
+FieldTable(['gender'], id='genderunder9', universe='Children under 9', year='2011')
 
 
 # Simple Tables

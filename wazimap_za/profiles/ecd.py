@@ -126,11 +126,11 @@ def get_demographics_profile(geo_code, geo_level, session):
 
     ecd_gender, total_ecd_gender = get_stat_data(
         ['gender'], geo_level, geo_code, session,
-        table_name='genderunder9_%s' % geo_level)
+        table_name='genderunder9')
 
     women_child_bearing_age, total_women_child_bearing_age = get_stat_data(
         ['age groups in 5 years'], geo_level, geo_code, session,
-        table_name='womenagegroupsin5years15to44_%s' % geo_level,
+        table_name='womenagegroupsin5years15to44',
         order_by='age groups in 5 years'
     )
 
