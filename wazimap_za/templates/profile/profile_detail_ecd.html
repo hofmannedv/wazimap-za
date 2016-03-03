@@ -1,0 +1,300 @@
+{% extends 'profile/profile_detail.html' %}{% load humanize lookup staticfiles %}
+{% block head_meta_description %}Population data and election figures from {{ geography.this.short_name}}, broken down by category: Demographics, Service delivery, Economics and Education.{% endblock %}
+
+{% block profile_header_tail %}
+<div class="column-full">
+    <p class="caption">
+        <strong>Census data:</strong> 2011
+        {% if crime %}
+        <br>
+        <strong>Crime data:</strong> {{ crime.dataset }}</p>
+        {% endif %}
+    </p>
+</div>
+{% endblock %}
+
+{% block profile_detail %}
+<h2>This applicaton is currently under active development.<br>
+Please provide any feedback you may have by using the Help &amp; Feedback button</h2>
+<br>
+
+<article id="ecd_ages" class="clearfix">
+    <header class="section-contents">
+        <h1>Demographics</h1>
+    </header>
+    <div class="section-container">
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#ecd_age_groups" id="age_groups">Early childhood age groups<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=demographics.ecd_children stat_type='number' %}
+            </div>
+            <div class="column-third">
+                <div id="chart-histogram-demographics-ecd_age_groups" data-chart-title="Children by age in years" data-stat-type="scaled-percentage"></div>
+            </div>
+            <div class="column-third">
+                <div id="chart-pie-demographics-ecd_gender" data-stat-type="percentage" data-initial-sort="-value" data-chart-title="Gender of children under the age of nine years"></div>
+            </div>
+        </section>
+        {% if demographics.child_population_density.values.this %}
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#ecd_pop_density" id="ecd_pop_density">Child population density<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=demographics.child_population_density stat_type='number' %}
+            </div>
+            <div class="column-third">
+                <div id="chart-histogram-demographics-ecd_pop_density" data-chart-title="Children per square kilometre" data-decimal-places="2"></div>
+            </div>
+        </section>
+        {% endif %}
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#women_child_bearing_age" id="women_child_bearing_age">Women of child bearing age<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=demographics.total_women_child_bearing_age stat_type='number' %}
+            </div>
+            <div class="column-two-thirds">
+                <div id="chart-histogram-demographics-women_child_bearing_age" data-chart-title="Women by age in years" data-stat-type="scaled-percentage"></div>
+            </div>
+        </section>
+    </div>
+</article>
+
+<article class="clearfix">
+    <header class="section-contents">
+        <h1>Access to Early Learning</h1>
+    </header>
+    <div class="section-container">
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#registered_centres" id="ecd_centres">ECD Centres overview<i class="fa fa-link"></i></a></h2>
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.total_ecd_centres stat_type='number' %}
+            </div>
+            <div class="column-half" id="chart-pie-ecd_centres-ecd_centres_by_registration" data-stat-type="percentage" data-chart-title="Breakdown of ECD centres by registration status"></div>
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.registered_ecd_programmes stat_type='number' %}
+            </div>
+        </section>
+        <section class="clearfix stat-row">
+            <div class="column-half">
+                <div id="chart-pie-ecd_centres-ecd_centres_by_type" data-chart-title="Breakdown of ECD centres by type of centre" data-stat-type="scaled-percentage"></div>
+            </div>
+        </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#centre_coverage" id="ecd_centres">Centre Coverage (children aged 3-5 years)<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_enrolled_age_3_to_5 stat_type='number' %}
+            </div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_3_to_5_coverage stat_type='percentage' %}
+            </div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_receiving_subsidy stat_type='number' %}
+            </div>
+        </section>
+        <section class="clearfix stat-row grouped-row">
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_3_to_5_per_ecd_centre stat_type='number' %}
+            </div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_3_to_5_per_ecd_centre_enrolled stat_type='number' %}
+            </div>
+        </section>
+        <section class="clearfix stat-row grouped-row">
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_in_ecd_programmes stat_type='number' %}
+            </div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_in_play_groups stat_type='number' %}
+            </div>
+        </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#grade-r" id="grade-r">Grade R learners<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_grade_r_age stat_type='number' %}
+            </div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.ecd_centres_with_grade_r_learners stat_type='number' %}
+            </div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.schools_with_grade_r_learners stat_type='number' %}
+            </div>
+        </section>
+    </div>
+</article>
+
+<article class="clearfix">
+    <header class="section-contents">
+        <h1>ECD educators</h1>
+    </header>
+    <div class="section-container">
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#ecd-educators" id="ecd-educators">Practitioners at ECD centres<i class="fa fa-link"></i></a></h2>
+            <aside>
+                <p>* Trained: NQF4 or higher</p>
+            </aside>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_educators.children_per_practitioner stat_type='number' %}
+            </div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_educators.children_per_trained_practitioner stat_type='number' %}
+            </div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_educators.children_per_untrained_practitioner stat_type='number' %}
+            </div>
+        </section>
+        <section class="clearfix stat-row grouped-row">
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_educators.practitioners_for_ages_3_to_5 stat_type='number' %}
+            </div>
+        </section>
+    </div>
+</article>
+
+<article class="clearfix">
+    <header class="section-contents">
+        <h1>ECD budgets</h1>
+    </header>
+    <div class="section-container">
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#ecd-budgets" id="ecd-budgets">Early learning subsidies<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_budgets.ecd_subsidies_budgeted stat_type='number' %}
+            </div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_budgets.ecd_subsidies_paid stat_type='number' %}
+            </div>
+        </section>
+        <section class="clearfix stat-row grouped-row">
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_budgets.child_support_grants stat_type='number' %}
+            </div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_budgets.child_support_grants_amount stat_type='dollar' %}
+            </div>
+        </section>
+    </div>
+</article>
+
+<article class="clearfix">
+    <header class="section-contents">
+        <h1>Schools</h1>
+    </header>
+    <div class="section-container">
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#schools" id="schools">Schools (children aged 6-18 years)<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=schools.total_schools stat_type='number' %}
+            </div>
+            <div class="column-two-thirds">
+                <div id="chart-histogram-schools-school_breakdown" data-chart-title="Number of schools by phase" data-decimal-places="2"></div>
+            </div>
+        </section>
+        <section class="clearfix stat-row grouped-row">
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=schools.children_per_primary_school stat_type='number' %}
+            </div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=schools.children_per_secondary_school stat_type='number' %}
+            </div>
+        </section>
+    </div>
+</article>
+
+<article class="clearfix">
+    <header class="section-contents">
+        <h1>Hospitals</h1>
+    </header>
+    <div class="section-container">
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#hospitals" id="hospitals">Hospitals / Clinics<i class="fa fa-link"></i></a></h2>
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=hospitals.total_hospitals stat_type='number' %}
+            </div>
+            <div class="column-half">
+                <div id="chart-histogram-hospitals-hospital_breakdown" data-chart-title="Type of medical centre" data-decimal-places="2"></div>
+            </div>
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=hospitals.people_per_hospital stat_type='number' %}
+            </div>
+        </section>
+        <section class="clearfix stat-row gouped-row">
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=hospitals.children_0_to_5_per_hospital stat_type='number' %}
+            </div>
+        </section>
+    </div>
+</article>
+
+<article id="service_delivery" class="clearfix">
+    <header class="section-contents">
+        <h1>Households</h1>
+    </header>
+    <div class="section-container">
+        <section class="clearfix stat-row">
+            <h2><a class="permalink" href="#households" id="households">Households <i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=households.total_households stat_type='number' %}
+            </div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=households.informal stat_type='percentage' %}
+            </div>
+            <div class="column-third" id="chart-pie-households-type_of_dwelling_distribution" data-stat-type="percentage" data-chart-title="Households by type of dwelling"></div>
+        </section>
+        <section class="clearfix stat-row grouped-row">
+            <h2><a class="permalink" href="#household-head" id="household-head">Head of household <i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=households.head_of_household.female stat_type='percentage' %}
+            </div>
+            <div class="column-third" id="chart-pie-households-head_of_household-gender_distribution" data-stat-type="percentage" data-initial-sort="-value" data-chart-title="Head of household by gender"></div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=households.head_of_household.under_18 stat_type='number' %}
+            </div>
+        </section>
+    </div>
+</article>
+
+<article id="service_delivery" class="clearfix">
+    <header class="section-contents">
+        <h1>Service delivery</h1>
+    </header>
+    <div class="section-container">
+
+        <section class="clearfix stat-row">
+            <h2><a class="permalink" href="#water" id="water">Water <i class="fa fa-link"></i></a></h2>
+            <aside>
+            </aside>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=service_delivery.percentage_water_from_service_provider stat_type='percentage' %}
+            </div>
+            <div class="column-third" id="chart-pie-service_delivery-water_source_distribution" data-stat-type="percentage" data-chart-title="Population by water source"></div>
+        </section>
+
+        <section class="clearfix stat-row">
+            <h2><a class="permalink" href="#electricity" id="electricity">Electricity <i class="fa fa-link"></i></a></h2>
+            <aside>
+            </aside>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=service_delivery.percentage_electricity_access stat_type='percentage' %}
+            </div>
+            <div class="column-third" id="chart-pie-service_delivery-electricity_access_distribution" data-stat-type="percentage" data-chart-title="Population by electricity usage"></div>
+        </section>
+
+        <section class="clearfix stat-row">
+            <h2><a class="permalink" href="#toilets" id="toilets">Toilet facilities <i class="fa fa-link"></i></a></h2>
+            <aside>
+            </aside>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=service_delivery.percentage_flush_toilet_access stat_type='percentage' %}
+            </div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=service_delivery.percentage_no_toilet_access stat_type='percentage' %}
+            </div>
+            <div class="column-third" id="chart-pie-service_delivery-toilet_facilities_distribution" data-stat-type="percentage" data-chart-title="Population by toilet facilities"></div>
+        </section>
+    </div>
+</article>
+{% endblock %}
+
+{% block profile_javascript_libs %}
+    {{ block.super }}
+    <script src="{% static 'js/profile_map_mapit.js' %}"></script>
+{% endblock %}
