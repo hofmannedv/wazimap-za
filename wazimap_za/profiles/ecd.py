@@ -1,19 +1,10 @@
 from collections import OrderedDict
 
 from wazimap.data.tables import get_model_from_fields, get_datatable
-from wazimap.data.utils import get_session, add_metadata
-from wazimap.geo import geo_data
 
-from wazimap.data.utils import (merge_dicts, group_remainder,
+from wazimap.data.utils import (get_session, add_metadata, ratio, merge_dicts, group_remainder,
     get_stat_data, get_objects_by_geo, percent)
-
-
-def ratio(num, denom, places=2):
-    if denom == 0:
-        return 0
-    else:
-        return round(num / denom, places)
-
+from wazimap.geo import geo_data
 
 PROFILE_SECTIONS = (
     "demographics",
