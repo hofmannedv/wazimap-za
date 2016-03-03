@@ -1,0 +1,99 @@
+{% extends 'profile/profile_detail.html' %}{% load humanize lookup staticfiles %}
+
+{% block head_meta_description %}Population data and election figures from {{ geography.this.short_name}}, broken down by category: Demographics, Service delivery, Economics and Education.{% endblock %}
+
+{% block profile_header_tail %}
+<div class="column-full">
+    <p class="caption">
+        <strong>Census data:</strong> 2011
+        {% if crime %}
+        <br>
+        <strong>Crime data:</strong> {{ crime.dataset }}</p>
+        {% endif %}
+    </p>
+</div>
+{% endblock %}
+
+{% block profile_detail %}
+
+<article id="youth" class="clearfix">
+    <header class="section-contents">
+        <h1>Youth</h1>
+    </header>
+    <div class="section-container">
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#population" id="population">Population<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=depravation.youth_pop stat_type='number' %}
+            </div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=depravation.youth_prop stat_type='percentage' %}
+            </div>
+        </section>
+        <section class="clearfix stat-row">
+            <aside>
+                <p>* Deprived if individual is: age 15 - 16 and has completed less than primary school; age 17 - 20 and has completed less than grade 9; or age 21 - 24 and has completed less than matric or matric equivalent</p>
+            </aside>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=depravation.edu_dep stat_type='percentage' %}
+            </div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=depravation.disab_dep stat_type='percentage' %}
+            </div>
+        </section>
+        <section class="clearfix stat-row">
+        <h2 class="header-for-columns"><a class="permalink" href="#services" id="services">Service delivery<i class="fa fa-link"></i></a></h2>
+            <aside>
+                <p>* Electricity, gas or solar energy</p>
+            </aside>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=depravation.light_dep stat_type='percentage' %}
+            </div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=depravation.heat_dep stat_type='percentage' %}
+            </div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=depravation.cook_dep stat_type='percentage' %}
+            </div>
+        </section>
+        <section class="clearfix stat-row">
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=depravation.toilet_dep stat_type='percentage' %}
+            </div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=depravation.water_dep stat_type='percentage' %}
+            </div>
+        </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#households" id="households">Households<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=depravation.dwell_dep stat_type='percentage' %}
+            </div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=depravation.asset_dep stat_type='percentage' %}
+            </div>
+        </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#household_employment" id="household_employment">Household employment<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=depravation.emp_dep stat_type='percentage' %}
+            </div>
+        </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#indices" id="indices">Poverty indices<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=depravation.prop_multid_poor stat_type='percentage' %}
+            </div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=depravation.youth_mpi stat_type='number' %}
+            </div>
+        </section>
+    </div>
+</article>
+
+{% endblock %}
+
+{% block profile_javascript_libs %}
+    {{ block.super }}
+    <script src="{% static 'js/profile_map_mapit.js' %}"></script>
+{% endblock %}

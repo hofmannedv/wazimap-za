@@ -182,3 +182,12 @@ SimpleTable(
     year='2013'
 )
 
+# Youth
+SimpleTable(
+    id='youth',
+    universe='Youth',
+    total_column=None,
+    description='Youth statistics',
+    dataset='Census 2011',
+    year='2011'
+)
