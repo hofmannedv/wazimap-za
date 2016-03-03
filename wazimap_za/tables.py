@@ -59,6 +59,11 @@ FieldTable(['party'], universe='Votes', id='party_votes_provincial_2014', descri
 FieldTable(['party'], universe='Votes', id='party_votes_municipal_2011', description='2011 Municipal Election results',
            dataset='2011 Municipal Elections', year='2011')
 
+# ECD
+FieldTable(['age groups in 5 years'], id='womenagegroupsin5years15to44', universe='Women 15 to 44', description='Women of child bearing age', year='2011', table_per_level=True)
+FieldTable(['gender'], id='genderunder9', universe='Children under 9', year='2011', table_per_level=True)
+
+
 # Simple Tables
 SimpleTable(
     id='population',
@@ -68,6 +73,8 @@ SimpleTable(
     dataset='Census 2011',
     year='2011'
 )
+
+# Elections
 SimpleTable(
     id='voter_turnout_national_2014',
     universe='Registered voters',
@@ -108,3 +115,70 @@ SimpleTable(
     dataset='2011 Municipal Elections',
     year='2011'
 )
+
+# ECD
+SimpleTable(
+    id='hospitals_2012',
+    universe='Number of hospitals',
+    total_column='total_hospitals',
+    description='2012 number of hospitals',
+    dataset='2012 National Hospital Survey',
+    year='2012'
+)
+SimpleTable(
+    id='schools_2015',
+    universe='Number of schools',
+    total_column=None,
+    description='2015 number of schools',
+    dataset='Q1 2015 National Ordinary Schools Master List',
+    year='2015'
+)
+SimpleTable(
+    id='ecd_centres_by_registration',
+    universe='ECD centres',
+    total_column='total_ecd_centres',
+    description='ECD centres, by registration status of centre',
+    dataset='Audit of ECD Centres - National Report',
+    year='2013'
+)
+SimpleTable(
+    id='ecd_centres_by_type',
+    universe='ECD centres',
+    total_column='total_ecd_centres',
+    description='ECD centres, by type of centre',
+    dataset='Audit of ECD Centres - National Report',
+    year='2013'
+)
+SimpleTable(
+    id='ecd_children_enrolled',
+    universe='Number of children enrolled in ECD Centres',
+    total_column=None,
+    description='Number of children enrolled in ECD Centres',
+    dataset='Audit of ECD Centres - National Report',
+    year='2013'
+)
+SimpleTable(
+    id='ecd_educators',
+    universe='Number of practitioners per child in ECD Centres',
+    total_column=None,
+    description='Number of practitioners per child in ECD Centres',
+    dataset='Audit of ECD Centres - National Report',
+    year='2013'
+)
+SimpleTable(
+    id='ecd_grade_r',
+    universe='Grade R learners',
+    total_column=None,
+    description='Grade R learners',
+    dataset='Audit of ECD Centres - National Report',
+    year='2013'
+)
+SimpleTable(
+    id='ecd_grants',
+    universe='Learners receiving social grants',
+    total_column=None,
+    description='Learners receiving social grants',
+    dataset='Audit of ECD Centres - National Report',
+    year='2013'
+)
+
