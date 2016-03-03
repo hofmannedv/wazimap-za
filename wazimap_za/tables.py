@@ -108,3 +108,11 @@ SimpleTable(
     dataset='2011 Municipal Elections',
     year='2011'
 )
+SimpleTable(
+    id='youth',
+    universe='Youth',
+    total_column=None,
+    description='Youth statistics',
+    dataset='Census 2011',
+    year='2011'
+)
