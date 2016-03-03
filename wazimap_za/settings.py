@@ -34,7 +34,7 @@ WAZIMAP['levels'] = {
     }
 }
 
-wazi_profile = os.environ.get('WAZI_PROFILE', 'census')
+wazi_profile = os.environ.get('WAZI_PROFILE', 'youth')
 WAZIMAP['default_profile'] = wazi_profile
 
 WAZIMAP['profile_builder'] = 'wazimap_za.profiles.{}.get_profile'.format(wazi_profile)
