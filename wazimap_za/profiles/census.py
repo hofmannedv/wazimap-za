@@ -8,6 +8,7 @@ from wazimap.geo import geo_data
 
 from wazimap.data.utils import (collapse_categories, calculate_median, calculate_median_stat, merge_dicts, group_remainder, get_stat_data, get_objects_by_geo, percent)
 
+from .elections import get_elections_profile
 
 PROFILE_SECTIONS = (
     'demographics',  # population group, age group in 5 years, age in completed years
@@ -293,22 +294,23 @@ def get_profile(geo_code, geo_level, profile_name=None):
                 for level, code in geo_summary_levels:
                     # merge summary profile into current geo profile
                     merge_dicts(data[section], func(code, level, session), level)
-
-        # tweaks to make the data nicer
-        # show 3 largest groups on their own and group the rest as 'Other'
-        group_remainder(data['service_delivery']['water_source_distribution'], 5)
-        group_remainder(data['service_delivery']['refuse_disposal_distribution'], 5)
-        group_remainder(data['service_delivery']['toilet_facilities_distribution'], 5)
-        group_remainder(data['demographics']['language_distribution'], 7)
-        group_remainder(data['demographics']['province_of_birth_distribution'], 7)
-        group_remainder(data['demographics']['region_of_birth_distribution'], 5)
-        group_remainder(data['households']['type_of_dwelling_distribution'], 5)
-        group_remainder(data['child_households']['type_of_dwelling_distribution'], 5)
-
-        return data
-
     finally:
         session.close()
+
+    # tweaks to make the data nicer
+    # show 3 largest groups on their own and group the rest as 'Other'
+    group_remainder(data['service_delivery']['water_source_distribution'], 5)
+    group_remainder(data['service_delivery']['refuse_disposal_distribution'], 5)
+    group_remainder(data['service_delivery']['toilet_facilities_distribution'], 5)
+    group_remainder(data['demographics']['language_distribution'], 7)
+    group_remainder(data['demographics']['province_of_birth_distribution'], 7)
+    group_remainder(data['demographics']['region_of_birth_distribution'], 5)
+    group_remainder(data['households']['type_of_dwelling_distribution'], 5)
+    group_remainder(data['child_households']['type_of_dwelling_distribution'], 5)
+
+    data['elections'] = get_elections_profile(geo_code, geo_level)
+
+    return data
 
 
 def get_demographics_profile(geo_code, geo_level, session):

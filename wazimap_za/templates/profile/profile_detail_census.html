@@ -22,18 +22,18 @@
     <div class="section-container">
 
         {% for key in elections %}
-        {% with elections|get:key as election_data %}
-        <section class="clearfix stat-row">
-            <h2 class="header-for-columns"><a class="permalink" href="#{{ election_data.name }}" id="{{ election_data.name }}">{{ election_data.name.capitalize }} <i class="fa fa-link"></i></a></h2>
-            <div class="column-quarter">
-                {% include 'profile/_blocks/_stat_list.html' with stat=election_data.registered_voters|get:"Number of registered voters" stat_type='number' %}
-            </div>
-            <div class="column-quarter">
-                {% include 'profile/_blocks/_stat_list.html' with stat=election_data.total_votes|get:"Of registered voters cast their vote" stat_type='percentage' %}
-            </div>
-            <div class="column-half" id="chart-histogram-elections-{{ key }}-party_distribution" data-stat-type="scaled-percentage" data-chart-title="Voters by party"></div>
-        </section>
-        {% endwith %}
+            {% with elections|get:key as election_data %}
+            <section class="clearfix stat-row">
+                <h2 class="header-for-columns"><a class="permalink" href="#{{ election_data.name }}" id="{{ election_data.name }}">{{ election_data.name.capitalize }} <i class="fa fa-link"></i></a></h2>
+                <div class="column-quarter">
+                    {% include 'profile/_blocks/_stat_list.html' with stat=election_data|get:"Number of registered voters" stat_type='number' %}
+                </div>
+                <div class="column-quarter">
+                    {% include 'profile/_blocks/_stat_list.html' with stat=election_data|get:"Of registered voters cast their vote" stat_type='percentage' %}
+                </div>
+                <div class="column-half" id="chart-histogram-elections-{{ key }}-party_distribution" data-stat-type="scaled-percentage" data-chart-title="Voters by party"></div>
+            </section>
+            {% endwith %}
         {% endfor %}
 
         {% if geography.this.geo_level == 'country' %}
