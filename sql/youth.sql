@@ -11,12 +11,15 @@ SET client_min_messages = warning;
 
 SET search_path = public, pg_catalog;
 
+DROP TABLE IF EXISTS public.youth;
+SET search_path = public, pg_catalog;
+
 SET default_tablespace = '';
 
 SET default_with_oids = false;
 
 --
--- Name: youth; Type: TABLE; Schema: public; Owner: census; Tablespace: 
+-- Name: youth; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE youth (
@@ -41,10 +44,8 @@ CREATE TABLE youth (
 );
 
 
-ALTER TABLE youth OWNER TO census;
-
 --
--- Data for Name: youth; Type: TABLE DATA; Schema: public; Owner: census
+-- Data for Name: youth; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY youth (geo_level, geo_code, tot_pop, youth_pop, youth_proportion, edu_dep, disab_dep, light_dep, heat_dep, cook_dep, toilet_dep, water_dep, dwell_dep, asset_dep, emp_dep, neets_dep, prop_multid_poor, youth_mpi) FROM stdin;
