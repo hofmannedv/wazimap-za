@@ -2,7 +2,9 @@
 {% block head_meta_description %}Population data and election figures from {{ geography.this.short_name}}, broken down by category: Demographics, Service delivery, Economics and Education.{% endblock %}
 
 {% block head_css_extra %}
+    {{ block.super }}
     <link rel="stylesheet" href="{% static 'css/ecd.css' %}">
+    }
 {% endblock %}
 
 {% block header_branding %}
@@ -14,13 +16,22 @@
 </a>
 {% endblock %}
 
+{% block geography_extra_sq_km %}
+{% if demographics.child_population_density.values.this %}
+    <span class="secondary">
+        <span class="value">{{ demographics.child_population_density.values.this|floatformat:"1" }}</span>
+        <span class="name">{{ demographics.child_population_density.name }}</span>
+    </span>
+{% endif %}
+{% endblock %}
+
 {% block profile_header_tail %}
 <div class="column-full">
     <p class="caption">
         <strong>Census data:</strong> 2011
         {% if crime %}
         <br>
-        <strong>Crime data:</strong> {{ crime.dataset }}</p>
+        <strong>Crime data:</strong> {{ crime.dataset }}
         {% endif %}
     </p>
 </div>
