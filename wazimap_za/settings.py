@@ -36,11 +36,13 @@ WAZIMAP['levels'] = {
     }
 }
 
-wazi_profile = os.environ.get('WAZI_PROFILE', 'census')
+wazi_profile = os.environ.get('WAZI_PROFILE', 'ecd')
 WAZIMAP['default_profile'] = wazi_profile
 
 WAZIMAP['profile_builder'] = 'wazimap_za.profiles.{}.get_profile'.format(wazi_profile)
-WAZIMAP['na_label'] = 'No Data'
+
+if wazi_profile == 'ecd':
+    WAZIMAP['na_label'] = 'No Data'
 
 LANGUAGE_CODE = 'en-za'
 USE_THOUSAND_SEPARATOR = True
