@@ -1,13 +1,36 @@
 {% extends 'profile/profile_detail.html' %}{% load humanize lookup staticfiles %}
 {% block head_meta_description %}Population data and election figures from {{ geography.this.short_name}}, broken down by category: Demographics, Service delivery, Economics and Education.{% endblock %}
 
+{% block head_css_extra %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/ecd.css' %}">
+{% endblock %}
+
+{% block header_branding %}
+<a href="http://ilifalabantwana.co.za/" target="_blank">
+    <img class="ilifa-logo" src="{% static 'img/ilifa-logo.jpg' %}">
+</a>
+<a href="http://www.mediamonitoringafrica.org/" target="_blank">
+    <img class="mma-logo" src="{% static 'img/mma.png' %}">
+</a>
+{% endblock %}
+
+{% block geography_extra_sq_km %}
+{% if demographics.child_population_density.values.this %}
+    <span class="secondary">
+        <span class="value">{{ demographics.child_population_density.values.this|floatformat:"1" }}</span>
+        <span class="name">{{ demographics.child_population_density.name }}</span>
+    </span>
+{% endif %}
+{% endblock %}
+
 {% block profile_header_tail %}
 <div class="column-full">
     <p class="caption">
         <strong>Census data:</strong> 2011
         {% if crime %}
         <br>
-        <strong>Crime data:</strong> {{ crime.dataset }}</p>
+        <strong>Crime data:</strong> {{ crime.dataset }}
         {% endif %}
     </p>
 </div>
@@ -292,6 +315,21 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
         </section>
     </div>
 </article>
+{% endblock %}
+
+{% block footer_branding %}
+<li class="post-text">
+    This is a project of Ilifa Labantwana
+</li>
+<li>
+    <a href="http://ilifalabantwana.co.za/"><img class="ilifa-logo" src="{% static 'img/ilifa-logo.jpg' %}"></a>
+</li>
+<li>
+    <a href="http://www.mediamonitoringafrica.org/"><img class="mma-logo" src="{% static 'img/mma.png' %}"></a>
+</li>
+<li>
+    <a href="http://www.code4sa.org/"><img src="{% static 'img/code4sa-logo-small.png' %}"></a>
+</li>
 {% endblock %}
 
 {% block profile_javascript_libs %}
