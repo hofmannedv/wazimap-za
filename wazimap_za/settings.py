@@ -41,8 +41,12 @@ WAZIMAP['default_profile'] = wazi_profile
 
 WAZIMAP['profile_builder'] = 'wazimap_za.profiles.{}.get_profile'.format(wazi_profile)
 
-if wazi_profile == 'ecd':
+if wazi_profile == 'census':
+    WAZIMAP['ga_tracking_id'] = 'UA-48399585-5'
+
+elif wazi_profile == 'ecd':
     WAZIMAP['na_label'] = 'No Data'
+    WAZIMAP['ga_tracking_id'] = 'UA-48399585-32'
 
 LANGUAGE_CODE = 'en-za'
 USE_THOUSAND_SEPARATOR = True
