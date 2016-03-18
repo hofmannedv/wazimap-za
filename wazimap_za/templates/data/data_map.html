@@ -1,0 +1,7 @@
+{% extends 'data/data_map.html' %}
+{% load staticfiles %}
+
+{% block page_specific_javascript %}
+{{ block.super }}
+<script src="{% static 'js/maps_mapit.js' %}"></script>
+{% endblock %}
