@@ -15,6 +15,7 @@ WAZIMAP['url'] = 'http://wazimap.co.za'
 WAZIMAP['country_code'] = 'ZA'
 WAZIMAP['comparative_levels'] = ['province', 'country']
 # this is provided by mapit
+WAZIMAP['geodata'] = 'wazimap_za.geo.GeoData'
 WAZIMAP['geometry_data'] = {}
 
 WAZIMAP['levels'] = {
@@ -51,3 +52,5 @@ elif wazi_profile == 'ecd':
 LANGUAGE_CODE = 'en-za'
 USE_THOUSAND_SEPARATOR = True
 FORMAT_MODULE_PATH = 'wazimap_za.formats'
+
+LOGGING['loggers']['wazimap_za'] = {'level': 'DEBUG' if DEBUG else 'INFO'}
