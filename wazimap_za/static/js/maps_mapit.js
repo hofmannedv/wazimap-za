@@ -4,6 +4,7 @@
  */
 function MapItGeometryLoader() {
     var self = this;
+    self.mapit_url = 'http://mapit.code4sa.org';
 
     /**
      * Fetches geometry data for a comparison view and calls the +success+
@@ -40,14 +41,15 @@ function MapItGeometryLoader() {
                 url = url + '&simplify_tolerance=' + simplify;
             }
 
-            d3.json('http://mapit.code4sa.org' + url, function(error, geojson) {
+            d3.json(self.mapit_url + url, function(error, geojson) {
                 --counter;
                 if (error) return console.warn(error);
                 var features = geojson.features;
+                _.each(features, self.decorateFeature);
 
                 // index by geoid
                 _.each(features, function(feature) {
-                    featureMap[level + '-' + feature.properties.codes.MDB] = feature;
+                    featureMap[feature.geoid] = feature;
                 });
 
                 if (counter === 0) {
@@ -56,7 +58,6 @@ function MapItGeometryLoader() {
 
                     _.each(comparison.dataGeoIDs, function(geoid) {
                         var feature = featureMap[geoid];
-                        feature.properties.geoid = geoid;
                         feature.properties.name = comparison.data.geography[geoid].name;
                         usefulFeatures[geoid] = feature;
                     });
@@ -64,6 +65,26 @@ function MapItGeometryLoader() {
                     success(usefulFeatures);
                 }
             });
+        });
+    };
+
+    this.decorateFeature = function(feature) {
+        feature.properties.level = feature.properties.type_name.toLowerCase();
+        feature.properties.code = feature.properties.codes.MDB;
+        feature.properties.geoid = feature.properties.level + '-' + feature.properties.code;
+    };
+
+    this.loadGeometryForLevel = function(level, success) {
+        var url = '/areas/' + MAPIT_LEVEL_TYPES[level] + '.geojson';
+        var simplify = MAPIT_LEVEL_SIMPLIFY[MAPIT_LEVEL_TYPES[level]];
+        if (simplify) {
+            url = url + '?simplify_tolerance=' + simplify;
+        }
+
+        d3.json(this.mapit_url + url, function(error, geojson) {
+            var features = _.values(geojson.features);
+            _.each(features, self.decorateFeature);
+            success({features: features});
         });
     };
 }
