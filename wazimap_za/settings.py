@@ -51,3 +51,5 @@ elif wazi_profile == 'ecd':
 LANGUAGE_CODE = 'en-za'
 USE_THOUSAND_SEPARATOR = True
 FORMAT_MODULE_PATH = 'wazimap_za.formats'
+
+LOGGING['loggers']['wazimap_za'] = {'level': 'DEBUG' if DEBUG else 'INFO'}
