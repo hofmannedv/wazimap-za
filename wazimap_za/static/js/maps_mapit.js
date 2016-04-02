@@ -4,7 +4,7 @@
  */
 function MapItGeometryLoader() {
     var self = this;
-    self.mapit_url = 'http://mapit.code4sa.org';
+    self.mapit_url = '//mapit.code4sa.org';
 
     /**
      * Fetches geometry data for a comparison view and calls the +success+
