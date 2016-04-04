@@ -49,7 +49,7 @@ function MapItGeometryLoader() {
 
                 // index by geoid
                 _.each(features, function(feature) {
-                    featureMap[feature.geoid] = feature;
+                    featureMap[feature.properties.geoid] = feature;
                 });
 
                 if (counter === 0) {
