@@ -3,6 +3,7 @@
 var BaseProfileMaps = ProfileMaps;
 ProfileMaps = function() {
     var self = this;
+    this.mapit_url = GeometryLoader.mapit_url;
 
     _.extend(this, new BaseProfileMaps());
 
@@ -17,7 +18,8 @@ ProfileMaps = function() {
         if (geo_level == 'country') {
             this.map.setView({lat: -28.4796, lng: 10.698445}, 5);
         } else {
-            d3.json("http://mapit.code4sa.org/area/MDB:" + geo_code +
+            // TODO: move this into maps_mapit.MapItGeometryLoader
+            d3.json(this.mapit_url + "/area/MDB:" + geo_code +
                     ".geojson?generation=1&simplify_tolerance=" + mapit_simplify +
                     "&type=" + mapit_type, function(error, geojson) {
               if (error) return console.warn(error);
@@ -56,7 +58,7 @@ ProfileMaps = function() {
                 var url = '/areas/MDB-levels:' + parent + '|' + mapit_level +
                           '.geojson?generation=1&simplify_tolerance=' + MAPIT_LEVEL_SIMPLIFY[mapit_level];
 
-                d3.json("http://mapit.code4sa.org" + url, function(error, geojson) {
+                d3.json(self.mapit_url + url, function(error, geojson) {
                     if (error) return console.warn(error);
 
                     // don't include this smaller geo, we already have a shape for that
