@@ -326,6 +326,7 @@ def get_demographics_profile(geo_code, geo_level, session):
     # age groups
     age_dist_data, total_age = get_stat_data(
             ['age groups in 5 years'], geo_level, geo_code, session,
+            table_name='agegroupsin5years',
             recode=COLLAPSED_AGE_CATEGORIES,
             key_order=('0-9', '10-19',
                        '20-29', '30-39',
