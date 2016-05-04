@@ -317,7 +317,7 @@ def get_ecd_centres_profile(geo_code, geo_level, session):
             "values": {"this": children_3_to_5_coverage}
         },
         "children_3_to_5_per_ecd_centre": {
-            "name": "Average number of children living in the area per ECD centre",
+            "name": "Average number of children living in the area for each ECD centre",
             "values": {"this": children_3_to_5_per_ecd_centre}
         },
         "children_3_to_5_per_ecd_centre_enrolled": {
