@@ -277,7 +277,7 @@ def get_ecd_centres_profile(geo_code, geo_level, session):
     # They are displayed in the template to promote this fact.
 
     registered_ecd_programmes = {
-        "name": "Registered ECD programs",
+        "name": "Registered ECD programmes",
         "values": {"this": None},
     }
     children_in_ecd_programmes = {
@@ -298,11 +298,6 @@ def get_ecd_centres_profile(geo_code, geo_level, session):
         "values": {"this": None}
     }
 
-    children_receiving_subsidy = {
-        "name": "Children receiving an early learning subsidy",
-        "values": {"this": None}
-    }
-
     return {
         "total_ecd_centres": {
             "name": "Number of ECD centres",
@@ -313,11 +308,11 @@ def get_ecd_centres_profile(geo_code, geo_level, session):
         "registered_ecd_programmes": registered_ecd_programmes,
         "children_enrolled_age_3_to_5": children_enrolled['children_enrolled_age_3_to_5'],
         "children_3_to_5_coverage": {
-            "name": "Enrolment coverage. Children living in the area who are enrolled in ECD centres",
+            "name": "Children living in the area who are enrolled in ECD centres. (Children enrolled in centres / Children living in the area)",
             "values": {"this": children_3_to_5_coverage}
         },
         "children_3_to_5_per_ecd_centre": {
-            "name": "Average number of children living in the area per ECD centre",
+            "name": "Average number of children living in the area for each ECD centre",
             "values": {"this": children_3_to_5_per_ecd_centre}
         },
         "children_3_to_5_per_ecd_centre_enrolled": {
@@ -328,8 +323,7 @@ def get_ecd_centres_profile(geo_code, geo_level, session):
         "children_in_play_groups": children_in_play_groups,
         "children_grade_r_age": children_grade_r_age,
         "ecd_centres_with_grade_r_learners": grade_r['centres_with_grade_r_learners'],
-        "schools_with_grade_r_learners": schools_with_grade_r_learners,
-        "children_receiving_subsidy": children_receiving_subsidy
+        "schools_with_grade_r_learners": schools_with_grade_r_learners
     }
 
 
@@ -349,15 +343,15 @@ def get_ecd_educators_profile(geo_code, geo_level, session):
 
     return {
         "children_per_practitioner": {
-            "name": "Number of children for each practitioner",
+            "name": "Number of children enrolled in centres for each practitioner",
             "values": {"this": children_per_practitioner}
         },
         "children_per_trained_practitioner": {
-            "name": "Number of children for each trained practitioner *",
+            "name": "Number of children enrolled in centres for each trained practitioner *",
             "values": {"this": None}
         },
         "children_per_untrained_practitioner": {
-            "name": "Number of children for each untrained practitioner *",
+            "name": "Number of children enrolled in centres for each untrained practitioner *",
             "values": {"this": None}
         },
         "practitioners_for_ages_3_to_5": {
@@ -373,7 +367,7 @@ def get_ecd_budgets_profile(geo_code, geo_level, session):
         geo_level, geo_code, percent=False)
 
     csg = ecd_grants['child_support_grant']['values']['this']
-    monthly_csg = 330.00
+    monthly_csg = 350.00
 
     child_support_grants = {
         "name": "Learners in centres receiving child support grants",
@@ -381,7 +375,7 @@ def get_ecd_budgets_profile(geo_code, geo_level, session):
     }
 
     child_support_grants_amount = {
-        "name": "Approximate amount paid as child support grants to children in ECD centres (monthly)",
+        "name": "Approximate monthly amount paid as child support grants to children in ECD centres. (Learners in centres receiving grants x Child support grant amount *)",
         "values": {"this": csg * monthly_csg}
     }
 
@@ -395,11 +389,17 @@ def get_ecd_budgets_profile(geo_code, geo_level, session):
         "values": {"this": None}
     }
 
+    children_receiving_subsidy = {
+        "name": "Children receiving an early learning subsidy",
+        "values": {"this": None}
+    }
+
     return {
         "ecd_subsidies_budgeted": ecd_subsidies_budgeted,
         "ecd_subsidies_paid": ecd_subsidies_paid,
         "child_support_grants": child_support_grants,
-        "child_support_grants_amount": child_support_grants_amount
+        "child_support_grants_amount": child_support_grants_amount,
+        "children_receiving_subsidy": children_receiving_subsidy
     }
 
 

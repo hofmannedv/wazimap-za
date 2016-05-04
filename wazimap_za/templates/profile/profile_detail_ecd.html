@@ -52,7 +52,7 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
                 {% include 'profile/_blocks/_stat_list.html' with stat=demographics.ecd_children stat_type='number' %}
             </div>
             <div class="column-third">
-                <div id="chart-histogram-demographics-ecd_age_groups" data-chart-title="Children by age in years" data-stat-type="scaled-percentage"></div>
+                <div id="chart-histogram-demographics-ecd_age_groups" data-chart-title="Breakdown of children aged 0-5" data-stat-type="scaled-percentage"></div>
             </div>
             <div class="column-third">
                 <div id="chart-pie-demographics-ecd_gender" data-stat-type="percentage" data-initial-sort="-value" data-chart-title="Gender of children under the age of nine years"></div>
@@ -83,11 +83,11 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
 
 <article class="clearfix">
     <header class="section-contents">
-        <h1>Access to Early Learning</h1>
+        <h1>Access to early learning</h1>
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
-            <h2 class="header-for-columns"><a class="permalink" href="#registered_centres" id="ecd_centres">ECD Centres overview<i class="fa fa-link"></i></a></h2>
+            <h2 class="header-for-columns"><a class="permalink" href="#registered_centres" id="ecd_centres">ECD centres overview<i class="fa fa-link"></i></a></h2>
             <div class="column-quarter">
                 {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.total_ecd_centres stat_type='number' %}
             </div>
@@ -102,15 +102,12 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
             </div>
         </section>
         <section class="clearfix stat-row">
-            <h2 class="header-for-columns"><a class="permalink" href="#centre_coverage" id="ecd_centres">Centre Coverage (children aged 3-5 years)<i class="fa fa-link"></i></a></h2>
+            <h2 class="header-for-columns"><a class="permalink" href="#centre_coverage" id="ecd_centres">Centre coverage (children aged 3-5 years)<i class="fa fa-link"></i></a></h2>
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_enrolled_age_3_to_5 stat_type='number' %}
             </div>
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_3_to_5_coverage stat_type='percentage' %}
-            </div>
-            <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_receiving_subsidy stat_type='number' %}
             </div>
         </section>
         <section class="clearfix stat-row grouped-row">
@@ -179,11 +176,18 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
     <div class="section-container">
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#ecd-budgets" id="ecd-budgets">Early learning subsidies<i class="fa fa-link"></i></a></h2>
+            <aside>
+                <p>* Currently <a href="http://www.gov.za/services/child-care-social-benefits/child-support-grant" target="_blank">R 350.00</a> per month.
+                </p>
+            </aside>
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=ecd_budgets.ecd_subsidies_budgeted stat_type='number' %}
             </div>
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=ecd_budgets.ecd_subsidies_paid stat_type='number' %}
+            </div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_budgets.children_receiving_subsidy stat_type='number' %}
             </div>
         </section>
         <section class="clearfix stat-row grouped-row">
