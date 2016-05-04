@@ -341,6 +341,12 @@ def get_ecd_educators_profile(geo_code, geo_level, session):
         children_enrolled['children_enrolled_age_3_to_5']['values']['this'],
         ecd_educators['practitioners_for_ages_3_to_5']['values']['this'])
 
+    _, children_age_3_to_5_in_area = get_stat_data(
+        ['age in completed years'], geo_level, geo_code, session,
+        table_name='ageincompletedyears',
+        only=['3', '4', '5'],
+        recode=ECD_AGE_CATEGORIES)
+
     return {
         "children_per_practitioner": {
             "name": "Number of children enrolled in centres for each practitioner",
@@ -357,7 +363,12 @@ def get_ecd_educators_profile(geo_code, geo_level, session):
         "practitioners_for_ages_3_to_5": {
             "name": "Number of practitioners in the area for children aged 3-5.",
             "values": {"this": ecd_educators['practitioners_for_ages_3_to_5']['values']['this']}
-        }
+        },
+        'children_age_3_to_5_in_area': {
+            "name": "Children (age 3-5) living in the area",
+            "values": {"this": children_age_3_to_5_in_area}
+        },
+
     }
 
 
