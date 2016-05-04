@@ -313,7 +313,7 @@ def get_ecd_centres_profile(geo_code, geo_level, session):
         "registered_ecd_programmes": registered_ecd_programmes,
         "children_enrolled_age_3_to_5": children_enrolled['children_enrolled_age_3_to_5'],
         "children_3_to_5_coverage": {
-            "name": "Enrolment coverage. Children living in the area who are enrolled in ECD centres",
+            "name": "Children living in the area who are enrolled in ECD centres. (Children enrolled in centres / Children living in the area)",
             "values": {"this": children_3_to_5_coverage}
         },
         "children_3_to_5_per_ecd_centre": {
