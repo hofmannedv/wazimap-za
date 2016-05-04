@@ -279,6 +279,11 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
                 {% include 'profile/_blocks/_stat_list.html' with stat=households.head_of_household.under_18 stat_type='number' %}
             </div>
         </section>
+        <section class="clearfix stat-row grouped-row">
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=households.ecd_children_per_household stat_type='number' %}
+            </div>
+        </section>
     </div>
 </article>
 
