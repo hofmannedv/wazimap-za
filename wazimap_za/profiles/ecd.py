@@ -349,15 +349,15 @@ def get_ecd_educators_profile(geo_code, geo_level, session):
 
     return {
         "children_per_practitioner": {
-            "name": "Number of children for each practitioner",
+            "name": "Number of children enrolled in centres for each practitioner",
             "values": {"this": children_per_practitioner}
         },
         "children_per_trained_practitioner": {
-            "name": "Number of children for each trained practitioner *",
+            "name": "Number of children enrolled in centres for each trained practitioner *",
             "values": {"this": None}
         },
         "children_per_untrained_practitioner": {
-            "name": "Number of children for each untrained practitioner *",
+            "name": "Number of children enrolled in centres for each untrained practitioner *",
             "values": {"this": None}
         },
         "practitioners_for_ages_3_to_5": {
