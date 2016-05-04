@@ -277,7 +277,7 @@ def get_ecd_centres_profile(geo_code, geo_level, session):
     # They are displayed in the template to promote this fact.
 
     registered_ecd_programmes = {
-        "name": "Registered ECD programs",
+        "name": "Registered ECD programmes",
         "values": {"this": None},
     }
     children_in_ecd_programmes = {
