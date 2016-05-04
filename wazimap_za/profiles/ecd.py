@@ -373,7 +373,7 @@ def get_ecd_budgets_profile(geo_code, geo_level, session):
         geo_level, geo_code, percent=False)
 
     csg = ecd_grants['child_support_grant']['values']['this']
-    monthly_csg = 330.00
+    monthly_csg = 350.00
 
     child_support_grants = {
         "name": "Learners in centres receiving child support grants",
@@ -381,7 +381,7 @@ def get_ecd_budgets_profile(geo_code, geo_level, session):
     }
 
     child_support_grants_amount = {
-        "name": "Approximate amount paid as child support grants to children in ECD centres (monthly)",
+        "name": "Approximate monthly amount paid as child support grants to children in ECD centres. (Learners in centres receiving grants x Child support grant amount *)",
         "values": {"this": csg * monthly_csg}
     }
 
