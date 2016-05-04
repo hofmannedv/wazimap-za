@@ -506,7 +506,7 @@ def get_households_profile(geo_code, geo_level, session):
             }
         },
         'ecd_children_per_household': {
-            'name': 'Average number of children (aged 3-5) in each household',
+            'name': 'Average number of children (aged 0-5) in each household',
             'values': {'this': ecd_children_per_household},
         },
     }
