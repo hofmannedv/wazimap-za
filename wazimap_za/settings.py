@@ -16,6 +16,7 @@ WAZIMAP['country_code'] = 'ZA'
 WAZIMAP['comparative_levels'] = ['province', 'country']
 # this is provided by mapit
 WAZIMAP['geodata'] = 'wazimap_mapit.geo.GeoData'
+WAZIMAP['mapit'] = {'url': 'https://mapit.code4sa.org'}
 WAZIMAP['geometry_data'] = {}
 
 WAZIMAP['levels'] = {
