@@ -46,6 +46,7 @@ if wazi_profile == 'census':
     WAZIMAP['ga_tracking_id'] = 'UA-48399585-5'
 
 elif wazi_profile == 'ecd':
+    WAZIMAP['url'] = 'https://wazimap-ecd.code4sa.org'
     WAZIMAP['na_label'] = 'No Data'
     WAZIMAP['ga_tracking_id'] = 'UA-48399585-32'
 
