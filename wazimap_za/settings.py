@@ -11,7 +11,7 @@ DATABASES['default']['ATOMIC_REQUESTS'] = True
 
 # Localise this instance of Wazimap
 WAZIMAP['name'] = 'Wazimap South Africa'
-WAZIMAP['url'] = 'http://wazimap.co.za'
+WAZIMAP['url'] = 'https://wazimap.co.za'
 WAZIMAP['country_code'] = 'ZA'
 WAZIMAP['comparative_levels'] = ['province', 'country']
 # this is provided by mapit
