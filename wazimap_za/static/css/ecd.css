@@ -4,3 +4,8 @@
     background-color: white;
     vertical-align: baseline;
 }
+
+#profile .section-container section.sources {
+  padding-top: 1em;
+  margin-bottom: 0em;
+}
