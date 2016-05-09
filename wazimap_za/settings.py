@@ -1,10 +1,6 @@
 # pull in the default wazimap settings
 from wazimap.settings import *  # noqa
 
-# This needs to be specified before INSTALLED_APPS
-wazi_profile = os.environ.get('WAZI_PROFILE', 'census')
-WAZIMAP['default_profile'] = wazi_profile
-
 # install this app before Wazimap
 INSTALLED_APPS = ['wazimap_za.apps.WazimapConfig', 'wazimap_mapit'] + INSTALLED_APPS
 
@@ -41,6 +37,9 @@ WAZIMAP['levels'] = {
     }
 }
 
+wazi_profile = os.environ.get('WAZI_PROFILE', 'census')
+
+WAZIMAP['default_profile'] = wazi_profile
 WAZIMAP['profile_builder'] = 'wazimap_za.profiles.{}.get_profile'.format(wazi_profile)
 
 if wazi_profile == 'census':
