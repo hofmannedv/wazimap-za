@@ -2,7 +2,7 @@
 from wazimap.settings import *  # noqa
 
 # install this app before Wazimap
-INSTALLED_APPS = ['wazimap_za', 'wazimap_mapit'] + INSTALLED_APPS
+INSTALLED_APPS = ['wazimap_za.apps.WazimapConfig', 'wazimap_mapit'] + INSTALLED_APPS
 
 DATABASE_URL = os.environ.get('DATABASE_URL', 'postgresql://wazimap_za:wazimap_za@localhost/wazimap_za')
 DATABASES['default'] = dj_database_url.parse(DATABASE_URL)
@@ -38,8 +38,8 @@ WAZIMAP['levels'] = {
 }
 
 wazi_profile = os.environ.get('WAZI_PROFILE', 'census')
-WAZIMAP['default_profile'] = wazi_profile
 
+WAZIMAP['default_profile'] = wazi_profile
 WAZIMAP['profile_builder'] = 'wazimap_za.profiles.{}.get_profile'.format(wazi_profile)
 
 if wazi_profile == 'census':
@@ -49,6 +49,7 @@ elif wazi_profile == 'ecd':
     WAZIMAP['url'] = 'https://wazimap-ecd.code4sa.org'
     WAZIMAP['na_label'] = 'No Data'
     WAZIMAP['ga_tracking_id'] = 'UA-48399585-32'
+    WAZIMAP['name'] = 'Wazimap ECD'
 
 LANGUAGE_CODE = 'en-za'
 USE_THOUSAND_SEPARATOR = True
