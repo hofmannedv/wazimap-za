@@ -49,7 +49,7 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#ecd_age_groups" id="age_groups">Early childhood age groups<i class="fa fa-link"></i></a></h2>
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=demographics.ecd_children stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=demographics.ecd_children stat_type='count' %}
             </div>
             <div class="column-third">
                 <div id="chart-histogram-demographics-ecd_age_groups" data-chart-title="Breakdown of children aged 0-5" data-stat-type="scaled-percentage"></div>
@@ -72,7 +72,7 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#women_child_bearing_age" id="women_child_bearing_age">Women of child bearing age<i class="fa fa-link"></i></a></h2>
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=demographics.total_women_child_bearing_age stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=demographics.total_women_child_bearing_age stat_type='count' %}
             </div>
             <div class="column-two-thirds">
                 <div id="chart-histogram-demographics-women_child_bearing_age" data-chart-title="Women by age in years" data-stat-type="scaled-percentage"></div>
@@ -95,11 +95,11 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#registered_centres" id="ecd_centres">ECD centres overview<i class="fa fa-link"></i></a></h2>
             <div class="column-quarter">
-                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.total_ecd_centres stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.total_ecd_centres stat_type='count' %}
             </div>
             <div class="column-half" id="chart-pie-ecd_centres-ecd_centres_by_registration" data-stat-type="percentage" data-chart-title="Breakdown of ECD centres by registration status"></div>
             <div class="column-quarter">
-                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.registered_ecd_programmes stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.registered_ecd_programmes stat_type='count' %}
             </div>
         </section>
         <section class="clearfix stat-row">
@@ -110,7 +110,7 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#centre_coverage" id="ecd_centres">Centre coverage (children aged 3-5 years)<i class="fa fa-link"></i></a></h2>
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_enrolled_age_3_to_5 stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_enrolled_age_3_to_5 stat_type='count' %}
             </div>
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_3_to_5_coverage stat_type='percentage' %}
@@ -118,7 +118,7 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
         </section>
         <section class="clearfix stat-row grouped-row">
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_3_to_5_per_ecd_centre stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_3_to_5_per_ecd_centre stat_type='count' %}
             </div>
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_3_to_5_per_ecd_centre_enrolled stat_type='number' %}
@@ -126,22 +126,22 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
         </section>
         <section class="clearfix stat-row grouped-row">
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_in_ecd_programmes stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_in_ecd_programmes stat_type='count' %}
             </div>
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_in_play_groups stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_in_play_groups stat_type='count' %}
             </div>
         </section>
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#grade-r" id="grade-r">Grade R learners<i class="fa fa-link"></i></a></h2>
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_grade_r_age stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.children_grade_r_age stat_type='count' %}
             </div>
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.ecd_centres_with_grade_r_learners stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.ecd_centres_with_grade_r_learners stat_type='count' %}
             </div>
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.schools_with_grade_r_learners stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.schools_with_grade_r_learners stat_type='count' %}
             </div>
         </section>
         <section class="clearfix stat-row sources">
@@ -177,10 +177,10 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
         </section>
         <section class="clearfix stat-row grouped-row">
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_educators.practitioners_for_ages_3_to_5 stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_educators.practitioners_for_ages_3_to_5 stat_type='count' %}
             </div>
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_educators.children_age_3_to_5_in_area stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_educators.children_age_3_to_5_in_area stat_type='count' %}
             </div>
         </section>
         <section class="clearfix stat-row sources">
@@ -205,18 +205,18 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
                 </p>
             </aside>
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_budgets.ecd_subsidies_budgeted stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_budgets.ecd_subsidies_budgeted stat_type='count' %}
             </div>
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_budgets.ecd_subsidies_paid stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_budgets.ecd_subsidies_paid stat_type='count' %}
             </div>
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_budgets.children_receiving_subsidy stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_budgets.children_receiving_subsidy stat_type='count' %}
             </div>
         </section>
         <section class="clearfix stat-row grouped-row">
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_budgets.child_support_grants stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=ecd_budgets.child_support_grants stat_type='count' %}
             </div>
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=ecd_budgets.child_support_grants_amount stat_type='dollar' %}
@@ -238,9 +238,9 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
-            <h2 class="header-for-columns"><a class="permalink" href="#schools" id="schools">Schools (children aged 6-18 years)<i class="fa fa-link"></i></a></h2>
+            <h2 class="header-for-columns"><a class="permalink" href="#schools" id="schools">Schools (for children aged 6-18 years)<i class="fa fa-link"></i></a></h2>
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=schools.total_schools stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=schools.total_schools stat_type='count' %}
             </div>
             <div class="column-two-thirds">
                 <div id="chart-histogram-schools-school_breakdown" data-chart-title="Number of schools by phase" data-decimal-places="2"></div>
@@ -272,7 +272,7 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#hospitals" id="hospitals">Hospitals / Clinics<i class="fa fa-link"></i></a></h2>
             <div class="column-quarter">
-                {% include 'profile/_blocks/_stat_list.html' with stat=hospitals.total_hospitals stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=hospitals.total_hospitals stat_type='count' %}
             </div>
             <div class="column-half">
                 <div id="chart-histogram-hospitals-hospital_breakdown" data-chart-title="Type of medical centre" data-decimal-places="2"></div>
@@ -304,7 +304,7 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
         <section class="clearfix stat-row">
             <h2><a class="permalink" href="#households" id="households">Households <i class="fa fa-link"></i></a></h2>
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=households.total_households stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=households.total_households stat_type='count' %}
             </div>
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=households.informal stat_type='percentage' %}
@@ -318,7 +318,7 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
             </div>
             <div class="column-third" id="chart-pie-households-head_of_household-gender_distribution" data-stat-type="percentage" data-initial-sort="-value" data-chart-title="Head of household by gender"></div>
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=households.head_of_household.under_18 stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=households.head_of_household.under_18 stat_type='count' %}
             </div>
         </section>
         <section class="clearfix stat-row grouped-row">
