@@ -377,8 +377,10 @@ def get_ecd_budgets_profile(geo_code, geo_level, session):
     ecd_grants, _ = table.get_stat_data(
         geo_level, geo_code, percent=False)
 
-    csg = ecd_grants['child_support_grant']['values']['this']
+    # http://www.gov.za/services/child-care-social-benefits/child-support-grant
     monthly_csg = 350.00
+
+    csg = ecd_grants['child_support_grant']['values']['this']
 
     child_support_grants = {
         "name": "Learners in centres receiving child support grants",
