@@ -78,6 +78,12 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
                 <div id="chart-histogram-demographics-women_child_bearing_age" data-chart-title="Women by age in years" data-stat-type="scaled-percentage"></div>
             </div>
         </section>
+        <section class="clearfix stat-row sources">
+            <h2><a href="#sources">Sources:</a></h2>
+            <ul class="context-phrases">
+                <li>Census 2011</li>
+            </ul>
+        </section>
     </div>
 </article>
 
@@ -138,6 +144,14 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
                 {% include 'profile/_blocks/_stat_list.html' with stat=ecd_centres.schools_with_grade_r_learners stat_type='number' %}
             </div>
         </section>
+        <section class="clearfix stat-row sources">
+            <h2><a href="#sources">Sources:</a></h2>
+            <ul class="context-phrases">
+                <li>ECD Audit 2013</li>
+                <li>Census 2011</li>
+                <li>Schools 2015</li>
+            </ul>
+        </section>
     </div>
 </article>
 
@@ -168,6 +182,13 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=ecd_educators.children_age_3_to_5_in_area stat_type='number' %}
             </div>
+        </section>
+        <section class="clearfix stat-row sources">
+            <h2><a href="#sources">Sources:</a></h2>
+            <ul class="context-phrases">
+                <li>ECD Audit 2013</li>
+                <li>Census 2011</li>
+            </ul>
         </section>
     </div>
 </article>
@@ -201,6 +222,13 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
                 {% include 'profile/_blocks/_stat_list.html' with stat=ecd_budgets.child_support_grants_amount stat_type='dollar' %}
             </div>
         </section>
+        <section class="clearfix stat-row sources">
+            <h2><a href="#sources">Sources:</a></h2>
+            <ul class="context-phrases">
+                <li>ECD Audit 2013</li>
+                <li>gov.za</li>
+            </ul>
+        </section>
     </div>
 </article>
 
@@ -226,6 +254,13 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
                 {% include 'profile/_blocks/_stat_list.html' with stat=schools.children_per_secondary_school stat_type='number' %}
             </div>
         </section>
+        <section class="clearfix stat-row sources">
+            <h2><a href="#sources">Sources:</a></h2>
+            <ul class="context-phrases">
+                <li>Schools 2015</li>
+                <li>Census 2011</li>
+            </ul>
+        </section>
     </div>
 </article>
 
@@ -250,6 +285,13 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
             <div class="column-quarter">
                 {% include 'profile/_blocks/_stat_list.html' with stat=hospitals.children_0_to_5_per_hospital stat_type='number' %}
             </div>
+        </section>
+        <section class="clearfix stat-row sources">
+            <h2><a href="#sources">Sources:</a></h2>
+            <ul class="context-phrases">
+                <li>Hospitals 2012</li>
+                <li>Census 2011</li>
+            </ul>
         </section>
     </div>
 </article>
@@ -283,6 +325,12 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=households.ecd_children_per_household stat_type='number' %}
             </div>
+        </section>
+        <section class="clearfix stat-row sources">
+            <h2><a href="#sources">Sources:</a></h2>
+            <ul class="context-phrases">
+                <li>Census 2011</li>
+            </ul>
         </section>
     </div>
 </article>
@@ -325,21 +373,73 @@ Please provide any feedback you may have by using the Help &amp; Feedback button
             </div>
             <div class="column-third" id="chart-pie-service_delivery-toilet_facilities_distribution" data-stat-type="percentage" data-chart-title="Population by toilet facilities"></div>
         </section>
+        <section class="clearfix stat-row sources">
+            <h2><a href="#sources">Sources:</a></h2>
+            <ul class="context-phrases">
+                <li>Census 2011</li>
+            </ul>
+        </section>
     </div>
 </article>
 {% endblock %}
 
-{% block footer_branding %}
-<li class="post-text">
-    This project is in collaboration with Ilifa Labantwana
-</li>
-<li>
-    <a href="http://ilifalabantwana.co.za/"><img class="ilifa-logo" src="{% static 'img/ilifa-logo.jpg' %}"></a>
-</li>
-<li>
-    <a href="http://www.mediamonitoringafrica.org/"><img class="mma-logo" src="{% static 'img/mma.png' %}"></a>
-</li>
-<li>
-    <a href="http://www.code4sa.org/"><img src="{% static 'img/code4sa-logo-small.png' %}"></a>
-</li>
-{% endblock %}
+{% block footer_content %}
+    <div class="column-half">
+        <h3><a class="permalink" href="#sources" id="sources">Sources:</a></h3>
+        <br/>
+        <ul class="ul-icon-list">
+            <li>
+                <h4><a href="http://www.statssa.gov.za/" target="_blank">Census 2011</a></h4>
+                South African National Census, Statistics South Africa, 2011
+            </li>
+            <li>
+                <h4><a href="http://www.education.gov.za/Programmes/EMIS/EMISDownloads.aspx" target="_blank">Schools 2015</a></h4>
+                South African Schools Masterlist, Department of Basic Education, June 2015
+            </li>
+            <li>
+                <h4><a href="https://data.code4sa.org/Health/South-African-Hospitals-Survey-2011-2012/ft5b-smjr" target="_blank">Hospitals 2012</a></h4>
+                Survey of South African Hospitals, Department of Health, 2011/12
+            </li>
+            <li>
+                <h4>ECD Audit 2013</h4>
+                National Audit of ECD centres in South Africa, Department of Social Development, 2013
+                <br/>
+                * Data for the provinces of Kwazulu Natal and Nort West collected by Ilifa Labantwana.
+            </li>
+        </ul>
+    </div>
+    <div class="column-quarter">
+        <ul class="ul-icon-list">
+            <li>
+                <i class="fa fa-th-list"></i> <a href="http://www.mediamonitoringafrica.org/" target="_blank">Media Monitoring Africa</a>
+            </li>
+            <li>
+                <i class="fa fa-envelope"></i> <a href="mailto:info@mma.org.za">Email us</a>
+            </li>
+            <li>
+                <i class="fa fa-github"></i> <a href="https://github.com/Code4SA/wazimap-za" target="_blank">Wazimap on Github</a>
+            </li>
+            <li>
+                <i class="fa fa-github"></i> Built on <a href="http://censusreporter.org" target="_blank">CensusReporter.org</a>
+            </li>
+        </ul>
+    </div>
+    <div class="column-quarter">
+        <ul class="ul-icon-list">
+            {% block footer_branding %}
+            <li class="post-text">
+                This project is in collaboration with Ilifa Labantwana
+            </li>
+            <li>
+                <a href="http://ilifalabantwana.co.za/"><img class="ilifa-logo" src="{% static 'img/ilifa-logo.jpg' %}"></a>
+            </li>
+            <li>
+                <a href="http://www.mediamonitoringafrica.org/"><img class="mma-logo" src="{% static 'img/mma.png' %}"></a>
+            </li>
+            <li>
+                <a href="http://www.code4sa.org/"><img src="{% static 'img/code4sa-logo-small.png' %}"></a>
+            </li>
+            {% endblock %}
+        </ul>
+    </div>
+{% endblock footer_content %}
