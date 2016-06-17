@@ -21,11 +21,11 @@ WAZIMAP['geometry_data'] = {}
 WAZIMAP['levels'] = {
     'country': {
         'plural': 'countries',
-        'children': ['province'],
+        'children': ['province', 'municipality'],
     },
     'province': {
         'plural': 'provinces',
-        'children': ['municipality'],
+        'children': ['municipality', 'ward'],
     },
     'municipality': {
         'plural': 'municipalities',
