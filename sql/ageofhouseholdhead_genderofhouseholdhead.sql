@@ -90457,6 +90457,886 @@ municipality	CPT	Male	70 - 79	28934
 municipality	CPT	Female	70 - 79	28208
 municipality	CPT	Male	80+	8539
 municipality	CPT	Female	80+	11836
+district	DC10	Male	10 - 14	69
+district	DC10	Male	15 - 17	138
+district	DC10	Male	18 - 19	378
+district	DC10	Male	20 - 29	11136
+district	DC10	Male	30 - 39	17745
+district	DC10	Male	40 - 49	18099
+district	DC10	Male	50 - 59	14403
+district	DC10	Male	60 - 69	8976
+district	DC10	Male	70 - 79	4833
+district	DC10	Male	80+	1536
+district	DC10	Female	10 - 14	66
+district	DC10	Female	15 - 17	93
+district	DC10	Female	18 - 19	207
+district	DC10	Female	20 - 29	5481
+district	DC10	Female	30 - 39	8256
+district	DC10	Female	40 - 49	10098
+district	DC10	Female	50 - 59	9612
+district	DC10	Female	60 - 69	7260
+district	DC10	Female	70 - 79	5010
+district	DC10	Female	80+	2232
+district	DC12	Male	10 - 14	306
+district	DC12	Male	15 - 17	1185
+district	DC12	Male	18 - 19	1863
+district	DC12	Male	20 - 29	13137
+district	DC12	Male	30 - 39	15957
+district	DC12	Male	40 - 49	19323
+district	DC12	Male	50 - 59	23790
+district	DC12	Male	60 - 69	19554
+district	DC12	Male	70 - 79	12045
+district	DC12	Male	80+	4632
+district	DC12	Female	10 - 14	267
+district	DC12	Female	15 - 17	840
+district	DC12	Female	18 - 19	1119
+district	DC12	Female	20 - 29	9591
+district	DC12	Female	30 - 39	15222
+district	DC12	Female	40 - 49	23739
+district	DC12	Female	50 - 59	25644
+district	DC12	Female	60 - 69	21429
+district	DC12	Female	70 - 79	18531
+district	DC12	Female	80+	9603
+district	DC13	Male	10 - 14	249
+district	DC13	Male	15 - 17	894
+district	DC13	Male	18 - 19	1473
+district	DC13	Male	20 - 29	13395
+district	DC13	Male	30 - 39	16515
+district	DC13	Male	40 - 49	18408
+district	DC13	Male	50 - 59	21015
+district	DC13	Male	60 - 69	16419
+district	DC13	Male	70 - 79	9867
+district	DC13	Male	80+	3837
+district	DC13	Female	10 - 14	216
+district	DC13	Female	15 - 17	639
+district	DC13	Female	18 - 19	927
+district	DC13	Female	20 - 29	9033
+district	DC13	Female	30 - 39	14256
+district	DC13	Female	40 - 49	20802
+district	DC13	Female	50 - 59	22461
+district	DC13	Female	60 - 69	18009
+district	DC13	Female	70 - 79	15144
+district	DC13	Female	80+	7293
+district	DC14	Male	10 - 14	108
+district	DC14	Male	15 - 17	570
+district	DC14	Male	18 - 19	1011
+district	DC14	Male	20 - 29	8286
+district	DC14	Male	30 - 39	9633
+district	DC14	Male	40 - 49	8709
+district	DC14	Male	50 - 59	8952
+district	DC14	Male	60 - 69	7017
+district	DC14	Male	70 - 79	3954
+district	DC14	Male	80+	1341
+district	DC14	Female	10 - 14	111
+district	DC14	Female	15 - 17	390
+district	DC14	Female	18 - 19	573
+district	DC14	Female	20 - 29	4962
+district	DC14	Female	30 - 39	6963
+district	DC14	Female	40 - 49	8718
+district	DC14	Female	50 - 59	9438
+district	DC14	Female	60 - 69	7677
+district	DC14	Female	70 - 79	6288
+district	DC14	Female	80+	3078
+district	DC15	Male	10 - 14	780
+district	DC15	Male	15 - 17	2094
+district	DC15	Male	18 - 19	2760
+district	DC15	Male	20 - 29	20550
+district	DC15	Male	30 - 39	22959
+district	DC15	Male	40 - 49	22458
+district	DC15	Male	50 - 59	23169
+district	DC15	Male	60 - 69	16578
+district	DC15	Male	70 - 79	10017
+district	DC15	Male	80+	4122
+district	DC15	Female	10 - 14	804
+district	DC15	Female	15 - 17	1920
+district	DC15	Female	18 - 19	2589
+district	DC15	Female	20 - 29	22635
+district	DC15	Female	30 - 39	31161
+district	DC15	Female	40 - 49	34047
+district	DC15	Female	50 - 59	29865
+district	DC15	Female	60 - 69	21810
+district	DC15	Female	70 - 79	18678
+district	DC15	Female	80+	9234
+district	DC44	Male	10 - 14	378
+district	DC44	Male	15 - 17	1377
+district	DC44	Male	18 - 19	1827
+district	DC44	Male	20 - 29	11556
+district	DC44	Male	30 - 39	12351
+district	DC44	Male	40 - 49	11781
+district	DC44	Male	50 - 59	12885
+district	DC44	Male	60 - 69	9999
+district	DC44	Male	70 - 79	5364
+district	DC44	Male	80+	2217
+district	DC44	Female	10 - 14	399
+district	DC44	Female	15 - 17	1008
+district	DC44	Female	18 - 19	1308
+district	DC44	Female	20 - 29	11544
+district	DC44	Female	30 - 39	16629
+district	DC44	Female	40 - 49	18615
+district	DC44	Female	50 - 59	17445
+district	DC44	Female	60 - 69	14772
+district	DC44	Female	70 - 79	11628
+district	DC44	Female	80+	6168
+district	DC16	Male	10 - 14	30
+district	DC16	Male	15 - 17	108
+district	DC16	Male	18 - 19	348
+district	DC16	Male	20 - 29	5250
+district	DC16	Male	30 - 39	6561
+district	DC16	Male	40 - 49	5775
+district	DC16	Male	50 - 59	4485
+district	DC16	Male	60 - 69	2997
+district	DC16	Male	70 - 79	1404
+district	DC16	Male	80+	444
+district	DC16	Female	10 - 14	33
+district	DC16	Female	15 - 17	81
+district	DC16	Female	18 - 19	153
+district	DC16	Female	20 - 29	2361
+district	DC16	Female	30 - 39	3303
+district	DC16	Female	40 - 49	3489
+district	DC16	Female	50 - 59	3270
+district	DC16	Female	60 - 69	2622
+district	DC16	Female	70 - 79	1848
+district	DC16	Female	80+	807
+district	DC18	Male	10 - 14	108
+district	DC18	Male	15 - 17	381
+district	DC18	Male	18 - 19	840
+district	DC18	Male	20 - 29	17793
+district	DC18	Male	30 - 39	25395
+district	DC18	Male	40 - 49	26541
+district	DC18	Male	50 - 59	21969
+district	DC18	Male	60 - 69	11172
+district	DC18	Male	70 - 79	4653
+district	DC18	Male	80+	1323
+district	DC18	Female	10 - 14	93
+district	DC18	Female	15 - 17	237
+district	DC18	Female	18 - 19	528
+district	DC18	Female	20 - 29	9129
+district	DC18	Female	30 - 39	13449
+district	DC18	Female	40 - 49	16518
+district	DC18	Female	50 - 59	15132
+district	DC18	Female	60 - 69	9537
+district	DC18	Female	70 - 79	6126
+district	DC18	Female	80+	2235
+district	DC19	Male	10 - 14	144
+district	DC19	Male	15 - 17	807
+district	DC19	Male	18 - 19	1512
+district	DC19	Male	20 - 29	20658
+district	DC19	Male	30 - 39	27954
+district	DC19	Male	40 - 49	25386
+district	DC19	Male	50 - 59	20334
+district	DC19	Male	60 - 69	12504
+district	DC19	Male	70 - 79	5415
+district	DC19	Male	80+	1959
+district	DC19	Female	10 - 14	123
+district	DC19	Female	15 - 17	489
+district	DC19	Female	18 - 19	990
+district	DC19	Female	20 - 29	12546
+district	DC19	Female	30 - 39	18330
+district	DC19	Female	40 - 49	21498
+district	DC19	Female	50 - 59	19584
+district	DC19	Female	60 - 69	13809
+district	DC19	Female	70 - 79	9312
+district	DC19	Female	80+	4527
+district	DC20	Male	10 - 14	84
+district	DC20	Male	15 - 17	279
+district	DC20	Male	18 - 19	603
+district	DC20	Male	20 - 29	14382
+district	DC20	Male	30 - 39	22059
+district	DC20	Male	40 - 49	19698
+district	DC20	Male	50 - 59	16191
+district	DC20	Male	60 - 69	9969
+district	DC20	Male	70 - 79	4281
+district	DC20	Male	80+	1410
+district	DC20	Female	10 - 14	60
+district	DC20	Female	15 - 17	210
+district	DC20	Female	18 - 19	384
+district	DC20	Female	20 - 29	6270
+district	DC20	Female	30 - 39	9801
+district	DC20	Female	40 - 49	11748
+district	DC20	Female	50 - 59	11022
+district	DC20	Female	60 - 69	8490
+district	DC20	Female	70 - 79	5598
+district	DC20	Female	80+	2445
+district	DC42	Male	10 - 14	117
+district	DC42	Male	15 - 17	312
+district	DC42	Male	18 - 19	1398
+district	DC42	Male	20 - 29	31515
+district	DC42	Male	30 - 39	47625
+district	DC42	Male	40 - 49	42132
+district	DC42	Male	50 - 59	33003
+district	DC42	Male	60 - 69	17868
+district	DC42	Male	70 - 79	6894
+district	DC42	Male	80+	1779
+district	DC42	Female	10 - 14	81
+district	DC42	Female	15 - 17	213
+district	DC42	Female	18 - 19	1389
+district	DC42	Female	20 - 29	13209
+district	DC42	Female	30 - 39	17607
+district	DC42	Female	40 - 49	21261
+district	DC42	Female	50 - 59	19935
+district	DC42	Female	60 - 69	13137
+district	DC42	Female	70 - 79	7557
+district	DC42	Female	80+	2739
+district	DC48	Male	10 - 14	123
+district	DC48	Male	15 - 17	348
+district	DC48	Male	18 - 19	960
+district	DC48	Male	20 - 29	35940
+district	DC48	Male	30 - 39	51990
+district	DC48	Male	40 - 49	45105
+district	DC48	Male	50 - 59	31254
+district	DC48	Male	60 - 69	12633
+district	DC48	Male	70 - 79	4695
+district	DC48	Male	80+	1275
+district	DC48	Female	10 - 14	102
+district	DC48	Female	15 - 17	183
+district	DC48	Female	18 - 19	516
+district	DC48	Female	20 - 29	12621
+district	DC48	Female	30 - 39	18972
+district	DC48	Female	40 - 49	20406
+district	DC48	Female	50 - 59	15759
+district	DC48	Female	60 - 69	8223
+district	DC48	Female	70 - 79	4488
+district	DC48	Female	80+	1806
+district	DC21	Male	10 - 14	351
+district	DC21	Male	15 - 17	597
+district	DC21	Male	18 - 19	1077
+district	DC21	Male	20 - 29	13812
+district	DC21	Male	30 - 39	17451
+district	DC21	Male	40 - 49	17646
+district	DC21	Male	50 - 59	16110
+district	DC21	Male	60 - 69	12651
+district	DC21	Male	70 - 79	6633
+district	DC21	Male	80+	2424
+district	DC21	Female	10 - 14	297
+district	DC21	Female	15 - 17	459
+district	DC21	Female	18 - 19	714
+district	DC21	Female	20 - 29	10089
+district	DC21	Female	30 - 39	14193
+district	DC21	Female	40 - 49	18261
+district	DC21	Female	50 - 59	16593
+district	DC21	Female	60 - 69	14142
+district	DC21	Female	70 - 79	10533
+district	DC21	Female	80+	5403
+district	DC22	Male	10 - 14	327
+district	DC22	Male	15 - 17	615
+district	DC22	Male	18 - 19	1443
+district	DC22	Male	20 - 29	26922
+district	DC22	Male	30 - 39	37086
+district	DC22	Male	40 - 49	31479
+district	DC22	Male	50 - 59	24222
+district	DC22	Male	60 - 69	15993
+district	DC22	Male	70 - 79	6933
+district	DC22	Male	80+	2583
+district	DC22	Female	10 - 14	312
+district	DC22	Female	15 - 17	501
+district	DC22	Female	18 - 19	1218
+district	DC22	Female	20 - 29	17322
+district	DC22	Female	30 - 39	22668
+district	DC22	Female	40 - 49	24834
+district	DC22	Female	50 - 59	23130
+district	DC22	Female	60 - 69	17799
+district	DC22	Female	70 - 79	11154
+district	DC22	Female	80+	6123
+district	DC23	Male	10 - 14	351
+district	DC23	Male	15 - 17	600
+district	DC23	Male	18 - 19	870
+district	DC23	Male	20 - 29	10566
+district	DC23	Male	30 - 39	15585
+district	DC23	Male	40 - 49	15084
+district	DC23	Male	50 - 59	13275
+district	DC23	Male	60 - 69	8556
+district	DC23	Male	70 - 79	3624
+district	DC23	Male	80+	1254
+district	DC23	Female	10 - 14	375
+district	DC23	Female	15 - 17	333
+district	DC23	Female	18 - 19	537
+district	DC23	Female	20 - 29	8511
+district	DC23	Female	30 - 39	12735
+district	DC23	Female	40 - 49	15795
+district	DC23	Female	50 - 59	15366
+district	DC23	Female	60 - 69	12369
+district	DC23	Female	70 - 79	7551
+district	DC23	Female	80+	3948
+district	DC27	Male	10 - 14	519
+district	DC27	Male	15 - 17	534
+district	DC27	Male	18 - 19	879
+district	DC27	Male	20 - 29	9549
+district	DC27	Male	30 - 39	13182
+district	DC27	Male	40 - 49	12867
+district	DC27	Male	50 - 59	10152
+district	DC27	Male	60 - 69	6150
+district	DC27	Male	70 - 79	3471
+district	DC27	Male	80+	1791
+district	DC27	Female	10 - 14	519
+district	DC27	Female	15 - 17	459
+district	DC27	Female	18 - 19	633
+district	DC27	Female	20 - 29	9135
+district	DC27	Female	30 - 39	13422
+district	DC27	Female	40 - 49	14958
+district	DC27	Female	50 - 59	11805
+district	DC27	Female	60 - 69	7746
+district	DC27	Female	70 - 79	6489
+district	DC27	Female	80+	3936
+district	DC28	Male	10 - 14	579
+district	DC28	Male	15 - 17	555
+district	DC28	Male	18 - 19	1131
+district	DC28	Male	20 - 29	18339
+district	DC28	Male	30 - 39	25245
+district	DC28	Male	40 - 49	21798
+district	DC28	Male	50 - 59	18570
+district	DC28	Male	60 - 69	11106
+district	DC28	Male	70 - 79	4461
+district	DC28	Male	80+	1887
+district	DC28	Female	10 - 14	546
+district	DC28	Female	15 - 17	423
+district	DC28	Female	18 - 19	1140
+district	DC28	Female	20 - 29	13833
+district	DC28	Female	30 - 39	16926
+district	DC28	Female	40 - 49	19590
+district	DC28	Female	50 - 59	18246
+district	DC28	Female	60 - 69	13386
+district	DC28	Female	70 - 79	9690
+district	DC28	Female	80+	5520
+district	DC43	Male	10 - 14	192
+district	DC43	Male	15 - 17	657
+district	DC43	Male	18 - 19	909
+district	DC43	Male	20 - 29	9228
+district	DC43	Male	30 - 39	11181
+district	DC43	Male	40 - 49	9717
+district	DC43	Male	50 - 59	8877
+district	DC43	Male	60 - 69	6141
+district	DC43	Male	70 - 79	2508
+district	DC43	Male	80+	939
+district	DC43	Female	10 - 14	183
+district	DC43	Female	15 - 17	492
+district	DC43	Female	18 - 19	720
+district	DC43	Female	20 - 29	8187
+district	DC43	Female	30 - 39	10860
+district	DC43	Female	40 - 49	12648
+district	DC43	Female	50 - 59	11121
+district	DC43	Female	60 - 69	8751
+district	DC43	Female	70 - 79	5853
+district	DC43	Female	80+	3114
+district	DC24	Male	10 - 14	249
+district	DC24	Male	15 - 17	516
+district	DC24	Male	18 - 19	669
+district	DC24	Male	20 - 29	7089
+district	DC24	Male	30 - 39	9582
+district	DC24	Male	40 - 49	9612
+district	DC24	Male	50 - 59	8613
+district	DC24	Male	60 - 69	6453
+district	DC24	Male	70 - 79	2634
+district	DC24	Male	80+	1068
+district	DC24	Female	10 - 14	258
+district	DC24	Female	15 - 17	465
+district	DC24	Female	18 - 19	660
+district	DC24	Female	20 - 29	8010
+district	DC24	Female	30 - 39	10944
+district	DC24	Female	40 - 49	13251
+district	DC24	Female	50 - 59	12201
+district	DC24	Female	60 - 69	10155
+district	DC24	Female	70 - 79	6621
+district	DC24	Female	80+	4419
+district	DC25	Male	10 - 14	285
+district	DC25	Male	15 - 17	390
+district	DC25	Male	18 - 19	756
+district	DC25	Male	20 - 29	9087
+district	DC25	Male	30 - 39	12624
+district	DC25	Male	40 - 49	12030
+district	DC25	Male	50 - 59	11790
+district	DC25	Male	60 - 69	7287
+district	DC25	Male	70 - 79	2922
+district	DC25	Male	80+	963
+district	DC25	Female	10 - 14	213
+district	DC25	Female	15 - 17	240
+district	DC25	Female	18 - 19	408
+district	DC25	Female	20 - 29	5790
+district	DC25	Female	30 - 39	8658
+district	DC25	Female	40 - 49	10779
+district	DC25	Female	50 - 59	11316
+district	DC25	Female	60 - 69	8229
+district	DC25	Female	70 - 79	5043
+district	DC25	Female	80+	2151
+district	DC26	Male	10 - 14	600
+district	DC26	Male	15 - 17	690
+district	DC26	Male	18 - 19	1044
+district	DC26	Male	20 - 29	11877
+district	DC26	Male	30 - 39	14274
+district	DC26	Male	40 - 49	14298
+district	DC26	Male	50 - 59	14106
+district	DC26	Male	60 - 69	9021
+district	DC26	Male	70 - 79	4470
+district	DC26	Male	80+	1818
+district	DC26	Female	10 - 14	564
+district	DC26	Female	15 - 17	459
+district	DC26	Female	18 - 19	732
+district	DC26	Female	20 - 29	9753
+district	DC26	Female	30 - 39	14046
+district	DC26	Female	40 - 49	17568
+district	DC26	Female	50 - 59	16680
+district	DC26	Female	60 - 69	11469
+district	DC26	Female	70 - 79	8934
+district	DC26	Female	80+	5337
+district	DC29	Male	10 - 14	342
+district	DC29	Male	15 - 17	438
+district	DC29	Male	18 - 19	984
+district	DC29	Male	20 - 29	18669
+district	DC29	Male	30 - 39	21765
+district	DC29	Male	40 - 49	16530
+district	DC29	Male	50 - 59	12771
+district	DC29	Male	60 - 69	8919
+district	DC29	Male	70 - 79	3702
+district	DC29	Male	80+	1353
+district	DC29	Female	10 - 14	273
+district	DC29	Female	15 - 17	300
+district	DC29	Female	18 - 19	564
+district	DC29	Female	20 - 29	9825
+district	DC29	Female	30 - 39	13320
+district	DC29	Female	40 - 49	14409
+district	DC29	Female	50 - 59	12591
+district	DC29	Female	60 - 69	10527
+district	DC29	Female	70 - 79	6654
+district	DC29	Female	80+	3753
+district	DC33	Male	10 - 14	588
+district	DC33	Male	15 - 17	2274
+district	DC33	Male	18 - 19	3642
+district	DC33	Male	20 - 29	25980
+district	DC33	Male	30 - 39	31863
+district	DC33	Male	40 - 49	30627
+district	DC33	Male	50 - 59	23835
+district	DC33	Male	60 - 69	15636
+district	DC33	Male	70 - 79	7959
+district	DC33	Male	80+	3033
+district	DC33	Female	10 - 14	636
+district	DC33	Female	15 - 17	1968
+district	DC33	Female	18 - 19	2334
+district	DC33	Female	20 - 29	18540
+district	DC33	Female	30 - 39	29847
+district	DC33	Female	40 - 49	33285
+district	DC33	Female	50 - 59	25290
+district	DC33	Female	60 - 69	16857
+district	DC33	Female	70 - 79	14352
+district	DC33	Female	80+	7770
+district	DC34	Male	10 - 14	585
+district	DC34	Male	15 - 17	2523
+district	DC34	Male	18 - 19	3726
+district	DC34	Male	20 - 29	26928
+district	DC34	Male	30 - 39	33552
+district	DC34	Male	40 - 49	34494
+district	DC34	Male	50 - 59	25596
+district	DC34	Male	60 - 69	16746
+district	DC34	Male	70 - 79	9717
+district	DC34	Male	80+	5022
+district	DC34	Female	10 - 14	639
+district	DC34	Female	15 - 17	1950
+district	DC34	Female	18 - 19	2442
+district	DC34	Female	20 - 29	20202
+district	DC34	Female	30 - 39	34536
+district	DC34	Female	40 - 49	37170
+district	DC34	Female	50 - 59	30447
+district	DC34	Female	60 - 69	20103
+district	DC34	Female	70 - 79	16860
+district	DC34	Female	80+	12039
+district	DC35	Male	10 - 14	462
+district	DC35	Male	15 - 17	1668
+district	DC35	Male	18 - 19	3384
+district	DC35	Male	20 - 29	30075
+district	DC35	Male	30 - 39	34767
+district	DC35	Male	40 - 49	35271
+district	DC35	Male	50 - 59	29076
+district	DC35	Male	60 - 69	20784
+district	DC35	Male	70 - 79	11460
+district	DC35	Male	80+	4647
+district	DC35	Female	10 - 14	414
+district	DC35	Female	15 - 17	1269
+district	DC35	Female	18 - 19	3021
+district	DC35	Female	20 - 29	21108
+district	DC35	Female	30 - 39	27873
+district	DC35	Female	40 - 49	34635
+district	DC35	Female	50 - 59	28446
+district	DC35	Female	60 - 69	23277
+district	DC35	Female	70 - 79	19092
+district	DC35	Female	80+	12105
+district	DC36	Male	10 - 14	180
+district	DC36	Male	15 - 17	714
+district	DC36	Male	18 - 19	1395
+district	DC36	Male	20 - 29	20268
+district	DC36	Male	30 - 39	24690
+district	DC36	Male	40 - 49	21147
+district	DC36	Male	50 - 59	16557
+district	DC36	Male	60 - 69	10188
+district	DC36	Male	70 - 79	5748
+district	DC36	Male	80+	2181
+district	DC36	Female	10 - 14	180
+district	DC36	Female	15 - 17	663
+district	DC36	Female	18 - 19	990
+district	DC36	Female	20 - 29	10725
+district	DC36	Female	30 - 39	14766
+district	DC36	Female	40 - 49	15723
+district	DC36	Female	50 - 59	12654
+district	DC36	Female	60 - 69	9282
+district	DC36	Female	70 - 79	7713
+district	DC36	Female	80+	4110
+district	DC47	Male	10 - 14	420
+district	DC47	Male	15 - 17	1149
+district	DC47	Male	18 - 19	1938
+district	DC47	Male	20 - 29	18474
+district	DC47	Male	30 - 39	25062
+district	DC47	Male	40 - 49	25575
+district	DC47	Male	50 - 59	22224
+district	DC47	Male	60 - 69	15816
+district	DC47	Male	70 - 79	9447
+district	DC47	Male	80+	4104
+district	DC47	Female	10 - 14	426
+district	DC47	Female	15 - 17	951
+district	DC47	Female	18 - 19	1545
+district	DC47	Female	20 - 29	14211
+district	DC47	Female	30 - 39	22608
+district	DC47	Female	40 - 49	28626
+district	DC47	Female	50 - 59	24042
+district	DC47	Female	60 - 69	21813
+district	DC47	Female	70 - 79	15381
+district	DC47	Female	80+	9990
+district	DC30	Male	10 - 14	315
+district	DC30	Male	15 - 17	810
+district	DC30	Male	18 - 19	1614
+district	DC30	Male	20 - 29	33633
+district	DC30	Male	30 - 39	42975
+district	DC30	Male	40 - 49	36507
+district	DC30	Male	50 - 59	28902
+district	DC30	Male	60 - 69	14532
+district	DC30	Male	70 - 79	5778
+district	DC30	Male	80+	2214
+district	DC30	Female	10 - 14	291
+district	DC30	Female	15 - 17	477
+district	DC30	Female	18 - 19	873
+district	DC30	Female	20 - 29	14547
+district	DC30	Female	30 - 39	20730
+district	DC30	Female	40 - 49	23979
+district	DC30	Female	50 - 59	20232
+district	DC30	Female	60 - 69	12867
+district	DC30	Female	70 - 79	8247
+district	DC30	Female	80+	3966
+district	DC31	Male	10 - 14	330
+district	DC31	Male	15 - 17	783
+district	DC31	Male	18 - 19	1713
+district	DC31	Male	20 - 29	41433
+district	DC31	Male	30 - 39	56340
+district	DC31	Male	40 - 49	51693
+district	DC31	Male	50 - 59	42042
+district	DC31	Male	60 - 69	21720
+district	DC31	Male	70 - 79	8268
+district	DC31	Male	80+	3360
+district	DC31	Female	10 - 14	309
+district	DC31	Female	15 - 17	594
+district	DC31	Female	18 - 19	1113
+district	DC31	Female	20 - 29	16305
+district	DC31	Female	30 - 39	22686
+district	DC31	Female	40 - 49	27396
+district	DC31	Female	50 - 59	24864
+district	DC31	Female	60 - 69	17709
+district	DC31	Female	70 - 79	11490
+district	DC31	Female	80+	6777
+district	DC32	Male	10 - 14	723
+district	DC32	Male	15 - 17	2427
+district	DC32	Male	18 - 19	3738
+district	DC32	Male	20 - 29	49566
+district	DC32	Male	30 - 39	65484
+district	DC32	Male	40 - 49	54030
+district	DC32	Male	50 - 59	35832
+district	DC32	Male	60 - 69	21069
+district	DC32	Male	70 - 79	10872
+district	DC32	Male	80+	5082
+district	DC32	Female	10 - 14	642
+district	DC32	Female	15 - 17	1614
+district	DC32	Female	18 - 19	2220
+district	DC32	Female	20 - 29	28155
+district	DC32	Female	30 - 39	43392
+district	DC32	Female	40 - 49	43776
+district	DC32	Female	50 - 59	31578
+district	DC32	Female	60 - 69	20187
+district	DC32	Female	70 - 79	15558
+district	DC32	Female	80+	9141
+district	DC37	Male	10 - 14	291
+district	DC37	Male	15 - 17	984
+district	DC37	Male	18 - 19	2238
+district	DC37	Male	20 - 29	66699
+district	DC37	Male	30 - 39	95154
+district	DC37	Male	40 - 49	75831
+district	DC37	Male	50 - 59	55599
+district	DC37	Male	60 - 69	27273
+district	DC37	Male	70 - 79	11892
+district	DC37	Male	80+	4506
+district	DC37	Female	10 - 14	273
+district	DC37	Female	15 - 17	567
+district	DC37	Female	18 - 19	1116
+district	DC37	Female	20 - 29	21414
+district	DC37	Female	30 - 39	30399
+district	DC37	Female	40 - 49	32130
+district	DC37	Female	50 - 59	28902
+district	DC37	Female	60 - 69	22170
+district	DC37	Female	70 - 79	15795
+district	DC37	Female	80+	8463
+district	DC38	Male	10 - 14	246
+district	DC38	Male	15 - 17	654
+district	DC38	Male	18 - 19	1392
+district	DC38	Male	20 - 29	19422
+district	DC38	Male	30 - 39	28260
+district	DC38	Male	40 - 49	29235
+district	DC38	Male	50 - 59	25038
+district	DC38	Male	60 - 69	15741
+district	DC38	Male	70 - 79	7614
+district	DC38	Male	80+	2868
+district	DC38	Female	10 - 14	252
+district	DC38	Female	15 - 17	426
+district	DC38	Female	18 - 19	1029
+district	DC38	Female	20 - 29	10575
+district	DC38	Female	30 - 39	16830
+district	DC38	Female	40 - 49	20628
+district	DC38	Female	50 - 59	18573
+district	DC38	Female	60 - 69	13713
+district	DC38	Female	70 - 79	9435
+district	DC38	Female	80+	5070
+district	DC39	Male	10 - 14	171
+district	DC39	Male	15 - 17	510
+district	DC39	Male	18 - 19	963
+district	DC39	Male	20 - 29	10458
+district	DC39	Male	30 - 39	14703
+district	DC39	Male	40 - 49	14823
+district	DC39	Male	50 - 59	13722
+district	DC39	Male	60 - 69	9561
+district	DC39	Male	70 - 79	4467
+district	DC39	Male	80+	1662
+district	DC39	Female	10 - 14	126
+district	DC39	Female	15 - 17	309
+district	DC39	Female	18 - 19	447
+district	DC39	Female	20 - 29	5655
+district	DC39	Female	30 - 39	9426
+district	DC39	Female	40 - 49	11514
+district	DC39	Female	50 - 59	10377
+district	DC39	Female	60 - 69	7947
+district	DC39	Female	70 - 79	5511
+district	DC39	Female	80+	2919
+district	DC40	Male	10 - 14	174
+district	DC40	Male	15 - 17	366
+district	DC40	Male	18 - 19	1206
+district	DC40	Male	20 - 29	22473
+district	DC40	Male	30 - 39	32046
+district	DC40	Male	40 - 49	31260
+district	DC40	Male	50 - 59	23874
+district	DC40	Male	60 - 69	12996
+district	DC40	Male	70 - 79	5757
+district	DC40	Male	80+	1806
+district	DC40	Female	10 - 14	147
+district	DC40	Female	15 - 17	213
+district	DC40	Female	18 - 19	1047
+district	DC40	Female	20 - 29	11064
+district	DC40	Female	30 - 39	14343
+district	DC40	Female	40 - 49	16944
+district	DC40	Female	50 - 59	14598
+district	DC40	Female	60 - 69	9615
+district	DC40	Female	70 - 79	5787
+district	DC40	Female	80+	2325
+district	DC6	Male	10 - 14	15
+district	DC6	Male	15 - 17	24
+district	DC6	Male	18 - 19	81
+district	DC6	Male	20 - 29	2259
+district	DC6	Male	30 - 39	4116
+district	DC6	Male	40 - 49	5307
+district	DC6	Male	50 - 59	4749
+district	DC6	Male	60 - 69	3102
+district	DC6	Male	70 - 79	1431
+district	DC6	Male	80+	387
+district	DC6	Female	10 - 14	12
+district	DC6	Female	15 - 17	18
+district	DC6	Female	18 - 19	45
+district	DC6	Female	20 - 29	1173
+district	DC6	Female	30 - 39	2115
+district	DC6	Female	40 - 49	2829
+district	DC6	Female	50 - 59	2400
+district	DC6	Female	60 - 69	1971
+district	DC6	Female	70 - 79	1281
+district	DC6	Female	80+	540
+district	DC7	Male	10 - 14	60
+district	DC7	Male	15 - 17	84
+district	DC7	Male	18 - 19	237
+district	DC7	Male	20 - 29	4680
+district	DC7	Male	30 - 39	7080
+district	DC7	Male	40 - 49	7260
+district	DC7	Male	50 - 59	5862
+district	DC7	Male	60 - 69	3771
+district	DC7	Male	70 - 79	1593
+district	DC7	Male	80+	438
+district	DC7	Female	10 - 14	66
+district	DC7	Female	15 - 17	69
+district	DC7	Female	18 - 19	102
+district	DC7	Female	20 - 29	1869
+district	DC7	Female	30 - 39	3042
+district	DC7	Female	40 - 49	3789
+district	DC7	Female	50 - 59	3798
+district	DC7	Female	60 - 69	2862
+district	DC7	Female	70 - 79	1815
+district	DC7	Female	80+	711
+district	DC8	Male	10 - 14	54
+district	DC8	Male	15 - 17	96
+district	DC8	Male	18 - 19	357
+district	DC8	Male	20 - 29	6759
+district	DC8	Male	30 - 39	9942
+district	DC8	Male	40 - 49	9096
+district	DC8	Male	50 - 59	6897
+district	DC8	Male	60 - 69	3792
+district	DC8	Male	70 - 79	1803
+district	DC8	Male	80+	510
+district	DC8	Female	10 - 14	48
+district	DC8	Female	15 - 17	57
+district	DC8	Female	18 - 19	150
+district	DC8	Female	20 - 29	3006
+district	DC8	Female	30 - 39	4146
+district	DC8	Female	40 - 49	4764
+district	DC8	Female	50 - 59	3990
+district	DC8	Female	60 - 69	3000
+district	DC8	Female	70 - 79	1878
+district	DC8	Female	80+	750
+district	DC9	Male	10 - 14	54
+district	DC9	Male	15 - 17	108
+district	DC9	Male	18 - 19	306
+district	DC9	Male	20 - 29	7884
+district	DC9	Male	30 - 39	14283
+district	DC9	Male	40 - 49	13758
+district	DC9	Male	50 - 59	11127
+district	DC9	Male	60 - 69	6426
+district	DC9	Male	70 - 79	2913
+district	DC9	Male	80+	906
+district	DC9	Female	10 - 14	66
+district	DC9	Female	15 - 17	60
+district	DC9	Female	18 - 19	162
+district	DC9	Female	20 - 29	3885
+district	DC9	Female	30 - 39	7014
+district	DC9	Female	40 - 49	8301
+district	DC9	Female	50 - 59	7824
+district	DC9	Female	60 - 69	5733
+district	DC9	Female	70 - 79	3597
+district	DC9	Female	80+	1527
+district	DC45	Male	10 - 14	54
+district	DC45	Male	15 - 17	228
+district	DC45	Male	18 - 19	345
+district	DC45	Male	20 - 29	5760
+district	DC45	Male	30 - 39	8781
+district	DC45	Male	40 - 49	7476
+district	DC45	Male	50 - 59	6423
+district	DC45	Male	60 - 69	3690
+district	DC45	Male	70 - 79	1515
+district	DC45	Male	80+	597
+district	DC45	Female	10 - 14	60
+district	DC45	Female	15 - 17	147
+district	DC45	Female	18 - 19	222
+district	DC45	Female	20 - 29	3138
+district	DC45	Female	30 - 39	5331
+district	DC45	Female	40 - 49	5553
+district	DC45	Female	50 - 59	5118
+district	DC45	Female	60 - 69	3555
+district	DC45	Female	70 - 79	2268
+district	DC45	Female	80+	1071
+district	DC1	Male	10 - 14	36
+district	DC1	Male	15 - 17	96
+district	DC1	Male	18 - 19	342
+district	DC1	Male	20 - 29	10893
+district	DC1	Male	30 - 39	17373
+district	DC1	Male	40 - 49	18639
+district	DC1	Male	50 - 59	14130
+district	DC1	Male	60 - 69	8355
+district	DC1	Male	70 - 79	3762
+district	DC1	Male	80+	918
+district	DC1	Female	10 - 14	36
+district	DC1	Female	15 - 17	57
+district	DC1	Female	18 - 19	183
+district	DC1	Female	20 - 29	4347
+district	DC1	Female	30 - 39	6315
+district	DC1	Female	40 - 49	7275
+district	DC1	Female	50 - 59	5841
+district	DC1	Female	60 - 69	4299
+district	DC1	Female	70 - 79	2793
+district	DC1	Female	80+	1092
+district	DC2	Male	10 - 14	78
+district	DC2	Male	15 - 17	141
+district	DC2	Male	18 - 19	822
+district	DC2	Male	20 - 29	20511
+district	DC2	Male	30 - 39	31452
+district	DC2	Male	40 - 49	33522
+district	DC2	Male	50 - 59	24642
+district	DC2	Male	60 - 69	13845
+district	DC2	Male	70 - 79	5700
+district	DC2	Male	80+	1671
+district	DC2	Female	10 - 14	81
+district	DC2	Female	15 - 17	96
+district	DC2	Female	18 - 19	567
+district	DC2	Female	20 - 29	9864
+district	DC2	Female	30 - 39	12111
+district	DC2	Female	40 - 49	14919
+district	DC2	Female	50 - 59	12741
+district	DC2	Female	60 - 69	8202
+district	DC2	Female	70 - 79	5196
+district	DC2	Female	80+	2109
+district	DC3	Male	10 - 14	30
+district	DC3	Male	15 - 17	51
+district	DC3	Male	18 - 19	222
+district	DC3	Male	20 - 29	7956
+district	DC3	Male	30 - 39	12228
+district	DC3	Male	40 - 49	11850
+district	DC3	Male	50 - 59	9090
+district	DC3	Male	60 - 69	7095
+district	DC3	Male	70 - 79	3915
+district	DC3	Male	80+	1026
+district	DC3	Female	10 - 14	21
+district	DC3	Female	15 - 17	45
+district	DC3	Female	18 - 19	126
+district	DC3	Female	20 - 29	3348
+district	DC3	Female	30 - 39	4632
+district	DC3	Female	40 - 49	4635
+district	DC3	Female	50 - 59	3897
+district	DC3	Female	60 - 69	3411
+district	DC3	Female	70 - 79	2529
+district	DC3	Female	80+	1098
+district	DC4	Male	10 - 14	72
+district	DC4	Male	15 - 17	138
+district	DC4	Male	18 - 19	315
+district	DC4	Male	20 - 29	14007
+district	DC4	Male	30 - 39	24525
+district	DC4	Male	40 - 49	25215
+district	DC4	Male	50 - 59	19644
+district	DC4	Male	60 - 69	14487
+district	DC4	Male	70 - 79	7842
+district	DC4	Male	80+	2193
+district	DC4	Female	10 - 14	81
+district	DC4	Female	15 - 17	75
+district	DC4	Female	18 - 19	195
+district	DC4	Female	20 - 29	6513
+district	DC4	Female	30 - 39	10440
+district	DC4	Female	40 - 49	12063
+district	DC4	Female	50 - 59	10584
+district	DC4	Female	60 - 69	7956
+district	DC4	Female	70 - 79	5289
+district	DC4	Female	80+	2484
+district	DC5	Male	10 - 14	15
+district	DC5	Male	15 - 17	30
+district	DC5	Male	18 - 19	60
+district	DC5	Male	20 - 29	1551
+district	DC5	Male	30 - 39	2538
+district	DC5	Male	40 - 49	2868
+district	DC5	Male	50 - 59	2403
+district	DC5	Male	60 - 69	1437
+district	DC5	Male	70 - 79	705
+district	DC5	Male	80+	183
+district	DC5	Female	10 - 14	12
+district	DC5	Female	15 - 17	15
+district	DC5	Female	18 - 19	33
+district	DC5	Female	20 - 29	768
+district	DC5	Female	30 - 39	1377
+district	DC5	Female	40 - 49	1656
+district	DC5	Female	50 - 59	1446
+district	DC5	Female	60 - 69	1053
+district	DC5	Female	70 - 79	663
+district	DC5	Female	80+	255
 \.
 
 
