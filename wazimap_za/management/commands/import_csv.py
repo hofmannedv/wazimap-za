@@ -1,14 +1,12 @@
-import argparse
-import os
-import sys
-
 import csv
 import re
 
-sys.path.append(os.path.dirname(__file__) + "/../")
+from django.core.management.base import BaseCommand, CommandError
 
-from api.models import get_model_from_fields, Base, Province
-from api.utils import get_session, _engine
+# from api.models import get_model_from_fields, Base, Province
+from wazimap.data.utils import get_session
+from wazimap.data.tables import get_datatable, get_table_id
+
 
 import logging
 
@@ -24,16 +22,39 @@ tables as necessary.
 muni_re = re.compile('^[A-Z]{3}: .*')
 
 
-class SuperImporter(object):
-    def __init__(self, filepath):
-        self.filepath = filepath
-        self.includes_total = False
-        self.table_name = None
+class Command(BaseCommand):
+    help = ("Imports data from a SuperWEB- or SuperCROSS-generated CSV file. " +
+            "The database table is automatically created from the fields in " +
+            "the file headers.")
 
-    def run(self):
-        with open(filepath) as f:
+    def add_arguments(self, parser):
+        parser.add_argument(
+            'filepath',
+            action='store',
+            help='the file path to a SuperCROSS or SuperWEB CSV export'
+        )
+        parser.add_argument(
+            '--tablename',
+            action='store',
+            dest='tablename',
+            default=None,
+            help='the name of the database table where the imported data will be stored. '
+                 'If not provided, it is generated from the field names'
+        )
+
+    def debug(self, msg):
+        if self.verbosity >= 2:
+            self.stdout.write(str(msg))
+
+    def handle(self, *args, **options):
+        self.filepath = options['filepath']
+        self.includes_total = False
+        self.verbosity = options.get('verbosity', 1)
+
+        with open(self.filepath) as f:
             self.f = f
             self.read_headers()
+            self.setup_table()
             self.store_values()
 
     def read_headers(self):
@@ -96,7 +117,7 @@ class SuperImporter(object):
                 break
         self.categories = zip(*cat_headers)
 
-    def read_superweb_headers(self, filepath):
+    def read_superweb_headers(self):
         '''
         Return fields and categories for this superweb export.
 
@@ -105,23 +126,35 @@ class SuperImporter(object):
 
         Example headers:
 
-        "Descriptive"
-        "Counting: Person weighted"
-        "Layer: "
-        "Geography by Gender "
-        "Filters: "
+        SuperWEB2(tm)
 
-        "Gender","Male","Female",
+        "Descriptive"
+        "Geography by Gender"
+        "Counting: Person weighted"
+
+        Filters:
+        "Default Summation","Person weighted"
+
+        "Gender","Male","Female","Total",
         "Geography",
-        "Eastern Cape","3,089,701","3,472,353",
+        "DC10: Cacadu",220246.1536,230338.07636,450584.2299599,
+        "DC12: Amathole",419247.3653695,473389.2876894,892636.653059,
         ...
 
         '''
         self.reader = csv.reader(self.f, delimiter=",")
         # skip headers
         for row in self.reader:
-            if len(row) == 0:
+            if row == ['Filters:']:
                 break
+
+        # skip filter rows
+        if row == ['Filters:']:
+            for row in self.reader:
+                if len(row) == 0:
+                    break
+        else:
+            raise ValueError("Couldn't find Filters header")
 
         fields = []
         categories = None
@@ -180,52 +213,38 @@ class SuperImporter(object):
             else:
                 yield geo_name, row[1:]
 
+    def setup_table(self):
+        table_id = get_table_id(self.fields)
+        try:
+            self.table = get_datatable(table_id)
+            self.stdout.write("Table for fields %s is %s" % (self.fields, self.table.id))
+        except KeyError:
+            raise CommandError("Couldn't establish which table to use for these fields. Have you added a FieldTable entry in wazimap_za/tables.py?\nFields: %s" % self.fields)
+
     def store_values(self):
         session = get_session()
-        province_codes = dict((p.name, p.code) for p in session.query(Province))
-        session.commit()
-
-        # cache of the db models for each geo level
-        models = {}
         count = 0
 
         for geo_name, values in self.read_rows():
             count += 1
-            geo_level = self.determine_level(geo_name)
+            geo_level, geo_code = self.determine_geo_id(geo_name)
 
-            print geo_level, geo_name
-
-            if geo_level == 'province':
-                code = province_codes[geo_name]
-            elif geo_level == 'country':
-                code = 'ZA'
-            else:
-                code = geo_name.split(':')[0]
-            base_kwargs = {'%s_code' % geo_level: code}
-
-            # get db model and create table if necessary
-            if geo_level in models:
-                db_model = models[geo_level]
-            else:
-                if self.table_name:
-                    table_name = self.table_name + '_' + geo_level
-                else:
-                    table_name = None
-
-                models[geo_level] = db_model = get_model_from_fields(self.fields, geo_level, table_name)
-                Base.metadata.create_all(_engine, tables=[db_model.__table__])
+            self.stdout.write("%s-%s" % (geo_level, geo_code))
 
             for category, value in zip(self.categories, values):
                 # prepare the dict of args to pass to the db model for this row
-                kwargs = base_kwargs.copy()
-                if value.strip() == '-':
-                    value = '0'
+                kwargs = {
+                    'geo_level': geo_level,
+                    'geo_code': geo_code,
+                }
 
                 kwargs.update(dict((f, v) for f, v in zip(self.fields, category)))
-                kwargs['total'] = int(value.replace(',', ''))
+                kwargs['total'] = round(float(value.replace(',', '')))
 
                 # create and add the row
-                session.add(db_model(**kwargs))
+                self.debug(kwargs)
+                entry = self.table.get_model(geo_level)(**kwargs)
+                session.add(entry)
 
             if count % 100 == 0:
                 session.flush()
@@ -233,50 +252,25 @@ class SuperImporter(object):
         session.commit()
         session.close()
 
-    def determine_level(self, geo_name):
+    def determine_geo_id(self, geo_name):
+        """ Return a [geo_level, geo_code] tuple.
+        """
         if geo_name == "":
-            return 'country'
-        elif len(geo_name.split(':')[0]) in (5, 6) or muni_re.match(geo_name):
-            return 'municipality'
+            return ['country', 'ZA']
+
+        pre, code = geo_name.split(':', 1)
+        level = None
+
+        if len(pre) in (5, 6) or muni_re.match(geo_name):
+            level = 'municipality'
         elif 'Ward' in geo_name:
-            return 'ward'
-        elif len(geo_name.split(':')[0]) >= 7:
-            return 'province'
+            level = 'ward'
+        elif len(pre) >= 7:
+            level = 'province'
         elif geo_name.startswith('DC'):
-            return 'district'
+            level = 'district'
+            code = pre.strip()
         else:
             raise ValueError("Cannot recognize the geo level of %s" % geo_name)
 
-
-def create_arg_parser():
-    parser = argparse.ArgumentParser(
-        description='Imports data from a SuperWEB- or SuperCROSS-generated CSV file. '
-                    'The database table is automatically created from the fields in '
-                    'the file headers.'
-    )
-    parser.add_argument(
-        'filepath',
-        action='store',
-        help='the file path to a SuperCROSS or SuperWEB CSV export'
-    )
-    parser.add_argument(
-        '--tablename',
-        action='store',
-        dest='tablename',
-        default=None,
-        help='the name of the database table where the imported data will be stored. '
-             'If not provided, it is generated from the field names'
-    )
-    return parser
-
-
-if __name__ == '__main__':
-    args = create_arg_parser().parse_args()
-
-    filepath = args.filepath
-    if not os.path.isabs(filepath):
-        filepath = os.path.join(os.getcwd(), filepath)
-
-    importer = SuperImporter(filepath)
-    importer.table_name = args.tablename
-    importer.run()
+        return [level, code]
