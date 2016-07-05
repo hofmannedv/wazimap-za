@@ -31,15 +31,22 @@ class Command(BaseCommand):
         parser.add_argument(
             'filepath',
             action='store',
-            help='the file path to a SuperCROSS or SuperWEB CSV export'
+            help='The file path to a SuperCROSS or SuperWEB CSV export'
         )
         parser.add_argument(
             '--table',
             action='store',
             dest='table',
             default=None,
-            help='the name of the database table where the imported data will be stored. '
+            help='The name of the database table where the imported data will be stored. '
                  'If not provided, it is generated from the field names'
+        )
+        parser.add_argument(
+            '--dry-run',
+            action='store_true',
+            dest='dryrun',
+            default=False,
+            help="Dry-run, don't actuall write any data.",
         )
 
     def debug(self, msg):
@@ -51,6 +58,10 @@ class Command(BaseCommand):
         self.includes_total = False
         self.verbosity = options.get('verbosity', 1)
         self.table_id = options.get('table')
+        self.dryrun = options.get('dryrun', False)
+
+        if self.dryrun:
+            self.stdout.write("DRY RUN: not actuall writing data")
 
         with open(self.filepath) as f:
             self.f = f
@@ -247,12 +258,14 @@ class Command(BaseCommand):
                 # create and add the row
                 self.debug(kwargs)
                 entry = self.table.get_model(geo_level)(**kwargs)
-                session.add(entry)
+                if not self.dryrun:
+                    session.add(entry)
 
             if count % 100 == 0:
                 session.flush()
 
-        session.commit()
+        if not self.dryrun:
+            session.commit()
         session.close()
 
     def determine_geo_id(self, geo_name):
