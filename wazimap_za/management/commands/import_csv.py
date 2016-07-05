@@ -34,9 +34,9 @@ class Command(BaseCommand):
             help='the file path to a SuperCROSS or SuperWEB CSV export'
         )
         parser.add_argument(
-            '--tablename',
+            '--table',
             action='store',
-            dest='tablename',
+            dest='table',
             default=None,
             help='the name of the database table where the imported data will be stored. '
                  'If not provided, it is generated from the field names'
@@ -50,6 +50,7 @@ class Command(BaseCommand):
         self.filepath = options['filepath']
         self.includes_total = False
         self.verbosity = options.get('verbosity', 1)
+        self.table_id = options.get('table')
 
         with open(self.filepath) as f:
             self.f = f
@@ -214,7 +215,7 @@ class Command(BaseCommand):
                 yield geo_name, row[1:]
 
     def setup_table(self):
-        table_id = get_table_id(self.fields)
+        table_id = self.table_id or get_table_id(self.fields)
         try:
             self.table = get_datatable(table_id)
             self.stdout.write("Table for fields %s is %s" % (self.fields, self.table.id))
