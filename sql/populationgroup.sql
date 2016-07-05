@@ -22641,6 +22641,226 @@ country	ZA	Coloured	4615401
 country	ZA	Indian or Asian	1286930
 country	ZA	White	4586838
 country	ZA	Other	280454
+district	DC10	Black African	240010
+district	DC10	Coloured	157120
+district	DC10	Indian or Asian	1518
+district	DC10	White	48967
+district	DC10	Other	2970
+district	DC12	Black African	868017
+district	DC12	Coloured	13133
+district	DC12	Indian or Asian	1126
+district	DC12	White	8949
+district	DC12	Other	1411
+district	DC13	Black African	742545
+district	DC13	Coloured	32767
+district	DC13	Indian or Asian	1787
+district	DC13	White	16034
+district	DC13	Other	2328
+district	DC14	Black African	328002
+district	DC14	Coloured	12177
+district	DC14	Indian or Asian	632
+district	DC14	White	8277
+district	DC14	Other	680
+district	DC15	Black African	1351789
+district	DC15	Coloured	6434
+district	DC15	Indian or Asian	2654
+district	DC15	White	2641
+district	DC15	Other	1425
+district	DC44	Black African	794382
+district	DC44	Coloured	3307
+district	DC44	Indian or Asian	1132
+district	DC44	White	1898
+district	DC44	Other	624
+district	DC16	Black African	114806
+district	DC16	Coloured	19239
+district	DC16	Indian or Asian	553
+district	DC16	White	11143
+district	DC16	Other	517
+district	DC18	Black African	557950
+district	DC18	Coloured	11864
+district	DC18	Indian or Asian	2243
+district	DC18	White	54208
+district	DC18	Other	1361
+district	DC19	Black African	690340
+district	DC19	Coloured	6188
+district	DC19	Indian or Asian	2881
+district	DC19	White	35517
+district	DC19	Other	1312
+district	DC20	Black African	420054
+district	DC20	Coloured	9215
+district	DC20	Indian or Asian	1516
+district	DC20	White	55867
+district	DC20	Other	1383
+district	DC42	Black African	748657
+district	DC42	Coloured	11070
+district	DC42	Indian or Asian	9140
+district	DC42	White	143380
+district	DC42	Other	4236
+district	DC48	Black African	650132
+district	DC48	Coloured	20550
+district	DC48	Indian or Asian	9433
+district	DC48	White	137041
+district	DC48	Other	3838
+district	DC21	Black African	654773
+district	DC21	Coloured	6123
+district	DC21	Indian or Asian	24711
+district	DC21	White	35723
+district	DC21	Other	1154
+district	DC22	Black African	862543
+district	DC22	Coloured	20538
+district	DC22	Indian or Asian	68029
+district	DC22	White	63935
+district	DC22	Other	2718
+district	DC23	Black African	636394
+district	DC23	Coloured	3923
+district	DC23	Indian or Asian	16023
+district	DC23	White	11437
+district	DC23	Other	1070
+district	DC27	Black African	618130
+district	DC27	Coloured	1153
+district	DC27	Indian or Asian	1390
+district	DC27	White	4189
+district	DC27	Other	984
+district	DC28	Black African	856997
+district	DC28	Coloured	5025
+district	DC28	Indian or Asian	14632
+district	DC28	White	29375
+district	DC28	Other	1489
+district	DC43	Black African	446408
+district	DC43	Coloured	7546
+district	DC43	Indian or Asian	1506
+district	DC43	White	5356
+district	DC43	Other	603
+district	DC24	Black African	493456
+district	DC24	Coloured	2789
+district	DC24	Indian or Asian	6512
+district	DC24	White	7390
+district	DC24	Other	691
+district	DC25	Black African	465142
+district	DC25	Coloured	3449
+district	DC25	Indian or Asian	13167
+district	DC25	White	17030
+district	DC25	Other	1052
+district	DC26	Black African	787879
+district	DC26	Coloured	1701
+district	DC26	Indian or Asian	1775
+district	DC26	White	11288
+district	DC26	Other	932
+district	DC29	Black African	550758
+district	DC29	Coloured	3222
+district	DC29	Indian or Asian	35911
+district	DC29	White	14713
+district	DC29	Other	2205
+district	DC33	Black African	1059732
+district	DC33	Coloured	1781
+district	DC33	Indian or Asian	2730
+district	DC33	White	26912
+district	DC33	Other	1352
+district	DC34	Black African	1271709
+district	DC34	Coloured	1833
+district	DC34	Indian or Asian	5267
+district	DC34	White	14599
+district	DC34	Other	1314
+district	DC35	Black African	1211874
+district	DC35	Coloured	6271
+district	DC35	Indian or Asian	5234
+district	DC35	White	35470
+district	DC35	Other	2613
+district	DC36	Black African	619889
+district	DC36	Coloured	3298
+district	DC36	Indian or Asian	2929
+district	DC36	White	51362
+district	DC36	Other	1858
+district	DC47	Black African	1061550
+district	DC47	Coloured	1232
+district	DC47	Indian or Asian	1721
+district	DC47	White	11015
+district	DC47	Other	1322
+district	DC30	Black African	923976
+district	DC30	Coloured	10767
+district	DC30	Indian or Asian	11002
+district	DC30	White	94279
+district	DC30	Other	3171
+district	DC31	Black African	1150240
+district	DC31	Coloured	14871
+district	DC31	Indian or Asian	9549
+district	DC31	White	129656
+district	DC31	Other	3813
+district	DC32	Black African	1588002
+district	DC32	Coloured	10974
+district	DC32	Indian or Asian	7366
+district	DC32	White	79659
+district	DC32	Other	2613
+district	DC37	Black African	1377821
+district	DC37	Coloured	10931
+district	DC37	Indian or Asian	8576
+district	DC37	White	105274
+district	DC37	Other	4904
+district	DC38	Black African	791251
+district	DC38	Coloured	13809
+district	DC38	Indian or Asian	4968
+district	DC38	White	30950
+district	DC38	Other	1721
+district	DC39	Black African	423980
+district	DC39	Coloured	18346
+district	DC39	Indian or Asian	2003
+district	DC39	White	18127
+district	DC39	Other	1358
+district	DC40	Black African	559011
+district	DC40	Coloured	28322
+district	DC40	Indian or Asian	5105
+district	DC40	White	101034
+district	DC40	Other	2461
+district	DC6	Black African	7904
+district	DC6	Coloured	96360
+district	DC6	Indian or Asian	612
+district	DC6	White	10113
+district	DC6	Other	853
+district	DC7	Black African	58614
+district	DC7	Coloured	110257
+district	DC7	Indian or Asian	1046
+district	DC7	White	15064
+district	DC7	Other	1371
+district	DC8	Black African	69512
+district	DC8	Coloured	142916
+district	DC8	Indian or Asian	1707
+district	DC8	White	19371
+district	DC8	Other	3278
+district	DC9	Black African	250238
+district	DC9	Coloured	91549
+district	DC9	Indian or Asian	3602
+district	DC9	White	25552
+district	DC9	Other	11144
+district	DC45	Black African	190718
+district	DC45	Coloured	20818
+district	DC45	Indian or Asian	859
+district	DC45	White	11146
+district	DC45	Other	1256
+district	DC1	Black African	64110
+district	DC1	Coloured	260850
+district	DC1	Indian or Asian	2181
+district	DC1	White	61527
+district	DC1	Other	3098
+district	DC2	Black African	186472
+district	DC2	Coloured	489189
+district	DC2	Indian or Asian	3153
+district	DC2	White	101491
+district	DC2	Other	7184
+district	DC3	Black African	66151
+district	DC3	Coloured	139825
+district	DC3	Indian or Asian	816
+district	DC3	White	48692
+district	DC3	Other	2692
+district	DC4	Black African	141830
+district	DC4	Coloured	311178
+district	DC4	Indian or Asian	2526
+district	DC4	White	110314
+district	DC4	Other	8418
+district	DC5	Black African	9045
+district	DC5	Coloured	54076
+district	DC5	Indian or Asian	300
+district	DC5	White	7197
+district	DC5	Other	394
 \.
 
 
