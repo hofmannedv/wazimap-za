@@ -239,6 +239,8 @@ class Command(BaseCommand):
                 }
 
                 kwargs.update(dict((f, v) for f, v in zip(self.fields, category)))
+                if value == '-':
+                    value = '0'
                 kwargs['total'] = round(float(value.replace(',', '')))
 
                 # create and add the row
