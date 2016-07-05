@@ -511,6 +511,7 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 435	ward	93501001	Ward 1 (93501001)	2011	329.522100000000023	municipality	LIM351	Ward 1 (93501001), Blouberg, Limpopo
 436	ward	19100083	Ward 83 (19100083)	2011	6.16389999999999993	municipality	CPT	Ward 83 (19100083), City of Cape Town, Western Cape
 437	ward	93501005	Ward 5 (93501005)	2011	853.485099999999989	municipality	LIM351	Ward 5 (93501005), Blouberg, Limpopo
+2423	ward	74202005	Ward 5 (74202005)	2011	144.316200000000009	municipality	GT422	Ward 5 (74202005), Midvaal, Gauteng
 438	ward	93501006	Ward 6 (93501006)	2011	111.011300000000006	municipality	LIM351	Ward 6 (93501006), Blouberg, Limpopo
 439	ward	93501007	Ward 7 (93501007)	2011	107.049599999999998	municipality	LIM351	Ward 7 (93501007), Blouberg, Limpopo
 440	ward	93501008	Ward 8 (93501008)	2011	64.4342000000000041	municipality	LIM351	Ward 8 (93501008), Blouberg, Limpopo
@@ -2497,7 +2498,6 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 2420	ward	74202001	Ward 1 (74202001)	2011	944.488399999999956	municipality	GT422	Ward 1 (74202001), Midvaal, Gauteng
 2421	ward	74202003	Ward 3 (74202003)	2011	20.3664999999999985	municipality	GT422	Ward 3 (74202003), Midvaal, Gauteng
 2422	ward	74202004	Ward 4 (74202004)	2011	243.423900000000003	municipality	GT422	Ward 4 (74202004), Midvaal, Gauteng
-2423	ward	74202005	Ward 5 (74202005)	2011	144.316200000000009	municipality	GT422	Ward 5 (74202005), Midvaal, Gauteng
 2424	ward	74202006	Ward 6 (74202006)	2011	28.9266000000000005	municipality	GT422	Ward 6 (74202006), Midvaal, Gauteng
 2425	ward	74202007	Ward 7 (74202007)	2011	85.890500000000003	municipality	GT422	Ward 7 (74202007), Midvaal, Gauteng
 2426	ward	74202009	Ward 9 (74202009)	2011	1.25059999999999993	municipality	GT422	Ward 9 (74202009), Midvaal, Gauteng
@@ -2611,6 +2611,7 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 2534	ward	79700014	Ward 14 (79700014)	2011	2.39690000000000003	municipality	EKU	Ward 14 (79700014), Ekurhuleni, Gauteng
 2535	ward	79700015	Ward 15 (79700015)	2011	13.2680000000000007	municipality	EKU	Ward 15 (79700015), Ekurhuleni, Gauteng
 2536	ward	79700016	Ward 16 (79700016)	2011	11.2439999999999998	municipality	EKU	Ward 16 (79700016), Ekurhuleni, Gauteng
+2858	ward	83005001	Ward 1 (83005001)	2011	1.31099999999999994	municipality	MP305	Ward 1 (83005001), Lekwa, Mpumalanga
 2537	ward	79700018	Ward 18 (79700018)	2011	10.2825000000000006	municipality	EKU	Ward 18 (79700018), Ekurhuleni, Gauteng
 2538	ward	79700019	Ward 19 (79700019)	2011	12.5550999999999995	municipality	EKU	Ward 19 (79700019), Ekurhuleni, Gauteng
 2539	ward	79700020	Ward 20 (79700020)	2011	15.4047999999999998	municipality	EKU	Ward 20 (79700020), Ekurhuleni, Gauteng
@@ -2825,6 +2826,7 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 2746	ward	79900043	Ward 43 (79900043)	2011	10.9337	municipality	TSH	Ward 43 (79900043), City of Tshwane, Gauteng
 2747	ward	79900044	Ward 44 (79900044)	2011	7.97689999999999966	municipality	TSH	Ward 44 (79900044), City of Tshwane, Gauteng
 2748	ward	79900045	Ward 45 (79900045)	2011	5.19779999999999998	municipality	TSH	Ward 45 (79900045), City of Tshwane, Gauteng
+2859	ward	83005002	Ward 2 (83005002)	2011	0.708500000000000019	municipality	MP305	Ward 2 (83005002), Lekwa, Mpumalanga
 2749	ward	79900046	Ward 46 (79900046)	2011	17.8288000000000011	municipality	TSH	Ward 46 (79900046), City of Tshwane, Gauteng
 2750	ward	79900048	Ward 48 (79900048)	2011	210.461099999999988	municipality	TSH	Ward 48 (79900048), City of Tshwane, Gauteng
 2751	ward	79900049	Ward 49 (79900049)	2011	211.199700000000007	municipality	TSH	Ward 49 (79900049), City of Tshwane, Gauteng
@@ -2935,8 +2937,6 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 2855	ward	83004008	Ward 8 (83004008)	2011	756.47199999999998	municipality	MP304	Ward 8 (83004008), Pixley Ka Seme, Mpumalanga
 2856	ward	83004010	Ward 10 (83004010)	2011	2359.22820000000002	municipality	MP304	Ward 10 (83004010), Pixley Ka Seme, Mpumalanga
 2857	ward	83004011	Ward 11 (83004011)	2011	22.1026999999999987	municipality	MP304	Ward 11 (83004011), Pixley Ka Seme, Mpumalanga
-2858	ward	83005001	Ward 1 (83005001)	2011	1.31099999999999994	municipality	MP305	Ward 1 (83005001), Lekwa, Mpumalanga
-2859	ward	83005002	Ward 2 (83005002)	2011	0.708500000000000019	municipality	MP305	Ward 2 (83005002), Lekwa, Mpumalanga
 2860	ward	83005003	Ward 3 (83005003)	2011	2.07430000000000003	municipality	MP305	Ward 3 (83005003), Lekwa, Mpumalanga
 2861	ward	83005005	Ward 5 (83005005)	2011	1.25469999999999993	municipality	MP305	Ward 5 (83005005), Lekwa, Mpumalanga
 2862	ward	83005006	Ward 6 (83005006)	2011	1.21320000000000006	municipality	MP305	Ward 6 (83005006), Lekwa, Mpumalanga
@@ -3440,6 +3440,7 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 3358	ward	93505025	Ward 25 (93505025)	2011	161.303899999999999	municipality	LIM355	Ward 25 (93505025), Lepele-Nkumpi, Limpopo
 3359	ward	93505026	Ward 26 (93505026)	2011	239.188299999999998	municipality	LIM355	Ward 26 (93505026), Lepele-Nkumpi, Limpopo
 3360	ward	93505027	Ward 27 (93505027)	2011	195.000499999999988	municipality	LIM355	Ward 27 (93505027), Lepele-Nkumpi, Limpopo
+4418	municipality	EC154	Port St Johns	2011	1291.20000000000005	province	EC	Port St Johns, Eastern Cape
 3361	ward	93505028	Ward 28 (93505028)	2011	1087.4076	municipality	LIM355	Ward 28 (93505028), Lepele-Nkumpi, Limpopo
 3362	ward	93601001	Ward 1 (93601001)	2011	7093.60490000000027	municipality	LIM361	Ward 1 (93601001), Thabazimbi, Limpopo
 3363	ward	93601002	Ward 2 (93601002)	2011	1100.70460000000003	municipality	LIM361	Ward 2 (93601002), Thabazimbi, Limpopo
@@ -3937,6 +3938,7 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 3855	ward	52502008	Ward 8 (52502008)	2011	1.88470000000000004	municipality	KZN252	Ward 8 (52502008), Newcastle, KwaZulu-Natal
 3856	ward	52502015	Ward 15 (52502015)	2011	8.72470000000000034	municipality	KZN252	Ward 15 (52502015), Newcastle, KwaZulu-Natal
 3857	ward	52502021	Ward 21 (52502021)	2011	171.31280000000001	municipality	KZN252	Ward 21 (52502021), Newcastle, KwaZulu-Natal
+4419	municipality	EC155	Nyandeni	2011	2474.01000000000022	province	EC	Nyandeni, Eastern Cape
 3858	ward	52502027	Ward 27 (52502027)	2011	1.64389999999999992	municipality	KZN252	Ward 27 (52502027), Newcastle, KwaZulu-Natal
 3859	ward	52503003	Ward 3 (52503003)	2011	847.577099999999973	municipality	KZN253	Ward 3 (52503003), Emadlangeni, KwaZulu-Natal
 3860	ward	52504005	Ward 5 (52504005)	2011	69.4535999999999945	municipality	KZN254	Ward 5 (52504005), Dannhauser, KwaZulu-Natal
@@ -4383,8 +4385,6 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 4415	municipality	EC142	Senqu	2011	7329.42000000000007	province	EC	Senqu, Eastern Cape
 4416	municipality	EC143	Maletswai	2011	4357.64999999999964	province	EC	Maletswai, Eastern Cape
 4417	municipality	EC153	Ngquza Hill	2011	2476.82999999999993	province	EC	Ngquza Hill, Eastern Cape
-4418	municipality	EC154	Port St Johns	2011	1291.20000000000005	province	EC	Port St Johns, Eastern Cape
-4419	municipality	EC155	Nyandeni	2011	2474.01000000000022	province	EC	Nyandeni, Eastern Cape
 4420	municipality	EC156	Mhlontlo	2011	2826.09000000000015	province	EC	Mhlontlo, Eastern Cape
 4421	municipality	EC441	Matatiele	2011	4352.3100000000004	province	EC	Matatiele, Eastern Cape
 4431	municipality	FS184	Matjhabeng	2011	5155.46000000000004	province	FS	Matjhabeng, Free State
@@ -4595,6 +4595,50 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 4636	province	NC	Northern Cape	2011	378276.609699999972	country	ZA	\N
 4637	province	WC	Western Cape	2011	131521.559100000013	country	ZA	\N
 4638	country	ZA	South Africa	2011	1229341.48919999995	\N	\N	\N
+4639	district	DC1	West Coast	\N	31301.2417700000005	province	WC	West Coast, Western Cape
+4640	district	DC10	Cacadu	\N	58560.7798800000019	province	EC	Cacadu, Eastern Cape
+4641	district	DC12	Amathole	\N	21717.3260899999987	province	EC	Amathole, Eastern Cape
+4642	district	DC13	Chris Hani	\N	36360.2271699999983	province	EC	Chris Hani, Eastern Cape
+4643	district	DC14	Joe Gqabi	\N	25825.6499699999986	province	EC	Joe Gqabi, Eastern Cape
+4644	district	DC15	O.R.Tambo	\N	12169.6672199999994	province	EC	O.R.Tambo, Eastern Cape
+4645	district	DC16	Xhariep	\N	37930.0496799999964	province	FS	Xhariep, Free State
+4646	district	DC18	Lejweleputswa	\N	32168.0298399999992	province	FS	Lejweleputswa, Free State
+4647	district	DC19	Thabo Mofutsanyane	\N	33516.8450299999968	province	FS	Thabo Mofutsanyane, Free State
+4648	district	DC2	Cape Winelands	\N	21587.3427499999998	province	WC	Cape Winelands, Western Cape
+4649	district	DC20	Fezile Dabi	\N	20829.1201499999988	province	FS	Fezile Dabi, Free State
+4650	district	DC21	Ugu	\N	5079.7694819999997	province	KZN	Ugu, KwaZulu-Natal
+4651	district	DC22	Umgungundlovu	\N	9578.93650499999967	province	KZN	Umgungundlovu, KwaZulu-Natal
+4652	district	DC23	Uthukela	\N	11408.3048099999996	province	KZN	Uthukela, KwaZulu-Natal
+4653	district	DC24	Umzinyathi	\N	8651.94117499999993	province	KZN	Umzinyathi, KwaZulu-Natal
+4654	district	DC25	Amajuba	\N	6963.33322099999987	province	KZN	Amajuba, KwaZulu-Natal
+4655	district	DC26	Zululand	\N	14911.6610400000009	province	KZN	Zululand, KwaZulu-Natal
+4656	district	DC27	Umkhanyakude	\N	13961.8629199999996	province	KZN	Umkhanyakude, KwaZulu-Natal
+4657	district	DC28	Uthungulu	\N	8273.05495899999914	province	KZN	Uthungulu, KwaZulu-Natal
+4658	district	DC29	iLembe	\N	3292.25921299999982	province	KZN	iLembe, KwaZulu-Natal
+4659	district	DC3	Overberg	\N	12301.1331200000004	province	WC	Overberg, Western Cape
+4660	district	DC30	Gert Sibande	\N	32097.2732199999991	province	MP	Gert Sibande, Mpumalanga
+4661	district	DC31	Nkangala	\N	16899.2186499999989	province	MP	Nkangala, Mpumalanga
+4662	district	DC32	Ehlanzeni	\N	28136.99424	province	MP	Ehlanzeni, Mpumalanga
+4663	district	DC33	Mopani	\N	20193.3166700000002	province	LIM	Mopani, Limpopo
+4664	district	DC34	Vhembe	\N	25838.9159299999992	province	LIM	Vhembe, Limpopo
+4665	district	DC35	Capricorn	\N	21905.3465299999989	province	LIM	Capricorn, Limpopo
+4666	district	DC36	Waterberg	\N	45315.6430800000016	province	LIM	Waterberg, Limpopo
+4667	district	DC37	Bojanala	\N	18489.5336300000017	province	NW	Bojanala, North West
+4668	district	DC38	Ngaka Modiri Molema	\N	28440.7866800000011	province	NW	Ngaka Modiri Molema, North West
+4669	district	DC39	Dr Ruth Segomotsi Mompati	\N	44052.3903900000005	province	NW	Dr Ruth Segomotsi Mompati, North West
+4670	district	DC4	Eden	\N	23450.6392599999999	province	WC	Eden, Western Cape
+4671	district	DC40	Dr Kenneth Kaunda	\N	14759.3892099999994	province	NW	Dr Kenneth Kaunda, North West
+4672	district	DC42	Sedibeng	\N	4206.52779100000043	province	GT	Sedibeng, Gauteng
+4673	district	DC43	Sisonke	\N	10618.0334800000001	province	KZN	Sisonke, KwaZulu-Natal
+4674	district	DC44	Alfred Nzo	\N	10800.5921300000009	province	EC	Alfred Nzo, Eastern Cape
+4675	district	DC45	John Taolo Gaetsewe	\N	27498.9137200000005	province	NC	John Taolo Gaetsewe, Northern Cape
+4676	district	DC47	Sekhukhune	\N	13645.8807500000003	province	LIM	Sekhukhune, Limpopo
+4677	district	DC48	West Rand	\N	4120.99300399999993	province	GT	West Rand, Gauteng
+4678	district	DC5	Central Karoo	\N	39073.0871299999999	province	WC	Central Karoo, Western Cape
+4679	district	DC6	Namakwa	\N	127663.268700000001	province	NC	Namakwa, Northern Cape
+4680	district	DC7	Pixley ka Seme	\N	104094.585399999996	province	NC	Pixley ka Seme, Northern Cape
+4681	district	DC8	Siyanda	\N	103297.2981	province	NC	Siyanda, Northern Cape
+4682	district	DC9	Frances Baard	\N	12930.9347300000009	province	NC	Frances Baard, Northern Cape
 \.
 
 
@@ -4602,7 +4646,7 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 -- Name: wazimap_geography_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('wazimap_geography_id_seq', 4638, true);
+SELECT pg_catalog.setval('wazimap_geography_id_seq', 4682, true);
 
 
 --
