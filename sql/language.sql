@@ -67851,6 +67851,666 @@ municipality	CPT	Xitsonga	7242
 municipality	CPT	Other	106425
 municipality	CPT	Unspecified	0
 municipality	CPT	Not applicable	77430
+district	DC10	Afrikaans	196645
+district	DC10	English	28131
+district	DC10	IsiNdebele	874
+district	DC10	IsiXhosa	197926
+district	DC10	IsiZulu	1655
+district	DC10	Sepedi	730
+district	DC10	Sesotho	2243
+district	DC10	Setswana	1560
+district	DC10	Sign language	1453
+district	DC10	SiSwati	188
+district	DC10	Tshivenda	345
+district	DC10	Xitsonga	322
+district	DC10	Other	3824
+district	DC10	Unspecified	0
+district	DC10	Not applicable	14688
+district	DC12	Afrikaans	18230
+district	DC12	English	19647
+district	DC12	IsiNdebele	1691
+district	DC12	IsiXhosa	817395
+district	DC12	IsiZulu	2637
+district	DC12	Sepedi	1741
+district	DC12	Sesotho	2069
+district	DC12	Setswana	1167
+district	DC12	Sign language	5164
+district	DC12	SiSwati	345
+district	DC12	Tshivenda	401
+district	DC12	Xitsonga	250
+district	DC12	Other	2391
+district	DC12	Unspecified	0
+district	DC12	Not applicable	19508
+district	DC13	Afrikaans	47872
+district	DC13	English	20579
+district	DC13	IsiNdebele	1800
+district	DC13	IsiXhosa	695348
+district	DC13	IsiZulu	2157
+district	DC13	Sepedi	1692
+district	DC13	Sesotho	4068
+district	DC13	Setswana	1254
+district	DC13	Sign language	5512
+district	DC13	SiSwati	115
+district	DC13	Tshivenda	304
+district	DC13	Xitsonga	309
+district	DC13	Other	4009
+district	DC13	Unspecified	0
+district	DC13	Not applicable	10442
+district	DC14	Afrikaans	20329
+district	DC14	English	5696
+district	DC14	IsiNdebele	603
+district	DC14	IsiXhosa	244021
+district	DC14	IsiZulu	875
+district	DC14	Sepedi	592
+district	DC14	Sesotho	69889
+district	DC14	Setswana	471
+district	DC14	Sign language	2124
+district	DC14	SiSwati	77
+district	DC14	Tshivenda	141
+district	DC14	Xitsonga	153
+district	DC14	Other	1319
+district	DC14	Unspecified	0
+district	DC14	Not applicable	3477
+district	DC15	Afrikaans	7374
+district	DC15	English	36321
+district	DC15	IsiNdebele	2853
+district	DC15	IsiXhosa	1270514
+district	DC15	IsiZulu	6664
+district	DC15	Sepedi	3366
+district	DC15	Sesotho	3590
+district	DC15	Setswana	1864
+district	DC15	Sign language	10388
+district	DC15	SiSwati	445
+district	DC15	Tshivenda	874
+district	DC15	Xitsonga	440
+district	DC15	Other	3854
+district	DC15	Unspecified	0
+district	DC15	Not applicable	16397
+district	DC44	Afrikaans	6716
+district	DC44	English	18090
+district	DC44	IsiNdebele	2043
+district	DC44	IsiXhosa	673519
+district	DC44	IsiZulu	9954
+district	DC44	Sepedi	2275
+district	DC44	Sesotho	69811
+district	DC44	Setswana	1360
+district	DC44	Sign language	7189
+district	DC44	SiSwati	187
+district	DC44	Tshivenda	358
+district	DC44	Xitsonga	231
+district	DC44	Other	4595
+district	DC44	Unspecified	0
+district	DC44	Not applicable	5017
+district	DC16	Afrikaans	44942
+district	DC16	English	2282
+district	DC16	IsiNdebele	245
+district	DC16	IsiXhosa	22518
+district	DC16	IsiZulu	575
+district	DC16	Sepedi	260
+district	DC16	Sesotho	64536
+district	DC16	Setswana	5000
+district	DC16	Sign language	1083
+district	DC16	SiSwati	54
+district	DC16	Tshivenda	77
+district	DC16	Xitsonga	130
+district	DC16	Other	691
+district	DC16	Unspecified	0
+district	DC16	Not applicable	3865
+district	DC18	Afrikaans	69194
+district	DC18	English	18761
+district	DC18	IsiNdebele	3270
+district	DC18	IsiXhosa	74380
+district	DC18	IsiZulu	8908
+district	DC18	Sepedi	1425
+district	DC18	Sesotho	379173
+district	DC18	Setswana	36082
+district	DC18	Sign language	6872
+district	DC18	SiSwati	933
+district	DC18	Tshivenda	776
+district	DC18	Xitsonga	4976
+district	DC18	Other	5109
+district	DC18	Unspecified	0
+district	DC18	Not applicable	17767
+district	DC19	Afrikaans	43226
+district	DC19	English	14646
+district	DC19	IsiNdebele	1595
+district	DC19	IsiXhosa	4106
+district	DC19	IsiZulu	75410
+district	DC19	Sepedi	761
+district	DC19	Sesotho	570076
+district	DC19	Setswana	2380
+district	DC19	Sign language	10026
+district	DC19	SiSwati	323
+district	DC19	Tshivenda	224
+district	DC19	Xitsonga	429
+district	DC19	Other	2579
+district	DC19	Unspecified	0
+district	DC19	Not applicable	10458
+district	DC20	Afrikaans	64990
+district	DC20	English	11759
+district	DC20	IsiNdebele	1640
+district	DC20	IsiXhosa	28036
+district	DC20	IsiZulu	26497
+district	DC20	Sepedi	2986
+district	DC20	Sesotho	316408
+district	DC20	Setswana	4797
+district	DC20	Sign language	6695
+district	DC20	SiSwati	570
+district	DC20	Tshivenda	842
+district	DC20	Xitsonga	1427
+district	DC20	Other	3367
+district	DC20	Unspecified	0
+district	DC20	Not applicable	18022
+district	DC42	Afrikaans	136990
+district	DC42	English	49371
+district	DC42	IsiNdebele	6639
+district	DC42	IsiXhosa	64607
+district	DC42	IsiZulu	144229
+district	DC42	Sepedi	14440
+district	DC42	Sesotho	422198
+district	DC42	Setswana	20783
+district	DC42	Sign language	8900
+district	DC42	SiSwati	3863
+district	DC42	Tshivenda	4358
+district	DC42	Xitsonga	12061
+district	DC42	Other	15310
+district	DC42	Unspecified	0
+district	DC42	Not applicable	12736
+district	DC48	Afrikaans	135685
+district	DC48	English	53321
+district	DC48	IsiNdebele	8541
+district	DC48	IsiXhosa	119507
+district	DC48	IsiZulu	72447
+district	DC48	Sepedi	24622
+district	DC48	Sesotho	86549
+district	DC48	Setswana	218995
+district	DC48	Sign language	4071
+district	DC48	SiSwati	7334
+district	DC48	Tshivenda	11575
+district	DC48	Xitsonga	41846
+district	DC48	Other	16749
+district	DC48	Unspecified	0
+district	DC48	Not applicable	19753
+district	DC21	Afrikaans	14616
+district	DC21	English	58801
+district	DC21	IsiNdebele	7191
+district	DC21	IsiXhosa	30440
+district	DC21	IsiZulu	588483
+district	DC21	Sepedi	1558
+district	DC21	Sesotho	1511
+district	DC21	Setswana	3441
+district	DC21	Sign language	2704
+district	DC21	SiSwati	229
+district	DC21	Tshivenda	319
+district	DC21	Xitsonga	214
+district	DC21	Other	2198
+district	DC21	Unspecified	0
+district	DC21	Not applicable	10779
+district	DC22	Afrikaans	15729
+district	DC22	English	152981
+district	DC22	IsiNdebele	10051
+district	DC22	IsiXhosa	18906
+district	DC22	IsiZulu	762751
+district	DC22	Sepedi	1904
+district	DC22	Sesotho	17344
+district	DC22	Setswana	4521
+district	DC22	Sign language	5308
+district	DC22	SiSwati	482
+district	DC22	Tshivenda	342
+district	DC22	Xitsonga	470
+district	DC22	Other	7764
+district	DC22	Unspecified	0
+district	DC22	Not applicable	19210
+district	DC23	Afrikaans	7919
+district	DC23	English	31332
+district	DC23	IsiNdebele	7562
+district	DC23	IsiXhosa	1335
+district	DC23	IsiZulu	599323
+district	DC23	Sepedi	1527
+district	DC23	Sesotho	3677
+district	DC23	Setswana	3790
+district	DC23	Sign language	2973
+district	DC23	SiSwati	336
+district	DC23	Tshivenda	236
+district	DC23	Xitsonga	252
+district	DC23	Other	2339
+district	DC23	Unspecified	0
+district	DC23	Not applicable	6247
+district	DC27	Afrikaans	2936
+district	DC27	English	10804
+district	DC27	IsiNdebele	7407
+district	DC27	IsiXhosa	638
+district	DC27	IsiZulu	587736
+district	DC27	Sepedi	1309
+district	DC27	Sesotho	539
+district	DC27	Setswana	3556
+district	DC27	Sign language	3153
+district	DC27	SiSwati	1103
+district	DC27	Tshivenda	256
+district	DC27	Xitsonga	578
+district	DC27	Other	1565
+district	DC27	Unspecified	0
+district	DC27	Not applicable	4266
+district	DC28	Afrikaans	20290
+district	DC28	English	45573
+district	DC28	IsiNdebele	11801
+district	DC28	IsiXhosa	1967
+district	DC28	IsiZulu	797545
+district	DC28	Sepedi	1989
+district	DC28	Sesotho	1238
+district	DC28	Setswana	5771
+district	DC28	Sign language	3427
+district	DC28	SiSwati	709
+district	DC28	Tshivenda	452
+district	DC28	Xitsonga	730
+district	DC28	Other	3483
+district	DC28	Unspecified	0
+district	DC28	Not applicable	12543
+district	DC43	Afrikaans	6079
+district	DC43	English	14646
+district	DC43	IsiNdebele	3969
+district	DC43	IsiXhosa	131247
+district	DC43	IsiZulu	287445
+district	DC43	Sepedi	1084
+district	DC43	Sesotho	4768
+district	DC43	Setswana	1972
+district	DC43	Sign language	2557
+district	DC43	SiSwati	110
+district	DC43	Tshivenda	124
+district	DC43	Xitsonga	145
+district	DC43	Other	4098
+district	DC43	Unspecified	0
+district	DC43	Not applicable	3175
+district	DC24	Afrikaans	5159
+district	DC24	English	15700
+district	DC24	IsiNdebele	5096
+district	DC24	IsiXhosa	822
+district	DC24	IsiZulu	459398
+district	DC24	Sepedi	927
+district	DC24	Sesotho	11580
+district	DC24	Setswana	2303
+district	DC24	Sign language	1970
+district	DC24	SiSwati	170
+district	DC24	Tshivenda	124
+district	DC24	Xitsonga	147
+district	DC24	Other	1412
+district	DC24	Unspecified	0
+district	DC24	Not applicable	6030
+district	DC25	Afrikaans	15269
+district	DC25	English	25697
+district	DC25	IsiNdebele	4518
+district	DC25	IsiXhosa	1441
+district	DC25	IsiZulu	432947
+district	DC25	Sepedi	876
+district	DC25	Sesotho	4852
+district	DC25	Setswana	2350
+district	DC25	Sign language	2974
+district	DC25	SiSwati	675
+district	DC25	Tshivenda	174
+district	DC25	Xitsonga	309
+district	DC25	Other	2826
+district	DC25	Unspecified	0
+district	DC25	Not applicable	4932
+district	DC26	Afrikaans	9979
+district	DC26	English	11671
+district	DC26	IsiNdebele	8538
+district	DC26	IsiXhosa	894
+district	DC26	IsiZulu	749176
+district	DC26	Sepedi	1395
+district	DC26	Sesotho	1967
+district	DC26	Setswana	4011
+district	DC26	Sign language	2681
+district	DC26	SiSwati	1260
+district	DC26	Tshivenda	285
+district	DC26	Xitsonga	403
+district	DC26	Other	2519
+district	DC26	Unspecified	0
+district	DC26	Not applicable	8796
+district	DC29	Afrikaans	5210
+district	DC29	English	58227
+district	DC29	IsiNdebele	7145
+district	DC29	IsiXhosa	20005
+district	DC29	IsiZulu	496834
+district	DC29	Sepedi	1316
+district	DC29	Sesotho	1062
+district	DC29	Setswana	3156
+district	DC29	Sign language	4340
+district	DC29	SiSwati	624
+district	DC29	Tshivenda	261
+district	DC29	Xitsonga	1916
+district	DC29	Other	4465
+district	DC29	Unspecified	0
+district	DC29	Not applicable	2248
+district	DC33	Afrikaans	22317
+district	DC33	English	14319
+district	DC33	IsiNdebele	2634
+district	DC33	IsiXhosa	1278
+district	DC33	IsiZulu	5336
+district	DC33	Sepedi	497912
+district	DC33	Sesotho	31096
+district	DC33	Setswana	2690
+district	DC33	Sign language	1377
+district	DC33	SiSwati	2483
+district	DC33	Tshivenda	5505
+district	DC33	Xitsonga	480621
+district	DC33	Other	17145
+district	DC33	Unspecified	0
+district	DC33	Not applicable	7794
+district	DC34	Afrikaans	16818
+district	DC34	English	13615
+district	DC34	IsiNdebele	3721
+district	DC34	IsiXhosa	738
+district	DC34	IsiZulu	1770
+district	DC34	Sepedi	20498
+district	DC34	Sesotho	13180
+district	DC34	Setswana	1269
+district	DC34	Sign language	1279
+district	DC34	SiSwati	2588
+district	DC34	Tshivenda	860116
+district	DC34	Xitsonga	317850
+district	DC34	Other	27248
+district	DC34	Unspecified	0
+district	DC34	Not applicable	14033
+district	DC35	Afrikaans	36901
+district	DC35	English	25177
+district	DC35	IsiNdebele	24733
+district	DC35	IsiXhosa	2167
+district	DC35	IsiZulu	11671
+district	DC35	Sepedi	1055421
+district	DC35	Sesotho	8170
+district	DC35	Setswana	6990
+district	DC35	Sign language	2172
+district	DC35	SiSwati	1418
+district	DC35	Tshivenda	17477
+district	DC35	Xitsonga	32379
+district	DC35	Other	18489
+district	DC35	Unspecified	0
+district	DC35	Not applicable	18298
+district	DC36	Afrikaans	51039
+district	DC36	English	15323
+district	DC36	IsiNdebele	26243
+district	DC36	IsiXhosa	12147
+district	DC36	IsiZulu	8262
+district	DC36	Sepedi	371471
+district	DC36	Sesotho	19569
+district	DC36	Setswana	75809
+district	DC36	Sign language	1461
+district	DC36	SiSwati	1469
+district	DC36	Tshivenda	6718
+district	DC36	Xitsonga	54416
+district	DC36	Other	14812
+district	DC36	Unspecified	0
+district	DC36	Not applicable	20596
+district	DC47	Afrikaans	13111
+district	DC47	English	10258
+district	DC47	IsiNdebele	46951
+district	DC47	IsiXhosa	3945
+district	DC47	IsiZulu	35384
+district	DC47	Sepedi	881163
+district	DC47	Sesotho	8283
+district	DC47	Setswana	20263
+district	DC47	Sign language	1940
+district	DC47	SiSwati	17388
+district	DC47	Tshivenda	2994
+district	DC47	Xitsonga	21060
+district	DC47	Other	8629
+district	DC47	Unspecified	0
+district	DC47	Not applicable	5472
+district	DC30	Afrikaans	94232
+district	DC30	English	35079
+district	DC30	IsiNdebele	31544
+district	DC30	IsiXhosa	21409
+district	DC30	IsiZulu	628164
+district	DC30	Sepedi	10400
+district	DC30	Sesotho	43263
+district	DC30	Setswana	8066
+district	DC30	Sign language	3379
+district	DC30	SiSwati	134498
+district	DC30	Tshivenda	2456
+district	DC30	Xitsonga	10713
+district	DC30	Other	9016
+district	DC30	Unspecified	0
+district	DC30	Not applicable	10975
+district	DC31	Afrikaans	128916
+district	DC31	English	46855
+district	DC31	IsiNdebele	367943
+district	DC31	IsiXhosa	24754
+district	DC31	IsiZulu	299889
+district	DC31	Sepedi	190306
+district	DC31	Sesotho	49523
+district	DC31	Setswana	59348
+district	DC31	Sign language	3667
+district	DC31	SiSwati	60860
+district	DC31	Tshivenda	5680
+district	DC31	Xitsonga	41327
+district	DC31	Other	16560
+district	DC31	Unspecified	0
+district	DC31	Not applicable	12499
+district	DC32	Afrikaans	66298
+district	DC32	English	42712
+district	DC32	IsiNdebele	4191
+district	DC32	IsiXhosa	2830
+district	DC32	IsiZulu	37199
+district	DC32	Sepedi	171686
+district	DC32	Sesotho	45773
+district	DC32	Setswana	4299
+district	DC32	Sign language	1886
+district	DC32	SiSwati	911230
+district	DC32	Tshivenda	4004
+district	DC32	Xitsonga	364706
+district	DC32	Other	14063
+district	DC32	Unspecified	0
+district	DC32	Not applicable	17739
+district	DC37	Afrikaans	106561
+district	DC37	English	57187
+district	DC37	IsiNdebele	26481
+district	DC37	IsiXhosa	82701
+district	DC37	IsiZulu	54661
+district	DC37	Sepedi	75539
+district	DC37	Sesotho	67458
+district	DC37	Setswana	818050
+district	DC37	Sign language	6728
+district	DC37	SiSwati	9632
+district	DC37	Tshivenda	14329
+district	DC37	Xitsonga	119090
+district	DC37	Other	39869
+district	DC37	Unspecified	0
+district	DC37	Not applicable	29219
+district	DC38	Afrikaans	41808
+district	DC38	English	27017
+district	DC38	IsiNdebele	7883
+district	DC38	IsiXhosa	22336
+district	DC38	IsiZulu	12750
+district	DC38	Sepedi	3277
+district	DC38	Sesotho	20780
+district	DC38	Setswana	681327
+district	DC38	Sign language	3035
+district	DC38	SiSwati	678
+district	DC38	Tshivenda	697
+district	DC38	Xitsonga	1631
+district	DC38	Other	9952
+district	DC38	Unspecified	0
+district	DC38	Not applicable	9528
+district	DC39	Afrikaans	35213
+district	DC39	English	8696
+district	DC39	IsiNdebele	4310
+district	DC39	IsiXhosa	7092
+district	DC39	IsiZulu	3964
+district	DC39	Sepedi	1211
+district	DC39	Sesotho	8118
+district	DC39	Setswana	384956
+district	DC39	Sign language	1766
+district	DC39	SiSwati	155
+district	DC39	Tshivenda	214
+district	DC39	Xitsonga	481
+district	DC39	Other	4287
+district	DC39	Unspecified	0
+district	DC39	Not applicable	3354
+district	DC40	Afrikaans	126285
+district	DC40	English	27141
+district	DC40	IsiNdebele	5314
+district	DC40	IsiXhosa	78472
+district	DC40	IsiZulu	13459
+district	DC40	Sepedi	3972
+district	DC40	Sesotho	104797
+district	DC40	Setswana	306897
+district	DC40	Sign language	3396
+district	DC40	SiSwati	1627
+district	DC40	Tshivenda	1015
+district	DC40	Xitsonga	5944
+district	DC40	Other	6765
+district	DC40	Unspecified	0
+district	DC40	Not applicable	10848
+district	DC6	Afrikaans	104772
+district	DC6	English	1365
+district	DC6	IsiNdebele	140
+district	DC6	IsiXhosa	1725
+district	DC6	IsiZulu	193
+district	DC6	Sepedi	100
+district	DC6	Sesotho	350
+district	DC6	Setswana	1906
+district	DC6	Sign language	343
+district	DC6	SiSwati	51
+district	DC6	Tshivenda	69
+district	DC6	Xitsonga	34
+district	DC6	Other	526
+district	DC6	Unspecified	0
+district	DC6	Not applicable	4268
+district	DC7	Afrikaans	140641
+district	DC7	English	2991
+district	DC7	IsiNdebele	298
+district	DC7	IsiXhosa	32017
+district	DC7	IsiZulu	446
+district	DC7	Sepedi	286
+district	DC7	Sesotho	1483
+district	DC7	Setswana	2922
+district	DC7	Sign language	745
+district	DC7	SiSwati	104
+district	DC7	Tshivenda	171
+district	DC7	Xitsonga	108
+district	DC7	Other	941
+district	DC7	Unspecified	0
+district	DC7	Not applicable	3198
+district	DC8	Afrikaans	178452
+district	DC8	English	4139
+district	DC8	IsiNdebele	658
+district	DC8	IsiXhosa	6380
+district	DC8	IsiZulu	1111
+district	DC8	Sepedi	412
+district	DC8	Sesotho	2360
+district	DC8	Setswana	36978
+district	DC8	Sign language	806
+district	DC8	SiSwati	161
+district	DC8	Tshivenda	285
+district	DC8	Xitsonga	154
+district	DC8	Other	1665
+district	DC8	Unspecified	0
+district	DC8	Not applicable	3222
+district	DC9	Afrikaans	145762
+district	DC9	English	23512
+district	DC9	IsiNdebele	2727
+district	DC9	IsiXhosa	18468
+district	DC9	IsiZulu	4550
+district	DC9	Sepedi	1001
+district	DC9	Sesotho	8511
+district	DC9	Setswana	163792
+district	DC9	Sign language	1291
+district	DC9	SiSwati	223
+district	DC9	Tshivenda	395
+district	DC9	Xitsonga	489
+district	DC9	Other	7231
+district	DC9	Unspecified	0
+district	DC9	Not applicable	4134
+district	DC45	Afrikaans	36598
+district	DC45	English	5835
+district	DC45	IsiNdebele	2200
+district	DC45	IsiXhosa	1598
+district	DC45	IsiZulu	2201
+district	DC45	Sepedi	631
+district	DC45	Sesotho	1431
+district	DC45	Setswana	167489
+district	DC45	Sign language	748
+district	DC45	SiSwati	110
+district	DC45	Tshivenda	163
+district	DC45	Xitsonga	415
+district	DC45	Other	2023
+district	DC45	Unspecified	0
+district	DC45	Not applicable	3356
+district	DC1	Afrikaans	311829
+district	DC1	English	14828
+district	DC1	IsiNdebele	683
+district	DC1	IsiXhosa	31978
+district	DC1	IsiZulu	833
+district	DC1	Sepedi	322
+district	DC1	Sesotho	4668
+district	DC1	Setswana	2358
+district	DC1	Sign language	1146
+district	DC1	SiSwati	206
+district	DC1	Tshivenda	327
+district	DC1	Xitsonga	448
+district	DC1	Other	3043
+district	DC1	Unspecified	0
+district	DC1	Not applicable	19099
+district	DC2	Afrikaans	568100
+district	DC2	English	32815
+district	DC2	IsiNdebele	969
+district	DC2	IsiXhosa	126087
+district	DC2	IsiZulu	1331
+district	DC2	Sepedi	678
+district	DC2	Sesotho	14309
+district	DC2	Setswana	2979
+district	DC2	Sign language	3154
+district	DC2	SiSwati	295
+district	DC2	Tshivenda	449
+district	DC2	Xitsonga	494
+district	DC2	Other	8087
+district	DC2	Unspecified	0
+district	DC2	Not applicable	27744
+district	DC3	Afrikaans	176037
+district	DC3	English	17123
+district	DC3	IsiNdebele	462
+district	DC3	IsiXhosa	44857
+district	DC3	IsiZulu	629
+district	DC3	Sepedi	229
+district	DC3	Sesotho	5377
+district	DC3	Setswana	1002
+district	DC3	Sign language	675
+district	DC3	SiSwati	88
+district	DC3	Tshivenda	129
+district	DC3	Xitsonga	211
+district	DC3	Other	3574
+district	DC3	Unspecified	0
+district	DC3	Not applicable	7781
+district	DC4	Afrikaans	397462
+district	DC4	English	42266
+district	DC4	IsiNdebele	1014
+district	DC4	IsiXhosa	102740
+district	DC4	IsiZulu	1960
+district	DC4	Sepedi	654
+district	DC4	Sesotho	3412
+district	DC4	Setswana	2675
+district	DC4	Sign language	1856
+district	DC4	SiSwati	296
+district	DC4	Tshivenda	527
+district	DC4	Xitsonga	739
+district	DC4	Other	5687
+district	DC4	Unspecified	0
+district	DC4	Not applicable	12975
+district	DC5	Afrikaans	60074
+district	DC5	English	1789
+district	DC5	IsiNdebele	117
+district	DC5	IsiXhosa	5346
+district	DC5	IsiZulu	182
+district	DC5	Sepedi	93
+district	DC5	Sesotho	322
+district	DC5	Setswana	399
+district	DC5	Sign language	179
+district	DC5	SiSwati	29
+district	DC5	Tshivenda	60
+district	DC5	Xitsonga	18
+district	DC5	Other	301
+district	DC5	Unspecified	0
+district	DC5	Not applicable	2101
 \.
 
 
