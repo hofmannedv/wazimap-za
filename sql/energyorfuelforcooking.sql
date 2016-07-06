@@ -49767,6 +49767,490 @@ municipality	CPT	Other	8790
 municipality	CPT	None	6065
 municipality	CPT	Unspecified	17054
 municipality	CPT	Not applicable	5265
+district	DC10	Electricity	368741
+district	DC10	Gas	19146
+district	DC10	Paraffin	31808
+district	DC10	Wood	24893
+district	DC10	Coal	562
+district	DC10	Animal dung	192
+district	DC10	Solar	895
+district	DC10	Other	166
+district	DC10	None	667
+district	DC10	Unspecified	1462
+district	DC10	Not applicable	2053
+district	DC12	Electricity	481606
+district	DC12	Gas	23702
+district	DC12	Paraffin	98545
+district	DC12	Wood	258990
+district	DC12	Coal	1556
+district	DC12	Animal dung	22721
+district	DC12	Solar	1161
+district	DC12	Other	713
+district	DC12	None	1270
+district	DC12	Unspecified	1908
+district	DC12	Not applicable	464
+district	DC13	Electricity	490327
+district	DC13	Gas	25785
+district	DC13	Paraffin	88711
+district	DC13	Wood	152232
+district	DC13	Coal	1690
+district	DC13	Animal dung	29889
+district	DC13	Solar	1056
+district	DC13	Other	1796
+district	DC13	None	900
+district	DC13	Unspecified	2677
+district	DC13	Not applicable	397
+district	DC14	Electricity	194810
+district	DC14	Gas	17205
+district	DC14	Paraffin	55202
+district	DC14	Wood	73600
+district	DC14	Coal	561
+district	DC14	Animal dung	5602
+district	DC14	Solar	557
+district	DC14	Other	204
+district	DC14	None	305
+district	DC14	Unspecified	1162
+district	DC14	Not applicable	561
+district	DC15	Electricity	552047
+district	DC15	Gas	51530
+district	DC15	Paraffin	104418
+district	DC15	Wood	605672
+district	DC15	Coal	1934
+district	DC15	Animal dung	35847
+district	DC15	Solar	1487
+district	DC15	Other	3592
+district	DC15	None	2646
+district	DC15	Unspecified	5341
+district	DC15	Not applicable	430
+district	DC44	Electricity	202050
+district	DC44	Gas	49636
+district	DC44	Paraffin	77816
+district	DC44	Wood	449961
+district	DC44	Coal	1493
+district	DC44	Animal dung	13164
+district	DC44	Solar	732
+district	DC44	Other	1468
+district	DC44	None	1585
+district	DC44	Unspecified	3226
+district	DC44	Not applicable	213
+district	DC16	Electricity	124910
+district	DC16	Gas	5035
+district	DC16	Paraffin	9200
+district	DC16	Wood	5704
+district	DC16	Coal	162
+district	DC16	Animal dung	586
+district	DC16	Solar	188
+district	DC16	Other	8
+district	DC16	None	161
+district	DC16	Unspecified	162
+district	DC16	Not applicable	141
+district	DC18	Electricity	554668
+district	DC18	Gas	10946
+district	DC18	Paraffin	46068
+district	DC18	Wood	10523
+district	DC18	Coal	390
+district	DC18	Animal dung	854
+district	DC18	Solar	985
+district	DC18	Other	207
+district	DC18	None	568
+district	DC18	Unspecified	1711
+district	DC18	Not applicable	708
+district	DC19	Electricity	565837
+district	DC19	Gas	25771
+district	DC19	Paraffin	43093
+district	DC19	Wood	74007
+district	DC19	Coal	18955
+district	DC19	Animal dung	4947
+district	DC19	Solar	797
+district	DC19	Other	252
+district	DC19	None	672
+district	DC19	Unspecified	937
+district	DC19	Not applicable	970
+district	DC20	Electricity	415965
+district	DC20	Gas	16732
+district	DC20	Paraffin	23880
+district	DC20	Wood	17777
+district	DC20	Coal	7924
+district	DC20	Animal dung	2108
+district	DC20	Solar	801
+district	DC20	Other	185
+district	DC20	None	493
+district	DC20	Unspecified	1474
+district	DC20	Not applicable	697
+district	DC42	Electricity	807631
+district	DC42	Gas	32079
+district	DC42	Paraffin	51444
+district	DC42	Wood	9139
+district	DC42	Coal	8529
+district	DC42	Animal dung	448
+district	DC42	Solar	1275
+district	DC42	Other	588
+district	DC42	None	794
+district	DC42	Unspecified	3735
+district	DC42	Not applicable	821
+district	DC48	Electricity	655624
+district	DC48	Gas	28304
+district	DC48	Paraffin	117262
+district	DC48	Wood	10837
+district	DC48	Coal	1507
+district	DC48	Animal dung	308
+district	DC48	Solar	1196
+district	DC48	Other	797
+district	DC48	None	934
+district	DC48	Unspecified	3786
+district	DC48	Not applicable	439
+district	DC21	Electricity	396354
+district	DC21	Gas	27160
+district	DC21	Paraffin	45923
+district	DC21	Wood	242901
+district	DC21	Coal	1799
+district	DC21	Animal dung	614
+district	DC21	Solar	1355
+district	DC21	Other	1073
+district	DC21	None	1507
+district	DC21	Unspecified	3086
+district	DC21	Not applicable	711
+district	DC22	Electricity	783829
+district	DC22	Gas	29498
+district	DC22	Paraffin	43843
+district	DC22	Wood	148920
+district	DC22	Coal	1158
+district	DC22	Animal dung	542
+district	DC22	Solar	1841
+district	DC22	Other	1154
+district	DC22	None	1231
+district	DC22	Unspecified	5450
+district	DC22	Not applicable	297
+district	DC23	Electricity	335204
+district	DC23	Gas	18655
+district	DC23	Paraffin	52121
+district	DC23	Wood	239167
+district	DC23	Coal	7495
+district	DC23	Animal dung	8695
+district	DC23	Solar	1003
+district	DC23	Other	861
+district	DC23	None	1256
+district	DC23	Unspecified	3308
+district	DC23	Not applicable	1083
+district	DC27	Electricity	156436
+district	DC27	Gas	38875
+district	DC27	Paraffin	5950
+district	DC27	Wood	412150
+district	DC27	Coal	2183
+district	DC27	Animal dung	487
+district	DC27	Solar	788
+district	DC27	Other	1696
+district	DC27	None	2202
+district	DC27	Unspecified	3888
+district	DC27	Not applicable	1190
+district	DC28	Electricity	501938
+district	DC28	Gas	38378
+district	DC28	Paraffin	23267
+district	DC28	Wood	327011
+district	DC28	Coal	2400
+district	DC28	Animal dung	1421
+district	DC28	Solar	1535
+district	DC28	Other	1994
+district	DC28	None	2820
+district	DC28	Unspecified	6398
+district	DC28	Not applicable	357
+district	DC43	Electricity	146693
+district	DC43	Gas	19459
+district	DC43	Paraffin	21503
+district	DC43	Wood	267153
+district	DC43	Coal	885
+district	DC43	Animal dung	1354
+district	DC43	Solar	487
+district	DC43	Other	525
+district	DC43	None	909
+district	DC43	Unspecified	2169
+district	DC43	Not applicable	282
+district	DC24	Electricity	162559
+district	DC24	Gas	19323
+district	DC24	Paraffin	24661
+district	DC24	Wood	261220
+district	DC24	Coal	13634
+district	DC24	Animal dung	23811
+district	DC24	Solar	455
+district	DC24	Other	1667
+district	DC24	None	1258
+district	DC24	Unspecified	2132
+district	DC24	Not applicable	118
+district	DC25	Electricity	359086
+district	DC25	Gas	9095
+district	DC25	Paraffin	24354
+district	DC25	Wood	42139
+district	DC25	Coal	54099
+district	DC25	Animal dung	5255
+district	DC25	Solar	763
+district	DC25	Other	1046
+district	DC25	None	606
+district	DC25	Unspecified	3241
+district	DC25	Not applicable	155
+district	DC26	Electricity	378659
+district	DC26	Gas	34243
+district	DC26	Paraffin	23563
+district	DC26	Wood	340010
+district	DC26	Coal	13235
+district	DC26	Animal dung	3935
+district	DC26	Solar	1231
+district	DC26	Other	1345
+district	DC26	None	1930
+district	DC26	Unspecified	5166
+district	DC26	Not applicable	256
+district	DC29	Electricity	356274
+district	DC29	Gas	23818
+district	DC29	Paraffin	26646
+district	DC29	Wood	191412
+district	DC29	Coal	2674
+district	DC29	Animal dung	304
+district	DC29	Solar	1180
+district	DC29	Other	585
+district	DC29	None	1264
+district	DC29	Unspecified	2483
+district	DC29	Not applicable	168
+district	DC33	Electricity	379925
+district	DC33	Gas	9018
+district	DC33	Paraffin	6208
+district	DC33	Wood	691115
+district	DC33	Coal	640
+district	DC33	Animal dung	202
+district	DC33	Solar	637
+district	DC33	Other	93
+district	DC33	None	1469
+district	DC33	Unspecified	1981
+district	DC33	Not applicable	1219
+district	DC34	Electricity	387550
+district	DC34	Gas	18867
+district	DC34	Paraffin	7936
+district	DC34	Wood	872668
+district	DC34	Coal	1014
+district	DC34	Animal dung	259
+district	DC34	Solar	862
+district	DC34	Other	128
+district	DC34	None	1376
+district	DC34	Unspecified	2056
+district	DC34	Not applicable	2006
+district	DC35	Electricity	744339
+district	DC35	Gas	24949
+district	DC35	Paraffin	62787
+district	DC35	Wood	420665
+district	DC35	Coal	986
+district	DC35	Animal dung	2034
+district	DC35	Solar	1037
+district	DC35	Other	764
+district	DC35	None	874
+district	DC35	Unspecified	2671
+district	DC35	Not applicable	356
+district	DC36	Electricity	419755
+district	DC36	Gas	18738
+district	DC36	Paraffin	35533
+district	DC36	Wood	199811
+district	DC36	Coal	556
+district	DC36	Animal dung	221
+district	DC36	Solar	726
+district	DC36	Other	138
+district	DC36	None	579
+district	DC36	Unspecified	2485
+district	DC36	Not applicable	793
+district	DC47	Electricity	538885
+district	DC47	Gas	10115
+district	DC47	Paraffin	47243
+district	DC47	Wood	441286
+district	DC47	Coal	27921
+district	DC47	Animal dung	5912
+district	DC47	Solar	1355
+district	DC47	Other	148
+district	DC47	None	1443
+district	DC47	Unspecified	2467
+district	DC47	Not applicable	65
+district	DC30	Electricity	581168
+district	DC30	Gas	19085
+district	DC30	Paraffin	23867
+district	DC30	Wood	269064
+district	DC30	Coal	131900
+district	DC30	Animal dung	8795
+district	DC30	Solar	1417
+district	DC30	Other	424
+district	DC30	None	1568
+district	DC30	Unspecified	4277
+district	DC30	Not applicable	1630
+district	DC31	Electricity	951258
+district	DC31	Gas	25570
+district	DC31	Paraffin	88115
+district	DC31	Wood	129667
+district	DC31	Coal	101721
+district	DC31	Animal dung	1009
+district	DC31	Solar	1693
+district	DC31	Other	706
+district	DC31	None	1280
+district	DC31	Unspecified	5293
+district	DC31	Not applicable	1816
+district	DC32	Electricity	1149541
+district	DC32	Gas	32231
+district	DC32	Paraffin	35668
+district	DC32	Wood	443593
+district	DC32	Coal	14297
+district	DC32	Animal dung	511
+district	DC32	Solar	2716
+district	DC32	Other	587
+district	DC32	None	2326
+district	DC32	Unspecified	4863
+district	DC32	Not applicable	2282
+district	DC37	Electricity	1176640
+district	DC37	Gas	27959
+district	DC37	Paraffin	156943
+district	DC37	Wood	130550
+district	DC37	Coal	1965
+district	DC37	Animal dung	627
+district	DC37	Solar	2601
+district	DC37	Other	853
+district	DC37	None	1531
+district	DC37	Unspecified	5474
+district	DC37	Not applicable	2363
+district	DC38	Electricity	560162
+district	DC38	Gas	19191
+district	DC38	Paraffin	66848
+district	DC38	Wood	175438
+district	DC38	Coal	2115
+district	DC38	Animal dung	12935
+district	DC38	Solar	1058
+district	DC38	Other	102
+district	DC38	None	916
+district	DC38	Unspecified	2649
+district	DC38	Not applicable	1286
+district	DC39	Electricity	311771
+district	DC39	Gas	14658
+district	DC39	Paraffin	27250
+district	DC39	Wood	103897
+district	DC39	Coal	700
+district	DC39	Animal dung	2041
+district	DC39	Solar	546
+district	DC39	Other	74
+district	DC39	None	979
+district	DC39	Unspecified	1504
+district	DC39	Not applicable	396
+district	DC40	Electricity	572837
+district	DC40	Gas	16405
+district	DC40	Paraffin	65666
+district	DC40	Wood	31356
+district	DC40	Coal	1767
+district	DC40	Animal dung	2275
+district	DC40	Solar	938
+district	DC40	Other	750
+district	DC40	None	913
+district	DC40	Unspecified	2551
+district	DC40	Not applicable	476
+district	DC6	Electricity	99189
+district	DC6	Gas	7207
+district	DC6	Paraffin	554
+district	DC6	Wood	7476
+district	DC6	Coal	185
+district	DC6	Animal dung	17
+district	DC6	Solar	311
+district	DC6	Other	31
+district	DC6	None	206
+district	DC6	Unspecified	229
+district	DC6	Not applicable	437
+district	DC7	Electricity	151596
+district	DC7	Gas	9254
+district	DC7	Paraffin	6474
+district	DC7	Wood	16716
+district	DC7	Coal	458
+district	DC7	Animal dung	183
+district	DC7	Solar	278
+district	DC7	Other	13
+district	DC7	None	213
+district	DC7	Unspecified	602
+district	DC7	Not applicable	565
+district	DC8	Electricity	199337
+district	DC8	Gas	12462
+district	DC8	Paraffin	2111
+district	DC8	Wood	20326
+district	DC8	Coal	142
+district	DC8	Animal dung	46
+district	DC8	Solar	546
+district	DC8	Other	91
+district	DC8	None	362
+district	DC8	Unspecified	941
+district	DC8	Not applicable	420
+district	DC9	Electricity	307033
+district	DC9	Gas	22687
+district	DC9	Paraffin	34909
+district	DC9	Wood	14232
+district	DC9	Coal	295
+district	DC9	Animal dung	80
+district	DC9	Solar	535
+district	DC9	Other	114
+district	DC9	None	496
+district	DC9	Unspecified	1296
+district	DC9	Not applicable	408
+district	DC45	Electricity	161289
+district	DC45	Gas	8085
+district	DC45	Paraffin	6052
+district	DC45	Wood	45397
+district	DC45	Coal	217
+district	DC45	Animal dung	1656
+district	DC45	Solar	401
+district	DC45	Other	140
+district	DC45	None	312
+district	DC45	Unspecified	750
+district	DC45	Not applicable	499
+district	DC1	Electricity	355794
+district	DC1	Gas	16291
+district	DC1	Paraffin	2436
+district	DC1	Wood	12695
+district	DC1	Coal	261
+district	DC1	Animal dung	77
+district	DC1	Solar	559
+district	DC1	Other	81
+district	DC1	None	730
+district	DC1	Unspecified	987
+district	DC1	Not applicable	1856
+district	DC2	Electricity	704414
+district	DC2	Gas	40093
+district	DC2	Paraffin	20299
+district	DC2	Wood	13960
+district	DC2	Coal	553
+district	DC2	Animal dung	191
+district	DC2	Solar	861
+district	DC2	Other	716
+district	DC2	None	1407
+district	DC2	Unspecified	3892
+district	DC2	Not applicable	1103
+district	DC3	Electricity	215613
+district	DC3	Gas	21687
+district	DC3	Paraffin	11694
+district	DC3	Wood	5352
+district	DC3	Coal	175
+district	DC3	Animal dung	109
+district	DC3	Solar	335
+district	DC3	Other	131
+district	DC3	None	375
+district	DC3	Unspecified	1677
+district	DC3	Not applicable	1029
+district	DC4	Electricity	478004
+district	DC4	Gas	40484
+district	DC4	Paraffin	17556
+district	DC4	Wood	31224
+district	DC4	Coal	576
+district	DC4	Animal dung	240
+district	DC4	Solar	816
+district	DC4	Other	336
+district	DC4	None	1150
+district	DC4	Unspecified	2551
+district	DC4	Not applicable	1327
+district	DC5	Electricity	58994
+district	DC5	Gas	2717
+district	DC5	Paraffin	596
+district	DC5	Wood	7550
+district	DC5	Coal	65
+district	DC5	Animal dung	0
+district	DC5	Solar	154
+district	DC5	Other	33
+district	DC5	None	65
+district	DC5	Unspecified	273
+district	DC5	Not applicable	564
 \.
 
 
