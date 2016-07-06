@@ -22641,6 +22641,226 @@ municipality	CPT	Owned but not yet paid off	223435
 municipality	CPT	Occupied rent-free	139226
 municipality	CPT	Owned and fully paid off	355246
 municipality	CPT	Other	31324
+district	DC10	Rented	27081
+district	DC10	Owned but not yet paid off	8775
+district	DC10	Occupied rent-free	31810
+district	DC10	Owned and fully paid off	52987
+district	DC10	Other	4979
+district	DC12	Rented	22399
+district	DC12	Owned but not yet paid off	10917
+district	DC12	Occupied rent-free	41263
+district	DC12	Owned and fully paid off	151265
+district	DC12	Other	11932
+district	DC13	Rented	24383
+district	DC13	Owned but not yet paid off	14856
+district	DC13	Occupied rent-free	46513
+district	DC13	Owned and fully paid off	112257
+district	DC13	Other	12843
+district	DC14	Rented	11533
+district	DC14	Owned but not yet paid off	4980
+district	DC14	Occupied rent-free	18751
+district	DC14	Owned and fully paid off	54987
+district	DC14	Other	7525
+district	DC15	Rented	38124
+district	DC15	Owned but not yet paid off	24510
+district	DC15	Occupied rent-free	56231
+district	DC15	Owned and fully paid off	158806
+district	DC15	Other	20558
+district	DC44	Rented	14016
+district	DC44	Owned but not yet paid off	11341
+district	DC44	Occupied rent-free	31326
+district	DC44	Owned and fully paid off	89940
+district	DC44	Other	22639
+district	DC16	Rented	9429
+district	DC16	Owned but not yet paid off	2464
+district	DC16	Occupied rent-free	10391
+district	DC16	Owned and fully paid off	21522
+district	DC16	Other	1563
+district	DC18	Rented	38113
+district	DC18	Owned but not yet paid off	16235
+district	DC18	Occupied rent-free	32791
+district	DC18	Owned and fully paid off	90580
+district	DC18	Other	5442
+district	DC19	Rented	36672
+district	DC19	Owned but not yet paid off	16791
+district	DC19	Occupied rent-free	39266
+district	DC19	Owned and fully paid off	119838
+district	DC19	Other	5316
+district	DC20	Rented	32413
+district	DC20	Owned but not yet paid off	13268
+district	DC20	Occupied rent-free	20688
+district	DC20	Owned and fully paid off	74333
+district	DC20	Other	4279
+district	DC42	Rented	78145
+district	DC42	Owned but not yet paid off	37491
+district	DC42	Occupied rent-free	57115
+district	DC42	Owned and fully paid off	99262
+district	DC42	Other	7754
+district	DC48	Rented	109806
+district	DC48	Owned but not yet paid off	31184
+district	DC48	Occupied rent-free	54214
+district	DC48	Owned and fully paid off	65042
+district	DC48	Other	7151
+district	DC21	Rented	28937
+district	DC21	Owned but not yet paid off	16663
+district	DC21	Occupied rent-free	28218
+district	DC21	Owned and fully paid off	100513
+district	DC21	Other	5109
+district	DC22	Rented	61858
+district	DC22	Owned but not yet paid off	34742
+district	DC22	Occupied rent-free	56115
+district	DC22	Owned and fully paid off	108253
+district	DC22	Other	11697
+district	DC23	Rented	20761
+district	DC23	Owned but not yet paid off	14033
+district	DC23	Occupied rent-free	46702
+district	DC23	Owned and fully paid off	61144
+district	DC23	Other	4645
+district	DC27	Rented	14846
+district	DC27	Owned but not yet paid off	13294
+district	DC27	Occupied rent-free	46549
+district	DC27	Owned and fully paid off	47898
+district	DC27	Other	5607
+district	DC28	Rented	42458
+district	DC28	Owned but not yet paid off	27072
+district	DC28	Occupied rent-free	46842
+district	DC28	Owned and fully paid off	78109
+district	DC28	Other	8496
+district	DC43	Rented	16152
+district	DC43	Owned but not yet paid off	9759
+district	DC43	Occupied rent-free	25426
+district	DC43	Owned and fully paid off	57020
+district	DC43	Other	3925
+district	DC24	Rented	13378
+district	DC24	Owned but not yet paid off	10120
+district	DC24	Occupied rent-free	29423
+district	DC24	Owned and fully paid off	57702
+district	DC24	Other	2846
+district	DC25	Rented	23857
+district	DC25	Owned but not yet paid off	10974
+district	DC25	Occupied rent-free	27862
+district	DC25	Owned and fully paid off	44804
+district	DC25	Other	3465
+district	DC26	Rented	21249
+district	DC26	Owned but not yet paid off	15390
+district	DC26	Occupied rent-free	35936
+district	DC26	Owned and fully paid off	80282
+district	DC26	Other	4890
+district	DC29	Rented	37536
+district	DC29	Owned but not yet paid off	14050
+district	DC29	Occupied rent-free	26952
+district	DC29	Owned and fully paid off	74993
+district	DC29	Other	4159
+district	DC33	Rented	30838
+district	DC33	Owned but not yet paid off	15707
+district	DC33	Occupied rent-free	93469
+district	DC33	Owned and fully paid off	149063
+district	DC33	Other	7242
+district	DC34	Rented	28212
+district	DC34	Owned but not yet paid off	14524
+district	DC34	Occupied rent-free	89293
+district	DC34	Owned and fully paid off	199994
+district	DC34	Other	3254
+district	DC35	Rented	51022
+district	DC35	Owned but not yet paid off	21184
+district	DC35	Occupied rent-free	83629
+district	DC35	Owned and fully paid off	177997
+district	DC35	Other	9006
+district	DC36	Rented	39111
+district	DC36	Owned but not yet paid off	9921
+district	DC36	Occupied rent-free	49364
+district	DC36	Owned and fully paid off	75807
+district	DC36	Other	5665
+district	DC47	Rented	28827
+district	DC47	Owned but not yet paid off	9201
+district	DC47	Occupied rent-free	72144
+district	DC47	Owned and fully paid off	144360
+district	DC47	Other	9269
+district	DC30	Rented	72983
+district	DC30	Owned but not yet paid off	27746
+district	DC30	Occupied rent-free	53422
+district	DC30	Owned and fully paid off	110649
+district	DC30	Other	8690
+district	DC31	Rented	82194
+district	DC31	Owned but not yet paid off	30394
+district	DC31	Occupied rent-free	53245
+district	DC31	Owned and fully paid off	179878
+district	DC31	Other	11199
+district	DC32	Rented	63098
+district	DC32	Owned but not yet paid off	22823
+district	DC32	Occupied rent-free	79335
+district	DC32	Owned and fully paid off	268257
+district	DC32	Other	11574
+district	DC37	Rented	149861
+district	DC37	Owned but not yet paid off	30384
+district	DC37	Occupied rent-free	97366
+district	DC37	Owned and fully paid off	209701
+district	DC37	Other	14385
+district	DC38	Rented	32565
+district	DC38	Owned but not yet paid off	12722
+district	DC38	Occupied rent-free	60078
+district	DC38	Owned and fully paid off	113912
+district	DC38	Other	7725
+district	DC39	Rented	15340
+district	DC39	Owned but not yet paid off	5898
+district	DC39	Occupied rent-free	29629
+district	DC39	Owned and fully paid off	67448
+district	DC39	Other	6955
+district	DC40	Rented	57680
+district	DC40	Owned but not yet paid off	21139
+district	DC40	Occupied rent-free	26551
+district	DC40	Owned and fully paid off	95316
+district	DC40	Other	7361
+district	DC6	Rented	6730
+district	DC6	Owned but not yet paid off	1672
+district	DC6	Occupied rent-free	5872
+district	DC6	Owned and fully paid off	18678
+district	DC6	Other	904
+district	DC7	Rented	8881
+district	DC7	Owned but not yet paid off	3325
+district	DC7	Occupied rent-free	12621
+district	DC7	Owned and fully paid off	22236
+district	DC7	Other	2129
+district	DC8	Rented	14813
+district	DC8	Owned but not yet paid off	5257
+district	DC8	Occupied rent-free	14082
+district	DC8	Owned and fully paid off	24667
+district	DC8	Other	2278
+district	DC9	Rented	15288
+district	DC9	Owned but not yet paid off	11095
+district	DC9	Occupied rent-free	19121
+district	DC9	Owned and fully paid off	45346
+district	DC9	Other	5079
+district	DC45	Rented	10818
+district	DC45	Owned but not yet paid off	3308
+district	DC45	Occupied rent-free	11271
+district	DC45	Owned and fully paid off	30499
+district	DC45	Other	5434
+district	DC1	Rented	28184
+district	DC1	Owned but not yet paid off	10662
+district	DC1	Occupied rent-free	18314
+district	DC1	Owned and fully paid off	45327
+district	DC1	Other	4294
+district	DC2	Rented	60867
+district	DC2	Owned but not yet paid off	21950
+district	DC2	Occupied rent-free	46076
+district	DC2	Owned and fully paid off	59667
+district	DC2	Other	9706
+district	DC3	Rented	18408
+district	DC3	Owned but not yet paid off	6051
+district	DC3	Occupied rent-free	15076
+district	DC3	Owned and fully paid off	33339
+district	DC3	Other	4322
+district	DC4	Rented	40895
+district	DC4	Owned but not yet paid off	15960
+district	DC4	Occupied rent-free	26319
+district	DC4	Owned and fully paid off	74295
+district	DC4	Other	6641
+district	DC5	Rented	4221
+district	DC5	Owned but not yet paid off	2355
+district	DC5	Occupied rent-free	3668
+district	DC5	Owned and fully paid off	8494
+district	DC5	Other	337
 \.
 
 
