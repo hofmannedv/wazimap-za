@@ -45246,6 +45246,446 @@ municipality	CPT	Water vendor	11302
 municipality	CPT	Water tanker	13739
 municipality	CPT	Other	59230
 municipality	CPT	Not applicable	5265
+district	DC10	Regional/local water scheme (operated by municipality or other water services provider)	360010
+district	DC10	Borehole	29309
+district	DC10	Spring	4512
+district	DC10	Rain water tank	15946
+district	DC10	Dam/pool/stagnant water	17803
+district	DC10	River/stream	3546
+district	DC10	Water vendor	1521
+district	DC10	Water tanker	8080
+district	DC10	Other	7804
+district	DC10	Not applicable	2053
+district	DC12	Regional/local water scheme (operated by municipality or other water services provider)	414371
+district	DC12	Borehole	26524
+district	DC12	Spring	15692
+district	DC12	Rain water tank	116178
+district	DC12	Dam/pool/stagnant water	28163
+district	DC12	River/stream	235176
+district	DC12	Water vendor	6862
+district	DC12	Water tanker	32117
+district	DC12	Other	17089
+district	DC12	Not applicable	464
+district	DC13	Regional/local water scheme (operated by municipality or other water services provider)	457890
+district	DC13	Borehole	71653
+district	DC13	Spring	30232
+district	DC13	Rain water tank	28010
+district	DC13	Dam/pool/stagnant water	27237
+district	DC13	River/stream	122058
+district	DC13	Water vendor	6725
+district	DC13	Water tanker	32078
+district	DC13	Other	19182
+district	DC13	Not applicable	397
+district	DC14	Regional/local water scheme (operated by municipality or other water services provider)	182546
+district	DC14	Borehole	40638
+district	DC14	Spring	35489
+district	DC14	Rain water tank	8661
+district	DC14	Dam/pool/stagnant water	16487
+district	DC14	River/stream	37561
+district	DC14	Water vendor	5874
+district	DC14	Water tanker	14019
+district	DC14	Other	7932
+district	DC14	Not applicable	561
+district	DC15	Regional/local water scheme (operated by municipality or other water services provider)	324360
+district	DC15	Borehole	45240
+district	DC15	Spring	74065
+district	DC15	Rain water tank	108807
+district	DC15	Dam/pool/stagnant water	38511
+district	DC15	River/stream	672644
+district	DC15	Water vendor	12362
+district	DC15	Water tanker	51308
+district	DC15	Other	37216
+district	DC15	Not applicable	430
+district	DC44	Regional/local water scheme (operated by municipality or other water services provider)	198513
+district	DC44	Borehole	38996
+district	DC44	Spring	96920
+district	DC44	Rain water tank	27565
+district	DC44	Dam/pool/stagnant water	39960
+district	DC44	River/stream	345845
+district	DC44	Water vendor	7141
+district	DC44	Water tanker	24760
+district	DC44	Other	21431
+district	DC44	Not applicable	213
+district	DC16	Regional/local water scheme (operated by municipality or other water services provider)	118688
+district	DC16	Borehole	18494
+district	DC16	Spring	146
+district	DC16	Rain water tank	654
+district	DC16	Dam/pool/stagnant water	1181
+district	DC16	River/stream	491
+district	DC16	Water vendor	423
+district	DC16	Water tanker	4350
+district	DC16	Other	1691
+district	DC16	Not applicable	141
+district	DC18	Regional/local water scheme (operated by municipality or other water services provider)	570155
+district	DC18	Borehole	36425
+district	DC18	Spring	330
+district	DC18	Rain water tank	1202
+district	DC18	Dam/pool/stagnant water	1544
+district	DC18	River/stream	637
+district	DC18	Water vendor	1463
+district	DC18	Water tanker	4410
+district	DC18	Other	10753
+district	DC18	Not applicable	708
+district	DC19	Regional/local water scheme (operated by municipality or other water services provider)	628682
+district	DC19	Borehole	52843
+district	DC19	Spring	5118
+district	DC19	Rain water tank	2621
+district	DC19	Dam/pool/stagnant water	7244
+district	DC19	River/stream	2300
+district	DC19	Water vendor	5227
+district	DC19	Water tanker	18307
+district	DC19	Other	12924
+district	DC19	Not applicable	970
+district	DC20	Regional/local water scheme (operated by municipality or other water services provider)	436964
+district	DC20	Borehole	33404
+district	DC20	Spring	463
+district	DC20	Rain water tank	1762
+district	DC20	Dam/pool/stagnant water	1242
+district	DC20	River/stream	413
+district	DC20	Water vendor	1534
+district	DC20	Water tanker	6381
+district	DC20	Other	5177
+district	DC20	Not applicable	697
+district	DC42	Regional/local water scheme (operated by municipality or other water services provider)	852665
+district	DC42	Borehole	38527
+district	DC42	Spring	710
+district	DC42	Rain water tank	1698
+district	DC42	Dam/pool/stagnant water	1251
+district	DC42	River/stream	433
+district	DC42	Water vendor	2660
+district	DC42	Water tanker	4950
+district	DC42	Other	12769
+district	DC42	Not applicable	821
+district	DC48	Regional/local water scheme (operated by municipality or other water services provider)	734634
+district	DC48	Borehole	49561
+district	DC48	Spring	822
+district	DC48	Rain water tank	1778
+district	DC48	Dam/pool/stagnant water	1840
+district	DC48	River/stream	553
+district	DC48	Water vendor	3869
+district	DC48	Water tanker	14263
+district	DC48	Other	13235
+district	DC48	Not applicable	439
+district	DC21	Regional/local water scheme (operated by municipality or other water services provider)	472637
+district	DC21	Borehole	29540
+district	DC21	Spring	16136
+district	DC21	Rain water tank	9675
+district	DC21	Dam/pool/stagnant water	18874
+district	DC21	River/stream	112776
+district	DC21	Water vendor	16213
+district	DC21	Water tanker	28554
+district	DC21	Other	17368
+district	DC21	Not applicable	711
+district	DC22	Regional/local water scheme (operated by municipality or other water services provider)	764659
+district	DC22	Borehole	44070
+district	DC22	Spring	25403
+district	DC22	Rain water tank	8611
+district	DC22	Dam/pool/stagnant water	27313
+district	DC22	River/stream	58993
+district	DC22	Water vendor	13782
+district	DC22	Water tanker	45806
+district	DC22	Other	28829
+district	DC22	Not applicable	297
+district	DC23	Regional/local water scheme (operated by municipality or other water services provider)	338900
+district	DC23	Borehole	136232
+district	DC23	Spring	52913
+district	DC23	Rain water tank	6612
+district	DC23	Dam/pool/stagnant water	19654
+district	DC23	River/stream	50637
+district	DC23	Water vendor	10039
+district	DC23	Water tanker	30744
+district	DC23	Other	22033
+district	DC23	Not applicable	1083
+district	DC27	Regional/local water scheme (operated by municipality or other water services provider)	246904
+district	DC27	Borehole	87554
+district	DC27	Spring	18304
+district	DC27	Rain water tank	14908
+district	DC27	Dam/pool/stagnant water	49697
+district	DC27	River/stream	142937
+district	DC27	Water vendor	8115
+district	DC27	Water tanker	18923
+district	DC27	Other	37314
+district	DC27	Not applicable	1190
+district	DC28	Regional/local water scheme (operated by municipality or other water services provider)	560341
+district	DC28	Borehole	52568
+district	DC28	Spring	17102
+district	DC28	Rain water tank	10063
+district	DC28	Dam/pool/stagnant water	32532
+district	DC28	River/stream	126344
+district	DC28	Water vendor	13334
+district	DC28	Water tanker	64626
+district	DC28	Other	30252
+district	DC28	Not applicable	357
+district	DC43	Regional/local water scheme (operated by municipality or other water services provider)	155443
+district	DC43	Borehole	46547
+district	DC43	Spring	72180
+district	DC43	Rain water tank	10291
+district	DC43	Dam/pool/stagnant water	16234
+district	DC43	River/stream	128992
+district	DC43	Water vendor	4042
+district	DC43	Water tanker	18155
+district	DC43	Other	9254
+district	DC43	Not applicable	282
+district	DC24	Regional/local water scheme (operated by municipality or other water services provider)	183605
+district	DC24	Borehole	110487
+district	DC24	Spring	34894
+district	DC24	Rain water tank	5964
+district	DC24	Dam/pool/stagnant water	16741
+district	DC24	River/stream	113430
+district	DC24	Water vendor	7465
+district	DC24	Water tanker	27391
+district	DC24	Other	10745
+district	DC24	Not applicable	118
+district	DC25	Regional/local water scheme (operated by municipality or other water services provider)	403667
+district	DC25	Borehole	31624
+district	DC25	Spring	7226
+district	DC25	Rain water tank	2201
+district	DC25	Dam/pool/stagnant water	3230
+district	DC25	River/stream	10500
+district	DC25	Water vendor	2592
+district	DC25	Water tanker	23637
+district	DC25	Other	15007
+district	DC25	Not applicable	155
+district	DC26	Regional/local water scheme (operated by municipality or other water services provider)	337097
+district	DC26	Borehole	89532
+district	DC26	Spring	31023
+district	DC26	Rain water tank	9687
+district	DC26	Dam/pool/stagnant water	49356
+district	DC26	River/stream	210467
+district	DC26	Water vendor	13044
+district	DC26	Water tanker	35885
+district	DC26	Other	27227
+district	DC26	Not applicable	256
+district	DC29	Regional/local water scheme (operated by municipality or other water services provider)	355844
+district	DC29	Borehole	35657
+district	DC29	Spring	22271
+district	DC29	Rain water tank	10808
+district	DC29	Dam/pool/stagnant water	11746
+district	DC29	River/stream	129236
+district	DC29	Water vendor	8391
+district	DC29	Water tanker	14896
+district	DC29	Other	17792
+district	DC29	Not applicable	168
+district	DC33	Regional/local water scheme (operated by municipality or other water services provider)	627151
+district	DC33	Borehole	170394
+district	DC33	Spring	19008
+district	DC33	Rain water tank	6414
+district	DC33	Dam/pool/stagnant water	75685
+district	DC33	River/stream	85924
+district	DC33	Water vendor	46347
+district	DC33	Water tanker	20513
+district	DC33	Other	39853
+district	DC33	Not applicable	1219
+district	DC34	Regional/local water scheme (operated by municipality or other water services provider)	887555
+district	DC34	Borehole	138422
+district	DC34	Spring	42450
+district	DC34	Rain water tank	4958
+district	DC34	Dam/pool/stagnant water	58971
+district	DC34	River/stream	57445
+district	DC34	Water vendor	45529
+district	DC34	Water tanker	25681
+district	DC34	Other	31705
+district	DC34	Not applicable	2006
+district	DC35	Regional/local water scheme (operated by municipality or other water services provider)	870651
+district	DC35	Borehole	188167
+district	DC35	Spring	6718
+district	DC35	Rain water tank	8777
+district	DC35	Dam/pool/stagnant water	28509
+district	DC35	River/stream	20901
+district	DC35	Water vendor	65030
+district	DC35	Water tanker	38441
+district	DC35	Other	33913
+district	DC35	Not applicable	356
+district	DC36	Regional/local water scheme (operated by municipality or other water services provider)	477180
+district	DC36	Borehole	116772
+district	DC36	Spring	1650
+district	DC36	Rain water tank	2880
+district	DC36	Dam/pool/stagnant water	9184
+district	DC36	River/stream	6351
+district	DC36	Water vendor	15620
+district	DC36	Water tanker	33840
+district	DC36	Other	15067
+district	DC36	Not applicable	793
+district	DC47	Regional/local water scheme (operated by municipality or other water services provider)	536835
+district	DC47	Borehole	134238
+district	DC47	Spring	25214
+district	DC47	Rain water tank	21004
+district	DC47	Dam/pool/stagnant water	68983
+district	DC47	River/stream	149140
+district	DC47	Water vendor	61222
+district	DC47	Water tanker	39927
+district	DC47	Other	40210
+district	DC47	Not applicable	65
+district	DC30	Regional/local water scheme (operated by municipality or other water services provider)	808232
+district	DC30	Borehole	83571
+district	DC30	Spring	14937
+district	DC30	Rain water tank	4535
+district	DC30	Dam/pool/stagnant water	15282
+district	DC30	River/stream	40619
+district	DC30	Water vendor	7502
+district	DC30	Water tanker	45400
+district	DC30	Other	21486
+district	DC30	Not applicable	1630
+district	DC31	Regional/local water scheme (operated by municipality or other water services provider)	1092183
+district	DC31	Borehole	89010
+district	DC31	Spring	3916
+district	DC31	Rain water tank	4259
+district	DC31	Dam/pool/stagnant water	7409
+district	DC31	River/stream	8241
+district	DC31	Water vendor	21684
+district	DC31	Water tanker	41468
+district	DC31	Other	38143
+district	DC31	Not applicable	1816
+district	DC32	Regional/local water scheme (operated by municipality or other water services provider)	1072124
+district	DC32	Borehole	152627
+district	DC32	Spring	36314
+district	DC32	Rain water tank	15560
+district	DC32	Dam/pool/stagnant water	41356
+district	DC32	River/stream	114606
+district	DC32	Water vendor	51107
+district	DC32	Water tanker	119517
+district	DC32	Other	83122
+district	DC32	Not applicable	2282
+district	DC37	Regional/local water scheme (operated by municipality or other water services provider)	1121813
+district	DC37	Borehole	171129
+district	DC37	Spring	5097
+district	DC37	Rain water tank	4270
+district	DC37	Dam/pool/stagnant water	8284
+district	DC37	River/stream	3144
+district	DC37	Water vendor	55015
+district	DC37	Water tanker	65819
+district	DC37	Other	70570
+district	DC37	Not applicable	2363
+district	DC38	Regional/local water scheme (operated by municipality or other water services provider)	500592
+district	DC38	Borehole	228486
+district	DC38	Spring	3850
+district	DC38	Rain water tank	2549
+district	DC38	Dam/pool/stagnant water	3133
+district	DC38	River/stream	2592
+district	DC38	Water vendor	7446
+district	DC38	Water tanker	63745
+district	DC38	Other	29019
+district	DC38	Not applicable	1286
+district	DC39	Regional/local water scheme (operated by municipality or other water services provider)	366215
+district	DC39	Borehole	70047
+district	DC39	Spring	1226
+district	DC39	Rain water tank	1085
+district	DC39	Dam/pool/stagnant water	2000
+district	DC39	River/stream	412
+district	DC39	Water vendor	1986
+district	DC39	Water tanker	13397
+district	DC39	Other	7052
+district	DC39	Not applicable	396
+district	DC40	Regional/local water scheme (operated by municipality or other water services provider)	595637
+district	DC40	Borehole	72477
+district	DC40	Spring	660
+district	DC40	Rain water tank	1260
+district	DC40	Dam/pool/stagnant water	1384
+district	DC40	River/stream	650
+district	DC40	Water vendor	2948
+district	DC40	Water tanker	11982
+district	DC40	Other	8459
+district	DC40	Not applicable	476
+district	DC6	Regional/local water scheme (operated by municipality or other water services provider)	98720
+district	DC6	Borehole	9536
+district	DC6	Spring	294
+district	DC6	Rain water tank	406
+district	DC6	Dam/pool/stagnant water	2066
+district	DC6	River/stream	1873
+district	DC6	Water vendor	208
+district	DC6	Water tanker	877
+district	DC6	Other	1425
+district	DC6	Not applicable	437
+district	DC7	Regional/local water scheme (operated by municipality or other water services provider)	152225
+district	DC7	Borehole	20761
+district	DC7	Spring	496
+district	DC7	Rain water tank	334
+district	DC7	Dam/pool/stagnant water	2763
+district	DC7	River/stream	4028
+district	DC7	Water vendor	516
+district	DC7	Water tanker	3153
+district	DC7	Other	1511
+district	DC7	Not applicable	565
+district	DC8	Regional/local water scheme (operated by municipality or other water services provider)	186758
+district	DC8	Borehole	10987
+district	DC8	Spring	378
+district	DC8	Rain water tank	779
+district	DC8	Dam/pool/stagnant water	9362
+district	DC8	River/stream	11559
+district	DC8	Water vendor	831
+district	DC8	Water tanker	8609
+district	DC8	Other	7100
+district	DC8	Not applicable	420
+district	DC9	Regional/local water scheme (operated by municipality or other water services provider)	354284
+district	DC9	Borehole	9990
+district	DC9	Spring	360
+district	DC9	Rain water tank	545
+district	DC9	Dam/pool/stagnant water	1399
+district	DC9	River/stream	1109
+district	DC9	Water vendor	2757
+district	DC9	Water tanker	3018
+district	DC9	Other	8216
+district	DC9	Not applicable	408
+district	DC45	Regional/local water scheme (operated by municipality or other water services provider)	186838
+district	DC45	Borehole	15969
+district	DC45	Spring	622
+district	DC45	Rain water tank	939
+district	DC45	Dam/pool/stagnant water	2705
+district	DC45	River/stream	2440
+district	DC45	Water vendor	1725
+district	DC45	Water tanker	8642
+district	DC45	Other	4421
+district	DC45	Not applicable	499
+district	DC1	Regional/local water scheme (operated by municipality or other water services provider)	298723
+district	DC1	Borehole	40557
+district	DC1	Spring	6385
+district	DC1	Rain water tank	2299
+district	DC1	Dam/pool/stagnant water	18330
+district	DC1	River/stream	9272
+district	DC1	Water vendor	3888
+district	DC1	Water tanker	5390
+district	DC1	Other	5066
+district	DC1	Not applicable	1856
+district	DC2	Regional/local water scheme (operated by municipality or other water services provider)	616282
+district	DC2	Borehole	74363
+district	DC2	Spring	19066
+district	DC2	Rain water tank	4069
+district	DC2	Dam/pool/stagnant water	41042
+district	DC2	River/stream	8645
+district	DC2	Water vendor	1528
+district	DC2	Water tanker	9278
+district	DC2	Other	12114
+district	DC2	Not applicable	1103
+district	DC3	Regional/local water scheme (operated by municipality or other water services provider)	215285
+district	DC3	Borehole	6868
+district	DC3	Spring	3745
+district	DC3	Rain water tank	2819
+district	DC3	Dam/pool/stagnant water	15372
+district	DC3	River/stream	4387
+district	DC3	Water vendor	513
+district	DC3	Water tanker	2401
+district	DC3	Other	5756
+district	DC3	Not applicable	1029
+district	DC4	Regional/local water scheme (operated by municipality or other water services provider)	501892
+district	DC4	Borehole	12791
+district	DC4	Spring	4364
+district	DC4	Rain water tank	13091
+district	DC4	Dam/pool/stagnant water	15268
+district	DC4	River/stream	7368
+district	DC4	Water vendor	1703
+district	DC4	Water tanker	7387
+district	DC4	Other	9075
+district	DC4	Not applicable	1327
+district	DC5	Regional/local water scheme (operated by municipality or other water services provider)	54530
+district	DC5	Borehole	10369
+district	DC5	Spring	1130
+district	DC5	Rain water tank	92
+district	DC5	Dam/pool/stagnant water	2672
+district	DC5	River/stream	401
+district	DC5	Water vendor	68
+district	DC5	Water tanker	650
+district	DC5	Other	535
+district	DC5	Not applicable	564
 \.
 
 
