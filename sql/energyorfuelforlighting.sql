@@ -36204,6 +36204,358 @@ municipality	CPT	Solar	6897
 municipality	CPT	None	6812
 municipality	CPT	Unspecified	17054
 municipality	CPT	Not applicable	5265
+district	DC10	Electricity	395816
+district	DC10	Gas	817
+district	DC10	Paraffin	27667
+district	DC10	Candles (not a valid option)	20232
+district	DC10	Solar	1553
+district	DC10	None	984
+district	DC10	Unspecified	1462
+district	DC10	Not applicable	2053
+district	DC12	Electricity	620014
+district	DC12	Gas	2747
+district	DC12	Paraffin	162881
+district	DC12	Candles (not a valid option)	100262
+district	DC12	Solar	2027
+district	DC12	None	2335
+district	DC12	Unspecified	1908
+district	DC12	Not applicable	464
+district	DC13	Electricity	608902
+district	DC13	Gas	1790
+district	DC13	Paraffin	75389
+district	DC13	Candles (not a valid option)	98490
+district	DC13	Solar	6050
+district	DC13	None	1765
+district	DC13	Unspecified	2677
+district	DC13	Not applicable	397
+district	DC14	Electricity	241531
+district	DC14	Gas	1347
+district	DC14	Paraffin	29661
+district	DC14	Candles (not a valid option)	62846
+district	DC14	Solar	11849
+district	DC14	None	810
+district	DC14	Unspecified	1162
+district	DC14	Not applicable	561
+district	DC15	Electricity	947352
+district	DC15	Gas	3725
+district	DC15	Paraffin	63409
+district	DC15	Candles (not a valid option)	335847
+district	DC15	Solar	2759
+district	DC15	None	6080
+district	DC15	Unspecified	5341
+district	DC15	Not applicable	430
+district	DC44	Electricity	364650
+district	DC44	Gas	3214
+district	DC44	Paraffin	45521
+district	DC44	Candles (not a valid option)	375801
+district	DC44	Solar	3063
+district	DC44	None	5656
+district	DC44	Unspecified	3226
+district	DC44	Not applicable	213
+district	DC16	Electricity	135480
+district	DC16	Gas	104
+district	DC16	Paraffin	1074
+district	DC16	Candles (not a valid option)	8614
+district	DC16	Solar	475
+district	DC16	None	209
+district	DC16	Unspecified	162
+district	DC16	Not applicable	141
+district	DC18	Electricity	577989
+district	DC18	Gas	607
+district	DC18	Paraffin	10236
+district	DC18	Candles (not a valid option)	34109
+district	DC18	Solar	1430
+district	DC18	None	836
+district	DC18	Unspecified	1711
+district	DC18	Not applicable	708
+district	DC19	Electricity	643421
+district	DC19	Gas	783
+district	DC19	Paraffin	6522
+district	DC19	Candles (not a valid option)	80838
+district	DC19	Solar	1500
+district	DC19	None	1267
+district	DC19	Unspecified	937
+district	DC19	Not applicable	970
+district	DC20	Electricity	436364
+district	DC20	Gas	472
+district	DC20	Paraffin	4858
+district	DC20	Candles (not a valid option)	39429
+district	DC20	Solar	1313
+district	DC20	None	3429
+district	DC20	Unspecified	1474
+district	DC20	Not applicable	697
+district	DC42	Electricity	842973
+district	DC42	Gas	1844
+district	DC42	Paraffin	10841
+district	DC42	Candles (not a valid option)	52744
+district	DC42	Solar	1952
+district	DC42	None	1574
+district	DC42	Unspecified	3735
+district	DC42	Not applicable	821
+district	DC48	Electricity	687999
+district	DC48	Gas	1519
+district	DC48	Paraffin	27619
+district	DC48	Candles (not a valid option)	95791
+district	DC48	Solar	1764
+district	DC48	None	2078
+district	DC48	Unspecified	3786
+district	DC48	Not applicable	439
+district	DC21	Electricity	523294
+district	DC21	Gas	2965
+district	DC21	Paraffin	8818
+district	DC21	Candles (not a valid option)	176774
+district	DC21	Solar	2241
+district	DC21	None	4595
+district	DC21	Unspecified	3086
+district	DC21	Not applicable	711
+district	DC22	Electricity	882038
+district	DC22	Gas	2283
+district	DC22	Paraffin	7054
+district	DC22	Candles (not a valid option)	114631
+district	DC22	Solar	2936
+district	DC22	None	3074
+district	DC22	Unspecified	5450
+district	DC22	Not applicable	297
+district	DC23	Electricity	479189
+district	DC23	Gas	2436
+district	DC23	Paraffin	5855
+district	DC23	Candles (not a valid option)	171108
+district	DC23	Solar	2422
+district	DC23	None	3446
+district	DC23	Unspecified	3308
+district	DC23	Not applicable	1083
+district	DC27	Electricity	206683
+district	DC27	Gas	3995
+district	DC27	Paraffin	4097
+district	DC27	Candles (not a valid option)	373498
+district	DC27	Solar	23468
+district	DC27	None	9028
+district	DC27	Unspecified	3888
+district	DC27	Not applicable	1190
+district	DC28	Electricity	655558
+district	DC28	Gas	3746
+district	DC28	Paraffin	4732
+district	DC28	Candles (not a valid option)	227050
+district	DC28	Solar	2842
+district	DC28	None	6837
+district	DC28	Unspecified	6398
+district	DC28	Not applicable	357
+district	DC43	Electricity	283666
+district	DC43	Gas	1479
+district	DC43	Paraffin	8153
+district	DC43	Candles (not a valid option)	161904
+district	DC43	Solar	1237
+district	DC43	None	2529
+district	DC43	Unspecified	2169
+district	DC43	Not applicable	282
+district	DC24	Electricity	230838
+district	DC24	Gas	2389
+district	DC24	Paraffin	6244
+district	DC24	Candles (not a valid option)	252577
+district	DC24	Solar	11750
+district	DC24	None	4789
+district	DC24	Unspecified	2132
+district	DC24	Not applicable	118
+district	DC25	Electricity	417749
+district	DC25	Gas	2109
+district	DC25	Paraffin	2831
+district	DC25	Candles (not a valid option)	70432
+district	DC25	Solar	1732
+district	DC25	None	1589
+district	DC25	Unspecified	3241
+district	DC25	Not applicable	155
+district	DC26	Electricity	524462
+district	DC26	Gas	3538
+district	DC26	Paraffin	4281
+district	DC26	Candles (not a valid option)	257179
+district	DC26	Solar	3626
+district	DC26	None	5066
+district	DC26	Unspecified	5166
+district	DC26	Not applicable	256
+district	DC29	Electricity	403095
+district	DC29	Gas	3119
+district	DC29	Paraffin	4430
+district	DC29	Candles (not a valid option)	183209
+district	DC29	Solar	5377
+district	DC29	None	4928
+district	DC29	Unspecified	2483
+district	DC29	Not applicable	168
+district	DC33	Electricity	987559
+district	DC33	Gas	1173
+district	DC33	Paraffin	3998
+district	DC33	Candles (not a valid option)	90009
+district	DC33	Solar	2326
+district	DC33	None	4242
+district	DC33	Unspecified	1981
+district	DC33	Not applicable	1219
+district	DC34	Electricity	1150399
+district	DC34	Gas	2261
+district	DC34	Paraffin	12203
+district	DC34	Candles (not a valid option)	109419
+district	DC34	Solar	13295
+district	DC34	None	3083
+district	DC34	Unspecified	2056
+district	DC34	Not applicable	2006
+district	DC35	Electricity	1127437
+district	DC35	Gas	1339
+district	DC35	Paraffin	10746
+district	DC35	Candles (not a valid option)	111342
+district	DC35	Solar	5445
+district	DC35	None	2128
+district	DC35	Unspecified	2671
+district	DC35	Not applicable	356
+district	DC36	Electricity	598732
+district	DC36	Gas	825
+district	DC36	Paraffin	5859
+district	DC36	Candles (not a valid option)	67555
+district	DC36	Solar	1685
+district	DC36	None	1401
+district	DC36	Unspecified	2485
+district	DC36	Not applicable	793
+district	DC47	Electricity	940860
+district	DC47	Gas	1530
+district	DC47	Paraffin	5663
+district	DC47	Candles (not a valid option)	118996
+district	DC47	Solar	4653
+district	DC47	None	2607
+district	DC47	Unspecified	2467
+district	DC47	Not applicable	65
+district	DC30	Electricity	844636
+district	DC30	Gas	3753
+district	DC30	Paraffin	7259
+district	DC30	Candles (not a valid option)	176021
+district	DC30	Solar	2764
+district	DC30	None	2855
+district	DC30	Unspecified	4277
+district	DC30	Not applicable	1630
+district	DC31	Electricity	1158146
+district	DC31	Gas	2190
+district	DC31	Paraffin	9805
+district	DC31	Candles (not a valid option)	125322
+district	DC31	Solar	2861
+district	DC31	None	2696
+district	DC31	Unspecified	5293
+district	DC31	Not applicable	1816
+district	DC32	Electricity	1536343
+district	DC32	Gas	4989
+district	DC32	Paraffin	13876
+district	DC32	Candles (not a valid option)	117491
+district	DC32	Solar	4708
+district	DC32	None	4063
+district	DC32	Unspecified	4863
+district	DC32	Not applicable	2282
+district	DC37	Electricity	1309689
+district	DC37	Gas	2084
+district	DC37	Paraffin	36939
+district	DC37	Candles (not a valid option)	143453
+district	DC37	Solar	3864
+district	DC37	None	3640
+district	DC37	Unspecified	5474
+district	DC37	Not applicable	2363
+district	DC38	Electricity	683372
+district	DC38	Gas	1127
+district	DC38	Paraffin	7010
+district	DC38	Candles (not a valid option)	143086
+district	DC38	Solar	1873
+district	DC38	None	2296
+district	DC38	Unspecified	2649
+district	DC38	Not applicable	1286
+district	DC39	Electricity	389746
+district	DC39	Gas	467
+district	DC39	Paraffin	4121
+district	DC39	Candles (not a valid option)	65479
+district	DC39	Solar	1094
+district	DC39	None	1008
+district	DC39	Unspecified	1504
+district	DC39	Not applicable	396
+district	DC40	Electricity	618488
+district	DC40	Gas	946
+district	DC40	Paraffin	7801
+district	DC40	Candles (not a valid option)	62590
+district	DC40	Solar	1650
+district	DC40	None	1431
+district	DC40	Unspecified	2551
+district	DC40	Not applicable	476
+district	DC6	Electricity	104560
+district	DC6	Gas	172
+district	DC6	Paraffin	309
+district	DC6	Candles (not a valid option)	7211
+district	DC6	Solar	2726
+district	DC6	None	199
+district	DC6	Unspecified	229
+district	DC6	Not applicable	437
+district	DC7	Electricity	163122
+district	DC7	Gas	315
+district	DC7	Paraffin	1399
+district	DC7	Candles (not a valid option)	18250
+district	DC7	Solar	1664
+district	DC7	None	434
+district	DC7	Unspecified	602
+district	DC7	Not applicable	565
+district	DC8	Electricity	209794
+district	DC8	Gas	374
+district	DC8	Paraffin	1829
+district	DC8	Candles (not a valid option)	20311
+district	DC8	Solar	2401
+district	DC8	None	713
+district	DC8	Unspecified	941
+district	DC8	Not applicable	420
+district	DC9	Electricity	326708
+district	DC9	Gas	853
+district	DC9	Paraffin	10907
+district	DC9	Candles (not a valid option)	40066
+district	DC9	Solar	842
+district	DC9	None	1005
+district	DC9	Unspecified	1296
+district	DC9	Not applicable	408
+district	DC45	Electricity	200677
+district	DC45	Gas	406
+district	DC45	Paraffin	1495
+district	DC45	Candles (not a valid option)	19091
+district	DC45	Solar	1361
+district	DC45	None	520
+district	DC45	Unspecified	750
+district	DC45	Not applicable	499
+district	DC1	Electricity	370685
+district	DC1	Gas	546
+district	DC1	Paraffin	2826
+district	DC1	Candles (not a valid option)	12749
+district	DC1	Solar	919
+district	DC1	None	1199
+district	DC1	Unspecified	987
+district	DC1	Not applicable	1856
+district	DC2	Electricity	738936
+district	DC2	Gas	1514
+district	DC2	Paraffin	17903
+district	DC2	Candles (not a valid option)	19826
+district	DC2	Solar	1454
+district	DC2	None	2862
+district	DC2	Unspecified	3892
+district	DC2	Not applicable	1103
+district	DC3	Electricity	237517
+district	DC3	Gas	581
+district	DC3	Paraffin	8092
+district	DC3	Candles (not a valid option)	7710
+district	DC3	Solar	856
+district	DC3	None	714
+district	DC3	Unspecified	1677
+district	DC3	Not applicable	1029
+district	DC4	Electricity	522853
+district	DC4	Gas	1154
+district	DC4	Paraffin	10730
+district	DC4	Candles (not a valid option)	32406
+district	DC4	Solar	1643
+district	DC4	None	1601
+district	DC4	Unspecified	2551
+district	DC4	Not applicable	1327
+district	DC5	Electricity	63876
+district	DC5	Gas	178
+district	DC5	Paraffin	203
+district	DC5	Candles (not a valid option)	4192
+district	DC5	Solar	1462
+district	DC5	None	263
+district	DC5	Unspecified	273
+district	DC5	Not applicable	564
 \.
 
 
