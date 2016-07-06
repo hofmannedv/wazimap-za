@@ -45247,6 +45247,446 @@ municipality	CPT	Male	White	280133
 municipality	CPT	Female	White	305698
 municipality	CPT	Male	Other	42097
 municipality	CPT	Female	Other	30087
+district	DC10	Male	Black African	117806
+district	DC10	Male	Coloured	75838
+district	DC10	Male	Indian or Asian	858
+district	DC10	Male	White	23611
+district	DC10	Male	Other	2132
+district	DC10	Female	Black African	122204
+district	DC10	Female	Coloured	81282
+district	DC10	Female	Indian or Asian	659
+district	DC10	Female	White	25355
+district	DC10	Female	Other	837
+district	DC12	Male	Black African	406653
+district	DC12	Male	Coloured	6373
+district	DC12	Male	Indian or Asian	706
+district	DC12	Male	White	4435
+district	DC12	Male	Other	1081
+district	DC12	Female	Black African	461364
+district	DC12	Female	Coloured	6760
+district	DC12	Female	Indian or Asian	420
+district	DC12	Female	White	4514
+district	DC12	Female	Other	330
+district	DC13	Male	Black African	350132
+district	DC13	Male	Coloured	15858
+district	DC13	Male	Indian or Asian	1148
+district	DC13	Male	White	7819
+district	DC13	Male	Other	1681
+district	DC13	Female	Black African	392413
+district	DC13	Female	Coloured	16908
+district	DC13	Female	Indian or Asian	639
+district	DC13	Female	White	8215
+district	DC13	Female	Other	647
+district	DC14	Male	Black African	154446
+district	DC14	Male	Coloured	6046
+district	DC14	Male	Indian or Asian	449
+district	DC14	Male	White	4010
+district	DC14	Male	Other	491
+district	DC14	Female	Black African	173556
+district	DC14	Female	Coloured	6131
+district	DC14	Female	Indian or Asian	183
+district	DC14	Female	White	4267
+district	DC14	Female	Other	189
+district	DC15	Male	Black African	622870
+district	DC15	Male	Coloured	3261
+district	DC15	Male	Indian or Asian	1581
+district	DC15	Male	White	1358
+district	DC15	Male	Other	1017
+district	DC15	Female	Black African	728919
+district	DC15	Female	Coloured	3173
+district	DC15	Female	Indian or Asian	1072
+district	DC15	Female	White	1283
+district	DC15	Female	Other	408
+district	DC44	Male	Black African	362754
+district	DC44	Male	Coloured	1666
+district	DC44	Male	Indian or Asian	692
+district	DC44	Male	White	916
+district	DC44	Male	Other	459
+district	DC44	Female	Black African	431629
+district	DC44	Female	Coloured	1641
+district	DC44	Female	Indian or Asian	440
+district	DC44	Female	White	982
+district	DC44	Female	Other	165
+district	DC16	Male	Black African	55945
+district	DC16	Male	Coloured	9433
+district	DC16	Male	Indian or Asian	414
+district	DC16	Male	White	5494
+district	DC16	Male	Other	372
+district	DC16	Female	Black African	58862
+district	DC16	Female	Coloured	9806
+district	DC16	Female	Indian or Asian	139
+district	DC16	Female	White	5649
+district	DC16	Female	Other	145
+district	DC18	Male	Black African	274999
+district	DC18	Male	Coloured	5856
+district	DC18	Male	Indian or Asian	1655
+district	DC18	Male	White	26144
+district	DC18	Male	Other	955
+district	DC18	Female	Black African	282951
+district	DC18	Female	Coloured	6008
+district	DC18	Female	Indian or Asian	587
+district	DC18	Female	White	28064
+district	DC18	Female	Other	406
+district	DC19	Male	Black African	320416
+district	DC19	Male	Coloured	3058
+district	DC19	Male	Indian or Asian	1728
+district	DC19	Male	White	17078
+district	DC19	Male	Other	890
+district	DC19	Female	Black African	369924
+district	DC19	Female	Coloured	3131
+district	DC19	Female	Indian or Asian	1153
+district	DC19	Female	White	18439
+district	DC19	Female	Other	421
+district	DC20	Male	Black African	208420
+district	DC20	Male	Coloured	4600
+district	DC20	Male	Indian or Asian	1024
+district	DC20	Male	White	27248
+district	DC20	Male	Other	1051
+district	DC20	Female	Black African	211635
+district	DC20	Female	Coloured	4615
+district	DC20	Female	Indian or Asian	493
+district	DC20	Female	White	28619
+district	DC20	Female	Other	332
+district	DC42	Male	Black African	371160
+district	DC42	Male	Coloured	5515
+district	DC42	Male	Indian or Asian	4903
+district	DC42	Male	White	70886
+district	DC42	Male	Other	2893
+district	DC42	Female	Black African	377497
+district	DC42	Female	Coloured	5555
+district	DC42	Female	Indian or Asian	4238
+district	DC42	Female	White	72494
+district	DC42	Female	Other	1343
+district	DC48	Male	Black African	343537
+district	DC48	Male	Coloured	9972
+district	DC48	Male	Indian or Asian	5114
+district	DC48	Male	White	67033
+district	DC48	Male	Other	2519
+district	DC48	Female	Black African	306595
+district	DC48	Female	Coloured	10578
+district	DC48	Female	Indian or Asian	4320
+district	DC48	Female	White	70008
+district	DC48	Female	Other	1318
+district	DC21	Male	Black African	306326
+district	DC21	Male	Coloured	2921
+district	DC21	Male	Indian or Asian	12124
+district	DC21	Male	White	17096
+district	DC21	Male	Other	694
+district	DC21	Female	Black African	348447
+district	DC21	Female	Coloured	3202
+district	DC21	Female	Indian or Asian	12588
+district	DC21	Female	White	18626
+district	DC21	Female	Other	460
+district	DC22	Male	Black African	410838
+district	DC22	Male	Coloured	9834
+district	DC22	Male	Indian or Asian	33033
+district	DC22	Male	White	30578
+district	DC22	Male	Other	1636
+district	DC22	Female	Black African	451704
+district	DC22	Female	Coloured	10704
+district	DC22	Female	Indian or Asian	34997
+district	DC22	Female	White	33357
+district	DC22	Female	Other	1081
+district	DC23	Male	Black African	295021
+district	DC23	Male	Coloured	1876
+district	DC23	Male	Indian or Asian	8042
+district	DC23	Male	White	5608
+district	DC23	Male	Other	636
+district	DC23	Female	Black African	341374
+district	DC23	Female	Coloured	2046
+district	DC23	Female	Indian or Asian	7981
+district	DC23	Female	White	5829
+district	DC23	Female	Other	434
+district	DC27	Male	Black African	284653
+district	DC27	Male	Coloured	585
+district	DC27	Male	Indian or Asian	744
+district	DC27	Male	White	2137
+district	DC27	Male	Other	527
+district	DC27	Female	Black African	333476
+district	DC27	Female	Coloured	568
+district	DC27	Female	Indian or Asian	647
+district	DC27	Female	White	2053
+district	DC27	Female	Other	456
+district	DC28	Male	Black African	401874
+district	DC28	Male	Coloured	2543
+district	DC28	Male	Indian or Asian	7185
+district	DC28	Male	White	14815
+district	DC28	Male	Other	981
+district	DC28	Female	Black African	455123
+district	DC28	Female	Coloured	2482
+district	DC28	Female	Indian or Asian	7448
+district	DC28	Female	White	14560
+district	DC28	Female	Other	509
+district	DC43	Male	Black African	206741
+district	DC43	Male	Coloured	3767
+district	DC43	Male	Indian or Asian	834
+district	DC43	Male	White	2691
+district	DC43	Male	Other	433
+district	DC43	Female	Black African	239667
+district	DC43	Female	Coloured	3779
+district	DC43	Female	Indian or Asian	672
+district	DC43	Female	White	2665
+district	DC43	Female	Other	171
+district	DC24	Male	Black African	221138
+district	DC24	Male	Coloured	1314
+district	DC24	Male	Indian or Asian	3154
+district	DC24	Male	White	3533
+district	DC24	Male	Other	437
+district	DC24	Female	Black African	272319
+district	DC24	Female	Coloured	1475
+district	DC24	Female	Indian or Asian	3358
+district	DC24	Female	White	3857
+district	DC24	Female	Other	255
+district	DC25	Male	Black African	221399
+district	DC25	Male	Coloured	1657
+district	DC25	Male	Indian or Asian	6646
+district	DC25	Male	White	8345
+district	DC25	Male	Other	665
+district	DC25	Female	Black African	243743
+district	DC25	Female	Coloured	1792
+district	DC25	Female	Indian or Asian	6521
+district	DC25	Female	White	8684
+district	DC25	Female	Other	387
+district	DC26	Male	Black African	364309
+district	DC26	Male	Coloured	858
+district	DC26	Male	Indian or Asian	946
+district	DC26	Male	White	5528
+district	DC26	Male	Other	559
+district	DC26	Female	Black African	423570
+district	DC26	Female	Coloured	843
+district	DC26	Female	Indian or Asian	829
+district	DC26	Female	White	5760
+district	DC26	Female	Other	373
+district	DC29	Male	Black African	261675
+district	DC29	Male	Coloured	1578
+district	DC29	Male	Indian or Asian	17371
+district	DC29	Male	White	7139
+district	DC29	Male	Other	1245
+district	DC29	Female	Black African	289082
+district	DC29	Female	Coloured	1643
+district	DC29	Female	Indian or Asian	18541
+district	DC29	Female	White	7574
+district	DC29	Female	Other	960
+district	DC33	Male	Black African	484481
+district	DC33	Male	Coloured	882
+district	DC33	Male	Indian or Asian	1687
+district	DC33	Male	White	13560
+district	DC33	Male	Other	971
+district	DC33	Female	Black African	575251
+district	DC33	Female	Coloured	899
+district	DC33	Female	Indian or Asian	1043
+district	DC33	Female	White	13353
+district	DC33	Female	Other	381
+district	DC34	Male	Black African	579126
+district	DC34	Male	Coloured	935
+district	DC34	Male	Indian or Asian	3136
+district	DC34	Male	White	7371
+district	DC34	Male	Other	928
+district	DC34	Female	Black African	692582
+district	DC34	Female	Coloured	898
+district	DC34	Female	Indian or Asian	2131
+district	DC34	Female	White	7228
+district	DC34	Female	Other	386
+district	DC35	Male	Black African	564314
+district	DC35	Male	Coloured	3150
+district	DC35	Male	Indian or Asian	3043
+district	DC35	Male	White	17955
+district	DC35	Male	Other	1780
+district	DC35	Female	Black African	647560
+district	DC35	Female	Coloured	3121
+district	DC35	Female	Indian or Asian	2191
+district	DC35	Female	White	17515
+district	DC35	Female	Other	833
+district	DC36	Male	Black African	312149
+district	DC36	Male	Coloured	1913
+district	DC36	Male	Indian or Asian	1833
+district	DC36	Male	White	25934
+district	DC36	Male	Other	1340
+district	DC36	Female	Black African	307739
+district	DC36	Female	Coloured	1385
+district	DC36	Female	Indian or Asian	1096
+district	DC36	Female	White	25428
+district	DC36	Female	Other	519
+district	DC47	Male	Black African	489202
+district	DC47	Male	Coloured	643
+district	DC47	Male	Indian or Asian	1123
+district	DC47	Male	White	5715
+district	DC47	Male	Other	965
+district	DC47	Female	Black African	572348
+district	DC47	Female	Coloured	589
+district	DC47	Female	Indian or Asian	597
+district	DC47	Female	White	5300
+district	DC47	Female	Other	357
+district	DC30	Male	Black African	453383
+district	DC30	Male	Coloured	5468
+district	DC30	Male	Indian or Asian	6128
+district	DC30	Male	White	47197
+district	DC30	Male	Other	2230
+district	DC30	Female	Black African	470593
+district	DC30	Female	Coloured	5299
+district	DC30	Female	Indian or Asian	4873
+district	DC30	Female	White	47083
+district	DC30	Female	Other	941
+district	DC31	Male	Black African	575306
+district	DC31	Male	Coloured	7432
+district	DC31	Male	Indian or Asian	5706
+district	DC31	Male	White	64997
+district	DC31	Male	Other	2807
+district	DC31	Female	Black African	574934
+district	DC31	Female	Coloured	7439
+district	DC31	Female	Indian or Asian	3843
+district	DC31	Female	White	64660
+district	DC31	Female	Other	1006
+district	DC32	Male	Black African	752680
+district	DC32	Male	Coloured	5249
+district	DC32	Male	Indian or Asian	4330
+district	DC32	Male	White	39364
+district	DC32	Male	Other	1780
+district	DC32	Female	Black African	835323
+district	DC32	Female	Coloured	5725
+district	DC32	Female	Indian or Asian	3036
+district	DC32	Female	White	40296
+district	DC32	Female	Other	833
+district	DC37	Male	Black African	726686
+district	DC37	Male	Coloured	5559
+district	DC37	Male	Indian or Asian	5161
+district	DC37	Male	White	53818
+district	DC37	Male	Other	3304
+district	DC37	Female	Black African	651135
+district	DC37	Female	Coloured	5372
+district	DC37	Female	Indian or Asian	3414
+district	DC37	Female	White	51455
+district	DC37	Female	Other	1601
+district	DC38	Male	Black African	385963
+district	DC38	Male	Coloured	7066
+district	DC38	Male	Indian or Asian	3210
+district	DC38	Male	White	15898
+district	DC38	Male	Other	1262
+district	DC38	Female	Black African	405288
+district	DC38	Female	Coloured	6743
+district	DC38	Female	Indian or Asian	1758
+district	DC38	Female	White	15052
+district	DC38	Female	Other	459
+district	DC39	Male	Black African	204252
+district	DC39	Male	Coloured	9029
+district	DC39	Male	Indian or Asian	1335
+district	DC39	Male	White	9169
+district	DC39	Male	Other	933
+district	DC39	Female	Black African	219728
+district	DC39	Female	Coloured	9317
+district	DC39	Female	Indian or Asian	669
+district	DC39	Female	White	8958
+district	DC39	Female	Other	425
+district	DC40	Male	Black African	280097
+district	DC40	Male	Coloured	13780
+district	DC40	Male	Indian or Asian	3008
+district	DC40	Male	White	48743
+district	DC40	Male	Other	1630
+district	DC40	Female	Black African	278915
+district	DC40	Female	Coloured	14542
+district	DC40	Female	Indian or Asian	2097
+district	DC40	Female	White	52291
+district	DC40	Female	Other	830
+district	DC6	Male	Black African	4619
+district	DC6	Male	Coloured	47850
+district	DC6	Male	Indian or Asian	322
+district	DC6	Male	White	4922
+district	DC6	Male	Other	562
+district	DC6	Female	Black African	3285
+district	DC6	Female	Coloured	48509
+district	DC6	Female	Indian or Asian	291
+district	DC6	Female	White	5191
+district	DC6	Female	Other	291
+district	DC7	Male	Black African	29057
+district	DC7	Male	Coloured	53966
+district	DC7	Male	Indian or Asian	643
+district	DC7	Male	White	7490
+district	DC7	Male	Other	912
+district	DC7	Female	Black African	29557
+district	DC7	Female	Coloured	56291
+district	DC7	Female	Indian or Asian	402
+district	DC7	Female	White	7574
+district	DC7	Female	Other	460
+district	DC8	Male	Black African	37658
+district	DC8	Male	Coloured	69963
+district	DC8	Male	Indian or Asian	1017
+district	DC8	Male	White	9436
+district	DC8	Male	Other	2093
+district	DC8	Female	Black African	31854
+district	DC8	Female	Coloured	72953
+district	DC8	Female	Indian or Asian	690
+district	DC8	Female	White	9934
+district	DC8	Female	Other	1185
+district	DC9	Male	Black African	120976
+district	DC9	Male	Coloured	44533
+district	DC9	Male	Indian or Asian	2051
+district	DC9	Male	White	12229
+district	DC9	Male	Other	5708
+district	DC9	Female	Black African	129263
+district	DC9	Female	Coloured	47015
+district	DC9	Female	Indian or Asian	1552
+district	DC9	Female	White	13323
+district	DC9	Female	Other	5436
+district	DC45	Male	Black African	91421
+district	DC45	Male	Coloured	10479
+district	DC45	Male	Indian or Asian	634
+district	DC45	Male	White	5658
+district	DC45	Male	Other	773
+district	DC45	Female	Black African	99297
+district	DC45	Female	Coloured	10339
+district	DC45	Female	Indian or Asian	225
+district	DC45	Female	White	5489
+district	DC45	Female	Other	483
+district	DC1	Male	Black African	33881
+district	DC1	Male	Coloured	127593
+district	DC1	Male	Indian or Asian	1147
+district	DC1	Male	White	29903
+district	DC1	Male	Other	2015
+district	DC1	Female	Black African	30229
+district	DC1	Female	Coloured	133257
+district	DC1	Female	Indian or Asian	1034
+district	DC1	Female	White	31624
+district	DC1	Female	Other	1083
+district	DC2	Male	Black African	96680
+district	DC2	Male	Coloured	236548
+district	DC2	Male	Indian or Asian	1724
+district	DC2	Male	White	48873
+district	DC2	Male	Other	4388
+district	DC2	Female	Black African	89792
+district	DC2	Female	Coloured	252641
+district	DC2	Female	Indian or Asian	1429
+district	DC2	Female	White	52619
+district	DC2	Female	Other	2797
+district	DC3	Male	Black African	36252
+district	DC3	Male	Coloured	67854
+district	DC3	Male	Indian or Asian	496
+district	DC3	Male	White	23049
+district	DC3	Male	Other	1718
+district	DC3	Female	Black African	29899
+district	DC3	Female	Coloured	71971
+district	DC3	Female	Indian or Asian	320
+district	DC3	Female	White	25643
+district	DC3	Female	Other	973
+district	DC4	Male	Black African	72820
+district	DC4	Male	Coloured	149367
+district	DC4	Male	Indian or Asian	1345
+district	DC4	Male	White	52373
+district	DC4	Male	Other	5013
+district	DC4	Female	Black African	69009
+district	DC4	Female	Coloured	161811
+district	DC4	Female	Indian or Asian	1180
+district	DC4	Female	White	57941
+district	DC4	Female	Other	3405
+district	DC5	Male	Black African	4591
+district	DC5	Male	Coloured	26154
+district	DC5	Male	Indian or Asian	186
+district	DC5	Male	White	3538
+district	DC5	Male	Other	298
+district	DC5	Female	Black African	4453
+district	DC5	Female	Coloured	27921
+district	DC5	Female	Indian or Asian	114
+district	DC5	Female	White	3659
+district	DC5	Female	Other	95
 \.
 
 
