@@ -141,16 +141,16 @@ class Command(BaseCommand):
         SuperWEB2(tm)
 
         "Descriptive"
-        "Geography by Gender"
+        "Geography by Gender and Population group"
         "Counting: Person weighted"
 
         Filters:
         "Default Summation","Person weighted"
 
-        "Gender","Male","Female","Total",
+        "Gender","Male",,,,,"Female",,,,,"Total",,,,,
+        "Population group","Black African","Coloured","Indian or Asian","White","Other","Black African","Coloured","Indian or Asian","White","Other","Black African","Coloured","Indian or Asian","White","Other",
         "Geography",
-        "DC10: Cacadu",220246.1536,230338.07636,450584.2299599,
-        "DC12: Amathole",419247.3653695,473389.2876894,892636.653059,
+        "DC10: Cacadu",117806.22622,75838.03976,858.21112,23611.3976,2132.2789,122204.04175,81281.84145,659.42599,25355.4941,837.27307,240010.2679701,157119.88121,1517.63711,48966.8917,2969.55197,
         ...
 
         '''
@@ -179,7 +179,7 @@ class Command(BaseCommand):
             # Repeat category value until next value
             last = categories_for_field[0]
             for i, val in enumerate(categories_for_field):
-                if val == " ":
+                if val.strip() == "":
                     categories_for_field[i] = last
                 else:
                     last = val
