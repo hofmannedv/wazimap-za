@@ -54289,6 +54289,534 @@ municipality	CPT	Male	Separated	10245
 municipality	CPT	Female	Separated	17058
 municipality	CPT	Male	Divorced	30765
 municipality	CPT	Female	Divorced	66177
+district	DC10	Male	Married	54393
+district	DC10	Male	Living together like married partners	19035
+district	DC10	Male	Never married	140424
+district	DC10	Male	Widower/ Widow	3546
+district	DC10	Male	Separated	1032
+district	DC10	Male	Divorced	1816
+district	DC10	Female	Married	55600
+district	DC10	Female	Living together like married partners	18959
+district	DC10	Female	Never married	137621
+district	DC10	Female	Widower/ Widow	13572
+district	DC10	Female	Separated	1418
+district	DC10	Female	Divorced	3169
+district	DC12	Male	Married	78720
+district	DC12	Male	Living together like married partners	9400
+district	DC12	Male	Never married	317914
+district	DC12	Male	Widower/ Widow	7513
+district	DC12	Male	Separated	3647
+district	DC12	Male	Divorced	2053
+district	DC12	Female	Married	101807
+district	DC12	Female	Living together like married partners	9765
+district	DC12	Female	Never married	305034
+district	DC12	Female	Widower/ Widow	49879
+district	DC12	Female	Separated	4085
+district	DC12	Female	Divorced	2820
+district	DC13	Male	Married	73284
+district	DC13	Male	Living together like married partners	11956
+district	DC13	Male	Never married	280132
+district	DC13	Male	Widower/ Widow	6493
+district	DC13	Male	Separated	2931
+district	DC13	Male	Divorced	1843
+district	DC13	Female	Married	93180
+district	DC13	Female	Living together like married partners	12509
+district	DC13	Female	Never married	271254
+district	DC13	Female	Widower/ Widow	35666
+district	DC13	Female	Separated	3348
+district	DC13	Female	Divorced	2866
+district	DC14	Male	Married	30904
+district	DC14	Male	Living together like married partners	7464
+district	DC14	Male	Never married	121651
+district	DC14	Male	Widower/ Widow	3262
+district	DC14	Male	Separated	1361
+district	DC14	Male	Divorced	801
+district	DC14	Female	Married	38891
+district	DC14	Female	Living together like married partners	8171
+district	DC14	Female	Never married	118042
+district	DC14	Female	Widower/ Widow	16439
+district	DC14	Female	Separated	1620
+district	DC14	Female	Divorced	1163
+district	DC15	Male	Married	100968
+district	DC15	Male	Living together like married partners	11044
+district	DC15	Male	Never married	505042
+district	DC15	Male	Widower/ Widow	7803
+district	DC15	Male	Separated	3736
+district	DC15	Male	Divorced	1495
+district	DC15	Female	Married	146493
+district	DC23	Male	Never married	246332
+district	DC15	Female	Living together like married partners	11983
+district	DC15	Female	Never married	510837
+district	DC15	Female	Widower/ Widow	58288
+district	DC15	Female	Separated	4447
+district	DC15	Female	Divorced	2807
+district	DC44	Male	Married	56129
+district	DC44	Male	Living together like married partners	9684
+district	DC44	Male	Never married	292421
+district	DC44	Male	Widower/ Widow	5059
+district	DC44	Male	Separated	2381
+district	DC44	Male	Divorced	814
+district	DC44	Female	Married	87157
+district	DC44	Female	Living together like married partners	12004
+district	DC44	Female	Never married	292205
+district	DC44	Female	Widower/ Widow	39404
+district	DC44	Female	Separated	2727
+district	DC44	Female	Divorced	1359
+district	DC16	Male	Married	15319
+district	DC16	Male	Living together like married partners	7496
+district	DC16	Male	Never married	46535
+district	DC16	Male	Widower/ Widow	1360
+district	DC16	Male	Separated	507
+district	DC16	Male	Divorced	441
+district	DC16	Female	Married	15626
+district	DC16	Female	Living together like married partners	7389
+district	DC16	Female	Never married	44611
+district	DC16	Female	Widower/ Widow	5398
+district	DC16	Female	Separated	786
+district	DC16	Female	Divorced	790
+district	DC18	Male	Married	78237
+district	DC18	Male	Living together like married partners	25923
+district	DC18	Male	Never married	194360
+district	DC18	Male	Widower/ Widow	6534
+district	DC18	Male	Separated	2363
+district	DC18	Male	Divorced	2194
+district	DC18	Female	Married	72284
+district	DC18	Female	Living together like married partners	25495
+district	DC18	Female	Never married	187489
+district	DC18	Female	Widower/ Widow	24199
+district	DC18	Female	Separated	3899
+district	DC18	Female	Divorced	4650
+district	DC19	Male	Married	71937
+district	DC19	Male	Living together like married partners	24216
+district	DC19	Male	Never married	235027
+district	DC19	Male	Widower/ Widow	7044
+district	DC19	Male	Separated	3122
+district	DC19	Male	Divorced	1824
+district	DC19	Female	Married	84811
+district	DC19	Female	Living together like married partners	25420
+district	DC19	Female	Never married	241338
+district	DC19	Female	Widower/ Widow	32920
+district	DC19	Female	Separated	4865
+district	DC19	Female	Divorced	3714
+district	DC20	Male	Married	60260
+district	DC20	Male	Living together like married partners	20418
+district	DC20	Male	Never married	152073
+district	DC20	Male	Widower/ Widow	5159
+district	DC20	Male	Separated	2311
+district	DC20	Male	Divorced	2122
+district	DC20	Female	Married	56871
+district	DC20	Female	Living together like married partners	19939
+district	DC20	Female	Never married	141145
+district	DC20	Female	Widower/ Widow	20307
+district	DC20	Female	Separated	3388
+district	DC20	Female	Divorced	4044
+district	DC42	Male	Married	117951
+district	DC42	Male	Living together like married partners	43960
+district	DC42	Male	Never married	276848
+district	DC42	Male	Widower/ Widow	7801
+district	DC42	Male	Separated	3509
+district	DC42	Male	Divorced	5289
+district	DC42	Female	Married	114390
+district	DC42	Female	Living together like married partners	43087
+district	DC42	Female	Never married	258666
+district	DC42	Female	Widower/ Widow	29886
+district	DC42	Female	Separated	5357
+district	DC42	Female	Divorced	9739
+district	DC48	Male	Married	127218
+district	DC48	Male	Living together like married partners	44731
+district	DC48	Male	Never married	245565
+district	DC48	Male	Widower/ Widow	4739
+district	DC48	Male	Separated	1750
+district	DC48	Male	Divorced	4171
+district	DC48	Female	Married	97815
+district	DC48	Female	Living together like married partners	43056
+district	DC48	Female	Never married	223075
+district	DC48	Female	Widower/ Widow	17917
+district	DC48	Female	Separated	2767
+district	DC48	Female	Divorced	8189
+district	DC21	Male	Married	61820
+district	DC21	Male	Living together like married partners	14030
+district	DC21	Male	Never married	256938
+district	DC21	Male	Widower/ Widow	3604
+district	DC21	Male	Separated	1380
+district	DC21	Male	Divorced	1388
+district	DC21	Female	Married	74975
+district	DC21	Female	Living together like married partners	14920
+district	DC21	Female	Never married	263041
+district	DC21	Female	Widower/ Widow	26498
+district	DC21	Female	Separated	1653
+district	DC21	Female	Divorced	2236
+district	DC22	Male	Married	100895
+district	DC22	Male	Living together like married partners	23401
+district	DC22	Male	Never married	352652
+district	DC22	Male	Widower/ Widow	4681
+district	DC22	Male	Separated	1830
+district	DC22	Male	Divorced	2461
+district	DC22	Female	Married	111537
+district	DC22	Female	Living together like married partners	23272
+district	DC22	Female	Never married	360311
+district	DC22	Female	Widower/ Widow	28621
+district	DC22	Female	Separated	2547
+district	DC22	Female	Divorced	5556
+district	DC23	Male	Married	44118
+district	DC23	Male	Living together like married partners	16791
+district	DC23	Male	Widower/ Widow	2334
+district	DC23	Male	Separated	990
+district	DC23	Male	Divorced	620
+district	DC23	Female	Married	56876
+district	DC23	Female	Living together like married partners	19794
+district	DC23	Female	Never married	260989
+district	DC23	Female	Widower/ Widow	17545
+district	DC23	Female	Separated	1343
+district	DC23	Female	Divorced	1116
+district	DC27	Male	Married	32249
+district	DC27	Male	Living together like married partners	18446
+district	DC27	Male	Never married	235135
+district	DC27	Male	Widower/ Widow	1216
+district	DC27	Male	Separated	1381
+district	DC27	Male	Divorced	219
+district	DC27	Female	Married	45380
+district	DC27	Female	Living together like married partners	22023
+district	DC27	Female	Never married	256718
+district	DC27	Female	Widower/ Widow	10510
+district	DC27	Female	Separated	2189
+district	DC27	Female	Divorced	379
+district	DC28	Male	Married	67272
+district	DC28	Male	Living together like married partners	21115
+district	DC28	Male	Never married	333924
+district	DC28	Male	Widower/ Widow	2318
+district	DC28	Male	Separated	1845
+district	DC28	Male	Divorced	923
+district	DC28	Female	Married	87936
+district	DC28	Female	Living together like married partners	22290
+district	DC28	Female	Never married	347854
+district	DC28	Female	Widower/ Widow	18238
+district	DC28	Female	Separated	2390
+district	DC28	Female	Divorced	1414
+district	DC43	Male	Married	31100
+district	DC43	Male	Living together like married partners	11583
+district	DC43	Male	Never married	168637
+district	DC43	Male	Widower/ Widow	1907
+district	DC43	Male	Separated	897
+district	DC43	Male	Divorced	343
+district	DC43	Female	Married	43408
+district	DC43	Female	Living together like married partners	15456
+district	DC43	Female	Never married	170926
+district	DC43	Female	Widower/ Widow	15465
+district	DC43	Female	Separated	1085
+district	DC43	Female	Divorced	613
+district	DC24	Male	Married	23621
+district	DC24	Male	Living together like married partners	16170
+district	DC24	Male	Never married	186880
+district	DC24	Male	Widower/ Widow	1717
+district	DC24	Male	Separated	872
+district	DC24	Male	Divorced	316
+district	DC24	Female	Married	34314
+district	DC24	Female	Living together like married partners	23962
+district	DC24	Female	Never married	204008
+district	DC24	Female	Widower/ Widow	17236
+district	DC24	Female	Separated	1219
+district	DC24	Female	Divorced	524
+district	DC25	Male	Married	33709
+district	DC25	Male	Living together like married partners	10897
+district	DC25	Male	Never married	190704
+district	DC25	Male	Widower/ Widow	2089
+district	DC25	Male	Separated	558
+district	DC25	Male	Divorced	755
+district	DC25	Female	Married	39680
+district	DC25	Female	Living together like married partners	10876
+district	DC25	Female	Never married	196873
+district	DC25	Female	Widower/ Widow	11426
+district	DC25	Female	Separated	758
+district	DC25	Female	Divorced	1514
+district	DC26	Male	Married	45214
+district	DC26	Male	Living together like married partners	13696
+district	DC26	Male	Never married	309560
+district	DC26	Male	Widower/ Widow	2111
+district	DC26	Male	Separated	1255
+district	DC26	Male	Divorced	364
+district	DC26	Female	Married	67962
+district	DC26	Female	Living together like married partners	15283
+district	DC26	Female	Never married	327554
+district	DC26	Female	Widower/ Widow	18312
+district	DC26	Female	Separated	1633
+district	DC26	Female	Divorced	632
+district	DC29	Male	Married	45230
+district	DC29	Male	Living together like married partners	21713
+district	DC29	Male	Never married	218485
+district	DC29	Male	Widower/ Widow	1783
+district	DC29	Male	Separated	1138
+district	DC29	Male	Divorced	660
+district	DC29	Female	Married	55486
+district	DC29	Female	Living together like married partners	22001
+district	DC29	Female	Never married	225308
+district	DC29	Female	Widower/ Widow	12483
+district	DC29	Female	Separated	1431
+district	DC29	Female	Divorced	1090
+district	DC33	Male	Married	82564
+district	DC33	Male	Living together like married partners	43547
+district	DC33	Male	Never married	364423
+district	DC33	Male	Widower/ Widow	5136
+district	DC33	Male	Separated	3815
+district	DC33	Male	Divorced	2096
+district	DC33	Female	Married	104218
+district	DC33	Female	Living together like married partners	52029
+district	DC33	Female	Never married	377632
+district	DC33	Female	Widower/ Widow	44045
+district	DC33	Female	Separated	8480
+district	DC33	Female	Divorced	4522
+district	DC34	Male	Married	110592
+district	DC34	Male	Living together like married partners	41165
+district	DC34	Male	Never married	426814
+district	DC34	Male	Widower/ Widow	5260
+district	DC34	Male	Separated	5423
+district	DC34	Male	Divorced	2242
+district	DC34	Female	Married	138767
+district	DC34	Female	Living together like married partners	53381
+district	DC34	Female	Never married	430713
+district	DC34	Female	Widower/ Widow	61693
+district	DC34	Female	Separated	13791
+district	DC34	Female	Divorced	4881
+district	DC35	Male	Married	116519
+district	DC35	Male	Living together like married partners	22038
+district	DC35	Male	Never married	440348
+district	DC35	Male	Widower/ Widow	6622
+district	DC35	Male	Separated	1945
+district	DC35	Male	Divorced	2772
+district	DC35	Female	Married	143808
+district	DC35	Female	Living together like married partners	22756
+district	DC35	Female	Never married	450615
+district	DC35	Female	Widower/ Widow	46503
+district	DC35	Female	Separated	2470
+district	DC35	Female	Divorced	5068
+district	DC36	Male	Married	81892
+district	DC36	Male	Living together like married partners	17758
+district	DC36	Male	Never married	237078
+district	DC36	Male	Widower/ Widow	3356
+district	DC36	Male	Separated	1109
+district	DC36	Male	Divorced	1974
+district	DC36	Female	Married	77230
+district	DC36	Female	Living together like married partners	16887
+district	DC36	Female	Never married	221352
+district	DC36	Female	Widower/ Widow	16550
+district	DC36	Female	Separated	1341
+district	DC36	Female	Divorced	2809
+district	DC47	Male	Married	83826
+district	DC47	Male	Living together like married partners	20851
+district	DC47	Male	Never married	385331
+district	DC47	Male	Widower/ Widow	5186
+district	DC47	Male	Separated	1407
+district	DC47	Male	Divorced	1047
+district	DC47	Female	Married	118632
+district	DC47	Female	Living together like married partners	23140
+district	DC47	Female	Never married	394077
+district	DC47	Female	Widower/ Widow	39814
+district	DC47	Female	Separated	1955
+district	DC47	Female	Divorced	1573
+district	DC30	Male	Married	98442
+district	DC30	Male	Living together like married partners	42068
+district	DC30	Male	Never married	365238
+district	DC30	Male	Widower/ Widow	4716
+district	DC30	Male	Separated	1762
+district	DC30	Male	Divorced	2180
+district	DC30	Female	Married	100218
+district	DC30	Female	Living together like married partners	41895
+district	DC30	Female	Never married	360213
+district	DC30	Female	Widower/ Widow	20797
+district	DC30	Female	Separated	2337
+district	DC30	Female	Divorced	3329
+district	DC31	Male	Married	157576
+district	DC31	Male	Living together like married partners	36380
+district	DC31	Male	Never married	447231
+district	DC31	Male	Widower/ Widow	8075
+district	DC31	Male	Separated	2575
+district	DC31	Male	Divorced	4410
+district	DC31	Female	Married	154209
+district	DC31	Female	Living together like married partners	35399
+district	DC31	Female	Never married	415118
+district	DC31	Female	Widower/ Widow	36428
+district	DC31	Female	Separated	3734
+district	DC31	Female	Divorced	6994
+district	DC32	Male	Married	120725
+district	DC32	Male	Living together like married partners	81403
+district	DC32	Male	Never married	586016
+district	DC32	Male	Widower/ Widow	7546
+district	DC32	Male	Separated	4585
+district	DC32	Male	Divorced	3128
+district	DC32	Female	Married	133798
+district	DC32	Female	Living together like married partners	88473
+district	DC32	Female	Never married	601895
+district	DC32	Female	Widower/ Widow	46399
+district	DC32	Female	Separated	9086
+district	DC32	Female	Divorced	5560
+district	DC37	Male	Married	205942
+district	DC37	Male	Living together like married partners	62467
+district	DC37	Male	Never married	506704
+district	DC37	Male	Widower/ Widow	9486
+district	DC37	Male	Separated	3842
+district	DC37	Male	Divorced	6088
+district	DC37	Female	Married	162492
+district	DC37	Female	Living together like married partners	59731
+district	DC37	Female	Never married	441373
+district	DC37	Female	Widower/ Widow	35841
+district	DC37	Female	Separated	4173
+district	DC37	Female	Divorced	9366
+district	DC38	Male	Married	68396
+district	DC38	Male	Living together like married partners	31354
+district	DC38	Male	Never married	303231
+district	DC38	Male	Widower/ Widow	6341
+district	DC38	Male	Separated	1565
+district	DC38	Male	Divorced	2513
+district	DC38	Female	Married	72645
+district	DC38	Female	Living together like married partners	29536
+district	DC38	Female	Never married	294948
+district	DC38	Female	Widower/ Widow	25445
+district	DC38	Female	Separated	2180
+district	DC38	Female	Divorced	4546
+district	DC39	Male	Married	35030
+district	DC39	Male	Living together like married partners	17069
+district	DC39	Male	Never married	166811
+district	DC39	Male	Widower/ Widow	3611
+district	DC39	Male	Separated	977
+district	DC39	Male	Divorced	1220
+district	DC39	Female	Married	39649
+district	DC39	Female	Living together like married partners	16212
+district	DC39	Female	Never married	165884
+district	DC39	Female	Widower/ Widow	14194
+district	DC39	Female	Separated	1305
+district	DC39	Female	Divorced	1853
+district	DC40	Male	Married	81622
+district	DC40	Male	Living together like married partners	34819
+district	DC40	Male	Never married	221200
+district	DC40	Male	Widower/ Widow	5142
+district	DC40	Male	Separated	1417
+district	DC40	Male	Divorced	3057
+district	DC40	Female	Married	76113
+district	DC40	Female	Living together like married partners	33280
+district	DC40	Female	Never married	210843
+district	DC40	Female	Widower/ Widow	19795
+district	DC40	Female	Separated	2323
+district	DC40	Female	Divorced	6322
+district	DC6	Male	Married	15974
+district	DC6	Male	Living together like married partners	3685
+district	DC6	Male	Never married	36350
+district	DC6	Male	Widower/ Widow	1287
+district	DC6	Male	Separated	313
+district	DC6	Male	Divorced	665
+district	DC6	Female	Married	15749
+district	DC6	Female	Living together like married partners	3600
+district	DC6	Female	Never married	32223
+district	DC6	Female	Widower/ Widow	4591
+district	DC6	Female	Separated	367
+district	DC6	Female	Divorced	1038
+district	DC7	Male	Married	19909
+district	DC7	Male	Living together like married partners	9078
+district	DC7	Male	Never married	60219
+district	DC7	Male	Widower/ Widow	1768
+district	DC7	Male	Separated	435
+district	DC7	Male	Divorced	659
+district	DC7	Female	Married	19839
+district	DC7	Female	Living together like married partners	8789
+district	DC7	Female	Never married	57979
+district	DC7	Female	Widower/ Widow	5967
+district	DC7	Female	Separated	591
+district	DC7	Female	Divorced	1117
+district	DC8	Male	Married	26970
+district	DC8	Male	Living together like married partners	10883
+district	DC8	Male	Never married	79103
+district	DC8	Male	Widower/ Widow	1898
+district	DC8	Male	Separated	480
+district	DC8	Male	Divorced	834
+district	DC8	Female	Married	26069
+district	DC8	Female	Living together like married partners	10554
+district	DC8	Female	Never married	70918
+district	DC8	Female	Widower/ Widow	6946
+district	DC8	Female	Separated	696
+district	DC8	Female	Divorced	1432
+district	DC9	Male	Married	39552
+district	DC9	Male	Living together like married partners	15532
+district	DC9	Male	Never married	125313
+district	DC9	Male	Widower/ Widow	2773
+district	DC9	Male	Separated	759
+district	DC9	Male	Divorced	1568
+district	DC9	Female	Married	41435
+district	DC9	Female	Living together like married partners	15779
+district	DC9	Female	Never married	123064
+district	DC9	Female	Widower/ Widow	11285
+district	DC9	Female	Separated	1485
+district	DC9	Female	Divorced	3541
+district	DC45	Male	Married	20286
+district	DC45	Male	Living together like married partners	6606
+district	DC45	Male	Never married	79866
+district	DC45	Male	Widower/ Widow	1287
+district	DC45	Male	Separated	368
+district	DC45	Male	Divorced	553
+district	DC45	Female	Married	21301
+district	DC45	Female	Living together like married partners	6743
+district	DC45	Female	Never married	80357
+district	DC45	Female	Widower/ Widow	5842
+district	DC45	Female	Separated	590
+district	DC45	Female	Divorced	1001
+district	DC1	Male	Married	57391
+district	DC1	Male	Living together like married partners	18317
+district	DC1	Male	Never married	112268
+district	DC1	Male	Widower/ Widow	3414
+district	DC1	Male	Separated	919
+district	DC1	Male	Divorced	2230
+district	DC1	Female	Married	57155
+district	DC1	Female	Living together like married partners	18163
+district	DC1	Female	Never married	106391
+district	DC1	Female	Widower/ Widow	11299
+district	DC1	Female	Separated	1128
+district	DC1	Female	Divorced	3092
+district	DC2	Male	Married	114063
+district	DC2	Male	Living together like married partners	28535
+district	DC2	Male	Never married	235038
+district	DC2	Male	Widower/ Widow	5446
+district	DC2	Male	Separated	1472
+district	DC2	Male	Divorced	3659
+district	DC2	Female	Married	111869
+district	DC2	Female	Living together like married partners	28310
+district	DC2	Female	Never married	227967
+district	DC2	Female	Widower/ Widow	21264
+district	DC2	Female	Separated	2380
+district	DC2	Female	Divorced	7488
+district	DC3	Male	Married	43181
+district	DC3	Male	Living together like married partners	12592
+district	DC3	Male	Never married	69297
+district	DC3	Male	Widower/ Widow	2186
+district	DC3	Male	Separated	599
+district	DC3	Male	Divorced	1515
+district	DC3	Female	Married	41324
+district	DC3	Female	Living together like married partners	12063
+district	DC3	Female	Never married	63793
+district	DC3	Female	Widower/ Widow	8124
+district	DC3	Female	Separated	770
+district	DC3	Female	Divorced	2733
+district	DC4	Male	Married	87392
+district	DC4	Male	Living together like married partners	25269
+district	DC4	Male	Never married	159011
+district	DC4	Male	Widower/ Widow	4635
+district	DC4	Male	Separated	1285
+district	DC4	Male	Divorced	3327
+district	DC4	Female	Married	86917
+district	DC4	Female	Living together like married partners	24892
+district	DC4	Female	Never married	154807
+district	DC4	Female	Widower/ Widow	18212
+district	DC4	Female	Separated	1906
+district	DC4	Female	Divorced	6611
+district	DC5	Male	Married	8957
+district	DC5	Male	Living together like married partners	3875
+district	DC5	Male	Never married	20726
+district	DC5	Male	Widower/ Widow	722
+district	DC5	Male	Separated	146
+district	DC5	Male	Divorced	341
+district	DC5	Female	Married	8714
+district	DC5	Female	Living together like married partners	3826
+district	DC5	Female	Never married	20759
+district	DC5	Female	Widower/ Widow	2187
+district	DC5	Female	Separated	203
+district	DC5	Female	Divorced	555
 \.
 
 
