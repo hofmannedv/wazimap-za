@@ -36204,6 +36204,358 @@ municipality	CPT	No rubbish disposal	21458
 municipality	CPT	Other	7771
 municipality	CPT	Unspecified	17054
 municipality	CPT	Not applicable	5265
+district	DC16	No rubbish disposal	4696
+district	DC16	Other	1703
+district	DC16	Unspecified	162
+district	DC16	Not applicable	141
+district	DC18	Removed by local authority/private company at least once a week	503333
+district	DC18	Removed by local authority/private company less often	12093
+district	DC18	Communal refuse dump	6207
+district	DC18	Own refuse dump	71700
+district	DC18	No rubbish disposal	27548
+district	DC18	Other	4328
+district	DC18	Unspecified	1711
+district	DC18	Not applicable	708
+district	DC19	Removed by local authority/private company at least once a week	353097
+district	DC19	Removed by local authority/private company less often	6741
+district	DC19	Communal refuse dump	28481
+district	DC19	Own refuse dump	298155
+district	DC19	No rubbish disposal	42801
+district	DC19	Other	5055
+district	DC19	Unspecified	937
+district	DC19	Not applicable	970
+district	DC20	Removed by local authority/private company at least once a week	395819
+district	DC20	Removed by local authority/private company less often	6834
+district	DC20	Communal refuse dump	10529
+district	DC20	Own refuse dump	54881
+district	DC20	No rubbish disposal	14764
+district	DC20	Other	3039
+district	DC20	Unspecified	1474
+district	DC20	Not applicable	697
+district	DC42	Removed by local authority/private company at least once a week	813572
+district	DC42	Removed by local authority/private company less often	9717
+district	DC42	Communal refuse dump	13248
+district	DC42	Own refuse dump	55291
+district	DC42	No rubbish disposal	15291
+district	DC42	Other	4808
+district	DC42	Unspecified	3735
+district	DC42	Not applicable	821
+district	DC48	Removed by local authority/private company at least once a week	649305
+district	DC48	Removed by local authority/private company less often	18887
+district	DC48	Communal refuse dump	28503
+district	DC48	Own refuse dump	87177
+district	DC48	No rubbish disposal	27652
+district	DC48	Other	5245
+district	DC48	Unspecified	3786
+district	DC48	Not applicable	439
+district	DC21	Removed by local authority/private company at least once a week	130423
+district	DC21	Removed by local authority/private company less often	8426
+district	DC21	Communal refuse dump	8561
+district	DC21	Own refuse dump	519750
+district	DC21	No rubbish disposal	45527
+district	DC21	Other	6000
+district	DC21	Unspecified	3086
+district	DC21	Not applicable	711
+district	DC22	Removed by local authority/private company at least once a week	409906
+district	DC22	Removed by local authority/private company less often	16568
+district	DC22	Communal refuse dump	16419
+district	DC22	Own refuse dump	504979
+district	DC22	No rubbish disposal	49857
+district	DC22	Other	14286
+district	DC22	Unspecified	5450
+district	DC22	Not applicable	297
+district	DC23	Removed by local authority/private company at least once a week	173693
+district	DC23	Removed by local authority/private company less often	5951
+district	DC23	Communal refuse dump	8507
+district	DC23	Own refuse dump	382710
+district	DC23	No rubbish disposal	84842
+district	DC23	Other	8754
+district	DC23	Unspecified	3308
+district	DC23	Not applicable	1083
+district	DC27	Removed by local authority/private company at least once a week	31347
+district	DC27	Removed by local authority/private company less often	6701
+district	DC27	Communal refuse dump	7630
+district	DC27	Own refuse dump	476439
+district	DC27	No rubbish disposal	84416
+district	DC27	Other	14235
+district	DC27	Unspecified	3888
+district	DC27	Not applicable	1190
+district	DC28	Removed by local authority/private company at least once a week	198937
+district	DC28	Removed by local authority/private company less often	12664
+district	DC28	Communal refuse dump	14716
+district	DC28	Own refuse dump	538683
+district	DC28	No rubbish disposal	115577
+district	DC28	Other	20187
+district	DC28	Unspecified	6398
+district	DC28	Not applicable	357
+district	DC43	Removed by local authority/private company at least once a week	75092
+district	DC43	Removed by local authority/private company less often	5117
+district	DC43	Communal refuse dump	6410
+district	DC43	Own refuse dump	324825
+district	DC43	No rubbish disposal	40471
+district	DC43	Other	7053
+district	DC43	Unspecified	2169
+district	DC43	Not applicable	282
+district	DC24	Removed by local authority/private company at least once a week	80947
+district	DC24	Removed by local authority/private company less often	4280
+district	DC24	Communal refuse dump	6110
+district	DC24	Own refuse dump	336740
+district	DC24	No rubbish disposal	71754
+district	DC24	Other	8756
+district	DC24	Unspecified	2132
+district	DC24	Not applicable	118
+district	DC25	Removed by local authority/private company at least once a week	263422
+district	DC25	Removed by local authority/private company less often	2121
+district	DC25	Communal refuse dump	4240
+district	DC10	Removed by local authority/private company at least once a week	344070
+district	DC10	Removed by local authority/private company less often	9023
+district	DC10	Communal refuse dump	9886
+district	DC10	Own refuse dump	66039
+district	DC10	No rubbish disposal	11815
+district	DC10	Other	6235
+district	DC10	Unspecified	1462
+district	DC10	Not applicable	2053
+district	DC12	Removed by local authority/private company at least once a week	128688
+district	DC12	Removed by local authority/private company less often	7201
+district	DC12	Communal refuse dump	12404
+district	DC12	Own refuse dump	564357
+district	DC12	No rubbish disposal	153189
+district	DC12	Other	24427
+district	DC12	Unspecified	1908
+district	DC12	Not applicable	464
+district	DC13	Removed by local authority/private company at least once a week	211707
+district	DC13	Removed by local authority/private company less often	5942
+district	DC13	Communal refuse dump	10619
+district	DC13	Own refuse dump	399479
+district	DC13	No rubbish disposal	142116
+district	DC13	Other	22524
+district	DC13	Unspecified	2677
+district	DC13	Not applicable	397
+district	DC14	Removed by local authority/private company at least once a week	95106
+district	DC14	Removed by local authority/private company less often	2740
+district	DC14	Communal refuse dump	4290
+district	DC14	Own refuse dump	192881
+district	DC14	No rubbish disposal	48722
+district	DC14	Other	4307
+district	DC14	Unspecified	1162
+district	DC14	Not applicable	561
+district	DC15	Removed by local authority/private company at least once a week	101149
+district	DC15	Removed by local authority/private company less often	9945
+district	DC15	Communal refuse dump	14627
+district	DC15	Own refuse dump	914527
+district	DC15	No rubbish disposal	284478
+district	DC15	Other	34446
+district	DC15	Unspecified	5341
+district	DC15	Not applicable	430
+district	DC44	Removed by local authority/private company at least once a week	34184
+district	DC44	Removed by local authority/private company less often	6126
+district	DC44	Communal refuse dump	8298
+district	DC44	Own refuse dump	589614
+district	DC44	No rubbish disposal	139233
+district	DC44	Other	20451
+district	DC44	Unspecified	3226
+district	DC44	Not applicable	213
+district	DC16	Removed by local authority/private company at least once a week	97064
+district	DC16	Removed by local authority/private company less often	3932
+district	DC16	Communal refuse dump	3424
+district	DC16	Own refuse dump	35136
+district	DC25	Own refuse dump	200124
+district	DC25	No rubbish disposal	23844
+district	DC25	Other	2692
+district	DC25	Unspecified	3241
+district	DC25	Not applicable	155
+district	DC26	Removed by local authority/private company at least once a week	136890
+district	DC26	Removed by local authority/private company less often	9537
+district	DC26	Communal refuse dump	9977
+district	DC26	Own refuse dump	526424
+district	DC26	No rubbish disposal	100354
+district	DC26	Other	14970
+district	DC26	Unspecified	5166
+district	DC26	Not applicable	256
+district	DC29	Removed by local authority/private company at least once a week	173629
+district	DC29	Removed by local authority/private company less often	10405
+district	DC29	Communal refuse dump	18178
+district	DC29	Own refuse dump	351202
+district	DC29	No rubbish disposal	43691
+district	DC29	Other	7053
+district	DC29	Unspecified	2483
+district	DC29	Not applicable	168
+district	DC33	Removed by local authority/private company at least once a week	168427
+district	DC33	Removed by local authority/private company less often	5795
+district	DC33	Communal refuse dump	12640
+district	DC33	Own refuse dump	752329
+district	DC33	No rubbish disposal	138622
+district	DC33	Other	11495
+district	DC33	Unspecified	1981
+district	DC33	Not applicable	1219
+district	DC34	Removed by local authority/private company at least once a week	171411
+district	DC34	Removed by local authority/private company less often	6588
+district	DC34	Communal refuse dump	15026
+district	DC34	Own refuse dump	950200
+district	DC34	No rubbish disposal	139118
+district	DC34	Other	8316
+district	DC34	Unspecified	2056
+district	DC34	Not applicable	2006
+district	DC35	Removed by local authority/private company at least once a week	329423
+district	DC35	Removed by local authority/private company less often	10442
+district	DC35	Communal refuse dump	13505
+district	DC35	Own refuse dump	814797
+district	DC35	No rubbish disposal	81786
+district	DC35	Other	8483
+district	DC35	Unspecified	2671
+district	DC35	Not applicable	356
+district	DC36	Removed by local authority/private company at least once a week	295224
+district	DC36	Removed by local authority/private company less often	5207
+district	DC36	Communal refuse dump	14348
+district	DC36	Own refuse dump	306454
+district	DC36	No rubbish disposal	49238
+district	DC36	Other	5587
+district	DC36	Unspecified	2485
+district	DC36	Not applicable	793
+district	DC47	Removed by local authority/private company at least once a week	75098
+district	DC47	Removed by local authority/private company less often	5859
+district	DC47	Communal refuse dump	17154
+district	DC47	Own refuse dump	828902
+district	DC47	No rubbish disposal	140342
+district	DC47	Other	6954
+district	DC47	Unspecified	2467
+district	DC47	Not applicable	65
+district	DC30	Removed by local authority/private company at least once a week	610884
+district	DC30	Removed by local authority/private company less often	9085
+district	DC30	Communal refuse dump	17725
+district	DC30	Own refuse dump	295428
+district	DC30	No rubbish disposal	96330
+district	DC30	Other	7835
+district	DC30	Unspecified	4277
+district	DC30	Not applicable	1630
+district	DC31	Removed by local authority/private company at least once a week	618629
+district	DC31	Removed by local authority/private company less often	16525
+district	DC31	Communal refuse dump	47631
+district	DC31	Own refuse dump	533749
+district	DC31	No rubbish disposal	76858
+district	DC31	Other	7627
+district	DC31	Unspecified	5293
+district	DC31	Not applicable	1816
+district	DC32	Removed by local authority/private company at least once a week	382913
+district	DC32	Removed by local authority/private company less often	18389
+district	DC32	Communal refuse dump	25717
+district	DC32	Own refuse dump	1084006
+district	DC32	No rubbish disposal	153253
+district	DC32	Other	17191
+district	DC32	Unspecified	4863
+district	DC32	Not applicable	2282
+district	DC37	Removed by local authority/private company at least once a week	735817
+district	DC37	Removed by local authority/private company less often	22980
+district	DC37	Communal refuse dump	29636
+district	DC37	Own refuse dump	602524
+district	DC37	No rubbish disposal	92625
+district	DC37	Other	16086
+district	DC37	Unspecified	5474
+district	DC37	Not applicable	2363
+district	DC38	Removed by local authority/private company at least once a week	267252
+district	DC38	Removed by local authority/private company less often	11699
+district	DC38	Communal refuse dump	12857
+district	DC38	Own refuse dump	482601
+district	DC38	No rubbish disposal	53490
+district	DC38	Other	10865
+district	DC38	Unspecified	2649
+district	DC38	Not applicable	1286
+district	DC39	Removed by local authority/private company at least once a week	123623
+district	DC39	Removed by local authority/private company less often	7220
+district	DC39	Communal refuse dump	10149
+district	DC39	Own refuse dump	280484
+district	DC39	No rubbish disposal	34827
+district	DC39	Other	5612
+district	DC39	Unspecified	1504
+district	DC39	Not applicable	396
+district	DC40	Removed by local authority/private company at least once a week	510921
+district	DC40	Removed by local authority/private company less often	8523
+district	DC40	Communal refuse dump	11858
+district	DC40	Own refuse dump	120480
+district	DC40	No rubbish disposal	36822
+district	DC40	Other	4303
+district	DC40	Unspecified	2551
+district	DC40	Not applicable	476
+district	DC6	Removed by local authority/private company at least once a week	98900
+district	DC6	Removed by local authority/private company less often	2311
+district	DC6	Communal refuse dump	556
+district	DC6	Own refuse dump	10418
+district	DC6	No rubbish disposal	1943
+district	DC6	Other	1048
+district	DC6	Unspecified	229
+district	DC6	Not applicable	437
+district	DC7	Removed by local authority/private company at least once a week	144545
+district	DC7	Removed by local authority/private company less often	3139
+district	DC7	Communal refuse dump	3251
+district	DC7	Own refuse dump	25121
+district	DC7	No rubbish disposal	7597
+district	DC7	Other	1531
+district	DC7	Unspecified	602
+district	DC7	Not applicable	565
+district	DC8	Removed by local authority/private company at least once a week	175554
+district	DC8	Removed by local authority/private company less often	6597
+district	DC8	Communal refuse dump	4004
+district	DC8	Own refuse dump	34583
+district	DC8	No rubbish disposal	11589
+district	DC8	Other	3095
+district	DC8	Unspecified	941
+district	DC8	Not applicable	420
+district	DC9	Removed by local authority/private company at least once a week	291708
+district	DC9	Removed by local authority/private company less often	13090
+district	DC9	Communal refuse dump	4476
+district	DC9	Own refuse dump	46213
+district	DC9	No rubbish disposal	19660
+district	DC9	Other	5235
+district	DC9	Unspecified	1296
+district	DC9	Not applicable	408
+district	DC45	Removed by local authority/private company at least once a week	61027
+district	DC45	Removed by local authority/private company less often	1541
+district	DC45	Communal refuse dump	3925
+district	DC45	Own refuse dump	132630
+district	DC45	No rubbish disposal	15383
+district	DC45	Other	9045
+district	DC45	Unspecified	750
+district	DC45	Not applicable	499
+district	DC1	Removed by local authority/private company at least once a week	293380
+district	DC1	Removed by local authority/private company less often	6830
+district	DC1	Communal refuse dump	15413
+district	DC1	Own refuse dump	65394
+district	DC1	No rubbish disposal	4101
+district	DC1	Other	3805
+district	DC1	Unspecified	987
+district	DC1	Not applicable	1856
+district	DC2	Removed by local authority/private company at least once a week	612910
+district	DC2	Removed by local authority/private company less often	38029
+district	DC2	Communal refuse dump	32470
+district	DC2	Own refuse dump	74724
+district	DC2	No rubbish disposal	11415
+district	DC2	Other	12948
+district	DC2	Unspecified	3892
+district	DC2	Not applicable	1103
+district	DC3	Removed by local authority/private company at least once a week	211024
+district	DC3	Removed by local authority/private company less often	6010
+district	DC3	Communal refuse dump	4777
+district	DC3	Own refuse dump	25298
+district	DC3	No rubbish disposal	2672
+district	DC3	Other	5689
+district	DC3	Unspecified	1677
+district	DC3	Not applicable	1029
+district	DC4	Removed by local authority/private company at least once a week	487791
+district	DC4	Removed by local authority/private company less often	4376
+district	DC4	Communal refuse dump	9572
+district	DC4	Own refuse dump	47763
+district	DC4	No rubbish disposal	13171
+district	DC4	Other	7713
+district	DC4	Unspecified	2551
+district	DC4	Not applicable	1327
+district	DC5	Removed by local authority/private company at least once a week	57520
+district	DC5	Removed by local authority/private company less often	823
+district	DC5	Communal refuse dump	1019
+district	DC5	Own refuse dump	9600
+district	DC5	No rubbish disposal	879
+district	DC5	Other	333
+district	DC5	Unspecified	273
+district	DC5	Not applicable	564
 \.
 
 
