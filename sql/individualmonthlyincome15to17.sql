@@ -63330,6 +63330,622 @@ municipality	CPT	R 102 401 - R 204 800	6
 municipality	CPT	R 204 801 or more	0
 municipality	CPT	Unspecified	1935
 municipality	CPT	Not applicable	0
+district	DC10	No income	336
+district	DC10	R 1 - R 400	186
+district	DC10	R 401 - R 800	150
+district	DC10	R 801 - R 1 600	300
+district	DC10	R 1 601 - R 3 200	57
+district	DC10	R 3 201 - R 6 400	12
+district	DC10	R 6 401 - R 12 800	18
+district	DC10	R 12 801 - R 25 600	0
+district	DC10	R 25 601 - R 51 200	3
+district	DC10	R 51 201 - R 102 400	0
+district	DC10	R 102 401 - R 204 800	0
+district	DC10	R 204 801 or more	0
+district	DC10	Unspecified	147
+district	DC10	Not applicable	0
+district	DC12	No income	474
+district	DC12	R 1 - R 400	486
+district	DC12	R 401 - R 800	105
+district	DC12	R 801 - R 1 600	69
+district	DC12	R 1 601 - R 3 200	15
+district	DC12	R 3 201 - R 6 400	9
+district	DC12	R 6 401 - R 12 800	9
+district	DC12	R 12 801 - R 25 600	3
+district	DC12	R 25 601 - R 51 200	0
+district	DC12	R 51 201 - R 102 400	0
+district	DC12	R 102 401 - R 204 800	0
+district	DC12	R 204 801 or more	0
+district	DC12	Unspecified	105
+district	DC12	Not applicable	0
+district	DC13	No income	447
+district	DC13	R 1 - R 400	447
+district	DC13	R 401 - R 800	138
+district	DC13	R 801 - R 1 600	102
+district	DC13	R 1 601 - R 3 200	21
+district	DC13	R 3 201 - R 6 400	0
+district	DC13	R 6 401 - R 12 800	6
+district	DC13	R 12 801 - R 25 600	3
+district	DC13	R 25 601 - R 51 200	0
+district	DC13	R 51 201 - R 102 400	0
+district	DC13	R 102 401 - R 204 800	0
+district	DC13	R 204 801 or more	0
+district	DC13	Unspecified	111
+district	DC13	Not applicable	0
+district	DC14	No income	216
+district	DC14	R 1 - R 400	183
+district	DC14	R 401 - R 800	102
+district	DC14	R 801 - R 1 600	72
+district	DC14	R 1 601 - R 3 200	6
+district	DC14	R 3 201 - R 6 400	0
+district	DC14	R 6 401 - R 12 800	3
+district	DC14	R 12 801 - R 25 600	0
+district	DC14	R 25 601 - R 51 200	0
+district	DC14	R 51 201 - R 102 400	0
+district	DC14	R 102 401 - R 204 800	0
+district	DC14	R 204 801 or more	0
+district	DC14	Unspecified	63
+district	DC14	Not applicable	0
+district	DC15	No income	1158
+district	DC15	R 1 - R 400	936
+district	DC15	R 401 - R 800	234
+district	DC15	R 801 - R 1 600	105
+district	DC15	R 1 601 - R 3 200	30
+district	DC15	R 3 201 - R 6 400	18
+district	DC15	R 6 401 - R 12 800	21
+district	DC15	R 12 801 - R 25 600	9
+district	DC15	R 25 601 - R 51 200	0
+district	DC15	R 51 201 - R 102 400	0
+district	DC15	R 102 401 - R 204 800	0
+district	DC15	R 204 801 or more	0
+district	DC15	Unspecified	297
+district	DC15	Not applicable	0
+district	DC44	No income	801
+district	DC44	R 1 - R 400	567
+district	DC44	R 401 - R 800	135
+district	DC44	R 801 - R 1 600	63
+district	DC44	R 1 601 - R 3 200	15
+district	DC44	R 3 201 - R 6 400	9
+district	DC44	R 6 401 - R 12 800	15
+district	DC44	R 12 801 - R 25 600	6
+district	DC44	R 25 601 - R 51 200	0
+district	DC44	R 51 201 - R 102 400	0
+district	DC44	R 102 401 - R 204 800	0
+district	DC44	R 204 801 or more	0
+district	DC44	Unspecified	198
+district	DC44	Not applicable	0
+district	DC16	No income	72
+district	DC16	R 1 - R 400	57
+district	DC16	R 401 - R 800	39
+district	DC16	R 801 - R 1 600	60
+district	DC16	R 1 601 - R 3 200	9
+district	DC16	R 3 201 - R 6 400	3
+district	DC16	R 6 401 - R 12 800	3
+district	DC16	R 12 801 - R 25 600	0
+district	DC16	R 25 601 - R 51 200	0
+district	DC16	R 51 201 - R 102 400	0
+district	DC16	R 102 401 - R 204 800	0
+district	DC16	R 204 801 or more	0
+district	DC16	Unspecified	15
+district	DC16	Not applicable	0
+district	DC18	No income	393
+district	DC18	R 1 - R 400	183
+district	DC18	R 401 - R 800	93
+district	DC18	R 801 - R 1 600	117
+district	DC18	R 1 601 - R 3 200	27
+district	DC18	R 3 201 - R 6 400	24
+district	DC18	R 6 401 - R 12 800	9
+district	DC18	R 12 801 - R 25 600	3
+district	DC18	R 25 601 - R 51 200	0
+district	DC18	R 51 201 - R 102 400	3
+district	DC18	R 102 401 - R 204 800	0
+district	DC18	R 204 801 or more	3
+district	DC18	Unspecified	99
+district	DC18	Not applicable	0
+district	DC19	No income	366
+district	DC19	R 1 - R 400	261
+district	DC19	R 401 - R 800	93
+district	DC19	R 801 - R 1 600	102
+district	DC19	R 1 601 - R 3 200	21
+district	DC19	R 3 201 - R 6 400	12
+district	DC19	R 6 401 - R 12 800	6
+district	DC19	R 12 801 - R 25 600	0
+district	DC19	R 25 601 - R 51 200	3
+district	DC19	R 51 201 - R 102 400	0
+district	DC19	R 102 401 - R 204 800	0
+district	DC19	R 204 801 or more	0
+district	DC19	Unspecified	63
+district	DC19	Not applicable	0
+district	DC20	No income	255
+district	DC20	R 1 - R 400	123
+district	DC20	R 401 - R 800	63
+district	DC20	R 801 - R 1 600	75
+district	DC20	R 1 601 - R 3 200	45
+district	DC20	R 3 201 - R 6 400	21
+district	DC20	R 6 401 - R 12 800	12
+district	DC20	R 12 801 - R 25 600	0
+district	DC20	R 25 601 - R 51 200	0
+district	DC20	R 51 201 - R 102 400	0
+district	DC20	R 102 401 - R 204 800	0
+district	DC20	R 204 801 or more	3
+district	DC20	Unspecified	105
+district	DC20	Not applicable	0
+district	DC42	No income	633
+district	DC42	R 1 - R 400	222
+district	DC42	R 401 - R 800	102
+district	DC42	R 801 - R 1 600	93
+district	DC42	R 1 601 - R 3 200	93
+district	DC42	R 3 201 - R 6 400	51
+district	DC42	R 6 401 - R 12 800	24
+district	DC42	R 12 801 - R 25 600	6
+district	DC42	R 25 601 - R 51 200	0
+district	DC42	R 51 201 - R 102 400	0
+district	DC42	R 102 401 - R 204 800	0
+district	DC42	R 204 801 or more	0
+district	DC42	Unspecified	288
+district	DC42	Not applicable	0
+district	DC48	No income	669
+district	DC48	R 1 - R 400	183
+district	DC48	R 401 - R 800	114
+district	DC48	R 801 - R 1 600	120
+district	DC48	R 1 601 - R 3 200	78
+district	DC48	R 3 201 - R 6 400	36
+district	DC48	R 6 401 - R 12 800	30
+district	DC48	R 12 801 - R 25 600	15
+district	DC48	R 25 601 - R 51 200	9
+district	DC48	R 51 201 - R 102 400	0
+district	DC48	R 102 401 - R 204 800	3
+district	DC48	R 204 801 or more	0
+district	DC48	Unspecified	273
+district	DC48	Not applicable	0
+district	DC21	No income	609
+district	DC21	R 1 - R 400	279
+district	DC21	R 401 - R 800	81
+district	DC21	R 801 - R 1 600	120
+district	DC21	R 1 601 - R 3 200	45
+district	DC21	R 3 201 - R 6 400	21
+district	DC21	R 6 401 - R 12 800	6
+district	DC21	R 12 801 - R 25 600	12
+district	DC21	R 25 601 - R 51 200	6
+district	DC21	R 51 201 - R 102 400	3
+district	DC21	R 102 401 - R 204 800	0
+district	DC21	R 204 801 or more	0
+district	DC21	Unspecified	153
+district	DC21	Not applicable	0
+district	DC22	No income	876
+district	DC22	R 1 - R 400	366
+district	DC22	R 401 - R 800	141
+district	DC22	R 801 - R 1 600	309
+district	DC22	R 1 601 - R 3 200	102
+district	DC22	R 3 201 - R 6 400	36
+district	DC22	R 6 401 - R 12 800	18
+district	DC22	R 12 801 - R 25 600	12
+district	DC22	R 25 601 - R 51 200	6
+district	DC22	R 51 201 - R 102 400	0
+district	DC22	R 102 401 - R 204 800	0
+district	DC22	R 204 801 or more	0
+district	DC22	Unspecified	264
+district	DC22	Not applicable	0
+district	DC23	No income	402
+district	DC23	R 1 - R 400	318
+district	DC23	R 401 - R 800	42
+district	DC23	R 801 - R 1 600	60
+district	DC23	R 1 601 - R 3 200	21
+district	DC23	R 3 201 - R 6 400	12
+district	DC23	R 6 401 - R 12 800	12
+district	DC23	R 12 801 - R 25 600	6
+district	DC23	R 25 601 - R 51 200	0
+district	DC23	R 51 201 - R 102 400	0
+district	DC23	R 102 401 - R 204 800	0
+district	DC23	R 204 801 or more	0
+district	DC23	Unspecified	117
+district	DC23	Not applicable	0
+district	DC27	No income	552
+district	DC27	R 1 - R 400	498
+district	DC27	R 401 - R 800	84
+district	DC27	R 801 - R 1 600	75
+district	DC27	R 1 601 - R 3 200	21
+district	DC27	R 3 201 - R 6 400	9
+district	DC27	R 6 401 - R 12 800	6
+district	DC27	R 12 801 - R 25 600	6
+district	DC27	R 25 601 - R 51 200	6
+district	DC27	R 51 201 - R 102 400	0
+district	DC27	R 102 401 - R 204 800	0
+district	DC27	R 204 801 or more	0
+district	DC27	Unspecified	144
+district	DC27	Not applicable	0
+district	DC28	No income	699
+district	DC28	R 1 - R 400	429
+district	DC28	R 401 - R 800	75
+district	DC28	R 801 - R 1 600	99
+district	DC28	R 1 601 - R 3 200	69
+district	DC28	R 3 201 - R 6 400	21
+district	DC28	R 6 401 - R 12 800	18
+district	DC28	R 12 801 - R 25 600	15
+district	DC28	R 25 601 - R 51 200	9
+district	DC28	R 51 201 - R 102 400	3
+district	DC28	R 102 401 - R 204 800	0
+district	DC28	R 204 801 or more	0
+district	DC28	Unspecified	297
+district	DC28	Not applicable	0
+district	DC43	No income	381
+district	DC43	R 1 - R 400	255
+district	DC43	R 401 - R 800	81
+district	DC43	R 801 - R 1 600	75
+district	DC43	R 1 601 - R 3 200	24
+district	DC43	R 3 201 - R 6 400	9
+district	DC43	R 6 401 - R 12 800	3
+district	DC43	R 12 801 - R 25 600	3
+district	DC43	R 25 601 - R 51 200	3
+district	DC43	R 51 201 - R 102 400	0
+district	DC43	R 102 401 - R 204 800	0
+district	DC43	R 204 801 or more	0
+district	DC43	Unspecified	72
+district	DC43	Not applicable	0
+district	DC24	No income	339
+district	DC24	R 1 - R 400	414
+district	DC24	R 401 - R 800	72
+district	DC24	R 801 - R 1 600	69
+district	DC24	R 1 601 - R 3 200	18
+district	DC24	R 3 201 - R 6 400	6
+district	DC24	R 6 401 - R 12 800	6
+district	DC24	R 12 801 - R 25 600	3
+district	DC24	R 25 601 - R 51 200	0
+district	DC24	R 51 201 - R 102 400	0
+district	DC24	R 102 401 - R 204 800	0
+district	DC24	R 204 801 or more	0
+district	DC24	Unspecified	75
+district	DC24	Not applicable	0
+district	DC25	No income	312
+district	DC25	R 1 - R 400	153
+district	DC25	R 401 - R 800	39
+district	DC25	R 801 - R 1 600	51
+district	DC25	R 1 601 - R 3 200	18
+district	DC25	R 3 201 - R 6 400	9
+district	DC25	R 6 401 - R 12 800	6
+district	DC25	R 12 801 - R 25 600	3
+district	DC25	R 25 601 - R 51 200	0
+district	DC25	R 51 201 - R 102 400	0
+district	DC25	R 102 401 - R 204 800	0
+district	DC25	R 204 801 or more	0
+district	DC25	Unspecified	57
+district	DC25	Not applicable	0
+district	DC26	No income	591
+district	DC26	R 1 - R 400	483
+district	DC26	R 401 - R 800	93
+district	DC26	R 801 - R 1 600	111
+district	DC26	R 1 601 - R 3 200	18
+district	DC26	R 3 201 - R 6 400	24
+district	DC26	R 6 401 - R 12 800	9
+district	DC26	R 12 801 - R 25 600	6
+district	DC26	R 25 601 - R 51 200	0
+district	DC26	R 51 201 - R 102 400	0
+district	DC26	R 102 401 - R 204 800	0
+district	DC26	R 204 801 or more	0
+district	DC26	Unspecified	183
+district	DC26	Not applicable	0
+district	DC29	No income	516
+district	DC29	R 1 - R 400	270
+district	DC29	R 401 - R 800	66
+district	DC29	R 801 - R 1 600	198
+district	DC29	R 1 601 - R 3 200	57
+district	DC29	R 3 201 - R 6 400	21
+district	DC29	R 6 401 - R 12 800	9
+district	DC29	R 12 801 - R 25 600	6
+district	DC29	R 25 601 - R 51 200	6
+district	DC29	R 51 201 - R 102 400	0
+district	DC29	R 102 401 - R 204 800	0
+district	DC29	R 204 801 or more	0
+district	DC29	Unspecified	171
+district	DC29	Not applicable	0
+district	DC33	No income	486
+district	DC33	R 1 - R 400	363
+district	DC33	R 401 - R 800	138
+district	DC33	R 801 - R 1 600	177
+district	DC33	R 1 601 - R 3 200	36
+district	DC33	R 3 201 - R 6 400	18
+district	DC33	R 6 401 - R 12 800	12
+district	DC33	R 12 801 - R 25 600	3
+district	DC33	R 25 601 - R 51 200	3
+district	DC33	R 51 201 - R 102 400	0
+district	DC33	R 102 401 - R 204 800	0
+district	DC33	R 204 801 or more	0
+district	DC33	Unspecified	120
+district	DC33	Not applicable	0
+district	DC34	No income	651
+district	DC34	R 1 - R 400	507
+district	DC34	R 401 - R 800	300
+district	DC34	R 801 - R 1 600	174
+district	DC34	R 1 601 - R 3 200	51
+district	DC34	R 3 201 - R 6 400	9
+district	DC34	R 6 401 - R 12 800	12
+district	DC34	R 12 801 - R 25 600	15
+district	DC34	R 25 601 - R 51 200	0
+district	DC34	R 51 201 - R 102 400	0
+district	DC34	R 102 401 - R 204 800	0
+district	DC34	R 204 801 or more	0
+district	DC34	Unspecified	165
+district	DC34	Not applicable	0
+district	DC35	No income	639
+district	DC35	R 1 - R 400	372
+district	DC35	R 401 - R 800	105
+district	DC35	R 801 - R 1 600	174
+district	DC35	R 1 601 - R 3 200	60
+district	DC35	R 3 201 - R 6 400	36
+district	DC35	R 6 401 - R 12 800	15
+district	DC35	R 12 801 - R 25 600	9
+district	DC35	R 25 601 - R 51 200	3
+district	DC35	R 51 201 - R 102 400	0
+district	DC35	R 102 401 - R 204 800	0
+district	DC35	R 204 801 or more	0
+district	DC35	Unspecified	165
+district	DC35	Not applicable	0
+district	DC36	No income	384
+district	DC36	R 1 - R 400	201
+district	DC36	R 401 - R 800	81
+district	DC36	R 801 - R 1 600	210
+district	DC36	R 1 601 - R 3 200	60
+district	DC36	R 3 201 - R 6 400	24
+district	DC36	R 6 401 - R 12 800	3
+district	DC36	R 12 801 - R 25 600	3
+district	DC36	R 25 601 - R 51 200	3
+district	DC36	R 51 201 - R 102 400	0
+district	DC36	R 102 401 - R 204 800	0
+district	DC36	R 204 801 or more	0
+district	DC36	Unspecified	108
+district	DC36	Not applicable	0
+district	DC47	No income	477
+district	DC47	R 1 - R 400	339
+district	DC47	R 401 - R 800	87
+district	DC47	R 801 - R 1 600	138
+district	DC47	R 1 601 - R 3 200	27
+district	DC47	R 3 201 - R 6 400	24
+district	DC47	R 6 401 - R 12 800	6
+district	DC47	R 12 801 - R 25 600	3
+district	DC47	R 25 601 - R 51 200	0
+district	DC47	R 51 201 - R 102 400	3
+district	DC47	R 102 401 - R 204 800	3
+district	DC47	R 204 801 or more	0
+district	DC47	Unspecified	132
+district	DC47	Not applicable	0
+district	DC30	No income	825
+district	DC30	R 1 - R 400	369
+district	DC30	R 401 - R 800	138
+district	DC30	R 801 - R 1 600	165
+district	DC30	R 1 601 - R 3 200	93
+district	DC30	R 3 201 - R 6 400	51
+district	DC30	R 6 401 - R 12 800	18
+district	DC30	R 12 801 - R 25 600	18
+district	DC30	R 25 601 - R 51 200	3
+district	DC30	R 51 201 - R 102 400	3
+district	DC30	R 102 401 - R 204 800	0
+district	DC30	R 204 801 or more	0
+district	DC30	Unspecified	336
+district	DC30	Not applicable	0
+district	DC31	No income	939
+district	DC31	R 1 - R 400	381
+district	DC31	R 401 - R 800	105
+district	DC31	R 801 - R 1 600	186
+district	DC31	R 1 601 - R 3 200	102
+district	DC31	R 3 201 - R 6 400	51
+district	DC31	R 6 401 - R 12 800	27
+district	DC31	R 12 801 - R 25 600	12
+district	DC31	R 25 601 - R 51 200	3
+district	DC31	R 51 201 - R 102 400	0
+district	DC31	R 102 401 - R 204 800	3
+district	DC31	R 204 801 or more	0
+district	DC31	Unspecified	384
+district	DC31	Not applicable	0
+district	DC32	No income	1224
+district	DC32	R 1 - R 400	702
+district	DC32	R 401 - R 800	201
+district	DC32	R 801 - R 1 600	333
+district	DC32	R 1 601 - R 3 200	108
+district	DC32	R 3 201 - R 6 400	39
+district	DC32	R 6 401 - R 12 800	27
+district	DC32	R 12 801 - R 25 600	21
+district	DC32	R 25 601 - R 51 200	6
+district	DC32	R 51 201 - R 102 400	0
+district	DC32	R 102 401 - R 204 800	0
+district	DC32	R 204 801 or more	3
+district	DC32	Unspecified	381
+district	DC32	Not applicable	0
+district	DC37	No income	1020
+district	DC37	R 1 - R 400	291
+district	DC37	R 401 - R 800	153
+district	DC37	R 801 - R 1 600	282
+district	DC37	R 1 601 - R 3 200	126
+district	DC37	R 3 201 - R 6 400	78
+district	DC37	R 6 401 - R 12 800	30
+district	DC37	R 12 801 - R 25 600	18
+district	DC37	R 25 601 - R 51 200	9
+district	DC37	R 51 201 - R 102 400	0
+district	DC37	R 102 401 - R 204 800	0
+district	DC37	R 204 801 or more	0
+district	DC37	Unspecified	465
+district	DC37	Not applicable	0
+district	DC38	No income	432
+district	DC38	R 1 - R 400	243
+district	DC38	R 401 - R 800	141
+district	DC38	R 801 - R 1 600	165
+district	DC38	R 1 601 - R 3 200	27
+district	DC38	R 3 201 - R 6 400	12
+district	DC38	R 6 401 - R 12 800	15
+district	DC38	R 12 801 - R 25 600	6
+district	DC38	R 25 601 - R 51 200	3
+district	DC38	R 51 201 - R 102 400	0
+district	DC38	R 102 401 - R 204 800	0
+district	DC38	R 204 801 or more	0
+district	DC38	Unspecified	99
+district	DC38	Not applicable	0
+district	DC39	No income	279
+district	DC39	R 1 - R 400	180
+district	DC39	R 401 - R 800	120
+district	DC39	R 801 - R 1 600	159
+district	DC39	R 1 601 - R 3 200	18
+district	DC39	R 3 201 - R 6 400	6
+district	DC39	R 6 401 - R 12 800	3
+district	DC39	R 12 801 - R 25 600	3
+district	DC39	R 25 601 - R 51 200	0
+district	DC39	R 51 201 - R 102 400	0
+district	DC39	R 102 401 - R 204 800	3
+district	DC39	R 204 801 or more	0
+district	DC39	Unspecified	96
+district	DC39	Not applicable	0
+district	DC40	No income	471
+district	DC40	R 1 - R 400	180
+district	DC40	R 401 - R 800	96
+district	DC40	R 801 - R 1 600	138
+district	DC40	R 1 601 - R 3 200	54
+district	DC40	R 3 201 - R 6 400	24
+district	DC40	R 6 401 - R 12 800	15
+district	DC40	R 12 801 - R 25 600	6
+district	DC40	R 25 601 - R 51 200	0
+district	DC40	R 51 201 - R 102 400	0
+district	DC40	R 102 401 - R 204 800	3
+district	DC40	R 204 801 or more	0
+district	DC40	Unspecified	183
+district	DC40	Not applicable	0
+district	DC6	No income	72
+district	DC6	R 1 - R 400	30
+district	DC6	R 401 - R 800	39
+district	DC6	R 801 - R 1 600	78
+district	DC6	R 1 601 - R 3 200	21
+district	DC6	R 3 201 - R 6 400	6
+district	DC6	R 6 401 - R 12 800	6
+district	DC6	R 12 801 - R 25 600	3
+district	DC6	R 25 601 - R 51 200	0
+district	DC6	R 51 201 - R 102 400	0
+district	DC6	R 102 401 - R 204 800	0
+district	DC6	R 204 801 or more	0
+district	DC6	Unspecified	18
+district	DC6	Not applicable	0
+district	DC7	No income	120
+district	DC7	R 1 - R 400	78
+district	DC7	R 401 - R 800	63
+district	DC7	R 801 - R 1 600	87
+district	DC7	R 1 601 - R 3 200	15
+district	DC7	R 3 201 - R 6 400	12
+district	DC7	R 6 401 - R 12 800	3
+district	DC7	R 12 801 - R 25 600	3
+district	DC7	R 25 601 - R 51 200	0
+district	DC7	R 51 201 - R 102 400	0
+district	DC7	R 102 401 - R 204 800	0
+district	DC7	R 204 801 or more	0
+district	DC7	Unspecified	30
+district	DC7	Not applicable	0
+district	DC8	No income	153
+district	DC8	R 1 - R 400	99
+district	DC8	R 401 - R 800	54
+district	DC8	R 801 - R 1 600	351
+district	DC8	R 1 601 - R 3 200	39
+district	DC8	R 3 201 - R 6 400	6
+district	DC8	R 6 401 - R 12 800	9
+district	DC8	R 12 801 - R 25 600	6
+district	DC8	R 25 601 - R 51 200	0
+district	DC8	R 51 201 - R 102 400	0
+district	DC8	R 102 401 - R 204 800	3
+district	DC8	R 204 801 or more	3
+district	DC8	Unspecified	72
+district	DC8	Not applicable	0
+district	DC9	No income	222
+district	DC9	R 1 - R 400	78
+district	DC9	R 401 - R 800	21
+district	DC9	R 801 - R 1 600	42
+district	DC9	R 1 601 - R 3 200	33
+district	DC9	R 3 201 - R 6 400	9
+district	DC9	R 6 401 - R 12 800	9
+district	DC9	R 12 801 - R 25 600	3
+district	DC9	R 25 601 - R 51 200	3
+district	DC9	R 51 201 - R 102 400	0
+district	DC9	R 102 401 - R 204 800	0
+district	DC9	R 204 801 or more	0
+district	DC9	Unspecified	66
+district	DC9	Not applicable	0
+district	DC45	No income	114
+district	DC45	R 1 - R 400	81
+district	DC45	R 401 - R 800	30
+district	DC45	R 801 - R 1 600	30
+district	DC45	R 1 601 - R 3 200	18
+district	DC45	R 3 201 - R 6 400	9
+district	DC45	R 6 401 - R 12 800	3
+district	DC45	R 12 801 - R 25 600	3
+district	DC45	R 25 601 - R 51 200	0
+district	DC45	R 51 201 - R 102 400	0
+district	DC45	R 102 401 - R 204 800	0
+district	DC45	R 204 801 or more	0
+district	DC45	Unspecified	54
+district	DC45	Not applicable	0
+district	DC1	No income	399
+district	DC1	R 1 - R 400	135
+district	DC1	R 401 - R 800	90
+district	DC1	R 801 - R 1 600	657
+district	DC1	R 1 601 - R 3 200	123
+district	DC1	R 3 201 - R 6 400	27
+district	DC1	R 6 401 - R 12 800	6
+district	DC1	R 12 801 - R 25 600	0
+district	DC1	R 25 601 - R 51 200	6
+district	DC1	R 51 201 - R 102 400	0
+district	DC1	R 102 401 - R 204 800	0
+district	DC1	R 204 801 or more	0
+district	DC1	Unspecified	186
+district	DC1	Not applicable	0
+district	DC2	No income	861
+district	DC2	R 1 - R 400	303
+district	DC2	R 401 - R 800	180
+district	DC2	R 801 - R 1 600	957
+district	DC2	R 1 601 - R 3 200	189
+district	DC2	R 3 201 - R 6 400	54
+district	DC2	R 6 401 - R 12 800	18
+district	DC2	R 12 801 - R 25 600	6
+district	DC2	R 25 601 - R 51 200	6
+district	DC2	R 51 201 - R 102 400	6
+district	DC2	R 102 401 - R 204 800	0
+district	DC2	R 204 801 or more	0
+district	DC2	Unspecified	873
+district	DC2	Not applicable	0
+district	DC3	No income	237
+district	DC3	R 1 - R 400	78
+district	DC3	R 401 - R 800	57
+district	DC3	R 801 - R 1 600	228
+district	DC3	R 1 601 - R 3 200	60
+district	DC3	R 3 201 - R 6 400	6
+district	DC3	R 6 401 - R 12 800	0
+district	DC3	R 12 801 - R 25 600	0
+district	DC3	R 25 601 - R 51 200	0
+district	DC3	R 51 201 - R 102 400	0
+district	DC3	R 102 401 - R 204 800	0
+district	DC3	R 204 801 or more	0
+district	DC3	Unspecified	255
+district	DC3	Not applicable	0
+district	DC4	No income	612
+district	DC4	R 1 - R 400	135
+district	DC4	R 401 - R 800	117
+district	DC4	R 801 - R 1 600	294
+district	DC4	R 1 601 - R 3 200	144
+district	DC4	R 3 201 - R 6 400	27
+district	DC4	R 6 401 - R 12 800	12
+district	DC4	R 12 801 - R 25 600	15
+district	DC4	R 25 601 - R 51 200	0
+district	DC4	R 51 201 - R 102 400	0
+district	DC4	R 102 401 - R 204 800	0
+district	DC4	R 204 801 or more	3
+district	DC4	Unspecified	333
+district	DC4	Not applicable	0
+district	DC5	No income	57
+district	DC5	R 1 - R 400	30
+district	DC5	R 401 - R 800	18
+district	DC5	R 801 - R 1 600	66
+district	DC5	R 1 601 - R 3 200	18
+district	DC5	R 3 201 - R 6 400	3
+district	DC5	R 6 401 - R 12 800	3
+district	DC5	R 12 801 - R 25 600	0
+district	DC5	R 25 601 - R 51 200	0
+district	DC5	R 51 201 - R 102 400	0
+district	DC5	R 102 401 - R 204 800	0
+district	DC5	R 204 801 or more	0
+district	DC5	Unspecified	57
+district	DC5	Not applicable	0
 \.
 
 
