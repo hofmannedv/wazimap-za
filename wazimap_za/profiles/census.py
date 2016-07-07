@@ -709,7 +709,7 @@ def get_service_delivery_profile(geo_code, geo_level, session):
 
 
 def get_education_profile(geo_code, geo_level, session):
-    db_model = get_model_from_fields(['highest educational level 20 and older'], geo_level)
+    db_model = get_model_from_fields(['highest educational level'], geo_level, table_name='highesteducationallevel20')
     objects = get_objects_by_geo(db_model, geo_code, geo_level, session)
 
     edu_dist_data = {}
@@ -717,7 +717,7 @@ def get_education_profile(geo_code, geo_level, session):
     fet_or_higher = 0.0
     total = 0.0
     for i, obj in enumerate(objects):
-        category_val = getattr(obj, 'highest educational level 20 and older')
+        category_val = getattr(obj, 'highest educational level')
         # increment counters
         total += obj.total
         if category_val in EDUCATION_GET_OR_HIGHER:
