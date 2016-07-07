@@ -58809,6 +58809,578 @@ municipality	WC051	computer	432
 municipality	WC052	computer	723
 municipality	WC053	computer	2184
 municipality	CPT	computer	405459
+district	DC10	motor-car	33753
+district	DC10	cell phone	98070
+district	DC10	computer	21945
+district	DC10	dvd player	68562
+district	DC10	refrigerator	84039
+district	DC10	landline/telephone	20511
+district	DC10	radio	80370
+district	DC10	satellite television	30309
+district	DC10	electric/gas stove	103047
+district	DC10	television	93486
+district	DC10	vacuum cleaner	22878
+district	DC10	washing machine	46575
+district	DC10	total households	125632
+district	DC12	motor-car	26499
+district	DC12	cell phone	185388
+district	DC12	computer	10923
+district	DC12	dvd player	87720
+district	DC12	refrigerator	107394
+district	DC12	landline/telephone	8244
+district	DC12	radio	143430
+district	DC12	satellite television	18354
+district	DC12	electric/gas stove	147054
+district	DC12	television	132027
+district	DC12	vacuum cleaner	9444
+district	DC12	washing machine	19488
+district	DC12	total households	237776
+district	DC13	motor-car	31545
+district	DC13	cell phone	170499
+district	DC13	computer	13971
+district	DC13	dvd player	88026
+district	DC13	refrigerator	107481
+district	DC13	landline/telephone	11682
+district	DC13	radio	128199
+district	DC13	satellite television	29499
+district	DC13	electric/gas stove	145095
+district	DC13	television	126513
+district	DC13	vacuum cleaner	13428
+district	DC13	washing machine	29751
+district	DC13	total households	210852
+district	DC14	motor-car	12822
+district	DC14	cell phone	77949
+district	DC14	computer	6060
+district	DC14	dvd player	38001
+district	DC14	refrigerator	46986
+district	DC14	landline/telephone	4134
+district	DC14	radio	58122
+district	DC14	satellite television	16938
+district	DC14	electric/gas stove	61869
+district	DC14	television	52161
+district	DC14	vacuum cleaner	5604
+district	DC14	washing machine	10584
+district	DC14	total households	97775
+district	DC15	motor-car	33990
+district	DC15	cell phone	243036
+district	DC15	computer	13917
+district	DC15	dvd player	112770
+district	DC15	refrigerator	111969
+district	DC15	landline/telephone	8532
+district	DC15	radio	154599
+district	DC15	satellite television	25329
+district	DC15	electric/gas stove	167211
+district	DC15	television	153354
+district	DC15	vacuum cleaner	9915
+district	DC15	washing machine	14106
+district	DC15	total households	298229
+district	DC44	motor-car	15228
+district	DC44	cell phone	136062
+district	DC44	computer	5055
+district	DC44	dvd player	46941
+district	DC44	refrigerator	49215
+district	DC44	landline/telephone	3360
+district	DC44	radio	93327
+district	DC44	satellite television	9876
+district	DC44	electric/gas stove	69894
+district	DC44	television	69828
+district	DC44	vacuum cleaner	3339
+district	DC44	washing machine	4470
+district	DC44	total households	169261
+district	DC16	motor-car	9582
+district	DC16	cell phone	36498
+district	DC16	computer	5112
+district	DC16	dvd player	24243
+district	DC16	refrigerator	30891
+district	DC16	landline/telephone	4008
+district	DC16	radio	31482
+district	DC16	satellite television	9402
+district	DC16	electric/gas stove	38706
+district	DC16	television	33030
+district	DC16	vacuum cleaner	5682
+district	DC16	washing machine	10713
+district	DC16	total households	45368
+district	DC18	motor-car	47223
+district	DC18	cell phone	159909
+district	DC18	computer	29367
+district	DC18	dvd player	114444
+district	DC18	refrigerator	132630
+district	DC18	landline/telephone	17970
+district	DC18	radio	133980
+district	DC18	satellite television	42858
+district	DC18	electric/gas stove	155802
+district	DC18	television	145374
+district	DC18	vacuum cleaner	30984
+district	DC18	washing machine	52413
+district	DC18	total households	183163
+district	DC19	motor-car	44682
+district	DC19	cell phone	190305
+district	DC19	computer	28461
+district	DC19	dvd player	130341
+district	DC19	refrigerator	149676
+district	DC19	landline/telephone	16599
+district	DC19	radio	167313
+district	DC19	satellite television	56052
+district	DC19	electric/gas stove	172536
+district	DC19	television	162591
+district	DC19	vacuum cleaner	22692
+district	DC19	washing machine	43425
+district	DC19	total households	217884
+district	DC20	motor-car	40425
+district	DC20	cell phone	128961
+district	DC20	computer	26052
+district	DC20	dvd player	91017
+district	DC20	refrigerator	109674
+district	DC20	landline/telephone	16956
+district	DC20	radio	111687
+district	DC20	satellite television	36267
+district	DC20	electric/gas stove	124170
+district	DC20	television	115698
+district	DC20	vacuum cleaner	27072
+district	DC20	washing machine	52278
+district	DC20	total households	144980
+district	DC42	motor-car	91650
+district	DC42	cell phone	255621
+district	DC42	computer	72003
+district	DC42	dvd player	181482
+district	DC42	refrigerator	216678
+district	DC42	landline/telephone	36987
+district	DC42	radio	203436
+district	DC42	satellite television	93639
+district	DC42	electric/gas stove	239991
+district	DC42	television	227334
+district	DC42	vacuum cleaner	56676
+district	DC42	washing machine	130203
+district	DC42	total households	279768
+district	DC48	motor-car	84609
+district	DC48	cell phone	244752
+district	DC48	computer	55599
+district	DC48	dvd player	158616
+district	DC48	refrigerator	169695
+district	DC48	landline/telephone	33978
+district	DC48	radio	177066
+district	DC48	satellite television	68550
+district	DC48	electric/gas stove	201264
+district	DC48	television	198351
+district	DC48	vacuum cleaner	53259
+district	DC48	washing machine	95964
+district	DC48	total households	267397
+district	DC21	motor-car	38295
+district	DC21	cell phone	148455
+district	DC21	computer	22305
+district	DC21	dvd player	81228
+district	DC21	refrigerator	98013
+district	DC21	landline/telephone	23388
+district	DC21	radio	112863
+district	DC21	satellite television	32100
+district	DC21	electric/gas stove	113040
+district	DC21	television	109050
+district	DC21	vacuum cleaner	22137
+district	DC21	washing machine	28050
+district	DC21	total households	179440
+district	DC22	motor-car	77304
+district	DC22	cell phone	236748
+district	DC22	computer	52227
+district	DC22	dvd player	159705
+district	DC22	refrigerator	183153
+district	DC22	landline/telephone	48411
+district	DC22	radio	188193
+district	DC22	satellite television	66423
+district	DC22	electric/gas stove	208782
+district	DC22	television	196770
+district	DC22	vacuum cleaner	43545
+district	DC22	washing machine	62781
+district	DC22	total households	272666
+district	DC23	motor-car	29160
+district	DC23	cell phone	127587
+district	DC23	computer	13704
+district	DC23	dvd player	72519
+district	DC23	refrigerator	84447
+district	DC23	landline/telephone	10965
+district	DC23	radio	100905
+district	DC23	satellite television	22296
+district	DC23	electric/gas stove	91767
+district	DC23	television	94245
+district	DC23	vacuum cleaner	10353
+district	DC23	washing machine	15066
+district	DC23	total households	147286
+district	DC27	motor-car	18717
+district	DC27	cell phone	110676
+district	DC27	computer	6837
+district	DC27	dvd player	39381
+district	DC27	refrigerator	52080
+district	DC27	landline/telephone	4197
+district	DC27	radio	86778
+district	DC27	satellite television	11289
+district	DC27	electric/gas stove	54258
+district	DC27	television	55338
+district	DC27	vacuum cleaner	3564
+district	DC27	washing machine	4482
+district	DC27	total households	128195
+district	DC28	motor-car	43236
+district	DC28	cell phone	179946
+district	DC28	computer	27498
+district	DC28	dvd player	95367
+district	DC28	refrigerator	121992
+district	DC28	landline/telephone	17637
+district	DC28	radio	133389
+district	DC28	satellite television	38946
+district	DC28	electric/gas stove	135276
+district	DC28	television	122178
+district	DC28	vacuum cleaner	17742
+district	DC28	washing machine	24624
+district	DC28	total households	202976
+district	DC43	motor-car	14985
+district	DC43	cell phone	92118
+district	DC43	computer	6324
+district	DC43	dvd player	42381
+district	DC43	refrigerator	45984
+district	DC43	landline/telephone	4623
+district	DC43	radio	66486
+district	DC43	satellite television	11343
+district	DC43	electric/gas stove	56586
+district	DC43	television	58206
+district	DC43	vacuum cleaner	4329
+district	DC43	washing machine	5727
+district	DC43	total households	112282
+district	DC24	motor-car	17247
+district	DC24	cell phone	92133
+district	DC24	computer	7023
+district	DC24	dvd player	38112
+district	DC24	refrigerator	43470
+district	DC24	landline/telephone	6147
+district	DC24	radio	75708
+district	DC24	satellite television	10104
+district	DC24	electric/gas stove	47406
+district	DC24	television	51174
+district	DC24	vacuum cleaner	5775
+district	DC24	washing machine	8577
+district	DC24	total households	113469
+district	DC25	motor-car	27714
+district	DC25	cell phone	99837
+district	DC25	computer	16176
+district	DC25	dvd player	62238
+district	DC25	refrigerator	76758
+district	DC25	landline/telephone	12837
+district	DC25	radio	80355
+district	DC25	satellite television	22173
+district	DC25	electric/gas stove	82392
+district	DC25	television	82752
+district	DC25	vacuum cleaner	13614
+district	DC25	washing machine	24732
+district	DC25	total households	110963
+district	DC26	motor-car	26469
+district	DC26	cell phone	138123
+district	DC26	computer	11343
+district	DC26	dvd player	67464
+district	DC26	refrigerator	87792
+district	DC26	landline/telephone	7239
+district	DC26	radio	108615
+district	DC26	satellite television	20802
+district	DC26	electric/gas stove	94035
+district	DC26	television	91323
+district	DC26	vacuum cleaner	7635
+district	DC26	washing machine	13530
+district	DC26	total households	157748
+district	DC29	motor-car	26490
+district	DC29	cell phone	132189
+district	DC29	computer	16659
+district	DC29	dvd player	74196
+district	DC29	refrigerator	83568
+district	DC29	landline/telephone	15090
+district	DC29	radio	97491
+district	DC29	satellite television	26667
+district	DC29	electric/gas stove	105039
+district	DC29	television	91536
+district	DC29	vacuum cleaner	12078
+district	DC29	washing machine	17457
+district	DC29	total households	157692
+district	DC33	motor-car	52530
+district	DC33	cell phone	262251
+district	DC33	computer	32799
+district	DC33	dvd player	172890
+district	DC33	refrigerator	203325
+district	DC33	landline/telephone	10395
+district	DC33	radio	177330
+district	DC33	satellite television	50499
+district	DC33	electric/gas stove	175737
+district	DC33	television	207663
+district	DC33	vacuum cleaner	13782
+district	DC33	washing machine	28524
+district	DC33	total households	296320
+district	DC34	motor-car	57435
+district	DC34	cell phone	300837
+district	DC34	computer	40494
+district	DC34	dvd player	202359
+district	DC34	refrigerator	226392
+district	DC34	landline/telephone	9576
+district	DC34	radio	216492
+district	DC34	satellite television	83907
+district	DC34	electric/gas stove	193233
+district	DC34	television	242037
+district	DC34	vacuum cleaner	11589
+district	DC34	washing machine	29403
+district	DC34	total households	335276
+district	DC35	motor-car	76047
+district	DC35	cell phone	304272
+district	DC35	computer	52098
+district	DC35	dvd player	198189
+district	DC35	refrigerator	235311
+district	DC35	landline/telephone	17331
+district	DC35	radio	219159
+district	DC35	satellite television	78210
+district	DC35	electric/gas stove	247245
+district	DC35	television	247461
+district	DC35	vacuum cleaner	28236
+district	DC35	washing machine	67521
+district	DC35	total households	342838
+district	DC36	motor-car	45174
+district	DC36	cell phone	160008
+district	DC36	computer	27291
+district	DC36	dvd player	103998
+district	DC36	refrigerator	122613
+district	DC36	landline/telephone	11751
+district	DC36	radio	109401
+district	DC36	satellite television	43749
+district	DC36	electric/gas stove	134385
+district	DC36	television	129003
+district	DC36	vacuum cleaner	19920
+district	DC36	washing machine	47007
+district	DC36	total households	179866
+district	DC47	motor-car	49530
+district	DC47	cell phone	227439
+district	DC47	computer	22473
+district	DC47	dvd player	143760
+district	DC47	refrigerator	176499
+district	DC47	landline/telephone	5376
+district	DC47	radio	157632
+district	DC47	satellite television	67224
+district	DC47	electric/gas stove	170085
+district	DC47	television	178608
+district	DC47	vacuum cleaner	9792
+district	DC47	washing machine	38082
+district	DC47	total households	263802
+district	DC30	motor-car	75912
+district	DC30	cell phone	246432
+district	DC30	computer	44754
+district	DC30	dvd player	162711
+district	DC30	refrigerator	183288
+district	DC30	landline/telephone	20703
+district	DC30	radio	192948
+district	DC30	satellite television	65475
+district	DC30	electric/gas stove	196032
+district	DC30	television	205965
+district	DC30	vacuum cleaner	38013
+district	DC30	washing machine	85896
+district	DC30	total households	273490
+district	DC31	motor-car	109845
+district	DC31	cell phone	329340
+district	DC31	computer	68097
+district	DC31	dvd player	211968
+district	DC31	refrigerator	255720
+district	DC31	landline/telephone	25947
+district	DC31	radio	258222
+district	DC31	satellite television	80670
+district	DC31	electric/gas stove	274116
+district	DC31	television	271779
+district	DC31	vacuum cleaner	53175
+district	DC31	washing machine	131721
+district	DC31	total households	356911
+district	DC32	motor-car	96942
+district	DC32	cell phone	404169
+district	DC32	computer	62094
+district	DC32	dvd player	274626
+district	DC32	refrigerator	323358
+district	DC32	landline/telephone	21549
+district	DC32	radio	290187
+district	DC32	satellite television	119085
+district	DC32	electric/gas stove	335646
+district	DC32	television	329049
+district	DC32	vacuum cleaner	34068
+district	DC32	washing machine	72684
+district	DC32	total households	445087
+district	DC37	motor-car	110208
+district	DC37	cell phone	448596
+district	DC37	computer	71643
+district	DC37	dvd player	285090
+district	DC37	refrigerator	325986
+district	DC37	landline/telephone	23091
+district	DC37	radio	318255
+district	DC37	satellite television	96231
+district	DC37	electric/gas stove	386616
+district	DC37	television	363399
+district	DC37	vacuum cleaner	49941
+district	DC37	washing machine	123102
+district	DC37	total households	501696
+district	DC38	motor-car	47847
+district	DC38	cell phone	188250
+district	DC38	computer	28446
+district	DC38	dvd player	112647
+district	DC38	refrigerator	140967
+district	DC38	landline/telephone	12387
+district	DC38	radio	148221
+district	DC38	satellite television	40236
+district	DC38	electric/gas stove	162555
+district	DC38	television	155124
+district	DC38	vacuum cleaner	22695
+district	DC38	washing machine	55485
+district	DC38	total households	227001
+district	DC39	motor-car	22215
+district	DC39	cell phone	102588
+district	DC39	computer	10380
+district	DC39	dvd player	57690
+district	DC39	refrigerator	73917
+district	DC39	landline/telephone	5175
+district	DC39	radio	74340
+district	DC39	satellite television	16416
+district	DC39	electric/gas stove	91719
+district	DC39	television	80553
+district	DC39	vacuum cleaner	9561
+district	DC39	washing machine	24795
+district	DC39	total households	125270
+district	DC40	motor-car	64554
+district	DC40	cell phone	182301
+district	DC40	computer	42846
+district	DC40	dvd player	123675
+district	DC40	refrigerator	150414
+district	DC40	landline/telephone	25275
+district	DC40	radio	143895
+district	DC40	satellite television	51009
+district	DC40	electric/gas stove	170436
+district	DC40	television	164568
+district	DC40	vacuum cleaner	40767
+district	DC40	washing machine	81774
+district	DC40	total households	208047
+district	DC6	motor-car	11457
+district	DC6	cell phone	25161
+district	DC6	computer	6495
+district	DC6	dvd player	16956
+district	DC6	refrigerator	24474
+district	DC6	landline/telephone	7410
+district	DC6	radio	23736
+district	DC6	satellite television	9096
+district	DC6	electric/gas stove	29772
+district	DC6	television	25191
+district	DC6	vacuum cleaner	7842
+district	DC6	washing machine	19005
+district	DC6	total households	33856
+district	DC7	motor-car	12780
+district	DC7	cell phone	36438
+district	DC7	computer	7032
+district	DC7	dvd player	24192
+district	DC7	refrigerator	31830
+district	DC7	landline/telephone	6273
+district	DC7	radio	29586
+district	DC7	satellite television	13383
+district	DC7	electric/gas stove	39666
+district	DC7	television	34134
+district	DC7	vacuum cleaner	8163
+district	DC7	washing machine	19962
+district	DC7	total households	49193
+district	DC8	motor-car	17763
+district	DC8	cell phone	49377
+district	DC8	computer	10923
+district	DC8	dvd player	31731
+district	DC8	refrigerator	40479
+district	DC8	landline/telephone	7773
+district	DC8	radio	30630
+district	DC8	satellite television	19173
+district	DC8	electric/gas stove	52131
+district	DC8	television	42090
+district	DC8	vacuum cleaner	10725
+district	DC8	washing machine	27498
+district	DC8	total households	61097
+district	DC9	motor-car	27654
+district	DC9	cell phone	79878
+district	DC9	computer	17667
+district	DC9	dvd player	56070
+district	DC9	refrigerator	67881
+district	DC9	landline/telephone	13725
+district	DC9	radio	63576
+district	DC9	satellite television	26553
+district	DC9	electric/gas stove	77307
+district	DC9	television	73356
+district	DC9	vacuum cleaner	17712
+district	DC9	washing machine	41358
+district	DC9	total households	95929
+district	DC45	motor-car	15684
+district	DC45	cell phone	53475
+district	DC45	computer	7710
+district	DC45	dvd player	32127
+district	DC45	refrigerator	41328
+district	DC45	landline/telephone	3036
+district	DC45	radio	37842
+district	DC45	satellite television	12834
+district	DC45	electric/gas stove	48630
+district	DC45	television	42117
+district	DC45	vacuum cleaner	6417
+district	DC45	washing machine	17655
+district	DC45	total households	61331
+district	DC1	motor-car	40692
+district	DC1	cell phone	87087
+district	DC1	computer	27531
+district	DC1	dvd player	65235
+district	DC1	refrigerator	82536
+district	DC1	landline/telephone	25404
+district	DC1	radio	69066
+district	DC1	satellite television	32913
+district	DC1	electric/gas stove	96882
+district	DC1	television	86598
+district	DC1	vacuum cleaner	31962
+district	DC1	washing machine	62430
+district	DC1	total households	106781
+district	DC2	motor-car	75693
+district	DC2	cell phone	167985
+district	DC2	computer	56619
+district	DC2	dvd player	128286
+district	DC2	refrigerator	156795
+district	DC2	landline/telephone	47052
+district	DC2	radio	130287
+district	DC2	satellite television	56961
+district	DC2	electric/gas stove	177231
+district	DC2	television	164898
+district	DC2	vacuum cleaner	55794
+district	DC2	washing machine	113184
+district	DC2	total households	198265
+district	DC3	motor-car	32730
+district	DC3	cell phone	67698
+district	DC3	computer	21507
+district	DC3	dvd player	48987
+district	DC3	refrigerator	59355
+district	DC3	landline/telephone	20808
+district	DC3	radio	50340
+district	DC3	satellite television	23949
+district	DC3	electric/gas stove	67428
+district	DC3	television	63720
+district	DC3	vacuum cleaner	25872
+district	DC3	washing machine	44481
+district	DC3	total households	77196
+district	DC4	motor-car	68214
+district	DC4	cell phone	138957
+district	DC4	computer	47073
+district	DC4	dvd player	102639
+district	DC4	refrigerator	125787
+district	DC4	landline/telephone	42654
+district	DC4	radio	117549
+district	DC4	satellite television	52431
+district	DC4	electric/gas stove	143517
+district	DC4	television	135204
+district	DC4	vacuum cleaner	53859
+district	DC4	washing machine	94620
+district	DC4	total households	164110
+district	DC5	motor-car	5586
+district	DC5	cell phone	14274
+district	DC5	computer	3339
+district	DC5	dvd player	10233
+district	DC5	refrigerator	13509
+district	DC5	landline/telephone	3747
+district	DC5	radio	13866
+district	DC5	satellite television	4938
+district	DC5	electric/gas stove	16011
+district	DC5	television	14607
+district	DC5	vacuum cleaner	4083
+district	DC5	washing machine	8688
+district	DC5	total households	19076
 \.
 
 
