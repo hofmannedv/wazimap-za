@@ -37,7 +37,7 @@ FieldTable(['age of household head', 'household size'], universe='Households')
 # child-specific tables
 FieldTable(['age in completed years'], id='ageincompletedyearssimplified')
 FieldTable(['present school attendance', 'age in completed years'], universe='Children 5 to 17')
-FieldTable(['parents alive'], universe='Children 14 and under')
+FieldTable(['mother alive', 'father alive'], universe='Children 14 and under')
 FieldTable(['official employment status'], id="officialemploymentstatus15to17", universe="Children 15 to 17")
 FieldTable(['highest educational level'], id="highesteducationallevel17", universe="17-year-old children")
 FieldTable(['level of education'], id="levelofeducation17labourforce", universe="17-year-old children in the labour force")
