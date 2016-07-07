@@ -22641,6 +22641,226 @@ municipality	CPT	From cell phone	175353
 municipality	CPT	From work	73941
 municipality	CPT	From elsewhere	79149
 municipality	CPT	No access to internet	542136
+district	DC10	From home	10188
+district	DC10	From cell phone	14547
+district	DC10	From work	4104
+district	DC10	From elsewhere	3888
+district	DC10	No access to internet	92904
+district	DC12	From home	4023
+district	DC12	From cell phone	26571
+district	DC12	From work	3390
+district	DC12	From elsewhere	5400
+district	DC12	No access to internet	198390
+district	DC13	From home	5844
+district	DC13	From cell phone	25698
+district	DC13	From work	3939
+district	DC13	From elsewhere	7839
+district	DC13	No access to internet	167532
+district	DC14	From home	2478
+district	DC14	From cell phone	11514
+district	DC14	From work	1551
+district	DC14	From elsewhere	2052
+district	DC14	No access to internet	80181
+district	DC15	From home	5271
+district	DC15	From cell phone	40035
+district	DC15	From work	5259
+district	DC15	From elsewhere	8610
+district	DC15	No access to internet	239055
+district	DC44	From home	2016
+district	DC44	From cell phone	19419
+district	DC44	From work	2112
+district	DC44	From elsewhere	4497
+district	DC44	No access to internet	141216
+district	DC16	From home	1701
+district	DC16	From cell phone	6180
+district	DC16	From work	1038
+district	DC16	From elsewhere	2271
+district	DC16	No access to internet	34179
+district	DC18	From home	9168
+district	DC18	From cell phone	27780
+district	DC18	From work	4632
+district	DC18	From elsewhere	8301
+district	DC18	No access to internet	133278
+district	DC19	From home	9069
+district	DC19	From cell phone	34473
+district	DC19	From work	5199
+district	DC19	From elsewhere	11118
+district	DC19	No access to internet	158025
+district	DC20	From home	8955
+district	DC20	From cell phone	24387
+district	DC20	From work	4719
+district	DC20	From elsewhere	9288
+district	DC20	No access to internet	97626
+district	DC42	From home	21690
+district	DC42	From cell phone	50544
+district	DC42	From work	13275
+district	DC42	From elsewhere	24684
+district	DC42	No access to internet	169575
+district	DC48	From home	20385
+district	DC48	From cell phone	43758
+district	DC48	From work	13776
+district	DC48	From elsewhere	15030
+district	DC48	No access to internet	174450
+district	DC21	From home	11319
+district	DC21	From cell phone	26925
+district	DC21	From work	4185
+district	DC21	From elsewhere	7404
+district	DC21	No access to internet	129609
+district	DC22	From home	22746
+district	DC22	From cell phone	44022
+district	DC22	From work	11145
+district	DC22	From elsewhere	18321
+district	DC22	No access to internet	176427
+district	DC23	From home	5670
+district	DC23	From cell phone	27363
+district	DC23	From work	2967
+district	DC23	From elsewhere	6213
+district	DC23	No access to internet	105072
+district	DC27	From home	3018
+district	DC27	From cell phone	23799
+district	DC27	From work	2400
+district	DC27	From elsewhere	3396
+district	DC27	No access to internet	95580
+district	DC28	From home	12327
+district	DC28	From cell phone	39984
+district	DC28	From work	7143
+district	DC28	From elsewhere	11139
+district	DC28	No access to internet	132381
+district	DC43	From home	2649
+district	DC43	From cell phone	14025
+district	DC43	From work	2202
+district	DC43	From elsewhere	3207
+district	DC43	No access to internet	90198
+district	DC24	From home	2748
+district	DC24	From cell phone	15288
+district	DC24	From work	1830
+district	DC24	From elsewhere	2085
+district	DC24	No access to internet	91518
+district	DC25	From home	5748
+district	DC25	From cell phone	18312
+district	DC25	From work	2349
+district	DC25	From elsewhere	6951
+district	DC25	No access to internet	77604
+district	DC26	From home	4659
+district	DC26	From cell phone	31854
+district	DC26	From work	3066
+district	DC26	From elsewhere	6108
+district	DC26	No access to internet	112059
+district	DC29	From home	7716
+district	DC29	From cell phone	26073
+district	DC29	From work	3705
+district	DC29	From elsewhere	6030
+district	DC29	No access to internet	114168
+district	DC33	From home	8985
+district	DC33	From cell phone	46353
+district	DC33	From work	5235
+district	DC33	From elsewhere	10782
+district	DC33	No access to internet	224961
+district	DC34	From home	8157
+district	DC34	From cell phone	52977
+district	DC34	From work	5205
+district	DC34	From elsewhere	13161
+district	DC34	No access to internet	255774
+district	DC35	From home	14115
+district	DC35	From cell phone	52482
+district	DC35	From work	11196
+district	DC35	From elsewhere	18843
+district	DC35	No access to internet	246207
+district	DC36	From home	8319
+district	DC36	From cell phone	26481
+district	DC36	From work	5700
+district	DC36	From elsewhere	6516
+district	DC36	No access to internet	132849
+district	DC47	From home	5199
+district	DC47	From cell phone	31503
+district	DC47	From work	3792
+district	DC47	From elsewhere	10161
+district	DC47	No access to internet	213150
+district	DC30	From home	15546
+district	DC30	From cell phone	48879
+district	DC30	From work	9372
+district	DC30	From elsewhere	12930
+district	DC30	No access to internet	186762
+district	DC31	From home	20829
+district	DC31	From cell phone	63789
+district	DC31	From work	12981
+district	DC31	From elsewhere	23070
+district	DC31	No access to internet	236244
+district	DC32	From home	18996
+district	DC32	From cell phone	81528
+district	DC32	From work	13422
+district	DC32	From elsewhere	16644
+district	DC32	No access to internet	314496
+district	DC37	From home	21246
+district	DC37	From cell phone	79011
+district	DC37	From work	15549
+district	DC37	From elsewhere	18561
+district	DC37	No access to internet	367332
+district	DC38	From home	8181
+district	DC38	From cell phone	32808
+district	DC38	From work	8499
+district	DC38	From elsewhere	8544
+district	DC38	No access to internet	168972
+district	DC39	From home	3033
+district	DC39	From cell phone	15285
+district	DC39	From work	2553
+district	DC39	From elsewhere	4497
+district	DC39	No access to internet	99897
+district	DC40	From home	14667
+district	DC40	From cell phone	30303
+district	DC40	From work	7869
+district	DC40	From elsewhere	8661
+district	DC40	No access to internet	146541
+district	DC6	From home	1890
+district	DC6	From cell phone	4536
+district	DC6	From work	1146
+district	DC6	From elsewhere	588
+district	DC6	No access to internet	25695
+district	DC7	From home	2412
+district	DC7	From cell phone	5970
+district	DC7	From work	1461
+district	DC7	From elsewhere	912
+district	DC7	No access to internet	38436
+district	DC8	From home	3684
+district	DC8	From cell phone	8127
+district	DC8	From work	2133
+district	DC8	From elsewhere	1314
+district	DC8	No access to internet	45834
+district	DC9	From home	6120
+district	DC9	From cell phone	16458
+district	DC9	From work	3753
+district	DC9	From elsewhere	3108
+district	DC9	No access to internet	66492
+district	DC45	From home	2514
+district	DC45	From cell phone	8958
+district	DC45	From work	1977
+district	DC45	From elsewhere	1128
+district	DC45	No access to internet	46755
+district	DC1	From home	12024
+district	DC1	From cell phone	12183
+district	DC1	From work	4092
+district	DC1	From elsewhere	2673
+district	DC1	No access to internet	75810
+district	DC2	From home	23385
+district	DC2	From cell phone	30681
+district	DC2	From work	8874
+district	DC2	From elsewhere	6057
+district	DC2	No access to internet	129267
+district	DC3	From home	11250
+district	DC3	From cell phone	10794
+district	DC3	From work	2619
+district	DC3	From elsewhere	2214
+district	DC3	No access to internet	50319
+district	DC4	From home	23565
+district	DC4	From cell phone	20469
+district	DC4	From work	6558
+district	DC4	From elsewhere	5313
+district	DC4	No access to internet	108204
+district	DC5	From home	1275
+district	DC5	From cell phone	2307
+district	DC5	From work	465
+district	DC5	From elsewhere	624
+district	DC5	No access to internet	14403
 \.
 
 

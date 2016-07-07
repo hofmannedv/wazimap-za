@@ -1,7 +1,6 @@
 from wazimap.data.tables import FieldTable, SimpleTable
 
 # Define our tables so the data API can discover them.
-FieldTable(['access to internet'])
 FieldTable(['age groups in 5 years'])
 FieldTable(['age in completed years'])
 FieldTable(['electricity for cooking', 'electricity for heating', 'electricity for lighting'])
@@ -27,6 +26,7 @@ FieldTable(['citizenship'])
 FieldTable(['province of birth'])
 FieldTable(['region of birth'])
 
+FieldTable(['access to internet'], universe="Households")
 FieldTable(['gender of household head', 'age of household head'], universe='Households')
 FieldTable(['annual household income', 'gender of household head'], universe='Households')
 FieldTable(['household goods'], universe='Households', denominator_key='total households')
