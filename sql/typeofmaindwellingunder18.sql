@@ -63330,6 +63330,622 @@ municipality	CPT	Caravan/tent	3
 municipality	CPT	Other	36
 municipality	CPT	Unspecified	0
 municipality	CPT	Not applicable	0
+district	DC10	House or brick/concrete block structure on a separate stand or yard or on a farm	276
+district	DC10	Traditional dwelling/hut/structure made of traditional materials	9
+district	DC10	Flat or apartment in a block of flats	6
+district	DC10	Cluster house in complex	0
+district	DC10	Townhouse (semi-detached house in a complex)	3
+district	DC10	Semi-detached house	15
+district	DC10	House/flat/room in backyard	3
+district	DC10	Informal dwelling (shack; in backyard)	6
+district	DC10	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	42
+district	DC10	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	3
+district	DC10	Caravan/tent	3
+district	DC10	Other	6
+district	DC10	Unspecified	0
+district	DC10	Not applicable	0
+district	DC12	House or brick/concrete block structure on a separate stand or yard or on a farm	948
+district	DC12	Traditional dwelling/hut/structure made of traditional materials	1242
+district	DC12	Flat or apartment in a block of flats	108
+district	DC12	Cluster house in complex	3
+district	DC12	Townhouse (semi-detached house in a complex)	0
+district	DC12	Semi-detached house	6
+district	DC12	House/flat/room in backyard	78
+district	DC12	Informal dwelling (shack; in backyard)	45
+district	DC12	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	141
+district	DC12	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	12
+district	DC12	Caravan/tent	0
+district	DC12	Other	15
+district	DC12	Unspecified	0
+district	DC12	Not applicable	0
+district	DC13	House or brick/concrete block structure on a separate stand or yard or on a farm	858
+district	DC13	Traditional dwelling/hut/structure made of traditional materials	882
+district	DC13	Flat or apartment in a block of flats	117
+district	DC13	Cluster house in complex	6
+district	DC13	Townhouse (semi-detached house in a complex)	6
+district	DC13	Semi-detached house	3
+district	DC13	House/flat/room in backyard	51
+district	DC13	Informal dwelling (shack; in backyard)	9
+district	DC13	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	21
+district	DC13	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	9
+district	DC13	Caravan/tent	3
+district	DC13	Other	24
+district	DC13	Unspecified	0
+district	DC13	Not applicable	0
+district	DC14	House or brick/concrete block structure on a separate stand or yard or on a farm	561
+district	DC14	Traditional dwelling/hut/structure made of traditional materials	504
+district	DC14	Flat or apartment in a block of flats	30
+district	DC14	Cluster house in complex	0
+district	DC14	Townhouse (semi-detached house in a complex)	0
+district	DC14	Semi-detached house	0
+district	DC14	House/flat/room in backyard	9
+district	DC14	Informal dwelling (shack; in backyard)	27
+district	DC14	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	33
+district	DC14	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	0
+district	DC14	Caravan/tent	0
+district	DC14	Other	6
+district	DC14	Unspecified	0
+district	DC14	Not applicable	0
+district	DC15	House or brick/concrete block structure on a separate stand or yard or on a farm	1494
+district	DC15	Traditional dwelling/hut/structure made of traditional materials	3144
+district	DC15	Flat or apartment in a block of flats	384
+district	DC15	Cluster house in complex	9
+district	DC15	Townhouse (semi-detached house in a complex)	6
+district	DC15	Semi-detached house	9
+district	DC15	House/flat/room in backyard	426
+district	DC15	Informal dwelling (shack; in backyard)	21
+district	DC15	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	36
+district	DC15	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	21
+district	DC15	Caravan/tent	3
+district	DC15	Other	39
+district	DC15	Unspecified	0
+district	DC15	Not applicable	0
+district	DC44	House or brick/concrete block structure on a separate stand or yard or on a farm	801
+district	DC44	Traditional dwelling/hut/structure made of traditional materials	1761
+district	DC44	Flat or apartment in a block of flats	195
+district	DC44	Cluster house in complex	3
+district	DC44	Townhouse (semi-detached house in a complex)	3
+district	DC44	Semi-detached house	6
+district	DC44	House/flat/room in backyard	225
+district	DC44	Informal dwelling (shack; in backyard)	21
+district	DC44	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	18
+district	DC44	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	24
+district	DC44	Caravan/tent	0
+district	DC44	Other	99
+district	DC44	Unspecified	0
+district	DC44	Not applicable	0
+district	DC16	House or brick/concrete block structure on a separate stand or yard or on a farm	198
+district	DC16	Traditional dwelling/hut/structure made of traditional materials	0
+district	DC16	Flat or apartment in a block of flats	0
+district	DC16	Cluster house in complex	0
+district	DC16	Townhouse (semi-detached house in a complex)	0
+district	DC16	Semi-detached house	3
+district	DC16	House/flat/room in backyard	3
+district	DC16	Informal dwelling (shack; in backyard)	21
+district	DC16	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	24
+district	DC16	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	0
+district	DC16	Caravan/tent	0
+district	DC16	Other	0
+district	DC16	Unspecified	0
+district	DC16	Not applicable	0
+district	DC18	House or brick/concrete block structure on a separate stand or yard or on a farm	555
+district	DC18	Traditional dwelling/hut/structure made of traditional materials	6
+district	DC18	Flat or apartment in a block of flats	3
+district	DC18	Cluster house in complex	0
+district	DC18	Townhouse (semi-detached house in a complex)	0
+district	DC18	Semi-detached house	9
+district	DC18	House/flat/room in backyard	9
+district	DC18	Informal dwelling (shack; in backyard)	78
+district	DC18	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	150
+district	DC18	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	0
+district	DC18	Caravan/tent	0
+district	DC18	Other	6
+district	DC18	Unspecified	0
+district	DC18	Not applicable	0
+district	DC19	House or brick/concrete block structure on a separate stand or yard or on a farm	1080
+district	DC19	Traditional dwelling/hut/structure made of traditional materials	96
+district	DC19	Flat or apartment in a block of flats	18
+district	DC19	Cluster house in complex	3
+district	DC19	Townhouse (semi-detached house in a complex)	0
+district	DC19	Semi-detached house	6
+district	DC19	House/flat/room in backyard	15
+district	DC19	Informal dwelling (shack; in backyard)	129
+district	DC19	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	189
+district	DC19	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	3
+district	DC19	Caravan/tent	0
+district	DC19	Other	24
+district	DC19	Unspecified	0
+district	DC19	Not applicable	0
+district	DC20	House or brick/concrete block structure on a separate stand or yard or on a farm	408
+district	DC20	Traditional dwelling/hut/structure made of traditional materials	3
+district	DC20	Flat or apartment in a block of flats	12
+district	DC20	Cluster house in complex	0
+district	DC20	Townhouse (semi-detached house in a complex)	3
+district	DC20	Semi-detached house	3
+district	DC20	House/flat/room in backyard	9
+district	DC20	Informal dwelling (shack; in backyard)	93
+district	DC20	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	96
+district	DC20	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	3
+district	DC20	Caravan/tent	0
+district	DC20	Other	3
+district	DC20	Unspecified	0
+district	DC20	Not applicable	0
+district	DC42	House or brick/concrete block structure on a separate stand or yard or on a farm	504
+district	DC42	Traditional dwelling/hut/structure made of traditional materials	0
+district	DC42	Flat or apartment in a block of flats	15
+district	DC42	Cluster house in complex	0
+district	DC42	Townhouse (semi-detached house in a complex)	0
+district	DC42	Semi-detached house	9
+district	DC42	House/flat/room in backyard	15
+district	DC42	Informal dwelling (shack; in backyard)	90
+district	DC42	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	75
+district	DC42	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	3
+district	DC42	Caravan/tent	3
+district	DC42	Other	9
+district	DC42	Unspecified	0
+district	DC42	Not applicable	0
+district	DC48	House or brick/concrete block structure on a separate stand or yard or on a farm	363
+district	DC48	Traditional dwelling/hut/structure made of traditional materials	3
+district	DC48	Flat or apartment in a block of flats	15
+district	DC48	Cluster house in complex	3
+district	DC48	Townhouse (semi-detached house in a complex)	3
+district	DC48	Semi-detached house	3
+district	DC48	House/flat/room in backyard	39
+district	DC48	Informal dwelling (shack; in backyard)	99
+district	DC48	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	213
+district	DC48	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	6
+district	DC48	Caravan/tent	0
+district	DC48	Other	3
+district	DC48	Unspecified	0
+district	DC48	Not applicable	0
+district	DC21	House or brick/concrete block structure on a separate stand or yard or on a farm	822
+district	DC21	Traditional dwelling/hut/structure made of traditional materials	678
+district	DC21	Flat or apartment in a block of flats	66
+district	DC21	Cluster house in complex	9
+district	DC21	Townhouse (semi-detached house in a complex)	9
+district	DC21	Semi-detached house	3
+district	DC21	House/flat/room in backyard	36
+district	DC21	Informal dwelling (shack; in backyard)	18
+district	DC21	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	39
+district	DC21	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	6
+district	DC21	Caravan/tent	0
+district	DC21	Other	27
+district	DC21	Unspecified	0
+district	DC21	Not applicable	0
+district	DC22	House or brick/concrete block structure on a separate stand or yard or on a farm	888
+district	DC22	Traditional dwelling/hut/structure made of traditional materials	516
+district	DC22	Flat or apartment in a block of flats	63
+district	DC22	Cluster house in complex	15
+district	DC22	Townhouse (semi-detached house in a complex)	9
+district	DC22	Semi-detached house	21
+district	DC22	House/flat/room in backyard	27
+district	DC22	Informal dwelling (shack; in backyard)	45
+district	DC22	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	108
+district	DC22	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	24
+district	DC22	Caravan/tent	3
+district	DC22	Other	30
+district	DC22	Unspecified	0
+district	DC22	Not applicable	0
+district	DC23	House or brick/concrete block structure on a separate stand or yard or on a farm	885
+district	DC23	Traditional dwelling/hut/structure made of traditional materials	639
+district	DC23	Flat or apartment in a block of flats	48
+district	DC23	Cluster house in complex	3
+district	DC23	Townhouse (semi-detached house in a complex)	0
+district	DC23	Semi-detached house	9
+district	DC23	House/flat/room in backyard	51
+district	DC23	Informal dwelling (shack; in backyard)	3
+district	DC23	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	6
+district	DC23	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	6
+district	DC23	Caravan/tent	0
+district	DC23	Other	6
+district	DC23	Unspecified	0
+district	DC23	Not applicable	0
+district	DC27	House or brick/concrete block structure on a separate stand or yard or on a farm	1275
+district	DC27	Traditional dwelling/hut/structure made of traditional materials	516
+district	DC27	Flat or apartment in a block of flats	147
+district	DC27	Cluster house in complex	3
+district	DC27	Townhouse (semi-detached house in a complex)	6
+district	DC27	Semi-detached house	0
+district	DC27	House/flat/room in backyard	21
+district	DC27	Informal dwelling (shack; in backyard)	15
+district	DC27	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	15
+district	DC27	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	0
+district	DC27	Caravan/tent	3
+district	DC27	Other	24
+district	DC27	Unspecified	0
+district	DC27	Not applicable	0
+district	DC28	House or brick/concrete block structure on a separate stand or yard or on a farm	1125
+district	DC28	Traditional dwelling/hut/structure made of traditional materials	765
+district	DC28	Flat or apartment in a block of flats	111
+district	DC28	Cluster house in complex	6
+district	DC28	Townhouse (semi-detached house in a complex)	6
+district	DC28	Semi-detached house	3
+district	DC28	House/flat/room in backyard	36
+district	DC28	Informal dwelling (shack; in backyard)	24
+district	DC28	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	9
+district	DC28	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	3
+district	DC28	Caravan/tent	0
+district	DC28	Other	12
+district	DC28	Unspecified	0
+district	DC28	Not applicable	0
+district	DC43	House or brick/concrete block structure on a separate stand or yard or on a farm	381
+district	DC43	Traditional dwelling/hut/structure made of traditional materials	984
+district	DC43	Flat or apartment in a block of flats	60
+district	DC43	Cluster house in complex	3
+district	DC43	Townhouse (semi-detached house in a complex)	3
+district	DC43	Semi-detached house	0
+district	DC43	House/flat/room in backyard	36
+district	DC43	Informal dwelling (shack; in backyard)	12
+district	DC43	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	21
+district	DC43	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	9
+district	DC43	Caravan/tent	0
+district	DC43	Other	15
+district	DC43	Unspecified	0
+district	DC43	Not applicable	0
+district	DC24	House or brick/concrete block structure on a separate stand or yard or on a farm	600
+district	DC24	Traditional dwelling/hut/structure made of traditional materials	798
+district	DC24	Flat or apartment in a block of flats	42
+district	DC24	Cluster house in complex	0
+district	DC24	Townhouse (semi-detached house in a complex)	0
+district	DC24	Semi-detached house	0
+district	DC24	House/flat/room in backyard	9
+district	DC24	Informal dwelling (shack; in backyard)	6
+district	DC24	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	12
+district	DC24	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	9
+district	DC24	Caravan/tent	0
+district	DC24	Other	9
+district	DC24	Unspecified	0
+district	DC24	Not applicable	0
+district	DC25	House or brick/concrete block structure on a separate stand or yard or on a farm	879
+district	DC25	Traditional dwelling/hut/structure made of traditional materials	144
+district	DC25	Flat or apartment in a block of flats	33
+district	DC25	Cluster house in complex	3
+district	DC25	Townhouse (semi-detached house in a complex)	3
+district	DC25	Semi-detached house	3
+district	DC25	House/flat/room in backyard	12
+district	DC25	Informal dwelling (shack; in backyard)	18
+district	DC25	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	33
+district	DC25	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	0
+district	DC25	Caravan/tent	0
+district	DC25	Other	6
+district	DC25	Unspecified	0
+district	DC25	Not applicable	0
+district	DC26	House or brick/concrete block structure on a separate stand or yard or on a farm	1416
+district	DC26	Traditional dwelling/hut/structure made of traditional materials	684
+district	DC26	Flat or apartment in a block of flats	93
+district	DC26	Cluster house in complex	12
+district	DC26	Townhouse (semi-detached house in a complex)	0
+district	DC26	Semi-detached house	3
+district	DC26	House/flat/room in backyard	51
+district	DC26	Informal dwelling (shack; in backyard)	6
+district	DC26	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	6
+district	DC26	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	21
+district	DC26	Caravan/tent	3
+district	DC26	Other	18
+district	DC26	Unspecified	0
+district	DC26	Not applicable	0
+district	DC29	House or brick/concrete block structure on a separate stand or yard or on a farm	675
+district	DC29	Traditional dwelling/hut/structure made of traditional materials	507
+district	DC29	Flat or apartment in a block of flats	54
+district	DC29	Cluster house in complex	6
+district	DC29	Townhouse (semi-detached house in a complex)	6
+district	DC29	Semi-detached house	3
+district	DC29	House/flat/room in backyard	18
+district	DC29	Informal dwelling (shack; in backyard)	24
+district	DC29	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	36
+district	DC29	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	6
+district	DC29	Caravan/tent	0
+district	DC29	Other	15
+district	DC29	Unspecified	0
+district	DC29	Not applicable	0
+district	DC33	House or brick/concrete block structure on a separate stand or yard or on a farm	4929
+district	DC33	Traditional dwelling/hut/structure made of traditional materials	342
+district	DC33	Flat or apartment in a block of flats	15
+district	DC33	Cluster house in complex	0
+district	DC33	Townhouse (semi-detached house in a complex)	0
+district	DC33	Semi-detached house	3
+district	DC33	House/flat/room in backyard	36
+district	DC33	Informal dwelling (shack; in backyard)	63
+district	DC33	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	42
+district	DC33	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	9
+district	DC33	Caravan/tent	6
+district	DC33	Other	24
+district	DC33	Unspecified	0
+district	DC33	Not applicable	0
+district	DC34	House or brick/concrete block structure on a separate stand or yard or on a farm	4728
+district	DC34	Traditional dwelling/hut/structure made of traditional materials	765
+district	DC34	Flat or apartment in a block of flats	9
+district	DC34	Cluster house in complex	6
+district	DC34	Townhouse (semi-detached house in a complex)	0
+district	DC34	Semi-detached house	12
+district	DC34	House/flat/room in backyard	27
+district	DC34	Informal dwelling (shack; in backyard)	72
+district	DC34	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	60
+district	DC34	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	6
+district	DC34	Caravan/tent	3
+district	DC34	Other	15
+district	DC34	Unspecified	0
+district	DC34	Not applicable	0
+district	DC35	House or brick/concrete block structure on a separate stand or yard or on a farm	3396
+district	DC35	Traditional dwelling/hut/structure made of traditional materials	69
+district	DC35	Flat or apartment in a block of flats	27
+district	DC35	Cluster house in complex	0
+district	DC35	Townhouse (semi-detached house in a complex)	12
+district	DC35	Semi-detached house	3
+district	DC35	House/flat/room in backyard	48
+district	DC35	Informal dwelling (shack; in backyard)	120
+district	DC35	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	105
+district	DC35	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	18
+district	DC35	Caravan/tent	0
+district	DC35	Other	15
+district	DC35	Unspecified	0
+district	DC35	Not applicable	0
+district	DC36	House or brick/concrete block structure on a separate stand or yard or on a farm	1422
+district	DC36	Traditional dwelling/hut/structure made of traditional materials	24
+district	DC36	Flat or apartment in a block of flats	12
+district	DC36	Cluster house in complex	3
+district	DC36	Townhouse (semi-detached house in a complex)	6
+district	DC36	Semi-detached house	6
+district	DC36	House/flat/room in backyard	15
+district	DC36	Informal dwelling (shack; in backyard)	123
+district	DC36	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	108
+district	DC36	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	12
+district	DC36	Caravan/tent	3
+district	DC36	Other	9
+district	DC36	Unspecified	0
+district	DC36	Not applicable	0
+district	DC47	House or brick/concrete block structure on a separate stand or yard or on a farm	2502
+district	DC47	Traditional dwelling/hut/structure made of traditional materials	96
+district	DC47	Flat or apartment in a block of flats	12
+district	DC47	Cluster house in complex	0
+district	DC47	Townhouse (semi-detached house in a complex)	0
+district	DC47	Semi-detached house	0
+district	DC47	House/flat/room in backyard	15
+district	DC47	Informal dwelling (shack; in backyard)	117
+district	DC47	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	162
+district	DC47	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	24
+district	DC47	Caravan/tent	3
+district	DC47	Other	12
+district	DC47	Unspecified	0
+district	DC47	Not applicable	0
+district	DC30	House or brick/concrete block structure on a separate stand or yard or on a farm	1230
+district	DC30	Traditional dwelling/hut/structure made of traditional materials	339
+district	DC30	Flat or apartment in a block of flats	12
+district	DC30	Cluster house in complex	3
+district	DC30	Townhouse (semi-detached house in a complex)	3
+district	DC30	Semi-detached house	3
+district	DC30	House/flat/room in backyard	24
+district	DC30	Informal dwelling (shack; in backyard)	81
+district	DC30	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	189
+district	DC30	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	3
+district	DC30	Caravan/tent	0
+district	DC30	Other	12
+district	DC30	Unspecified	0
+district	DC30	Not applicable	0
+district	DC31	House or brick/concrete block structure on a separate stand or yard or on a farm	1551
+district	DC31	Traditional dwelling/hut/structure made of traditional materials	51
+district	DC31	Flat or apartment in a block of flats	18
+district	DC31	Cluster house in complex	3
+district	DC31	Townhouse (semi-detached house in a complex)	3
+district	DC31	Semi-detached house	0
+district	DC31	House/flat/room in backyard	39
+district	DC31	Informal dwelling (shack; in backyard)	102
+district	DC31	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	219
+district	DC31	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	6
+district	DC31	Caravan/tent	0
+district	DC31	Other	21
+district	DC31	Unspecified	0
+district	DC31	Not applicable	0
+district	DC32	House or brick/concrete block structure on a separate stand or yard or on a farm	4902
+district	DC32	Traditional dwelling/hut/structure made of traditional materials	186
+district	DC32	Flat or apartment in a block of flats	33
+district	DC32	Cluster house in complex	9
+district	DC32	Townhouse (semi-detached house in a complex)	6
+district	DC32	Semi-detached house	0
+district	DC32	House/flat/room in backyard	24
+district	DC32	Informal dwelling (shack; in backyard)	93
+district	DC32	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	105
+district	DC32	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	27
+district	DC32	Caravan/tent	3
+district	DC32	Other	18
+district	DC32	Unspecified	0
+district	DC32	Not applicable	0
+district	DC37	House or brick/concrete block structure on a separate stand or yard or on a farm	1278
+district	DC37	Traditional dwelling/hut/structure made of traditional materials	24
+district	DC37	Flat or apartment in a block of flats	21
+district	DC37	Cluster house in complex	6
+district	DC37	Townhouse (semi-detached house in a complex)	3
+district	DC37	Semi-detached house	9
+district	DC37	House/flat/room in backyard	48
+district	DC37	Informal dwelling (shack; in backyard)	225
+district	DC37	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	468
+district	DC37	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	18
+district	DC37	Caravan/tent	0
+district	DC37	Other	18
+district	DC37	Unspecified	0
+district	DC37	Not applicable	0
+district	DC38	House or brick/concrete block structure on a separate stand or yard or on a farm	1170
+district	DC38	Traditional dwelling/hut/structure made of traditional materials	60
+district	DC38	Flat or apartment in a block of flats	6
+district	DC38	Cluster house in complex	3
+district	DC38	Townhouse (semi-detached house in a complex)	0
+district	DC38	Semi-detached house	6
+district	DC38	House/flat/room in backyard	45
+district	DC38	Informal dwelling (shack; in backyard)	66
+district	DC38	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	201
+district	DC38	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	6
+district	DC38	Caravan/tent	3
+district	DC38	Other	18
+district	DC38	Unspecified	0
+district	DC38	Not applicable	0
+district	DC39	House or brick/concrete block structure on a separate stand or yard or on a farm	924
+district	DC39	Traditional dwelling/hut/structure made of traditional materials	39
+district	DC39	Flat or apartment in a block of flats	6
+district	DC39	Cluster house in complex	3
+district	DC39	Townhouse (semi-detached house in a complex)	6
+district	DC39	Semi-detached house	3
+district	DC39	House/flat/room in backyard	9
+district	DC39	Informal dwelling (shack; in backyard)	33
+district	DC39	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	84
+district	DC39	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	6
+district	DC39	Caravan/tent	0
+district	DC39	Other	3
+district	DC39	Unspecified	0
+district	DC39	Not applicable	0
+district	DC40	House or brick/concrete block structure on a separate stand or yard or on a farm	612
+district	DC40	Traditional dwelling/hut/structure made of traditional materials	12
+district	DC40	Flat or apartment in a block of flats	24
+district	DC40	Cluster house in complex	3
+district	DC40	Townhouse (semi-detached house in a complex)	3
+district	DC40	Semi-detached house	9
+district	DC40	House/flat/room in backyard	18
+district	DC40	Informal dwelling (shack; in backyard)	51
+district	DC40	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	159
+district	DC40	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	6
+district	DC40	Caravan/tent	0
+district	DC40	Other	6
+district	DC40	Unspecified	0
+district	DC40	Not applicable	0
+district	DC6	House or brick/concrete block structure on a separate stand or yard or on a farm	60
+district	DC6	Traditional dwelling/hut/structure made of traditional materials	3
+district	DC6	Flat or apartment in a block of flats	0
+district	DC6	Cluster house in complex	0
+district	DC6	Townhouse (semi-detached house in a complex)	0
+district	DC6	Semi-detached house	0
+district	DC6	House/flat/room in backyard	3
+district	DC6	Informal dwelling (shack; in backyard)	0
+district	DC6	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	0
+district	DC6	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	0
+district	DC6	Caravan/tent	0
+district	DC6	Other	0
+district	DC6	Unspecified	0
+district	DC6	Not applicable	0
+district	DC7	House or brick/concrete block structure on a separate stand or yard or on a farm	222
+district	DC7	Traditional dwelling/hut/structure made of traditional materials	3
+district	DC7	Flat or apartment in a block of flats	3
+district	DC7	Cluster house in complex	0
+district	DC7	Townhouse (semi-detached house in a complex)	6
+district	DC7	Semi-detached house	12
+district	DC7	House/flat/room in backyard	3
+district	DC7	Informal dwelling (shack; in backyard)	3
+district	DC7	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	24
+district	DC7	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	0
+district	DC7	Caravan/tent	0
+district	DC7	Other	0
+district	DC7	Unspecified	0
+district	DC7	Not applicable	0
+district	DC8	House or brick/concrete block structure on a separate stand or yard or on a farm	183
+district	DC8	Traditional dwelling/hut/structure made of traditional materials	0
+district	DC8	Flat or apartment in a block of flats	15
+district	DC8	Cluster house in complex	0
+district	DC8	Townhouse (semi-detached house in a complex)	0
+district	DC8	Semi-detached house	3
+district	DC8	House/flat/room in backyard	3
+district	DC8	Informal dwelling (shack; in backyard)	3
+district	DC8	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	45
+district	DC8	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	0
+district	DC8	Caravan/tent	0
+district	DC8	Other	6
+district	DC8	Unspecified	0
+district	DC8	Not applicable	0
+district	DC9	House or brick/concrete block structure on a separate stand or yard or on a farm	216
+district	DC9	Traditional dwelling/hut/structure made of traditional materials	3
+district	DC9	Flat or apartment in a block of flats	3
+district	DC9	Cluster house in complex	3
+district	DC9	Townhouse (semi-detached house in a complex)	0
+district	DC9	Semi-detached house	6
+district	DC9	House/flat/room in backyard	3
+district	DC9	Informal dwelling (shack; in backyard)	12
+district	DC9	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	36
+district	DC9	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	3
+district	DC9	Caravan/tent	0
+district	DC9	Other	6
+district	DC9	Unspecified	0
+district	DC9	Not applicable	0
+district	DC45	House or brick/concrete block structure on a separate stand or yard or on a farm	330
+district	DC45	Traditional dwelling/hut/structure made of traditional materials	78
+district	DC45	Flat or apartment in a block of flats	6
+district	DC45	Cluster house in complex	0
+district	DC45	Townhouse (semi-detached house in a complex)	0
+district	DC45	Semi-detached house	0
+district	DC45	House/flat/room in backyard	3
+district	DC45	Informal dwelling (shack; in backyard)	30
+district	DC45	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	39
+district	DC45	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	0
+district	DC45	Caravan/tent	0
+district	DC45	Other	3
+district	DC45	Unspecified	0
+district	DC45	Not applicable	0
+district	DC1	House or brick/concrete block structure on a separate stand or yard or on a farm	144
+district	DC1	Traditional dwelling/hut/structure made of traditional materials	0
+district	DC1	Flat or apartment in a block of flats	6
+district	DC1	Cluster house in complex	3
+district	DC1	Townhouse (semi-detached house in a complex)	0
+district	DC1	Semi-detached house	12
+district	DC1	House/flat/room in backyard	3
+district	DC1	Informal dwelling (shack; in backyard)	24
+district	DC1	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	24
+district	DC1	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	3
+district	DC1	Caravan/tent	3
+district	DC1	Other	9
+district	DC1	Unspecified	0
+district	DC1	Not applicable	0
+district	DC2	House or brick/concrete block structure on a separate stand or yard or on a farm	243
+district	DC2	Traditional dwelling/hut/structure made of traditional materials	3
+district	DC2	Flat or apartment in a block of flats	21
+district	DC2	Cluster house in complex	0
+district	DC2	Townhouse (semi-detached house in a complex)	0
+district	DC2	Semi-detached house	12
+district	DC2	House/flat/room in backyard	3
+district	DC2	Informal dwelling (shack; in backyard)	30
+district	DC2	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	66
+district	DC2	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	6
+district	DC2	Caravan/tent	0
+district	DC2	Other	6
+district	DC2	Unspecified	0
+district	DC2	Not applicable	0
+district	DC3	House or brick/concrete block structure on a separate stand or yard or on a farm	90
+district	DC3	Traditional dwelling/hut/structure made of traditional materials	0
+district	DC3	Flat or apartment in a block of flats	3
+district	DC3	Cluster house in complex	0
+district	DC3	Townhouse (semi-detached house in a complex)	0
+district	DC3	Semi-detached house	3
+district	DC3	House/flat/room in backyard	0
+district	DC3	Informal dwelling (shack; in backyard)	15
+district	DC3	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	33
+district	DC3	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	0
+district	DC3	Caravan/tent	0
+district	DC3	Other	0
+district	DC3	Unspecified	0
+district	DC3	Not applicable	0
+district	DC4	House or brick/concrete block structure on a separate stand or yard or on a farm	252
+district	DC4	Traditional dwelling/hut/structure made of traditional materials	3
+district	DC4	Flat or apartment in a block of flats	6
+district	DC4	Cluster house in complex	0
+district	DC4	Townhouse (semi-detached house in a complex)	0
+district	DC4	Semi-detached house	18
+district	DC4	House/flat/room in backyard	0
+district	DC4	Informal dwelling (shack; in backyard)	36
+district	DC4	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	39
+district	DC4	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	0
+district	DC4	Caravan/tent	3
+district	DC4	Other	9
+district	DC4	Unspecified	0
+district	DC4	Not applicable	0
+district	DC5	House or brick/concrete block structure on a separate stand or yard or on a farm	66
+district	DC5	Traditional dwelling/hut/structure made of traditional materials	3
+district	DC5	Flat or apartment in a block of flats	3
+district	DC5	Cluster house in complex	0
+district	DC5	Townhouse (semi-detached house in a complex)	0
+district	DC5	Semi-detached house	3
+district	DC5	House/flat/room in backyard	0
+district	DC5	Informal dwelling (shack; in backyard)	0
+district	DC5	Informal dwelling (shack; not in backyard; e.g. in an informal/squatter settlement or on a farm)	0
+district	DC5	Room/flatlet on a property or larger dwelling/servants quarters/granny flat	0
+district	DC5	Caravan/tent	0
+district	DC5	Other	0
+district	DC5	Unspecified	0
+district	DC5	Not applicable	0
 \.
 
 
