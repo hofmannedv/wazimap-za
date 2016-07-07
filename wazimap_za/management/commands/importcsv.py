@@ -3,9 +3,9 @@ import re
 
 from django.core.management.base import BaseCommand, CommandError
 
-# from api.models import get_model_from_fields, Base, Province
 from wazimap.data.utils import get_session
 from wazimap.data.tables import get_datatable, get_table_id
+from wazimap.geo import geo_data
 
 
 import logging
@@ -59,6 +59,7 @@ class Command(BaseCommand):
         self.verbosity = options.get('verbosity', 1)
         self.table_id = options.get('table')
         self.dryrun = options.get('dryrun', False)
+        self.provinces = {g.name.lower(): g for g in geo_data.geo_model.objects.filter(geo_level='province')}
 
         if self.dryrun:
             self.stdout.write("DRY RUN: not actuall writing data")
@@ -274,15 +275,21 @@ class Command(BaseCommand):
         if geo_name == "":
             return ['country', 'ZA']
 
-        pre, code = geo_name.split(':', 1)
         level = None
+        if ':' in geo_name:
+            pre, code = geo_name.split(':', 1)
+        else:
+            pre = code = geo_name
 
         if len(pre) in (5, 6) or muni_re.match(geo_name):
             level = 'municipality'
+            code = pre
         elif 'Ward' in geo_name:
             level = 'ward'
+            code = pre
         elif len(pre) >= 7:
             level = 'province'
+            code = self.provinces[geo_name.strip().lower()].geo_code
         elif geo_name.startswith('DC'):
             level = 'district'
             code = pre.strip()
