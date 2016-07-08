@@ -22645,265 +22645,221 @@ district	DC10	Employed	1209
 district	DC10	Unemployed	2010
 district	DC10	Discouraged work-seeker	711
 district	DC10	Other not economically active	18648
-district	DC10	Age less than 15 years	0
 district	DC10	Not applicable	0
 district	DC12	Employed	1269
 district	DC12	Unemployed	2670
 district	DC12	Discouraged work-seeker	2181
 district	DC12	Other not economically active	60144
-district	DC12	Age less than 15 years	0
 district	DC12	Not applicable	0
 district	DC13	Employed	1284
 district	DC13	Unemployed	2760
 district	DC13	Discouraged work-seeker	1818
 district	DC13	Other not economically active	50871
-district	DC13	Age less than 15 years	0
 district	DC13	Not applicable	0
 district	DC14	Employed	651
 district	DC14	Unemployed	1284
 district	DC14	Discouraged work-seeker	669
 district	DC14	Other not economically active	22173
-district	DC14	Age less than 15 years	0
 district	DC14	Not applicable	0
 district	DC15	Employed	2814
 district	DC15	Unemployed	5382
 district	DC15	Discouraged work-seeker	3936
 district	DC15	Other not economically active	108744
-district	DC15	Age less than 15 years	0
 district	DC15	Not applicable	0
 district	DC44	Employed	1812
 district	DC44	Unemployed	3162
 district	DC44	Discouraged work-seeker	2385
 district	DC44	Other not economically active	60801
-district	DC44	Age less than 15 years	0
 district	DC44	Not applicable	0
 district	DC16	Employed	255
 district	DC16	Unemployed	456
 district	DC16	Discouraged work-seeker	306
 district	DC16	Other not economically active	7242
-district	DC16	Age less than 15 years	0
 district	DC16	Not applicable	0
 district	DC18	Employed	948
 district	DC18	Unemployed	2883
 district	DC18	Discouraged work-seeker	825
 district	DC18	Other not economically active	29583
-district	DC18	Age less than 15 years	0
 district	DC18	Not applicable	0
 district	DC19	Employed	927
 district	DC19	Unemployed	2433
 district	DC19	Discouraged work-seeker	1203
 district	DC19	Other not economically active	42030
-district	DC19	Age less than 15 years	0
 district	DC19	Not applicable	0
 district	DC20	Employed	711
 district	DC20	Unemployed	2100
 district	DC20	Discouraged work-seeker	423
 district	DC20	Other not economically active	22452
-district	DC20	Age less than 15 years	0
 district	DC20	Not applicable	0
 district	DC42	Employed	1509
 district	DC42	Unemployed	4068
 district	DC42	Discouraged work-seeker	684
 district	DC42	Other not economically active	38760
-district	DC42	Age less than 15 years	0
 district	DC42	Not applicable	0
 district	DC48	Employed	1533
 district	DC48	Unemployed	3405
 district	DC48	Discouraged work-seeker	729
 district	DC48	Other not economically active	30123
-district	DC48	Age less than 15 years	0
 district	DC48	Not applicable	0
 district	DC21	Employed	1332
 district	DC21	Unemployed	2733
 district	DC21	Discouraged work-seeker	1500
 district	DC21	Other not economically active	45882
-district	DC21	Age less than 15 years	0
 district	DC21	Not applicable	0
 district	DC22	Employed	2130
 district	DC22	Unemployed	5082
 district	DC22	Discouraged work-seeker	1674
 district	DC22	Other not economically active	53889
-district	DC22	Age less than 15 years	0
 district	DC22	Not applicable	0
 district	DC23	Employed	993
 district	DC23	Unemployed	2721
 district	DC23	Discouraged work-seeker	1746
 district	DC23	Other not economically active	42765
-district	DC23	Age less than 15 years	0
 district	DC23	Not applicable	0
 district	DC27	Employed	1404
 district	DC27	Unemployed	2706
 district	DC27	Discouraged work-seeker	1695
 district	DC27	Other not economically active	44961
-district	DC27	Age less than 15 years	0
 district	DC27	Not applicable	0
 district	DC28	Employed	1734
 district	DC28	Unemployed	4044
 district	DC28	Discouraged work-seeker	1929
 district	DC28	Other not economically active	57531
-district	DC28	Age less than 15 years	0
 district	DC28	Not applicable	0
 district	DC43	Employed	915
 district	DC43	Unemployed	1926
 district	DC43	Discouraged work-seeker	1122
 district	DC43	Other not economically active	31410
-district	DC43	Age less than 15 years	0
 district	DC43	Not applicable	0
 district	DC24	Employed	1008
 district	DC24	Unemployed	1596
 district	DC24	Discouraged work-seeker	1671
 district	DC24	Other not economically active	37314
-district	DC24	Age less than 15 years	0
 district	DC24	Not applicable	0
 district	DC25	Employed	654
 district	DC25	Unemployed	1770
 district	DC25	Discouraged work-seeker	804
 district	DC25	Other not economically active	31539
-district	DC25	Age less than 15 years	0
 district	DC25	Not applicable	0
 district	DC26	Employed	1512
 district	DC26	Unemployed	3099
 district	DC26	Discouraged work-seeker	2370
 district	DC26	Other not economically active	56859
-district	DC26	Age less than 15 years	0
 district	DC26	Not applicable	0
 district	DC29	Employed	1323
 district	DC29	Unemployed	2370
 district	DC29	Discouraged work-seeker	1338
 district	DC29	Other not economically active	36453
-district	DC29	Age less than 15 years	0
 district	DC29	Not applicable	0
 district	DC33	Employed	1356
 district	DC33	Unemployed	3642
 district	DC33	Discouraged work-seeker	1152
 district	DC33	Other not economically active	71556
-district	DC33	Age less than 15 years	0
 district	DC33	Not applicable	0
 district	DC34	Employed	1884
 district	DC34	Unemployed	4290
 district	DC34	Discouraged work-seeker	1794
 district	DC34	Other not economically active	89493
-district	DC34	Age less than 15 years	0
 district	DC34	Not applicable	0
 district	DC35	Employed	1578
 district	DC35	Unemployed	4551
 district	DC35	Discouraged work-seeker	888
 district	DC35	Other not economically active	83760
-district	DC35	Age less than 15 years	0
 district	DC35	Not applicable	0
 district	DC36	Employed	1080
 district	DC36	Unemployed	2229
 district	DC36	Discouraged work-seeker	570
 district	DC36	Other not economically active	35652
-district	DC36	Age less than 15 years	0
 district	DC36	Not applicable	0
 district	DC47	Employed	1236
 district	DC47	Unemployed	4746
 district	DC47	Discouraged work-seeker	1152
 district	DC47	Other not economically active	68838
-district	DC47	Age less than 15 years	0
 district	DC47	Not applicable	0
 district	DC30	Employed	2010
 district	DC30	Unemployed	4758
 district	DC30	Discouraged work-seeker	1566
 district	DC30	Other not economically active	57483
-district	DC30	Age less than 15 years	0
 district	DC30	Not applicable	0
 district	DC31	Employed	2202
 district	DC31	Unemployed	5001
 district	DC31	Discouraged work-seeker	1179
 district	DC31	Other not economically active	64845
-district	DC31	Age less than 15 years	0
 district	DC31	Not applicable	0
 district	DC32	Employed	3042
 district	DC32	Unemployed	7497
 district	DC32	Discouraged work-seeker	2655
 district	DC32	Other not economically active	102489
-district	DC32	Age less than 15 years	0
 district	DC32	Not applicable	0
 district	DC37	Employed	2469
 district	DC37	Unemployed	6354
 district	DC37	Discouraged work-seeker	1395
 district	DC37	Other not economically active	60717
-district	DC37	Age less than 15 years	0
 district	DC37	Not applicable	0
 district	DC38	Employed	1131
 district	DC38	Unemployed	2835
 district	DC38	Discouraged work-seeker	1641
 district	DC38	Other not economically active	47145
-district	DC38	Age less than 15 years	0
 district	DC38	Not applicable	0
 district	DC39	Employed	867
 district	DC39	Unemployed	1635
 district	DC39	Discouraged work-seeker	990
 district	DC39	Other not economically active	26403
-district	DC39	Age less than 15 years	0
 district	DC39	Not applicable	0
 district	DC40	Employed	1167
 district	DC40	Unemployed	2766
 district	DC40	Discouraged work-seeker	753
 district	DC40	Other not economically active	30435
-district	DC40	Age less than 15 years	0
 district	DC40	Not applicable	0
 district	DC6	Employed	267
 district	DC6	Unemployed	426
 district	DC6	Discouraged work-seeker	243
 district	DC6	Other not economically active	5388
-district	DC6	Age less than 15 years	0
 district	DC6	Not applicable	0
 district	DC7	Employed	408
 district	DC7	Unemployed	957
 district	DC7	Discouraged work-seeker	411
 district	DC7	Other not economically active	8754
-district	DC7	Age less than 15 years	0
 district	DC7	Not applicable	0
 district	DC8	Employed	789
 district	DC8	Unemployed	912
 district	DC8	Discouraged work-seeker	312
 district	DC8	Other not economically active	11169
-district	DC8	Age less than 15 years	0
 district	DC8	Not applicable	0
 district	DC9	Employed	489
 district	DC9	Unemployed	1953
 district	DC9	Discouraged work-seeker	663
 district	DC9	Other not economically active	18522
-district	DC9	Age less than 15 years	0
 district	DC9	Not applicable	0
 district	DC45	Employed	336
 district	DC45	Unemployed	765
 district	DC45	Discouraged work-seeker	396
 district	DC45	Other not economically active	12219
-district	DC45	Age less than 15 years	0
 district	DC45	Not applicable	0
 district	DC1	Employed	1632
 district	DC1	Unemployed	1521
 district	DC1	Discouraged work-seeker	384
 district	DC1	Other not economically active	15750
-district	DC1	Age less than 15 years	0
 district	DC1	Not applicable	0
 district	DC2	Employed	3453
 district	DC2	Unemployed	2937
 district	DC2	Discouraged work-seeker	852
 district	DC2	Other not economically active	34308
-district	DC2	Age less than 15 years	0
 district	DC2	Not applicable	0
 district	DC3	Employed	927
 district	DC3	Unemployed	1137
 district	DC3	Discouraged work-seeker	393
 district	DC3	Other not economically active	9162
-district	DC3	Age less than 15 years	0
 district	DC3	Not applicable	0
 district	DC4	Employed	1692
 district	DC4	Unemployed	2601
 district	DC4	Discouraged work-seeker	1005
 district	DC4	Other not economically active	23733
-district	DC4	Age less than 15 years	0
 district	DC4	Not applicable	0
 district	DC5	Employed	252
 district	DC5	Unemployed	303
 district	DC5	Discouraged work-seeker	252
 district	DC5	Other not economically active	3078
-district	DC5	Age less than 15 years	0
 district	DC5	Not applicable	0
 \.
 
