@@ -36206,6 +36206,358 @@ municipality	WC051	electricity for cooking	electricity for heating	electricity f
 municipality	WC052	electricity for cooking	electricity for heating	electricity for lighting	2073
 municipality	WC053	electricity for cooking	electricity for heating	electricity for lighting	8477
 municipality	CPT	electricity for cooking	electricity for heating	electricity for lighting	635447
+district	DC10	no electricity for cooking	electricity for heating	no electricity for lighting	162
+district	DC10	no electricity for cooking	electricity for heating	electricity for lighting	2616
+district	DC10	no electricity for cooking	no electricity for heating	no electricity for lighting	15195
+district	DC10	no electricity for cooking	no electricity for heating	electricity for lighting	6468
+district	DC10	electricity for cooking	electricity for heating	no electricity for lighting	204
+district	DC10	electricity for cooking	electricity for heating	electricity for lighting	61167
+district	DC10	electricity for cooking	no electricity for heating	no electricity for lighting	444
+district	DC10	electricity for cooking	no electricity for heating	electricity for lighting	39372
+district	DC12	no electricity for cooking	electricity for heating	no electricity for lighting	282
+district	DC12	no electricity for cooking	electricity for heating	electricity for lighting	2589
+district	DC12	no electricity for cooking	no electricity for heating	no electricity for lighting	70152
+district	DC12	no electricity for cooking	no electricity for heating	electricity for lighting	33231
+district	DC12	electricity for cooking	electricity for heating	no electricity for lighting	204
+district	DC12	electricity for cooking	electricity for heating	electricity for lighting	46155
+district	DC12	electricity for cooking	no electricity for heating	no electricity for lighting	1062
+district	DC12	electricity for cooking	no electricity for heating	electricity for lighting	84099
+district	DC13	no electricity for cooking	electricity for heating	no electricity for lighting	255
+district	DC13	no electricity for cooking	electricity for heating	electricity for lighting	2070
+district	DC13	no electricity for cooking	no electricity for heating	no electricity for lighting	48612
+district	DC13	no electricity for cooking	no electricity for heating	electricity for lighting	27822
+district	DC13	electricity for cooking	electricity for heating	no electricity for lighting	183
+district	DC13	electricity for cooking	electricity for heating	electricity for lighting	48366
+district	DC13	electricity for cooking	no electricity for heating	no electricity for lighting	969
+district	DC13	electricity for cooking	no electricity for heating	electricity for lighting	82575
+district	DC14	no electricity for cooking	electricity for heating	no electricity for lighting	117
+district	DC14	no electricity for cooking	electricity for heating	electricity for lighting	1113
+district	DC14	no electricity for cooking	no electricity for heating	no electricity for lighting	29700
+district	DC14	no electricity for cooking	no electricity for heating	electricity for lighting	11694
+district	DC14	electricity for cooking	electricity for heating	no electricity for lighting	69
+district	DC14	electricity for cooking	electricity for heating	electricity for lighting	20886
+district	DC14	electricity for cooking	no electricity for heating	no electricity for lighting	453
+district	DC14	electricity for cooking	no electricity for heating	electricity for lighting	33741
+district	DC15	no electricity for cooking	electricity for heating	no electricity for lighting	507
+district	DC15	no electricity for cooking	electricity for heating	electricity for lighting	4125
+district	DC15	no electricity for cooking	no electricity for heating	no electricity for lighting	86736
+district	DC15	no electricity for cooking	no electricity for heating	electricity for lighting	72081
+district	DC15	electricity for cooking	electricity for heating	no electricity for lighting	228
+district	DC15	electricity for cooking	electricity for heating	electricity for lighting	48219
+district	DC15	electricity for cooking	no electricity for heating	no electricity for lighting	1473
+district	DC15	electricity for cooking	no electricity for heating	electricity for lighting	84861
+district	DC44	no electricity for cooking	electricity for heating	no electricity for lighting	381
+district	DC44	no electricity for cooking	electricity for heating	electricity for lighting	1566
+district	DC44	no electricity for cooking	no electricity for heating	no electricity for lighting	89835
+district	DC44	no electricity for cooking	no electricity for heating	electricity for lighting	29457
+district	DC44	electricity for cooking	electricity for heating	no electricity for lighting	102
+district	DC44	electricity for cooking	electricity for heating	electricity for lighting	17166
+district	DC44	electricity for cooking	no electricity for heating	no electricity for lighting	789
+district	DC44	electricity for cooking	no electricity for heating	electricity for lighting	29967
+district	DC16	no electricity for cooking	electricity for heating	no electricity for lighting	33
+district	DC16	no electricity for cooking	electricity for heating	electricity for lighting	807
+district	DC16	no electricity for cooking	no electricity for heating	no electricity for lighting	3357
+district	DC16	no electricity for cooking	no electricity for heating	electricity for lighting	3207
+district	DC16	electricity for cooking	electricity for heating	no electricity for lighting	57
+district	DC16	electricity for cooking	electricity for heating	electricity for lighting	20790
+district	DC16	electricity for cooking	no electricity for heating	no electricity for lighting	105
+district	DC16	electricity for cooking	no electricity for heating	electricity for lighting	17016
+district	DC18	no electricity for cooking	electricity for heating	no electricity for lighting	129
+district	DC18	no electricity for cooking	electricity for heating	electricity for lighting	2064
+district	DC18	no electricity for cooking	no electricity for heating	no electricity for lighting	15771
+district	DC18	no electricity for cooking	no electricity for heating	electricity for lighting	5661
+district	DC18	electricity for cooking	electricity for heating	no electricity for lighting	249
+district	DC18	electricity for cooking	electricity for heating	electricity for lighting	111180
+district	DC18	electricity for cooking	no electricity for heating	no electricity for lighting	441
+district	DC18	electricity for cooking	no electricity for heating	electricity for lighting	47664
+district	DC19	no electricity for cooking	electricity for heating	no electricity for lighting	162
+district	DC19	no electricity for cooking	electricity for heating	electricity for lighting	3360
+district	DC19	no electricity for cooking	no electricity for heating	no electricity for lighting	26994
+district	DC19	no electricity for cooking	no electricity for heating	electricity for lighting	17700
+district	DC19	electricity for cooking	electricity for heating	no electricity for lighting	207
+district	DC19	electricity for cooking	electricity for heating	electricity for lighting	101388
+district	DC19	electricity for cooking	no electricity for heating	no electricity for lighting	585
+district	DC19	electricity for cooking	no electricity for heating	electricity for lighting	67491
+district	DC20	no electricity for cooking	electricity for heating	no electricity for lighting	108
+district	DC20	no electricity for cooking	electricity for heating	electricity for lighting	1998
+district	DC20	no electricity for cooking	no electricity for heating	no electricity for lighting	14184
+district	DC20	no electricity for cooking	no electricity for heating	electricity for lighting	5016
+district	DC20	electricity for cooking	electricity for heating	no electricity for lighting	186
+district	DC20	electricity for cooking	electricity for heating	electricity for lighting	93555
+district	DC20	electricity for cooking	no electricity for heating	no electricity for lighting	309
+district	DC20	electricity for cooking	no electricity for heating	electricity for lighting	29625
+district	DC42	no electricity for cooking	electricity for heating	no electricity for lighting	258
+district	DC42	no electricity for cooking	electricity for heating	electricity for lighting	3666
+district	DC42	no electricity for cooking	no electricity for heating	no electricity for lighting	25083
+district	DC42	no electricity for cooking	no electricity for heating	electricity for lighting	7227
+district	DC42	electricity for cooking	electricity for heating	no electricity for lighting	540
+district	DC42	electricity for cooking	electricity for heating	electricity for lighting	217773
+district	DC42	electricity for cooking	no electricity for heating	no electricity for lighting	531
+district	DC42	electricity for cooking	no electricity for heating	electricity for lighting	24687
+district	DC48	no electricity for cooking	electricity for heating	no electricity for lighting	297
+district	DC48	no electricity for cooking	electricity for heating	electricity for lighting	3630
+district	DC48	no electricity for cooking	no electricity for heating	no electricity for lighting	47790
+district	DC48	no electricity for cooking	no electricity for heating	electricity for lighting	7884
+district	DC48	electricity for cooking	electricity for heating	no electricity for lighting	417
+district	DC48	electricity for cooking	electricity for heating	electricity for lighting	179646
+district	DC48	electricity for cooking	no electricity for heating	no electricity for lighting	558
+district	DC48	electricity for cooking	no electricity for heating	electricity for lighting	27180
+district	DC21	no electricity for cooking	electricity for heating	no electricity for lighting	765
+district	DC21	no electricity for cooking	electricity for heating	electricity for lighting	5013
+district	DC21	no electricity for cooking	no electricity for heating	no electricity for lighting	48408
+district	DC21	no electricity for cooking	no electricity for heating	electricity for lighting	21504
+district	DC21	electricity for cooking	electricity for heating	no electricity for lighting	345
+district	DC21	electricity for cooking	electricity for heating	electricity for lighting	74100
+district	DC21	electricity for cooking	no electricity for heating	no electricity for lighting	948
+district	DC21	electricity for cooking	no electricity for heating	electricity for lighting	28353
+district	DC22	no electricity for cooking	electricity for heating	no electricity for lighting	534
+district	DC22	no electricity for cooking	electricity for heating	electricity for lighting	6195
+district	DC22	no electricity for cooking	no electricity for heating	no electricity for lighting	35946
+district	DC22	no electricity for cooking	no electricity for heating	electricity for lighting	18318
+district	DC22	electricity for cooking	electricity for heating	no electricity for lighting	621
+district	DC22	electricity for cooking	electricity for heating	electricity for lighting	176109
+district	DC22	electricity for cooking	no electricity for heating	no electricity for lighting	825
+district	DC22	electricity for cooking	no electricity for heating	electricity for lighting	34122
+district	DC23	no electricity for cooking	electricity for heating	no electricity for lighting	318
+district	DC23	no electricity for cooking	electricity for heating	electricity for lighting	2895
+district	DC23	no electricity for cooking	no electricity for heating	no electricity for lighting	36468
+district	DC23	no electricity for cooking	no electricity for heating	electricity for lighting	24093
+district	DC23	electricity for cooking	electricity for heating	no electricity for lighting	243
+district	DC23	electricity for cooking	electricity for heating	electricity for lighting	56904
+district	DC23	electricity for cooking	no electricity for heating	no electricity for lighting	564
+district	DC23	electricity for cooking	no electricity for heating	electricity for lighting	25800
+district	DC27	no electricity for cooking	electricity for heating	no electricity for lighting	1137
+district	DC27	no electricity for cooking	electricity for heating	electricity for lighting	1986
+district	DC27	no electricity for cooking	no electricity for heating	no electricity for lighting	76869
+district	DC27	no electricity for cooking	no electricity for heating	electricity for lighting	7158
+district	DC27	electricity for cooking	electricity for heating	no electricity for lighting	147
+district	DC27	electricity for cooking	electricity for heating	electricity for lighting	29850
+district	DC27	electricity for cooking	no electricity for heating	no electricity for lighting	834
+district	DC27	electricity for cooking	no electricity for heating	electricity for lighting	10215
+district	DC28	no electricity for cooking	electricity for heating	no electricity for lighting	1179
+district	DC28	no electricity for cooking	electricity for heating	electricity for lighting	6543
+district	DC28	no electricity for cooking	no electricity for heating	no electricity for lighting	46548
+district	DC28	no electricity for cooking	no electricity for heating	electricity for lighting	20163
+district	DC28	electricity for cooking	electricity for heating	no electricity for lighting	426
+district	DC28	electricity for cooking	electricity for heating	electricity for lighting	98946
+district	DC28	electricity for cooking	no electricity for heating	no electricity for lighting	1044
+district	DC28	electricity for cooking	no electricity for heating	electricity for lighting	28131
+district	DC43	no electricity for cooking	electricity for heating	no electricity for lighting	243
+district	DC43	no electricity for cooking	electricity for heating	electricity for lighting	1632
+district	DC43	no electricity for cooking	no electricity for heating	no electricity for lighting	41490
+district	DC43	no electricity for cooking	no electricity for heating	electricity for lighting	27228
+district	DC43	electricity for cooking	electricity for heating	no electricity for lighting	96
+district	DC43	electricity for cooking	electricity for heating	electricity for lighting	21639
+district	DC43	electricity for cooking	no electricity for heating	no electricity for lighting	417
+district	DC43	electricity for cooking	no electricity for heating	electricity for lighting	19533
+district	DC24	no electricity for cooking	electricity for heating	no electricity for lighting	336
+district	DC24	no electricity for cooking	electricity for heating	electricity for lighting	1428
+district	DC24	no electricity for cooking	no electricity for heating	no electricity for lighting	57060
+district	DC24	no electricity for cooking	no electricity for heating	electricity for lighting	13005
+district	DC24	electricity for cooking	electricity for heating	no electricity for lighting	99
+district	DC24	electricity for cooking	electricity for heating	electricity for lighting	28161
+district	DC24	electricity for cooking	no electricity for heating	no electricity for lighting	486
+district	DC24	electricity for cooking	no electricity for heating	electricity for lighting	12897
+district	DC25	no electricity for cooking	electricity for heating	no electricity for lighting	138
+district	DC25	no electricity for cooking	electricity for heating	electricity for lighting	1596
+district	DC25	no electricity for cooking	no electricity for heating	no electricity for lighting	17058
+district	DC25	no electricity for cooking	no electricity for heating	electricity for lighting	9216
+district	DC25	electricity for cooking	electricity for heating	no electricity for lighting	183
+district	DC25	electricity for cooking	electricity for heating	electricity for lighting	65655
+district	DC25	electricity for cooking	no electricity for heating	no electricity for lighting	615
+district	DC25	electricity for cooking	no electricity for heating	electricity for lighting	16506
+district	DC26	no electricity for cooking	electricity for heating	no electricity for lighting	390
+district	DC26	no electricity for cooking	electricity for heating	electricity for lighting	2994
+district	DC26	no electricity for cooking	no electricity for heating	no electricity for lighting	46371
+district	DC26	no electricity for cooking	no electricity for heating	electricity for lighting	21666
+district	DC26	electricity for cooking	electricity for heating	no electricity for lighting	300
+district	DC26	electricity for cooking	electricity for heating	electricity for lighting	60183
+district	DC26	electricity for cooking	no electricity for heating	no electricity for lighting	633
+district	DC26	electricity for cooking	no electricity for heating	electricity for lighting	25209
+district	DC29	no electricity for cooking	electricity for heating	no electricity for lighting	672
+district	DC29	no electricity for cooking	electricity for heating	electricity for lighting	3207
+district	DC29	no electricity for cooking	no electricity for heating	no electricity for lighting	43296
+district	DC29	no electricity for cooking	no electricity for heating	electricity for lighting	7887
+district	DC29	electricity for cooking	electricity for heating	no electricity for lighting	294
+district	DC29	electricity for cooking	electricity for heating	electricity for lighting	79392
+district	DC29	electricity for cooking	no electricity for heating	no electricity for lighting	858
+district	DC29	electricity for cooking	no electricity for heating	electricity for lighting	22086
+district	DC33	no electricity for cooking	electricity for heating	no electricity for lighting	516
+district	DC33	no electricity for cooking	electricity for heating	electricity for lighting	22230
+district	DC33	no electricity for cooking	no electricity for heating	no electricity for lighting	32373
+district	DC33	no electricity for cooking	no electricity for heating	electricity for lighting	121656
+district	DC33	electricity for cooking	electricity for heating	no electricity for lighting	186
+district	DC33	electricity for cooking	electricity for heating	electricity for lighting	88908
+district	DC33	electricity for cooking	no electricity for heating	no electricity for lighting	357
+district	DC33	electricity for cooking	no electricity for heating	electricity for lighting	30096
+district	DC34	no electricity for cooking	electricity for heating	no electricity for lighting	588
+district	DC34	no electricity for cooking	electricity for heating	electricity for lighting	28317
+district	DC34	no electricity for cooking	no electricity for heating	no electricity for lighting	41793
+district	DC34	no electricity for cooking	no electricity for heating	electricity for lighting	151314
+district	DC34	electricity for cooking	electricity for heating	no electricity for lighting	261
+district	DC34	electricity for cooking	electricity for heating	electricity for lighting	90159
+district	DC34	electricity for cooking	no electricity for heating	no electricity for lighting	372
+district	DC34	electricity for cooking	no electricity for heating	electricity for lighting	22473
+district	DC35	no electricity for cooking	electricity for heating	no electricity for lighting	411
+district	DC35	no electricity for cooking	electricity for heating	electricity for lighting	15255
+district	DC35	no electricity for cooking	no electricity for heating	no electricity for lighting	41835
+district	DC35	no electricity for cooking	no electricity for heating	electricity for lighting	70836
+district	DC35	electricity for cooking	electricity for heating	no electricity for lighting	417
+district	DC35	electricity for cooking	electricity for heating	electricity for lighting	172722
+district	DC35	electricity for cooking	no electricity for heating	no electricity for lighting	498
+district	DC35	electricity for cooking	no electricity for heating	electricity for lighting	40863
+district	DC36	no electricity for cooking	electricity for heating	no electricity for lighting	291
+district	DC36	no electricity for cooking	electricity for heating	electricity for lighting	9132
+district	DC36	no electricity for cooking	no electricity for heating	no electricity for lighting	23046
+district	DC36	no electricity for cooking	no electricity for heating	electricity for lighting	29577
+district	DC36	electricity for cooking	electricity for heating	no electricity for lighting	234
+district	DC36	electricity for cooking	electricity for heating	electricity for lighting	96975
+district	DC36	electricity for cooking	no electricity for heating	no electricity for lighting	306
+district	DC36	electricity for cooking	no electricity for heating	electricity for lighting	20307
+district	DC47	no electricity for cooking	electricity for heating	no electricity for lighting	426
+district	DC47	no electricity for cooking	electricity for heating	electricity for lighting	11175
+district	DC47	no electricity for cooking	no electricity for heating	no electricity for lighting	35706
+district	DC47	no electricity for cooking	no electricity for heating	electricity for lighting	72708
+district	DC47	electricity for cooking	electricity for heating	no electricity for lighting	366
+district	DC47	electricity for cooking	electricity for heating	electricity for lighting	99243
+district	DC47	electricity for cooking	no electricity for heating	no electricity for lighting	627
+district	DC47	electricity for cooking	no electricity for heating	electricity for lighting	43548
+district	DC30	no electricity for cooking	electricity for heating	no electricity for lighting	300
+district	DC30	no electricity for cooking	electricity for heating	electricity for lighting	5151
+district	DC30	no electricity for cooking	no electricity for heating	no electricity for lighting	44136
+district	DC30	no electricity for cooking	no electricity for heating	electricity for lighting	51819
+district	DC30	electricity for cooking	electricity for heating	no electricity for lighting	390
+district	DC30	electricity for cooking	electricity for heating	electricity for lighting	129390
+district	DC30	electricity for cooking	no electricity for heating	no electricity for lighting	678
+district	DC30	electricity for cooking	no electricity for heating	electricity for lighting	41625
+district	DC31	no electricity for cooking	electricity for heating	no electricity for lighting	405
+district	DC31	no electricity for cooking	electricity for heating	electricity for lighting	10857
+district	DC31	no electricity for cooking	no electricity for heating	no electricity for lighting	49404
+district	DC31	no electricity for cooking	no electricity for heating	electricity for lighting	34998
+district	DC31	electricity for cooking	electricity for heating	no electricity for lighting	486
+district	DC31	electricity for cooking	electricity for heating	electricity for lighting	203940
+district	DC31	electricity for cooking	no electricity for heating	no electricity for lighting	744
+district	DC31	electricity for cooking	no electricity for heating	electricity for lighting	56076
+district	DC32	no electricity for cooking	electricity for heating	no electricity for lighting	1272
+district	DC32	no electricity for cooking	electricity for heating	electricity for lighting	24270
+district	DC32	no electricity for cooking	no electricity for heating	no electricity for lighting	46272
+district	DC32	no electricity for cooking	no electricity for heating	electricity for lighting	60792
+district	DC32	electricity for cooking	electricity for heating	no electricity for lighting	813
+district	DC32	electricity for cooking	electricity for heating	electricity for lighting	241986
+district	DC32	electricity for cooking	no electricity for heating	no electricity for lighting	1215
+district	DC32	electricity for cooking	no electricity for heating	electricity for lighting	68469
+district	DC37	no electricity for cooking	electricity for heating	no electricity for lighting	783
+district	DC37	no electricity for cooking	electricity for heating	electricity for lighting	11334
+district	DC37	no electricity for cooking	no electricity for heating	no electricity for lighting	76425
+district	DC37	no electricity for cooking	no electricity for heating	electricity for lighting	25779
+district	DC37	electricity for cooking	electricity for heating	no electricity for lighting	924
+district	DC37	electricity for cooking	electricity for heating	electricity for lighting	319980
+district	DC37	electricity for cooking	no electricity for heating	no electricity for lighting	1101
+district	DC37	electricity for cooking	no electricity for heating	electricity for lighting	65370
+district	DC38	no electricity for cooking	electricity for heating	no electricity for lighting	375
+district	DC38	no electricity for cooking	electricity for heating	electricity for lighting	5862
+district	DC38	no electricity for cooking	no electricity for heating	no electricity for lighting	42933
+district	DC38	no electricity for cooking	no electricity for heating	electricity for lighting	22692
+district	DC38	electricity for cooking	electricity for heating	no electricity for lighting	369
+district	DC38	electricity for cooking	electricity for heating	electricity for lighting	118929
+district	DC38	electricity for cooking	no electricity for heating	no electricity for lighting	726
+district	DC38	electricity for cooking	no electricity for heating	electricity for lighting	35121
+district	DC39	no electricity for cooking	electricity for heating	no electricity for lighting	192
+district	DC39	no electricity for cooking	electricity for heating	electricity for lighting	2985
+district	DC39	no electricity for cooking	no electricity for heating	no electricity for lighting	21480
+district	DC39	no electricity for cooking	no electricity for heating	electricity for lighting	15585
+district	DC39	electricity for cooking	electricity for heating	no electricity for lighting	117
+district	DC39	electricity for cooking	electricity for heating	electricity for lighting	54267
+district	DC39	electricity for cooking	no electricity for heating	no electricity for lighting	462
+district	DC39	electricity for cooking	no electricity for heating	electricity for lighting	30180
+district	DC40	no electricity for cooking	electricity for heating	no electricity for lighting	336
+district	DC40	no electricity for cooking	electricity for heating	electricity for lighting	3906
+district	DC40	no electricity for cooking	no electricity for heating	no electricity for lighting	22482
+district	DC40	no electricity for cooking	no electricity for heating	electricity for lighting	9570
+district	DC40	electricity for cooking	electricity for heating	no electricity for lighting	342
+district	DC40	electricity for cooking	electricity for heating	electricity for lighting	135243
+district	DC40	electricity for cooking	no electricity for heating	no electricity for lighting	540
+district	DC40	electricity for cooking	no electricity for heating	electricity for lighting	35628
+district	DC6	no electricity for cooking	electricity for heating	no electricity for lighting	27
+district	DC6	no electricity for cooking	electricity for heating	electricity for lighting	792
+district	DC6	no electricity for cooking	no electricity for heating	no electricity for lighting	4392
+district	DC6	no electricity for cooking	no electricity for heating	electricity for lighting	1122
+district	DC6	electricity for cooking	electricity for heating	no electricity for lighting	48
+district	DC6	electricity for cooking	electricity for heating	electricity for lighting	21375
+district	DC6	electricity for cooking	no electricity for heating	no electricity for lighting	111
+district	DC6	electricity for cooking	no electricity for heating	electricity for lighting	5991
+district	DC7	no electricity for cooking	electricity for heating	no electricity for lighting	51
+district	DC7	no electricity for cooking	electricity for heating	electricity for lighting	1041
+district	DC7	no electricity for cooking	no electricity for heating	no electricity for lighting	7068
+district	DC7	no electricity for cooking	no electricity for heating	electricity for lighting	2670
+district	DC7	electricity for cooking	electricity for heating	no electricity for lighting	69
+district	DC7	electricity for cooking	electricity for heating	electricity for lighting	25254
+district	DC7	electricity for cooking	no electricity for heating	no electricity for lighting	156
+district	DC7	electricity for cooking	no electricity for heating	electricity for lighting	12882
+district	DC8	no electricity for cooking	electricity for heating	no electricity for lighting	72
+district	DC8	no electricity for cooking	electricity for heating	electricity for lighting	1125
+district	DC8	no electricity for cooking	no electricity for heating	no electricity for lighting	7842
+district	DC8	no electricity for cooking	no electricity for heating	electricity for lighting	2010
+district	DC8	electricity for cooking	electricity for heating	no electricity for lighting	111
+district	DC8	electricity for cooking	electricity for heating	electricity for lighting	40353
+district	DC8	electricity for cooking	no electricity for heating	no electricity for lighting	165
+district	DC8	electricity for cooking	no electricity for heating	electricity for lighting	9420
+district	DC9	no electricity for cooking	electricity for heating	no electricity for lighting	156
+district	DC9	no electricity for cooking	electricity for heating	electricity for lighting	2166
+district	DC9	no electricity for cooking	no electricity for heating	no electricity for lighting	15474
+district	DC9	no electricity for cooking	no electricity for heating	electricity for lighting	3261
+district	DC9	electricity for cooking	electricity for heating	no electricity for lighting	135
+district	DC9	electricity for cooking	electricity for heating	electricity for lighting	61308
+district	DC9	electricity for cooking	no electricity for heating	no electricity for lighting	279
+district	DC9	electricity for cooking	no electricity for heating	electricity for lighting	13152
+district	DC45	no electricity for cooking	electricity for heating	no electricity for lighting	84
+district	DC45	no electricity for cooking	electricity for heating	electricity for lighting	1638
+district	DC45	no electricity for cooking	no electricity for heating	no electricity for lighting	7572
+district	DC45	no electricity for cooking	no electricity for heating	electricity for lighting	7563
+district	DC45	electricity for cooking	electricity for heating	no electricity for lighting	111
+district	DC45	electricity for cooking	electricity for heating	electricity for lighting	31488
+district	DC45	electricity for cooking	no electricity for heating	no electricity for lighting	228
+district	DC45	electricity for cooking	no electricity for heating	electricity for lighting	12639
+district	DC1	no electricity for cooking	electricity for heating	no electricity for lighting	84
+district	DC1	no electricity for cooking	electricity for heating	electricity for lighting	2346
+district	DC1	no electricity for cooking	no electricity for heating	no electricity for lighting	5385
+district	DC1	no electricity for cooking	no electricity for heating	electricity for lighting	3477
+district	DC1	electricity for cooking	electricity for heating	no electricity for lighting	210
+district	DC1	electricity for cooking	electricity for heating	electricity for lighting	72078
+district	DC1	electricity for cooking	no electricity for heating	no electricity for lighting	294
+district	DC1	electricity for cooking	no electricity for heating	electricity for lighting	22911
+district	DC2	no electricity for cooking	electricity for heating	no electricity for lighting	225
+district	DC2	no electricity for cooking	electricity for heating	electricity for lighting	4884
+district	DC2	no electricity for cooking	no electricity for heating	no electricity for lighting	13086
+district	DC2	no electricity for cooking	no electricity for heating	electricity for lighting	5919
+district	DC2	electricity for cooking	electricity for heating	no electricity for lighting	441
+district	DC2	electricity for cooking	electricity for heating	electricity for lighting	129285
+district	DC2	electricity for cooking	no electricity for heating	no electricity for lighting	537
+district	DC2	electricity for cooking	no electricity for heating	electricity for lighting	43890
+district	DC3	no electricity for cooking	electricity for heating	no electricity for lighting	81
+district	DC3	no electricity for cooking	electricity for heating	electricity for lighting	2982
+district	DC3	no electricity for cooking	no electricity for heating	no electricity for lighting	6318
+district	DC3	no electricity for cooking	no electricity for heating	electricity for lighting	4989
+district	DC3	electricity for cooking	electricity for heating	no electricity for lighting	147
+district	DC3	electricity for cooking	electricity for heating	electricity for lighting	43947
+district	DC3	electricity for cooking	no electricity for heating	no electricity for lighting	267
+district	DC3	electricity for cooking	no electricity for heating	electricity for lighting	18465
+district	DC4	no electricity for cooking	electricity for heating	no electricity for lighting	189
+district	DC4	no electricity for cooking	electricity for heating	electricity for lighting	5706
+district	DC4	no electricity for cooking	no electricity for heating	no electricity for lighting	13692
+district	DC4	no electricity for cooking	no electricity for heating	electricity for lighting	8931
+district	DC4	electricity for cooking	electricity for heating	no electricity for lighting	285
+district	DC4	electricity for cooking	electricity for heating	electricity for lighting	88956
+district	DC4	electricity for cooking	no electricity for heating	no electricity for lighting	507
+district	DC4	electricity for cooking	no electricity for heating	electricity for lighting	45843
+district	DC5	no electricity for cooking	electricity for heating	no electricity for lighting	24
+district	DC5	no electricity for cooking	electricity for heating	electricity for lighting	429
+district	DC5	no electricity for cooking	no electricity for heating	no electricity for lighting	1890
+district	DC5	no electricity for cooking	no electricity for heating	electricity for lighting	1161
+district	DC5	electricity for cooking	electricity for heating	no electricity for lighting	57
+district	DC5	electricity for cooking	electricity for heating	electricity for lighting	12078
+district	DC5	electricity for cooking	no electricity for heating	no electricity for lighting	54
+district	DC5	electricity for cooking	no electricity for heating	electricity for lighting	3384
 \.
 
 

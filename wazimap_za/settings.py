@@ -13,7 +13,7 @@ DATABASES['default']['ATOMIC_REQUESTS'] = True
 WAZIMAP['name'] = 'Wazimap South Africa'
 WAZIMAP['url'] = 'https://wazimap.co.za'
 WAZIMAP['country_code'] = 'ZA'
-WAZIMAP['comparative_levels'] = ['province', 'country']
+WAZIMAP['comparative_levels'] = ['district', 'province', 'country']
 # this is provided by mapit
 WAZIMAP['geodata'] = 'wazimap_mapit.geo.GeoData'
 WAZIMAP['geometry_data'] = {}
@@ -21,10 +21,12 @@ WAZIMAP['geometry_data'] = {}
 WAZIMAP['levels'] = {
     'country': {
         'plural': 'countries',
-        'children': ['province', 'municipality'],
+        'children': ['province', 'district', 'municipality'],
     },
     'province': {
-        'plural': 'provinces',
+        'children': ['district', 'municipality', 'ward'],
+    },
+    'district': {
         'children': ['municipality', 'ward'],
     },
     'municipality': {
@@ -32,7 +34,6 @@ WAZIMAP['levels'] = {
         'children': ['ward'],
     },
     'ward': {
-        'plural': 'wards',
         'children': [],
     }
 }

@@ -27162,6 +27162,270 @@ municipality	CPT	Private household	119887
 municipality	CPT	Do not know	29410
 municipality	CPT	Unspecified	0
 municipality	CPT	Not applicable	2418948
+district	DC10	In the formal sector	82812
+district	DC10	In the informal sector	22824
+district	DC10	Private household	16221
+district	DC10	Do not know	3303
+district	DC10	Unspecified	0
+district	DC10	Not applicable	202824
+district	DC12	In the formal sector	62139
+district	DC12	In the informal sector	17841
+district	DC12	Private household	12219
+district	DC12	Do not know	1860
+district	DC12	Unspecified	0
+district	DC12	Not applicable	499992
+district	DC13	In the formal sector	71355
+district	DC13	In the informal sector	15789
+district	DC13	Private household	12645
+district	DC13	Do not know	2340
+district	DC13	Unspecified	0
+district	DC13	Not applicable	420075
+district	DC14	In the formal sector	32703
+district	DC14	In the informal sector	11322
+district	DC14	Private household	7317
+district	DC14	Do not know	1479
+district	DC14	Unspecified	0
+district	DC14	Not applicable	177654
+district	DC15	In the formal sector	86985
+district	DC15	In the informal sector	20577
+district	DC15	Private household	13899
+district	DC15	Do not know	2112
+district	DC15	Unspecified	0
+district	DC15	Not applicable	708900
+district	DC44	In the formal sector	46590
+district	DC44	In the informal sector	14067
+district	DC44	Private household	8451
+district	DC44	Do not know	1632
+district	DC44	Unspecified	0
+district	DC44	Not applicable	402900
+district	DC16	In the formal sector	19005
+district	DC16	In the informal sector	8181
+district	DC16	Private household	5787
+district	DC16	Do not know	765
+district	DC16	Unspecified	0
+district	DC16	Not applicable	67536
+district	DC18	In the formal sector	104019
+district	DC18	In the informal sector	17919
+district	DC18	Private household	20445
+district	DC18	Do not know	3516
+district	DC18	Unspecified	0
+district	DC18	Not applicable	300312
+district	DC19	In the formal sector	100287
+district	DC19	In the informal sector	22953
+district	DC19	Private household	19950
+district	DC19	Do not know	3687
+district	DC19	Unspecified	0
+district	DC19	Not applicable	354825
+district	DC20	In the formal sector	83151
+district	DC20	In the informal sector	17589
+district	DC20	Private household	16554
+district	DC20	Do not know	2907
+district	DC20	Unspecified	0
+district	DC20	Not applicable	230679
+district	DC42	In the formal sector	210030
+district	DC42	In the informal sector	26463
+district	DC42	Private household	33336
+district	DC42	Do not know	6807
+district	DC42	Unspecified	0
+district	DC42	Not applicable	407436
+district	DC48	In the formal sector	224502
+district	DC48	In the informal sector	30771
+district	DC48	Private household	35979
+district	DC48	Do not know	6786
+district	DC48	Unspecified	0
+district	DC48	Not applicable	324816
+district	DC21	In the formal sector	83148
+district	DC21	In the informal sector	20916
+district	DC21	Private household	12927
+district	DC21	Do not know	2610
+district	DC21	Unspecified	0
+district	DC21	Not applicable	362376
+district	DC22	In the formal sector	182091
+district	DC22	In the informal sector	34929
+district	DC22	Private household	26211
+district	DC22	Do not know	8031
+district	DC22	Unspecified	0
+district	DC22	Not applicable	478395
+district	DC23	In the formal sector	67749
+district	DC23	In the informal sector	14901
+district	DC23	Private household	6426
+district	DC23	Do not know	2454
+district	DC23	Unspecified	0
+district	DC23	Not applicable	331104
+district	DC27	In the formal sector	41820
+district	DC27	In the informal sector	10959
+district	DC27	Private household	5439
+district	DC27	Do not know	2160
+district	DC27	Unspecified	0
+district	DC27	Not applicable	313539
+district	DC28	In the formal sector	114705
+district	DC28	In the informal sector	21009
+district	DC28	Private household	11280
+district	DC28	Do not know	4065
+district	DC28	Unspecified	0
+district	DC28	Not applicable	440859
+district	DC43	In the formal sector	43296
+district	DC43	In the informal sector	10890
+district	DC43	Private household	6336
+district	DC43	Do not know	2703
+district	DC43	Unspecified	0
+district	DC43	Not applicable	223314
+district	DC24	In the formal sector	36300
+district	DC24	In the informal sector	9528
+district	DC24	Private household	4914
+district	DC24	Do not know	1038
+district	DC24	Unspecified	0
+district	DC24	Not applicable	253947
+district	DC25	In the formal sector	58455
+district	DC25	In the informal sector	12576
+district	DC25	Private household	7143
+district	DC25	Do not know	2796
+district	DC25	Unspecified	0
+district	DC25	Not applicable	250491
+district	DC26	In the formal sector	60252
+district	DC26	In the informal sector	16083
+district	DC26	Private household	6537
+district	DC26	Do not know	2517
+district	DC26	Unspecified	0
+district	DC26	Not applicable	400479
+district	DC29	In the formal sector	82953
+district	DC29	In the informal sector	22401
+district	DC29	Private household	9462
+district	DC29	Do not know	2172
+district	DC29	Unspecified	0
+district	DC29	Not applicable	284997
+district	DC33	In the formal sector	116751
+district	DC33	In the informal sector	33330
+district	DC33	Private household	22800
+district	DC33	Do not know	4284
+district	DC33	Unspecified	0
+district	DC33	Not applicable	545829
+district	DC34	In the formal sector	119274
+district	DC34	In the informal sector	41490
+district	DC34	Private household	28845
+district	DC34	Do not know	3309
+district	DC34	Unspecified	0
+district	DC34	Not applicable	650214
+district	DC35	In the formal sector	156339
+district	DC35	In the informal sector	36459
+district	DC35	Private household	32382
+district	DC35	Do not know	4182
+district	DC35	Unspecified	0
+district	DC35	Not applicable	608790
+district	DC36	In the formal sector	116028
+district	DC36	In the informal sector	26535
+district	DC36	Private household	24114
+district	DC36	Do not know	4008
+district	DC36	Unspecified	0
+district	DC36	Not applicable	305712
+district	DC47	In the formal sector	87894
+district	DC47	In the informal sector	25575
+district	DC47	Private household	14553
+district	DC47	Do not know	3219
+district	DC47	Unspecified	0
+district	DC47	Not applicable	557937
+district	DC30	In the formal sector	188517
+district	DC30	In the informal sector	39954
+district	DC30	Private household	27666
+district	DC30	Do not know	7680
+district	DC30	Unspecified	0
+district	DC30	Not applicable	449946
+district	DC31	In the formal sector	249921
+district	DC31	In the informal sector	53955
+district	DC31	Private household	48366
+district	DC31	Do not know	9207
+district	DC31	Unspecified	0
+district	DC31	Not applicable	573888
+district	DC32	In the formal sector	240504
+district	DC32	In the informal sector	69213
+district	DC32	Private household	44556
+district	DC32	Do not know	7608
+district	DC32	Unspecified	0
+district	DC32	Not applicable	768264
+district	DC37	In the formal sector	314967
+district	DC37	In the informal sector	58956
+district	DC37	Private household	58875
+district	DC37	Do not know	10272
+district	DC37	Unspecified	0
+district	DC37	Not applicable	666081
+district	DC38	In the formal sector	97692
+district	DC38	In the informal sector	25062
+district	DC38	Private household	26964
+district	DC38	Do not know	2268
+district	DC38	Unspecified	0
+district	DC38	Not applicable	410142
+district	DC39	In the formal sector	41949
+district	DC39	In the informal sector	16005
+district	DC39	Private household	13665
+district	DC39	Do not know	2025
+district	DC39	Unspecified	0
+district	DC39	Not applicable	227043
+district	DC40	In the formal sector	131214
+district	DC40	In the informal sector	27990
+district	DC40	Private household	26763
+district	DC40	Do not know	3726
+district	DC40	Unspecified	0
+district	DC40	Not applicable	307929
+district	DC6	In the formal sector	24384
+district	DC6	In the informal sector	6762
+district	DC6	Private household	2961
+district	DC6	Do not know	537
+district	DC6	Unspecified	0
+district	DC6	Not applicable	51315
+district	DC7	In the formal sector	29733
+district	DC7	In the informal sector	8244
+district	DC7	Private household	5661
+district	DC7	Do not know	1074
+district	DC7	Unspecified	0
+district	DC7	Not applicable	82788
+district	DC8	In the formal sector	52956
+district	DC8	In the informal sector	13440
+district	DC8	Private household	7509
+district	DC8	Do not know	1779
+district	DC8	Unspecified	0
+district	DC8	Not applicable	93789
+district	DC9	In the formal sector	65613
+district	DC9	In the informal sector	10728
+district	DC9	Private household	10524
+district	DC9	Do not know	1815
+district	DC9	Unspecified	0
+district	DC9	Not applicable	180402
+district	DC45	In the formal sector	33141
+district	DC45	In the informal sector	4692
+district	DC45	Private household	5592
+district	DC45	Do not know	1041
+district	DC45	Unspecified	0
+district	DC45	Not applicable	104007
+district	DC1	In the formal sector	118008
+district	DC1	In the informal sector	13758
+district	DC1	Private household	9036
+district	DC1	Do not know	2862
+district	DC1	Unspecified	0
+district	DC1	Not applicable	148377
+district	DC2	In the formal sector	223926
+district	DC2	In the informal sector	47154
+district	DC2	Private household	18360
+district	DC2	Do not know	5220
+district	DC2	Unspecified	0
+district	DC2	Not applicable	289353
+district	DC3	In the formal sector	70743
+district	DC3	In the informal sector	15072
+district	DC3	Private household	7026
+district	DC3	Do not know	2709
+district	DC3	Unspecified	0
+district	DC3	Not applicable	100491
+district	DC4	In the formal sector	129594
+district	DC4	In the informal sector	25716
+district	DC4	Private household	18843
+district	DC4	Do not know	5616
+district	DC4	Unspecified	0
+district	DC4	Not applicable	246030
+district	DC5	In the formal sector	13638
+district	DC5	In the informal sector	2604
+district	DC5	Private household	1338
+district	DC5	Do not know	438
+district	DC5	Unspecified	0
+district	DC5	Not applicable	31311
 \.
 
 

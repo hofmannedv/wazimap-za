@@ -18120,6 +18120,182 @@ municipality	CPT	Yes	3485749
 municipality	CPT	No	148291
 municipality	CPT	Unspecified	33820
 municipality	CPT	Not applicable	72165
+district	DC10	Not applicable	12635
+district	DC10	Unspecified	2414
+district	DC10	No	6263
+district	DC10	Yes	429272
+district	DC12	Not applicable	19044
+district	DC12	Unspecified	4892
+district	DC12	No	3848
+district	DC12	Yes	864853
+district	DC13	Not applicable	10045
+district	DC13	Unspecified	6624
+district	DC13	No	6511
+district	DC13	Yes	772281
+district	DC14	Not applicable	2916
+district	DC14	Unspecified	2509
+district	DC14	No	5705
+district	DC14	Yes	338638
+district	DC15	Not applicable	15967
+district	DC15	Unspecified	10436
+district	DC15	No	6720
+district	DC15	Yes	1331820
+district	DC44	Not applicable	4804
+district	DC44	Unspecified	7557
+district	DC44	No	4583
+district	DC44	Yes	784401
+district	DC16	Not applicable	3724
+district	DC16	Unspecified	378
+district	DC16	No	1788
+district	DC16	Yes	140369
+district	DC18	Not applicable	17059
+district	DC18	Unspecified	2651
+district	DC18	No	18090
+district	DC18	Yes	589827
+district	DC19	Not applicable	9488
+district	DC19	Unspecified	1978
+district	DC19	No	8794
+district	DC19	Yes	715978
+district	DC20	Not applicable	17325
+district	DC20	Unspecified	1782
+district	DC20	No	6312
+district	DC20	Yes	462618
+district	DC42	Not applicable	11915
+district	DC42	Unspecified	6290
+district	DC42	No	31597
+district	DC42	Yes	866682
+district	DC48	Not applicable	19314
+district	DC48	Unspecified	6313
+district	DC48	No	63341
+district	DC48	Yes	732027
+district	DC21	Not applicable	10068
+district	DC21	Unspecified	4682
+district	DC21	No	4099
+district	DC21	Yes	703635
+district	DC22	Not applicable	18913
+district	DC22	Unspecified	7325
+district	DC22	No	16327
+district	DC22	Yes	975197
+district	DC23	Not applicable	5164
+district	DC23	Unspecified	3970
+district	DC23	No	4145
+district	DC23	Yes	655569
+district	DC27	Not applicable	3076
+district	DC27	Unspecified	5871
+district	DC27	No	3912
+district	DC27	Yes	612987
+district	DC28	Not applicable	12186
+district	DC28	Unspecified	8495
+district	DC28	No	5966
+district	DC28	Yes	880872
+district	DC43	Not applicable	2893
+district	DC43	Unspecified	3811
+district	DC43	No	2167
+district	DC43	Yes	452549
+district	DC24	Not applicable	5912
+district	DC24	Unspecified	2862
+district	DC24	No	1761
+district	DC24	Yes	500303
+district	DC25	Not applicable	4777
+district	DC25	Unspecified	2491
+district	DC25	No	3871
+district	DC25	Yes	488700
+district	DC26	Not applicable	8540
+district	DC26	Unspecified	7209
+district	DC26	No	4347
+district	DC26	Yes	783479
+district	DC29	Not applicable	2080
+district	DC29	Unspecified	3974
+district	DC29	No	8735
+district	DC29	Yes	592020
+district	DC33	Not applicable	6575
+district	DC33	Unspecified	4251
+district	DC33	No	27357
+district	DC33	Yes	1054324
+district	DC34	Not applicable	12027
+district	DC34	Unspecified	6375
+district	DC34	No	47500
+district	DC34	Yes	1228820
+district	DC35	Not applicable	17942
+district	DC35	Unspecified	5450
+district	DC35	No	27530
+district	DC35	Yes	1210541
+district	DC36	Not applicable	19803
+district	DC36	Unspecified	3599
+district	DC36	No	25357
+district	DC36	Yes	630577
+district	DC47	Not applicable	5407
+district	DC47	Unspecified	4777
+district	DC47	No	18698
+district	DC47	Yes	1047958
+district	DC30	Not applicable	9345
+district	DC30	Unspecified	6311
+district	DC30	No	18280
+district	DC30	Yes	1009258
+district	DC31	Not applicable	10683
+district	DC31	Unspecified	6743
+district	DC31	No	33224
+district	DC31	Yes	1257479
+district	DC32	Not applicable	15457
+district	DC32	Unspecified	11557
+district	DC32	No	58757
+district	DC32	Yes	1602844
+district	DC37	Not applicable	26856
+district	DC37	Unspecified	9926
+district	DC37	No	98351
+district	DC37	Yes	1372373
+district	DC38	Not applicable	8242
+district	DC38	Unspecified	2981
+district	DC38	No	10340
+district	DC38	Yes	821136
+district	DC39	Not applicable	2958
+district	DC39	Unspecified	2660
+district	DC39	No	3399
+district	DC39	Yes	454798
+district	DC40	Not applicable	10372
+district	DC40	Unspecified	3290
+district	DC40	No	15207
+district	DC40	Yes	667064
+district	DC6	Not applicable	3831
+district	DC6	Unspecified	376
+district	DC6	No	586
+district	DC6	Yes	111049
+district	DC7	Not applicable	2633
+district	DC7	Unspecified	700
+district	DC7	No	1396
+district	DC7	Yes	181622
+district	DC8	Not applicable	2802
+district	DC8	Unspecified	780
+district	DC8	No	1988
+district	DC8	Yes	231213
+district	DC9	Not applicable	3726
+district	DC9	Unspecified	1614
+district	DC9	No	4018
+district	DC9	Yes	372727
+district	DC45	Not applicable	2857
+district	DC45	Unspecified	970
+district	DC45	No	2355
+district	DC45	Yes	218616
+district	DC1	Not applicable	17243
+district	DC1	Unspecified	2713
+district	DC1	No	5043
+district	DC1	Yes	366767
+district	DC2	Not applicable	26641
+district	DC2	Unspecified	7004
+district	DC2	No	17169
+district	DC2	Yes	736676
+district	DC3	Not applicable	6752
+district	DC3	Unspecified	3366
+district	DC3	No	6062
+district	DC3	Yes	241997
+district	DC4	Not applicable	11648
+district	DC4	Unspecified	3518
+district	DC4	No	9759
+district	DC4	Yes	549340
+district	DC5	Not applicable	1537
+district	DC5	Unspecified	496
+district	DC5	No	484
+district	DC5	Yes	68494
 \.
 
 

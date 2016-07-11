@@ -45246,6 +45246,446 @@ municipality	CPT	Bucket toilet	140795
 municipality	CPT	Other	32845
 municipality	CPT	Unspecified	17054
 municipality	CPT	Not applicable	5265
+district	DC10	None	20414
+district	DC10	Flush toilet (connected to sewerage system)	290760
+district	DC10	Flush toilet (with septic tank)	39170
+district	DC10	Chemical toilet	3267
+district	DC10	Pit toilet with ventilation (VIP)	15212
+district	DC10	Pit toilet without ventilation	42402
+district	DC10	Bucket toilet	20745
+district	DC10	Other	15098
+district	DC10	Unspecified	1462
+district	DC10	Not applicable	2053
+district	DC12	None	166299
+district	DC12	Flush toilet (connected to sewerage system)	126857
+district	DC12	Flush toilet (with septic tank)	19451
+district	DC12	Chemical toilet	26191
+district	DC12	Pit toilet with ventilation (VIP)	123162
+district	DC12	Pit toilet without ventilation	283873
+district	DC12	Bucket toilet	10090
+district	DC12	Other	134342
+district	DC12	Unspecified	1908
+district	DC12	Not applicable	464
+district	DC13	None	188706
+district	DC13	Flush toilet (connected to sewerage system)	237072
+district	DC13	Flush toilet (with septic tank)	13761
+district	DC13	Chemical toilet	25987
+district	DC13	Pit toilet with ventilation (VIP)	134246
+district	DC13	Pit toilet without ventilation	151645
+district	DC13	Bucket toilet	7222
+district	DC13	Other	33748
+district	DC13	Unspecified	2677
+district	DC13	Not applicable	397
+district	DC14	None	57476
+district	DC14	Flush toilet (connected to sewerage system)	81646
+district	DC14	Flush toilet (with septic tank)	9270
+district	DC14	Chemical toilet	12736
+district	DC14	Pit toilet with ventilation (VIP)	77072
+district	DC14	Pit toilet without ventilation	90830
+district	DC14	Bucket toilet	6470
+district	DC14	Other	12546
+district	DC14	Unspecified	1162
+district	DC14	Not applicable	561
+district	DC15	None	268238
+district	DC15	Flush toilet (connected to sewerage system)	104300
+district	DC15	Flush toilet (with septic tank)	10171
+district	DC15	Chemical toilet	92206
+district	DC15	Pit toilet with ventilation (VIP)	378042
+district	DC15	Pit toilet without ventilation	429115
+district	DC15	Bucket toilet	11481
+district	DC15	Other	65620
+district	DC15	Unspecified	5341
+district	DC15	Not applicable	430
+district	DC44	None	123189
+district	DC44	Flush toilet (connected to sewerage system)	28673
+district	DC44	Flush toilet (with septic tank)	8528
+district	DC44	Chemical toilet	41333
+district	DC44	Pit toilet with ventilation (VIP)	235831
+district	DC44	Pit toilet without ventilation	311452
+district	DC44	Bucket toilet	4501
+district	DC44	Other	44400
+district	DC44	Unspecified	3226
+district	DC44	Not applicable	213
+district	DC16	None	8019
+district	DC16	Flush toilet (connected to sewerage system)	114463
+district	DC16	Flush toilet (with septic tank)	3615
+district	DC16	Chemical toilet	324
+district	DC16	Pit toilet with ventilation (VIP)	6245
+district	DC16	Pit toilet without ventilation	4563
+district	DC16	Bucket toilet	6665
+district	DC16	Other	2061
+district	DC16	Unspecified	162
+district	DC16	Not applicable	141
+district	DC18	None	17862
+district	DC18	Flush toilet (connected to sewerage system)	478155
+district	DC18	Flush toilet (with septic tank)	11779
+district	DC18	Chemical toilet	1213
+district	DC18	Pit toilet with ventilation (VIP)	15649
+district	DC18	Pit toilet without ventilation	40902
+district	DC18	Bucket toilet	48331
+district	DC18	Other	11315
+district	DC18	Unspecified	1711
+district	DC18	Not applicable	708
+district	DC19	None	20071
+district	DC19	Flush toilet (connected to sewerage system)	348710
+district	DC19	Flush toilet (with septic tank)	20870
+district	DC19	Chemical toilet	11106
+district	DC19	Pit toilet with ventilation (VIP)	74248
+district	DC19	Pit toilet without ventilation	197464
+district	DC19	Bucket toilet	49865
+district	DC19	Other	11997
+district	DC19	Unspecified	937
+district	DC19	Not applicable	970
+district	DC20	None	7222
+district	DC20	Flush toilet (connected to sewerage system)	382270
+district	DC20	Flush toilet (with septic tank)	7987
+district	DC20	Chemical toilet	1400
+district	DC20	Pit toilet with ventilation (VIP)	13971
+district	DC20	Pit toilet without ventilation	35672
+district	DC20	Bucket toilet	30531
+district	DC20	Other	6813
+district	DC20	Unspecified	1474
+district	DC20	Not applicable	697
+district	DC42	None	7941
+district	DC42	Flush toilet (connected to sewerage system)	786269
+district	DC42	Flush toilet (with septic tank)	37175
+district	DC42	Chemical toilet	6872
+district	DC42	Pit toilet with ventilation (VIP)	7013
+district	DC42	Pit toilet without ventilation	53061
+district	DC42	Bucket toilet	7939
+district	DC42	Other	5658
+district	DC42	Unspecified	3735
+district	DC42	Not applicable	821
+district	DC48	None	11437
+district	DC48	Flush toilet (connected to sewerage system)	649486
+district	DC48	Flush toilet (with septic tank)	33806
+district	DC48	Chemical toilet	10451
+district	DC48	Pit toilet with ventilation (VIP)	33192
+district	DC48	Pit toilet without ventilation	59756
+district	DC48	Bucket toilet	11591
+district	DC48	Other	7051
+district	DC48	Unspecified	3786
+district	DC48	Not applicable	439
+district	DC21	None	28844
+district	DC21	Flush toilet (connected to sewerage system)	105084
+district	DC21	Flush toilet (with septic tank)	36754
+district	DC21	Chemical toilet	69112
+district	DC21	Pit toilet with ventilation (VIP)	148767
+district	DC21	Pit toilet without ventilation	271333
+district	DC21	Bucket toilet	10760
+district	DC21	Other	48034
+district	DC21	Unspecified	3086
+district	DC21	Not applicable	711
+district	DC22	None	25249
+district	DC22	Flush toilet (connected to sewerage system)	389610
+district	DC22	Flush toilet (with septic tank)	59394
+district	DC22	Chemical toilet	52535
+district	DC22	Pit toilet with ventilation (VIP)	253260
+district	DC22	Pit toilet without ventilation	192651
+district	DC22	Bucket toilet	8414
+district	DC22	Other	30903
+district	DC22	Unspecified	5450
+district	DC22	Not applicable	297
+district	DC23	None	64800
+district	DC23	Flush toilet (connected to sewerage system)	166561
+district	DC23	Flush toilet (with septic tank)	9629
+district	DC23	Chemical toilet	36920
+district	DC23	Pit toilet with ventilation (VIP)	165519
+district	DC23	Pit toilet without ventilation	195540
+district	DC23	Bucket toilet	7489
+district	DC23	Other	17999
+district	DC23	Unspecified	3308
+district	DC23	Not applicable	1083
+district	DC27	None	120171
+district	DC27	Flush toilet (connected to sewerage system)	35138
+district	DC27	Flush toilet (with septic tank)	11941
+district	DC27	Chemical toilet	105373
+district	DC27	Pit toilet with ventilation (VIP)	170720
+district	DC27	Pit toilet without ventilation	129623
+district	DC27	Bucket toilet	8165
+district	DC27	Other	39637
+district	DC27	Unspecified	3888
+district	DC27	Not applicable	1190
+district	DC28	None	119692
+district	DC28	Flush toilet (connected to sewerage system)	185581
+district	DC28	Flush toilet (with septic tank)	29332
+district	DC28	Chemical toilet	99371
+district	DC28	Pit toilet with ventilation (VIP)	151017
+district	DC28	Pit toilet without ventilation	247626
+district	DC28	Bucket toilet	17174
+district	DC28	Other	50970
+district	DC28	Unspecified	6398
+district	DC28	Not applicable	357
+district	DC43	None	12869
+district	DC43	Flush toilet (connected to sewerage system)	62373
+district	DC43	Flush toilet (with septic tank)	10323
+district	DC43	Chemical toilet	23632
+district	DC43	Pit toilet with ventilation (VIP)	118698
+district	DC43	Pit toilet without ventilation	201356
+district	DC43	Bucket toilet	4098
+district	DC43	Other	25620
+district	DC43	Unspecified	2169
+district	DC43	Not applicable	282
+district	DC24	None	69070
+district	DC24	Flush toilet (connected to sewerage system)	76263
+district	DC24	Flush toilet (with septic tank)	8402
+district	DC24	Chemical toilet	33292
+district	DC24	Pit toilet with ventilation (VIP)	152524
+district	DC24	Pit toilet without ventilation	144443
+district	DC24	Bucket toilet	3508
+district	DC24	Other	21084
+district	DC24	Unspecified	2132
+district	DC24	Not applicable	118
+district	DC25	None	14270
+district	DC25	Flush toilet (connected to sewerage system)	213070
+district	DC25	Flush toilet (with septic tank)	8926
+district	DC25	Chemical toilet	32916
+district	DC25	Pit toilet with ventilation (VIP)	44598
+district	DC25	Pit toilet without ventilation	167468
+district	DC25	Bucket toilet	3396
+district	DC25	Other	11799
+district	DC25	Unspecified	3241
+district	DC25	Not applicable	155
+district	DC26	None	170736
+district	DC26	Flush toilet (connected to sewerage system)	115028
+district	DC26	Flush toilet (with septic tank)	25469
+district	DC26	Chemical toilet	75942
+district	DC26	Pit toilet with ventilation (VIP)	173210
+district	DC26	Pit toilet without ventilation	193196
+district	DC26	Bucket toilet	8775
+district	DC26	Other	35796
+district	DC26	Unspecified	5166
+district	DC26	Not applicable	256
+district	DC29	None	33421
+district	DC29	Flush toilet (connected to sewerage system)	113189
+district	DC29	Flush toilet (with septic tank)	21528
+district	DC29	Chemical toilet	112028
+district	DC29	Pit toilet with ventilation (VIP)	124396
+district	DC29	Pit toilet without ventilation	171713
+district	DC29	Bucket toilet	9378
+district	DC29	Other	18504
+district	DC29	Unspecified	2483
+district	DC29	Not applicable	168
+district	DC33	None	120282
+district	DC33	Flush toilet (connected to sewerage system)	154623
+district	DC33	Flush toilet (with septic tank)	19047
+district	DC33	Chemical toilet	12087
+district	DC33	Pit toilet with ventilation (VIP)	227839
+district	DC33	Pit toilet without ventilation	530900
+district	DC33	Bucket toilet	4023
+district	DC33	Other	20507
+district	DC33	Unspecified	1981
+district	DC33	Not applicable	1219
+district	DC34	None	98778
+district	DC34	Flush toilet (connected to sewerage system)	171514
+district	DC34	Flush toilet (with septic tank)	20726
+district	DC34	Chemical toilet	9801
+district	DC34	Pit toilet with ventilation (VIP)	284329
+district	DC34	Pit toilet without ventilation	687428
+district	DC34	Bucket toilet	4334
+district	DC34	Other	13750
+district	DC34	Unspecified	2056
+district	DC34	Not applicable	2006
+district	DC35	None	46236
+district	DC35	Flush toilet (connected to sewerage system)	297411
+district	DC35	Flush toilet (with septic tank)	21399
+district	DC35	Chemical toilet	7796
+district	DC35	Pit toilet with ventilation (VIP)	150892
+district	DC35	Pit toilet without ventilation	717063
+district	DC35	Bucket toilet	6759
+district	DC35	Other	10879
+district	DC35	Unspecified	2671
+district	DC35	Not applicable	356
+district	DC36	None	22163
+district	DC36	Flush toilet (connected to sewerage system)	285345
+district	DC36	Flush toilet (with septic tank)	24363
+district	DC36	Chemical toilet	7710
+district	DC36	Pit toilet with ventilation (VIP)	76459
+district	DC36	Pit toilet without ventilation	243817
+district	DC36	Bucket toilet	6823
+district	DC36	Other	9377
+district	DC36	Unspecified	2485
+district	DC36	Not applicable	793
+district	DC47	None	45325
+district	DC47	Flush toilet (connected to sewerage system)	55428
+district	DC47	Flush toilet (with septic tank)	11213
+district	DC47	Chemical toilet	12919
+district	DC47	Pit toilet with ventilation (VIP)	127651
+district	DC47	Pit toilet without ventilation	794080
+district	DC47	Bucket toilet	8199
+district	DC47	Other	19493
+district	DC47	Unspecified	2467
+district	DC47	Not applicable	65
+district	DC30	None	58659
+district	DC30	Flush toilet (connected to sewerage system)	615127
+district	DC30	Flush toilet (with septic tank)	18150
+district	DC30	Chemical toilet	13611
+district	DC30	Pit toilet with ventilation (VIP)	122305
+district	DC30	Pit toilet without ventilation	170122
+district	DC30	Bucket toilet	8622
+district	DC30	Other	30691
+district	DC30	Unspecified	4277
+district	DC30	Not applicable	1630
+district	DC31	None	23611
+district	DC31	Flush toilet (connected to sewerage system)	622494
+district	DC31	Flush toilet (with septic tank)	28129
+district	DC31	Chemical toilet	13933
+district	DC31	Pit toilet with ventilation (VIP)	151696
+district	DC31	Pit toilet without ventilation	430745
+district	DC31	Bucket toilet	14687
+district	DC31	Other	15724
+district	DC31	Unspecified	5293
+district	DC31	Not applicable	1816
+district	DC32	None	148650
+district	DC32	Flush toilet (connected to sewerage system)	319438
+district	DC32	Flush toilet (with septic tank)	42531
+district	DC32	Chemical toilet	29793
+district	DC32	Pit toilet with ventilation (VIP)	258804
+district	DC32	Pit toilet without ventilation	850793
+district	DC32	Bucket toilet	9559
+district	DC32	Other	21901
+district	DC32	Unspecified	4863
+district	DC32	Not applicable	2282
+district	DC37	None	53086
+district	DC37	Flush toilet (connected to sewerage system)	505292
+district	DC37	Flush toilet (with septic tank)	55908
+district	DC37	Chemical toilet	14622
+district	DC37	Pit toilet with ventilation (VIP)	175928
+district	DC37	Pit toilet without ventilation	666115
+district	DC37	Bucket toilet	12138
+district	DC37	Other	16580
+district	DC37	Unspecified	5474
+district	DC37	Not applicable	2363
+district	DC38	None	58423
+district	DC38	Flush toilet (connected to sewerage system)	211760
+district	DC38	Flush toilet (with septic tank)	25110
+district	DC38	Chemical toilet	5863
+district	DC38	Pit toilet with ventilation (VIP)	112692
+district	DC38	Pit toilet without ventilation	397507
+district	DC38	Bucket toilet	10463
+district	DC38	Other	16945
+district	DC38	Unspecified	2649
+district	DC38	Not applicable	1286
+district	DC39	None	43748
+district	DC39	Flush toilet (connected to sewerage system)	147432
+district	DC39	Flush toilet (with septic tank)	10006
+district	DC39	Chemical toilet	7449
+district	DC39	Pit toilet with ventilation (VIP)	112850
+district	DC39	Pit toilet without ventilation	128414
+district	DC39	Bucket toilet	4411
+district	DC39	Other	7605
+district	DC39	Unspecified	1504
+district	DC39	Not applicable	396
+district	DC40	None	29614
+district	DC40	Flush toilet (connected to sewerage system)	575401
+district	DC40	Flush toilet (with septic tank)	15735
+district	DC40	Chemical toilet	2001
+district	DC40	Pit toilet with ventilation (VIP)	26740
+district	DC40	Pit toilet without ventilation	30638
+district	DC40	Bucket toilet	6947
+district	DC40	Other	5830
+district	DC40	Unspecified	2551
+district	DC40	Not applicable	476
+district	DC6	None	4561
+district	DC6	Flush toilet (connected to sewerage system)	70435
+district	DC6	Flush toilet (with septic tank)	12905
+district	DC6	Chemical toilet	1084
+district	DC6	Pit toilet with ventilation (VIP)	18003
+district	DC6	Pit toilet without ventilation	5597
+district	DC6	Bucket toilet	1238
+district	DC6	Other	1354
+district	DC6	Unspecified	229
+district	DC6	Not applicable	437
+district	DC7	None	12119
+district	DC7	Flush toilet (connected to sewerage system)	128790
+district	DC7	Flush toilet (with septic tank)	11095
+district	DC7	Chemical toilet	1211
+district	DC7	Pit toilet with ventilation (VIP)	13598
+district	DC7	Pit toilet without ventilation	6489
+district	DC7	Bucket toilet	10259
+district	DC7	Other	1623
+district	DC7	Unspecified	602
+district	DC7	Not applicable	565
+district	DC8	None	19632
+district	DC8	Flush toilet (connected to sewerage system)	154216
+district	DC8	Flush toilet (with septic tank)	20219
+district	DC8	Chemical toilet	864
+district	DC8	Pit toilet with ventilation (VIP)	13099
+district	DC8	Pit toilet without ventilation	13126
+district	DC8	Bucket toilet	12318
+district	DC8	Other	1949
+district	DC8	Unspecified	941
+district	DC8	Not applicable	420
+district	DC9	None	20116
+district	DC9	Flush toilet (connected to sewerage system)	304211
+district	DC9	Flush toilet (with septic tank)	10254
+district	DC9	Chemical toilet	602
+district	DC9	Pit toilet with ventilation (VIP)	5668
+district	DC9	Pit toilet without ventilation	15943
+district	DC9	Bucket toilet	15823
+district	DC9	Other	7764
+district	DC9	Unspecified	1296
+district	DC9	Not applicable	408
+district	DC45	None	16017
+district	DC45	Flush toilet (connected to sewerage system)	56708
+district	DC45	Flush toilet (with septic tank)	8436
+district	DC45	Chemical toilet	3029
+district	DC45	Pit toilet with ventilation (VIP)	52997
+district	DC45	Pit toilet without ventilation	79240
+district	DC45	Bucket toilet	3196
+district	DC45	Other	3927
+district	DC45	Unspecified	750
+district	DC45	Not applicable	499
+district	DC1	None	16289
+district	DC1	Flush toilet (connected to sewerage system)	307717
+district	DC1	Flush toilet (with septic tank)	34063
+district	DC1	Chemical toilet	661
+district	DC1	Pit toilet with ventilation (VIP)	3648
+district	DC1	Pit toilet without ventilation	3116
+district	DC1	Bucket toilet	6272
+district	DC1	Other	17158
+district	DC1	Unspecified	987
+district	DC1	Not applicable	1856
+district	DC2	None	18970
+district	DC2	Flush toilet (connected to sewerage system)	683457
+district	DC2	Flush toilet (with septic tank)	35360
+district	DC2	Chemical toilet	4229
+district	DC2	Pit toilet with ventilation (VIP)	3677
+district	DC2	Pit toilet without ventilation	2561
+district	DC2	Bucket toilet	19315
+district	DC2	Other	14926
+district	DC2	Unspecified	3892
+district	DC2	Not applicable	1103
+district	DC3	None	11003
+district	DC3	Flush toilet (connected to sewerage system)	199450
+district	DC3	Flush toilet (with septic tank)	31414
+district	DC3	Chemical toilet	388
+district	DC3	Pit toilet with ventilation (VIP)	2129
+district	DC3	Pit toilet without ventilation	2178
+district	DC3	Bucket toilet	3172
+district	DC3	Other	5737
+district	DC3	Unspecified	1677
+district	DC3	Not applicable	1029
+district	DC4	None	21108
+district	DC4	Flush toilet (connected to sewerage system)	452471
+district	DC4	Flush toilet (with septic tank)	31665
+district	DC4	Chemical toilet	3291
+district	DC4	Pit toilet with ventilation (VIP)	17317
+district	DC4	Pit toilet without ventilation	21036
+district	DC4	Bucket toilet	11998
+district	DC4	Other	11500
+district	DC4	Unspecified	2551
+district	DC4	Not applicable	1327
+district	DC5	None	2189
+district	DC5	Flush toilet (connected to sewerage system)	57125
+district	DC5	Flush toilet (with septic tank)	6311
+district	DC5	Chemical toilet	236
+district	DC5	Pit toilet with ventilation (VIP)	1948
+district	DC5	Pit toilet without ventilation	852
+district	DC5	Bucket toilet	1024
+district	DC5	Other	489
+district	DC5	Unspecified	273
+district	DC5	Not applicable	564
 \.
 
 

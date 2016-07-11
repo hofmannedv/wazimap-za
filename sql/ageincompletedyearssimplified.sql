@@ -13599,6 +13599,138 @@ municipality	WC053	>= 65	2934
 municipality	CPT	< 18	1098592
 municipality	CPT	18 to 64	2433948
 municipality	CPT	>= 65	207487
+district	DC10	< 18	145180
+district	DC10	18 to 64	273859
+district	DC10	>= 65	31546
+district	DC12	< 18	364846
+district	DC12	18 to 64	447917
+district	DC12	>= 65	79874
+district	DC13	< 18	329990
+district	DC13	18 to 64	401069
+district	DC13	>= 65	64403
+district	DC14	< 18	144071
+district	DC14	18 to 64	179342
+district	DC14	>= 65	26355
+district	DC15	< 18	653345
+district	DC15	18 to 64	635513
+district	DC15	>= 65	76085
+district	DC44	< 18	395868
+district	DC44	18 to 64	355961
+district	DC44	>= 65	49514
+district	DC16	< 18	53243
+district	DC16	18 to 64	83742
+district	DC16	>= 65	9273
+district	DC18	< 18	215654
+district	DC18	18 to 64	380357
+district	DC18	>= 65	31616
+district	DC19	< 18	281127
+district	DC19	18 to 64	414601
+district	DC19	>= 65	40510
+district	DC20	< 18	162843
+district	DC20	18 to 64	295524
+district	DC20	>= 65	29669
+district	DC42	< 18	277434
+district	DC42	18 to 64	592197
+district	DC42	>= 65	46852
+district	DC48	< 18	233930
+district	DC48	18 to 64	554176
+district	DC48	>= 65	32888
+district	DC21	< 18	291949
+district	DC21	18 to 64	382634
+district	DC21	>= 65	47901
+district	DC22	< 18	350878
+district	DC22	18 to 64	612786
+district	DC22	>= 65	54098
+district	DC23	< 18	294433
+district	DC23	18 to 64	343146
+district	DC23	>= 65	31269
+district	DC27	< 18	302697
+district	DC27	18 to 64	295098
+district	DC27	>= 65	28051
+district	DC28	< 18	380834
+district	DC28	18 to 64	485637
+district	DC28	>= 65	41048
+district	DC43	< 18	210253
+district	DC43	18 to 64	228406
+district	DC43	>= 65	22760
+district	DC24	< 18	246696
+district	DC24	18 to 64	237478
+district	DC24	>= 65	26664
+district	DC25	< 18	203149
+district	DC25	18 to 64	273420
+district	DC25	>= 65	23271
+district	DC26	< 18	381552
+district	DC26	18 to 64	384485
+district	DC26	>= 65	37537
+district	DC29	< 18	246308
+district	DC29	18 to 64	330441
+district	DC29	>= 65	30060
+district	DC33	< 18	447220
+district	DC33	18 to 64	583162
+district	DC33	>= 65	62125
+district	DC34	< 18	549054
+district	DC34	18 to 64	664507
+district	DC34	>= 65	81161
+district	DC35	< 18	514077
+district	DC35	18 to 64	664443
+district	DC35	>= 65	82942
+district	DC36	< 18	242472
+district	DC36	18 to 64	397331
+district	DC36	>= 65	39534
+district	DC47	< 18	463634
+district	DC47	18 to 64	540552
+district	DC47	>= 65	72654
+district	DC30	< 18	395240
+district	DC30	18 to 64	600878
+district	DC30	>= 65	47075
+district	DC31	< 18	446018
+district	DC31	18 to 64	796693
+district	DC31	>= 65	65419
+district	DC32	< 18	674146
+district	DC32	18 to 64	937249
+district	DC32	>= 65	77219
+district	DC37	< 18	469289
+district	DC37	18 to 64	958451
+district	DC37	>= 65	79765
+district	DC38	< 18	333327
+district	DC38	18 to 64	459414
+district	DC38	>= 65	49958
+district	DC39	< 18	193023
+district	DC39	18 to 64	240931
+district	DC39	>= 65	29861
+district	DC40	< 18	233432
+district	DC40	18 to 64	424230
+district	DC40	>= 65	38271
+district	DC6	< 18	36205
+district	DC6	18 to 64	70275
+district	DC6	>= 65	9363
+district	DC7	< 18	69384
+district	DC7	18 to 64	105679
+district	DC7	>= 65	11289
+district	DC8	< 18	80496
+district	DC8	18 to 64	144133
+district	DC8	>= 65	12155
+district	DC9	< 18	134630
+district	DC9	18 to 64	226294
+district	DC9	>= 65	21162
+district	DC45	< 18	90043
+district	DC45	18 to 64	123954
+district	DC45	>= 65	10802
+district	DC1	< 18	119008
+district	DC1	18 to 64	249194
+district	DC1	>= 65	23564
+district	DC2	< 18	245020
+district	DC2	18 to 64	502055
+district	DC2	>= 65	40415
+district	DC3	< 18	73749
+district	DC3	18 to 64	162899
+district	DC3	>= 65	21528
+district	DC4	< 18	177493
+district	DC4	18 to 64	351915
+district	DC4	>= 65	44857
+district	DC5	< 18	25564
+district	DC5	18 to 64	41071
+district	DC5	>= 65	4375
 \.
 
 

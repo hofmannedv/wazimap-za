@@ -54288,6 +54288,534 @@ municipality	CPT	Limpopo	10077
 municipality	CPT	Outside South Africa	206359
 municipality	CPT	Unspecified	51062
 municipality	CPT	Not applicable	72595
+district	DC10	Western Cape	13997
+district	DC10	Eastern Cape	388051
+district	DC10	Northern Cape	2949
+district	DC10	Free State	3652
+district	DC10	KwaZulu-Natal	3051
+district	DC10	North West	1141
+district	DC10	Gauteng	8453
+district	DC10	Mpumalanga	1719
+district	DC10	Limpopo	970
+district	DC10	Outside South Africa	8682
+district	DC10	Unspecified	5255
+district	DC10	Not applicable	12662
+district	DC12	Western Cape	17207
+district	DC12	Eastern Cape	824587
+district	DC12	Northern Cape	2194
+district	DC12	Free State	1299
+district	DC12	KwaZulu-Natal	1874
+district	DC12	North West	711
+district	DC12	Gauteng	8858
+district	DC12	Mpumalanga	1654
+district	DC12	Limpopo	647
+district	DC12	Outside South Africa	4288
+district	DC12	Unspecified	10266
+district	DC12	Not applicable	19052
+district	DC13	Western Cape	22751
+district	DC13	Eastern Cape	720780
+district	DC13	Northern Cape	3084
+district	DC13	Free State	3014
+district	DC13	KwaZulu-Natal	1737
+district	DC13	North West	933
+district	DC13	Gauteng	13815
+district	DC13	Mpumalanga	1594
+district	DC13	Limpopo	740
+district	DC13	Outside South Africa	6799
+district	DC13	Unspecified	10152
+district	DC13	Not applicable	10061
+district	DC14	Western Cape	5549
+district	DC14	Eastern Cape	316149
+district	DC14	Northern Cape	1424
+district	DC14	Free State	4287
+district	DC14	KwaZulu-Natal	1346
+district	DC14	North West	448
+district	DC14	Gauteng	6028
+district	DC14	Mpumalanga	842
+district	DC14	Limpopo	348
+district	DC14	Outside South Africa	6697
+district	DC14	Unspecified	3713
+district	DC14	Not applicable	2937
+district	DC15	Western Cape	7489
+district	DC15	Eastern Cape	1291983
+district	DC15	Northern Cape	2837
+district	DC15	Free State	1365
+district	DC15	KwaZulu-Natal	6683
+district	DC15	North West	727
+district	DC15	Gauteng	6969
+district	DC15	Mpumalanga	2244
+district	DC15	Limpopo	1017
+district	DC15	Outside South Africa	6235
+district	DC15	Unspecified	21415
+district	DC15	Not applicable	15978
+district	DC44	Western Cape	4828
+district	DC44	Eastern Cape	738950
+district	DC44	Northern Cape	2191
+district	DC44	Free State	1214
+district	DC44	KwaZulu-Natal	15894
+district	DC44	North West	506
+district	DC44	Gauteng	8408
+district	DC44	Mpumalanga	1627
+district	DC44	Limpopo	728
+district	DC44	Outside South Africa	5611
+district	DC44	Unspecified	16569
+district	DC44	Not applicable	4817
+district	DC16	Western Cape	1322
+district	DC16	Eastern Cape	4072
+district	DC16	Northern Cape	4187
+district	DC16	Free State	125557
+district	DC16	KwaZulu-Natal	610
+district	DC16	North West	761
+district	DC16	Gauteng	1905
+district	DC16	Mpumalanga	298
+district	DC16	Limpopo	537
+district	DC16	Outside South Africa	2438
+district	DC16	Unspecified	846
+district	DC16	Not applicable	3726
+district	DC18	Western Cape	4115
+district	DC18	Eastern Cape	26361
+district	DC18	Northern Cape	5427
+district	DC18	Free State	515354
+district	DC18	KwaZulu-Natal	4681
+district	DC18	North West	8137
+district	DC18	Gauteng	11654
+district	DC18	Mpumalanga	2745
+district	DC18	Limpopo	3383
+district	DC18	Outside South Africa	22825
+district	DC18	Unspecified	5810
+district	DC18	Not applicable	17135
+district	DC19	Western Cape	2866
+district	DC19	Eastern Cape	5224
+district	DC19	Northern Cape	1921
+district	DC19	Free State	663654
+district	DC19	KwaZulu-Natal	11635
+district	DC19	North West	2887
+district	DC19	Gauteng	15534
+district	DC19	Mpumalanga	2722
+district	DC19	Limpopo	2977
+district	DC19	Outside South Africa	12087
+district	DC19	Unspecified	5214
+district	DC19	Not applicable	9517
+district	DC20	Western Cape	3405
+district	DC20	Eastern Cape	9105
+district	DC20	Northern Cape	2933
+district	DC20	Free State	393461
+district	DC20	KwaZulu-Natal	4713
+district	DC20	North West	7137
+district	DC20	Gauteng	26882
+district	DC20	Mpumalanga	4196
+district	DC20	Limpopo	5166
+district	DC20	Outside South Africa	8308
+district	DC20	Unspecified	5387
+district	DC20	Not applicable	17343
+district	DC42	Western Cape	13703
+district	DC42	Eastern Cape	26550
+district	DC42	Northern Cape	5472
+district	DC42	Free State	92868
+district	DC42	KwaZulu-Natal	20637
+district	DC42	North West	13216
+district	DC42	Gauteng	634202
+district	DC42	Mpumalanga	20746
+district	DC42	Limpopo	23138
+district	DC42	Outside South Africa	42190
+district	DC42	Unspecified	11731
+district	DC42	Not applicable	12030
+district	DC48	Western Cape	10287
+district	DC48	Eastern Cape	65530
+district	DC48	Northern Cape	8162
+district	DC48	Free State	27431
+district	DC48	KwaZulu-Natal	30427
+district	DC48	North West	78564
+district	DC48	Gauteng	442248
+district	DC48	Mpumalanga	14455
+district	DC48	Limpopo	37326
+district	DC48	Outside South Africa	78221
+district	DC48	Unspecified	8837
+district	DC48	Not applicable	19506
+district	DC21	Western Cape	2354
+district	DC21	Eastern Cape	31344
+district	DC21	Northern Cape	3880
+district	DC21	Free State	2539
+district	DC21	KwaZulu-Natal	632396
+district	DC21	North West	2015
+district	DC21	Gauteng	12309
+district	DC21	Mpumalanga	2454
+district	DC21	Limpopo	1475
+district	DC21	Outside South Africa	7720
+district	DC21	Unspecified	13919
+district	DC21	Not applicable	10078
+district	DC22	Western Cape	3897
+district	DC22	Eastern Cape	26415
+district	DC22	Northern Cape	5220
+district	DC22	Free State	3909
+district	DC22	KwaZulu-Natal	899148
+district	DC22	North West	2316
+district	DC22	Gauteng	10574
+district	DC22	Mpumalanga	3050
+district	DC22	Limpopo	2097
+district	DC22	Outside South Africa	25393
+district	DC22	Unspecified	16792
+district	DC22	Not applicable	18951
+district	DC23	Western Cape	1330
+district	DC23	Eastern Cape	3296
+district	DC23	Northern Cape	3619
+district	DC23	Free State	4231
+district	DC23	KwaZulu-Natal	621463
+district	DC23	North West	1391
+district	DC23	Gauteng	7159
+district	DC23	Mpumalanga	2009
+district	DC23	Limpopo	1214
+district	DC23	Outside South Africa	4988
+district	DC23	Unspecified	12973
+district	DC23	Not applicable	5175
+district	DC27	Western Cape	710
+district	DC27	Eastern Cape	1941
+district	DC27	Northern Cape	3564
+district	DC27	Free State	407
+district	DC27	KwaZulu-Natal	590989
+district	DC27	North West	793
+district	DC27	Gauteng	1639
+district	DC27	Mpumalanga	1480
+district	DC27	Limpopo	1115
+district	DC27	Outside South Africa	4348
+district	DC27	Unspecified	15773
+district	DC27	Not applicable	3088
+district	DC28	Western Cape	2116
+district	DC28	Eastern Cape	5337
+district	DC28	Northern Cape	5865
+district	DC28	Free State	2303
+district	DC28	KwaZulu-Natal	831314
+district	DC28	North West	2213
+district	DC28	Gauteng	8897
+district	DC28	Mpumalanga	4151
+district	DC28	Limpopo	1890
+district	DC28	Outside South Africa	8777
+district	DC28	Unspecified	22446
+district	DC28	Not applicable	12209
+district	DC43	Western Cape	961
+district	DC43	Eastern Cape	41820
+district	DC43	Northern Cape	2080
+district	DC43	Free State	610
+district	DC43	KwaZulu-Natal	396223
+district	DC43	North West	715
+district	DC43	Gauteng	2414
+district	DC43	Mpumalanga	914
+district	DC43	Limpopo	681
+district	DC43	Outside South Africa	2758
+district	DC43	Unspecified	9344
+district	DC43	Not applicable	2900
+district	DC24	Western Cape	757
+district	DC24	Eastern Cape	2054
+district	DC24	Northern Cape	2529
+district	DC24	Free State	926
+district	DC24	KwaZulu-Natal	478711
+district	DC24	North West	935
+district	DC24	Gauteng	5626
+district	DC24	Mpumalanga	1290
+district	DC24	Limpopo	671
+district	DC24	Outside South Africa	2131
+district	DC24	Unspecified	9288
+district	DC24	Not applicable	5918
+district	DC25	Western Cape	1295
+district	DC25	Eastern Cape	2966
+district	DC25	Northern Cape	2444
+district	DC25	Free State	8056
+district	DC25	KwaZulu-Natal	445953
+district	DC25	North West	1171
+district	DC25	Gauteng	11254
+district	DC25	Mpumalanga	9053
+district	DC25	Limpopo	1200
+district	DC25	Outside South Africa	5263
+district	DC25	Unspecified	6390
+district	DC25	Not applicable	4795
+district	DC26	Western Cape	962
+district	DC26	Eastern Cape	2739
+district	DC26	Northern Cape	4221
+district	DC26	Free State	1240
+district	DC26	KwaZulu-Natal	751154
+district	DC26	North West	1315
+district	DC26	Gauteng	5978
+district	DC26	Mpumalanga	5592
+district	DC26	Limpopo	1418
+district	DC26	Outside South Africa	5033
+district	DC26	Unspecified	15375
+district	DC26	Not applicable	8547
+district	DC29	Western Cape	1311
+district	DC29	Eastern Cape	18926
+district	DC29	Northern Cape	3185
+district	DC29	Free State	1041
+district	DC29	KwaZulu-Natal	545548
+district	DC29	North West	1280
+district	DC29	Gauteng	5467
+district	DC29	Mpumalanga	1588
+district	DC29	Limpopo	1197
+district	DC29	Outside South Africa	11831
+district	DC29	Unspecified	13308
+district	DC29	Not applicable	2128
+district	DC33	Western Cape	3997
+district	DC33	Eastern Cape	1480
+district	DC33	Northern Cape	851
+district	DC33	Free State	2531
+district	DC33	KwaZulu-Natal	1851
+district	DC33	North West	1923
+district	DC33	Gauteng	19133
+district	DC33	Mpumalanga	12678
+district	DC33	Limpopo	995610
+district	DC33	Outside South Africa	34793
+district	DC33	Unspecified	11039
+district	DC33	Not applicable	6622
+district	DC34	Western Cape	4002
+district	DC34	Eastern Cape	1183
+district	DC34	Northern Cape	742
+district	DC34	Free State	2219
+district	DC34	KwaZulu-Natal	1345
+district	DC34	North West	1516
+district	DC34	Gauteng	25045
+district	DC34	Mpumalanga	2916
+district	DC34	Limpopo	1180718
+district	DC34	Outside South Africa	50537
+district	DC34	Unspecified	12243
+district	DC34	Not applicable	12257
+district	DC35	Western Cape	4103
+district	DC35	Eastern Cape	2628
+district	DC35	Northern Cape	1299
+district	DC35	Free State	3905
+district	DC35	KwaZulu-Natal	3088
+district	DC35	North West	4612
+district	DC35	Gauteng	32943
+district	DC35	Mpumalanga	7885
+district	DC35	Limpopo	1138247
+district	DC35	Outside South Africa	30965
+district	DC35	Unspecified	13784
+district	DC35	Not applicable	18002
+district	DC36	Western Cape	3474
+district	DC36	Eastern Cape	11871
+district	DC36	Northern Cape	2254
+district	DC36	Free State	6421
+district	DC36	KwaZulu-Natal	3944
+district	DC36	North West	18794
+district	DC36	Gauteng	28204
+district	DC36	Mpumalanga	9880
+district	DC36	Limpopo	539731
+district	DC36	Outside South Africa	28575
+district	DC36	Unspecified	6303
+district	DC36	Not applicable	19883
+district	DC47	Western Cape	4577
+district	DC47	Eastern Cape	3965
+district	DC47	Northern Cape	1195
+district	DC47	Free State	3663
+district	DC47	KwaZulu-Natal	2962
+district	DC47	North West	3660
+district	DC47	Gauteng	23337
+district	DC47	Mpumalanga	44670
+district	DC47	Limpopo	949174
+district	DC47	Outside South Africa	20481
+district	DC47	Unspecified	13702
+district	DC47	Not applicable	5455
+district	DC30	Western Cape	5452
+district	DC30	Eastern Cape	24387
+district	DC30	Northern Cape	8252
+district	DC30	Free State	24450
+district	DC30	KwaZulu-Natal	51131
+district	DC30	North West	7192
+district	DC30	Gauteng	41961
+district	DC30	Mpumalanga	816650
+district	DC30	Limpopo	16081
+district	DC30	Outside South Africa	24478
+district	DC30	Unspecified	13755
+district	DC30	Not applicable	9406
+district	DC31	Western Cape	6533
+district	DC31	Eastern Cape	24548
+district	DC31	Northern Cape	9485
+district	DC31	Free State	16160
+district	DC31	KwaZulu-Natal	35351
+district	DC31	North West	17418
+district	DC31	Gauteng	106235
+district	DC31	Mpumalanga	907703
+district	DC31	Limpopo	114141
+district	DC31	Outside South Africa	43385
+district	DC31	Unspecified	16383
+district	DC31	Not applicable	10788
+district	DC32	Western Cape	5035
+district	DC32	Eastern Cape	13890
+district	DC32	Northern Cape	8547
+district	DC32	Free State	7020
+district	DC32	KwaZulu-Natal	19373
+district	DC32	North West	7380
+district	DC32	Gauteng	33845
+district	DC32	Mpumalanga	1433291
+district	DC32	Limpopo	36248
+district	DC32	Outside South Africa	85252
+district	DC32	Unspecified	23108
+district	DC32	Not applicable	15627
+district	DC37	Western Cape	6434
+district	DC37	Eastern Cape	66852
+district	DC37	Northern Cape	12595
+district	DC37	Free State	28848
+district	DC37	KwaZulu-Natal	18523
+district	DC37	North West	985718
+district	DC37	Gauteng	109851
+district	DC37	Mpumalanga	30718
+district	DC37	Limpopo	88194
+district	DC37	Outside South Africa	113916
+district	DC37	Unspecified	18572
+district	DC37	Not applicable	27283
+district	DC38	Western Cape	2227
+district	DC38	Eastern Cape	2811
+district	DC38	Northern Cape	6803
+district	DC38	Free State	9849
+district	DC38	KwaZulu-Natal	5661
+district	DC38	North West	760217
+district	DC38	Gauteng	18853
+district	DC38	Mpumalanga	3198
+district	DC38	Limpopo	3286
+district	DC38	Outside South Africa	13266
+district	DC38	Unspecified	8236
+district	DC38	Not applicable	8291
+district	DC39	Western Cape	1348
+district	DC39	Eastern Cape	1666
+district	DC39	Northern Cape	17534
+district	DC39	Free State	10846
+district	DC39	KwaZulu-Natal	1845
+district	DC39	North West	409726
+district	DC39	Gauteng	6175
+district	DC39	Mpumalanga	1246
+district	DC39	Limpopo	1041
+district	DC39	Outside South Africa	4442
+district	DC39	Unspecified	4970
+district	DC39	Not applicable	2976
+district	DC40	Western Cape	5200
+district	DC40	Eastern Cape	22114
+district	DC40	Northern Cape	9877
+district	DC40	Free State	46806
+district	DC40	KwaZulu-Natal	8591
+district	DC40	North West	525106
+district	DC40	Gauteng	29261
+district	DC40	Mpumalanga	6513
+district	DC40	Limpopo	5071
+district	DC40	Outside South Africa	20880
+district	DC40	Unspecified	6068
+district	DC40	Not applicable	10446
+district	DC6	Western Cape	8725
+district	DC6	Eastern Cape	2264
+district	DC6	Northern Cape	94801
+district	DC6	Free State	530
+district	DC6	KwaZulu-Natal	621
+district	DC6	North West	1090
+district	DC6	Gauteng	916
+district	DC6	Mpumalanga	247
+district	DC6	Limpopo	151
+district	DC6	Outside South Africa	1588
+district	DC6	Unspecified	1077
+district	DC6	Not applicable	3832
+district	DC7	Western Cape	6816
+district	DC7	Eastern Cape	6233
+district	DC7	Northern Cape	156756
+district	DC7	Free State	3768
+district	DC7	KwaZulu-Natal	1356
+district	DC7	North West	1235
+district	DC7	Gauteng	3388
+district	DC7	Mpumalanga	750
+district	DC7	Limpopo	402
+district	DC7	Outside South Africa	1934
+district	DC7	Unspecified	1074
+district	DC7	Not applicable	2638
+district	DC8	Western Cape	5254
+district	DC8	Eastern Cape	4180
+district	DC8	Northern Cape	197479
+district	DC8	Free State	2862
+district	DC8	KwaZulu-Natal	1730
+district	DC8	North West	10502
+district	DC8	Gauteng	3762
+district	DC8	Mpumalanga	825
+district	DC8	Limpopo	715
+district	DC8	Outside South Africa	5098
+district	DC8	Unspecified	1572
+district	DC8	Not applicable	2805
+district	DC9	Western Cape	5036
+district	DC9	Eastern Cape	7363
+district	DC9	Northern Cape	310712
+district	DC9	Free State	11916
+district	DC9	KwaZulu-Natal	3409
+district	DC9	North West	18752
+district	DC9	Gauteng	6795
+district	DC9	Mpumalanga	1159
+district	DC9	Limpopo	1103
+district	DC9	Outside South Africa	8019
+district	DC9	Unspecified	4078
+district	DC9	Not applicable	3744
+district	DC45	Western Cape	1579
+district	DC45	Eastern Cape	2170
+district	DC45	Northern Cape	193890
+district	DC45	Free State	1959
+district	DC45	KwaZulu-Natal	1371
+district	DC45	North West	10558
+district	DC45	Gauteng	2679
+district	DC45	Mpumalanga	987
+district	DC45	Limpopo	983
+district	DC45	Outside South Africa	3132
+district	DC45	Unspecified	2624
+district	DC45	Not applicable	2867
+district	DC1	Western Cape	301078
+district	DC1	Eastern Cape	28325
+district	DC1	Northern Cape	16834
+district	DC1	Free State	3060
+district	DC1	KwaZulu-Natal	1827
+district	DC1	North West	1382
+district	DC1	Gauteng	6660
+district	DC1	Mpumalanga	1568
+district	DC1	Limpopo	985
+district	DC1	Outside South Africa	8079
+district	DC1	Unspecified	4714
+district	DC1	Not applicable	17253
+district	DC2	Western Cape	617539
+district	DC2	Eastern Cape	74297
+district	DC2	Northern Cape	9640
+district	DC2	Free State	5824
+district	DC2	KwaZulu-Natal	3622
+district	DC2	North West	1677
+district	DC2	Gauteng	12354
+district	DC2	Mpumalanga	2535
+district	DC2	Limpopo	1325
+district	DC2	Outside South Africa	21326
+district	DC2	Unspecified	10675
+district	DC2	Not applicable	26676
+district	DC3	Western Cape	181440
+district	DC3	Eastern Cape	39212
+district	DC3	Northern Cape	2932
+district	DC3	Free State	2483
+district	DC3	KwaZulu-Natal	1875
+district	DC3	North West	915
+district	DC3	Gauteng	7237
+district	DC3	Mpumalanga	1213
+district	DC3	Limpopo	600
+district	DC3	Outside South Africa	8786
+district	DC3	Unspecified	4728
+district	DC3	Not applicable	6754
+district	DC4	Western Cape	409164
+district	DC4	Eastern Cape	74724
+district	DC4	Northern Cape	7765
+district	DC4	Free State	9052
+district	DC4	KwaZulu-Natal	5416
+district	DC4	North West	3297
+district	DC4	Gauteng	23992
+district	DC4	Mpumalanga	3772
+district	DC4	Limpopo	2200
+district	DC4	Outside South Africa	15747
+district	DC4	Unspecified	7466
+district	DC4	Not applicable	11670
+district	DC5	Western Cape	61568
+district	DC5	Eastern Cape	2195
+district	DC5	Northern Cape	2044
+district	DC5	Free State	396
+district	DC5	KwaZulu-Natal	287
+district	DC5	North West	176
+district	DC5	Gauteng	703
+district	DC5	Mpumalanga	293
+district	DC5	Limpopo	128
+district	DC5	Outside South Africa	655
+district	DC5	Unspecified	1030
+district	DC5	Not applicable	1537
 \.
 
 

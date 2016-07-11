@@ -40725,6 +40725,402 @@ municipality	CPT	North America	578
 municipality	CPT	Latin America and Caribbean	966
 municipality	CPT	Oceania	921
 municipality	CPT	Unspecified	205546
+district	DC10	Born in South Africa	423985
+district	DC10	SADC	3367
+district	DC10	Rest of Africa	855
+district	DC10	United Kingdom and Europe	466
+district	DC10	Asia	542
+district	DC10	North America	33
+district	DC10	Latin America and Caribbean	25
+district	DC10	Oceania	45
+district	DC10	Unspecified	21265
+district	DC12	Born in South Africa	859031
+district	DC12	SADC	1243
+district	DC12	Rest of Africa	1090
+district	DC12	United Kingdom and Europe	69
+district	DC12	Asia	535
+district	DC12	North America	4
+district	DC12	Latin America and Caribbean	5
+district	DC12	Oceania	3
+district	DC12	Unspecified	30656
+district	DC13	Born in South Africa	768449
+district	DC13	SADC	2366
+district	DC13	Rest of Africa	1474
+district	DC13	United Kingdom and Europe	71
+district	DC13	Asia	934
+district	DC13	North America	4
+district	DC13	Latin America and Caribbean	29
+district	DC13	Oceania	7
+district	DC13	Unspecified	22127
+district	DC14	Born in South Africa	336420
+district	DC14	SADC	4117
+district	DC14	Rest of Africa	412
+district	DC14	United Kingdom and Europe	32
+district	DC14	Asia	387
+district	DC14	North America	0
+district	DC14	Latin America and Caribbean	7
+district	DC14	Oceania	3
+district	DC14	Unspecified	8390
+district	DC15	Born in South Africa	1321315
+district	DC15	SADC	2182
+district	DC15	Rest of Africa	1439
+district	DC15	United Kingdom and Europe	35
+district	DC15	Asia	998
+district	DC15	North America	0
+district	DC15	Latin America and Caribbean	17
+district	DC15	Oceania	10
+district	DC15	Unspecified	38946
+district	DC44	Born in South Africa	774347
+district	DC44	SADC	3282
+district	DC44	Rest of Africa	484
+district	DC44	United Kingdom and Europe	14
+district	DC44	Asia	352
+district	DC44	North America	0
+district	DC44	Latin America and Caribbean	1
+district	DC44	Oceania	0
+district	DC44	Unspecified	22864
+district	DC16	Born in South Africa	139248
+district	DC16	SADC	1316
+district	DC16	Rest of Africa	181
+district	DC16	United Kingdom and Europe	23
+district	DC16	Asia	342
+district	DC16	North America	0
+district	DC16	Latin America and Caribbean	1
+district	DC16	Oceania	5
+district	DC16	Unspecified	5143
+district	DC18	Born in South Africa	581857
+district	DC18	SADC	15276
+district	DC18	Rest of Africa	656
+district	DC18	United Kingdom and Europe	311
+district	DC18	Asia	1091
+district	DC18	North America	3
+district	DC18	Latin America and Caribbean	31
+district	DC18	Oceania	7
+district	DC18	Unspecified	28395
+district	DC19	Born in South Africa	709421
+district	DC19	SADC	7068
+district	DC19	Rest of Africa	649
+district	DC19	United Kingdom and Europe	186
+district	DC19	Asia	895
+district	DC19	North America	8
+district	DC19	Latin America and Caribbean	32
+district	DC19	Oceania	15
+district	DC19	Unspecified	17964
+district	DC20	Born in South Africa	456998
+district	DC20	SADC	4247
+district	DC20	Rest of Africa	552
+district	DC20	United Kingdom and Europe	289
+district	DC20	Asia	591
+district	DC20	North America	2
+district	DC20	Latin America and Caribbean	12
+district	DC20	Oceania	24
+district	DC20	Unspecified	25321
+district	DC42	Born in South Africa	850532
+district	DC42	SADC	24264
+district	DC42	Rest of Africa	2149
+district	DC42	United Kingdom and Europe	1709
+district	DC42	Asia	1157
+district	DC42	North America	17
+district	DC42	Latin America and Caribbean	79
+district	DC42	Oceania	57
+district	DC42	Unspecified	36521
+district	DC48	Born in South Africa	714430
+district	DC48	SADC	54428
+district	DC48	Rest of Africa	1421
+district	DC48	United Kingdom and Europe	1149
+district	DC48	Asia	1145
+district	DC48	North America	19
+district	DC48	Latin America and Caribbean	74
+district	DC48	Oceania	63
+district	DC48	Unspecified	48265
+district	DC21	Born in South Africa	690767
+district	DC21	SADC	2033
+district	DC21	Rest of Africa	499
+district	DC21	United Kingdom and Europe	655
+district	DC21	Asia	404
+district	DC21	North America	18
+district	DC21	Latin America and Caribbean	18
+district	DC21	Oceania	27
+district	DC21	Unspecified	28063
+district	DC22	Born in South Africa	956626
+district	DC22	SADC	13535
+district	DC22	Rest of Africa	1391
+district	DC22	United Kingdom and Europe	667
+district	DC22	Asia	715
+district	DC22	North America	33
+district	DC22	Latin America and Caribbean	64
+district	DC22	Oceania	80
+district	DC22	Unspecified	44651
+district	DC23	Born in South Africa	645711
+district	DC23	SADC	2358
+district	DC23	Rest of Africa	359
+district	DC23	United Kingdom and Europe	123
+district	DC23	Asia	389
+district	DC23	North America	7
+district	DC23	Latin America and Caribbean	7
+district	DC23	Oceania	6
+district	DC23	Unspecified	19886
+district	DC27	Born in South Africa	602637
+district	DC27	SADC	2263
+district	DC27	Rest of Africa	241
+district	DC27	United Kingdom and Europe	55
+district	DC27	Asia	159
+district	DC27	North America	4
+district	DC27	Latin America and Caribbean	6
+district	DC27	Oceania	4
+district	DC27	Unspecified	20477
+district	DC28	Born in South Africa	864086
+district	DC28	SADC	4433
+district	DC28	Rest of Africa	539
+district	DC28	United Kingdom and Europe	235
+district	DC28	Asia	203
+district	DC28	North America	8
+district	DC28	Latin America and Caribbean	14
+district	DC28	Oceania	20
+district	DC28	Unspecified	37979
+district	DC43	Born in South Africa	446417
+district	DC43	SADC	1181
+district	DC43	Rest of Africa	255
+district	DC43	United Kingdom and Europe	49
+district	DC43	Asia	313
+district	DC43	North America	2
+district	DC43	Latin America and Caribbean	8
+district	DC43	Oceania	6
+district	DC43	Unspecified	13188
+district	DC24	Born in South Africa	493500
+district	DC24	SADC	795
+district	DC24	Rest of Africa	206
+district	DC24	United Kingdom and Europe	152
+district	DC24	Asia	246
+district	DC24	North America	1
+district	DC24	Latin America and Caribbean	1
+district	DC24	Oceania	4
+district	DC24	Unspecified	15933
+district	DC25	Born in South Africa	483392
+district	DC25	SADC	2207
+district	DC25	Rest of Africa	416
+district	DC25	United Kingdom and Europe	99
+district	DC25	Asia	847
+district	DC25	North America	4
+district	DC25	Latin America and Caribbean	15
+district	DC25	Oceania	2
+district	DC25	Unspecified	12857
+district	DC26	Born in South Africa	774619
+district	DC26	SADC	2714
+district	DC26	Rest of Africa	353
+district	DC26	United Kingdom and Europe	54
+district	DC26	Asia	250
+district	DC26	North America	0
+district	DC26	Latin America and Caribbean	0
+district	DC26	Oceania	3
+district	DC26	Unspecified	25581
+district	DC29	Born in South Africa	579542
+district	DC29	SADC	6808
+district	DC29	Rest of Africa	238
+district	DC29	United Kingdom and Europe	268
+district	DC29	Asia	210
+district	DC29	North America	13
+district	DC29	Latin America and Caribbean	14
+district	DC29	Oceania	29
+district	DC29	Unspecified	19687
+district	DC33	Born in South Africa	1040054
+district	DC33	SADC	24436
+district	DC33	Rest of Africa	1201
+district	DC33	United Kingdom and Europe	259
+district	DC33	Asia	1293
+district	DC33	North America	9
+district	DC33	Latin America and Caribbean	5
+district	DC33	Oceania	25
+district	DC33	Unspecified	25224
+district	DC34	Born in South Africa	1219685
+district	DC34	SADC	35011
+district	DC34	Rest of Africa	1280
+district	DC34	United Kingdom and Europe	107
+district	DC34	Asia	2454
+district	DC34	North America	1
+district	DC34	Latin America and Caribbean	6
+district	DC34	Oceania	12
+district	DC34	Unspecified	36165
+district	DC35	Born in South Africa	1198711
+district	DC35	SADC	21565
+district	DC35	Rest of Africa	1465
+district	DC35	United Kingdom and Europe	161
+district	DC35	Asia	1139
+district	DC35	North America	12
+district	DC35	Latin America and Caribbean	36
+district	DC35	Oceania	17
+district	DC35	Unspecified	38357
+district	DC36	Born in South Africa	624574
+district	DC36	SADC	19953
+district	DC36	Rest of Africa	1008
+district	DC36	United Kingdom and Europe	245
+district	DC36	Asia	790
+district	DC36	North America	2
+district	DC36	Latin America and Caribbean	21
+district	DC36	Oceania	18
+district	DC36	Unspecified	32725
+district	DC47	Born in South Africa	1037202
+district	DC47	SADC	14381
+district	DC47	Rest of Africa	709
+district	DC47	United Kingdom and Europe	38
+district	DC47	Asia	656
+district	DC47	North America	0
+district	DC47	Latin America and Caribbean	9
+district	DC47	Oceania	11
+district	DC47	Unspecified	23834
+district	DC30	Born in South Africa	995555
+district	DC30	SADC	12900
+district	DC30	Rest of Africa	1626
+district	DC30	United Kingdom and Europe	422
+district	DC30	Asia	1415
+district	DC30	North America	11
+district	DC30	Latin America and Caribbean	8
+district	DC30	Oceania	30
+district	DC30	Unspecified	31226
+district	DC31	Born in South Africa	1237573
+district	DC31	SADC	23531
+district	DC31	Rest of Africa	1978
+district	DC31	United Kingdom and Europe	677
+district	DC31	Asia	1791
+district	DC31	North America	9
+district	DC31	Latin America and Caribbean	32
+district	DC31	Oceania	54
+district	DC31	Unspecified	42483
+district	DC32	Born in South Africa	1564629
+district	DC32	SADC	54579
+district	DC32	Rest of Africa	1892
+district	DC32	United Kingdom and Europe	654
+district	DC32	Asia	1671
+district	DC32	North America	40
+district	DC32	Latin America and Caribbean	67
+district	DC32	Oceania	69
+district	DC32	Unspecified	65014
+district	DC37	Born in South Africa	1347734
+district	DC37	SADC	77901
+district	DC37	Rest of Africa	2262
+district	DC37	United Kingdom and Europe	624
+district	DC37	Asia	2346
+district	DC37	North America	24
+district	DC37	Latin America and Caribbean	54
+district	DC37	Oceania	50
+district	DC37	Unspecified	76510
+district	DC38	Born in South Africa	812906
+district	DC38	SADC	6363
+district	DC38	Rest of Africa	920
+district	DC38	United Kingdom and Europe	154
+district	DC38	Asia	1874
+district	DC38	North America	9
+district	DC38	Latin America and Caribbean	14
+district	DC38	Oceania	12
+district	DC38	Unspecified	20445
+district	DC39	Born in South Africa	451427
+district	DC39	SADC	1880
+district	DC39	Rest of Africa	615
+district	DC39	United Kingdom and Europe	28
+district	DC39	Asia	828
+district	DC39	North America	5
+district	DC39	Latin America and Caribbean	8
+district	DC39	Oceania	4
+district	DC39	Unspecified	9021
+district	DC40	Born in South Africa	658539
+district	DC40	SADC	12256
+district	DC40	Rest of Africa	987
+district	DC40	United Kingdom and Europe	442
+district	DC40	Asia	1196
+district	DC40	North America	5
+district	DC40	Latin America and Caribbean	33
+district	DC40	Oceania	18
+district	DC40	Unspecified	22456
+district	DC6	Born in South Africa	109345
+district	DC6	SADC	771
+district	DC6	Rest of Africa	71
+district	DC6	United Kingdom and Europe	41
+district	DC6	Asia	94
+district	DC6	North America	1
+district	DC6	Latin America and Caribbean	8
+district	DC6	Oceania	6
+district	DC6	Unspecified	5505
+district	DC7	Born in South Africa	180705
+district	DC7	SADC	627
+district	DC7	Rest of Africa	186
+district	DC7	United Kingdom and Europe	36
+district	DC7	Asia	434
+district	DC7	North America	1
+district	DC7	Latin America and Caribbean	9
+district	DC7	Oceania	1
+district	DC7	Unspecified	4352
+district	DC8	Born in South Africa	227309
+district	DC8	SADC	2363
+district	DC8	Rest of Africa	443
+district	DC8	United Kingdom and Europe	43
+district	DC8	Asia	354
+district	DC8	North America	1
+district	DC8	Latin America and Caribbean	11
+district	DC8	Oceania	1
+district	DC8	Unspecified	6258
+district	DC9	Born in South Africa	366245
+district	DC9	SADC	3949
+district	DC9	Rest of Africa	787
+district	DC9	United Kingdom and Europe	67
+district	DC9	Asia	947
+district	DC9	North America	0
+district	DC9	Latin America and Caribbean	26
+district	DC9	Oceania	10
+district	DC9	Unspecified	10056
+district	DC45	Born in South Africa	216176
+district	DC45	SADC	1596
+district	DC45	Rest of Africa	149
+district	DC45	United Kingdom and Europe	14
+district	DC45	Asia	407
+district	DC45	North America	1
+district	DC45	Latin America and Caribbean	4
+district	DC45	Oceania	2
+district	DC45	Unspecified	6450
+district	DC1	Born in South Africa	361720
+district	DC1	SADC	3564
+district	DC1	Rest of Africa	713
+district	DC1	United Kingdom and Europe	336
+district	DC1	Asia	234
+district	DC1	North America	3
+district	DC1	Latin America and Caribbean	10
+district	DC1	Oceania	36
+district	DC1	Unspecified	25151
+district	DC2	Born in South Africa	728813
+district	DC2	SADC	9583
+district	DC2	Rest of Africa	1315
+district	DC2	United Kingdom and Europe	898
+district	DC2	Asia	702
+district	DC2	North America	33
+district	DC2	Latin America and Caribbean	86
+district	DC2	Oceania	91
+district	DC2	Unspecified	45969
+district	DC3	Born in South Africa	237908
+district	DC3	SADC	3158
+district	DC3	Rest of Africa	648
+district	DC3	United Kingdom and Europe	732
+district	DC3	Asia	212
+district	DC3	North America	13
+district	DC3	Latin America and Caribbean	16
+district	DC3	Oceania	37
+district	DC3	Unspecified	15452
+district	DC4	Born in South Africa	539382
+district	DC4	SADC	4812
+district	DC4	Rest of Africa	1389
+district	DC4	United Kingdom and Europe	1407
+district	DC4	Asia	495
+district	DC4	North America	30
+district	DC4	Latin America and Caribbean	35
+district	DC4	Oceania	119
+district	DC4	Unspecified	26595
+district	DC5	Born in South Africa	67789
+district	DC5	SADC	202
+district	DC5	Rest of Africa	61
+district	DC5	United Kingdom and Europe	29
+district	DC5	Asia	50
+district	DC5	North America	0
+district	DC5	Latin America and Caribbean	2
+district	DC5	Oceania	1
+district	DC5	Unspecified	2877
 \.
 
 

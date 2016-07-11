@@ -1,7 +1,6 @@
 from wazimap.data.tables import FieldTable, SimpleTable
 
 # Define our tables so the data API can discover them.
-FieldTable(['access to internet'])
 FieldTable(['age groups in 5 years'])
 FieldTable(['age in completed years'])
 FieldTable(['electricity for cooking', 'electricity for heating', 'electricity for lighting'])
@@ -13,7 +12,7 @@ FieldTable(['gender', 'marital status'])
 FieldTable(['gender', 'population group'])
 FieldTable(['gender', 'age groups in 5 years'])
 FieldTable(['highest educational level'])
-FieldTable(['highest educational level 20 and older'], universe='Individuals 20 and older')
+FieldTable(['highest educational level'], id="highesteducationallevel20", universe='Individuals 20 and older')
 FieldTable(['language'], description='Population by primary language spoken at home')
 FieldTable(['employed individual monthly income'], universe='Employed individuals')
 FieldTable(['official employment status'], universe='Workers 15 and over')
@@ -27,6 +26,7 @@ FieldTable(['citizenship'])
 FieldTable(['province of birth'])
 FieldTable(['region of birth'])
 
+FieldTable(['access to internet'], universe="Households")
 FieldTable(['gender of household head', 'age of household head'], universe='Households')
 FieldTable(['annual household income', 'gender of household head'], universe='Households')
 FieldTable(['household goods'], universe='Households', denominator_key='total households')
@@ -37,10 +37,9 @@ FieldTable(['age of household head', 'household size'], universe='Households')
 # child-specific tables
 FieldTable(['age in completed years'], id='ageincompletedyearssimplified')
 FieldTable(['present school attendance', 'age in completed years'], universe='Children 5 to 17')
-FieldTable(['parents alive'], universe='Children 14 and under')
+FieldTable(['mother alive', 'father alive'], universe='Children 14 and under')
 FieldTable(['official employment status'], id="officialemploymentstatus15to17", universe="Children 15 to 17")
 FieldTable(['highest educational level'], id="highesteducationallevel17", universe="17-year-old children")
-FieldTable(['level of education'], id="levelofeducation17labourforce", universe="17-year-old children in the labour force")
 FieldTable(['individual monthly income'], id="individualmonthlyincome15to17", universe="Children 15 to 17 who are employed")
 FieldTable(['gender'], id='genderunder18', universe='Children under 18')
 
