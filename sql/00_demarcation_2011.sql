@@ -2476,7 +2476,6 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 2399	ward	74201021	Ward 21 (74201021)	2011	27.3846999999999987	municipality	GT421	Ward 21 (74201021), Emfuleni, Gauteng
 2400	ward	74201022	Ward 22 (74201022)	2011	2.57189999999999985	municipality	GT421	Ward 22 (74201022), Emfuleni, Gauteng
 2401	ward	74201023	Ward 23 (74201023)	2011	5.88619999999999965	municipality	GT421	Ward 23 (74201023), Emfuleni, Gauteng
-4422	municipality	EC442	Umzimvubu	2011	2577.23000000000002	province	EC	Umzimvubu, Eastern Cape
 2402	ward	74201024	Ward 24 (74201024)	2011	1.68789999999999996	municipality	GT421	Ward 24 (74201024), Emfuleni, Gauteng
 2403	ward	74201026	Ward 26 (74201026)	2011	5.74629999999999974	municipality	GT421	Ward 26 (74201026), Emfuleni, Gauteng
 2404	ward	74201027	Ward 27 (74201027)	2011	7.00790000000000024	municipality	GT421	Ward 27 (74201027), Emfuleni, Gauteng
@@ -2738,7 +2737,6 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 2660	ward	79800067	Ward 67 (79800067)	2011	4.66999999999999993	municipality	JHB	Ward 67 (79800067), City of Johannesburg, Gauteng
 2661	ward	79800068	Ward 68 (79800068)	2011	17.6083999999999996	municipality	JHB	Ward 68 (79800068), City of Johannesburg, Gauteng
 2662	ward	79800070	Ward 70 (79800070)	2011	34.3781000000000034	municipality	JHB	Ward 70 (79800070), City of Johannesburg, Gauteng
-4423	municipality	EC443	Mbizana	2011	2416.7199999999998	province	EC	Mbizana, Eastern Cape
 2663	ward	79800071	Ward 71 (79800071)	2011	11.8179999999999996	municipality	JHB	Ward 71 (79800071), City of Johannesburg, Gauteng
 2664	ward	79800072	Ward 72 (79800072)	2011	11.0726999999999993	municipality	JHB	Ward 72 (79800072), City of Johannesburg, Gauteng
 2665	ward	79800073	Ward 73 (79800073)	2011	10.0609999999999999	municipality	JHB	Ward 73 (79800073), City of Johannesburg, Gauteng
@@ -2788,7 +2786,6 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 2709	ward	79800128	Ward 128 (79800128)	2011	7.82910000000000039	municipality	JHB	Ward 128 (79800128), City of Johannesburg, Gauteng
 2710	ward	79800129	Ward 129 (79800129)	2011	4.58040000000000003	municipality	JHB	Ward 129 (79800129), City of Johannesburg, Gauteng
 2711	ward	79800130	Ward 130 (79800130)	2011	1.69480000000000008	municipality	JHB	Ward 130 (79800130), City of Johannesburg, Gauteng
-4424	municipality	EC444	Ntabankulu	2011	1384.96000000000004	province	EC	Ntabankulu, Eastern Cape
 2712	ward	79900002	Ward 2 (79900002)	2011	11.8750999999999998	municipality	TSH	Ward 2 (79900002), City of Tshwane, Gauteng
 2713	ward	79900003	Ward 3 (79900003)	2011	22.2546999999999997	municipality	TSH	Ward 3 (79900003), City of Tshwane, Gauteng
 2714	ward	79900004	Ward 4 (79900004)	2011	105.648499999999999	municipality	TSH	Ward 4 (79900004), City of Tshwane, Gauteng
@@ -2893,7 +2890,6 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 2812	ward	83001019	Ward 19 (83001019)	2011	371.947200000000009	municipality	MP301	Ward 19 (83001019), Albert Luthuli, Mpumalanga
 2813	ward	83001020	Ward 20 (83001020)	2011	2.51100000000000012	municipality	MP301	Ward 20 (83001020), Albert Luthuli, Mpumalanga
 2814	ward	83001022	Ward 22 (83001022)	2011	0.426300000000000012	municipality	MP301	Ward 22 (83001022), Albert Luthuli, Mpumalanga
-4425	municipality	FS161	Letsemeng	2011	9828.57999999999993	province	FS	Letsemeng, Free State
 2815	ward	83001023	Ward 23 (83001023)	2011	1890.03649999999993	municipality	MP301	Ward 23 (83001023), Albert Luthuli, Mpumalanga
 2816	ward	83001024	Ward 24 (83001024)	2011	6.72440000000000015	municipality	MP301	Ward 24 (83001024), Albert Luthuli, Mpumalanga
 2817	ward	83001025	Ward 25 (83001025)	2011	3.14900000000000002	municipality	MP301	Ward 25 (83001025), Albert Luthuli, Mpumalanga
@@ -3314,7 +3310,6 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 3234	ward	93403008	Ward 8 (93403008)	2011	1856.56539999999995	municipality	LIM343	Ward 8 (93403008), Thulamela, Limpopo
 3235	ward	93403009	Ward 9 (93403009)	2011	140.747399999999999	municipality	LIM343	Ward 9 (93403009), Thulamela, Limpopo
 3236	ward	93403011	Ward 11 (93403011)	2011	110.7119	municipality	LIM343	Ward 11 (93403011), Thulamela, Limpopo
-4426	municipality	FS162	Kopanong	2011	15645.1000000000004	province	FS	Kopanong, Free State
 3237	ward	93403012	Ward 12 (93403012)	2011	95.0343000000000018	municipality	LIM343	Ward 12 (93403012), Thulamela, Limpopo
 3238	ward	93403013	Ward 13 (93403013)	2011	28.6794000000000011	municipality	LIM343	Ward 13 (93403013), Thulamela, Limpopo
 3239	ward	93403014	Ward 14 (93403014)	2011	108.580100000000002	municipality	LIM343	Ward 14 (93403014), Thulamela, Limpopo
@@ -3328,6 +3323,7 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 3247	ward	93403025	Ward 25 (93403025)	2011	28.2161000000000008	municipality	LIM343	Ward 25 (93403025), Thulamela, Limpopo
 3248	ward	93403026	Ward 26 (93403026)	2011	38.0212000000000003	municipality	LIM343	Ward 26 (93403026), Thulamela, Limpopo
 3249	ward	93403027	Ward 27 (93403027)	2011	102.938199999999995	municipality	LIM343	Ward 27 (93403027), Thulamela, Limpopo
+4426	municipality	FS162	Kopanong	2011	15645.1000000000004	district	DC16	Kopanong, Free State
 3250	ward	93403028	Ward 28 (93403028)	2011	81.4625999999999948	municipality	LIM343	Ward 28 (93403028), Thulamela, Limpopo
 3251	ward	93403030	Ward 30 (93403030)	2011	57.2706999999999979	municipality	LIM343	Ward 30 (93403030), Thulamela, Limpopo
 3252	ward	93403031	Ward 31 (93403031)	2011	58.9761000000000024	municipality	LIM343	Ward 31 (93403031), Thulamela, Limpopo
@@ -3368,7 +3364,6 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 3287	ward	93502010	Ward 10 (93502010)	2011	88.9194999999999993	municipality	LIM352	Ward 10 (93502010), Aganang, Limpopo
 3288	ward	93502012	Ward 12 (93502012)	2011	77.5455000000000041	municipality	LIM352	Ward 12 (93502012), Aganang, Limpopo
 3289	ward	93502013	Ward 13 (93502013)	2011	62.4436000000000035	municipality	LIM352	Ward 13 (93502013), Aganang, Limpopo
-4427	municipality	FS163	Mohokare	2011	8775.97999999999956	province	FS	Mohokare, Free State
 3290	ward	93502014	Ward 14 (93502014)	2011	39.5411000000000001	municipality	LIM352	Ward 14 (93502014), Aganang, Limpopo
 3291	ward	93502015	Ward 15 (93502015)	2011	105.004499999999993	municipality	LIM352	Ward 15 (93502015), Aganang, Limpopo
 3292	ward	93502016	Ward 16 (93502016)	2011	86.7930999999999955	municipality	LIM352	Ward 16 (93502016), Aganang, Limpopo
@@ -3440,7 +3435,6 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 3358	ward	93505025	Ward 25 (93505025)	2011	161.303899999999999	municipality	LIM355	Ward 25 (93505025), Lepele-Nkumpi, Limpopo
 3359	ward	93505026	Ward 26 (93505026)	2011	239.188299999999998	municipality	LIM355	Ward 26 (93505026), Lepele-Nkumpi, Limpopo
 3360	ward	93505027	Ward 27 (93505027)	2011	195.000499999999988	municipality	LIM355	Ward 27 (93505027), Lepele-Nkumpi, Limpopo
-4418	municipality	EC154	Port St Johns	2011	1291.20000000000005	province	EC	Port St Johns, Eastern Cape
 3361	ward	93505028	Ward 28 (93505028)	2011	1087.4076	municipality	LIM355	Ward 28 (93505028), Lepele-Nkumpi, Limpopo
 3362	ward	93601001	Ward 1 (93601001)	2011	7093.60490000000027	municipality	LIM361	Ward 1 (93601001), Thabazimbi, Limpopo
 3363	ward	93601002	Ward 2 (93601002)	2011	1100.70460000000003	municipality	LIM361	Ward 2 (93601002), Thabazimbi, Limpopo
@@ -3938,7 +3932,6 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 3855	ward	52502008	Ward 8 (52502008)	2011	1.88470000000000004	municipality	KZN252	Ward 8 (52502008), Newcastle, KwaZulu-Natal
 3856	ward	52502015	Ward 15 (52502015)	2011	8.72470000000000034	municipality	KZN252	Ward 15 (52502015), Newcastle, KwaZulu-Natal
 3857	ward	52502021	Ward 21 (52502021)	2011	171.31280000000001	municipality	KZN252	Ward 21 (52502021), Newcastle, KwaZulu-Natal
-4419	municipality	EC155	Nyandeni	2011	2474.01000000000022	province	EC	Nyandeni, Eastern Cape
 3858	ward	52502027	Ward 27 (52502027)	2011	1.64389999999999992	municipality	KZN252	Ward 27 (52502027), Newcastle, KwaZulu-Natal
 3859	ward	52503003	Ward 3 (52503003)	2011	847.577099999999973	municipality	KZN253	Ward 3 (52503003), Emadlangeni, KwaZulu-Natal
 3860	ward	52504005	Ward 5 (52504005)	2011	69.4535999999999945	municipality	KZN254	Ward 5 (52504005), Dannhauser, KwaZulu-Natal
@@ -3948,7 +3941,6 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 3864	ward	52602011	Ward 11 (52602011)	2011	114.147800000000004	municipality	KZN262	Ward 11 (52602011), UPhongolo, KwaZulu-Natal
 3865	ward	52603004	Ward 4 (52603004)	2011	598.930600000000027	municipality	KZN263	Ward 4 (52603004), Abaqulusi, KwaZulu-Natal
 3866	ward	52603010	Ward 10 (52603010)	2011	0.473799999999999999	municipality	KZN263	Ward 10 (52603010), Abaqulusi, KwaZulu-Natal
-4428	municipality	FS181	Masilonyana	2011	6796.09000000000015	province	FS	Masilonyana, Free State
 3867	ward	52603016	Ward 16 (52603016)	2011	11.4917999999999996	municipality	KZN263	Ward 16 (52603016), Abaqulusi, KwaZulu-Natal
 3868	ward	52603021	Ward 21 (52603021)	2011	57.7702000000000027	municipality	KZN263	Ward 21 (52603021), Abaqulusi, KwaZulu-Natal
 3869	ward	52603022	Ward 22 (52603022)	2011	456.396900000000016	municipality	KZN263	Ward 22 (52603022), Abaqulusi, KwaZulu-Natal
@@ -4053,7 +4045,6 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 3968	ward	63804005	Ward 5 (63804005)	2011	19.0347000000000008	municipality	NW384	Ward 5 (63804005), Ditsobotla, North West
 3969	ward	63804010	Ward 10 (63804010)	2011	215.163999999999987	municipality	NW384	Ward 10 (63804010), Ditsobotla, North West
 3970	ward	63804016	Ward 16 (63804016)	2011	519.214799999999968	municipality	NW384	Ward 16 (63804016), Ditsobotla, North West
-4429	municipality	FS182	Tokologo	2011	9325.86000000000058	province	FS	Tokologo, Free State
 3971	ward	63805001	Ward 1 (63805001)	2011	451.376300000000015	municipality	NW385	Ward 1 (63805001), Ramotshere Moiloa, North West
 3972	ward	63805006	Ward 6 (63805006)	2011	116.552000000000007	municipality	NW385	Ward 6 (63805006), Ramotshere Moiloa, North West
 3973	ward	63805012	Ward 12 (63805012)	2011	24.0824999999999996	municipality	NW385	Ward 12 (63805012), Ramotshere Moiloa, North West
@@ -4106,7 +4097,6 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 4020	ward	74802021	Ward 21 (74802021)	2011	0.320900000000000019	municipality	GT482	Ward 21 (74802021), Randfontein, Gauteng
 4021	ward	74803004	Ward 4 (74803004)	2011	2.16869999999999985	municipality	GT483	Ward 4 (74803004), Westonaria, Gauteng
 4022	ward	74803010	Ward 10 (74803010)	2011	0.458299999999999985	municipality	GT483	Ward 10 (74803010), Westonaria, Gauteng
-4430	municipality	FS183	Tswelopele	2011	6524.06999999999971	province	FS	Tswelopele, Free State
 4023	ward	74803016	Ward 16 (74803016)	2011	70.0254999999999939	municipality	GT483	Ward 16 (74803016), Westonaria, Gauteng
 4024	ward	74804005	Ward 5 (74804005)	2011	5.33140000000000036	municipality	GT484	Ward 5 (74804005), Merafong City, Gauteng
 4025	ward	74804011	Ward 11 (74804011)	2011	6.88070000000000004	municipality	GT484	Ward 11 (74804011), Merafong City, Gauteng
@@ -4362,229 +4352,45 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 4275	ward	94705016	Ward 16 (94705016)	2011	304.090199999999982	municipality	LIM475	Ward 16 (94705016), Greater Tubatse, Limpopo
 4276	ward	94705023	Ward 23 (94705023)	2011	252.639600000000002	municipality	LIM475	Ward 23 (94705023), Greater Tubatse, Limpopo
 4277	ward	94705029	Ward 29 (94705029)	2011	71.5083999999999946	municipality	LIM475	Ward 29 (94705029), Greater Tubatse, Limpopo
-4395	municipality	EC102	Blue Crane Route	2011	11068.6000000000004	province	EC	Blue Crane Route, Eastern Cape
-4396	municipality	EC103	Ikwezi	2011	4562.72999999999956	province	EC	Ikwezi, Eastern Cape
-4397	municipality	EC104	Makana	2011	4375.63000000000011	province	EC	Makana, Eastern Cape
-4398	municipality	EC106	Sundays River Valley	2011	5993.52000000000044	province	EC	Sundays River Valley, Eastern Cape
-4399	municipality	EC107	Baviaans	2011	11668.2999999999993	province	EC	Baviaans, Eastern Cape
-4400	municipality	EC108	Kouga	2011	2669.82000000000016	province	EC	Kouga, Eastern Cape
-4401	municipality	EC109	Kou-Kamma	2011	3642.01999999999998	province	EC	Kou-Kamma, Eastern Cape
-4402	municipality	EC121	Mbhashe	2011	3169.44999999999982	province	EC	Mbhashe, Eastern Cape
-4403	municipality	EC123	Great Kei	2011	1735.99000000000001	province	EC	Great Kei, Eastern Cape
-4404	municipality	EC124	Amahlathi	2011	4820.22000000000025	province	EC	Amahlathi, Eastern Cape
-4405	municipality	EC126	Ngqushwa	2011	2240.90999999999985	province	EC	Ngqushwa, Eastern Cape
-4406	municipality	EC127	Nkonkobe	2011	3626.17999999999984	province	EC	Nkonkobe, Eastern Cape
-4407	municipality	EC131	Inxuba Yethemba	2011	11662.7000000000007	province	EC	Inxuba Yethemba, Eastern Cape
-4408	municipality	EC132	Tsolwana	2011	6086.81999999999971	province	EC	Tsolwana, Eastern Cape
-4409	municipality	EC133	Inkwanca	2011	3584.23999999999978	province	EC	Inkwanca, Eastern Cape
-4410	municipality	EC134	Lukanji	2011	3812.86000000000013	province	EC	Lukanji, Eastern Cape
-4411	municipality	EC136	Emalahleni	2011	3447.19999999999982	province	EC	Emalahleni, Eastern Cape
-4412	municipality	EC137	Engcobo	2011	2483.86999999999989	province	EC	Engcobo, Eastern Cape
-4413	municipality	EC138	Sakhisizwe	2011	2354.7199999999998	province	EC	Sakhisizwe, Eastern Cape
-4414	municipality	EC141	Elundini	2011	5064.53999999999996	province	EC	Elundini, Eastern Cape
-4415	municipality	EC142	Senqu	2011	7329.42000000000007	province	EC	Senqu, Eastern Cape
-4416	municipality	EC143	Maletswai	2011	4357.64999999999964	province	EC	Maletswai, Eastern Cape
-4417	municipality	EC153	Ngquza Hill	2011	2476.82999999999993	province	EC	Ngquza Hill, Eastern Cape
-4420	municipality	EC156	Mhlontlo	2011	2826.09000000000015	province	EC	Mhlontlo, Eastern Cape
-4421	municipality	EC441	Matatiele	2011	4352.3100000000004	province	EC	Matatiele, Eastern Cape
-4431	municipality	FS184	Matjhabeng	2011	5155.46000000000004	province	FS	Matjhabeng, Free State
-4432	municipality	FS185	Nala	2011	4128.80000000000018	province	FS	Nala, Free State
-4433	municipality	FS192	Dihlabeng	2011	4879.96000000000004	province	FS	Dihlabeng, Free State
-4434	municipality	FS193	Nketoana	2011	5611.11999999999989	province	FS	Nketoana, Free State
-4435	municipality	FS194	Maluti a Phofung	2011	4337.67000000000007	province	FS	Maluti a Phofung, Free State
-4436	municipality	FS195	Phumelela	2011	8183.43000000000029	province	FS	Phumelela, Free State
-4437	municipality	FS201	Moqhaka	2011	7924.5600000000004	province	FS	Moqhaka, Free State
-4438	municipality	FS203	Ngwathe	2011	7055.01000000000022	province	FS	Ngwathe, Free State
-4439	municipality	FS204	Metsimaholo	2011	1717.09999999999991	province	FS	Metsimaholo, Free State
-4440	municipality	FS205	Mafube	2011	3971.36000000000013	province	FS	Mafube, Free State
-4441	municipality	GT421	Emfuleni	2011	965.894000000000005	province	GT	Emfuleni, Gauteng
-4442	municipality	GT423	Lesedi	2011	1484.3900000000001	province	GT	Lesedi, Gauteng
-4443	municipality	GT481	Mogale City	2011	1342.16000000000008	province	GT	Mogale City, Gauteng
-4444	municipality	GT482	Randfontein	2011	474.894000000000005	province	GT	Randfontein, Gauteng
-4445	municipality	GT483	Westonaria	2011	639.823999999999955	province	GT	Westonaria, Gauteng
-4446	municipality	KZN211	Vulamehlo	2011	959.923999999999978	province	KZN	Vulamehlo, KwaZulu-Natal
-4447	municipality	KZN212	Umdoni	2011	251.52600000000001	province	KZN	Umdoni, KwaZulu-Natal
-4448	municipality	KZN213	Umzumbe	2011	1258.88000000000011	province	KZN	Umzumbe, KwaZulu-Natal
-4449	municipality	KZN214	UMuziwabantu	2011	1089.47000000000003	province	KZN	UMuziwabantu, KwaZulu-Natal
-4450	municipality	KZN215	Ezingoleni	2011	648.07000000000005	province	KZN	Ezingoleni, KwaZulu-Natal
-4451	municipality	KZN221	uMshwathi	2011	1817.94000000000005	province	KZN	uMshwathi, KwaZulu-Natal
-4452	municipality	KZN222	uMngeni	2011	1566.51999999999998	province	KZN	uMngeni, KwaZulu-Natal
-4453	municipality	KZN223	Mpofana	2011	1819.78999999999996	province	KZN	Mpofana, KwaZulu-Natal
-4454	municipality	KZN224	Impendle	2011	1528.19000000000005	province	KZN	Impendle, KwaZulu-Natal
-4455	municipality	KZN225	The Msunduzi	2011	634.010999999999967	province	KZN	The Msunduzi, KwaZulu-Natal
-4456	municipality	KZN226	Mkhambathini	2011	890.875999999999976	province	KZN	Mkhambathini, KwaZulu-Natal
-4457	municipality	KZN232	Emnambithi/Ladysmith	2011	2964.84000000000015	province	KZN	Emnambithi/Ladysmith, KwaZulu-Natal
-4458	municipality	KZN233	Indaka	2011	991.539999999999964	province	KZN	Indaka, KwaZulu-Natal
-4459	municipality	KZN234	Umtshezi	2011	1972.45000000000005	province	KZN	Umtshezi, KwaZulu-Natal
-4460	municipality	KZN235	Okhahlamba	2011	3970.98000000000002	province	KZN	Okhahlamba, KwaZulu-Natal
-4461	municipality	KZN236	Imbabazane	2011	1426.30999999999995	province	KZN	Imbabazane, KwaZulu-Natal
-4462	municipality	KZN242	Nqutu	2011	1962.25999999999999	province	KZN	Nqutu, KwaZulu-Natal
-4463	municipality	KZN244	Msinga	2011	2501.13999999999987	province	KZN	Msinga, KwaZulu-Natal
-4464	municipality	KZN245	Umvoti	2011	2515.5300000000002	province	KZN	Umvoti, KwaZulu-Natal
-4465	municipality	KZN252	Newcastle	2011	1855.28999999999996	province	KZN	Newcastle, KwaZulu-Natal
-4466	municipality	KZN254	Dannhauser	2011	1515.91000000000008	province	KZN	Dannhauser, KwaZulu-Natal
-4467	municipality	KZN261	eDumbe	2011	1942.75999999999999	province	KZN	eDumbe, KwaZulu-Natal
-4468	municipality	KZN262	UPhongolo	2011	3239.19000000000005	province	KZN	UPhongolo, KwaZulu-Natal
-4469	municipality	KZN263	Abaqulusi	2011	4184.63000000000011	province	KZN	Abaqulusi, KwaZulu-Natal
-4470	municipality	KZN265	Nongoma	2011	2182.11000000000013	province	KZN	Nongoma, KwaZulu-Natal
-4471	municipality	KZN266	Ulundi	2011	3250.28999999999996	province	KZN	Ulundi, KwaZulu-Natal
-4472	municipality	KZN272	Jozini	2011	3442.25	province	KZN	Jozini, KwaZulu-Natal
-4473	municipality	KZN273	The Big 5 False Bay	2011	2486.53999999999996	province	KZN	The Big 5 False Bay, KwaZulu-Natal
-4474	municipality	KZN274	Hlabisa	2011	1555.13000000000011	province	KZN	Hlabisa, KwaZulu-Natal
-4475	municipality	KZN275	Mtubatuba	2011	1969.83999999999992	province	KZN	Mtubatuba, KwaZulu-Natal
-4476	municipality	KZN281	Mfolozi	2011	1209.98000000000002	province	KZN	Mfolozi, KwaZulu-Natal
-4477	municipality	KZN283	Ntambanana	2011	1082.75999999999999	province	KZN	Ntambanana, KwaZulu-Natal
-4478	municipality	KZN284	uMlalazi	2011	2213.94000000000005	province	KZN	uMlalazi, KwaZulu-Natal
-4479	municipality	KZN285	Mthonjaneni	2011	1085.97000000000003	province	KZN	Mthonjaneni, KwaZulu-Natal
-4480	municipality	KZN286	Nkandla	2011	1827.57999999999993	province	KZN	Nkandla, KwaZulu-Natal
-4481	municipality	KZN291	Mandeni	2011	545.480999999999995	province	KZN	Mandeni, KwaZulu-Natal
-4482	municipality	KZN293	Ndwedwe	2011	1092.8900000000001	province	KZN	Ndwedwe, KwaZulu-Natal
-4483	municipality	KZN294	Maphumulo	2011	895.908999999999992	province	KZN	Maphumulo, KwaZulu-Natal
-4484	municipality	KZN431	Ingwe	2011	1976.20000000000005	province	KZN	Ingwe, KwaZulu-Natal
-4485	municipality	KZN432	Kwa Sani	2011	1851.90000000000009	province	KZN	Kwa Sani, KwaZulu-Natal
-4486	municipality	KZN434	Ubuhlebezwe	2011	1604.02999999999997	province	KZN	Ubuhlebezwe, KwaZulu-Natal
-4487	municipality	KZN435	Umzimkhulu	2011	2435.4699999999998	province	KZN	Umzimkhulu, KwaZulu-Natal
-4488	municipality	LIM331	Greater Giyani	2011	4171.60999999999967	province	LIM	Greater Giyani, Limpopo
-4489	municipality	LIM332	Greater Letaba	2011	1890.8900000000001	province	LIM	Greater Letaba, Limpopo
-4490	municipality	LIM333	Greater Tzaneen	2011	3242.57999999999993	province	LIM	Greater Tzaneen, Limpopo
-4491	municipality	LIM335	Maruleng	2011	3244.30000000000018	province	LIM	Maruleng, Limpopo
-4492	municipality	LIM341	Musina	2011	7576.82999999999993	province	LIM	Musina, Limpopo
-4493	municipality	LIM342	Mutale	2011	3886.17000000000007	province	LIM	Mutale, Limpopo
-4494	municipality	LIM343	Thulamela	2011	5834.25	province	LIM	Thulamela, Limpopo
-4495	municipality	LIM344	Makhado	2011	8299.70000000000073	province	LIM	Makhado, Limpopo
-4496	municipality	LIM351	Blouberg	2011	9248.1200000000008	province	LIM	Blouberg, Limpopo
-4497	municipality	LIM353	Molemole	2011	3347.32999999999993	province	LIM	Molemole, Limpopo
-4498	municipality	LIM354	Polokwane	2011	3765.98000000000002	province	LIM	Polokwane, Limpopo
-4499	municipality	LIM355	Lepele-Nkumpi	2011	3463.44999999999982	province	LIM	Lepele-Nkumpi, Limpopo
-4500	municipality	LIM361	Thabazimbi	2011	11190.1000000000004	province	LIM	Thabazimbi, Limpopo
-4501	municipality	LIM362	Lephalale	2011	13784.2000000000007	province	LIM	Lephalale, Limpopo
-4502	municipality	LIM365	Modimolle	2011	4677.94999999999982	province	LIM	Modimolle, Limpopo
-4503	municipality	LIM366	Bela-Bela	2011	3406.19999999999982	province	LIM	Bela-Bela, Limpopo
+4396	municipality	EC103	Ikwezi	2011	4562.72999999999956	district	DC10	Ikwezi, Eastern Cape
+4399	municipality	EC107	Baviaans	2011	11668.2999999999993	district	DC10	Baviaans, Eastern Cape
+4406	municipality	EC127	Nkonkobe	2011	3626.17999999999984	district	DC12	Nkonkobe, Eastern Cape
+4408	municipality	EC132	Tsolwana	2011	6086.81999999999971	district	DC13	Tsolwana, Eastern Cape
+4409	municipality	EC133	Inkwanca	2011	3584.23999999999978	district	DC13	Inkwanca, Eastern Cape
+4410	municipality	EC134	Lukanji	2011	3812.86000000000013	district	DC13	Lukanji, Eastern Cape
+4416	municipality	EC143	Maletswai	2011	4357.64999999999964	district	DC14	Maletswai, Eastern Cape
+4444	municipality	GT482	Randfontein	2011	474.894000000000005	district	DC48	Randfontein, Gauteng
+4445	municipality	GT483	Westonaria	2011	639.823999999999955	district	DC48	Westonaria, Gauteng
+4446	municipality	KZN211	Vulamehlo	2011	959.923999999999978	district	DC21	Vulamehlo, KwaZulu-Natal
+4450	municipality	KZN215	Ezingoleni	2011	648.07000000000005	district	DC21	Ezingoleni, KwaZulu-Natal
+4457	municipality	KZN232	Emnambithi/Ladysmith	2011	2964.84000000000015	district	DC23	Emnambithi/Ladysmith, KwaZulu-Natal
+4458	municipality	KZN233	Indaka	2011	991.539999999999964	district	DC23	Indaka, KwaZulu-Natal
+4459	municipality	KZN234	Umtshezi	2011	1972.45000000000005	district	DC23	Umtshezi, KwaZulu-Natal
+4461	municipality	KZN236	Imbabazane	2011	1426.30999999999995	district	DC23	Imbabazane, KwaZulu-Natal
+4473	municipality	KZN273	The Big 5 False Bay	2011	2486.53999999999996	district	DC27	The Big 5 False Bay, KwaZulu-Natal
+4474	municipality	KZN274	Hlabisa	2011	1555.13000000000011	district	DC27	Hlabisa, KwaZulu-Natal
+4477	municipality	KZN283	Ntambanana	2011	1082.75999999999999	district	DC28	Ntambanana, KwaZulu-Natal
+4484	municipality	KZN431	Ingwe	2011	1976.20000000000005	district	DC43	Ingwe, KwaZulu-Natal
+4485	municipality	KZN432	Kwa Sani	2011	1851.90000000000009	district	DC43	Kwa Sani, KwaZulu-Natal
+4493	municipality	LIM342	Mutale	2011	3886.17000000000007	district	DC34	Mutale, Limpopo
 4504	municipality	BUF	Buffalo City	2011	2535.92999999999984	province	EC	Buffalo City, Eastern Cape
-4505	municipality	EC101	Camdeboo	2011	12422.1000000000004	province	EC	Camdeboo, Eastern Cape
-4506	municipality	EC105	Ndlambe	2011	1840.63000000000011	province	EC	Ndlambe, Eastern Cape
-4507	municipality	EC122	Mnquma	2011	3270.23999999999978	province	EC	Mnquma, Eastern Cape
-4508	municipality	EC128	Nxuba	2011	2731.92000000000007	province	EC	Nxuba, Eastern Cape
-4509	municipality	EC135	Intsika Yethu	2011	2711.13999999999987	province	EC	Intsika Yethu, Eastern Cape
-4510	municipality	EC144	Gariep	2011	8911.05999999999949	province	EC	Gariep, Eastern Cape
-4511	municipality	EC157	King Sabata Dalindyebo	2011	3027.36999999999989	province	EC	King Sabata Dalindyebo, Eastern Cape
 4512	municipality	NMA	Nelson Mandela Bay	2011	1958.91000000000008	province	EC	Nelson Mandela Bay, Eastern Cape
-4513	municipality	FS164	Naledi	2011	3424.05999999999995	province	FS	Naledi, Free State
-4514	municipality	FS191	Setsoto	2011	5966.35999999999967	province	FS	Setsoto, Free State
-4515	municipality	FS196	Mantsopa	2011	4290.59000000000015	province	FS	Mantsopa, Free State
 4516	municipality	MAN	Mangaung	2011	6283.98999999999978	province	FS	Mangaung, Free State
 4517	municipality	EKU	Ekurhuleni	2011	1975.25999999999999	province	GT	Ekurhuleni, Gauteng
-4518	municipality	GT422	Midvaal	2011	1722.48000000000002	province	GT	Midvaal, Gauteng
-4519	municipality	GT484	Merafong City	2011	1630.53999999999996	province	GT	Merafong City, Gauteng
 4520	municipality	JHB	City of Johannesburg	2011	1644.98000000000002	province	GT	City of Johannesburg, Gauteng
 4521	municipality	TSH	City of Tshwane	2011	6297.88000000000011	province	GT	City of Tshwane, Gauteng
 4522	municipality	ETH	eThekwini	2011	2291.30999999999995	province	KZN	eThekwini, KwaZulu-Natal
-4523	municipality	KZN216	Hibiscus Coast	2011	839.018000000000029	province	KZN	Hibiscus Coast, KwaZulu-Natal
-4524	municipality	KZN227	Richmond	2011	1255.59999999999991	province	KZN	Richmond, KwaZulu-Natal
-4525	municipality	KZN241	Endumeni	2011	1610.23000000000002	province	KZN	Endumeni, KwaZulu-Natal
-4526	municipality	KZN253	Emadlangeni	2011	3539.32000000000016	province	KZN	Emadlangeni, KwaZulu-Natal
-4527	municipality	KZN271	Umhlabuyalingana	2011	4401.60999999999967	province	KZN	Umhlabuyalingana, KwaZulu-Natal
-4528	municipality	KZN282	uMhlathuze	2011	793.174999999999955	province	KZN	uMhlathuze, KwaZulu-Natal
-4529	municipality	KZN292	KwaDukuza	2011	734.977999999999952	province	KZN	KwaDukuza, KwaZulu-Natal
-4530	municipality	KZN433	Greater Kokstad	2011	2679.82000000000016	province	KZN	Greater Kokstad, KwaZulu-Natal
-4531	municipality	LIM334	Ba-Phalaborwa	2011	7461.64999999999964	province	LIM	Ba-Phalaborwa, Limpopo
-4532	municipality	LIM352	Aganang	2011	1880.56999999999994	province	LIM	Aganang, Limpopo
-4533	municipality	LIM364	Mookgopong	2011	5688.85000000000036	province	LIM	Mookgopong, Limpopo
-4534	municipality	LIM367	Mogalakwena	2011	6166.0600000000004	province	LIM	Mogalakwena, Limpopo
-4535	municipality	LIM471	Ephraim Mogale	2011	2011.30999999999995	province	LIM	Ephraim Mogale, Limpopo
-4536	municipality	LIM472	Elias Motsoaledi	2011	3713.32999999999993	province	LIM	Elias Motsoaledi, Limpopo
-4537	municipality	LIM473	Makhuduthamaga	2011	2096.59999999999991	province	LIM	Makhuduthamaga, Limpopo
-4538	municipality	LIM474	Fetakgomo	2011	1104.52999999999997	province	LIM	Fetakgomo, Limpopo
-4539	municipality	LIM475	Greater Tubatse	2011	4601.96000000000004	province	LIM	Greater Tubatse, Limpopo
-4540	municipality	MP301	Albert Luthuli	2011	5559.39999999999964	province	MP	Albert Luthuli, Mpumalanga
-4541	municipality	MP302	Msukaligwa	2011	6015.67000000000007	province	MP	Msukaligwa, Mpumalanga
-4542	municipality	MP304	Pixley Ka Seme	2011	5227.21000000000004	province	MP	Pixley Ka Seme, Mpumalanga
-4543	municipality	MP305	Lekwa	2011	4585.1899999999996	province	MP	Lekwa, Mpumalanga
-4544	municipality	MP306	Dipaleseng	2011	2616.55999999999995	province	MP	Dipaleseng, Mpumalanga
-4545	municipality	MP307	Govan Mbeki	2011	2954.69000000000005	province	MP	Govan Mbeki, Mpumalanga
-4546	municipality	MP312	Emalahleni	2011	2677.61000000000013	province	MP	Emalahleni, Mpumalanga
-4547	municipality	MP313	Steve Tshwete	2011	3976.44999999999982	province	MP	Steve Tshwete, Mpumalanga
-4548	municipality	MP314	Emakhazeni	2011	4735.57999999999993	province	MP	Emakhazeni, Mpumalanga
-4549	municipality	MP315	Thembisile	2011	2384.36999999999989	province	MP	Thembisile, Mpumalanga
-4550	municipality	MP316	Dr JS Moroka	2011	1416.47000000000003	province	MP	Dr JS Moroka, Mpumalanga
-4551	municipality	MP321	Thaba Chweu	2011	5719.06999999999971	province	MP	Thaba Chweu, Mpumalanga
-4552	municipality	MP323	Umjindi	2011	1745.38000000000011	province	MP	Umjindi, Mpumalanga
-4553	municipality	MP324	Nkomazi	2011	4786.97000000000025	province	MP	Nkomazi, Mpumalanga
-4554	municipality	MP325	Bushbuckridge	2011	10249.7000000000007	province	MP	Bushbuckridge, Mpumalanga
-4555	municipality	NW371	Moretele	2011	1378.74000000000001	province	NW	Moretele, North West
-4556	municipality	NW372	Madibeng	2011	3839.21000000000004	province	NW	Madibeng, North West
-4557	municipality	NW374	Kgetlengrivier	2011	3973.11999999999989	province	NW	Kgetlengrivier, North West
-4558	municipality	NW375	Moses Kotane	2011	5719.06999999999971	province	NW	Moses Kotane, North West
-4559	municipality	NW381	Ratlou	2011	4883.64999999999964	province	NW	Ratlou, North West
-4560	municipality	NW382	Tswaing	2011	5966.25	province	NW	Tswaing, North West
-4561	municipality	NW383	Mafikeng	2011	3698.44000000000005	province	NW	Mafikeng, North West
-4562	municipality	NW385	Ramotshere Moiloa	2011	7192.88000000000011	province	NW	Ramotshere Moiloa, North West
-4563	municipality	NW392	Naledi	2011	6941.1899999999996	province	NW	Naledi, North West
-4564	municipality	NW393	Mamusa	2011	3614.84000000000015	province	NW	Mamusa, North West
-4565	municipality	NW394	Greater Taung	2011	5635.47000000000025	province	NW	Greater Taung, North West
-4566	municipality	NW397	Kagisano/Molopo	2011	23827.2999999999993	province	NW	Kagisano/Molopo, North West
-4567	municipality	NW401	Ventersdorp	2011	3764.05000000000018	province	NW	Ventersdorp, North West
-4568	municipality	NW402	Tlokwe City Council	2011	2673.67999999999984	province	NW	Tlokwe City Council, North West
-4569	municipality	NW403	City of Matlosana	2011	3561.46000000000004	province	NW	City of Matlosana, North West
-4570	municipality	NW404	Maquassi Hills	2011	4643.05000000000018	province	NW	Maquassi Hills, North West
-4571	municipality	NC061	Richtersveld	2011	9607.68000000000029	province	NC	Richtersveld, Northern Cape
-4572	municipality	NC064	Kamiesberg	2011	14210.2000000000007	province	NC	Kamiesberg, Northern Cape
-4573	municipality	NC065	Hantam	2011	36128.0999999999985	province	NC	Hantam, Northern Cape
-4574	municipality	NC066	Karoo Hoogland	2011	32273.9000000000015	province	NC	Karoo Hoogland, Northern Cape
-4575	municipality	NC067	Khâi-Ma	2011	16627.9000000000015	province	NC	Khâi-Ma, Northern Cape
-4576	municipality	NC072	Umsobomvu	2011	6818.52000000000044	province	NC	Umsobomvu, Northern Cape
-4577	municipality	NC073	Emthanjeni	2011	13472.2999999999993	province	NC	Emthanjeni, Northern Cape
-4578	municipality	NC074	Kareeberg	2011	17702	province	NC	Kareeberg, Northern Cape
-4579	municipality	NC075	Renosterberg	2011	5527.14999999999964	province	NC	Renosterberg, Northern Cape
-4580	municipality	NC076	Thembelihle	2011	8023.06999999999971	province	NC	Thembelihle, Northern Cape
-4581	municipality	NC078	Siyancuma	2011	16752.7999999999993	province	NC	Siyancuma, Northern Cape
-4582	municipality	NC081	Mier	2011	22468.4000000000015	province	NC	Mier, Northern Cape
-4583	municipality	NC082	Kai !Garib	2011	26358	province	NC	Kai !Garib, Northern Cape
-4584	municipality	NC083	//Khara Hais	2011	21779.7999999999993	province	NC	//Khara Hais, Northern Cape
-4585	municipality	NC084	!Kheis	2011	11107.5	province	NC	!Kheis, Northern Cape
-4586	municipality	NC086	Kgatelopele	2011	2477.92999999999984	province	NC	Kgatelopele, Northern Cape
-4587	municipality	NC091	Sol Plaatjie	2011	3145.38999999999987	province	NC	Sol Plaatjie, Northern Cape
-4588	municipality	NC092	Dikgatlong	2011	7314.72000000000025	province	NC	Dikgatlong, Northern Cape
-4589	municipality	NC093	Magareng	2011	1541.67000000000007	province	NC	Magareng, Northern Cape
-4590	municipality	NC451	Joe Morolong	2011	20172	province	NC	Joe Morolong, Northern Cape
-4591	municipality	NC452	Ga-Segonyana	2011	4491.64000000000033	province	NC	Ga-Segonyana, Northern Cape
-4592	municipality	NC453	Gamagara	2011	2619.42000000000007	province	NC	Gamagara, Northern Cape
+4508	municipality	EC128	Nxuba	2011	2731.92000000000007	district	DC12	Nxuba, Eastern Cape
+4510	municipality	EC144	Gariep	2011	8911.05999999999949	district	DC14	Gariep, Eastern Cape
+4513	municipality	FS164	Naledi	2011	3424.05999999999995	district	DC16	Naledi, Free State
+4532	municipality	LIM352	Aganang	2011	1880.56999999999994	district	DC35	Aganang, Limpopo
+4533	municipality	LIM364	Mookgopong	2011	5688.85000000000036	district	DC36	Mookgopong, Limpopo
+4502	municipality	LIM365	Modimolle	2011	4677.94999999999982	district	DC36	Modimolle, Limpopo
+4538	municipality	LIM474	Fetakgomo	2011	1104.52999999999997	district	DC47	Fetakgomo, Limpopo
+4539	municipality	LIM475	Greater Tubatse	2011	4601.96000000000004	district	DC47	Greater Tubatse, Limpopo
+4552	municipality	MP323	Umjindi	2011	1745.38000000000011	district	DC32	Umjindi, Mpumalanga
+4567	municipality	NW401	Ventersdorp	2011	3764.05000000000018	district	DC40	Ventersdorp, North West
 4593	municipality	CPT	City of Cape Town	2011	2439.7800000000002	province	WC	City of Cape Town, Western Cape
-4594	municipality	WC011	Matzikama	2011	12981.3999999999996	province	WC	Matzikama, Western Cape
-4595	municipality	WC013	Bergrivier	2011	4407.03999999999996	province	WC	Bergrivier, Western Cape
-4596	municipality	WC014	Saldanha Bay	2011	2015.36999999999989	province	WC	Saldanha Bay, Western Cape
-4597	municipality	WC015	Swartland	2011	3712.5300000000002	province	WC	Swartland, Western Cape
-4598	municipality	WC022	Witzenberg	2011	10752.7000000000007	province	WC	Witzenberg, Western Cape
-4599	municipality	WC023	Drakenstein	2011	1537.66000000000008	province	WC	Drakenstein, Western Cape
-4600	municipality	WC025	Breede Valley	2011	3833.51999999999998	province	WC	Breede Valley, Western Cape
-4601	municipality	WC026	Langeberg	2011	4517.69999999999982	province	WC	Langeberg, Western Cape
-4602	municipality	WC031	Theewaterskloof	2011	3231.63999999999987	province	WC	Theewaterskloof, Western Cape
-4603	municipality	WC032	Overstrand	2011	1707.50999999999999	province	WC	Overstrand, Western Cape
-4604	municipality	WC034	Swellendam	2011	3835.09000000000015	province	WC	Swellendam, Western Cape
-4605	municipality	WC041	Kannaland	2011	4758.07999999999993	province	WC	Kannaland, Western Cape
-4606	municipality	WC042	Hessequa	2011	5733.48999999999978	province	WC	Hessequa, Western Cape
-4607	municipality	WC043	Mossel Bay	2011	2010.82999999999993	province	WC	Mossel Bay, Western Cape
-4608	municipality	WC044	George	2011	5191.01000000000022	province	WC	George, Western Cape
-4609	municipality	WC047	Bitou	2011	991.860000000000014	province	WC	Bitou, Western Cape
-4610	municipality	WC048	Knysna	2011	1108.76999999999998	province	WC	Knysna, Western Cape
-4611	municipality	WC051	Laingsburg	2011	8784.47999999999956	province	WC	Laingsburg, Western Cape
-4612	municipality	WC052	Prince Albert	2011	8152.90999999999985	province	WC	Prince Albert, Western Cape
-4613	municipality	WC053	Beaufort West	2011	21916.5999999999985	province	WC	Beaufort West, Western Cape
-4614	municipality	MP303	Mkhondo	2011	4882.17000000000007	province	MP	Mkhondo, Mpumalanga
-4615	municipality	MP311	Victor Khanye	2011	1567.76999999999998	province	MP	Victor Khanye, Mpumalanga
-4616	municipality	MP322	Mbombela	2011	5394.43000000000029	province	MP	Mbombela, Mpumalanga
-4617	municipality	NW373	Rustenburg	2011	3423.26000000000022	province	NW	Rustenburg, North West
-4618	municipality	NW384	Ditsobotla	2011	6464.86999999999989	province	NW	Ditsobotla, North West
-4619	municipality	NW396	Lekwa-Teemane	2011	3681.19999999999982	province	NW	Lekwa-Teemane, North West
-4620	municipality	NC062	Nama Khoi	2011	17988.5999999999985	province	NC	Nama Khoi, Northern Cape
-4621	municipality	NC071	Ubuntu	2011	20389.2000000000007	province	NC	Ubuntu, Northern Cape
-4622	municipality	NC077	Siyathemba	2011	14724.7999999999993	province	NC	Siyathemba, Northern Cape
-4623	municipality	NC085	Tsantsabane	2011	18332.7999999999993	province	NC	Tsantsabane, Northern Cape
-4624	municipality	NC094	Phokwane	2011	833.875	province	NC	Phokwane, Northern Cape
-4625	municipality	WC012	Cederberg	2011	8007.47000000000025	province	WC	Cederberg, Western Cape
-4626	municipality	WC024	Stellenbosch	2011	831.044999999999959	province	WC	Stellenbosch, Western Cape
-4627	municipality	WC033	Cape Agulhas	2011	3466.59999999999991	province	WC	Cape Agulhas, Western Cape
-4628	municipality	WC045	Oudtshoorn	2011	3537.07000000000016	province	WC	Oudtshoorn, Western Cape
 4629	province	EC	Eastern Cape	2011	169309.834100000007	country	ZA	\N
 4630	province	FS	Free State	2011	130011.486499999999	country	ZA	\N
 4631	province	GT	Gauteng	2011	18182.4923000000017	country	ZA	\N
@@ -4595,6 +4401,10 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 4636	province	NC	Northern Cape	2011	378276.609699999972	country	ZA	\N
 4637	province	WC	Western Cape	2011	131521.559100000013	country	ZA	\N
 4638	country	ZA	South Africa	2011	1229341.48919999995	\N	\N	\N
+4616	municipality	MP322	Mbombela	2011	5394.43000000000029	district	DC32	Mbombela, Mpumalanga
+4568	municipality	NW402	Tlokwe City Council	2011	2673.67999999999984	district	DC40	Tlokwe City Council, North West
+4582	municipality	NC081	Mier	2011	22468.4000000000015	district	DC8	Mier, Northern Cape
+4584	municipality	NC083	//Khara Hais	2011	21779.7999999999993	district	DC8	//Khara Hais, Northern Cape
 4639	district	DC1	West Coast	\N	31301.2417700000005	province	WC	West Coast, Western Cape
 4640	district	DC10	Cacadu	\N	58560.7798800000019	province	EC	Cacadu, Eastern Cape
 4641	district	DC12	Amathole	\N	21717.3260899999987	province	EC	Amathole, Eastern Cape
@@ -4639,6 +4449,196 @@ COPY wazimap_geography (id, geo_level, geo_code, name, year, square_kms, parent_
 4680	district	DC7	Pixley ka Seme	\N	104094.585399999996	province	NC	Pixley ka Seme, Northern Cape
 4681	district	DC8	Siyanda	\N	103297.2981	province	NC	Siyanda, Northern Cape
 4682	district	DC9	Frances Baard	\N	12930.9347300000009	province	NC	Frances Baard, Northern Cape
+4397	municipality	EC104	Makana	2011	4375.63000000000011	district	DC10	Makana, Eastern Cape
+4506	municipality	EC105	Ndlambe	2011	1840.63000000000011	district	DC10	Ndlambe, Eastern Cape
+4402	municipality	EC121	Mbhashe	2011	3169.44999999999982	district	DC12	Mbhashe, Eastern Cape
+4507	municipality	EC122	Mnquma	2011	3270.23999999999978	district	DC12	Mnquma, Eastern Cape
+4407	municipality	EC131	Inxuba Yethemba	2011	11662.7000000000007	district	DC13	Inxuba Yethemba, Eastern Cape
+4412	municipality	EC137	Engcobo	2011	2483.86999999999989	district	DC13	Engcobo, Eastern Cape
+4414	municipality	EC141	Elundini	2011	5064.53999999999996	district	DC14	Elundini, Eastern Cape
+4415	municipality	EC142	Senqu	2011	7329.42000000000007	district	DC14	Senqu, Eastern Cape
+4417	municipality	EC153	Ngquza Hill	2011	2476.82999999999993	district	DC15	Ngquza Hill, Eastern Cape
+4418	municipality	EC154	Port St Johns	2011	1291.20000000000005	district	DC15	Port St Johns, Eastern Cape
+4419	municipality	EC155	Nyandeni	2011	2474.01000000000022	district	DC15	Nyandeni, Eastern Cape
+4420	municipality	EC156	Mhlontlo	2011	2826.09000000000015	district	DC15	Mhlontlo, Eastern Cape
+4421	municipality	EC441	Matatiele	2011	4352.3100000000004	district	DC44	Matatiele, Eastern Cape
+4425	municipality	FS161	Letsemeng	2011	9828.57999999999993	district	DC16	Letsemeng, Free State
+4427	municipality	FS163	Mohokare	2011	8775.97999999999956	district	DC16	Mohokare, Free State
+4428	municipality	FS181	Masilonyana	2011	6796.09000000000015	district	DC18	Masilonyana, Free State
+4429	municipality	FS182	Tokologo	2011	9325.86000000000058	district	DC18	Tokologo, Free State
+4430	municipality	FS183	Tswelopele	2011	6524.06999999999971	district	DC18	Tswelopele, Free State
+4431	municipality	FS184	Matjhabeng	2011	5155.46000000000004	district	DC18	Matjhabeng, Free State
+4432	municipality	FS185	Nala	2011	4128.80000000000018	district	DC18	Nala, Free State
+4514	municipality	FS191	Setsoto	2011	5966.35999999999967	district	DC19	Setsoto, Free State
+4433	municipality	FS192	Dihlabeng	2011	4879.96000000000004	district	DC19	Dihlabeng, Free State
+4434	municipality	FS193	Nketoana	2011	5611.11999999999989	district	DC19	Nketoana, Free State
+4436	municipality	FS195	Phumelela	2011	8183.43000000000029	district	DC19	Phumelela, Free State
+4515	municipality	FS196	Mantsopa	2011	4290.59000000000015	district	DC19	Mantsopa, Free State
+4437	municipality	FS201	Moqhaka	2011	7924.5600000000004	district	DC20	Moqhaka, Free State
+4438	municipality	FS203	Ngwathe	2011	7055.01000000000022	district	DC20	Ngwathe, Free State
+4439	municipality	FS204	Metsimaholo	2011	1717.09999999999991	district	DC20	Metsimaholo, Free State
+4440	municipality	FS205	Mafube	2011	3971.36000000000013	district	DC20	Mafube, Free State
+4443	municipality	GT481	Mogale City	2011	1342.16000000000008	district	DC48	Mogale City, Gauteng
+4519	municipality	GT484	Merafong City	2011	1630.53999999999996	district	DC48	Merafong City, Gauteng
+4447	municipality	KZN212	Umdoni	2011	251.52600000000001	district	DC21	Umdoni, KwaZulu-Natal
+4449	municipality	KZN214	UMuziwabantu	2011	1089.47000000000003	district	DC21	UMuziwabantu, KwaZulu-Natal
+4523	municipality	KZN216	Hibiscus Coast	2011	839.018000000000029	district	DC21	Hibiscus Coast, KwaZulu-Natal
+4460	municipality	KZN235	Okhahlamba	2011	3970.98000000000002	district	DC23	Okhahlamba, KwaZulu-Natal
+4525	municipality	KZN241	Endumeni	2011	1610.23000000000002	district	DC24	Endumeni, KwaZulu-Natal
+4462	municipality	KZN242	Nqutu	2011	1962.25999999999999	district	DC24	Nqutu, KwaZulu-Natal
+4465	municipality	KZN252	Newcastle	2011	1855.28999999999996	district	DC25	Newcastle, KwaZulu-Natal
+4526	municipality	KZN253	Emadlangeni	2011	3539.32000000000016	district	DC25	Emadlangeni, KwaZulu-Natal
+4466	municipality	KZN254	Dannhauser	2011	1515.91000000000008	district	DC25	Dannhauser, KwaZulu-Natal
+4467	municipality	KZN261	eDumbe	2011	1942.75999999999999	district	DC26	eDumbe, KwaZulu-Natal
+4468	municipality	KZN262	UPhongolo	2011	3239.19000000000005	district	DC26	UPhongolo, KwaZulu-Natal
+4469	municipality	KZN263	Abaqulusi	2011	4184.63000000000011	district	DC26	Abaqulusi, KwaZulu-Natal
+4470	municipality	KZN265	Nongoma	2011	2182.11000000000013	district	DC26	Nongoma, KwaZulu-Natal
+4471	municipality	KZN266	Ulundi	2011	3250.28999999999996	district	DC26	Ulundi, KwaZulu-Natal
+4472	municipality	KZN272	Jozini	2011	3442.25	district	DC27	Jozini, KwaZulu-Natal
+4475	municipality	KZN275	Mtubatuba	2011	1969.83999999999992	district	DC27	Mtubatuba, KwaZulu-Natal
+4478	municipality	KZN284	uMlalazi	2011	2213.94000000000005	district	DC28	uMlalazi, KwaZulu-Natal
+4480	municipality	KZN286	Nkandla	2011	1827.57999999999993	district	DC28	Nkandla, KwaZulu-Natal
+4481	municipality	KZN291	Mandeni	2011	545.480999999999995	district	DC29	Mandeni, KwaZulu-Natal
+4529	municipality	KZN292	KwaDukuza	2011	734.977999999999952	district	DC29	KwaDukuza, KwaZulu-Natal
+4482	municipality	KZN293	Ndwedwe	2011	1092.8900000000001	district	DC29	Ndwedwe, KwaZulu-Natal
+4483	municipality	KZN294	Maphumulo	2011	895.908999999999992	district	DC29	Maphumulo, KwaZulu-Natal
+4486	municipality	KZN434	Ubuhlebezwe	2011	1604.02999999999997	district	DC43	Ubuhlebezwe, KwaZulu-Natal
+4488	municipality	LIM331	Greater Giyani	2011	4171.60999999999967	district	DC33	Greater Giyani, Limpopo
+4489	municipality	LIM332	Greater Letaba	2011	1890.8900000000001	district	DC33	Greater Letaba, Limpopo
+4490	municipality	LIM333	Greater Tzaneen	2011	3242.57999999999993	district	DC33	Greater Tzaneen, Limpopo
+4531	municipality	LIM334	Ba-Phalaborwa	2011	7461.64999999999964	district	DC33	Ba-Phalaborwa, Limpopo
+4491	municipality	LIM335	Maruleng	2011	3244.30000000000018	district	DC33	Maruleng, Limpopo
+4499	municipality	LIM355	Lepele-Nkumpi	2011	3463.44999999999982	district	DC35	Lepele-Nkumpi, Limpopo
+4500	municipality	LIM361	Thabazimbi	2011	11190.1000000000004	district	DC36	Thabazimbi, Limpopo
+4501	municipality	LIM362	Lephalale	2011	13784.2000000000007	district	DC36	Lephalale, Limpopo
+4503	municipality	LIM366	Bela-Bela	2011	3406.19999999999982	district	DC36	Bela-Bela, Limpopo
+4534	municipality	LIM367	Mogalakwena	2011	6166.0600000000004	district	DC36	Mogalakwena, Limpopo
+4535	municipality	LIM471	Ephraim Mogale	2011	2011.30999999999995	district	DC47	Ephraim Mogale, Limpopo
+4536	municipality	LIM472	Elias Motsoaledi	2011	3713.32999999999993	district	DC47	Elias Motsoaledi, Limpopo
+4537	municipality	LIM473	Makhuduthamaga	2011	2096.59999999999991	district	DC47	Makhuduthamaga, Limpopo
+4540	municipality	MP301	Albert Luthuli	2011	5559.39999999999964	district	DC30	Albert Luthuli, Mpumalanga
+4541	municipality	MP302	Msukaligwa	2011	6015.67000000000007	district	DC30	Msukaligwa, Mpumalanga
+4614	municipality	MP303	Mkhondo	2011	4882.17000000000007	district	DC30	Mkhondo, Mpumalanga
+4542	municipality	MP304	Pixley Ka Seme	2011	5227.21000000000004	district	DC30	Pixley Ka Seme, Mpumalanga
+4543	municipality	MP305	Lekwa	2011	4585.1899999999996	district	DC30	Lekwa, Mpumalanga
+4544	municipality	MP306	Dipaleseng	2011	2616.55999999999995	district	DC30	Dipaleseng, Mpumalanga
+4545	municipality	MP307	Govan Mbeki	2011	2954.69000000000005	district	DC30	Govan Mbeki, Mpumalanga
+4615	municipality	MP311	Victor Khanye	2011	1567.76999999999998	district	DC31	Victor Khanye, Mpumalanga
+4546	municipality	MP312	Emalahleni	2011	2677.61000000000013	district	DC31	Emalahleni, Mpumalanga
+4547	municipality	MP313	Steve Tshwete	2011	3976.44999999999982	district	DC31	Steve Tshwete, Mpumalanga
+4548	municipality	MP314	Emakhazeni	2011	4735.57999999999993	district	DC31	Emakhazeni, Mpumalanga
+4549	municipality	MP315	Thembisile	2011	2384.36999999999989	district	DC31	Thembisile, Mpumalanga
+4551	municipality	MP321	Thaba Chweu	2011	5719.06999999999971	district	DC32	Thaba Chweu, Mpumalanga
+4553	municipality	MP324	Nkomazi	2011	4786.97000000000025	district	DC32	Nkomazi, Mpumalanga
+4555	municipality	NW371	Moretele	2011	1378.74000000000001	district	DC37	Moretele, North West
+4556	municipality	NW372	Madibeng	2011	3839.21000000000004	district	DC37	Madibeng, North West
+4617	municipality	NW373	Rustenburg	2011	3423.26000000000022	district	DC37	Rustenburg, North West
+4557	municipality	NW374	Kgetlengrivier	2011	3973.11999999999989	district	DC37	Kgetlengrivier, North West
+4558	municipality	NW375	Moses Kotane	2011	5719.06999999999971	district	DC37	Moses Kotane, North West
+4559	municipality	NW381	Ratlou	2011	4883.64999999999964	district	DC38	Ratlou, North West
+4560	municipality	NW382	Tswaing	2011	5966.25	district	DC38	Tswaing, North West
+4404	municipality	EC124	Amahlathi	2011	4820.22000000000025	district	DC12	Amahlathi, Eastern Cape
+4422	municipality	EC442	Umzimvubu	2011	2577.23000000000002	district	DC44	Umzimvubu, Eastern Cape
+4423	municipality	EC443	Mbizana	2011	2416.7199999999998	district	DC44	Mbizana, Eastern Cape
+4424	municipality	EC444	Ntabankulu	2011	1384.96000000000004	district	DC44	Ntabankulu, Eastern Cape
+4448	municipality	KZN213	Umzumbe	2011	1258.88000000000011	district	DC21	Umzumbe, KwaZulu-Natal
+4451	municipality	KZN221	uMshwathi	2011	1817.94000000000005	district	DC22	uMshwathi, KwaZulu-Natal
+4456	municipality	KZN226	Mkhambathini	2011	890.875999999999976	district	DC22	Mkhambathini, KwaZulu-Natal
+4524	municipality	KZN227	Richmond	2011	1255.59999999999991	district	DC22	Richmond, KwaZulu-Natal
+4463	municipality	KZN244	Msinga	2011	2501.13999999999987	district	DC24	Msinga, KwaZulu-Natal
+4487	municipality	KZN435	Umzimkhulu	2011	2435.4699999999998	district	DC43	Umzimkhulu, KwaZulu-Natal
+4561	municipality	NW383	Mafikeng	2011	3698.44000000000005	district	DC38	Mafikeng, North West
+4618	municipality	NW384	Ditsobotla	2011	6464.86999999999989	district	DC38	Ditsobotla, North West
+4562	municipality	NW385	Ramotshere Moiloa	2011	7192.88000000000011	district	DC38	Ramotshere Moiloa, North West
+4563	municipality	NW392	Naledi	2011	6941.1899999999996	district	DC39	Naledi, North West
+4564	municipality	NW393	Mamusa	2011	3614.84000000000015	district	DC39	Mamusa, North West
+4565	municipality	NW394	Greater Taung	2011	5635.47000000000025	district	DC39	Greater Taung, North West
+4619	municipality	NW396	Lekwa-Teemane	2011	3681.19999999999982	district	DC39	Lekwa-Teemane, North West
+4566	municipality	NW397	Kagisano/Molopo	2011	23827.2999999999993	district	DC39	Kagisano/Molopo, North West
+4569	municipality	NW403	City of Matlosana	2011	3561.46000000000004	district	DC40	City of Matlosana, North West
+4570	municipality	NW404	Maquassi Hills	2011	4643.05000000000018	district	DC40	Maquassi Hills, North West
+4571	municipality	NC061	Richtersveld	2011	9607.68000000000029	district	DC6	Richtersveld, Northern Cape
+4620	municipality	NC062	Nama Khoi	2011	17988.5999999999985	district	DC6	Nama Khoi, Northern Cape
+4572	municipality	NC064	Kamiesberg	2011	14210.2000000000007	district	DC6	Kamiesberg, Northern Cape
+4573	municipality	NC065	Hantam	2011	36128.0999999999985	district	DC6	Hantam, Northern Cape
+4574	municipality	NC066	Karoo Hoogland	2011	32273.9000000000015	district	DC6	Karoo Hoogland, Northern Cape
+4575	municipality	NC067	Khâi-Ma	2011	16627.9000000000015	district	DC6	Khâi-Ma, Northern Cape
+4621	municipality	NC071	Ubuntu	2011	20389.2000000000007	district	DC7	Ubuntu, Northern Cape
+4576	municipality	NC072	Umsobomvu	2011	6818.52000000000044	district	DC7	Umsobomvu, Northern Cape
+4577	municipality	NC073	Emthanjeni	2011	13472.2999999999993	district	DC7	Emthanjeni, Northern Cape
+4578	municipality	NC074	Kareeberg	2011	17702	district	DC7	Kareeberg, Northern Cape
+4579	municipality	NC075	Renosterberg	2011	5527.14999999999964	district	DC7	Renosterberg, Northern Cape
+4580	municipality	NC076	Thembelihle	2011	8023.06999999999971	district	DC7	Thembelihle, Northern Cape
+4622	municipality	NC077	Siyathemba	2011	14724.7999999999993	district	DC7	Siyathemba, Northern Cape
+4581	municipality	NC078	Siyancuma	2011	16752.7999999999993	district	DC7	Siyancuma, Northern Cape
+4583	municipality	NC082	Kai !Garib	2011	26358	district	DC8	Kai !Garib, Northern Cape
+4585	municipality	NC084	!Kheis	2011	11107.5	district	DC8	!Kheis, Northern Cape
+4623	municipality	NC085	Tsantsabane	2011	18332.7999999999993	district	DC8	Tsantsabane, Northern Cape
+4586	municipality	NC086	Kgatelopele	2011	2477.92999999999984	district	DC8	Kgatelopele, Northern Cape
+4587	municipality	NC091	Sol Plaatjie	2011	3145.38999999999987	district	DC9	Sol Plaatjie, Northern Cape
+4588	municipality	NC092	Dikgatlong	2011	7314.72000000000025	district	DC9	Dikgatlong, Northern Cape
+4589	municipality	NC093	Magareng	2011	1541.67000000000007	district	DC9	Magareng, Northern Cape
+4624	municipality	NC094	Phokwane	2011	833.875	district	DC9	Phokwane, Northern Cape
+4591	municipality	NC452	Ga-Segonyana	2011	4491.64000000000033	district	DC45	Ga-Segonyana, Northern Cape
+4592	municipality	NC453	Gamagara	2011	2619.42000000000007	district	DC45	Gamagara, Northern Cape
+4594	municipality	WC011	Matzikama	2011	12981.3999999999996	district	DC1	Matzikama, Western Cape
+4625	municipality	WC012	Cederberg	2011	8007.47000000000025	district	DC1	Cederberg, Western Cape
+4595	municipality	WC013	Bergrivier	2011	4407.03999999999996	district	DC1	Bergrivier, Western Cape
+4598	municipality	WC022	Witzenberg	2011	10752.7000000000007	district	DC2	Witzenberg, Western Cape
+4599	municipality	WC023	Drakenstein	2011	1537.66000000000008	district	DC2	Drakenstein, Western Cape
+4626	municipality	WC024	Stellenbosch	2011	831.044999999999959	district	DC2	Stellenbosch, Western Cape
+4600	municipality	WC025	Breede Valley	2011	3833.51999999999998	district	DC2	Breede Valley, Western Cape
+4601	municipality	WC026	Langeberg	2011	4517.69999999999982	district	DC2	Langeberg, Western Cape
+4602	municipality	WC031	Theewaterskloof	2011	3231.63999999999987	district	DC3	Theewaterskloof, Western Cape
+4627	municipality	WC033	Cape Agulhas	2011	3466.59999999999991	district	DC3	Cape Agulhas, Western Cape
+4604	municipality	WC034	Swellendam	2011	3835.09000000000015	district	DC3	Swellendam, Western Cape
+4605	municipality	WC041	Kannaland	2011	4758.07999999999993	district	DC4	Kannaland, Western Cape
+4606	municipality	WC042	Hessequa	2011	5733.48999999999978	district	DC4	Hessequa, Western Cape
+4607	municipality	WC043	Mossel Bay	2011	2010.82999999999993	district	DC4	Mossel Bay, Western Cape
+4608	municipality	WC044	George	2011	5191.01000000000022	district	DC4	George, Western Cape
+4628	municipality	WC045	Oudtshoorn	2011	3537.07000000000016	district	DC4	Oudtshoorn, Western Cape
+4609	municipality	WC047	Bitou	2011	991.860000000000014	district	DC4	Bitou, Western Cape
+4610	municipality	WC048	Knysna	2011	1108.76999999999998	district	DC4	Knysna, Western Cape
+4611	municipality	WC051	Laingsburg	2011	8784.47999999999956	district	DC5	Laingsburg, Western Cape
+4612	municipality	WC052	Prince Albert	2011	8152.90999999999985	district	DC5	Prince Albert, Western Cape
+4613	municipality	WC053	Beaufort West	2011	21916.5999999999985	district	DC5	Beaufort West, Western Cape
+4505	municipality	EC101	Camdeboo	2011	12422.1000000000004	district	DC10	Camdeboo, Eastern Cape
+4395	municipality	EC102	Blue Crane Route	2011	11068.6000000000004	district	DC10	Blue Crane Route, Eastern Cape
+4398	municipality	EC106	Sundays River Valley	2011	5993.52000000000044	district	DC10	Sundays River Valley, Eastern Cape
+4400	municipality	EC108	Kouga	2011	2669.82000000000016	district	DC10	Kouga, Eastern Cape
+4401	municipality	EC109	Kou-Kamma	2011	3642.01999999999998	district	DC10	Kou-Kamma, Eastern Cape
+4403	municipality	EC123	Great Kei	2011	1735.99000000000001	district	DC12	Great Kei, Eastern Cape
+4405	municipality	EC126	Ngqushwa	2011	2240.90999999999985	district	DC12	Ngqushwa, Eastern Cape
+4509	municipality	EC135	Intsika Yethu	2011	2711.13999999999987	district	DC13	Intsika Yethu, Eastern Cape
+4411	municipality	EC136	Emalahleni	2011	3447.19999999999982	district	DC13	Emalahleni, Eastern Cape
+4413	municipality	EC138	Sakhisizwe	2011	2354.7199999999998	district	DC13	Sakhisizwe, Eastern Cape
+4511	municipality	EC157	King Sabata Dalindyebo	2011	3027.36999999999989	district	DC15	King Sabata Dalindyebo, Eastern Cape
+4435	municipality	FS194	Maluti a Phofung	2011	4337.67000000000007	district	DC19	Maluti a Phofung, Free State
+4441	municipality	GT421	Emfuleni	2011	965.894000000000005	district	DC42	Emfuleni, Gauteng
+4518	municipality	GT422	Midvaal	2011	1722.48000000000002	district	DC42	Midvaal, Gauteng
+4442	municipality	GT423	Lesedi	2011	1484.3900000000001	district	DC42	Lesedi, Gauteng
+4452	municipality	KZN222	uMngeni	2011	1566.51999999999998	district	DC22	uMngeni, KwaZulu-Natal
+4453	municipality	KZN223	Mpofana	2011	1819.78999999999996	district	DC22	Mpofana, KwaZulu-Natal
+4454	municipality	KZN224	Impendle	2011	1528.19000000000005	district	DC22	Impendle, KwaZulu-Natal
+4455	municipality	KZN225	The Msunduzi	2011	634.010999999999967	district	DC22	The Msunduzi, KwaZulu-Natal
+4464	municipality	KZN245	Umvoti	2011	2515.5300000000002	district	DC24	Umvoti, KwaZulu-Natal
+4527	municipality	KZN271	Umhlabuyalingana	2011	4401.60999999999967	district	DC27	Umhlabuyalingana, KwaZulu-Natal
+4476	municipality	KZN281	Mfolozi	2011	1209.98000000000002	district	DC28	Mfolozi, KwaZulu-Natal
+4528	municipality	KZN282	uMhlathuze	2011	793.174999999999955	district	DC28	uMhlathuze, KwaZulu-Natal
+4479	municipality	KZN285	Mthonjaneni	2011	1085.97000000000003	district	DC28	Mthonjaneni, KwaZulu-Natal
+4530	municipality	KZN433	Greater Kokstad	2011	2679.82000000000016	district	DC43	Greater Kokstad, KwaZulu-Natal
+4492	municipality	LIM341	Musina	2011	7576.82999999999993	district	DC34	Musina, Limpopo
+4494	municipality	LIM343	Thulamela	2011	5834.25	district	DC34	Thulamela, Limpopo
+4495	municipality	LIM344	Makhado	2011	8299.70000000000073	district	DC34	Makhado, Limpopo
+4496	municipality	LIM351	Blouberg	2011	9248.1200000000008	district	DC35	Blouberg, Limpopo
+4497	municipality	LIM353	Molemole	2011	3347.32999999999993	district	DC35	Molemole, Limpopo
+4498	municipality	LIM354	Polokwane	2011	3765.98000000000002	district	DC35	Polokwane, Limpopo
+4550	municipality	MP316	Dr JS Moroka	2011	1416.47000000000003	district	DC31	Dr JS Moroka, Mpumalanga
+4554	municipality	MP325	Bushbuckridge	2011	10249.7000000000007	district	DC32	Bushbuckridge, Mpumalanga
+4590	municipality	NC451	Joe Morolong	2011	20172	district	DC45	Joe Morolong, Northern Cape
+4596	municipality	WC014	Saldanha Bay	2011	2015.36999999999989	district	DC1	Saldanha Bay, Western Cape
+4597	municipality	WC015	Swartland	2011	3712.5300000000002	district	DC1	Swartland, Western Cape
+4603	municipality	WC032	Overstrand	2011	1707.50999999999999	district	DC3	Overstrand, Western Cape
 \.
 
 
