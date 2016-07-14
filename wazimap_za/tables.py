@@ -64,7 +64,7 @@ FieldTable(['age groups in 5 years'], id='womenagegroupsin5years15to44', univers
 FieldTable(['gender'], id='genderunder9', universe='Children under 9', year='2011')
 
 # Youth
-FieldTable(['gender', 'age in completed years'], id='youth_gender_age_in_completed_years', universe='Youth 15 to 24', year='2011')
+FieldTable(['gender', 'age in completed years'], id='youth_gender_age_in_completed_years', universe='Youth', year='2011')
 
 # Simple Tables
 SimpleTable(
@@ -190,6 +190,15 @@ SimpleTable(
     universe='Youth',
     total_column=None,
     description='Youth statistics',
+    dataset='Census 2011',
+    year='2011'
+)
+
+SimpleTable(
+    id='youth_population',
+    universe='Youth',
+    total_column=None,
+    description='Youth population',
     dataset='Census 2011',
     year='2011'
 )
