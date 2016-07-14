@@ -63,6 +63,8 @@ FieldTable(['party'], universe='Votes', id='party_votes_municipal_2011', descrip
 FieldTable(['age groups in 5 years'], id='womenagegroupsin5years15to44', universe='Women 15 to 44', description='Women of child bearing age', year='2011')
 FieldTable(['gender'], id='genderunder9', universe='Children under 9', year='2011')
 
+# Youth
+FieldTable(['gender', 'age in completed years'], id='youth_gender_age_in_completed_years', universe='Youth 15 to 24', year='2011')
 
 # Simple Tables
 SimpleTable(
