@@ -1,5 +1,5 @@
 from wazimap.data.tables import get_datatable
-from wazimap.data.utils import get_session, merge_dicts, get_stat_data
+from wazimap.data.utils import get_session, merge_dicts, get_stat_data, percent
 from wazimap.geo import geo_data
 
 
@@ -42,13 +42,24 @@ def get_demographics_profile(geo_code, geo_level, session):
     pop_dist_data, total_pop = get_stat_data(
             ['population group'], geo_level, geo_code, session)
 
+    youth_pop_dist_data, total_youth_pop = get_stat_data(['age in completed years'], geo_level, geo_code, session, table_name='youth_gender_age_in_completed_years')
+
     final_data = {
         'total_population': {
             "name": "People",
             "values": {"this": total_pop}
         },
+        'total_youth_population': {
+            "name": "Youth (age 15-24)",
+            "values": {"this": total_youth_pop}
+        },
+        'youth_population_by_year': youth_pop_dist_data,
+        'youth_population_perc': {
+            "name": "Youth (age 15-24) as a percentage of total population",
+            "values": {"this": percent(total_youth_pop, total_pop)},
+        },
     }
-
+    import ipdb; ipdb.set_trace()
     geo = geo_data.get_geography(geo_code, geo_level)
     if geo.square_kms:
         final_data['population_density'] = {
