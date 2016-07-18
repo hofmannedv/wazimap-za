@@ -50,6 +50,12 @@
             <div class="column-half" id="chart-pie-education-youth_gender_completed_grade9" data-stat-type="percentage" data-chart-title="Youth aged 16-17 who have completed grade 9 by gender"></div>
         </section>
         <section class="clearfix stat-row">
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_perc_matric stat_type='percentage' %}
+            </div>
+            <div class="column-half" id="chart-histogram-education-youth_education_level" data-stat-type="scaled-percentage" data-chart-title="Youth aged 20-24 by highest educational level"></div>
+        </section>
+        <section class="clearfix stat-row">
             <aside>
                 <p>* Deprived if individual is: age 15 - 16 and has completed less than primary school; age 17 - 20 and has completed less than grade 9; or age 21 - 24 and has completed less than matric or matric equivalent</p>
             </aside>
