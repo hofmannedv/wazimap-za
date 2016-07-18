@@ -65,6 +65,7 @@ FieldTable(['gender'], id='genderunder9', universe='Children under 9', year='201
 
 # Youth
 FieldTable(['gender', 'age in completed years'], id='youth_gender_age_in_completed_years', universe='Youth', year='2011')
+FieldTable(['gender', 'population group'], id='youth_gender_population_group', universe='Youth', year='2011')
 
 # Simple Tables
 SimpleTable(
