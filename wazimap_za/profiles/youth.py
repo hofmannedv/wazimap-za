@@ -39,32 +39,32 @@ def get_profile(geo_code, geo_level, profile_name=None):
 
 def get_demographics_profile(geo_code, geo_level, session):
     # population group
-    pop_dist_data, total_pop = get_stat_data(
+    pop_dist_data, pop_total = get_stat_data(
             ['population group'], geo_level, geo_code, session)
 
-    youth_pop_dist_data, total_youth_pop = get_stat_data(['age in completed years'], geo_level, geo_code, session, table_name='youth_gender_age_in_completed_years')
+    youth_pop_dist_data, youth_pop_total = get_stat_data(['age in completed years'], geo_level, geo_code, session, table_name='youth_gender_age_in_completed_years')
 
     final_data = {
         'total_population': {
             "name": "People",
-            "values": {"this": total_pop}
+            "values": {"this": pop_total}
         },
-        'total_youth_population': {
+        'youth_population_total': {
             "name": "Youth (age 15-24)",
-            "values": {"this": total_youth_pop}
+            "values": {"this": youth_pop_total}
         },
         'youth_population_by_year': youth_pop_dist_data,
         'youth_population_perc': {
             "name": "Youth (age 15-24) as a percentage of total population",
-            "values": {"this": percent(total_youth_pop, total_pop)},
+            "values": {"this": percent(youth_pop_total, pop_total)},
         },
     }
-    import ipdb; ipdb.set_trace()
+
     geo = geo_data.get_geography(geo_code, geo_level)
     if geo.square_kms:
         final_data['population_density'] = {
             'name': "people per square kilometre",
-            'values': {"this": total_pop / geo.square_kms}
+            'values': {"this": pop_total / geo.square_kms}
         }
 
     return final_data
