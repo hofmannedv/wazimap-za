@@ -11,8 +11,8 @@ SET client_min_messages = warning;
 
 SET search_path = public, pg_catalog;
 
-ALTER TABLE IF EXISTS ONLY public.youth_gender_completed_grade9 DROP CONSTRAINT IF EXISTS youth_gender_completed_grade9_pkey;
-DROP TABLE IF EXISTS public.youth_gender_completed_grade9;
+ALTER TABLE IF EXISTS ONLY public.youth_age_16_to_17_gender_completed_grade9 DROP CONSTRAINT IF EXISTS youth_age_16_to_17_gender_completed_grade9_pkey;
+DROP TABLE IF EXISTS public.youth_age_16_to_17_gender_completed_grade9;
 SET search_path = public, pg_catalog;
 
 SET default_tablespace = '';
@@ -20,10 +20,10 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: youth_gender_completed_grade9; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: youth_age_16_to_17_gender_completed_grade9; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
-CREATE TABLE youth_gender_completed_grade9 (
+CREATE TABLE youth_age_16_to_17_gender_completed_grade9 (
     geo_level character varying(15) NOT NULL,
     geo_code character varying(10) NOT NULL,
     gender character varying(128) NOT NULL,
@@ -33,10 +33,10 @@ CREATE TABLE youth_gender_completed_grade9 (
 
 
 --
--- Data for Name: youth_gender_completed_grade9; Type: TABLE DATA; Schema: public; Owner: -
+-- Data for Name: youth_age_16_to_17_gender_completed_grade9; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY youth_gender_completed_grade9 (geo_level, geo_code, gender, "completed grade9", total) FROM stdin;
+COPY youth_age_16_to_17_gender_completed_grade9 (geo_level, geo_code, gender, "completed grade9", total) FROM stdin;
 province	WC	Male	Yes	61037
 province	WC	Female	Yes	72337
 province	WC	Male	No	26458
@@ -1711,11 +1711,11 @@ ward	19100111	Female	No	121
 
 
 --
--- Name: youth_gender_completed_grade9_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: youth_age_16_to_17_gender_completed_grade9_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
-ALTER TABLE ONLY youth_gender_completed_grade9
-    ADD CONSTRAINT youth_gender_completed_grade9_pkey PRIMARY KEY (geo_level, geo_code, gender, "completed grade9");
+ALTER TABLE ONLY youth_age_16_to_17_gender_completed_grade9
+    ADD CONSTRAINT youth_age_16_to_17_gender_completed_grade9_pkey PRIMARY KEY (geo_level, geo_code, gender, "completed grade9");
 
 
 --
