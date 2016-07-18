@@ -69,6 +69,8 @@ elif wazi_profile == 'youth':
             'children': [],
         }
     }
+    WAZIMAP['url'] = 'https://wazimap-youth.code4sa.org'
+    WAZIMAP['name'] = 'Wazimap Youth'
 
 
 LANGUAGE_CODE = 'en-za'
