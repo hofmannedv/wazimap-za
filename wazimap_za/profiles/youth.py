@@ -78,10 +78,10 @@ def get_demographics_profile(geo_code, geo_level, session):
 
 
 def get_education_profile(geo_code, geo_level, session):
-    youth_completed_grade9, _ = get_stat_data(['completed grade9'], geo_level, geo_code, session, table_name='youth_gender_completed_grade9')
+    youth_completed_grade9, _ = get_stat_data(['completed grade9'], geo_level, geo_code, session, table_name='youth_age_16_to_17_gender_completed_grade9')
 
-    youth_gender_completed_grade9, _ = get_stat_data(['gender', 'completed grade9'], geo_level, geo_code, session, table_name='youth_gender_completed_grade9')
-    db_model_gender_completed_grade9 = get_model_from_fields(['gender'], geo_level, table_name='youth_gender_completed_grade9')
+    youth_gender_completed_grade9, _ = get_stat_data(['gender', 'completed grade9'], geo_level, geo_code, session, table_name='youth_age_16_to_17_gender_completed_grade9')
+    db_model_gender_completed_grade9 = get_model_from_fields(['gender'], geo_level, table_name='youth_age_16_to_17_gender_completed_grade9')
     gender_completed_grade9_data = OrderedDict((  # census data refers to sex as gender
             ('Female', {
                 "name": "Female",
