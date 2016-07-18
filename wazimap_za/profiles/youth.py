@@ -50,14 +50,14 @@ def get_demographics_profile(geo_code, geo_level, session):
             "values": {"this": pop_total}
         },
         'youth_population_total': {
-            "name": "Youth (age 15-24)",
+            "name": "Youth aged 15-24",
             "values": {"this": youth_pop_total}
         },
-        'youth_population_by_year': youth_pop_dist_data,
         'youth_population_perc': {
-            "name": "Youth (age 15-24) as a percentage of total population",
+            "name": "Of population are youth aged 15-24",
             "values": {"this": percent(youth_pop_total, pop_total)},
         },
+        'youth_population_by_year': youth_pop_dist_data,
     }
 
     geo = geo_data.get_geography(geo_code, geo_level)
