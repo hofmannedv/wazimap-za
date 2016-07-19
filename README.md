@@ -22,14 +22,18 @@ create database wazimap_za;
 grant all privileges on database wazimap_za to wazimap_za;
 ```
 
-Import the data into the new database:
+Run migrations to keep Django happy:
+```
+python manage.py migrate
+```
+
+Import the data into the new database (will overwrite some tables created by Django, but that's ok).
 ```
 cat sql/*.sql | psql -U wazimap_za -W wazimap_za
 ```
 
-Run migrations, and start the server:
+Start the server:
 ```
-python manage.py migrate
 python manage.py runserver
 ```
 
