@@ -140,6 +140,7 @@ def get_health_profile(geo_code, geo_level, session):
 
     return final_data
 
+
 def get_living_environment_profile(geo_code, geo_level, session):
     table = get_datatable('youth').model
 
@@ -193,6 +194,7 @@ def get_living_environment_profile(geo_code, geo_level, session):
     }
 
     return final_data
+
 
 def get_economic_opportunities_profile(geo_code, geo_level, session):
     table = get_datatable('youth').model
