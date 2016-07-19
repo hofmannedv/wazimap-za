@@ -53,6 +53,7 @@ elif wazi_profile == 'ecd':
     WAZIMAP['name'] = 'Wazimap ECD'
 
 elif wazi_profile == 'youth':
+    WAZIMAP['twitter'] = None
     WAZIMAP['comparative_levels'] = ['district', 'province']
     WAZIMAP['levels'] = {
         'province': {

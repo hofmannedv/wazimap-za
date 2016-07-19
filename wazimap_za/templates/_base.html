@@ -1,4 +1,13 @@
 {% extends '_base.html' %}
+{% load staticfiles %}
+
+{% block header_logo %}
+  {% if WAZIMAP.default_profile == 'youth' %}
+    <img src="{% static 'img/youth-logo.png' %}">
+  {% else %}
+    {{ block.super }}
+  {% endif %}
+{% endblock %}
 
 {% block header_branding %}
   {% if WAZIMAP.default_profile == 'youth' %}
