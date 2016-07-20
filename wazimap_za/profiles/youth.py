@@ -49,7 +49,9 @@ def get_demographics_profile(geo_code, geo_level, session):
     youth_pop_dist_data, youth_pop_total = get_stat_data(['age in completed years'], geo_level, geo_code, session, table_name='youth_gender_age_in_completed_years')
 
     youth_gender_data, _ = get_stat_data(['gender'], geo_level, geo_code, session, table_name='youth_gender_population_group')
-    youth_pop_group_data, _ = get_stat_data(['population group'], geo_level, geo_code, session, table_name='youth_gender_population_group')
+    youth_pop_group_data, _ = get_stat_data(['population group'], geo_level, geo_code, session,
+        table_name='youth_gender_population_group',
+        key_order=('Black African', 'Coloured', 'Indian or Asian', 'White', 'Other'))
 
     final_data = {
         'total_population': {
