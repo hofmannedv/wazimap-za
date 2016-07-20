@@ -43,10 +43,16 @@ def get_profile(geo_code, geo_level, profile_name=None):
 
 
 def get_demographics_profile(geo_code, geo_level, session):
-    pop_dist_data, pop_total = get_stat_data(
-            ['population group'], geo_level, geo_code, session)
+    table = get_datatable('youth_population').model
 
-    youth_pop_dist_data, youth_pop_total = get_stat_data(['age in completed years'], geo_level, geo_code, session, table_name='youth_gender_age_in_completed_years')
+    (youth_pop_total, pop_total) = session.query(
+            table.c.youth_pop,
+            table.c.total_pop) \
+        .filter(table.c.geo_level == geo_level) \
+        .filter(table.c.geo_code == geo_code) \
+        .one()
+
+    youth_pop_dist_data, _ = get_stat_data(['age in completed years'], geo_level, geo_code, session, table_name='youth_gender_age_in_completed_years')
 
     youth_gender_data, _ = get_stat_data(['gender'], geo_level, geo_code, session, table_name='youth_gender_population_group')
     youth_pop_group_data, _ = get_stat_data(['population group'], geo_level, geo_code, session, table_name='youth_gender_population_group')
