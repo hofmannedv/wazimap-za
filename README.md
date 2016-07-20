@@ -1,9 +1,8 @@
-Wazimap-ZA
-==========
+# Wazimap-ZA
+
 The South African instance of [Wazimap](https://github.com/Code4SA/wazimap), a Django application for exploring census and other similar data.
 
-Local development
------------------
+# Local development
 
 1. clone the repo
 2. ``cd wazimap_za``
@@ -37,8 +36,7 @@ Start the server:
 python manage.py runserver
 ```
 
-Production deployment
----------------------
+# Production deployment
 
 See the [Wazimap deployment docs](http://wazimap.readthedocs.org/en/latest/deploying.html) for all basic Wazimap configuration.
 
@@ -52,15 +50,13 @@ Add dokku as a remote, and then deploy:
 git push dokku
 ```
 
-Adding new census data
-----------------------
+# Adding new census data
 
 Use the ``python manage.py importcsv`` command to import CSV data exported from StatsSA using the [SuperWEB](http://interactive2.statssa.gov.za/webapi/jsf/login.xhtml) or SuperCROSS packages.
 
 Let's suppose you want to add a new table with two fields: favourite colour and gender. We'll describe the process for SuperWEB, but SuperCROSS is similar.
 
-Downloading from SuperWEB
-=========================
+## Downloading from SuperWEB
 
 1. Visit [SuperWEB](http://interactive2.statssa.gov.za/webapi/jsf/login.xhtml)
 2. Open the data collection that contains your data (Generally under ``Community Profiles > Census 2011``) by double-clicking the database.
@@ -74,8 +70,7 @@ Downloading from SuperWEB
 10. Click the big play button ``Retrieve data`` to load data into the table.
 11. Download the table as ``Comma Separate Value (.csv)`` (not CSV string value).
 
-Importing into Wazimap
-======================
+## Importing into Wazimap
 
 1. Ensure ``wazimap_za/tables.py`` has a ``FieldTable`` that has exactly the columns that you're importing. If there are multiple tables with exactly the same columns, perhaps because their Universes are different, then be sure to take note of the **table id**.
 2. Do a dry-run of the import, using the table name if necessary.
@@ -90,7 +85,6 @@ Importing into Wazimap
 5. Commit to git.
 6. All done!
 
-License
--------
+# License
 
 MIT License
