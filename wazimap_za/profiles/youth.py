@@ -100,12 +100,6 @@ def get_education_profile(geo_code, geo_level, session):
 
     youth_education_level, youth_pop_20_to_24 = get_stat_data(['education level'], geo_level, geo_code, session, table_name='youth_age_20_to_24_gender_education_level')
 
-    matric_or_equiv = (
-        youth_education_level['Matric']['numerators']['this'] +
-        youth_education_level['Tertiary']['numerators']['this'] +
-        youth_education_level['Some secondary']['numerators']['this'])
-
-
     final_data  = {
         'youth_completed_grade9': youth_completed_grade9,
         'youth_perc_completed_grade9': {
@@ -115,7 +109,7 @@ def get_education_profile(geo_code, geo_level, session):
         'youth_gender_completed_grade9': gender_completed_grade9_data,
         'youth_perc_matric': {
             "name": "Of youth aged 20-24 have completed matric or matric equivalent",
-            "values": {"this": percent(matric_or_equiv, youth_pop_20_to_24)},
+            "values": {"this": percent(youth_education_level['Matric']['numerators']['this'], youth_pop_20_to_24)},
         },
         'youth_education_level': youth_education_level
     }
