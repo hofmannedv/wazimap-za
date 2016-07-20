@@ -71,11 +71,12 @@ def get_demographics_profile(geo_code, geo_level, session):
         'youth_population_by_pop_group': youth_pop_group_data
     }
 
+    # The following info is displayed in the block over the map
     geo = geo_data.get_geography(geo_code, geo_level)
     if geo.square_kms:
         final_data['population_density'] = {
-            'name': "people per square kilometre",
-            'values': {"this": pop_total / geo.square_kms}
+            'name': "youth per square kilometre",
+            'values': {"this": youth_pop_total / geo.square_kms}
         }
 
     return final_data
