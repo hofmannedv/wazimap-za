@@ -1,5 +1,10 @@
 {% extends 'homepage.html' %}{% load staticfiles %}
 
+{% block head_css_extra %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/wazimap_za.css' %}">
+{% endblock %}
+
 {% block homepage_detail %}
   {% if WAZIMAP.default_profile == 'youth' %}
     {% include 'homepage_youth.html' %}
