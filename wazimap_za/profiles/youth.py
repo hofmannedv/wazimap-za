@@ -77,7 +77,7 @@ def get_demographics_profile(geo_code, geo_level, session):
     if geo.square_kms:
         final_data['population_density'] = {
             'name': "youth per square kilometre",
-            'values': {"this": youth_pop_total / geo.square_kms}
+            'values': {"this": youth_pop['youth_pop']['numerators']['this'] / geo.square_kms}
         }
 
     return final_data
