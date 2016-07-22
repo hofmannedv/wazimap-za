@@ -3,7 +3,6 @@ from collections import OrderedDict
 from wazimap.data.tables import get_datatable, get_model_from_fields
 from wazimap.data.utils import get_session, merge_dicts, get_stat_data, percent, add_metadata
 from wazimap.geo import geo_data
-from wazimap.data.tables import SimpleTable
 
 
 PROFILE_SECTIONS = (
@@ -13,6 +12,11 @@ PROFILE_SECTIONS = (
     "living_environment",
     "economic_opportunities"
 )
+
+EDUCATION_LEVELS_RECODE = {
+    'Some secondary': 'Grade 10/11',
+    'Matric': 'Matric/matric equivalent'
+}
 
 def get_profile(geo_code, geo_level, profile_name=None):
     session = get_session()
@@ -84,10 +88,17 @@ def get_demographics_profile(geo_code, geo_level, session):
 
 
 def get_education_profile(geo_code, geo_level, session):
-    youth_completed_grade9, _ = get_stat_data(['completed grade9'], geo_level, geo_code, session, table_name='youth_age_16_to_17_gender_completed_grade9')
+    youth_completed_grade9, _ = get_stat_data(
+        ['completed grade9'], geo_level, geo_code, session,
+        table_name='youth_age_16_to_17_gender_completed_grade9')
 
-    youth_gender_completed_grade9, _ = get_stat_data(['gender', 'completed grade9'], geo_level, geo_code, session, table_name='youth_age_16_to_17_gender_completed_grade9')
-    db_model_gender_completed_grade9 = get_model_from_fields(['gender'], geo_level, table_name='youth_age_16_to_17_gender_completed_grade9')
+    youth_gender_completed_grade9, _ = get_stat_data(
+        ['gender', 'completed grade9'], geo_level, geo_code, session,
+        table_name='youth_age_16_to_17_gender_completed_grade9')
+
+    db_model_gender_completed_grade9 = get_model_from_fields(
+        ['gender'], geo_level, table_name='youth_age_16_to_17_gender_completed_grade9')
+
     gender_completed_grade9_data = OrderedDict((  # census data refers to sex as gender
             ('Female', {
                 "name": "Female",
@@ -105,11 +116,12 @@ def get_education_profile(geo_code, geo_level, session):
     youth_education_level, youth_pop_20_to_24 = get_stat_data(
         ['education level'], geo_level, geo_code, session,
         table_name='youth_age_20_to_24_gender_education_level',
+        recode=EDUCATION_LEVELS_RECODE,
         key_order=(
             'Less than Grade9',
             'Grade 9',
-            'Some secondary',
-            'Matric',
+            'Grade 10/11',
+            'Matric/matric equivalent',
             'Tertiary'))
 
     final_data  = {
@@ -120,8 +132,8 @@ def get_education_profile(geo_code, geo_level, session):
         },
         'youth_gender_completed_grade9': gender_completed_grade9_data,
         'youth_perc_matric': {
-            "name": "Of youth aged 20-24 have completed matric or matric equivalent",
-            "values": {"this": percent(youth_education_level['Matric']['numerators']['this'], youth_pop_20_to_24)},
+            "name": "Of youth aged 20-24 have completed a minimum of matric or matric equivalent",
+            "values": {"this": percent(youth_education_level['Matric/matric equivalent']['numerators']['this'], youth_pop_20_to_24)},
         },
         'youth_education_level': youth_education_level
     }
