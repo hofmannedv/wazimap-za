@@ -2,6 +2,16 @@
 
 {% block head_meta_description %}Population data and election figures from {{ geography.this.short_name}}, broken down by category: Demographics, Service delivery, Economics and Education.{% endblock %}
 
+{% block profile_header_population %}
+<span class="value">{{ demographics.youth_population_total.values.this|floatformat:"0" }}</span>
+<span class="name">Youth Population</span>
+{% endblock %}
+
+{% block profile_header_density %}
+<span class="value">{{ demographics.population_density.values.this|floatformat:"1" }}</span>
+<span class="name"> youth per square kilometre</span>
+{% endblock %}
+
 {% block profile_header_tail %}
 <div class="column-full">
     <p class="caption">
@@ -24,16 +34,19 @@
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#population" id="population">Population<i class="fa fa-link"></i></a></h2>
             <div class="column-quarter">
-                {% include 'profile/_blocks/_stat_list.html' with stat=demographics.youth_population_total stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=demographics.total_population stat_type='number' %}
             </div>
             <div class="column-quarter">
-                {% include 'profile/_blocks/_stat_list.html' with stat=demographics.youth_population_perc stat_type='percentage' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=demographics.youth_population_total stat_type='number' %}
             </div>
             <div class="column-half" id="chart-histogram-demographics-youth_population_by_year" data-stat-type="scaled-percentage" data-chart-title="Youth population by age"></div>
         </section>
         <section class="clearfix stat-row">
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=demographics.youth_population_perc stat_type='percentage' %}
+            </div>
             <div class="column-half" id="chart-histogram-demographics-youth_population_by_pop_group" data-stat-type="scaled-percentage" data-chart-title="Youth population by race"></div>
-            <div class="column-half" id="chart-pie-demographics-youth_population_by_gender" data-stat-type="percentage" data-chart-title="Youth population by gender"></div>
+            <div class="column-quarter" id="chart-pie-demographics-youth_population_by_gender" data-stat-type="percentage" data-chart-title="Youth population by gender"></div>
         </section>
     </div>
 </article>

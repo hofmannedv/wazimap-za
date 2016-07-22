@@ -49,7 +49,9 @@ def get_demographics_profile(geo_code, geo_level, session):
     youth_pop_dist_data, youth_pop_total = get_stat_data(['age in completed years'], geo_level, geo_code, session, table_name='youth_gender_age_in_completed_years')
 
     youth_gender_data, _ = get_stat_data(['gender'], geo_level, geo_code, session, table_name='youth_gender_population_group')
-    youth_pop_group_data, _ = get_stat_data(['population group'], geo_level, geo_code, session, table_name='youth_gender_population_group')
+    youth_pop_group_data, _ = get_stat_data(['population group'], geo_level, geo_code, session,
+        table_name='youth_gender_population_group',
+        key_order=('Black African', 'Coloured', 'Indian or Asian', 'White', 'Other'))
 
     final_data = {
         'total_population': {
@@ -69,11 +71,12 @@ def get_demographics_profile(geo_code, geo_level, session):
         'youth_population_by_pop_group': youth_pop_group_data
     }
 
+    # The following info is displayed in the block over the map
     geo = geo_data.get_geography(geo_code, geo_level)
     if geo.square_kms:
         final_data['population_density'] = {
-            'name': "people per square kilometre",
-            'values': {"this": pop_total / geo.square_kms}
+            'name': "youth per square kilometre",
+            'values': {"this": youth_pop_total / geo.square_kms}
         }
 
     return final_data
