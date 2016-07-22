@@ -200,7 +200,7 @@ SimpleTable(
 SimpleTable(
     id='youth_population',
     universe='Youth',
-    total_column=None,
+    total_column='total_pop',
     description='Youth population',
     dataset='Census 2011',
     year='2011'

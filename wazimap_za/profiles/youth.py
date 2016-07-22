@@ -3,6 +3,7 @@ from collections import OrderedDict
 from wazimap.data.tables import get_datatable, get_model_from_fields
 from wazimap.data.utils import get_session, merge_dicts, get_stat_data, percent, add_metadata
 from wazimap.geo import geo_data
+from wazimap.data.tables import SimpleTable
 
 
 PROFILE_SECTIONS = (
@@ -42,10 +43,11 @@ def get_profile(geo_code, geo_level, profile_name=None):
 
 
 def get_demographics_profile(geo_code, geo_level, session):
-    pop_dist_data, pop_total = get_stat_data(
-            ['population group'], geo_level, geo_code, session)
+    youth_pop_table = get_datatable('youth_population')
+    youth_pop, pop_total = youth_pop_table.get_stat_data(
+        geo_level, geo_code, total='total_pop', percent='False')
 
-    youth_pop_dist_data, youth_pop_total = get_stat_data(['age in completed years'], geo_level, geo_code, session, table_name='youth_gender_age_in_completed_years')
+    youth_pop_dist_data, _ = get_stat_data(['age in completed years'], geo_level, geo_code, session, table_name='youth_gender_age_in_completed_years')
 
     youth_gender_data, _ = get_stat_data(['gender'], geo_level, geo_code, session, table_name='youth_gender_population_group')
     youth_pop_group_data, _ = get_stat_data(['population group'], geo_level, geo_code, session,
@@ -59,11 +61,11 @@ def get_demographics_profile(geo_code, geo_level, session):
         },
         'youth_population_total': {
             "name": "Youth aged 15-24",
-            "values": {"this": youth_pop_total}
+            "values": {"this": youth_pop['youth_pop']['numerators']['this']}
         },
         'youth_population_perc': {
             "name": "Of population are youth aged 15-24",
-            "values": {"this": percent(youth_pop_total, pop_total)},
+            "values": {"this": youth_pop['youth_pop']['values']['this']},
         },
         'youth_population_by_year': youth_pop_dist_data,
         'youth_population_by_gender': youth_gender_data,

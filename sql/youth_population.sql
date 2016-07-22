@@ -25,8 +25,8 @@ SET default_with_oids = false;
 CREATE TABLE youth_population (
     geo_level character varying(16) NOT NULL,
     geo_code character varying(8) NOT NULL,
-    total_pop integer,
-    youth_pop integer
+    youth_pop integer,
+    total_pop integer
 );
 
 
@@ -34,7 +34,7 @@ CREATE TABLE youth_population (
 -- Data for Name: youth_population; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY youth_population (geo_level, geo_code, total_pop, youth_pop) FROM stdin;
+COPY youth_population (geo_level, geo_code, youth_pop, total_pop) FROM stdin;
 province	WC	1061057	5781361
 district	CPT	684631	3707354
 district	DC1	69816	389625
