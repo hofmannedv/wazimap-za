@@ -3,6 +3,9 @@
 <div class="column-quarter">
     <ul class="ul-icon-list">
         <li>
+            <i class="fa fa-envelope"></i> <a href="mailto:info@code4sa.org">Email us</a>
+        </li>
+        <li>
             <i class="fa fa-bar-chart-o"></i> <a href="http://www.statssa.gov.za/" target="_blank">Census 2011 data from Stats SA</a>
         </li>
     </ul>
@@ -10,45 +13,43 @@
 <div class="column-quarter">
     <ul class="ul-icon-list">
         <li>
-            <i class="fa fa-envelope"></i> <a href="mailto:info@code4sa.org">Email us</a>
+            Built with <a href="http://wazimap.readthedocs.io/en/latest/">Wazimap</a>
         </li>
-    </ul>
-</div>
-<div class="column-quarter">
-    <ul class="ul-icon-list">
         <li>
             <i class="fa fa-github"></i> <a href="https://github.com/Code4SA/wazimap" target="_blank">Wazimap on Github</a>
         </li>
+    </ul>
+</div>
+<div class="column-quarter">
+    <ul class="ul-icon-list">
         <li>
-            <i class="fa fa-github"></i> Built on <a href="http://censusreporter.org" target="_blank">CensusReporter.org</a>
+            <a href="https://www.capetown.gov.za/en/Pages/default.aspx"><img img class="footer-logo" src="{% static 'img/cct-logo.png' %}"></a>
+        </li>
+        <li>
+            <a href="https://www.westerncape.gov.za/"><img img class="footer-logo" src="{% static 'img/wcgov-logo.png' %}"></a>
+        </li>
+        <li>
+            <a href="http://www.povertyandinequality.uct.ac.za/"><img img class="footer-logo" src="{% static 'img/pii-logo.png' %}"></a>
         </li>
     </ul>
 </div>
 <div class="column-quarter">
     <ul class="ul-icon-list">
-        {% block footer_branding %}
-        <div class="column-half">
-            <li>
-                <a href="https://www.capetown.gov.za/en/Pages/default.aspx"><img img class="footer-logo" src="{% static 'img/cct-logo.png' %}"></a>
-            </li>
-            <li>
-                <a href="https://www.westerncape.gov.za/"><img img class="footer-logo" src="{% static 'img/wcgov-logo.png' %}"></a>
-            </li>
-            <li>
-                <a href="http://www.povertyandinequality.uct.ac.za/"><img img class="footer-logo" src="{% static 'img/pii-logo.png' %}"></a>
-            </li>
+        <li>
+            <a href="http://www.povertyandinequality.uct.ac.za/"><img img class="footer-logo"src="{% static 'img/uct-logo.png' %}"></a>
+        </li>
+        <li>
+            <a href="http://www.statssa.gov.za/?page_id=7944"><img img class="footer-logo" src="{% static 'img/statssa-logo.png' %}"></a>
+        </li>
+        <li>
+            <a href="http://www.code4sa.org/"><img class="footer-logo" src="{% static 'img/code4sa-logo-small.png' %}"></a>
+        </li>
         </div>
-        <div class="column-half">
-            <li>
-                <a href="http://www.povertyandinequality.uct.ac.za/"><img img class="footer-logo"src="{% static 'img/uct-logo.png' %}"></a>
-            </li>
-            <li>
-                <a href="http://www.statssa.gov.za/?page_id=7944"><img img class="footer-logo" src="{% static 'img/statssa-logo.png' %}"></a>
-            </li>
-            <li>
-                <a href="http://www.code4sa.org/"><img class="footer-logo" src="{% static 'img/code4sa-logo-small.png' %}"></a>
-            </li>
-        </div>
-        {% endblock %}
     </ul>
 </div>
+
+<ul class="ul-icon-list">
+    <li>
+        Wazimap is based on <a href="http://censusreporter.org" target="_blank">CensusReporter.org</a>. Wazimap was originally created in collaboration with <a href="http://www.mediamonitoringafrica.org/">Media Monitoring Africa</a>.
+    </li>
+</ul>
