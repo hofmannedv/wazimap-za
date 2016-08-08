@@ -70,6 +70,12 @@
             </div>
             <div class="column-half" id="chart-histogram-education-youth_education_level" data-stat-type="scaled-percentage" data-chart-title="Youth aged 20-24 by highest educational level"></div>
         </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#education_attendance" id="education_attendance">Educational attendance<i class="fa fa-link"></i></a></h2>
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_perc_attending stat_type='percentage' %}
+            </div>
+        </section>
     </div>
 </article>
 
