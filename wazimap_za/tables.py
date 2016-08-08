@@ -68,6 +68,7 @@ FieldTable(['gender', 'age in completed years'], id='youth_gender_age_in_complet
 FieldTable(['gender', 'population group'], id='youth_gender_population_group', universe='Youth', year='2011')
 FieldTable(['completed grade9', 'gender'], id='youth_age_16_to_17_gender_completed_grade9', universe='Youth aged 16 to 17', year='2011')
 FieldTable(['education level', 'gender'], id='youth_age_20_to_24_gender_education_level', universe='Youth aged 20 to 24', year='2011')
+FieldTable(['attendance', 'gender', 'age in completed years'], id='youth_age_incompleted_years_gender_education_attendance', universe='Youth aged 20 to 24', year='2011')
 
 # Simple Tables
 SimpleTable(
