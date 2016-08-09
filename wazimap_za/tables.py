@@ -71,6 +71,7 @@ FieldTable(['education level', 'gender'], id='youth_age_20_to_24_gender_educatio
 FieldTable(['electricity_access'], id='youth_electricity_access', universe='Youth', year='2011')
 FieldTable(['toilet_access'], id='youth_toilet_access', universe='Youth', year='2011')
 FieldTable(['water_access'], id='youth_water_access', universe='Youth', year='2011')
+FieldTable(['dwelling'], id='youth_dwelling_type', universe='Youth', year='2011')
 
 # Simple Tables
 SimpleTable(

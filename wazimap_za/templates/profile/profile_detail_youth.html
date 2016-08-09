@@ -93,9 +93,17 @@
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#basic-services" id="basic-services">Basic services<i class="fa fa-link"></i></a></h2>
             <div class="column-third" id="chart-pie-living_environment-youth_electricity_access" data-stat-type="percentage" data-chart-title="Youth in households by electricity usage"></div>
             <div class="column-third" id="chart-pie-living_environment-youth_toilet_access" data-stat-type="percentage" data-chart-title="Youth in households by type of toilet"></div>
             <div class="column-third" id="chart-pie-living_environment-youth_water_access" data-stat-type="percentage" data-chart-title="Youth in households by distance to piped water"></div>
+        </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#dwelling" id="dwelling">Type of dwelling<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_dwelling_informal stat_type='percentage' %}
+            </div>
+            <div class="column-third" id="chart-pie-living_environment-youth_dwelling_type" data-stat-type="percentage" data-chart-title="Youth in households by type of dwelling"></div>
         </section>
     </div>
 </article>

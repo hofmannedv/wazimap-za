@@ -177,10 +177,23 @@ def get_living_environment_profile(geo_code, geo_level, session):
         key_order=('On site', '< 1km', '> 1km', 'No piped water'),
         table_name='youth_water_access')
 
+    youth_dwelling_type, _ = get_stat_data(
+        ['dwelling'], geo_level, geo_code, session,
+        key_order=('Formal', 'Traditional', 'Informal not in backyard', 'Informal in backyard', 'Other'),
+        table_name='youth_dwelling_type')
+
     final_data = {
         'youth_electricity_access': youth_electricity_access,
         'youth_toilet_access': youth_toilet_access,
-        'youth_water_access': youth_water_access
+        'youth_water_access': youth_water_access,
+        'youth_dwelling_informal': {
+            "name": "Of youth live in households that are informal dwellings (shacks)",
+            "values": {"this": (
+                youth_dwelling_type['Informal not in backyard']['values']['this'] +
+                youth_dwelling_type['Informal in backyard']['values']['this']
+            )}
+        },
+        'youth_dwelling_type': youth_dwelling_type
     }
 
     return final_data
