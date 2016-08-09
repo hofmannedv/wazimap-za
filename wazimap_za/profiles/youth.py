@@ -219,17 +219,6 @@ def get_living_environment_profile(geo_code, geo_level, session):
 
 
 def get_economic_opportunities_profile(geo_code, geo_level, session):
-    table = get_datatable('youth').model
-
-    (emp_dep, neets_dep, prop_multid_poor, youth_mpi) = session.query(
-            table.c.emp_dep,
-            table.c.neets_dep,
-            table.c.prop_multid_poor,
-            table.c.youth_mpi) \
-        .filter(table.c.geo_level == geo_level) \
-        .filter(table.c.geo_code == geo_code) \
-        .one()
-
     youth_employment_status, _ = get_stat_data(
         ['employment_status'], geo_level, geo_code, session,
         table_name='youth_gender_official_employment_status')
@@ -248,25 +237,7 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
         ['household_employment'], geo_level, geo_code, session,
         table_name='youth_household_employment')
 
-    import ipdb; ipdb.set_trace()
-
     final_data = {
-        'emp_dep': {
-            "name": "Proportion of youth living in households where no working-age adults (age 18-64) are employed",
-            "values": {"this": float(emp_dep) or 0.0},
-            },
-        'neets_dep': {
-            "name": "Proportion of youth who are not in education, employment or training",
-            "values": {"this": float(neets_dep) or 0.0},
-            },
-        'prop_multid_poor': {
-            "name": "Proportion of youth who are multidimensionally poor",
-            "values": {"this": float(prop_multid_poor) or 0.0},
-            },
-        'youth_mpi': {
-            "name": "Youth Multidimensional Poverty Index score",
-            "values": {"this": float(youth_mpi) or 0.0},
-            },
         'youth_employment_status': youth_employment_status,
         'youth_neet': {
             "name": "Of youth are not in employment, education or training (NEET)",
