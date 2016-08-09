@@ -234,6 +234,12 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
         ['employment_status'], geo_level, geo_code, session,
         table_name='youth_gender_official_employment_status')
 
+    youth_emp_edu_train_status, _ = get_stat_data(
+        ['emp_edu_train'], geo_level, geo_code, session,
+        table_name='youth_gender_employment_education_training')
+
+    youth_neet_by_gender, _ = get_stat_data(['gender'], geo_level, geo_code, session,only={'emp_edu_train':'NEET'},table_name='youth_gender_employment_education_training')
+
     final_data = {
         'emp_dep': {
             "name": "Proportion of youth living in households where no working-age adults (age 18-64) are employed",
@@ -251,7 +257,14 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
             "name": "Youth Multidimensional Poverty Index score",
             "values": {"this": float(youth_mpi) or 0.0},
             },
-        'youth_employment_status': youth_employment_status
+        'youth_employment_status': youth_employment_status,
+        'youth_neet': {
+            "name": "Of youth are not in employment, education or training (NEET)",
+            "values": {"this": youth_emp_edu_train_status['NEET']['values']['this']
+            }
+        },
+        'youth_emp_edu_train_status': youth_emp_edu_train_status,
+        'youth_neet_by_gender': youth_neet_by_gender
     }
 
     return final_data
