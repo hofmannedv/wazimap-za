@@ -230,6 +230,10 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
         .filter(table.c.geo_code == geo_code) \
         .one()
 
+    youth_employment_status, _ = get_stat_data(
+        ['employment_status'], geo_level, geo_code, session,
+        table_name='youth_gender_official_employment_status')
+
     final_data = {
         'emp_dep': {
             "name": "Proportion of youth living in households where no working-age adults (age 18-64) are employed",
@@ -246,7 +250,8 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
         'youth_mpi': {
             "name": "Youth Multidimensional Poverty Index score",
             "values": {"this": float(youth_mpi) or 0.0},
-            }
+            },
+        'youth_employment_status': youth_employment_status
     }
 
     return final_data
