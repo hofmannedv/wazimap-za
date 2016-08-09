@@ -182,6 +182,10 @@ def get_living_environment_profile(geo_code, geo_level, session):
         key_order=('Formal', 'Traditional', 'Informal not in backyard', 'Informal in backyard', 'Other'),
         table_name='youth_dwelling_type')
 
+    youth_only_households, _ = get_stat_data(
+        ['youth_only'], geo_level, geo_code, session,
+        table_name='youth_youth_only_household')
+
     final_data = {
         'youth_electricity_access': youth_electricity_access,
         'youth_toilet_access': youth_toilet_access,
@@ -193,7 +197,11 @@ def get_living_environment_profile(geo_code, geo_level, session):
                 youth_dwelling_type['Informal in backyard']['values']['this']
             )}
         },
-        'youth_dwelling_type': youth_dwelling_type
+        'youth_dwelling_type': youth_dwelling_type,
+        'youth_only_households': {
+            "name": "Youth living in youth-only households",
+            "values": {"this": youth_only_households['Yes']['values']['this']}
+        }
     }
 
     return final_data

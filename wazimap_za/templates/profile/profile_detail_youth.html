@@ -105,6 +105,12 @@
             </div>
             <div class="column-third" id="chart-pie-living_environment-youth_dwelling_type" data-stat-type="percentage" data-chart-title="Youth in households by type of dwelling"></div>
         </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#youth-only-households" id="youth-only-households">Youth-only households<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_only_households stat_type='percentage' %}
+            </div>
+        </section>
     </div>
 </article>
 
