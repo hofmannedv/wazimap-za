@@ -89,38 +89,13 @@
 
 <article id="living_environment" class="clearfix">
     <header class="section-contents">
-        <h1>Living environment</h1>
+        <h1>Family and Living environment</h1>
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
-            <h2 class="header-for-columns"><a class="permalink" href="#energy" id="energy">Lighting, heating and cooking<i class="fa fa-link"></i></a></h2>
-            <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.lighting_dep stat_type='percentage' %}
-            </div>
-            <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.heating_dep stat_type='percentage' %}
-            </div>
-            <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.cooking_dep stat_type='percentage' %}
-            </div>
-        </section>
-        <section class="clearfix stat-row">
-            <h2 class="header-for-columns"><a class="permalink" href="#water" id="water">Water and sanitation<i class="fa fa-link"></i></a></h2>
-            <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.toilet_dep stat_type='percentage' %}
-            </div>
-            <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.water_dep stat_type='percentage' %}
-            </div>
-        </section>
-        <section class="clearfix stat-row">
-            <h2 class="header-for-columns"><a class="permalink" href="#households" id="households">Households<i class="fa fa-link"></i></a></h2>
-            <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.dwell_dep stat_type='percentage' %}
-            </div>
-            <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.asset_dep stat_type='percentage' %}
-            </div>
+            <div class="column-third" id="chart-pie-living_environment-youth_electricity_access" data-stat-type="percentage" data-chart-title="Youth in households by electricity usage"></div>
+            <div class="column-third" id="chart-pie-living_environment-youth_toilet_access" data-stat-type="percentage" data-chart-title="Youth in households by type of toilet"></div>
+            <div class="column-third" id="chart-pie-living_environment-youth_water_access" data-stat-type="percentage" data-chart-title="Youth in households by distance to piped water"></div>
         </section>
     </div>
 </article>
