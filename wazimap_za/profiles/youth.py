@@ -164,55 +164,23 @@ def get_health_profile(geo_code, geo_level, session):
 
 
 def get_living_environment_profile(geo_code, geo_level, session):
-    table = get_datatable('youth').model
-
-    (lighting_dep, heating_dep, cooking_dep, toilet_dep, water_dep,
-     dwell_dep, asset_dep, emp_dep, neets_dep, prop_multid_poor,
-     youth_mpi) = session.query(
-            table.c.light_dep,
-            table.c.heat_dep,
-            table.c.cook_dep,
-            table.c.toilet_dep,
-            table.c.water_dep,
-            table.c.dwell_dep,
-            table.c.asset_dep,
-            table.c.emp_dep,
-            table.c.neets_dep,
-            table.c.prop_multid_poor,
-            table.c.youth_mpi) \
-        .filter(table.c.geo_level == geo_level) \
-        .filter(table.c.geo_code == geo_code) \
-        .one()
+    youth_electricity_access, _ = get_stat_data(
+        ['electricity_access'], geo_level, geo_code, session,
+        key_order=('Have electricity for everything', 'Have electricity for some things', 'No electricity'),
+        table_name='youth_electricity_access')
+    youth_toilet_access, _ = get_stat_data(
+        ['toilet_access'], geo_level, geo_code, session,
+        key_order=('Flush toilet', 'Pit latrine-ventilated', 'Chemical toilet', 'Unventilated pit latrine/Bucket toilet', 'Other', 'No toilet facilities'),
+        table_name='youth_toilet_access')
+    youth_water_access, _ = get_stat_data(
+        ['water_access'], geo_level, geo_code, session,
+        key_order=('On site', '< 1km', '> 1km', 'No piped water'),
+        table_name='youth_water_access')
 
     final_data = {
-        'lighting_dep': {
-            "name": "Proportion of youth living in households without use of electricity, gas or solar energy for lighting",
-            "values": {"this": float(lighting_dep) or 0.0},
-            },
-        'heating_dep': {
-            "name": "Proportion of youth living in households without use of electricity, gas or solar energy for heating",
-            "values": {"this": float(heating_dep) or 0.0},
-            },
-        'cooking_dep': {
-            "name": "Proportion of youth living in households without use of electricity, gas or solar energy for cooking",
-            "values": {"this": float(cooking_dep) or 0.0},
-            },
-        'toilet_dep': {
-            "name": "Proportion of youth living in households without a flush toilet",
-            "values": {"this": float(toilet_dep) or 0.0},
-            },
-        'water_dep': {
-            "name": "Proportion of youth living in households without piped water on site",
-            "values": {"this": float(water_dep) or 0.0},
-            },
-        'dwell_dep': {
-            "name": "Proportion of youth living in households that are informal shacks/traditional dwellings/caravans/tents/other",
-            "values": {"this": float(dwell_dep) or 0.0},
-            },
-        'asset_dep': {
-            "name": 'Proportion of youth living in households that do not own more than two of the following "small" assets: radio, TV, landline, mobile phone, bike, motorbike or refrigerator AND does not own a car or truck',
-            "values": {"this": float(asset_dep) or 0.0},
-            }
+        'youth_electricity_access': youth_electricity_access,
+        'youth_toilet_access': youth_toilet_access,
+        'youth_water_access': youth_water_access
     }
 
     return final_data
