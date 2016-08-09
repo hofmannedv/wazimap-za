@@ -128,9 +128,18 @@ def get_education_profile(geo_code, geo_level, session):
         youth_education_level['Matric/matric equivalent']['numerators']['this'] +
         youth_education_level['Tertiary']['numerators']['this'])
 
-    youth_education_attendance, youth_pop = get_stat_data(
+    youth_education_attendance, _ = get_stat_data(
         ['attendance'], geo_level, geo_code, session,
         table_name='youth_age_incompleted_years_gender_education_attendance')
+
+    youth_education_attendance_by_age, _ = get_stat_data(
+        ['attendance', 'age in completed years'], geo_level, geo_code, session,
+        table_name='youth_age_incompleted_years_gender_education_attendance')
+
+    youth_education_attendance_by_gender, _ = get_stat_data(
+        ['attendance', 'gender'], geo_level, geo_code, session,
+        table_name='youth_age_incompleted_years_gender_education_attendance')
+
 
     final_data  = {
         'youth_completed_grade9': youth_completed_grade9,
@@ -147,7 +156,9 @@ def get_education_profile(geo_code, geo_level, session):
         'youth_perc_attending': {
             "name": "Of youth aged 15-24 attend an educational institution",
             "values": {"this": youth_education_attendance['Yes']['values']['this']}
-        }
+        },
+        'youth_education_attendance_by_age': youth_education_attendance_by_age['Yes'],
+        'youth_education_attendance_by_gender': youth_education_attendance_by_gender['Yes']
     }
 
     return final_data
