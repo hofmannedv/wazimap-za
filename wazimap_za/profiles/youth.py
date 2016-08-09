@@ -186,6 +186,10 @@ def get_living_environment_profile(geo_code, geo_level, session):
         ['youth_only'], geo_level, geo_code, session,
         table_name='youth_youth_only_household')
 
+    youth_household_crowded, _ = get_stat_data(
+        ['household_crowded'], geo_level, geo_code, session,
+        table_name='youth_household_crowded')
+
     final_data = {
         'youth_electricity_access': youth_electricity_access,
         'youth_toilet_access': youth_toilet_access,
@@ -201,6 +205,10 @@ def get_living_environment_profile(geo_code, geo_level, session):
         'youth_only_households': {
             "name": "Youth living in youth-only households",
             "values": {"this": youth_only_households['Yes']['values']['this']}
+        },
+        'youth_households_crowded': {
+            "name": "Youth living in overcrowded households",
+            "values": {"this": youth_only_households['Yes']['numerators']['this']}
         }
     }
 
