@@ -143,6 +143,13 @@
             <div class="column-third" id="chart-pie-economic_opportunities-youth_neet_by_gender" data-stat-type="percentage" data-chart-title="Youth not in employment, education or training by gender"></div>
         </section>
         <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#household_employment" id="household_employment">Household adult employment<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=economic_opportunities.youth_no_working_adults stat_type='percentage' %}
+            </div>
+            <div class="column-third" id="chart-pie-economic_opportunities-youth_household_employment" data-stat-type="percentage" data-chart-title="Youth in households by adult employment"></div>
+        </section>
+        <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#employment" id="employment">Employment<i class="fa fa-link"></i></a></h2>
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=economic_opportunities.emp_dep stat_type='percentage' %}

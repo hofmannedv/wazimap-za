@@ -238,7 +238,17 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
         ['emp_edu_train'], geo_level, geo_code, session,
         table_name='youth_gender_employment_education_training')
 
-    youth_neet_by_gender, _ = get_stat_data(['gender'], geo_level, geo_code, session,only={'emp_edu_train':'NEET'},table_name='youth_gender_employment_education_training')
+    # Fix: The values are based on the incorrect totals.
+    youth_neet_by_gender, _ = get_stat_data(
+        ['gender'], geo_level, geo_code, session,
+        only={'emp_edu_train':'NEET'},
+        table_name='youth_gender_employment_education_training')
+
+    youth_household_employment, _ = get_stat_data(
+        ['household_employment'], geo_level, geo_code, session,
+        table_name='youth_household_employment')
+
+    import ipdb; ipdb.set_trace()
 
     final_data = {
         'emp_dep': {
@@ -264,7 +274,12 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
             }
         },
         'youth_emp_edu_train_status': youth_emp_edu_train_status,
-        'youth_neet_by_gender': youth_neet_by_gender
+        'youth_neet_by_gender': youth_neet_by_gender,
+        'youth_no_working_adults': {
+            "name": "Of youth live in households without an employed adult",
+            "values": {"this": youth_household_employment['No employed adult']['values']['this']}
+        },
+        'youth_household_employment': youth_household_employment
     }
 
     return final_data
