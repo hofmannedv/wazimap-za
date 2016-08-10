@@ -72,7 +72,7 @@ FieldTable(['education level', 'gender'], id='youth_age_20_to_24_gender_educatio
 FieldTable(['employment status', 'gender'], id='youth_labour_force_official_gender', universe='Youth in the labour force - Official definition', description='Employment status of youth in the labour force', year='2011')
 FieldTable(['employment status', 'gender'], id='youth_labour_force_expanded_gender', universe='Youth in the labour force - Expanded definition', description='Employment status of youth in the labour force', year='2011')
 FieldTable(['employment status', 'gender'], id='youth_employment_status_gender', universe='Youth', year='2011')
-FieldTable(['gender', 'emp_edu_train'], id='youth_gender_employment_education_training', universe='Youth', year='2011')
+FieldTable(['employment education training', 'gender'], id='youth_employment_education_training_gender', universe='Youth', year='2011')
 FieldTable(['household_employment'], id='youth_household_employment', universe='Youth', year='2011')
 
 # Simple Tables
