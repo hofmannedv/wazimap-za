@@ -122,6 +122,17 @@
                 {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_households_crowded stat_type='number' %}
             </div>
         </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#income-poverty" id="income-poverty">Income poverty<i class="fa fa-link"></i></a></h2>
+            <aside>
+                <p>Stats SA’s 2015 upper-bound poverty line of R779 per person per month in 2011 prices is used to define income poverty</p>
+            </aside>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_income_poor stat_type='percentage' %}
+            </div>
+            <div class="column-third" id="chart-pie-living_environment-youth_income_poverty_by_pop_group" data-stat-type="percentage" data-chart-title="Youth in income-poor households by race"></div>
+            <div class="column-third" id="chart-pie-living_environment-youth_income_poverty_by_gender" data-stat-type="percentage" data-chart-title="Youth in income-poor households by gender"></div>
+        </section>
     </div>
 </article>
 
