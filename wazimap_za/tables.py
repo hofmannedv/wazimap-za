@@ -213,3 +213,12 @@ SimpleTable(
     dataset='Census 2011',
     year='2011'
 )
+
+SimpleTable(
+    id='youth_mpi_score',
+    universe='Youth',
+    total_column=None,
+    description='Youth MPI score',
+    dataset='',
+    year=''
+)

@@ -215,6 +215,11 @@ def get_living_environment_profile(geo_code, geo_level, session):
         ['multidimensionally poor', 'gender'], geo_level, geo_code, session,
         table_name='youth_multidimensionally_poor')
 
+    # Fix: Cicular refrence when passing this to the template
+    youth_mpi_table = get_datatable('youth_mpi_score')
+    youth_mpi_score, _ = youth_mpi_table.get_stat_data(
+        geo_level, geo_code, percent=False)
+
     final_data = {
         'youth_electricity_access': youth_electricity_access,
         'youth_toilet_access': youth_toilet_access,
