@@ -68,7 +68,10 @@ FieldTable(['gender', 'age in completed years'], id='youth_gender_age_in_complet
 FieldTable(['gender', 'population group'], id='youth_gender_population_group', universe='Youth', year='2011')
 FieldTable(['completed grade9', 'gender'], id='youth_age_16_to_17_gender_completed_grade9', universe='Youth aged 16 to 17', year='2011')
 FieldTable(['education level', 'gender'], id='youth_age_20_to_24_gender_education_level', universe='Youth aged 20 to 24', year='2011')
-FieldTable(['gender', 'employment_status'], id='youth_gender_official_employment_status', universe='Youth', year='2011')
+
+FieldTable(['employment status', 'gender'], id='youth_labour_force_official_gender', universe='Youth in the labour force - Official definition', description='Employment status of youth in the labour force', year='2011')
+FieldTable(['employment status', 'gender'], id='youth_labour_force_expanded_gender', universe='Youth in the labour force - Expanded definition', description='Employment status of youth in the labour force', year='2011')
+FieldTable(['employment status', 'gender'], id='youth_employment_status_gender', universe='Youth', year='2011')
 FieldTable(['gender', 'emp_edu_train'], id='youth_gender_employment_education_training', universe='Youth', year='2011')
 FieldTable(['household_employment'], id='youth_household_employment', universe='Youth', year='2011')
 
