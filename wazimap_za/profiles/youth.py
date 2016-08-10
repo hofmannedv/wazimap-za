@@ -249,6 +249,14 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
     final_data = {
         'youth_labour_force_official': youth_labour_force_official,
         'youth_labour_force_expanded': youth_labour_force_expanded,
+        'youth_unemployed_official': {
+            "name": "Youth unemployment rate by official definition",
+            "values" : {"this": youth_labour_force_official['Unemployed']['values']['this']}
+        },
+        'youth_unemployed_expanded': {
+            "name": "Youth unemployment rate by expanded definition",
+            "values" : {"this": youth_labour_force_expanded['Unemployed']['values']['this']}
+        },
         'youth_employment_status': youth_employment_status,
         'youth_neet': {
             "name": "Of youth are not in employment, education or training (NEET)",
