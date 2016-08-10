@@ -200,8 +200,20 @@ def get_living_environment_profile(geo_code, geo_level, session):
         table_name='youth_income_poverty')
 
     youth_income_poverty_by_gender, _ = get_stat_data(
-        ['income poverty', 'population group'], geo_level, geo_code, session,
+        ['income poverty', 'gender'], geo_level, geo_code, session,
         table_name='youth_income_poverty')
+
+    youth_multid_poor, _ = get_stat_data(
+        ['multidimensionally poor'], geo_level, geo_code, session,
+        table_name='youth_multidimensionally_poor')
+
+    youth_multid_poor_by_pop_group, _ = get_stat_data(
+        ['multidimensionally poor', 'population group'], geo_level, geo_code, session,
+        table_name='youth_multidimensionally_poor')
+
+    youth_multid_poor_by_gender, _ = get_stat_data(
+        ['multidimensionally poor', 'gender'], geo_level, geo_code, session,
+        table_name='youth_multidimensionally_poor')
 
     final_data = {
         'youth_electricity_access': youth_electricity_access,
@@ -229,6 +241,12 @@ def get_living_environment_profile(geo_code, geo_level, session):
         },
         'youth_income_poverty_by_pop_group': youth_income_poverty_by_pop_group['Poor'],
         'youth_income_poverty_by_gender': youth_income_poverty_by_gender['Poor'],
+        'youth_multid_poor': {
+            "name": "Of youth are multidimensionally poor",
+            "values": {"this": youth_multid_poor['Yes']['values']['this']}
+        },
+        'youth_multid_poor_by_pop_group': youth_multid_poor_by_pop_group['Yes'],
+        'youth_multid_poor_by_gender': youth_multid_poor_by_gender['Yes']
     }
 
     return final_data

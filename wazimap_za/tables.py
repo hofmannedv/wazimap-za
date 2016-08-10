@@ -75,6 +75,7 @@ FieldTable(['dwelling'], id='youth_dwelling_type', universe='Youth', year='2011'
 FieldTable(['youth_only'], id='youth_youth_only_household', universe='Youth', year='2011')
 FieldTable(['household_crowded'], id='youth_household_crowded', universe='Youth', year='2011')
 FieldTable(['gender', 'population group', 'income poverty'], id='youth_income_poverty', universe='Youth', year='2011')
+FieldTable(['gender', 'population group', 'multidimensionally poor'], id='youth_multidimensionally_poor', universe='Youth', year='2011')
 
 # Simple Tables
 SimpleTable(

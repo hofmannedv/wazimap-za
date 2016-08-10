@@ -133,6 +133,14 @@
             <div class="column-third" id="chart-pie-living_environment-youth_income_poverty_by_pop_group" data-stat-type="percentage" data-chart-title="Youth in income-poor households by race"></div>
             <div class="column-third" id="chart-pie-living_environment-youth_income_poverty_by_gender" data-stat-type="percentage" data-chart-title="Youth in income-poor households by gender"></div>
         </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#multid-poor" id="multid-poor">Multidimensionally poor<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_multid_poor stat_type='percentage' %}
+            </div>
+            <div class="column-third" id="chart-pie-living_environment-youth_multid_poor_by_pop_group" data-stat-type="percentage" data-chart-title="Multidimensionally poor youth by race"></div>
+            <div class="column-third" id="chart-pie-living_environment-youth_multid_poor_by_gender" data-stat-type="percentage" data-chart-title="Multidimensionally poor youth by gender"></div>
+        </section>
     </div>
 </article>
 
