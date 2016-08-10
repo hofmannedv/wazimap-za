@@ -219,9 +219,18 @@ def get_living_environment_profile(geo_code, geo_level, session):
 
 
 def get_economic_opportunities_profile(geo_code, geo_level, session):
+    youth_labour_force_official, _ = get_stat_data(
+        ['employment status'], geo_level, geo_code, session,
+        table_name='youth_labour_force_official_gender')
+
+    youth_labour_force_expanded, _ = get_stat_data(
+        ['employment status'], geo_level, geo_code, session,
+        table_name='youth_labour_force_expanded_gender')
+
     youth_employment_status, _ = get_stat_data(
-        ['employment_status'], geo_level, geo_code, session,
-        table_name='youth_gender_official_employment_status')
+        ['employment status'], geo_level, geo_code, session,
+        key_order=('Employed', 'Unemployed', 'Discouraged work-seeker', 'Other not economically active'),
+        table_name='youth_employment_status_gender')
 
     youth_emp_edu_train_status, _ = get_stat_data(
         ['emp_edu_train'], geo_level, geo_code, session,
@@ -238,6 +247,8 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
         table_name='youth_household_employment')
 
     final_data = {
+        'youth_labour_force_official': youth_labour_force_official,
+        'youth_labour_force_expanded': youth_labour_force_expanded,
         'youth_employment_status': youth_employment_status,
         'youth_neet': {
             "name": "Of youth are not in employment, education or training (NEET)",
