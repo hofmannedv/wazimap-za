@@ -26,7 +26,7 @@ SET default_with_oids = false;
 CREATE TABLE youth_household_employment (
     geo_level character varying(15) NOT NULL,
     geo_code character varying(10) NOT NULL,
-    household_employment character varying(128) NOT NULL,
+    "household employment" character varying(128) NOT NULL,
     total integer NOT NULL
 );
 
@@ -35,7 +35,7 @@ CREATE TABLE youth_household_employment (
 -- Data for Name: youth_household_employment; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY youth_household_employment (geo_level, geo_code, household_employment, total) FROM stdin;
+COPY youth_household_employment (geo_level, geo_code, "household employment", total) FROM stdin;
 province	WC	No employed adult	207907
 province	WC	At least one employed adult	805276
 district	CPT	No employed adult	141772
@@ -882,7 +882,7 @@ ward	19100111	At least one employed adult	5585
 --
 
 ALTER TABLE ONLY youth_household_employment
-    ADD CONSTRAINT youth_household_employment_pkey PRIMARY KEY (geo_level, geo_code, household_employment);
+    ADD CONSTRAINT youth_household_employment_pkey PRIMARY KEY (geo_level, geo_code, "household employment");
 
 
 --

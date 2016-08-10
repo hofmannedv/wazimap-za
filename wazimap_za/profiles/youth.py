@@ -233,17 +233,17 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
         table_name='youth_employment_status_gender')
 
     youth_emp_edu_train_status, _ = get_stat_data(
-        ['emp_edu_train'], geo_level, geo_code, session,
-        table_name='youth_gender_employment_education_training')
+        ['employment education training'], geo_level, geo_code, session,
+        table_name='youth_employment_education_training_gender')
 
     # Fix: The values are based on the incorrect totals.
     youth_neet_by_gender, _ = get_stat_data(
         ['gender'], geo_level, geo_code, session,
-        only={'emp_edu_train':'NEET'},
-        table_name='youth_gender_employment_education_training')
+        only={'employment education training':'NEET'},
+        table_name='youth_employment_education_training_gender')
 
     youth_household_employment, _ = get_stat_data(
-        ['household_employment'], geo_level, geo_code, session,
+        ['household employment'], geo_level, geo_code, session,
         table_name='youth_household_employment')
 
     final_data = {
