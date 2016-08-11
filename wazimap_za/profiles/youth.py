@@ -300,6 +300,20 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
         ['employment status'], geo_level, geo_code, session,
         table_name='youth_labour_force_expanded_gender')
 
+    youth_unemployment_by_definition = OrderedDict((
+        ('Official', {
+            "name": "Official",
+            "values": {"this": youth_labour_force_official['Unemployed']['values']['this']},
+            "numerators": {"this": youth_labour_force_official['Unemployed']['numerators']['this']}
+        }),
+        ('Expanded', {
+            "name": "Expanded",
+            "values": {"this": youth_labour_force_expanded['Unemployed']['values']['this']},
+            "numerators":{"this": youth_labour_force_expanded['Unemployed']['numerators']['this']}
+        })
+    ))
+    youth_unemployment_by_definition['metadata'] = youth_labour_force_official['metadata']
+
     youth_employment_status, _ = get_stat_data(
         ['employment status'], geo_level, geo_code, session,
         key_order=('Employed', 'Unemployed', 'Discouraged work-seeker', 'Other not economically active'),
@@ -335,16 +349,7 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
         table_name='youth_household_employment')
 
     final_data = {
-        'youth_labour_force_official': youth_labour_force_official,
-        'youth_labour_force_expanded': youth_labour_force_expanded,
-        'youth_unemployed_official': {
-            "name": "Youth unemployment rate by official definition",
-            "values" : {"this": youth_labour_force_official['Unemployed']['values']['this']}
-        },
-        'youth_unemployed_expanded': {
-            "name": "Youth unemployment rate by expanded definition",
-            "values" : {"this": youth_labour_force_expanded['Unemployed']['values']['this']}
-        },
+        'youth_unemplpoyed_by_definition': youth_unemployment_by_definition,
         'youth_employment_status': youth_employment_status,
         'youth_neet': {
             "name": "Of youth are not in employment, education or training (NEET)",
