@@ -186,89 +186,176 @@ def get_health_profile(geo_code, geo_level, session):
 
 
 def get_living_environment_profile(geo_code, geo_level, session):
-    table = get_datatable('youth').model
+    youth_electricity_access, _ = get_stat_data(
+        ['electricity access'], geo_level, geo_code, session,
+        key_order=('Have electricity for everything', 'Have electricity for some things', 'No electricity'),
+        table_name='youth_electricity_access')
+    youth_toilet_access, _ = get_stat_data(
+        ['toilet access'], geo_level, geo_code, session,
+        key_order=('Flush toilet', 'Pit latrine-ventilated', 'Chemical toilet', 'Unventilated pit latrine/Bucket toilet', 'Other', 'No toilet facilities'),
+        table_name='youth_toilet_access')
+    youth_water_access, _ = get_stat_data(
+        ['water access'], geo_level, geo_code, session,
+        key_order=('On site', '< 1km', '> 1km', 'No piped water'),
+        table_name='youth_water_access')
 
-    (lighting_dep, heating_dep, cooking_dep, toilet_dep, water_dep,
-     dwell_dep, asset_dep, emp_dep, neets_dep, prop_multid_poor,
-     youth_mpi) = session.query(
-            table.c.light_dep,
-            table.c.heat_dep,
-            table.c.cook_dep,
-            table.c.toilet_dep,
-            table.c.water_dep,
-            table.c.dwell_dep,
-            table.c.asset_dep,
-            table.c.emp_dep,
-            table.c.neets_dep,
-            table.c.prop_multid_poor,
-            table.c.youth_mpi) \
-        .filter(table.c.geo_level == geo_level) \
-        .filter(table.c.geo_code == geo_code) \
-        .one()
+    youth_dwelling_type, _ = get_stat_data(
+        ['dwelling type'], geo_level, geo_code, session,
+        key_order=('Formal', 'Traditional', 'Informal not in backyard', 'Informal in backyard', 'Other'),
+        table_name='youth_dwelling_type')
+
+    youth_only_households, _ = get_stat_data(
+        ['youth only household'], geo_level, geo_code, session,
+        table_name='youth_youth_only_household')
+
+    youth_household_crowded, _ = get_stat_data(
+        ['household crowded'], geo_level, geo_code, session,
+        table_name='youth_household_crowded')
+
+    youth_income_poverty, _ = get_stat_data(
+        ['income poverty'], geo_level, geo_code, session,
+        table_name='youth_income_poverty_gender_population_group')
+
+    youth_income_poverty_by_pop_group, _ = get_stat_data(
+        ['income poverty', 'population group'], geo_level, geo_code, session,
+        key_order={'population group': ('Black African', 'Coloured', 'Indian or Asian', 'White', 'Other')},
+        table_name='youth_income_poverty_gender_population_group')
+    get_stat_data(['income poverty', 'population group'], geo_level, geo_code, session,table_name='youth_income_poverty_gender_population_group',
+        only={'income poverty': ('Poor')})
+    youth_income_poor_by_pop_group = youth_income_poverty_by_pop_group['Poor']
+    youth_income_poor_by_pop_group['metadata'] = youth_income_poverty_by_pop_group['metadata']
+
+    youth_income_poverty_by_gender, _ = get_stat_data(
+        ['income poverty', 'gender'], geo_level, geo_code, session,
+        table_name='youth_income_poverty_gender_population_group')
+    youth_income_poor_by_gender = youth_income_poverty_by_gender['Poor']
+    youth_income_poor_by_gender['metadata'] = youth_income_poverty_by_gender['metadata']
+
+    youth_multid_poor, _ = get_stat_data(
+        ['multidimensionally poor'], geo_level, geo_code, session,
+        table_name='youth_multidimensionally_poor_gender_population_group')
+
+    youth_multid_poverty_by_pop_group, _ = get_stat_data(
+        ['multidimensionally poor', 'population group'], geo_level, geo_code, session,
+        table_name='youth_multidimensionally_poor_gender_population_group')
+    youth_multid_poor_by_pop_group = youth_multid_poverty_by_pop_group['Yes']
+    youth_multid_poor_by_pop_group['metadata'] = youth_multid_poverty_by_pop_group['metadata']
+
+    youth_multid_poverty_by_gender, _ = get_stat_data(
+        ['multidimensionally poor', 'gender'], geo_level, geo_code, session,
+        table_name='youth_multidimensionally_poor_gender_population_group')
+    youth_multid_poor_by_gender = youth_multid_poverty_by_gender['Yes']
+    youth_multid_poor_by_gender['metadata'] = youth_multid_poverty_by_gender['metadata']
+
+    # Fix: Circular reference when passing this to the template
+    youth_mpi_table = get_datatable('youth_mpi_score')
+    youth_mpi_score, _ = youth_mpi_table.get_stat_data(
+        geo_level, geo_code, percent=False)
 
     final_data = {
-        'lighting_dep': {
-            "name": "Proportion of youth living in households without use of electricity, gas or solar energy for lighting",
-            "values": {"this": float(lighting_dep) or 0.0},
-            },
-        'heating_dep': {
-            "name": "Proportion of youth living in households without use of electricity, gas or solar energy for heating",
-            "values": {"this": float(heating_dep) or 0.0},
-            },
-        'cooking_dep': {
-            "name": "Proportion of youth living in households without use of electricity, gas or solar energy for cooking",
-            "values": {"this": float(cooking_dep) or 0.0},
-            },
-        'toilet_dep': {
-            "name": "Proportion of youth living in households without a flush toilet",
-            "values": {"this": float(toilet_dep) or 0.0},
-            },
-        'water_dep': {
-            "name": "Proportion of youth living in households without piped water on site",
-            "values": {"this": float(water_dep) or 0.0},
-            },
-        'dwell_dep': {
-            "name": "Proportion of youth living in households that are informal shacks/traditional dwellings/caravans/tents/other",
-            "values": {"this": float(dwell_dep) or 0.0},
-            },
-        'asset_dep': {
-            "name": 'Proportion of youth living in households that do not own more than two of the following "small" assets: radio, TV, landline, mobile phone, bike, motorbike or refrigerator AND does not own a car or truck',
-            "values": {"this": float(asset_dep) or 0.0},
-            }
+        'youth_electricity_access': youth_electricity_access,
+        'youth_toilet_access': youth_toilet_access,
+        'youth_water_access': youth_water_access,
+        'youth_dwelling_informal': {
+            "name": "Of youth live in households that are informal dwellings (shacks)",
+            "values": {"this": (
+                youth_dwelling_type['Informal not in backyard']['values']['this'] +
+                youth_dwelling_type['Informal in backyard']['values']['this']
+            )}
+        },
+        'youth_dwelling_type': youth_dwelling_type,
+        'youth_only_households': {
+            "name": "Youth living in youth-only households",
+            "values": {"this": youth_only_households['Yes']['values']['this']}
+        },
+        'youth_households_crowded': {
+            "name": "Youth living in overcrowded households",
+            "values": {"this": youth_only_households['Yes']['numerators']['this']}
+        },
+        'youth_income_poor': {
+            "name": "Of youth live in income-poor households",
+            "values": {"this": youth_income_poverty['Poor']['values']['this']}
+        },
+        'youth_income_poor_by_pop_group': youth_income_poor_by_pop_group,
+        'youth_income_poor_by_gender': youth_income_poor_by_gender,
+        'youth_multid_poor': {
+            "name": "Of youth are multidimensionally poor",
+            "values": {"this": youth_multid_poor['Yes']['values']['this']}
+        },
+        'youth_multid_poor_by_pop_group': youth_multid_poor_by_pop_group,
+        'youth_multid_poor_by_gender': youth_multid_poor_by_gender
     }
 
     return final_data
 
 
 def get_economic_opportunities_profile(geo_code, geo_level, session):
-    table = get_datatable('youth').model
+    youth_labour_force_official, _ = get_stat_data(
+        ['employment status'], geo_level, geo_code, session,
+        table_name='youth_labour_force_official_gender')
 
-    (emp_dep, neets_dep, prop_multid_poor, youth_mpi) = session.query(
-            table.c.emp_dep,
-            table.c.neets_dep,
-            table.c.prop_multid_poor,
-            table.c.youth_mpi) \
-        .filter(table.c.geo_level == geo_level) \
-        .filter(table.c.geo_code == geo_code) \
-        .one()
+    youth_labour_force_expanded, _ = get_stat_data(
+        ['employment status'], geo_level, geo_code, session,
+        table_name='youth_labour_force_expanded_gender')
+
+    youth_employment_status, _ = get_stat_data(
+        ['employment status'], geo_level, geo_code, session,
+        key_order=('Employed', 'Unemployed', 'Discouraged work-seeker', 'Other not economically active'),
+        table_name='youth_employment_status_gender')
+
+    youth_emp_edu_train_status, _ = get_stat_data(
+        ['employment education training'], geo_level, geo_code, session,
+        table_name='youth_employment_education_training_gender')
+
+    youth_emp_edu_train_by_gender, _ = get_stat_data(
+        ['gender', 'employment education training'], geo_level, geo_code, session,
+        table_name='youth_employment_education_training_gender')
+
+    # Hack to structure data and add the metadata
+    youth_neet_by_gender = OrderedDict((  # census data refers to sex as gender
+        ('Female', {
+            "name": "Female",
+            "values": {"this": youth_emp_edu_train_by_gender['Female']['NEET']['values']['this']},
+            "numerators": {"this": youth_emp_edu_train_by_gender['Female']['NEET']['numerators']['this']},
+        }),
+        ('Male', {
+            "name": "Male",
+            "values": {"this": youth_emp_edu_train_by_gender['Male']['NEET']['values']['this']},
+            "numerators": {"this": youth_emp_edu_train_by_gender['Male']['NEET']['numerators']['this']},
+        }),
+    ))
+    youth_neet_by_gender['metadata'] = youth_emp_edu_train_by_gender['metadata']
+
+    youth_emp_edu_train, _ = get_stat_data(['employment education training'], geo_level, geo_code, session,table_name='youth_employment_education_training_gender')
+
+    youth_household_employment, _ = get_stat_data(
+        ['household employment'], geo_level, geo_code, session,
+        table_name='youth_household_employment')
 
     final_data = {
-        'emp_dep': {
-            "name": "Proportion of youth living in households where no working-age adults (age 18-64) are employed",
-            "values": {"this": float(emp_dep) or 0.0},
-            },
-        'neets_dep': {
-            "name": "Proportion of youth who are not in education, employment or training",
-            "values": {"this": float(neets_dep) or 0.0},
-            },
-        'prop_multid_poor': {
-            "name": "Proportion of youth who are multidimensionally poor",
-            "values": {"this": float(prop_multid_poor) or 0.0},
-            },
-        'youth_mpi': {
-            "name": "Youth Multidimensional Poverty Index score",
-            "values": {"this": float(youth_mpi) or 0.0},
+        'youth_labour_force_official': youth_labour_force_official,
+        'youth_labour_force_expanded': youth_labour_force_expanded,
+        'youth_unemployed_official': {
+            "name": "Youth unemployment rate by official definition",
+            "values" : {"this": youth_labour_force_official['Unemployed']['values']['this']}
+        },
+        'youth_unemployed_expanded': {
+            "name": "Youth unemployment rate by expanded definition",
+            "values" : {"this": youth_labour_force_expanded['Unemployed']['values']['this']}
+        },
+        'youth_employment_status': youth_employment_status,
+        'youth_neet': {
+            "name": "Of youth are not in employment, education or training (NEET)",
+            "values": {"this": youth_emp_edu_train_status['NEET']['values']['this']
             }
+        },
+        'youth_emp_edu_train_status': youth_emp_edu_train_status,
+        'youth_neet_by_gender': youth_neet_by_gender,
+        'youth_no_working_adults': {
+            "name": "Of youth live in households without an employed adult",
+            "values": {"this": youth_household_employment['No employed adult']['values']['this']}
+        },
+        'youth_household_employment': youth_household_employment
     }
 
     return final_data
