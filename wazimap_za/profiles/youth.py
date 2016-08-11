@@ -15,7 +15,8 @@ PROFILE_SECTIONS = (
 
 EDUCATION_LEVELS_RECODE = {
     'Some secondary': 'Grade 10/11',
-    'Matric': 'Matric/matric equivalent'
+    'Matric': 'Matric/matric equivalent',
+    'Tertiary': 'Any tertiary'
 }
 
 def get_profile(geo_code, geo_level, profile_name=None):
@@ -122,11 +123,11 @@ def get_education_profile(geo_code, geo_level, session):
             'Grade 9',
             'Grade 10/11',
             'Matric/matric equivalent',
-            'Tertiary'))
+            'Any tertiary'))
 
     matric_or_equiv = (
         youth_education_level['Matric/matric equivalent']['numerators']['this'] +
-        youth_education_level['Tertiary']['numerators']['this'])
+        youth_education_level['Any tertiary']['numerators']['this'])
 
     youth_education_attendance, _ = get_stat_data(
         ['attendance'], geo_level, geo_code, session,
@@ -147,12 +148,12 @@ def get_education_profile(geo_code, geo_level, session):
     final_data  = {
         'youth_completed_grade9': youth_completed_grade9,
         'youth_perc_completed_grade9': {
-            "name": "Of youth aged 16-17 have completed grade 9",
+            "name": "Of youth aged 16-17 have completed grade 9 or higher",
             "values": {"this": youth_completed_grade9['Yes']['values']['this']},
         },
         'youth_gender_completed_grade9': gender_completed_grade9_data,
         'youth_perc_matric': {
-            "name": "Of youth aged 20-24 have completed a minimum of matric or matric equivalent",
+            "name": "Of youth aged 20-24 have completed matric/matric equivalent or higher",
             "values": {"this": percent(matric_or_equiv, youth_pop_20_to_24)},
         },
         'youth_education_level': youth_education_level,
