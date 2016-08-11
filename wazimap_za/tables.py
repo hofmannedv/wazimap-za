@@ -77,6 +77,12 @@ FieldTable(['household crowded'], id='youth_household_crowded', universe='Youth 
 FieldTable(['income poverty', 'gender', 'population group'], id='youth_income_poverty_gender_population_group', universe='Youth', year='2011')
 FieldTable(['multidimensionally poor', 'gender', 'population group',], id='youth_multidimensionally_poor_gender_population_group', universe='Youth', year='2011')
 
+FieldTable(['employment status', 'gender'], id='youth_labour_force_official_gender', universe='Youth in the labour force - Official definition', description='Employment status of youth in the labour force', year='2011')
+FieldTable(['employment status', 'gender'], id='youth_labour_force_expanded_gender', universe='Youth in the labour force - Expanded definition', description='Employment status of youth in the labour force', year='2011')
+FieldTable(['employment status', 'gender'], id='youth_employment_status_gender', universe='Youth', year='2011')
+FieldTable(['employment education training', 'gender'], id='youth_employment_education_training_gender', universe='Youth', year='2011')
+FieldTable(['household employment'], id='youth_household_employment', description='Youth in households by adult employment', year='2011')
+
 # Simple Tables
 SimpleTable(
     id='population',

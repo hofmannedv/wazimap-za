@@ -268,34 +268,72 @@ def get_living_environment_profile(geo_code, geo_level, session):
 
 
 def get_economic_opportunities_profile(geo_code, geo_level, session):
-    table = get_datatable('youth').model
+    youth_labour_force_official, _ = get_stat_data(
+        ['employment status'], geo_level, geo_code, session,
+        table_name='youth_labour_force_official_gender')
 
-    (emp_dep, neets_dep, prop_multid_poor, youth_mpi) = session.query(
-            table.c.emp_dep,
-            table.c.neets_dep,
-            table.c.prop_multid_poor,
-            table.c.youth_mpi) \
-        .filter(table.c.geo_level == geo_level) \
-        .filter(table.c.geo_code == geo_code) \
-        .one()
+    youth_labour_force_expanded, _ = get_stat_data(
+        ['employment status'], geo_level, geo_code, session,
+        table_name='youth_labour_force_expanded_gender')
+
+    youth_employment_status, _ = get_stat_data(
+        ['employment status'], geo_level, geo_code, session,
+        key_order=('Employed', 'Unemployed', 'Discouraged work-seeker', 'Other not economically active'),
+        table_name='youth_employment_status_gender')
+
+    youth_emp_edu_train_status, _ = get_stat_data(
+        ['employment education training'], geo_level, geo_code, session,
+        table_name='youth_employment_education_training_gender')
+
+    youth_emp_edu_train_by_gender, _ = get_stat_data(
+        ['gender', 'employment education training'], geo_level, geo_code, session,
+        table_name='youth_employment_education_training_gender')
+
+    # Hack to structure data and add the metadata
+    youth_neet_by_gender = OrderedDict((  # census data refers to sex as gender
+        ('Female', {
+            "name": "Female",
+            "values": {"this": youth_emp_edu_train_by_gender['Female']['NEET']['values']['this']},
+            "numerators": {"this": youth_emp_edu_train_by_gender['Female']['NEET']['numerators']['this']},
+        }),
+        ('Male', {
+            "name": "Male",
+            "values": {"this": youth_emp_edu_train_by_gender['Male']['NEET']['values']['this']},
+            "numerators": {"this": youth_emp_edu_train_by_gender['Male']['NEET']['numerators']['this']},
+        }),
+    ))
+    youth_neet_by_gender['metadata'] = youth_emp_edu_train_by_gender['metadata']
+
+    youth_emp_edu_train, _ = get_stat_data(['employment education training'], geo_level, geo_code, session,table_name='youth_employment_education_training_gender')
+
+    youth_household_employment, _ = get_stat_data(
+        ['household employment'], geo_level, geo_code, session,
+        table_name='youth_household_employment')
 
     final_data = {
-        'emp_dep': {
-            "name": "Proportion of youth living in households where no working-age adults (age 18-64) are employed",
-            "values": {"this": float(emp_dep) or 0.0},
-            },
-        'neets_dep': {
-            "name": "Proportion of youth who are not in education, employment or training",
-            "values": {"this": float(neets_dep) or 0.0},
-            },
-        'prop_multid_poor': {
-            "name": "Proportion of youth who are multidimensionally poor",
-            "values": {"this": float(prop_multid_poor) or 0.0},
-            },
-        'youth_mpi': {
-            "name": "Youth Multidimensional Poverty Index score",
-            "values": {"this": float(youth_mpi) or 0.0},
+        'youth_labour_force_official': youth_labour_force_official,
+        'youth_labour_force_expanded': youth_labour_force_expanded,
+        'youth_unemployed_official': {
+            "name": "Youth unemployment rate by official definition",
+            "values" : {"this": youth_labour_force_official['Unemployed']['values']['this']}
+        },
+        'youth_unemployed_expanded': {
+            "name": "Youth unemployment rate by expanded definition",
+            "values" : {"this": youth_labour_force_expanded['Unemployed']['values']['this']}
+        },
+        'youth_employment_status': youth_employment_status,
+        'youth_neet': {
+            "name": "Of youth are not in employment, education or training (NEET)",
+            "values": {"this": youth_emp_edu_train_status['NEET']['values']['this']
             }
+        },
+        'youth_emp_edu_train_status': youth_emp_edu_train_status,
+        'youth_neet_by_gender': youth_neet_by_gender,
+        'youth_no_working_adults': {
+            "name": "Of youth live in households without an employed adult",
+            "values": {"this": youth_household_employment['No employed adult']['values']['this']}
+        },
+        'youth_household_employment': youth_household_employment
     }
 
     return final_data
