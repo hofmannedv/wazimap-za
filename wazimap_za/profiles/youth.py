@@ -236,11 +236,26 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
         ['employment education training'], geo_level, geo_code, session,
         table_name='youth_employment_education_training_gender')
 
-    # Fix: The values are based on the incorrect totals.
-    youth_neet_by_gender, _ = get_stat_data(
-        ['gender'], geo_level, geo_code, session,
-        only={'employment education training':'NEET'},
+    youth_emp_edu_train_by_gender, _ = get_stat_data(
+        ['gender', 'employment education training'], geo_level, geo_code, session,
         table_name='youth_employment_education_training_gender')
+
+    # Hack to structure data and add the metadata
+    youth_neet_by_gender = OrderedDict((  # census data refers to sex as gender
+        ('Female', {
+            "name": "Female",
+            "values": {"this": youth_emp_edu_train_by_gender['Female']['NEET']['values']['this']},
+            "numerators": {"this": youth_emp_edu_train_by_gender['Female']['NEET']['numerators']['this']},
+        }),
+        ('Male', {
+            "name": "Male",
+            "values": {"this": youth_emp_edu_train_by_gender['Male']['NEET']['values']['this']},
+            "numerators": {"this": youth_emp_edu_train_by_gender['Male']['NEET']['numerators']['this']},
+        }),
+    ))
+    youth_neet_by_gender['metadata'] = youth_emp_edu_train_by_gender['metadata']
+
+    youth_emp_edu_train, _ = get_stat_data(['employment education training'], geo_level, geo_code, session,table_name='youth_employment_education_training_gender')
 
     youth_household_employment, _ = get_stat_data(
         ['household employment'], geo_level, geo_code, session,
