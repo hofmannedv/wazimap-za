@@ -26,7 +26,7 @@ SET default_with_oids = false;
 CREATE TABLE youth_electricity_access (
     geo_level character varying(15) NOT NULL,
     geo_code character varying(10) NOT NULL,
-    electricity_access character varying(128) NOT NULL,
+    "electricity access" character varying(128) NOT NULL,
     total integer NOT NULL
 );
 
@@ -35,7 +35,7 @@ CREATE TABLE youth_electricity_access (
 -- Data for Name: youth_electricity_access; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY youth_electricity_access (geo_level, geo_code, electricity_access, total) FROM stdin;
+COPY youth_electricity_access (geo_level, geo_code, "electricity access", total) FROM stdin;
 province	WC	Have electricity for everything	643489
 province	WC	Have electricity for some things	362341
 province	WC	No electricity	55227
@@ -1298,7 +1298,7 @@ ward	19100111	No electricity	729
 --
 
 ALTER TABLE ONLY youth_electricity_access
-    ADD CONSTRAINT youth_electricity_access_pkey PRIMARY KEY (geo_level, geo_code, electricity_access);
+    ADD CONSTRAINT youth_electricity_access_pkey PRIMARY KEY (geo_level, geo_code, "electricity access");
 
 
 --

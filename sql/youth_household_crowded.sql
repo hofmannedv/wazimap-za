@@ -26,7 +26,7 @@ SET default_with_oids = false;
 CREATE TABLE youth_household_crowded (
     geo_level character varying(15) NOT NULL,
     geo_code character varying(10) NOT NULL,
-    household_crowded character varying(128) NOT NULL,
+    "household crowded" character varying(128) NOT NULL,
     total integer NOT NULL
 );
 
@@ -35,7 +35,7 @@ CREATE TABLE youth_household_crowded (
 -- Data for Name: youth_household_crowded; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY youth_household_crowded (geo_level, geo_code, household_crowded, total) FROM stdin;
+COPY youth_household_crowded (geo_level, geo_code, "household crowded", total) FROM stdin;
 province	WC	No	807498
 province	WC	Yes	145350
 district	CPT	No	534614
@@ -872,7 +872,7 @@ ward	19100111	Yes	946
 --
 
 ALTER TABLE ONLY youth_household_crowded
-    ADD CONSTRAINT youth_household_crowded_pkey PRIMARY KEY (geo_level, geo_code, household_crowded);
+    ADD CONSTRAINT youth_household_crowded_pkey PRIMARY KEY (geo_level, geo_code, "household crowded");
 
 
 --

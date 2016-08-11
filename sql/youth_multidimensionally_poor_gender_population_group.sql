@@ -11,8 +11,8 @@ SET client_min_messages = warning;
 
 SET search_path = public, pg_catalog;
 
-ALTER TABLE IF EXISTS ONLY public.youth_multidimensionally_poor DROP CONSTRAINT IF EXISTS youth_multidimensionally_poor_pkey;
-DROP TABLE IF EXISTS public.youth_multidimensionally_poor;
+ALTER TABLE IF EXISTS ONLY public.youth_multidimensionally_poor_gender_population_group DROP CONSTRAINT IF EXISTS youth_multidimensionally_poor_pkey;
+DROP TABLE IF EXISTS public.youth_multidimensionally_poor_gender_population_group;
 SET search_path = public, pg_catalog;
 
 SET default_tablespace = '';
@@ -20,10 +20,10 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: youth_multidimensionally_poor; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: youth_multidimensionally_poor_gender_population_group; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
-CREATE TABLE youth_multidimensionally_poor (
+CREATE TABLE youth_multidimensionally_poor_gender_population_group (
     geo_level character varying(15) NOT NULL,
     geo_code character varying(10) NOT NULL,
     gender character varying(128) NOT NULL,
@@ -34,10 +34,10 @@ CREATE TABLE youth_multidimensionally_poor (
 
 
 --
--- Data for Name: youth_multidimensionally_poor; Type: TABLE DATA; Schema: public; Owner: -
+-- Data for Name: youth_multidimensionally_poor_gender_population_group; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY youth_multidimensionally_poor (geo_level, geo_code, gender, "population group", "multidimensionally poor", total) FROM stdin;
+COPY youth_multidimensionally_poor_gender_population_group (geo_level, geo_code, gender, "population group", "multidimensionally poor", total) FROM stdin;
 province	WC	Male	Black African	No	111504
 province	WC	Female	Black African	No	126976
 province	WC	Male	Coloured	No	190406
@@ -6651,7 +6651,7 @@ ward	19100111	Female	Other	Yes	11
 -- Name: youth_multidimensionally_poor_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
-ALTER TABLE ONLY youth_multidimensionally_poor
+ALTER TABLE ONLY youth_multidimensionally_poor_gender_population_group
     ADD CONSTRAINT youth_multidimensionally_poor_pkey PRIMARY KEY (geo_level, geo_code, gender, "population group", "multidimensionally poor");
 
 

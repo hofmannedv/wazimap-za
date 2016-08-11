@@ -26,7 +26,7 @@ SET default_with_oids = false;
 CREATE TABLE youth_toilet_access (
     geo_level character varying(15) NOT NULL,
     geo_code character varying(10) NOT NULL,
-    toilet_access character varying(128) NOT NULL,
+    "toilet access" character varying(128) NOT NULL,
     total integer NOT NULL
 );
 
@@ -35,7 +35,7 @@ CREATE TABLE youth_toilet_access (
 -- Data for Name: youth_toilet_access; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY youth_toilet_access (geo_level, geo_code, toilet_access, total) FROM stdin;
+COPY youth_toilet_access (geo_level, geo_code, "toilet access", total) FROM stdin;
 province	WC	Flush toilet	955120
 province	WC	Pit latrine-ventilated	6475
 province	WC	Chemical toilet	7873
@@ -2150,7 +2150,7 @@ ward	19100111	No toilet facilities	284
 --
 
 ALTER TABLE ONLY youth_toilet_access
-    ADD CONSTRAINT youth_toilet_access_pkey PRIMARY KEY (geo_level, geo_code, toilet_access);
+    ADD CONSTRAINT youth_toilet_access_pkey PRIMARY KEY (geo_level, geo_code, "toilet access");
 
 
 --

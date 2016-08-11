@@ -26,7 +26,7 @@ SET default_with_oids = false;
 CREATE TABLE youth_water_access (
     geo_level character varying(15) NOT NULL,
     geo_code character varying(10) NOT NULL,
-    water_access character varying(128) NOT NULL,
+    "water access" character varying(128) NOT NULL,
     total integer NOT NULL
 );
 
@@ -35,7 +35,7 @@ CREATE TABLE youth_water_access (
 -- Data for Name: youth_water_access; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY youth_water_access (geo_level, geo_code, water_access, total) FROM stdin;
+COPY youth_water_access (geo_level, geo_code, "water access", total) FROM stdin;
 province	WC	On site	948452
 province	WC	< 1km	94847
 province	WC	> 1km	4234
@@ -1433,7 +1433,7 @@ ward	19100111	No piped water	81
 --
 
 ALTER TABLE ONLY youth_water_access
-    ADD CONSTRAINT youth_water_access_pkey PRIMARY KEY (geo_level, geo_code, water_access);
+    ADD CONSTRAINT youth_water_access_pkey PRIMARY KEY (geo_level, geo_code, "water access");
 
 
 --

@@ -26,7 +26,7 @@ SET default_with_oids = false;
 CREATE TABLE youth_dwelling_type (
     geo_level character varying(15) NOT NULL,
     geo_code character varying(10) NOT NULL,
-    dwelling character varying(128) NOT NULL,
+    "dwelling type" character varying(128) NOT NULL,
     total integer NOT NULL
 );
 
@@ -35,7 +35,7 @@ CREATE TABLE youth_dwelling_type (
 -- Data for Name: youth_dwelling_type; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY youth_dwelling_type (geo_level, geo_code, dwelling, total) FROM stdin;
+COPY youth_dwelling_type (geo_level, geo_code, "dwelling type", total) FROM stdin;
 province	WC	Formal	821091
 province	WC	Traditional	4428
 province	WC	Informal not in backyard	100574
@@ -1981,7 +1981,7 @@ ward	19100111	Other	50
 --
 
 ALTER TABLE ONLY youth_dwelling_type
-    ADD CONSTRAINT youth_dwelling_type_pkey PRIMARY KEY (geo_level, geo_code, dwelling);
+    ADD CONSTRAINT youth_dwelling_type_pkey PRIMARY KEY (geo_level, geo_code, "dwelling type");
 
 
 --

@@ -26,7 +26,7 @@ SET default_with_oids = false;
 CREATE TABLE youth_youth_only_household (
     geo_level character varying(15) NOT NULL,
     geo_code character varying(10) NOT NULL,
-    youth_only character varying(128) NOT NULL,
+    "youth only household" character varying(128) NOT NULL,
     total integer NOT NULL
 );
 
@@ -35,7 +35,7 @@ CREATE TABLE youth_youth_only_household (
 -- Data for Name: youth_youth_only_household; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY youth_youth_only_household (geo_level, geo_code, youth_only, total) FROM stdin;
+COPY youth_youth_only_household (geo_level, geo_code, "youth only household", total) FROM stdin;
 province	WC	No	883794
 province	WC	Yes	95182
 district	CPT	No	575152
@@ -882,7 +882,7 @@ ward	19100111	Yes	739
 --
 
 ALTER TABLE ONLY youth_youth_only_household
-    ADD CONSTRAINT youth_youth_only_household_pkey PRIMARY KEY (geo_level, geo_code, youth_only);
+    ADD CONSTRAINT youth_youth_only_household_pkey PRIMARY KEY (geo_level, geo_code, "youth only household");
 
 
 --
