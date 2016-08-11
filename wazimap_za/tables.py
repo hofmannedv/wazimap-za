@@ -68,6 +68,14 @@ FieldTable(['gender', 'age in completed years'], id='youth_gender_age_in_complet
 FieldTable(['gender', 'population group'], id='youth_gender_population_group', universe='Youth', year='2011')
 FieldTable(['completed grade9', 'gender'], id='youth_age_16_to_17_gender_completed_grade9', universe='Youth aged 16 to 17', year='2011')
 FieldTable(['education level', 'gender'], id='youth_age_20_to_24_gender_education_level', universe='Youth aged 20 to 24', year='2011')
+FieldTable(['electricity access'], id='youth_electricity_access', universe='Youth living in households', year='2011')
+FieldTable(['toilet access'], id='youth_toilet_access', universe='Youth living in households', year='2011')
+FieldTable(['water access'], id='youth_water_access', universe='Youth living in households', year='2011')
+FieldTable(['dwelling type'], id='youth_dwelling_type', universe='Youth living in households', year='2011')
+FieldTable(['youth only household'], id='youth_youth_only_household', universe='Youth living in households', year='2011')
+FieldTable(['household crowded'], id='youth_household_crowded', universe='Youth living in households', year='2011')
+FieldTable(['income poverty', 'gender', 'population group'], id='youth_income_poverty_gender_population_group', universe='Youth', year='2011')
+FieldTable(['multidimensionally poor', 'gender', 'population group',], id='youth_multidimensionally_poor_gender_population_group', universe='Youth', year='2011')
 
 FieldTable(['employment status', 'gender'], id='youth_labour_force_official_gender', universe='Youth in the labour force - Official definition', description='Employment status of youth in the labour force', year='2011')
 FieldTable(['employment status', 'gender'], id='youth_labour_force_expanded_gender', universe='Youth in the labour force - Expanded definition', description='Employment status of youth in the labour force', year='2011')
@@ -210,4 +218,13 @@ SimpleTable(
     description='Youth population',
     dataset='Census 2011',
     year='2011'
+)
+
+SimpleTable(
+    id='youth_mpi_score',
+    universe='Youth',
+    total_column=None,
+    description='Youth MPI score',
+    dataset='',
+    year=''
 )
