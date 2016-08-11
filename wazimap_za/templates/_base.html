@@ -1,7 +1,7 @@
 {% extends '_base.html' %}
 {% load staticfiles %}
 
-{% block head_css_extra %}
+{% block head_css %}
     {{ block.super }}
     {% if WAZIMAP.default_profile == 'youth' %}
     <link rel="stylesheet" href="{% static 'css/youth.css' %}">
