@@ -231,7 +231,7 @@ def get_living_environment_profile(geo_code, geo_level, session):
     youth_income_poor_by_gender = youth_income_poverty_by_gender['Poor']
     youth_income_poor_by_gender['metadata'] = youth_income_poverty_by_gender['metadata']
 
-    youth_multid_poor, _ = get_stat_data(
+    youth_multid_poverty, _ = get_stat_data(
         ['multidimensionally poor'], geo_level, geo_code, session,
         table_name='youth_multidimensionally_poor_gender_population_group')
 
@@ -281,11 +281,11 @@ def get_living_environment_profile(geo_code, geo_level, session):
         'youth_income_poor_by_gender': youth_income_poor_by_gender,
         'youth_multid_poor': {
             "name": "Of youth are multidimensionally poor",
-            "values": {"this": youth_multid_poor['Yes']['values']['this']}
+            "values": {"this": youth_multid_poverty['Yes']['values']['this']}
         },
         'youth_multid_poor_by_pop_group': youth_multid_poor_by_pop_group,
         'youth_multid_poor_by_gender': youth_multid_poor_by_gender,
-        'youth_multid_poor': youth_multid_poor
+        'youth_multid_poverty': youth_multid_poverty
     }
 
     return final_data
