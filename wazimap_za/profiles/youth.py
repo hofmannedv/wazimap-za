@@ -349,7 +349,7 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
         table_name='youth_household_employment')
 
     final_data = {
-        'youth_unemplpoyed_by_definition': youth_unemployment_by_definition,
+        'youth_unemployment_by_definition': youth_unemployment_by_definition,
         'youth_employment_status': youth_employment_status,
         'youth_neet': {
             "name": "Of youth are not in employment, education or training (NEET)",
