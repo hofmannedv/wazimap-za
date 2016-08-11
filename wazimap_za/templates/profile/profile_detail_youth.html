@@ -93,9 +93,59 @@
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#basic-services" id="basic-services">Basic services<i class="fa fa-link"></i></a></h2>
             <div class="column-third" id="chart-pie-living_environment-youth_electricity_access" data-stat-type="percentage" data-chart-title="Youth in households by electricity usage"></div>
             <div class="column-third" id="chart-pie-living_environment-youth_toilet_access" data-stat-type="percentage" data-chart-title="Youth in households by type of toilet"></div>
             <div class="column-third" id="chart-pie-living_environment-youth_water_access" data-stat-type="percentage" data-chart-title="Youth in households by distance to piped water"></div>
+        </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#dwelling" id="dwelling">Type of dwelling<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_dwelling_informal stat_type='percentage' %}
+            </div>
+            <div class="column-third" id="chart-pie-living_environment-youth_dwelling_type" data-stat-type="percentage" data-chart-title="Youth in households by type of dwelling"></div>
+        </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#households" id="households">Households<i class="fa fa-link"></i></a></h2>
+            <aside>
+                <p>A household is defined as youth-only if the oldest usual resident is under 25</p>
+            </aside>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_only_households stat_type='percentage' %}
+            </div>
+        </section>
+        <section class="clearfix stat-row">
+            <aside>
+                <p>A household is defined as overcrowded if there are more than 2 persons per habitable room (excluding kitchens, bathrooms, store rooms, etc.)</p>
+            </aside>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_households_crowded stat_type='number' %}
+            </div>
+        </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#income-poverty" id="income-poverty">Income poverty<i class="fa fa-link"></i></a></h2>
+            <aside>
+                <p>Stats SA’s 2015 upper-bound poverty line of R779 per person per month in 2011 prices is used to define income poverty</p>
+            </aside>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_income_poor stat_type='percentage' %}
+            </div>
+            <div class="column-third" id="chart-pie-living_environment-youth_income_poor_by_pop_group" data-stat-type="percentage" data-chart-title="Youth in income-poor households by race"></div>
+            <div class="column-third" id="chart-pie-living_environment-youth_income_poor_by_gender" data-stat-type="percentage" data-chart-title="Youth in income-poor households by gender"></div>
+        </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#multid-poor" id="multid-poor">Multidimensionally poor<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_multid_poor stat_type='percentage' %}
+            </div>
+            <div class="column-third" id="chart-pie-living_environment-youth_multid_poor_by_pop_group" data-stat-type="percentage" data-chart-title="Multidimensionally poor youth by race"></div>
+            <div class="column-third" id="chart-pie-living_environment-youth_multid_poor_by_gender" data-stat-type="percentage" data-chart-title="Multidimensionally poor youth by gender"></div>
+        </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#mpi-score" id="mpi-score">Youth MPI<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_mpi_score stat_type='percentage' %}
+            </div>
         </section>
     </div>
 </article>
@@ -109,15 +159,6 @@
             <h2 class="header-for-columns"><a class="permalink" href="#employment" id="employment">Employment<i class="fa fa-link"></i></a></h2>
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=economic_opportunities.emp_dep stat_type='percentage' %}
-            </div>
-        </section>
-        <section class="clearfix stat-row">
-        <h2 class="header-for-columns"><a class="permalink" href="#indices" id="indices">Poverty index<i class="fa fa-link"></i></a></h2>
-            <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=economic_opportunities.prop_multid_poor stat_type='percentage' %}
-            </div>
-            <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=economic_opportunities.youth_mpi stat_type='number' %}
             </div>
         </section>
     </div>

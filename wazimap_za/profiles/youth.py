@@ -165,22 +165,103 @@ def get_health_profile(geo_code, geo_level, session):
 
 def get_living_environment_profile(geo_code, geo_level, session):
     youth_electricity_access, _ = get_stat_data(
-        ['electricity_access'], geo_level, geo_code, session,
+        ['electricity access'], geo_level, geo_code, session,
         key_order=('Have electricity for everything', 'Have electricity for some things', 'No electricity'),
         table_name='youth_electricity_access')
     youth_toilet_access, _ = get_stat_data(
-        ['toilet_access'], geo_level, geo_code, session,
+        ['toilet access'], geo_level, geo_code, session,
         key_order=('Flush toilet', 'Pit latrine-ventilated', 'Chemical toilet', 'Unventilated pit latrine/Bucket toilet', 'Other', 'No toilet facilities'),
         table_name='youth_toilet_access')
     youth_water_access, _ = get_stat_data(
-        ['water_access'], geo_level, geo_code, session,
+        ['water access'], geo_level, geo_code, session,
         key_order=('On site', '< 1km', '> 1km', 'No piped water'),
         table_name='youth_water_access')
+
+    youth_dwelling_type, _ = get_stat_data(
+        ['dwelling type'], geo_level, geo_code, session,
+        key_order=('Formal', 'Traditional', 'Informal not in backyard', 'Informal in backyard', 'Other'),
+        table_name='youth_dwelling_type')
+
+    youth_only_households, _ = get_stat_data(
+        ['youth only household'], geo_level, geo_code, session,
+        table_name='youth_youth_only_household')
+
+    youth_household_crowded, _ = get_stat_data(
+        ['household crowded'], geo_level, geo_code, session,
+        table_name='youth_household_crowded')
+
+    youth_income_poverty, _ = get_stat_data(
+        ['income poverty'], geo_level, geo_code, session,
+        table_name='youth_income_poverty_gender_population_group')
+
+    youth_income_poverty_by_pop_group, _ = get_stat_data(
+        ['income poverty', 'population group'], geo_level, geo_code, session,
+        key_order={'population group': ('Black African', 'Coloured', 'Indian or Asian', 'White', 'Other')},
+        table_name='youth_income_poverty_gender_population_group')
+    get_stat_data(['income poverty', 'population group'], geo_level, geo_code, session,table_name='youth_income_poverty_gender_population_group',
+        only={'income poverty': ('Poor')})
+    youth_income_poor_by_pop_group = youth_income_poverty_by_pop_group['Poor']
+    youth_income_poor_by_pop_group['metadata'] = youth_income_poverty_by_pop_group['metadata']
+
+    youth_income_poverty_by_gender, _ = get_stat_data(
+        ['income poverty', 'gender'], geo_level, geo_code, session,
+        table_name='youth_income_poverty_gender_population_group')
+    youth_income_poor_by_gender = youth_income_poverty_by_gender['Poor']
+    youth_income_poor_by_gender['metadata'] = youth_income_poverty_by_gender['metadata']
+
+    youth_multid_poor, _ = get_stat_data(
+        ['multidimensionally poor'], geo_level, geo_code, session,
+        table_name='youth_multidimensionally_poor_gender_population_group')
+
+    youth_multid_poverty_by_pop_group, _ = get_stat_data(
+        ['multidimensionally poor', 'population group'], geo_level, geo_code, session,
+        table_name='youth_multidimensionally_poor_gender_population_group')
+    youth_multid_poor_by_pop_group = youth_multid_poverty_by_pop_group['Yes']
+    youth_multid_poor_by_pop_group['metadata'] = youth_multid_poverty_by_pop_group['metadata']
+
+    youth_multid_poverty_by_gender, _ = get_stat_data(
+        ['multidimensionally poor', 'gender'], geo_level, geo_code, session,
+        table_name='youth_multidimensionally_poor_gender_population_group')
+    youth_multid_poor_by_gender = youth_multid_poverty_by_gender['Yes']
+    youth_multid_poor_by_gender['metadata'] = youth_multid_poverty_by_gender['metadata']
+
+    # Fix: Circular reference when passing this to the template
+    youth_mpi_table = get_datatable('youth_mpi_score')
+    youth_mpi_score, _ = youth_mpi_table.get_stat_data(
+        geo_level, geo_code, percent=False)
 
     final_data = {
         'youth_electricity_access': youth_electricity_access,
         'youth_toilet_access': youth_toilet_access,
-        'youth_water_access': youth_water_access
+        'youth_water_access': youth_water_access,
+        'youth_dwelling_informal': {
+            "name": "Of youth live in households that are informal dwellings (shacks)",
+            "values": {"this": (
+                youth_dwelling_type['Informal not in backyard']['values']['this'] +
+                youth_dwelling_type['Informal in backyard']['values']['this']
+            )}
+        },
+        'youth_dwelling_type': youth_dwelling_type,
+        'youth_only_households': {
+            "name": "Youth living in youth-only households",
+            "values": {"this": youth_only_households['Yes']['values']['this']}
+        },
+        'youth_households_crowded': {
+            "name": "Youth living in overcrowded households",
+            "values": {"this": youth_only_households['Yes']['numerators']['this']}
+        },
+        'youth_income_poor': {
+            "name": "Of youth live in income-poor households",
+            "values": {"this": youth_income_poverty['Poor']['values']['this']}
+        },
+        'youth_income_poor_by_pop_group': youth_income_poor_by_pop_group,
+        'youth_income_poor_by_gender': youth_income_poor_by_gender,
+        'youth_multid_poor': {
+            "name": "Of youth are multidimensionally poor",
+            "values": {"this": youth_multid_poor['Yes']['values']['this']}
+        },
+        'youth_multid_poor_by_pop_group': youth_multid_poor_by_pop_group,
+        'youth_multid_poor_by_gender': youth_multid_poor_by_gender
     }
 
     return final_data
