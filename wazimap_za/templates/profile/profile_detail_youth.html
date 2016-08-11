@@ -102,7 +102,7 @@
     <div class="section-container">
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#basic-services" id="basic-services">Basic services<i class="fa fa-link"></i></a></h2>
-            <div class="column-third" id="chart-pie-living_environment-youth_electricity_access" data-stat-type="percentage" data-chart-title="Youth in households by electricity usage"></div>
+            <div class="column-third" id="chart-pie-living_environment-youth_electricity_access" data-stat-type="percentage " data-chart-title="Youth in households by electricity usage"></div>
             <div class="column-third" id="chart-pie-living_environment-youth_toilet_access" data-stat-type="percentage" data-chart-title="Youth in households by type of toilet"></div>
             <div class="column-third" id="chart-pie-living_environment-youth_water_access" data-stat-type="percentage" data-chart-title="Youth in households by distance to piped water"></div>
         </section>
@@ -135,19 +135,19 @@
             <aside>
                 <p>Stats SA’s 2015 upper-bound poverty line of R779 per person per month in 2011 prices is used to define income poverty</p>
             </aside>
-            <div class="column-third">
+            <div class="column-quarter">
                 {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_income_poor stat_type='percentage' %}
             </div>
-            <div class="column-third" id="chart-pie-living_environment-youth_income_poor_by_pop_group" data-stat-type="percentage" data-chart-title="Youth in income-poor households by race"></div>
-            <div class="column-third" id="chart-pie-living_environment-youth_income_poor_by_gender" data-stat-type="percentage" data-chart-title="Youth in income-poor households by gender"></div>
+            <div class="column-half" id="chart-histogram-living_environment-youth_income_poor_by_pop_group" data-stat-type="scaled-percentage" data-chart-title="Youth in income-poor households by race"></div>
+            <div class="column-quarter" id="chart-pie-living_environment-youth_income_poor_by_gender" data-stat-type="percentage" data-chart-title="Youth in income-poor households by gender"></div>
         </section>
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#multid-poor" id="multid-poor">Multidimensionally poor<i class="fa fa-link"></i></a></h2>
-            <div class="column-third">
+            <div class="column-quarter">
                 {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_multid_poor stat_type='percentage' %}
             </div>
-            <div class="column-third" id="chart-pie-living_environment-youth_multid_poor_by_pop_group" data-stat-type="percentage" data-chart-title="Multidimensionally poor youth by race"></div>
-            <div class="column-third" id="chart-pie-living_environment-youth_multid_poor_by_gender" data-stat-type="percentage" data-chart-title="Multidimensionally poor youth by gender"></div>
+            <div class="column-half" id="chart-histogram-living_environment-youth_multid_poor_by_pop_group" data-stat-type="scaled-percentage" data-chart-title="Multidimensionally poor youth by race"></div>
+            <div class="column-quarter" id="chart-pie-living_environment-youth_multid_poor_by_gender" data-stat-type="percentage" data-chart-title="Multidimensionally poor youth by gender"></div>
         </section>
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#mpi-score" id="mpi-score">Youth MPI<i class="fa fa-link"></i></a></h2>
