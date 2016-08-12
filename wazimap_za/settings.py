@@ -70,7 +70,7 @@ elif wazi_profile == 'youth':
             'children': [],
         }
     }
-    WAZIMAP['url'] = 'https://wazimap-youth.code4sa.org'
+    WAZIMAP['url'] = 'https://youthexplorer.org.za'
     WAZIMAP['name'] = 'Western Cape Youth Explorer'
 
 
