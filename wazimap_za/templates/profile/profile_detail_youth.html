@@ -81,15 +81,34 @@
     </div>
 </article>
 
-<article id="health" class="clearfix">
+<article id="economic_opportunities" class="clearfix">
     <header class="section-contents">
-        <h1>Health and Wellness</h1>
+        <h1>Economic opportunities</h1>
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
-            <h2 class="header-for-columns"><a class="permalink" href="#health" id="health">General health and functioning<i class="fa fa-link"></i></a></h2>
-            <aside>This includes youth with both mild and severe difficulties</aside>
-            <div class="column-half" id="chart-histogram-health-youth_difficulty_by_function" data-stat-type="scaled-percentage" data-chart-title="Youth experiencing difficulty in functioning by type"></div>
+            <h2 class="header-for-columns"><a class="permalink" href="#employment_status" id="employment_status">Youth employment status<i class="fa fa-link"></i></a></h2>
+            <aside>
+                According to the official definition, a person is unemployed if he or she is (a) without work, (b) available to work, and (c) actively seeking work. The expanded definition excludes criterion (c)
+            </aside>
+            <div class="column-half" id="chart-histogram-economic_opportunities-youth_unemployment_by_definition" data-stat-type="scaled-percentage" data-chart-title="Youth unemployment rate by definition"></div>
+            <div class="column-third" id="chart-pie-economic_opportunities-youth_employment_status" data-stat-type="percentage" data-chart-title="Youth by employment status"></div>
+        </section>
+
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#emp_edu_train_status" id="emp_edu_train_status">Employment, education and training status<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=economic_opportunities.youth_neet stat_type='percentage' %}
+            </div>
+            <div class="column-third" id="chart-pie-economic_opportunities-youth_emp_edu_train_status" data-stat-type="percentage" data-chart-title="Youth by employment, education and training status"></div>
+            <div class="column-third" id="chart-pie-economic_opportunities-youth_neet_by_gender" data-stat-type="percentage" data-chart-title="Youth not in employment, education or training by gender"></div>
+        </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#household_employment" id="household_employment">Household adult employment<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=economic_opportunities.youth_no_working_adults stat_type='percentage' %}
+            </div>
+            <div class="column-third" id="chart-pie-economic_opportunities-youth_household_employment" data-stat-type="percentage" data-chart-title="Youth in households by adult employment"></div>
         </section>
     </div>
 </article>
@@ -176,34 +195,15 @@
     </div>
 </article>
 
-<article id="economic_opportunities" class="clearfix">
+<article id="health" class="clearfix">
     <header class="section-contents">
-        <h1>Economic opportunities</h1>
+        <h1>Health and Wellness</h1>
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
-            <h2 class="header-for-columns"><a class="permalink" href="#employment_status" id="employment_status">Youth employment status<i class="fa fa-link"></i></a></h2>
-            <aside>
-                According to the official definition, a person is unemployed if he or she is (a) without work, (b) available to work, and (c) actively seeking work. The expanded definition excludes criterion (c)
-            </aside>
-            <div class="column-half" id="chart-histogram-economic_opportunities-youth_unemployment_by_definition" data-stat-type="scaled-percentage" data-chart-title="Youth unemployment rate by definition"></div>
-            <div class="column-third" id="chart-pie-economic_opportunities-youth_employment_status" data-stat-type="percentage" data-chart-title="Youth by employment status"></div>
-        </section>
-
-        <section class="clearfix stat-row">
-            <h2 class="header-for-columns"><a class="permalink" href="#emp_edu_train_status" id="emp_edu_train_status">Employment, education and training status<i class="fa fa-link"></i></a></h2>
-            <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=economic_opportunities.youth_neet stat_type='percentage' %}
-            </div>
-            <div class="column-third" id="chart-pie-economic_opportunities-youth_emp_edu_train_status" data-stat-type="percentage" data-chart-title="Youth by employment, education and training status"></div>
-            <div class="column-third" id="chart-pie-economic_opportunities-youth_neet_by_gender" data-stat-type="percentage" data-chart-title="Youth not in employment, education or training by gender"></div>
-        </section>
-        <section class="clearfix stat-row">
-            <h2 class="header-for-columns"><a class="permalink" href="#household_employment" id="household_employment">Household adult employment<i class="fa fa-link"></i></a></h2>
-            <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=economic_opportunities.youth_no_working_adults stat_type='percentage' %}
-            </div>
-            <div class="column-third" id="chart-pie-economic_opportunities-youth_household_employment" data-stat-type="percentage" data-chart-title="Youth in households by adult employment"></div>
+            <h2 class="header-for-columns"><a class="permalink" href="#health" id="health">General health and functioning<i class="fa fa-link"></i></a></h2>
+            <aside>This includes youth with both mild and severe difficulties</aside>
+            <div class="column-half" id="chart-histogram-health-youth_difficulty_by_function" data-stat-type="scaled-percentage" data-chart-title="Youth experiencing difficulty in functioning by type"></div>
         </section>
     </div>
 </article>
