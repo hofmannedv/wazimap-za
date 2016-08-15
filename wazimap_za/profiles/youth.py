@@ -10,7 +10,8 @@ PROFILE_SECTIONS = (
     "education",
     "health",
     "living_environment",
-    "economic_opportunities"
+    "economic_opportunities",
+    "safety"
 )
 
 EDUCATION_LEVELS_RECODE = {
@@ -363,6 +364,23 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
             "values": {"this": youth_household_employment['No employed adult']['values']['this']}
         },
         'youth_household_employment': youth_household_employment
+    }
+
+    return final_data
+
+def get_safety_profile(geo_code, geo_level, session):
+    crimes_by_year, _ = get_stat_data(
+        ['type of crime', 'year'], geo_level, geo_code, session,
+        table_name='crimes_type_of_crime_year')
+
+    contact_crimes_by_year = crimes_by_year['Contact crime']
+    contact_crimes_by_year['metadata'] = crimes_by_year['metadata']
+    property_crimes_by_year = crimes_by_year['Property crime']
+    property_crimes_by_year['metadata'] = crimes_by_year['metadata']
+
+    final_data = {
+        'contact_crimes_by_year': contact_crimes_by_year,
+        'property_crimes_by_year': property_crimes_by_year
     }
 
     return final_data
