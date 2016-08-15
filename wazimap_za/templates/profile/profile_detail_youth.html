@@ -158,9 +158,9 @@
             <div class="column-third" id="chart-pie-living_environment-youth_multid_poverty" data-stat-type="percentage" data-chart-title="Youth living in households that are multidimensionally poor."></div>
         </section>
         <section class="clearfix stat-row">
-            <h2 class="header-for-columns"><a class="permalink" href="#mpi-score" id="mpi-score">Youth MPI<i class="fa fa-link"></i></a></h2>
-            <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_mpi_score stat_type='percentage' %}
+            <h2 class="header-for-columns"><a class="permalink" href="#mpi-score" id="mpi-score">Youth Multidimensional Poverty Index score<i class="fa fa-link"></i></a></h2>
+            <div class="column-half">
+                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_mpi_score stat_type='number' %}
             </div>
         </section>
     </div>
