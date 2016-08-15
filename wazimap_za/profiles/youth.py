@@ -170,15 +170,11 @@ def get_education_profile(geo_code, geo_level, session):
 
 
 def get_health_profile(geo_code, geo_level, session):
-    # Total respondents to the question on difficulty functioning are stored in a seperate table.
-    youth_difficulty_functioning_table = get_datatable('youth_difficulty_functioning_respondents')
-    _, youth_difficulty_functioning_total = youth_difficulty_functioning_table.get_stat_data(
-        geo_level, geo_code, total='total_respondents', percent='False')
-
     youth_difficulty_by_function, _ = get_stat_data(
         ['function type'], geo_level, geo_code, session,
-        total=youth_difficulty_functioning_total,
-        table_name='youth_difficulty_functioning_function_type')
+        table_name='youth_difficulty_functioning')
+
+    del youth_difficulty_by_function['None']
 
     final_data = {
         'youth_difficulty_by_function': youth_difficulty_by_function
