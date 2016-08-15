@@ -170,18 +170,18 @@ def get_education_profile(geo_code, geo_level, session):
 
 
 def get_health_profile(geo_code, geo_level, session):
-    table = get_datatable('youth').model
-    disab_dep = session.query(
-            table.c.disab_dep) \
-        .filter(table.c.geo_level == geo_level) \
-        .filter(table.c.geo_code == geo_code) \
-        .one()[0]
+    # Total respondents to the question on difficulty functioning are stored in a seperate table.
+    youth_difficulty_functioning_table = get_datatable('youth_difficulty_functioning_respondents')
+    _, youth_difficulty_functioning_total = youth_difficulty_functioning_table.get_stat_data(
+        geo_level, geo_code, total='total_respondents', percent='False')
+
+    youth_difficulty_by_function, _ = get_stat_data(
+        ['function type'], geo_level, geo_code, session,
+        total=youth_difficulty_functioning_total,
+        table_name='youth_difficulty_functioning_function_type')
 
     final_data = {
-        'disab_dep': {
-            "name": "Proportion of youth experiencing difficulty in one or more of the following functions: hearing, vision, communication, mobility, cognition and self-care",
-            "values": {"this": float(disab_dep) or 0.0},
-            }
+        'youth_difficulty_by_function': youth_difficulty_by_function
     }
 
     return final_data
