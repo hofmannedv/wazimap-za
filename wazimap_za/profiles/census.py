@@ -1,4 +1,5 @@
 from collections import OrderedDict
+import logging
 
 from sqlalchemy import func
 
@@ -9,6 +10,10 @@ from wazimap.geo import geo_data
 from wazimap.data.utils import (collapse_categories, calculate_median, calculate_median_stat, merge_dicts, group_remainder, get_stat_data, get_objects_by_geo, percent)
 
 from .elections import get_elections_profile
+
+
+log = logging.getLogger(__name__)
+
 
 PROFILE_SECTIONS = (
     'demographics',  # population group, age group in 5 years, age in completed years
@@ -293,7 +298,12 @@ def get_profile(geo_code, geo_level, profile_name=None):
                 # get profiles for province and/or country
                 for level, code in geo_summary_levels:
                     # merge summary profile into current geo profile
-                    merge_dicts(data[section], func(code, level, session), level)
+                    try:
+                        merge_dicts(data[section], func(code, level, session), level)
+                    except KeyError as e:
+                        msg = "Error merging data into %s-%s for section '%s' from %s-%s: KeyError: %s" % (geo_level, geo_code, section, level, code, e)
+                        log.fatal(msg, exc_info=e)
+                        raise ValueError(msg)
     finally:
         session.close()
 
