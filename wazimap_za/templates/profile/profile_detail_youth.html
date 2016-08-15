@@ -83,14 +83,13 @@
 
 <article id="health" class="clearfix">
     <header class="section-contents">
-        <h1>Health</h1>
+        <h1>Health and Wellness</h1>
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#health" id="health">General health and functioning<i class="fa fa-link"></i></a></h2>
-            <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=health.disab_dep stat_type='percentage' %}
-            </div>
+            <aside>This includes youth with both mild and severe difficulties</aside>
+            <div class="column-half" id="chart-histogram-health-youth_difficulty_by_function" data-stat-type="scaled-percentage" data-chart-title="Youth experiencing difficulty in functioning by type"></div>
         </section>
     </div>
 </article>

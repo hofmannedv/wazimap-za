@@ -86,6 +86,7 @@ FieldTable(['employment status', 'gender'], id='youth_labour_force_expanded_gend
 FieldTable(['employment status', 'gender'], id='youth_employment_status_gender', universe='Youth', year='2011')
 FieldTable(['employment education training', 'gender'], id='youth_employment_education_training_gender', universe='Youth', year='2011')
 FieldTable(['household employment'], id='youth_household_employment', description='Youth in households by adult employment', year='2011')
+FieldTable(['function type'], id='youth_difficulty_functioning', description='Youth experiencing difficulty in functioning', year='2011', universe='Youth responding to the Difficulty Functioning questionnaire')
 
 
 # Simple Tables
