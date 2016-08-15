@@ -371,7 +371,8 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
 def get_safety_profile(geo_code, geo_level, session):
     crimes_by_year, _ = get_stat_data(
         ['type of crime', 'year'], geo_level, geo_code, session,
-        table_name='crimes_type_of_crime_year')
+        table_name='crimes_type_of_crime_year',
+        percent=False)
 
     contact_crimes_by_year = crimes_by_year['Contact crime']
     contact_crimes_by_year['metadata'] = crimes_by_year['metadata']
