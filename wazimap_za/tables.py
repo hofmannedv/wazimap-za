@@ -50,6 +50,7 @@ FieldTable(['type of main dwelling'], id='typeofmaindwellingunder18', universe='
 
 # Crime
 FieldTable(['crime'], universe='Crimes', dataset='Police Crime Statistics 2014', year='2014')
+FieldTable(['type of crime', 'year'], id='crimes_type_of_crime_year', description='Contact and property crimes by year', year='2013', has_total=False, universe='Crimes', dataset='Police Crime Statistics 2004-2013')
 
 # Elections
 FieldTable(['party'], universe='Votes', id='party_votes_national_2014', description='2014 National Election results',
@@ -58,6 +59,7 @@ FieldTable(['party'], universe='Votes', id='party_votes_provincial_2014', descri
            dataset='2014 Provincial Elections', year='2014')
 FieldTable(['party'], universe='Votes', id='party_votes_municipal_2011', description='2011 Municipal Election results',
            dataset='2011 Municipal Elections', year='2011')
+
 
 # ECD
 FieldTable(['age groups in 5 years'], id='womenagegroupsin5years15to44', universe='Women 15 to 44', description='Women of child bearing age', year='2011')
