@@ -20,6 +20,11 @@ EDUCATION_LEVELS_RECODE = {
     'Tertiary': 'Any tertiary'
 }
 
+COMPLETED_GRADE9_RECODE = {
+    'Yes': 'Completed grade 9 or higher',
+    'No': 'Have not completed grade 9 or higher'
+}
+
 POPULATION_GROUP_ORDER = ('Black African', 'Coloured', 'Indian or Asian', 'White', 'Other')
 
 def get_profile(geo_code, geo_level, profile_name=None):
@@ -94,6 +99,7 @@ def get_demographics_profile(geo_code, geo_level, session):
 def get_education_profile(geo_code, geo_level, session):
     youth_completed_grade9, _ = get_stat_data(
         ['completed grade9'], geo_level, geo_code, session,
+        recode=COMPLETED_GRADE9_RECODE,
         table_name='youth_age_16_to_17_gender_completed_grade9')
 
     youth_gender_completed_grade9, _ = get_stat_data(
@@ -103,7 +109,7 @@ def get_education_profile(geo_code, geo_level, session):
     db_model_gender_completed_grade9 = get_model_from_fields(
         ['gender'], geo_level, table_name='youth_age_16_to_17_gender_completed_grade9')
 
-    gender_completed_grade9_data = OrderedDict((  # census data refers to sex as gender
+    gender_completed_grade9_data = OrderedDict((
             ('Female', {
                 "name": "Female",
                 "values": {"this": youth_gender_completed_grade9['Female']['Yes']['values']['this']},
@@ -152,7 +158,7 @@ def get_education_profile(geo_code, geo_level, session):
         'youth_completed_grade9': youth_completed_grade9,
         'youth_perc_completed_grade9': {
             "name": "Of youth aged 16-17 have completed grade 9 or higher",
-            "values": {"this": youth_completed_grade9['Yes']['values']['this']},
+            "values": {"this": youth_completed_grade9['Completed grade 9 or higher']['values']['this']},
         },
         'youth_gender_completed_grade9': gender_completed_grade9_data,
         'youth_perc_matric': {
@@ -222,13 +228,13 @@ def get_living_environment_profile(geo_code, geo_level, session):
         key_order={'population group': POPULATION_GROUP_ORDER},
         table_name='youth_income_poverty_gender_population_group')
 
-    youth_income_poor_by_pop_group = youth_income_poverty_by_pop_group['Poor']
+    youth_income_poor_by_pop_group = youth_income_poverty_by_pop_group['Income-poor']
     youth_income_poor_by_pop_group['metadata'] = youth_income_poverty_by_pop_group['metadata']
 
     youth_income_poverty_by_gender, _ = get_stat_data(
         ['income poverty', 'gender'], geo_level, geo_code, session,
         table_name='youth_income_poverty_gender_population_group')
-    youth_income_poor_by_gender = youth_income_poverty_by_gender['Poor']
+    youth_income_poor_by_gender = youth_income_poverty_by_gender['Income-poor']
     youth_income_poor_by_gender['metadata'] = youth_income_poverty_by_gender['metadata']
 
     youth_multid_poverty, _ = get_stat_data(
@@ -238,14 +244,15 @@ def get_living_environment_profile(geo_code, geo_level, session):
 
     youth_multid_poverty_by_pop_group, _ = get_stat_data(
         ['multidimensionally poor', 'population group'], geo_level, geo_code, session,
+        key_order={'population group': POPULATION_GROUP_ORDER},
         table_name='youth_multidimensionally_poor_gender_population_group')
-    youth_multid_poor_by_pop_group = youth_multid_poverty_by_pop_group['Yes']
+    youth_multid_poor_by_pop_group = youth_multid_poverty_by_pop_group['Multidimensionally poor']
     youth_multid_poor_by_pop_group['metadata'] = youth_multid_poverty_by_pop_group['metadata']
 
     youth_multid_poverty_by_gender, _ = get_stat_data(
         ['multidimensionally poor', 'gender'], geo_level, geo_code, session,
         table_name='youth_multidimensionally_poor_gender_population_group')
-    youth_multid_poor_by_gender = youth_multid_poverty_by_gender['Yes']
+    youth_multid_poor_by_gender = youth_multid_poverty_by_gender['Multidimensionally poor']
     youth_multid_poor_by_gender['metadata'] = youth_multid_poverty_by_gender['metadata']
 
     # Fix: Circular reference when passing this to the template
@@ -269,20 +276,21 @@ def get_living_environment_profile(geo_code, geo_level, session):
             "name": "Youth living in youth-only households",
             "values": {"this": youth_only_households['Yes']['values']['this']}
         },
-        'youth_households_crowded': {
+        'youth_households_overcrowded': {
             "name": "Youth living in overcrowded households",
-            "values": {"this": youth_only_households['Yes']['numerators']['this']}
+            "values": {"this": youth_household_crowded['Overcrowded']['numerators']['this']}
         },
+        'youth_household_crowded': youth_household_crowded,
         'youth_income_poor': {
             "name": "Of youth live in income-poor households",
-            "values": {"this": youth_income_poverty['Poor']['values']['this']}
+            "values": {"this": youth_income_poverty['Income-poor']['values']['this']}
         },
         'youth_income_poverty': youth_income_poverty,
         'youth_income_poor_by_pop_group': youth_income_poor_by_pop_group,
         'youth_income_poor_by_gender': youth_income_poor_by_gender,
         'youth_multid_poor': {
             "name": "Of youth are multidimensionally poor",
-            "values": {"this": youth_multid_poverty['Yes']['values']['this']}
+            "values": {"this": youth_multid_poverty['Multidimensionally poor']['values']['this']}
         },
         'youth_multid_poor_by_pop_group': youth_multid_poor_by_pop_group,
         'youth_multid_poor_by_gender': youth_multid_poor_by_gender,
@@ -304,12 +312,12 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
 
     youth_unemployment_by_definition = OrderedDict((
         ('Official', {
-            "name": "Official",
+            "name": "Official definition",
             "values": {"this": youth_labour_force_official['Unemployed']['values']['this']},
             "numerators": {"this": youth_labour_force_official['Unemployed']['numerators']['this']}
         }),
         ('Expanded', {
-            "name": "Expanded",
+            "name": "Expanded definition",
             "values": {"this": youth_labour_force_expanded['Unemployed']['values']['this']},
             "numerators":{"this": youth_labour_force_expanded['Unemployed']['numerators']['this']}
         })
@@ -351,6 +359,11 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
         table_name='youth_household_employment')
 
     final_data = {
+        'youth_official_unemployment': {
+            "name": "Youth (aged 15-24) unemployment rate",
+            "values": {"this": youth_labour_force_official['Unemployed']['values']['this'],
+            }
+        },
         'youth_unemployment_by_definition': youth_unemployment_by_definition,
         'youth_employment_status': youth_employment_status,
         'youth_neet': {

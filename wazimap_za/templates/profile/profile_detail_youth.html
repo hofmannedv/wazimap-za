@@ -61,6 +61,7 @@
             <div class="column-quarter">
                 {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_perc_completed_grade9 stat_type='percentage' %}
             </div>
+            <div class="column-half" id="chart-pie-education-youth_completed_grade9" data-stat-type="percentage" data-chart-title="Youth aged 16-17 by grade 9 completion"></div>
             <div class="column-half" id="chart-pie-education-youth_gender_completed_grade9" data-stat-type="percentage" data-chart-title="Youth aged 16-17 who have completed grade 9 or higher by gender"></div>
         </section>
         <section class="clearfix stat-row">
@@ -91,7 +92,10 @@
             <aside>
                 According to the official definition, a person is unemployed if he or she is (a) without work, (b) available to work, and (c) actively seeking work. The expanded definition excludes criterion (c)
             </aside>
-            <div class="column-half" id="chart-histogram-economic_opportunities-youth_unemployment_by_definition" data-stat-type="scaled-percentage" data-chart-title="Youth unemployment rate by definition"></div>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=economic_opportunities.youth_official_unemployment stat_type='percentage' %}
+            </div>
+            <div class="column-third" id="chart-histogram-economic_opportunities-youth_unemployment_by_definition" data-stat-type="scaled-percentage" data-chart-title="Youth unemployment rate by definition"></div>
             <div class="column-third" id="chart-pie-economic_opportunities-youth_employment_status" data-stat-type="percentage" data-chart-title="Youth by employment status"></div>
         </section>
 
@@ -141,8 +145,9 @@
         <section class="clearfix stat-row grouped-row">
             <aside>A household is defined as overcrowded if there are more than 2 persons per habitable room (excluding kitchens, bathrooms, store rooms, etc.)</aside>
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_households_crowded stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_households_overcrowded stat_type='number' %}
             </div>
+            <div class="column-third" id="chart-pie-living_environment-youth_household_crowded" data-stat-type="percentage" data-chart-title="Youth living in households by overcrowding"></div>
         </section>
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#income-poverty" id="income-poverty">Income poverty<i class="fa fa-link"></i></a></h2>
@@ -164,11 +169,11 @@
             <div class="column-quarter">
                 {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_multid_poor stat_type='percentage' %}
             </div>
-            <div class="column-half" id="chart-histogram-living_environment-youth_multid_poor_by_pop_group" data-stat-type="scaled-percentage" data-chart-title="Multidimensionally poor youth by race"></div>
+            <div class="column-third" id="chart-pie-living_environment-youth_multid_poverty" data-stat-type="percentage" data-chart-title="Youth by multidimensional poverty status."></div>
             <div class="column-quarter" id="chart-pie-living_environment-youth_multid_poor_by_gender" data-stat-type="percentage" data-chart-title="Multidimensionally poor youth by gender"></div>
         </section>
         <section class="clearfix stat-row grouped-row">
-            <div class="column-third" id="chart-pie-living_environment-youth_multid_poverty" data-stat-type="percentage" data-chart-title="Youth living in households that are multidimensionally poor."></div>
+            <div class="column-half" id="chart-histogram-living_environment-youth_multid_poor_by_pop_group" data-stat-type="scaled-percentage" data-chart-title="Multidimensionally poor youth by race"></div>
         </section>
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#mpi-score" id="mpi-score">Youth Multidimensional Poverty Index score<i class="fa fa-link"></i></a></h2>
