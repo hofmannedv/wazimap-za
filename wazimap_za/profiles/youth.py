@@ -252,13 +252,13 @@ def get_living_environment_profile(geo_code, geo_level, session):
         ['multidimensionally poor', 'population group'], geo_level, geo_code, session,
         key_order={'population group': POPULATION_GROUP_ORDER},
         table_name='youth_multidimensionally_poor_gender_population_group')
-    youth_multid_poor_by_pop_group = youth_multid_poverty_by_pop_group['Yes']
+    youth_multid_poor_by_pop_group = youth_multid_poverty_by_pop_group['Multidimensionally poor']
     youth_multid_poor_by_pop_group['metadata'] = youth_multid_poverty_by_pop_group['metadata']
 
     youth_multid_poverty_by_gender, _ = get_stat_data(
         ['multidimensionally poor', 'gender'], geo_level, geo_code, session,
         table_name='youth_multidimensionally_poor_gender_population_group')
-    youth_multid_poor_by_gender = youth_multid_poverty_by_gender['Yes']
+    youth_multid_poor_by_gender = youth_multid_poverty_by_gender['Multidimensionally poor']
     youth_multid_poor_by_gender['metadata'] = youth_multid_poverty_by_gender['metadata']
 
     # Fix: Circular reference when passing this to the template
@@ -296,7 +296,7 @@ def get_living_environment_profile(geo_code, geo_level, session):
         'youth_income_poor_by_gender': youth_income_poor_by_gender,
         'youth_multid_poor': {
             "name": "Of youth are multidimensionally poor",
-            "values": {"this": youth_multid_poverty['Yes']['values']['this']}
+            "values": {"this": youth_multid_poverty['Multidimensionally poor']['values']['this']}
         },
         'youth_multid_poor_by_pop_group': youth_multid_poor_by_pop_group,
         'youth_multid_poor_by_gender': youth_multid_poor_by_gender,
