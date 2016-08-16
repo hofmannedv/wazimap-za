@@ -20,6 +20,11 @@ EDUCATION_LEVELS_RECODE = {
     'Tertiary': 'Any tertiary'
 }
 
+HOUSEHOLD_CROWDED_RECODE = {
+    'Yes': 'Overcrowded',
+    'No': 'Non-overcrowded'
+}
+
 POPULATION_GROUP_ORDER = ('Black African', 'Coloured', 'Indian or Asian', 'White', 'Other')
 
 def get_profile(geo_code, geo_level, profile_name=None):
@@ -211,6 +216,7 @@ def get_living_environment_profile(geo_code, geo_level, session):
 
     youth_household_crowded, _ = get_stat_data(
         ['household crowded'], geo_level, geo_code, session,
+        recode=HOUSEHOLD_CROWDED_RECODE,
         table_name='youth_household_crowded')
 
     youth_income_poverty, _ = get_stat_data(
@@ -269,10 +275,11 @@ def get_living_environment_profile(geo_code, geo_level, session):
             "name": "Youth living in youth-only households",
             "values": {"this": youth_only_households['Yes']['values']['this']}
         },
-        'youth_households_crowded': {
+        'youth_households_overcrowded': {
             "name": "Youth living in overcrowded households",
-            "values": {"this": youth_only_households['Yes']['numerators']['this']}
+            "values": {"this": youth_household_crowded['Overcrowded']['numerators']['this']}
         },
+        'youth_household_crowded': youth_household_crowded,
         'youth_income_poor': {
             "name": "Of youth live in income-poor households",
             "values": {"this": youth_income_poverty['Poor']['values']['this']}
