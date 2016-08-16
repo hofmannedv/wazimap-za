@@ -20,6 +20,8 @@ EDUCATION_LEVELS_RECODE = {
     'Tertiary': 'Any tertiary'
 }
 
+POPULATION_GROUP_ORDER = ('Black African', 'Coloured', 'Indian or Asian', 'White', 'Other')
+
 def get_profile(geo_code, geo_level, profile_name=None):
     session = get_session()
 
@@ -58,7 +60,7 @@ def get_demographics_profile(geo_code, geo_level, session):
     youth_gender_data, _ = get_stat_data(['gender'], geo_level, geo_code, session, table_name='youth_gender_population_group')
     youth_pop_group_data, _ = get_stat_data(['population group'], geo_level, geo_code, session,
         table_name='youth_gender_population_group',
-        key_order=('Black African', 'Coloured', 'Indian or Asian', 'White', 'Other'))
+        key_order=POPULATION_GROUP_ORDER)
 
     final_data = {
         'total_population': {
@@ -172,6 +174,7 @@ def get_education_profile(geo_code, geo_level, session):
 def get_health_profile(geo_code, geo_level, session):
     youth_difficulty_by_function, _ = get_stat_data(
         ['function type'], geo_level, geo_code, session,
+        key_order=['Seeing', 'Hearing', 'Communication', 'Walking', 'Remembering', 'Self care'],
         table_name='youth_difficulty_functioning')
 
     del youth_difficulty_by_function['None']
@@ -216,7 +219,7 @@ def get_living_environment_profile(geo_code, geo_level, session):
 
     youth_income_poverty_by_pop_group, _ = get_stat_data(
         ['income poverty', 'population group'], geo_level, geo_code, session,
-        key_order={'population group': ('Black African', 'Coloured', 'Indian or Asian', 'White', 'Other')},
+        key_order={'population group': POPULATION_GROUP_ORDER},
         table_name='youth_income_poverty_gender_population_group')
 
     youth_income_poor_by_pop_group = youth_income_poverty_by_pop_group['Poor']
@@ -230,6 +233,7 @@ def get_living_environment_profile(geo_code, geo_level, session):
 
     youth_multid_poverty, _ = get_stat_data(
         ['multidimensionally poor'], geo_level, geo_code, session,
+        key_order={'population group': POPULATION_GROUP_ORDER},
         table_name='youth_multidimensionally_poor_gender_population_group')
 
     youth_multid_poverty_by_pop_group, _ = get_stat_data(
