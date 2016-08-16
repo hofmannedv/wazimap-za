@@ -114,26 +114,20 @@
         </section>
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#households" id="households">Households<i class="fa fa-link"></i></a></h2>
-            <aside>
-                <p>A household is defined as youth-only if the oldest usual resident is under 25</p>
-            </aside>
+            <aside>A household is defined as youth-only if the oldest usual resident is under 25</aside>
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_only_households stat_type='percentage' %}
             </div>
         </section>
         <section class="clearfix stat-row grouped-row">
-            <aside>
-                <p>A household is defined as overcrowded if there are more than 2 persons per habitable room (excluding kitchens, bathrooms, store rooms, etc.)</p>
-            </aside>
+            <aside>A household is defined as overcrowded if there are more than 2 persons per habitable room (excluding kitchens, bathrooms, store rooms, etc.)</aside>
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_households_crowded stat_type='number' %}
             </div>
         </section>
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#income-poverty" id="income-poverty">Income poverty<i class="fa fa-link"></i></a></h2>
-            <aside>
-                <p>Stats SA’s 2015 upper-bound poverty line of R779 per person per month in 2011 prices is used to define income poverty</p>
-            </aside>
+            <aside>Stats SA’s 2015 upper-bound poverty line of R779 per person per month in 2011 prices is used to define income poverty</aside>
             <div class="column-quarter">
                 {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_income_poor stat_type='percentage' %}
             </div>
@@ -158,9 +152,9 @@
             <div class="column-third" id="chart-pie-living_environment-youth_multid_poverty" data-stat-type="percentage" data-chart-title="Youth living in households that are multidimensionally poor."></div>
         </section>
         <section class="clearfix stat-row">
-            <h2 class="header-for-columns"><a class="permalink" href="#mpi-score" id="mpi-score">Youth MPI<i class="fa fa-link"></i></a></h2>
-            <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_mpi_score stat_type='percentage' %}
+            <h2 class="header-for-columns"><a class="permalink" href="#mpi-score" id="mpi-score">Youth Multidimensional Poverty Index score<i class="fa fa-link"></i></a></h2>
+            <div class="column-half">
+                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_mpi_score stat_type='number' %}
             </div>
         </section>
     </div>
