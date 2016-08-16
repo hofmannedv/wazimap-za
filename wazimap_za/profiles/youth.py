@@ -20,11 +20,6 @@ EDUCATION_LEVELS_RECODE = {
     'Tertiary': 'Any tertiary'
 }
 
-HOUSEHOLD_CROWDED_RECODE = {
-    'Yes': 'Overcrowded',
-    'No': 'Non-overcrowded'
-}
-
 COMPLETED_GRADE9_RECODE = {
     'Yes': 'Completed grade 9 or higher',
     'No': 'Have not completed grade 9 or higher'
@@ -222,7 +217,6 @@ def get_living_environment_profile(geo_code, geo_level, session):
 
     youth_household_crowded, _ = get_stat_data(
         ['household crowded'], geo_level, geo_code, session,
-        recode=HOUSEHOLD_CROWDED_RECODE,
         table_name='youth_household_crowded')
 
     youth_income_poverty, _ = get_stat_data(
