@@ -174,6 +174,7 @@ def get_education_profile(geo_code, geo_level, session):
 def get_health_profile(geo_code, geo_level, session):
     youth_difficulty_by_function, _ = get_stat_data(
         ['function type'], geo_level, geo_code, session,
+        key_order=['Seeing', 'Hearing', 'Communication', 'Walking', 'Remembering', 'Self care'],
         table_name='youth_difficulty_functioning')
 
     del youth_difficulty_by_function['None']
