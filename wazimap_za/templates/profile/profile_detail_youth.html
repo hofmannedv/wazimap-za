@@ -147,14 +147,14 @@
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#income-poverty" id="income-poverty">Income poverty<i class="fa fa-link"></i></a></h2>
             <aside>Stats SA’s 2015 upper-bound poverty line of R779 per person per month in 2011 prices is used to define income poverty</aside>
-            <div class="column-quarter">
+            <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_income_poor stat_type='percentage' %}
             </div>
-            <div class="column-half" id="chart-histogram-living_environment-youth_income_poor_by_pop_group" data-stat-type="scaled-percentage" data-chart-title="Youth in income-poor households by race"></div>
-            <div class="column-quarter" id="chart-pie-living_environment-youth_income_poor_by_gender" data-stat-type="percentage" data-chart-title="Youth in income-poor households by gender"></div>
+            <div class="column-third" id="chart-pie-living_environment-youth_income_poverty" data-stat-type="percentage" data-chart-title="Youth living in households by income poverty status"></div>
+            <div class="column-third" id="chart-pie-living_environment-youth_income_poor_by_gender" data-stat-type="percentage" data-chart-title="Youth in income-poor households by gender"></div>
         </section>
         <section class="clearfix stat-row grouped-row">
-            <div class="column-third" id="chart-pie-living_environment-youth_income_poverty" data-stat-type="percentage" data-chart-title="Youth living in households by income poverty status"></div>
+            <div class="column-half" id="chart-histogram-living_environment-youth_income_poor_by_pop_group" data-stat-type="scaled-percentage" data-chart-title="Youth in income-poor households by race"></div>
         </section>
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#multid-poor" id="multid-poor">Multidimensionally poor<i class="fa fa-link"></i></a></h2>
