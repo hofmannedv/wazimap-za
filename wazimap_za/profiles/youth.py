@@ -304,12 +304,12 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
 
     youth_unemployment_by_definition = OrderedDict((
         ('Official', {
-            "name": "Official",
+            "name": "Official definition",
             "values": {"this": youth_labour_force_official['Unemployed']['values']['this']},
             "numerators": {"this": youth_labour_force_official['Unemployed']['numerators']['this']}
         }),
         ('Expanded', {
-            "name": "Expanded",
+            "name": "Expanded definition",
             "values": {"this": youth_labour_force_expanded['Unemployed']['values']['this']},
             "numerators":{"this": youth_labour_force_expanded['Unemployed']['numerators']['this']}
         })
