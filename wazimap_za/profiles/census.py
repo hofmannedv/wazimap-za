@@ -1,3 +1,4 @@
+from __future__ import division
 from collections import OrderedDict
 import logging
 
@@ -345,26 +346,8 @@ def get_demographics_profile(geo_code, geo_level, session):
                        '80+'))
 
     # sex
-    db_model_sex = get_model_from_fields(['gender'], geo_level, table_name='gender')
-    query = session.query(func.sum(db_model_sex.total)) \
-                   .filter(db_model_sex.gender == 'Male')
-    query = query.filter(db_model_sex.geo_code == geo_code)
-    total_male = query.one()[0]
-
-    sex_data = OrderedDict((  # census data refers to sex as gender
-            ('Female', {
-                "name": "Female",
-                "values": {"this": round((total_pop - total_male) / total_pop * 100, 2)},
-                "numerators": {"this": total_pop - total_male},
-            }),
-            ('Male', {
-                "name": "Male",
-                "values": {"this": round(total_male / total_pop * 100, 2)},
-                "numerators": {"this": total_male},
-            }),
-        ))
-
-    add_metadata(sex_data, db_model_sex)
+    sex_data, _ = get_stat_data(
+            ['gender'], geo_level, geo_code, session, table_name='gender')
 
     final_data = {
         'language_distribution': language_data,
