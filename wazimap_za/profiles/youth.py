@@ -183,7 +183,7 @@ def get_health_profile(geo_code, geo_level, session):
         key_order=['Seeing', 'Hearing', 'Communication', 'Walking', 'Remembering', 'Self care'],
         table_name='youth_difficulty_functioning')
 
-    del youth_difficulty_by_function['None']
+    del youth_difficulty_by_function['Youth']
 
     final_data = {
         'youth_difficulty_by_function': youth_difficulty_by_function
