@@ -351,6 +351,11 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
         table_name='youth_household_employment')
 
     final_data = {
+        'youth_official_unemployment': {
+            "name": "Youth (aged 15-24) unemployment rate",
+            "values": {"this": youth_labour_force_official['Unemployed']['values']['this'],
+            }
+        },
         'youth_unemployment_by_definition': youth_unemployment_by_definition,
         'youth_employment_status': youth_employment_status,
         'youth_neet': {
