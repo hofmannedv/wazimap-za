@@ -162,14 +162,69 @@ def get_education_profile(geo_code, geo_level, session):
     return final_data
 
 
-def get_health_profile(geo_code, geo_level, session):
-    youth_difficulty_by_function, _ = get_stat_data(
-        ['function type'], geo_level, geo_code, session,
-        key_order=['Seeing', 'Hearing', 'Communication', 'Walking', 'Remembering', 'Self care'],
-        table_name='youth_difficulty_functioning')
+def get_economic_opportunities_profile(geo_code, geo_level, session):
+    youth_labour_force_official, _ = get_stat_data(
+        ['employment status'], geo_level, geo_code, session,
+        table_name='youth_labour_force_official_gender')
+
+    youth_labour_force_expanded, _ = get_stat_data(
+        ['employment status'], geo_level, geo_code, session,
+        table_name='youth_labour_force_expanded_gender')
+
+    youth_unemployment_by_definition = OrderedDict((
+        ('Official', {
+            "name": "Official definition",
+            "values": {"this": youth_labour_force_official['Unemployed']['values']['this']},
+            "numerators": {"this": youth_labour_force_official['Unemployed']['numerators']['this']}
+        }),
+        ('Expanded', {
+            "name": "Expanded definition",
+            "values": {"this": youth_labour_force_expanded['Unemployed']['values']['this']},
+            "numerators":{"this": youth_labour_force_expanded['Unemployed']['numerators']['this']}
+        })
+    ))
+    youth_unemployment_by_definition['metadata'] = youth_labour_force_official['metadata']
+
+    youth_employment_status, _ = get_stat_data(
+        ['employment status'], geo_level, geo_code, session,
+        key_order=('Employed', 'Unemployed', 'Discouraged work-seeker', 'Other not economically active'),
+        table_name='youth_employment_status_gender')
+
+    youth_emp_edu_train_status, _ = get_stat_data(
+        ['employment education training'], geo_level, geo_code, session,
+        table_name='youth_employment_education_training_gender')
+
+    youth_neet_by_gender, _ = get_stat_data(
+        ['gender'], geo_level, geo_code, session,
+        only={'employment education training': ['NEET']},
+        table_name='youth_employment_education_training_gender')
+
+    youth_emp_edu_train, _ = get_stat_data(['employment education training'], geo_level, geo_code, session,table_name='youth_employment_education_training_gender')
+
+    youth_household_employment, _ = get_stat_data(
+        ['household employment'], geo_level, geo_code, session,
+        table_name='youth_household_employment')
 
     final_data = {
-        'youth_difficulty_by_function': youth_difficulty_by_function
+        'youth_official_unemployment': {
+            "name": "Youth (aged 15-24) unemployment rate",
+            "values": {"this": youth_labour_force_official['Unemployed']['values']['this'],
+            }
+        },
+        'youth_unemployment_by_definition': youth_unemployment_by_definition,
+        'youth_employment_status': youth_employment_status,
+        'youth_neet': {
+            "name": "Of youth are not in employment, education or training (NEET)",
+            "values": {"this": youth_emp_edu_train_status['NEET']['values']['this']
+            }
+        },
+        'youth_emp_edu_train_status': youth_emp_edu_train_status,
+        'youth_neet_by_gender': youth_neet_by_gender,
+        'youth_no_working_adults': {
+            "name": "Of youth live in households without an employed adult",
+            "values": {"this": youth_household_employment['No employed adult']['values']['this']}
+        },
+        'youth_household_employment': youth_household_employment
     }
 
     return final_data
@@ -278,74 +333,6 @@ def get_living_environment_profile(geo_code, geo_level, session):
     return final_data
 
 
-def get_economic_opportunities_profile(geo_code, geo_level, session):
-    youth_labour_force_official, _ = get_stat_data(
-        ['employment status'], geo_level, geo_code, session,
-        table_name='youth_labour_force_official_gender')
-
-    youth_labour_force_expanded, _ = get_stat_data(
-        ['employment status'], geo_level, geo_code, session,
-        table_name='youth_labour_force_expanded_gender')
-
-    youth_unemployment_by_definition = OrderedDict((
-        ('Official', {
-            "name": "Official definition",
-            "values": {"this": youth_labour_force_official['Unemployed']['values']['this']},
-            "numerators": {"this": youth_labour_force_official['Unemployed']['numerators']['this']}
-        }),
-        ('Expanded', {
-            "name": "Expanded definition",
-            "values": {"this": youth_labour_force_expanded['Unemployed']['values']['this']},
-            "numerators":{"this": youth_labour_force_expanded['Unemployed']['numerators']['this']}
-        })
-    ))
-    youth_unemployment_by_definition['metadata'] = youth_labour_force_official['metadata']
-
-    youth_employment_status, _ = get_stat_data(
-        ['employment status'], geo_level, geo_code, session,
-        key_order=('Employed', 'Unemployed', 'Discouraged work-seeker', 'Other not economically active'),
-        table_name='youth_employment_status_gender')
-
-    youth_emp_edu_train_status, _ = get_stat_data(
-        ['employment education training'], geo_level, geo_code, session,
-        table_name='youth_employment_education_training_gender')
-
-    youth_neet_by_gender, _ = get_stat_data(
-        ['gender'], geo_level, geo_code, session,
-        only={'employment education training': ['NEET']},
-        table_name='youth_employment_education_training_gender')
-
-    youth_emp_edu_train, _ = get_stat_data(['employment education training'], geo_level, geo_code, session,table_name='youth_employment_education_training_gender')
-
-    youth_household_employment, _ = get_stat_data(
-        ['household employment'], geo_level, geo_code, session,
-        table_name='youth_household_employment')
-
-    final_data = {
-        'youth_official_unemployment': {
-            "name": "Youth (aged 15-24) unemployment rate",
-            "values": {"this": youth_labour_force_official['Unemployed']['values']['this'],
-            }
-        },
-        'youth_unemployment_by_definition': youth_unemployment_by_definition,
-        'youth_employment_status': youth_employment_status,
-        'youth_neet': {
-            "name": "Of youth are not in employment, education or training (NEET)",
-            "values": {"this": youth_emp_edu_train_status['NEET']['values']['this']
-            }
-        },
-        'youth_emp_edu_train_status': youth_emp_edu_train_status,
-        'youth_neet_by_gender': youth_neet_by_gender,
-        'youth_no_working_adults': {
-            "name": "Of youth live in households without an employed adult",
-            "values": {"this": youth_household_employment['No employed adult']['values']['this']}
-        },
-        'youth_household_employment': youth_household_employment
-    }
-
-    return final_data
-
-
 def get_safety_profile(geo_code, geo_level, session):
     crimes_by_year, _ = get_stat_data(
         ['type of crime', 'year'], geo_level, geo_code, session,
@@ -360,6 +347,19 @@ def get_safety_profile(geo_code, geo_level, session):
     final_data = {
         'contact_crimes_by_year': contact_crimes_by_year,
         'property_crimes_by_year': property_crimes_by_year
+    }
+
+    return final_data
+
+
+def get_health_profile(geo_code, geo_level, session):
+    youth_difficulty_by_function, _ = get_stat_data(
+        ['function type'], geo_level, geo_code, session,
+        key_order=['Seeing', 'Hearing', 'Communication', 'Walking', 'Remembering', 'Self care'],
+        table_name='youth_difficulty_functioning')
+
+    final_data = {
+        'youth_difficulty_by_function': youth_difficulty_by_function
     }
 
     return final_data
