@@ -246,7 +246,7 @@ def get_living_environment_profile(geo_code, geo_level, session):
 
     youth_dwelling_type, _ = get_stat_data(
         ['dwelling type'], geo_level, geo_code, session,
-        key_order=('Formal', 'Traditional', 'Informal not in backyard', 'Informal in backyard', 'Other'),
+        key_order=('Formal', 'Informal not in backyard', 'Informal in backyard', 'Traditional', 'Other'),
         table_name='youth_dwelling_type')
 
     youth_only_households, _ = get_stat_data(
