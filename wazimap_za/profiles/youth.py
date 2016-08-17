@@ -288,16 +288,22 @@ def get_living_environment_profile(geo_code, geo_level, session):
     youth_mpi_score, _ = youth_mpi_table.get_stat_data(
         geo_level, geo_code, percent=False)
 
+    try:
+        informal_not_in_backyard = youth_dwelling_type['Informal not in backyard']['values']['this']
+    except KeyError:
+        informal_not_in_backyard = 0
+    try:
+        informal_in_backyard = youth_dwelling_type['Informal in backyard']['values']['this']
+    except KeyError:
+        informal_in_backyard = 0
+
     final_data = {
         'youth_electricity_access': youth_electricity_access,
         'youth_toilet_access': youth_toilet_access,
         'youth_water_access': youth_water_access,
         'youth_dwelling_informal': {
             "name": "Of youth live in households that are informal dwellings (shacks)",
-            "values": {"this": (
-                youth_dwelling_type['Informal not in backyard']['values']['this'] +
-                youth_dwelling_type['Informal in backyard']['values']['this']
-            )}
+            "values": {"this": informal_not_in_backyard + informal_in_backyard}
         },
         'youth_dwelling_type': youth_dwelling_type,
         'youth_households_overcrowded': {
