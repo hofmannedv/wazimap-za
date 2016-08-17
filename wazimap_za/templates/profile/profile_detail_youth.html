@@ -4,7 +4,7 @@
 
 {% block profile_header_population %}
 <span class="value">{{ demographics.youth_population_total.values.this|floatformat:"0" }}</span>
-<span class="name">Youth Population</span>
+<span class="name">Youth aged 15-24 population</span>
 {% endblock %}
 
 {% block profile_header_density %}
@@ -89,7 +89,7 @@
     <div class="section-container">
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#employment_status" id="employment_status">Youth employment status<i class="fa fa-link"></i></a></h2>
-            <aside>
+            <aside class="multi-line-header">
                 According to the official definition, a person is unemployed if he or she is (a) without work, (b) available to work, and (c) actively seeking work. The expanded definition excludes criterion (c)
             </aside>
             <div class="column-third">

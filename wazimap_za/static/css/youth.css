@@ -3,3 +3,8 @@
     margin: 10px 10px 10px 0px;
     vertical-align: baseline;
 }
+
+aside.multi-line-header {
+  padding-top: 1.2em;
+}
+
