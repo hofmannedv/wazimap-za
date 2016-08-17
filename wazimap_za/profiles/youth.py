@@ -104,25 +104,9 @@ def get_education_profile(geo_code, geo_level, session):
         table_name='youth_age_16_to_17_gender_completed_grade9')
 
     youth_gender_completed_grade9, _ = get_stat_data(
-        ['gender', 'completed grade9'], geo_level, geo_code, session,
+        ['gender'], geo_level, geo_code, session,
+        only={'completed grade9': ['Yes']},
         table_name='youth_age_16_to_17_gender_completed_grade9')
-
-    db_model_gender_completed_grade9 = get_model_from_fields(
-        ['gender'], geo_level, table_name='youth_age_16_to_17_gender_completed_grade9')
-
-    gender_completed_grade9_data = OrderedDict((
-            ('Female', {
-                "name": "Female",
-                "values": {"this": youth_gender_completed_grade9['Female']['Yes']['values']['this']},
-                "numerators": {"this": youth_gender_completed_grade9['Female']['Yes']['numerators']['this']},
-            }),
-            ('Male', {
-                "name": "Male",
-                "values": {"this": youth_gender_completed_grade9['Male']['Yes']['values']['this']},
-                "numerators": {"this": youth_gender_completed_grade9['Male']['Yes']['numerators']['this']},
-            }),
-        ))
-    add_metadata(gender_completed_grade9_data, db_model_gender_completed_grade9)
 
     youth_education_level, youth_pop_20_to_24 = get_stat_data(
         ['education level'], geo_level, geo_code, session,
@@ -161,7 +145,7 @@ def get_education_profile(geo_code, geo_level, session):
             "name": "Of youth aged 16-17 have completed grade 9 or higher",
             "values": {"this": youth_completed_grade9['Completed grade 9 or higher']['values']['this']},
         },
-        'youth_gender_completed_grade9': gender_completed_grade9_data,
+        'youth_gender_completed_grade9': youth_gender_completed_grade9,
         'youth_perc_matric': {
             "name": "Of youth aged 20-24 have completed matric/matric equivalent or higher",
             "values": {"this": percent(matric_or_equiv, youth_pop_20_to_24)},
