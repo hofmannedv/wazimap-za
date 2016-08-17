@@ -27,6 +27,7 @@ COMPLETED_GRADE9_RECODE = {
 
 POPULATION_GROUP_ORDER = ('Black African', 'Coloured', 'Indian or Asian', 'White', 'Other')
 
+
 def get_profile(geo_code, geo_level, profile_name=None):
     session = get_session()
 
@@ -223,37 +224,31 @@ def get_living_environment_profile(geo_code, geo_level, session):
         ['income poverty'], geo_level, geo_code, session,
         table_name='youth_income_poverty_gender_population_group')
 
-    youth_income_poverty_by_pop_group, _ = get_stat_data(
-        ['income poverty', 'population group'], geo_level, geo_code, session,
+    youth_income_poor_by_pop_group, _ = get_stat_data(
+        ['population group'], geo_level, geo_code, session,
         key_order={'population group': POPULATION_GROUP_ORDER},
+        only={'income poverty': ['Income-poor']},
         table_name='youth_income_poverty_gender_population_group')
 
-    youth_income_poor_by_pop_group = youth_income_poverty_by_pop_group['Income-poor']
-    youth_income_poor_by_pop_group['metadata'] = youth_income_poverty_by_pop_group['metadata']
-
-    youth_income_poverty_by_gender, _ = get_stat_data(
-        ['income poverty', 'gender'], geo_level, geo_code, session,
+    youth_income_poor_by_gender, _ = get_stat_data(
+        ['gender'], geo_level, geo_code, session,
+        only={'income poverty': ['Income-poor']},
         table_name='youth_income_poverty_gender_population_group')
-    youth_income_poor_by_gender = youth_income_poverty_by_gender['Income-poor']
-    youth_income_poor_by_gender['metadata'] = youth_income_poverty_by_gender['metadata']
 
     youth_multid_poverty, _ = get_stat_data(
         ['multidimensionally poor'], geo_level, geo_code, session,
         key_order={'population group': POPULATION_GROUP_ORDER},
         table_name='youth_multidimensionally_poor_gender_population_group')
 
-    youth_multid_poverty_by_pop_group, _ = get_stat_data(
-        ['multidimensionally poor', 'population group'], geo_level, geo_code, session,
-        key_order={'population group': POPULATION_GROUP_ORDER},
+    youth_multid_poor_by_pop_group, _ = get_stat_data(
+        ['population group'], geo_level, geo_code, session,
+        only={'multidimensionally poor': ['Multidimensionally poor']},
         table_name='youth_multidimensionally_poor_gender_population_group')
-    youth_multid_poor_by_pop_group = youth_multid_poverty_by_pop_group['Multidimensionally poor']
-    youth_multid_poor_by_pop_group['metadata'] = youth_multid_poverty_by_pop_group['metadata']
 
-    youth_multid_poverty_by_gender, _ = get_stat_data(
-        ['multidimensionally poor', 'gender'], geo_level, geo_code, session,
+    youth_multid_poor_by_gender, _ = get_stat_data(
+        ['gender'], geo_level, geo_code, session,
+        only={'multidimensionally poor': ['Multidimensionally poor']},
         table_name='youth_multidimensionally_poor_gender_population_group')
-    youth_multid_poor_by_gender = youth_multid_poverty_by_gender['Multidimensionally poor']
-    youth_multid_poor_by_gender['metadata'] = youth_multid_poverty_by_gender['metadata']
 
     # Fix: Circular reference when passing this to the template
     youth_mpi_table = get_datatable('youth_mpi_score')
@@ -333,24 +328,10 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
         ['employment education training'], geo_level, geo_code, session,
         table_name='youth_employment_education_training_gender')
 
-    youth_emp_edu_train_by_gender, _ = get_stat_data(
-        ['gender', 'employment education training'], geo_level, geo_code, session,
+    youth_neet_by_gender, _ = get_stat_data(
+        ['gender'], geo_level, geo_code, session,
+        only={'employment education training': ['NEET']},
         table_name='youth_employment_education_training_gender')
-
-    # Hack to structure data and add the metadata
-    youth_neet_by_gender = OrderedDict((  # census data refers to sex as gender
-        ('Female', {
-            "name": "Female",
-            "values": {"this": youth_emp_edu_train_by_gender['Female']['NEET']['values']['this']},
-            "numerators": {"this": youth_emp_edu_train_by_gender['Female']['NEET']['numerators']['this']},
-        }),
-        ('Male', {
-            "name": "Male",
-            "values": {"this": youth_emp_edu_train_by_gender['Male']['NEET']['values']['this']},
-            "numerators": {"this": youth_emp_edu_train_by_gender['Male']['NEET']['numerators']['this']},
-        }),
-    ))
-    youth_neet_by_gender['metadata'] = youth_emp_edu_train_by_gender['metadata']
 
     youth_emp_edu_train, _ = get_stat_data(['employment education training'], geo_level, geo_code, session,table_name='youth_employment_education_training_gender')
 
@@ -381,6 +362,7 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
     }
 
     return final_data
+
 
 def get_safety_profile(geo_code, geo_level, session):
     crimes_by_year, _ = get_stat_data(
