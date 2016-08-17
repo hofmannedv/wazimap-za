@@ -487,9 +487,7 @@ def get_households_profile(geo_code, geo_level, session):
     # household goods
     household_goods, _ = get_stat_data(
             ['household goods'], geo_level, geo_code, session,
-            total=total_households,
             recode=HOUSEHOLD_GOODS_RECODE,
-            exclude=['total households'],
             key_order=sorted(HOUSEHOLD_GOODS_RECODE.values()))
 
     return {'total_households': {
