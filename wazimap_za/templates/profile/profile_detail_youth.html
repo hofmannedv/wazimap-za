@@ -139,7 +139,7 @@
             <h2 class="header-for-columns"><a class="permalink" href="#households" id="households">Households<i class="fa fa-link"></i></a></h2>
             <aside>A household is defined as overcrowded if there are more than 2 persons per habitable room (excluding kitchens, bathrooms, store rooms, etc.)</aside>
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_households_overcrowded stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_households_overcrowded stat_type='percentage' %}
             </div>
             <div class="column-third" id="chart-pie-living_environment-youth_household_crowded" data-stat-type="percentage" data-chart-title="Youth living in households by overcrowding"></div>
         </section>

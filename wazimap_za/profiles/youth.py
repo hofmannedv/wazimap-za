@@ -301,8 +301,8 @@ def get_living_environment_profile(geo_code, geo_level, session):
         },
         'youth_dwelling_type': youth_dwelling_type,
         'youth_households_overcrowded': {
-            "name": "Youth living in overcrowded households",
-            "values": {"this": youth_household_crowded['Overcrowded']['numerators']['this']}
+            "name": "Of households are overcrowded",
+            "values": {"this": youth_household_crowded['Overcrowded']['values']['this']}
         },
         'youth_household_crowded': youth_household_crowded,
         'youth_income_poor': {
