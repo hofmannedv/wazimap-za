@@ -249,10 +249,6 @@ def get_living_environment_profile(geo_code, geo_level, session):
         key_order=('Formal', 'Informal not in backyard', 'Informal in backyard', 'Traditional', 'Other'),
         table_name='youth_dwelling_type')
 
-    youth_only_households, _ = get_stat_data(
-        ['youth only household'], geo_level, geo_code, session,
-        table_name='youth_youth_only_household')
-
     youth_household_crowded, _ = get_stat_data(
         ['household crowded'], geo_level, geo_code, session,
         table_name='youth_household_crowded')
@@ -304,10 +300,6 @@ def get_living_environment_profile(geo_code, geo_level, session):
             )}
         },
         'youth_dwelling_type': youth_dwelling_type,
-        'youth_only_households': {
-            "name": "Youth living in youth-only households",
-            "values": {"this": youth_only_households['Yes']['values']['this']}
-        },
         'youth_households_overcrowded': {
             "name": "Youth living in overcrowded households",
             "values": {"this": youth_household_crowded['Overcrowded']['numerators']['this']}
