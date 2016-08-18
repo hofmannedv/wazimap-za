@@ -20,11 +20,6 @@ EDUCATION_LEVELS_RECODE = {
     'Tertiary': 'Any tertiary'
 }
 
-COMPLETED_GRADE9_RECODE = {
-    'Yes': 'Completed grade 9 or higher',
-    'No': 'Have not completed grade 9 or higher'
-}
-
 POPULATION_GROUP_ORDER = ('Black African', 'Coloured', 'Indian or Asian', 'White', 'Other')
 
 
@@ -100,12 +95,11 @@ def get_demographics_profile(geo_code, geo_level, session):
 def get_education_profile(geo_code, geo_level, session):
     youth_completed_grade9, _ = get_stat_data(
         ['completed grade9'], geo_level, geo_code, session,
-        recode=COMPLETED_GRADE9_RECODE,
         table_name='youth_age_16_to_17_gender_completed_grade9')
 
     youth_gender_completed_grade9, _ = get_stat_data(
         ['gender'], geo_level, geo_code, session,
-        only={'completed grade9': ['Yes']},
+        only={'completed grade9': ['Completed']},
         table_name='youth_age_16_to_17_gender_completed_grade9')
 
     youth_education_level, youth_pop_20_to_24 = get_stat_data(
@@ -142,7 +136,7 @@ def get_education_profile(geo_code, geo_level, session):
         'youth_completed_grade9': youth_completed_grade9,
         'youth_perc_completed_grade9': {
             "name": "Of youth aged 16-17 have completed grade 9 or higher",
-            "values": {"this": youth_completed_grade9['Completed grade 9 or higher']['values']['this']},
+            "values": {"this": youth_completed_grade9['Completed']['values']['this']},
         },
         'youth_gender_completed_grade9': youth_gender_completed_grade9,
         'youth_perc_matric': {
