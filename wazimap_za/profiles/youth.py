@@ -288,14 +288,8 @@ def get_living_environment_profile(geo_code, geo_level, session):
     youth_mpi_score, _ = youth_mpi_table.get_stat_data(
         geo_level, geo_code, percent=False)
 
-    try:
-        informal_not_in_backyard = youth_dwelling_type['Informal not in backyard']['values']['this']
-    except KeyError:
-        informal_not_in_backyard = 0
-    try:
-        informal_in_backyard = youth_dwelling_type['Informal in backyard']['values']['this']
-    except KeyError:
-        informal_in_backyard = 0
+    informal_not_in_backyard = youth_dwelling_type.get('Informal not in backyard', {}).get('values', {}).get('this', 0)
+    informal_in_backyard = youth_dwelling_type.get('Informal in backyard', {}).get('values', {}).get('this', 0)
 
     final_data = {
         'youth_electricity_access': youth_electricity_access,
