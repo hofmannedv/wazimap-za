@@ -133,11 +133,10 @@ def get_education_profile(geo_code, geo_level, session):
     youth_education_attending_by_age = youth_education_attendance_by_age['Yes']
     youth_education_attending_by_age['metadata'] = youth_education_attendance_by_age['metadata']
 
-    youth_education_attendance_by_gender, _ = get_stat_data(
-        ['attendance', 'gender'], geo_level, geo_code, session,
+    youth_education_attending_by_gender, _ = get_stat_data(
+        ['gender'], geo_level, geo_code, session,
+        only={'attendance': ['Yes']},
         table_name='youth_education_attendance_gender_age_incompleted_years')
-    youth_education_attending_by_gender = youth_education_attendance_by_gender['Yes']
-    youth_education_attending_by_gender['metadata'] = youth_education_attendance_by_gender['metadata']
 
     final_data  = {
         'youth_completed_grade9': youth_completed_grade9,
@@ -207,7 +206,7 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
 
     final_data = {
         'youth_official_unemployment': {
-            "name": "Youth (aged 15-24) unemployment rate",
+            "name": "Youth (aged 15-24) unemployment rate using the official definition",
             "values": {"this": youth_labour_force_official['Unemployed']['values']['this'],
             }
         },
