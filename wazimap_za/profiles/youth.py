@@ -206,7 +206,7 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
 
     final_data = {
         'youth_official_unemployment': {
-            "name": "Youth (aged 15-24) unemployment rate",
+            "name": "Youth (aged 15-24) unemployment rate using the official definition",
             "values": {"this": youth_labour_force_official['Unemployed']['values']['this'],
             }
         },
