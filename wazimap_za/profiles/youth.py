@@ -95,6 +95,7 @@ def get_demographics_profile(geo_code, geo_level, session):
 def get_education_profile(geo_code, geo_level, session):
     youth_completed_grade9, _ = get_stat_data(
         ['completed grade9'], geo_level, geo_code, session,
+        key_order=('Completed', 'Not completed'),
         table_name='youth_age_16_to_17_gender_completed_grade9')
 
     youth_gender_completed_grade9, _ = get_stat_data(
@@ -185,6 +186,7 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
 
     youth_emp_edu_train_status, _ = get_stat_data(
         ['employment education training'], geo_level, geo_code, session,
+        key_order=('Employed', 'School/post-school', 'NEET'),
         table_name='youth_employment_education_training_gender')
 
     youth_neet_by_gender, _ = get_stat_data(
@@ -192,10 +194,9 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
         only={'employment education training': ['NEET']},
         table_name='youth_employment_education_training_gender')
 
-    youth_emp_edu_train, _ = get_stat_data(['employment education training'], geo_level, geo_code, session,table_name='youth_employment_education_training_gender')
-
     youth_household_employment, _ = get_stat_data(
         ['household employment'], geo_level, geo_code, session,
+        key_order=('No employed adult', 'At least one employed adult'),
         table_name='youth_household_employment')
 
     final_data = {
@@ -226,7 +227,7 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
 def get_living_environment_profile(geo_code, geo_level, session):
     youth_electricity_access, _ = get_stat_data(
         ['electricity access'], geo_level, geo_code, session,
-        key_order=('Have electricity for everything', 'Have electricity for some things', 'No electricity'),
+        key_order=('No electricity', 'Have electricity for some things', 'Have electricity for everything'),
         table_name='youth_electricity_access')
     youth_toilet_access, _ = get_stat_data(
         ['toilet access'], geo_level, geo_code, session,
@@ -244,10 +245,12 @@ def get_living_environment_profile(geo_code, geo_level, session):
 
     youth_household_crowded, _ = get_stat_data(
         ['household crowded'], geo_level, geo_code, session,
+        key_order=('Overcrowded', 'Non-overcrowded'),
         table_name='youth_household_crowded')
 
     youth_income_poverty, _ = get_stat_data(
         ['income poverty'], geo_level, geo_code, session,
+        key_order=('Income-poor', 'Non-poor'),
         table_name='youth_income_poverty_gender_population_group')
 
     youth_income_poor_by_pop_group, _ = get_stat_data(
@@ -263,7 +266,7 @@ def get_living_environment_profile(geo_code, geo_level, session):
 
     youth_multid_poverty, _ = get_stat_data(
         ['multidimensionally poor'], geo_level, geo_code, session,
-        key_order={'population group': POPULATION_GROUP_ORDER},
+        key_order=('Multidimensionally poor', 'Non-poor'),
         table_name='youth_multidimensionally_poor_gender_population_group')
 
     youth_multid_poor_by_pop_group, _ = get_stat_data(
