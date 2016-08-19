@@ -269,6 +269,7 @@ def get_living_environment_profile(geo_code, geo_level, session):
     youth_multid_poor_by_pop_group, _ = get_stat_data(
         ['population group'], geo_level, geo_code, session,
         only={'multidimensionally poor': ['Multidimensionally poor']},
+        key_order={'population group': POPULATION_GROUP_ORDER},
         table_name='youth_multidimensionally_poor_gender_population_group')
 
     youth_multid_poor_by_gender, _ = get_stat_data(
