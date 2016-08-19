@@ -201,7 +201,7 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
 
     final_data = {
         'youth_official_unemployment': {
-            "name": "Youth (aged 15-24) unemployment rate using the official definition",
+            "name": "Youth (aged 15-24) unemployment rate using the official definition *",
             "values": {"this": youth_labour_force_official['Unemployed']['values']['this'],
             }
         },
@@ -284,6 +284,7 @@ def get_living_environment_profile(geo_code, geo_level, session):
     youth_mpi_table = get_datatable('youth_mpi_score')
     youth_mpi_score, _ = youth_mpi_table.get_stat_data(
         geo_level, geo_code, percent=False)
+    youth_mpi_score['youth_mpi_score']['name'] = 'Youth MPI score *'
 
     informal_not_in_backyard = youth_dwelling_type.get('Informal not in backyard', {}).get('values', {}).get('this', 0)
     informal_in_backyard = youth_dwelling_type.get('Informal in backyard', {}).get('values', {}).get('this', 0)
@@ -298,19 +299,19 @@ def get_living_environment_profile(geo_code, geo_level, session):
         },
         'youth_dwelling_type': youth_dwelling_type,
         'youth_households_overcrowded': {
-            "name": "Of households are overcrowded",
+            "name": "Of households are overcrowded *",
             "values": {"this": youth_household_crowded['Overcrowded']['values']['this']}
         },
         'youth_household_crowded': youth_household_crowded,
         'youth_income_poor': {
-            "name": "Of youth live in income-poor households",
+            "name": "Of youth live in income-poor households *",
             "values": {"this": youth_income_poverty['Income-poor']['values']['this']}
         },
         'youth_income_poverty': youth_income_poverty,
         'youth_income_poor_by_pop_group': youth_income_poor_by_pop_group,
         'youth_income_poor_by_gender': youth_income_poor_by_gender,
         'youth_multid_poor': {
-            "name": "Of youth are multidimensionally poor",
+            "name": "Of youth are multidimensionally poor*",
             "values": {"this": youth_multid_poverty['Multidimensionally poor']['values']['this']}
         },
         'youth_multid_poor_by_pop_group': youth_multid_poor_by_pop_group,
