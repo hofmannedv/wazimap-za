@@ -179,7 +179,7 @@
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#mpi-score" id="mpi-score">Youth Multidimensional Poverty Index score<i class="fa fa-link"></i></a></h2>
             <div class="column-half">
-                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_mpi_score stat_type='number' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_mpi_score stat_type='number' decimals="-3" %}
             </div>
         </section>
     </div>
