@@ -3,5 +3,5 @@ gevent==1.0.1
 greenlet==0.4.6
 gunicorn==18.0
 newrelic==2.40.0.34
-wazimap==0.3.3
+wazimap==0.4
 wazimap-mapit==0.5.4
