@@ -70,7 +70,7 @@ FieldTable(['age in completed years', 'gender'], id='youth_gender_age_in_complet
 FieldTable(['population group', 'gender'], id='youth_gender_population_group', universe='Youth', year='2011')
 FieldTable(['completed grade9', 'gender'], id='youth_age_16_to_17_gender_completed_grade9', universe='Youth aged 16 to 17', year='2011')
 FieldTable(['education level', 'gender'], id='youth_age_20_to_24_gender_education_level', universe='Youth aged 20 to 24', year='2011')
-FieldTable(['attendance', 'gender', 'age in completed years'], id='youth_education_attendance_gender_age_incompleted_years', universe='Youth aged 20 to 24', year='2011')
+FieldTable(['attendance', 'gender', 'age in completed years'], id='youth_education_attendance_gender_age_incompleted_years', universe='Youth', year='2011')
 
 FieldTable(['electricity access'], id='youth_electricity_access', universe='Youth living in households', year='2011')
 FieldTable(['toilet access'], id='youth_toilet_access', universe='Youth living in households', year='2011')
@@ -84,8 +84,8 @@ FieldTable(['employment status', 'gender'], id='youth_labour_force_official_gend
 FieldTable(['employment status', 'gender'], id='youth_labour_force_expanded_gender', universe='Youth in the labour force - Expanded definition', description='Employment status of youth in the labour force', year='2011')
 FieldTable(['employment status', 'gender'], id='youth_employment_status_gender', universe='Youth', year='2011')
 FieldTable(['employment education training', 'gender'], id='youth_employment_education_training_gender', universe='Youth', year='2011')
-FieldTable(['household employment'], id='youth_household_employment', description='Youth in households by adult employment', year='2011')
-FieldTable(['function type'], id='youth_difficulty_functioning', description='Youth experiencing difficulty in functioning', year='2011', universe='Youth responding to the Difficulty Functioning questionnaire', denominator_key='youth')
+FieldTable(['household employment'], id='youth_household_employment', universe='Youth living in households', description='Youth in households by adult employment', year='2011')
+FieldTable(['function type'], id='youth_difficulty_functioning', description='Youth experiencing difficulty in functioning', year='2011', universe='Youth with non-missing responses to the general health and functioning questions', denominator_key='youth')
 
 
 # Simple Tables
