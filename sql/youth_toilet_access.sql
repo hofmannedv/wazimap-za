@@ -2142,6 +2142,414 @@ ward	19100111	Chemical toilet	7
 ward	19100111	Unventilated pit latrine/Bucket toilet	142
 ward	19100111	Other	50
 ward	19100111	No toilet facilities	284
+ward	10205017	Unventilated pit latrine/Bucket toilet	0
+ward	10206004	Chemical toilet	0
+ward	10303003	Chemical toilet	0
+ward	10303003	Pit latrine-ventilated	0
+ward	10404019	Unventilated pit latrine/Bucket toilet	0
+ward	10104002	Chemical toilet	0
+ward	10104002	Pit latrine-ventilated	0
+ward	10404002	Other	0
+ward	10404010	Chemical toilet	0
+ward	10203019	Chemical toilet	0
+ward	19100002	Unventilated pit latrine/Bucket toilet	0
+ward	10204007	Unventilated pit latrine/Bucket toilet	0
+ward	10104009	Pit latrine-ventilated	0
+ward	10203016	Unventilated pit latrine/Bucket toilet	0
+ward	10408009	Pit latrine-ventilated	0
+ward	10206003	Chemical toilet	0
+ward	10408009	Chemical toilet	0
+ward	10203019	No toilet facilities	0
+ward	10402004	Chemical toilet	0
+ward	19100052	Chemical toilet	0
+ward	19100052	Pit latrine-ventilated	0
+ward	10404011	Chemical toilet	0
+ward	10503003	Pit latrine-ventilated	0
+ward	10101005	Pit latrine-ventilated	0
+ward	10503003	Chemical toilet	0
+ward	10303004	Pit latrine-ventilated	0
+ward	10205018	Chemical toilet	0
+ward	10202006	Pit latrine-ventilated	0
+ward	10202001	Pit latrine-ventilated	0
+ward	19100101	Pit latrine-ventilated	0
+ward	10503003	No toilet facilities	0
+ward	10204008	Chemical toilet	0
+ward	10202001	Chemical toilet	0
+ward	10202006	Chemical toilet	0
+ward	19100027	Chemical toilet	0
+ward	19100010	Pit latrine-ventilated	0
+ward	10502001	Chemical toilet	0
+ward	10205011	Chemical toilet	0
+ward	10302007	Other	0
+ward	10104012	Chemical toilet	0
+ward	10104012	Pit latrine-ventilated	0
+ward	10204010	Chemical toilet	0
+ward	10205012	Pit latrine-ventilated	0
+ward	10203002	Other	0
+ward	10204010	Pit latrine-ventilated	0
+ward	10205012	Chemical toilet	0
+ward	19100102	Unventilated pit latrine/Bucket toilet	0
+ward	10205013	Pit latrine-ventilated	0
+ward	10301013	Pit latrine-ventilated	0
+ward	10407005	Unventilated pit latrine/Bucket toilet	0
+ward	19100001	Unventilated pit latrine/Bucket toilet	0
+ward	10302012	Pit latrine-ventilated	0
+ward	10302012	Chemical toilet	0
+ward	10501003	Unventilated pit latrine/Bucket toilet	0
+ward	10204009	Chemical toilet	0
+ward	10204009	Pit latrine-ventilated	0
+ward	10203008	Pit latrine-ventilated	0
+ward	10205007	Chemical toilet	0
+ward	10203008	Chemical toilet	0
+ward	10205007	Pit latrine-ventilated	0
+ward	10204009	No toilet facilities	0
+ward	10203006	Chemical toilet	0
+ward	10203008	No toilet facilities	0
+ward	10203006	Pit latrine-ventilated	0
+ward	19100003	Other	0
+ward	19100041	Pit latrine-ventilated	0
+ward	10205006	Unventilated pit latrine/Bucket toilet	0
+ward	10302009	Other	0
+ward	10503002	Chemical toilet	0
+ward	19100013	Chemical toilet	0
+ward	19100061	Chemical toilet	0
+ward	10404003	Unventilated pit latrine/Bucket toilet	0
+ward	10206009	Chemical toilet	0
+ward	10503004	Pit latrine-ventilated	0
+ward	10503004	Chemical toilet	0
+ward	19100021	Unventilated pit latrine/Bucket toilet	0
+ward	10204017	Chemical toilet	0
+ward	10302005	Pit latrine-ventilated	0
+ward	10408010	Unventilated pit latrine/Bucket toilet	0
+ward	10204005	Pit latrine-ventilated	0
+ward	10403010	Other	0
+ward	19100063	Chemical toilet	0
+ward	10302005	Chemical toilet	0
+ward	10204017	Pit latrine-ventilated	0
+ward	10105010	Chemical toilet	0
+ward	10105008	Pit latrine-ventilated	0
+ward	10402002	Chemical toilet	0
+ward	19100065	Chemical toilet	0
+ward	10203015	Pit latrine-ventilated	0
+ward	10105011	Chemical toilet	0
+ward	10404018	No toilet facilities	0
+ward	10408006	Chemical toilet	0
+ward	10404018	Pit latrine-ventilated	0
+ward	10404018	Chemical toilet	0
+ward	10104003	Unventilated pit latrine/Bucket toilet	0
+ward	10501002	Other	0
+ward	10203004	Unventilated pit latrine/Bucket toilet	0
+ward	10403006	Other	0
+ward	10503005	Unventilated pit latrine/Bucket toilet	0
+ward	19100049	Chemical toilet	0
+ward	10203002	No toilet facilities	0
+ward	10302004	Chemical toilet	0
+ward	10302007	Pit latrine-ventilated	0
+ward	10302007	Chemical toilet	0
+ward	10304001	Chemical toilet	0
+ward	10301001	Chemical toilet	0
+ward	19100079	Chemical toilet	0
+ward	10204022	Unventilated pit latrine/Bucket toilet	0
+ward	10404012	Chemical toilet	0
+ward	10204010	Other	0
+ward	10407004	Chemical toilet	0
+ward	10203002	Chemical toilet	0
+ward	19100068	Chemical toilet	0
+ward	10103002	Chemical toilet	0
+ward	10103002	Pit latrine-ventilated	0
+ward	10203002	Pit latrine-ventilated	0
+ward	10203011	Chemical toilet	0
+ward	10403002	Chemical toilet	0
+ward	10502003	Unventilated pit latrine/Bucket toilet	0
+ward	10405009	Chemical toilet	0
+ward	10203001	Chemical toilet	0
+ward	10203020	Pit latrine-ventilated	0
+ward	10408002	Chemical toilet	0
+ward	10301003	Pit latrine-ventilated	0
+ward	10301003	Chemical toilet	0
+ward	10204008	Other	0
+ward	10206012	Chemical toilet	0
+ward	10203019	Other	0
+ward	19100108	Pit latrine-ventilated	0
+ward	10408009	Other	0
+ward	10402006	Chemical toilet	0
+ward	10403009	Chemical toilet	0
+ward	19100008	Chemical toilet	0
+ward	10205001	Pit latrine-ventilated	0
+ward	10302001	Pit latrine-ventilated	0
+ward	10104008	Chemical toilet	0
+ward	19100038	Pit latrine-ventilated	0
+ward	10404002	No toilet facilities	0
+ward	10404010	Other	0
+ward	10302010	Pit latrine-ventilated	0
+ward	10404002	Chemical toilet	0
+ward	10404002	Pit latrine-ventilated	0
+ward	10302010	Chemical toilet	0
+ward	10206002	Pit latrine-ventilated	0
+ward	10101003	Pit latrine-ventilated	0
+ward	10302006	Pit latrine-ventilated	0
+ward	10302006	Chemical toilet	0
+ward	10301008	Chemical toilet	0
+ward	10403006	No toilet facilities	0
+ward	10501002	No toilet facilities	0
+ward	19100059	Pit latrine-ventilated	0
+ward	10403006	Chemical toilet	0
+ward	10105009	Unventilated pit latrine/Bucket toilet	0
+ward	10501002	Pit latrine-ventilated	0
+ward	10501002	Chemical toilet	0
+ward	10403010	Pit latrine-ventilated	0
+ward	10302005	Other	0
+ward	10403010	Chemical toilet	0
+ward	10302013	Unventilated pit latrine/Bucket toilet	0
+ward	10405002	Chemical toilet	0
+ward	10304004	Chemical toilet	0
+ward	10302002	Pit latrine-ventilated	0
+ward	10203015	Other	0
+ward	10403010	No toilet facilities	0
+ward	10302009	Chemical toilet	0
+ward	10302009	Pit latrine-ventilated	0
+ward	10402005	No toilet facilities	0
+ward	19100077	No toilet facilities	0
+ward	10105005	Chemical toilet	0
+ward	10203012	No toilet facilities	0
+ward	19100003	Pit latrine-ventilated	0
+ward	19100075	Chemical toilet	0
+ward	10402005	Chemical toilet	0
+ward	10203012	Pit latrine-ventilated	0
+ward	10203012	Chemical toilet	0
+ward	10203022	Pit latrine-ventilated	0
+ward	10203022	Chemical toilet	0
+ward	10203023	Pit latrine-ventilated	0
+ward	10405007	Chemical toilet	0
+ward	10405007	Pit latrine-ventilated	0
+ward	10205007	Other	0
+ward	10203008	Other	0
+ward	10204009	Other	0
+ward	10104013	No toilet facilities	0
+ward	10503006	Unventilated pit latrine/Bucket toilet	0
+ward	10206008	Chemical toilet	0
+ward	10104013	Chemical toilet	0
+ward	10203017	Chemical toilet	0
+ward	19100026	Chemical toilet	0
+ward	10407001	Chemical toilet	0
+ward	19100012	Chemical toilet	0
+ward	19100012	Pit latrine-ventilated	0
+ward	10502003	Other	0
+ward	10404014	Chemical toilet	0
+ward	10407003	Other	0
+ward	10105006	Chemical toilet	0
+ward	10204008	Unventilated pit latrine/Bucket toilet	0
+ward	19100045	Chemical toilet	0
+ward	10202001	Unventilated pit latrine/Bucket toilet	0
+ward	19100005	Chemical toilet	0
+ward	10104007	Other	0
+ward	10206006	Pit latrine-ventilated	0
+ward	10205010	Chemical toilet	0
+ward	10502002	Chemical toilet	0
+ward	10502002	Pit latrine-ventilated	0
+ward	10405004	Chemical toilet	0
+ward	10402008	Chemical toilet	0
+ward	10407005	Chemical toilet	0
+ward	19100001	Chemical toilet	0
+ward	10407005	Pit latrine-ventilated	0
+ward	19100102	Pit latrine-ventilated	0
+ward	19100073	Other	0
+ward	19100102	Chemical toilet	0
+ward	10405001	Chemical toilet	0
+ward	10102002	Chemical toilet	0
+ward	10405013	Chemical toilet	0
+ward	10206001	Pit latrine-ventilated	0
+ward	10206001	Chemical toilet	0
+ward	10405013	Pit latrine-ventilated	0
+ward	10104005	Pit latrine-ventilated	0
+ward	10105002	Chemical toilet	0
+ward	10105002	Pit latrine-ventilated	0
+ward	19100064	Chemical toilet	0
+ward	10104005	Chemical toilet	0
+ward	10205017	Chemical toilet	0
+ward	10205017	Pit latrine-ventilated	0
+ward	10103006	Chemical toilet	0
+ward	10403001	Chemical toilet	0
+ward	10301002	Chemical toilet	0
+ward	10202007	Chemical toilet	0
+ward	10203009	Chemical toilet	0
+ward	10104009	Unventilated pit latrine/Bucket toilet	0
+ward	10205003	Pit latrine-ventilated	0
+ward	10203016	Pit latrine-ventilated	0
+ward	10204015	Chemical toilet	0
+ward	10203016	Chemical toilet	0
+ward	10203019	Unventilated pit latrine/Bucket toilet	0
+ward	19100002	Chemical toilet	0
+ward	10102001	Chemical toilet	0
+ward	10301005	Chemical toilet	0
+ward	10404016	Chemical toilet	0
+ward	10404016	Pit latrine-ventilated	0
+ward	19100021	Chemical toilet	0
+ward	10408010	Chemical toilet	0
+ward	10404003	Chemical toilet	0
+ward	10404003	Pit latrine-ventilated	0
+ward	10503004	Unventilated pit latrine/Bucket toilet	0
+ward	10304002	Chemical toilet	0
+ward	10301012	Chemical toilet	0
+ward	10403011	Chemical toilet	0
+ward	10401002	Chemical toilet	0
+ward	10404008	Chemical toilet	0
+ward	10304005	Chemical toilet	0
+ward	10102005	Pit latrine-ventilated	0
+ward	10103007	Chemical toilet	0
+ward	10503005	Chemical toilet	0
+ward	10407006	Other	0
+ward	10104003	Pit latrine-ventilated	0
+ward	10104003	Chemical toilet	0
+ward	10404018	Unventilated pit latrine/Bucket toilet	0
+ward	10203004	Chemical toilet	0
+ward	10204009	Unventilated pit latrine/Bucket toilet	0
+ward	10205007	Unventilated pit latrine/Bucket toilet	0
+ward	10203008	Unventilated pit latrine/Bucket toilet	0
+ward	10405003	No toilet facilities	0
+ward	10501003	Pit latrine-ventilated	0
+ward	10302012	Unventilated pit latrine/Bucket toilet	0
+ward	10405003	Pit latrine-ventilated	0
+ward	10405003	Chemical toilet	0
+ward	10501003	No toilet facilities	0
+ward	10403008	Pit latrine-ventilated	0
+ward	10403013	Chemical toilet	0
+ward	10404005	Other	0
+ward	10101006	Pit latrine-ventilated	0
+ward	10205006	Chemical toilet	0
+ward	10205006	Pit latrine-ventilated	0
+ward	10102004	Chemical toilet	0
+ward	10204006	Chemical toilet	0
+ward	10104001	Chemical toilet	0
+ward	10104001	Pit latrine-ventilated	0
+ward	10203007	Chemical toilet	0
+ward	19100002	Other	0
+ward	19100044	Chemical toilet	0
+ward	19100055	Chemical toilet	0
+ward	10203016	Other	0
+ward	10502004	Chemical toilet	0
+ward	10405005	Chemical toilet	0
+ward	10205014	Pit latrine-ventilated	0
+ward	10205014	Chemical toilet	0
+ward	10104004	Chemical toilet	0
+ward	10104004	Pit latrine-ventilated	0
+ward	10401001	Chemical toilet	0
+ward	10104011	Chemical toilet	0
+municipality	WC052	Chemical toilet	0
+ward	10104011	Pit latrine-ventilated	0
+ward	10205017	Other	0
+ward	10302001	Unventilated pit latrine/Bucket toilet	0
+ward	10404007	Pit latrine-ventilated	0
+ward	10102003	Chemical toilet	0
+ward	19100064	Other	0
+ward	10404007	Chemical toilet	0
+ward	10205002	Chemical toilet	0
+ward	10404019	Other	0
+ward	10205002	Pit latrine-ventilated	0
+ward	10404001	Chemical toilet	0
+ward	10404001	Pit latrine-ventilated	0
+ward	10103004	Chemical toilet	0
+ward	10403012	Chemical toilet	0
+ward	10403012	Pit latrine-ventilated	0
+ward	10203014	Pit latrine-ventilated	0
+ward	10205015	Pit latrine-ventilated	0
+ward	10205015	Chemical toilet	0
+ward	10404002	Unventilated pit latrine/Bucket toilet	0
+ward	10302011	Chemical toilet	0
+ward	10302010	Unventilated pit latrine/Bucket toilet	0
+ward	10104007	Pit latrine-ventilated	0
+ward	10302007	Unventilated pit latrine/Bucket toilet	0
+ward	10204022	Pit latrine-ventilated	0
+ward	10204022	Chemical toilet	0
+ward	10205008	Chemical toilet	0
+ward	10205016	Pit latrine-ventilated	0
+ward	10203002	Unventilated pit latrine/Bucket toilet	0
+ward	10407004	Unventilated pit latrine/Bucket toilet	0
+ward	10402007	Chemical toilet	0
+ward	10404022	Chemical toilet	0
+ward	19100097	Unventilated pit latrine/Bucket toilet	0
+ward	10407005	Other	0
+ward	10203027	Chemical toilet	0
+ward	10104010	Chemical toilet	0
+ward	10203027	Pit latrine-ventilated	0
+ward	10502003	Chemical toilet	0
+ward	10502003	Pit latrine-ventilated	0
+ward	19100015	Chemical toilet	0
+ward	10302008	No toilet facilities	0
+ward	10105006	Other	0
+ward	10302008	Pit latrine-ventilated	0
+ward	19100110	Pit latrine-ventilated	0
+ward	10205009	Chemical toilet	0
+ward	10404015	Chemical toilet	0
+ward	10302003	No toilet facilities	0
+ward	10404013	Chemical toilet	0
+ward	10204016	Chemical toilet	0
+ward	10204012	Chemical toilet	0
+ward	19100054	Unventilated pit latrine/Bucket toilet	0
+ward	10204012	Pit latrine-ventilated	0
+ward	10302003	Chemical toilet	0
+ward	10302003	Pit latrine-ventilated	0
+ward	10103003	Chemical toilet	0
+ward	19100070	Chemical toilet	0
+ward	10205009	No toilet facilities	0
+ward	19100077	Unventilated pit latrine/Bucket toilet	0
+ward	10203010	Chemical toilet	0
+ward	10203010	Pit latrine-ventilated	0
+ward	10203012	Unventilated pit latrine/Bucket toilet	0
+ward	10206011	Chemical toilet	0
+ward	10206011	Pit latrine-ventilated	0
+ward	10501003	Other	0
+ward	10404005	No toilet facilities	0
+ward	10204013	Pit latrine-ventilated	0
+ward	10204013	Chemical toilet	0
+ward	10503006	Pit latrine-ventilated	0
+ward	10503006	Chemical toilet	0
+ward	10404005	Pit latrine-ventilated	0
+ward	10206010	Chemical toilet	0
+ward	10404005	Chemical toilet	0
+ward	10403013	Other	0
+ward	10203030	Chemical toilet	0
+ward	10105001	Other	0
+ward	10203030	Pit latrine-ventilated	0
+ward	10203026	Chemical toilet	0
+ward	10403008	Other	0
+ward	19100024	Chemical toilet	0
+ward	10203026	Pit latrine-ventilated	0
+ward	10407006	No toilet facilities	0
+ward	10301006	Pit latrine-ventilated	0
+ward	19100059	Unventilated pit latrine/Bucket toilet	0
+ward	10403006	Unventilated pit latrine/Bucket toilet	0
+ward	10105009	Pit latrine-ventilated	0
+ward	10101004	Chemical toilet	0
+ward	10105009	Chemical toilet	0
+ward	10404009	Chemical toilet	0
+ward	10203004	Other	0
+ward	10104003	Other	0
+ward	10501002	Unventilated pit latrine/Bucket toilet	0
+ward	10407006	Pit latrine-ventilated	0
+ward	10407006	Chemical toilet	0
+ward	10204003	Pit latrine-ventilated	0
+ward	19100058	Other	0
+ward	10404003	Other	0
+ward	10301011	Pit latrine-ventilated	0
+ward	10408010	Other	0
+ward	10403010	Unventilated pit latrine/Bucket toilet	0
+ward	10302013	Chemical toilet	0
+ward	10203013	Chemical toilet	0
+ward	10203013	Pit latrine-ventilated	0
+ward	19100021	Other	0
+ward	10302013	Pit latrine-ventilated	0
+ward	19100081	Chemical toilet	0
+ward	10203018	Pit latrine-ventilated	0
+ward	10203018	Chemical toilet	0
+ward	19100081	Pit latrine-ventilated	0
+ward	19100053	Pit latrine-ventilated	0
+ward	19100053	Chemical toilet	0
+ward	10302013	No toilet facilities	0
+ward	10403011	Other	0
+ward	10203025	Pit latrine-ventilated	0
+ward	10101001	Chemical toilet	0
+ward	10101001	Pit latrine-ventilated	0
 \.
 
 

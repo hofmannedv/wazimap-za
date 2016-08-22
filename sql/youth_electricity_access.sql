@@ -1290,6 +1290,9 @@ ward	19100110	No electricity	254
 ward	19100111	Have electricity for everything	4165
 ward	19100111	Have electricity for some things	2062
 ward	19100111	No electricity	729
+ward	10203002	No electricity	0
+ward	10104012	No electricity	0
+ward	10501003	No electricity	0
 \.
 
 
