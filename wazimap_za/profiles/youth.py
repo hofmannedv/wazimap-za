@@ -346,9 +346,6 @@ def get_safety_profile(geo_code, geo_level, session):
 def get_health_profile(geo_code, geo_level, session):
     youth_difficulty_by_function, _ = get_stat_data(
         ['function type'], geo_level, geo_code, session,
-        recode={
-            'Seeing': 'Seeing, even when using eye glasses',
-            'Hearing': 'Hearing, even when using a hearing aid'},
         key_order=['Seeing, even when using eye glasses', 'Hearing, even when using a hearing aid', 'Communication', 'Walking', 'Remembering', 'Self care'],
         table_name='youth_difficulty_functioning')
 
