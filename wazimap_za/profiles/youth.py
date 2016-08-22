@@ -352,6 +352,10 @@ def get_health_profile(geo_code, geo_level, session):
         table_name='youth_difficulty_functioning')
 
     final_data = {
+        'youth_difficulty_seeing': {
+            "name": "Of youth experience difficulty in seeing even when using eye glasses",
+            "values": {"this": youth_difficulty_by_function['Seeing, even when using eye glasses']['values']['this']}
+        },
         'youth_difficulty_by_function': youth_difficulty_by_function
     }
 

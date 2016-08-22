@@ -221,6 +221,9 @@
             <aside>
                 <p>* This includes youth with both mild and severe difficulties</p>
             </aside>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=health.youth_difficulty_seeing stat_type='percentage' %}
+            </div>
             <div class="column-half" id="chart-histogram-health-youth_difficulty_by_function" data-stat-type="scaled-percentage" data-chart-title="Youth experiencing difficulty in functioning by type *"></div>
         </section>
     </div>
