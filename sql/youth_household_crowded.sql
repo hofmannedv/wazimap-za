@@ -20,7 +20,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: youth_household_crowded; Type: TABLE; Schema: public; Owner: -; Tablespace:
+-- Name: youth_household_crowded; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE youth_household_crowded (
@@ -864,11 +864,21 @@ ward	19100110	Non-overcrowded	4086
 ward	19100110	Overcrowded	419
 ward	19100111	Non-overcrowded	5050
 ward	19100111	Overcrowded	946
+ward	10501003	Overcrowded	0
+ward	10404018	Overcrowded	0
+ward	10302003	Overcrowded	0
+ward	19100021	Overcrowded	0
+ward	10204009	Overcrowded	0
+ward	10404003	Overcrowded	0
+ward	10404002	Overcrowded	0
+ward	10204007	Overcrowded	0
+ward	10203002	Overcrowded	0
+ward	10302007	Overcrowded	0
 \.
 
 
 --
--- Name: youth_household_crowded_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace:
+-- Name: youth_household_crowded_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY youth_household_crowded

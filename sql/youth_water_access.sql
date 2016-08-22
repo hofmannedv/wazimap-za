@@ -1425,6 +1425,293 @@ ward	19100111	On site	6177
 ward	19100111	< 1km	560
 ward	19100111	> 1km	19
 ward	19100111	No piped water	81
+ward	10402008	> 1km	0
+ward	10405004	> 1km	0
+ward	10404018	< 1km	0
+ward	10502002	> 1km	0
+ward	10205010	> 1km	0
+ward	19100001	> 1km	0
+ward	10407005	> 1km	0
+ward	19100066	> 1km	0
+ward	19100028	> 1km	0
+ward	10408009	> 1km	0
+ward	10301009	> 1km	0
+ward	19100017	> 1km	0
+ward	19100005	> 1km	0
+ward	10203019	> 1km	0
+ward	10303005	> 1km	0
+ward	10104009	> 1km	0
+ward	10202002	> 1km	0
+ward	10203021	> 1km	0
+ward	10206006	> 1km	0
+ward	10403008	< 1km	0
+ward	10501003	No piped water	0
+ward	10402002	< 1km	0
+ward	10203024	> 1km	0
+ward	10105006	> 1km	0
+ward	10403013	< 1km	0
+ward	10404010	> 1km	0
+ward	10203015	< 1km	0
+ward	10104006	> 1km	0
+ward	19100107	> 1km	0
+ward	19100012	> 1km	0
+ward	10503001	> 1km	0
+ward	10501003	< 1km	0
+ward	10404014	> 1km	0
+ward	10102001	> 1km	0
+ward	10403003	> 1km	0
+ward	10205012	> 1km	0
+ward	10204010	> 1km	0
+ward	10404016	> 1km	0
+ward	10205013	> 1km	0
+ward	10301013	> 1km	0
+ward	10203004	No piped water	0
+ward	10203009	> 1km	0
+ward	10104003	No piped water	0
+ward	10205003	> 1km	0
+ward	10206005	> 1km	0
+ward	10203016	> 1km	0
+ward	10204015	> 1km	0
+ward	10202003	> 1km	0
+ward	10205011	> 1km	0
+ward	10104012	> 1km	0
+ward	10408003	> 1km	0
+ward	10204007	> 1km	0
+ward	10404017	> 1km	0
+ward	19100078	> 1km	0
+ward	19100002	> 1km	0
+ward	10202006	> 1km	0
+ward	10404003	No piped water	0
+ward	10202001	> 1km	0
+ward	10204008	> 1km	0
+ward	10103006	> 1km	0
+ward	10403001	> 1km	0
+ward	10203008	No piped water	0
+ward	10301002	> 1km	0
+ward	10304003	> 1km	0
+ward	10101008	> 1km	0
+ward	10202007	> 1km	0
+ward	10302012	No piped water	0
+ward	10102002	> 1km	0
+ward	10204014	> 1km	0
+ward	10405001	> 1km	0
+ward	10206001	> 1km	0
+ward	10405013	> 1km	0
+ward	10104005	> 1km	0
+ward	19100064	> 1km	0
+ward	10503003	> 1km	0
+ward	10101005	> 1km	0
+ward	10204009	< 1km	0
+ward	10205018	> 1km	0
+ward	10205017	> 1km	0
+ward	10103007	> 1km	0
+ward	10102005	> 1km	0
+ward	10404020	> 1km	0
+ward	10304005	> 1km	0
+ward	19100048	> 1km	0
+ward	10205012	< 1km	0
+ward	10503005	> 1km	0
+ward	10206005	No piped water	0
+ward	10407002	> 1km	0
+ward	10401002	> 1km	0
+ward	10204019	> 1km	0
+ward	10205013	No piped water	0
+ward	19100041	> 1km	0
+ward	10403007	> 1km	0
+ward	10105007	> 1km	0
+ward	10203006	> 1km	0
+ward	10403011	> 1km	0
+ward	19100025	> 1km	0
+ward	10501001	> 1km	0
+ward	10503007	> 1km	0
+ward	19100021	> 1km	0
+ward	10302012	> 1km	0
+ward	10408010	> 1km	0
+ward	10405013	< 1km	0
+ward	10404023	> 1km	0
+ward	10104005	< 1km	0
+ward	10204009	> 1km	0
+ward	10202001	No piped water	0
+ward	10404003	> 1km	0
+ward	10203008	> 1km	0
+ward	19100076	> 1km	0
+ward	10205007	> 1km	0
+ward	10404018	> 1km	0
+ward	10204006	> 1km	0
+ward	10205010	< 1km	0
+ward	10102004	> 1km	0
+ward	10104001	> 1km	0
+ward	10202002	No piped water	0
+ward	10203019	No piped water	0
+ward	10408005	> 1km	0
+ward	10101006	> 1km	0
+ward	10203019	< 1km	0
+ward	10202009	> 1km	0
+ward	10502002	No piped water	0
+ward	10408006	> 1km	0
+ward	10402008	No piped water	0
+ward	10204021	> 1km	0
+ward	10407005	No piped water	0
+ward	19100094	> 1km	0
+ward	10205006	> 1km	0
+ward	10105010	> 1km	0
+ward	10405003	> 1km	0
+ward	10105008	> 1km	0
+ward	10403008	> 1km	0
+ward	10402002	> 1km	0
+ward	10403005	> 1km	0
+ward	19100065	> 1km	0
+ward	10204001	> 1km	0
+ward	10403013	> 1km	0
+ward	19100030	> 1km	0
+ward	10105011	> 1km	0
+ward	10203015	> 1km	0
+ward	10202010	> 1km	0
+ward	10503004	> 1km	0
+ward	10202004	> 1km	0
+ward	10202005	> 1km	0
+ward	10404010	No piped water	0
+ward	19100063	> 1km	0
+ward	10501003	> 1km	0
+ward	10204017	> 1km	0
+ward	10103004	> 1km	0
+ward	10408002	> 1km	0
+ward	10302013	No piped water	0
+ward	10203020	> 1km	0
+ward	10205015	> 1km	0
+ward	19100009	> 1km	0
+ward	10403002	> 1km	0
+ward	10404007	> 1km	0
+ward	10205002	> 1km	0
+ward	10404001	> 1km	0
+ward	10302013	< 1km	0
+ward	10205014	> 1km	0
+ward	10404012	> 1km	0
+ward	10302009	No piped water	0
+ward	19100072	> 1km	0
+ward	10103002	> 1km	0
+ward	10203002	> 1km	0
+ward	10407004	> 1km	0
+ward	10405007	< 1km	0
+ward	10104011	> 1km	0
+ward	10302004	> 1km	0
+ward	19100083	> 1km	0
+ward	10402001	> 1km	0
+ward	10407006	No piped water	0
+municipality	WC051	> 1km	0
+ward	10206007	> 1km	0
+ward	10502004	> 1km	0
+ward	10204018	> 1km	0
+ward	10405005	> 1km	0
+ward	19100079	> 1km	0
+ward	10203012	No piped water	0
+ward	10302010	> 1km	0
+ward	10203030	< 1km	0
+ward	10404002	> 1km	0
+ward	10302008	> 1km	0
+ward	10206002	> 1km	0
+ward	10403010	No piped water	0
+ward	10204002	> 1km	0
+ward	10302006	> 1km	0
+ward	19100062	> 1km	0
+ward	10403009	> 1km	0
+ward	10502003	> 1km	0
+ward	10203029	> 1km	0
+ward	10205001	> 1km	0
+ward	10203031	> 1km	0
+ward	10304004	< 1km	0
+ward	10206010	No piped water	0
+ward	10302001	> 1km	0
+ward	10503006	< 1km	0
+ward	10104008	> 1km	0
+ward	19100038	> 1km	0
+ward	10203028	> 1km	0
+ward	10402007	> 1km	0
+ward	10408004	> 1km	0
+ward	19100073	> 1km	0
+ward	10302003	< 1km	0
+ward	10203005	> 1km	0
+ward	10404022	> 1km	0
+ward	10202012	> 1km	0
+ward	10402006	> 1km	0
+ward	10501002	< 1km	0
+ward	10104010	> 1km	0
+ward	10203010	< 1km	0
+ward	10203027	> 1km	0
+ward	10104007	> 1km	0
+ward	10204022	> 1km	0
+ward	10205008	> 1km	0
+ward	10301007	No piped water	0
+ward	10501002	No piped water	0
+ward	10206012	> 1km	0
+ward	10302003	No piped water	0
+ward	10404005	> 1km	0
+ward	10105004	> 1km	0
+ward	10206010	> 1km	0
+ward	10405008	> 1km	0
+ward	19100022	> 1km	0
+ward	10502003	No piped water	0
+ward	10203026	> 1km	0
+ward	10403010	> 1km	0
+ward	10407003	No piped water	0
+ward	10404021	> 1km	0
+ward	10206011	> 1km	0
+ward	10304004	> 1km	0
+ward	10204013	> 1km	0
+ward	10101007	> 1km	0
+ward	10503006	> 1km	0
+ward	10302002	> 1km	0
+ward	10302003	> 1km	0
+ward	10203003	> 1km	0
+ward	19100056	> 1km	0
+ward	10403006	> 1km	0
+ward	10501002	> 1km	0
+ward	10301007	> 1km	0
+ward	10408008	> 1km	0
+ward	10404015	> 1km	0
+ward	10205009	> 1km	0
+ward	10301010	> 1km	0
+ward	10404013	> 1km	0
+ward	19100050	> 1km	0
+ward	10204016	> 1km	0
+ward	10101002	> 1km	0
+ward	10203025	> 1km	0
+ward	19100026	> 1km	0
+ward	19100082	> 1km	0
+ward	10104013	> 1km	0
+ward	10301011	> 1km	0
+ward	19100071	> 1km	0
+ward	10404004	> 1km	0
+ward	10103004	No piped water	0
+ward	19100037	> 1km	0
+ward	10303001	> 1km	0
+ward	10402003	> 1km	0
+ward	10302013	> 1km	0
+ward	10105009	> 1km	0
+ward	10205014	< 1km	0
+ward	10404009	> 1km	0
+ward	10401003	> 1km	0
+ward	10101004	> 1km	0
+ward	10302007	No piped water	0
+ward	10203012	> 1km	0
+ward	10405005	No piped water	0
+ward	10203022	> 1km	0
+ward	10103002	< 1km	0
+ward	10203023	> 1km	0
+ward	10204003	> 1km	0
+ward	10405007	> 1km	0
+ward	10203002	No piped water	0
+ward	10501004	> 1km	0
+ward	10302009	> 1km	0
+ward	10301006	> 1km	0
+ward	19100054	> 1km	0
+ward	10302007	< 1km	0
+ward	10105005	> 1km	0
+ward	10405010	No piped water	0
+ward	10205014	No piped water	0
+ward	10205019	> 1km	0
+ward	19100075	> 1km	0
+ward	19100007	> 1km	0
 \.
 
 
