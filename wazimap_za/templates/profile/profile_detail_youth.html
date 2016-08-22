@@ -61,8 +61,8 @@
             <div class="column-quarter">
                 {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_perc_completed_grade9 stat_type='percentage' %}
             </div>
-            <div class="column-half" id="chart-pie-education-youth_completed_grade9" data-stat-type="percentage" data-chart-title="Youth aged 16-17 by grade 9 completion"></div>
-            <div class="column-half" id="chart-pie-education-youth_gender_completed_grade9" data-stat-type="percentage" data-chart-title="Youth aged 16-17 who completed grade 9 by gender"></div>
+            <div class="column-third" id="chart-pie-education-youth_completed_grade9" data-stat-type="percentage" data-chart-title="Youth aged 16-17 by grade 9 completion"></div>
+            <div class="column-third" id="chart-pie-education-youth_gender_completed_grade9" data-stat-type="percentage" data-chart-title="Youth aged 16-17 who completed grade 9 by gender"></div>
         </section>
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#education_levels" id="education_levels">Highest educational level<i class="fa fa-link"></i></a></h2>
@@ -90,7 +90,7 @@
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#employment_status" id="employment_status">Youth employment status<i class="fa fa-link"></i></a></h2>
             <aside class="multi-line-header">
-                According to the official definition, a person is unemployed if he or she is (a) without work, (b) available to work, and (c) actively seeking work. The expanded definition excludes criterion (c)
+                <p>* According to the official definition, a person is unemployed if he or she is (a) without work, (b) available to work, and (c) actively seeking work. The expanded definition excludes criterion (c)</p>
             </aside>
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=economic_opportunities.youth_official_unemployment stat_type='percentage' %}
@@ -137,9 +137,11 @@
         </section>
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#overcrowding" id="overcrowding">Overcrowding<i class="fa fa-link"></i></a></h2>
-            <aside>A household is defined as overcrowded if there are more than 2 persons per habitable room (excluding kitchens, bathrooms, store rooms, etc.)</aside>
+            <aside>
+                <p>* A household is defined as overcrowded if there are more than 2 persons per habitable room (excluding kitchens, bathrooms, store rooms, etc.)</p>
+            </aside>
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_households_overcrowded stat_type='percentage' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_households_overcrowded stat_type='percentage' stat_note='true' %}
             </div>
             <div class="column-third" id="chart-pie-living_environment-youth_household_crowded" data-stat-type="percentage" data-chart-title="Youth living in households by overcrowding"></div>
         </section>
@@ -152,7 +154,9 @@
     <div class="section-container">
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#income-poverty" id="income-poverty">Income poverty<i class="fa fa-link"></i></a></h2>
-            <aside>Stats SA’s 2015 upper-bound poverty line of R779 per person per month in 2011 prices is used to define income poverty</aside>
+            <aside>
+                <p>* Stats SA’s 2015 upper-bound poverty line of R779 per person per month in 2011 prices is used to define income poverty</p>
+            </aside>
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_income_poor stat_type='percentage' %}
             </div>
@@ -160,24 +164,29 @@
             <div class="column-third" id="chart-pie-living_environment-youth_income_poor_by_gender" data-stat-type="percentage" data-chart-title="Youth in income-poor households by gender"></div>
         </section>
         <section class="clearfix stat-row grouped-row">
+            <div class="column-third">&nbsp;</div>
             <div class="column-half" id="chart-histogram-living_environment-youth_income_poor_by_pop_group" data-stat-type="scaled-percentage" data-chart-title="Youth in income-poor households by race"></div>
         </section>
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#multid-poor" id="multid-poor">Multidimensional poverty<i class="fa fa-link"></i></a></h2>
             <aside>
-                See <a href="http://opensaldru.uct.ac.za/bitstream/handle/11090/818/2016_169_Saldruwp.pdf?sequence=3" target="_blank">here</a> for details on the design and methodology of the Youth Multidimensional Poverty Index
+                <p>* See <a href="http://opensaldru.uct.ac.za/bitstream/handle/11090/818/2016_169_Saldruwp.pdf?sequence=3" target="_blank">here</a> for the definition of multidimensional youth poverty</p>
             </aside>
-            <div class="column-quarter">
+            <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_multid_poor stat_type='percentage' %}
             </div>
             <div class="column-third" id="chart-pie-living_environment-youth_multid_poverty" data-stat-type="percentage" data-chart-title="Youth by multidimensional poverty status"></div>
-            <div class="column-quarter" id="chart-pie-living_environment-youth_multid_poor_by_gender" data-stat-type="percentage" data-chart-title="Multidimensionally poor youth by gender"></div>
+            <div class="column-third" id="chart-pie-living_environment-youth_multid_poor_by_gender" data-stat-type="percentage" data-chart-title="Multidimensionally poor youth by gender"></div>
         </section>
         <section class="clearfix stat-row grouped-row">
+            <div class="column-third">&nbsp;</div>
             <div class="column-half" id="chart-histogram-living_environment-youth_multid_poor_by_pop_group" data-stat-type="scaled-percentage" data-chart-title="Multidimensionally poor youth by race"></div>
         </section>
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#mpi-score" id="mpi-score">Youth Multidimensional Poverty Index score<i class="fa fa-link"></i></a></h2>
+            <aside>
+                <p>* See <a href="http://opensaldru.uct.ac.za/bitstream/handle/11090/818/2016_169_Saldruwp.pdf?sequence=3" target="_blank">here</a> for details on the design and methodology of the Youth Multidimensional Poverty Index</p>
+            </aside>
             <div class="column-half">
                 {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_mpi_score stat_type='number' decimals="-3" %}
             </div>
@@ -208,8 +217,10 @@
     <div class="section-container">
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#health" id="health">General health and functioning<i class="fa fa-link"></i></a></h2>
-            <aside>This includes youth with both mild and severe difficulties</aside>
-            <div class="column-half" id="chart-histogram-health-youth_difficulty_by_function" data-stat-type="scaled-percentage" data-chart-title="Youth experiencing difficulty in functioning by type"></div>
+            <aside>
+                <p>* This includes youth with both mild and severe difficulties</p>
+            </aside>
+            <div class="column-half" id="chart-histogram-health-youth_difficulty_by_function" data-stat-type="scaled-percentage" data-chart-title="Youth experiencing difficulty in functioning by type *"></div>
         </section>
     </div>
 </article>
