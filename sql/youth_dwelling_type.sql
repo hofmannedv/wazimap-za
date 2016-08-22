@@ -1965,6 +1965,7 @@ ward	19100109	Informal in backyard	443
 ward	19100109	Other	61
 ward	19100110	Formal	4154
 ward	19100110	Traditional	12
+ward	10403010	Informal in backyard	0
 ward	19100110	Informal not in backyard	8
 ward	19100110	Informal in backyard	361
 ward	19100110	Other	24
@@ -1973,6 +1974,163 @@ ward	19100111	Traditional	22
 ward	19100111	Informal not in backyard	755
 ward	19100111	Informal in backyard	439
 ward	19100111	Other	50
+ward	19100090	Traditional	0
+ward	10302013	Informal not in backyard	0
+ward	10404002	Other	0
+ward	10203019	Traditional	0
+ward	10408009	Traditional	0
+ward	10204014	Traditional	0
+ward	10206010	Informal not in backyard	0
+ward	10202001	Traditional	0
+ward	10203020	Other	0
+ward	10206005	Traditional	0
+ward	10502001	Traditional	0
+ward	10302007	Other	0
+ward	10302003	Informal not in backyard	0
+ward	10205009	Informal not in backyard	0
+ward	10205013	Traditional	0
+ward	10404012	Other	0
+ward	10405010	Other	0
+ward	10302012	Traditional	0
+ward	19100062	Informal not in backyard	0
+ward	10203008	Traditional	0
+ward	10203006	Traditional	0
+ward	10502003	Informal not in backyard	0
+ward	10503007	Traditional	0
+ward	10203029	Informal not in backyard	0
+ward	10202008	Informal in backyard	0
+ward	10202005	Traditional	0
+ward	10205015	Informal not in backyard	0
+ward	10202004	Traditional	0
+ward	10304004	Other	0
+ward	10405012	Other	0
+ward	10503006	Informal in backyard	0
+ward	10204001	Traditional	0
+ward	10302003	Informal in backyard	0
+ward	10104011	Informal not in backyard	0
+ward	10205014	Informal not in backyard	0
+ward	19100094	Traditional	0
+ward	10301010	Other	0
+ward	10501002	Other	0
+ward	10408005	Traditional	0
+ward	10204006	Informal not in backyard	0
+ward	10502001	Other	0
+ward	10302007	Traditional	0
+ward	10404012	Traditional	0
+ward	10103002	Traditional	0
+ward	10407004	Traditional	0
+ward	10403013	Informal not in backyard	0
+ward	10403008	Informal not in backyard	0
+ward	10203020	Traditional	0
+ward	10501003	Informal not in backyard	0
+ward	10103001	Informal in backyard	0
+ward	10301003	Traditional	0
+ward	10203004	Informal not in backyard	0
+ward	19100001	Informal in backyard	0
+ward	10301009	Informal in backyard	0
+ward	10503005	Informal not in backyard	0
+ward	10206012	Traditional	0
+ward	10203005	Traditional	0
+ward	10302001	Traditional	0
+ward	10404003	Informal not in backyard	0
+ward	10408010	Informal not in backyard	0
+ward	10204007	Informal not in backyard	0
+ward	10408008	Traditional	0
+ward	10404018	Other	0
+ward	10404021	Traditional	0
+ward	10403010	Traditional	0
+ward	10103006	Informal not in backyard	0
+ward	10304004	Traditional	0
+ward	10103001	Informal not in backyard	0
+ward	10104005	Informal not in backyard	0
+ward	10501003	Informal in backyard	0
+ward	10405013	Informal not in backyard	0
+ward	10405008	Traditional	0
+ward	10206001	Informal not in backyard	0
+ward	10503002	Other	0
+ward	10407005	Informal not in backyard	0
+ward	19100001	Informal not in backyard	0
+ward	10203022	Traditional	0
+ward	10204009	Other	0
+ward	10104006	Informal not in backyard	0
+ward	10402003	Traditional	0
+ward	10408010	Informal in backyard	0
+ward	10206008	Traditional	0
+ward	10404003	Informal in backyard	0
+ward	10404002	Informal in backyard	0
+ward	10404014	Traditional	0
+ward	10203029	Other	0
+ward	10407003	Other	0
+ward	19100077	Informal not in backyard	0
+ward	10205016	Other	0
+ward	10105005	Informal not in backyard	0
+ward	10302009	Informal not in backyard	0
+ward	10404022	Other	0
+ward	19100054	Informal not in backyard	0
+ward	10405013	Traditional	0
+ward	10206001	Traditional	0
+ward	10102002	Traditional	0
+ward	10105002	Traditional	0
+ward	10103001	Traditional	0
+ward	10104005	Traditional	0
+ward	10304004	Informal not in backyard	0
+ward	10103006	Traditional	0
+ward	10403010	Informal not in backyard	0
+ward	10405005	Other	0
+ward	10501002	Informal not in backyard	0
+ward	10203002	Informal in backyard	0
+ward	10302007	Informal in backyard	0
+ward	10404003	Traditional	0
+ward	10404002	Informal not in backyard	0
+ward	10402003	Informal in backyard	0
+ward	10403009	Informal not in backyard	0
+ward	10203028	Informal not in backyard	0
+ward	19100054	Informal in backyard	0
+ward	10407006	Other	0
+ward	10407002	Traditional	0
+ward	10205019	Informal in backyard	0
+ward	10501003	Traditional	0
+ward	10403008	Traditional	0
+ward	10405009	Informal not in backyard	0
+ward	10203002	Informal not in backyard	0
+ward	10205006	Traditional	0
+ward	10501002	Informal in backyard	0
+ward	10403006	Informal in backyard	0
+ward	10203010	Other	0
+ward	10302007	Informal not in backyard	0
+ward	10301010	Informal in backyard	0
+ward	10301008	Informal in backyard	0
+ward	10302003	Other	0
+ward	10204010	Informal in backyard	0
+ward	10404018	Informal not in backyard	0
+ward	10502004	Traditional	0
+ward	10205014	Traditional	0
+ward	10203015	Informal not in backyard	0
+ward	10104005	Other	0
+ward	10105008	Informal not in backyard	0
+ward	10405013	Other	0
+ward	10105010	Informal not in backyard	0
+ward	10402002	Informal not in backyard	0
+ward	10102002	Other	0
+ward	10204005	Informal not in backyard	0
+ward	10205016	Traditional	0
+ward	10202002	Informal in backyard	0
+ward	10502003	Traditional	0
+ward	10404018	Informal in backyard	0
+ward	10204010	Informal not in backyard	0
+ward	10401004	Traditional	0
+ward	10205011	Informal not in backyard	0
+ward	10206005	Informal not in backyard	0
+ward	10402002	Informal in backyard	0
+ward	10204008	Informal not in backyard	0
+ward	10204013	Traditional	0
+ward	10202002	Informal not in backyard	0
+ward	10203019	Informal not in backyard	0
+ward	10407006	Traditional	0
+ward	10404003	Other	0
+ward	19100021	Other	0
+ward	10203018	Traditional	0
+ward	10204009	Informal in backyard	0
 \.
 
 
