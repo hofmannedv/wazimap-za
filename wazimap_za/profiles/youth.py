@@ -298,7 +298,7 @@ def get_living_environment_profile(geo_code, geo_level, session):
         },
         'youth_dwelling_type': youth_dwelling_type,
         'youth_households_overcrowded': {
-            "name": "Of households are overcrowded *",
+            "name": "Of youth live in households that are overcrowded *",
             "values": {"this": youth_household_crowded['Overcrowded']['values']['this']}
         },
         'youth_household_crowded': youth_household_crowded,
@@ -345,7 +345,10 @@ def get_safety_profile(geo_code, geo_level, session):
 def get_health_profile(geo_code, geo_level, session):
     youth_difficulty_by_function, _ = get_stat_data(
         ['function type'], geo_level, geo_code, session,
-        key_order=['Seeing', 'Hearing', 'Communication', 'Walking', 'Remembering', 'Self care'],
+        recode={
+            'Seeing': 'Seeing, even when using eye glasses',
+            'Hearing': 'Hearing, even when using a hearing aid'},
+        key_order=['Seeing, even when using eye glasses', 'Hearing, even when using a hearing aid', 'Communication', 'Walking', 'Remembering', 'Self care'],
         table_name='youth_difficulty_functioning')
 
     final_data = {
