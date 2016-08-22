@@ -280,7 +280,6 @@ def get_living_environment_profile(geo_code, geo_level, session):
         only={'multidimensionally poor': ['Multidimensionally poor']},
         table_name='youth_multidimensionally_poor_gender_population_group')
 
-    # Fix: Circular reference when passing this to the template
     youth_mpi_table = get_datatable('youth_mpi_score')
     youth_mpi_score, _ = youth_mpi_table.get_stat_data(
         geo_level, geo_code, percent=False)
@@ -317,7 +316,8 @@ def get_living_environment_profile(geo_code, geo_level, session):
         'youth_multid_poor_by_pop_group': youth_multid_poor_by_pop_group,
         'youth_multid_poor_by_gender': youth_multid_poor_by_gender,
         'youth_multid_poverty': youth_multid_poverty,
-        'youth_mpi_score': youth_mpi_score['youth_mpi_score'],
+        'youth_mpi_score_stat': youth_mpi_score['youth_mpi_score'],
+        'youth_mpi_score': youth_mpi_score
     }
 
     return final_data

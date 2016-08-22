@@ -183,13 +183,14 @@
             <div class="column-half" id="chart-histogram-living_environment-youth_multid_poor_by_pop_group" data-stat-type="scaled-percentage" data-chart-title="Multidimensionally poor youth by race"></div>
         </section>
         <section class="clearfix stat-row">
-            <h2 class="header-for-columns"><a class="permalink" href="#mpi-score" id="mpi-score">Youth Multidimensional Poverty Index score<i class="fa fa-link"></i></a></h2>
+            <h2 class="header-for-columns"><a class="permalink" href="#mpi-score" id="mpi-score">Youth Multidimensional Poverty Index (MPI)<i class="fa fa-link"></i></a></h2>
             <aside>
                 <p>* See <a href="http://opensaldru.uct.ac.za/bitstream/handle/11090/818/2016_169_Saldruwp.pdf?sequence=3" target="_blank">here</a> for details on the design and methodology of the Youth Multidimensional Poverty Index</p>
             </aside>
-            <div class="column-half">
-                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_mpi_score stat_type='number' decimals="-3" %}
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_mpi_score_stat stat_type='number' decimals="-3" %}
             </div>
+            <div class="column-quarter" id="chart-histogram-living_environment-youth_mpi_score" data-stat-type="number" data-decimal-places="3" data-chart-title="Youth Multidimensional Poverty Index score"></div>
         </section>
     </div>
 </article>
@@ -205,7 +206,7 @@
         </section>
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#property_crimes" id="property_crimes"><i class="fa fa-link">Number of property-related crimes</i></a></h2>
-            <div class="column-three-quarters" id="chart-histogram-safety-property_crimes_by_year" data-stat-type="number " data-chart-title="Number of reported property-related crimes by year"></div>
+            <div class="column-three-quarters" id="chart-histogram-safety-property_crimes_by_year" data-stat-type="number" data-chart-title="Number of reported property-related crimes by year"></div>
         </section>
     </div>
 </article>
