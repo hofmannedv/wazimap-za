@@ -317,7 +317,7 @@ def get_living_environment_profile(geo_code, geo_level, session):
         'youth_multid_poor_by_gender': youth_multid_poor_by_gender,
         'youth_multid_poverty': youth_multid_poverty,
         'youth_mpi_score_stat': youth_mpi_score['youth_mpi_score'],
-        'youth_mpi_score_chart': youth_mpi_score
+        'youth_mpi_score': youth_mpi_score
     }
 
     return final_data
