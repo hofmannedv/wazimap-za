@@ -283,7 +283,8 @@ def get_living_environment_profile(geo_code, geo_level, session):
     youth_mpi_table = get_datatable('youth_mpi_score')
     youth_mpi_score, _ = youth_mpi_table.get_stat_data(
         geo_level, geo_code, percent=False)
-    youth_mpi_score['youth_mpi_score']['name'] = 'Youth MPI score *'
+    youth_mpi_score['youth_mpi_score']['name'] = 'Youth MPI score (0-1)*'
+
 
     informal_not_in_backyard = youth_dwelling_type.get('Informal not in backyard', {}).get('values', {}).get('this', 0)
     informal_in_backyard = youth_dwelling_type.get('Informal in backyard', {}).get('values', {}).get('this', 0)
