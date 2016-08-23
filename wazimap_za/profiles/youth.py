@@ -1,7 +1,7 @@
 from collections import OrderedDict
 
-from wazimap.data.tables import get_datatable, get_model_from_fields
-from wazimap.data.utils import get_session, merge_dicts, get_stat_data, percent, add_metadata
+from wazimap.data.tables import get_datatable
+from wazimap.data.utils import get_session, merge_dicts, get_stat_data, percent
 from wazimap.geo import geo_data
 
 
@@ -122,15 +122,14 @@ def get_education_profile(geo_code, geo_level, session):
         ['attendance'], geo_level, geo_code, session,
         table_name='youth_education_attendance_gender_age_incompleted_years')
 
-    youth_education_attendance_by_age, _ = get_stat_data(
+    youth_education_attending_by_age, _ = get_stat_data(
         ['attendance', 'age in completed years'], geo_level, geo_code, session,
+        percent_grouping=['age in completed years'], slices=['Yes'],
         table_name='youth_education_attendance_gender_age_incompleted_years')
-    youth_education_attending_by_age = youth_education_attendance_by_age['Yes']
-    youth_education_attending_by_age['metadata'] = youth_education_attendance_by_age['metadata']
 
     youth_education_attending_by_gender, _ = get_stat_data(
-        ['gender'], geo_level, geo_code, session,
-        only={'attendance': ['Yes']},
+        ['attendance', 'gender'], geo_level, geo_code, session,
+        percent_grouping=['gender'], slices=['Yes'],
         table_name='youth_education_attendance_gender_age_incompleted_years')
 
     final_data  = {
