@@ -20,7 +20,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: youth_income_poverty_gender_population_group; Type: TABLE; Schema: public; Owner: -; Tablespace:
+-- Name: youth_income_poverty_gender_population_group; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE youth_income_poverty_gender_population_group (
@@ -654,6 +654,7 @@ municipality	WC053	Male	Coloured	Non-poor	941
 municipality	WC053	Female	Coloured	Non-poor	900
 municipality	WC053	Male	Indian or Asian	Non-poor	5
 municipality	WC053	Female	Indian or Asian	Non-poor	6
+ward	10101006	Female	Other	Non-poor	2
 municipality	WC053	Male	White	Non-poor	176
 municipality	WC053	Female	White	Non-poor	159
 municipality	WC053	Male	Other	Non-poor	12
@@ -760,7 +761,6 @@ ward	10101006	Female	Indian or Asian	Non-poor	2
 ward	10101006	Male	White	Non-poor	38
 ward	10101006	Female	White	Non-poor	35
 ward	10101006	Male	Other	Non-poor	2
-ward	10101006	Female	Other	Non-poor	2
 ward	10101006	Male	Black African	Income-poor	17
 ward	10101006	Female	Black African	Income-poor	23
 ward	10101006	Male	Coloured	Income-poor	227
@@ -2578,6 +2578,7 @@ ward	10205018	Male	Coloured	Income-poor	244
 ward	10205018	Female	Coloured	Income-poor	259
 ward	10205018	Male	White	Income-poor	4
 ward	10205018	Female	White	Income-poor	4
+ward	10206004	Female	Other	Non-poor	7
 ward	10205019	Male	Black African	Non-poor	26
 ward	10205019	Female	Black African	Non-poor	10
 ward	10205019	Male	Coloured	Non-poor	214
@@ -2685,7 +2686,6 @@ ward	10206004	Female	Coloured	Non-poor	246
 ward	10206004	Male	White	Non-poor	2
 ward	10206004	Female	White	Non-poor	1
 ward	10206004	Male	Other	Non-poor	17
-ward	10206004	Female	Other	Non-poor	7
 ward	10206004	Male	Black African	Income-poor	47
 ward	10206004	Female	Black African	Income-poor	51
 ward	10206004	Male	Coloured	Income-poor	329
@@ -3542,6 +3542,7 @@ ward	10403004	Female	Coloured	Non-poor	16
 ward	10403004	Male	Indian or Asian	Non-poor	1
 ward	10403004	Male	White	Non-poor	72
 ward	10403004	Female	White	Non-poor	51
+ward	10404005	Male	White	Non-poor	126
 ward	10403004	Male	Black African	Income-poor	5
 ward	10403004	Female	Black African	Income-poor	2
 ward	10403004	Male	Coloured	Income-poor	37
@@ -3756,7 +3757,6 @@ ward	10404005	Male	Coloured	Non-poor	138
 ward	10404005	Female	Coloured	Non-poor	191
 ward	10404005	Male	Indian or Asian	Non-poor	5
 ward	10404005	Female	Indian or Asian	Non-poor	5
-ward	10404005	Male	White	Non-poor	126
 ward	10404005	Female	White	Non-poor	145
 ward	10404005	Female	Other	Non-poor	2
 ward	10404005	Female	Black African	Income-poor	2
@@ -5146,6 +5146,7 @@ ward	19100025	Female	Other	Income-poor	12
 ward	19100026	Male	Black African	Non-poor	225
 ward	19100026	Female	Black African	Non-poor	209
 ward	19100026	Male	Coloured	Non-poor	999
+ward	19100085	Male	Other	Non-poor	46
 ward	19100026	Female	Coloured	Non-poor	968
 ward	19100026	Male	Indian or Asian	Non-poor	60
 ward	19100026	Female	Indian or Asian	Non-poor	36
@@ -5252,6 +5253,7 @@ ward	19100031	Female	Other	Non-poor	25
 ward	19100031	Male	Black African	Income-poor	66
 ward	19100031	Female	Black African	Income-poor	77
 ward	19100031	Male	Coloured	Income-poor	1349
+ward	19100085	Female	Other	Non-poor	29
 ward	19100031	Female	Coloured	Income-poor	1341
 ward	19100031	Male	Indian or Asian	Income-poor	12
 ward	19100031	Female	Indian or Asian	Income-poor	6
@@ -6212,8 +6214,6 @@ ward	19100085	Male	Indian or Asian	Non-poor	13
 ward	19100085	Female	Indian or Asian	Non-poor	6
 ward	19100085	Male	White	Non-poor	231
 ward	19100085	Female	White	Non-poor	238
-ward	19100085	Male	Other	Non-poor	46
-ward	19100085	Female	Other	Non-poor	29
 ward	19100085	Male	Black African	Income-poor	1019
 ward	19100085	Female	Black African	Income-poor	1259
 ward	19100085	Male	Coloured	Income-poor	52
@@ -6640,6 +6640,7 @@ ward	19100110	Female	Black African	Non-poor	73
 ward	19100110	Male	Coloured	Non-poor	1165
 ward	19100110	Female	Coloured	Non-poor	1152
 ward	19100110	Male	Indian or Asian	Non-poor	20
+ward	10205010	Female	Other	Non-poor	0
 ward	19100110	Female	Indian or Asian	Non-poor	11
 ward	19100110	Male	White	Non-poor	6
 ward	19100110	Female	White	Non-poor	3
@@ -6673,6 +6674,1750 @@ ward	19100111	Male	White	Income-poor	10
 ward	19100111	Female	White	Income-poor	10
 ward	19100111	Male	Other	Income-poor	35
 ward	19100111	Female	Other	Income-poor	33
+ward	10104004	Male	White	Income-poor	0
+ward	10103002	Male	White	Non-poor	0
+ward	10203001	Male	Indian or Asian	Non-poor	0
+ward	10205014	Female	Other	Non-poor	0
+ward	10402001	Male	Other	Non-poor	0
+ward	10302011	Male	Indian or Asian	Income-poor	0
+ward	19100097	Female	Other	Income-poor	0
+ward	10205015	Male	Indian or Asian	Income-poor	0
+ward	10103002	Female	Other	Income-poor	0
+ward	10405005	Female	White	Non-poor	0
+ward	10407004	Female	Other	Income-poor	0
+ward	10502004	Male	Other	Income-poor	0
+ward	10203002	Female	Other	Income-poor	0
+ward	10102003	Female	Indian or Asian	Non-poor	0
+ward	19100068	Female	Other	Income-poor	0
+ward	10205014	Male	White	Income-poor	0
+ward	10404007	Female	Indian or Asian	Non-poor	0
+ward	10405009	Female	Indian or Asian	Income-poor	0
+ward	10205002	Female	Indian or Asian	Non-poor	0
+ward	10401001	Female	Other	Non-poor	0
+ward	10301003	Male	Indian or Asian	Non-poor	0
+ward	19100092	Male	White	Non-poor	0
+ward	10404012	Male	White	Non-poor	0
+ward	10405010	Male	White	Non-poor	0
+ward	19100039	Female	White	Income-poor	0
+ward	10304001	Female	White	Income-poor	0
+ward	10301004	Female	Other	Income-poor	0
+ward	10404012	Female	Other	Income-poor	0
+ward	10404001	Female	Indian or Asian	Non-poor	0
+ward	10104011	Female	Other	Non-poor	0
+ward	10405010	Female	Other	Income-poor	0
+ward	19100035	Male	Indian or Asian	Non-poor	0
+ward	10403002	Female	Indian or Asian	Income-poor	0
+ward	10403012	Male	Indian or Asian	Income-poor	0
+ward	10203014	Male	Indian or Asian	Income-poor	0
+municipality	WC052	Male	Other	Income-poor	0
+ward	19100051	Male	Indian or Asian	Income-poor	0
+ward	19100044	Male	White	Income-poor	0
+ward	10304001	Female	Other	Income-poor	0
+ward	10403002	Male	Indian or Asian	Non-poor	0
+ward	10203011	Male	Indian or Asian	Non-poor	0
+ward	10404001	Male	Indian or Asian	Income-poor	0
+ward	10104011	Male	Other	Income-poor	0
+ward	10401001	Female	White	Non-poor	0
+ward	10205002	Male	Indian or Asian	Income-poor	0
+ward	10302007	Female	Other	Income-poor	0
+ward	10401001	Male	Other	Income-poor	0
+ward	10301003	Female	Indian or Asian	Income-poor	0
+ward	19100092	Female	White	Income-poor	0
+ward	10404012	Female	White	Income-poor	0
+ward	10204018	Female	Other	Non-poor	0
+ward	10203020	Female	Indian or Asian	Income-poor	0
+ward	19100097	Female	White	Income-poor	0
+ward	10103002	Male	Other	Non-poor	0
+ward	10405005	Male	White	Income-poor	0
+ward	10502004	Female	Other	Non-poor	0
+ward	10203002	Male	Other	Non-poor	0
+ward	10102003	Male	Indian or Asian	Income-poor	0
+ward	10205014	Male	Other	Income-poor	0
+ward	10402001	Female	Other	Income-poor	0
+ward	10302011	Female	Indian or Asian	Non-poor	0
+ward	10104004	Female	White	Non-poor	0
+ward	10302004	Female	Other	Income-poor	0
+ward	10103002	Female	White	Income-poor	0
+ward	10203001	Female	Indian or Asian	Income-poor	0
+ward	10407004	Female	White	Income-poor	0
+ward	19100039	Female	Indian or Asian	Income-poor	0
+ward	10403012	Female	Other	Non-poor	0
+ward	10304001	Female	Indian or Asian	Income-poor	0
+ward	19100051	Male	Other	Income-poor	0
+ward	10405010	Male	Indian or Asian	Non-poor	0
+ward	19100095	Female	Indian or Asian	Non-poor	0
+ward	10104011	Male	Indian or Asian	Income-poor	0
+ward	10301004	Male	Indian or Asian	Non-poor	0
+ward	10205002	Female	White	Non-poor	0
+ward	10403002	Female	White	Income-poor	0
+ward	19100035	Male	White	Non-poor	0
+ward	10403012	Male	White	Income-poor	0
+ward	10103004	Male	White	Income-poor	0
+ward	10206007	Female	Indian or Asian	Income-poor	0
+ward	10301003	Female	Other	Income-poor	0
+ward	10302007	Female	Indian or Asian	Income-poor	0
+ward	10203011	Female	White	Income-poor	0
+ward	10405009	Male	Other	Non-poor	0
+ward	10408002	Female	Other	Income-poor	0
+ward	10203002	Male	Indian or Asian	Non-poor	0
+ward	10502004	Female	Indian or Asian	Non-poor	0
+municipality	WC051	Female	Indian or Asian	Non-poor	0
+ward	10205015	Female	Other	Non-poor	0
+ward	10103002	Male	Indian or Asian	Non-poor	0
+ward	10203020	Male	White	Non-poor	0
+ward	10302011	Female	Other	Non-poor	0
+ward	10405009	Female	White	Income-poor	0
+ward	10408001	Female	Indian or Asian	Non-poor	0
+ward	10203001	Female	Other	Income-poor	0
+ward	10302004	Female	Indian or Asian	Income-poor	0
+ward	19100089	Female	Coloured	Income-poor	0
+ward	10102003	Male	White	Income-poor	0
+ward	10405005	Male	Indian or Asian	Income-poor	0
+ward	19100097	Female	Indian or Asian	Income-poor	0
+ward	10405009	Male	White	Non-poor	0
+ward	10408001	Male	Indian or Asian	Income-poor	0
+ward	10404007	Male	White	Income-poor	0
+ward	10102003	Female	Other	Non-poor	0
+ward	10203002	Female	Indian or Asian	Income-poor	0
+ward	10502004	Male	Indian or Asian	Income-poor	0
+municipality	WC051	Male	Indian or Asian	Income-poor	0
+ward	10205015	Male	Other	Income-poor	0
+ward	19100072	Female	Indian or Asian	Income-poor	0
+ward	10302007	Male	Indian or Asian	Non-poor	0
+ward	19100035	Female	White	Income-poor	0
+ward	10203014	Female	White	Non-poor	0
+ward	10403012	Female	White	Non-poor	0
+ward	19100051	Male	White	Income-poor	0
+ward	10104011	Female	Indian or Asian	Non-poor	0
+ward	10301003	Female	White	Income-poor	0
+ward	10404010	Male	Coloured	Non-poor	0
+ward	10404012	Female	Indian or Asian	Income-poor	0
+ward	10203011	Female	Other	Income-poor	0
+ward	10205002	Male	White	Income-poor	0
+ward	19100039	Male	Indian or Asian	Non-poor	0
+ward	10304001	Male	Indian or Asian	Non-poor	0
+municipality	WC052	Female	Indian or Asian	Non-poor	0
+ward	10502003	Female	Indian or Asian	Non-poor	0
+ward	10105003	Female	Other	Non-poor	0
+ward	19100038	Female	Indian or Asian	Income-poor	0
+ward	10204007	Male	Coloured	Income-poor	0
+ward	10104008	Female	Indian or Asian	Income-poor	0
+ward	19100018	Male	White	Non-poor	0
+ward	10405006	Female	White	Income-poor	0
+ward	10202011	Male	Other	Income-poor	0
+ward	10205020	Female	Indian or Asian	Non-poor	0
+ward	10302010	Male	Indian or Asian	Non-poor	0
+ward	10203031	Female	Indian or Asian	Income-poor	0
+ward	10204002	Male	Indian or Asian	Income-poor	0
+ward	10302001	Female	Indian or Asian	Income-poor	0
+ward	10407003	Male	Indian or Asian	Income-poor	0
+ward	19100018	Female	Other	Income-poor	0
+ward	10101003	Male	Indian or Asian	Non-poor	0
+ward	10204022	Male	Other	Income-poor	0
+ward	10206002	Male	Indian or Asian	Non-poor	0
+ward	10203027	Male	White	Income-poor	0
+ward	19100087	Male	White	Income-poor	0
+ward	10302008	Male	Indian or Asian	Income-poor	0
+ward	10202012	Female	Other	Non-poor	0
+ward	10203005	Male	White	Non-poor	0
+ward	10104010	Female	Other	Non-poor	0
+ward	10204007	Male	Black African	Income-poor	0
+ward	10203027	Female	Other	Non-poor	0
+ward	10203028	Female	Other	Income-poor	0
+ward	10205016	Female	White	Non-poor	0
+ward	19100008	Female	Indian or Asian	Income-poor	0
+ward	19100015	Male	Indian or Asian	Income-poor	0
+ward	10205016	Male	White	Income-poor	0
+ward	19100019	Male	White	Income-poor	0
+ward	10404006	Male	White	Income-poor	0
+ward	10203005	Female	White	Income-poor	0
+ward	10104010	Male	Other	Income-poor	0
+ward	10302006	Female	Indian or Asian	Income-poor	0
+ward	10205008	Male	White	Income-poor	0
+ward	10203027	Male	Other	Income-poor	0
+ward	10203028	Female	White	Income-poor	0
+ward	19100093	Female	White	Non-poor	0
+ward	10206002	Female	Indian or Asian	Income-poor	0
+ward	10203027	Female	White	Non-poor	0
+ward	10204020	Female	Indian or Asian	Income-poor	0
+ward	19100087	Female	White	Non-poor	0
+ward	10204002	Female	Indian or Asian	Non-poor	0
+ward	10302001	Male	Indian or Asian	Non-poor	0
+ward	10405006	Female	Other	Income-poor	0
+ward	10404002	Female	Indian or Asian	Income-poor	0
+ward	10407003	Female	Indian or Asian	Non-poor	0
+ward	10202011	Female	Other	Non-poor	0
+ward	10205020	Male	Indian or Asian	Income-poor	0
+ward	10404022	Male	Other	Income-poor	0
+ward	10302010	Female	Indian or Asian	Income-poor	0
+ward	10104008	Male	Indian or Asian	Non-poor	0
+ward	19100018	Female	White	Income-poor	0
+ward	10404010	Female	White	Non-poor	0
+ward	10402007	Male	Other	Income-poor	0
+ward	10502003	Male	Indian or Asian	Income-poor	0
+ward	10105003	Male	Other	Income-poor	0
+ward	10102002	Male	Black African	Income-poor	0
+ward	19100015	Male	Other	Income-poor	0
+ward	10203027	Male	Indian or Asian	Income-poor	0
+ward	10302006	Female	Other	Income-poor	0
+ward	19100093	Male	Indian or Asian	Income-poor	0
+ward	10202012	Male	Indian or Asian	Income-poor	0
+ward	10403009	Female	White	Income-poor	0
+ward	10204020	Female	Other	Income-poor	0
+ward	10205008	Female	Indian or Asian	Non-poor	0
+ward	10203029	Male	Other	Income-poor	0
+ward	19100018	Male	Indian or Asian	Non-poor	0
+ward	10404002	Female	Other	Income-poor	0
+ward	10203031	Male	Other	Non-poor	0
+ward	10302010	Female	Other	Income-poor	0
+ward	10205020	Male	Other	Income-poor	0
+ward	19100038	Female	White	Income-poor	0
+ward	10404022	Male	Indian or Asian	Income-poor	0
+ward	10502003	Female	White	Non-poor	0
+ward	10408004	Male	Indian or Asian	Income-poor	0
+ward	10407003	Male	White	Income-poor	0
+ward	10402007	Male	Indian or Asian	Income-poor	0
+ward	10204002	Male	White	Income-poor	0
+ward	19100073	Male	Indian or Asian	Income-poor	0
+ward	10502003	Male	Other	Income-poor	0
+ward	19100038	Female	Other	Income-poor	0
+ward	10408004	Female	Indian or Asian	Non-poor	0
+ward	10407003	Female	White	Non-poor	0
+ward	10104008	Female	Other	Income-poor	0
+ward	19100038	Male	White	Non-poor	0
+ward	10502003	Male	White	Income-poor	0
+ward	10404002	Male	Other	Non-poor	0
+ward	10302001	Female	Other	Income-poor	0
+ward	10203031	Female	Other	Income-poor	0
+ward	10203005	Female	Indian or Asian	Income-poor	0
+ward	10205008	Male	Indian or Asian	Income-poor	0
+ward	10204022	Male	Indian or Asian	Income-poor	0
+ward	10302006	Female	White	Income-poor	0
+ward	10205016	Male	Indian or Asian	Income-poor	0
+ward	10202012	Female	Indian or Asian	Non-poor	0
+ward	10302008	Male	Other	Income-poor	0
+ward	19100087	Female	Indian or Asian	Non-poor	0
+ward	10101003	Female	White	Income-poor	0
+ward	19100093	Female	Indian or Asian	Non-poor	0
+ward	19100031	Male	White	Income-poor	0
+ward	10403009	Female	Other	Income-poor	0
+ward	19100008	Female	Other	Income-poor	0
+ward	19100108	Female	Indian or Asian	Income-poor	0
+ward	10206011	Female	Indian or Asian	Non-poor	0
+ward	10302003	Female	Other	Non-poor	0
+ward	10204012	Male	Other	Income-poor	0
+ward	10204016	Male	Other	Income-poor	0
+ward	10101007	Female	Indian or Asian	Income-poor	0
+ward	10105004	Male	Indian or Asian	Non-poor	0
+ward	10301008	Female	White	Income-poor	0
+ward	10403006	Female	Other	Income-poor	0
+ward	19100096	Male	Indian or Asian	Non-poor	0
+ward	10301010	Female	White	Income-poor	0
+ward	10304004	Female	Indian or Asian	Income-poor	0
+ward	10203026	Male	Indian or Asian	Income-poor	0
+ward	19100050	Female	White	Income-poor	0
+ward	10205009	Female	White	Non-poor	0
+ward	10203010	Male	White	Income-poor	0
+ward	10404015	Female	White	Non-poor	0
+ward	19100085	Female	Indian or Asian	Income-poor	0
+ward	10405008	Male	Indian or Asian	Non-poor	0
+ward	10405002	Female	Indian or Asian	Income-poor	0
+ward	10204013	Female	Indian or Asian	Non-poor	0
+ward	19100088	Female	White	Income-poor	0
+ward	10203010	Female	Other	Non-poor	0
+ward	10404021	Female	Indian or Asian	Income-poor	0
+ward	10404005	Male	Indian or Asian	Income-poor	0
+ward	10405012	Male	Indian or Asian	Non-poor	0
+ward	10206010	Male	Indian or Asian	Income-poor	0
+ward	10503006	Female	Indian or Asian	Non-poor	0
+ward	10403010	Female	Indian or Asian	Income-poor	0
+ward	10404025	Female	Other	Income-poor	0
+ward	10405012	Female	Indian or Asian	Income-poor	0
+ward	10206010	Female	Indian or Asian	Non-poor	0
+ward	10403010	Male	Indian or Asian	Non-poor	0
+ward	10205009	Female	Other	Non-poor	0
+ward	10301007	Male	Other	Income-poor	0
+ward	10404021	Male	Indian or Asian	Non-poor	0
+ward	10405002	Male	Indian or Asian	Non-poor	0
+ward	10204013	Male	Indian or Asian	Income-poor	0
+ward	19100110	Male	White	Income-poor	0
+ward	10205009	Male	White	Income-poor	0
+ward	10404015	Male	White	Income-poor	0
+ward	10405008	Female	Indian or Asian	Income-poor	0
+ward	10204016	Male	White	Income-poor	0
+ward	10304004	Male	Indian or Asian	Non-poor	0
+ward	10203026	Female	Indian or Asian	Non-poor	0
+ward	10501002	Female	White	Income-poor	0
+ward	19100070	Male	Other	Income-poor	0
+ward	10408008	Female	White	Income-poor	0
+ward	10301008	Male	White	Non-poor	0
+ward	10303002	Male	Indian or Asian	Non-poor	0
+ward	10103003	Male	Other	Income-poor	0
+ward	10501002	Male	Other	Non-poor	0
+ward	10204012	Female	Other	Non-poor	0
+ward	10301010	Female	Other	Income-poor	0
+ward	10101007	Male	Indian or Asian	Non-poor	0
+ward	10403001	Male	White	Non-poor	0
+ward	10105004	Female	Indian or Asian	Income-poor	0
+ward	10301008	Female	Other	Income-poor	0
+ward	10404013	Male	White	Income-poor	0
+ward	10206011	Male	Indian or Asian	Income-poor	0
+ward	10302003	Male	Other	Income-poor	0
+ward	10203030	Male	White	Income-poor	0
+ward	10404025	Male	Indian or Asian	Non-poor	0
+ward	10403010	Male	Other	Non-poor	0
+ward	10206010	Female	Other	Non-poor	0
+ward	10405012	Female	Other	Income-poor	0
+ward	10404015	Female	Indian or Asian	Non-poor	0
+ward	10203010	Male	Indian or Asian	Income-poor	0
+ward	10301007	Male	Indian or Asian	Income-poor	0
+ward	10203030	Female	Other	Non-poor	0
+ward	10204013	Male	Other	Income-poor	0
+ward	10503006	Female	White	Non-poor	0
+ward	10206010	Male	White	Income-poor	0
+ward	10405008	Female	Other	Income-poor	0
+ward	10204009	Male	Black African	Non-poor	0
+ward	10404021	Female	White	Income-poor	0
+ward	10203003	Male	Indian or Asian	Income-poor	0
+ward	10103003	Male	Indian or Asian	Income-poor	0
+ward	10404013	Female	Indian or Asian	Non-poor	0
+ward	10401004	Male	Indian or Asian	Income-poor	0
+ward	19100070	Male	Indian or Asian	Income-poor	0
+ward	10301010	Female	Indian or Asian	Income-poor	0
+ward	19100096	Male	White	Non-poor	0
+ward	10204016	Female	Indian or Asian	Non-poor	0
+ward	10302002	Male	Other	Non-poor	0
+ward	10501002	Male	Indian or Asian	Non-poor	0
+ward	10203026	Male	White	Income-poor	0
+ward	10204012	Female	Indian or Asian	Non-poor	0
+ward	10303002	Female	White	Income-poor	0
+ward	10302003	Male	Indian or Asian	Income-poor	0
+ward	10206011	Male	Other	Income-poor	0
+ward	19100024	Male	White	Income-poor	0
+ward	10301008	Female	Indian or Asian	Income-poor	0
+ward	10302003	Female	Indian or Asian	Non-poor	0
+ward	19100024	Female	White	Non-poor	0
+ward	10301008	Male	Indian or Asian	Non-poor	0
+ward	10301010	Male	Indian or Asian	Non-poor	0
+ward	10302002	Female	Other	Income-poor	0
+ward	10501002	Female	Indian or Asian	Income-poor	0
+ward	10204009	Female	Coloured	Income-poor	0
+ward	10401004	Female	Indian or Asian	Non-poor	0
+ward	10304004	Female	Other	Income-poor	0
+ward	10404021	Male	White	Non-poor	0
+municipality	WC041	Male	Indian or Asian	Non-poor	0
+ward	10203030	Male	Other	Income-poor	0
+ward	10405012	Female	White	Income-poor	0
+ward	10204013	Female	Other	Non-poor	0
+ward	10503006	Male	White	Income-poor	0
+ward	10405002	Female	Other	Income-poor	0
+ward	10206010	Female	White	Non-poor	0
+ward	10405008	Female	White	Income-poor	0
+ward	10404015	Male	Indian or Asian	Income-poor	0
+ward	10301007	Female	Indian or Asian	Non-poor	0
+ward	10404021	Female	Other	Income-poor	0
+ward	10203030	Female	White	Non-poor	0
+ward	10403010	Female	Other	Income-poor	0
+ward	10206010	Male	Other	Income-poor	0
+ward	10503006	Female	Other	Non-poor	0
+ward	10204013	Male	White	Income-poor	0
+ward	10402003	Female	Indian or Asian	Income-poor	0
+ward	10405007	Female	Other	Income-poor	0
+ward	10302009	Male	Other	Non-poor	0
+ward	10404009	Female	Other	Non-poor	0
+ward	10404018	Female	Black African	Income-poor	0
+ward	10101002	Male	Indian or Asian	Income-poor	0
+ward	10102006	Male	Indian or Asian	Non-poor	0
+ward	10206008	Male	Indian or Asian	Non-poor	0
+ward	10301011	Female	Indian or Asian	Non-poor	0
+ward	10303001	Female	Indian or Asian	Income-poor	0
+ward	10105009	Male	White	Income-poor	0
+ward	10404009	Male	White	Income-poor	0
+ward	10203025	Male	Indian or Asian	Income-poor	0
+ward	10401003	Male	White	Income-poor	0
+ward	19100075	Female	White	Income-poor	0
+ward	10404004	Female	Indian or Asian	Income-poor	0
+ward	19100071	Female	Indian or Asian	Income-poor	0
+ward	10204003	Male	White	Income-poor	0
+ward	10402005	Female	Other	Income-poor	0
+ward	10302013	Female	Indian or Asian	Non-poor	0
+ward	10203018	Male	Indian or Asian	Income-poor	0
+ward	10501004	Male	Other	Income-poor	0
+ward	10203013	Female	Indian or Asian	Non-poor	0
+ward	10404018	Female	Coloured	Income-poor	0
+ward	10202008	Male	White	Income-poor	0
+ward	10204003	Female	Other	Non-poor	0
+ward	10407007	Female	Indian or Asian	Non-poor	0
+ward	10203012	Male	White	Non-poor	0
+ward	10407006	Male	White	Income-poor	0
+ward	10205019	Female	White	Income-poor	0
+ward	10203017	Female	Indian or Asian	Income-poor	0
+ward	10203012	Female	White	Income-poor	0
+ward	10104013	Female	Indian or Asian	Income-poor	0
+ward	10407006	Female	White	Non-poor	0
+ward	10302013	Male	Indian or Asian	Income-poor	0
+ward	10501004	Female	Other	Non-poor	0
+ward	10203013	Male	Indian or Asian	Income-poor	0
+ward	19100037	Male	Indian or Asian	Income-poor	0
+ward	10301006	Male	White	Income-poor	0
+ward	10205019	Female	Other	Income-poor	0
+ward	10202008	Male	Other	Income-poor	0
+ward	10402005	Female	White	Income-poor	0
+ward	10105005	Female	Other	Income-poor	0
+ward	10105009	Female	White	Non-poor	0
+ward	10404009	Female	White	Non-poor	0
+ward	10102006	Female	Indian or Asian	Income-poor	0
+ward	10206008	Female	Indian or Asian	Income-poor	0
+ward	10303001	Male	Indian or Asian	Non-poor	0
+ward	10302009	Female	Other	Income-poor	0
+ward	10405011	Female	Indian or Asian	Non-poor	0
+ward	10401003	Male	Other	Income-poor	0
+ward	10402003	Male	Indian or Asian	Non-poor	0
+ward	10203017	Female	Other	Income-poor	0
+ward	10204003	Male	Indian or Asian	Income-poor	0
+ward	10501003	Male	Coloured	Income-poor	0
+ward	10301006	Female	Indian or Asian	Non-poor	0
+ward	19100003	Female	Indian or Asian	Income-poor	0
+ward	10501004	Female	Indian or Asian	Non-poor	0
+ward	10105010	Female	Black African	Income-poor	0
+ward	19100075	Female	Indian or Asian	Income-poor	0
+ward	10302013	Male	Other	Income-poor	0
+ward	10402005	Male	Indian or Asian	Non-poor	0
+ward	10104013	Male	White	Non-poor	0
+ward	10407006	Male	Indian or Asian	Income-poor	0
+ward	10105005	Female	Indian or Asian	Income-poor	0
+ward	10203013	Female	White	Non-poor	0
+ward	10404004	Male	Other	Non-poor	0
+ward	10203025	Female	Other	Non-poor	0
+ward	10303001	Male	Other	Non-poor	0
+ward	10206008	Female	Other	Income-poor	0
+ward	10102006	Female	Other	Income-poor	0
+ward	10101002	Female	Other	Non-poor	0
+ward	10101001	Female	Other	Non-poor	0
+ward	10203015	Female	Black African	Income-poor	0
+ward	10401003	Male	Indian or Asian	Income-poor	0
+ward	10302009	Female	Indian or Asian	Income-poor	0
+ward	10203025	Male	White	Income-poor	0
+ward	10404009	Male	Indian or Asian	Income-poor	0
+ward	10501003	Male	Black African	Income-poor	0
+ward	19100042	Male	White	Income-poor	0
+ward	10405007	Female	Indian or Asian	Income-poor	0
+ward	10301011	Male	White	Income-poor	0
+ward	10102006	Female	White	Income-poor	0
+ward	10101001	Male	Other	Income-poor	0
+ward	10302009	Male	Indian or Asian	Non-poor	0
+ward	10404009	Female	Indian or Asian	Non-poor	0
+ward	10105009	Female	Indian or Asian	Non-poor	0
+ward	10405011	Male	Other	Income-poor	0
+ward	10501003	Female	Black African	Non-poor	0
+ward	10203023	Female	Indian or Asian	Income-poor	0
+ward	10303001	Female	Other	Income-poor	0
+ward	10203022	Female	Indian or Asian	Income-poor	0
+ward	10203013	Male	White	Income-poor	0
+ward	10404004	Female	Other	Income-poor	0
+ward	10203012	Female	Indian or Asian	Income-poor	0
+ward	10205019	Male	Indian or Asian	Non-poor	0
+ward	10104013	Female	White	Income-poor	0
+ward	10407006	Female	Indian or Asian	Non-poor	0
+ward	10501004	Male	Indian or Asian	Income-poor	0
+ward	10302013	Female	Other	Non-poor	0
+ward	19100077	Female	Indian or Asian	Income-poor	0
+ward	10203018	Male	Other	Income-poor	0
+ward	10203017	Male	Other	Non-poor	0
+ward	10204003	Female	Indian or Asian	Non-poor	0
+ward	10301009	Male	Indian or Asian	Income-poor	0
+ward	10206004	Female	White	Income-poor	0
+ward	19100102	Male	Indian or Asian	Income-poor	0
+ward	10404010	Female	Other	Income-poor	0
+ward	10202002	Female	Indian or Asian	Income-poor	0
+ward	10103005	Male	Indian or Asian	Income-poor	0
+ward	10104009	Female	Indian or Asian	Income-poor	0
+ward	10404024	Female	Other	Non-poor	0
+ward	10404010	Male	White	Non-poor	0
+ward	10408009	Male	Indian or Asian	Non-poor	0
+ward	10203024	Female	Other	Non-poor	0
+ward	10104002	Female	White	Income-poor	0
+ward	10503001	Male	Other	Income-poor	0
+ward	10407005	Male	Indian or Asian	Income-poor	0
+ward	10303005	Female	Indian or Asian	Income-poor	0
+ward	10206006	Female	Indian or Asian	Non-poor	0
+ward	19100034	Female	Indian or Asian	Non-poor	0
+ward	10402008	Male	Indian or Asian	Income-poor	0
+ward	10104006	Female	Other	Non-poor	0
+ward	10303003	Female	White	Income-poor	0
+ward	10203024	Male	White	Income-poor	0
+ward	19100045	Male	White	Income-poor	0
+ward	10502002	Male	Indian or Asian	Income-poor	0
+ward	10104002	Female	Other	Income-poor	0
+ward	10203024	Female	White	Non-poor	0
+ward	10205010	Female	Indian or Asian	Non-poor	0
+ward	10502002	Female	Indian or Asian	Non-poor	0
+ward	19100089	Female	Other	Income-poor	0
+ward	10405004	Female	Indian or Asian	Non-poor	0
+ward	10206006	Male	Indian or Asian	Income-poor	0
+ward	10402008	Female	Indian or Asian	Non-poor	0
+ward	10104006	Male	Other	Income-poor	0
+ward	10104002	Male	White	Non-poor	0
+ward	10503001	Female	Other	Non-poor	0
+ward	10204011	Female	Other	Income-poor	0
+ward	10404014	Male	White	Income-poor	0
+ward	10404010	Female	White	Income-poor	0
+ward	10403004	Female	Indian or Asian	Non-poor	0
+ward	10202002	Male	Indian or Asian	Non-poor	0
+ward	10103005	Female	Indian or Asian	Non-poor	0
+ward	19100090	Female	Other	Income-poor	0
+ward	10502002	Female	Other	Non-poor	0
+ward	19100028	Male	White	Income-poor	0
+ward	10402008	Female	Other	Non-poor	0
+ward	10104006	Male	Indian or Asian	Income-poor	0
+ward	10303005	Male	Other	Non-poor	0
+ward	10405004	Female	Other	Non-poor	0
+ward	10205010	Male	White	Income-poor	0
+ward	10303003	Female	Indian or Asian	Income-poor	0
+ward	10203024	Male	Indian or Asian	Income-poor	0
+ward	10408009	Female	Other	Income-poor	0
+ward	10402008	Male	White	Income-poor	0
+ward	10405004	Male	White	Income-poor	0
+ward	19100034	Female	White	Non-poor	0
+ward	10103002	Female	Black African	Income-poor	0
+ward	10203021	Female	White	Income-poor	0
+ward	10103005	Male	White	Income-poor	0
+ward	10205005	Male	Indian or Asian	Income-poor	0
+ward	10403004	Female	Other	Non-poor	0
+ward	10404010	Male	Indian or Asian	Non-poor	0
+ward	10404014	Female	Indian or Asian	Non-poor	0
+ward	10104009	Female	White	Income-poor	0
+ward	19100047	Male	White	Non-poor	0
+ward	19100039	Male	Coloured	Non-poor	0
+ward	19100090	Female	Indian or Asian	Income-poor	0
+ward	10301009	Female	Other	Non-poor	0
+ward	10301009	Male	Other	Income-poor	0
+ward	10203021	Female	Other	Income-poor	0
+ward	10103005	Male	Other	Income-poor	0
+ward	10404010	Female	Indian or Asian	Income-poor	0
+ward	10202002	Female	Other	Income-poor	0
+ward	10206004	Male	Indian or Asian	Non-poor	0
+ward	10205005	Female	Indian or Asian	Non-poor	0
+ward	10403004	Male	Other	Income-poor	0
+ward	10408007	Male	White	Income-poor	0
+ward	19100017	Male	White	Income-poor	0
+ward	10203021	Male	White	Non-poor	0
+ward	10502004	Female	Black African	Non-poor	0
+ward	10104009	Female	Other	Income-poor	0
+ward	10302007	Female	Coloured	Income-poor	0
+ward	10206003	Male	Other	Non-poor	0
+ward	10408009	Male	Other	Non-poor	0
+ward	10402008	Female	White	Non-poor	0
+ward	10405004	Female	White	Non-poor	0
+ward	10204011	Male	Indian or Asian	Non-poor	0
+ward	19100001	Male	Other	Income-poor	0
+ward	10206006	Male	White	Income-poor	0
+ward	10407001	Male	Indian or Asian	Income-poor	0
+ward	10205010	Female	White	Non-poor	0
+ward	10503001	Male	Indian or Asian	Income-poor	0
+ward	19100045	Female	Indian or Asian	Non-poor	0
+ward	10203024	Female	Indian or Asian	Non-poor	0
+ward	10402008	Male	Other	Income-poor	0
+ward	10104006	Female	Indian or Asian	Non-poor	0
+ward	10303005	Female	Other	Income-poor	0
+ward	10502002	Male	Other	Income-poor	0
+ward	10407005	Female	White	Non-poor	0
+ward	10104002	Male	Indian or Asian	Non-poor	0
+ward	10103006	Female	Other	Non-poor	0
+ward	19100103	Male	Other	Income-poor	0
+ward	10403001	Male	White	Income-poor	0
+ward	10203009	Female	Indian or Asian	Non-poor	0
+ward	10404011	Female	White	Income-poor	0
+ward	10205017	Male	Other	Income-poor	0
+ward	10502003	Male	Black African	Income-poor	0
+ward	10104005	Male	Other	Income-poor	0
+ward	10404002	Female	Black African	Income-poor	0
+ward	10408003	Female	Indian or Asian	Income-poor	0
+ward	10403001	Female	Other	Non-poor	0
+ward	10204015	Female	Indian or Asian	Non-poor	0
+ward	10101008	Female	Other	Income-poor	0
+ward	10104012	Female	Indian or Asian	Income-poor	0
+ward	10205017	Female	White	Non-poor	0
+ward	10204014	Female	White	Income-poor	0
+ward	19100052	Female	White	Income-poor	0
+ward	10103001	Male	Other	Income-poor	0
+ward	10203016	Female	Indian or Asian	Non-poor	0
+ward	10301005	Male	Indian or Asian	Income-poor	0
+ward	10202003	Female	Indian or Asian	Income-poor	0
+ward	10205011	Female	Indian or Asian	Income-poor	0
+ward	10503003	Male	Other	Non-poor	0
+ward	10404002	Female	Coloured	Income-poor	0
+ward	10202001	Male	White	Non-poor	0
+ward	19100091	Female	Other	Income-poor	0
+ward	10205013	Male	Indian or Asian	Non-poor	0
+ward	10404019	Male	Other	Income-poor	0
+ward	10206005	Female	Indian or Asian	Income-poor	0
+ward	10102001	Male	Indian or Asian	Income-poor	0
+ward	10102002	Male	Other	Income-poor	0
+ward	10404017	Female	Indian or Asian	Non-poor	0
+ward	10503003	Female	White	Income-poor	0
+ward	10202006	Female	Other	Income-poor	0
+ward	10301002	Male	White	Income-poor	0
+ward	10204007	Female	Indian or Asian	Non-poor	0
+ward	10405013	Female	White	Non-poor	0
+ward	10202007	Female	Other	Non-poor	0
+ward	10405001	Male	Other	Income-poor	0
+ward	19100091	Female	White	Income-poor	0
+ward	10204007	Male	Indian or Asian	Income-poor	0
+ward	10405013	Male	White	Income-poor	0
+ward	10405001	Female	Other	Non-poor	0
+ward	10205018	Female	Other	Income-poor	0
+ward	19100002	Male	Indian or Asian	Income-poor	0
+ward	10503003	Male	White	Non-poor	0
+ward	10303004	Female	Other	Income-poor	0
+ward	10301013	Female	Indian or Asian	Income-poor	0
+ward	10202006	Female	White	Income-poor	0
+ward	10202001	Female	White	Income-poor	0
+ward	10205013	Female	Indian or Asian	Income-poor	0
+ward	10304003	Male	Other	Income-poor	0
+ward	10101005	Female	Other	Income-poor	0
+ward	10302008	Male	Black African	Income-poor	0
+ward	10503003	Female	Other	Income-poor	0
+ward	10205017	Male	White	Income-poor	0
+ward	10105002	Female	Other	Non-poor	0
+ward	10103001	Female	Other	Non-poor	0
+ward	10203016	Male	Indian or Asian	Income-poor	0
+ward	10408003	Male	Indian or Asian	Non-poor	0
+ward	10205012	Female	Indian or Asian	Income-poor	0
+ward	10403001	Male	Other	Income-poor	0
+ward	10205017	Female	Other	Non-poor	0
+ward	10204014	Female	Other	Income-poor	0
+ward	19100052	Female	Other	Income-poor	0
+ward	10402004	Female	Other	Income-poor	0
+ward	10403003	Female	Indian or Asian	Income-poor	0
+ward	10403014	Male	White	Income-poor	0
+ward	10103006	Male	Other	Income-poor	0
+ward	10206005	Female	White	Income-poor	0
+ward	10405001	Female	Indian or Asian	Non-poor	0
+ward	10204007	Male	Other	Income-poor	0
+ward	10204008	Male	Indian or Asian	Non-poor	0
+ward	10205013	Male	White	Non-poor	0
+ward	10303004	Female	Indian or Asian	Income-poor	0
+ward	10205018	Female	Indian or Asian	Income-poor	0
+ward	10206005	Male	Other	Non-poor	0
+ward	10304003	Male	Indian or Asian	Income-poor	0
+ward	10405013	Female	Indian or Asian	Non-poor	0
+ward	10205013	Female	Other	Income-poor	0
+ward	19100091	Male	Indian or Asian	Non-poor	0
+ward	10301002	Male	Indian or Asian	Income-poor	0
+ward	10502001	Female	White	Income-poor	0
+ward	19100086	Male	White	Income-poor	0
+ward	10204010	Female	Other	Income-poor	0
+ward	10105002	Female	Indian or Asian	Non-poor	0
+ward	19100023	Female	Indian or Asian	Income-poor	0
+ward	10203009	Female	White	Non-poor	0
+ward	10205012	Female	Other	Income-poor	0
+ward	10203016	Female	White	Non-poor	0
+ward	10404016	Male	White	Income-poor	0
+ward	19100052	Female	Indian or Asian	Income-poor	0
+ward	10204014	Female	Indian or Asian	Income-poor	0
+ward	10205017	Female	Indian or Asian	Non-poor	0
+ward	10104012	Female	White	Income-poor	0
+ward	10204015	Female	White	Non-poor	0
+ward	10103006	Male	Indian or Asian	Income-poor	0
+ward	10204015	Male	White	Income-poor	0
+ward	19100103	Male	Indian or Asian	Income-poor	0
+ward	19100010	Female	Indian or Asian	Income-poor	0
+ward	10203016	Male	White	Income-poor	0
+ward	19100052	Male	Indian or Asian	Non-poor	0
+ward	10204014	Male	Indian or Asian	Non-poor	0
+ward	10205017	Male	Indian or Asian	Income-poor	0
+ward	10404011	Male	Indian or Asian	Non-poor	0
+ward	10203009	Male	White	Income-poor	0
+ward	10403001	Female	Indian or Asian	Non-poor	0
+ward	10104005	Male	Indian or Asian	Income-poor	0
+ward	19100064	Male	Indian or Asian	Income-poor	0
+ward	10403003	Female	White	Income-poor	0
+ward	10204010	Male	Other	Non-poor	0
+ward	10103001	Male	Indian or Asian	Income-poor	0
+ward	10105002	Male	Indian or Asian	Income-poor	0
+ward	10301005	Male	Other	Income-poor	0
+ward	19100078	Male	White	Income-poor	0
+ward	10202003	Female	Other	Income-poor	0
+ward	10206005	Female	Other	Income-poor	0
+ward	10304003	Female	Indian or Asian	Non-poor	0
+ward	10404019	Male	Indian or Asian	Income-poor	0
+ward	10405013	Male	Indian or Asian	Income-poor	0
+ward	10205013	Male	Other	Non-poor	0
+ward	10404017	Female	Other	Non-poor	0
+ward	10502001	Female	Other	Income-poor	0
+ward	10102002	Male	Indian or Asian	Income-poor	0
+ward	10205011	Male	White	Non-poor	0
+ward	10205018	Male	Indian or Asian	Non-poor	0
+ward	10204007	Female	Other	Non-poor	0
+ward	10204008	Female	Indian or Asian	Income-poor	0
+ward	10202006	Female	Indian or Asian	Income-poor	0
+ward	10205013	Female	White	Income-poor	0
+ward	10202001	Female	Indian or Asian	Income-poor	0
+ward	10301012	Male	White	Income-poor	0
+ward	10302012	Female	White	Income-poor	0
+ward	10404020	Male	Indian or Asian	Non-poor	0
+ward	10503002	Female	Indian or Asian	Income-poor	0
+ward	10401002	Female	Indian or Asian	Non-poor	0
+ward	10301012	Female	Other	Non-poor	0
+ward	10203004	Male	Indian or Asian	Income-poor	0
+ward	10404003	Male	Other	Income-poor	0
+ward	19100033	Female	Indian or Asian	Non-poor	0
+ward	10501001	Female	Other	Non-poor	0
+ward	10203006	Female	Other	Income-poor	0
+ward	10203008	Female	White	Income-poor	0
+ward	10403007	Female	Indian or Asian	Income-poor	0
+ward	19100076	Female	White	Income-poor	0
+ward	10204009	Male	Other	Non-poor	0
+ward	10105007	Female	Indian or Asian	Non-poor	0
+ward	10503005	Male	Indian or Asian	Income-poor	0
+ward	10203006	Male	White	Non-poor	0
+ward	19100041	Female	Indian or Asian	Income-poor	0
+ward	10501001	Male	White	Income-poor	0
+ward	10204019	Female	Indian or Asian	Income-poor	0
+ward	19100025	Male	White	Income-poor	0
+ward	10205007	Female	Other	Income-poor	0
+ward	10404005	Male	Black African	Income-poor	0
+ward	10102005	Female	Indian or Asian	Non-poor	0
+ward	10203006	Female	White	Income-poor	0
+ward	10403010	Female	Black African	Income-poor	0
+ward	19100041	Male	Indian or Asian	Non-poor	0
+ward	10203008	Female	Other	Income-poor	0
+ward	10204009	Female	Other	Income-poor	0
+ward	10105007	Male	Indian or Asian	Income-poor	0
+ward	10501001	Male	Other	Income-poor	0
+ward	10203006	Male	Other	Non-poor	0
+ward	10203008	Male	White	Non-poor	0
+ward	10403007	Male	Indian or Asian	Non-poor	0
+ward	10405002	Female	Black African	Income-poor	0
+ward	19100084	Male	Other	Income-poor	0
+ward	10404023	Female	Other	Income-poor	0
+ward	10503007	Female	White	Income-poor	0
+ward	10301012	Male	Other	Income-poor	0
+ward	10404003	Male	White	Income-poor	0
+ward	10404020	Female	Indian or Asian	Income-poor	0
+ward	10503002	Male	Indian or Asian	Non-poor	0
+ward	10401002	Male	Indian or Asian	Income-poor	0
+ward	19100040	Female	Indian or Asian	Income-poor	0
+ward	10304002	Male	Other	Income-poor	0
+ward	10302012	Male	White	Non-poor	0
+ward	10102005	Female	Other	Non-poor	0
+ward	10503005	Male	White	Income-poor	0
+ward	10205007	Female	Indian or Asian	Income-poor	0
+ward	10103007	Female	Other	Non-poor	0
+ward	10203008	Female	Indian or Asian	Income-poor	0
+ward	10105007	Male	Other	Income-poor	0
+ward	10503005	Female	Other	Non-poor	0
+ward	10204009	Female	Indian or Asian	Income-poor	0
+ward	19100084	Male	Indian or Asian	Income-poor	0
+ward	10403007	Male	Other	Non-poor	0
+ward	10203006	Male	Indian or Asian	Non-poor	0
+ward	10501001	Male	Indian or Asian	Income-poor	0
+ward	19100041	Female	White	Income-poor	0
+ward	10404023	Female	Indian or Asian	Income-poor	0
+ward	10404020	Male	White	Non-poor	0
+ward	10404003	Female	Indian or Asian	Non-poor	0
+ward	19100040	Male	White	Non-poor	0
+ward	10302012	Female	Indian or Asian	Income-poor	0
+ward	10104003	Female	Other	Non-poor	0
+ward	10401002	Male	Other	Income-poor	0
+ward	10407002	Female	Other	Non-poor	0
+ward	10501002	Female	Black African	Income-poor	0
+ward	10304002	Female	Indian or Asian	Non-poor	0
+ward	10302003	Male	Black African	Income-poor	0
+ward	10407002	Male	Other	Income-poor	0
+ward	10503002	Female	Other	Income-poor	0
+ward	19100040	Female	White	Income-poor	0
+ward	10203004	Male	Other	Income-poor	0
+ward	10302012	Male	Indian or Asian	Non-poor	0
+ward	10104003	Male	Other	Income-poor	0
+ward	10301012	Female	Indian or Asian	Non-poor	0
+ward	10404003	Male	Indian or Asian	Income-poor	0
+ward	10403007	Female	Other	Income-poor	0
+ward	10203006	Female	Indian or Asian	Income-poor	0
+ward	10501001	Female	Indian or Asian	Non-poor	0
+ward	19100041	Male	White	Non-poor	0
+ward	10403011	Female	Indian or Asian	Non-poor	0
+ward	10503005	Male	Other	Income-poor	0
+ward	10204009	Male	Indian or Asian	Non-poor	0
+ward	10203008	Male	Indian or Asian	Non-poor	0
+ward	19100021	Male	Indian or Asian	Income-poor	0
+ward	19100041	Female	Other	Income-poor	0
+ward	19100014	Female	Indian or Asian	Income-poor	0
+ward	10102005	Male	Other	Income-poor	0
+ward	10404008	Female	Other	Non-poor	0
+ward	10204019	Female	Other	Income-poor	0
+ward	10503005	Female	White	Non-poor	0
+ward	10205007	Male	Indian or Asian	Non-poor	0
+ward	10203015	Female	Other	Income-poor	0
+ward	10501003	Male	Other	Income-poor	0
+ward	10105011	Female	Other	Income-poor	0
+ward	19100065	Male	White	Non-poor	0
+ward	19100094	Female	Indian or Asian	Income-poor	0
+ward	10204021	Female	Indian or Asian	Income-poor	0
+ward	10206009	Female	White	Income-poor	0
+ward	19100037	Male	Coloured	Income-poor	0
+ward	10105011	Male	White	Non-poor	0
+ward	10403013	Female	Other	Non-poor	0
+ward	10402002	Female	Other	Income-poor	0
+ward	10204005	Female	White	Income-poor	0
+ward	10105001	Female	Other	Non-poor	0
+ward	10202009	Female	Indian or Asian	Non-poor	0
+ward	10204006	Male	Indian or Asian	Income-poor	0
+ward	19100036	Female	Indian or Asian	Income-poor	0
+ward	19100099	Male	White	Income-poor	0
+ward	10403013	Male	White	Income-poor	0
+ward	10105001	Male	White	Income-poor	0
+ward	10408005	Male	Indian or Asian	Non-poor	0
+ward	10204005	Female	Other	Income-poor	0
+ward	10408005	Female	Indian or Asian	Income-poor	0
+ward	19100067	Male	White	Income-poor	0
+ward	10204006	Female	Indian or Asian	Non-poor	0
+ward	19100036	Male	Indian or Asian	Non-poor	0
+ward	10205006	Male	Indian or Asian	Income-poor	0
+ward	19100099	Female	White	Non-poor	0
+ward	10403013	Female	White	Non-poor	0
+ward	10105001	Male	Other	Income-poor	0
+ward	10202009	Male	Indian or Asian	Income-poor	0
+ward	10403013	Male	Other	Income-poor	0
+ward	10205004	Female	Other	Income-poor	0
+ward	10302005	Male	White	Non-poor	0
+ward	10105012	Male	Other	Income-poor	0
+ward	10105011	Female	White	Income-poor	0
+ward	19100098	Female	Indian or Asian	Non-poor	0
+ward	10204021	Male	Indian or Asian	Non-poor	0
+ward	19100037	Female	Coloured	Non-poor	0
+ward	10403008	Male	Other	Income-poor	0
+ward	10202010	Female	Other	Income-poor	0
+ward	19100061	Female	Other	Income-poor	0
+ward	10204001	Female	White	Income-poor	0
+ward	10206009	Female	Other	Income-poor	0
+ward	10404018	Female	Indian or Asian	Income-poor	0
+ward	10104001	Male	White	Income-poor	0
+ward	10408005	Female	Other	Income-poor	0
+ward	10204017	Female	Indian or Asian	Income-poor	0
+ward	10501004	Male	Black African	Income-poor	0
+ward	10204005	Female	Indian or Asian	Income-poor	0
+ward	10102004	Female	Other	Non-poor	0
+ward	10205006	Male	Other	Income-poor	0
+ward	10105008	Male	Indian or Asian	Non-poor	0
+ward	10204006	Female	Other	Non-poor	0
+ward	10202009	Male	Other	Income-poor	0
+ward	10403005	Male	Indian or Asian	Income-poor	0
+ward	10105001	Male	Indian or Asian	Income-poor	0
+ward	10402002	Male	Indian or Asian	Non-poor	0
+ward	19100094	Female	White	Income-poor	0
+ward	10202005	Female	Indian or Asian	Income-poor	0
+ward	10203012	Female	Coloured	Income-poor	0
+ward	10403008	Male	Indian or Asian	Income-poor	0
+ward	10202010	Female	Indian or Asian	Income-poor	0
+ward	10405003	Male	Indian or Asian	Income-poor	0
+ward	19100046	Male	White	Income-poor	0
+ward	19100061	Female	Indian or Asian	Income-poor	0
+ward	10501003	Female	Indian or Asian	Non-poor	0
+ward	10404018	Female	Other	Income-poor	0
+ward	10206009	Female	Indian or Asian	Income-poor	0
+ward	10501003	Male	Indian or Asian	Income-poor	0
+ward	10203015	Female	Indian or Asian	Income-poor	0
+ward	10206009	Male	Indian or Asian	Non-poor	0
+ward	10408006	Male	White	Non-poor	0
+ward	10203007	Female	White	Non-poor	0
+ward	10105011	Female	Indian or Asian	Income-poor	0
+ward	10407006	Male	Coloured	Income-poor	0
+ward	10202004	Male	Indian or Asian	Non-poor	0
+ward	10403008	Female	Indian or Asian	Non-poor	0
+ward	10202010	Male	Indian or Asian	Non-poor	0
+ward	10204021	Female	Other	Income-poor	0
+ward	19100094	Male	White	Non-poor	0
+ward	10402002	Female	Indian or Asian	Income-poor	0
+ward	10202009	Female	Other	Non-poor	0
+ward	10408005	Female	White	Income-poor	0
+ward	19100036	Female	Other	Income-poor	0
+ward	10105008	Female	Indian or Asian	Income-poor	0
+ward	10202009	Male	White	Income-poor	0
+ward	10204017	Male	Indian or Asian	Non-poor	0
+ward	10105010	Female	Indian or Asian	Income-poor	0
+ward	10204005	Male	Indian or Asian	Non-poor	0
+ward	10104011	Female	Other	Income-poor	0
+ward	10404012	Female	Other	Non-poor	0
+ward	19100044	Female	White	Income-poor	0
+ward	19100051	Female	Indian or Asian	Income-poor	0
+ward	10301001	Male	Other	Income-poor	0
+municipality	WC052	Female	Other	Income-poor	0
+ward	10405010	Female	Other	Non-poor	0
+ward	10403002	Female	Indian or Asian	Non-poor	0
+ward	10302007	Male	Other	Income-poor	0
+ward	10205002	Female	Indian or Asian	Income-poor	0
+ward	10404012	Male	White	Income-poor	0
+ward	10301003	Male	Indian or Asian	Income-poor	0
+ward	10401001	Female	Other	Income-poor	0
+ward	10405010	Male	White	Income-poor	0
+ward	10104004	Female	Other	Income-poor	0
+ward	10405005	Female	White	Income-poor	0
+ward	10103002	Female	Other	Non-poor	0
+ward	10408002	Male	Indian or Asian	Income-poor	0
+ward	10502004	Male	Other	Non-poor	0
+ward	10407004	Female	Other	Non-poor	0
+ward	10205014	Male	White	Non-poor	0
+ward	10203020	Male	Indian or Asian	Income-poor	0
+ward	10103002	Male	White	Income-poor	0
+ward	10302004	Male	Other	Income-poor	0
+ward	10104004	Male	White	Non-poor	0
+ward	10203001	Male	Indian or Asian	Income-poor	0
+ward	10407004	Male	White	Income-poor	0
+ward	19100068	Male	White	Income-poor	0
+ward	10302011	Female	Indian or Asian	Income-poor	0
+ward	10402001	Female	Other	Non-poor	0
+ward	10103002	Female	White	Non-poor	0
+ward	10104004	Female	White	Income-poor	0
+ward	10407004	Female	White	Non-poor	0
+ward	10405009	Male	Indian or Asian	Income-poor	0
+ward	10204018	Female	Other	Income-poor	0
+ward	10205014	Female	White	Income-poor	0
+ward	10203020	Female	Indian or Asian	Non-poor	0
+ward	10205015	Female	Indian or Asian	Income-poor	0
+ward	10408002	Female	Indian or Asian	Non-poor	0
+ward	10203002	Male	Other	Income-poor	0
+ward	10502004	Female	Other	Income-poor	0
+ward	10407004	Male	Other	Income-poor	0
+ward	19100095	Male	White	Non-poor	0
+ward	10301001	Male	White	Income-poor	0
+ward	19100039	Male	White	Income-poor	0
+ward	10205002	Male	Indian or Asian	Non-poor	0
+ward	10404012	Female	White	Non-poor	0
+ward	10103004	Female	Indian or Asian	Income-poor	0
+ward	10403012	Female	Indian or Asian	Income-poor	0
+ward	10403002	Male	Indian or Asian	Income-poor	0
+ward	19100035	Female	Indian or Asian	Non-poor	0
+ward	10203011	Male	Indian or Asian	Income-poor	0
+ward	10301004	Male	Other	Income-poor	0
+ward	10404001	Male	Indian or Asian	Non-poor	0
+ward	10404012	Male	Other	Income-poor	0
+ward	10402001	Female	Indian or Asian	Non-poor	0
+ward	10302011	Female	Other	Income-poor	0
+ward	10203020	Male	White	Income-poor	0
+ward	19100097	Male	Indian or Asian	Income-poor	0
+ward	10404007	Female	White	Income-poor	0
+ward	10408001	Female	Indian or Asian	Income-poor	0
+ward	10405009	Female	White	Non-poor	0
+ward	10405005	Female	Indian or Asian	Income-poor	0
+ward	19100043	Male	White	Income-poor	0
+ward	10204018	Female	Indian or Asian	Income-poor	0
+ward	10502004	Female	Indian or Asian	Income-poor	0
+ward	10203002	Male	Indian or Asian	Income-poor	0
+ward	10407004	Male	Indian or Asian	Income-poor	0
+ward	10103002	Male	Indian or Asian	Income-poor	0
+ward	10205015	Female	Other	Income-poor	0
+municipality	WC051	Female	Indian or Asian	Income-poor	0
+ward	10403012	Male	White	Non-poor	0
+ward	10203014	Male	White	Non-poor	0
+ward	19100051	Female	White	Income-poor	0
+ward	19100009	Male	White	Income-poor	0
+ward	10401001	Male	Indian or Asian	Non-poor	0
+ward	10302007	Female	Indian or Asian	Non-poor	0
+ward	10304001	Female	Indian or Asian	Non-poor	0
+ward	10403012	Female	Other	Income-poor	0
+ward	19100039	Female	Indian or Asian	Non-poor	0
+ward	10103004	Female	Other	Income-poor	0
+ward	10301001	Female	Indian or Asian	Non-poor	0
+ward	19100083	Female	Indian or Asian	Income-poor	0
+ward	10404012	Male	Indian or Asian	Income-poor	0
+ward	10404010	Female	Coloured	Non-poor	0
+ward	10104011	Male	Indian or Asian	Non-poor	0
+ward	10301003	Male	White	Income-poor	0
+ward	19100092	Male	Indian or Asian	Income-poor	0
+ward	10301004	Male	Indian or Asian	Income-poor	0
+ward	10104011	Female	Indian or Asian	Income-poor	0
+ward	10205002	Male	White	Non-poor	0
+ward	10301004	Female	Indian or Asian	Non-poor	0
+ward	10203011	Female	Other	Non-poor	0
+ward	10304001	Male	Indian or Asian	Income-poor	0
+ward	10403002	Female	Other	Non-poor	0
+ward	10405010	Female	Indian or Asian	Non-poor	0
+ward	19100051	Female	Other	Income-poor	0
+ward	10401001	Female	Indian or Asian	Income-poor	0
+ward	10203011	Male	White	Income-poor	0
+ward	10302007	Male	Indian or Asian	Income-poor	0
+ward	10403012	Female	White	Income-poor	0
+ward	10203014	Female	White	Income-poor	0
+ward	19100035	Female	White	Non-poor	0
+ward	10403002	Male	White	Income-poor	0
+ward	10502004	Male	Indian or Asian	Non-poor	0
+ward	10102003	Female	Other	Income-poor	0
+ward	10408002	Male	Other	Income-poor	0
+ward	10103002	Female	Indian or Asian	Non-poor	0
+municipality	WC051	Male	Indian or Asian	Non-poor	0
+ward	10203020	Male	Other	Income-poor	0
+ward	10405009	Female	Other	Non-poor	0
+ward	10203001	Male	Other	Income-poor	0
+ward	10302004	Male	Indian or Asian	Income-poor	0
+ward	10205015	Female	White	Income-poor	0
+ward	10405005	Male	Indian or Asian	Non-poor	0
+ward	10402001	Male	Indian or Asian	Income-poor	0
+ward	10203020	Female	White	Non-poor	0
+ward	10405009	Male	White	Income-poor	0
+ward	10205008	Female	White	Income-poor	0
+ward	10302006	Male	Indian or Asian	Income-poor	0
+ward	10104010	Female	Other	Income-poor	0
+ward	10203005	Male	White	Income-poor	0
+ward	10203027	Female	Other	Income-poor	0
+ward	19100015	Female	Indian or Asian	Income-poor	0
+ward	10403009	Female	Indian or Asian	Non-poor	0
+ward	19100019	Female	White	Income-poor	0
+ward	19100093	Male	White	Non-poor	0
+ward	10101003	Male	Indian or Asian	Income-poor	0
+ward	19100087	Male	White	Non-poor	0
+ward	10204020	Male	Indian or Asian	Income-poor	0
+ward	10203027	Male	White	Non-poor	0
+ward	10206002	Male	Indian or Asian	Income-poor	0
+ward	10402006	Female	Other	Non-poor	0
+ward	10404022	Female	Other	Income-poor	0
+ward	10302001	Female	Indian or Asian	Non-poor	0
+ward	10204002	Male	Indian or Asian	Non-poor	0
+ward	10407003	Male	Indian or Asian	Non-poor	0
+ward	10203029	Female	Indian or Asian	Income-poor	0
+ward	10404002	Male	Indian or Asian	Income-poor	0
+ward	10405006	Male	Other	Income-poor	0
+ward	10205001	Female	Indian or Asian	Non-poor	0
+ward	10502003	Female	Indian or Asian	Income-poor	0
+ward	19100038	Female	Indian or Asian	Non-poor	0
+ward	10402007	Female	Other	Income-poor	0
+ward	19100018	Male	White	Income-poor	0
+ward	10104008	Male	Indian or Asian	Income-poor	0
+ward	10405006	Male	White	Income-poor	0
+ward	10402007	Male	Other	Non-poor	0
+ward	10502003	Male	Indian or Asian	Non-poor	0
+ward	10302001	Male	Indian or Asian	Income-poor	0
+ward	10204002	Female	Indian or Asian	Income-poor	0
+ward	10203031	Male	Indian or Asian	Income-poor	0
+ward	10404002	Female	Indian or Asian	Non-poor	0
+ward	10408004	Female	White	Income-poor	0
+ward	10402006	Male	Other	Income-poor	0
+ward	10205020	Male	Indian or Asian	Non-poor	0
+ward	10302008	Female	Indian or Asian	Income-poor	0
+ward	19100108	Female	White	Non-poor	0
+ward	19100093	Female	White	Income-poor	0
+ward	10206012	Female	Other	Non-poor	0
+ward	10205008	Female	Other	Income-poor	0
+ward	10204022	Female	Other	Income-poor	0
+ward	10204020	Female	Indian or Asian	Non-poor	0
+ward	10203027	Female	White	Income-poor	0
+ward	10206002	Female	Indian or Asian	Non-poor	0
+ward	10403009	Male	Indian or Asian	Income-poor	0
+ward	19100008	Male	Indian or Asian	Income-poor	0
+ward	10205016	Male	White	Non-poor	0
+ward	10302006	Female	Indian or Asian	Non-poor	0
+ward	10203005	Female	White	Non-poor	0
+ward	10408004	Male	Indian or Asian	Non-poor	0
+ward	10204002	Male	White	Non-poor	0
+ward	10104008	Male	Other	Income-poor	0
+ward	10405006	Female	Indian or Asian	Non-poor	0
+ward	10404002	Female	Other	Non-poor	0
+ward	10407003	Female	Other	Income-poor	0
+ward	19100018	Male	Indian or Asian	Income-poor	0
+ward	10203031	Male	Other	Income-poor	0
+ward	10205020	Male	Other	Non-poor	0
+ward	10302010	Female	Other	Non-poor	0
+ward	10202011	Female	Indian or Asian	Income-poor	0
+ward	10502003	Female	White	Income-poor	0
+ward	10205016	Female	Indian or Asian	Income-poor	0
+ward	10204020	Female	Other	Non-poor	0
+ward	10204022	Female	Indian or Asian	Income-poor	0
+ward	10302006	Male	White	Income-poor	0
+ward	10205008	Female	Indian or Asian	Income-poor	0
+ward	10203005	Male	Indian or Asian	Income-poor	0
+ward	10405013	Male	Black African	Non-poor	0
+ward	10203027	Male	Indian or Asian	Non-poor	0
+ward	10104010	Male	Indian or Asian	Non-poor	0
+ward	10101003	Male	White	Income-poor	0
+ward	10205017	Male	Coloured	Non-poor	0
+ward	10302006	Female	Other	Non-poor	0
+ward	10203027	Female	Indian or Asian	Income-poor	0
+ward	19100069	Male	Indian or Asian	Income-poor	0
+ward	10203028	Female	Indian or Asian	Non-poor	0
+ward	10206002	Male	Other	Income-poor	0
+ward	10204020	Male	Other	Income-poor	0
+ward	10203005	Female	Indian or Asian	Non-poor	0
+ward	10405013	Female	Black African	Income-poor	0
+ward	10403009	Male	White	Income-poor	0
+ward	10403001	Male	Coloured	Non-poor	0
+ward	10404022	Female	Indian or Asian	Income-poor	0
+ward	19100038	Male	White	Income-poor	0
+ward	10202011	Male	Indian or Asian	Non-poor	0
+ward	10502003	Male	White	Non-poor	0
+ward	10404002	Male	Other	Income-poor	0
+ward	19100018	Female	Indian or Asian	Non-poor	0
+ward	10203029	Female	Other	Income-poor	0
+ward	10302001	Female	Other	Non-poor	0
+ward	19100038	Female	Other	Non-poor	0
+ward	10502003	Female	Other	Income-poor	0
+ward	10204002	Female	White	Income-poor	0
+ward	10302001	Male	White	Income-poor	0
+ward	10301007	Female	Other	Income-poor	0
+ward	10404021	Female	Indian or Asian	Non-poor	0
+ward	19100056	Male	White	Income-poor	0
+ward	10203010	Female	Other	Income-poor	0
+ward	10206010	Male	Indian or Asian	Non-poor	0
+ward	10405012	Male	Indian or Asian	Income-poor	0
+ward	10404015	Female	White	Income-poor	0
+ward	10205009	Female	White	Income-poor	0
+ward	19100110	Female	White	Income-poor	0
+ward	10405008	Male	Indian or Asian	Income-poor	0
+ward	10204013	Female	Indian or Asian	Income-poor	0
+ward	10405002	Female	Indian or Asian	Non-poor	0
+ward	10203030	Male	Indian or Asian	Non-poor	0
+ward	10301008	Female	White	Non-poor	0
+ward	10408008	Male	White	Income-poor	0
+ward	19100070	Female	Other	Income-poor	0
+ward	10103003	Female	Other	Income-poor	0
+ward	10501002	Male	White	Income-poor	0
+ward	10204012	Female	White	Income-poor	0
+ward	10204016	Female	White	Income-poor	0
+ward	10203003	Female	Other	Income-poor	0
+ward	10206011	Female	Indian or Asian	Income-poor	0
+ward	10404013	Female	White	Income-poor	0
+ward	10301008	Male	Other	Income-poor	0
+ward	10408008	Female	Other	Non-poor	0
+ward	10302003	Female	Other	Income-poor	0
+ward	10302002	Female	Indian or Asian	Non-poor	0
+ward	10301010	Male	Other	Income-poor	0
+ward	10101007	Female	Indian or Asian	Non-poor	0
+ward	10302002	Male	Indian or Asian	Income-poor	0
+ward	10301010	Female	Other	Non-poor	0
+ward	10204016	Female	Other	Income-poor	0
+ward	10204012	Female	Other	Income-poor	0
+ward	10206011	Male	Indian or Asian	Non-poor	0
+ward	10301008	Female	Other	Non-poor	0
+ward	10408008	Male	Other	Income-poor	0
+ward	10302003	Male	Other	Non-poor	0
+ward	10204012	Male	White	Non-poor	0
+ward	10301010	Male	White	Income-poor	0
+ward	19100096	Female	Indian or Asian	Non-poor	0
+ward	10204016	Male	White	Non-poor	0
+ward	10203003	Male	Other	Non-poor	0
+ward	10301008	Male	White	Income-poor	0
+ward	10401004	Male	Other	Non-poor	0
+ward	10404013	Female	Other	Income-poor	0
+ward	10403006	Male	Other	Income-poor	0
+ward	10303002	Male	Indian or Asian	Income-poor	0
+ward	10204013	Male	Indian or Asian	Non-poor	0
+ward	10405002	Male	Indian or Asian	Income-poor	0
+ward	10203030	Female	Indian or Asian	Income-poor	0
+ward	19100085	Male	Indian or Asian	Income-poor	0
+ward	10404015	Male	White	Non-poor	0
+ward	10203010	Female	White	Income-poor	0
+ward	10205009	Male	White	Non-poor	0
+ward	10405008	Female	Indian or Asian	Non-poor	0
+ward	10503006	Male	Indian or Asian	Non-poor	0
+ward	10206010	Female	Indian or Asian	Income-poor	0
+ward	10405012	Female	Indian or Asian	Non-poor	0
+ward	10403010	Male	Indian or Asian	Income-poor	0
+ward	10205009	Female	Other	Income-poor	0
+ward	10404021	Male	Indian or Asian	Income-poor	0
+ward	10203010	Male	Other	Non-poor	0
+ward	10404005	Female	Indian or Asian	Income-poor	0
+ward	10501002	Male	Indian or Asian	Income-poor	0
+ward	10302002	Male	Other	Income-poor	0
+ward	10204016	Female	Indian or Asian	Income-poor	0
+ward	10301010	Female	Indian or Asian	Non-poor	0
+ward	10302003	Male	Indian or Asian	Non-poor	0
+ward	10301008	Female	Indian or Asian	Non-poor	0
+ward	10203003	Male	Indian or Asian	Non-poor	0
+ward	10304004	Male	Other	Income-poor	0
+ward	10203026	Female	Other	Income-poor	0
+ward	10303002	Male	Other	Income-poor	0
+ward	10401004	Male	Indian or Asian	Non-poor	0
+ward	10404013	Female	Indian or Asian	Income-poor	0
+ward	10203030	Female	Other	Income-poor	0
+ward	10206010	Male	White	Non-poor	0
+ward	10405002	Male	Other	Income-poor	0
+ward	10204013	Male	Other	Non-poor	0
+ward	10204009	Male	Black African	Income-poor	0
+ward	10404021	Female	White	Non-poor	0
+ward	10403010	Male	Other	Income-poor	0
+ward	10405012	Female	Other	Non-poor	0
+ward	10204013	Female	White	Income-poor	0
+ward	10503006	Male	Other	Non-poor	0
+ward	10206010	Female	Other	Income-poor	0
+ward	10405008	Male	White	Income-poor	0
+ward	10205007	Male	Black African	Income-poor	0
+ward	10404005	Female	Other	Income-poor	0
+ward	10404015	Female	Indian or Asian	Income-poor	0
+ward	10405008	Female	White	Non-poor	0
+ward	10404005	Male	Other	Non-poor	0
+ward	10301007	Female	Indian or Asian	Income-poor	0
+ward	10404021	Female	Other	Non-poor	0
+ward	10203010	Female	Indian or Asian	Income-poor	0
+ward	10404015	Male	Indian or Asian	Non-poor	0
+ward	10403010	Female	Other	Non-poor	0
+ward	10404025	Female	Indian or Asian	Non-poor	0
+ward	10203030	Female	White	Income-poor	0
+ward	10405012	Male	Other	Income-poor	0
+ward	10503006	Female	Other	Income-poor	0
+ward	10204009	Female	Black African	Non-poor	0
+ward	10206010	Female	White	Income-poor	0
+ward	10503006	Male	White	Non-poor	0
+ward	10204013	Female	Other	Income-poor	0
+ward	10404003	Female	Black African	Income-poor	0
+ward	10103003	Female	Indian or Asian	Income-poor	0
+ward	19100070	Female	Indian or Asian	Income-poor	0
+ward	10203003	Female	Indian or Asian	Income-poor	0
+ward	10302003	Female	Indian or Asian	Income-poor	0
+ward	10303002	Male	White	Income-poor	0
+ward	19100022	Female	White	Income-poor	0
+ward	10408008	Female	Indian or Asian	Non-poor	0
+ward	10301008	Male	Indian or Asian	Income-poor	0
+ward	19100024	Female	White	Income-poor	0
+ward	10206011	Female	Other	Income-poor	0
+ward	10204012	Male	Indian or Asian	Non-poor	0
+ward	10203026	Female	White	Income-poor	0
+ward	10501002	Female	Indian or Asian	Non-poor	0
+ward	10204016	Male	Indian or Asian	Non-poor	0
+ward	19100096	Female	White	Non-poor	0
+ward	10301010	Male	Indian or Asian	Income-poor	0
+ward	10302013	Female	Indian or Asian	Income-poor	0
+ward	10501004	Male	Other	Non-poor	0
+ward	10104013	Male	Indian or Asian	Income-poor	0
+ward	10407006	Male	White	Non-poor	0
+ward	10203012	Male	White	Income-poor	0
+ward	10204003	Female	Other	Income-poor	0
+ward	10404004	Female	Indian or Asian	Non-poor	0
+ward	19100075	Female	White	Non-poor	0
+ward	10501004	Female	White	Income-poor	0
+ward	10105005	Male	Other	Income-poor	0
+ward	10301006	Female	White	Income-poor	0
+ward	10202008	Female	Other	Income-poor	0
+ward	10205019	Male	Other	Income-poor	0
+ward	10206008	Male	Indian or Asian	Income-poor	0
+ward	10303001	Female	Indian or Asian	Non-poor	0
+ward	10301011	Female	Indian or Asian	Income-poor	0
+ward	10404009	Male	White	Non-poor	0
+ward	10105009	Male	White	Non-poor	0
+ward	10402003	Female	Indian or Asian	Non-poor	0
+ward	10404009	Female	Other	Income-poor	0
+ward	10105009	Female	Other	Income-poor	0
+ward	10405011	Male	Indian or Asian	Non-poor	0
+ward	10405011	Female	Indian or Asian	Income-poor	0
+ward	10302009	Female	Other	Non-poor	0
+ward	10101001	Female	Indian or Asian	Income-poor	0
+ward	10404018	Male	Black African	Income-poor	0
+ward	10405007	Male	Other	Income-poor	0
+ward	10203025	Female	Indian or Asian	Income-poor	0
+ward	10404009	Female	White	Income-poor	0
+ward	10105009	Female	White	Income-poor	0
+ward	10401003	Female	White	Income-poor	0
+ward	10206008	Female	Indian or Asian	Non-poor	0
+ward	10102006	Female	Indian or Asian	Non-poor	0
+ward	19100042	Female	Indian or Asian	Income-poor	0
+ward	10301011	Male	Indian or Asian	Non-poor	0
+ward	10301006	Male	White	Non-poor	0
+ward	19100071	Male	Indian or Asian	Income-poor	0
+ward	10404004	Male	Indian or Asian	Income-poor	0
+ward	19100075	Male	White	Income-poor	0
+ward	10404018	Male	Coloured	Income-poor	0
+ward	10407006	Female	White	Income-poor	0
+ward	10203012	Female	White	Non-poor	0
+ward	10203017	Female	Indian or Asian	Non-poor	0
+ward	10407007	Male	Indian or Asian	Non-poor	0
+ward	10202008	Female	White	Income-poor	0
+ward	10203018	Female	Indian or Asian	Income-poor	0
+ward	10302013	Male	Indian or Asian	Non-poor	0
+ward	10105005	Male	White	Income-poor	0
+ward	10501004	Female	Other	Income-poor	0
+ward	10401003	Male	Indian or Asian	Non-poor	0
+ward	10101001	Female	Other	Income-poor	0
+ward	10501003	Male	Black African	Non-poor	0
+ward	10405011	Female	Other	Income-poor	0
+ward	10404009	Male	Indian or Asian	Non-poor	0
+ward	10302009	Female	Indian or Asian	Non-poor	0
+ward	10301011	Female	White	Income-poor	0
+ward	10203022	Male	Indian or Asian	Income-poor	0
+ward	10303001	Male	Other	Income-poor	0
+ward	10101002	Female	Other	Income-poor	0
+ward	10102006	Female	Other	Non-poor	0
+ward	10206008	Female	Other	Non-poor	0
+ward	10104013	Male	White	Income-poor	0
+ward	10407006	Male	Indian or Asian	Non-poor	0
+ward	10205019	Female	Indian or Asian	Non-poor	0
+ward	19100082	Male	White	Income-poor	0
+ward	10202008	Male	Indian or Asian	Non-poor	0
+ward	10203013	Female	White	Income-poor	0
+ward	10105005	Female	Indian or Asian	Non-poor	0
+ward	10404004	Male	Other	Income-poor	0
+ward	10204003	Male	Indian or Asian	Non-poor	0
+ward	10203017	Female	Other	Non-poor	0
+ward	10104013	Female	Other	Non-poor	0
+ward	10301006	Female	Indian or Asian	Income-poor	0
+ward	10501004	Female	Indian or Asian	Income-poor	0
+ward	10203018	Female	Other	Income-poor	0
+ward	10501004	Male	Indian or Asian	Non-poor	0
+ward	10402005	Female	Indian or Asian	Non-poor	0
+ward	10302013	Female	Other	Income-poor	0
+ward	10105010	Male	Black African	Income-poor	0
+ward	10203017	Male	Other	Income-poor	0
+ward	19100003	Male	Indian or Asian	Income-poor	0
+ward	19100037	Male	White	Non-poor	0
+ward	10301006	Male	Indian or Asian	Non-poor	0
+ward	10203013	Male	White	Non-poor	0
+ward	19100081	Female	White	Income-poor	0
+ward	10203012	Female	Indian or Asian	Non-poor	0
+ward	10301011	Female	Other	Income-poor	0
+ward	10303001	Female	Other	Non-poor	0
+ward	10101002	Male	Other	Non-poor	0
+ward	10102006	Male	Other	Income-poor	0
+ward	10206008	Male	Other	Income-poor	0
+ward	19100054	Male	Indian or Asian	Income-poor	0
+ward	10402003	Female	Other	Non-poor	0
+ward	19100042	Female	White	Income-poor	0
+ward	10405007	Female	Indian or Asian	Non-poor	0
+ward	10203015	Male	Black African	Income-poor	0
+ward	10501003	Female	Black African	Income-poor	0
+ward	10105009	Female	Indian or Asian	Income-poor	0
+ward	10404009	Female	Indian or Asian	Income-poor	0
+ward	10203025	Female	White	Income-poor	0
+ward	10302009	Male	Indian or Asian	Income-poor	0
+ward	10206006	Female	Indian or Asian	Income-poor	0
+ward	10303005	Female	Indian or Asian	Non-poor	0
+ward	10405004	Male	Indian or Asian	Non-poor	0
+ward	10402008	Male	Indian or Asian	Non-poor	0
+ward	10203024	Male	White	Non-poor	0
+ward	10303003	Female	White	Non-poor	0
+ward	10502002	Male	Indian or Asian	Non-poor	0
+ward	19100045	Male	White	Non-poor	0
+ward	10407001	Female	White	Income-poor	0
+ward	10205010	Male	Indian or Asian	Non-poor	0
+ward	10204011	Male	Other	Income-poor	0
+ward	10206003	Male	Indian or Asian	Income-poor	0
+ward	10104002	Female	White	Non-poor	0
+ward	10203024	Female	Other	Income-poor	0
+ward	19100089	Female	White	Non-poor	0
+ward	10407005	Male	Indian or Asian	Non-poor	0
+ward	10503001	Male	Other	Non-poor	0
+ward	19100090	Female	White	Non-poor	0
+ward	10404010	Male	White	Income-poor	0
+ward	10404024	Female	Other	Income-poor	0
+ward	10301009	Male	Indian or Asian	Non-poor	0
+ward	10203021	Female	Indian or Asian	Non-poor	0
+ward	10202002	Female	Indian or Asian	Non-poor	0
+ward	10404014	Female	Other	Income-poor	0
+ward	10103005	Female	Indian or Asian	Income-poor	0
+ward	10202002	Male	Indian or Asian	Income-poor	0
+ward	10408007	Male	Indian or Asian	Non-poor	0
+ward	19100051	Female	Coloured	Income-poor	0
+ward	10301009	Female	Indian or Asian	Income-poor	0
+ward	10206004	Male	White	Income-poor	0
+ward	10104009	Male	Indian or Asian	Income-poor	0
+ward	10403004	Female	Indian or Asian	Income-poor	0
+ward	19100090	Male	White	Income-poor	0
+ward	10104002	Male	White	Income-poor	0
+ward	19100089	Male	White	Income-poor	0
+ward	10503001	Female	Other	Income-poor	0
+ward	10408009	Female	Indian or Asian	Non-poor	0
+ward	10206003	Female	Indian or Asian	Non-poor	0
+ward	10104002	Female	Other	Non-poor	0
+ward	10303003	Male	White	Income-poor	0
+ward	10502002	Female	Indian or Asian	Income-poor	0
+ward	10206006	Male	Indian or Asian	Non-poor	0
+ward	10303005	Male	Indian or Asian	Income-poor	0
+ward	10405004	Female	Indian or Asian	Income-poor	0
+ward	10203019	Male	Indian or Asian	Income-poor	0
+ward	10404010	Male	Indian or Asian	Income-poor	0
+ward	10103005	Female	Other	Income-poor	0
+ward	10104009	Female	White	Non-poor	0
+ward	10205014	Female	Black African	Income-poor	0
+ward	19100102	Female	Other	Income-poor	0
+ward	19100047	Male	White	Income-poor	0
+ward	10301009	Female	Other	Income-poor	0
+ward	10404024	Male	Indian or Asian	Non-poor	0
+ward	10203021	Female	White	Non-poor	0
+ward	19100017	Female	White	Income-poor	0
+ward	10103002	Female	Black African	Non-poor	0
+ward	10206004	Female	Indian or Asian	Non-poor	0
+ward	10403004	Female	Other	Income-poor	0
+ward	10205005	Male	Indian or Asian	Non-poor	0
+ward	10503001	Female	Indian or Asian	Income-poor	0
+ward	10205010	Male	White	Non-poor	0
+ward	10402008	Male	White	Non-poor	0
+ward	10206003	Female	Other	Non-poor	0
+ward	10206006	Female	White	Income-poor	0
+ward	19100001	Female	Other	Income-poor	0
+ward	10205010	Female	Other	Income-poor	0
+ward	10407005	Male	White	Non-poor	0
+ward	10502002	Female	Other	Income-poor	0
+ward	19100089	Female	Indian or Asian	Non-poor	0
+ward	10104002	Female	Indian or Asian	Non-poor	0
+ward	19100028	Male	White	Non-poor	0
+ward	10402008	Female	Other	Income-poor	0
+ward	10303005	Male	Other	Income-poor	0
+ward	10206006	Male	Other	Non-poor	0
+ward	10104006	Female	Indian or Asian	Income-poor	0
+ward	10402008	Male	Other	Non-poor	0
+ward	10405004	Male	Other	Non-poor	0
+ward	19100034	Female	Other	Income-poor	0
+ward	10206006	Female	Other	Income-poor	0
+ward	19100028	Female	White	Income-poor	0
+ward	10402008	Female	White	Income-poor	0
+ward	10408009	Male	Other	Income-poor	0
+ward	19100034	Male	White	Non-poor	0
+ward	10204011	Male	Indian or Asian	Income-poor	0
+ward	10405004	Female	White	Income-poor	0
+ward	10502002	Female	White	Income-poor	0
+ward	10503001	Male	Indian or Asian	Non-poor	0
+ward	10205010	Female	White	Income-poor	0
+ward	10203024	Female	Indian or Asian	Income-poor	0
+ward	10303003	Male	Indian or Asian	Income-poor	0
+ward	10206004	Male	Indian or Asian	Income-poor	0
+ward	10403004	Male	Other	Non-poor	0
+ward	10205005	Female	Indian or Asian	Income-poor	0
+ward	10203021	Male	White	Income-poor	0
+ward	10202002	Male	White	Income-poor	0
+ward	19100005	Female	Other	Income-poor	0
+ward	19100090	Male	Indian or Asian	Income-poor	0
+ward	19100039	Female	Coloured	Non-poor	0
+ward	10301009	Male	Other	Non-poor	0
+ward	19100107	Male	Indian or Asian	Income-poor	0
+ward	10202002	Female	Other	Non-poor	0
+ward	10404010	Female	Indian or Asian	Non-poor	0
+ward	10408007	Female	Other	Income-poor	0
+ward	10104009	Male	White	Income-poor	0
+ward	10404014	Male	Indian or Asian	Non-poor	0
+ward	10102001	Male	Indian or Asian	Non-poor	0
+ward	19100002	Female	Indian or Asian	Income-poor	0
+ward	10205018	Male	Other	Income-poor	0
+ward	10301013	Male	Indian or Asian	Income-poor	0
+ward	10206001	Female	White	Income-poor	0
+ward	10303004	Male	Other	Income-poor	0
+ward	10502001	Female	Indian or Asian	Non-poor	0
+ward	10503003	Female	White	Non-poor	0
+ward	19100091	Male	White	Income-poor	0
+ward	10405001	Male	Other	Non-poor	0
+ward	10405013	Female	White	Income-poor	0
+ward	10204007	Female	Indian or Asian	Income-poor	0
+ward	10204008	Female	Other	Non-poor	0
+ward	10202003	Female	Indian or Asian	Non-poor	0
+ward	10503003	Male	Other	Income-poor	0
+ward	10101005	Male	Other	Income-poor	0
+ward	10205013	Male	Indian or Asian	Income-poor	0
+ward	10202001	Male	White	Income-poor	0
+ward	10202006	Male	White	Income-poor	0
+ward	10304003	Female	Other	Income-poor	0
+ward	10205012	Male	Indian or Asian	Income-poor	0
+ward	10101008	Female	Other	Non-poor	0
+ward	10104012	Female	Indian or Asian	Non-poor	0
+ward	10204015	Female	Indian or Asian	Income-poor	0
+ward	10403001	Female	Other	Income-poor	0
+ward	10205017	Female	White	Income-poor	0
+ward	10203016	Female	Indian or Asian	Income-poor	0
+ward	19100052	Female	White	Non-poor	0
+ward	10204014	Female	White	Non-poor	0
+ward	10403014	Female	White	Income-poor	0
+ward	10403003	Male	Indian or Asian	Income-poor	0
+ward	10203009	Female	Indian or Asian	Income-poor	0
+ward	10103006	Female	Other	Income-poor	0
+ward	10402004	Male	Other	Income-poor	0
+ward	10204014	Male	Other	Income-poor	0
+ward	10205017	Female	Other	Income-poor	0
+ward	10402004	Female	Other	Non-poor	0
+ward	19100052	Female	Other	Non-poor	0
+ward	10204014	Female	Other	Non-poor	0
+ward	10502003	Female	Black African	Income-poor	0
+ward	10403003	Female	Indian or Asian	Non-poor	0
+ward	10203009	Male	Indian or Asian	Non-poor	0
+ward	10403001	Female	White	Income-poor	0
+ward	19100103	Female	Other	Income-poor	0
+ward	10103006	Male	Other	Non-poor	0
+ward	10105002	Female	Other	Income-poor	0
+ward	10205017	Male	White	Non-poor	0
+ward	10203016	Male	Indian or Asian	Non-poor	0
+ward	10103001	Female	Other	Income-poor	0
+ward	10402004	Male	White	Income-poor	0
+ward	19100052	Male	White	Income-poor	0
+ward	10408003	Male	Indian or Asian	Income-poor	0
+ward	10404002	Male	Black African	Income-poor	0
+ward	10104005	Female	Other	Income-poor	0
+ward	10101008	Male	Other	Income-poor	0
+ward	10104012	Male	Indian or Asian	Income-poor	0
+ward	10204015	Male	Indian or Asian	Non-poor	0
+ward	10205013	Female	Indian or Asian	Non-poor	0
+ward	10202001	Female	White	Non-poor	0
+ward	10405013	Female	Other	Income-poor	0
+ward	10206005	Male	Indian or Asian	Income-poor	0
+ward	10304003	Male	Other	Non-poor	0
+ward	19100101	Female	White	Non-poor	0
+ward	10205011	Male	Indian or Asian	Income-poor	0
+ward	10301005	Female	Indian or Asian	Income-poor	0
+ward	10404002	Male	Coloured	Income-poor	0
+ward	10503003	Female	Other	Non-poor	0
+ward	10202006	Male	Other	Income-poor	0
+ward	10301002	Female	White	Income-poor	0
+ward	19100091	Female	White	Non-poor	0
+ward	10304003	Female	White	Income-poor	0
+ward	10405001	Female	Other	Income-poor	0
+ward	10405013	Male	White	Non-poor	0
+ward	10204007	Male	Indian or Asian	Non-poor	0
+ward	10204008	Male	Other	Income-poor	0
+ward	10102002	Female	Other	Income-poor	0
+ward	10102001	Female	Indian or Asian	Income-poor	0
+ward	10101005	Male	White	Income-poor	0
+ward	10503003	Male	White	Income-poor	0
+ward	10204014	Female	Indian or Asian	Non-poor	0
+ward	19100052	Female	Indian or Asian	Non-poor	0
+ward	10402004	Female	Indian or Asian	Non-poor	0
+ward	10203016	Female	White	Income-poor	0
+ward	10205017	Female	Indian or Asian	Income-poor	0
+ward	10103006	Male	Indian or Asian	Non-poor	0
+ward	19100010	Male	Indian or Asian	Income-poor	0
+ward	19100103	Female	Indian or Asian	Income-poor	0
+ward	10204015	Female	White	Income-poor	0
+ward	10104012	Female	White	Non-poor	0
+ward	10408003	Female	White	Non-poor	0
+ward	10403003	Female	Other	Non-poor	0
+ward	10404016	Female	Other	Income-poor	0
+ward	10403001	Male	Indian or Asian	Non-poor	0
+ward	10203009	Female	White	Income-poor	0
+ward	10101008	Male	Indian or Asian	Income-poor	0
+ward	10403003	Male	White	Income-poor	0
+ward	10104005	Female	Indian or Asian	Income-poor	0
+ward	10405013	Female	Indian or Asian	Income-poor	0
+ward	10404019	Female	Indian or Asian	Income-poor	0
+ward	10206005	Male	Other	Income-poor	0
+ward	19100091	Male	Indian or Asian	Income-poor	0
+ward	10205013	Female	Other	Non-poor	0
+ward	10101005	Female	Indian or Asian	Non-poor	0
+ward	10202003	Male	Other	Income-poor	0
+ward	10205011	Male	Other	Income-poor	0
+ward	10204008	Male	Indian or Asian	Income-poor	0
+ward	10405001	Female	Indian or Asian	Income-poor	0
+ward	10202001	Male	Indian or Asian	Income-poor	0
+ward	10205013	Male	White	Income-poor	0
+ward	10502001	Male	Other	Income-poor	0
+ward	10303004	Female	Indian or Asian	Non-poor	0
+ward	10102001	Female	Other	Income-poor	0
+ward	10205011	Female	White	Non-poor	0
+ward	10102002	Female	Indian or Asian	Income-poor	0
+ward	10502001	Female	Other	Non-poor	0
+ward	10404017	Female	Other	Income-poor	0
+ward	10303004	Male	Indian or Asian	Income-poor	0
+ward	10301013	Male	Other	Income-poor	0
+ward	10205018	Male	Indian or Asian	Income-poor	0
+ward	10205011	Male	White	Income-poor	0
+ward	10102002	Male	Indian or Asian	Non-poor	0
+ward	10204008	Female	Indian or Asian	Non-poor	0
+ward	10204007	Female	Other	Income-poor	0
+ward	19100101	Female	Indian or Asian	Non-poor	0
+ward	10202007	Female	Indian or Asian	Income-poor	0
+ward	10202001	Female	Indian or Asian	Non-poor	0
+ward	10205013	Female	White	Non-poor	0
+ward	10101005	Male	Indian or Asian	Income-poor	0
+ward	10502001	Male	White	Income-poor	0
+ward	10405013	Male	Indian or Asian	Non-poor	0
+ward	10206005	Female	Other	Non-poor	0
+ward	10304003	Female	Indian or Asian	Income-poor	0
+ward	19100091	Female	Indian or Asian	Non-poor	0
+ward	10203009	Male	White	Non-poor	0
+ward	10403014	Male	Indian or Asian	Non-poor	0
+ward	10408003	Female	Other	Non-poor	0
+ward	10204010	Male	Other	Income-poor	0
+ward	10105002	Male	Indian or Asian	Non-poor	0
+ward	10103006	Female	Indian or Asian	Income-poor	0
+ward	10104012	Male	White	Income-poor	0
+ward	10205003	Female	Other	Income-poor	0
+ward	10204014	Male	Indian or Asian	Income-poor	0
+ward	19100052	Male	Indian or Asian	Income-poor	0
+ward	10203016	Male	White	Non-poor	0
+ward	10205017	Male	Indian or Asian	Non-poor	0
+ward	19100104	Female	Indian or Asian	Income-poor	0
+ward	19100041	Female	Indian or Asian	Non-poor	0
+ward	10403010	Male	Black African	Income-poor	0
+ward	10203006	Male	White	Income-poor	0
+ward	10203008	Male	Other	Income-poor	0
+ward	10405012	Female	Black African	Non-poor	0
+ward	10304005	Male	Indian or Asian	Non-poor	0
+ward	10205007	Male	Other	Income-poor	0
+ward	10102005	Male	Indian or Asian	Non-poor	0
+ward	10203006	Female	Other	Non-poor	0
+ward	10501001	Female	Other	Income-poor	0
+ward	19100084	Female	Other	Income-poor	0
+ward	10405002	Male	Black African	Income-poor	0
+ward	10403007	Female	Indian or Asian	Non-poor	0
+ward	10203008	Female	White	Non-poor	0
+ward	10204009	Male	Other	Income-poor	0
+ward	10503005	Male	Indian or Asian	Non-poor	0
+ward	10403011	Female	Other	Income-poor	0
+ward	10301012	Female	Other	Income-poor	0
+ward	10404023	Male	Other	Income-poor	0
+ward	10301012	Male	White	Non-poor	0
+ward	10302012	Female	White	Non-poor	0
+ward	10304002	Female	Other	Income-poor	0
+ward	19100040	Male	Indian or Asian	Income-poor	0
+ward	10404020	Male	Indian or Asian	Income-poor	0
+ward	10401002	Female	Indian or Asian	Income-poor	0
+ward	10503007	Female	Other	Non-poor	0
+ward	10407002	Female	Indian or Asian	Income-poor	0
+ward	10404020	Female	Indian or Asian	Non-poor	0
+ward	10503002	Male	Indian or Asian	Income-poor	0
+ward	10401002	Male	Indian or Asian	Non-poor	0
+ward	10301012	Female	White	Income-poor	0
+ward	10302012	Male	White	Income-poor	0
+ward	19100040	Female	Indian or Asian	Non-poor	0
+ward	10301012	Male	Other	Non-poor	0
+ward	10203004	Female	Indian or Asian	Income-poor	0
+ward	10204009	Female	Other	Non-poor	0
+ward	10503005	Female	Indian or Asian	Income-poor	0
+ward	10203008	Male	White	Income-poor	0
+ward	10204009	Male	White	Income-poor	0
+ward	10102005	Female	Indian or Asian	Income-poor	0
+ward	10404008	Male	Indian or Asian	Non-poor	0
+ward	10203006	Female	White	Non-poor	0
+ward	10103007	Female	Indian or Asian	Income-poor	0
+ward	19100021	Female	Other	Income-poor	0
+ward	10401002	Male	Other	Non-poor	0
+ward	10404020	Female	Other	Non-poor	0
+ward	10503002	Male	Other	Income-poor	0
+ward	10407002	Female	Other	Income-poor	0
+ward	10302003	Female	Black African	Income-poor	0
+ward	19100040	Female	Other	Non-poor	0
+ward	19100048	Male	White	Income-poor	0
+ward	10404003	Female	Indian or Asian	Income-poor	0
+ward	10302012	Female	Indian or Asian	Non-poor	0
+ward	10203004	Female	Other	Income-poor	0
+ward	19100040	Male	White	Income-poor	0
+ward	10301012	Male	Indian or Asian	Non-poor	0
+ward	10404008	Female	White	Income-poor	0
+ward	10403011	Male	Indian or Asian	Non-poor	0
+ward	10408010	Female	Indian or Asian	Income-poor	0
+ward	10204009	Female	Indian or Asian	Non-poor	0
+ward	10304005	Male	White	Non-poor	0
+ward	10403007	Male	Other	Income-poor	0
+ward	10501001	Male	Indian or Asian	Non-poor	0
+ward	10203006	Male	Indian or Asian	Income-poor	0
+ward	10503005	Male	White	Non-poor	0
+ward	10204019	Male	Other	Income-poor	0
+ward	10102005	Female	Other	Income-poor	0
+ward	10205007	Female	Indian or Asian	Non-poor	0
+ward	19100021	Female	Indian or Asian	Income-poor	0
+ward	10103007	Female	Other	Income-poor	0
+ward	10203008	Male	Indian or Asian	Income-poor	0
+ward	19100041	Female	Other	Non-poor	0
+ward	10503005	Female	White	Income-poor	0
+municipality	WC013	Female	Other	Income-poor	0
+ward	10205007	Male	Indian or Asian	Income-poor	0
+ward	19100076	Male	Indian or Asian	Income-poor	0
+ward	10403007	Female	Other	Non-poor	0
+ward	19100041	Male	White	Income-poor	0
+ward	10501001	Female	Indian or Asian	Income-poor	0
+ward	10203006	Female	Indian or Asian	Non-poor	0
+ward	10102005	Female	White	Income-poor	0
+ward	10404008	Male	White	Non-poor	0
+ward	10105007	Female	Other	Income-poor	0
+ward	10204009	Male	Indian or Asian	Income-poor	0
+ward	19100029	Male	White	Income-poor	0
+ward	19100040	Female	White	Non-poor	0
+ward	10104003	Male	Other	Non-poor	0
+ward	10404023	Male	Indian or Asian	Income-poor	0
+ward	10404003	Male	Indian or Asian	Non-poor	0
+ward	10404020	Female	White	Non-poor	0
+ward	19100040	Male	Other	Income-poor	0
+ward	10304002	Female	Indian or Asian	Income-poor	0
+ward	10501002	Male	Black African	Income-poor	0
+ward	10503007	Female	Indian or Asian	Non-poor	0
+ward	19100033	Male	White	Non-poor	0
+ward	10401002	Female	Other	Income-poor	0
+ward	10404020	Male	Other	Income-poor	0
+ward	10503002	Female	Other	Non-poor	0
+ward	10205006	Female	Indian or Asian	Income-poor	0
+ward	10204005	Male	Other	Income-poor	0
+ward	10408005	Male	Indian or Asian	Income-poor	0
+municipality	WC012	Female	Other	Income-poor	0
+ward	10205004	Male	Other	Income-poor	0
+ward	10403013	Female	Other	Income-poor	0
+ward	10105012	Female	Other	Income-poor	0
+ward	10402002	Female	Other	Non-poor	0
+ward	10302005	Female	White	Non-poor	0
+ward	10105001	Female	Other	Income-poor	0
+ward	10202009	Female	Indian or Asian	Income-poor	0
+ward	10202010	Male	Other	Income-poor	0
+ward	10503004	Male	Other	Income-poor	0
+ward	10403008	Female	Other	Income-poor	0
+ward	10105011	Male	White	Income-poor	0
+ward	10408006	Female	Indian or Asian	Non-poor	0
+ward	19100098	Male	Indian or Asian	Non-poor	0
+ward	10404018	Male	Indian or Asian	Income-poor	0
+ward	10206009	Male	Other	Income-poor	0
+ward	10501003	Male	Other	Non-poor	0
+ward	10105011	Female	Other	Non-poor	0
+ward	10204001	Male	White	Income-poor	0
+ward	19100094	Female	Indian or Asian	Non-poor	0
+ward	10105011	Male	Other	Income-poor	0
+ward	19100094	Male	Indian or Asian	Income-poor	0
+ward	10203015	Male	Other	Income-poor	0
+ward	10206009	Female	Other	Non-poor	0
+ward	10202010	Male	White	Income-poor	0
+ward	10501003	Female	Other	Income-poor	0
+ward	10203007	Female	Indian or Asian	Income-poor	0
+ward	10105011	Female	White	Non-poor	0
+ward	19100098	Female	Indian or Asian	Income-poor	0
+ward	10403008	Male	Other	Non-poor	0
+ward	10204021	Male	Indian or Asian	Income-poor	0
+ward	10204005	Male	White	Income-poor	0
+ward	10403013	Male	Other	Non-poor	0
+ward	10402002	Male	Other	Income-poor	0
+ward	10302005	Male	White	Income-poor	0
+ward	10204005	Female	Other	Non-poor	0
+ward	10102004	Female	Indian or Asian	Income-poor	0
+ward	10408005	Female	Indian or Asian	Non-poor	0
+ward	10105008	Male	Other	Income-poor	0
+ward	10204006	Female	Indian or Asian	Income-poor	0
+ward	19100098	Male	White	Non-poor	0
+ward	10408006	Female	White	Non-poor	0
+ward	10302009	Male	Black African	Income-poor	0
+ward	10501003	Female	Indian or Asian	Income-poor	0
+ward	10206009	Female	Indian or Asian	Non-poor	0
+ward	10203015	Male	Indian or Asian	Income-poor	0
+ward	19100094	Female	White	Non-poor	0
+ward	10204001	Male	Indian or Asian	Income-poor	0
+ward	10203007	Female	Other	Income-poor	0
+ward	10204021	Male	Other	Income-poor	0
+ward	10202010	Female	Indian or Asian	Non-poor	0
+ward	10503004	Female	Indian or Asian	Non-poor	0
+ward	10202009	Male	Other	Non-poor	0
+ward	10403005	Male	Indian or Asian	Non-poor	0
+ward	10105012	Male	Indian or Asian	Non-poor	0
+ward	19100036	Female	White	Non-poor	0
+ward	10202009	Female	White	Income-poor	0
+ward	10104001	Male	White	Non-poor	0
+ward	10102004	Female	Other	Income-poor	0
+ward	10302005	Female	Indian or Asian	Non-poor	0
+ward	10204006	Female	Other	Income-poor	0
+ward	10105008	Male	Indian or Asian	Income-poor	0
+ward	19100036	Male	Other	Income-poor	0
+ward	10105008	Female	Indian or Asian	Non-poor	0
+ward	10205006	Female	Other	Income-poor	0
+ward	10204017	Male	Indian or Asian	Income-poor	0
+ward	10408005	Male	Other	Income-poor	0
+ward	10104001	Female	White	Income-poor	0
+ward	10102004	Male	Other	Non-poor	0
+ward	10402002	Female	Indian or Asian	Non-poor	0
+ward	10204006	Female	White	Income-poor	0
+ward	10202009	Female	Other	Income-poor	0
+ward	10105001	Female	Indian or Asian	Income-poor	0
+ward	10403005	Female	Indian or Asian	Income-poor	0
+ward	10407006	Male	Coloured	Non-poor	0
+ward	10204021	Female	Other	Non-poor	0
+ward	10202010	Male	Indian or Asian	Income-poor	0
+ward	10503004	Male	Indian or Asian	Income-poor	0
+ward	10403008	Female	Indian or Asian	Income-poor	0
+ward	19100094	Male	White	Income-poor	0
+ward	10202005	Male	Indian or Asian	Income-poor	0
+ward	10501003	Male	Indian or Asian	Non-poor	0
+ward	10206009	Male	Indian or Asian	Income-poor	0
+ward	10404018	Male	Other	Income-poor	0
+ward	19100046	Female	White	Income-poor	0
+ward	10405003	Female	Indian or Asian	Income-poor	0
+ward	19100098	Female	White	Income-poor	0
+ward	10105011	Female	Indian or Asian	Non-poor	0
+ward	10203007	Female	White	Income-poor	0
+ward	10408006	Male	White	Income-poor	0
 \.
 
 
