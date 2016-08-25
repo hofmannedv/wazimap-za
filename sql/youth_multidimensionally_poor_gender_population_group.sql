@@ -20,7 +20,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: youth_multidimensionally_poor_gender_population_group; Type: TABLE; Schema: public; Owner: -; Tablespace:
+-- Name: youth_multidimensionally_poor_gender_population_group; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE youth_multidimensionally_poor_gender_population_group (
@@ -139,6 +139,7 @@ district	DC3	Female	White	Multidimensionally poor	81
 district	DC3	Male	Other	Multidimensionally poor	80
 district	DC3	Female	Other	Multidimensionally poor	47
 district	DC4	Male	Black African	Non-poor	7822
+ward	10104002	Male	Other	Non-poor	16
 district	DC4	Female	Black African	Non-poor	8310
 district	DC4	Male	Coloured	Non-poor	18984
 district	DC4	Female	Coloured	Non-poor	19880
@@ -707,6 +708,7 @@ ward	10101003	Male	Other	Non-poor	18
 ward	10101003	Female	Other	Non-poor	7
 ward	10101003	Male	Black African	Multidimensionally poor	102
 ward	10101003	Female	Black African	Multidimensionally poor	105
+ward	10202011	Male	Other	Non-poor	2
 ward	10101003	Male	Coloured	Multidimensionally poor	104
 ward	10101003	Female	Coloured	Multidimensionally poor	167
 ward	10101003	Male	Indian or Asian	Multidimensionally poor	2
@@ -1011,7 +1013,6 @@ ward	10104002	Male	Coloured	Non-poor	469
 ward	10104002	Female	Coloured	Non-poor	494
 ward	10104002	Male	Indian or Asian	Non-poor	4
 ward	10104002	Female	Indian or Asian	Non-poor	4
-ward	10104002	Male	Other	Non-poor	16
 ward	10104002	Male	Black African	Multidimensionally poor	78
 ward	10104002	Female	Black African	Multidimensionally poor	102
 ward	10104002	Male	Coloured	Multidimensionally poor	183
@@ -1522,7 +1523,6 @@ ward	10202011	Male	Indian or Asian	Non-poor	4
 ward	10202011	Female	Indian or Asian	Non-poor	2
 ward	10202011	Male	White	Non-poor	37
 ward	10202011	Female	White	Non-poor	34
-ward	10202011	Male	Other	Non-poor	2
 ward	10202011	Female	Other	Non-poor	1
 ward	10202011	Male	Black African	Multidimensionally poor	99
 ward	10202011	Female	Black African	Multidimensionally poor	103
@@ -1930,6 +1930,7 @@ ward	10203028	Female	Coloured	Multidimensionally poor	54
 ward	10203028	Male	Indian or Asian	Multidimensionally poor	1
 ward	10203028	Female	Indian or Asian	Multidimensionally poor	1
 ward	10203028	Female	White	Multidimensionally poor	2
+ward	10205019	Female	Other	Non-poor	2
 ward	10203028	Male	Other	Multidimensionally poor	1
 ward	10203029	Male	Black African	Non-poor	7
 ward	10203029	Female	Black African	Non-poor	13
@@ -2545,7 +2546,6 @@ ward	10205019	Female	Indian or Asian	Non-poor	2
 ward	10205019	Male	White	Non-poor	16
 ward	10205019	Female	White	Non-poor	16
 ward	10205019	Male	Other	Non-poor	2
-ward	10205019	Female	Other	Non-poor	2
 ward	10205019	Male	Black African	Multidimensionally poor	6
 ward	10205019	Male	Coloured	Multidimensionally poor	42
 ward	10205019	Female	Coloured	Multidimensionally poor	59
@@ -3056,6 +3056,7 @@ ward	10302008	Female	White	Non-poor	15
 ward	10302008	Male	Other	Non-poor	8
 ward	10302008	Female	Other	Non-poor	16
 ward	10302008	Male	Black African	Multidimensionally poor	4
+ward	10402002	Male	White	Non-poor	72
 ward	10302008	Female	Black African	Multidimensionally poor	1
 ward	10302008	Male	Coloured	Multidimensionally poor	208
 ward	10302008	Female	Coloured	Multidimensionally poor	104
@@ -3360,7 +3361,6 @@ ward	10402002	Male	Coloured	Non-poor	315
 ward	10402002	Female	Coloured	Non-poor	280
 ward	10402002	Male	Indian or Asian	Non-poor	2
 ward	10402002	Female	Indian or Asian	Non-poor	1
-ward	10402002	Male	White	Non-poor	72
 ward	10402002	Female	White	Non-poor	70
 ward	10402002	Male	Other	Non-poor	5
 ward	10402002	Male	Black African	Multidimensionally poor	16
@@ -4782,6 +4782,7 @@ ward	19100007	Male	Coloured	Multidimensionally poor	332
 ward	19100007	Female	Coloured	Multidimensionally poor	283
 ward	19100007	Male	White	Multidimensionally poor	1
 ward	19100007	Female	White	Multidimensionally poor	4
+ward	19100013	Male	White	Non-poor	4
 ward	19100007	Male	Other	Multidimensionally poor	2
 ward	19100007	Female	Other	Multidimensionally poor	1
 ward	19100008	Male	Black African	Non-poor	291
@@ -4883,7 +4884,6 @@ ward	19100013	Male	Coloured	Non-poor	2470
 ward	19100013	Female	Coloured	Non-poor	2591
 ward	19100013	Male	Indian or Asian	Non-poor	16
 ward	19100013	Female	Indian or Asian	Non-poor	12
-ward	19100013	Male	White	Non-poor	4
 ward	19100013	Female	White	Non-poor	2
 ward	19100013	Male	Other	Non-poor	81
 ward	19100013	Female	Other	Non-poor	17
@@ -5287,6 +5287,7 @@ ward	19100035	Male	Indian or Asian	Non-poor	1
 ward	19100035	Male	White	Non-poor	4
 ward	19100035	Male	Other	Non-poor	41
 ward	19100035	Female	Other	Non-poor	19
+ward	19100059	Female	White	Non-poor	926
 ward	19100035	Male	Black African	Multidimensionally poor	1084
 ward	19100035	Female	Black African	Multidimensionally poor	1183
 ward	19100035	Male	Coloured	Multidimensionally poor	28
@@ -5689,7 +5690,6 @@ ward	19100059	Female	Coloured	Non-poor	143
 ward	19100059	Male	Indian or Asian	Non-poor	153
 ward	19100059	Female	Indian or Asian	Non-poor	156
 ward	19100059	Male	White	Non-poor	910
-ward	19100059	Female	White	Non-poor	926
 ward	19100059	Male	Other	Non-poor	57
 ward	19100059	Female	Other	Non-poor	41
 ward	19100059	Male	Black African	Multidimensionally poor	14
@@ -6644,6 +6644,1780 @@ ward	19100111	Male	White	Multidimensionally poor	10
 ward	19100111	Female	White	Multidimensionally poor	15
 ward	19100111	Male	Other	Multidimensionally poor	11
 ward	19100111	Female	Other	Multidimensionally poor	11
+municipality	WC012	Female	Other	Multidimensionally poor	0
+municipality	WC013	Female	Indian or Asian	Multidimensionally poor	0
+municipality	WC013	Female	Other	Multidimensionally poor	0
+municipality	WC033	Male	Indian or Asian	Multidimensionally poor	0
+municipality	WC034	Male	Indian or Asian	Multidimensionally poor	0
+municipality	WC041	Male	Other	Multidimensionally poor	0
+municipality	WC041	Male	Indian or Asian	Non-poor	0
+municipality	WC051	Female	Indian or Asian	Multidimensionally poor	0
+municipality	WC051	Female	Indian or Asian	Non-poor	0
+municipality	WC051	Male	Indian or Asian	Multidimensionally poor	0
+municipality	WC051	Male	Other	Multidimensionally poor	0
+municipality	WC051	Male	Indian or Asian	Non-poor	0
+municipality	WC052	Female	Other	Multidimensionally poor	0
+municipality	WC052	Female	Indian or Asian	Non-poor	0
+municipality	WC052	Male	Other	Multidimensionally poor	0
+ward	10101001	Female	Indian or Asian	Multidimensionally poor	0
+ward	10101001	Female	Other	Non-poor	0
+ward	10101001	Male	Other	Multidimensionally poor	0
+ward	10101002	Female	Indian or Asian	Multidimensionally poor	0
+ward	10101002	Female	Other	Multidimensionally poor	0
+ward	10101002	Female	Other	Non-poor	0
+ward	10101002	Male	Other	Multidimensionally poor	0
+ward	10101003	Female	White	Multidimensionally poor	0
+ward	10101003	Male	Indian or Asian	Non-poor	0
+ward	10101004	Male	Indian or Asian	Multidimensionally poor	0
+ward	10101004	Male	White	Multidimensionally poor	0
+ward	10101005	Female	Other	Multidimensionally poor	0
+ward	10101005	Male	Other	Multidimensionally poor	0
+ward	10101007	Male	Indian or Asian	Non-poor	0
+ward	10101008	Female	Indian or Asian	Multidimensionally poor	0
+ward	10101008	Female	Other	Multidimensionally poor	0
+ward	10101008	Female	Other	Non-poor	0
+ward	10101008	Male	Indian or Asian	Multidimensionally poor	0
+ward	10101008	Male	Other	Multidimensionally poor	0
+ward	10102001	Female	Other	Multidimensionally poor	0
+ward	10102001	Female	Indian or Asian	Non-poor	0
+ward	10102001	Male	Indian or Asian	Multidimensionally poor	0
+ward	10102001	Male	Other	Multidimensionally poor	0
+ward	10102001	Male	White	Multidimensionally poor	0
+ward	10102001	Male	Indian or Asian	Non-poor	0
+ward	10102002	Female	Indian or Asian	Multidimensionally poor	0
+ward	10102002	Female	Other	Multidimensionally poor	0
+ward	10102002	Female	White	Multidimensionally poor	0
+ward	10102002	Male	Indian or Asian	Multidimensionally poor	0
+ward	10102002	Male	Other	Multidimensionally poor	0
+ward	10102002	Male	Indian or Asian	Non-poor	0
+ward	10102003	Female	Other	Multidimensionally poor	0
+ward	10102003	Female	White	Multidimensionally poor	0
+ward	10102003	Female	Indian or Asian	Non-poor	0
+ward	10102003	Female	Other	Non-poor	0
+ward	10102003	Male	Indian or Asian	Multidimensionally poor	0
+ward	10102003	Male	White	Multidimensionally poor	0
+ward	10102004	Female	Other	Multidimensionally poor	0
+ward	10102004	Female	Other	Non-poor	0
+ward	10102004	Male	Indian or Asian	Multidimensionally poor	0
+ward	10102004	Male	Other	Multidimensionally poor	0
+ward	10102005	Female	Indian or Asian	Multidimensionally poor	0
+ward	10102005	Female	Other	Multidimensionally poor	0
+ward	10102005	Female	Indian or Asian	Non-poor	0
+ward	10102005	Female	Other	Non-poor	0
+ward	10102005	Male	Other	Multidimensionally poor	0
+ward	10102005	Male	Indian or Asian	Non-poor	0
+ward	10102006	Female	Indian or Asian	Multidimensionally poor	0
+ward	10102006	Female	Other	Multidimensionally poor	0
+ward	10102006	Female	Indian or Asian	Non-poor	0
+ward	10102006	Female	Other	Non-poor	0
+ward	10102006	Male	Indian or Asian	Multidimensionally poor	0
+ward	10102006	Male	Other	Multidimensionally poor	0
+ward	10103001	Female	Indian or Asian	Multidimensionally poor	0
+ward	10103001	Female	Other	Multidimensionally poor	0
+ward	10103001	Female	Other	Non-poor	0
+ward	10103001	Male	Indian or Asian	Multidimensionally poor	0
+ward	10103001	Male	Other	Multidimensionally poor	0
+ward	10103001	Male	Other	Non-poor	0
+ward	10103002	Female	Black African	Multidimensionally poor	0
+ward	10103002	Female	Indian or Asian	Multidimensionally poor	0
+ward	10103002	Female	Other	Multidimensionally poor	0
+ward	10103002	Female	White	Multidimensionally poor	0
+ward	10103002	Female	Black African	Non-poor	0
+ward	10103002	Female	Other	Non-poor	0
+ward	10103002	Female	White	Non-poor	0
+ward	10103002	Male	Black African	Multidimensionally poor	0
+ward	10103002	Male	Indian or Asian	Multidimensionally poor	0
+ward	10103002	Male	Other	Multidimensionally poor	0
+ward	10103002	Male	White	Multidimensionally poor	0
+ward	10103002	Male	Indian or Asian	Non-poor	0
+ward	10103002	Male	White	Non-poor	0
+ward	10103003	Female	Indian or Asian	Multidimensionally poor	0
+ward	10103003	Female	Other	Multidimensionally poor	0
+ward	10103003	Male	Other	Multidimensionally poor	0
+ward	10103004	Female	Indian or Asian	Multidimensionally poor	0
+ward	10103004	Female	Other	Multidimensionally poor	0
+ward	10103004	Male	Indian or Asian	Multidimensionally poor	0
+ward	10103004	Male	White	Multidimensionally poor	0
+ward	10103005	Female	Indian or Asian	Multidimensionally poor	0
+ward	10103005	Female	Other	Multidimensionally poor	0
+ward	10103005	Female	Indian or Asian	Non-poor	0
+ward	10103005	Male	Indian or Asian	Multidimensionally poor	0
+ward	10103005	Male	Other	Multidimensionally poor	0
+ward	10103005	Male	White	Multidimensionally poor	0
+ward	10103006	Female	Indian or Asian	Multidimensionally poor	0
+ward	10103006	Female	Other	Multidimensionally poor	0
+ward	10103006	Female	Other	Non-poor	0
+ward	10103006	Male	Indian or Asian	Multidimensionally poor	0
+ward	10103006	Male	Other	Multidimensionally poor	0
+ward	10103006	Male	White	Multidimensionally poor	0
+ward	10103006	Male	Indian or Asian	Non-poor	0
+ward	10103006	Male	Other	Non-poor	0
+ward	10103007	Female	Indian or Asian	Multidimensionally poor	0
+ward	10103007	Female	Other	Multidimensionally poor	0
+ward	10104001	Female	White	Non-poor	0
+ward	10104001	Male	White	Multidimensionally poor	0
+ward	10104001	Male	White	Non-poor	0
+ward	10104002	Female	Indian or Asian	Multidimensionally poor	0
+ward	10104002	Female	Other	Multidimensionally poor	0
+ward	10104002	Female	White	Multidimensionally poor	0
+ward	10104002	Female	Other	Non-poor	0
+ward	10104002	Female	White	Non-poor	0
+ward	10104002	Male	White	Multidimensionally poor	0
+ward	10104002	Male	White	Non-poor	0
+ward	10104003	Female	Indian or Asian	Multidimensionally poor	0
+ward	10104003	Female	Other	Multidimensionally poor	0
+ward	10104003	Male	Other	Multidimensionally poor	0
+ward	10104003	Male	Other	Non-poor	0
+ward	10104004	Female	Indian or Asian	Multidimensionally poor	0
+ward	10104004	Female	Other	Multidimensionally poor	0
+ward	10104004	Female	White	Multidimensionally poor	0
+ward	10104004	Female	White	Non-poor	0
+ward	10104004	Male	White	Multidimensionally poor	0
+ward	10104004	Male	White	Non-poor	0
+ward	10104005	Female	Black African	Multidimensionally poor	0
+ward	10104005	Female	Indian or Asian	Multidimensionally poor	0
+ward	10104005	Female	Other	Multidimensionally poor	0
+ward	10104005	Male	Indian or Asian	Multidimensionally poor	0
+ward	10104005	Male	Other	Multidimensionally poor	0
+ward	10104006	Female	Indian or Asian	Multidimensionally poor	0
+ward	10104006	Female	Other	Multidimensionally poor	0
+ward	10104006	Female	Indian or Asian	Non-poor	0
+ward	10104006	Male	Indian or Asian	Multidimensionally poor	0
+ward	10104006	Male	Other	Multidimensionally poor	0
+ward	10104007	Female	Indian or Asian	Multidimensionally poor	0
+ward	10104007	Male	Black African	Multidimensionally poor	0
+ward	10104007	Male	Indian or Asian	Multidimensionally poor	0
+ward	10104008	Female	Indian or Asian	Multidimensionally poor	0
+ward	10104008	Female	Other	Multidimensionally poor	0
+ward	10104008	Male	Indian or Asian	Multidimensionally poor	0
+ward	10104008	Male	Other	Multidimensionally poor	0
+ward	10104008	Male	Indian or Asian	Non-poor	0
+ward	10104009	Female	Indian or Asian	Multidimensionally poor	0
+ward	10104009	Female	Other	Multidimensionally poor	0
+ward	10104009	Female	White	Multidimensionally poor	0
+ward	10104009	Female	White	Non-poor	0
+ward	10104009	Male	Other	Multidimensionally poor	0
+ward	10104009	Male	White	Non-poor	0
+ward	10104010	Female	Indian or Asian	Multidimensionally poor	0
+ward	10104010	Female	Other	Multidimensionally poor	0
+ward	10104010	Female	Other	Non-poor	0
+ward	10104010	Male	Indian or Asian	Multidimensionally poor	0
+ward	10104010	Male	Other	Multidimensionally poor	0
+ward	10104011	Female	Indian or Asian	Multidimensionally poor	0
+ward	10104011	Female	Other	Multidimensionally poor	0
+ward	10104011	Female	Other	Non-poor	0
+ward	10104011	Male	Indian or Asian	Multidimensionally poor	0
+ward	10104011	Male	Other	Multidimensionally poor	0
+ward	10104011	Male	Indian or Asian	Non-poor	0
+ward	10104012	Female	Indian or Asian	Multidimensionally poor	0
+ward	10104012	Female	Other	Multidimensionally poor	0
+ward	10104012	Female	White	Multidimensionally poor	0
+ward	10104012	Female	Indian or Asian	Non-poor	0
+ward	10104012	Female	White	Non-poor	0
+ward	10104012	Male	Indian or Asian	Multidimensionally poor	0
+ward	10104013	Female	White	Multidimensionally poor	0
+ward	10104013	Male	White	Multidimensionally poor	0
+ward	10104013	Male	White	Non-poor	0
+ward	10105001	Female	Indian or Asian	Multidimensionally poor	0
+ward	10105001	Female	Other	Multidimensionally poor	0
+ward	10105001	Female	Other	Non-poor	0
+ward	10105001	Male	Black African	Multidimensionally poor	0
+ward	10105001	Male	Other	Multidimensionally poor	0
+ward	10105002	Female	Indian or Asian	Multidimensionally poor	0
+ward	10105002	Female	Other	Multidimensionally poor	0
+ward	10105002	Female	White	Multidimensionally poor	0
+ward	10105002	Female	Other	Non-poor	0
+ward	10105002	Male	Indian or Asian	Multidimensionally poor	0
+ward	10105002	Male	Other	Multidimensionally poor	0
+ward	10105002	Male	Indian or Asian	Non-poor	0
+ward	10105003	Female	Indian or Asian	Multidimensionally poor	0
+ward	10105003	Female	White	Multidimensionally poor	0
+ward	10105003	Male	Indian or Asian	Multidimensionally poor	0
+ward	10105003	Male	Other	Multidimensionally poor	0
+ward	10105003	Male	White	Multidimensionally poor	0
+ward	10105005	Female	Indian or Asian	Multidimensionally poor	0
+ward	10105005	Female	Other	Multidimensionally poor	0
+ward	10105005	Female	White	Multidimensionally poor	0
+ward	10105005	Female	Indian or Asian	Non-poor	0
+ward	10105005	Male	Indian or Asian	Multidimensionally poor	0
+ward	10105005	Male	White	Multidimensionally poor	0
+ward	10105006	Female	Indian or Asian	Multidimensionally poor	0
+ward	10105006	Female	White	Multidimensionally poor	0
+ward	10105007	Female	Indian or Asian	Multidimensionally poor	0
+ward	10105007	Female	Other	Multidimensionally poor	0
+ward	10105007	Male	Indian or Asian	Multidimensionally poor	0
+ward	10105007	Male	Other	Multidimensionally poor	0
+ward	10105008	Female	Black African	Multidimensionally poor	0
+ward	10105008	Female	Indian or Asian	Multidimensionally poor	0
+ward	10105008	Female	Indian or Asian	Non-poor	0
+ward	10105008	Male	Indian or Asian	Multidimensionally poor	0
+ward	10105008	Male	Other	Multidimensionally poor	0
+ward	10105009	Female	Indian or Asian	Multidimensionally poor	0
+ward	10105009	Female	White	Multidimensionally poor	0
+ward	10105009	Female	Indian or Asian	Non-poor	0
+ward	10105009	Female	White	Non-poor	0
+ward	10105009	Male	Indian or Asian	Multidimensionally poor	0
+ward	10105009	Male	White	Multidimensionally poor	0
+ward	10105009	Male	White	Non-poor	0
+ward	10105010	Female	Black African	Multidimensionally poor	0
+ward	10105010	Female	Indian or Asian	Multidimensionally poor	0
+ward	10105010	Female	Other	Multidimensionally poor	0
+ward	10105010	Male	Black African	Multidimensionally poor	0
+ward	10105010	Male	Other	Multidimensionally poor	0
+ward	10105011	Female	Indian or Asian	Multidimensionally poor	0
+ward	10105011	Female	Other	Multidimensionally poor	0
+ward	10105011	Female	White	Multidimensionally poor	0
+ward	10105011	Female	Indian or Asian	Non-poor	0
+ward	10105011	Female	Other	Non-poor	0
+ward	10105011	Female	White	Non-poor	0
+ward	10105011	Male	Indian or Asian	Multidimensionally poor	0
+ward	10105011	Male	White	Multidimensionally poor	0
+ward	10105011	Male	White	Non-poor	0
+ward	10105012	Female	Other	Non-poor	0
+ward	10105012	Male	Indian or Asian	Multidimensionally poor	0
+ward	10202001	Female	Indian or Asian	Multidimensionally poor	0
+ward	10202001	Female	White	Multidimensionally poor	0
+ward	10202001	Female	Indian or Asian	Non-poor	0
+ward	10202001	Female	White	Non-poor	0
+ward	10202001	Male	Indian or Asian	Multidimensionally poor	0
+ward	10202001	Male	White	Multidimensionally poor	0
+ward	10202001	Male	White	Non-poor	0
+ward	10202002	Female	Indian or Asian	Multidimensionally poor	0
+ward	10202002	Female	Other	Multidimensionally poor	0
+ward	10202002	Female	White	Multidimensionally poor	0
+ward	10202002	Female	Indian or Asian	Non-poor	0
+ward	10202002	Female	Other	Non-poor	0
+ward	10202002	Male	Indian or Asian	Multidimensionally poor	0
+ward	10202002	Male	White	Multidimensionally poor	0
+ward	10202002	Male	Indian or Asian	Non-poor	0
+ward	10202003	Female	Indian or Asian	Multidimensionally poor	0
+ward	10202003	Female	Other	Multidimensionally poor	0
+ward	10202003	Female	White	Multidimensionally poor	0
+ward	10202003	Female	Indian or Asian	Non-poor	0
+ward	10202003	Male	Indian or Asian	Multidimensionally poor	0
+ward	10202004	Male	Indian or Asian	Non-poor	0
+ward	10202005	Female	Indian or Asian	Multidimensionally poor	0
+ward	10202005	Female	White	Multidimensionally poor	0
+ward	10202005	Male	Indian or Asian	Multidimensionally poor	0
+ward	10202006	Female	Black African	Multidimensionally poor	0
+ward	10202006	Female	Indian or Asian	Multidimensionally poor	0
+ward	10202006	Female	Other	Multidimensionally poor	0
+ward	10202006	Female	White	Multidimensionally poor	0
+ward	10202006	Male	Other	Multidimensionally poor	0
+ward	10202006	Male	White	Multidimensionally poor	0
+ward	10202007	Female	Indian or Asian	Multidimensionally poor	0
+ward	10202008	Female	Indian or Asian	Multidimensionally poor	0
+ward	10202008	Female	Other	Multidimensionally poor	0
+ward	10202008	Female	White	Multidimensionally poor	0
+ward	10202008	Male	Indian or Asian	Multidimensionally poor	0
+ward	10202008	Male	Other	Multidimensionally poor	0
+ward	10202008	Male	White	Multidimensionally poor	0
+ward	10202008	Male	Other	Non-poor	0
+ward	10202009	Female	Indian or Asian	Multidimensionally poor	0
+ward	10202009	Female	Other	Multidimensionally poor	0
+ward	10202009	Female	Indian or Asian	Non-poor	0
+ward	10202009	Female	Other	Non-poor	0
+ward	10202009	Male	Indian or Asian	Multidimensionally poor	0
+ward	10202009	Male	Other	Multidimensionally poor	0
+ward	10202009	Male	White	Multidimensionally poor	0
+ward	10202009	Male	Other	Non-poor	0
+ward	10202010	Female	Indian or Asian	Multidimensionally poor	0
+ward	10202010	Female	Other	Multidimensionally poor	0
+ward	10202010	Female	White	Multidimensionally poor	0
+ward	10202010	Female	Indian or Asian	Non-poor	0
+ward	10202010	Male	Indian or Asian	Multidimensionally poor	0
+ward	10202010	Male	White	Multidimensionally poor	0
+ward	10202010	Male	Indian or Asian	Non-poor	0
+ward	10202011	Female	Indian or Asian	Multidimensionally poor	0
+ward	10202011	Female	Other	Multidimensionally poor	0
+ward	10202011	Female	White	Multidimensionally poor	0
+ward	10202011	Male	Indian or Asian	Multidimensionally poor	0
+ward	10202012	Female	Indian or Asian	Multidimensionally poor	0
+ward	10202012	Female	Other	Multidimensionally poor	0
+ward	10202012	Female	White	Multidimensionally poor	0
+ward	10202012	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203001	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203001	Female	Other	Multidimensionally poor	0
+ward	10203001	Female	White	Multidimensionally poor	0
+ward	10203001	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203001	Male	Other	Multidimensionally poor	0
+ward	10203002	Female	Other	Multidimensionally poor	0
+ward	10203002	Male	Black African	Multidimensionally poor	0
+ward	10203002	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203002	Male	Other	Multidimensionally poor	0
+ward	10203002	Male	Indian or Asian	Non-poor	0
+ward	10203002	Male	Other	Non-poor	0
+ward	10203003	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203003	Female	Other	Multidimensionally poor	0
+ward	10203003	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203003	Male	Other	Multidimensionally poor	0
+ward	10203003	Male	White	Multidimensionally poor	0
+ward	10203003	Male	Indian or Asian	Non-poor	0
+ward	10203004	Female	Black African	Multidimensionally poor	0
+ward	10203004	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203004	Female	Other	Non-poor	0
+ward	10203004	Male	Black African	Multidimensionally poor	0
+ward	10203004	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203004	Male	Other	Multidimensionally poor	0
+ward	10203005	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203005	Female	White	Multidimensionally poor	0
+ward	10203005	Female	Indian or Asian	Non-poor	0
+ward	10203005	Female	White	Non-poor	0
+ward	10203005	Male	White	Multidimensionally poor	0
+ward	10203005	Male	Indian or Asian	Non-poor	0
+ward	10203005	Male	White	Non-poor	0
+ward	10203006	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203006	Female	Other	Multidimensionally poor	0
+ward	10203006	Female	White	Multidimensionally poor	0
+ward	10203006	Female	Indian or Asian	Non-poor	0
+ward	10203006	Female	Other	Non-poor	0
+ward	10203006	Female	White	Non-poor	0
+ward	10203006	Male	Coloured	Multidimensionally poor	0
+ward	10203006	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203006	Male	White	Multidimensionally poor	0
+ward	10203006	Male	Indian or Asian	Non-poor	0
+ward	10203006	Male	White	Non-poor	0
+ward	10203007	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203007	Female	Other	Multidimensionally poor	0
+ward	10203007	Female	White	Multidimensionally poor	0
+ward	10203007	Female	White	Non-poor	0
+ward	10203007	Male	White	Multidimensionally poor	0
+ward	10203008	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203008	Female	Other	Multidimensionally poor	0
+ward	10203008	Female	White	Multidimensionally poor	0
+ward	10203008	Female	White	Non-poor	0
+ward	10203008	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203008	Male	White	Multidimensionally poor	0
+ward	10203008	Male	Indian or Asian	Non-poor	0
+ward	10203008	Male	Other	Non-poor	0
+ward	10203008	Male	White	Non-poor	0
+ward	10203009	Female	Coloured	Multidimensionally poor	0
+ward	10203009	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203009	Female	Other	Multidimensionally poor	0
+ward	10203009	Female	White	Multidimensionally poor	0
+ward	10203009	Female	Indian or Asian	Non-poor	0
+ward	10203009	Female	White	Non-poor	0
+ward	10203009	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203009	Male	Other	Multidimensionally poor	0
+ward	10203009	Male	White	Multidimensionally poor	0
+ward	10203009	Male	White	Non-poor	0
+ward	10203010	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203010	Female	Other	Multidimensionally poor	0
+ward	10203010	Female	White	Multidimensionally poor	0
+ward	10203010	Female	Other	Non-poor	0
+ward	10203010	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203010	Male	Other	Multidimensionally poor	0
+ward	10203010	Male	White	Multidimensionally poor	0
+ward	10203011	Female	Other	Multidimensionally poor	0
+ward	10203011	Female	White	Multidimensionally poor	0
+ward	10203011	Female	Other	Non-poor	0
+ward	10203011	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203011	Male	White	Multidimensionally poor	0
+ward	10203012	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203012	Female	White	Multidimensionally poor	0
+ward	10203012	Female	Indian or Asian	Non-poor	0
+ward	10203012	Female	White	Non-poor	0
+ward	10203012	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203012	Male	White	Multidimensionally poor	0
+ward	10203012	Male	White	Non-poor	0
+ward	10203013	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203013	Female	White	Multidimensionally poor	0
+ward	10203013	Female	White	Non-poor	0
+ward	10203013	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203013	Male	White	Multidimensionally poor	0
+ward	10203013	Male	White	Non-poor	0
+ward	10203014	Female	Other	Multidimensionally poor	0
+ward	10203014	Female	White	Multidimensionally poor	0
+ward	10203014	Female	White	Non-poor	0
+ward	10203014	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203014	Male	White	Non-poor	0
+ward	10203015	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203015	Female	Other	Multidimensionally poor	0
+ward	10203015	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203015	Male	Other	Multidimensionally poor	0
+ward	10203016	Female	Coloured	Multidimensionally poor	0
+ward	10203016	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203016	Female	White	Multidimensionally poor	0
+ward	10203016	Female	Indian or Asian	Non-poor	0
+ward	10203016	Female	White	Non-poor	0
+ward	10203016	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203016	Male	White	Multidimensionally poor	0
+ward	10203016	Male	Indian or Asian	Non-poor	0
+ward	10203016	Male	White	Non-poor	0
+ward	10203017	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203017	Female	Other	Multidimensionally poor	0
+ward	10203017	Female	Indian or Asian	Non-poor	0
+ward	10203017	Female	Other	Non-poor	0
+ward	10203017	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203017	Male	Other	Multidimensionally poor	0
+ward	10203017	Male	Other	Non-poor	0
+ward	10203018	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203018	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203019	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203019	Female	Other	Multidimensionally poor	0
+ward	10203019	Male	Black African	Multidimensionally poor	0
+ward	10203019	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203019	Male	Other	Multidimensionally poor	0
+ward	10203020	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203020	Female	Other	Multidimensionally poor	0
+ward	10203020	Female	White	Multidimensionally poor	0
+ward	10203020	Female	Indian or Asian	Non-poor	0
+ward	10203020	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203020	Male	Other	Multidimensionally poor	0
+ward	10203020	Male	White	Multidimensionally poor	0
+ward	10203020	Male	White	Non-poor	0
+ward	10203021	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203021	Female	White	Multidimensionally poor	0
+ward	10203021	Female	White	Non-poor	0
+ward	10203021	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203021	Male	White	Multidimensionally poor	0
+ward	10203021	Male	White	Non-poor	0
+ward	10203022	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203022	Female	White	Multidimensionally poor	0
+ward	10203022	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203022	Male	White	Multidimensionally poor	0
+ward	10203023	Female	Other	Multidimensionally poor	0
+ward	10203023	Female	White	Multidimensionally poor	0
+ward	10203023	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203023	Male	Other	Multidimensionally poor	0
+ward	10203024	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203024	Female	Other	Multidimensionally poor	0
+ward	10203024	Female	White	Multidimensionally poor	0
+ward	10203024	Female	Indian or Asian	Non-poor	0
+ward	10203024	Female	Other	Non-poor	0
+ward	10203024	Male	Other	Multidimensionally poor	0
+ward	10203024	Male	White	Multidimensionally poor	0
+ward	10203024	Male	Indian or Asian	Non-poor	0
+ward	10203024	Male	White	Non-poor	0
+ward	10203025	Female	Other	Multidimensionally poor	0
+ward	10203025	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203025	Male	Other	Multidimensionally poor	0
+ward	10203025	Male	White	Multidimensionally poor	0
+ward	10203026	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203026	Female	Other	Multidimensionally poor	0
+ward	10203026	Female	White	Multidimensionally poor	0
+ward	10203026	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203026	Male	Other	Multidimensionally poor	0
+ward	10203026	Male	White	Multidimensionally poor	0
+ward	10203027	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203027	Female	Other	Multidimensionally poor	0
+ward	10203027	Female	White	Multidimensionally poor	0
+ward	10203027	Female	Other	Non-poor	0
+ward	10203027	Female	White	Non-poor	0
+ward	10203027	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203027	Male	White	Multidimensionally poor	0
+ward	10203027	Male	Indian or Asian	Non-poor	0
+ward	10203027	Male	Other	Non-poor	0
+ward	10203027	Male	White	Non-poor	0
+ward	10203028	Female	Other	Multidimensionally poor	0
+ward	10203028	Male	White	Multidimensionally poor	0
+ward	10203029	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203029	Female	Other	Non-poor	0
+ward	10203029	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203029	Male	Other	Multidimensionally poor	0
+ward	10203029	Male	White	Multidimensionally poor	0
+ward	10203030	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203030	Female	Other	Multidimensionally poor	0
+ward	10203030	Female	White	Multidimensionally poor	0
+ward	10203030	Female	Other	Non-poor	0
+ward	10203030	Female	White	Non-poor	0
+ward	10203030	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203030	Male	White	Multidimensionally poor	0
+ward	10203031	Female	Indian or Asian	Multidimensionally poor	0
+ward	10203031	Female	Other	Multidimensionally poor	0
+ward	10203031	Male	Indian or Asian	Multidimensionally poor	0
+ward	10203031	Male	Other	Multidimensionally poor	0
+ward	10203031	Male	Other	Non-poor	0
+ward	10204001	Female	Indian or Asian	Multidimensionally poor	0
+ward	10204001	Female	White	Multidimensionally poor	0
+ward	10204001	Male	Other	Multidimensionally poor	0
+ward	10204002	Female	Indian or Asian	Multidimensionally poor	0
+ward	10204002	Female	White	Multidimensionally poor	0
+ward	10204002	Female	Indian or Asian	Non-poor	0
+ward	10204002	Male	Indian or Asian	Multidimensionally poor	0
+ward	10204002	Male	Indian or Asian	Non-poor	0
+ward	10204002	Male	White	Non-poor	0
+ward	10204003	Female	Other	Multidimensionally poor	0
+ward	10204003	Female	White	Multidimensionally poor	0
+ward	10204003	Female	Indian or Asian	Non-poor	0
+ward	10204003	Female	Other	Non-poor	0
+ward	10204003	Male	Indian or Asian	Multidimensionally poor	0
+ward	10204003	Male	Indian or Asian	Non-poor	0
+ward	10204004	Female	Indian or Asian	Multidimensionally poor	0
+ward	10204004	Female	Other	Multidimensionally poor	0
+ward	10204004	Female	White	Multidimensionally poor	0
+ward	10204004	Male	Indian or Asian	Multidimensionally poor	0
+ward	10204004	Male	Other	Multidimensionally poor	0
+ward	10204004	Male	White	Multidimensionally poor	0
+ward	10204005	Female	Black African	Multidimensionally poor	0
+ward	10204005	Female	Other	Multidimensionally poor	0
+ward	10204005	Female	White	Multidimensionally poor	0
+ward	10204005	Female	Other	Non-poor	0
+ward	10204005	Male	Indian or Asian	Multidimensionally poor	0
+ward	10204005	Male	White	Multidimensionally poor	0
+ward	10204006	Female	Indian or Asian	Multidimensionally poor	0
+ward	10204006	Female	Other	Multidimensionally poor	0
+ward	10204006	Female	White	Multidimensionally poor	0
+ward	10204006	Female	Indian or Asian	Non-poor	0
+ward	10204006	Male	Indian or Asian	Multidimensionally poor	0
+ward	10204006	Male	Other	Multidimensionally poor	0
+ward	10204006	Male	White	Multidimensionally poor	0
+ward	10204007	Female	Indian or Asian	Multidimensionally poor	0
+ward	10204007	Female	Other	Multidimensionally poor	0
+ward	10204007	Male	Indian or Asian	Multidimensionally poor	0
+ward	10204007	Male	Other	Multidimensionally poor	0
+ward	10204007	Male	Indian or Asian	Non-poor	0
+ward	10204008	Female	Indian or Asian	Multidimensionally poor	0
+ward	10204008	Female	Other	Multidimensionally poor	0
+ward	10204008	Female	Indian or Asian	Non-poor	0
+ward	10204008	Male	Coloured	Multidimensionally poor	0
+ward	10204008	Male	Indian or Asian	Multidimensionally poor	0
+ward	10204008	Male	Other	Multidimensionally poor	0
+ward	10204008	Male	Indian or Asian	Non-poor	0
+ward	10204009	Female	Black African	Multidimensionally poor	0
+ward	10204009	Female	Indian or Asian	Multidimensionally poor	0
+ward	10204009	Female	Other	Multidimensionally poor	0
+ward	10204009	Female	Indian or Asian	Non-poor	0
+ward	10204009	Female	Other	Non-poor	0
+ward	10204009	Male	Black African	Multidimensionally poor	0
+ward	10204009	Male	Indian or Asian	Multidimensionally poor	0
+ward	10204009	Male	Other	Multidimensionally poor	0
+ward	10204010	Female	Indian or Asian	Multidimensionally poor	0
+ward	10204010	Female	Other	Multidimensionally poor	0
+ward	10204010	Male	Indian or Asian	Multidimensionally poor	0
+ward	10204010	Male	Other	Multidimensionally poor	0
+ward	10204011	Female	Indian or Asian	Multidimensionally poor	0
+ward	10204011	Female	Other	Multidimensionally poor	0
+ward	10204011	Male	Indian or Asian	Multidimensionally poor	0
+ward	10204012	Female	Indian or Asian	Multidimensionally poor	0
+ward	10204012	Female	Other	Multidimensionally poor	0
+ward	10204012	Female	White	Multidimensionally poor	0
+ward	10204012	Female	Other	Non-poor	0
+ward	10204012	Male	Indian or Asian	Multidimensionally poor	0
+ward	10204012	Male	Other	Multidimensionally poor	0
+ward	10204012	Male	White	Multidimensionally poor	0
+ward	10204013	Female	Indian or Asian	Multidimensionally poor	0
+ward	10204013	Female	Other	Multidimensionally poor	0
+ward	10204013	Female	Indian or Asian	Non-poor	0
+ward	10204013	Male	Indian or Asian	Multidimensionally poor	0
+ward	10204013	Male	Other	Multidimensionally poor	0
+ward	10204013	Male	White	Multidimensionally poor	0
+ward	10204013	Male	Indian or Asian	Non-poor	0
+ward	10204013	Male	Other	Non-poor	0
+ward	10204014	Female	Indian or Asian	Multidimensionally poor	0
+ward	10204014	Female	Other	Multidimensionally poor	0
+ward	10204014	Female	White	Multidimensionally poor	0
+ward	10204014	Female	Indian or Asian	Non-poor	0
+ward	10204014	Female	Other	Non-poor	0
+ward	10204014	Female	White	Non-poor	0
+ward	10204014	Male	Indian or Asian	Multidimensionally poor	0
+ward	10204014	Male	Indian or Asian	Non-poor	0
+ward	10204015	Female	Indian or Asian	Multidimensionally poor	0
+ward	10204015	Female	Other	Multidimensionally poor	0
+ward	10204015	Female	White	Multidimensionally poor	0
+ward	10204015	Female	Indian or Asian	Non-poor	0
+ward	10204015	Female	White	Non-poor	0
+ward	10204015	Male	Indian or Asian	Multidimensionally poor	0
+ward	10204015	Male	White	Multidimensionally poor	0
+ward	10204016	Female	Indian or Asian	Multidimensionally poor	0
+ward	10204016	Female	Other	Multidimensionally poor	0
+ward	10204016	Female	Indian or Asian	Non-poor	0
+ward	10204016	Male	Indian or Asian	Multidimensionally poor	0
+ward	10204016	Male	Other	Multidimensionally poor	0
+ward	10204016	Male	White	Multidimensionally poor	0
+ward	10204016	Male	White	Non-poor	0
+ward	10204017	Female	Indian or Asian	Multidimensionally poor	0
+ward	10204017	Female	Other	Multidimensionally poor	0
+ward	10204017	Male	Other	Multidimensionally poor	0
+ward	10204017	Male	Indian or Asian	Non-poor	0
+ward	10204018	Female	Other	Multidimensionally poor	0
+ward	10204018	Female	Indian or Asian	Non-poor	0
+ward	10204018	Female	Other	Non-poor	0
+ward	10204018	Male	Indian or Asian	Multidimensionally poor	0
+ward	10204019	Female	Indian or Asian	Multidimensionally poor	0
+ward	10204019	Female	Other	Multidimensionally poor	0
+ward	10204019	Male	Indian or Asian	Multidimensionally poor	0
+ward	10204019	Male	Other	Multidimensionally poor	0
+ward	10204020	Female	Indian or Asian	Multidimensionally poor	0
+ward	10204020	Female	Other	Multidimensionally poor	0
+ward	10204020	Female	Indian or Asian	Non-poor	0
+ward	10204020	Male	Indian or Asian	Multidimensionally poor	0
+ward	10204020	Male	White	Multidimensionally poor	0
+ward	10204021	Female	Indian or Asian	Multidimensionally poor	0
+ward	10204021	Female	Other	Non-poor	0
+ward	10204021	Male	Indian or Asian	Multidimensionally poor	0
+ward	10204021	Male	Other	Multidimensionally poor	0
+ward	10204021	Male	Indian or Asian	Non-poor	0
+ward	10204022	Female	Indian or Asian	Multidimensionally poor	0
+ward	10204022	Female	Other	Multidimensionally poor	0
+ward	10204022	Male	Indian or Asian	Multidimensionally poor	0
+ward	10204022	Male	Other	Multidimensionally poor	0
+ward	10205001	Female	Indian or Asian	Multidimensionally poor	0
+ward	10205001	Female	Other	Multidimensionally poor	0
+ward	10205001	Male	Indian or Asian	Multidimensionally poor	0
+ward	10205001	Male	Other	Multidimensionally poor	0
+ward	10205002	Female	Indian or Asian	Multidimensionally poor	0
+ward	10205002	Female	White	Multidimensionally poor	0
+ward	10205002	Female	Indian or Asian	Non-poor	0
+ward	10205002	Male	White	Multidimensionally poor	0
+ward	10205002	Male	Indian or Asian	Non-poor	0
+ward	10205002	Male	White	Non-poor	0
+ward	10205003	Female	Indian or Asian	Non-poor	0
+ward	10205003	Male	Indian or Asian	Multidimensionally poor	0
+ward	10205003	Male	White	Multidimensionally poor	0
+ward	10205004	Female	Indian or Asian	Multidimensionally poor	0
+ward	10205004	Female	Other	Multidimensionally poor	0
+ward	10205004	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404012	Female	White	Non-poor	0
+ward	10205004	Male	Other	Multidimensionally poor	0
+ward	10205004	Male	White	Multidimensionally poor	0
+ward	10205005	Female	Indian or Asian	Multidimensionally poor	0
+ward	10205005	Female	White	Multidimensionally poor	0
+ward	10205005	Female	Indian or Asian	Non-poor	0
+ward	10205005	Male	Indian or Asian	Multidimensionally poor	0
+ward	10205005	Male	Other	Multidimensionally poor	0
+ward	10205005	Male	Indian or Asian	Non-poor	0
+ward	10205006	Female	Indian or Asian	Multidimensionally poor	0
+ward	10205006	Female	Other	Multidimensionally poor	0
+ward	10205006	Male	Indian or Asian	Multidimensionally poor	0
+ward	10205006	Male	Other	Multidimensionally poor	0
+ward	10205007	Female	Indian or Asian	Multidimensionally poor	0
+ward	10205007	Female	Other	Multidimensionally poor	0
+ward	10205007	Female	Indian or Asian	Non-poor	0
+ward	10205007	Male	Indian or Asian	Multidimensionally poor	0
+ward	10205007	Male	Other	Multidimensionally poor	0
+ward	10205008	Female	Indian or Asian	Multidimensionally poor	0
+ward	10205008	Female	Other	Multidimensionally poor	0
+ward	10205008	Female	White	Multidimensionally poor	0
+ward	10205008	Female	Indian or Asian	Non-poor	0
+ward	10205008	Male	Indian or Asian	Multidimensionally poor	0
+ward	10205008	Male	Other	Multidimensionally poor	0
+ward	10205008	Male	White	Multidimensionally poor	0
+ward	10205009	Female	Indian or Asian	Multidimensionally poor	0
+ward	10205009	Female	Other	Multidimensionally poor	0
+ward	10205009	Female	White	Multidimensionally poor	0
+ward	10205009	Female	Other	Non-poor	0
+ward	10205009	Female	White	Non-poor	0
+ward	10205009	Male	Other	Multidimensionally poor	0
+ward	10205009	Male	White	Multidimensionally poor	0
+ward	10205009	Male	White	Non-poor	0
+ward	10205010	Female	Black African	Multidimensionally poor	0
+ward	10205010	Female	Indian or Asian	Multidimensionally poor	0
+ward	10205010	Female	Other	Multidimensionally poor	0
+ward	10205010	Female	White	Multidimensionally poor	0
+ward	10205010	Female	Other	Non-poor	0
+ward	10205010	Female	White	Non-poor	0
+ward	10205010	Male	Black African	Multidimensionally poor	0
+ward	10205010	Male	Indian or Asian	Multidimensionally poor	0
+ward	10205010	Male	Other	Multidimensionally poor	0
+ward	10205010	Male	White	Multidimensionally poor	0
+ward	10205010	Male	White	Non-poor	0
+ward	10205011	Female	Black African	Multidimensionally poor	0
+ward	10205011	Female	Indian or Asian	Multidimensionally poor	0
+ward	10205011	Female	White	Multidimensionally poor	0
+ward	10205011	Male	Other	Multidimensionally poor	0
+ward	10205011	Male	White	Multidimensionally poor	0
+ward	10205011	Male	White	Non-poor	0
+ward	10205012	Female	Indian or Asian	Multidimensionally poor	0
+ward	10205012	Male	Indian or Asian	Multidimensionally poor	0
+ward	10205013	Female	Indian or Asian	Multidimensionally poor	0
+ward	10205013	Female	Other	Multidimensionally poor	0
+ward	10205013	Female	White	Multidimensionally poor	0
+ward	10205013	Female	Indian or Asian	Non-poor	0
+ward	10205013	Female	Other	Non-poor	0
+ward	10205013	Female	White	Non-poor	0
+ward	10205013	Male	Indian or Asian	Multidimensionally poor	0
+ward	10205013	Male	Other	Multidimensionally poor	0
+ward	10205013	Male	White	Multidimensionally poor	0
+ward	10205013	Male	Indian or Asian	Non-poor	0
+ward	10205014	Female	White	Multidimensionally poor	0
+ward	10205014	Female	Other	Non-poor	0
+ward	10205014	Male	Indian or Asian	Multidimensionally poor	0
+ward	10205014	Male	Other	Multidimensionally poor	0
+ward	10205014	Male	White	Multidimensionally poor	0
+ward	10205014	Male	White	Non-poor	0
+ward	10205015	Female	Indian or Asian	Multidimensionally poor	0
+ward	10205015	Female	Other	Multidimensionally poor	0
+ward	10205015	Female	Other	Non-poor	0
+ward	10205015	Male	Indian or Asian	Multidimensionally poor	0
+ward	10205015	Male	Other	Multidimensionally poor	0
+ward	10205016	Female	Coloured	Non-poor	0
+ward	10205016	Female	Indian or Asian	Non-poor	0
+ward	10205016	Female	Other	Non-poor	0
+ward	10205016	Female	White	Non-poor	0
+ward	10205016	Male	Indian or Asian	Multidimensionally poor	0
+ward	10205016	Male	White	Multidimensionally poor	0
+ward	10205016	Male	White	Non-poor	0
+ward	10205017	Female	Indian or Asian	Multidimensionally poor	0
+ward	10205017	Female	Other	Multidimensionally poor	0
+ward	10205017	Female	White	Multidimensionally poor	0
+ward	10205017	Female	Indian or Asian	Non-poor	0
+ward	10205017	Female	Other	Non-poor	0
+ward	10205017	Female	White	Non-poor	0
+ward	10205017	Male	Coloured	Multidimensionally poor	0
+ward	10205017	Male	Indian or Asian	Multidimensionally poor	0
+ward	10205017	Male	Other	Multidimensionally poor	0
+ward	10205017	Male	White	Multidimensionally poor	0
+ward	10205017	Male	Indian or Asian	Non-poor	0
+ward	10205017	Male	White	Non-poor	0
+ward	10205018	Female	Indian or Asian	Multidimensionally poor	0
+ward	10205018	Female	Other	Multidimensionally poor	0
+ward	10205018	Female	White	Multidimensionally poor	0
+ward	10205018	Male	Indian or Asian	Multidimensionally poor	0
+ward	10205018	Male	Other	Multidimensionally poor	0
+ward	10205018	Male	White	Multidimensionally poor	0
+ward	10205018	Male	Indian or Asian	Non-poor	0
+ward	10205019	Female	Black African	Multidimensionally poor	0
+ward	10205019	Female	Indian or Asian	Multidimensionally poor	0
+ward	10205019	Female	Other	Multidimensionally poor	0
+ward	10205019	Male	Indian or Asian	Multidimensionally poor	0
+ward	10205019	Male	Other	Multidimensionally poor	0
+ward	10205019	Male	White	Multidimensionally poor	0
+ward	10205020	Female	Indian or Asian	Multidimensionally poor	0
+ward	10205020	Female	Other	Multidimensionally poor	0
+ward	10205020	Male	Indian or Asian	Multidimensionally poor	0
+ward	10205020	Male	Other	Multidimensionally poor	0
+ward	10205020	Male	White	Multidimensionally poor	0
+ward	10205020	Male	Indian or Asian	Non-poor	0
+ward	10205021	Female	Other	Multidimensionally poor	0
+ward	10205021	Female	White	Multidimensionally poor	0
+ward	10205021	Male	Indian or Asian	Multidimensionally poor	0
+ward	10205021	Male	Other	Multidimensionally poor	0
+ward	10206001	Female	Indian or Asian	Multidimensionally poor	0
+ward	10206001	Male	Other	Multidimensionally poor	0
+ward	10206002	Female	Indian or Asian	Multidimensionally poor	0
+ward	10206002	Female	Indian or Asian	Non-poor	0
+ward	10206002	Male	Indian or Asian	Multidimensionally poor	0
+ward	10206003	Female	Other	Multidimensionally poor	0
+ward	10206003	Female	White	Multidimensionally poor	0
+ward	10206003	Male	Indian or Asian	Multidimensionally poor	0
+ward	10206003	Male	Other	Multidimensionally poor	0
+ward	10206004	Female	Indian or Asian	Multidimensionally poor	0
+ward	10206004	Female	White	Multidimensionally poor	0
+ward	10206004	Male	Indian or Asian	Multidimensionally poor	0
+ward	10206004	Male	White	Multidimensionally poor	0
+ward	10206004	Male	Indian or Asian	Non-poor	0
+ward	10206005	Female	Indian or Asian	Multidimensionally poor	0
+ward	10206005	Female	Other	Multidimensionally poor	0
+ward	10206005	Female	Other	Non-poor	0
+ward	10206005	Male	Indian or Asian	Multidimensionally poor	0
+ward	10206005	Male	Other	Multidimensionally poor	0
+ward	10206005	Male	Other	Non-poor	0
+ward	10206006	Female	Indian or Asian	Multidimensionally poor	0
+ward	10206006	Female	Other	Multidimensionally poor	0
+ward	10206006	Female	White	Multidimensionally poor	0
+ward	10206006	Female	Indian or Asian	Non-poor	0
+ward	10206006	Male	Indian or Asian	Multidimensionally poor	0
+ward	10206006	Male	White	Multidimensionally poor	0
+ward	10206006	Male	Indian or Asian	Non-poor	0
+ward	10206006	Male	Other	Non-poor	0
+ward	10206007	Female	Indian or Asian	Multidimensionally poor	0
+ward	10206007	Male	Other	Multidimensionally poor	0
+ward	10206008	Female	Indian or Asian	Multidimensionally poor	0
+ward	10206008	Female	Other	Multidimensionally poor	0
+ward	10206008	Female	Indian or Asian	Non-poor	0
+ward	10206008	Female	Other	Non-poor	0
+ward	10206008	Male	Indian or Asian	Multidimensionally poor	0
+ward	10206008	Male	Other	Multidimensionally poor	0
+ward	10206008	Male	Indian or Asian	Non-poor	0
+ward	10206009	Female	Indian or Asian	Multidimensionally poor	0
+ward	10206009	Female	Other	Multidimensionally poor	0
+ward	10206009	Female	Indian or Asian	Non-poor	0
+ward	10206009	Female	Other	Non-poor	0
+ward	10206009	Male	Indian or Asian	Multidimensionally poor	0
+ward	10206009	Male	Indian or Asian	Non-poor	0
+ward	10206010	Female	Indian or Asian	Multidimensionally poor	0
+ward	10206010	Female	Other	Multidimensionally poor	0
+ward	10206010	Female	White	Multidimensionally poor	0
+ward	10206010	Female	Indian or Asian	Non-poor	0
+ward	10206010	Female	Other	Non-poor	0
+ward	10206010	Female	White	Non-poor	0
+ward	10206010	Male	Indian or Asian	Multidimensionally poor	0
+ward	10206010	Male	Other	Multidimensionally poor	0
+ward	10206010	Male	White	Multidimensionally poor	0
+ward	10206011	Female	Indian or Asian	Multidimensionally poor	0
+ward	10206011	Female	Other	Multidimensionally poor	0
+ward	10206011	Female	Indian or Asian	Non-poor	0
+ward	10206011	Male	Indian or Asian	Multidimensionally poor	0
+ward	10206011	Male	Other	Multidimensionally poor	0
+ward	10206011	Male	Indian or Asian	Non-poor	0
+ward	10206012	Female	Other	Multidimensionally poor	0
+ward	10206012	Male	White	Multidimensionally poor	0
+ward	10301001	Female	Indian or Asian	Non-poor	0
+ward	10301002	Female	Indian or Asian	Multidimensionally poor	0
+ward	10301002	Female	White	Multidimensionally poor	0
+ward	10301002	Male	Indian or Asian	Multidimensionally poor	0
+ward	10301002	Male	White	Multidimensionally poor	0
+ward	10301003	Female	Indian or Asian	Multidimensionally poor	0
+ward	10301003	Female	White	Multidimensionally poor	0
+ward	10301003	Male	Indian or Asian	Multidimensionally poor	0
+ward	10301003	Male	Other	Multidimensionally poor	0
+ward	10301003	Male	Indian or Asian	Non-poor	0
+ward	10301004	Female	Indian or Asian	Non-poor	0
+ward	10301004	Male	Indian or Asian	Multidimensionally poor	0
+ward	10301004	Male	Other	Multidimensionally poor	0
+ward	10301004	Male	Indian or Asian	Non-poor	0
+ward	10301005	Female	Indian or Asian	Multidimensionally poor	0
+ward	10301005	Female	Other	Multidimensionally poor	0
+ward	10301005	Male	Indian or Asian	Multidimensionally poor	0
+ward	10301005	Male	Other	Multidimensionally poor	0
+ward	10301006	Female	Indian or Asian	Multidimensionally poor	0
+ward	10301006	Female	White	Multidimensionally poor	0
+ward	10301006	Female	Indian or Asian	Non-poor	0
+ward	10301006	Male	Indian or Asian	Multidimensionally poor	0
+ward	10301006	Male	White	Multidimensionally poor	0
+ward	10301006	Male	White	Non-poor	0
+ward	10301007	Female	Indian or Asian	Multidimensionally poor	0
+ward	10301007	Female	White	Multidimensionally poor	0
+ward	10301007	Female	Indian or Asian	Non-poor	0
+ward	10301007	Male	Indian or Asian	Multidimensionally poor	0
+ward	10301008	Female	Indian or Asian	Multidimensionally poor	0
+ward	10301008	Female	Other	Multidimensionally poor	0
+ward	10301008	Female	White	Multidimensionally poor	0
+ward	10301008	Female	Indian or Asian	Non-poor	0
+ward	10301008	Female	Other	Non-poor	0
+ward	10301008	Female	White	Non-poor	0
+ward	10301008	Male	Indian or Asian	Multidimensionally poor	0
+ward	10301008	Male	White	Multidimensionally poor	0
+ward	10301008	Male	Indian or Asian	Non-poor	0
+ward	10301008	Male	Other	Non-poor	0
+ward	10301008	Male	White	Non-poor	0
+ward	10301009	Female	Indian or Asian	Multidimensionally poor	0
+ward	10301009	Female	Other	Multidimensionally poor	0
+ward	10301009	Female	White	Multidimensionally poor	0
+ward	10301009	Female	Other	Non-poor	0
+ward	10301009	Male	Indian or Asian	Multidimensionally poor	0
+ward	10301009	Male	Other	Multidimensionally poor	0
+ward	10301009	Male	White	Multidimensionally poor	0
+ward	10301009	Male	Indian or Asian	Non-poor	0
+ward	10301009	Male	Other	Non-poor	0
+ward	10301010	Female	Indian or Asian	Multidimensionally poor	0
+ward	10301010	Female	Other	Multidimensionally poor	0
+ward	10301010	Female	White	Multidimensionally poor	0
+ward	10301010	Female	Indian or Asian	Non-poor	0
+ward	10301010	Male	Indian or Asian	Multidimensionally poor	0
+ward	10301010	Male	Other	Multidimensionally poor	0
+ward	10301010	Male	White	Multidimensionally poor	0
+ward	10301010	Male	Indian or Asian	Non-poor	0
+ward	10301011	Female	Indian or Asian	Multidimensionally poor	0
+ward	10301011	Female	Other	Multidimensionally poor	0
+ward	10301011	Female	White	Multidimensionally poor	0
+ward	10301011	Female	Indian or Asian	Non-poor	0
+ward	10301011	Male	Other	Multidimensionally poor	0
+ward	10301012	Female	Indian or Asian	Multidimensionally poor	0
+ward	10301012	Female	Other	Multidimensionally poor	0
+ward	10301012	Female	White	Multidimensionally poor	0
+ward	10301012	Female	Other	Non-poor	0
+ward	10301012	Male	Indian or Asian	Multidimensionally poor	0
+ward	10301012	Male	Other	Multidimensionally poor	0
+ward	10301012	Male	Other	Non-poor	0
+ward	10301012	Male	White	Non-poor	0
+ward	10301013	Female	Indian or Asian	Multidimensionally poor	0
+ward	10301013	Male	Indian or Asian	Multidimensionally poor	0
+ward	10302001	Female	Other	Multidimensionally poor	0
+ward	10302001	Female	Indian or Asian	Non-poor	0
+ward	10302001	Female	Other	Non-poor	0
+ward	10302001	Male	Indian or Asian	Multidimensionally poor	0
+ward	10302001	Male	Indian or Asian	Non-poor	0
+ward	10302002	Female	Indian or Asian	Non-poor	0
+ward	10302002	Male	Other	Non-poor	0
+ward	10302003	Female	Black African	Multidimensionally poor	0
+ward	10302003	Female	Coloured	Multidimensionally poor	0
+ward	10302003	Female	Indian or Asian	Multidimensionally poor	0
+ward	10302003	Female	Other	Multidimensionally poor	0
+ward	10302003	Female	White	Multidimensionally poor	0
+ward	10302003	Female	Indian or Asian	Non-poor	0
+ward	10302003	Female	Other	Non-poor	0
+ward	10302003	Male	Black African	Multidimensionally poor	0
+ward	10302003	Male	Coloured	Multidimensionally poor	0
+ward	10302003	Male	Indian or Asian	Multidimensionally poor	0
+ward	10302003	Male	Other	Multidimensionally poor	0
+ward	10302003	Male	White	Multidimensionally poor	0
+ward	10302003	Male	Indian or Asian	Non-poor	0
+ward	10302003	Male	Other	Non-poor	0
+ward	10302004	Female	Indian or Asian	Multidimensionally poor	0
+ward	10302004	Female	Other	Multidimensionally poor	0
+ward	10302004	Male	Indian or Asian	Multidimensionally poor	0
+ward	10302004	Male	Other	Multidimensionally poor	0
+ward	10302005	Female	Indian or Asian	Multidimensionally poor	0
+ward	10302005	Female	Other	Multidimensionally poor	0
+ward	10302005	Female	White	Non-poor	0
+ward	10302005	Male	White	Multidimensionally poor	0
+ward	10302005	Male	White	Non-poor	0
+ward	10302006	Female	Indian or Asian	Multidimensionally poor	0
+ward	10302006	Female	White	Multidimensionally poor	0
+ward	10302006	Female	Indian or Asian	Non-poor	0
+ward	10302006	Female	Other	Non-poor	0
+ward	10302006	Male	Indian or Asian	Multidimensionally poor	0
+ward	10302006	Male	White	Multidimensionally poor	0
+ward	10302007	Female	Coloured	Multidimensionally poor	0
+ward	10302007	Female	Indian or Asian	Multidimensionally poor	0
+ward	10302007	Female	Other	Multidimensionally poor	0
+ward	10302007	Female	Indian or Asian	Non-poor	0
+ward	10302007	Male	Black African	Multidimensionally poor	0
+ward	10302007	Male	Indian or Asian	Multidimensionally poor	0
+ward	10302007	Male	Other	Multidimensionally poor	0
+ward	10302007	Male	Indian or Asian	Non-poor	0
+ward	10302008	Female	Indian or Asian	Non-poor	0
+ward	10302008	Male	Indian or Asian	Multidimensionally poor	0
+ward	10302008	Male	Other	Multidimensionally poor	0
+ward	10302009	Female	Indian or Asian	Multidimensionally poor	0
+ward	10302009	Female	Other	Multidimensionally poor	0
+ward	10302009	Female	Indian or Asian	Non-poor	0
+ward	10302009	Female	Other	Non-poor	0
+ward	10302009	Male	Black African	Multidimensionally poor	0
+ward	10302009	Male	Indian or Asian	Multidimensionally poor	0
+ward	10302009	Male	Other	Multidimensionally poor	0
+ward	10302009	Male	Indian or Asian	Non-poor	0
+ward	10302010	Female	Indian or Asian	Multidimensionally poor	0
+ward	10302010	Female	Other	Non-poor	0
+ward	10302011	Female	Indian or Asian	Multidimensionally poor	0
+ward	10302011	Female	Other	Multidimensionally poor	0
+ward	10302011	Female	White	Multidimensionally poor	0
+ward	10302011	Female	Indian or Asian	Non-poor	0
+ward	10302011	Female	Other	Non-poor	0
+ward	10302011	Male	Indian or Asian	Multidimensionally poor	0
+ward	10302011	Male	Other	Multidimensionally poor	0
+ward	10302012	Female	Indian or Asian	Multidimensionally poor	0
+ward	10302012	Female	Other	Multidimensionally poor	0
+ward	10302012	Female	White	Multidimensionally poor	0
+ward	10302012	Female	Indian or Asian	Non-poor	0
+ward	10302012	Female	White	Non-poor	0
+ward	10302012	Male	Indian or Asian	Multidimensionally poor	0
+ward	10302012	Male	White	Multidimensionally poor	0
+ward	10302012	Male	White	Non-poor	0
+ward	10302013	Female	Black African	Multidimensionally poor	0
+ward	10302013	Female	Indian or Asian	Multidimensionally poor	0
+ward	10302013	Female	Other	Multidimensionally poor	0
+ward	10302013	Female	Indian or Asian	Non-poor	0
+ward	10302013	Female	Other	Non-poor	0
+ward	10302013	Male	Indian or Asian	Multidimensionally poor	0
+ward	10302013	Male	Other	Multidimensionally poor	0
+ward	10302013	Male	Indian or Asian	Non-poor	0
+ward	10303001	Female	Indian or Asian	Multidimensionally poor	0
+ward	10303001	Female	Other	Non-poor	0
+ward	10303001	Male	Indian or Asian	Multidimensionally poor	0
+ward	10303001	Male	Other	Multidimensionally poor	0
+ward	10303001	Male	Other	Non-poor	0
+ward	10303002	Female	Other	Non-poor	0
+ward	10303002	Male	Indian or Asian	Multidimensionally poor	0
+ward	10303002	Male	Other	Multidimensionally poor	0
+ward	10303002	Male	Indian or Asian	Non-poor	0
+ward	10303003	Female	White	Multidimensionally poor	0
+ward	10303003	Female	White	Non-poor	0
+ward	10303003	Male	Indian or Asian	Multidimensionally poor	0
+ward	10303003	Male	White	Non-poor	0
+ward	10303004	Female	Indian or Asian	Multidimensionally poor	0
+ward	10303004	Female	Other	Multidimensionally poor	0
+ward	10303004	Male	Indian or Asian	Multidimensionally poor	0
+ward	10303004	Male	Other	Multidimensionally poor	0
+ward	10303005	Female	Indian or Asian	Multidimensionally poor	0
+ward	10303005	Female	Other	Multidimensionally poor	0
+ward	10303005	Female	Indian or Asian	Non-poor	0
+ward	10303005	Male	Indian or Asian	Multidimensionally poor	0
+ward	10303005	Male	Other	Multidimensionally poor	0
+ward	10304001	Female	Indian or Asian	Multidimensionally poor	0
+ward	10304001	Female	Other	Multidimensionally poor	0
+ward	10304001	Female	White	Multidimensionally poor	0
+ward	10304001	Female	Indian or Asian	Non-poor	0
+ward	10304001	Male	Indian or Asian	Multidimensionally poor	0
+ward	10304001	Male	Other	Multidimensionally poor	0
+ward	10304001	Male	Indian or Asian	Non-poor	0
+ward	10304002	Female	Indian or Asian	Multidimensionally poor	0
+ward	10304002	Female	Other	Multidimensionally poor	0
+ward	10304002	Female	Indian or Asian	Non-poor	0
+ward	10304002	Male	Indian or Asian	Multidimensionally poor	0
+ward	10304002	Male	Other	Multidimensionally poor	0
+ward	10304003	Female	Indian or Asian	Multidimensionally poor	0
+ward	10304003	Female	Indian or Asian	Non-poor	0
+ward	10304003	Female	Other	Non-poor	0
+ward	10304003	Male	Indian or Asian	Multidimensionally poor	0
+ward	10304003	Male	Other	Multidimensionally poor	0
+ward	10304003	Male	White	Multidimensionally poor	0
+ward	10304003	Male	Other	Non-poor	0
+ward	10304004	Female	Indian or Asian	Multidimensionally poor	0
+ward	10304004	Female	Other	Non-poor	0
+ward	10304004	Male	Indian or Asian	Multidimensionally poor	0
+ward	10304004	Male	White	Multidimensionally poor	0
+ward	10304004	Male	Other	Non-poor	0
+ward	10304005	Female	White	Multidimensionally poor	0
+ward	10304005	Male	Indian or Asian	Multidimensionally poor	0
+ward	10304005	Male	White	Non-poor	0
+ward	10401001	Female	Other	Multidimensionally poor	0
+ward	10401001	Female	Indian or Asian	Non-poor	0
+ward	10401001	Female	Other	Non-poor	0
+ward	10401001	Male	Other	Multidimensionally poor	0
+ward	10401001	Male	Indian or Asian	Non-poor	0
+ward	10401002	Female	Indian or Asian	Multidimensionally poor	0
+ward	10401002	Female	Other	Multidimensionally poor	0
+ward	10401002	Female	White	Multidimensionally poor	0
+ward	10401002	Female	Indian or Asian	Non-poor	0
+ward	10401002	Male	Indian or Asian	Multidimensionally poor	0
+ward	10401002	Male	Other	Multidimensionally poor	0
+ward	10401002	Male	Indian or Asian	Non-poor	0
+ward	10401003	Female	Other	Multidimensionally poor	0
+ward	10401003	Female	White	Multidimensionally poor	0
+ward	10401003	Male	Indian or Asian	Multidimensionally poor	0
+ward	10401003	Male	Other	Multidimensionally poor	0
+ward	10401003	Male	White	Multidimensionally poor	0
+ward	10401003	Male	Indian or Asian	Non-poor	0
+ward	10401004	Female	Indian or Asian	Non-poor	0
+ward	10401004	Male	Indian or Asian	Multidimensionally poor	0
+ward	10401004	Male	Other	Multidimensionally poor	0
+ward	10401004	Male	Indian or Asian	Non-poor	0
+ward	10402001	Female	Other	Multidimensionally poor	0
+ward	10402001	Female	Other	Non-poor	0
+ward	10402001	Male	Indian or Asian	Multidimensionally poor	0
+ward	10402001	Male	Other	Multidimensionally poor	0
+ward	10402002	Female	Indian or Asian	Multidimensionally poor	0
+ward	10402002	Female	Other	Multidimensionally poor	0
+ward	10402002	Female	Other	Non-poor	0
+ward	10402003	Female	Indian or Asian	Multidimensionally poor	0
+ward	10402003	Female	Indian or Asian	Non-poor	0
+ward	10402003	Female	Other	Non-poor	0
+ward	10402003	Male	Indian or Asian	Multidimensionally poor	0
+ward	10402004	Female	Other	Multidimensionally poor	0
+ward	10402004	Female	White	Multidimensionally poor	0
+ward	10402004	Female	Other	Non-poor	0
+ward	10402004	Male	Other	Multidimensionally poor	0
+ward	10402004	Male	White	Multidimensionally poor	0
+ward	10402005	Female	Indian or Asian	Multidimensionally poor	0
+ward	10402005	Female	Other	Non-poor	0
+ward	10402005	Male	Indian or Asian	Non-poor	0
+ward	10402006	Female	Other	Multidimensionally poor	0
+ward	10402006	Male	Indian or Asian	Multidimensionally poor	0
+ward	10402006	Male	Other	Multidimensionally poor	0
+ward	10402007	Female	Other	Multidimensionally poor	0
+ward	10402007	Male	Indian or Asian	Multidimensionally poor	0
+ward	10402007	Male	Other	Multidimensionally poor	0
+ward	10402007	Male	Other	Non-poor	0
+ward	10402008	Female	Black African	Multidimensionally poor	0
+ward	10402008	Female	Indian or Asian	Multidimensionally poor	0
+ward	10402008	Female	Other	Multidimensionally poor	0
+ward	10402008	Female	White	Multidimensionally poor	0
+ward	10402008	Female	Other	Non-poor	0
+ward	10402008	Female	White	Non-poor	0
+ward	10402008	Male	Indian or Asian	Multidimensionally poor	0
+ward	10402008	Male	Other	Multidimensionally poor	0
+ward	10402008	Male	White	Multidimensionally poor	0
+ward	10402008	Male	Indian or Asian	Non-poor	0
+ward	10402008	Male	Other	Non-poor	0
+ward	10402008	Male	White	Non-poor	0
+ward	10403001	Female	Indian or Asian	Multidimensionally poor	0
+ward	10403001	Female	White	Multidimensionally poor	0
+ward	10403001	Female	Other	Non-poor	0
+ward	10403001	Male	Indian or Asian	Multidimensionally poor	0
+ward	10403001	Male	Other	Multidimensionally poor	0
+ward	10403001	Male	White	Multidimensionally poor	0
+ward	10403001	Male	White	Non-poor	0
+ward	10403002	Female	Indian or Asian	Multidimensionally poor	0
+ward	10403002	Female	Other	Multidimensionally poor	0
+ward	10403002	Female	White	Multidimensionally poor	0
+ward	10403002	Male	White	Multidimensionally poor	0
+ward	10403002	Male	Indian or Asian	Non-poor	0
+ward	10403003	Female	Indian or Asian	Multidimensionally poor	0
+ward	10403003	Female	Indian or Asian	Non-poor	0
+ward	10403003	Female	Other	Non-poor	0
+ward	10403003	Male	White	Multidimensionally poor	0
+ward	10403003	Male	Indian or Asian	Non-poor	0
+ward	10403004	Female	Indian or Asian	Multidimensionally poor	0
+ward	10403004	Female	Other	Multidimensionally poor	0
+ward	10403004	Female	Indian or Asian	Non-poor	0
+ward	10403004	Male	Black African	Multidimensionally poor	0
+ward	10403004	Male	Indian or Asian	Multidimensionally poor	0
+ward	10403004	Male	Other	Multidimensionally poor	0
+ward	10403004	Male	Other	Non-poor	0
+ward	10403005	Female	Other	Multidimensionally poor	0
+ward	10403005	Male	Black African	Multidimensionally poor	0
+ward	10403005	Male	Indian or Asian	Multidimensionally poor	0
+ward	10403005	Male	Other	Multidimensionally poor	0
+ward	10403005	Male	Indian or Asian	Non-poor	0
+ward	10403006	Female	Indian or Asian	Multidimensionally poor	0
+ward	10403006	Female	Other	Multidimensionally poor	0
+ward	10403006	Male	Indian or Asian	Multidimensionally poor	0
+ward	10403006	Male	Other	Multidimensionally poor	0
+ward	10403007	Female	Indian or Asian	Multidimensionally poor	0
+ward	10403007	Female	Other	Multidimensionally poor	0
+ward	10403007	Female	Indian or Asian	Non-poor	0
+ward	10403007	Female	Other	Non-poor	0
+ward	10403007	Male	Indian or Asian	Multidimensionally poor	0
+ward	10403007	Male	Other	Multidimensionally poor	0
+ward	10403007	Male	Other	Non-poor	0
+ward	10403008	Female	Indian or Asian	Multidimensionally poor	0
+ward	10403008	Female	Other	Multidimensionally poor	0
+ward	10403008	Female	Indian or Asian	Non-poor	0
+ward	10403008	Male	Other	Multidimensionally poor	0
+ward	10403008	Male	Indian or Asian	Non-poor	0
+ward	10403008	Male	Other	Non-poor	0
+ward	10403009	Female	Indian or Asian	Multidimensionally poor	0
+ward	10403009	Female	Other	Multidimensionally poor	0
+ward	10403009	Male	Indian or Asian	Multidimensionally poor	0
+ward	10403009	Male	White	Multidimensionally poor	0
+ward	10403010	Female	Black African	Multidimensionally poor	0
+ward	10403010	Female	Indian or Asian	Multidimensionally poor	0
+ward	10403010	Female	Other	Multidimensionally poor	0
+ward	10403010	Female	Other	Non-poor	0
+ward	10403010	Male	Black African	Multidimensionally poor	0
+ward	10403010	Male	Coloured	Multidimensionally poor	0
+ward	10403010	Male	Indian or Asian	Multidimensionally poor	0
+ward	10403010	Male	Other	Multidimensionally poor	0
+ward	10403010	Male	Indian or Asian	Non-poor	0
+ward	10403010	Male	Other	Non-poor	0
+ward	10403011	Female	Indian or Asian	Multidimensionally poor	0
+ward	10403011	Male	Indian or Asian	Multidimensionally poor	0
+ward	10403012	Female	Indian or Asian	Multidimensionally poor	0
+ward	10403012	Female	Other	Multidimensionally poor	0
+ward	10403012	Female	White	Multidimensionally poor	0
+ward	10403012	Female	Other	Non-poor	0
+ward	10403012	Female	White	Non-poor	0
+ward	10403012	Male	White	Multidimensionally poor	0
+ward	10403012	Male	White	Non-poor	0
+ward	10403013	Female	Indian or Asian	Multidimensionally poor	0
+ward	10403013	Female	Other	Multidimensionally poor	0
+ward	10403013	Female	White	Multidimensionally poor	0
+ward	10403013	Female	Other	Non-poor	0
+ward	10403013	Male	Indian or Asian	Multidimensionally poor	0
+ward	10403013	Male	Other	Multidimensionally poor	0
+ward	10403013	Male	White	Multidimensionally poor	0
+ward	10403013	Male	Other	Non-poor	0
+ward	10403014	Female	White	Multidimensionally poor	0
+ward	10403014	Male	White	Multidimensionally poor	0
+ward	10404001	Female	Indian or Asian	Multidimensionally poor	0
+ward	10404001	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404001	Male	Indian or Asian	Non-poor	0
+ward	10404002	Female	Black African	Multidimensionally poor	0
+ward	10404002	Female	Coloured	Multidimensionally poor	0
+ward	10404002	Female	Indian or Asian	Multidimensionally poor	0
+ward	10404002	Female	Other	Multidimensionally poor	0
+ward	10404002	Male	Black African	Multidimensionally poor	0
+ward	10404002	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404002	Male	Other	Multidimensionally poor	0
+ward	10404002	Male	Other	Non-poor	0
+ward	10404003	Female	Black African	Multidimensionally poor	0
+ward	10404003	Female	Indian or Asian	Multidimensionally poor	0
+ward	10404003	Female	Other	Multidimensionally poor	0
+ward	10404003	Female	Indian or Asian	Non-poor	0
+ward	10404003	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404003	Male	Other	Multidimensionally poor	0
+ward	10404003	Male	Indian or Asian	Non-poor	0
+ward	10404004	Female	Indian or Asian	Multidimensionally poor	0
+ward	10404004	Female	Other	Multidimensionally poor	0
+ward	10404004	Female	Indian or Asian	Non-poor	0
+ward	10404004	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404004	Male	Other	Multidimensionally poor	0
+ward	10404004	Male	Other	Non-poor	0
+ward	10404005	Female	Black African	Multidimensionally poor	0
+ward	10404005	Female	Indian or Asian	Multidimensionally poor	0
+ward	10404005	Female	Other	Multidimensionally poor	0
+ward	10404005	Male	Black African	Multidimensionally poor	0
+ward	10404005	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404005	Male	Other	Multidimensionally poor	0
+ward	10404006	Female	Indian or Asian	Multidimensionally poor	0
+ward	10404006	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404007	Female	White	Multidimensionally poor	0
+ward	10404007	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404008	Female	Indian or Asian	Multidimensionally poor	0
+ward	10404008	Female	White	Multidimensionally poor	0
+ward	10404008	Female	Other	Non-poor	0
+ward	10404008	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404008	Male	White	Multidimensionally poor	0
+ward	10404009	Female	Indian or Asian	Multidimensionally poor	0
+ward	10404009	Female	White	Multidimensionally poor	0
+ward	10404009	Female	Indian or Asian	Non-poor	0
+ward	10404009	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404009	Male	White	Multidimensionally poor	0
+ward	10404010	Female	Indian or Asian	Multidimensionally poor	0
+ward	10404010	Female	Other	Multidimensionally poor	0
+ward	10404010	Female	White	Multidimensionally poor	0
+ward	10404010	Female	Indian or Asian	Non-poor	0
+ward	10404010	Female	White	Non-poor	0
+ward	10404010	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404010	Male	Other	Multidimensionally poor	0
+ward	10404010	Male	White	Multidimensionally poor	0
+ward	10404010	Male	Indian or Asian	Non-poor	0
+ward	10404010	Male	White	Non-poor	0
+ward	10404011	Female	Other	Multidimensionally poor	0
+ward	10404011	Female	White	Multidimensionally poor	0
+ward	10404011	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404011	Male	Other	Multidimensionally poor	0
+ward	10404012	Female	Other	Multidimensionally poor	0
+ward	10404012	Female	White	Multidimensionally poor	0
+ward	10404012	Female	Indian or Asian	Non-poor	0
+ward	10404012	Female	Other	Non-poor	0
+ward	10404012	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404012	Male	Other	Multidimensionally poor	0
+ward	10404012	Male	White	Multidimensionally poor	0
+ward	10404012	Male	White	Non-poor	0
+ward	10404013	Female	Indian or Asian	Multidimensionally poor	0
+ward	10404013	Female	Other	Multidimensionally poor	0
+ward	10404013	Female	White	Multidimensionally poor	0
+ward	10404013	Female	Indian or Asian	Non-poor	0
+ward	10404013	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404013	Male	White	Multidimensionally poor	0
+ward	10404014	Female	Indian or Asian	Multidimensionally poor	0
+ward	10404014	Female	Other	Multidimensionally poor	0
+ward	10404014	Male	White	Multidimensionally poor	0
+ward	10404015	Female	Indian or Asian	Multidimensionally poor	0
+ward	10404015	Female	White	Multidimensionally poor	0
+ward	10404015	Female	Indian or Asian	Non-poor	0
+ward	10404015	Female	White	Non-poor	0
+ward	10404015	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404015	Male	Other	Multidimensionally poor	0
+ward	10404015	Male	Indian or Asian	Non-poor	0
+ward	10404015	Male	White	Non-poor	0
+ward	10404016	Female	Indian or Asian	Multidimensionally poor	0
+ward	10404016	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404016	Male	Other	Multidimensionally poor	0
+ward	10404016	Male	White	Multidimensionally poor	0
+ward	10404017	Female	Other	Multidimensionally poor	0
+ward	10404017	Female	Other	Non-poor	0
+ward	10404017	Male	White	Multidimensionally poor	0
+ward	10404018	Female	Coloured	Multidimensionally poor	0
+ward	10404018	Female	Indian or Asian	Multidimensionally poor	0
+ward	10404018	Female	Other	Multidimensionally poor	0
+ward	10404018	Male	Black African	Multidimensionally poor	0
+ward	10404018	Male	Coloured	Multidimensionally poor	0
+ward	10404018	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404018	Male	Other	Multidimensionally poor	0
+ward	10404019	Female	Indian or Asian	Multidimensionally poor	0
+ward	10404019	Male	Black African	Multidimensionally poor	0
+ward	10404019	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404020	Female	Indian or Asian	Multidimensionally poor	0
+ward	10404020	Female	White	Multidimensionally poor	0
+ward	10404020	Female	Indian or Asian	Non-poor	0
+ward	10404020	Female	Other	Non-poor	0
+ward	10404020	Female	White	Non-poor	0
+ward	10404020	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404020	Male	White	Multidimensionally poor	0
+ward	10404020	Male	Indian or Asian	Non-poor	0
+ward	10404020	Male	Other	Non-poor	0
+ward	10404020	Male	White	Non-poor	0
+ward	10404021	Female	Indian or Asian	Multidimensionally poor	0
+ward	10404021	Female	Other	Multidimensionally poor	0
+ward	10404021	Female	White	Multidimensionally poor	0
+ward	10404021	Female	Indian or Asian	Non-poor	0
+ward	10404021	Female	Other	Non-poor	0
+ward	10404021	Female	White	Non-poor	0
+ward	10404021	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404021	Male	Indian or Asian	Non-poor	0
+ward	10404021	Male	White	Non-poor	0
+ward	10404022	Female	Indian or Asian	Multidimensionally poor	0
+ward	10404022	Female	Other	Multidimensionally poor	0
+ward	10404022	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404022	Male	Other	Multidimensionally poor	0
+ward	10404023	Female	Indian or Asian	Multidimensionally poor	0
+ward	10404023	Female	Other	Multidimensionally poor	0
+ward	10404023	Male	Indian or Asian	Multidimensionally poor	0
+ward	10404023	Male	Other	Multidimensionally poor	0
+ward	10404024	Female	Other	Multidimensionally poor	0
+ward	10404024	Female	White	Multidimensionally poor	0
+ward	10404024	Female	Other	Non-poor	0
+ward	10404024	Male	Other	Multidimensionally poor	0
+ward	10404024	Male	Indian or Asian	Non-poor	0
+ward	10404025	Female	Indian or Asian	Multidimensionally poor	0
+ward	10404025	Female	Other	Multidimensionally poor	0
+ward	10404025	Male	Indian or Asian	Non-poor	0
+ward	10405001	Female	Indian or Asian	Multidimensionally poor	0
+ward	10405001	Female	Other	Multidimensionally poor	0
+ward	10405001	Female	White	Multidimensionally poor	0
+ward	10405001	Female	Indian or Asian	Non-poor	0
+ward	10405001	Female	Other	Non-poor	0
+ward	10405001	Male	Other	Multidimensionally poor	0
+ward	10405001	Male	Other	Non-poor	0
+ward	10405002	Female	Black African	Multidimensionally poor	0
+ward	10405002	Female	Indian or Asian	Multidimensionally poor	0
+ward	10405002	Female	Other	Multidimensionally poor	0
+ward	10405002	Female	Indian or Asian	Non-poor	0
+ward	10405002	Male	Indian or Asian	Multidimensionally poor	0
+ward	10405002	Male	Other	Multidimensionally poor	0
+ward	10405002	Male	White	Multidimensionally poor	0
+ward	10405002	Male	Indian or Asian	Non-poor	0
+ward	10405003	Female	Indian or Asian	Multidimensionally poor	0
+ward	10405003	Female	Other	Multidimensionally poor	0
+ward	10405003	Male	Indian or Asian	Multidimensionally poor	0
+ward	10405004	Female	Indian or Asian	Multidimensionally poor	0
+ward	10405004	Female	White	Multidimensionally poor	0
+ward	10405004	Female	Indian or Asian	Non-poor	0
+ward	10405004	Female	Other	Non-poor	0
+ward	10405004	Female	White	Non-poor	0
+ward	10405004	Male	White	Multidimensionally poor	0
+ward	10405004	Male	Indian or Asian	Non-poor	0
+ward	10405005	Female	Indian or Asian	Multidimensionally poor	0
+ward	10405005	Female	White	Multidimensionally poor	0
+ward	10405005	Female	White	Non-poor	0
+ward	10405005	Male	Indian or Asian	Multidimensionally poor	0
+ward	10405005	Male	White	Multidimensionally poor	0
+ward	10405005	Male	Indian or Asian	Non-poor	0
+ward	10405006	Female	Indian or Asian	Multidimensionally poor	0
+ward	10405006	Female	Other	Multidimensionally poor	0
+ward	10405006	Female	White	Multidimensionally poor	0
+ward	10405006	Male	Indian or Asian	Multidimensionally poor	0
+ward	10405006	Male	Other	Multidimensionally poor	0
+ward	10405006	Male	White	Multidimensionally poor	0
+ward	10405007	Female	Indian or Asian	Multidimensionally poor	0
+ward	10405007	Female	Other	Multidimensionally poor	0
+ward	10405007	Female	Indian or Asian	Non-poor	0
+ward	10405007	Male	Other	Multidimensionally poor	0
+ward	10405008	Female	Other	Multidimensionally poor	0
+ward	10405008	Female	White	Multidimensionally poor	0
+ward	10405008	Female	Indian or Asian	Non-poor	0
+ward	10405008	Female	White	Non-poor	0
+ward	10405008	Male	Indian or Asian	Multidimensionally poor	0
+ward	10405008	Male	White	Multidimensionally poor	0
+ward	10405009	Female	Other	Multidimensionally poor	0
+ward	10405009	Female	White	Multidimensionally poor	0
+ward	10405009	Female	Indian or Asian	Non-poor	0
+ward	10405009	Female	White	Non-poor	0
+ward	10405009	Male	White	Multidimensionally poor	0
+ward	10405009	Male	Other	Non-poor	0
+ward	10405009	Male	White	Non-poor	0
+ward	10405010	Female	Other	Multidimensionally poor	0
+ward	10405010	Female	Other	Non-poor	0
+ward	10405010	Male	Other	Multidimensionally poor	0
+ward	10405010	Male	White	Multidimensionally poor	0
+ward	10405010	Male	Indian or Asian	Non-poor	0
+ward	10405010	Male	White	Non-poor	0
+ward	10405011	Female	Indian or Asian	Multidimensionally poor	0
+ward	10405011	Female	Indian or Asian	Non-poor	0
+ward	10405011	Male	Other	Multidimensionally poor	0
+ward	10405011	Male	Indian or Asian	Non-poor	0
+ward	10405012	Female	Indian or Asian	Multidimensionally poor	0
+ward	10405012	Female	Indian or Asian	Non-poor	0
+ward	10405012	Female	Other	Non-poor	0
+ward	10405012	Male	Indian or Asian	Multidimensionally poor	0
+ward	10405012	Male	Other	Multidimensionally poor	0
+ward	10405012	Male	Indian or Asian	Non-poor	0
+ward	10405013	Female	Black African	Multidimensionally poor	0
+ward	10405013	Female	Indian or Asian	Multidimensionally poor	0
+ward	10405013	Female	White	Multidimensionally poor	0
+ward	10405013	Female	Indian or Asian	Non-poor	0
+ward	10405013	Female	White	Non-poor	0
+ward	10405013	Male	Black African	Multidimensionally poor	0
+ward	10405013	Male	Indian or Asian	Multidimensionally poor	0
+ward	10405013	Male	White	Multidimensionally poor	0
+ward	10405013	Male	Indian or Asian	Non-poor	0
+ward	10405013	Male	White	Non-poor	0
+ward	10407001	Female	White	Multidimensionally poor	0
+ward	10407001	Male	Indian or Asian	Multidimensionally poor	0
+ward	10407002	Female	Indian or Asian	Multidimensionally poor	0
+ward	10407002	Female	Other	Multidimensionally poor	0
+ward	10407002	Female	Other	Non-poor	0
+ward	10407002	Male	Indian or Asian	Multidimensionally poor	0
+ward	10407002	Male	Other	Multidimensionally poor	0
+ward	10407003	Female	Indian or Asian	Multidimensionally poor	0
+ward	10407003	Female	Other	Multidimensionally poor	0
+ward	10407003	Female	White	Non-poor	0
+ward	10407003	Male	Indian or Asian	Multidimensionally poor	0
+ward	10407003	Male	White	Multidimensionally poor	0
+ward	10407003	Male	Indian or Asian	Non-poor	0
+ward	10407004	Female	Other	Multidimensionally poor	0
+ward	10407004	Female	White	Multidimensionally poor	0
+ward	10407004	Female	Other	Non-poor	0
+ward	10407004	Male	Indian or Asian	Multidimensionally poor	0
+ward	10407004	Male	White	Multidimensionally poor	0
+ward	10407005	Female	Indian or Asian	Multidimensionally poor	0
+ward	10407005	Female	White	Non-poor	0
+ward	10407005	Male	Coloured	Multidimensionally poor	0
+ward	10407005	Male	Indian or Asian	Multidimensionally poor	0
+ward	10407005	Male	Indian or Asian	Non-poor	0
+ward	10407005	Male	White	Non-poor	0
+ward	10407006	Female	Indian or Asian	Multidimensionally poor	0
+ward	10407006	Female	Other	Multidimensionally poor	0
+ward	10407006	Female	White	Multidimensionally poor	0
+ward	10407006	Female	White	Non-poor	0
+ward	10407006	Male	Coloured	Multidimensionally poor	0
+ward	10407006	Male	Indian or Asian	Multidimensionally poor	0
+ward	10407006	Male	White	Multidimensionally poor	0
+ward	10407006	Male	Coloured	Non-poor	0
+ward	10407006	Male	Indian or Asian	Non-poor	0
+ward	10407006	Male	White	Non-poor	0
+ward	10407007	Female	Indian or Asian	Multidimensionally poor	0
+ward	10408001	Female	Indian or Asian	Multidimensionally poor	0
+ward	10408001	Female	Indian or Asian	Non-poor	0
+ward	10408001	Male	Indian or Asian	Multidimensionally poor	0
+ward	10408001	Male	White	Multidimensionally poor	0
+ward	10408002	Female	Indian or Asian	Non-poor	0
+ward	10408002	Female	Other	Non-poor	0
+ward	10408002	Male	Indian or Asian	Multidimensionally poor	0
+ward	10408002	Male	Other	Multidimensionally poor	0
+ward	10408003	Female	Indian or Asian	Multidimensionally poor	0
+ward	10408003	Female	Other	Non-poor	0
+ward	10408003	Female	White	Non-poor	0
+ward	10408003	Male	Indian or Asian	Multidimensionally poor	0
+ward	10408003	Male	White	Multidimensionally poor	0
+ward	10408003	Male	Indian or Asian	Non-poor	0
+ward	10408004	Female	Indian or Asian	Non-poor	0
+ward	10408004	Male	Indian or Asian	Multidimensionally poor	0
+ward	10408004	Male	White	Multidimensionally poor	0
+ward	10408004	Male	Indian or Asian	Non-poor	0
+ward	10408005	Female	Indian or Asian	Multidimensionally poor	0
+ward	10408005	Female	Other	Multidimensionally poor	0
+ward	10408005	Female	Indian or Asian	Non-poor	0
+ward	10408005	Male	Indian or Asian	Multidimensionally poor	0
+ward	10408005	Male	Other	Multidimensionally poor	0
+ward	10408005	Male	White	Multidimensionally poor	0
+ward	10408005	Male	Indian or Asian	Non-poor	0
+ward	10408006	Female	Indian or Asian	Multidimensionally poor	0
+ward	10408006	Female	White	Multidimensionally poor	0
+ward	10408006	Male	Indian or Asian	Multidimensionally poor	0
+ward	10408006	Male	White	Multidimensionally poor	0
+ward	10408006	Male	White	Non-poor	0
+ward	10408008	Female	Indian or Asian	Multidimensionally poor	0
+ward	10408008	Female	Other	Multidimensionally poor	0
+ward	10408008	Female	White	Multidimensionally poor	0
+ward	10408008	Male	Other	Multidimensionally poor	0
+ward	10408008	Male	White	Multidimensionally poor	0
+ward	10408009	Female	Black African	Multidimensionally poor	0
+ward	10408009	Female	Indian or Asian	Multidimensionally poor	0
+ward	10408009	Female	Other	Multidimensionally poor	0
+ward	10408009	Male	Black African	Multidimensionally poor	0
+ward	10408009	Male	Other	Multidimensionally poor	0
+ward	10408009	Male	Other	Non-poor	0
+ward	10408010	Female	Coloured	Multidimensionally poor	0
+ward	10408010	Female	Indian or Asian	Multidimensionally poor	0
+ward	10408010	Male	Black African	Multidimensionally poor	0
+ward	10501001	Female	Indian or Asian	Multidimensionally poor	0
+ward	10501001	Female	Other	Multidimensionally poor	0
+ward	10501001	Female	Indian or Asian	Non-poor	0
+ward	10501001	Female	Other	Non-poor	0
+ward	10501001	Male	Indian or Asian	Multidimensionally poor	0
+ward	10501001	Male	Other	Multidimensionally poor	0
+ward	10501001	Male	Indian or Asian	Non-poor	0
+ward	10501002	Female	Black African	Multidimensionally poor	0
+ward	10501002	Female	Indian or Asian	Multidimensionally poor	0
+ward	10501002	Female	Other	Multidimensionally poor	0
+ward	10501002	Female	White	Multidimensionally poor	0
+ward	10501002	Female	Indian or Asian	Non-poor	0
+ward	10501002	Male	Black African	Multidimensionally poor	0
+ward	10501002	Male	Coloured	Multidimensionally poor	0
+ward	10501002	Male	Indian or Asian	Multidimensionally poor	0
+ward	10501002	Male	Other	Multidimensionally poor	0
+ward	10501002	Male	Indian or Asian	Non-poor	0
+ward	10501003	Female	Black African	Multidimensionally poor	0
+ward	10501003	Female	Indian or Asian	Multidimensionally poor	0
+ward	10501003	Female	White	Multidimensionally poor	0
+ward	10501003	Female	Black African	Non-poor	0
+ward	10501003	Female	Indian or Asian	Non-poor	0
+ward	10501003	Male	Black African	Multidimensionally poor	0
+ward	10501003	Male	Coloured	Multidimensionally poor	0
+ward	10501003	Male	Indian or Asian	Multidimensionally poor	0
+ward	10501003	Male	Other	Multidimensionally poor	0
+ward	10501003	Male	White	Multidimensionally poor	0
+ward	10501003	Male	Black African	Non-poor	0
+ward	10501003	Male	Indian or Asian	Non-poor	0
+ward	10501003	Male	Other	Non-poor	0
+ward	10501004	Female	Indian or Asian	Multidimensionally poor	0
+ward	10501004	Female	Other	Multidimensionally poor	0
+ward	10501004	Female	Indian or Asian	Non-poor	0
+ward	10501004	Female	Other	Non-poor	0
+ward	10501004	Female	White	Non-poor	0
+ward	10501004	Male	Indian or Asian	Multidimensionally poor	0
+ward	10501004	Male	Other	Multidimensionally poor	0
+ward	10501004	Male	Indian or Asian	Non-poor	0
+ward	10501004	Male	Other	Non-poor	0
+ward	10502001	Female	Other	Multidimensionally poor	0
+ward	10502001	Female	Indian or Asian	Non-poor	0
+ward	10502001	Female	Other	Non-poor	0
+ward	10502001	Male	Other	Multidimensionally poor	0
+ward	10502001	Male	White	Multidimensionally poor	0
+ward	10502002	Female	Indian or Asian	Multidimensionally poor	0
+ward	10502002	Female	Other	Multidimensionally poor	0
+ward	10502002	Female	Indian or Asian	Non-poor	0
+ward	10502002	Female	Other	Non-poor	0
+ward	10502002	Male	Black African	Multidimensionally poor	0
+ward	10502002	Male	Indian or Asian	Multidimensionally poor	0
+ward	10502002	Male	Other	Multidimensionally poor	0
+ward	10502002	Male	Indian or Asian	Non-poor	0
+ward	10502003	Female	Black African	Multidimensionally poor	0
+ward	10502003	Female	Indian or Asian	Multidimensionally poor	0
+ward	10502003	Female	Other	Multidimensionally poor	0
+ward	10502003	Female	White	Multidimensionally poor	0
+ward	10502003	Female	Indian or Asian	Non-poor	0
+ward	10502003	Female	White	Non-poor	0
+ward	10502003	Male	Indian or Asian	Multidimensionally poor	0
+ward	10502003	Male	Other	Multidimensionally poor	0
+ward	10502003	Male	White	Multidimensionally poor	0
+ward	10502003	Male	Black African	Non-poor	0
+ward	10502003	Male	Indian or Asian	Non-poor	0
+ward	10502003	Male	White	Non-poor	0
+ward	10502004	Female	Indian or Asian	Multidimensionally poor	0
+ward	10502004	Female	Other	Multidimensionally poor	0
+ward	10502004	Female	Black African	Non-poor	0
+ward	10502004	Female	Indian or Asian	Non-poor	0
+ward	10502004	Female	Other	Non-poor	0
+ward	10502004	Male	Indian or Asian	Multidimensionally poor	0
+ward	10502004	Male	Other	Multidimensionally poor	0
+ward	10502004	Male	Indian or Asian	Non-poor	0
+ward	10502004	Male	Other	Non-poor	0
+ward	10503001	Female	Indian or Asian	Multidimensionally poor	0
+ward	10503001	Female	Other	Multidimensionally poor	0
+ward	10503001	Female	White	Multidimensionally poor	0
+ward	10503001	Female	Other	Non-poor	0
+ward	10503001	Male	Indian or Asian	Multidimensionally poor	0
+ward	10503001	Male	Indian or Asian	Non-poor	0
+ward	10503002	Female	Other	Multidimensionally poor	0
+ward	10503002	Female	Indian or Asian	Non-poor	0
+ward	10503002	Female	Other	Non-poor	0
+ward	10503002	Male	Indian or Asian	Multidimensionally poor	0
+ward	10503002	Male	Other	Multidimensionally poor	0
+ward	10503002	Male	White	Multidimensionally poor	0
+ward	10503002	Male	Indian or Asian	Non-poor	0
+ward	10503003	Female	Indian or Asian	Multidimensionally poor	0
+ward	10503003	Female	Other	Multidimensionally poor	0
+ward	10503003	Female	White	Multidimensionally poor	0
+ward	10503003	Female	Other	Non-poor	0
+ward	10503003	Female	White	Non-poor	0
+ward	10503003	Male	Other	Multidimensionally poor	0
+ward	10503003	Male	White	Multidimensionally poor	0
+ward	10503003	Male	Other	Non-poor	0
+ward	10503003	Male	White	Non-poor	0
+ward	10503004	Female	Indian or Asian	Multidimensionally poor	0
+ward	10503004	Female	Other	Multidimensionally poor	0
+ward	10503004	Male	Indian or Asian	Multidimensionally poor	0
+ward	10503004	Male	Other	Multidimensionally poor	0
+ward	10503005	Female	Indian or Asian	Multidimensionally poor	0
+ward	10503005	Female	White	Multidimensionally poor	0
+ward	10503005	Female	White	Non-poor	0
+ward	10503005	Male	White	Multidimensionally poor	0
+ward	10503005	Male	Indian or Asian	Non-poor	0
+ward	10503005	Male	White	Non-poor	0
+ward	10503006	Female	Indian or Asian	Multidimensionally poor	0
+ward	10503006	Female	Other	Multidimensionally poor	0
+ward	10503006	Female	White	Multidimensionally poor	0
+ward	10503006	Female	Other	Non-poor	0
+ward	10503006	Male	White	Multidimensionally poor	0
+ward	10503006	Male	White	Non-poor	0
+ward	10503007	Female	Indian or Asian	Multidimensionally poor	0
+ward	10503007	Female	Other	Multidimensionally poor	0
+ward	10503007	Female	White	Multidimensionally poor	0
+ward	19100001	Female	Other	Multidimensionally poor	0
+ward	19100001	Male	Other	Multidimensionally poor	0
+ward	19100002	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100002	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100005	Female	Other	Multidimensionally poor	0
+ward	19100005	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100007	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100007	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100008	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100008	Male	Other	Multidimensionally poor	0
+ward	19100009	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100009	Female	White	Multidimensionally poor	0
+ward	19100009	Male	White	Multidimensionally poor	0
+ward	19100012	Female	White	Multidimensionally poor	0
+ward	19100012	Male	White	Multidimensionally poor	0
+ward	19100013	Female	White	Multidimensionally poor	0
+ward	19100015	Female	Other	Multidimensionally poor	0
+ward	19100015	Male	Other	Multidimensionally poor	0
+ward	19100016	Female	White	Multidimensionally poor	0
+ward	19100017	Female	White	Multidimensionally poor	0
+ward	19100018	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100018	Female	Other	Multidimensionally poor	0
+ward	19100018	Female	White	Multidimensionally poor	0
+ward	19100018	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100018	Male	White	Multidimensionally poor	0
+ward	19100018	Male	Indian or Asian	Non-poor	0
+ward	19100018	Male	White	Non-poor	0
+ward	19100020	Female	White	Multidimensionally poor	0
+ward	19100021	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100021	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100021	Male	Other	Multidimensionally poor	0
+ward	19100022	Female	White	Multidimensionally poor	0
+ward	19100023	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100023	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100023	Male	Other	Multidimensionally poor	0
+ward	19100024	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100024	Female	White	Multidimensionally poor	0
+ward	19100024	Female	White	Non-poor	0
+ward	19100024	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100024	Male	White	Multidimensionally poor	0
+ward	19100025	Female	White	Multidimensionally poor	0
+ward	19100025	Male	White	Multidimensionally poor	0
+ward	19100027	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100028	Female	White	Multidimensionally poor	0
+ward	19100028	Male	White	Multidimensionally poor	0
+ward	19100029	Female	White	Multidimensionally poor	0
+ward	19100029	Male	White	Multidimensionally poor	0
+ward	19100029	Male	White	Non-poor	0
+ward	19100031	Male	White	Multidimensionally poor	0
+ward	19100033	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100033	Male	White	Multidimensionally poor	0
+ward	19100034	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100034	Female	White	Multidimensionally poor	0
+ward	19100035	Female	White	Multidimensionally poor	0
+ward	19100035	Female	Indian or Asian	Non-poor	0
+ward	19100035	Female	White	Non-poor	0
+ward	19100035	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100035	Male	White	Multidimensionally poor	0
+ward	19100036	Female	Indian or Asian	Non-poor	0
+ward	19100036	Female	Other	Non-poor	0
+ward	19100036	Female	White	Non-poor	0
+ward	19100036	Male	Indian or Asian	Non-poor	0
+ward	19100037	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100037	Male	Coloured	Multidimensionally poor	0
+ward	19100037	Male	White	Multidimensionally poor	0
+ward	19100037	Male	Indian or Asian	Non-poor	0
+ward	19100038	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100038	Female	Indian or Asian	Non-poor	0
+ward	19100038	Female	Other	Non-poor	0
+ward	19100038	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100038	Male	White	Multidimensionally poor	0
+ward	19100038	Male	White	Non-poor	0
+ward	19100039	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100039	Female	White	Multidimensionally poor	0
+ward	19100039	Female	Coloured	Non-poor	0
+ward	19100039	Female	Indian or Asian	Non-poor	0
+ward	19100039	Male	Coloured	Multidimensionally poor	0
+ward	19100039	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100039	Male	White	Multidimensionally poor	0
+ward	19100040	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100040	Female	White	Multidimensionally poor	0
+ward	19100040	Female	Indian or Asian	Non-poor	0
+ward	19100040	Female	Other	Non-poor	0
+ward	19100040	Female	White	Non-poor	0
+ward	19100040	Male	White	Multidimensionally poor	0
+ward	19100040	Male	Indian or Asian	Non-poor	0
+ward	19100040	Male	White	Non-poor	0
+ward	19100041	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100041	Female	Other	Multidimensionally poor	0
+ward	19100041	Female	White	Multidimensionally poor	0
+ward	19100041	Female	Indian or Asian	Non-poor	0
+ward	19100041	Female	Other	Non-poor	0
+ward	19100041	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100041	Male	White	Multidimensionally poor	0
+ward	19100041	Male	White	Non-poor	0
+ward	19100042	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100042	Female	White	Multidimensionally poor	0
+ward	19100042	Male	White	Multidimensionally poor	0
+ward	19100044	Female	White	Multidimensionally poor	0
+ward	19100044	Male	White	Multidimensionally poor	0
+ward	19100045	Female	White	Multidimensionally poor	0
+ward	19100045	Male	White	Multidimensionally poor	0
+ward	19100046	Female	White	Multidimensionally poor	0
+ward	19100046	Male	White	Multidimensionally poor	0
+ward	19100047	Female	Other	Multidimensionally poor	0
+ward	19100047	Male	White	Multidimensionally poor	0
+ward	19100047	Male	White	Non-poor	0
+ward	19100048	Male	White	Multidimensionally poor	0
+ward	19100049	Female	White	Multidimensionally poor	0
+ward	19100050	Female	White	Multidimensionally poor	0
+ward	19100051	Female	White	Multidimensionally poor	0
+ward	19100051	Male	Coloured	Multidimensionally poor	0
+ward	19100051	Male	White	Non-poor	0
+ward	19100052	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100052	Female	Other	Multidimensionally poor	0
+ward	19100052	Female	White	Multidimensionally poor	0
+ward	19100052	Female	Indian or Asian	Non-poor	0
+ward	19100052	Female	Other	Non-poor	0
+ward	19100052	Female	White	Non-poor	0
+ward	19100052	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100052	Male	White	Multidimensionally poor	0
+ward	19100052	Male	Indian or Asian	Non-poor	0
+ward	19100052	Male	Other	Non-poor	0
+ward	19100053	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100053	Female	Other	Multidimensionally poor	0
+ward	19100054	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100056	Male	White	Multidimensionally poor	0
+ward	19100058	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100058	Female	Other	Multidimensionally poor	0
+ward	19100058	Male	Other	Multidimensionally poor	0
+ward	19100062	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100062	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100062	Male	Other	Multidimensionally poor	0
+ward	19100065	Male	White	Multidimensionally poor	0
+ward	19100066	Male	White	Multidimensionally poor	0
+ward	19100068	Female	Other	Multidimensionally poor	0
+ward	19100068	Female	White	Multidimensionally poor	0
+ward	19100069	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100070	Female	Other	Multidimensionally poor	0
+ward	19100070	Male	Other	Multidimensionally poor	0
+ward	19100071	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100071	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100073	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100073	Male	Other	Multidimensionally poor	0
+ward	19100074	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100075	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100075	Female	White	Multidimensionally poor	0
+ward	19100075	Male	White	Multidimensionally poor	0
+ward	19100076	Female	Other	Multidimensionally poor	0
+ward	19100077	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100078	Male	White	Multidimensionally poor	0
+ward	19100080	Female	White	Multidimensionally poor	0
+ward	19100081	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100081	Female	White	Multidimensionally poor	0
+ward	19100081	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100081	Male	White	Multidimensionally poor	0
+ward	19100082	Male	White	Multidimensionally poor	0
+ward	19100083	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100083	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100084	Female	Other	Multidimensionally poor	0
+ward	19100084	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100085	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100086	Male	White	Multidimensionally poor	0
+ward	19100087	Female	Other	Multidimensionally poor	0
+ward	19100087	Female	Indian or Asian	Non-poor	0
+ward	19100087	Female	White	Non-poor	0
+ward	19100087	Male	White	Multidimensionally poor	0
+ward	19100087	Male	White	Non-poor	0
+ward	19100089	Female	Other	Multidimensionally poor	0
+ward	19100089	Female	White	Multidimensionally poor	0
+ward	19100089	Male	White	Multidimensionally poor	0
+ward	19100090	Female	Other	Multidimensionally poor	0
+ward	19100090	Female	Indian or Asian	Non-poor	0
+ward	19100090	Male	White	Multidimensionally poor	0
+ward	19100090	Male	Indian or Asian	Non-poor	0
+ward	19100091	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100091	Female	Other	Multidimensionally poor	0
+ward	19100091	Female	White	Multidimensionally poor	0
+ward	19100091	Female	White	Non-poor	0
+ward	19100091	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100091	Male	Indian or Asian	Non-poor	0
+ward	19100091	Male	White	Non-poor	0
+ward	19100092	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100093	Female	White	Multidimensionally poor	0
+ward	19100093	Female	White	Non-poor	0
+ward	19100093	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100093	Male	White	Multidimensionally poor	0
+ward	19100094	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100094	Female	White	Multidimensionally poor	0
+ward	19100094	Female	Indian or Asian	Non-poor	0
+ward	19100094	Female	White	Non-poor	0
+ward	19100094	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100094	Male	White	Multidimensionally poor	0
+ward	19100095	Male	White	Non-poor	0
+ward	19100096	Female	Indian or Asian	Non-poor	0
+ward	19100096	Female	White	Non-poor	0
+ward	19100096	Male	White	Multidimensionally poor	0
+ward	19100096	Male	Indian or Asian	Non-poor	0
+ward	19100097	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100097	Female	White	Multidimensionally poor	0
+ward	19100097	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100097	Male	White	Multidimensionally poor	0
+ward	19100098	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100098	Female	Indian or Asian	Non-poor	0
+ward	19100098	Female	White	Non-poor	0
+ward	19100098	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100098	Male	White	Multidimensionally poor	0
+ward	19100099	Male	White	Multidimensionally poor	0
+ward	19100100	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100101	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100101	Female	White	Multidimensionally poor	0
+ward	19100101	Male	White	Multidimensionally poor	0
+ward	19100102	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100102	Female	Other	Multidimensionally poor	0
+ward	19100102	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100102	Male	Other	Multidimensionally poor	0
+ward	19100103	Female	Indian or Asian	Multidimensionally poor	0
+ward	19100103	Female	Other	Multidimensionally poor	0
+ward	19100103	Male	Black African	Multidimensionally poor	0
+ward	19100103	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100104	Female	White	Multidimensionally poor	0
+ward	19100104	Female	Indian or Asian	Non-poor	0
+ward	19100107	Male	Other	Multidimensionally poor	0
+ward	19100108	Female	White	Multidimensionally poor	0
+ward	19100109	Male	White	Multidimensionally poor	0
+ward	19100110	Female	White	Multidimensionally poor	0
+ward	19100110	Male	Indian or Asian	Multidimensionally poor	0
+ward	19100110	Male	White	Multidimensionally poor	0
 \.
 
 
