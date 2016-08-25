@@ -3892,6 +3892,341 @@ ward	19100111	Male	White	204
 ward	19100111	Female	White	196
 ward	19100111	Male	Other	96
 ward	19100111	Female	Other	67
+ward	10503006	Female	Other	0
+ward	10301008	Male	White	0
+ward	10501004	Female	Indian or Asian	0
+ward	10301006	Female	Indian or Asian	0
+ward	10203030	Female	Other	0
+ward	10205009	Female	White	0
+ward	10404015	Female	White	0
+ward	10302009	Male	Indian or Asian	0
+ward	10404009	Female	Indian or Asian	0
+ward	10105009	Female	Indian or Asian	0
+ward	10206010	Female	Other	0
+ward	10403010	Male	Other	0
+ward	10204012	Female	Other	0
+ward	10302013	Female	Indian or Asian	0
+ward	19100024	Female	White	0
+ward	10407006	Male	Coloured	0
+ward	10206010	Female	White	0
+ward	10301011	Female	Indian or Asian	0
+ward	10206008	Male	Indian or Asian	0
+ward	10203030	Female	White	0
+ward	10205009	Female	Other	0
+ward	10203010	Female	Other	0
+ward	10405011	Female	Indian or Asian	0
+ward	10302003	Female	Other	0
+ward	10302013	Female	Other	0
+ward	10204016	Female	Indian or Asian	0
+ward	10501002	Male	Indian or Asian	0
+ward	10203017	Male	Other	0
+ward	10407006	Female	White	0
+ward	10404013	Female	Indian or Asian	0
+ward	10105009	Female	White	0
+ward	10404015	Female	Indian or Asian	0
+ward	10301007	Female	Indian or Asian	0
+ward	10101002	Female	Other	0
+ward	10303001	Male	Other	0
+ward	10404004	Male	Other	0
+ward	10301010	Male	Indian or Asian	0
+ward	10203012	Male	White	0
+ward	10301008	Male	Indian or Asian	0
+ward	10302003	Female	Indian or Asian	0
+ward	10405012	Male	Indian or Asian	0
+ward	10204013	Female	Indian or Asian	0
+ward	10501004	Female	Other	0
+ward	10206011	Female	Indian or Asian	0
+ward	10204003	Female	Other	0
+ward	10303002	Male	Indian or Asian	0
+ward	10203013	Female	White	0
+ward	10104013	Male	White	0
+ward	10405002	Male	Indian or Asian	0
+ward	10404021	Male	Indian or Asian	0
+ward	10206010	Female	Indian or Asian	0
+ward	19100018	Male	Indian or Asian	0
+ward	10205008	Female	Indian or Asian	0
+ward	10102003	Female	Other	0
+ward	10104004	Female	White	0
+ward	10302011	Female	Other	0
+ward	10103002	Male	White	0
+ward	10205015	Female	Other	0
+ward	10405005	Female	White	0
+ward	10405010	Male	White	0
+ward	10404012	Male	White	0
+ward	10405009	Male	White	0
+ward	10204018	Female	Other	0
+ward	10203002	Male	Other	0
+ward	10502004	Female	Other	0
+ward	10203014	Female	White	0
+ward	10502003	Female	Indian or Asian	0
+ward	10104011	Female	Other	0
+ward	10104008	Male	Indian or Asian	0
+ward	10401001	Female	Other	0
+ward	10302001	Male	Indian or Asian	0
+ward	10203020	Male	White	0
+ward	10408001	Female	Indian or Asian	0
+municipality	WC051	Female	Indian or Asian	0
+ward	19100093	Female	White	0
+ward	10103002	Male	Indian or Asian	0
+ward	10203027	Female	White	0
+ward	10203002	Male	Indian or Asian	0
+ward	10502004	Female	Indian or Asian	0
+ward	10404002	Male	Other	0
+ward	19100018	Male	White	0
+ward	10304001	Male	Indian or Asian	0
+ward	10203031	Male	Other	0
+ward	10302007	Male	Indian or Asian	0
+ward	10203005	Male	White	0
+ward	10301003	Male	Indian or Asian	0
+ward	10205002	Female	Indian or Asian	0
+ward	10103002	Female	Black African	0
+ward	10104010	Female	Other	0
+ward	10502003	Female	White	0
+ward	10501003	Female	Indian or Asian	0
+ward	10203008	Male	White	0
+ward	10302012	Male	White	0
+ward	10403008	Female	Indian or Asian	0
+ward	10202010	Male	Indian or Asian	0
+ward	10403007	Male	Other	0
+ward	10102005	Female	Other	0
+ward	10203006	Male	White	0
+ward	10206009	Male	Indian or Asian	0
+ward	10408005	Male	Indian or Asian	0
+ward	10503005	Female	White	0
+ward	10204021	Male	Indian or Asian	0
+ward	10501001	Female	Other	0
+ward	19100098	Female	Indian or Asian	0
+ward	19100040	Male	White	0
+ward	10301012	Female	Other	0
+ward	10204006	Female	Indian or Asian	0
+ward	10302005	Male	White	0
+ward	10404003	Female	Indian or Asian	0
+ward	10203006	Male	Indian or Asian	0
+ward	10203008	Male	Indian or Asian	0
+ward	10105011	Male	White	0
+ward	10501001	Female	Indian or Asian	0
+ward	10102004	Female	Other	0
+ward	10203007	Female	White	0
+ward	10408006	Male	White	0
+ward	10401002	Female	Indian or Asian	0
+ward	10404020	Male	Indian or Asian	0
+ward	10503002	Male	Indian or Asian	0
+ward	10403013	Female	Other	0
+ward	10102005	Female	Indian or Asian	0
+ward	10205017	Female	Indian or Asian	0
+ward	10408009	Male	Other	0
+ward	10104002	Male	White	0
+ward	10405001	Female	Indian or Asian	0
+ward	10301009	Female	Other	0
+ward	10205018	Male	Indian or Asian	0
+ward	10404010	Male	White	0
+ward	10304003	Female	Indian or Asian	0
+ward	10205010	Female	Other	0
+ward	10204014	Male	Indian or Asian	0
+ward	19100052	Male	Indian or Asian	0
+ward	10502002	Female	Other	0
+ward	10402008	Female	Other	0
+ward	10203021	Male	White	0
+ward	10205013	Male	Indian or Asian	0
+ward	10203016	Female	Indian or Asian	0
+ward	10205010	Female	White	0
+ward	10402008	Female	White	0
+ward	10204015	Female	Indian or Asian	0
+ward	10405004	Female	White	0
+ward	10203009	Female	Indian or Asian	0
+ward	10408003	Male	Indian or Asian	0
+ward	10203024	Female	Other	0
+ward	10404024	Female	Other	0
+ward	19100047	Male	White	0
+ward	10404017	Female	Other	0
+ward	10404010	Male	Indian or Asian	0
+ward	10205017	Female	White	0
+ward	10203024	Female	Indian or Asian	0
+ward	10202001	Male	White	0
+ward	10206005	Male	Other	0
+ward	10205005	Female	Indian or Asian	0
+ward	10206004	Male	Indian or Asian	0
+ward	10206006	Female	Indian or Asian	0
+ward	10105002	Female	Other	0
+ward	10205011	Male	White	0
+ward	10202002	Male	Indian or Asian	0
+ward	10103005	Female	Indian or Asian	0
+ward	10503003	Male	Other	0
+ward	10403004	Female	Indian or Asian	0
+ward	10203009	Female	White	0
+ward	10204015	Female	White	0
+ward	10103006	Female	Other	0
+ward	10405004	Female	Indian or Asian	0
+ward	10203016	Female	White	0
+ward	10502002	Female	Indian or Asian	0
+ward	10204003	Male	Indian or Asian	0
+ward	10105005	Female	Indian or Asian	0
+ward	10407006	Male	Indian or Asian	0
+ward	10205009	Male	White	0
+ward	10404021	Female	Other	0
+ward	10302009	Female	Indian or Asian	0
+ward	10401003	Male	Indian or Asian	0
+ward	10403010	Female	Other	0
+ward	10204013	Male	Other	0
+ward	10203012	Female	Indian or Asian	0
+ward	10301008	Female	White	0
+ward	10501004	Male	Indian or Asian	0
+ward	10405008	Female	White	0
+ward	10402003	Female	Indian or Asian	0
+ward	10503006	Male	White	0
+ward	10302003	Male	Other	0
+ward	10301008	Female	Other	0
+ward	10302013	Male	Indian or Asian	0
+ward	10203017	Female	Indian or Asian	0
+ward	10206008	Female	Indian or Asian	0
+ward	10404021	Female	White	0
+ward	10203003	Male	Indian or Asian	0
+ward	10301008	Female	Indian or Asian	0
+ward	10301010	Female	Indian or Asian	0
+ward	10203012	Female	White	0
+ward	10501002	Female	Indian or Asian	0
+ward	10407006	Male	White	0
+ward	10105009	Male	White	0
+ward	10102006	Female	Other	0
+ward	10206008	Female	Other	0
+ward	10404015	Male	Indian or Asian	0
+ward	10203013	Male	White	0
+ward	10405002	Female	Indian or Asian	0
+ward	10302009	Female	Other	0
+ward	10404021	Female	Indian or Asian	0
+ward	10405012	Female	Indian or Asian	0
+ward	10204013	Male	Indian or Asian	0
+ward	10501004	Male	Other	0
+ward	10206011	Male	Indian or Asian	0
+ward	10103002	Female	White	0
+ward	10203027	Male	Indian or Asian	0
+ward	10404012	Female	White	0
+ward	10203011	Female	Other	0
+ward	10408004	Male	Indian or Asian	0
+ward	10205014	Male	White	0
+ward	10203005	Female	Indian or Asian	0
+ward	10104004	Male	White	0
+ward	19100038	Female	Indian or Asian	0
+ward	10205002	Male	White	0
+ward	10407003	Male	Indian or Asian	0
+ward	10402001	Female	Other	0
+ward	10302006	Female	Indian or Asian	0
+ward	10405009	Female	White	0
+ward	10407004	Female	Other	0
+ward	10502004	Male	Other	0
+ward	10204020	Female	Indian or Asian	0
+ward	10206002	Female	Indian or Asian	0
+ward	10103002	Female	Other	0
+ward	10205020	Male	Indian or Asian	0
+ward	10403012	Male	White	0
+ward	10404012	Female	Other	0
+ward	10502003	Male	Indian or Asian	0
+ward	10405010	Female	Other	0
+ward	10104011	Male	Indian or Asian	0
+ward	10304001	Female	Indian or Asian	0
+ward	19100039	Female	Indian or Asian	0
+ward	10302007	Female	Indian or Asian	0
+ward	10302001	Female	Other	0
+ward	10203005	Female	White	0
+ward	10205016	Male	White	0
+ward	10405005	Male	Indian or Asian	0
+municipality	WC051	Male	Indian or Asian	0
+ward	10502004	Male	Indian or Asian	0
+ward	10203027	Male	White	0
+ward	19100087	Male	White	0
+ward	10502003	Male	White	0
+ward	10203020	Female	Indian or Asian	0
+ward	10503002	Female	Other	0
+ward	10403005	Male	Indian or Asian	0
+ward	10202010	Female	Indian or Asian	0
+ward	10403007	Female	Other	0
+ward	10206009	Female	Indian or Asian	0
+ward	10203006	Female	White	0
+ward	19100041	Female	Other	0
+ward	10105011	Female	Indian or Asian	0
+ward	10501003	Male	Indian or Asian	0
+ward	10203008	Female	White	0
+ward	10302012	Female	White	0
+ward	19100094	Female	Indian or Asian	0
+ward	10301012	Male	Other	0
+ward	10408005	Female	Indian or Asian	0
+ward	10203006	Female	Other	0
+ward	10501003	Female	Black African	0
+ward	10503005	Male	White	0
+ward	10501001	Male	Indian or Asian	0
+ward	10105011	Female	White	0
+ward	10302012	Female	Indian or Asian	0
+ward	10404003	Male	Indian or Asian	0
+ward	10202009	Male	Other	0
+ward	10203006	Female	Indian or Asian	0
+ward	10204005	Female	Other	0
+ward	10403013	Male	Other	0
+ward	19100041	Female	Indian or Asian	0
+ward	10206009	Female	Other	0
+ward	10501003	Male	Other	0
+ward	10105011	Female	Other	0
+ward	19100094	Female	White	0
+ward	10402002	Female	Other	0
+ward	19100040	Female	Indian or Asian	0
+ward	10104001	Male	White	0
+ward	10401002	Male	Indian or Asian	0
+ward	10404020	Female	Indian or Asian	0
+ward	10301009	Male	Other	0
+ward	10202002	Female	Other	0
+ward	10403004	Male	Other	0
+ward	10404010	Female	White	0
+ward	10402008	Male	Other	0
+ward	10204014	Female	Indian or Asian	0
+ward	19100052	Female	Indian or Asian	0
+ward	10205017	Male	Indian or Asian	0
+ward	10303003	Female	White	0
+ward	10203024	Male	White	0
+ward	10104002	Female	White	0
+ward	10105002	Male	Indian or Asian	0
+ward	10202001	Female	Indian or Asian	0
+ward	10102002	Male	Indian or Asian	0
+ward	10104002	Female	Other	0
+ward	10104012	Female	Indian or Asian	0
+ward	10202003	Female	Indian or Asian	0
+ward	10104009	Female	White	0
+ward	10203021	Female	White	0
+ward	10205013	Female	Indian or Asian	0
+ward	10402008	Male	White	0
+ward	10205010	Male	White	0
+ward	10203016	Male	Indian or Asian	0
+ward	10403003	Female	Indian or Asian	0
+ward	10205017	Male	White	0
+ward	10205005	Male	Indian or Asian	0
+ward	10202001	Female	White	0
+ward	10206005	Female	Other	0
+ward	10502001	Female	Other	0
+ward	19100091	Female	White	0
+ward	10404010	Female	Indian or Asian	0
+ward	10503003	Female	White	0
+ward	10205013	Female	Other	0
+ward	10503001	Male	Indian or Asian	0
+ward	10204014	Female	White	0
+ward	19100052	Female	White	0
+ward	10403001	Male	White	0
+ward	10202002	Female	Indian or Asian	0
+ward	10205013	Female	White	0
+ward	10301009	Male	Indian or Asian	0
+ward	10304003	Male	Other	0
+ward	10503003	Female	Other	0
+ward	10407005	Male	Indian or Asian	0
+ward	10203009	Male	White	0
+ward	10502002	Male	Indian or Asian	0
+ward	10203016	Male	White	0
+ward	10402004	Female	Other	0
+ward	10204014	Female	Other	0
+ward	19100052	Female	Other	0
+ward	10402008	Male	Indian or Asian	0
+ward	10103006	Male	Other	0
+ward	10303005	Female	Indian or Asian	0
+ward	10104012	Female	White	0
+ward	10206006	Male	Indian or Asian	0
+ward	10101008	Female	Other	0
+ward	10405001	Male	Other	0
 \.
 
 

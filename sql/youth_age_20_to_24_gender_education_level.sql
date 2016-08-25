@@ -4182,6 +4182,51 @@ ward	19100111	Male	Matric	663
 ward	19100111	Female	Matric	821
 ward	19100111	Male	Tertiary	62
 ward	19100111	Female	Tertiary	78
+ward	10102001	Female	Tertiary	0
+ward	10103002	Female	Tertiary	0
+ward	10103002	Male	Tertiary	0
+ward	10104004	Female	Tertiary	0
+ward	10105010	Female	Less than Grade9	0
+ward	10202010	Male	Tertiary	0
+ward	10203002	Male	Grade 9	0
+ward	10203004	Female	Grade 9	0
+ward	10204007	Female	Grade 9	0
+ward	10204007	Female	Less than Grade9	0
+ward	10204009	Female	Grade 9	0
+ward	10204009	Female	Less than Grade9	0
+ward	10204009	Male	Grade 9	0
+ward	10204009	Male	Less than Grade9	0
+ward	10206006	Male	Tertiary	0
+ward	10206012	Male	Tertiary	0
+ward	10301007	Female	Tertiary	0
+ward	10301012	Male	Tertiary	0
+ward	10302001	Female	Tertiary	0
+ward	10302003	Male	Grade 9	0
+ward	10401001	Female	Tertiary	0
+ward	10402008	Male	Tertiary	0
+ward	10403010	Female	Grade 9	0
+ward	10404002	Female	Grade 9	0
+ward	10404002	Male	Grade 9	0
+ward	10404003	Female	Less than Grade9	0
+ward	10404018	Female	Grade 9	0
+ward	10404018	Male	Grade 9	0
+ward	10405010	Female	Tertiary	0
+ward	10405010	Male	Tertiary	0
+ward	10405012	Female	Tertiary	0
+ward	10407006	Male	Tertiary	0
+ward	10408010	Female	Grade 9	0
+ward	10501001	Female	Tertiary	0
+ward	10501001	Male	Tertiary	0
+ward	10501002	Male	Grade 9	0
+ward	10501003	Female	Grade 9	0
+ward	10501003	Female	Less than Grade9	0
+ward	10501003	Male	Grade 9	0
+ward	10501003	Male	Less than Grade9	0
+ward	10502002	Male	Tertiary	0
+ward	10502003	Female	Tertiary	0
+ward	10502003	Male	Tertiary	0
+ward	10503007	Female	Tertiary	0
+ward	19100059	Male	Grade 9	0
 \.
 
 

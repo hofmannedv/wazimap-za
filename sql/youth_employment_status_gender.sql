@@ -3364,6 +3364,31 @@ ward	19100111	Discouraged work-seeker	Male	168
 ward	19100111	Discouraged work-seeker	Female	194
 ward	19100111	Other not economically active	Male	1466
 ward	19100111	Other not economically active	Female	1671
+ward	10202008	Discouraged work-seeker	Male	0
+ward	10203002	Discouraged work-seeker	Female	0
+ward	10203019	Discouraged work-seeker	Female	0
+ward	10204007	Discouraged work-seeker	Female	0
+ward	10204007	Discouraged work-seeker	Male	0
+ward	10204008	Discouraged work-seeker	Female	0
+ward	10204008	Discouraged work-seeker	Male	0
+ward	10204009	Discouraged work-seeker	Female	0
+ward	10204009	Discouraged work-seeker	Male	0
+ward	10205004	Discouraged work-seeker	Male	0
+ward	10205007	Discouraged work-seeker	Female	0
+ward	10205007	Discouraged work-seeker	Male	0
+ward	10205019	Discouraged work-seeker	Female	0
+ward	10206005	Discouraged work-seeker	Male	0
+ward	10206011	Discouraged work-seeker	Female	0
+ward	10302003	Discouraged work-seeker	Female	0
+ward	10302009	Discouraged work-seeker	Female	0
+ward	10302013	Discouraged work-seeker	Female	0
+ward	10403005	Discouraged work-seeker	Male	0
+ward	10403010	Discouraged work-seeker	Female	0
+ward	10404002	Discouraged work-seeker	Female	0
+ward	10404005	Discouraged work-seeker	Female	0
+ward	10501002	Discouraged work-seeker	Male	0
+ward	10501003	Discouraged work-seeker	Female	0
+ward	10501003	Discouraged work-seeker	Male	0
 \.
 
 

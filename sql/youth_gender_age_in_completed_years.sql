@@ -8414,6 +8414,9 @@ ward	19100111	Male	23	402
 ward	19100111	Female	23	402
 ward	19100111	Male	24	368
 ward	19100111	Female	24	420
+ward	10204009	Male	15	0
+ward	10501003	Female	15	0
+ward	10501003	Female	16	0
 \.
 
 
