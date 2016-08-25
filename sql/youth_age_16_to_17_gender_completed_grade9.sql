@@ -20,7 +20,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: youth_age_16_to_17_gender_completed_grade9; Type: TABLE; Schema: public; Owner: -; Tablespace:
+-- Name: youth_age_16_to_17_gender_completed_grade9; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE youth_age_16_to_17_gender_completed_grade9 (
@@ -152,6 +152,7 @@ municipality	WC047	Female	Not completed	136
 municipality	WC048	Male	Completed	677
 municipality	WC048	Female	Completed	812
 municipality	WC048	Male	Not completed	329
+ward	10104006	Male	Not completed	28
 municipality	WC048	Female	Not completed	232
 municipality	WC051	Male	Completed	82
 municipality	WC051	Female	Completed	84
@@ -271,7 +272,6 @@ ward	10104005	Male	Not completed	22
 ward	10104005	Female	Not completed	5
 ward	10104006	Male	Completed	86
 ward	10104006	Female	Completed	95
-ward	10104006	Male	Not completed	28
 ward	10104006	Female	Not completed	13
 ward	10104007	Male	Completed	64
 ward	10104007	Female	Completed	98
@@ -1707,11 +1707,17 @@ ward	19100111	Male	Completed	380
 ward	19100111	Female	Completed	468
 ward	19100111	Male	Not completed	165
 ward	19100111	Female	Not completed	121
+ward	10204008	Male	Not completed	0
+ward	10501003	Female	Not completed	0
+ward	10204009	Male	Not completed	0
+ward	10501002	Male	Not completed	0
+ward	10204009	Female	Not completed	0
+ward	10302003	Male	Not completed	0
 \.
 
 
 --
--- Name: youth_age_16_to_17_gender_completed_grade9_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace:
+-- Name: youth_age_16_to_17_gender_completed_grade9_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY youth_age_16_to_17_gender_completed_grade9
