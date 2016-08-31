@@ -98,9 +98,9 @@ def get_education_profile(geo_code, geo_level, session):
         key_order=('Completed', 'Not completed'),
         table_name='youth_age_16_to_17_gender_completed_grade9')
 
-    youth_gender_completed_grade9, _ = get_stat_data(
-        ['gender'], geo_level, geo_code, session,
-        only={'completed grade9': ['Completed']},
+    youth_completed_grade9_by_gender, _ = get_stat_data(
+        ['completed grade9', 'gender'], geo_level, geo_code, session,
+        percent_grouping=['gender'], slices=['Completed'],
         table_name='youth_age_16_to_17_gender_completed_grade9')
 
     youth_education_level, youth_pop_20_to_24 = get_stat_data(
@@ -138,7 +138,7 @@ def get_education_profile(geo_code, geo_level, session):
             "name": "Of youth aged 16-17 have completed grade 9 or higher",
             "values": {"this": youth_completed_grade9['Completed']['values']['this']},
         },
-        'youth_gender_completed_grade9': youth_gender_completed_grade9,
+        'youth_completed_grade9_by_gender': youth_completed_grade9_by_gender,
         'youth_perc_matric': {
             "name": "Of youth aged 20-24 have completed matric/matric equivalent or higher",
             "values": {"this": percent(matric_or_equiv, youth_pop_20_to_24)},
