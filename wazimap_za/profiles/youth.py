@@ -253,9 +253,9 @@ def get_living_environment_profile(geo_code, geo_level, session):
         table_name='youth_income_poverty_gender_population_group')
 
     youth_income_poor_by_pop_group, _ = get_stat_data(
-        ['population group'], geo_level, geo_code, session,
+        ['income poverty', 'population group'], geo_level, geo_code, session,
+        percent_grouping=['population group'], slices=['Income-poor'],
         key_order={'population group': POPULATION_GROUP_ORDER},
-        only={'income poverty': ['Income-poor']},
         table_name='youth_income_poverty_gender_population_group')
 
     youth_income_poor_by_gender, _ = get_stat_data(
