@@ -189,8 +189,8 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
         table_name='youth_employment_education_training_gender')
 
     youth_neet_by_gender, _ = get_stat_data(
-        ['gender'], geo_level, geo_code, session,
-        only={'employment education training': ['NEET']},
+        ['employment education training', 'gender'], geo_level, geo_code, session,
+        percent_grouping=['gender'], slices=['NEET'],
         table_name='youth_employment_education_training_gender')
 
     youth_household_employment, _ = get_stat_data(
