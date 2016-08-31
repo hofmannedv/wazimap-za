@@ -324,6 +324,10 @@ def get_living_environment_profile(geo_code, geo_level, session):
 
 
 def get_safety_profile(geo_code, geo_level, session):
+    youth_pop_table = get_datatable('youth_population')
+    youth_pop, pop_total = youth_pop_table.get_stat_data(
+        geo_level, geo_code, total='total_pop', percent='False')
+
     crimes_by_year, _ = get_stat_data(
         ['type of crime', 'year'], geo_level, geo_code, session,
         table_name='crimes_type_of_crime_year',
@@ -334,7 +338,18 @@ def get_safety_profile(geo_code, geo_level, session):
     property_crimes_by_year = crimes_by_year['Property crime']
     property_crimes_by_year['metadata'] = crimes_by_year['metadata']
 
+    contact_crimes_per_10k_pop = contact_crimes_by_year['2014']['values']['this'] / pop_total * 10000
+    property_crimes_per_10k_pop = property_crimes_by_year['2014']['values']['this'] / pop_total * 10000
+
     final_data = {
+        'contact_crimes_per_10k_pop': {
+            "name": "Contact crimes per 10,000 population reported in 2013/2014",
+            "values": {"this": contact_crimes_per_10k_pop}
+        },
+        'property_crimes_per_10k_pop': {
+            "name": "Property-related crime per 10,000 population reported in 2013/2014",
+            "values": {"this": property_crimes_per_10k_pop}
+        },
         'contact_crimes_by_year': contact_crimes_by_year,
         'property_crimes_by_year': property_crimes_by_year
     }
