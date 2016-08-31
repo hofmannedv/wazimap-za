@@ -269,14 +269,14 @@ def get_living_environment_profile(geo_code, geo_level, session):
         table_name='youth_multidimensionally_poor_gender_population_group')
 
     youth_multid_poor_by_pop_group, _ = get_stat_data(
-        ['population group'], geo_level, geo_code, session,
-        only={'multidimensionally poor': ['Multidimensionally poor']},
+        ['multidimensionally poor', 'population group'], geo_level, geo_code, session,
+        percent_grouping=['population group'], slices=['Multidimensionally poor'],
         key_order={'population group': POPULATION_GROUP_ORDER},
         table_name='youth_multidimensionally_poor_gender_population_group')
 
     youth_multid_poor_by_gender, _ = get_stat_data(
-        ['gender'], geo_level, geo_code, session,
-        only={'multidimensionally poor': ['Multidimensionally poor']},
+        ['multidimensionally poor', 'gender'], geo_level, geo_code, session,
+        percent_grouping=['gender'], slices=['Multidimensionally poor'],
         table_name='youth_multidimensionally_poor_gender_population_group')
 
     youth_mpi_table = get_datatable('youth_mpi_score')
