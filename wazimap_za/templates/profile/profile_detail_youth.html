@@ -199,12 +199,18 @@
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
-            <h2 class="header-for-columns"><a class="permalink" href="#contact_crimes" id="contact_crimes"><i class="fa fa-link">Number of contact crimes</i></a></h2>
-            <div class="column-three-quarters" id="chart-histogram-safety-contact_crimes_by_year" data-stat-type="number" data-chart-title="Number of reported contact crimes by year"></div>
+            <h2 class="header-for-columns"><a class="permalink" href="#contact_crimes" id="contact_crimes">Number of contact crimes<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=safety.contact_crimes_per_10k_pop stat_type='number'%}
+            </div>
+            <div class="column-two-thirds" id="chart-histogram-safety-contact_crimes_by_year" data-stat-type="number" data-chart-title="Number of reported contact crimes by year"></div>
         </section>
         <section class="clearfix stat-row">
-            <h2 class="header-for-columns"><a class="permalink" href="#property_crimes" id="property_crimes"><i class="fa fa-link">Number of property-related crimes</i></a></h2>
-            <div class="column-three-quarters" id="chart-histogram-safety-property_crimes_by_year" data-stat-type="number" data-chart-title="Number of reported property-related crimes by year"></div>
+            <h2 class="header-for-columns"><a class="permalink" href="#property_crimes" id="property_crimes">Number of property-related crimes<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=safety.property_crimes_per_10k_pop stat_type='number'%}
+            </div>
+            <div class="column-two-thirds" id="chart-histogram-safety-property_crimes_by_year" data-stat-type="number" data-chart-title="Number of reported property-related crimes by year"></div>
         </section>
     </div>
 </article>
