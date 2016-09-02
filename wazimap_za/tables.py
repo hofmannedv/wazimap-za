@@ -50,7 +50,7 @@ FieldTable(['type of main dwelling'], id='typeofmaindwellingunder18', universe='
 
 # Crime
 FieldTable(['crime'], universe='Crimes', dataset='Police Crime Statistics 2014', year='2014')
-FieldTable(['type of crime', 'year'], id='crimes_type_of_crime_year', description='Contact and property crimes by year', year='2013', has_total=False, universe='Crimes', dataset='Police Crime Statistics 2004-2013')
+FieldTable(['type of crime', 'year'], id='crimes_type_of_crime_year', description='Contact and property crimes by year', year='2015', universe='Crimes', dataset='Police Crime Statistics 2006-2015')
 
 # Elections
 FieldTable(['party'], universe='Votes', id='party_votes_national_2014', description='2014 National Election results',
