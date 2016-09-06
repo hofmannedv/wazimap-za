@@ -8,6 +8,13 @@
     {% endif %}
 {% endblock %}
 
+
+{% if WAZIMAP.default_profile == 'youth' %}
+  {% block favicon %}
+    <link rel="shortcut icon" href="{% static 'img/youth-favicon.ico' %}"/>
+  {% endblock %}
+{% endif %}
+
 {% block header_logo %}
   {% if WAZIMAP.default_profile == 'youth' %}
     <img src="{% static 'img/youth-logo.png' %}">
