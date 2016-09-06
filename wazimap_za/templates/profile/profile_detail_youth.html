@@ -90,11 +90,13 @@
             <aside class="multi-line-header">
                 <p>* According to the official definition, a person is unemployed if he or she is (a) without work, (b) available to work, and (c) actively seeking work. The expanded definition excludes criterion (c)</p>
             </aside>
-            <div class="column-third">
+            <div class="column-quarter">
                 {% include 'profile/_blocks/_stat_list.html' with stat=economic_opportunities.youth_official_unemployment stat_type='percentage' %}
             </div>
-            <div class="column-third" id="chart-histogram-economic_opportunities-youth_unemployment_by_definition" data-stat-type="scaled-percentage" data-chart-title="Youth unemployment rate by definition"></div>
-            <div class="column-third" id="chart-pie-economic_opportunities-youth_employment_status" data-stat-type="percentage" data-chart-title="Youth by employment status"></div>
+            <div class="column-quarter" id="chart-histogram-economic_opportunities-youth_unemployment_official_definition" data-stat-type="scaled-percentage" data-chart-title="Youth unemployment rate by official definition"></div>
+            <div class="column-quarter" id="chart-histogram-economic_opportunities-youth_unemployment_expanded_definition" data-stat-type="scaled-percentage" data-chart-title="Youth unemployment rate by expanded definition"></div>
+            <div class="column-quarter" id="chart-pie-economic_opportunities-youth_employment_status" data-stat-type="percentage" data-chart-title="Youth by employment status"></div>
+
         </section>
 
         <section class="clearfix stat-row">

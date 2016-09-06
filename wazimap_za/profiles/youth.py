@@ -164,19 +164,22 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
         ['employment status'], geo_level, geo_code, session,
         table_name='youth_labour_force_expanded_gender')
 
-    youth_unemployment_by_definition = OrderedDict((
-        ('Official', {
-            "name": "Official definition",
-            "values": {"this": youth_labour_force_official['Unemployed']['values']['this']},
-            "numerators": {"this": youth_labour_force_official['Unemployed']['numerators']['this']}
-        }),
-        ('Expanded', {
-            "name": "Expanded definition",
-            "values": {"this": youth_labour_force_expanded['Unemployed']['values']['this']},
-            "numerators":{"this": youth_labour_force_expanded['Unemployed']['numerators']['this']}
-        })
-    ))
-    youth_unemployment_by_definition['metadata'] = youth_labour_force_official['metadata']
+    # youth_unemployment_by_definition = OrderedDict((
+    #     ('Official', {
+    #         "name": "Official definition",
+    #         "values": {"this": youth_labour_force_official['Unemployed']['values']['this']},
+    #         "numerators": {"this": youth_labour_force_official['Unemployed']['numerators']['this']}
+    #     }),
+    #     ('Expanded', {
+    #         "name": "Expanded definition",
+    #         "values": {"this": youth_labour_force_expanded['Unemployed']['values']['this']},
+    #         "numerators":{"this": youth_labour_force_expanded['Unemployed']['numerators']['this']}
+    #     })
+    # ))
+    # youth_unemployment_by_definition['metadata'] = youth_labour_force_official['metadata']
+    import ipdb; ipdb.set_trace()
+    youth_labour_force_official.pop('Employed')
+    youth_labour_force_expanded.pop('Employed')
 
     youth_employment_status, _ = get_stat_data(
         ['employment status'], geo_level, geo_code, session,
@@ -204,7 +207,9 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
             "values": {"this": youth_labour_force_official['Unemployed']['values']['this'],
             }
         },
-        'youth_unemployment_by_definition': youth_unemployment_by_definition,
+        # 'youth_unemployment_by_definition': youth_unemployment_by_definition,
+        'youth_unemployment_official_definition': youth_labour_force_official,
+        'youth_unemployment_expanded_definition': youth_labour_force_expanded,
         'youth_employment_status': youth_employment_status,
         'youth_neet': {
             "name": "Of youth are not in employment, education or training (NEET)",
