@@ -13,4 +13,3 @@ e.g.
 3. Use the ward data to calculate that of the parent geo levels:
 e.g.
 ```python ward_to_parent_codes.py --input_file data/formatted/5.2f.csv --output_file data/complete/5.2f.csv --geocode_file geo/ward_geos.json```
-
