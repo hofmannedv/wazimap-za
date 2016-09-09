@@ -199,6 +199,17 @@
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#crime_victims" id="crime_victims">Victims of crime<i class="fa fa-link"></i></a></h2>
+            <aside>
+                <p>* All crime statistics only cover crimes reported to the SAPS and refer to crimes reported in the year 2014-15, unless otherwise stated</p>
+            </aside>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=safety.youth_victims_per_10k_youth stat_type='number'%}
+            </div>
+        </section>
+    </div>
+    <div class="section-container">
+        <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#contact_crimes" id="contact_crimes">Number of contact crimes<i class="fa fa-link"></i></a></h2>
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=safety.contact_crimes_per_10k_pop stat_type='number'%}

@@ -324,9 +324,20 @@ def get_living_environment_profile(geo_code, geo_level, session):
 
 
 def get_safety_profile(geo_code, geo_level, session):
+
+    def rate_per_10k(value, population):
+        return value / population * 10000
+
     youth_pop_table = get_datatable('youth_population')
-    youth_pop, pop_total = youth_pop_table.get_stat_data(
+    youth, pop_total = youth_pop_table.get_stat_data(
         geo_level, geo_code, total='total_pop', percent='False')
+
+    pop_youth = youth['youth_pop']['numerators']['this']
+
+    victims_by_age_group, total_victims = get_stat_data(
+        ['age group'], geo_level, geo_code, session,
+        table_name='crimes_victims_age_group',
+        percent=False)
 
     crimes_by_year, _ = get_stat_data(
         ['type of crime', 'year'], geo_level, geo_code, session,
@@ -338,10 +349,16 @@ def get_safety_profile(geo_code, geo_level, session):
     property_crimes_by_year = crimes_by_year['Property crime']
     property_crimes_by_year['metadata'] = crimes_by_year['metadata']
 
-    contact_crimes_per_10k_pop = contact_crimes_by_year['2015']['values']['this'] / pop_total * 10000
-    property_crimes_per_10k_pop = property_crimes_by_year['2015']['values']['this'] / pop_total * 10000
+    contact_crimes_per_10k_pop = rate_per_10k(contact_crimes_by_year['2015']['values']['this'], pop_total)
+    property_crimes_per_10k_pop = rate_per_10k(property_crimes_by_year['2015']['values']['this'], pop_total)
+
+    youth_victims_per_10k_youth = rate_per_10k(victims_by_age_group['15-24']['values']['this'], pop_youth)
 
     final_data = {
+        'youth_victims_per_10k_youth': {
+            "name": "Youth victims per 10,000 youth",
+            "values": {"this": youth_victims_per_10k_youth}
+        },
         'contact_crimes_per_10k_pop': {
             "name": "Contact crimes per 10,000 population reported in 2014/2015",
             "values": {"this": contact_crimes_per_10k_pop}
