@@ -90,7 +90,7 @@ FieldTable(['employment education training', 'gender'], id='youth_employment_edu
 FieldTable(['household employment'], id='youth_household_employment', universe='Youth living in households', description='Youth in households by adult employment', year='2011')
 FieldTable(['function type'], id='youth_difficulty_functioning', description='Youth experiencing difficulty in functioning', year='2011', universe='Youth with non-missing responses to the general health and functioning questions', denominator_key='youth')
 
-FieldTable(['type of offence'], id='youth_victims_offence_type', universe='Youth victims of crime', year='2015', has_total=False)
+FieldTable(['type of offence'], id='youth_victims_offence_type', universe='Youth victims of crime', year='2015')
 FieldTable(['type of offence'], id='youth_accused_offence_type', universe='Youth accused of crimes', year='2015', has_total=False)
 FieldTable(['population group'], id='youth_victims_population_group', universe='Youth victims of crime', year='2015', has_total=False)
 FieldTable(['population group'], id='youth_accused_population_group', universe='Youth accused of crimes', year='2015', has_total=False)

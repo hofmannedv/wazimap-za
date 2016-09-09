@@ -328,6 +328,15 @@ def get_safety_profile(geo_code, geo_level, session):
     def rate_per_10k(value, population):
         return value / population * 10000
 
+    def stat_data_rate_per_10k(stat_data, population, convert_key='values'):
+        # Returns the stat data dictionary with the `convert_key`
+        # values as a rate per 10k population
+        for k in stat_data.iterkeys():
+            if k != 'metadata':
+                stat_data[k][convert_key]['this'] = stat_data[k][convert_key]['this'] / population * 10000
+        return stat_data
+
+
     youth_pop_table = get_datatable('youth_population')
     youth, pop_total = youth_pop_table.get_stat_data(
         geo_level, geo_code, total='total_pop', percent='False')
@@ -338,6 +347,10 @@ def get_safety_profile(geo_code, geo_level, session):
         ['age group'], geo_level, geo_code, session,
         table_name='crimes_victims_age_group',
         percent=False)
+
+    youth_victims_by_offence, _ = get_stat_data(
+        ['type of offence'], geo_level, geo_code, session,
+        table_name='youth_victims_offence_type')
 
     crimes_by_year, _ = get_stat_data(
         ['type of crime', 'year'], geo_level, geo_code, session,
@@ -353,12 +366,15 @@ def get_safety_profile(geo_code, geo_level, session):
     property_crimes_per_10k_pop = rate_per_10k(property_crimes_by_year['2015']['values']['this'], pop_total)
 
     youth_victims_per_10k_youth = rate_per_10k(victims_by_age_group['15-24']['values']['this'], pop_youth)
+    youth_victims_by_offence_per_10k_youth = stat_data_rate_per_10k(
+        youth_victims_by_offence, pop_youth, convert_key='numerators')
 
     final_data = {
         'youth_victims_per_10k_youth': {
             "name": "Youth victims per 10,000 youth",
             "values": {"this": youth_victims_per_10k_youth}
         },
+        'youth_victims_by_offence_per_10k_youth': youth_victims_by_offence_per_10k_youth,
         'contact_crimes_per_10k_pop': {
             "name": "Contact crimes per 10,000 population reported in 2014/2015",
             "values": {"this": contact_crimes_per_10k_pop}
