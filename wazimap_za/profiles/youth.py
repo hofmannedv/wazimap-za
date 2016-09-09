@@ -336,7 +336,7 @@ def get_safety_profile(geo_code, geo_level, session):
                 stat_data[k][convert_key]['this'] = stat_data[k][convert_key]['this'] / population * 10000
         return stat_data
 
-    def stat_data_rate_per_10k_popuation_breakdown(stat_data, pop_stat_data):
+    def stat_data_rate_per_10k_pop_breakdown(stat_data, pop_stat_data):
         # Returns the `stat_data` dictionary with the values
         # as a rate per 10k population broken down as in `pop_stat_data`
         for k in stat_data.iterkeys():
@@ -356,6 +356,11 @@ def get_safety_profile(geo_code, geo_level, session):
         table_name='youth_gender_population_group',
         percent=False)
 
+    youth_by_gender, _ = get_stat_data(
+        ['gender'], geo_level, geo_code, session,
+        table_name='youth_gender_population_group',
+        percent=False)
+
     victims_by_age_group, total_victims = get_stat_data(
         ['age group'], geo_level, geo_code, session,
         table_name='crimes_victims_age_group',
@@ -368,6 +373,11 @@ def get_safety_profile(geo_code, geo_level, session):
     youth_victims_by_pop_group, _ = get_stat_data(
         ['population group'], geo_level, geo_code, session,
         table_name='youth_victims_population_group',
+        percent=False)
+
+    youth_victims_by_gender, _ = get_stat_data(
+        ['gender'], geo_level, geo_code, session,
+        table_name='youth_victims_gender',
         percent=False)
 
     crimes_by_year, _ = get_stat_data(
@@ -387,9 +397,11 @@ def get_safety_profile(geo_code, geo_level, session):
     youth_victims_by_offence_per_10k_youth = stat_data_rate_per_10k(
         youth_victims_by_offence, pop_youth, convert_key='numerators')
 
-    youth_victims_by_pop_group_per_10k = stat_data_rate_per_10k_popuation_breakdown(
-        youth_victims_by_pop_group, youth_by_pop_group
-        )
+    youth_victims_by_pop_group_per_10k = stat_data_rate_per_10k_pop_breakdown(
+        youth_victims_by_pop_group, youth_by_pop_group)
+
+    youth_victims_by_gender_per_10k = stat_data_rate_per_10k_pop_breakdown(
+        youth_victims_by_gender, youth_by_gender)
 
     final_data = {
         'youth_victims_per_10k_youth': {
@@ -398,6 +410,7 @@ def get_safety_profile(geo_code, geo_level, session):
         },
         'youth_victims_by_offence_per_10k_youth': youth_victims_by_offence_per_10k_youth,
         'youth_victims_by_pop_group_per_10k': youth_victims_by_pop_group_per_10k,
+        'youth_victims_by_gender_per_10k': youth_victims_by_gender_per_10k,
         'contact_crimes_per_10k_pop': {
             "name": "Contact crimes per 10,000 population reported in 2014/2015",
             "values": {"this": contact_crimes_per_10k_pop}
