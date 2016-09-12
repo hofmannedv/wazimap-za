@@ -325,23 +325,34 @@ def get_living_environment_profile(geo_code, geo_level, session):
 
 def get_safety_profile(geo_code, geo_level, session):
 
-    def rate_per_10k(value, population):
+    def rate_per_10k_pop(value, population):
         return value / population * 10000
 
-    def stat_data_rate_per_10k(stat_data, population, convert_key='values'):
-        # Returns the `stat_data` dictionary with the `convert_key`
-        # values as a rate per 10k population
+    def stat_data_rate_per_10k_pop(stat_data, population, convert_key='values'):
+        """
+        Returns the `stat_data` dict with the 'convert_key` values as a rate per 10k population.
+        :param dict stat_data: a dict of values as returned by `get_stat_data`
+        :param int population: the popualtion number to base the rate on
+        :param str convert_key: key in stat_data which should be converted to a rate
+        """
         for k in stat_data.iterkeys():
             if k != 'metadata':
-                stat_data[k][convert_key]['this'] = stat_data[k][convert_key]['this'] / population * 10000
+                stat_data[k][convert_key]['this'] = rate_per_10k_pop(
+                    stat_data[k][convert_key]['this'], population)
         return stat_data
 
     def stat_data_rate_per_10k_pop_breakdown(stat_data, pop_stat_data):
-        # Returns the `stat_data` dictionary with the values
-        # as a rate per 10k population broken down as in `pop_stat_data`
+        """
+        Returns the `stat_data` dict with the values as a rate per 10k population
+        as in `pop_stat_data`
+        :param dict stat_data: a dict of values as returned by `get_stat_data`
+        :param dict pop_stat_data: a dict as returned by `get_stat_data`
+        with population numbers to use in calculating the rate
+        """
         for k in stat_data.iterkeys():
             if k != 'metadata':
-                stat_data[k]['values']['this'] = stat_data[k]['values']['this'] / pop_stat_data[k]['values']['this'] * 10000
+                stat_data[k]['values']['this'] = rate_per_10k_pop(
+                    stat_data[k]['values']['this'], pop_stat_data[k]['values']['this'])
         return stat_data
 
 
@@ -395,11 +406,12 @@ def get_safety_profile(geo_code, geo_level, session):
     property_crimes_by_year = crimes_by_year['Property crime']
     property_crimes_by_year['metadata'] = crimes_by_year['metadata']
 
-    contact_crimes_per_10k_pop = rate_per_10k(contact_crimes_by_year['2015']['values']['this'], pop_total)
-    property_crimes_per_10k_pop = rate_per_10k(property_crimes_by_year['2015']['values']['this'], pop_total)
+    contact_crimes_per_10k_pop = rate_per_10k_pop(contact_crimes_by_year['2015']['values']['this'], pop_total)
+    property_crimes_per_10k_pop = rate_per_10k_pop(property_crimes_by_year['2015']['values']['this'], pop_total)
 
-    youth_victims_per_10k_youth = rate_per_10k(victims_by_age_group['15-24']['values']['this'], pop_youth)
-    youth_victims_by_offence_per_10k_youth = stat_data_rate_per_10k(
+    youth_victims_per_10k_youth = rate_per_10k_pop(victims_by_age_group['15-24']['values']['this'], pop_youth)
+
+    youth_victims_by_offence_per_10k_youth = stat_data_rate_per_10k_pop(
         youth_victims_by_offence, pop_youth, convert_key='numerators')
 
     youth_victims_by_pop_group_per_10k = stat_data_rate_per_10k_pop_breakdown(
