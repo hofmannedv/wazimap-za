@@ -430,11 +430,11 @@ def get_safety_profile(geo_code, geo_level, session):
         'youth_victims_by_gender_per_10k': youth_victims_by_gender_per_10k,
         'youth_victims_by_year': youth_victims_by_year,
         'contact_crimes_per_10k_pop': {
-            "name": "Contact crimes per 10,000 population reported in 2014/2015",
+            "name": "Contact crimes per 10,000 population",
             "values": {"this": contact_crimes_per_10k_pop}
         },
         'property_crimes_per_10k_pop': {
-            "name": "Property-related crime per 10,000 population reported in 2014/2015",
+            "name": "Property-related crime per 10,000 population",
             "values": {"this": property_crimes_per_10k_pop}
         },
         'contact_crimes_by_year': contact_crimes_by_year,
