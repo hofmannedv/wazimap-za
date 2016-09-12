@@ -199,19 +199,20 @@
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
-            <h2 class="header-for-columns"><a class="permalink" href="#crime_victims" id="crime_victims">Victims of crime<i class="fa fa-link"></i></a></h2>
+            <h2 class="header-for-columns"><a class="permalink" href="#crime_victims" id="crime_victims">Victims of contact crime<i class="fa fa-link"></i></a></h2>
             <aside class="multi-line-header">
                 <p>* All crime statistics only cover crimes reported to the SAPS and refer to crimes reported in the year 2014-15, unless otherwise stated</p>
+                <p>** Contact crimes = murder + total sexual crimes + attempted murder + assault with the intent to inflict grievous bodily harm + common assault +common robbery + robbery with aggravating circumstance</p>
             </aside>
             <div class="column-quarter">
                 {% include 'profile/_blocks/_stat_list.html' with stat=safety.youth_victims_per_10k_youth stat_type='number'%}
             </div>
-            <div class="column-half" id="chart-pie-safety-youth_victims_by_offence_per_10k_youth" data-stat-type="percentage" data-chart-title="Youth victims by offence type"></div>
-            <div class="column-quarter" id="chart-histogram-safety-youth_victims_by_gender_per_10k" data-stat-type="number" data-chart-title="Youth victims by gender"></div>
+            <div class="column-half" id="chart-pie-safety-youth_victims_by_offence_per_10k_youth" data-stat-type="percentage" data-chart-title="Youth victims of contact crime by offence type"></div>
+            <div class="column-quarter" id="chart-histogram-safety-youth_victims_by_gender_per_10k" data-stat-type="number" data-chart-title="Youth victims of contact crime by gender"></div>
         </section>
         <section class="clearfix stat-row">
-            <div class="column-half" id="chart-histogram-safety-youth_victims_by_pop_group_per_10k" data-stat-type="number" data-chart-title="Youth victims by race"></div>
-            <div class="column-half" id="chart-histogram-safety-youth_victims_by_year" data-stat-type="number" data-chart-title="Number of youth victims by year"></div>
+            <div class="column-half" id="chart-histogram-safety-youth_victims_by_pop_group_per_10k" data-stat-type="number" data-chart-title="Youth victims of contact crime by race"></div>
+            <div class="column-half" id="chart-histogram-safety-youth_victims_by_year" data-stat-type="number" data-chart-title="Number of youth victims of contact crime by year"></div>
         </section>
     </div>
     <div class="section-container">

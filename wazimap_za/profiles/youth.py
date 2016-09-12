@@ -422,7 +422,7 @@ def get_safety_profile(geo_code, geo_level, session):
 
     final_data = {
         'youth_victims_per_10k_youth': {
-            "name": "Youth victims per 10,000 youth",
+            "name": "Youth victims of contact crime per 10,000 youth",
             "values": {"this": youth_victims_per_10k_youth}
         },
         'youth_victims_by_offence_per_10k_youth': youth_victims_by_offence_per_10k_youth,
