@@ -410,6 +410,10 @@ def get_safety_profile(geo_code, geo_level, session):
         ['year'], geo_level, geo_code, session,
         table_name='youth_victims_year',
         percent=False)
+    youth_accused_by_year, _ = get_stat_data(
+        ['year'], geo_level, geo_code, session,
+        table_name='youth_accused_year',
+        percent=False)
 
     crimes_by_year, _ = get_stat_data(
         ['type of crime', 'year'], geo_level, geo_code, session,
@@ -458,6 +462,7 @@ def get_safety_profile(geo_code, geo_level, session):
         'youth_victims_by_gender_per_10k': youth_victims_by_gender_per_10k,
         'youth_accused_by_gender_per_10k': youth_accused_by_gender_per_10k,
         'youth_victims_by_year': youth_victims_by_year,
+        'youth_accused_by_year': youth_accused_by_year,
         'contact_crimes_per_10k_pop': {
             "name": "Contact crimes per 10,000 population",
             "values": {"this": contact_crimes_per_10k_pop}
