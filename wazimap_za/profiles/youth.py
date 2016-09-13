@@ -377,6 +377,11 @@ def get_safety_profile(geo_code, geo_level, session):
         table_name='crimes_victims_age_group',
         percent=False)
 
+    accused_by_age_group, total_accused = get_stat_data(
+        ['age group'], geo_level, geo_code, session,
+        table_name='crimes_accused_age_group',
+        percent=False)
+
     youth_victims_by_offence, _ = get_stat_data(
         ['type of offence'], geo_level, geo_code, session,
         table_name='youth_victims_offence_type')
@@ -410,6 +415,7 @@ def get_safety_profile(geo_code, geo_level, session):
     property_crimes_per_10k_pop = rate_per_10k_pop(property_crimes_by_year['2015']['values']['this'], pop_total)
 
     youth_victims_per_10k_youth = rate_per_10k_pop(victims_by_age_group['15-24']['values']['this'], pop_youth)
+    youth_accused_per_10k_youth = rate_per_10k_pop(accused_by_age_group['15-24']['values']['this'], pop_youth)
 
     youth_victims_by_offence_per_10k_youth = stat_data_rate_per_10k_pop(
         youth_victims_by_offence, pop_youth, convert_key='numerators')
@@ -423,6 +429,10 @@ def get_safety_profile(geo_code, geo_level, session):
     final_data = {
         'youth_victims_per_10k_youth': {
             "name": "Youth victims of contact crime per 10,000 youth",
+            "values": {"this": youth_victims_per_10k_youth}
+        },
+        'youth_accused_per_10k_youth': {
+            "name": "Youth accused of contact crime per 10,000 youth",
             "values": {"this": youth_victims_per_10k_youth}
         },
         'youth_victims_by_offence_per_10k_youth': youth_victims_by_offence_per_10k_youth,

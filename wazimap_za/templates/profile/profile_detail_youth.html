@@ -217,6 +217,16 @@
     </div>
     <div class="section-container">
         <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#crime_accused" id="crime_accused">Accused of contact crime<i class="fa fa-link"></i></a></h2>
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=safety.youth_accused_per_10k_youth stat_type='number'%}
+            </div>
+        </section>
+        <section class="clearfix stat-row">
+        </section>
+    </div>
+    <div class="section-container">
+        <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#contact_crimes" id="contact_crimes">Contact crime in area<i class="fa fa-link"></i></a></h2>
             <aside>
                 <p>Contact crimes = murder + total sexual crimes + attempted murder + assault with the intent to inflict grievous bodily harm + common assault +common robbery + robbery with aggravating circumstances</p>
