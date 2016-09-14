@@ -435,6 +435,8 @@ def get_safety_profile(geo_code, geo_level, session):
 
     victims_by_age_group_per_10k_pop = stat_data_rate_per_10k_pop_breakdown(
         victims_by_age_group, pop_by_age_group)
+    accused_by_age_group_per_10k_pop = stat_data_rate_per_10k_pop_breakdown(
+        accused_by_age_group, pop_by_age_group)
 
     youth_victims_per_10k_youth = rate_per_10k_pop(victims_by_age_group['15-24']['values']['this'], pop_youth)
     youth_accused_per_10k_youth = rate_per_10k_pop(accused_by_age_group['15-24']['values']['this'], pop_youth)
@@ -464,6 +466,7 @@ def get_safety_profile(geo_code, geo_level, session):
             "values": {"this": youth_victims_per_10k_youth}
         },
         'victims_by_age_group_per_10k_pop': victims_by_age_group_per_10k_pop,
+        'accused_by_age_group_per_10k_pop': accused_by_age_group_per_10k_pop,
         'youth_victims_by_offence_per_10k_youth': youth_victims_by_offence_per_10k_youth,
         'youth_accused_by_offence_per_10k_youth': youth_accused_by_offence_per_10k_youth,
         'youth_victims_by_pop_group_per_10k': youth_victims_by_pop_group_per_10k,
