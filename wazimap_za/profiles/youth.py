@@ -372,6 +372,11 @@ def get_safety_profile(geo_code, geo_level, session):
         table_name='youth_gender_population_group',
         percent=False)
 
+    pop_by_age_group, _ = get_stat_data(
+        ['age group in 10 years'], geo_level, geo_code, session,
+        table_name='age_group_in_10_years',
+        percent=False)
+
     victims_by_age_group, total_victims = get_stat_data(
         ['age group'], geo_level, geo_code, session,
         table_name='crimes_victims_age_group',
@@ -428,6 +433,11 @@ def get_safety_profile(geo_code, geo_level, session):
     contact_crimes_per_10k_pop = rate_per_10k_pop(contact_crimes_by_year['2015']['values']['this'], pop_total)
     property_crimes_per_10k_pop = rate_per_10k_pop(property_crimes_by_year['2015']['values']['this'], pop_total)
 
+    victims_by_age_group_per_10k_pop = stat_data_rate_per_10k_pop_breakdown(
+        victims_by_age_group, pop_by_age_group)
+    accused_by_age_group_per_10k_pop = stat_data_rate_per_10k_pop_breakdown(
+        accused_by_age_group, pop_by_age_group)
+
     youth_victims_per_10k_youth = rate_per_10k_pop(victims_by_age_group['15-24']['values']['this'], pop_youth)
     youth_accused_per_10k_youth = rate_per_10k_pop(accused_by_age_group['15-24']['values']['this'], pop_youth)
 
@@ -455,6 +465,8 @@ def get_safety_profile(geo_code, geo_level, session):
             "name": "Youth accused of contact crime per 10,000 youth",
             "values": {"this": youth_victims_per_10k_youth}
         },
+        'victims_by_age_group_per_10k_pop': victims_by_age_group_per_10k_pop,
+        'accused_by_age_group_per_10k_pop': accused_by_age_group_per_10k_pop,
         'youth_victims_by_offence_per_10k_youth': youth_victims_by_offence_per_10k_youth,
         'youth_accused_by_offence_per_10k_youth': youth_accused_by_offence_per_10k_youth,
         'youth_victims_by_pop_group_per_10k': youth_victims_by_pop_group_per_10k,
