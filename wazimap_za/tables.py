@@ -52,8 +52,8 @@ FieldTable(['type of main dwelling'], id='typeofmaindwellingunder18', universe='
 FieldTable(['crime'], universe='Crimes', dataset='Police Crime Statistics 2014', year='2014')
 FieldTable(['type of crime', 'year'], id='crimes_type_of_crime_year', description='Contact and property crimes by year', year='2015', has_total=False, universe='Crimes', dataset='Police Crime Statistics 2006-2015')
 
-FieldTable(['age group'], id='crimes_victims_age_group', universe='Population victims of crime', year='2015', has_total=False)
-FieldTable(['age group'], id='crimes_accused_age_group', universe='Population accused of crime', year='2015', has_total=False)
+FieldTable(['age group'], id='crimes_victims_age_group', universe='Victims of crime per 10,000 population', year='2015', has_total=False)
+FieldTable(['age group'], id='crimes_accused_age_group', universe='Accused of crime per 10,000 population', year='2015', has_total=False)
 
 # Elections
 FieldTable(['party'], universe='Votes', id='party_votes_national_2014', description='2014 National Election results',
