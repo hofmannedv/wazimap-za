@@ -52,8 +52,8 @@ FieldTable(['type of main dwelling'], id='typeofmaindwellingunder18', universe='
 FieldTable(['crime'], universe='Crimes', dataset='Police Crime Statistics 2014', year='2014')
 FieldTable(['type of crime', 'year'], id='crimes_type_of_crime_year', description='Contact and property crimes by year', year='2015', has_total=False, universe='Crimes', dataset='Police Crime Statistics 2006-2015')
 
-FieldTable(['age group'], id='crimes_victims_age_group', universe='Victims of crime per 10,000 population', year='2015', has_total=False)
-FieldTable(['age group'], id='crimes_accused_age_group', universe='Accused of crime per 10,000 population', year='2015', has_total=False)
+FieldTable(['age group'], id='crimes_victims_age_group', universe='Victims of crime per 10,000 population in age group', year='2015', has_total=False)
+FieldTable(['age group'], id='crimes_accused_age_group', universe='Accused of crime per 10,000 population in age group', year='2015', has_total=False)
 
 # Elections
 FieldTable(['party'], universe='Votes', id='party_votes_national_2014', description='2014 National Election results',
@@ -93,8 +93,8 @@ FieldTable(['function type'], id='youth_difficulty_functioning', description='Yo
 
 FieldTable(['type of offence'], id='youth_victims_offence_type', universe='Youth victims of crime, per 10,000 youth', year='2015')
 FieldTable(['type of offence'], id='youth_accused_offence_type', universe='Youth accused of crimes, per 10,000 youth', year='2015')
-FieldTable(['population group'], id='youth_victims_population_group', universe='Victims of crime per 10,000 youth', year='2015', has_total=False)
-FieldTable(['population group'], id='youth_accused_population_group', universe='Accused of crimes per 10,000 youth', year='2015', has_total=False)
+FieldTable(['population group'], id='youth_victims_population_group', universe='Youth victims of crime, per 10,000 youth', year='2015', has_total=False)
+FieldTable(['population group'], id='youth_accused_population_group', universe='Youth accused of crimes, per 10,000 youth', year='2015', has_total=False)
 FieldTable(['gender'], id='youth_victims_gender', universe='Youth victims of crime, per 10,000 youth', year='2015', has_total=False)
 FieldTable(['gender'], id='youth_accused_gender', universe='Youth accused of crimes, per 10,000 youth', year='2015', has_total=False)
 FieldTable(['year'], id='youth_victims_year', universe='Youth victims of crime', year='2015', has_total=False)
