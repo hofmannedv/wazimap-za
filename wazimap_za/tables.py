@@ -93,8 +93,8 @@ FieldTable(['function type'], id='youth_difficulty_functioning', description='Yo
 
 FieldTable(['type of offence'], id='youth_victims_offence_type', universe='Youth victims of crime', year='2015')
 FieldTable(['type of offence'], id='youth_accused_offence_type', universe='Youth accused of crimes', year='2015')
-FieldTable(['population group'], id='youth_victims_population_group', universe='Youth victims of crime', year='2015', has_total=False)
-FieldTable(['population group'], id='youth_accused_population_group', universe='Youth accused of crimes', year='2015', has_total=False)
+FieldTable(['population group'], id='youth_victims_population_group', universe='Victims of crime per 10,000 youth', year='2015', has_total=False)
+FieldTable(['population group'], id='youth_accused_population_group', universe='Accused of crimes per 10,000 youth', year='2015', has_total=False)
 FieldTable(['gender'], id='youth_victims_gender', universe='Youth victims of crime', year='2015', has_total=False)
 FieldTable(['gender'], id='youth_accused_gender', universe='Youth accused of crimes', year='2015', has_total=False)
 FieldTable(['year'], id='youth_victims_year', universe='Youth victims of crime', year='2015', has_total=False)
