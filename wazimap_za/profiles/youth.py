@@ -346,10 +346,12 @@ def get_safety_profile(geo_code, geo_level, session):
 
     youth_victims_by_offence_per_10k_youth, _ = get_stat_data(
         ['type of offence'], geo_level, geo_code, session,
-        table_name='youth_victims_offence_type')
+        table_name='youth_victims_offence_type',
+        percent=False)
     youth_accused_by_offence_per_10k_youth, _ = get_stat_data(
         ['type of offence'], geo_level, geo_code, session,
-        table_name='youth_accused_offence_type')
+        table_name='youth_accused_offence_type',
+        percent=False)
 
     youth_victims_by_pop_group_per_10k, _ = get_stat_data(
         ['population group'], geo_level, geo_code, session,
