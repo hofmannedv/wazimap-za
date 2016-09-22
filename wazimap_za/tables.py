@@ -100,8 +100,8 @@ FieldTable(['gender'], id='youth_accused_gender', universe='Youth accused of cri
 FieldTable(['year'], id='youth_victims_year', universe='Youth victims of crime', year='2015', has_total=False)
 FieldTable(['year'], id='youth_accused_year', universe='Youth accused of crimes', year='2015', has_total=False)
 
-FieldTable(['year'], id='youth_pregnancy_rate_year', universe='Youth', year='2015')
-FieldTable(['year'], id='youth_delivery_rate_year', universe='Youth', year='2015')
+FieldTable(['year'], id='youth_pregnancy_rate_year', universe='Youth females under 18 years', year='2015', total_type='Float', has_total=False)
+FieldTable(['year'], id='youth_delivery_rate_year', universe='Youth females under 18 years', year='2015', total_type='Float')
 
 # Simple Tables
 SimpleTable(

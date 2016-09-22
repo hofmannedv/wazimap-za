@@ -270,6 +270,23 @@
             </div>
             <div class="column-two-thirds" id="chart-histogram-health-youth_difficulty_by_function" data-stat-type="scaled-percentage" data-chart-title="Youth experiencing difficulty in functioning by type *"></div>
         </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#teenage-pregnancy" id="teenage-pregnancy">Teenage pregnancy<i class="fa fa-link"></i></a></h2>
+            <aside>
+                <p>* Pregnancy and delivery rates only cover deliveries and termination of pregnancies done in a healthcare facility</p>
+            </aside>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=health.youth_preganacy_rate stat_type='percentage' decimals='-1' %}
+            </div>
+            <div class="column-two-thirds" id="chart-histogram-health-youth_pregnancy_rate_by_year" data-stat-type="scaled-percentage" data-chart-title="Teenage pregnancy rate by year" data-qualifier="rate = deliveries and termination of pregnancies to females under 18 years as a percentage of total deliveries and termination of pregnancies done in a healthcare facility" decimals="-3"></div>
+        </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#teenage-delivery" id="teenage-delivery">Teenage delivery<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=health.youth_preganacy_rate stat_type='percentage' decimals='-1' %}
+            </div>
+            <div class="column-two-thirds" id="chart-histogram-health-youth_delivery_rate_by_year" data-stat-type="scaled-percentage" data-chart-title="Teenage delivery rate by year" data-qualifier="rate = deliveries to females under 18 years as a percentage of total deliveries" decimals="-3"></div>
+        </section>
     </div>
 </article>
 
