@@ -40,9 +40,9 @@ class Command(BaseCommand):
                  'If not provided, it is generated from the field names'
         )
         parser.add_argument(
-            '--total_type',
+            '--value_type',
             action='store',
-            dest='total_type',
+            dest='value_type',
             default='Integer',
             help='The type of values used in the total column: Integer or Float'
         )
@@ -63,7 +63,7 @@ class Command(BaseCommand):
 
         self.verbosity = options.get('verbosity', 1)
         self.table_id = options.get('table')
-        self.total_type = options.get('total_type', 'Integer')
+        self.value_type = options.get('value_type', 'Integer')
         self.dryrun = options.get('dryrun', False)
 
         if self.dryrun:
@@ -91,7 +91,7 @@ class Command(BaseCommand):
         count = 0
         for row in self.reader:
             count += 1
-            row['total'] = float(row['total']) if self.total_type == 'Float' else int(round(float(row['total'])))
+            row['total'] = float(row['total']) if self.value_type == 'Float' else int(round(float(row['total'])))
             self.stdout.write("%s-%s" % (row['geo_level'], row['geo_code']))
             entry = self.table.get_model(row['geo_level'])(**row)
 
