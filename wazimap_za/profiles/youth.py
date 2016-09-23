@@ -433,32 +433,38 @@ def get_health_profile(geo_code, geo_level, session):
         key_order=['Seeing, even when using eye glasses', 'Hearing, even when using a hearing aid', 'Communication', 'Walking', 'Remembering', 'Self care'],
         table_name='youth_difficulty_functioning')
 
-    youth_pregnancy_rate_by_year, _ = get_stat_data(
-        ['year'], geo_level, geo_code, session,
-        table_name='youth_pregnancy_rate_year',
-        percent=False)
-
-    youth_delivery_rate_by_year, _ = get_stat_data(
-        ['year'], geo_level, geo_code, session,
-        table_name='youth_delivery_rate_year',
-        percent=False)
-
     final_data = {
         'youth_difficulty_seeing': {
             "name": "Of youth experience difficulty in seeing even when using eye glasses",
             "values": {"this": youth_difficulty_by_function['Seeing, even when using eye glasses']['values']['this']}
         },
-        'youth_difficulty_by_function': youth_difficulty_by_function,
-        'youth_preganacy_rate': {
-            "name": "Of total pregnancies are to females under 18 years",
-            "values": {"this":youth_pregnancy_rate_by_year['2014-15']['values']['this']}
-        },
-        'youth_pregnancy_rate_by_year': youth_pregnancy_rate_by_year,
-        'youth_delivery_rate': {
-            "name": "Of total deliveries are to females under 18 years",
-            "values": {"this":youth_delivery_rate_by_year['2014-15']['values']['this']}
-        },
-        'youth_delivery_rate_by_year': youth_delivery_rate_by_year,
+        'youth_difficulty_by_function': youth_difficulty_by_function
     }
+
+    if geo_level != 'ward':
+        # We don't have preganany and delivery data on ward level yet
+        youth_pregnancy_rate_by_year, _ = get_stat_data(
+            ['year'], geo_level, geo_code, session,
+            table_name='youth_pregnancy_rate_year',
+            percent=False)
+
+        youth_delivery_rate_by_year, _ = get_stat_data(
+            ['year'], geo_level, geo_code, session,
+            table_name='youth_delivery_rate_year',
+            percent=False)
+
+        final_data.update({
+            'youth_difficulty_by_function': youth_difficulty_by_function,
+            'youth_preganacy_rate': {
+                "name": "Of total pregnancies are to females under 18 years",
+                "values": {"this":youth_pregnancy_rate_by_year['2014-15']['values']['this']}
+            },
+            'youth_pregnancy_rate_by_year': youth_pregnancy_rate_by_year,
+            'youth_delivery_rate': {
+                "name": "Of total deliveries are to females under 18 years",
+                "values": {"this":youth_delivery_rate_by_year['2014-15']['values']['this']}
+            },
+            'youth_delivery_rate_by_year': youth_delivery_rate_by_year
+        })
 
     return final_data
