@@ -132,6 +132,11 @@ def get_education_profile(geo_code, geo_level, session):
         percent_grouping=['gender'], slices=['Yes'],
         table_name='youth_education_attendance_gender_age_incompleted_years')
 
+    youth_average_mean_score_by_year, _ = get_stat_data(
+        ['year'], geo_level, geo_code, session,
+        table_name='youth_average_mean_score_by_year',
+        percent=False)
+
     final_data  = {
         'youth_completed_grade9': youth_completed_grade9,
         'youth_perc_completed_grade9': {
@@ -149,7 +154,12 @@ def get_education_profile(geo_code, geo_level, session):
             "values": {"this": youth_education_attendance['Yes']['values']['this']}
         },
         'youth_education_attending_by_age': youth_education_attending_by_age,
-        'youth_education_attending_by_gender': youth_education_attending_by_gender
+        'youth_education_attending_by_gender': youth_education_attending_by_gender,
+        'youth_ave_mean_score_2014': {
+            "name": "Average mean score in both language and mathematics",
+            "values": {"this": youth_average_mean_score_by_year['2014']['values']['this']},
+        },
+        'youth_ave_mean_score_by_year': youth_average_mean_score_by_year,
     }
 
     return final_data

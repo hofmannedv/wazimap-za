@@ -77,6 +77,13 @@
             <div class="column-half" id="chart-histogram-education-youth_education_attending_by_age" data-stat-type="scaled-percentage" data-chart-title="Youth attendance at an educational institution by age"></div>
             <div class="column-quarter" id="chart-histogram-education-youth_education_attending_by_gender" data-stat-type="scaled-percentage" data-chart-title="Youth attending an educational institution by gender"></div>
         </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#systemic_evaluations" id="systemic_evaluations">Grade 9 Systemic evaluations<i class="fa fa-link"></i></a></h2>
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_ave_mean_score_2014 stat_type='percentage' decimals='-1' %}
+            </div>
+            <div class="column-half" id="chart-histogram-education-youth_ave_mean_score_by_year" data-stat-type="scaled-percentage" data-chart-title="Average mean score in both language and mathematics by year"></div>
+        </section>
     </div>
 </article>
 
