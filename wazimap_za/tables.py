@@ -71,10 +71,13 @@ FieldTable(['gender'], id='genderunder9', universe='Children under 9', year='201
 # Youth
 FieldTable(['age in completed years', 'gender'], id='youth_gender_age_in_completed_years', universe='Youth', year='2011')
 FieldTable(['population group', 'gender'], id='youth_gender_population_group', universe='Youth', year='2011')
+FieldTable(['age group in 10 years'], id='age_group_in_10_years', universe='Population', year='2011')
+
 FieldTable(['completed grade9', 'gender'], id='youth_age_16_to_17_gender_completed_grade9', universe='Youth aged 16 to 17', year='2011')
 FieldTable(['education level', 'gender'], id='youth_age_20_to_24_gender_education_level', universe='Youth aged 20 to 24', year='2011')
 FieldTable(['attendance', 'gender', 'age in completed years'], id='youth_education_attendance_gender_age_incompleted_years', universe='Youth', year='2011')
-FieldTable(['age group in 10 years'], id='age_group_in_10_years', universe='Population', year='2011')
+
+FieldTable(['year'], id='youth_average_mean_score_by_year', universe='Youth attending school', year='2014', value_type='Float', has_total=False)
 
 FieldTable(['electricity access'], id='youth_electricity_access', universe='Youth living in households', year='2011')
 FieldTable(['toilet access'], id='youth_toilet_access', universe='Youth living in households', year='2011')
