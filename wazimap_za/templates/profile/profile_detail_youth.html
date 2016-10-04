@@ -87,6 +87,15 @@
             </div>
             <div class="column-half" id="chart-histogram-education-youth_ave_mean_score_by_year" data-stat-type="scaled-percentage" data-chart-title="Average mean score in both language and mathematics by year"></div>
         </section>
+        <section class="clearfix stat-row">
+            <aside>
+                <p>* The systemic  evaluations are compulsory for all public schools. Many, but not all, independent schools also choose to participate.</p>
+            </aside>
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_ave_language_score_2014 stat_type='percentage' decimals='-1' %}
+            </div>
+            <div class="column-half" id="chart-histogram-education-youth_ave_language_score_by_year" data-stat-type="scaled-percentage" data-chart-title="Average score in language by year"></div>
+        </section>
     </div>
 </article>
 
