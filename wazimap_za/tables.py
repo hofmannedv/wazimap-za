@@ -77,7 +77,8 @@ FieldTable(['completed grade9', 'gender'], id='youth_age_16_to_17_gender_complet
 FieldTable(['education level', 'gender'], id='youth_age_20_to_24_gender_education_level', universe='Youth aged 20 to 24', year='2011')
 FieldTable(['attendance', 'gender', 'age in completed years'], id='youth_education_attendance_gender_age_incompleted_years', universe='Youth', year='2011')
 
-FieldTable(['year'], id='youth_average_mean_score_by_year', universe='Youth attending school', year='2014', value_type='Float', has_total=False)
+FieldTable(['year'], id='youth_average_mean_score_by_year', universe='Secondary school scores', year='2014', value_type='Float', has_total=False)
+FieldTable(['year'], id='youth_average_language_score_by_year', universe='Secondary school scores', year='2014', value_type='Float')
 
 FieldTable(['electricity access'], id='youth_electricity_access', universe='Youth living in households', year='2011')
 FieldTable(['toilet access'], id='youth_toilet_access', universe='Youth living in households', year='2011')
