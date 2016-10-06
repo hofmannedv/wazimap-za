@@ -81,7 +81,7 @@ FieldTable(['year'], id='youth_average_mean_score_by_year', universe='Secondary 
 FieldTable(['year'], id='youth_average_language_score_by_year', universe='Secondary school scores', year='2014', value_type='Float', has_total=False)
 FieldTable(['year', 'outcome'], id='youth_language_outcome_by_year', universe='Secondary school scores', year='2014', value_type='Float', has_total=False)
 FieldTable(['year'], id='youth_average_maths_score_by_year', universe='Secondary school scores', year='2014', value_type='Float', has_total=False)
-FieldTable(['year', 'outcome'], id='youth_maths_outcome_by_year', universe='Secondary school scores', year='2014', value_type='Float')
+FieldTable(['year', 'outcome'], id='youth_maths_outcome_by_year', universe='Secondary school scores', year='2014', value_type='Float', has_total=False)
 
 FieldTable(['electricity access'], id='youth_electricity_access', universe='Youth living in households', year='2011')
 FieldTable(['toilet access'], id='youth_toilet_access', universe='Youth living in households', year='2011')
@@ -107,8 +107,8 @@ FieldTable(['gender'], id='youth_accused_gender', universe='Youth accused of cri
 FieldTable(['year'], id='youth_victims_year', universe='Youth victims of crime', year='2015', has_total=False)
 FieldTable(['year'], id='youth_accused_year', universe='Youth accused of crimes', year='2015', has_total=False)
 
-FieldTable(['year'], id='youth_pregnancy_rate_year', universe='Deliveries and termination of pregnancies to females under 18 years as a percentage of total deliveries and termination of pregnancies done in a healthcare facility', year='2015', value_type='Float', has_total=False)
-FieldTable(['year'], id='youth_delivery_rate_year', universe='Deliveries to females under 18 years as a percentage of total deliveries', year='2015', value_type='Float', has_total=False)
+FieldTable(['year'], id='youth_pregnancy_rate_year', universe='Teenage pregnancy rate by year', year='2015', value_type='Float', has_total=False)
+FieldTable(['year'], id='youth_delivery_rate_year', universe='Teenage delivery rate by year', year='2015', value_type='Float', has_total=False)
 
 # Simple Tables
 SimpleTable(
