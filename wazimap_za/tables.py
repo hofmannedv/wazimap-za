@@ -79,7 +79,7 @@ FieldTable(['attendance', 'gender', 'age in completed years'], id='youth_educati
 
 FieldTable(['year'], id='youth_average_mean_score_by_year', universe='Secondary school scores', year='2014', value_type='Float', has_total=False)
 FieldTable(['year'], id='youth_average_language_score_by_year', universe='Secondary school scores', year='2014', value_type='Float', has_total=False)
-FieldTable(['year'], id='youth_percentage_passed_language_by_year', universe='Secondary school scores', year='2014', value_type='Float', has_total=False)
+FieldTable(['year', 'outcome'], id='youth_language_outcome_by_year', universe='Secondary school scores', year='2014', value_type='Float')
 FieldTable(['year'], id='youth_average_maths_score_by_year', universe='Secondary school scores', year='2014', value_type='Float', has_total=False)
 
 FieldTable(['electricity access'], id='youth_electricity_access', universe='Youth living in households', year='2011')
