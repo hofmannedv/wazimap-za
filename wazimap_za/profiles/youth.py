@@ -432,8 +432,8 @@ def get_safety_profile(geo_code, geo_level, session):
     property_crimes_by_year = crimes_by_year['Property crime']
     property_crimes_by_year['metadata'] = crimes_by_year['metadata']
 
-    contact_crimes_per_10k_pop = rate_per_10k_pop(contact_crimes_by_year['2015']['values']['this'], pop_total)
-    property_crimes_per_10k_pop = rate_per_10k_pop(property_crimes_by_year['2015']['values']['this'], pop_total)
+    contact_crimes_per_10k_pop = rate_per_10k_pop(contact_crimes_by_year['2014-15']['values']['this'], pop_total)
+    property_crimes_per_10k_pop = rate_per_10k_pop(property_crimes_by_year['2014-15']['values']['this'], pop_total)
 
     final_data = {
         'youth_victims_per_10k_youth': {
