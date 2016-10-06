@@ -107,8 +107,8 @@ FieldTable(['gender'], id='youth_accused_gender', universe='Youth accused of cri
 FieldTable(['year'], id='youth_victims_year', universe='Youth victims of crime', year='2015', has_total=False)
 FieldTable(['year'], id='youth_accused_year', universe='Youth accused of crimes', year='2015', has_total=False)
 
-FieldTable(['year'], id='youth_pregnancy_rate_year', universe='Deliveries and termination of pregnancies to females under 18 years as a percentage of total deliveries and termination of pregnancies done in a healthcare facility', year='2015', value_type='Float', has_total=False)
-FieldTable(['year'], id='youth_delivery_rate_year', universe='Deliveries to females under 18 years as a percentage of total deliveries', year='2015', value_type='Float', has_total=False)
+FieldTable(['year'], id='youth_pregnancy_rate_year', universe='Teenage pregnancy rate by year', year='2015', value_type='Float', has_total=False)
+FieldTable(['year'], id='youth_delivery_rate_year', universe='Teenage delivery rate by year', year='2015', value_type='Float', has_total=False)
 
 # Simple Tables
 SimpleTable(
