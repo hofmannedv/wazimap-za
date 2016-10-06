@@ -152,6 +152,11 @@ def get_education_profile(geo_code, geo_level, session):
         table_name='youth_language_outcome_by_year',
         percent=False, slices=['2014'])
 
+    youth_maths_outcome_2014, _ = get_stat_data(
+        ['year', 'outcome'], geo_level, geo_code, session,
+        table_name='youth_maths_outcome_by_year',
+        percent=False, slices=['2014'])
+
     final_data  = {
         'youth_completed_grade9': youth_completed_grade9,
         'youth_perc_completed_grade9': {
@@ -185,7 +190,8 @@ def get_education_profile(geo_code, geo_level, session):
             "values": {"this": youth_average_maths_score_by_year['2014']['values']['this']}
         },
         'youth_ave_maths_score_by_year': youth_average_maths_score_by_year,
-        'youth_language_outcome_2014': youth_language_outcome_2014
+        'youth_language_outcome_2014': youth_language_outcome_2014,
+        'youth_maths_outcome_2014': youth_maths_outcome_2014
     }
 
     return final_data
