@@ -147,16 +147,21 @@ def get_education_profile(geo_code, geo_level, session):
         table_name='youth_average_maths_score_by_year',
         percent=False)
 
+    youth_language_outcome_2014, _ = get_stat_data(
+        ['year', 'outcome'], geo_level, geo_code, session,
+        table_name='youth_language_outcome_by_year',
+        percent=False, slices=['2014'])
+
     final_data  = {
         'youth_completed_grade9': youth_completed_grade9,
         'youth_perc_completed_grade9': {
             "name": "Of youth aged 16-17 have completed grade 9 or higher",
-            "values": {"this": youth_completed_grade9['Completed']['values']['this']},
+            "values": {"this": youth_completed_grade9['Completed']['values']['this']}
         },
         'youth_completed_grade9_by_gender': youth_completed_grade9_by_gender,
         'youth_perc_matric': {
             "name": "Of youth aged 20-24 have completed matric/matric equivalent or higher",
-            "values": {"this": percent(matric_or_equiv, youth_pop_20_to_24)},
+            "values": {"this": percent(matric_or_equiv, youth_pop_20_to_24)}
         },
         'youth_education_level': youth_education_level,
         'youth_perc_attending': {
@@ -167,19 +172,20 @@ def get_education_profile(geo_code, geo_level, session):
         'youth_education_attending_by_gender': youth_education_attending_by_gender,
         'youth_ave_mean_score_2014': {
             "name": "Average mean score in both language and mathematics",
-            "values": {"this": youth_average_mean_score_by_year['2014']['values']['this']},
+            "values": {"this": youth_average_mean_score_by_year['2014']['values']['this']}
         },
         'youth_ave_mean_score_by_year': youth_average_mean_score_by_year,
         'youth_ave_language_score_2014': {
             "name": "Average score in language",
-            "values": {"this": youth_average_language_score_by_year['2014']['values']['this']},
+            "values": {"this": youth_average_language_score_by_year['2014']['values']['this']}
         },
         'youth_ave_language_score_by_year': youth_average_language_score_by_year,
         'youth_ave_maths_score_2014': {
             "name": "Average score in mathematics",
-            "values": {"this": youth_average_maths_score_by_year['2014']['values']['this']},
+            "values": {"this": youth_average_maths_score_by_year['2014']['values']['this']}
         },
-        'youth_ave_maths_score_by_year': youth_average_maths_score_by_year
+        'youth_ave_maths_score_by_year': youth_average_maths_score_by_year,
+        'youth_language_outcome_2014': youth_language_outcome_2014
     }
 
     return final_data
