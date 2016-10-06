@@ -150,11 +150,13 @@ def get_education_profile(geo_code, geo_level, session):
     youth_language_outcome_2014, _ = get_stat_data(
         ['year', 'outcome'], geo_level, geo_code, session,
         table_name='youth_language_outcome_by_year',
+        key_order={'outcome': ['Passed', 'Failed']},
         percent=False, slices=['2014'])
 
     youth_maths_outcome_2014, _ = get_stat_data(
         ['year', 'outcome'], geo_level, geo_code, session,
         table_name='youth_maths_outcome_by_year',
+        key_order={'outcome': ['Passed', 'Failed']},
         percent=False, slices=['2014'])
 
     final_data  = {
