@@ -77,11 +77,11 @@ FieldTable(['completed grade9', 'gender'], id='youth_age_16_to_17_gender_complet
 FieldTable(['education level', 'gender'], id='youth_age_20_to_24_gender_education_level', universe='Youth aged 20 to 24', year='2011')
 FieldTable(['attendance', 'gender', 'age in completed years'], id='youth_education_attendance_gender_age_incompleted_years', universe='Youth', year='2011')
 
-FieldTable(['year'], id='youth_average_mean_score_by_year', universe='Secondary school scores', year='2014', value_type='Float', has_total=False)
-FieldTable(['year'], id='youth_average_language_score_by_year', universe='Secondary school scores', year='2014', value_type='Float', has_total=False)
-FieldTable(['year', 'outcome'], id='youth_language_outcome_by_year', universe='Secondary school scores', year='2014', value_type='Float', has_total=False)
-FieldTable(['year'], id='youth_average_maths_score_by_year', universe='Secondary school scores', year='2014', value_type='Float', has_total=False)
-FieldTable(['year', 'outcome'], id='youth_maths_outcome_by_year', universe='Secondary school scores', year='2014', value_type='Float', has_total=False)
+FieldTable(['year'], id='youth_average_mean_score_by_year', universe='Average mean score in both language and mathematics', year='2014', value_type='Float', has_total=False)
+FieldTable(['year'], id='youth_average_language_score_by_year', universe='Average score in language', year='2014', value_type='Float', has_total=False)
+FieldTable(['year', 'outcome'], id='youth_language_outcome_by_year', universe='Percentage passed in language', year='2014', value_type='Float', has_total=False)
+FieldTable(['year'], id='youth_average_maths_score_by_year', universe='Average score in mathematics', year='2014', value_type='Float', has_total=False)
+FieldTable(['year', 'outcome'], id='youth_maths_outcome_by_year', universe='Percentage passed in mathematics', year='2014', value_type='Float', has_total=False)
 
 FieldTable(['electricity access'], id='youth_electricity_access', universe='Youth living in households', year='2011')
 FieldTable(['toilet access'], id='youth_toilet_access', universe='Youth living in households', year='2011')
