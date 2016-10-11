@@ -505,7 +505,7 @@ def get_health_profile(geo_code, geo_level, session):
         'youth_difficulty_by_function': youth_difficulty_by_function,
         'youth_female_HIV_deaths': {
             "name": "Of female youth deaths were due to HIV/AIDS",
-            "values": {"this":youth_female_causes_of_death['HIV/AIDS']['values']['this']}
+            "values": {"this":youth_female_causes_of_death['HIV / AIDS']['values']['this']}
         },
         'youth_male_interpersonal_violence_deaths': {
             "name": "Of male youth deaths were due to interpersonal violence",

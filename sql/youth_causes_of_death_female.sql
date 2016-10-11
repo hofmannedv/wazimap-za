@@ -20,7 +20,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: youth_causes_of_death_female; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: youth_causes_of_death_female; Type: TABLE; Schema: public; Owner: -; Tablespace:
 --
 
 CREATE TABLE youth_causes_of_death_female (
@@ -37,11 +37,11 @@ CREATE TABLE youth_causes_of_death_female (
 
 COPY youth_causes_of_death_female (geo_level, geo_code, "cause of death", total) FROM stdin;
 province	WC	Tuberculosis	319.756591800000024
-province	WC	HIV/AIDS	689.303649899999982
+province	WC	HIV / AIDS	689.303649899999982
 province	WC	STDs excluding HIV	3.42952632900000021
 province	WC	Diarrhoeal diseases	20.9212551100000006
 province	WC	Vaccine preventable childhood	2.59010338800000017
-province	WC	Meningitis/encephalitis	37.0033531199999999
+province	WC	Meningitis / encephalitis	37.0033531199999999
 province	WC	Hepatitis	6.15940236999999957
 province	WC	Septicaemia	23.1728801699999991
 province	WC	Malaria	0.040103897450000002
@@ -59,7 +59,7 @@ province	WC	Indirect maternal	1.09010386499999989
 province	WC	Other maternal	13.3863697100000003
 province	WC	Preterm birth complications	4.57509470000000018
 province	WC	Birth asphyxia	4.57509470000000018
-province	WC	Sepsis/other newborn infectious 	4.57509470000000018
+province	WC	Sepsis / other newborn infectious 	4.57509470000000018
 province	WC	Other perinatal conditions	4.57509470000000018
 province	WC	Protein-energy malnutrition	2.04010391200000019
 province	WC	Vitamin A deficiency	0.040103897450000002
@@ -74,7 +74,7 @@ province	WC	Liver	8.35577392599999946
 province	WC	Gallbladder and biliary tract	0.43377089499999999
 province	WC	Pancreas	0.43377089499999999
 province	WC	Larynx	0.43377089499999999
-province	WC	Trachea/bronchi/lung CA	3.22184872600000016
+province	WC	Trachea / bronchi / lung CA	3.22184872600000016
 province	WC	Melanoma	1.43654871000000006
 province	WC	Other skin cancer	0.43377089499999999
 province	WC	Breast CA	3.85364460899999983
@@ -141,7 +141,7 @@ province	WC	Cirrhosis of liver	9.8161449429999994
 province	WC	Gall bladder and bile duct disease	0.192302838000000004
 province	WC	Pancreatitis	2.38712143899999996
 province	WC	Other digestive	11.9862470600000002
-province	WC	Nephritis/nephrosis	29.3886699699999987
+province	WC	Nephritis / nephrosis	29.3886699699999987
 province	WC	Benign prostatic hypertrophy	0.040103897450000002
 province	WC	Other urinary and gynaecological diseases	6.64952373499999982
 province	WC	Skin diseases	4.13566541700000023
@@ -150,7 +150,7 @@ province	WC	Osteoarthritis	0.040103897450000002
 province	WC	Back and neck pain	0.040103897450000002
 province	WC	Other musculoskeletal	28.1741065999999982
 province	WC	Neural tube defects	3.07606887800000006
-province	WC	Cleft lip/palate	0.040103897450000002
+province	WC	Cleft lip / palate	0.040103897450000002
 province	WC	Congenital heart anomalies	8.92504215199999962
 province	WC	Congenital disorders of GIT	0.040103897450000002
 province	WC	Urogenital malformations	0.040103897450000002
@@ -170,18 +170,18 @@ province	WC	Drowning	18.138692859999999
 province	WC	Hanging, strangulation	2.2277777190000001
 province	WC	Mechanical forces	1.6833332780000001
 province	WC	Exposure to natural forces	0.227777779099999994
-province	WC	Adverse effects medical/surgical	8.37621593499999939
+province	WC	Adverse effects medical / surgical	8.37621593499999939
 province	WC	Animal contact	0.227777779099999994
 province	WC	Other unintentional injuries	5.22777795799999989
 province	WC	Self-inflicted injuries	155.69395449999999
 province	WC	Interpersonal violence	268.367553699999974
 province	WC	Legal intervention	0
 district	CPT	Tuberculosis	208.787857099999997
-district	CPT	HIV/AIDS	468.555755599999998
+district	CPT	HIV / AIDS	468.555755599999998
 district	CPT	STDs excluding HIV	2.18675565699999996
 district	CPT	Diarrhoeal diseases	17.7902412400000003
 district	CPT	Vaccine preventable childhood	1.54999935600000005
-district	CPT	Meningitis/encephalitis	29.6299171399999999
+district	CPT	Meningitis / encephalitis	29.6299171399999999
 district	CPT	Hepatitis	4.03596496599999988
 district	CPT	Septicaemia	18.13277626
 district	CPT	Malaria	0
@@ -199,7 +199,7 @@ district	CPT	Indirect maternal	1.04999995200000007
 district	CPT	Other maternal	8.77483749399999979
 district	CPT	Preterm birth complications	3.10932397799999993
 district	CPT	Birth asphyxia	3.10932397799999993
-district	CPT	Sepsis/other newborn infectious 	3.10932397799999993
+district	CPT	Sepsis / other newborn infectious 	3.10932397799999993
 district	CPT	Other perinatal conditions	3.10932397799999993
 district	CPT	Protein-energy malnutrition	2
 district	CPT	Vitamin A deficiency	0
@@ -214,7 +214,7 @@ district	CPT	Liver	3.0061464309999999
 district	CPT	Gallbladder and biliary tract	0.250809818500000004
 district	CPT	Pancreas	0.250809818500000004
 district	CPT	Larynx	0.250809818500000004
-district	CPT	Trachea/bronchi/lung CA	1.45609188100000009
+district	CPT	Trachea / bronchi / lung CA	1.45609188100000009
 district	CPT	Melanoma	1.25358760400000002
 district	CPT	Other skin cancer	0.250809818500000004
 district	CPT	Breast CA	3.67068338400000016
@@ -281,7 +281,7 @@ district	CPT	Cirrhosis of liver	7.5379457470000002
 district	CPT	Gall bladder and bile duct disease	0.152198940499999991
 district	CPT	Pancreatitis	2.34701752700000021
 district	CPT	Other digestive	9.44614314999999927
-district	CPT	Nephritis/nephrosis	18.8304691300000009
+district	CPT	Nephritis / nephrosis	18.8304691300000009
 district	CPT	Benign prostatic hypertrophy	0
 district	CPT	Other urinary and gynaecological diseases	6.60941982299999964
 district	CPT	Skin diseases	3.09556150399999996
@@ -290,7 +290,7 @@ district	CPT	Osteoarthritis	0
 district	CPT	Back and neck pain	0
 district	CPT	Other musculoskeletal	19.8482875800000009
 district	CPT	Neural tube defects	1.03596508499999995
-district	CPT	Cleft lip/palate	0
+district	CPT	Cleft lip / palate	0
 district	CPT	Congenital heart anomalies	7.88493824000000032
 district	CPT	Congenital disorders of GIT	0
 district	CPT	Urogenital malformations	0
@@ -310,18 +310,18 @@ district	CPT	Drowning	8.41823291799999929
 district	CPT	Hanging, strangulation	2
 district	CPT	Mechanical forces	0
 district	CPT	Exposure to natural forces	0
-district	CPT	Adverse effects medical/surgical	6.14843797700000039
+district	CPT	Adverse effects medical / surgical	6.14843797700000039
 district	CPT	Animal contact	0
 district	CPT	Other unintentional injuries	5
 district	CPT	Self-inflicted injuries	88.9690246600000023
 district	CPT	Interpersonal violence	175.639251699999988
 district	CPT	Legal intervention	0
 district	DC1	Tuberculosis	29.94133377
-district	DC1	HIV/AIDS	39.5413322400000027
+district	DC1	HIV / AIDS	39.5413322400000027
 district	DC1	STDs excluding HIV	0.00800000038000000038
 district	DC1	Diarrhoeal diseases	0.00800000038000000038
 district	DC1	Vaccine preventable childhood	1.008000016
-district	DC1	Meningitis/encephalitis	2.00799989699999992
+district	DC1	Meningitis / encephalitis	2.00799989699999992
 district	DC1	Hepatitis	0.00800000038000000038
 district	DC1	Septicaemia	1.008000016
 district	DC1	Malaria	0.00800000038000000038
@@ -339,7 +339,7 @@ district	DC1	Indirect maternal	0.00800000038000000038
 district	DC1	Other maternal	0.00800000038000000038
 district	DC1	Preterm birth complications	0.382999986399999992
 district	DC1	Birth asphyxia	0.382999986399999992
-district	DC1	Sepsis/other newborn infectious 	0.382999986399999992
+district	DC1	Sepsis / other newborn infectious 	0.382999986399999992
 district	DC1	Other perinatal conditions	0.382999986399999992
 district	DC1	Protein-energy malnutrition	0.00800000038000000038
 district	DC1	Vitamin A deficiency	0.00800000038000000038
@@ -354,7 +354,7 @@ district	DC1	Liver	2.84133338899999988
 district	DC1	Gallbladder and biliary tract	0.00800000038000000038
 district	DC1	Pancreas	0.00800000038000000038
 district	DC1	Larynx	0.00800000038000000038
-district	DC1	Trachea/bronchi/lung CA	1.59079575500000003
+district	DC1	Trachea / bronchi / lung CA	1.59079575500000003
 district	DC1	Melanoma	0.00800000038000000038
 district	DC1	Other skin cancer	0.00800000038000000038
 district	DC1	Breast CA	0.00800000038000000038
@@ -422,7 +422,7 @@ district	DC1	Cirrhosis of liver	1.008000016
 district	DC1	Gall bladder and bile duct disease	0.00800000038000000038
 district	DC1	Pancreatitis	0.00800000038000000038
 district	DC1	Other digestive	0.00800000038000000038
-district	DC1	Nephritis/nephrosis	2.20799994500000007
+district	DC1	Nephritis / nephrosis	2.20799994500000007
 district	DC1	Benign prostatic hypertrophy	0.00800000038000000038
 district	DC1	Other urinary and gynaecological diseases	0.00800000038000000038
 district	DC1	Skin diseases	0.00800000038000000038
@@ -431,7 +431,7 @@ district	DC1	Osteoarthritis	0.00800000038000000038
 district	DC1	Back and neck pain	0.00800000038000000038
 district	DC1	Other musculoskeletal	2.00799989699999992
 district	DC1	Neural tube defects	0.00800000038000000038
-district	DC1	Cleft lip/palate	0.00800000038000000038
+district	DC1	Cleft lip / palate	0.00800000038000000038
 district	DC1	Congenital heart anomalies	0.00800000038000000038
 district	DC1	Congenital disorders of GIT	0.00800000038000000038
 district	DC1	Urogenital malformations	0.00800000038000000038
@@ -451,18 +451,18 @@ district	DC1	Drowning	2.11666655500000012
 district	DC1	Hanging, strangulation	0.116666667200000004
 district	DC1	Mechanical forces	0.350000023800000004
 district	DC1	Exposure to natural forces	0.116666667200000004
-district	DC1	Adverse effects medical/surgical	1.11666667500000005
+district	DC1	Adverse effects medical / surgical	1.11666667500000005
 district	DC1	Animal contact	0.116666667200000004
 district	DC1	Other unintentional injuries	0.116666667200000004
 district	DC1	Self-inflicted injuries	8.1416664119999993
 district	DC1	Interpersonal violence	16.8166675599999991
 district	DC1	Legal intervention	0
 district	DC2	Tuberculosis	32.8319816599999967
-district	DC2	HIV/AIDS	82.0232162500000044
+district	DC2	HIV / AIDS	82.0232162500000044
 district	DC2	STDs excluding HIV	1.21077048800000009
 district	DC2	Diarrhoeal diseases	2.00810384800000019
 district	DC2	Vaccine preventable childhood	0.00810389593199999959
-district	DC2	Meningitis/encephalitis	0.00810389593199999959
+district	DC2	Meningitis / encephalitis	0.00810389593199999959
 district	DC2	Hepatitis	1.09143722100000007
 district	DC2	Septicaemia	2.00810384800000019
 district	DC2	Malaria	0.00810389593199999959
@@ -480,7 +480,7 @@ district	DC2	Indirect maternal	0.00810389593199999959
 district	DC2	Other maternal	1.29381811599999996
 district	DC2	Preterm birth complications	0.558770537400000045
 district	DC2	Birth asphyxia	0.558770537400000045
-district	DC2	Sepsis/other newborn infectious 	0.558770537400000045
+district	DC2	Sepsis / other newborn infectious 	0.558770537400000045
 district	DC2	Other perinatal conditions	0.558770537400000045
 district	DC2	Protein-energy malnutrition	0.00810389593199999959
 district	DC2	Vitamin A deficiency	0.00810389593199999959
@@ -495,7 +495,7 @@ district	DC2	Liver	0.115246757899999996
 district	DC2	Gallbladder and biliary tract	0.115246757899999996
 district	DC2	Pancreas	0.115246757899999996
 district	DC2	Larynx	0.115246757899999996
-district	DC2	Trachea/bronchi/lung CA	0.115246757899999996
+district	DC2	Trachea / bronchi / lung CA	0.115246757899999996
 district	DC2	Melanoma	0.115246757899999996
 district	DC2	Other skin cancer	0.115246757899999996
 district	DC2	Breast CA	0.115246757899999996
@@ -562,7 +562,7 @@ district	DC2	Cirrhosis of liver	0.00810389593199999959
 district	DC2	Gall bladder and bile duct disease	0.00810389593199999959
 district	DC2	Pancreatitis	0.00810389593199999959
 district	DC2	Other digestive	1.00810384799999997
-district	DC2	Nephritis/nephrosis	1.54810380900000011
+district	DC2	Nephritis / nephrosis	1.54810380900000011
 district	DC2	Benign prostatic hypertrophy	0.00810389593199999959
 district	DC2	Other urinary and gynaecological diseases	0.00810389593199999959
 district	DC2	Skin diseases	1.00810384799999997
@@ -571,7 +571,7 @@ district	DC2	Osteoarthritis	0.00810389593199999959
 district	DC2	Back and neck pain	0.00810389593199999959
 district	DC2	Other musculoskeletal	1.00810384799999997
 district	DC2	Neural tube defects	2.00810384800000019
-district	DC2	Cleft lip/palate	0.00810389593199999959
+district	DC2	Cleft lip / palate	0.00810389593199999959
 district	DC2	Congenital heart anomalies	0.00810389593199999959
 district	DC2	Congenital disorders of GIT	0.00810389593199999959
 district	DC2	Urogenital malformations	0.00810389593199999959
@@ -591,7 +591,7 @@ district	DC2	Drowning	2.49268293399999985
 district	DC2	Hanging, strangulation	0
 district	DC2	Mechanical forces	0
 district	DC2	Exposure to natural forces	0
-district	DC2	Adverse effects medical/surgical	1
+district	DC2	Adverse effects medical / surgical	1
 district	DC2	Animal contact	0
 district	DC2	Other unintentional injuries	0
 district	DC2	Self-inflicted injuries	23.4721546200000013
@@ -599,11 +599,11 @@ district	DC3	Back and neck pain	0
 district	DC2	Interpersonal violence	27.6894302400000001
 district	DC2	Legal intervention	0
 district	DC3	Tuberculosis	8.16666698500000088
-district	DC3	HIV/AIDS	29.81904793
+district	DC3	HIV / AIDS	29.81904793
 district	DC3	STDs excluding HIV	0
 district	DC3	Diarrhoeal diseases	0
 district	DC3	Vaccine preventable childhood	0
-district	DC3	Meningitis/encephalitis	0
+district	DC3	Meningitis / encephalitis	0
 district	DC3	Hepatitis	0
 district	DC3	Septicaemia	0
 district	DC3	Malaria	0
@@ -621,7 +621,7 @@ district	DC3	Indirect maternal	0
 district	DC3	Other maternal	0
 district	DC3	Preterm birth complications	0
 district	DC3	Birth asphyxia	0
-district	DC3	Sepsis/other newborn infectious 	0
+district	DC3	Sepsis / other newborn infectious 	0
 district	DC3	Other perinatal conditions	0
 district	DC3	Protein-energy malnutrition	0
 district	DC3	Vitamin A deficiency	0
@@ -636,7 +636,7 @@ district	DC3	Liver	1.3333333730000001
 district	DC3	Gallbladder and biliary tract	0
 district	DC3	Pancreas	0
 district	DC3	Larynx	0
-district	DC3	Trachea/bronchi/lung CA	0
+district	DC3	Trachea / bronchi / lung CA	0
 district	DC3	Melanoma	0
 district	DC3	Other skin cancer	0
 district	DC3	Breast CA	0
@@ -703,14 +703,14 @@ district	DC3	Cirrhosis of liver	1.23809528399999991
 district	DC3	Gall bladder and bile duct disease	0
 district	DC3	Pancreatitis	0
 district	DC3	Other digestive	1.5
-district	DC3	Nephritis/nephrosis	3.23809528399999991
+district	DC3	Nephritis / nephrosis	3.23809528399999991
 district	DC3	Benign prostatic hypertrophy	0
 district	DC3	Other urinary and gynaecological diseases	0
 district	DC3	Skin diseases	0
 district	DC3	Rheumatoid arthritis	0
 district	DC3	Other musculoskeletal	0
 district	DC3	Neural tube defects	0
-district	DC3	Cleft lip/palate	0
+district	DC3	Cleft lip / palate	0
 district	DC3	Congenital heart anomalies	0
 district	DC3	Congenital disorders of GIT	0
 district	DC3	Urogenital malformations	0
@@ -730,18 +730,18 @@ district	DC3	Drowning	0.0555555559700000035
 district	DC3	Hanging, strangulation	0.0555555559700000035
 district	DC3	Mechanical forces	0.16666667160000001
 district	DC3	Exposure to natural forces	0.0555555559700000035
-district	DC3	Adverse effects medical/surgical	0.0555555559700000035
+district	DC3	Adverse effects medical / surgical	0.0555555559700000035
 district	DC3	Animal contact	0.0555555559700000035
 district	DC3	Other unintentional injuries	0.0555555559700000035
 district	DC3	Self-inflicted injuries	7.05555534400000006
 district	DC3	Interpersonal violence	8.11111068700000004
 district	DC3	Legal intervention	0
 district	DC4	Tuberculosis	35.0047607400000018
-district	DC4	HIV/AIDS	65.3402633700000024
+district	DC4	HIV / AIDS	65.3402633700000024
 district	DC4	STDs excluding HIV	0
 district	DC4	Diarrhoeal diseases	1.09090912300000009
 district	DC4	Vaccine preventable childhood	0
-district	DC4	Meningitis/encephalitis	3.33333349199999995
+district	DC4	Meningitis / encephalitis	3.33333349199999995
 district	DC4	Hepatitis	1
 district	DC4	Septicaemia	2
 district	DC4	Malaria	0
@@ -759,7 +759,7 @@ district	DC4	Indirect maternal	0
 district	DC4	Other maternal	2.28571438800000015
 district	DC4	Preterm birth complications	0.5
 district	DC4	Birth asphyxia	0.5
-district	DC4	Sepsis/other newborn infectious 	0.5
+district	DC4	Sepsis / other newborn infectious 	0.5
 district	DC4	Other perinatal conditions	0.5
 district	DC4	Protein-energy malnutrition	0
 district	DC4	Vitamin A deficiency	0
@@ -774,7 +774,7 @@ district	DC4	Liver	1
 district	DC4	Gallbladder and biliary tract	0
 district	DC4	Pancreas	0
 district	DC4	Larynx	0
-district	DC4	Trachea/bronchi/lung CA	0
+district	DC4	Trachea / bronchi / lung CA	0
 district	DC4	Melanoma	0
 district	DC4	Other skin cancer	0
 district	DC4	Breast CA	0
@@ -842,7 +842,7 @@ district	DC4	Cirrhosis of liver	0
 district	DC4	Gall bladder and bile duct disease	0
 district	DC4	Pancreatitis	0
 district	DC4	Other digestive	0
-district	DC4	Nephritis/nephrosis	3.539999962
+district	DC4	Nephritis / nephrosis	3.539999962
 district	DC4	Benign prostatic hypertrophy	0
 district	DC4	Other urinary and gynaecological diseases	0
 district	DC4	Skin diseases	0
@@ -851,7 +851,7 @@ district	DC4	Osteoarthritis	0
 district	DC4	Back and neck pain	0
 district	DC4	Other musculoskeletal	5.28571414900000036
 district	DC4	Neural tube defects	0
-district	DC4	Cleft lip/palate	0
+district	DC4	Cleft lip / palate	0
 district	DC4	Congenital heart anomalies	1
 district	DC4	Congenital disorders of GIT	0
 district	DC4	Urogenital malformations	0
@@ -871,18 +871,18 @@ district	DC4	Drowning	5.05555534400000006
 district	DC4	Hanging, strangulation	0.0555555559700000035
 district	DC4	Mechanical forces	1.1666666269999999
 district	DC4	Exposure to natural forces	0.0555555559700000035
-district	DC4	Adverse effects medical/surgical	0.0555555559700000035
+district	DC4	Adverse effects medical / surgical	0.0555555559700000035
 district	DC4	Animal contact	0.0555555559700000035
 district	DC4	Other unintentional injuries	0.0555555559700000035
 district	DC4	Self-inflicted injuries	27.0555553400000015
 district	DC4	Interpersonal violence	31.1111106900000003
 district	DC4	Legal intervention	0
 district	DC5	Tuberculosis	5.02399969100000021
-district	DC5	HIV/AIDS	4.02400016799999971
+district	DC5	HIV / AIDS	4.02400016799999971
 district	DC5	STDs excluding HIV	0.0240000002100000005
 district	DC5	Diarrhoeal diseases	0.0240000002100000005
 district	DC5	Vaccine preventable childhood	0.0240000002100000005
-district	DC5	Meningitis/encephalitis	2.02399992899999992
+district	DC5	Meningitis / encephalitis	2.02399992899999992
 district	DC5	Hepatitis	0.0240000002100000005
 district	DC5	Septicaemia	0.0240000002100000005
 district	DC5	Malaria	0.0240000002100000005
@@ -900,7 +900,7 @@ district	DC5	Indirect maternal	0.0240000002100000005
 district	DC5	Other maternal	1.02400004900000008
 district	DC5	Preterm birth complications	0.0240000002100000005
 district	DC5	Birth asphyxia	0.0240000002100000005
-district	DC5	Sepsis/other newborn infectious 	0.0240000002100000005
+district	DC5	Sepsis / other newborn infectious 	0.0240000002100000005
 district	DC5	Other perinatal conditions	0.0240000002100000005
 district	DC5	Protein-energy malnutrition	0.0240000002100000005
 district	DC5	Vitamin A deficiency	0.0240000002100000005
@@ -915,7 +915,7 @@ district	DC5	Liver	0.0597142875199999992
 district	DC5	Gallbladder and biliary tract	0.0597142875199999992
 district	DC5	Pancreas	0.0597142875199999992
 district	DC5	Larynx	0.0597142875199999992
-district	DC5	Trachea/bronchi/lung CA	0.0597142875199999992
+district	DC5	Trachea / bronchi / lung CA	0.0597142875199999992
 district	DC5	Melanoma	0.0597142875199999992
 district	DC5	Other skin cancer	0.0597142875199999992
 district	DC5	Breast CA	0.0597142875199999992
@@ -981,7 +981,7 @@ district	DC5	Cirrhosis of liver	0.0240000002100000005
 district	DC5	Gall bladder and bile duct disease	0.0240000002100000005
 district	DC5	Pancreatitis	0.0240000002100000005
 district	DC5	Other digestive	0.0240000002100000005
-district	DC5	Nephritis/nephrosis	0.0240000002100000005
+district	DC5	Nephritis / nephrosis	0.0240000002100000005
 district	DC5	Benign prostatic hypertrophy	0.0240000002100000005
 district	DC5	Other urinary and gynaecological diseases	0.0240000002100000005
 district	DC5	Skin diseases	0.0240000002100000005
@@ -990,7 +990,7 @@ district	DC5	Osteoarthritis	0.0240000002100000005
 district	DC5	Back and neck pain	0.0240000002100000005
 district	DC5	Other musculoskeletal	0.0240000002100000005
 district	DC5	Neural tube defects	0.0240000002100000005
-district	DC5	Cleft lip/palate	0.0240000002100000005
+district	DC5	Cleft lip / palate	0.0240000002100000005
 district	DC5	Congenital heart anomalies	0.0240000002100000005
 district	DC5	Congenital disorders of GIT	0.0240000002100000005
 district	DC5	Urogenital malformations	0.0240000002100000005
@@ -1010,18 +1010,18 @@ district	DC5	Drowning	0
 district	DC5	Hanging, strangulation	0
 district	DC5	Mechanical forces	0
 district	DC5	Exposure to natural forces	0
-district	DC5	Adverse effects medical/surgical	0
+district	DC5	Adverse effects medical / surgical	0
 district	DC5	Animal contact	0
 district	DC5	Other unintentional injuries	0
 district	DC5	Self-inflicted injuries	1
 district	DC5	Interpersonal violence	9
 district	DC5	Legal intervention	0
 municpality	CPT	Tuberculosis	208.787857099999997
-municpality	CPT	HIV/AIDS	468.555755599999998
+municpality	CPT	HIV / AIDS	468.555755599999998
 municpality	CPT	STDs excluding HIV	2.18675565699999996
 municpality	CPT	Diarrhoeal diseases	17.7902412400000003
 municpality	CPT	Vaccine preventable childhood	1.54999935600000005
-municpality	CPT	Meningitis/encephalitis	29.6299171399999999
+municpality	CPT	Meningitis / encephalitis	29.6299171399999999
 municpality	CPT	Hepatitis	4.03596496599999988
 municpality	CPT	Septicaemia	18.13277626
 municpality	CPT	Malaria	0
@@ -1039,7 +1039,7 @@ municpality	CPT	Indirect maternal	1.04999995200000007
 municpality	CPT	Other maternal	8.77483749399999979
 municpality	CPT	Preterm birth complications	3.10932397799999993
 municpality	CPT	Birth asphyxia	3.10932397799999993
-municpality	CPT	Sepsis/other newborn infectious 	3.10932397799999993
+municpality	CPT	Sepsis / other newborn infectious 	3.10932397799999993
 municpality	CPT	Other perinatal conditions	3.10932397799999993
 municpality	CPT	Protein-energy malnutrition	2
 municpality	CPT	Vitamin A deficiency	0
@@ -1054,7 +1054,7 @@ municpality	CPT	Liver	3.0061464309999999
 municpality	CPT	Gallbladder and biliary tract	0.250809818500000004
 municpality	CPT	Pancreas	0.250809818500000004
 municpality	CPT	Larynx	0.250809818500000004
-municpality	CPT	Trachea/bronchi/lung CA	1.45609188100000009
+municpality	CPT	Trachea / bronchi / lung CA	1.45609188100000009
 municpality	CPT	Melanoma	1.25358760400000002
 municpality	CPT	Other skin cancer	0.250809818500000004
 municpality	CPT	Breast CA	3.67068338400000016
@@ -1121,7 +1121,7 @@ municpality	CPT	Cirrhosis of liver	7.5379457470000002
 municpality	CPT	Gall bladder and bile duct disease	0.152198940499999991
 municpality	CPT	Pancreatitis	2.34701752700000021
 municpality	CPT	Other digestive	9.44614314999999927
-municpality	CPT	Nephritis/nephrosis	18.8304691300000009
+municpality	CPT	Nephritis / nephrosis	18.8304691300000009
 municpality	CPT	Benign prostatic hypertrophy	0
 municpality	CPT	Other urinary and gynaecological diseases	6.60941982299999964
 municpality	CPT	Skin diseases	3.09556150399999996
@@ -1130,7 +1130,7 @@ municpality	CPT	Osteoarthritis	0
 municpality	CPT	Back and neck pain	0
 municpality	CPT	Other musculoskeletal	19.8482875800000009
 municpality	CPT	Neural tube defects	1.03596508499999995
-municpality	CPT	Cleft lip/palate	0
+municpality	CPT	Cleft lip / palate	0
 municpality	CPT	Congenital heart anomalies	7.88493824000000032
 municpality	CPT	Congenital disorders of GIT	0
 municpality	CPT	Urogenital malformations	0
@@ -1150,18 +1150,18 @@ municpality	CPT	Drowning	8.41823291799999929
 municpality	CPT	Hanging, strangulation	2
 municpality	CPT	Mechanical forces	0
 municpality	CPT	Exposure to natural forces	0
-municpality	CPT	Adverse effects medical/surgical	6.14843797700000039
+municpality	CPT	Adverse effects medical / surgical	6.14843797700000039
 municpality	CPT	Animal contact	0
 municpality	CPT	Other unintentional injuries	5
 municpality	CPT	Self-inflicted injuries	88.9690246600000023
 municpality	CPT	Interpersonal violence	175.639251699999988
 municpality	CPT	Legal intervention	0
 municpality	WC011	Tuberculosis	8.66666698500000088
-municpality	WC011	HIV/AIDS	9.66666698500000088
+municpality	WC011	HIV / AIDS	9.66666698500000088
 municpality	WC011	STDs excluding HIV	0
 municpality	WC011	Diarrhoeal diseases	0
 municpality	WC011	Vaccine preventable childhood	0
-municpality	WC011	Meningitis/encephalitis	0
+municpality	WC011	Meningitis / encephalitis	0
 municpality	WC011	Hepatitis	0
 municpality	WC011	Septicaemia	1
 municpality	WC011	Malaria	0
@@ -1179,7 +1179,7 @@ municpality	WC011	Indirect maternal	0
 municpality	WC011	Other maternal	0
 municpality	WC011	Preterm birth complications	0
 municpality	WC011	Birth asphyxia	0
-municpality	WC011	Sepsis/other newborn infectious 	0
+municpality	WC011	Sepsis / other newborn infectious 	0
 municpality	WC011	Other perinatal conditions	0
 municpality	WC011	Protein-energy malnutrition	0
 municpality	WC011	Vitamin A deficiency	0
@@ -1194,7 +1194,7 @@ municpality	WC011	Liver	0
 municpality	WC011	Gallbladder and biliary tract	0
 municpality	WC011	Pancreas	0
 municpality	WC011	Larynx	0
-municpality	WC011	Trachea/bronchi/lung CA	0
+municpality	WC011	Trachea / bronchi / lung CA	0
 municpality	WC011	Melanoma	0
 municpality	WC011	Other skin cancer	0
 municpality	WC011	Breast CA	0
@@ -1261,7 +1261,7 @@ municpality	WC011	Cirrhosis of liver	0
 municpality	WC011	Gall bladder and bile duct disease	0
 municpality	WC011	Pancreatitis	0
 municpality	WC011	Other digestive	0
-municpality	WC011	Nephritis/nephrosis	0
+municpality	WC011	Nephritis / nephrosis	0
 municpality	WC011	Benign prostatic hypertrophy	0
 municpality	WC011	Other urinary and gynaecological diseases	0
 municpality	WC011	Skin diseases	0
@@ -1270,7 +1270,7 @@ municpality	WC011	Osteoarthritis	0
 municpality	WC011	Back and neck pain	0
 municpality	WC011	Other musculoskeletal	0
 municpality	WC011	Neural tube defects	0
-municpality	WC011	Cleft lip/palate	0
+municpality	WC011	Cleft lip / palate	0
 municpality	WC011	Congenital heart anomalies	0
 municpality	WC011	Congenital disorders of GIT	0
 municpality	WC011	Urogenital malformations	0
@@ -1290,18 +1290,18 @@ municpality	WC011	Drowning	1
 municpality	WC011	Hanging, strangulation	0
 municpality	WC011	Mechanical forces	0
 municpality	WC011	Exposure to natural forces	0
-municpality	WC011	Adverse effects medical/surgical	0
+municpality	WC011	Adverse effects medical / surgical	0
 municpality	WC011	Animal contact	0
 municpality	WC011	Other unintentional injuries	0
 municpality	WC011	Self-inflicted injuries	1
 municpality	WC011	Interpersonal violence	4.19999980900000036
 municpality	WC011	Legal intervention	0
 municpality	WC012	Tuberculosis	7
-municpality	WC012	HIV/AIDS	7
+municpality	WC012	HIV / AIDS	7
 municpality	WC012	STDs excluding HIV	0
 municpality	WC012	Diarrhoeal diseases	0
 municpality	WC012	Vaccine preventable childhood	0
-municpality	WC012	Meningitis/encephalitis	0
+municpality	WC012	Meningitis / encephalitis	0
 municpality	WC012	Hepatitis	0
 municpality	WC012	Septicaemia	0
 municpality	WC012	Malaria	0
@@ -1319,7 +1319,7 @@ municpality	WC012	Indirect maternal	0
 municpality	WC012	Other maternal	0
 municpality	WC012	Preterm birth complications	0
 municpality	WC012	Birth asphyxia	0
-municpality	WC012	Sepsis/other newborn infectious 	0
+municpality	WC012	Sepsis / other newborn infectious 	0
 municpality	WC012	Other perinatal conditions	0
 municpality	WC012	Protein-energy malnutrition	0
 municpality	WC012	Vitamin A deficiency	0
@@ -1334,7 +1334,7 @@ municpality	WC012	Liver	0
 municpality	WC012	Gallbladder and biliary tract	0
 municpality	WC012	Pancreas	0
 municpality	WC012	Larynx	0
-municpality	WC012	Trachea/bronchi/lung CA	0
+municpality	WC012	Trachea / bronchi / lung CA	0
 municpality	WC012	Melanoma	0
 municpality	WC012	Other skin cancer	0
 municpality	WC012	Breast CA	0
@@ -1401,7 +1401,7 @@ municpality	WC012	Cirrhosis of liver	0
 municpality	WC012	Gall bladder and bile duct disease	0
 municpality	WC012	Pancreatitis	0
 municpality	WC012	Other digestive	0
-municpality	WC012	Nephritis/nephrosis	0
+municpality	WC012	Nephritis / nephrosis	0
 municpality	WC012	Benign prostatic hypertrophy	0
 municpality	WC012	Other urinary and gynaecological diseases	0
 municpality	WC012	Skin diseases	0
@@ -1410,7 +1410,7 @@ municpality	WC012	Osteoarthritis	0
 municpality	WC012	Back and neck pain	0
 municpality	WC012	Other musculoskeletal	0
 municpality	WC012	Neural tube defects	0
-municpality	WC012	Cleft lip/palate	0
+municpality	WC012	Cleft lip / palate	0
 municpality	WC012	Congenital heart anomalies	0
 municpality	WC012	Congenital disorders of GIT	0
 municpality	WC012	Urogenital malformations	0
@@ -1430,18 +1430,18 @@ municpality	WC012	Drowning	0
 municpality	WC012	Hanging, strangulation	0
 municpality	WC012	Mechanical forces	0
 municpality	WC012	Exposure to natural forces	0
-municpality	WC012	Adverse effects medical/surgical	1
+municpality	WC012	Adverse effects medical / surgical	1
 municpality	WC012	Animal contact	0
 municpality	WC012	Other unintentional injuries	0
 municpality	WC012	Self-inflicted injuries	0
 municpality	WC012	Interpersonal violence	3
 municpality	WC012	Legal intervention	0
 municpality	WC013	Tuberculosis	1.008000016
-municpality	WC013	HIV/AIDS	2.00799989699999992
+municpality	WC013	HIV / AIDS	2.00799989699999992
 municpality	WC013	STDs excluding HIV	0.00800000038000000038
 municpality	WC013	Diarrhoeal diseases	0.00800000038000000038
 municpality	WC013	Vaccine preventable childhood	0.00800000038000000038
-municpality	WC013	Meningitis/encephalitis	1.008000016
+municpality	WC013	Meningitis / encephalitis	1.008000016
 municpality	WC013	Hepatitis	0.00800000038000000038
 municpality	WC013	Septicaemia	0.00800000038000000038
 municpality	WC013	Malaria	0.00800000038000000038
@@ -1459,7 +1459,7 @@ municpality	WC013	Indirect maternal	0.00800000038000000038
 municpality	WC013	Other maternal	0.00800000038000000038
 municpality	WC013	Preterm birth complications	0.00800000038000000038
 municpality	WC013	Birth asphyxia	0.00800000038000000038
-municpality	WC013	Sepsis/other newborn infectious 	0.00800000038000000038
+municpality	WC013	Sepsis / other newborn infectious 	0.00800000038000000038
 municpality	WC013	Other perinatal conditions	0.00800000038000000038
 municpality	WC013	Protein-energy malnutrition	0.00800000038000000038
 municpality	WC013	Vitamin A deficiency	0.00800000038000000038
@@ -1474,7 +1474,7 @@ municpality	WC013	Liver	0.00800000038000000038
 municpality	WC013	Gallbladder and biliary tract	0.00800000038000000038
 municpality	WC013	Pancreas	0.00800000038000000038
 municpality	WC013	Larynx	0.00800000038000000038
-municpality	WC013	Trachea/bronchi/lung CA	0.00800000038000000038
+municpality	WC013	Trachea / bronchi / lung CA	0.00800000038000000038
 municpality	WC013	Melanoma	0.00800000038000000038
 municpality	WC013	Other skin cancer	0.00800000038000000038
 municpality	WC013	Breast CA	0.00800000038000000038
@@ -1541,7 +1541,7 @@ municpality	WC013	Cirrhosis of liver	1.008000016
 municpality	WC013	Gall bladder and bile duct disease	0.00800000038000000038
 municpality	WC013	Pancreatitis	0.00800000038000000038
 municpality	WC013	Other digestive	0.00800000038000000038
-municpality	WC013	Nephritis/nephrosis	1.008000016
+municpality	WC013	Nephritis / nephrosis	1.008000016
 municpality	WC013	Benign prostatic hypertrophy	0.00800000038000000038
 municpality	WC013	Other urinary and gynaecological diseases	0.00800000038000000038
 municpality	WC013	Skin diseases	0.00800000038000000038
@@ -1550,7 +1550,7 @@ municpality	WC013	Osteoarthritis	0.00800000038000000038
 municpality	WC013	Back and neck pain	0.00800000038000000038
 municpality	WC013	Other musculoskeletal	0.00800000038000000038
 municpality	WC013	Neural tube defects	0.00800000038000000038
-municpality	WC013	Cleft lip/palate	0.00800000038000000038
+municpality	WC013	Cleft lip / palate	0.00800000038000000038
 municpality	WC013	Congenital heart anomalies	0.00800000038000000038
 municpality	WC013	Congenital disorders of GIT	0.00800000038000000038
 municpality	WC013	Urogenital malformations	0.00800000038000000038
@@ -1570,18 +1570,18 @@ municpality	WC013	Drowning	0
 municpality	WC013	Hanging, strangulation	0
 municpality	WC013	Mechanical forces	0
 municpality	WC013	Exposure to natural forces	0
-municpality	WC013	Adverse effects medical/surgical	0
+municpality	WC013	Adverse effects medical / surgical	0
 municpality	WC013	Animal contact	0
 municpality	WC013	Other unintentional injuries	0
 municpality	WC013	Self-inflicted injuries	4.02500009500000022
 municpality	WC013	Interpersonal violence	0
 municpality	WC013	Legal intervention	0
 municpality	WC014	Tuberculosis	7.09999990499999978
-municpality	WC014	HIV/AIDS	13.1999998099999996
+municpality	WC014	HIV / AIDS	13.1999998099999996
 municpality	WC014	STDs excluding HIV	0
 municpality	WC014	Diarrhoeal diseases	0
 municpality	WC014	Vaccine preventable childhood	1
-municpality	WC014	Meningitis/encephalitis	1
+municpality	WC014	Meningitis / encephalitis	1
 municpality	WC014	Hepatitis	0
 municpality	WC014	Septicaemia	0
 municpality	WC014	Malaria	0
@@ -1599,7 +1599,7 @@ municpality	WC014	Indirect maternal	0
 municpality	WC014	Other maternal	0
 municpality	WC014	Preterm birth complications	0
 municpality	WC014	Birth asphyxia	0
-municpality	WC014	Sepsis/other newborn infectious 	0
+municpality	WC014	Sepsis / other newborn infectious 	0
 municpality	WC014	Other perinatal conditions	0
 municpality	WC014	Protein-energy malnutrition	0
 municpality	WC014	Vitamin A deficiency	0
@@ -1614,7 +1614,7 @@ municpality	WC014	Liver	1.5
 municpality	WC014	Gallbladder and biliary tract	0
 municpality	WC014	Pancreas	0
 municpality	WC014	Larynx	0
-municpality	WC014	Trachea/bronchi/lung CA	0
+municpality	WC014	Trachea / bronchi / lung CA	0
 municpality	WC014	Melanoma	0
 municpality	WC014	Other skin cancer	0
 municpality	WC014	Breast CA	0
@@ -1681,7 +1681,7 @@ municpality	WC014	Cirrhosis of liver	0
 municpality	WC014	Gall bladder and bile duct disease	0
 municpality	WC014	Pancreatitis	0
 municpality	WC014	Other digestive	0
-municpality	WC014	Nephritis/nephrosis	1.20000004799999993
+municpality	WC014	Nephritis / nephrosis	1.20000004799999993
 municpality	WC014	Benign prostatic hypertrophy	0
 municpality	WC014	Other urinary and gynaecological diseases	0
 municpality	WC014	Skin diseases	0
@@ -1690,7 +1690,7 @@ municpality	WC014	Osteoarthritis	0
 municpality	WC014	Back and neck pain	0
 municpality	WC014	Other musculoskeletal	1
 municpality	WC014	Neural tube defects	0
-municpality	WC014	Cleft lip/palate	0
+municpality	WC014	Cleft lip / palate	0
 municpality	WC014	Congenital heart anomalies	0
 municpality	WC014	Congenital disorders of GIT	0
 municpality	WC014	Urogenital malformations	0
@@ -1710,18 +1710,18 @@ municpality	WC014	Drowning	0.00555555569000000006
 municpality	WC014	Hanging, strangulation	0.00555555569000000006
 municpality	WC014	Mechanical forces	0.0166666675399999992
 municpality	WC014	Exposure to natural forces	0.00555555569000000006
-municpality	WC014	Adverse effects medical/surgical	0.00555555569000000006
+municpality	WC014	Adverse effects medical / surgical	0.00555555569000000006
 municpality	WC014	Animal contact	0.00555555569000000006
 municpality	WC014	Other unintentional injuries	0.00555555569000000006
 municpality	WC014	Self-inflicted injuries	2.00555562999999992
 municpality	WC014	Interpersonal violence	7.39444446600000038
 municpality	WC014	Legal intervention	0
 municpality	WC015	Tuberculosis	6.16666698499999999
-municpality	WC015	HIV/AIDS	7.66666698499999999
+municpality	WC015	HIV / AIDS	7.66666698499999999
 municpality	WC015	STDs excluding HIV	0
 municpality	WC015	Diarrhoeal diseases	0
 municpality	WC015	Vaccine preventable childhood	0
-municpality	WC015	Meningitis/encephalitis	0
+municpality	WC015	Meningitis / encephalitis	0
 municpality	WC015	Hepatitis	0
 municpality	WC015	Septicaemia	0
 municpality	WC015	Malaria	0
@@ -1739,7 +1739,7 @@ municpality	WC015	Indirect maternal	0
 municpality	WC015	Other maternal	0
 municpality	WC015	Preterm birth complications	0.375
 municpality	WC015	Birth asphyxia	0.375
-municpality	WC015	Sepsis/other newborn infectious 	0.375
+municpality	WC015	Sepsis / other newborn infectious 	0.375
 municpality	WC015	Other perinatal conditions	0.375
 municpality	WC015	Protein-energy malnutrition	0
 municpality	WC015	Vitamin A deficiency	0
@@ -1754,7 +1754,7 @@ municpality	WC015	Liver	1.3333333730000001
 municpality	WC015	Gallbladder and biliary tract	0
 municpality	WC015	Pancreas	0
 municpality	WC015	Larynx	0
-municpality	WC015	Trachea/bronchi/lung CA	1.58279573900000003
+municpality	WC015	Trachea / bronchi / lung CA	1.58279573900000003
 municpality	WC015	Melanoma	0
 municpality	WC015	Other skin cancer	0
 municpality	WC015	Breast CA	0
@@ -1821,7 +1821,7 @@ municpality	WC015	Cirrhosis of liver	0
 municpality	WC015	Gall bladder and bile duct disease	0
 municpality	WC015	Pancreatitis	0
 municpality	WC015	Other digestive	0
-municpality	WC015	Nephritis/nephrosis	0
+municpality	WC015	Nephritis / nephrosis	0
 municpality	WC015	Benign prostatic hypertrophy	0
 municpality	WC015	Other urinary and gynaecological diseases	0
 municpality	WC015	Skin diseases	0
@@ -1830,7 +1830,7 @@ municpality	WC015	Osteoarthritis	0
 municpality	WC015	Back and neck pain	0
 municpality	WC015	Other musculoskeletal	1
 municpality	WC015	Neural tube defects	0
-municpality	WC015	Cleft lip/palate	0
+municpality	WC015	Cleft lip / palate	0
 municpality	WC015	Congenital heart anomalies	0
 municpality	WC015	Congenital disorders of GIT	0
 municpality	WC015	Urogenital malformations	0
@@ -1850,18 +1850,18 @@ municpality	WC015	Drowning	1.11111116399999998
 municpality	WC015	Hanging, strangulation	0.111111111900000004
 municpality	WC015	Mechanical forces	0.333333343299999973
 municpality	WC015	Exposure to natural forces	0.111111111900000004
-municpality	WC015	Adverse effects medical/surgical	0.111111111900000004
+municpality	WC015	Adverse effects medical / surgical	0.111111111900000004
 municpality	WC015	Animal contact	0.111111111900000004
 municpality	WC015	Other unintentional injuries	0.111111111900000004
 municpality	WC015	Self-inflicted injuries	1.11111116399999998
 municpality	WC015	Interpersonal violence	2.22222232799999997
 municpality	WC015	Legal intervention	0
 municpality	WC022	Tuberculosis	3.25
-municpality	WC022	HIV/AIDS	18.2999992399999982
+municpality	WC022	HIV / AIDS	18.2999992399999982
 municpality	WC022	STDs excluding HIV	0
 municpality	WC022	Diarrhoeal diseases	0
 municpality	WC022	Vaccine preventable childhood	0
-municpality	WC022	Meningitis/encephalitis	0
+municpality	WC022	Meningitis / encephalitis	0
 municpality	WC022	Hepatitis	0
 municpality	WC022	Septicaemia	1
 municpality	WC022	Malaria	0
@@ -1880,7 +1880,7 @@ municpality	WC022	Other maternal	0
 municpality	WC022	Road injuries	11.5
 municpality	WC022	Preterm birth complications	0.25
 municpality	WC022	Birth asphyxia	0.25
-municpality	WC022	Sepsis/other newborn infectious 	0.25
+municpality	WC022	Sepsis / other newborn infectious 	0.25
 municpality	WC022	Other perinatal conditions	0.25
 municpality	WC022	Protein-energy malnutrition	0
 municpality	WC022	Vitamin A deficiency	0
@@ -1895,7 +1895,7 @@ municpality	WC022	Liver	0
 municpality	WC022	Gallbladder and biliary tract	0
 municpality	WC022	Pancreas	0
 municpality	WC022	Larynx	0
-municpality	WC022	Trachea/bronchi/lung CA	0
+municpality	WC022	Trachea / bronchi / lung CA	0
 municpality	WC022	Melanoma	0
 municpality	WC022	Other skin cancer	0
 municpality	WC022	Breast CA	0
@@ -1962,7 +1962,7 @@ municpality	WC022	Cirrhosis of liver	0
 municpality	WC022	Gall bladder and bile duct disease	0
 municpality	WC022	Pancreatitis	0
 municpality	WC022	Other digestive	0
-municpality	WC022	Nephritis/nephrosis	0
+municpality	WC022	Nephritis / nephrosis	0
 municpality	WC022	Benign prostatic hypertrophy	0
 municpality	WC022	Other urinary and gynaecological diseases	0
 municpality	WC022	Skin diseases	1
@@ -1971,7 +1971,7 @@ municpality	WC022	Osteoarthritis	0
 municpality	WC022	Back and neck pain	0
 municpality	WC022	Other musculoskeletal	0
 municpality	WC022	Neural tube defects	0
-municpality	WC022	Cleft lip/palate	0
+municpality	WC022	Cleft lip / palate	0
 municpality	WC022	Congenital heart anomalies	0
 municpality	WC022	Congenital disorders of GIT	0
 municpality	WC022	Urogenital malformations	0
@@ -1990,18 +1990,18 @@ municpality	WC022	Drowning	0
 municpality	WC022	Hanging, strangulation	0
 municpality	WC022	Mechanical forces	0
 municpality	WC022	Exposure to natural forces	0
-municpality	WC022	Adverse effects medical/surgical	0
+municpality	WC022	Adverse effects medical / surgical	0
 municpality	WC022	Animal contact	0
 municpality	WC022	Other unintentional injuries	0
 municpality	WC022	Self-inflicted injuries	5
 municpality	WC022	Interpersonal violence	4.5
 municpality	WC022	Legal intervention	0
 municpality	WC023	Tuberculosis	11.4883804299999994
-municpality	WC023	HIV/AIDS	16.9169521299999985
+municpality	WC023	HIV / AIDS	16.9169521299999985
 municpality	WC023	STDs excluding HIV	1.2026666399999999
 municpality	WC023	Diarrhoeal diseases	0
 municpality	WC023	Vaccine preventable childhood	0
-municpality	WC023	Meningitis/encephalitis	0
+municpality	WC023	Meningitis / encephalitis	0
 municpality	WC023	Hepatitis	0
 municpality	WC023	Septicaemia	0
 municpality	WC023	Malaria	0
@@ -2019,7 +2019,7 @@ municpality	WC023	Indirect maternal	0
 municpality	WC023	Other maternal	1.28571426900000008
 municpality	WC023	Preterm birth complications	0.300666660099999983
 municpality	WC023	Birth asphyxia	0.300666660099999983
-municpality	WC023	Sepsis/other newborn infectious 	0.300666660099999983
+municpality	WC023	Sepsis / other newborn infectious 	0.300666660099999983
 municpality	WC023	Other perinatal conditions	0.300666660099999983
 municpality	WC023	Protein-energy malnutrition	0
 municpality	WC023	Vitamin A deficiency	0
@@ -2034,7 +2034,7 @@ municpality	WC023	Liver	0
 municpality	WC023	Gallbladder and biliary tract	0
 municpality	WC023	Pancreas	0
 municpality	WC023	Larynx	0
-municpality	WC023	Trachea/bronchi/lung CA	0
+municpality	WC023	Trachea / bronchi / lung CA	0
 municpality	WC023	Melanoma	0
 municpality	WC023	Other skin cancer	0
 municpality	WC023	Breast CA	0
@@ -2101,7 +2101,7 @@ municpality	WC023	Cirrhosis of liver	0
 municpality	WC023	Gall bladder and bile duct disease	0
 municpality	WC023	Pancreatitis	0
 municpality	WC023	Other digestive	0
-municpality	WC023	Nephritis/nephrosis	1.5
+municpality	WC023	Nephritis / nephrosis	1.5
 municpality	WC023	Benign prostatic hypertrophy	0
 municpality	WC023	Other urinary and gynaecological diseases	0
 municpality	WC023	Skin diseases	0
@@ -2110,7 +2110,7 @@ municpality	WC023	Osteoarthritis	0
 municpality	WC023	Back and neck pain	0
 municpality	WC023	Other musculoskeletal	0
 municpality	WC023	Neural tube defects	0
-municpality	WC023	Cleft lip/palate	0
+municpality	WC023	Cleft lip / palate	0
 municpality	WC023	Congenital heart anomalies	0
 municpality	WC023	Congenital disorders of GIT	0
 municpality	WC023	Urogenital malformations	0
@@ -2130,18 +2130,18 @@ municpality	WC023	Drowning	1.49268293400000007
 municpality	WC023	Hanging, strangulation	0
 municpality	WC023	Mechanical forces	0
 municpality	WC023	Exposure to natural forces	0
-municpality	WC023	Adverse effects medical/surgical	1
+municpality	WC023	Adverse effects medical / surgical	1
 municpality	WC023	Animal contact	0
 municpality	WC023	Other unintentional injuries	0
 municpality	WC023	Self-inflicted injuries	9.18048763300000026
 municpality	WC023	Interpersonal violence	9.40609741199999938
 municpality	WC023	Legal intervention	0
 municpality	WC024	Tuberculosis	7.5833334920000004
-municpality	WC024	HIV/AIDS	15.4166669800000005
+municpality	WC024	HIV / AIDS	15.4166669800000005
 municpality	WC024	STDs excluding HIV	0
 municpality	WC024	Diarrhoeal diseases	0
 municpality	WC024	Vaccine preventable childhood	0
-municpality	WC024	Meningitis/encephalitis	0
+municpality	WC024	Meningitis / encephalitis	0
 municpality	WC024	Hepatitis	0
 municpality	WC024	Septicaemia	1
 municpality	WC024	Malaria	0
@@ -2159,7 +2159,7 @@ municpality	WC024	Indirect maternal	0
 municpality	WC024	Other maternal	0
 municpality	WC024	Preterm birth complications	0
 municpality	WC024	Birth asphyxia	0
-municpality	WC024	Sepsis/other newborn infectious 	0
+municpality	WC024	Sepsis / other newborn infectious 	0
 municpality	WC024	Other perinatal conditions	0
 municpality	WC024	Protein-energy malnutrition	0
 municpality	WC024	Vitamin A deficiency	0
@@ -2174,7 +2174,7 @@ municpality	WC024	Liver	0.0357142873100000022
 municpality	WC024	Gallbladder and biliary tract	0.0357142873100000022
 municpality	WC024	Pancreas	0.0357142873100000022
 municpality	WC024	Larynx	0.0357142873100000022
-municpality	WC024	Trachea/bronchi/lung CA	0.0357142873100000022
+municpality	WC024	Trachea / bronchi / lung CA	0.0357142873100000022
 municpality	WC024	Melanoma	0.0357142873100000022
 municpality	WC024	Other skin cancer	0.0357142873100000022
 municpality	WC024	Breast CA	0.0357142873100000022
@@ -2241,7 +2241,7 @@ municpality	WC024	Cirrhosis of liver	0
 municpality	WC024	Gall bladder and bile duct disease	0
 municpality	WC024	Pancreatitis	0
 municpality	WC024	Other digestive	1
-municpality	WC024	Nephritis/nephrosis	0
+municpality	WC024	Nephritis / nephrosis	0
 municpality	WC024	Benign prostatic hypertrophy	0
 municpality	WC024	Other urinary and gynaecological diseases	0
 municpality	WC024	Skin diseases	0
@@ -2250,7 +2250,7 @@ municpality	WC024	Osteoarthritis	0
 municpality	WC024	Back and neck pain	0
 municpality	WC024	Other musculoskeletal	1
 municpality	WC024	Neural tube defects	0
-municpality	WC024	Cleft lip/palate	0
+municpality	WC024	Cleft lip / palate	0
 municpality	WC024	Congenital heart anomalies	0
 municpality	WC024	Congenital disorders of GIT	0
 municpality	WC024	Urogenital malformations	0
@@ -2270,18 +2270,18 @@ municpality	WC024	Drowning	0
 municpality	WC024	Hanging, strangulation	0
 municpality	WC024	Mechanical forces	0
 municpality	WC024	Exposure to natural forces	0
-municpality	WC024	Adverse effects medical/surgical	0
+municpality	WC024	Adverse effects medical / surgical	0
 municpality	WC024	Animal contact	0
 municpality	WC024	Other unintentional injuries	0
 municpality	WC024	Self-inflicted injuries	3
 municpality	WC024	Interpersonal violence	4.19999980900000036
 municpality	WC024	Legal intervention	0
 municpality	WC025	Tuberculosis	6.51026821099999964
-municpality	WC025	HIV/AIDS	26.3895969400000006
+municpality	WC025	HIV / AIDS	26.3895969400000006
 municpality	WC025	STDs excluding HIV	0.00810389593199999959
 municpality	WC025	Diarrhoeal diseases	0.00810389593199999959
 municpality	WC025	Vaccine preventable childhood	0.00810389593199999959
-municpality	WC025	Meningitis/encephalitis	0.00810389593199999959
+municpality	WC025	Meningitis / encephalitis	0.00810389593199999959
 municpality	WC025	Hepatitis	1.09143722100000007
 municpality	WC025	Septicaemia	0.00810389593199999959
 municpality	WC025	Malaria	0.00810389593199999959
@@ -2299,7 +2299,7 @@ municpality	WC025	Indirect maternal	0.00810389593199999959
 municpality	WC025	Other maternal	0.00810389593199999959
 municpality	WC025	Preterm birth complications	0.00810389593199999959
 municpality	WC025	Birth asphyxia	0.00810389593199999959
-municpality	WC025	Sepsis/other newborn infectious 	0.00810389593199999959
+municpality	WC025	Sepsis / other newborn infectious 	0.00810389593199999959
 municpality	WC025	Other perinatal conditions	0.00810389593199999959
 municpality	WC025	Protein-energy malnutrition	0.00810389593199999959
 municpality	WC025	Vitamin A deficiency	0.00810389593199999959
@@ -2314,7 +2314,7 @@ municpality	WC025	Liver	0.00810389593199999959
 municpality	WC025	Gallbladder and biliary tract	0.00810389593199999959
 municpality	WC025	Pancreas	0.00810389593199999959
 municpality	WC025	Larynx	0.00810389593199999959
-municpality	WC025	Trachea/bronchi/lung CA	0.00810389593199999959
+municpality	WC025	Trachea / bronchi / lung CA	0.00810389593199999959
 municpality	WC025	Melanoma	0.00810389593199999959
 municpality	WC025	Other skin cancer	0.00810389593199999959
 municpality	WC025	Breast CA	0.00810389593199999959
@@ -2381,7 +2381,7 @@ municpality	WC025	Cirrhosis of liver	0.00810389593199999959
 municpality	WC025	Gall bladder and bile duct disease	0.00810389593199999959
 municpality	WC025	Pancreatitis	0.00810389593199999959
 municpality	WC025	Other digestive	0.00810389593199999959
-municpality	WC025	Nephritis/nephrosis	0.0481038950399999971
+municpality	WC025	Nephritis / nephrosis	0.0481038950399999971
 municpality	WC025	Benign prostatic hypertrophy	0.00810389593199999959
 municpality	WC025	Other urinary and gynaecological diseases	0.00810389593199999959
 municpality	WC025	Skin diseases	0.00810389593199999959
@@ -2390,7 +2390,7 @@ municpality	WC025	Osteoarthritis	0.00810389593199999959
 municpality	WC025	Back and neck pain	0.00810389593199999959
 municpality	WC025	Other musculoskeletal	0.00810389593199999959
 municpality	WC025	Neural tube defects	2.00810384800000019
-municpality	WC025	Cleft lip/palate	0.00810389593199999959
+municpality	WC025	Cleft lip / palate	0.00810389593199999959
 municpality	WC025	Congenital heart anomalies	0.00810389593199999959
 municpality	WC025	Congenital disorders of GIT	0.00810389593199999959
 municpality	WC025	Urogenital malformations	0.00810389593199999959
@@ -2410,18 +2410,18 @@ municpality	WC025	Drowning	1
 municpality	WC025	Hanging, strangulation	0
 municpality	WC025	Mechanical forces	0
 municpality	WC025	Exposure to natural forces	0
-municpality	WC025	Adverse effects medical/surgical	0
+municpality	WC025	Adverse effects medical / surgical	0
 municpality	WC025	Animal contact	0
 municpality	WC025	Other unintentional injuries	0
 municpality	WC025	Self-inflicted injuries	5.2916665079999996
 municpality	WC025	Interpersonal violence	7.58333301500000001
 municpality	WC025	Legal intervention	0
 municpality	WC026	Tuberculosis	4
-municpality	WC026	HIV/AIDS	5
+municpality	WC026	HIV / AIDS	5
 municpality	WC026	STDs excluding HIV	0
 municpality	WC026	Diarrhoeal diseases	2
 municpality	WC026	Vaccine preventable childhood	0
-municpality	WC026	Meningitis/encephalitis	0
+municpality	WC026	Meningitis / encephalitis	0
 municpality	WC026	Hepatitis	0
 municpality	WC026	Septicaemia	0
 municpality	WC026	Malaria	0
@@ -2439,7 +2439,7 @@ municpality	WC026	Indirect maternal	0
 municpality	WC026	Other maternal	0
 municpality	WC026	Preterm birth complications	0
 municpality	WC026	Birth asphyxia	0
-municpality	WC026	Sepsis/other newborn infectious 	0
+municpality	WC026	Sepsis / other newborn infectious 	0
 municpality	WC026	Other perinatal conditions	0
 municpality	WC026	Protein-energy malnutrition	0
 municpality	WC026	Vitamin A deficiency	0
@@ -2454,7 +2454,7 @@ municpality	WC026	Liver	0.0714285746200000043
 municpality	WC026	Gallbladder and biliary tract	0.0714285746200000043
 municpality	WC026	Pancreas	0.0714285746200000043
 municpality	WC026	Larynx	0.0714285746200000043
-municpality	WC026	Trachea/bronchi/lung CA	0.0714285746200000043
+municpality	WC026	Trachea / bronchi / lung CA	0.0714285746200000043
 municpality	WC026	Melanoma	0.0714285746200000043
 municpality	WC026	Other skin cancer	0.0714285746200000043
 municpality	WC026	Breast CA	0.0714285746200000043
@@ -2521,7 +2521,7 @@ municpality	WC026	Cirrhosis of liver	0
 municpality	WC026	Gall bladder and bile duct disease	0
 municpality	WC026	Pancreatitis	0
 municpality	WC026	Other digestive	0
-municpality	WC026	Nephritis/nephrosis	0
+municpality	WC026	Nephritis / nephrosis	0
 municpality	WC026	Benign prostatic hypertrophy	0
 municpality	WC026	Other urinary and gynaecological diseases	0
 municpality	WC026	Skin diseases	0
@@ -2530,7 +2530,7 @@ municpality	WC026	Osteoarthritis	0
 municpality	WC026	Back and neck pain	0
 municpality	WC026	Other musculoskeletal	0
 municpality	WC026	Neural tube defects	0
-municpality	WC026	Cleft lip/palate	0
+municpality	WC026	Cleft lip / palate	0
 municpality	WC026	Congenital heart anomalies	0
 municpality	WC026	Congenital disorders of GIT	0
 municpality	WC026	Urogenital malformations	0
@@ -2550,18 +2550,18 @@ municpality	WC026	Drowning	0
 municpality	WC026	Hanging, strangulation	0
 municpality	WC026	Mechanical forces	0
 municpality	WC026	Exposure to natural forces	0
-municpality	WC026	Adverse effects medical/surgical	0
+municpality	WC026	Adverse effects medical / surgical	0
 municpality	WC026	Animal contact	0
 municpality	WC026	Other unintentional injuries	0
 municpality	WC026	Self-inflicted injuries	1
 municpality	WC026	Interpersonal violence	2
 municpality	WC026	Legal intervention	0
 municpality	WC031	Tuberculosis	6.1666665079999996
-municpality	WC031	HIV/AIDS	14.3333330199999995
+municpality	WC031	HIV / AIDS	14.3333330199999995
 municpality	WC031	STDs excluding HIV	0
 municpality	WC031	Diarrhoeal diseases	0
 municpality	WC031	Vaccine preventable childhood	0
-municpality	WC031	Meningitis/encephalitis	0
+municpality	WC031	Meningitis / encephalitis	0
 municpality	WC031	Hepatitis	0
 municpality	WC031	Septicaemia	0
 municpality	WC031	Malaria	0
@@ -2579,7 +2579,7 @@ municpality	WC031	Indirect maternal	0
 municpality	WC031	Other maternal	0
 municpality	WC031	Preterm birth complications	0
 municpality	WC031	Birth asphyxia	0
-municpality	WC031	Sepsis/other newborn infectious 	0
+municpality	WC031	Sepsis / other newborn infectious 	0
 municpality	WC031	Other perinatal conditions	0
 municpality	WC031	Protein-energy malnutrition	0
 municpality	WC031	Vitamin A deficiency	0
@@ -2594,7 +2594,7 @@ municpality	WC031	Liver	1.3333333730000001
 municpality	WC031	Gallbladder and biliary tract	0
 municpality	WC031	Pancreas	0
 municpality	WC031	Larynx	0
-municpality	WC031	Trachea/bronchi/lung CA	0
+municpality	WC031	Trachea / bronchi / lung CA	0
 municpality	WC031	Melanoma	0
 municpality	WC031	Other skin cancer	0
 municpality	WC031	Breast CA	0
@@ -2661,7 +2661,7 @@ municpality	WC031	Cirrhosis of liver	0
 municpality	WC031	Gall bladder and bile duct disease	0
 municpality	WC031	Pancreatitis	0
 municpality	WC031	Other digestive	0
-municpality	WC031	Nephritis/nephrosis	1
+municpality	WC031	Nephritis / nephrosis	1
 municpality	WC031	Benign prostatic hypertrophy	0
 municpality	WC031	Other urinary and gynaecological diseases	0
 municpality	WC031	Skin diseases	0
@@ -2670,7 +2670,7 @@ municpality	WC031	Osteoarthritis	0
 municpality	WC031	Back and neck pain	0
 municpality	WC031	Other musculoskeletal	0
 municpality	WC031	Neural tube defects	0
-municpality	WC031	Cleft lip/palate	0
+municpality	WC031	Cleft lip / palate	0
 municpality	WC031	Congenital heart anomalies	0
 municpality	WC031	Congenital disorders of GIT	0
 municpality	WC031	Urogenital malformations	0
@@ -2690,18 +2690,18 @@ municpality	WC031	Drowning	0
 municpality	WC031	Hanging, strangulation	0
 municpality	WC031	Mechanical forces	0
 municpality	WC031	Exposure to natural forces	0
-municpality	WC031	Adverse effects medical/surgical	0
+municpality	WC031	Adverse effects medical / surgical	0
 municpality	WC031	Animal contact	0
 municpality	WC031	Other unintentional injuries	0
 municpality	WC031	Self-inflicted injuries	5
 municpality	WC031	Interpersonal violence	4
 municpality	WC031	Legal intervention	0
 municpality	WC032	Tuberculosis	0
-municpality	WC032	HIV/AIDS	7.4857144360000003
+municpality	WC032	HIV / AIDS	7.4857144360000003
 municpality	WC032	STDs excluding HIV	0
 municpality	WC032	Diarrhoeal diseases	0
 municpality	WC032	Vaccine preventable childhood	0
-municpality	WC032	Meningitis/encephalitis	0
+municpality	WC032	Meningitis / encephalitis	0
 municpality	WC032	Hepatitis	0
 municpality	WC032	Septicaemia	0
 municpality	WC032	Malaria	0
@@ -2719,7 +2719,7 @@ municpality	WC032	Indirect maternal	0
 municpality	WC032	Other maternal	0
 municpality	WC032	Preterm birth complications	0
 municpality	WC032	Birth asphyxia	0
-municpality	WC032	Sepsis/other newborn infectious 	0
+municpality	WC032	Sepsis / other newborn infectious 	0
 municpality	WC032	Other perinatal conditions	0
 municpality	WC032	Protein-energy malnutrition	0
 municpality	WC032	Vitamin A deficiency	0
@@ -2734,7 +2734,7 @@ municpality	WC032	Liver	0
 municpality	WC032	Gallbladder and biliary tract	0
 municpality	WC032	Pancreas	0
 municpality	WC032	Larynx	0
-municpality	WC032	Trachea/bronchi/lung CA	0
+municpality	WC032	Trachea / bronchi / lung CA	0
 municpality	WC032	Melanoma	0
 municpality	WC032	Other skin cancer	0
 municpality	WC032	Breast CA	0
@@ -2801,7 +2801,7 @@ municpality	WC032	Cirrhosis of liver	1.23809528399999991
 municpality	WC032	Gall bladder and bile duct disease	0
 municpality	WC032	Pancreatitis	0
 municpality	WC032	Other digestive	1.5
-municpality	WC032	Nephritis/nephrosis	2.23809528399999991
+municpality	WC032	Nephritis / nephrosis	2.23809528399999991
 municpality	WC032	Benign prostatic hypertrophy	0
 municpality	WC032	Other urinary and gynaecological diseases	0
 municpality	WC032	Skin diseases	0
@@ -2810,7 +2810,7 @@ municpality	WC032	Osteoarthritis	0
 municpality	WC032	Back and neck pain	0
 municpality	WC032	Other musculoskeletal	0
 municpality	WC032	Neural tube defects	0
-municpality	WC032	Cleft lip/palate	0
+municpality	WC032	Cleft lip / palate	0
 municpality	WC032	Congenital heart anomalies	0
 municpality	WC032	Congenital disorders of GIT	0
 municpality	WC032	Urogenital malformations	0
@@ -2830,18 +2830,18 @@ municpality	WC032	Drowning	0
 municpality	WC032	Hanging, strangulation	0
 municpality	WC032	Mechanical forces	0
 municpality	WC032	Exposure to natural forces	0
-municpality	WC032	Adverse effects medical/surgical	0
+municpality	WC032	Adverse effects medical / surgical	0
 municpality	WC032	Animal contact	0
 municpality	WC032	Other unintentional injuries	0
 municpality	WC032	Self-inflicted injuries	1
 municpality	WC032	Interpersonal violence	2
 municpality	WC032	Legal intervention	0
 municpality	WC033	Tuberculosis	1
-municpality	WC033	HIV/AIDS	3
+municpality	WC033	HIV / AIDS	3
 municpality	WC033	STDs excluding HIV	0
 municpality	WC033	Diarrhoeal diseases	0
 municpality	WC033	Vaccine preventable childhood	0
-municpality	WC033	Meningitis/encephalitis	0
+municpality	WC033	Meningitis / encephalitis	0
 municpality	WC033	Hepatitis	0
 municpality	WC033	Septicaemia	0
 municpality	WC033	Malaria	0
@@ -2859,7 +2859,7 @@ municpality	WC033	Indirect maternal	0
 municpality	WC033	Other maternal	0
 municpality	WC033	Preterm birth complications	0
 municpality	WC033	Birth asphyxia	0
-municpality	WC033	Sepsis/other newborn infectious 	0
+municpality	WC033	Sepsis / other newborn infectious 	0
 municpality	WC033	Other perinatal conditions	0
 municpality	WC033	Protein-energy malnutrition	0
 municpality	WC033	Vitamin A deficiency	0
@@ -2874,7 +2874,7 @@ municpality	WC033	Liver	0
 municpality	WC033	Gallbladder and biliary tract	0
 municpality	WC033	Pancreas	0
 municpality	WC033	Larynx	0
-municpality	WC033	Trachea/bronchi/lung CA	0
+municpality	WC033	Trachea / bronchi / lung CA	0
 municpality	WC033	Melanoma	0
 municpality	WC033	Other skin cancer	0
 municpality	WC033	Breast CA	0
@@ -2942,7 +2942,7 @@ municpality	WC033	Cirrhosis of liver	0
 municpality	WC033	Gall bladder and bile duct disease	0
 municpality	WC033	Pancreatitis	0
 municpality	WC033	Other digestive	0
-municpality	WC033	Nephritis/nephrosis	0
+municpality	WC033	Nephritis / nephrosis	0
 municpality	WC033	Benign prostatic hypertrophy	0
 municpality	WC033	Other urinary and gynaecological diseases	0
 municpality	WC033	Skin diseases	0
@@ -2951,7 +2951,7 @@ municpality	WC033	Osteoarthritis	0
 municpality	WC033	Back and neck pain	0
 municpality	WC033	Other musculoskeletal	0
 municpality	WC033	Neural tube defects	0
-municpality	WC033	Cleft lip/palate	0
+municpality	WC033	Cleft lip / palate	0
 municpality	WC033	Congenital heart anomalies	0
 municpality	WC033	Congenital disorders of GIT	0
 municpality	WC033	Urogenital malformations	0
@@ -2971,18 +2971,18 @@ municpality	WC033	Drowning	0.0555555559700000035
 municpality	WC033	Hanging, strangulation	0.0555555559700000035
 municpality	WC033	Mechanical forces	0.16666667160000001
 municpality	WC033	Exposure to natural forces	0.0555555559700000035
-municpality	WC033	Adverse effects medical/surgical	0.0555555559700000035
+municpality	WC033	Adverse effects medical / surgical	0.0555555559700000035
 municpality	WC033	Animal contact	0.0555555559700000035
 municpality	WC033	Other unintentional injuries	0.0555555559700000035
 municpality	WC033	Self-inflicted injuries	0.0555555559700000035
 municpality	WC033	Interpersonal violence	1.11111116399999998
 municpality	WC033	Legal intervention	0
 municpality	WC034	Tuberculosis	1
-municpality	WC034	HIV/AIDS	5
+municpality	WC034	HIV / AIDS	5
 municpality	WC034	STDs excluding HIV	0
 municpality	WC034	Diarrhoeal diseases	0
 municpality	WC034	Vaccine preventable childhood	0
-municpality	WC034	Meningitis/encephalitis	0
+municpality	WC034	Meningitis / encephalitis	0
 municpality	WC034	Hepatitis	0
 municpality	WC034	Septicaemia	0
 municpality	WC034	Malaria	0
@@ -3000,7 +3000,7 @@ municpality	WC034	Indirect maternal	0
 municpality	WC034	Other maternal	0
 municpality	WC034	Preterm birth complications	0
 municpality	WC034	Birth asphyxia	0
-municpality	WC034	Sepsis/other newborn infectious 	0
+municpality	WC034	Sepsis / other newborn infectious 	0
 municpality	WC034	Other perinatal conditions	0
 municpality	WC034	Protein-energy malnutrition	0
 municpality	WC034	Vitamin A deficiency	0
@@ -3015,7 +3015,7 @@ municpality	WC034	Liver	0
 municpality	WC034	Gallbladder and biliary tract	0
 municpality	WC034	Pancreas	0
 municpality	WC034	Larynx	0
-municpality	WC034	Trachea/bronchi/lung CA	0
+municpality	WC034	Trachea / bronchi / lung CA	0
 municpality	WC034	Melanoma	0
 municpality	WC034	Other skin cancer	0
 municpality	WC034	Breast CA	0
@@ -3081,7 +3081,7 @@ municpality	WC034	Cirrhosis of liver	0
 municpality	WC034	Gall bladder and bile duct disease	0
 municpality	WC034	Pancreatitis	0
 municpality	WC034	Other digestive	0
-municpality	WC034	Nephritis/nephrosis	0
+municpality	WC034	Nephritis / nephrosis	0
 municpality	WC034	Benign prostatic hypertrophy	0
 municpality	WC034	Other urinary and gynaecological diseases	0
 municpality	WC034	Skin diseases	0
@@ -3090,7 +3090,7 @@ municpality	WC034	Osteoarthritis	0
 municpality	WC034	Back and neck pain	0
 municpality	WC034	Other musculoskeletal	0
 municpality	WC034	Neural tube defects	0
-municpality	WC034	Cleft lip/palate	0
+municpality	WC034	Cleft lip / palate	0
 municpality	WC034	Congenital heart anomalies	0
 municpality	WC034	Congenital disorders of GIT	0
 municpality	WC034	Urogenital malformations	0
@@ -3110,18 +3110,18 @@ municpality	WC034	Drowning	0
 municpality	WC034	Hanging, strangulation	0
 municpality	WC034	Mechanical forces	0
 municpality	WC034	Exposure to natural forces	0
-municpality	WC034	Adverse effects medical/surgical	0
+municpality	WC034	Adverse effects medical / surgical	0
 municpality	WC034	Animal contact	0
 municpality	WC034	Other unintentional injuries	0
 municpality	WC034	Self-inflicted injuries	1
 municpality	WC034	Interpersonal violence	1
 municpality	WC034	Legal intervention	0
 municpality	WC041	Tuberculosis	2
-municpality	WC041	HIV/AIDS	5
+municpality	WC041	HIV / AIDS	5
 municpality	WC041	STDs excluding HIV	0
 municpality	WC041	Diarrhoeal diseases	0
 municpality	WC041	Vaccine preventable childhood	0
-municpality	WC041	Meningitis/encephalitis	0
+municpality	WC041	Meningitis / encephalitis	0
 municpality	WC041	Hepatitis	0
 municpality	WC041	Septicaemia	0
 municpality	WC041	Malaria	0
@@ -3139,7 +3139,7 @@ municpality	WC041	Indirect maternal	0
 municpality	WC041	Other maternal	0
 municpality	WC041	Preterm birth complications	0
 municpality	WC041	Birth asphyxia	0
-municpality	WC041	Sepsis/other newborn infectious 	0
+municpality	WC041	Sepsis / other newborn infectious 	0
 municpality	WC041	Other perinatal conditions	0
 municpality	WC041	Protein-energy malnutrition	0
 municpality	WC041	Vitamin A deficiency	0
@@ -3154,7 +3154,7 @@ municpality	WC041	Liver	0
 municpality	WC041	Gallbladder and biliary tract	0
 municpality	WC041	Pancreas	0
 municpality	WC041	Larynx	0
-municpality	WC041	Trachea/bronchi/lung CA	0
+municpality	WC041	Trachea / bronchi / lung CA	0
 municpality	WC041	Melanoma	0
 municpality	WC041	Other skin cancer	0
 municpality	WC041	Breast CA	0
@@ -3221,7 +3221,7 @@ municpality	WC041	Cirrhosis of liver	0
 municpality	WC041	Gall bladder and bile duct disease	0
 municpality	WC041	Pancreatitis	0
 municpality	WC041	Other digestive	0
-municpality	WC041	Nephritis/nephrosis	0
+municpality	WC041	Nephritis / nephrosis	0
 municpality	WC041	Benign prostatic hypertrophy	0
 municpality	WC041	Other urinary and gynaecological diseases	0
 municpality	WC041	Skin diseases	0
@@ -3230,7 +3230,7 @@ municpality	WC041	Osteoarthritis	0
 municpality	WC041	Back and neck pain	0
 municpality	WC041	Other musculoskeletal	0
 municpality	WC041	Neural tube defects	0
-municpality	WC041	Cleft lip/palate	0
+municpality	WC041	Cleft lip / palate	0
 municpality	WC041	Congenital heart anomalies	0
 municpality	WC043	Prostate	0
 municpality	WC041	Congenital disorders of GIT	0
@@ -3251,18 +3251,18 @@ municpality	WC041	Drowning	0
 municpality	WC041	Hanging, strangulation	0
 municpality	WC041	Mechanical forces	0
 municpality	WC041	Exposure to natural forces	0
-municpality	WC041	Adverse effects medical/surgical	0
+municpality	WC041	Adverse effects medical / surgical	0
 municpality	WC041	Animal contact	0
 municpality	WC041	Other unintentional injuries	0
 municpality	WC041	Self-inflicted injuries	2
 municpality	WC041	Interpersonal violence	6
 municpality	WC041	Legal intervention	0
 municpality	WC042	Tuberculosis	0
-municpality	WC042	HIV/AIDS	5.5
+municpality	WC042	HIV / AIDS	5.5
 municpality	WC042	STDs excluding HIV	0
 municpality	WC042	Diarrhoeal diseases	0
 municpality	WC042	Vaccine preventable childhood	0
-municpality	WC042	Meningitis/encephalitis	1
+municpality	WC042	Meningitis / encephalitis	1
 municpality	WC042	Hepatitis	0
 municpality	WC042	Septicaemia	0
 municpality	WC042	Malaria	0
@@ -3280,7 +3280,7 @@ municpality	WC042	Indirect maternal	0
 municpality	WC042	Other maternal	0
 municpality	WC042	Preterm birth complications	0
 municpality	WC042	Birth asphyxia	0
-municpality	WC042	Sepsis/other newborn infectious 	0
+municpality	WC042	Sepsis / other newborn infectious 	0
 municpality	WC042	Other perinatal conditions	0
 municpality	WC042	Protein-energy malnutrition	0
 municpality	WC042	Vitamin A deficiency	0
@@ -3295,7 +3295,7 @@ municpality	WC042	Liver	0
 municpality	WC042	Gallbladder and biliary tract	0
 municpality	WC042	Pancreas	0
 municpality	WC042	Larynx	0
-municpality	WC042	Trachea/bronchi/lung CA	0
+municpality	WC042	Trachea / bronchi / lung CA	0
 municpality	WC042	Melanoma	0
 municpality	WC042	Other skin cancer	0
 municpality	WC042	Breast CA	0
@@ -3363,7 +3363,7 @@ municpality	WC042	Cirrhosis of liver	0
 municpality	WC042	Gall bladder and bile duct disease	0
 municpality	WC042	Pancreatitis	0
 municpality	WC042	Other digestive	0
-municpality	WC042	Nephritis/nephrosis	1.5
+municpality	WC042	Nephritis / nephrosis	1.5
 municpality	WC042	Benign prostatic hypertrophy	0
 municpality	WC042	Other urinary and gynaecological diseases	0
 municpality	WC042	Skin diseases	0
@@ -3372,7 +3372,7 @@ municpality	WC042	Osteoarthritis	0
 municpality	WC042	Back and neck pain	0
 municpality	WC042	Other musculoskeletal	0
 municpality	WC042	Neural tube defects	0
-municpality	WC042	Cleft lip/palate	0
+municpality	WC042	Cleft lip / palate	0
 municpality	WC042	Congenital heart anomalies	0
 municpality	WC042	Congenital disorders of GIT	0
 municpality	WC042	Urogenital malformations	0
@@ -3392,18 +3392,18 @@ municpality	WC042	Drowning	0
 municpality	WC042	Hanging, strangulation	0
 municpality	WC042	Mechanical forces	0
 municpality	WC042	Exposure to natural forces	0
-municpality	WC042	Adverse effects medical/surgical	0
+municpality	WC042	Adverse effects medical / surgical	0
 municpality	WC042	Animal contact	0
 municpality	WC042	Other unintentional injuries	0
 municpality	WC042	Self-inflicted injuries	1
 municpality	WC042	Interpersonal violence	1
 municpality	WC042	Legal intervention	0
 municpality	WC043	Tuberculosis	5.90000009500000022
-municpality	WC043	HIV/AIDS	11.8999996199999991
+municpality	WC043	HIV / AIDS	11.8999996199999991
 municpality	WC043	STDs excluding HIV	0
 municpality	WC043	Diarrhoeal diseases	0
 municpality	WC043	Vaccine preventable childhood	0
-municpality	WC043	Meningitis/encephalitis	0
+municpality	WC043	Meningitis / encephalitis	0
 municpality	WC043	Hepatitis	0
 municpality	WC043	Septicaemia	0
 municpality	WC043	Malaria	0
@@ -3421,7 +3421,7 @@ municpality	WC043	Indirect maternal	0
 municpality	WC043	Other maternal	0
 municpality	WC043	Preterm birth complications	0
 municpality	WC043	Birth asphyxia	0
-municpality	WC043	Sepsis/other newborn infectious 	0
+municpality	WC043	Sepsis / other newborn infectious 	0
 municpality	WC043	Other perinatal conditions	0
 municpality	WC043	Protein-energy malnutrition	0
 municpality	WC043	Vitamin A deficiency	0
@@ -3436,7 +3436,7 @@ municpality	WC043	Liver	1
 municpality	WC043	Gallbladder and biliary tract	0
 municpality	WC043	Pancreas	0
 municpality	WC043	Larynx	0
-municpality	WC043	Trachea/bronchi/lung CA	0
+municpality	WC043	Trachea / bronchi / lung CA	0
 municpality	WC043	Melanoma	0
 municpality	WC043	Other skin cancer	0
 municpality	WC043	Breast CA	0
@@ -3501,7 +3501,7 @@ municpality	WC043	Cirrhosis of liver	0
 municpality	WC043	Gall bladder and bile duct disease	0
 municpality	WC043	Pancreatitis	0
 municpality	WC043	Other digestive	0
-municpality	WC043	Nephritis/nephrosis	1
+municpality	WC043	Nephritis / nephrosis	1
 municpality	WC043	Benign prostatic hypertrophy	0
 municpality	WC043	Other urinary and gynaecological diseases	0
 municpality	WC043	Skin diseases	0
@@ -3510,7 +3510,7 @@ municpality	WC043	Osteoarthritis	0
 municpality	WC043	Back and neck pain	0
 municpality	WC043	Other musculoskeletal	2
 municpality	WC043	Neural tube defects	0
-municpality	WC043	Cleft lip/palate	0
+municpality	WC043	Cleft lip / palate	0
 municpality	WC043	Congenital heart anomalies	0
 municpality	WC043	Congenital disorders of GIT	0
 municpality	WC043	Urogenital malformations	0
@@ -3530,18 +3530,18 @@ municpality	WC043	Drowning	0
 municpality	WC043	Hanging, strangulation	0
 municpality	WC043	Mechanical forces	0
 municpality	WC043	Exposure to natural forces	0
-municpality	WC043	Adverse effects medical/surgical	0
+municpality	WC043	Adverse effects medical / surgical	0
 municpality	WC043	Animal contact	0
 municpality	WC043	Other unintentional injuries	0
 municpality	WC043	Self-inflicted injuries	6
 municpality	WC043	Interpersonal violence	0
 municpality	WC043	Legal intervention	0
 municpality	WC044	Tuberculosis	10.5714282999999991
-municpality	WC044	HIV/AIDS	22.3116893800000007
+municpality	WC044	HIV / AIDS	22.3116893800000007
 municpality	WC044	STDs excluding HIV	0
 municpality	WC044	Diarrhoeal diseases	1.09090912300000009
 municpality	WC044	Vaccine preventable childhood	0
-municpality	WC044	Meningitis/encephalitis	0
+municpality	WC044	Meningitis / encephalitis	0
 municpality	WC044	Hepatitis	0
 municpality	WC044	Septicaemia	2
 municpality	WC044	Malaria	0
@@ -3559,7 +3559,7 @@ municpality	WC044	Indirect maternal	0
 municpality	WC044	Other maternal	1.14285719400000008
 municpality	WC044	Preterm birth complications	0.25
 municpality	WC044	Birth asphyxia	0.25
-municpality	WC044	Sepsis/other newborn infectious 	0.25
+municpality	WC044	Sepsis / other newborn infectious 	0.25
 municpality	WC044	Other perinatal conditions	0.25
 municpality	WC044	Protein-energy malnutrition	0
 municpality	WC044	Vitamin A deficiency	0
@@ -3574,7 +3574,7 @@ municpality	WC044	Liver	0
 municpality	WC044	Gallbladder and biliary tract	0
 municpality	WC044	Pancreas	0
 municpality	WC044	Larynx	0
-municpality	WC044	Trachea/bronchi/lung CA	0
+municpality	WC044	Trachea / bronchi / lung CA	0
 municpality	WC044	Melanoma	0
 municpality	WC044	Other skin cancer	0
 municpality	WC044	Breast CA	0
@@ -3641,7 +3641,7 @@ municpality	WC044	Cirrhosis of liver	0
 municpality	WC044	Gall bladder and bile duct disease	0
 municpality	WC044	Pancreatitis	0
 municpality	WC044	Other digestive	0
-municpality	WC044	Nephritis/nephrosis	0
+municpality	WC044	Nephritis / nephrosis	0
 municpality	WC044	Benign prostatic hypertrophy	0
 municpality	WC044	Other urinary and gynaecological diseases	0
 municpality	WC044	Skin diseases	0
@@ -3650,7 +3650,7 @@ municpality	WC044	Osteoarthritis	0
 municpality	WC044	Back and neck pain	0
 municpality	WC044	Other musculoskeletal	2.14285707499999978
 municpality	WC044	Neural tube defects	0
-municpality	WC044	Cleft lip/palate	0
+municpality	WC044	Cleft lip / palate	0
 municpality	WC044	Congenital heart anomalies	0
 municpality	WC044	Congenital disorders of GIT	0
 municpality	WC044	Urogenital malformations	0
@@ -3670,18 +3670,18 @@ municpality	WC044	Drowning	1
 municpality	WC044	Hanging, strangulation	0
 municpality	WC044	Mechanical forces	0
 municpality	WC044	Exposure to natural forces	0
-municpality	WC044	Adverse effects medical/surgical	0
+municpality	WC044	Adverse effects medical / surgical	0
 municpality	WC044	Animal contact	0
 municpality	WC044	Other unintentional injuries	0
 municpality	WC044	Self-inflicted injuries	10
 municpality	WC044	Interpersonal violence	12
 municpality	WC044	Legal intervention	0
 municpality	WC045	Tuberculosis	10.3333330199999995
-municpality	WC045	HIV/AIDS	8.42857170099999919
+municpality	WC045	HIV / AIDS	8.42857170099999919
 municpality	WC045	STDs excluding HIV	0
 municpality	WC045	Diarrhoeal diseases	0
 municpality	WC045	Vaccine preventable childhood	0
-municpality	WC045	Meningitis/encephalitis	2.33333349199999995
+municpality	WC045	Meningitis / encephalitis	2.33333349199999995
 municpality	WC045	Hepatitis	0
 municpality	WC045	Septicaemia	0
 municpality	WC045	Malaria	0
@@ -3699,7 +3699,7 @@ municpality	WC045	Indirect maternal	0
 municpality	WC045	Other maternal	1.14285719400000008
 municpality	WC045	Preterm birth complications	0.25
 municpality	WC045	Birth asphyxia	0.25
-municpality	WC045	Sepsis/other newborn infectious 	0.25
+municpality	WC045	Sepsis / other newborn infectious 	0.25
 municpality	WC045	Other perinatal conditions	0.25
 municpality	WC045	Protein-energy malnutrition	0
 municpality	WC045	Vitamin A deficiency	0
@@ -3714,7 +3714,7 @@ municpality	WC045	Liver	0
 municpality	WC045	Gallbladder and biliary tract	0
 municpality	WC045	Pancreas	0
 municpality	WC045	Larynx	0
-municpality	WC045	Trachea/bronchi/lung CA	0
+municpality	WC045	Trachea / bronchi / lung CA	0
 municpality	WC045	Melanoma	0
 municpality	WC045	Other skin cancer	0
 municpality	WC045	Breast CA	0
@@ -3782,7 +3782,7 @@ municpality	WC045	Cirrhosis of liver	0
 municpality	WC045	Gall bladder and bile duct disease	0
 municpality	WC045	Pancreatitis	0
 municpality	WC045	Other digestive	0
-municpality	WC045	Nephritis/nephrosis	0
+municpality	WC045	Nephritis / nephrosis	0
 municpality	WC045	Benign prostatic hypertrophy	0
 municpality	WC045	Other urinary and gynaecological diseases	0
 municpality	WC045	Skin diseases	0
@@ -3791,7 +3791,7 @@ municpality	WC045	Osteoarthritis	0
 municpality	WC045	Back and neck pain	0
 municpality	WC045	Other musculoskeletal	1.14285719400000008
 municpality	WC045	Neural tube defects	0
-municpality	WC045	Cleft lip/palate	0
+municpality	WC045	Cleft lip / palate	0
 municpality	WC045	Congenital heart anomalies	0
 municpality	WC045	Congenital disorders of GIT	0
 municpality	WC045	Urogenital malformations	0
@@ -3811,18 +3811,18 @@ municpality	WC045	Drowning	0.0555555559700000035
 municpality	WC045	Hanging, strangulation	0.0555555559700000035
 municpality	WC045	Mechanical forces	0.16666667160000001
 municpality	WC045	Exposure to natural forces	0.0555555559700000035
-municpality	WC045	Adverse effects medical/surgical	0.0555555559700000035
+municpality	WC045	Adverse effects medical / surgical	0.0555555559700000035
 municpality	WC045	Animal contact	0.0555555559700000035
 municpality	WC045	Other unintentional injuries	0.0555555559700000035
 municpality	WC045	Self-inflicted injuries	3.05555558200000021
 municpality	WC045	Interpersonal violence	5.11111116400000043
 municpality	WC045	Legal intervention	0
 municpality	WC047	Tuberculosis	3
-municpality	WC047	HIV/AIDS	3
+municpality	WC047	HIV / AIDS	3
 municpality	WC047	STDs excluding HIV	0
 municpality	WC047	Diarrhoeal diseases	0
 municpality	WC047	Vaccine preventable childhood	0
-municpality	WC047	Meningitis/encephalitis	0
+municpality	WC047	Meningitis / encephalitis	0
 municpality	WC047	Hepatitis	0
 municpality	WC047	Septicaemia	0
 municpality	WC047	Malaria	0
@@ -3840,7 +3840,7 @@ municpality	WC047	Indirect maternal	0
 municpality	WC047	Other maternal	0
 municpality	WC047	Preterm birth complications	0
 municpality	WC047	Birth asphyxia	0
-municpality	WC047	Sepsis/other newborn infectious 	0
+municpality	WC047	Sepsis / other newborn infectious 	0
 municpality	WC047	Other perinatal conditions	0
 municpality	WC047	Protein-energy malnutrition	0
 municpality	WC047	Vitamin A deficiency	0
@@ -3855,7 +3855,7 @@ municpality	WC047	Liver	0
 municpality	WC047	Gallbladder and biliary tract	0
 municpality	WC047	Pancreas	0
 municpality	WC047	Larynx	0
-municpality	WC047	Trachea/bronchi/lung CA	0
+municpality	WC047	Trachea / bronchi / lung CA	0
 municpality	WC047	Melanoma	0
 municpality	WC047	Other skin cancer	0
 municpality	WC047	Breast CA	0
@@ -3921,7 +3921,7 @@ municpality	WC047	Cirrhosis of liver	0
 municpality	WC047	Gall bladder and bile duct disease	0
 municpality	WC047	Pancreatitis	0
 municpality	WC047	Other digestive	0
-municpality	WC047	Nephritis/nephrosis	1
+municpality	WC047	Nephritis / nephrosis	1
 municpality	WC047	Benign prostatic hypertrophy	0
 municpality	WC047	Other urinary and gynaecological diseases	0
 municpality	WC047	Skin diseases	0
@@ -3930,7 +3930,7 @@ municpality	WC047	Osteoarthritis	0
 municpality	WC047	Back and neck pain	0
 municpality	WC047	Other musculoskeletal	0
 municpality	WC047	Neural tube defects	0
-municpality	WC047	Cleft lip/palate	0
+municpality	WC047	Cleft lip / palate	0
 municpality	WC047	Congenital heart anomalies	1
 municpality	WC047	Congenital disorders of GIT	0
 municpality	WC047	Urogenital malformations	0
@@ -3950,18 +3950,18 @@ municpality	WC047	Drowning	1
 municpality	WC047	Hanging, strangulation	0
 municpality	WC047	Mechanical forces	1
 municpality	WC047	Exposure to natural forces	0
-municpality	WC047	Adverse effects medical/surgical	0
+municpality	WC047	Adverse effects medical / surgical	0
 municpality	WC047	Animal contact	0
 municpality	WC047	Other unintentional injuries	0
 municpality	WC047	Self-inflicted injuries	4
 municpality	WC047	Interpersonal violence	1
 municpality	WC047	Legal intervention	0
 municpality	WC048	Tuberculosis	3.20000004800000015
-municpality	WC048	HIV/AIDS	9.19999980899999947
+municpality	WC048	HIV / AIDS	9.19999980899999947
 municpality	WC048	STDs excluding HIV	0
 municpality	WC048	Diarrhoeal diseases	0
 municpality	WC048	Vaccine preventable childhood	0
-municpality	WC048	Meningitis/encephalitis	0
+municpality	WC048	Meningitis / encephalitis	0
 municpality	WC048	Hepatitis	1
 municpality	WC048	Septicaemia	0
 municpality	WC048	Malaria	0
@@ -3979,7 +3979,7 @@ municpality	WC048	Indirect maternal	0
 municpality	WC048	Other maternal	0
 municpality	WC048	Preterm birth complications	0
 municpality	WC048	Birth asphyxia	0
-municpality	WC048	Sepsis/other newborn infectious 	0
+municpality	WC048	Sepsis / other newborn infectious 	0
 municpality	WC048	Other perinatal conditions	0
 municpality	WC048	Protein-energy malnutrition	0
 municpality	WC048	Vitamin A deficiency	0
@@ -3994,7 +3994,7 @@ municpality	WC048	Liver	0
 municpality	WC048	Gallbladder and biliary tract	0
 municpality	WC048	Pancreas	0
 municpality	WC048	Larynx	0
-municpality	WC048	Trachea/bronchi/lung CA	0
+municpality	WC048	Trachea / bronchi / lung CA	0
 municpality	WC048	Melanoma	0
 municpality	WC048	Other skin cancer	0
 municpality	WC048	Breast CA	0
@@ -4061,7 +4061,7 @@ municpality	WC048	Cirrhosis of liver	0
 municpality	WC048	Gall bladder and bile duct disease	0
 municpality	WC048	Pancreatitis	0
 municpality	WC048	Other digestive	0
-municpality	WC048	Nephritis/nephrosis	0.0399999991099999966
+municpality	WC048	Nephritis / nephrosis	0.0399999991099999966
 municpality	WC048	Benign prostatic hypertrophy	0
 municpality	WC048	Other urinary and gynaecological diseases	0
 municpality	WC048	Skin diseases	0
@@ -4070,7 +4070,7 @@ municpality	WC048	Osteoarthritis	0
 municpality	WC048	Back and neck pain	0
 municpality	WC048	Other musculoskeletal	0
 municpality	WC048	Neural tube defects	0
-municpality	WC048	Cleft lip/palate	0
+municpality	WC048	Cleft lip / palate	0
 municpality	WC048	Congenital heart anomalies	0
 municpality	WC048	Congenital disorders of GIT	0
 municpality	WC048	Urogenital malformations	0
@@ -4090,18 +4090,18 @@ municpality	WC048	Drowning	3
 municpality	WC048	Hanging, strangulation	0
 municpality	WC048	Mechanical forces	0
 municpality	WC048	Exposure to natural forces	0
-municpality	WC048	Adverse effects medical/surgical	0
+municpality	WC048	Adverse effects medical / surgical	0
 municpality	WC048	Animal contact	0
 municpality	WC048	Other unintentional injuries	0
 municpality	WC048	Self-inflicted injuries	1
 municpality	WC048	Interpersonal violence	6
 municpality	WC048	Legal intervention	0
 municpality	WC051	Tuberculosis	0.00800000038000000038
-municpality	WC051	HIV/AIDS	0.00800000038000000038
+municpality	WC051	HIV / AIDS	0.00800000038000000038
 municpality	WC051	STDs excluding HIV	0.00800000038000000038
 municpality	WC051	Diarrhoeal diseases	0.00800000038000000038
 municpality	WC051	Vaccine preventable childhood	0.00800000038000000038
-municpality	WC051	Meningitis/encephalitis	0.00800000038000000038
+municpality	WC051	Meningitis / encephalitis	0.00800000038000000038
 municpality	WC051	Hepatitis	0.00800000038000000038
 municpality	WC051	Septicaemia	0.00800000038000000038
 municpality	WC051	Malaria	0.00800000038000000038
@@ -4119,7 +4119,7 @@ municpality	WC051	Indirect maternal	0.00800000038000000038
 municpality	WC051	Other maternal	0.00800000038000000038
 municpality	WC051	Preterm birth complications	0.00800000038000000038
 municpality	WC051	Birth asphyxia	0.00800000038000000038
-municpality	WC051	Sepsis/other newborn infectious 	0.00800000038000000038
+municpality	WC051	Sepsis / other newborn infectious 	0.00800000038000000038
 municpality	WC051	Other perinatal conditions	0.00800000038000000038
 municpality	WC051	Protein-energy malnutrition	0.00800000038000000038
 municpality	WC051	Vitamin A deficiency	0.00800000038000000038
@@ -4134,7 +4134,7 @@ municpality	WC051	Liver	0.00800000038000000038
 municpality	WC051	Gallbladder and biliary tract	0.00800000038000000038
 municpality	WC051	Pancreas	0.00800000038000000038
 municpality	WC051	Larynx	0.00800000038000000038
-municpality	WC051	Trachea/bronchi/lung CA	0.00800000038000000038
+municpality	WC051	Trachea / bronchi / lung CA	0.00800000038000000038
 municpality	WC051	Melanoma	0.00800000038000000038
 municpality	WC051	Other skin cancer	0.00800000038000000038
 municpality	WC051	Breast CA	0.00800000038000000038
@@ -4201,7 +4201,7 @@ municpality	WC051	Cirrhosis of liver	0.00800000038000000038
 municpality	WC051	Gall bladder and bile duct disease	0.00800000038000000038
 municpality	WC051	Pancreatitis	0.00800000038000000038
 municpality	WC051	Other digestive	0.00800000038000000038
-municpality	WC051	Nephritis/nephrosis	0.00800000038000000038
+municpality	WC051	Nephritis / nephrosis	0.00800000038000000038
 municpality	WC051	Benign prostatic hypertrophy	0.00800000038000000038
 municpality	WC051	Other urinary and gynaecological diseases	0.00800000038000000038
 municpality	WC051	Skin diseases	0.00800000038000000038
@@ -4210,7 +4210,7 @@ municpality	WC051	Osteoarthritis	0.00800000038000000038
 municpality	WC051	Back and neck pain	0.00800000038000000038
 municpality	WC051	Other musculoskeletal	0.00800000038000000038
 municpality	WC051	Neural tube defects	0.00800000038000000038
-municpality	WC051	Cleft lip/palate	0.00800000038000000038
+municpality	WC051	Cleft lip / palate	0.00800000038000000038
 municpality	WC051	Congenital heart anomalies	0.00800000038000000038
 municpality	WC051	Congenital disorders of GIT	0.00800000038000000038
 municpality	WC051	Urogenital malformations	0.00800000038000000038
@@ -4230,18 +4230,18 @@ municpality	WC051	Drowning	0
 municpality	WC051	Hanging, strangulation	0
 municpality	WC051	Mechanical forces	0
 municpality	WC051	Exposure to natural forces	0
-municpality	WC051	Adverse effects medical/surgical	0
+municpality	WC051	Adverse effects medical / surgical	0
 municpality	WC051	Animal contact	0
 municpality	WC051	Other unintentional injuries	0
 municpality	WC051	Self-inflicted injuries	0
 municpality	WC051	Interpersonal violence	3
 municpality	WC051	Legal intervention	0
 municpality	WC052	Tuberculosis	0.0160000007600000008
-municpality	WC052	HIV/AIDS	0.0160000007600000008
+municpality	WC052	HIV / AIDS	0.0160000007600000008
 municpality	WC052	STDs excluding HIV	0.0160000007600000008
 municpality	WC052	Diarrhoeal diseases	0.0160000007600000008
 municpality	WC052	Vaccine preventable childhood	0.0160000007600000008
-municpality	WC052	Meningitis/encephalitis	0.0160000007600000008
+municpality	WC052	Meningitis / encephalitis	0.0160000007600000008
 municpality	WC052	Hepatitis	0.0160000007600000008
 municpality	WC052	Septicaemia	0.0160000007600000008
 municpality	WC052	Malaria	0.0160000007600000008
@@ -4259,7 +4259,7 @@ municpality	WC052	Indirect maternal	0.0160000007600000008
 municpality	WC052	Other maternal	0.0160000007600000008
 municpality	WC052	Preterm birth complications	0.0160000007600000008
 municpality	WC052	Birth asphyxia	0.0160000007600000008
-municpality	WC052	Sepsis/other newborn infectious 	0.0160000007600000008
+municpality	WC052	Sepsis / other newborn infectious 	0.0160000007600000008
 municpality	WC052	Other perinatal conditions	0.0160000007600000008
 municpality	WC052	Protein-energy malnutrition	0.0160000007600000008
 municpality	WC052	Vitamin A deficiency	0.0160000007600000008
@@ -4274,7 +4274,7 @@ municpality	WC052	Liver	0.0517142862100000017
 municpality	WC052	Gallbladder and biliary tract	0.0517142862100000017
 municpality	WC052	Pancreas	0.0517142862100000017
 municpality	WC052	Larynx	0.0517142862100000017
-municpality	WC052	Trachea/bronchi/lung CA	0.0517142862100000017
+municpality	WC052	Trachea / bronchi / lung CA	0.0517142862100000017
 municpality	WC052	Melanoma	0.0517142862100000017
 municpality	WC052	Other skin cancer	0.0517142862100000017
 municpality	WC052	Breast CA	0.0517142862100000017
@@ -4341,7 +4341,7 @@ municpality	WC052	Cirrhosis of liver	0.0160000007600000008
 municpality	WC052	Gall bladder and bile duct disease	0.0160000007600000008
 municpality	WC052	Pancreatitis	0.0160000007600000008
 municpality	WC052	Other digestive	0.0160000007600000008
-municpality	WC052	Nephritis/nephrosis	0.0160000007600000008
+municpality	WC052	Nephritis / nephrosis	0.0160000007600000008
 municpality	WC052	Benign prostatic hypertrophy	0.0160000007600000008
 municpality	WC052	Other urinary and gynaecological diseases	0.0160000007600000008
 municpality	WC052	Skin diseases	0.0160000007600000008
@@ -4350,7 +4350,7 @@ municpality	WC052	Osteoarthritis	0.0160000007600000008
 municpality	WC052	Back and neck pain	0.0160000007600000008
 municpality	WC052	Other musculoskeletal	0.0160000007600000008
 municpality	WC052	Neural tube defects	0.0160000007600000008
-municpality	WC052	Cleft lip/palate	0.0160000007600000008
+municpality	WC052	Cleft lip / palate	0.0160000007600000008
 municpality	WC052	Congenital heart anomalies	0.0160000007600000008
 municpality	WC052	Congenital disorders of GIT	0.0160000007600000008
 municpality	WC052	Urogenital malformations	0.0160000007600000008
@@ -4370,18 +4370,18 @@ municpality	WC052	Drowning	0
 municpality	WC052	Hanging, strangulation	0
 municpality	WC052	Mechanical forces	0
 municpality	WC052	Exposure to natural forces	0
-municpality	WC052	Adverse effects medical/surgical	0
+municpality	WC052	Adverse effects medical / surgical	0
 municpality	WC052	Animal contact	0
 municpality	WC052	Other unintentional injuries	0
 municpality	WC052	Self-inflicted injuries	1
 municpality	WC052	Interpersonal violence	2
 municpality	WC052	Legal intervention	0
 municpality	WC053	Tuberculosis	5
-municpality	WC053	HIV/AIDS	4
+municpality	WC053	HIV / AIDS	4
 municpality	WC053	STDs excluding HIV	0
 municpality	WC053	Diarrhoeal diseases	0
 municpality	WC053	Vaccine preventable childhood	0
-municpality	WC053	Meningitis/encephalitis	2
+municpality	WC053	Meningitis / encephalitis	2
 municpality	WC053	Hepatitis	0
 municpality	WC053	Septicaemia	0
 municpality	WC053	Malaria	0
@@ -4399,7 +4399,7 @@ municpality	WC053	Indirect maternal	0
 municpality	WC053	Other maternal	1
 municpality	WC053	Preterm birth complications	0
 municpality	WC053	Birth asphyxia	0
-municpality	WC053	Sepsis/other newborn infectious 	0
+municpality	WC053	Sepsis / other newborn infectious 	0
 municpality	WC053	Other perinatal conditions	0
 municpality	WC053	Protein-energy malnutrition	0
 municpality	WC053	Vitamin A deficiency	0
@@ -4414,7 +4414,7 @@ municpality	WC053	Liver	0
 municpality	WC053	Gallbladder and biliary tract	0
 municpality	WC053	Pancreas	0
 municpality	WC053	Larynx	0
-municpality	WC053	Trachea/bronchi/lung CA	0
+municpality	WC053	Trachea / bronchi / lung CA	0
 municpality	WC053	Melanoma	0
 municpality	WC053	Other skin cancer	0
 municpality	WC053	Breast CA	0
@@ -4481,7 +4481,7 @@ municpality	WC053	Cirrhosis of liver	0
 municpality	WC053	Gall bladder and bile duct disease	0
 municpality	WC053	Pancreatitis	0
 municpality	WC053	Other digestive	0
-municpality	WC053	Nephritis/nephrosis	0
+municpality	WC053	Nephritis / nephrosis	0
 municpality	WC053	Benign prostatic hypertrophy	0
 municpality	WC053	Other urinary and gynaecological diseases	0
 municpality	WC053	Skin diseases	0
@@ -4490,7 +4490,7 @@ municpality	WC053	Osteoarthritis	0
 municpality	WC053	Back and neck pain	0
 municpality	WC053	Other musculoskeletal	0
 municpality	WC053	Neural tube defects	0
-municpality	WC053	Cleft lip/palate	0
+municpality	WC053	Cleft lip / palate	0
 municpality	WC053	Congenital heart anomalies	0
 municpality	WC053	Congenital disorders of GIT	0
 municpality	WC053	Urogenital malformations	0
@@ -4510,7 +4510,7 @@ municpality	WC053	Drowning	0
 municpality	WC053	Hanging, strangulation	0
 municpality	WC053	Mechanical forces	0
 municpality	WC053	Exposure to natural forces	0
-municpality	WC053	Adverse effects medical/surgical	0
+municpality	WC053	Adverse effects medical / surgical	0
 municpality	WC053	Animal contact	0
 municpality	WC053	Other unintentional injuries	0
 municpality	WC053	Self-inflicted injuries	0
@@ -4520,7 +4520,7 @@ municpality	WC053	Legal intervention	0
 
 
 --
--- Name: youth_causes_of_death_female_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: youth_causes_of_death_female_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace:
 --
 
 ALTER TABLE ONLY youth_causes_of_death_female
