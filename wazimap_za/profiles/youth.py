@@ -477,12 +477,42 @@ def get_health_profile(geo_code, geo_level, session):
         key_order=['Seeing, even when using eye glasses', 'Hearing, even when using a hearing aid', 'Communication', 'Walking', 'Remembering', 'Self care'],
         table_name='youth_difficulty_functioning')
 
+    youth_female_causes_of_death, _ = get_stat_data(
+        ['cause of death'], geo_level, geo_code, session,
+        order_by='-total',
+        table_name='youth_causes_of_death_female')
+    youth_male_causes_of_death, _ = get_stat_data(
+        ['cause of death'], geo_level, geo_code, session,
+        order_by='-total',
+        table_name='youth_causes_of_death_male')
+
+    youth_female_top10_causes_of_death = OrderedDict()
+    youth_male_top10_causes_of_death = OrderedDict()
+
+    for key, value in youth_female_causes_of_death.items()[0:10]:
+        youth_female_top10_causes_of_death[key] = value
+    for key, value in youth_male_causes_of_death.items()[0:10]:
+        youth_male_top10_causes_of_death[key] = value
+
+    youth_female_top10_causes_of_death['metadata'] = youth_female_causes_of_death['metadata']
+    youth_male_top10_causes_of_death['metadata'] = youth_male_causes_of_death['metadata']
+
     final_data = {
         'youth_difficulty_seeing': {
             "name": "Of youth experience difficulty in seeing even when using eye glasses",
             "values": {"this": youth_difficulty_by_function['Seeing, even when using eye glasses']['values']['this']}
         },
-        'youth_difficulty_by_function': youth_difficulty_by_function
+        'youth_difficulty_by_function': youth_difficulty_by_function,
+        'youth_female_HIV_deaths': {
+            "name": "Of female youth deaths were due to HIV/AIDS",
+            "values": {"this":youth_female_causes_of_death['HIV/AIDS']['values']['this']}
+        },
+        'youth_male_interpersonal_violence_deaths': {
+            "name": "Of male youth deaths were due to interpersonal violence",
+            "values": {"this":youth_male_causes_of_death['Interpersonal violence']['values']['this']}
+        },
+        'youth_female_top10_causes_of_death': youth_female_top10_causes_of_death,
+        'youth_male_top10_causes_of_death': youth_male_top10_causes_of_death
     }
 
     if geo_level != 'ward':
