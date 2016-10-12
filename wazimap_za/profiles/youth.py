@@ -43,7 +43,7 @@ def get_profile(geo_code, geo_level, profile_name=None):
                 # get profiles for province and/or country
                 for level, code in geo_summary_levels:
                     # merge summary profile into current geo profile
-                    merge_dicts(data[section], func(code, level, session), level)
+                    merge_dicts(data[section], func(code, level, session, comparative=True), level)
 
         return data
 
@@ -51,7 +51,7 @@ def get_profile(geo_code, geo_level, profile_name=None):
         session.close()
 
 
-def get_demographics_profile(geo_code, geo_level, session):
+def get_demographics_profile(geo_code, geo_level, session, comparative=False):
     youth_pop_table = get_datatable('youth_population')
     youth_pop, pop_total = youth_pop_table.get_stat_data(
         geo_level, geo_code, total='total_pop', percent='False')
@@ -92,7 +92,7 @@ def get_demographics_profile(geo_code, geo_level, session):
     return final_data
 
 
-def get_education_profile(geo_code, geo_level, session):
+def get_education_profile(geo_code, geo_level, session, comparative=False):
     youth_completed_grade9, _ = get_stat_data(
         ['completed grade9'], geo_level, geo_code, session,
         key_order=('Completed', 'Not completed'),
@@ -199,7 +199,7 @@ def get_education_profile(geo_code, geo_level, session):
     return final_data
 
 
-def get_economic_opportunities_profile(geo_code, geo_level, session):
+def get_economic_opportunities_profile(geo_code, geo_level, session, comparative=False):
     youth_labour_force_official, _ = get_stat_data(
         ['employment status'], geo_level, geo_code, session,
         table_name='youth_labour_force_official_gender')
@@ -267,7 +267,7 @@ def get_economic_opportunities_profile(geo_code, geo_level, session):
     return final_data
 
 
-def get_living_environment_profile(geo_code, geo_level, session):
+def get_living_environment_profile(geo_code, geo_level, session, comparative=False):
     youth_electricity_access, _ = get_stat_data(
         ['electricity access'], geo_level, geo_code, session,
         key_order=('No electricity', 'Have electricity for some things', 'Have electricity for everything'),
@@ -367,7 +367,7 @@ def get_living_environment_profile(geo_code, geo_level, session):
     return final_data
 
 
-def get_safety_profile(geo_code, geo_level, session):
+def get_safety_profile(geo_code, geo_level, session, comparative=False):
 
     def rate_per_10k_pop(value, population):
         return value / population * 10000
@@ -471,7 +471,7 @@ def get_safety_profile(geo_code, geo_level, session):
     return final_data
 
 
-def get_health_profile(geo_code, geo_level, session):
+def get_health_profile(geo_code, geo_level, session, comparative=False):
     youth_difficulty_by_function, _ = get_stat_data(
         ['function type'], geo_level, geo_code, session,
         key_order=['Seeing, even when using eye glasses', 'Hearing, even when using a hearing aid', 'Communication', 'Walking', 'Remembering', 'Self care'],
@@ -486,16 +486,20 @@ def get_health_profile(geo_code, geo_level, session):
         order_by='-total',
         table_name='youth_causes_of_death_male')
 
-    youth_female_top10_causes_of_death = OrderedDict()
-    youth_male_top10_causes_of_death = OrderedDict()
+    if not comparative:
+        """
+        If we're building the comparison geographies, pass all data to merge_dicts
+        as the rankings, and thus the keys may differ in the geographies being comapared.
+        """
+        youth_female_top10_causes_of_death = OrderedDict()
+        youth_male_top10_causes_of_death = OrderedDict()
+        for key, value in youth_female_causes_of_death.items()[0:10]:
+            youth_female_top10_causes_of_death[key] = value
+        for key, value in youth_male_causes_of_death.items()[0:10]:
+            youth_male_top10_causes_of_death[key] = value
 
-    for key, value in youth_female_causes_of_death.items()[0:10]:
-        youth_female_top10_causes_of_death[key] = value
-    for key, value in youth_male_causes_of_death.items()[0:10]:
-        youth_male_top10_causes_of_death[key] = value
-
-    youth_female_top10_causes_of_death['metadata'] = youth_female_causes_of_death['metadata']
-    youth_male_top10_causes_of_death['metadata'] = youth_male_causes_of_death['metadata']
+        youth_female_top10_causes_of_death['metadata'] = youth_female_causes_of_death['metadata']
+        youth_male_top10_causes_of_death['metadata'] = youth_male_causes_of_death['metadata']
 
     final_data = {
         'youth_difficulty_seeing': {
@@ -511,8 +515,8 @@ def get_health_profile(geo_code, geo_level, session):
             "name": "Of male youth deaths were due to interpersonal violence",
             "values": {"this":youth_male_causes_of_death['Interpersonal violence']['values']['this']}
         },
-        'youth_female_top10_causes_of_death': youth_female_top10_causes_of_death,
-        'youth_male_top10_causes_of_death': youth_male_top10_causes_of_death
+        'youth_female_top10_causes_of_death': youth_female_top10_causes_of_death if not comparative else youth_female_causes_of_death,
+        'youth_male_top10_causes_of_death': youth_male_top10_causes_of_death if not comparative else youth_male_causes_of_death
     }
 
     if geo_level != 'ward':
