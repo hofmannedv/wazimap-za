@@ -487,10 +487,6 @@ def get_health_profile(geo_code, geo_level, session, comparative=False):
         table_name='youth_causes_of_death_male')
 
     if not comparative:
-        """
-        If we're building the comparison geographies, pass all data to merge_dicts
-        as the rankings, and thus the keys may differ in the geographies being comapared.
-        """
         youth_female_top10_causes_of_death = OrderedDict()
         youth_male_top10_causes_of_death = OrderedDict()
         for key, value in youth_female_causes_of_death.items()[0:10]:
