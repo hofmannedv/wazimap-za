@@ -477,6 +477,15 @@ def get_health_profile(geo_code, geo_level, session, comparative=False):
         key_order=['Seeing, even when using eye glasses', 'Hearing, even when using a hearing aid', 'Communication', 'Walking', 'Remembering', 'Self care'],
         table_name='youth_difficulty_functioning')
 
+    youth_female_causes_of_death_perc, _ = get_stat_data(
+        ['cause of death'], geo_level, geo_code, session,
+        order_by='-total',
+        table_name='youth_causes_of_death_female')
+    youth_male_causes_of_death_perc, _ = get_stat_data(
+        ['cause of death'], geo_level, geo_code, session,
+        order_by='-total',
+        table_name='youth_causes_of_death_male')
+
     youth_female_causes_of_death, _ = get_stat_data(
         ['cause of death'], geo_level, geo_code, session,
         order_by='-total', percent=False,
@@ -505,11 +514,11 @@ def get_health_profile(geo_code, geo_level, session, comparative=False):
         'youth_difficulty_by_function': youth_difficulty_by_function,
         'youth_female_HIV_deaths': {
             "name": "Of female youth deaths were due to HIV/AIDS",
-            "values": {"this":youth_female_causes_of_death['HIV / AIDS']['values']['this']}
+            "values": {"this":youth_female_causes_of_death_perc['HIV / AIDS']['values']['this']}
         },
         'youth_male_interpersonal_violence_deaths': {
             "name": "Of male youth deaths were due to interpersonal violence",
-            "values": {"this":youth_male_causes_of_death['Interpersonal violence']['values']['this']}
+            "values": {"this":youth_male_causes_of_death_perc['Interpersonal violence']['values']['this']}
         },
         'youth_female_top10_causes_of_death': youth_female_top10_causes_of_death if not comparative else youth_female_causes_of_death,
         'youth_male_top10_causes_of_death': youth_male_top10_causes_of_death if not comparative else youth_male_causes_of_death
