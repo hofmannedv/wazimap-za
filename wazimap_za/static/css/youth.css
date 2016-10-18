@@ -34,3 +34,8 @@ h1.article-header {
 #homepage .content-container.callouts {
   padding-top: 0;
 }
+
+.footnote {
+  font-size: 0.8em;
+  margin: 1.5em 0;
+}
