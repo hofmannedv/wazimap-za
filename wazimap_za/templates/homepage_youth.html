@@ -1,19 +1,33 @@
-<div class="content-container clearfix">
-    <article id="explore" class="clearfix wrapper">
-        {% include "data/_blocks/_data_query_builder.html" %}
+<div class="content-container clearfix tan-stripe callouts">
+    <article class="wrapper">
+        <section>
+            <div class="column-third callout with-icon">
+                <h3>
+                    <i class="fa fa-search"></i>
+                    Explore
+                </h3>
+                <p>Type in the name of an area in the top right-hand bar or click on an area in the map</p>
+            </div>
+            <div class="column-third callout with-icon">
+                <h3>
+                    <i class="fa fa-bar-chart-o"></i>
+                    Visualise
+                </h3>
+                <p>Scroll down to view statistics and charts about young people and the context in which they live</p>
+            </div>
+            <div class="column-third callout with-icon">
+                <h3>
+                    <i class="fa fa-refresh"></i>
+                    Compare
+                </h3>
+                <p>Compare any two areas by typing a second area in the bar below the map</p>
+            </div>
+        </section>
     </article>
 </div>
 
-<div class="content-container clearfix tan-stripe">
-    <article id="examples" class="clearfix wrapper">
-        <header class="column-full">
-            <h1>About {{ WAZIMAP.name }}</h1>
-
-            <p class="explainer">The {{ WAZIMAP.name }} is an interactive web tool providing a range of information on young people, in one easily accessible place. The tool was developed in partnership with <a href="http://www.povertyandinequality.uct.ac.za/" target="_blank">UCT's Poverty and Inequality Initiative</a>, <a href="https://www.westerncape.gov.za/" target="_blank">Western Cape Government</a>, <a href="https://www.capetown.gov.za/en/Pages/default.aspx" target="_blank">City of Cape Town<a>, <a href="http://www.statssa.gov.za/" target="_blank">Stats SA</a> and <a href="http://code4sa.org" target="_blank">Code for South Africa</a>.</p>
-
-            <h2 class="column-full subhead">With Thanks To</h2>
-            <p>{{ WAZIMAP.name }} is based on <a href="http://wazimap.co.za/" target="_blank">Wazimap.co.za</a>, a project by <a href="http://www.mediamonitoringafrica.org/" target="_blank">Media Monitoring Africa</a>. Wazimap is open source and you can <a href="https://wazimap.readthedocs.org/en/latest/index.html" target="_blank">build one for your country</a>.</p>
-
-        </header>
+<div class="content-container clearfix">
+    <article id="explore" class="clearfix wrapper">
+        {% include "data/_blocks/_data_query_builder.html" %}
     </article>
 </div>
