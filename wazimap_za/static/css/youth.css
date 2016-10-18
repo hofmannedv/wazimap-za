@@ -8,3 +8,7 @@ aside.multi-line-header {
   padding-top: 1.2em;
 }
 
+#geography-select-wrapper .browse-only {
+  width: 100%;
+  margin: 1em auto;
+}
