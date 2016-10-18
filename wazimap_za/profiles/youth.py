@@ -477,51 +477,12 @@ def get_health_profile(geo_code, geo_level, session, comparative=False):
         key_order=['Seeing, even when using eye glasses', 'Hearing, even when using a hearing aid', 'Communication', 'Walking', 'Remembering', 'Self care'],
         table_name='youth_difficulty_functioning')
 
-    youth_female_causes_of_death_perc, _ = get_stat_data(
-        ['cause of death'], geo_level, geo_code, session,
-        order_by='-total',
-        table_name='youth_causes_of_death_female')
-    youth_male_causes_of_death_perc, _ = get_stat_data(
-        ['cause of death'], geo_level, geo_code, session,
-        order_by='-total',
-        table_name='youth_causes_of_death_male')
-
-    youth_female_causes_of_death, _ = get_stat_data(
-        ['cause of death'], geo_level, geo_code, session,
-        order_by='-total', percent=False,
-        table_name='youth_causes_of_death_female')
-    youth_male_causes_of_death, _ = get_stat_data(
-        ['cause of death'], geo_level, geo_code, session,
-        order_by='-total', percent=False,
-        table_name='youth_causes_of_death_male')
-
-    if not comparative:
-        youth_female_top10_causes_of_death = OrderedDict()
-        youth_male_top10_causes_of_death = OrderedDict()
-        for key, value in youth_female_causes_of_death.items()[0:10]:
-            youth_female_top10_causes_of_death[key] = value
-        for key, value in youth_male_causes_of_death.items()[0:10]:
-            youth_male_top10_causes_of_death[key] = value
-
-        youth_female_top10_causes_of_death['metadata'] = youth_female_causes_of_death['metadata']
-        youth_male_top10_causes_of_death['metadata'] = youth_male_causes_of_death['metadata']
-
     final_data = {
         'youth_difficulty_seeing': {
             "name": "Of youth experience difficulty in seeing even when using eye glasses",
             "values": {"this": youth_difficulty_by_function['Seeing, even when using eye glasses']['values']['this']}
         },
-        'youth_difficulty_by_function': youth_difficulty_by_function,
-        'youth_female_HIV_deaths': {
-            "name": "Of female youth deaths were due to HIV/AIDS",
-            "values": {"this":youth_female_causes_of_death_perc['HIV / AIDS']['values']['this']}
-        },
-        'youth_male_interpersonal_violence_deaths': {
-            "name": "Of male youth deaths were due to interpersonal violence",
-            "values": {"this":youth_male_causes_of_death_perc['Interpersonal violence']['values']['this']}
-        },
-        'youth_female_top10_causes_of_death': youth_female_top10_causes_of_death if not comparative else youth_female_causes_of_death,
-        'youth_male_top10_causes_of_death': youth_male_top10_causes_of_death if not comparative else youth_male_causes_of_death
+        'youth_difficulty_by_function': youth_difficulty_by_function
     }
 
     if geo_level != 'ward':
@@ -536,6 +497,35 @@ def get_health_profile(geo_code, geo_level, session, comparative=False):
             table_name='youth_delivery_rate_year',
             percent=False)
 
+        youth_female_causes_of_death_perc, _ = get_stat_data(
+            ['cause of death'], geo_level, geo_code, session,
+            order_by='-total',
+            table_name='youth_causes_of_death_female')
+        youth_male_causes_of_death_perc, _ = get_stat_data(
+            ['cause of death'], geo_level, geo_code, session,
+            order_by='-total',
+            table_name='youth_causes_of_death_male')
+
+        youth_female_causes_of_death, _ = get_stat_data(
+            ['cause of death'], geo_level, geo_code, session,
+            order_by='-total', percent=False,
+            table_name='youth_causes_of_death_female')
+        youth_male_causes_of_death, _ = get_stat_data(
+            ['cause of death'], geo_level, geo_code, session,
+            order_by='-total', percent=False,
+            table_name='youth_causes_of_death_male')
+
+        if not comparative:
+            youth_female_top10_causes_of_death = OrderedDict()
+            youth_male_top10_causes_of_death = OrderedDict()
+            for key, value in youth_female_causes_of_death.items()[0:10]:
+                youth_female_top10_causes_of_death[key] = value
+            for key, value in youth_male_causes_of_death.items()[0:10]:
+                youth_male_top10_causes_of_death[key] = value
+
+            youth_female_top10_causes_of_death['metadata'] = youth_female_causes_of_death['metadata']
+            youth_male_top10_causes_of_death['metadata'] = youth_male_causes_of_death['metadata']
+
         final_data.update({
             'youth_difficulty_by_function': youth_difficulty_by_function,
             'youth_preganacy_rate': {
@@ -547,7 +537,17 @@ def get_health_profile(geo_code, geo_level, session, comparative=False):
                 "name": "Of total deliveries are to females under 18 years",
                 "values": {"this":youth_delivery_rate_by_year['2014-15']['values']['this']}
             },
-            'youth_delivery_rate_by_year': youth_delivery_rate_by_year
+            'youth_delivery_rate_by_year': youth_delivery_rate_by_year,
+            'youth_female_HIV_deaths': {
+                "name": "Of female youth deaths were due to HIV/AIDS",
+                "values": {"this":youth_female_causes_of_death_perc['HIV / AIDS']['values']['this']}
+            },
+            'youth_male_interpersonal_violence_deaths': {
+                "name": "Of male youth deaths were due to interpersonal violence",
+                "values": {"this":youth_male_causes_of_death_perc['Interpersonal violence']['values']['this']}
+            },
+            'youth_female_top10_causes_of_death': youth_female_top10_causes_of_death if not comparative else youth_female_causes_of_death,
+            'youth_male_top10_causes_of_death': youth_male_top10_causes_of_death if not comparative else youth_male_causes_of_death
         })
 
     return final_data
