@@ -1,9 +1,0 @@
-{% extends 'how_to_use.html' %}{% load partition staticfiles %}
-
-{% block content %}
-    {% if WAZIMAP.default_profile == 'youth' %}
-        {% include 'how_to_use_youth.html' %}
-    {% else %}
-        {{ block.super }}
-    {% endif %}
-{% endblock %}
