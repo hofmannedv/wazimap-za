@@ -1,5 +1,13 @@
 {% extends 'homepage.html' %}{% load staticfiles %}
 
+{% block place_finder %}
+  {% if WAZIMAP.default_profile == 'youth' %}
+    {% include 'homepage_youth_place_finder.html' %}
+  {% else %}
+    {{ block.super }}
+  {% endif %}
+{% endblock %}
+
 {% block homepage_detail %}
   {% if WAZIMAP.default_profile == 'youth' %}
     {% include 'homepage_youth.html' %}
@@ -12,3 +20,4 @@
 {{ block.super }}
 <script src="{% static 'js/maps_mapit.js' %}"></script>
 {% endblock %}
+

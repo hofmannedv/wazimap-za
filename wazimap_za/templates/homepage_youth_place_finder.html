@@ -1,0 +1,21 @@
+<div class="content-container clearfix tan-stripe">
+    <article class="clearfix wrapper">
+        <header class="column-full page-header">
+            <h1>Explore, visualise and interact with youth-centered data.</h1>
+        </header>
+    </article>
+
+    <article id="profile" class="clearfix wrapper">
+        <section class="column-full clearfix big-action">
+            <h1 class="article-header">Search</h1>
+
+            <div id="geography-select-wrapper" class="input-wrapper">
+                <input name="geography_select" id="geography-select" type="text" placeholder="Find a place in {{ root_geo.name }}..." autocomplete="off" autofocus="on">
+                <div class="browse-only">
+                    <span class="or">or</span>
+                    <a class="action-button" href="/profiles/{{ root_geo.geo_level }}-{{root_geo.geo_code }}/">Browse {{ root_geo.name }}</a>
+                </div>
+            </div>
+        </section>
+    </article>
+</div>
