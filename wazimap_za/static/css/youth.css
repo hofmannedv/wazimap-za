@@ -18,19 +18,6 @@ h1.article-header {
   font-size: 2em;
 }
 
-#geography-select-wrapper .browse-only {
-  width: 100%;
-  margin: 1em auto;
-}
-
-#homepage .big-action h1 {
-  width: 150px;
-}
-
-#homepage .input-wrapper {
-  padding-left: 180px;
-}
-
 #homepage .content-container.callouts {
   padding-top: 0;
 }
