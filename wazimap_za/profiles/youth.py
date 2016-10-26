@@ -506,11 +506,11 @@ def get_health_profile(geo_code, geo_level, session, comparative=False):
 
         youth_female_causes_of_death, _ = get_stat_data(
             ['cause of death'], geo_level, geo_code, session,
-            order_by='-total', percent=False,
+            order_by='-total',
             table_name='youth_causes_of_death_female')
         youth_male_causes_of_death, _ = get_stat_data(
             ['cause of death'], geo_level, geo_code, session,
-            order_by='-total', percent=False,
+            order_by='-total',
             table_name='youth_causes_of_death_male')
 
         if not comparative:
