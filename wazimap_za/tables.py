@@ -100,12 +100,12 @@ FieldTable(['function type'], id='youth_difficulty_functioning', description='Yo
 
 FieldTable(['type of offence'], id='youth_victims_offence_type', universe='Youth victims of crime, per 10,000 youth', year='2015')
 FieldTable(['type of offence'], id='youth_accused_offence_type', universe='Youth accused of crimes, per 10,000 youth', year='2015')
-FieldTable(['population group'], id='youth_victims_population_group', universe='Youth victims of crime, per 10,000 youth', year='2015', has_total=False)
-FieldTable(['population group'], id='youth_accused_population_group', universe='Youth accused of crimes, per 10,000 youth', year='2015', has_total=False)
-FieldTable(['gender'], id='youth_victims_gender', universe='Youth victims of crime, per 10,000 youth', year='2015', has_total=False)
-FieldTable(['gender'], id='youth_accused_gender', universe='Youth accused of crimes, per 10,000 youth', year='2015', has_total=False)
-FieldTable(['year'], id='youth_victims_year', universe='Youth victims of crime', year='2015', has_total=False)
-FieldTable(['year'], id='youth_accused_year', universe='Youth accused of crimes', year='2015', has_total=False)
+FieldTable(['population group'], id='youth_victims_population_group', universe='Youth victims of crime, per 10,000 youth', year='2015', has_total=False, dataset='Police Crime Statistics 2006-2015')
+FieldTable(['population group'], id='youth_accused_population_group', universe='Youth accused of crimes, per 10,000 youth', year='2015', has_total=False, dataset='Police Crime Statistics 2006-2015')
+FieldTable(['gender'], id='youth_victims_gender', universe='Youth victims of crime, per 10,000 youth', year='2015', has_total=False, dataset='Police Crime Statistics 2006-2015')
+FieldTable(['gender'], id='youth_accused_gender', universe='Youth accused of crimes, per 10,000 youth', year='2015', has_total=False, dataset='Police Crime Statistics 2006-2015')
+FieldTable(['year'], id='youth_victims_year', universe='Youth victims of crime', year='2015', has_total=False, dataset='Police Crime Statistics 2006-2015')
+FieldTable(['year'], id='youth_accused_year', universe='Youth accused of crimes', year='2015', has_total=False, dataset='Police Crime Statistics 2006-2015')
 
 FieldTable(['year'], id='youth_pregnancy_rate_year', universe='Teenage pregnancy rate by year', year='2015', value_type='Float', stat_type='percentage', has_total=False)
 FieldTable(['year'], id='youth_delivery_rate_year', universe='Teenage delivery rate by year', year='2015', value_type='Float', stat_type='percentage', has_total=False)
