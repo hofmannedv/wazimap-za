@@ -2,7 +2,7 @@
 from wazimap.settings import *  # noqa
 
 # install this app before Wazimap
-INSTALLED_APPS = ['wazimap_za.apps.WazimapConfig', 'wazimap_mapit'] + INSTALLED_APPS
+INSTALLED_APPS = ['wazimap_za.apps.WazimapConfig'] + INSTALLED_APPS
 
 DATABASE_URL = os.environ.get('DATABASE_URL', 'postgresql://wazimap_za:wazimap_za@localhost/wazimap_za')
 DATABASES['default'] = dj_database_url.parse(DATABASE_URL)
@@ -15,7 +15,7 @@ WAZIMAP['url'] = 'https://wazimap.co.za'
 WAZIMAP['country_code'] = 'ZA'
 WAZIMAP['comparative_levels'] = ['district', 'province', 'country']
 # this is provided by mapit
-WAZIMAP['geodata'] = 'wazimap_mapit.geo.GeoData'
+WAZIMAP['geodata'] = 'wazimap_za.geo.GeoData'
 WAZIMAP['geometry_data'] = {}
 
 WAZIMAP['levels'] = {
