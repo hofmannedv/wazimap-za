@@ -5,24 +5,36 @@
 }
 
 aside.multi-line-header {
-  padding-top: 1.2em;
+    padding-top: 1.2em;
 }
 
 .page-header h1 {
-  text-align: center;
-  margin-bottom: 1.5em;
-  font-size: 24px;
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-size: 24px;
 }
 
 h1.article-header {
-  font-size: 2em;
+    font-size: 2em;
 }
 
 #homepage .content-container.callouts {
-  padding-top: 0;
+    padding-top: 0;
 }
 
 .footnote {
-  font-size: 0.8em;
-  margin: 1.5em 0;
+    font-size: 0.8em;
+    margin: 1.5em 0;
 }
+
+
+@media only screen and (min-width: 769px) {
+    #homepage #explore h1, #homepage #profile h1 {
+        width: 150px;
+    }
+
+    #homepage .input-wrapper {
+        padding-left: 150px;
+    }
+}
+
