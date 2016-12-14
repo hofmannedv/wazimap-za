@@ -84,8 +84,7 @@ FieldTable(['year'], id='youth_average_maths_score_by_year', universe='Average s
 FieldTable(['year', 'outcome'], id='youth_maths_outcome_by_year', universe='Percentage passed in mathematics', year='2014', value_type='Float', stat_type='percentage', has_total=False)
 
 FieldTable(['year', 'outcome'], id='youth_matric_outcome_by_year', universe='Matric pass rate', year='2015', value_type='Float', stat_type='percentage', has_total=False)
-
-FieldTable(['year', 'outcome'], id='youth_matric_passes_as_percentage_of_grade8_enrollment_by_year', universe='Matric passes as a % of grade 8 enrolment', year='2015', value_type='Float', stat_type='percentage', has_total=False)
+FieldTable(['year', 'outcome'], id='youth_matric_passes_as_percentage_of_grade8_enrolment_by_year', universe='Matric passes as a % of grade 8 enrolment', year='2015', value_type='Float', stat_type='percentage', has_total=False)
 
 FieldTable(['electricity access'], id='youth_electricity_access', universe='Youth living in households', year='2011')
 FieldTable(['toilet access'], id='youth_toilet_access', universe='Youth living in households', year='2011')
