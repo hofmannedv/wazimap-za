@@ -104,6 +104,17 @@
             <div class="column-half" id="chart-histogram-education-youth_ave_maths_score_by_year" data-stat-type="scaled-percentage" data-chart-title="Average score in mathematics by year"></div>
             <div class="column-quarter" id="chart-pie-education-youth_maths_outcome_2014" data-stat-type="percentage" data-chart-title="Percentage passed in mathematics"></div>
         </section>
+        <section class="clearfix stat-row">
+        <h2 class="header-for-columns"><a class="permalink" href="#matric_passes" id="matric_passes">Matric passes<i class="fa fa-link"></i></a></h2>
+            <aside>
+                <p>* Data from each school were allocated to the corresponding ward in which they were located. A number of wards do not contain any secondary schools and thus will display no data for these charts.</p>
+            </aside>
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_matric_pass_rate_2015 stat_type='percentage' decimals='-1' %}
+            </div>
+            <div class="column-half" id="chart-histogram-education-youth_matric_outcome_by_year" data-stat-type="scaled-percentage" data-chart-title="Matric pass rate by year"></div>
+            <div class="column-quarter" id="chart-pie-education-youth_matric_outcome_2015" data-stat-type="percentage" data-chart-title="Matric pass rate"></div>
+        </section>
     </div>
 </article>
 
@@ -172,7 +183,7 @@
         </section>
     </div>
 </article>
-<article id="living_environment" class="clearfix">
+<article id="poverty" class="clearfix">
     <header class="section-contents">
         <h1>Youth poverty</h1>
     </header>

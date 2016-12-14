@@ -159,6 +159,18 @@ def get_education_profile(geo_code, geo_level, session, comparative=False):
         key_order={'outcome': ['Passed', 'Failed']},
         percent=False, slices=['2014'])
 
+    youth_matric_outcome_by_year, _ = get_stat_data(
+        ['year'], geo_level, geo_code, session,
+        table_name='youth_matric_outcome_by_year',
+        only={'outcome': ['Passed']},
+        percent=False)
+
+    youth_matric_outcome_2015, _ = get_stat_data(
+        ['year', 'outcome'], geo_level, geo_code, session,
+        table_name='youth_matric_outcome_by_year',
+        key_order={'outcome': ['Passed', 'Failed']},
+        percent=False, slices=['2015'])
+
     final_data  = {
         'youth_completed_grade9': youth_completed_grade9,
         'youth_perc_completed_grade9': {
@@ -193,7 +205,13 @@ def get_education_profile(geo_code, geo_level, session, comparative=False):
         },
         'youth_ave_maths_score_by_year': youth_average_maths_score_by_year,
         'youth_language_outcome_2014': youth_language_outcome_2014,
-        'youth_maths_outcome_2014': youth_maths_outcome_2014
+        'youth_maths_outcome_2014': youth_maths_outcome_2014,
+        'youth_matric_pass_rate_2015': {
+            "name": "Of students writing matric passed",
+            "values": {"this": youth_matric_outcome_2015['Passed']['values']['this']}
+        },
+        'youth_matric_outcome_2015': youth_matric_outcome_2015,
+        'youth_matric_outcome_by_year': youth_matric_outcome_by_year
     }
 
     return final_data
