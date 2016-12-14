@@ -11,8 +11,8 @@ SET client_min_messages = warning;
 
 SET search_path = public, pg_catalog;
 
-ALTER TABLE IF EXISTS ONLY public.youth_matric_passes_as_percentage_of_grade8_enrollment_by_year DROP CONSTRAINT IF EXISTS youth_matric_passes_as_percentage_of_grade8_enrollment_by__pkey;
-DROP TABLE IF EXISTS public.youth_matric_passes_as_percentage_of_grade8_enrollment_by_year;
+ALTER TABLE IF EXISTS ONLY public.youth_matric_passes_as_percentage_of_grade8_enrolment_by_year DROP CONSTRAINT IF EXISTS youth_matric_passes_as_percentage_of_grade8_enrollment_by__pkey;
+DROP TABLE IF EXISTS public.youth_matric_passes_as_percentage_of_grade8_enrolment_by_year;
 SET search_path = public, pg_catalog;
 
 SET default_tablespace = '';
@@ -20,10 +20,10 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: youth_matric_passes_as_percentage_of_grade8_enrollment_by_year; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: youth_matric_passes_as_percentage_of_grade8_enrolment_by_year; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
-CREATE TABLE youth_matric_passes_as_percentage_of_grade8_enrollment_by_year (
+CREATE TABLE youth_matric_passes_as_percentage_of_grade8_enrolment_by_year (
     geo_level character varying(15) NOT NULL,
     geo_code character varying(10) NOT NULL,
     year character varying(128) NOT NULL,
@@ -33,10 +33,10 @@ CREATE TABLE youth_matric_passes_as_percentage_of_grade8_enrollment_by_year (
 
 
 --
--- Data for Name: youth_matric_passes_as_percentage_of_grade8_enrollment_by_year; Type: TABLE DATA; Schema: public; Owner: -
+-- Data for Name: youth_matric_passes_as_percentage_of_grade8_enrolment_by_year; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY youth_matric_passes_as_percentage_of_grade8_enrollment_by_year (geo_level, geo_code, year, outcome, total) FROM stdin;
+COPY youth_matric_passes_as_percentage_of_grade8_enrolment_by_year (geo_level, geo_code, year, outcome, total) FROM stdin;
 province	WC	2010	Passed	62
 province	WC	2010	Dropped out or failed	38
 province	WC	2011	Passed	68.7999999999999972
@@ -5072,7 +5072,7 @@ ward	19100111	2015	Dropped out or failed	34.2000000000000028
 -- Name: youth_matric_passes_as_percentage_of_grade8_enrollment_by__pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
-ALTER TABLE ONLY youth_matric_passes_as_percentage_of_grade8_enrollment_by_year
+ALTER TABLE ONLY youth_matric_passes_as_percentage_of_grade8_enrolment_by_year
     ADD CONSTRAINT youth_matric_passes_as_percentage_of_grade8_enrollment_by__pkey PRIMARY KEY (geo_level, geo_code, year, outcome);
 
 
