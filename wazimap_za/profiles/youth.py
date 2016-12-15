@@ -183,6 +183,18 @@ def get_education_profile(geo_code, geo_level, session, comparative=False):
         key_order={'outcome': ['Passed', 'Dropped out or failed']},
         percent=False, slices=['2015'])
 
+    youth_bachelor_passes_by_year, _ = get_stat_data(
+        ['year'], geo_level, geo_code, session,
+        table_name='youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year',
+        only={'outcome': ['Bachelor pass']},
+        percent=False)
+
+    youth_bachelor_outcome_2015, _ = get_stat_data(
+        ['year', 'outcome'], geo_level, geo_code, session,
+        table_name='youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year',
+        key_order={'outcome': ['Bachelor pass', 'No bachelor pass']},
+        percent=False, slices=['2015'])
+
     final_data  = {
         'youth_completed_grade9': youth_completed_grade9,
         'youth_perc_completed_grade9': {
@@ -230,7 +242,12 @@ def get_education_profile(geo_code, geo_level, session, comparative=False):
         },
         'youth_matric_throughput_2015': youth_matric_throughput_2015,
         'youth_matric_throughput_rate_by_year': youth_matric_throughput_rate_by_year,
-
+        'youth_bachelor_passes_2015': {
+            "name": "Of Grade 8 students go on to pass matric with a bachelor's pass",
+            "values": {"this": youth_bachelor_outcome_2015['Bachelor pass']['values']['this']}
+        },
+        'youth_bachelor_outcome_2015': youth_bachelor_outcome_2015,
+        'youth_bachelor_passes_by_year': youth_bachelor_passes_by_year
     }
 
     return final_data
