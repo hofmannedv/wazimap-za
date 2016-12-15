@@ -136,6 +136,16 @@
             <div class="column-quarter" id="chart-pie-education-youth_bachelor_outcome_2015" data-stat-type="percentage" data-chart-title="Bachelor passes as % of grade 8 enrolment four years earlier *"></div>
             <div class="column-half" id="chart-histogram-education-youth_bachelor_passes_by_year" data-stat-type="scaled-percentage" data-chart-title="Bachelor passes as % of grade 8 enrolment by year"></div>
         </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#student_dropout" id="student_dropout">Student dropout<i class="fa fa-link"></i></a></h2>
+            <aside>
+                <p>Data from each school were allocated to the corresponding ward in which they were located. A number of wards do not contain any secondary schools and thus will display no data for these charts.</p>
+            </aside>
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_student_dropout_rate_2015 stat_type='percentage' decimals='-1' %}
+            </div>
+            <div class="column-half" id="chart-histogram-education-youth_student_dropout_rate_by_year" data-stat-type="scaled-percentage" data-chart-title="% dropout between grade 10 and matric  by year"></div>
+        </section>
     </div>
 </article>
 
