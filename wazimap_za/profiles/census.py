@@ -327,7 +327,7 @@ def get_profile(geo_code, geo_level, profile_name=None):
 def get_demographics_profile(geo_code, geo_level, session):
     # population group
     pop_dist_data, total_pop = get_stat_data(
-            ['population group'], geo_level, geo_code, session)
+            ['population group'], geo_level, geo_code, session, table_dataset='Census 2011')
 
     # language
     language_data, _ = get_stat_data(
