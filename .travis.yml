@@ -6,7 +6,7 @@ services:
 addons:
   apt:
     sources:
-      - ppa:ubuntugis/ppa
+      - sourceline: 'ppa:ubuntugis/ppa'
     packages:
       - gdal-bin
       - python-gdal
