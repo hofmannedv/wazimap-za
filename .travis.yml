@@ -6,8 +6,8 @@ services:
 env:
   - DATABASE_URL=postgres://postgres:@localhost:5432/wazimap_za
 install:
+  - sed 's/GDAL/#GDAL/g' -i requirements.txt
   - pip install -r requirements.txt
-before:
 script:
   - psql -c 'create database test_wazimap_za;' -U postgres
   - python manage.py migrate
