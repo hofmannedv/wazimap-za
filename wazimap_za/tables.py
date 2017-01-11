@@ -83,6 +83,11 @@ FieldTable(['year', 'outcome'], id='youth_language_outcome_by_year', universe='P
 FieldTable(['year'], id='youth_average_maths_score_by_year', universe='Average score in mathematics', year='2014', value_type='Float', stat_type='percentage', has_total=False)
 FieldTable(['year', 'outcome'], id='youth_maths_outcome_by_year', universe='Percentage passed in mathematics', year='2014', value_type='Float', stat_type='percentage', has_total=False)
 
+FieldTable(['year', 'outcome'], id='youth_matric_outcome_by_year', universe='Matric pass rate', year='2015', value_type='Float', stat_type='percentage', has_total=False)
+FieldTable(['year', 'outcome'], id='youth_matric_passes_as_percentage_of_grade8_enrolment_by_year', universe='Matric passes as a % of grade 8 enrolment', year='2015', value_type='Float', stat_type='percentage', has_total=False)
+FieldTable(['year', 'outcome'], id='youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year', universe='Bachelor passes as a % of grade 8 enrolment', year='2015', value_type='Float', stat_type='percentage', has_total=False)
+FieldTable(['year', 'outcome'], id='youth_student_dropout_rate_by_year', universe='Dropout rates between grade 10 and matric', year='2015', value_type='Float', stat_type='percentage', has_total=False)
+
 FieldTable(['electricity access'], id='youth_electricity_access', universe='Youth living in households', year='2011')
 FieldTable(['toilet access'], id='youth_toilet_access', universe='Youth living in households', year='2011')
 FieldTable(['water access'], id='youth_water_access', universe='Youth living in households', year='2011')
@@ -110,8 +115,8 @@ FieldTable(['year'], id='youth_accused_year', universe='Youth accused of crimes'
 FieldTable(['year'], id='youth_pregnancy_rate_year', universe='Teenage pregnancy rate by year', year='2015', value_type='Float', stat_type='percentage', has_total=False)
 FieldTable(['year'], id='youth_delivery_rate_year', universe='Teenage delivery rate by year', year='2015', value_type='Float', stat_type='percentage', has_total=False)
 
-FieldTable(['cause of death'], id='youth_causes_of_death_female', universe='Female youth causes of death', year='2013', value_type='Float', stat_type='percentage')
-FieldTable(['cause of death'], id='youth_causes_of_death_male', universe='Male youth causes of death', year='2013', value_type='Float', stat_type='percentage')
+FieldTable(['cause of death'], id='youth_causes_of_death_female', universe='Female youth causes of death', year='2013', value_type='Float')
+FieldTable(['cause of death'], id='youth_causes_of_death_male', universe='Male youth causes of death', year='2013', value_type='Float')
 
 # Simple Tables
 SimpleTable(

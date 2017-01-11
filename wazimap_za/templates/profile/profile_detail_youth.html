@@ -39,7 +39,7 @@
             </div>
             <div class="column-half" id="chart-histogram-demographics-youth_population_by_year" data-stat-type="scaled-percentage" data-chart-title="Youth population by age"></div>
         </section>
-        <section class="clearfix stat-ro grouped-roww">
+        <section class="clearfix stat-row grouped-row">
             <div class="column-quarter">
                 {% include 'profile/_blocks/_stat_list.html' with stat=demographics.youth_population_perc stat_type='percentage' decimals='-1' %}
             </div>
@@ -80,16 +80,16 @@
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#systemic_evaluations" id="systemic_evaluations">Grade 9 Systemic evaluations<i class="fa fa-link"></i></a></h2>
             <aside>
-                <p>* Test results from each school were allocated to the corresponding ward in which they were located. A number of wards do not contain any secondary schools and thus will display no data for these charts</p>
+                <p>Test results from each school were allocated to the corresponding ward in which they were located. A number of wards do not contain any secondary schools and thus will display no data for these charts</p>
             </aside>
             <div class="column-quarter">
                 {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_ave_mean_score_2014 stat_type='percentage' decimals='-1' %}
             </div>
             <div class="column-half" id="chart-histogram-education-youth_ave_mean_score_by_year" data-stat-type="scaled-percentage" data-chart-title="Average mean score in both language and mathematics by year"></div>
         </section>
-        <section class="clearfix stat-row">
+        <section class="clearfix stat-row grouped-row">
             <aside>
-                <p>* The systemic  evaluations are compulsory for all public schools. Many, but not all, independent schools also choose to participate.</p>
+                <p>The systemic  evaluations are compulsory for all public schools. Many, but not all, independent schools also choose to participate.</p>
             </aside>
             <div class="column-quarter">
                 {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_ave_language_score_2014 stat_type='percentage' decimals='-1' %}
@@ -97,12 +97,54 @@
             <div class="column-half" id="chart-histogram-education-youth_ave_language_score_by_year" data-stat-type="scaled-percentage" data-chart-title="Average score in language by year"></div>
             <div class="column-quarter" id="chart-pie-education-youth_language_outcome_2014" data-stat-type="percentage" data-chart-title="Percentage passed in language"></div>
         </section>
-        <section class="clearfix stat-row">
+        <section class="clearfix stat-row grouped-row">
             <div class="column-quarter">
                 {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_ave_maths_score_2014 stat_type='percentage' decimals='-1' %}
             </div>
             <div class="column-half" id="chart-histogram-education-youth_ave_maths_score_by_year" data-stat-type="scaled-percentage" data-chart-title="Average score in mathematics by year"></div>
             <div class="column-quarter" id="chart-pie-education-youth_maths_outcome_2014" data-stat-type="percentage" data-chart-title="Percentage passed in mathematics"></div>
+        </section>
+        <section class="clearfix stat-row">
+        <h2 class="header-for-columns"><a class="permalink" href="#matric_passes" id="matric_passes">Matric passes<i class="fa fa-link"></i></a></h2>
+            <aside>
+                <p>Data from each school were allocated to the corresponding ward in which they were located. A number of wards do not contain any secondary schools and thus will display no data for these charts.</p>
+            </aside>
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_matric_pass_rate_2015 stat_type='percentage' decimals='-1' %}
+            </div>
+            <div class="column-quarter" id="chart-pie-education-youth_matric_outcome_2015" data-stat-type="percentage" data-chart-title="Matric pass rate"></div>
+            <div class="column-half" id="chart-histogram-education-youth_matric_outcome_by_year" data-stat-type="scaled-percentage" data-chart-title="Matric pass rate by year"></div>
+        </section>
+        <section class="clearfix stat-row grouped-row">
+            <aside>
+                <p>* i.e. when the matric class was in grade 8. This is essentially the throughput pass rate from Grade 8 to matric</p>
+            </aside>
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_matric_throughput_rate_2015 stat_type='percentage' decimals='-1' %}
+            </div>
+            <div class="column-quarter" id="chart-pie-education-youth_matric_throughput_2015" data-stat-type="percentage" data-chart-title="Matric passes as % of grade 8 enrolment four years earlier *"></div>
+            <div class="column-half" id="chart-histogram-education-youth_matric_throughput_rate_by_year" data-stat-type="scaled-percentage" data-chart-title="Matric passes as % of grade 8 enrolment by year"></div>
+        </section>
+        <section class="clearfix stat-row grouped-row">
+            <aside>
+                <p>It is likely that students without a bachelor pass either passed with a diploma or certificate, dropped out or failed</p>
+                <p>* i.e. when the matric class was in grade 8</p>
+            </aside>
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_bachelor_passes_2015 stat_type='percentage' decimals='-1' %}
+            </div>
+            <div class="column-quarter" id="chart-pie-education-youth_bachelor_outcome_2015" data-stat-type="percentage" data-chart-title="Bachelor passes as % of grade 8 enrolment four years earlier *"></div>
+            <div class="column-half" id="chart-histogram-education-youth_bachelor_passes_by_year" data-stat-type="scaled-percentage" data-chart-title="Bachelor passes as % of grade 8 enrolment by year"></div>
+        </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#student_dropout" id="student_dropout">Student dropout<i class="fa fa-link"></i></a></h2>
+            <aside>
+                <p>Data from each school were allocated to the corresponding ward in which they were located. A number of wards do not contain any secondary schools and thus will display no data for these charts.</p>
+            </aside>
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_student_dropout_rate_2015 stat_type='percentage' decimals='-1' %}
+            </div>
+            <div class="column-half" id="chart-histogram-education-youth_student_dropout_rate_by_year" data-stat-type="scaled-percentage" data-chart-title="% dropout between grade 10 and matric  by year"></div>
         </section>
     </div>
 </article>
@@ -172,7 +214,7 @@
         </section>
     </div>
 </article>
-<article id="living_environment" class="clearfix">
+<article id="poverty" class="clearfix">
     <header class="section-contents">
         <h1>Youth poverty</h1>
     </header>
@@ -297,6 +339,7 @@
             </div>
             <div class="column-two-thirds" id="chart-histogram-health-youth_difficulty_by_function" data-stat-type="scaled-percentage" data-chart-title="Youth experiencing difficulty in functioning by type *"></div>
         </section>
+        {% if geography.this.geo_level != 'ward' %}
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#teenage-pregnancy" id="teenage-pregnancy">Teenage pregnancy<i class="fa fa-link"></i></a></h2>
             <aside>
@@ -330,6 +373,7 @@
             </div>
             <div class="column-three-quarters" id="chart-histogram-health-youth_male_top10_causes_of_death" data-stat-type="scaled-percentage" data-chart-title="Leading causes of death for male youth, 2010-2013" data-decimal-places="0"></div>
         </section>
+        {% endif %}
     </div>
 </article>
 
