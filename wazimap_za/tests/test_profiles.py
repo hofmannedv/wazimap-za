@@ -7,8 +7,8 @@ class ProfileTests(TestCase):
         resp = self.client.get('/profiles/province-WC-western-cape/')
         self.assertEqual(resp.status_code, 200)
 
-        #resp = self.client.get('/profiles/district-DC1-west-coast/')
-        #self.assertEqual(resp.status_code, 200)
+        resp = self.client.get('/profiles/district-DC1-west-coast/')
+        self.assertEqual(resp.status_code, 200)
 
         resp = self.client.get('/profiles/municipality-CPT-city-of-cape-town/')
         self.assertEqual(resp.status_code, 200)
