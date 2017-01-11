@@ -3,10 +3,16 @@ python:
   - "2.7"
 services:
   - postgresql
+addons:
+  apt:
+    sources:
+      - ppa:ubuntugis/ppa
+    packages:
+      - gdal-bin
+      - python-gdal
 env:
   - DATABASE_URL=postgres://postgres:@localhost:5432/wazimap_za
 install:
-  - sed 's/GDAL/#GDAL/g' -i requirements.txt
   - pip install -r requirements.txt
 script:
   - psql -c 'create database test_wazimap_za;' -U postgres
