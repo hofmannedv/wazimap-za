@@ -18,6 +18,5 @@ install:
   - pip install -r requirements.txt
 script:
   - psql -c 'create database test_wazimap_za;' -U postgres
-  - python manage.py migrate
-  - "for f in sql/*.sql; do echo $f | psql -U postgres test_wazimap_za; done"
-  - python manage.py test --keepdb
+  - "for f in sql/*.sql; do cat $f | psql -U postgres test_wazimap_za; done"
+  - python manage.py test --keepdb --nomigrations
