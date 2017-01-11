@@ -1,5 +1,7 @@
 # Wazimap-ZA
 
+[![Build Status](https://travis-ci.org/Code4SA/wazimap-za.svg)](http://travis-ci.org/Code4SA/wazimap-za)
+
 The South African instance of [Wazimap](https://github.com/Code4SA/wazimap), a Django application for exploring census and other similar data.
 
 # Local development
