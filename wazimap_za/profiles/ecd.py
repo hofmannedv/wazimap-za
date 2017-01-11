@@ -107,7 +107,7 @@ def get_profile(geo_code, geo_level, profile_name=None):
 def get_demographics_profile(geo_code, geo_level, session):
     # population group
     pop_dist_data, total_pop = get_stat_data(
-        ['population group'], geo_level, geo_code, session)
+        ['population group'], geo_level, geo_code, session, table_dataset='Census 2011')
 
     ecd_age_groups, ecd_children = get_stat_data(
         ['age in completed years'], geo_level, geo_code, session,
@@ -177,7 +177,7 @@ def get_demographics_profile(geo_code, geo_level, session):
 def get_schools_profile(geo_code, geo_level, session):
     # population group
     _, total_pop = get_stat_data(
-        ['population group'], geo_level, geo_code, session)
+        ['population group'], geo_level, geo_code, session, table_dataset='Census 2011')
 
     # Schools
     table = get_datatable('schools_2015')
@@ -419,7 +419,7 @@ def get_ecd_budgets_profile(geo_code, geo_level, session):
 def get_hospitals_profile(geo_code, geo_level, session):
     # population group
     _, total_pop = get_stat_data(
-        ['population group'], geo_level, geo_code, session)
+        ['population group'], geo_level, geo_code, session, table_dataset='Census 2011')
 
     # Hospitals
     table = get_datatable('hospitals_2012')

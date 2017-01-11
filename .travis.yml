@@ -1,0 +1,29 @@
+language: python
+python:
+  - "2.7"
+addons:
+  apt:
+    sources:
+      - sourceline: 'ppa:ubuntugis/ppa'
+    packages:
+      - gdal-bin
+      - python-gdal
+  postgresql: "9.4"
+services:
+  - postgresql
+virtualenv:
+  system_site_packages: true
+env:
+  global:
+    - DATABASE_URL=postgres://postgres:@localhost:5432/test_wazimap_za
+  matrix:
+    - WAZI_PROFILE=census
+    - WAZI_PROFILE=youth
+    - WAZI_PROFILE=ecd
+install:
+  - sed 's/GDAL==1.11.0/GDAL==1.10.0/' -i requirements.txt
+  - pip install -r requirements.txt
+script:
+  - psql -c 'create database test_wazimap_za;' -U postgres
+  - "for f in sql/*.sql; do cat $f | psql -U postgres test_wazimap_za; done"
+  - python manage.py test --keepdb --nomigrations

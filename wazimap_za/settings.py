@@ -2,11 +2,14 @@
 from wazimap.settings import *  # noqa
 
 # install this app before Wazimap
-INSTALLED_APPS = ['wazimap_za.apps.WazimapConfig'] + INSTALLED_APPS
+INSTALLED_APPS = ['test_without_migrations', 'wazimap_za.apps.WazimapConfig'] + INSTALLED_APPS
 
 DATABASE_URL = os.environ.get('DATABASE_URL', 'postgresql://wazimap_za:wazimap_za@localhost/wazimap_za')
 DATABASES['default'] = dj_database_url.parse(DATABASE_URL)
 DATABASES['default']['ATOMIC_REQUESTS'] = True
+DATABASES['default']['TEST'] = {
+    'NAME': 'test_wazimap_za',
+}
 
 
 # Localise this instance of Wazimap
