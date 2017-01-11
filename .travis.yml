@@ -1,10 +1,6 @@
 language: python
 python:
   - "2.7"
-services:
-  - postgresql
-virtualenv:
-  system_site_packages: true
 addons:
   apt:
     sources:
@@ -12,6 +8,11 @@ addons:
     packages:
       - gdal-bin
       - python-gdal
+  postgresql: "9.4"
+services:
+  - postgresql
+virtualenv:
+  system_site_packages: true
 env:
   - DATABASE_URL=postgres://postgres:@localhost:5432/wazimap_za
 install:
