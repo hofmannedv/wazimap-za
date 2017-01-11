@@ -339,6 +339,7 @@
             </div>
             <div class="column-two-thirds" id="chart-histogram-health-youth_difficulty_by_function" data-stat-type="scaled-percentage" data-chart-title="Youth experiencing difficulty in functioning by type *"></div>
         </section>
+        {% if geography.this.geo_level != 'ward' %}
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#teenage-pregnancy" id="teenage-pregnancy">Teenage pregnancy<i class="fa fa-link"></i></a></h2>
             <aside>
@@ -372,6 +373,7 @@
             </div>
             <div class="column-three-quarters" id="chart-histogram-health-youth_male_top10_causes_of_death" data-stat-type="scaled-percentage" data-chart-title="Leading causes of death for male youth, 2010-2013" data-decimal-places="0"></div>
         </section>
+        {% endif %}
     </div>
 </article>
 

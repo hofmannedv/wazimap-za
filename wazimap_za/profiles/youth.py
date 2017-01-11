@@ -554,7 +554,7 @@ def get_health_profile(geo_code, geo_level, session, comparative=False):
     }
 
     if geo_level != 'ward':
-        # We don't have preganany and delivery data on ward level yet
+        # We don't have data on ward level for the following
         youth_pregnancy_rate_by_year, _ = get_stat_data(
             ['year'], geo_level, geo_code, session,
             table_name='youth_pregnancy_rate_year',
@@ -595,7 +595,6 @@ def get_health_profile(geo_code, geo_level, session, comparative=False):
             youth_male_top10_causes_of_death['metadata'] = youth_male_causes_of_death['metadata']
 
         final_data.update({
-            'youth_difficulty_by_function': youth_difficulty_by_function,
             'youth_preganacy_rate': {
                 "name": "Of total pregnancies are to females under 18 years",
                 "values": {"this":youth_pregnancy_rate_by_year['2014-15']['values']['this']}
