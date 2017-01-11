@@ -14,7 +14,12 @@ services:
 virtualenv:
   system_site_packages: true
 env:
-  - DATABASE_URL=postgres://postgres:@localhost:5432/test_wazimap_za
+  global:
+    - DATABASE_URL=postgres://postgres:@localhost:5432/test_wazimap_za
+  matrix:
+    - WAZI_PROFILE=census
+    - WAZI_PROFILE=youth
+    - WAZI_PROFILE=ecd
 install:
   - sed 's/GDAL==1.11.0/GDAL==1.10.0/' -i requirements.txt
   - pip install -r requirements.txt
