@@ -59,13 +59,6 @@ ProfileMaps = function() {
         }
 
         GeometryLoader.loadGeometrySet(parent + '|' + MAPIT.level_codes[level], level, function(geojson) {
-            // update names
-            _.each(geojson.features, function(f) {
-                if (level == 'ward') {
-                    f.properties.name = 'Ward ' + f.properties.name;
-                }
-            });
-
             // don't include this smaller geo, we already have a shape for that
             geojson.features = _.filter(geojson.features, function(f) {
                 return f.properties.code != code;
