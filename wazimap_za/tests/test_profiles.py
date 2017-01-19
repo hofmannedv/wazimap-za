@@ -1,4 +1,9 @@
+from unittest import skipIf
+
 from django.test import TestCase
+from django.conf import settings
+
+WAZI_PROFILE = settings.WAZIMAP['default_profile']
 
 
 class ProfileTests(TestCase):
@@ -17,4 +22,12 @@ class ProfileTests(TestCase):
         self.assertEqual(resp.status_code, 200)
 
         resp = self.client.get('/profiles/ward-19100105-ward-105-19100105/')
+        self.assertEqual(resp.status_code, 200)
+
+    @skipIf(WAZI_PROFILE != 'census', 'Only tested for census profile')
+    def test_census_profiles(self):
+        resp = self.client.get('/profiles/district-DC15-ortambo/')
+        self.assertEqual(resp.status_code, 200)
+
+        resp = self.client.get('/profiles/district-DC4-eden/')
         self.assertEqual(resp.status_code, 200)
