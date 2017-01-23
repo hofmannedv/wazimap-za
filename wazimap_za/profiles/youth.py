@@ -224,9 +224,9 @@ def get_education_profile(geo_code, geo_level, session, comparative=False):
         },
         'youth_education_attending_by_age': youth_education_attending_by_age,
         'youth_education_attending_by_gender': youth_education_attending_by_gender,
-        'youth_ave_mean_score_2014': {
+        'youth_ave_mean_score_latest': {
             "name": "Average mean score in both language and mathematics",
-            "values": {"this": youth_average_mean_score_by_year['2014']['values']['this']}
+            "values": {"this": youth_average_mean_score_by_year['2015']['values']['this']}
         },
         'youth_ave_mean_score_by_year': youth_average_mean_score_by_year,
         'youth_ave_language_score_latest': {
