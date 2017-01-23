@@ -94,7 +94,7 @@ class Command(BaseCommand):
             if row['total'] == 'no data':
                 row['total'] = None
             else:
-                row['total'] = float(row['total']) if self.value_type == 'Float' else int(round(float(row['total'])))
+                row['total'] = round(float(row['total']), 1) if self.value_type == 'Float' else int(round(float(row['total'])))
             self.stdout.write("%s-%s" % (row['geo_level'], row['geo_code']))
             entry = self.table.get_model(row['geo_level'])(**row)
 
