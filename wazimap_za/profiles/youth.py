@@ -165,7 +165,7 @@ def get_education_profile(geo_code, geo_level, session, comparative=False):
         only={'outcome': ['Passed']},
         percent=False)
 
-    youth_matric_outcome_2015, _ = get_stat_data(
+    youth_matric_outcome_latest, _ = get_stat_data(
         ['year', 'outcome'], geo_level, geo_code, session,
         table_name='youth_matric_outcome_by_year',
         key_order={'outcome': ['Passed', 'Failed']},
@@ -177,7 +177,7 @@ def get_education_profile(geo_code, geo_level, session, comparative=False):
         only={'outcome': ['Passed']},
         percent=False)
 
-    youth_matric_throughput_2015, _ = get_stat_data(
+    youth_matric_throughput_latest, _ = get_stat_data(
         ['year', 'outcome'], geo_level, geo_code, session,
         table_name='youth_matric_passes_as_percentage_of_grade8_enrolment_by_year',
         key_order={'outcome': ['Passed', 'Dropped out or failed']},
@@ -189,7 +189,7 @@ def get_education_profile(geo_code, geo_level, session, comparative=False):
         only={'outcome': ['Bachelor pass']},
         percent=False)
 
-    youth_bachelor_outcome_2015, _ = get_stat_data(
+    youth_bachelor_outcome_latest, _ = get_stat_data(
         ['year', 'outcome'], geo_level, geo_code, session,
         table_name='youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year',
         key_order={'outcome': ['Bachelor pass', 'No bachelor pass']},
@@ -201,7 +201,7 @@ def get_education_profile(geo_code, geo_level, session, comparative=False):
         only={'outcome': ['Dropped out']},
         percent=False)
 
-    youth_student_dropout_rate_2015, _ = get_stat_data(
+    youth_student_dropout_rate_latest, _ = get_stat_data(
         ['year', 'outcome'], geo_level, geo_code, session,
         table_name='youth_student_dropout_rate_by_year',
         percent=False, slices=['2015'])
@@ -241,27 +241,27 @@ def get_education_profile(geo_code, geo_level, session, comparative=False):
         'youth_ave_maths_score_by_year': youth_average_maths_score_by_year,
         'youth_language_outcome_latest': youth_language_outcome_latest,
         'youth_maths_outcome_latest': youth_maths_outcome_latest,
-        'youth_matric_pass_rate_2015': {
+        'youth_matric_pass_rate_latest': {
             "name": "Of students writing matric passed",
-            "values": {"this": youth_matric_outcome_2015['Passed']['values']['this']}
+            "values": {"this": youth_matric_outcome_latest['Passed']['values']['this']}
         },
-        'youth_matric_outcome_2015': youth_matric_outcome_2015,
+        'youth_matric_outcome_latest': youth_matric_outcome_latest,
         'youth_matric_outcome_by_year': youth_matric_outcome_by_year,
-        'youth_matric_throughput_rate_2015': {
+        'youth_matric_throughput_rate_latest': {
             "name": "Of Grade 8 students go on to pass matric",
-            "values": {"this": youth_matric_throughput_2015['Passed']['values']['this']}
+            "values": {"this": youth_matric_throughput_latest['Passed']['values']['this']}
         },
-        'youth_matric_throughput_2015': youth_matric_throughput_2015,
+        'youth_matric_throughput_latest': youth_matric_throughput_latest,
         'youth_matric_throughput_rate_by_year': youth_matric_throughput_rate_by_year,
-        'youth_bachelor_passes_2015': {
+        'youth_bachelor_passes_latest': {
             "name": "Of Grade 8 students go on to pass matric with a bachelor's pass",
-            "values": {"this": youth_bachelor_outcome_2015['Bachelor pass']['values']['this']}
+            "values": {"this": youth_bachelor_outcome_latest['Bachelor pass']['values']['this']}
         },
-        'youth_bachelor_outcome_2015': youth_bachelor_outcome_2015,
+        'youth_bachelor_outcome_latest': youth_bachelor_outcome_latest,
         'youth_bachelor_passes_by_year': youth_bachelor_passes_by_year,
-        'youth_student_dropout_rate_2015': {
+        'youth_student_dropout_rate_latest': {
             "name": "Of students drop out between grade 10 and matric",
-            "values": {"this": youth_student_dropout_rate_2015['Dropped out']['values']['this']}
+            "values": {"this": youth_student_dropout_rate_latest['Dropped out']['values']['this']}
         },
         'youth_student_dropout_rate_by_year': youth_student_dropout_rate_by_year
     }

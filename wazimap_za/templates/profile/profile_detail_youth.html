@@ -110,9 +110,9 @@
                 <p>Data from each school were allocated to the corresponding ward in which they were located. A number of wards do not contain any secondary schools and thus will display no data for these charts.</p>
             </aside>
             <div class="column-quarter">
-                {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_matric_pass_rate_2015 stat_type='percentage' decimals='-1' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_matric_pass_rate_latest stat_type='percentage' decimals='-1' %}
             </div>
-            <div class="column-quarter" id="chart-pie-education-youth_matric_outcome_2015" data-stat-type="percentage" data-chart-title="Matric pass rate"></div>
+            <div class="column-quarter" id="chart-pie-education-youth_matric_outcome_latest" data-stat-type="percentage" data-chart-title="Matric pass rate"></div>
             <div class="column-half" id="chart-histogram-education-youth_matric_outcome_by_year" data-stat-type="scaled-percentage" data-chart-title="Matric pass rate by year"></div>
         </section>
         <section class="clearfix stat-row grouped-row">
@@ -120,9 +120,9 @@
                 <p>* i.e. when the matric class was in grade 8. This is essentially the throughput pass rate from Grade 8 to matric</p>
             </aside>
             <div class="column-quarter">
-                {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_matric_throughput_rate_2015 stat_type='percentage' decimals='-1' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_matric_throughput_rate_latest stat_type='percentage' decimals='-1' %}
             </div>
-            <div class="column-quarter" id="chart-pie-education-youth_matric_throughput_2015" data-stat-type="percentage" data-chart-title="Matric passes as % of grade 8 enrolment four years earlier *"></div>
+            <div class="column-quarter" id="chart-pie-education-youth_matric_throughput_latest" data-stat-type="percentage" data-chart-title="Matric passes as % of grade 8 enrolment four years earlier *"></div>
             <div class="column-half" id="chart-histogram-education-youth_matric_throughput_rate_by_year" data-stat-type="scaled-percentage" data-chart-title="Matric passes as % of grade 8 enrolment by year"></div>
         </section>
         <section class="clearfix stat-row grouped-row">
@@ -131,9 +131,9 @@
                 <p>* i.e. when the matric class was in grade 8</p>
             </aside>
             <div class="column-quarter">
-                {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_bachelor_passes_2015 stat_type='percentage' decimals='-1' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_bachelor_passes_latest stat_type='percentage' decimals='-1' %}
             </div>
-            <div class="column-quarter" id="chart-pie-education-youth_bachelor_outcome_2015" data-stat-type="percentage" data-chart-title="Bachelor passes as % of grade 8 enrolment four years earlier *"></div>
+            <div class="column-quarter" id="chart-pie-education-youth_bachelor_outcome_latest" data-stat-type="percentage" data-chart-title="Bachelor passes as % of grade 8 enrolment four years earlier *"></div>
             <div class="column-half" id="chart-histogram-education-youth_bachelor_passes_by_year" data-stat-type="scaled-percentage" data-chart-title="Bachelor passes as % of grade 8 enrolment by year"></div>
         </section>
         <section class="clearfix stat-row">
@@ -142,7 +142,7 @@
                 <p>Data from each school were allocated to the corresponding ward in which they were located. A number of wards do not contain any secondary schools and thus will display no data for these charts.</p>
             </aside>
             <div class="column-quarter">
-                {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_student_dropout_rate_2015 stat_type='percentage' decimals='-1' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=education.youth_student_dropout_rate_latest stat_type='percentage' decimals='-1' %}
             </div>
             <div class="column-half" id="chart-histogram-education-youth_student_dropout_rate_by_year" data-stat-type="scaled-percentage" data-chart-title="% dropout between grade 10 and matric  by year"></div>
         </section>
