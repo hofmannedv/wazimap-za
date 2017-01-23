@@ -595,14 +595,14 @@ def get_health_profile(geo_code, geo_level, session, comparative=False):
             youth_male_top10_causes_of_death['metadata'] = youth_male_causes_of_death['metadata']
 
         final_data.update({
-            'youth_preganacy_rate': {
+            'youth_preganacy_rate_latest': {
                 "name": "Of total pregnancies are to females under 18 years",
-                "values": {"this":youth_pregnancy_rate_by_year['2014-15']['values']['this']}
+                "values": {"this":youth_pregnancy_rate_by_year['2015-16']['values']['this']}
             },
             'youth_pregnancy_rate_by_year': youth_pregnancy_rate_by_year,
-            'youth_delivery_rate': {
+            'youth_delivery_rate_latest': {
                 "name": "Of total deliveries are to females under 18 years",
-                "values": {"this":youth_delivery_rate_by_year['2014-15']['values']['this']}
+                "values": {"this":youth_delivery_rate_by_year['2015-16']['values']['this']}
             },
             'youth_delivery_rate_by_year': youth_delivery_rate_by_year,
             'youth_female_HIV_deaths': {
