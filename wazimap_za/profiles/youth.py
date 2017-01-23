@@ -147,17 +147,17 @@ def get_education_profile(geo_code, geo_level, session, comparative=False):
         table_name='youth_average_maths_score_by_year',
         percent=False)
 
-    youth_language_outcome_2014, _ = get_stat_data(
+    youth_language_outcome_latest, _ = get_stat_data(
         ['year', 'outcome'], geo_level, geo_code, session,
         table_name='youth_language_outcome_by_year',
         key_order={'outcome': ['Passed', 'Failed']},
-        percent=False, slices=['2014'])
+        percent=False, slices=['2015'])
 
-    youth_maths_outcome_2014, _ = get_stat_data(
+    youth_maths_outcome_latest, _ = get_stat_data(
         ['year', 'outcome'], geo_level, geo_code, session,
         table_name='youth_maths_outcome_by_year',
         key_order={'outcome': ['Passed', 'Failed']},
-        percent=False, slices=['2014'])
+        percent=False, slices=['2015'])
 
     youth_matric_outcome_by_year, _ = get_stat_data(
         ['year'], geo_level, geo_code, session,
@@ -229,18 +229,18 @@ def get_education_profile(geo_code, geo_level, session, comparative=False):
             "values": {"this": youth_average_mean_score_by_year['2014']['values']['this']}
         },
         'youth_ave_mean_score_by_year': youth_average_mean_score_by_year,
-        'youth_ave_language_score_2014': {
+        'youth_ave_language_score_latest': {
             "name": "Average score in language",
-            "values": {"this": youth_average_language_score_by_year['2014']['values']['this']}
+            "values": {"this": youth_average_language_score_by_year['2015']['values']['this']}
         },
         'youth_ave_language_score_by_year': youth_average_language_score_by_year,
-        'youth_ave_maths_score_2014': {
+        'youth_ave_maths_score_latest': {
             "name": "Average score in mathematics",
-            "values": {"this": youth_average_maths_score_by_year['2014']['values']['this']}
+            "values": {"this": youth_average_maths_score_by_year['2015']['values']['this']}
         },
         'youth_ave_maths_score_by_year': youth_average_maths_score_by_year,
-        'youth_language_outcome_2014': youth_language_outcome_2014,
-        'youth_maths_outcome_2014': youth_maths_outcome_2014,
+        'youth_language_outcome_latest': youth_language_outcome_latest,
+        'youth_maths_outcome_latest': youth_maths_outcome_latest,
         'youth_matric_pass_rate_2015': {
             "name": "Of students writing matric passed",
             "values": {"this": youth_matric_outcome_2015['Passed']['values']['this']}
