@@ -9,11 +9,13 @@
 {% endblock %}
 
 
-{% if WAZIMAP.default_profile == 'youth' %}
-  {% block favicon %}
+{% block favicon %}
+  {% if WAZIMAP.default_profile == 'youth' %}
     <link rel="shortcut icon" href="{% static 'img/youth-favicon.ico' %}"/>
-  {% endblock %}
-{% endif %}
+  {% else %}
+    {{ block.super }}
+  {% endif %}
+{% endblock %}
 
 {% block header_logo %}
   {% if WAZIMAP.default_profile == 'youth' %}
