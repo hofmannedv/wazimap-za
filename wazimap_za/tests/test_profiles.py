@@ -21,7 +21,7 @@ class ProfileTests(TestCase):
         resp = self.client.get('/profiles/municipality-WC024-stellenbosch/')
         self.assertEqual(resp.status_code, 200)
 
-        resp = self.client.get('/profiles/ward-19100105-ward-105-19100105/')
+        resp = self.client.get('/profiles/ward-19100105-city-of-cape-town-ward-105-19100105/')
         self.assertEqual(resp.status_code, 200)
 
     @skipIf(WAZI_PROFILE != 'census', 'Only tested for census profile')
