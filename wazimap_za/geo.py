@@ -39,7 +39,7 @@ class GeoData(BaseGeoData):
         if simplify:
             url = url + '&simplification_level=%s' % simplify
 
-        resp = requests.get(url)
+        resp = requests.get(url, verify=False)
         if resp.status_code == 404:
             return None
         resp.raise_for_status()
@@ -56,7 +56,7 @@ class GeoData(BaseGeoData):
         """
         Returns a list of geographies containing this point.
         """
-        resp = requests.get(SETTINGS['url'] + '/point/4326/%s,%s?generation=%s' % (longitude, latitude, SETTINGS['generation']))
+        resp = requests.get(SETTINGS['url'] + '/point/4326/%s,%s?generation=%s' % (longitude, latitude, SETTINGS['generation']), verify=False)
         resp.raise_for_status()
 
         geos = []
