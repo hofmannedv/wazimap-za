@@ -3,7 +3,9 @@
 
 {% block head_css %}
     {{ block.super }}
-    {% if WAZIMAP.default_profile == 'youth' %}
+    {% if WAZIMAP.default_profile == 'census' %}
+    <link rel="stylesheet" href="{% static 'css/census.css' %}">
+    {% elif WAZIMAP.default_profile == 'youth' %}
     <link rel="stylesheet" href="{% static 'css/youth.css' %}">
     {% endif %}
 {% endblock %}

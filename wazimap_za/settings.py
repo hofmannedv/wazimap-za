@@ -48,6 +48,10 @@ WAZIMAP['profile_builder'] = 'wazimap_za.profiles.{}.get_profile'.format(wazi_pr
 
 if wazi_profile == 'census':
     WAZIMAP['ga_tracking_id'] = 'UA-48399585-5'
+    # The first video in this list will appear on the homepage
+    WAZIMAP['video_links'] = [
+        'https://www.youtube.com/embed/KQ8jM51S1Ik?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH'
+    ]
 
 elif wazi_profile == 'ecd':
     WAZIMAP['url'] = 'https://wazimap-ecd.code4sa.org'
@@ -76,7 +80,6 @@ elif wazi_profile == 'youth':
     WAZIMAP['url'] = 'https://youthexplorer.org.za'
     WAZIMAP['name'] = 'Western Cape Youth Explorer'
     WAZIMAP['ga_tracking_id'] = 'UA-48399585-46'
-
 
 LANGUAGE_CODE = 'en-za'
 USE_THOUSAND_SEPARATOR = True
