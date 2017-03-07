@@ -50,7 +50,10 @@ if wazi_profile == 'census':
     WAZIMAP['ga_tracking_id'] = 'UA-48399585-5'
     # The first video in this list will appear on the homepage
     WAZIMAP['video_links'] = [
-        'https://www.youtube.com/embed/KQ8jM51S1Ik?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH'
+        'https://www.youtube.com/embed/KQ8jM51S1Ik?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH',
+        'https://www.youtube.com/embed/SFsTnYkTKx0?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH',
+        'https://www.youtube.com/embed/WCftaPfULSg?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH',
+        'https://www.youtube.com/embed/7mSZnXFHFxo?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH'
     ]
 
 elif wazi_profile == 'ecd':

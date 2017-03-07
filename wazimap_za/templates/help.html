@@ -1,0 +1,19 @@
+{% extends 'help.html' %}{% load partition staticfiles %}
+
+{% block content %}
+  <article id="help">
+      <header>
+          <h1 class="article-header">Tips and tricks</h1>
+          <p>Check out the videos below for tips on using {{ WAZIMAP.name }}</p>
+      </header>
+      <section>
+      {% for link in video_links %}
+        <span class="column-half">
+            <div class="video-wrapper">
+              <iframe width="560" height="315" src="{{ link }}" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </span>
+      {% endfor %}
+      </section>
+  </article>
+{% endblock %}
