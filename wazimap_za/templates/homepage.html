@@ -18,12 +18,13 @@
 
 {% if video_links %}
   {% block homepage-video %}
-      <h2 class="column-full subhead">Tips on using {{ WAZIMAP.name }}</h2>
-      <span class="column-half">
+      <hr>
+      <h2 class="column-full subhead">How to use {{ WAZIMAP.name }}</h2>
+      <span class="column-half card">
           <div class="video-wrapper">
             <iframe width="560" height="315" src="{{ video_links.0 }}" frameborder="0" allowfullscreen></iframe>
           </div>
-          Check out more videos <a href="{% url 'help' %}">here</a>
+          <span class="caption">You can learn more <a href="{% url 'help' %}">here.</a></span>
       </span>
   {% endblock %}
 {% endif %}
