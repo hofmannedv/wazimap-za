@@ -16,18 +16,18 @@
   {% endif %}
 {% endblock %}
 
-{% if video_links %}
-  {% block homepage-video %}
-      <hr>
-      <h2 class="column-full subhead">How to use {{ WAZIMAP.name }}</h2>
-      <span class="column-half card">
-          <div class="video-wrapper">
-            <iframe width="560" height="315" src="{{ WAZIMAP.video_links.0 }}" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <span class="caption">You can learn more <a href="{% url 'help' %}">here.</a></span>
-      </span>
-  {% endblock %}
-{% endif %}
+{% block homepage-video %}
+  {% if WAZIMAP.video_links %}
+    <hr>
+    <h2 class="column-full subhead">How to use {{ WAZIMAP.name }}</h2>
+    <span class="column-half card">
+        <div class="video-wrapper">
+          <iframe width="560" height="315" src="{{ WAZIMAP.video_links.0 }}" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <span class="caption"><a href="{% url 'help' %}">More tips on using {{ WAZIMAP.name }}</a></span>
+    </span>
+  {% endif %}
+{% endblock %}
 
 {% block homepage_javascripb_libs %}
 {{ block.super }}
