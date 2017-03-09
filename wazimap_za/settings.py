@@ -1,4 +1,5 @@
 # pull in the default wazimap settings
+from collections import OrderedDict
 from wazimap.settings import *  # noqa
 
 # install this app before Wazimap
@@ -48,13 +49,14 @@ WAZIMAP['profile_builder'] = 'wazimap_za.profiles.{}.get_profile'.format(wazi_pr
 
 if wazi_profile == 'census':
     WAZIMAP['ga_tracking_id'] = 'UA-48399585-5'
-    # The first video in this list will appear on the homepage
-    WAZIMAP['video_links'] = [
-        'https://www.youtube.com/embed/KQ8jM51S1Ik?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH',
-        'https://www.youtube.com/embed/SFsTnYkTKx0?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH',
-        'https://www.youtube.com/embed/WCftaPfULSg?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH',
-        'https://www.youtube.com/embed/7mSZnXFHFxo?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH'
-    ]
+
+    WAZIMAP['video_links'] = OrderedDict([
+        ('intro', 'https://www.youtube.com/embed/KQ8jM51S1Ik?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH',),
+        ('table_view', 'https://www.youtube.com/embed/KQ8jM51S1Ik?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH',),
+        ('map_view', 'https://www.youtube.com/embed/SFsTnYkTKx0?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH',),
+        ('distribution_view', 'https://www.youtube.com/embed/WCftaPfULSg?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH',),
+        ("comparing_places", 'https://www.youtube.com/embed/7mSZnXFHFxo?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH')
+    ])
 
 elif wazi_profile == 'ecd':
     WAZIMAP['url'] = 'https://wazimap-ecd.code4sa.org'

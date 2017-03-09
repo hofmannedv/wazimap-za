@@ -7,7 +7,7 @@
           <p>Check out the videos below for tips on how to use {{ WAZIMAP.name }}.</p>
       </header>
       <section>
-      {% for link in WAZIMAP.video_links %}
+      {% for key, link in WAZIMAP.video_links.iteritems %}
         <span class="column-half">
             <div class="video-wrapper">
               <iframe width="560" height="315" src="{{ link }}" frameborder="0" allowfullscreen></iframe>
