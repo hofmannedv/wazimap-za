@@ -4,4 +4,8 @@
 {% block body_javascript_extra %}
 {{ block.super }}
 <script src="{% static 'js/vendor/featherlight.min.js' %}"></script>
+<script type="text/javascript">
+  var VIDEO_LINKS = {{ WAZIMAP.video_links|jsonify|safe }};
+</script>
+<script src="{% static 'js/show_video.js' %}"></script>
 {% endblock %}
