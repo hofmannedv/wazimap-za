@@ -1,0 +1,7 @@
+{% extends 'data/_base_data.html' %}
+{% load jsonify staticfiles %}
+
+{% block body_javascript_extra %}
+{{ block.super }}
+<script src="{% static 'js/vendor/featherlight.min.js' %}"></script>
+{% endblock %}
