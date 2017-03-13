@@ -3,6 +3,7 @@
 
 {% block head_css %}
     {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/wazimap_za.css' %}">
     {% if WAZIMAP.default_profile == 'youth' %}
     <link rel="stylesheet" href="{% static 'css/youth.css' %}">
     {% endif %}
@@ -28,6 +29,7 @@
 {% block header_branding %}
   {% if WAZIMAP.default_profile == 'youth' %}
   {% else %}
+    <a class="header-help" href="{% url 'help' %}"><i class="fa fa-question-circle"></i></a>
     {{ block.super }}
   {% endif %}
 {% endblock %}

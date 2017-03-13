@@ -1,4 +1,5 @@
 # pull in the default wazimap settings
+from collections import OrderedDict
 from wazimap.settings import *  # noqa
 
 # install this app before Wazimap
@@ -49,6 +50,14 @@ WAZIMAP['profile_builder'] = 'wazimap_za.profiles.{}.get_profile'.format(wazi_pr
 if wazi_profile == 'census':
     WAZIMAP['ga_tracking_id'] = 'UA-48399585-5'
 
+    WAZIMAP['video_links'] = OrderedDict([
+        ('intro', 'https://www.youtube.com/embed/KQ8jM51S1Ik?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH',),
+        ('table_view', 'https://www.youtube.com/embed/KQ8jM51S1Ik?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH',),
+        ('map_view', 'https://www.youtube.com/embed/SFsTnYkTKx0?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH',),
+        ('distribution_view', 'https://www.youtube.com/embed/WCftaPfULSg?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH',),
+        ("comparing_places", 'https://www.youtube.com/embed/7mSZnXFHFxo?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH')
+    ])
+
 elif wazi_profile == 'ecd':
     WAZIMAP['url'] = 'https://wazimap-ecd.code4sa.org'
     WAZIMAP['na_label'] = 'No Data'
@@ -77,6 +86,13 @@ elif wazi_profile == 'youth':
     WAZIMAP['name'] = 'Western Cape Youth Explorer'
     WAZIMAP['ga_tracking_id'] = 'UA-48399585-46'
 
+    WAZIMAP['video_links'] = OrderedDict([
+        ('intro', 'https://www.youtube.com/embed/do5XexPJhDc?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx',),
+        ('table_view', 'https://www.youtube.com/embed/bynx320D5kY?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx',),
+        ('map_view', 'https://www.youtube.com/embed/IHVWdv-Yuos?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx',),
+        ('distribution_view', 'https://www.youtube.com/embed/jhzGFGSAJ9o?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx',),
+        ("comparing_places", 'https://www.youtube.com/embed/1I8RPPJ0g1c?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx')
+    ])
 
 LANGUAGE_CODE = 'en-za'
 USE_THOUSAND_SEPARATOR = True

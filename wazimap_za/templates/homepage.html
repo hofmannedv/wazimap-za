@@ -16,6 +16,20 @@
   {% endif %}
 {% endblock %}
 
+{% block tips %}
+  {% if WAZIMAP.video_links %}
+    <div class="column-quarter">&nbsp;</div>
+    <span class="column-half card">
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="{{ WAZIMAP.video_links.intro }}" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <span class="caption"><a href="{% url 'help' %}">More tips on using {{ WAZIMAP.name }}</a></span>
+    </span>
+  {% endif %}
+
+  {{ block.super }}
+{% endblock %}
+
 {% block homepage_javascripb_libs %}
 {{ block.super }}
 <script src="{% static 'js/maps_mapit.js' %}"></script>
