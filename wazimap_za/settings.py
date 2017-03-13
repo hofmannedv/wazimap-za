@@ -91,6 +91,7 @@ elif wazi_profile == 'youth':
         ('table_view', 'https://www.youtube.com/embed/bynx320D5kY?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx',),
         ('map_view', 'https://www.youtube.com/embed/IHVWdv-Yuos?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx',),
         ('distribution_view', 'https://www.youtube.com/embed/jhzGFGSAJ9o?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx',),
+        ("comparing_places", 'https://www.youtube.com/embed/1I8RPPJ0g1c?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx')
     ])
 
 LANGUAGE_CODE = 'en-za'
