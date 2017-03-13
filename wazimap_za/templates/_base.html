@@ -3,12 +3,13 @@
 
 {% block head_css %}
     {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/vendor/featherlight.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/wazimap_za.css' %}">
     {% if WAZIMAP.default_profile == 'census' %}
     <link rel="stylesheet" href="{% static 'css/census.css' %}">
     {% elif WAZIMAP.default_profile == 'youth' %}
     <link rel="stylesheet" href="{% static 'css/youth.css' %}">
     {% endif %}
-    <link rel="stylesheet" href="{% static 'css/vendor/featherlight.min.css' %}">
 {% endblock %}
 
 

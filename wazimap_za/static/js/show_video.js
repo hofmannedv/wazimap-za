@@ -27,7 +27,9 @@
             iframeMaxWidth: wMax,
             iframeMaxHeight: hMax,
             iframeWidth: w,
-            iframeHeight: h
+            iframeHeight: h,
+            background: $('.wazi-lightbox'),
+            variant: 'wazi-lightbox'
           });
         }, 15000);
     }

@@ -1,0 +1,18 @@
+/* Define the styles to use accross all the instances of Wazimap-ZA*/
+
+.wazi-lightbox .featherlight-content {
+  background: #F7F8F3;
+}
+
+.wazi-lightbox .featherlight-close {
+  background: #1A9D95;
+  color: #fff;
+}
+
+.wazi-lightbox .lightbox-intro {
+  margin: 10px;
+}
+
+.wazi-lightbox hr {
+  border-color: #1A9D95;
+}
