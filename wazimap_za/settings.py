@@ -86,6 +86,14 @@ elif wazi_profile == 'youth':
     WAZIMAP['name'] = 'Western Cape Youth Explorer'
     WAZIMAP['ga_tracking_id'] = 'UA-48399585-46'
 
+    WAZIMAP['video_links'] = OrderedDict([
+        ('intro', 'https://www.youtube.com/embed/do5XexPJhDc?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx',),
+        ('table_view', 'https://www.youtube.com/embed/bynx320D5kY?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx',),
+        ('map_view', 'https://www.youtube.com/embed/IHVWdv-Yuos?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx',),
+        ('distribution_view', 'https://www.youtube.com/embed/jhzGFGSAJ9o?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx',),
+        ("comparing_places", 'https://www.youtube.com/embed/1I8RPPJ0g1c?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx')
+    ])
+
 LANGUAGE_CODE = 'en-za'
 USE_THOUSAND_SEPARATOR = True
 FORMAT_MODULE_PATH = 'wazimap_za.formats'
