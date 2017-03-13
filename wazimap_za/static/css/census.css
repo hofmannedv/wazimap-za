@@ -22,3 +22,9 @@
   font-size: 28px;
   line-height: 28px;
 }
+
+.map-header-help i {
+  float: right;
+  font-size: 20px;
+  line-height: 20px;
+}

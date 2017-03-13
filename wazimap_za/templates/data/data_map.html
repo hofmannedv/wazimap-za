@@ -1,6 +1,17 @@
 {% extends 'data/data_map.html' %}
 {% load staticfiles %}
 
+{% block data_map_header %}
+{% if WAZIMAP.default_profile == 'youth' %}
+  <a class="title" href="{% url 'homepage' %}">
+    <img src="{% static 'img/youth-logo.png' %}"> {{ WAZIMAP.name }}
+  </a>
+{% else %}
+  {{ block.super }}
+{% endif %}
+  <a class="map-header-help" href="{% url 'help' %}"><i class="fa fa-question-circle"></i></a>
+{% endblock %}
+
 {% block page_specific_javascript %}
 {{ block.super }}
 <script src="{% static 'js/maps_mapit.js' %}"></script>
