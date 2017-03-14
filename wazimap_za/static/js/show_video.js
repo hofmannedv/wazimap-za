@@ -17,9 +17,6 @@
         videoLink = VIDEO_LINKS[pageLinkMap[page]];
 
     if (document.cookie.indexOf('video-upsell=true') === -1) {
-      var expires = new Date();
-      expires.setDate(expires.getDate() + 30);
-      document.cookie = "video-upsell=true; expires=" + expires.toUTCString();
 
       var showVideo = setTimeout(function () {
           $.featherlight({
@@ -31,6 +28,11 @@
             background: $('.wazi-lightbox'),
             variant: 'wazi-lightbox'
           });
+
+          var expires = new Date();
+          expires.setDate(expires.getDate() + 30);
+          document.cookie = "video-upsell=true; expires=" + expires.toUTCString();
+
         }, 15000);
     }
 
