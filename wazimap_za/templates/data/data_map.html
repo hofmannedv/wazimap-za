@@ -12,10 +12,6 @@
   <a class="map-header-help" href="{% url 'help' %}"><i class="fa fa-question-circle"></i></a>
 {% endblock %}
 
-{% block map_content_extra %}
-  {% include "data/_blocks/_lightbox_video.html" %}
-{% endblock %}
-
 {% block page_specific_javascript %}
 {{ block.super }}
 <script src="{% static 'js/maps_mapit.js' %}"></script>
