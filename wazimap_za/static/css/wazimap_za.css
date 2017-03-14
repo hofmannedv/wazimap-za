@@ -41,7 +41,8 @@
 }
 
 .wazi-lightbox .lightbox-intro {
-  margin: 10px;
+  margin: 10px 25px;
+  display: inline-block;
 }
 
 .wazi-lightbox hr {
