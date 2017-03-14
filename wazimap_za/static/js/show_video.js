@@ -16,7 +16,7 @@
         page = window.location.pathname.split('/')[2],
         videoLink = VIDEO_LINKS[pageLinkMap[page]];
 
-    if (document.cookie.indexOf('video-upsell=true') === -1) {
+    if (document.cookie.indexOf('video-upsell-' + page + '=true') === -1) {
 
       var showVideo = setTimeout(function () {
           $.featherlight({
@@ -31,7 +31,7 @@
 
           var expires = new Date();
           expires.setDate(expires.getDate() + 30);
-          document.cookie = "video-upsell=true; expires=" + expires.toUTCString();
+          document.cookie = 'video-upsell-' + page + '=true; expires=' + expires.toUTCString();
 
         }, 15000);
     }
