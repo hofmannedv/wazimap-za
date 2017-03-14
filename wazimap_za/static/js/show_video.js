@@ -11,7 +11,7 @@
     var displayRatio = 0.5625,
         w = $(window).width() * 0.95,
         h = w * displayRatio,
-        wMax = 960,
+        wMax = 800,
         hMax = wMax * displayRatio,
         page = window.location.pathname.split('/')[2],
         videoLink = VIDEO_LINKS[pageLinkMap[page]];
