@@ -12,6 +12,9 @@ DATABASES['default']['TEST'] = {
     'NAME': 'test_wazimap_za',
 }
 
+# redirect www.wazimap.co.za to wazimap.co.za
+STRIP_WWW = True
+
 
 # Localise this instance of Wazimap
 WAZIMAP['name'] = 'Wazimap South Africa'
