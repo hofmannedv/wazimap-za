@@ -30,3 +30,21 @@
   font-size: 20px;
   line-height: 20px;
 }
+
+.wazi-lightbox .featherlight-content {
+  background: #F7F8F3;
+}
+
+.wazi-lightbox .featherlight-close {
+  background: #1A9D95;
+  color: #fff;
+}
+
+.wazi-lightbox .lightbox-intro {
+  margin: 10px 25px;
+  display: inline-block;
+}
+
+.wazi-lightbox hr {
+  border-color: #1A9D95;
+}

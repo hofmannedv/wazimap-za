@@ -3,9 +3,11 @@
 
 {% block head_css %}
     {{ block.super }}
+
+    <link rel="stylesheet" href="{% static 'css/vendor/featherlight.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/wazimap_za.css' %}">
     {% if WAZIMAP.default_profile == 'youth' %}
-    <link rel="stylesheet" href="{% static 'css/youth.css' %}">
+      <link rel="stylesheet" href="{% static 'css/youth.css' %}">
     {% endif %}
 {% endblock %}
 
@@ -27,9 +29,8 @@
 {% endblock %}
 
 {% block header_branding %}
-  {% if WAZIMAP.default_profile == 'youth' %}
-  {% else %}
-    <a class="header-help" href="{% url 'help' %}"><i class="fa fa-question-circle"></i></a>
+  <a class="header-help" href="{% url 'help' %}"><i class="fa fa-question-circle"></i></a>
+  {% if WAZIMAP.default_profile != 'youth' %}
     {{ block.super }}
   {% endif %}
 {% endblock %}

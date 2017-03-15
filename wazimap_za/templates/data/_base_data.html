@@ -1,0 +1,16 @@
+{% extends 'data/_base_data.html' %}
+{% load jsonify staticfiles %}
+
+{% block body_javascript_extra %}
+{{ block.super }}
+
+{% if WAZIMAP.video_links %}
+  <script src="{% static 'js/vendor/featherlight.min.js' %}"></script>
+  <script type="text/javascript">
+    var VIDEO_LINKS = {{ WAZIMAP.video_links|jsonify|safe }};
+  </script>
+  <script src="{% static 'js/show_video.js' %}"></script>
+  {% include "data/_blocks/_lightbox_video.html" %}
+{% endif %}
+
+{% endblock %}

@@ -54,10 +54,10 @@ if wazi_profile == 'census':
     WAZIMAP['ga_tracking_id'] = 'UA-48399585-5'
 
     WAZIMAP['video_links'] = OrderedDict([
-        ('intro', 'https://www.youtube.com/embed/KQ8jM51S1Ik?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH',),
-        ('table_view', 'https://www.youtube.com/embed/KQ8jM51S1Ik?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH',),
-        ('map_view', 'https://www.youtube.com/embed/SFsTnYkTKx0?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH',),
-        ('distribution_view', 'https://www.youtube.com/embed/WCftaPfULSg?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH',),
+        ('intro', 'https://www.youtube.com/embed/lXKDBoRSqxo?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH'),
+        ('table_view', 'https://www.youtube.com/embed/KQ8jM51S1Ik?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH'),
+        ('map_view', 'https://www.youtube.com/embed/SFsTnYkTKx0?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH'),
+        ('distribution_view', 'https://www.youtube.com/embed/WCftaPfULSg?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH'),
         ("comparing_places", 'https://www.youtube.com/embed/7mSZnXFHFxo?list=PL7MJ_sFHs952CYcKHPQp786HVVy83nBwH')
     ])
 
