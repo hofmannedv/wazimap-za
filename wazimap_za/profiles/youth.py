@@ -5,13 +5,17 @@ from wazimap.data.utils import get_session, merge_dicts, get_stat_data, percent
 from wazimap.geo import geo_data
 
 
-PROFILE_SECTIONS = (
+PROFILE_SECTIONS_WC = (
     "demographics",
     "education",
     "health",
     "living_environment",
     "economic_opportunities",
     "safety"
+)
+
+PROFILE_SECTIONS = (
+    "demographics",
 )
 
 EDUCATION_LEVELS_RECODE = {
@@ -22,7 +26,6 @@ EDUCATION_LEVELS_RECODE = {
 
 POPULATION_GROUP_ORDER = ('Black African', 'Coloured', 'Indian or Asian', 'White', 'Other')
 GENDER_ORDER = ('Female', 'Male')
-
 
 def get_profile(geo_code, geo_level, profile_name=None):
     session = get_session()
@@ -35,8 +38,31 @@ def get_profile(geo_code, geo_level, profile_name=None):
             pass
             # Raise error as we don't have this data
 
+        """
+        The following is temporary and enables us to determine what to display for geos:
+
+        Within WC: All indicators, with WC as root comparisson geo
+        Outside WC: Some indicators, with ZA as root comparrison geo
+
+        This is beacause Wazimap expects data for all geos.
+        This will be removed once we have imported all the data.
+        """
+
+        display_profile = 'ZA'
+        if geo_code == 'WC' or ('province', 'WC') in geo_summary_levels:
+            display_profile = 'WC'
+            geo_data.comparative_levels = ['this', 'district', 'province']
+            geo_summary_levels = geo_data.get_summary_geo_info(geo_code, geo_level)
+            sections = list(PROFILE_SECTIONS_WC)
+
+        data['display_profile'] = display_profile
+
         for section in sections:
-            function_name = 'get_%s_profile' % section
+            if display_profile == 'ZA':
+                function_name = 'get_%s_za_profile' % section
+            else:
+                function_name = 'get_%s_profile' % section
+
             if function_name in globals():
                 func = globals()[function_name]
                 data[section] = func(geo_code, geo_level, session)
@@ -85,6 +111,45 @@ def get_demographics_profile(geo_code, geo_level, session, comparative=False):
             "values": {"this": youth_pop['youth_pop']['values']['this']},
         },
         'youth_population_by_year': youth_pop_dist_data,
+        'youth_population_by_gender': youth_gender_data,
+        'youth_population_by_pop_group': youth_pop_group_data
+    }
+
+    # The following info is displayed in the block over the map
+    geo = geo_data.get_geography(geo_code, geo_level)
+    if geo.square_kms:
+        final_data['population_density'] = {
+            'name': "youth per square kilometre",
+            'values': {"this": youth_pop['youth_pop']['numerators']['this'] / geo.square_kms}
+        }
+
+    return final_data
+
+def get_demographics_za_profile(geo_code, geo_level, session, comparative=False):
+    youth_pop_table = get_datatable('youth_population')
+    youth_pop, pop_total = youth_pop_table.get_stat_data(
+        geo_level, geo_code, total='total_pop', percent='False')
+
+    youth_gender_data, _ = get_stat_data(['gender'], geo_level, geo_code, session,
+        table_name='youth_gender_population_group',
+        key_order=GENDER_ORDER)
+    youth_pop_group_data, _ = get_stat_data(['population group'], geo_level, geo_code, session,
+        table_name='youth_gender_population_group',
+        key_order=POPULATION_GROUP_ORDER)
+
+    final_data = {
+        'total_population': {
+            "name": "People",
+            "values": {"this": pop_total}
+        },
+        'youth_population_total': {
+            "name": "Youth aged 15-24",
+            "values": {"this": youth_pop['youth_pop']['numerators']['this']}
+        },
+        'youth_population_perc': {
+            "name": "Of population are youth aged 15-24",
+            "values": {"this": youth_pop['youth_pop']['values']['this']},
+        },
         'youth_population_by_gender': youth_gender_data,
         'youth_population_by_pop_group': youth_pop_group_data
     }

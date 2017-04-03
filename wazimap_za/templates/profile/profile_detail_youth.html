@@ -28,6 +28,34 @@
 
 {% block profile_detail %}
 
+{% if display_profile == 'ZA' %}
+
+<article id="demographics" class="clearfix">
+    <header class="section-contents">
+        <h1>Youth demographics</h1>
+    </header>
+    <div class="section-container">
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#population" id="population">Population<i class="fa fa-link"></i></a></h2>
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=demographics.total_population stat_type='number' %}
+            </div>
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=demographics.youth_population_total stat_type='number' %}
+            </div>
+        </section>
+        <section class="clearfix stat-row grouped-row">
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=demographics.youth_population_perc stat_type='percentage' decimals='-1' %}
+            </div>
+            <div class="column-half" id="chart-histogram-demographics-youth_population_by_pop_group" data-stat-type="scaled-percentage" data-chart-title="Youth population by race"></div>
+            <div class="column-quarter" id="chart-pie-demographics-youth_population_by_gender" data-stat-type="percentage" data-chart-title="Youth population by gender"></div>
+        </section>
+    </div>
+</article>
+
+{% else %}
+
 <article id="demographics" class="clearfix">
     <header class="section-contents">
         <h1>Youth demographics</h1>
@@ -380,5 +408,7 @@
         {% endif %}
     </div>
 </article>
+
+{% endif %}
 
 {% endblock %}
