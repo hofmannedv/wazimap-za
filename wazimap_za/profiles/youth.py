@@ -21,6 +21,7 @@ EDUCATION_LEVELS_RECODE = {
 }
 
 POPULATION_GROUP_ORDER = ('Black African', 'Coloured', 'Indian or Asian', 'White', 'Other')
+GENDER_ORDER = ('Female', 'Male')
 
 
 def get_profile(geo_code, geo_level, profile_name=None):
@@ -56,11 +57,18 @@ def get_demographics_profile(geo_code, geo_level, session, comparative=False):
     youth_pop, pop_total = youth_pop_table.get_stat_data(
         geo_level, geo_code, total='total_pop', percent='False')
 
-    youth_pop_dist_data, _ = get_stat_data(['age in completed years'], geo_level, geo_code, session, table_name='youth_gender_age_in_completed_years')
+    youth_pop_dist_data, _ = get_stat_data(
+        ['age in completed years'], geo_level, geo_code, session,
+        table_name='youth_gender_age_in_completed_years')
 
-    youth_gender_data, _ = get_stat_data(['gender'], geo_level, geo_code, session, table_name='youth_gender_population_group')
-    youth_pop_group_data, _ = get_stat_data(['population group'], geo_level, geo_code, session,
+    youth_gender_data, _ = get_stat_data(
+        ['gender'], geo_level, geo_code, session,
         table_name='youth_gender_population_group',
+        key_order=GENDER_ORDER)
+
+    youth_pop_group_data, _ = get_stat_data(
+        ['population group'], geo_level, geo_code, session,
+        table_name='youth_population_group_gender',
         key_order=POPULATION_GROUP_ORDER)
 
     final_data = {
@@ -125,7 +133,7 @@ def get_education_profile(geo_code, geo_level, session, comparative=False):
     youth_education_attending_by_age, _ = get_stat_data(
         ['attendance', 'age in completed years'], geo_level, geo_code, session,
         percent_grouping=['age in completed years'], slices=['Yes'],
-        table_name='youth_education_attendance_gender_age_incompleted_years')
+        table_name='youth_education_attendance_age_incompleted_years_gender')
 
     youth_education_attending_by_gender, _ = get_stat_data(
         ['attendance', 'gender'], geo_level, geo_code, session,
@@ -370,7 +378,7 @@ def get_living_environment_profile(geo_code, geo_level, session, comparative=Fal
         ['income poverty', 'population group'], geo_level, geo_code, session,
         percent_grouping=['population group'], slices=['Income-poor'],
         key_order={'population group': POPULATION_GROUP_ORDER},
-        table_name='youth_income_poverty_gender_population_group')
+        table_name='youth_income_poverty_population_group_gender')
 
     youth_income_poor_by_gender, _ = get_stat_data(
         ['income poverty', 'gender'], geo_level, geo_code, session,
@@ -386,7 +394,7 @@ def get_living_environment_profile(geo_code, geo_level, session, comparative=Fal
         ['multidimensionally poor', 'population group'], geo_level, geo_code, session,
         percent_grouping=['population group'], slices=['Multidimensionally poor'],
         key_order={'population group': POPULATION_GROUP_ORDER},
-        table_name='youth_multidimensionally_poor_gender_population_group')
+        table_name='youth_multidimensionally_poor_population_group_gender')
 
     youth_multid_poor_by_gender, _ = get_stat_data(
         ['multidimensionally poor', 'gender'], geo_level, geo_code, session,
