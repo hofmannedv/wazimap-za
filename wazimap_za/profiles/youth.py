@@ -130,11 +130,13 @@ def get_demographics_za_profile(geo_code, geo_level, session, comparative=False)
     youth_pop, pop_total = youth_pop_table.get_stat_data(
         geo_level, geo_code, total='total_pop', percent='False')
 
-    youth_gender_data, _ = get_stat_data(['gender'], geo_level, geo_code, session,
+    youth_gender_data, _ = get_stat_data(
+        ['gender'], geo_level, geo_code, session,
         table_name='youth_gender_population_group',
         key_order=GENDER_ORDER)
-    youth_pop_group_data, _ = get_stat_data(['population group'], geo_level, geo_code, session,
-        table_name='youth_gender_population_group',
+    youth_pop_group_data, _ = get_stat_data(
+        ['population group'], geo_level, geo_code, session,
+        table_name='youth_population_group_gender',
         key_order=POPULATION_GROUP_ORDER)
 
     final_data = {
