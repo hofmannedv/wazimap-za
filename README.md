@@ -8,8 +8,9 @@ The South African instance of [Wazimap](https://github.com/Code4SA/wazimap), a D
 
 1. clone the repo
 2. ``cd wazimap_za``
-2. ``virtualenv --no-site-packages env``
-3. ``pip install -r requirements.txt``
+3. ``virtualenv --no-site-packages env``
+4. ``source env/bin/activate``
+5. ``pip install -r requirements.txt``
 
 Set the `WAZI_PROFILE` environment variable to the instance you are working on, e.g.
 `export WAZI_PROFILE=ecd`
