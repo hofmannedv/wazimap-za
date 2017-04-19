@@ -158,13 +158,13 @@ class Command(BaseCommand):
         self.reader = csv.reader(self.f, delimiter=",")
         # skip headers
         for row in self.reader:
-            if row == ['Filters:']:
+            if row[0] == 'Filters:':
                 break
 
         # skip filter rows
-        if row == ['Filters:']:
+        if row[0] == 'Filters:':
             for row in self.reader:
-                if len(row) == 0:
+                if len(row) == 0 or all(cell == '' for cell in row):
                     break
         else:
             raise ValueError("Couldn't find Filters header")
