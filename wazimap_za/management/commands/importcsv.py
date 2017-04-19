@@ -172,6 +172,8 @@ class Command(BaseCommand):
         fields = []
         categories = None
         for row in self.reader:
+            if row[0] == ' Total':
+                continue
             if row[0].startswith("Geography"):
                 break
             fields.append(row[0].lower())
