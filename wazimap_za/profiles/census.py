@@ -279,22 +279,22 @@ COLLAPSED_EMPLOYMENT_CATEGORIES = {
 }
 
 
-def get_profile(geo_code, geo_level, profile_name=None):
+def get_profile(geo, profile_name, request):
     session = get_session()
 
     try:
-        geo_summary_levels = geo_data.get_summary_geo_info(geo_code, geo_level)
+        geo_summary_levels = geo_data.get_summary_geo_info(geo)
         data = {}
 
         sections = list(PROFILE_SECTIONS)
-        if geo_level in ['country', 'province']:
+        if geo.geo_level in ['country', 'province']:
             sections.append('crime')
 
         for section in sections:
             function_name = 'get_%s_profile' % section
             if function_name in globals():
                 func = globals()[function_name]
-                data[section] = func(geo_code, geo_level, session)
+                data[section] = func(geo.geo_code, geo.geo_level, session)
 
                 # get profiles for province and/or country
                 for level, code in geo_summary_levels:
@@ -302,7 +302,7 @@ def get_profile(geo_code, geo_level, profile_name=None):
                     try:
                         merge_dicts(data[section], func(code, level, session), level)
                     except KeyError as e:
-                        msg = "Error merging data into %s-%s for section '%s' from %s-%s: KeyError: %s" % (geo_level, geo_code, section, level, code, e)
+                        msg = "Error merging data into %s for section '%s' from %s-%s: KeyError: %s" % (geo.geoid, section, level, code, e)
                         log.fatal(msg, exc_info=e)
                         raise ValueError(msg)
     finally:
@@ -319,7 +319,7 @@ def get_profile(geo_code, geo_level, profile_name=None):
     group_remainder(data['households']['type_of_dwelling_distribution'], 5)
     group_remainder(data['child_households']['type_of_dwelling_distribution'], 5)
 
-    data['elections'] = get_elections_profile(geo_code, geo_level)
+    data['elections'] = get_elections_profile(geo)
 
     return data
 

@@ -50,15 +50,15 @@ def make_party_acronym(name):
         return acronym
 
 
-def get_elections_profile(geo_code, geo_level):
+def get_elections_profile(geo):
     data = OrderedDict()
     session = get_session()
     try:
-        geo_summary_levels = geo_data.get_summary_geo_info(geo_code, geo_level)
+        geo_summary_levels = geo_data.get_summary_geo_info(geo)
 
         for election in ELECTIONS:
             section = election['name'].lower().replace(' ', '_')
-            data[section] = get_election_data(geo_code, geo_level, election, session)
+            data[section] = get_election_data(geo.geo_code, geo.geo_level, election, session)
 
             # get profiles for province and/or country
             for level, code in geo_summary_levels:
@@ -69,7 +69,7 @@ def get_elections_profile(geo_code, geo_level):
             # show 8 largest parties on their own and group the rest as 'Other'
             group_remainder(data[section]['party_distribution'], 9)
 
-        if geo_level == 'country':
+        if geo.geo_level == 'country':
             add_elections_media_coverage(data)
 
         return data
