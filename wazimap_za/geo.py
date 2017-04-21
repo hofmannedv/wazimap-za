@@ -27,7 +27,7 @@ SETTINGS.setdefault('level_simplify', {
 
 
 class GeoData(BaseGeoData):
-    def get_geometry(self, geo_level, geo_code):
+    def get_geometry(self, geo_level, geo_code, version=None):
         """ Get the geometry description for a geography. This is a dict
         with two keys, 'properties' which is a dict of properties,
         and 'shape' which is a shapely shape (may be None).
@@ -52,7 +52,7 @@ class GeoData(BaseGeoData):
             'shape': shape,
         }
 
-    def get_locations_from_coords(self, longitude, latitude, levels=None):
+    def get_locations_from_coords(self, longitude, latitude, levels=None, version=None):
         """
         Returns a list of geographies containing this point.
         """
