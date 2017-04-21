@@ -58,12 +58,14 @@ def get_elections_profile(geo):
 
         for election in ELECTIONS:
             section = election['name'].lower().replace(' ', '_')
-            data[section] = get_election_data(geo.geo_code, geo.geo_level, election, session)
+            data[section] = get_election_data(geo, election, session)
 
             # get profiles for province and/or country
             for level, code in geo_summary_levels:
                 # merge summary profile into current geo profile
-                merge_dicts(data[section], get_election_data(code, level, election, session), level)
+                # XXX
+                #merge_dicts(data[section], get_election_data(code, level, election, session), level)
+                pass
 
             # tweaks to make the data nicer
             # show 8 largest parties on their own and group the rest as 'Other'
@@ -77,9 +79,9 @@ def get_elections_profile(geo):
         session.close()
 
 
-def get_election_data(geo_code, geo_level, election, session):
+def get_election_data(geo, election, session):
     party_data, total_valid_votes = get_stat_data(
-        ['party'], geo_level, geo_code, session,
+        ['party'], geo, session,
         table_dataset=election['dataset'],
         recode=lambda f, v: make_party_acronym(v),
         order_by='-total')
@@ -91,9 +93,9 @@ def get_election_data(geo_code, geo_level, election, session):
 
     # voter registration and turnout
     table = get_datatable('voter_turnout_%s' % election['table_code'])
-    results.update(table.get_stat_data(geo_level, geo_code, 'registered_voters', percent=False,
+    results.update(table.get_stat_data(geo.geo_level, geo.geo_code, 'registered_voters', percent=False,
                                        recode={'registered_voters': 'Number of registered voters'})[0])
-    results.update(table.get_stat_data(geo_level, geo_code, 'total_votes', percent=True, total='registered_voters',
+    results.update(table.get_stat_data(geo.geo_level, geo.geo_code, 'total_votes', percent=True, total='registered_voters',
                                        recode={'total_votes': 'Of registered voters cast their vote'})[0])
 
     return results

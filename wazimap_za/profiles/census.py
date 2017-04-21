@@ -2,8 +2,6 @@ from __future__ import division
 from collections import OrderedDict
 import logging
 
-from sqlalchemy import func
-
 from wazimap.data.tables import get_model_from_fields, get_datatable, get_table_id
 from wazimap.data.utils import get_session, add_metadata
 from wazimap.geo import geo_data
@@ -294,13 +292,15 @@ def get_profile(geo, profile_name, request):
             function_name = 'get_%s_profile' % section
             if function_name in globals():
                 func = globals()[function_name]
-                data[section] = func(geo.geo_code, geo.geo_level, session)
+                data[section] = func(geo, session)
 
                 # get profiles for province and/or country
                 for level, code in geo_summary_levels:
                     # merge summary profile into current geo profile
                     try:
-                        merge_dicts(data[section], func(code, level, session), level)
+                        # XXX
+                        #merge_dicts(data[section], func(code, level, session), level)
+                        pass
                     except KeyError as e:
                         msg = "Error merging data into %s for section '%s' from %s-%s: KeyError: %s" % (geo.geoid, section, level, code, e)
                         log.fatal(msg, exc_info=e)
@@ -324,19 +324,19 @@ def get_profile(geo, profile_name, request):
     return data
 
 
-def get_demographics_profile(geo_code, geo_level, session):
+def get_demographics_profile(geo, session):
     # population group
     pop_dist_data, total_pop = get_stat_data(
-            ['population group'], geo_level, geo_code, session, table_dataset='Census 2011')
+            ['population group'], geo, session, table_dataset='Census 2011')
 
     # language
     language_data, _ = get_stat_data(
-            ['language'], geo_level, geo_code, session, order_by='-total')
+            ['language'], geo, session, order_by='-total')
     language_most_spoken = language_data[language_data.keys()[0]]
 
     # age groups
     age_dist_data, total_age = get_stat_data(
-            ['age groups in 5 years'], geo_level, geo_code, session,
+            ['age groups in 5 years'], geo, session,
             table_name='agegroupsin5years',
             recode=COLLAPSED_AGE_CATEGORIES,
             key_order=('0-9', '10-19',
@@ -347,7 +347,7 @@ def get_demographics_profile(geo_code, geo_level, session):
 
     # sex
     sex_data, _ = get_stat_data(
-            ['gender'], geo_level, geo_code, session, table_name='gender')
+            ['gender'], geo, session, table_name='gender')
 
     final_data = {
         'language_distribution': language_data,
@@ -361,7 +361,6 @@ def get_demographics_profile(geo_code, geo_level, session):
         }
     }
 
-    geo = geo_data.get_geography(geo_code, geo_level)
     if geo.square_kms:
         final_data['population_density'] = {
             'name': "people per square kilometre",
@@ -370,11 +369,11 @@ def get_demographics_profile(geo_code, geo_level, session):
 
     # median age/age category
     db_model_age = get_model_from_fields(
-        ['age in completed years'], geo_level,
+        ['age in completed years'], geo.geo_level,
         table_name='ageincompletedyears'
     )
     objects = sorted(
-        get_objects_by_geo(db_model_age, geo_code, geo_level, session),
+        get_objects_by_geo(db_model_age, geo, session),
         key=lambda x: int(getattr(x, 'age in completed years'))
     )
     # median age
@@ -386,7 +385,7 @@ def get_demographics_profile(geo_code, geo_level, session):
 
     # age category
     age_dist, _ = get_stat_data(
-        ['age in completed years'], geo_level, geo_code, session,
+        ['age in completed years'], geo, session,
         table_name='ageincompletedyearssimplified',
         key_order=['Under 18', '18 to 64', '65 and over'],
         recode={'< 18': 'Under 18',
@@ -395,7 +394,7 @@ def get_demographics_profile(geo_code, geo_level, session):
 
     # citizenship
     citizenship_dist, _ = get_stat_data(
-            ['citizenship'], geo_level, geo_code, session,
+            ['citizenship'], geo, session,
             order_by='-total')
 
     sa_citizen = citizenship_dist['Yes']['numerators']['this']
@@ -409,7 +408,7 @@ def get_demographics_profile(geo_code, geo_level, session):
 
     # migration
     province_of_birth_dist, _ = get_stat_data(
-            ['province of birth'], geo_level, geo_code, session,
+            ['province of birth'], geo, session,
             exclude_zero=True, order_by='-total')
 
     final_data['province_of_birth_distribution'] = province_of_birth_dist
@@ -421,7 +420,7 @@ def get_demographics_profile(geo_code, geo_level, session):
             return key
 
     region_of_birth_dist, _ = get_stat_data(
-            ['region of birth'], geo_level, geo_code, session,
+            ['region of birth'], geo, session,
             exclude_zero=True, order_by='-total',
             recode=region_recode)
 
@@ -440,25 +439,25 @@ def get_demographics_profile(geo_code, geo_level, session):
     return final_data
 
 
-def get_households_profile(geo_code, geo_level, session):
+def get_households_profile(geo, session):
     # head of household
     # gender
     head_gender_dist, total_households = get_stat_data(
-            ['gender of household head'], geo_level, geo_code, session,
+            ['gender of household head'], geo, session,
             order_by='gender of household head')
     female_heads = head_gender_dist['Female']['numerators']['this']
 
     # age
     db_model_u18 = get_model_from_fields(
-        ['gender of head of household'], geo_level,
+        ['gender of head of household'], geo.geo_level,
         table_name='genderofheadofhouseholdunder18'
     )
-    objects = get_objects_by_geo(db_model_u18, geo_code, geo_level, session)
+    objects = get_objects_by_geo(db_model_u18, geo, session)
     total_under_18 = float(sum(o[0] for o in objects))
 
     # tenure
     tenure_data, _ = get_stat_data(
-            ['tenure status'], geo_level, geo_code, session,
+            ['tenure status'], geo, session,
             order_by='tenure status')
     owned = 0
     for key, data in tenure_data.iteritems():
@@ -467,7 +466,7 @@ def get_households_profile(geo_code, geo_level, session):
 
     # annual household income
     income_dist_data, _ = get_stat_data(
-            ['annual household income'], geo_level, geo_code, session,
+            ['annual household income'], geo, session,
             exclude=['Unspecified'],
             recode=HOUSEHOLD_INCOME_RECODE,
             key_order=HOUSEHOLD_INCOME_RECODE.values(),
@@ -479,14 +478,14 @@ def get_households_profile(geo_code, geo_level, session):
 
     # type of dwelling
     type_of_dwelling_dist, _ = get_stat_data(
-            ['type of dwelling'], geo_level, geo_code, session,
+            ['type of dwelling'], geo, session,
             recode=TYPE_OF_DWELLING_RECODE,
             order_by='-total')
     informal = type_of_dwelling_dist['Shack']['numerators']['this']
 
     # household goods
     household_goods, _ = get_stat_data(
-            ['household goods'], geo_level, geo_code, session,
+            ['household goods'], geo, session,
             recode=HOUSEHOLD_GOODS_RECODE,
             key_order=sorted(HOUSEHOLD_GOODS_RECODE.values()))
 
@@ -527,10 +526,10 @@ def get_households_profile(geo_code, geo_level, session):
            }
 
 
-def get_economics_profile(geo_code, geo_level, session):
+def get_economics_profile(geo, session):
     # income
     income_dist_data, total_workers = get_stat_data(
-            ['employed individual monthly income'], geo_level, geo_code, session,
+            ['employed individual monthly income'], geo, session,
             exclude=['Not applicable'],
             recode=COLLAPSED_INCOME_CATEGORIES,
             key_order=COLLAPSED_INCOME_CATEGORIES.values())
@@ -541,23 +540,23 @@ def get_economics_profile(geo_code, geo_level, session):
 
     # employment status
     employ_status, total_workers = get_stat_data(
-            ['official employment status'], geo_level, geo_code, session,
+            ['official employment status'], geo, session,
             exclude=['Age less than 15 years', 'Not applicable'],
             order_by='official employment status',
             table_name='officialemploymentstatus')
 
     # sector
     sector_dist_data, _ = get_stat_data(
-            ['type of sector'], geo_level, geo_code, session,
+            ['type of sector'], geo, session,
             exclude=['Not applicable'],
             order_by='type of sector')
 
     # access to internet
     internet_access_dist, total_with_access = get_stat_data(
-            ['access to internet'], geo_level, geo_code, session, exclude=['No access to internet'],
+            ['access to internet'], geo, session, exclude=['No access to internet'],
             order_by='access to internet')
     _, total_without_access = get_stat_data(
-            ['access to internet'], geo_level, geo_code, session, only=['No access to internet'])
+            ['access to internet'], geo, session, only=['No access to internet'])
     total_households = total_with_access + total_without_access
 
     return {'individual_income_distribution': income_dist_data,
@@ -576,10 +575,10 @@ def get_economics_profile(geo_code, geo_level, session):
             }
 
 
-def get_service_delivery_profile(geo_code, geo_level, session):
+def get_service_delivery_profile(geo, session):
     # water source
     water_src_data, total_wsrc = get_stat_data(
-            ['source of water'], geo_level, geo_code, session,
+            ['source of water'], geo, session,
             recode=SHORT_WATER_SOURCE_CATEGORIES,
             order_by='-total')
     if 'Service provider' in water_src_data:
@@ -588,9 +587,8 @@ def get_service_delivery_profile(geo_code, geo_level, session):
         total_water_sp = 0.0
 
     # refuse disposal
-    db_model_ref = get_model_from_fields(['refuse disposal'], geo_level)
-    objects = get_objects_by_geo(db_model_ref, geo_code, geo_level, session,
-                                 order_by='-total')
+    db_model_ref = get_model_from_fields(['refuse disposal'], geo.geo_level)
+    objects = get_objects_by_geo(db_model_ref, geo, session, order_by='-total')
     refuse_disp_data = OrderedDict()
     total_ref = 0.0
     total_ref_sp = 0.0
@@ -609,8 +607,8 @@ def get_service_delivery_profile(geo_code, geo_level, session):
     elec_attrs = ['electricity for cooking',
                   'electricity for heating',
                   'electricity for lighting']
-    db_model_elec = get_model_from_fields(elec_attrs, geo_level)
-    objects = get_objects_by_geo(db_model_elec, geo_code, geo_level, session)
+    db_model_elec = get_model_from_fields(elec_attrs, geo.geo_level)
+    objects = get_objects_by_geo(db_model_elec, geo, session)
     total_elec = 0.0
     total_some_elec = 0.0
     elec_access_data = {
@@ -654,7 +652,7 @@ def get_service_delivery_profile(geo_code, geo_level, session):
 
     # toilets
     toilet_data, total_toilet = get_stat_data(
-            ['toilet facilities'], geo_level, geo_code, session,
+            ['toilet facilities'], geo, session,
             exclude_zero=True,
             recode=COLLAPSED_TOILET_CATEGORIES,
             order_by='-total')
@@ -699,9 +697,9 @@ def get_service_delivery_profile(geo_code, geo_level, session):
     }
 
 
-def get_education_profile(geo_code, geo_level, session):
-    db_model = get_model_from_fields(['highest educational level'], geo_level, table_name='highesteducationallevel20')
-    objects = get_objects_by_geo(db_model, geo_code, geo_level, session)
+def get_education_profile(geo, session):
+    db_model = get_model_from_fields(['highest educational level'], geo.geo_level, table_name='highesteducationallevel20')
+    objects = get_objects_by_geo(db_model, geo, session)
 
     edu_dist_data = {}
     get_or_higher = 0.0
@@ -748,10 +746,10 @@ def get_education_profile(geo_code, geo_level, session):
             'educational_attainment': edu_split_data}
 
 
-def get_children_profile(geo_code, geo_level, session):
+def get_children_profile(geo, session):
     # age
     child_adult_dist, _ = get_stat_data(
-        ['age in completed years'], geo_level, geo_code, session,
+        ['age in completed years'], geo, session,
         table_name='ageincompletedyearssimplified',
         recode={'< 18': 'Children (< 18)',
                 '18 to 64': 'Adults (>= 18)',
@@ -759,7 +757,7 @@ def get_children_profile(geo_code, geo_level, session):
 
     # parental survival
     survival, total = get_stat_data(
-        ['mother alive', 'father alive'], geo_level, geo_code, session)
+        ['mother alive', 'father alive'], geo, session)
 
     parental_survival_dist = OrderedDict()
     parental_survival_dist['metadata'] = survival['metadata']
@@ -789,7 +787,7 @@ def get_children_profile(geo_code, geo_level, session):
 
     # gender
     gender_dist, _ = get_stat_data(
-        ['gender'], geo_level, geo_code, session,
+        ['gender'], geo, session,
         table_name='genderunder18')
 
     # school
@@ -799,7 +797,7 @@ def get_children_profile(geo_code, geo_level, session):
     #
     # school_attendance_dist, total_school_aged = get_stat_data(
     #     ['present school attendance', 'age in completed years'],
-    #     geo_level, geo_code, session,
+    #     geo, session,
     # )
     # school_attendance_dist['Yes']['metadata'] = \
     #         school_attendance_dist['metadata']
@@ -811,14 +809,14 @@ def get_children_profile(geo_code, geo_level, session):
     # school attendance
     school_attendance_dist, total_school_aged = get_stat_data(
         ['present school attendance'],
-        geo_level, geo_code, session,
+        geo, session,
     )
     total_attendance = school_attendance_dist['Yes']['numerators']['this']
 
     # education level
     education17_dist, _ = get_stat_data(
         ['highest educational level'],
-        geo_level, geo_code, session,
+        geo, session,
         recode=COLLAPSED_EDUCATION_CATEGORIES,
         table_name='highesteducationallevel17',
         key_order=EDUCATION_KEY_ORDER,
@@ -827,7 +825,7 @@ def get_children_profile(geo_code, geo_level, session):
     # employment
     employment_dist, total_15to17 = get_stat_data(
         ['official employment status'],
-        geo_level, geo_code, session,
+        geo, session,
         table_name='officialemploymentstatus15to17',
         exclude=['Not applicable']
     )
@@ -838,7 +836,7 @@ def get_children_profile(geo_code, geo_level, session):
 
     # median income
     income_dist_data, total_workers = get_stat_data(
-        ['individual monthly income'], geo_level, geo_code, session,
+        ['individual monthly income'], geo, session,
         exclude=['Not applicable'],
         recode=COLLAPSED_INCOME_CATEGORIES,
         key_order=COLLAPSED_INCOME_CATEGORIES.values(),
@@ -887,18 +885,18 @@ def get_children_profile(geo_code, geo_level, session):
     }
 
 
-def get_child_households_profile(geo_code, geo_level, session):
+def get_child_households_profile(geo, session):
     # head of household
     # gender
     head_gender_dist, total_households = get_stat_data(
-            ['gender of head of household'], geo_level, geo_code, session,
+            ['gender of head of household'], geo, session,
             order_by='gender of head of household',
             table_name='genderofheadofhouseholdunder18')
     female_heads = head_gender_dist['Female']['numerators']['this']
 
     # annual household income
     income_dist_data, _ = get_stat_data(
-            ['annual household income'], geo_level, geo_code, session,
+            ['annual household income'], geo, session,
             exclude=['Unspecified'],
             recode=HOUSEHOLD_INCOME_RECODE,
             key_order=HOUSEHOLD_INCOME_RECODE.values(),
@@ -910,7 +908,7 @@ def get_child_households_profile(geo_code, geo_level, session):
 
     # type of dwelling
     type_of_dwelling_dist, _ = get_stat_data(
-            ['type of main dwelling'], geo_level, geo_code, session,
+            ['type of main dwelling'], geo, session,
             recode=TYPE_OF_DWELLING_RECODE,
             order_by='-total')
     informal = type_of_dwelling_dist['Shack']['numerators']['this']
@@ -918,7 +916,7 @@ def get_child_households_profile(geo_code, geo_level, session):
     # size of household
     household_size_dist, _ = get_stat_data(
         ['household size', 'age of household head'],
-        geo_level, geo_code, session
+        geo, session
     )
 
     return {
@@ -949,9 +947,9 @@ def get_child_households_profile(geo_code, geo_level, session):
     }
 
 
-def get_crime_profile(geo_code, geo_level, session):
+def get_crime_profile(geo, session):
     child_crime, total = get_stat_data(
-        ['crime'], geo_level, geo_code, session,
+        ['crime'], geo, session,
         only=['Neglect and ill-treatment of children'],
         percent=False)
 
