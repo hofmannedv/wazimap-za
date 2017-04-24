@@ -93,9 +93,9 @@ def get_election_data(geo, election, session):
 
     # voter registration and turnout
     table = get_datatable('voter_turnout_%s' % election['table_code'])
-    results.update(table.get_stat_data(geo.geo_level, geo.geo_code, 'registered_voters', percent=False,
+    results.update(table.get_stat_data(geo, 'registered_voters', percent=False,
                                        recode={'registered_voters': 'Number of registered voters'})[0])
-    results.update(table.get_stat_data(geo.geo_level, geo.geo_code, 'total_votes', percent=True, total='registered_voters',
+    results.update(table.get_stat_data(geo, 'total_votes', percent=True, total='registered_voters',
                                        recode={'total_votes': 'Of registered voters cast their vote'})[0])
 
     return results
