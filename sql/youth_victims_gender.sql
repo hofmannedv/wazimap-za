@@ -2,6 +2,9 @@
 -- PostgreSQL database dump
 --
 
+-- Dumped from database version 9.6.1
+-- Dumped by pg_dump version 9.6.1
+
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET client_encoding = 'UTF8';
@@ -11,7 +14,7 @@ SET client_min_messages = warning;
 
 SET search_path = public, pg_catalog;
 
-ALTER TABLE IF EXISTS ONLY public.youth_victims_gender DROP CONSTRAINT IF EXISTS youth_victims_gender_pkey;
+ALTER TABLE IF EXISTS ONLY public.youth_victims_gender DROP CONSTRAINT IF EXISTS pk_youth_victims_gender;
 DROP TABLE IF EXISTS public.youth_victims_gender;
 SET search_path = public, pg_catalog;
 
@@ -20,14 +23,15 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: youth_victims_gender; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: youth_victims_gender; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE youth_victims_gender (
     geo_level character varying(15) NOT NULL,
     geo_code character varying(10) NOT NULL,
     gender character varying(128) NOT NULL,
-    total integer NOT NULL
+    total integer NOT NULL,
+    geo_version character varying(100) NOT NULL
 );
 
 
@@ -35,898 +39,898 @@ CREATE TABLE youth_victims_gender (
 -- Data for Name: youth_victims_gender; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY youth_victims_gender (geo_level, geo_code, gender, total) FROM stdin;
-ward	10206004	Male	141
-ward	10407001	Male	187
-ward	21001001	Female	0
-ward	21001001	Male	0
-ward	21001007	Female	0
-ward	21001007	Male	0
-ward	21007001	Female	0
-ward	21007001	Male	0
-ward	21007004	Female	0
-ward	21007004	Male	0
-ward	21009001	Female	0
-ward	21009001	Male	0
-ward	21009002	Female	0
-ward	21009002	Male	0
-ward	21009006	Female	0
-ward	21009006	Male	0
-ward	30604002	Female	0
-ward	30604002	Male	0
-ward	30604004	Female	0
-ward	30604004	Male	0
-ward	30605004	Female	0
-ward	30605004	Male	0
-ward	30605005	Female	0
-ward	30605005	Male	0
-ward	30606003	Female	0
-ward	30606003	Male	0
-ward	30606004	Female	0
-ward	30606004	Male	0
-ward	30701003	Female	0
-ward	30701003	Male	0
-municipality	EC101	Female	0
-municipality	EC109	Male	0
-country	ZA	Male	6355
-municipality	NC065	Male	0
-province	EC	Male	0
-province	EC	Female	0
-municipality	EC109	Female	0
-municipality	EC101	Male	0
-country	ZA	Female	7329
-municipality	EC107	Female	0
-municipality	NC064	Female	0
-municipality	NC066	Female	0
-municipality	NC066	Male	0
-municipality	NC064	Male	0
-municipality	EC107	Male	0
-district	DC10	Female	0
-district	DC10	Male	0
-municipality	NC065	Female	0
-municipality	WC053	Female	267
-ward	10205005	Female	251
-ward	10404024	Female	324
-ward	10503001	Male	587
-ward	19100012	Male	149
-municipality	WC045	Female	297
-ward	19100090	Male	88
-ward	19100107	Male	92
-municipality	WC044	Female	283
-ward	10104006	Female	294
-ward	10404010	Female	199
-ward	19100089	Male	101
-ward	10104002	Male	200
-ward	10404014	Male	322
-municipality	WC011	Female	263
-ward	10204011	Male	122
-municipality	WC034	Male	231
-ward	10105006	Female	186
-ward	19100045	Female	119
-ward	10203024	Female	198
-ward	10303003	Male	239
-ward	10503001	Female	538
-ward	10404024	Male	199
-ward	10407001	Female	311
-ward	19100012	Female	149
-ward	10206004	Female	126
-municipality	WC053	Male	324
-ward	10205005	Male	229
-municipality	WC045	Male	243
-ward	19100090	Female	150
-ward	19100107	Female	128
-ward	10404010	Male	145
-ward	19100089	Female	170
-ward	10104002	Female	207
-ward	10404014	Female	301
-ward	10104006	Male	250
-municipality	WC044	Male	234
-municipality	WC034	Female	253
-ward	10105006	Male	218
-ward	19100045	Male	156
-ward	10303003	Female	280
-ward	10203024	Male	177
-municipality	WC011	Male	238
-ward	10204011	Female	115
-ward	19100028	Female	234
-municipality	WC026	Female	189
-ward	10407005	Female	230
-ward	19100066	Female	105
-ward	19100001	Female	73
-ward	19100047	Female	105
-ward	10408007	Male	177
-ward	10502002	Female	430
-ward	19100017	Male	126
-ward	10205010	Female	281
-ward	10303005	Male	186
-ward	10203019	Male	147
-ward	10405004	Female	370
-ward	10402008	Female	287
-ward	19100005	Male	24
-ward	10103005	Female	123
-ward	10203021	Male	114
-ward	10202002	Male	244
-ward	10206006	Male	291
-ward	10301009	Female	171
-ward	19100034	Male	48
-ward	19100102	Female	86
-ward	10104009	Male	135
-ward	10403004	Female	506
-ward	10206003	Female	254
-ward	10408009	Female	300
-ward	19100001	Male	95
-ward	19100047	Male	84
-ward	19100028	Male	249
-ward	10407005	Male	149
-ward	19100066	Male	121
-municipality	WC026	Male	210
-ward	10203019	Female	127
-ward	10405004	Male	284
-ward	10303005	Female	219
-ward	10402008	Male	332
-ward	19100005	Female	39
-ward	10205010	Male	216
-ward	10408007	Female	226
-ward	10502002	Male	364
-ward	19100017	Female	170
-ward	10206006	Female	201
-ward	10301009	Male	111
-ward	19100034	Female	80
-ward	19100102	Male	93
-ward	10202002	Female	335
-ward	10103005	Male	112
-ward	10203021	Female	124
-ward	10403004	Male	340
-ward	10206003	Male	325
-ward	10408009	Male	198
-ward	10104009	Female	150
-ward	10403001	Female	236
-ward	10404011	Male	174
-ward	10206001	Male	373
-ward	19100023	Male	86
-ward	19100060	Male	70
-ward	10404019	Male	220
-ward	10405013	Male	207
-ward	19100091	Female	154
-ward	10103006	Female	247
-district	DC1	Female	133
-ward	10102002	Male	89
-ward	10405001	Male	250
-ward	19100101	Female	86
-ward	10204008	Female	31
-ward	10204014	Male	72
-ward	10402004	Male	274
-ward	19100052	Male	118
-ward	10202006	Female	207
-ward	10202001	Female	173
-ward	19100104	Female	106
-ward	10303004	Male	376
-ward	19100010	Female	102
-ward	19100020	Female	108
-ward	19100103	Male	139
-ward	10205018	Male	188
-ward	10202007	Female	304
-ward	19100027	Female	54
-ward	10205017	Male	230
-ward	10101005	Male	273
-ward	10101008	Female	160
-ward	10503003	Male	424
-ward	10104005	Male	188
-ward	10403014	Male	225
-ward	19100064	Male	118
-province	WC	Male	116
-ward	10304003	Female	332
-municipality	WC015	Male	111
-ward	10103001	Male	147
-ward	10105002	Male	158
-ward	10301002	Female	398
-ward	10404019	Female	202
-ward	10405013	Female	268
-ward	19100060	Female	84
-ward	19100091	Male	92
-ward	10206001	Female	307
-ward	19100023	Female	90
-ward	10403001	Male	186
-ward	10404011	Female	247
-ward	10204008	Male	57
-ward	10204014	Female	80
-ward	10402004	Female	289
-ward	19100052	Female	156
-ward	10405001	Female	329
-ward	19100101	Male	97
-ward	10202001	Male	219
-ward	19100104	Male	62
-ward	10202006	Male	214
-ward	10103006	Male	264
-district	DC1	Male	117
-ward	10102002	Female	181
-ward	10202007	Male	208
-ward	19100027	Male	96
-ward	10205017	Female	273
-ward	10303004	Female	401
-ward	19100010	Male	127
-ward	19100020	Male	117
-ward	19100103	Female	167
-ward	10205018	Female	263
-municipality	WC015	Female	174
-ward	10103001	Female	113
-province	WC	Female	131
-ward	10304003	Male	267
-ward	10105002	Female	229
-ward	10301002	Male	418
-ward	10503003	Female	297
-ward	10101005	Female	348
-ward	10101008	Male	206
-ward	10104005	Female	185
-ward	10403014	Female	311
-ward	19100064	Female	175
-ward	19100105	Male	93
-municipality	WC024	Female	92
-municipality	WC042	Female	263
-ward	10203016	Male	64
-ward	10204010	Female	70
-ward	10206005	Male	196
-ward	10202003	Male	201
-ward	10205011	Male	251
-ward	10301005	Female	210
-ward	10205012	Female	324
-district	DC5	Female	170
-ward	10204015	Male	60
-ward	10205003	Male	167
-ward	10102001	Female	204
-ward	10403003	Female	242
-ward	10203009	Male	69
-ward	10502001	Male	63
-ward	10204007	Male	85
-ward	19100086	Female	181
-ward	19100002	Male	82
-ward	19100078	Male	155
-ward	10404017	Male	297
-ward	10301013	Female	247
-ward	10205013	Female	294
-ward	10404016	Female	224
-ward	10408003	Male	164
-ward	10104012	Male	164
-ward	10205012	Male	238
-ward	10202003	Female	226
-ward	10205011	Female	342
-ward	10301005	Male	174
-ward	10204015	Female	72
-district	DC5	Male	210
-municipality	WC024	Male	98
-ward	19100105	Female	125
-ward	10206005	Female	272
-municipality	WC042	Male	274
-ward	10203016	Female	119
-ward	10204010	Male	67
-ward	10102001	Male	110
-ward	10403003	Male	182
-ward	10205003	Female	185
-ward	10203009	Female	153
-ward	10502001	Female	70
-ward	19100002	Female	83
-ward	19100078	Female	172
-ward	10301013	Male	135
-ward	10404017	Female	423
-ward	19100086	Male	97
-ward	10204007	Female	87
-ward	10408003	Female	246
-ward	10104012	Female	195
-ward	10205013	Male	203
-ward	10404016	Male	259
-ward	10302012	Male	151
-ward	10203006	Female	130
-ward	10301012	Female	226
-ward	10404023	Male	182
-ward	10408010	Male	334
-ward	10304002	Female	381
-ward	19100021	Male	83
-ward	19100014	Female	175
-ward	10203008	Male	106
-ward	10204004	Male	138
-ward	10503007	Female	319
-ward	10205007	Male	266
-ward	19100076	Male	93
-ward	19100084	Female	230
-ward	10501001	Female	312
-ward	10403011	Female	347
-ward	19100025	Female	188
-ward	10404003	Male	276
-ward	10204009	Male	65
-ward	10404023	Female	226
-ward	10408010	Female	509
-ward	10302012	Female	162
-ward	10203006	Male	72
-ward	10301012	Male	154
-ward	19100021	Female	136
-ward	10304002	Male	387
-ward	19100014	Male	148
-ward	10204004	Female	106
-ward	10503007	Male	388
-ward	19100076	Female	85
-ward	10205007	Female	348
-ward	10203008	Female	210
-ward	10403011	Male	276
-ward	19100025	Male	215
-ward	10204009	Female	71
-ward	10404003	Female	386
-ward	19100084	Male	188
-ward	10501001	Male	450
-ward	10503005	Female	287
-ward	19100013	Female	102
-ward	19100033	Male	49
-ward	19100048	Female	101
-ward	10403007	Male	443
-ward	10206010	Female	298
-ward	10404020	Female	346
-ward	10304005	Female	234
-ward	19100029	Male	181
-ward	10102005	Female	165
-ward	10105004	Female	153
-ward	10204019	Male	164
-ward	10401002	Male	408
-ward	10403010	Male	538
-ward	19100041	Male	94
-ward	10206011	Male	205
-ward	10404021	Male	244
-ward	10103007	Female	89
-ward	10404005	Female	285
-ward	19100040	Female	106
-ward	19100058	Female	99
-ward	10302002	Male	328
-ward	10405012	Female	307
-ward	10407002	Female	357
-ward	10503002	Male	488
-ward	10503006	Male	435
-municipality	WC013	Male	142
-ward	10101007	Male	228
-ward	10404008	Male	273
-ward	10203026	Female	170
-ward	19100106	Female	110
-ward	10204013	Male	125
-ward	10304004	Male	341
-municipality	WC023	Female	150
-ward	10105007	Male	97
-ward	19100022	Female	172
-municipality	WC033	Male	216
-ward	10104003	Female	103
-ward	19100024	Female	165
-ward	19100011	Male	138
-ward	10203004	Female	93
-ward	10303002	Male	280
-ward	10405008	Female	251
-ward	19100085	Female	204
-ward	10403007	Female	588
-ward	19100048	Male	110
-ward	10405002	Female	344
-ward	19100096	Male	61
-ward	10203030	Male	209
-ward	10503005	Male	353
-ward	19100013	Male	112
-ward	19100033	Female	84
-ward	10206011	Female	323
-ward	10404021	Female	270
-ward	19100041	Female	122
-ward	10103007	Male	82
-ward	10404005	Male	268
-ward	19100040	Male	85
-ward	19100058	Male	60
-ward	10304005	Male	205
-ward	19100029	Female	134
-ward	10206010	Male	191
-ward	10404020	Male	248
-ward	10105004	Male	94
-ward	10204019	Female	165
-ward	10401002	Female	341
-ward	10403010	Female	631
-ward	10102005	Male	214
-ward	10503002	Female	452
-ward	10503006	Female	339
-ward	10302002	Female	252
-ward	10405012	Male	216
-ward	10407002	Male	202
-municipality	WC013	Female	140
-ward	10101007	Female	151
-ward	10404008	Female	357
-municipality	WC033	Female	246
-ward	10104003	Male	126
-ward	19100024	Male	182
-ward	19100022	Male	184
-ward	10203004	Male	97
-ward	10303002	Female	327
-ward	10405008	Male	203
-ward	19100011	Female	140
-ward	10204013	Female	170
-ward	10304004	Female	302
-ward	10203026	Male	151
-ward	19100106	Male	136
-municipality	WC023	Male	123
-ward	10105007	Female	174
-ward	10202004	Male	174
-ward	10402002	Female	341
-ward	10202010	Male	109
-ward	10403008	Female	225
-ward	10503004	Male	500
-ward	10203012	Female	136
-ward	19100067	Male	88
-ward	10202005	Male	202
-ward	19100054	Male	111
-ward	10501004	Male	457
-ward	10101004	Female	252
-ward	10206009	Male	198
-ward	10105008	Female	209
-ward	10402005	Female	321
-ward	19100077	Female	169
-municipality	WC048	Male	176
-ward	10401003	Female	276
-ward	19100111	Male	116
-municipality	CPT	Female	125
-ward	10105010	Female	155
-ward	10405003	Female	253
-ward	10301006	Male	171
-ward	10105009	Female	128
-ward	10302009	Male	365
-ward	10404009	Female	244
-ward	19100016	Female	160
-ward	19100061	Male	71
-ward	10405007	Female	315
-ward	10501003	Male	909
-ward	19100063	Male	86
-ward	19100074	Male	136
-ward	10302005	Male	190
-ward	10203015	Female	130
-ward	19100075	Male	87
-municipality	WC012	Female	204
-ward	10204003	Female	120
-ward	10204017	Male	103
-ward	19100006	Male	97
-ward	19100003	Male	67
-ward	10105011	Female	156
-ward	10204005	Male	92
-ward	19100007	Male	114
-ward	10105005	Male	177
-ward	10105012	Female	413
-ward	10203023	Female	141
-ward	19100030	Female	213
-ward	10403013	Female	334
-ward	19100099	Female	130
-ward	10205004	Male	244
-ward	10204001	Female	121
-ward	10205019	Male	132
-ward	10407006	Female	230
-ward	10202008	Female	158
-ward	10105001	Female	154
-ward	10203022	Female	261
-ward	10403005	Female	479
-ward	19100065	Female	122
-ward	19100067	Female	125
-ward	10203012	Male	80
-ward	10202005	Female	240
-ward	19100054	Female	85
-ward	10202004	Female	168
-ward	10402002	Male	474
-ward	10202010	Female	125
-ward	10403008	Male	297
-ward	10503004	Female	382
-municipality	CPT	Male	109
-ward	10105010	Male	106
-ward	10405003	Male	220
-municipality	WC048	Female	260
-ward	10401003	Male	225
-ward	19100111	Female	102
-ward	10105009	Male	74
-ward	10302009	Female	459
-ward	10404009	Male	196
-ward	19100016	Male	124
-ward	19100061	Female	127
-ward	10301006	Female	230
-ward	10501004	Female	408
-ward	10105008	Male	150
-ward	10402005	Male	294
-ward	19100077	Male	232
-ward	10101004	Male	203
-ward	10206009	Female	323
-municipality	WC012	Male	167
-ward	10204003	Male	141
-ward	10204017	Female	113
-ward	19100006	Female	88
-ward	10105011	Male	97
-ward	10204005	Female	111
-ward	19100007	Female	110
-ward	19100003	Female	97
-ward	10302005	Female	205
-ward	10405007	Male	176
-ward	10501003	Female	454
-ward	19100063	Female	99
-ward	19100074	Female	164
-ward	19100075	Female	85
-ward	10203015	Male	130
-ward	10202008	Male	89
-ward	10204001	Male	115
-ward	10205019	Female	195
-ward	10407006	Male	202
-ward	10403005	Male	343
-ward	19100065	Male	135
-ward	10105001	Male	122
-ward	10203022	Male	223
-ward	10203023	Male	134
-ward	19100030	Male	226
-ward	10105005	Female	166
-ward	10105012	Male	196
-ward	10205004	Female	246
-ward	10403013	Male	245
-ward	19100099	Male	113
-ward	10104001	Female	112
-ward	10404004	Male	189
-ward	19100071	Male	113
-ward	10102006	Female	176
-ward	10206008	Female	160
-district	DC3	Female	131
-ward	10301011	Male	143
-district	DC2	Male	123
-ward	19100053	Female	114
-municipality	WC014	Female	142
-ward	10102004	Female	246
-ward	19100081	Female	164
-ward	10203018	Female	126
-ward	10204006	Female	124
-ward	10404018	Female	246
-ward	19100036	Male	48
-ward	10101006	Male	156
-ward	10405011	Female	420
-ward	10101001	Female	354
-ward	10203017	Female	141
-ward	10407007	Male	152
-ward	10408005	Female	325
-ward	19100026	Female	149
-ward	19100082	Female	142
-ward	10104013	Female	194
-ward	19100094	Male	81
-ward	10302013	Male	440
-ward	10205006	Male	241
-ward	10203013	Male	140
-ward	10402003	Male	519
-ward	19100049	Female	111
-ward	10203007	Female	207
-ward	19100037	Male	53
-ward	10203025	Female	243
-ward	10408006	Male	182
-ward	19100046	Female	131
-ward	10202009	Male	90
-ward	19100098	Female	117
-ward	10101002	Female	290
-ward	10204021	Male	178
-ward	19100100	Male	136
-ward	10303001	Male	331
-ward	19100042	Female	97
-ward	10102006	Male	113
-ward	10206008	Male	129
-ward	10404004	Female	223
-ward	19100071	Female	65
-district	DC2	Female	146
-ward	19100053	Male	105
-district	DC3	Male	124
-ward	10301011	Female	245
-ward	10104001	Male	125
-ward	10203018	Male	174
-ward	10204006	Male	136
-ward	10404018	Male	224
-ward	19100036	Female	80
-ward	10101006	Female	207
-municipality	WC014	Male	138
-ward	10102004	Male	304
-ward	19100081	Male	153
-ward	10205006	Female	364
-ward	10302013	Female	552
-ward	10203013	Female	155
-ward	10402003	Female	524
-ward	19100049	Male	119
-ward	10405011	Male	258
-ward	10104013	Male	190
-ward	19100094	Female	125
-ward	10101001	Male	341
-ward	10203017	Male	148
-ward	10407007	Female	255
-ward	10408005	Male	195
-ward	19100026	Male	165
-ward	19100082	Male	136
-ward	10101002	Male	195
-ward	10204021	Female	169
-ward	19100100	Female	180
-ward	10303001	Female	334
-ward	19100042	Male	101
-ward	10203025	Male	157
-ward	10408006	Female	257
-ward	10203007	Male	171
-ward	19100037	Female	86
-ward	10202009	Female	140
-ward	19100098	Male	66
-ward	19100046	Male	169
-ward	10104004	Female	119
-municipality	WC043	Female	329
-ward	19100044	Male	143
-ward	19100092	Female	125
-ward	10404012	Female	294
-ward	19100083	Male	136
-ward	10302004	Male	184
-ward	10301004	Female	251
-ward	10402001	Male	335
-ward	10205014	Female	310
-ward	10405010	Female	223
-ward	19100032	Male	173
-ward	19100095	Male	72
-ward	19100109	Female	227
-ward	10104011	Female	202
-ward	19100079	Male	149
-ward	10405005	Male	232
-municipality	WC031	Male	72
-ward	10304001	Male	260
-ward	19100097	Female	110
-ward	19100039	Male	61
-municipality	WC052	Female	272
-ward	10301001	Male	267
-ward	10408001	Male	211
-ward	10401001	Female	314
-ward	19100068	Female	123
-ward	10203002	Female	297
-ward	10206007	Male	249
-ward	10407004	Female	203
-ward	10502004	Male	303
-municipality	WC051	Male	500
-ward	10103002	Female	282
-ward	10302007	Male	419
-ward	19100072	Female	131
-ward	19100055	Male	90
-ward	10204018	Male	197
-ward	19100044	Female	111
-municipality	WC043	Male	260
-ward	10104004	Male	144
-ward	10402001	Female	266
-ward	10205014	Male	240
-ward	10405010	Male	346
-ward	19100032	Female	126
-ward	19100095	Female	122
-ward	19100109	Male	134
-ward	10404012	Male	208
-ward	19100083	Female	230
-ward	19100092	Male	83
-ward	10301004	Male	291
-ward	10302004	Female	230
-ward	19100039	Female	87
-ward	10304001	Female	335
-ward	19100097	Male	68
-ward	10301001	Female	347
-ward	10408001	Female	353
-municipality	WC052	Male	226
-ward	10104011	Male	205
-ward	19100079	Female	158
-municipality	WC031	Female	110
-ward	10405005	Female	310
-ward	19100072	Male	145
-ward	10204018	Female	280
-ward	19100055	Female	144
-ward	10203002	Male	235
-ward	10206007	Female	156
-ward	10407004	Male	119
-ward	10502004	Female	398
-ward	10401001	Male	227
-ward	19100068	Male	123
-ward	10103002	Male	408
-ward	10302007	Female	512
-municipality	WC051	Female	372
-ward	10404007	Male	250
-ward	10203020	Female	308
-ward	10102003	Male	178
-ward	10408002	Female	283
-ward	19100080	Male	57
-ward	10103004	Female	167
-ward	10203014	Female	160
-ward	10403012	Female	331
-ward	19100043	Female	95
-ward	10403002	Male	205
-ward	10203011	Male	125
-ward	10203001	Female	129
-ward	19100009	Female	144
-ward	19100051	Male	143
-ward	19100035	Female	67
-ward	10302011	Female	338
-ward	10404001	Male	180
-ward	10405009	Male	345
-municipality	WC032	Female	262
-ward	10205002	Male	235
-ward	10205015	Female	263
-ward	10301003	Female	242
-ward	10102003	Female	229
-ward	10408002	Male	185
-ward	19100080	Female	84
-ward	10404007	Female	328
-ward	10203020	Male	284
-ward	10203011	Female	181
-ward	10203001	Male	114
-ward	10103004	Male	143
-ward	10403002	Female	264
-ward	10203014	Male	148
-ward	10403012	Male	242
-ward	19100043	Male	88
-ward	10404001	Female	186
-ward	19100051	Female	198
-ward	19100009	Male	110
-ward	10302011	Male	397
-ward	19100035	Male	72
-ward	10205002	Female	222
-ward	10205015	Male	117
-ward	10301003	Male	372
-municipality	WC032	Male	262
-ward	10405009	Female	233
-municipality	WC025	Male	192
-ward	10404022	Female	228
-ward	10203005	Female	168
-ward	10204022	Male	178
-ward	10205008	Male	205
-ward	10205016	Male	193
-ward	10404006	Male	301
-ward	10405006	Male	232
-ward	19100019	Male	114
-ward	10105003	Female	463
-ward	19100073	Female	51
-ward	10402007	Female	371
-ward	10104007	Male	109
-ward	10408004	Female	285
-ward	10203028	Female	164
-ward	19100108	Female	134
-ward	19100087	Female	168
-ward	10203027	Female	196
-ward	10104010	Female	216
-ward	19100093	Female	152
-municipality	WC047	Male	161
-ward	19100069	Male	119
-ward	10402006	Female	232
-ward	10202011	Male	148
-ward	10206012	Male	230
-ward	10202012	Female	220
-ward	19100018	Female	158
-ward	10205016	Female	240
-ward	10404006	Female	405
-ward	10405006	Female	268
-ward	19100019	Female	146
-municipality	WC025	Female	252
-ward	10404022	Male	227
-ward	10204022	Female	189
-ward	10205008	Female	273
-ward	10203005	Male	135
-ward	10104007	Female	147
-ward	10408004	Male	182
-ward	10402007	Male	361
-ward	10203028	Male	81
-ward	19100108	Male	97
-ward	10105003	Male	223
-ward	19100073	Male	61
-municipality	WC047	Female	260
-ward	19100069	Female	140
-ward	10203027	Male	170
-ward	19100087	Male	97
-ward	10104010	Male	218
-ward	19100093	Male	92
-ward	10202012	Male	132
-ward	19100018	Male	95
-ward	10202011	Female	101
-ward	10206012	Female	148
-ward	10402006	Male	276
-ward	10302008	Female	251
-ward	10404002	Female	344
-ward	10203029	Male	183
-ward	10205020	Male	177
-ward	10302010	Female	209
-ward	10403009	Male	262
-ward	19100008	Male	98
-ward	10205021	Male	181
-ward	10502003	Male	206
-ward	10104008	Male	204
-ward	19100015	Male	175
-ward	19100062	Female	94
-ward	10302006	Female	179
-ward	19100038	Male	89
-ward	19100057	Female	92
-ward	10204002	Female	115
-ward	10302001	Male	336
-district	DC4	Female	199
-ward	10203031	Male	127
-ward	10407003	Female	248
-ward	10205001	Male	398
-ward	10101003	Female	377
-ward	19100031	Male	145
-ward	10204020	Female	172
-ward	10206002	Female	209
-ward	10302010	Male	191
-ward	10205020	Female	201
-ward	10302008	Male	200
-ward	10203029	Female	233
-ward	10404002	Male	265
-ward	10502003	Female	216
-ward	10205021	Female	281
-ward	19100008	Female	97
-ward	10403009	Female	360
-ward	10302006	Male	163
-ward	19100038	Female	112
-ward	19100057	Male	53
-ward	19100015	Female	209
-ward	19100062	Male	86
-ward	10104008	Female	229
-ward	19100031	Female	132
-ward	10101003	Male	310
-ward	10204020	Male	198
-ward	10206002	Male	302
-district	DC4	Male	164
-ward	10203031	Female	229
-ward	10204002	Male	99
-ward	10302001	Female	274
-ward	10205001	Female	252
-ward	10407003	Male	153
-ward	10103003	Female	221
-ward	10401004	Female	406
-ward	19100056	Female	88
-ward	19100070	Female	111
-ward	10203003	Female	137
-ward	19100059	Male	49
-ward	10302003	Female	583
-ward	10301008	Male	185
-ward	19100110	Male	125
-municipality	WC022	Female	197
-ward	10205009	Male	212
-ward	10404015	Male	217
-ward	10404025	Female	328
-ward	10301010	Male	122
-ward	10203010	Female	229
-ward	10301007	Female	229
-ward	10408008	Female	268
-ward	19100050	Male	150
-ward	10204016	Male	66
-ward	19100088	Male	67
-ward	10204012	Male	82
-ward	10501002	Female	428
-ward	19100004	Male	74
-ward	10403006	Female	213
-ward	10404013	Male	191
-municipality	WC041	Male	299
-ward	19100059	Female	53
-ward	10203003	Male	116
-ward	10103003	Male	148
-ward	10401004	Male	309
-ward	19100056	Male	98
-ward	19100070	Male	84
-ward	10404025	Male	233
-ward	10301010	Female	213
-ward	10302003	Male	550
-municipality	WC022	Male	159
-ward	10205009	Female	314
-ward	10404015	Female	233
-ward	10301008	Female	292
-ward	19100110	Female	120
-ward	10204012	Female	91
-ward	10501002	Male	869
-ward	10204016	Female	81
-ward	19100088	Female	75
-ward	10408008	Male	169
-ward	19100050	Female	141
-ward	10203010	Male	175
-ward	10301007	Male	288
-municipality	WC041	Female	333
-ward	10403006	Male	315
-ward	19100004	Female	126
-ward	10404013	Female	239
-ward	19100096	Female	111
-ward	10405002	Male	270
-ward	10203030	Female	202
-ward	19100085	Male	111
+COPY youth_victims_gender (geo_level, geo_code, gender, total, geo_version) FROM stdin;
+ward	10206004	Male	141	2011
+ward	10407001	Male	187	2011
+ward	21001001	Female	0	2011
+ward	21001001	Male	0	2011
+ward	21001007	Female	0	2011
+ward	21001007	Male	0	2011
+ward	21007001	Female	0	2011
+ward	21007001	Male	0	2011
+ward	21007004	Female	0	2011
+ward	21007004	Male	0	2011
+ward	21009001	Female	0	2011
+ward	21009001	Male	0	2011
+ward	21009002	Female	0	2011
+ward	21009002	Male	0	2011
+ward	21009006	Female	0	2011
+ward	21009006	Male	0	2011
+ward	30604002	Female	0	2011
+ward	30604002	Male	0	2011
+ward	30604004	Female	0	2011
+ward	30604004	Male	0	2011
+ward	30605004	Female	0	2011
+ward	30605004	Male	0	2011
+ward	30605005	Female	0	2011
+ward	30605005	Male	0	2011
+ward	30606003	Female	0	2011
+ward	30606003	Male	0	2011
+ward	30606004	Female	0	2011
+ward	30606004	Male	0	2011
+ward	30701003	Female	0	2011
+ward	30701003	Male	0	2011
+municipality	EC101	Female	0	2011
+municipality	EC109	Male	0	2011
+country	ZA	Male	6355	2011
+municipality	NC065	Male	0	2011
+province	EC	Male	0	2011
+province	EC	Female	0	2011
+municipality	EC109	Female	0	2011
+municipality	EC101	Male	0	2011
+country	ZA	Female	7329	2011
+municipality	EC107	Female	0	2011
+municipality	NC064	Female	0	2011
+municipality	NC066	Female	0	2011
+municipality	NC066	Male	0	2011
+municipality	NC064	Male	0	2011
+municipality	EC107	Male	0	2011
+district	DC10	Female	0	2011
+district	DC10	Male	0	2011
+municipality	NC065	Female	0	2011
+municipality	WC053	Female	267	2011
+ward	10205005	Female	251	2011
+ward	10404024	Female	324	2011
+ward	10503001	Male	587	2011
+ward	19100012	Male	149	2011
+municipality	WC045	Female	297	2011
+ward	19100090	Male	88	2011
+ward	19100107	Male	92	2011
+municipality	WC044	Female	283	2011
+ward	10104006	Female	294	2011
+ward	10404010	Female	199	2011
+ward	19100089	Male	101	2011
+ward	10104002	Male	200	2011
+ward	10404014	Male	322	2011
+municipality	WC011	Female	263	2011
+ward	10204011	Male	122	2011
+municipality	WC034	Male	231	2011
+ward	10105006	Female	186	2011
+ward	19100045	Female	119	2011
+ward	10203024	Female	198	2011
+ward	10303003	Male	239	2011
+ward	10503001	Female	538	2011
+ward	10404024	Male	199	2011
+ward	10407001	Female	311	2011
+ward	19100012	Female	149	2011
+ward	10206004	Female	126	2011
+municipality	WC053	Male	324	2011
+ward	10205005	Male	229	2011
+municipality	WC045	Male	243	2011
+ward	19100090	Female	150	2011
+ward	19100107	Female	128	2011
+ward	10404010	Male	145	2011
+ward	19100089	Female	170	2011
+ward	10104002	Female	207	2011
+ward	10404014	Female	301	2011
+ward	10104006	Male	250	2011
+municipality	WC044	Male	234	2011
+municipality	WC034	Female	253	2011
+ward	10105006	Male	218	2011
+ward	19100045	Male	156	2011
+ward	10303003	Female	280	2011
+ward	10203024	Male	177	2011
+municipality	WC011	Male	238	2011
+ward	10204011	Female	115	2011
+ward	19100028	Female	234	2011
+municipality	WC026	Female	189	2011
+ward	10407005	Female	230	2011
+ward	19100066	Female	105	2011
+ward	19100001	Female	73	2011
+ward	19100047	Female	105	2011
+ward	10408007	Male	177	2011
+ward	10502002	Female	430	2011
+ward	19100017	Male	126	2011
+ward	10205010	Female	281	2011
+ward	10303005	Male	186	2011
+ward	10203019	Male	147	2011
+ward	10405004	Female	370	2011
+ward	10402008	Female	287	2011
+ward	19100005	Male	24	2011
+ward	10103005	Female	123	2011
+ward	10203021	Male	114	2011
+ward	10202002	Male	244	2011
+ward	10206006	Male	291	2011
+ward	10301009	Female	171	2011
+ward	19100034	Male	48	2011
+ward	19100102	Female	86	2011
+ward	10104009	Male	135	2011
+ward	10403004	Female	506	2011
+ward	10206003	Female	254	2011
+ward	10408009	Female	300	2011
+ward	19100001	Male	95	2011
+ward	19100047	Male	84	2011
+ward	19100028	Male	249	2011
+ward	10407005	Male	149	2011
+ward	19100066	Male	121	2011
+municipality	WC026	Male	210	2011
+ward	10203019	Female	127	2011
+ward	10405004	Male	284	2011
+ward	10303005	Female	219	2011
+ward	10402008	Male	332	2011
+ward	19100005	Female	39	2011
+ward	10205010	Male	216	2011
+ward	10408007	Female	226	2011
+ward	10502002	Male	364	2011
+ward	19100017	Female	170	2011
+ward	10206006	Female	201	2011
+ward	10301009	Male	111	2011
+ward	19100034	Female	80	2011
+ward	19100102	Male	93	2011
+ward	10202002	Female	335	2011
+ward	10103005	Male	112	2011
+ward	10203021	Female	124	2011
+ward	10403004	Male	340	2011
+ward	10206003	Male	325	2011
+ward	10408009	Male	198	2011
+ward	10104009	Female	150	2011
+ward	10403001	Female	236	2011
+ward	10404011	Male	174	2011
+ward	10206001	Male	373	2011
+ward	19100023	Male	86	2011
+ward	19100060	Male	70	2011
+ward	10404019	Male	220	2011
+ward	10405013	Male	207	2011
+ward	19100091	Female	154	2011
+ward	10103006	Female	247	2011
+district	DC1	Female	133	2011
+ward	10102002	Male	89	2011
+ward	10405001	Male	250	2011
+ward	19100101	Female	86	2011
+ward	10204008	Female	31	2011
+ward	10204014	Male	72	2011
+ward	10402004	Male	274	2011
+ward	19100052	Male	118	2011
+ward	10202006	Female	207	2011
+ward	10202001	Female	173	2011
+ward	19100104	Female	106	2011
+ward	10303004	Male	376	2011
+ward	19100010	Female	102	2011
+ward	19100020	Female	108	2011
+ward	19100103	Male	139	2011
+ward	10205018	Male	188	2011
+ward	10202007	Female	304	2011
+ward	19100027	Female	54	2011
+ward	10205017	Male	230	2011
+ward	10101005	Male	273	2011
+ward	10101008	Female	160	2011
+ward	10503003	Male	424	2011
+ward	10104005	Male	188	2011
+ward	10403014	Male	225	2011
+ward	19100064	Male	118	2011
+province	WC	Male	116	2011
+ward	10304003	Female	332	2011
+municipality	WC015	Male	111	2011
+ward	10103001	Male	147	2011
+ward	10105002	Male	158	2011
+ward	10301002	Female	398	2011
+ward	10404019	Female	202	2011
+ward	10405013	Female	268	2011
+ward	19100060	Female	84	2011
+ward	19100091	Male	92	2011
+ward	10206001	Female	307	2011
+ward	19100023	Female	90	2011
+ward	10403001	Male	186	2011
+ward	10404011	Female	247	2011
+ward	10204008	Male	57	2011
+ward	10204014	Female	80	2011
+ward	10402004	Female	289	2011
+ward	19100052	Female	156	2011
+ward	10405001	Female	329	2011
+ward	19100101	Male	97	2011
+ward	10202001	Male	219	2011
+ward	19100104	Male	62	2011
+ward	10202006	Male	214	2011
+ward	10103006	Male	264	2011
+district	DC1	Male	117	2011
+ward	10102002	Female	181	2011
+ward	10202007	Male	208	2011
+ward	19100027	Male	96	2011
+ward	10205017	Female	273	2011
+ward	10303004	Female	401	2011
+ward	19100010	Male	127	2011
+ward	19100020	Male	117	2011
+ward	19100103	Female	167	2011
+ward	10205018	Female	263	2011
+municipality	WC015	Female	174	2011
+ward	10103001	Female	113	2011
+province	WC	Female	131	2011
+ward	10304003	Male	267	2011
+ward	10105002	Female	229	2011
+ward	10301002	Male	418	2011
+ward	10503003	Female	297	2011
+ward	10101005	Female	348	2011
+ward	10101008	Male	206	2011
+ward	10104005	Female	185	2011
+ward	10403014	Female	311	2011
+ward	19100064	Female	175	2011
+ward	19100105	Male	93	2011
+municipality	WC024	Female	92	2011
+municipality	WC042	Female	263	2011
+ward	10203016	Male	64	2011
+ward	10204010	Female	70	2011
+ward	10206005	Male	196	2011
+ward	10202003	Male	201	2011
+ward	10205011	Male	251	2011
+ward	10301005	Female	210	2011
+ward	10205012	Female	324	2011
+district	DC5	Female	170	2011
+ward	10204015	Male	60	2011
+ward	10205003	Male	167	2011
+ward	10102001	Female	204	2011
+ward	10403003	Female	242	2011
+ward	10203009	Male	69	2011
+ward	10502001	Male	63	2011
+ward	10204007	Male	85	2011
+ward	19100086	Female	181	2011
+ward	19100002	Male	82	2011
+ward	19100078	Male	155	2011
+ward	10404017	Male	297	2011
+ward	10301013	Female	247	2011
+ward	10205013	Female	294	2011
+ward	10404016	Female	224	2011
+ward	10408003	Male	164	2011
+ward	10104012	Male	164	2011
+ward	10205012	Male	238	2011
+ward	10202003	Female	226	2011
+ward	10205011	Female	342	2011
+ward	10301005	Male	174	2011
+ward	10204015	Female	72	2011
+district	DC5	Male	210	2011
+municipality	WC024	Male	98	2011
+ward	19100105	Female	125	2011
+ward	10206005	Female	272	2011
+municipality	WC042	Male	274	2011
+ward	10203016	Female	119	2011
+ward	10204010	Male	67	2011
+ward	10102001	Male	110	2011
+ward	10403003	Male	182	2011
+ward	10205003	Female	185	2011
+ward	10203009	Female	153	2011
+ward	10502001	Female	70	2011
+ward	19100002	Female	83	2011
+ward	19100078	Female	172	2011
+ward	10301013	Male	135	2011
+ward	10404017	Female	423	2011
+ward	19100086	Male	97	2011
+ward	10204007	Female	87	2011
+ward	10408003	Female	246	2011
+ward	10104012	Female	195	2011
+ward	10205013	Male	203	2011
+ward	10404016	Male	259	2011
+ward	10302012	Male	151	2011
+ward	10203006	Female	130	2011
+ward	10301012	Female	226	2011
+ward	10404023	Male	182	2011
+ward	10408010	Male	334	2011
+ward	10304002	Female	381	2011
+ward	19100021	Male	83	2011
+ward	19100014	Female	175	2011
+ward	10203008	Male	106	2011
+ward	10204004	Male	138	2011
+ward	10503007	Female	319	2011
+ward	10205007	Male	266	2011
+ward	19100076	Male	93	2011
+ward	19100084	Female	230	2011
+ward	10501001	Female	312	2011
+ward	10403011	Female	347	2011
+ward	19100025	Female	188	2011
+ward	10404003	Male	276	2011
+ward	10204009	Male	65	2011
+ward	10404023	Female	226	2011
+ward	10408010	Female	509	2011
+ward	10302012	Female	162	2011
+ward	10203006	Male	72	2011
+ward	10301012	Male	154	2011
+ward	19100021	Female	136	2011
+ward	10304002	Male	387	2011
+ward	19100014	Male	148	2011
+ward	10204004	Female	106	2011
+ward	10503007	Male	388	2011
+ward	19100076	Female	85	2011
+ward	10205007	Female	348	2011
+ward	10203008	Female	210	2011
+ward	10403011	Male	276	2011
+ward	19100025	Male	215	2011
+ward	10204009	Female	71	2011
+ward	10404003	Female	386	2011
+ward	19100084	Male	188	2011
+ward	10501001	Male	450	2011
+ward	10503005	Female	287	2011
+ward	19100013	Female	102	2011
+ward	19100033	Male	49	2011
+ward	19100048	Female	101	2011
+ward	10403007	Male	443	2011
+ward	10206010	Female	298	2011
+ward	10404020	Female	346	2011
+ward	10304005	Female	234	2011
+ward	19100029	Male	181	2011
+ward	10102005	Female	165	2011
+ward	10105004	Female	153	2011
+ward	10204019	Male	164	2011
+ward	10401002	Male	408	2011
+ward	10403010	Male	538	2011
+ward	19100041	Male	94	2011
+ward	10206011	Male	205	2011
+ward	10404021	Male	244	2011
+ward	10103007	Female	89	2011
+ward	10404005	Female	285	2011
+ward	19100040	Female	106	2011
+ward	19100058	Female	99	2011
+ward	10302002	Male	328	2011
+ward	10405012	Female	307	2011
+ward	10407002	Female	357	2011
+ward	10503002	Male	488	2011
+ward	10503006	Male	435	2011
+municipality	WC013	Male	142	2011
+ward	10101007	Male	228	2011
+ward	10404008	Male	273	2011
+ward	10203026	Female	170	2011
+ward	19100106	Female	110	2011
+ward	10204013	Male	125	2011
+ward	10304004	Male	341	2011
+municipality	WC023	Female	150	2011
+ward	10105007	Male	97	2011
+ward	19100022	Female	172	2011
+municipality	WC033	Male	216	2011
+ward	10104003	Female	103	2011
+ward	19100024	Female	165	2011
+ward	19100011	Male	138	2011
+ward	10203004	Female	93	2011
+ward	10303002	Male	280	2011
+ward	10405008	Female	251	2011
+ward	19100085	Female	204	2011
+ward	10403007	Female	588	2011
+ward	19100048	Male	110	2011
+ward	10405002	Female	344	2011
+ward	19100096	Male	61	2011
+ward	10203030	Male	209	2011
+ward	10503005	Male	353	2011
+ward	19100013	Male	112	2011
+ward	19100033	Female	84	2011
+ward	10206011	Female	323	2011
+ward	10404021	Female	270	2011
+ward	19100041	Female	122	2011
+ward	10103007	Male	82	2011
+ward	10404005	Male	268	2011
+ward	19100040	Male	85	2011
+ward	19100058	Male	60	2011
+ward	10304005	Male	205	2011
+ward	19100029	Female	134	2011
+ward	10206010	Male	191	2011
+ward	10404020	Male	248	2011
+ward	10105004	Male	94	2011
+ward	10204019	Female	165	2011
+ward	10401002	Female	341	2011
+ward	10403010	Female	631	2011
+ward	10102005	Male	214	2011
+ward	10503002	Female	452	2011
+ward	10503006	Female	339	2011
+ward	10302002	Female	252	2011
+ward	10405012	Male	216	2011
+ward	10407002	Male	202	2011
+municipality	WC013	Female	140	2011
+ward	10101007	Female	151	2011
+ward	10404008	Female	357	2011
+municipality	WC033	Female	246	2011
+ward	10104003	Male	126	2011
+ward	19100024	Male	182	2011
+ward	19100022	Male	184	2011
+ward	10203004	Male	97	2011
+ward	10303002	Female	327	2011
+ward	10405008	Male	203	2011
+ward	19100011	Female	140	2011
+ward	10204013	Female	170	2011
+ward	10304004	Female	302	2011
+ward	10203026	Male	151	2011
+ward	19100106	Male	136	2011
+municipality	WC023	Male	123	2011
+ward	10105007	Female	174	2011
+ward	10202004	Male	174	2011
+ward	10402002	Female	341	2011
+ward	10202010	Male	109	2011
+ward	10403008	Female	225	2011
+ward	10503004	Male	500	2011
+ward	10203012	Female	136	2011
+ward	19100067	Male	88	2011
+ward	10202005	Male	202	2011
+ward	19100054	Male	111	2011
+ward	10501004	Male	457	2011
+ward	10101004	Female	252	2011
+ward	10206009	Male	198	2011
+ward	10105008	Female	209	2011
+ward	10402005	Female	321	2011
+ward	19100077	Female	169	2011
+municipality	WC048	Male	176	2011
+ward	10401003	Female	276	2011
+ward	19100111	Male	116	2011
+municipality	CPT	Female	125	2011
+ward	10105010	Female	155	2011
+ward	10405003	Female	253	2011
+ward	10301006	Male	171	2011
+ward	10105009	Female	128	2011
+ward	10302009	Male	365	2011
+ward	10404009	Female	244	2011
+ward	19100016	Female	160	2011
+ward	19100061	Male	71	2011
+ward	10405007	Female	315	2011
+ward	10501003	Male	909	2011
+ward	19100063	Male	86	2011
+ward	19100074	Male	136	2011
+ward	10302005	Male	190	2011
+ward	10203015	Female	130	2011
+ward	19100075	Male	87	2011
+municipality	WC012	Female	204	2011
+ward	10204003	Female	120	2011
+ward	10204017	Male	103	2011
+ward	19100006	Male	97	2011
+ward	19100003	Male	67	2011
+ward	10105011	Female	156	2011
+ward	10204005	Male	92	2011
+ward	19100007	Male	114	2011
+ward	10105005	Male	177	2011
+ward	10105012	Female	413	2011
+ward	10203023	Female	141	2011
+ward	19100030	Female	213	2011
+ward	10403013	Female	334	2011
+ward	19100099	Female	130	2011
+ward	10205004	Male	244	2011
+ward	10204001	Female	121	2011
+ward	10205019	Male	132	2011
+ward	10407006	Female	230	2011
+ward	10202008	Female	158	2011
+ward	10105001	Female	154	2011
+ward	10203022	Female	261	2011
+ward	10403005	Female	479	2011
+ward	19100065	Female	122	2011
+ward	19100067	Female	125	2011
+ward	10203012	Male	80	2011
+ward	10202005	Female	240	2011
+ward	19100054	Female	85	2011
+ward	10202004	Female	168	2011
+ward	10402002	Male	474	2011
+ward	10202010	Female	125	2011
+ward	10403008	Male	297	2011
+ward	10503004	Female	382	2011
+municipality	CPT	Male	109	2011
+ward	10105010	Male	106	2011
+ward	10405003	Male	220	2011
+municipality	WC048	Female	260	2011
+ward	10401003	Male	225	2011
+ward	19100111	Female	102	2011
+ward	10105009	Male	74	2011
+ward	10302009	Female	459	2011
+ward	10404009	Male	196	2011
+ward	19100016	Male	124	2011
+ward	19100061	Female	127	2011
+ward	10301006	Female	230	2011
+ward	10501004	Female	408	2011
+ward	10105008	Male	150	2011
+ward	10402005	Male	294	2011
+ward	19100077	Male	232	2011
+ward	10101004	Male	203	2011
+ward	10206009	Female	323	2011
+municipality	WC012	Male	167	2011
+ward	10204003	Male	141	2011
+ward	10204017	Female	113	2011
+ward	19100006	Female	88	2011
+ward	10105011	Male	97	2011
+ward	10204005	Female	111	2011
+ward	19100007	Female	110	2011
+ward	19100003	Female	97	2011
+ward	10302005	Female	205	2011
+ward	10405007	Male	176	2011
+ward	10501003	Female	454	2011
+ward	19100063	Female	99	2011
+ward	19100074	Female	164	2011
+ward	19100075	Female	85	2011
+ward	10203015	Male	130	2011
+ward	10202008	Male	89	2011
+ward	10204001	Male	115	2011
+ward	10205019	Female	195	2011
+ward	10407006	Male	202	2011
+ward	10403005	Male	343	2011
+ward	19100065	Male	135	2011
+ward	10105001	Male	122	2011
+ward	10203022	Male	223	2011
+ward	10203023	Male	134	2011
+ward	19100030	Male	226	2011
+ward	10105005	Female	166	2011
+ward	10105012	Male	196	2011
+ward	10205004	Female	246	2011
+ward	10403013	Male	245	2011
+ward	19100099	Male	113	2011
+ward	10104001	Female	112	2011
+ward	10404004	Male	189	2011
+ward	19100071	Male	113	2011
+ward	10102006	Female	176	2011
+ward	10206008	Female	160	2011
+district	DC3	Female	131	2011
+ward	10301011	Male	143	2011
+district	DC2	Male	123	2011
+ward	19100053	Female	114	2011
+municipality	WC014	Female	142	2011
+ward	10102004	Female	246	2011
+ward	19100081	Female	164	2011
+ward	10203018	Female	126	2011
+ward	10204006	Female	124	2011
+ward	10404018	Female	246	2011
+ward	19100036	Male	48	2011
+ward	10101006	Male	156	2011
+ward	10405011	Female	420	2011
+ward	10101001	Female	354	2011
+ward	10203017	Female	141	2011
+ward	10407007	Male	152	2011
+ward	10408005	Female	325	2011
+ward	19100026	Female	149	2011
+ward	19100082	Female	142	2011
+ward	10104013	Female	194	2011
+ward	19100094	Male	81	2011
+ward	10302013	Male	440	2011
+ward	10205006	Male	241	2011
+ward	10203013	Male	140	2011
+ward	10402003	Male	519	2011
+ward	19100049	Female	111	2011
+ward	10203007	Female	207	2011
+ward	19100037	Male	53	2011
+ward	10203025	Female	243	2011
+ward	10408006	Male	182	2011
+ward	19100046	Female	131	2011
+ward	10202009	Male	90	2011
+ward	19100098	Female	117	2011
+ward	10101002	Female	290	2011
+ward	10204021	Male	178	2011
+ward	19100100	Male	136	2011
+ward	10303001	Male	331	2011
+ward	19100042	Female	97	2011
+ward	10102006	Male	113	2011
+ward	10206008	Male	129	2011
+ward	10404004	Female	223	2011
+ward	19100071	Female	65	2011
+district	DC2	Female	146	2011
+ward	19100053	Male	105	2011
+district	DC3	Male	124	2011
+ward	10301011	Female	245	2011
+ward	10104001	Male	125	2011
+ward	10203018	Male	174	2011
+ward	10204006	Male	136	2011
+ward	10404018	Male	224	2011
+ward	19100036	Female	80	2011
+ward	10101006	Female	207	2011
+municipality	WC014	Male	138	2011
+ward	10102004	Male	304	2011
+ward	19100081	Male	153	2011
+ward	10205006	Female	364	2011
+ward	10302013	Female	552	2011
+ward	10203013	Female	155	2011
+ward	10402003	Female	524	2011
+ward	19100049	Male	119	2011
+ward	10405011	Male	258	2011
+ward	10104013	Male	190	2011
+ward	19100094	Female	125	2011
+ward	10101001	Male	341	2011
+ward	10203017	Male	148	2011
+ward	10407007	Female	255	2011
+ward	10408005	Male	195	2011
+ward	19100026	Male	165	2011
+ward	19100082	Male	136	2011
+ward	10101002	Male	195	2011
+ward	10204021	Female	169	2011
+ward	19100100	Female	180	2011
+ward	10303001	Female	334	2011
+ward	19100042	Male	101	2011
+ward	10203025	Male	157	2011
+ward	10408006	Female	257	2011
+ward	10203007	Male	171	2011
+ward	19100037	Female	86	2011
+ward	10202009	Female	140	2011
+ward	19100098	Male	66	2011
+ward	19100046	Male	169	2011
+ward	10104004	Female	119	2011
+municipality	WC043	Female	329	2011
+ward	19100044	Male	143	2011
+ward	19100092	Female	125	2011
+ward	10404012	Female	294	2011
+ward	19100083	Male	136	2011
+ward	10302004	Male	184	2011
+ward	10301004	Female	251	2011
+ward	10402001	Male	335	2011
+ward	10205014	Female	310	2011
+ward	10405010	Female	223	2011
+ward	19100032	Male	173	2011
+ward	19100095	Male	72	2011
+ward	19100109	Female	227	2011
+ward	10104011	Female	202	2011
+ward	19100079	Male	149	2011
+ward	10405005	Male	232	2011
+municipality	WC031	Male	72	2011
+ward	10304001	Male	260	2011
+ward	19100097	Female	110	2011
+ward	19100039	Male	61	2011
+municipality	WC052	Female	272	2011
+ward	10301001	Male	267	2011
+ward	10408001	Male	211	2011
+ward	10401001	Female	314	2011
+ward	19100068	Female	123	2011
+ward	10203002	Female	297	2011
+ward	10206007	Male	249	2011
+ward	10407004	Female	203	2011
+ward	10502004	Male	303	2011
+municipality	WC051	Male	500	2011
+ward	10103002	Female	282	2011
+ward	10302007	Male	419	2011
+ward	19100072	Female	131	2011
+ward	19100055	Male	90	2011
+ward	10204018	Male	197	2011
+ward	19100044	Female	111	2011
+municipality	WC043	Male	260	2011
+ward	10104004	Male	144	2011
+ward	10402001	Female	266	2011
+ward	10205014	Male	240	2011
+ward	10405010	Male	346	2011
+ward	19100032	Female	126	2011
+ward	19100095	Female	122	2011
+ward	19100109	Male	134	2011
+ward	10404012	Male	208	2011
+ward	19100083	Female	230	2011
+ward	19100092	Male	83	2011
+ward	10301004	Male	291	2011
+ward	10302004	Female	230	2011
+ward	19100039	Female	87	2011
+ward	10304001	Female	335	2011
+ward	19100097	Male	68	2011
+ward	10301001	Female	347	2011
+ward	10408001	Female	353	2011
+municipality	WC052	Male	226	2011
+ward	10104011	Male	205	2011
+ward	19100079	Female	158	2011
+municipality	WC031	Female	110	2011
+ward	10405005	Female	310	2011
+ward	19100072	Male	145	2011
+ward	10204018	Female	280	2011
+ward	19100055	Female	144	2011
+ward	10203002	Male	235	2011
+ward	10206007	Female	156	2011
+ward	10407004	Male	119	2011
+ward	10502004	Female	398	2011
+ward	10401001	Male	227	2011
+ward	19100068	Male	123	2011
+ward	10103002	Male	408	2011
+ward	10302007	Female	512	2011
+municipality	WC051	Female	372	2011
+ward	10404007	Male	250	2011
+ward	10203020	Female	308	2011
+ward	10102003	Male	178	2011
+ward	10408002	Female	283	2011
+ward	19100080	Male	57	2011
+ward	10103004	Female	167	2011
+ward	10203014	Female	160	2011
+ward	10403012	Female	331	2011
+ward	19100043	Female	95	2011
+ward	10403002	Male	205	2011
+ward	10203011	Male	125	2011
+ward	10203001	Female	129	2011
+ward	19100009	Female	144	2011
+ward	19100051	Male	143	2011
+ward	19100035	Female	67	2011
+ward	10302011	Female	338	2011
+ward	10404001	Male	180	2011
+ward	10405009	Male	345	2011
+municipality	WC032	Female	262	2011
+ward	10205002	Male	235	2011
+ward	10205015	Female	263	2011
+ward	10301003	Female	242	2011
+ward	10102003	Female	229	2011
+ward	10408002	Male	185	2011
+ward	19100080	Female	84	2011
+ward	10404007	Female	328	2011
+ward	10203020	Male	284	2011
+ward	10203011	Female	181	2011
+ward	10203001	Male	114	2011
+ward	10103004	Male	143	2011
+ward	10403002	Female	264	2011
+ward	10203014	Male	148	2011
+ward	10403012	Male	242	2011
+ward	19100043	Male	88	2011
+ward	10404001	Female	186	2011
+ward	19100051	Female	198	2011
+ward	19100009	Male	110	2011
+ward	10302011	Male	397	2011
+ward	19100035	Male	72	2011
+ward	10205002	Female	222	2011
+ward	10205015	Male	117	2011
+ward	10301003	Male	372	2011
+municipality	WC032	Male	262	2011
+ward	10405009	Female	233	2011
+municipality	WC025	Male	192	2011
+ward	10404022	Female	228	2011
+ward	10203005	Female	168	2011
+ward	10204022	Male	178	2011
+ward	10205008	Male	205	2011
+ward	10205016	Male	193	2011
+ward	10404006	Male	301	2011
+ward	10405006	Male	232	2011
+ward	19100019	Male	114	2011
+ward	10105003	Female	463	2011
+ward	19100073	Female	51	2011
+ward	10402007	Female	371	2011
+ward	10104007	Male	109	2011
+ward	10408004	Female	285	2011
+ward	10203028	Female	164	2011
+ward	19100108	Female	134	2011
+ward	19100087	Female	168	2011
+ward	10203027	Female	196	2011
+ward	10104010	Female	216	2011
+ward	19100093	Female	152	2011
+municipality	WC047	Male	161	2011
+ward	19100069	Male	119	2011
+ward	10402006	Female	232	2011
+ward	10202011	Male	148	2011
+ward	10206012	Male	230	2011
+ward	10202012	Female	220	2011
+ward	19100018	Female	158	2011
+ward	10205016	Female	240	2011
+ward	10404006	Female	405	2011
+ward	10405006	Female	268	2011
+ward	19100019	Female	146	2011
+municipality	WC025	Female	252	2011
+ward	10404022	Male	227	2011
+ward	10204022	Female	189	2011
+ward	10205008	Female	273	2011
+ward	10203005	Male	135	2011
+ward	10104007	Female	147	2011
+ward	10408004	Male	182	2011
+ward	10402007	Male	361	2011
+ward	10203028	Male	81	2011
+ward	19100108	Male	97	2011
+ward	10105003	Male	223	2011
+ward	19100073	Male	61	2011
+municipality	WC047	Female	260	2011
+ward	19100069	Female	140	2011
+ward	10203027	Male	170	2011
+ward	19100087	Male	97	2011
+ward	10104010	Male	218	2011
+ward	19100093	Male	92	2011
+ward	10202012	Male	132	2011
+ward	19100018	Male	95	2011
+ward	10202011	Female	101	2011
+ward	10206012	Female	148	2011
+ward	10402006	Male	276	2011
+ward	10302008	Female	251	2011
+ward	10404002	Female	344	2011
+ward	10203029	Male	183	2011
+ward	10205020	Male	177	2011
+ward	10302010	Female	209	2011
+ward	10403009	Male	262	2011
+ward	19100008	Male	98	2011
+ward	10205021	Male	181	2011
+ward	10502003	Male	206	2011
+ward	10104008	Male	204	2011
+ward	19100015	Male	175	2011
+ward	19100062	Female	94	2011
+ward	10302006	Female	179	2011
+ward	19100038	Male	89	2011
+ward	19100057	Female	92	2011
+ward	10204002	Female	115	2011
+ward	10302001	Male	336	2011
+district	DC4	Female	199	2011
+ward	10203031	Male	127	2011
+ward	10407003	Female	248	2011
+ward	10205001	Male	398	2011
+ward	10101003	Female	377	2011
+ward	19100031	Male	145	2011
+ward	10204020	Female	172	2011
+ward	10206002	Female	209	2011
+ward	10302010	Male	191	2011
+ward	10205020	Female	201	2011
+ward	10302008	Male	200	2011
+ward	10203029	Female	233	2011
+ward	10404002	Male	265	2011
+ward	10502003	Female	216	2011
+ward	10205021	Female	281	2011
+ward	19100008	Female	97	2011
+ward	10403009	Female	360	2011
+ward	10302006	Male	163	2011
+ward	19100038	Female	112	2011
+ward	19100057	Male	53	2011
+ward	19100015	Female	209	2011
+ward	19100062	Male	86	2011
+ward	10104008	Female	229	2011
+ward	19100031	Female	132	2011
+ward	10101003	Male	310	2011
+ward	10204020	Male	198	2011
+ward	10206002	Male	302	2011
+district	DC4	Male	164	2011
+ward	10203031	Female	229	2011
+ward	10204002	Male	99	2011
+ward	10302001	Female	274	2011
+ward	10205001	Female	252	2011
+ward	10407003	Male	153	2011
+ward	10103003	Female	221	2011
+ward	10401004	Female	406	2011
+ward	19100056	Female	88	2011
+ward	19100070	Female	111	2011
+ward	10203003	Female	137	2011
+ward	19100059	Male	49	2011
+ward	10302003	Female	583	2011
+ward	10301008	Male	185	2011
+ward	19100110	Male	125	2011
+municipality	WC022	Female	197	2011
+ward	10205009	Male	212	2011
+ward	10404015	Male	217	2011
+ward	10404025	Female	328	2011
+ward	10301010	Male	122	2011
+ward	10203010	Female	229	2011
+ward	10301007	Female	229	2011
+ward	10408008	Female	268	2011
+ward	19100050	Male	150	2011
+ward	10204016	Male	66	2011
+ward	19100088	Male	67	2011
+ward	10204012	Male	82	2011
+ward	10501002	Female	428	2011
+ward	19100004	Male	74	2011
+ward	10403006	Female	213	2011
+ward	10404013	Male	191	2011
+municipality	WC041	Male	299	2011
+ward	19100059	Female	53	2011
+ward	10203003	Male	116	2011
+ward	10103003	Male	148	2011
+ward	10401004	Male	309	2011
+ward	19100056	Male	98	2011
+ward	19100070	Male	84	2011
+ward	10404025	Male	233	2011
+ward	10301010	Female	213	2011
+ward	10302003	Male	550	2011
+municipality	WC022	Male	159	2011
+ward	10205009	Female	314	2011
+ward	10404015	Female	233	2011
+ward	10301008	Female	292	2011
+ward	19100110	Female	120	2011
+ward	10204012	Female	91	2011
+ward	10501002	Male	869	2011
+ward	10204016	Female	81	2011
+ward	19100088	Female	75	2011
+ward	10408008	Male	169	2011
+ward	19100050	Female	141	2011
+ward	10203010	Male	175	2011
+ward	10301007	Male	288	2011
+municipality	WC041	Female	333	2011
+ward	10403006	Male	315	2011
+ward	19100004	Female	126	2011
+ward	10404013	Female	239	2011
+ward	19100096	Female	111	2011
+ward	10405002	Male	270	2011
+ward	10203030	Female	202	2011
+ward	19100085	Male	111	2011
 \.
 
 
 --
--- Name: youth_victims_gender_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: youth_victims_gender pk_youth_victims_gender; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY youth_victims_gender
-    ADD CONSTRAINT youth_victims_gender_pkey PRIMARY KEY (geo_level, geo_code, gender);
+    ADD CONSTRAINT pk_youth_victims_gender PRIMARY KEY (geo_level, geo_code, geo_version, gender);
 
 
 --

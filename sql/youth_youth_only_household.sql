@@ -2,6 +2,9 @@
 -- PostgreSQL database dump
 --
 
+-- Dumped from database version 9.6.1
+-- Dumped by pg_dump version 9.6.1
+
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET client_encoding = 'UTF8';
@@ -20,7 +23,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: youth_youth_only_household; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: youth_youth_only_household; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE youth_youth_only_household (
@@ -878,7 +881,7 @@ ward	19100111	Yes	739
 
 
 --
--- Name: youth_youth_only_household_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: youth_youth_only_household youth_youth_only_household_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY youth_youth_only_household
