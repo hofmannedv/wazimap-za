@@ -158,7 +158,7 @@ class Command(BaseCommand):
         self.reader = csv.reader(self.f, delimiter=",")
         # skip headers
         for row in self.reader:
-            if row[0] == 'Filters:':
+            if row and row[0] == 'Filters:':
                 break
 
         # skip filter rows
@@ -260,7 +260,7 @@ class Command(BaseCommand):
 
                 # create and add the row
                 self.debug(kwargs)
-                entry = self.table.get_model(geo_level)(**kwargs)
+                entry = self.table.model(**kwargs)
                 if not self.dryrun:
                     session.add(entry)
 

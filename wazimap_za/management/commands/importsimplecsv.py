@@ -96,7 +96,7 @@ class Command(BaseCommand):
             else:
                 row['total'] = round(float(row['total']), 1) if self.value_type == 'Float' else int(round(float(row['total'])))
             self.stdout.write("%s-%s" % (row['geo_level'], row['geo_code']))
-            entry = self.table.get_model(row['geo_level'])(**row)
+            entry = self.table.model(**row)
 
             if not self.dryrun:
                 session.add(entry)
