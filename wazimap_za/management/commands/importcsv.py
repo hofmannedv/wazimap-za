@@ -46,7 +46,15 @@ class Command(BaseCommand):
             action='store_true',
             dest='dryrun',
             default=False,
-            help="Dry-run, don't actuall write any data.",
+            help="Dry-run, don't actually write any data.",
+        )
+        parser.add_argument(
+            '--geo-version',
+            action='store',
+            dest='geo_version',
+            default=None,
+            required=True,
+            help='The geography demarcation version that this table refers to'
         )
 
     def debug(self, msg):
@@ -59,7 +67,10 @@ class Command(BaseCommand):
         self.verbosity = options.get('verbosity', 1)
         self.table_id = options.get('table')
         self.dryrun = options.get('dryrun', False)
-        self.provinces = {g.name.lower(): g for g in geo_data.geo_model.objects.filter(geo_level='province')}
+        self.geo_version = options.get('geo_version')
+        self.provinces = {g.name.lower(): g for g in geo_data.geo_model.objects.filter(version=self.geo_version).filter(geo_level='province')}
+        self.districts = {g.name.lower(): g for g in geo_data.geo_model.objects.filter(version=self.geo_version).filter(geo_level='district')}
+        self.metros = {g.name.lower(): g for g in geo_data.geo_model.objects.filter(version=self.geo_version).filter(geo_level='municipality').filter(parent_level='province')}
 
         if self.dryrun:
             self.stdout.write("DRY RUN: not actuall writing data")
@@ -289,13 +300,23 @@ class Command(BaseCommand):
         elif 'Ward' in geo_name:
             level = 'ward'
             code = pre
-        elif len(pre) >= 7:
-            level = 'province'
-            code = self.provinces[geo_name.strip().lower()].geo_code
         elif geo_name.startswith('DC'):
             level = 'district'
             code = pre.strip()
+
         else:
-            raise ValueError("Cannot recognize the geo level of %s" % geo_name)
+            matches = []
+            for geo_level, options in [('province', self.provinces),
+                                       ('district', self.districts),
+                                       ('municipality', self.metros)]:
+                match = options.get(geo_name.strip().lower(), None)
+                if match:
+                    matches.append((geo_level, match.geo_code))
+            if len(matches) == 0:
+                raise ValueError("Cannot recognize the geo level of %s" % geo_name)
+            elif len(matches) == 1:
+                (level, code) = matches[0]
+            else:
+                raise ValueError("Cannot recognize single geo level of %s: %s" % (geo_name, matches))
 
         return [level, code]
