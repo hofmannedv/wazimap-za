@@ -93,7 +93,7 @@ for t in `ls sql/[a-z]*.sql`
 do
     pg_dump "postgres://wazimap_za@localhost/wazimap_za" \
         -O -c --if-exists -t $(basename $t .sql) \
-      | egrep -v "(idle_in_transaction_session_timeout|row_security)"
+      | egrep -v "(idle_in_transaction_session_timeout|row_security)" \
       > sql/$(basename $t .sql).sql
 done
 ```
