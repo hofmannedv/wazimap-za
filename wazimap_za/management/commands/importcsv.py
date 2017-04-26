@@ -276,7 +276,7 @@ class Command(BaseCommand):
                 stored_key = tuple(sorted(list(kwargs.items())))
                 if stored_key in stored_values:
                     if stored_values[stored_key] == total:
-                        self.stdout.write("Skipping already-added value for key %r" % stored_key)
+                        self.stdout.write("Skipping already-added value for key %r" % list(stored_key))
                         continue
                     else:
                         raise Exception("Different value %r != %r for duplicate key %r" % (stored_values[stored_key], total, stored_key))
