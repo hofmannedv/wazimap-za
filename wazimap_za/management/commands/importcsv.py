@@ -19,7 +19,7 @@ CSV file and imports the data into the Wazi database, creating
 tables as necessary.
 """
 
-muni_re = re.compile('^[A-Z]{3}: .*')
+muni_re = re.compile('^[A-Z]{2,3}\d{0,3}\s*:\s.*$')
 
 
 class Command(BaseCommand):
@@ -252,6 +252,8 @@ class Command(BaseCommand):
         count = 0
 
         for geo_name, values in self.read_rows():
+            if all(not val for val in values):
+                break
             count += 1
             geo_level, geo_code = self.determine_geo_id(geo_name)
 
@@ -291,10 +293,11 @@ class Command(BaseCommand):
         level = None
         if ':' in geo_name:
             pre, code = geo_name.split(':', 1)
+            pre = pre.strip(); code = code.strip()
         else:
             pre = code = geo_name
 
-        if len(pre) in (5, 6) or muni_re.match(geo_name):
+        if muni_re.match(geo_name):
             level = 'municipality'
             code = pre
         elif 'Ward' in geo_name:
