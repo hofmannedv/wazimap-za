@@ -1,3 +1,4 @@
+import copy
 import csv
 import re
 
@@ -250,6 +251,7 @@ class Command(BaseCommand):
     def store_values(self):
         session = get_session()
         count = 0
+        stored_values = {}
 
         for geo_name, values in self.read_rows():
             if all(not val for val in values):
@@ -264,12 +266,22 @@ class Command(BaseCommand):
                 kwargs = {
                     'geo_level': geo_level,
                     'geo_code': geo_code,
+                    'geo_version': self.geo_version,
                 }
 
                 kwargs.update(dict((f, v) for f, v in zip(self.fields, category)))
                 if value == '-':
                     value = '0'
-                kwargs['total'] = round(float(value.replace(',', '')))
+                total = round(float(value.replace(',', '')))
+                stored_key = tuple(sorted(list(kwargs.items())))
+                if stored_key in stored_values:
+                    if stored_values[stored_key] == total:
+                        self.stdout.write("Skipping already-added value for key %r" % stored_key)
+                        continue
+                    else:
+                        raise Exception("Different value %r != %r for duplicate key %r" % (stored_values[stored_key], total, stored_key))
+                stored_values[stored_key] = total
+                kwargs['total'] = total
 
                 # create and add the row
                 self.debug(kwargs)
