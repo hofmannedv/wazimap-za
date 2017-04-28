@@ -6,21 +6,21 @@ from wazimap.data.utils import merge_dicts, group_remainder, get_stat_data, get_
 
 
 ELECTIONS = [
-    {
-        'name': 'National 2014',
-        'table_code': 'national_2014',
-        'dataset': '2014 National Elections',
-    },
-    {
-        'name': 'Provincial 2014',
-        'table_code': 'provincial_2014',
-        'dataset': '2014 Provincial Elections',
-    },
-    {
-        'name': 'Municipal 2011',
-        'table_code': 'municipal_2011',
-        'dataset': '2011 Municipal Elections',
-    },
+#     {
+#         'name': 'National 2014',
+#         'table_code': 'national_2014',
+#         'dataset': '2014 National Elections',
+#     },
+#     {
+#         'name': 'Provincial 2014',
+#         'table_code': 'provincial_2014',
+#         'dataset': '2014 Provincial Elections',
+#     },
+#     {
+#         'name': 'Municipal 2011',
+#         'table_code': 'municipal_2011',
+#         'dataset': '2011 Municipal Elections',
+#     },
 ]
 
 

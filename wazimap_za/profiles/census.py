@@ -913,11 +913,11 @@ def get_child_households_profile(geo, session):
             order_by='-total')
     informal = type_of_dwelling_dist['Shack']['numerators']['this']
 
-    # size of household
-    household_size_dist, _ = get_stat_data(
-        ['household size', 'age of household head'],
-        geo, session
-    )
+    # # size of household
+    # household_size_dist, _ = get_stat_data(
+    #     ['household size', 'age of household head'],
+    #     geo, session
+    # )
 
     return {
         'total_households': {
@@ -935,15 +935,15 @@ def get_child_households_profile(geo, session):
             'name': 'Average annual child-headed household income',
             'values': {'this': median_income},
         },
-        'household_size_distribution': household_size_dist,
-        'head_of_household': {
-            'gender_distribution': head_gender_dist,
-            'female': {
-                'name': 'Child-headed households with women as their head',
-                'values': {'this': percent(female_heads, total_households)},
-                'numerators': {'this': female_heads},
-                },
-        },
+        # 'household_size_distribution': household_size_dist,
+        # 'head_of_household': {
+        #     'gender_distribution': head_gender_dist,
+        #     'female': {
+        #         'name': 'Child-headed households with women as their head',
+        #         'values': {'this': percent(female_heads, total_households)},
+        #         'numerators': {'this': female_heads},
+        #         },
+        # },
     }
 
 
