@@ -604,51 +604,51 @@ def get_service_delivery_profile(geo, session):
             total_ref_sp += obj.total
 
     # electricity
-    elec_attrs = ['electricity for cooking',
-                  'electricity for heating',
-                  'electricity for lighting']
-    db_model_elec = get_model_from_fields(elec_attrs, geo.geo_level)
-    objects = get_objects_by_geo(db_model_elec, geo, session)
-    total_elec = 0.0
-    total_some_elec = 0.0
-    elec_access_data = {
-        'total_all_elec': {
-            "name": "Have electricity for everything",
-            "numerators": {"this": 0.0},
-        },
-        'total_some_not_all_elec': {
-            "name": "Have electricity for some things",
-            "numerators": {"this": 0.0},
-        },
-        'total_no_elec': {
-            "name": "No electricity",
-            "numerators": {"this": 0.0},
-        }
-    }
-    for obj in objects:
-        total_elec += obj.total
-        has_some = False
-        has_all = True
-        for attr in elec_attrs:
-            val = not getattr(obj, attr).startswith('no ')
-            has_all = has_all and val
-            has_some = has_some or val
-        if has_some:
-            total_some_elec += obj.total
-        if has_all:
-            elec_access_data['total_all_elec']['numerators']['this'] += obj.total
-        elif has_some:
-            elec_access_data['total_some_not_all_elec']['numerators']['this'] += obj.total
-        else:
-            elec_access_data['total_no_elec']['numerators']['this'] += obj.total
-
-    for data, total in zip((refuse_disp_data, elec_access_data),
-                           (total_ref, total_elec)):
-        for fields in data.values():
-            fields["values"] = {"this": percent(fields["numerators"]["this"], total)}
-
-    add_metadata(refuse_disp_data, db_model_ref)
-    add_metadata(elec_access_data, db_model_elec)
+    # elec_attrs = ['electricity for cooking',
+    #               'electricity for heating',
+    #               'electricity for lighting']
+    # db_model_elec = get_model_from_fields(elec_attrs, geo.geo_level)
+    # objects = get_objects_by_geo(db_model_elec, geo, session)
+    # total_elec = 0.0
+    # total_some_elec = 0.0
+    # elec_access_data = {
+    #     'total_all_elec': {
+    #         "name": "Have electricity for everything",
+    #         "numerators": {"this": 0.0},
+    #     },
+    #     'total_some_not_all_elec': {
+    #         "name": "Have electricity for some things",
+    #         "numerators": {"this": 0.0},
+    #     },
+    #     'total_no_elec': {
+    #         "name": "No electricity",
+    #         "numerators": {"this": 0.0},
+    #     }
+    # }
+    # for obj in objects:
+    #     total_elec += obj.total
+    #     has_some = False
+    #     has_all = True
+    #     for attr in elec_attrs:
+    #         val = not getattr(obj, attr).startswith('no ')
+    #         has_all = has_all and val
+    #         has_some = has_some or val
+    #     if has_some:
+    #         total_some_elec += obj.total
+    #     if has_all:
+    #         elec_access_data['total_all_elec']['numerators']['this'] += obj.total
+    #     elif has_some:
+    #         elec_access_data['total_some_not_all_elec']['numerators']['this'] += obj.total
+    #     else:
+    #         elec_access_data['total_no_elec']['numerators']['this'] += obj.total
+    #
+    # for data, total in zip((refuse_disp_data, elec_access_data),
+    #                        (total_ref, total_elec)):
+    #     for fields in data.values():
+    #         fields["values"] = {"this": percent(fields["numerators"]["this"], total)}
+    #
+    # add_metadata(refuse_disp_data, db_model_ref)
+    # add_metadata(elec_access_data, db_model_elec)
 
     # toilets
     toilet_data, total_toilet = get_stat_data(
@@ -677,12 +677,12 @@ def get_service_delivery_profile(geo, session):
                 "numerators": {"this": total_ref_sp},
                 "values": {"this": percent(total_ref_sp, total_ref)},
             },
-            'percentage_electricity_access': {
-                "name": "Have electricity for at least one of cooking, heating or lighting",
-                "numerators": {"this": total_some_elec},
-                "values": {"this": percent(total_some_elec, total_elec)},
-            },
-            'electricity_access_distribution': elec_access_data,
+#             'percentage_electricity_access': {
+#                 "name": "Have electricity for at least one of cooking, heating or lighting",
+#                 "numerators": {"this": total_some_elec},
+#                 "values": {"this": percent(total_some_elec, total_elec)},
+#             },
+#             'electricity_access_distribution': elec_access_data,
             'percentage_flush_toilet_access': {
                 "name": "Have access to flush or chemical toilets",
                 "numerators": {"this": total_flush_toilet},
