@@ -35,7 +35,7 @@ function MapItGeometryLoader() {
                 url = '/areas/MDB:' + code;
             }
 
-            url = url + '.geojson?generation=1';
+            url = url + '.geojson?generation=' + generation;
             var simplify = MAPIT.level_simplify[MAPIT.level_codes[level]];
             if (simplify) {
                 url = url + '&simplify_tolerance=' + simplify;
@@ -88,10 +88,11 @@ function MapItGeometryLoader() {
         });
     };
 
-    this.loadGeometryForGeo = function(geo_level, geo_code, success) {
+    this.loadGeometryForGeo = function(geo_level, geo_code, geo_version, success) {
         var mapit_type = MAPIT.level_codes[geo_level];
         var mapit_simplify = MAPIT.level_simplify[mapit_type];
-        var url = "/area/MDB:" + geo_code + "/feature.geojson?generation=1&simplify_tolerance=" + mapit_simplify +
+        var generation = MAPIT.generations[geo_version];
+        var url = "/area/MDB:" + geo_code + "/feature.geojson?generation=" + generation + "&simplify_tolerance=" + mapit_simplify +
                   "&type=" + mapit_type;
 
         d3.json(this.mapit_url + url, function(error, feature) {
@@ -101,9 +102,10 @@ function MapItGeometryLoader() {
         });
     };
 
-    this.loadGeometrySet = function(levelset, level, success) {
+    this.loadGeometrySet = function(levelset, level, geo_version, success) {
+        var generation = MAPIT.generations[geo_version];
         var url = '/areas/MDB-levels:' + levelset +
-                  '.geojson?generation=1&simplify_tolerance=' + MAPIT.level_simplify[MAPIT.level_codes[level]];
+                  '.geojson?generation=' + generation + '&simplify_tolerance=' + MAPIT.level_simplify[MAPIT.level_codes[level]];
 
         d3.json(self.mapit_url + url, function(error, geojson) {
             if (error) return console.warn(error);

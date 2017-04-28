@@ -10,7 +10,11 @@ log = logging.getLogger(__name__)
 
 SETTINGS = settings.WAZIMAP.setdefault('mapit', {})
 SETTINGS.setdefault('url', 'https://mapit.code4sa.org')
-SETTINGS.setdefault('generation', '1')
+SETTINGS.setdefault('generations', {
+    '2011': '1',
+    '2016': '2',
+    None: '2',
+})
 SETTINGS.setdefault('level_codes', {
     'ward': 'WD',
     'municipality': 'MN',
@@ -32,9 +36,10 @@ class GeoData(BaseGeoData):
         with two keys, 'properties' which is a dict of properties,
         and 'shape' which is a shapely shape (may be None).
         """
+
         mapit_level = SETTINGS['level_codes'][geo_level]
         url = SETTINGS['url'] + '/area/MDB:%s/feature.geojson?type=%s' % (geo_code, mapit_level)
-        url = url + '&generation=%s' % SETTINGS['generation']
+        url = url + '&generation=%s' % SETTINGS['generations'][version]
         simplify = SETTINGS['level_simplify'].get(mapit_level)
         if simplify:
             url = url + '&simplification_level=%s' % simplify
@@ -56,7 +61,7 @@ class GeoData(BaseGeoData):
         """
         Returns a list of geographies containing this point.
         """
-        resp = requests.get(SETTINGS['url'] + '/point/4326/%s,%s?generation=%s' % (longitude, latitude, SETTINGS['generation']), verify=False)
+        resp = requests.get(SETTINGS['url'] + '/point/4326/%s,%s?generation=%s' % (longitude, latitude, SETTINGS['generations'][version]), verify=False)
         resp.raise_for_status()
 
         geos = []
