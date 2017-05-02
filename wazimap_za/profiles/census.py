@@ -484,10 +484,10 @@ def get_households_profile(geo, session):
     informal = type_of_dwelling_dist['Shack']['numerators']['this']
 
     # household goods
-    # household_goods, _ = get_stat_data(
-    #         ['household goods'], geo, session,
-    #         recode=HOUSEHOLD_GOODS_RECODE,
-    #         key_order=sorted(HOUSEHOLD_GOODS_RECODE.values()))
+    household_goods, _ = get_stat_data(
+            ['household goods'], geo, session,
+            recode=HOUSEHOLD_GOODS_RECODE,
+            key_order=sorted(HOUSEHOLD_GOODS_RECODE.values()))
 
     return {'total_households': {
                 'name': 'Households',
@@ -505,7 +505,7 @@ def get_households_profile(geo, session):
                 'numerators': {'this': informal},
                 },
             'tenure_distribution': tenure_data,
-            # 'household_goods': household_goods,
+            'household_goods': household_goods,
             'annual_income_distribution': income_dist_data,
             'median_annual_income': {
                 'name': 'Average annual household income',
