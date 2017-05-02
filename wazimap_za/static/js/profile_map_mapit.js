@@ -27,12 +27,12 @@ ProfileMaps = function() {
         // peers
         var parents = _.keys(geo.parents);
         if (parents.length > 0) {
-            self.drawSurroundingFeatures(geo_level, parents[0]);
+          self.drawSurroundingFeatures(geo_level, parents[0], null, geo_version);
         }
 
         // every ancestor up to just before the root geo
         for (var i = 0; i < parents.length-1; i++) {
-            self.drawSurroundingFeatures(parents[i], parents[i+1]);
+          self.drawSurroundingFeatures(parents[i], parents[i+1], null, geo_version);
         }
 
         // children
