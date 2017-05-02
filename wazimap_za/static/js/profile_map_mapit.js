@@ -72,7 +72,7 @@ ProfileMaps = function() {
         // if we're loading districts, we also want to load metros, because
         // districts don't give us full coverage
         if (level == 'district') {
-            GeometryLoader.loadGeometrySet(parent + '|' + MAPIT.level_codes.municipality, 'municipality', geo_version, function(geojson) {
+            GeometryLoader.loadGeometrySet(parent + '|' + MAPIT.level_codes.municipality, 'municipality', parent_version, function(geojson) {
                 // only keep metros
                 geojson.features = _.filter(geojson.features, function(f) {
                     // only metro codes are three letters
