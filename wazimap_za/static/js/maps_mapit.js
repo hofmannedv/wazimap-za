@@ -14,6 +14,7 @@ function MapItGeometryLoader() {
         // load all country, province, municipality and ward geo data
         var counter = comparison.geoIDs.length;
         var featureMap = {};
+        var generation = MAPIT.generations[null];
 
         _.each(comparison.geoIDs, function(geoid) {
             // eg. province-WC

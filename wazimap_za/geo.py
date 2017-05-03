@@ -68,7 +68,8 @@ class GeoData(BaseGeoData):
         for feature in resp.json().itervalues():
             try:
                 geo = self.get_geography(feature['codes']['MDB'],
-                                         feature['type_name'].lower())
+                                         feature['type_name'].lower(),
+                                         version=version)
 
                 if not levels or geo.geo_level in levels:
                     geos.append(geo)
