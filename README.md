@@ -87,6 +87,16 @@ Let's suppose you want to add a new table with two fields: favourite colour and 
 5. Commit to git.
 6. All done!
 
+To dump all data tables at once, run
+```shell
+for t in `ls sql/[a-z]*.sql`
+do
+    pg_dump "postgres://wazimap_za@localhost/wazimap_za" \
+        -O -c --if-exists -t $(basename $t .sql) \
+      | egrep -v "(idle_in_transaction_session_timeout|row_security)" \
+      > sql/$(basename $t .sql).sql
+done
+```
 # License
 
 MIT License

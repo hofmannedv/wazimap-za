@@ -167,6 +167,7 @@
             <div class="column-third" id="chart-pie-service_delivery-water_source_distribution" data-stat-type="percentage" data-chart-title="Population by water source"></div>
         </section>
 
+        {% if geography.this.version == "2011" %}
         <section class="clearfix stat-row">
             <h2><a class="permalink" href="#electricity" id="electricity">Electricity <i class="fa fa-link"></i></a></h2>
             <aside>
@@ -176,6 +177,7 @@
             </div>
             <div class="column-third" id="chart-pie-service_delivery-electricity_access_distribution" data-stat-type="percentage" data-chart-title="Population by electricity usage"></div>
         </section>
+        {% endif %}
 
         <section class="clearfix stat-row">
             <h2><a class="permalink" href="#toilets" id="toilets">Toilet facilities <i class="fa fa-link"></i></a></h2>

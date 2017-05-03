@@ -1,3 +1,4 @@
+import copy
 import csv
 import re
 
@@ -19,7 +20,7 @@ CSV file and imports the data into the Wazi database, creating
 tables as necessary.
 """
 
-muni_re = re.compile('^[A-Z]{3}: .*')
+muni_re = re.compile('^[A-Z]{2,3}\d{0,3}\s*:\s.*$')
 
 
 class Command(BaseCommand):
@@ -46,7 +47,15 @@ class Command(BaseCommand):
             action='store_true',
             dest='dryrun',
             default=False,
-            help="Dry-run, don't actuall write any data.",
+            help="Dry-run, don't actually write any data.",
+        )
+        parser.add_argument(
+            '--geo-version',
+            action='store',
+            dest='geo_version',
+            default=None,
+            required=True,
+            help='The geography demarcation version that this table refers to'
         )
 
     def debug(self, msg):
@@ -59,7 +68,10 @@ class Command(BaseCommand):
         self.verbosity = options.get('verbosity', 1)
         self.table_id = options.get('table')
         self.dryrun = options.get('dryrun', False)
-        self.provinces = {g.name.lower(): g for g in geo_data.geo_model.objects.filter(geo_level='province')}
+        self.geo_version = options.get('geo_version')
+        self.provinces = {g.name.lower(): g for g in geo_data.geo_model.objects.filter(version=self.geo_version).filter(geo_level='province')}
+        self.districts = {g.name.lower(): g for g in geo_data.geo_model.objects.filter(version=self.geo_version).filter(geo_level='district')}
+        self.metros = {g.name.lower(): g for g in geo_data.geo_model.objects.filter(version=self.geo_version).filter(geo_level='municipality').filter(parent_level='province')}
 
         if self.dryrun:
             self.stdout.write("DRY RUN: not actuall writing data")
@@ -158,7 +170,7 @@ class Command(BaseCommand):
         self.reader = csv.reader(self.f, delimiter=",")
         # skip headers
         for row in self.reader:
-            if row[0] == 'Filters:':
+            if row and row[0] == 'Filters:':
                 break
 
         # skip filter rows
@@ -239,8 +251,11 @@ class Command(BaseCommand):
     def store_values(self):
         session = get_session()
         count = 0
+        stored_values = {}
 
         for geo_name, values in self.read_rows():
+            if all(not val for val in values):
+                break
             count += 1
             geo_level, geo_code = self.determine_geo_id(geo_name)
 
@@ -251,16 +266,26 @@ class Command(BaseCommand):
                 kwargs = {
                     'geo_level': geo_level,
                     'geo_code': geo_code,
+                    'geo_version': self.geo_version,
                 }
 
                 kwargs.update(dict((f, v) for f, v in zip(self.fields, category)))
                 if value == '-':
                     value = '0'
-                kwargs['total'] = round(float(value.replace(',', '')))
+                total = round(float(value.replace(',', '')))
+                stored_key = tuple(sorted(list(kwargs.items())))
+                if stored_key in stored_values:
+                    if stored_values[stored_key] == total:
+                        self.stdout.write("Skipping already-added value for key %r" % list(stored_key))
+                        continue
+                    else:
+                        raise Exception("Different value %r != %r for duplicate key %r" % (stored_values[stored_key], total, stored_key))
+                stored_values[stored_key] = total
+                kwargs['total'] = total
 
                 # create and add the row
                 self.debug(kwargs)
-                entry = self.table.get_model(geo_level)(**kwargs)
+                entry = self.table.model(**kwargs)
                 if not self.dryrun:
                     session.add(entry)
 
@@ -280,22 +305,33 @@ class Command(BaseCommand):
         level = None
         if ':' in geo_name:
             pre, code = geo_name.split(':', 1)
+            pre = pre.strip(); code = code.strip()
         else:
             pre = code = geo_name
 
-        if len(pre) in (5, 6) or muni_re.match(geo_name):
+        if muni_re.match(geo_name):
             level = 'municipality'
             code = pre
         elif 'Ward' in geo_name:
             level = 'ward'
             code = pre
-        elif len(pre) >= 7:
-            level = 'province'
-            code = self.provinces[geo_name.strip().lower()].geo_code
         elif geo_name.startswith('DC'):
             level = 'district'
             code = pre.strip()
+
         else:
-            raise ValueError("Cannot recognize the geo level of %s" % geo_name)
+            matches = []
+            for geo_level, options in [('province', self.provinces),
+                                       ('district', self.districts),
+                                       ('municipality', self.metros)]:
+                match = options.get(geo_name.strip().lower(), None)
+                if match:
+                    matches.append((geo_level, match.geo_code))
+            if len(matches) == 0:
+                raise ValueError("Cannot recognize the geo level of %s" % geo_name)
+            elif len(matches) == 1:
+                (level, code) = matches[0]
+            else:
+                raise ValueError("Cannot recognize single geo level of %s: %s" % (geo_name, matches))
 
         return [level, code]
