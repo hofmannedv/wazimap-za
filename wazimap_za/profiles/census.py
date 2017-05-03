@@ -602,53 +602,50 @@ def get_service_delivery_profile(geo, session):
         total_ref += obj.total
         if attr.startswith('Removed by local authority'):
             total_ref_sp += obj.total
+    set_percent_values(refuse_disp_data, total_ref)
+    add_metadata(refuse_disp_data, db_model_ref)
 
     # electricity
-    # elec_attrs = ['electricity for cooking',
-    #               'electricity for heating',
-    #               'electricity for lighting']
-    # db_model_elec = get_model_from_fields(elec_attrs, geo.geo_level)
-    # objects = get_objects_by_geo(db_model_elec, geo, session)
-    # total_elec = 0.0
-    # total_some_elec = 0.0
-    # elec_access_data = {
-    #     'total_all_elec': {
-    #         "name": "Have electricity for everything",
-    #         "numerators": {"this": 0.0},
-    #     },
-    #     'total_some_not_all_elec': {
-    #         "name": "Have electricity for some things",
-    #         "numerators": {"this": 0.0},
-    #     },
-    #     'total_no_elec': {
-    #         "name": "No electricity",
-    #         "numerators": {"this": 0.0},
-    #     }
-    # }
-    # for obj in objects:
-    #     total_elec += obj.total
-    #     has_some = False
-    #     has_all = True
-    #     for attr in elec_attrs:
-    #         val = not getattr(obj, attr).startswith('no ')
-    #         has_all = has_all and val
-    #         has_some = has_some or val
-    #     if has_some:
-    #         total_some_elec += obj.total
-    #     if has_all:
-    #         elec_access_data['total_all_elec']['numerators']['this'] += obj.total
-    #     elif has_some:
-    #         elec_access_data['total_some_not_all_elec']['numerators']['this'] += obj.total
-    #     else:
-    #         elec_access_data['total_no_elec']['numerators']['this'] += obj.total
-    #
-    # for data, total in zip((refuse_disp_data, elec_access_data),
-    #                        (total_ref, total_elec)):
-    #     for fields in data.values():
-    #         fields["values"] = {"this": percent(fields["numerators"]["this"], total)}
-    #
-    # add_metadata(refuse_disp_data, db_model_ref)
-    # add_metadata(elec_access_data, db_model_elec)
+    if geo.version == '2011':
+        elec_attrs = ['electricity for cooking',
+                      'electricity for heating',
+                      'electricity for lighting']
+        db_model_elec = get_model_from_fields(elec_attrs, geo.geo_level)
+        objects = get_objects_by_geo(db_model_elec, geo, session)
+        total_elec = 0.0
+        total_some_elec = 0.0
+        elec_access_data = {
+            'total_all_elec': {
+                "name": "Have electricity for everything",
+                "numerators": {"this": 0.0},
+            },
+            'total_some_not_all_elec': {
+                "name": "Have electricity for some things",
+                "numerators": {"this": 0.0},
+            },
+            'total_no_elec': {
+                "name": "No electricity",
+                "numerators": {"this": 0.0},
+            }
+        }
+        for obj in objects:
+            total_elec += obj.total
+            has_some = False
+            has_all = True
+            for attr in elec_attrs:
+                val = not getattr(obj, attr).startswith('no ')
+                has_all = has_all and val
+                has_some = has_some or val
+            if has_some:
+                total_some_elec += obj.total
+            if has_all:
+                elec_access_data['total_all_elec']['numerators']['this'] += obj.total
+            elif has_some:
+                elec_access_data['total_some_not_all_elec']['numerators']['this'] += obj.total
+            else:
+                elec_access_data['total_no_elec']['numerators']['this'] += obj.total
+        set_percent_values(elec_access_data, total_elec)
+        add_metadata(elec_access_data, db_model_elec)
 
     # toilets
     toilet_data, total_toilet = get_stat_data(
@@ -665,36 +662,46 @@ def get_service_delivery_profile(geo, session):
         if key == 'None':
             total_no_toilet += data['numerators']['this']
 
-    return {'water_source_distribution': water_src_data,
-            'percentage_water_from_service_provider': {
-                "name": "Are getting water from a regional or local service provider",
-                "numerators": {"this": total_water_sp},
-                "values": {"this": percent(total_water_sp, total_wsrc)},
-            },
-            'refuse_disposal_distribution': refuse_disp_data,
-            'percentage_ref_disp_from_service_provider': {
-                "name": "Are getting refuse disposal from a local authority or private company",
-                "numerators": {"this": total_ref_sp},
-                "values": {"this": percent(total_ref_sp, total_ref)},
-            },
-#             'percentage_electricity_access': {
-#                 "name": "Have electricity for at least one of cooking, heating or lighting",
-#                 "numerators": {"this": total_some_elec},
-#                 "values": {"this": percent(total_some_elec, total_elec)},
-#             },
-#             'electricity_access_distribution': elec_access_data,
-            'percentage_flush_toilet_access': {
-                "name": "Have access to flush or chemical toilets",
-                "numerators": {"this": total_flush_toilet},
-                "values": {"this": percent(total_flush_toilet, total_toilet)},
-            },
-            'percentage_no_toilet_access': {
-                "name": "Have no access to any toilets",
-                "numerators": {"this": total_no_toilet},
-                "values": {"this": percent(total_no_toilet, total_toilet)},
-            },
-            'toilet_facilities_distribution': toilet_data,
+    profile = {
+        'water_source_distribution': water_src_data,
+        'percentage_water_from_service_provider': {
+            "name": "Are getting water from a regional or local service provider",
+            "numerators": {"this": total_water_sp},
+            "values": {"this": percent(total_water_sp, total_wsrc)},
+        },
+        'refuse_disposal_distribution': refuse_disp_data,
+        'percentage_ref_disp_from_service_provider': {
+            "name": "Are getting refuse disposal from a local authority or private company",
+            "numerators": {"this": total_ref_sp},
+            "values": {"this": percent(total_ref_sp, total_ref)},
+        },
+        'percentage_flush_toilet_access': {
+            "name": "Have access to flush or chemical toilets",
+            "numerators": {"this": total_flush_toilet},
+            "values": {"this": percent(total_flush_toilet, total_toilet)},
+        },
+        'percentage_no_toilet_access': {
+            "name": "Have no access to any toilets",
+            "numerators": {"this": total_no_toilet},
+            "values": {"this": percent(total_no_toilet, total_toilet)},
+        },
+        'toilet_facilities_distribution': toilet_data,
     }
+    if geo.version == '2011':
+        profile.update({
+            'percentage_electricity_access': {
+                "name": "Have electricity for at least one of cooking, heating or lighting",
+                "numerators": {"this": total_some_elec},
+                "values": {"this": percent(total_some_elec, total_elec)},
+            },
+            'electricity_access_distribution': elec_access_data,
+        })
+    return profile
+
+
+def set_percent_values(data, total):
+    for fields in data.values():
+        fields["values"] = {"this": percent(fields["numerators"]["this"], total)}
 
 
 def get_education_profile(geo, session):
@@ -936,14 +943,14 @@ def get_child_households_profile(geo, session):
             'values': {'this': median_income},
         },
         # 'household_size_distribution': household_size_dist,
-        # 'head_of_household': {
-        #     'gender_distribution': head_gender_dist,
-        #     'female': {
-        #         'name': 'Child-headed households with women as their head',
-        #         'values': {'this': percent(female_heads, total_households)},
-        #         'numerators': {'this': female_heads},
-        #         },
-        # },
+        'head_of_household': {
+            'gender_distribution': head_gender_dist,
+            'female': {
+                'name': 'Child-headed households with women as their head',
+                'values': {'this': percent(female_heads, total_households)},
+                'numerators': {'this': female_heads},
+                },
+        },
     }
 
 
