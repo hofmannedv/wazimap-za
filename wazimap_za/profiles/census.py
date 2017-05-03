@@ -763,34 +763,34 @@ def get_children_profile(geo, session):
                 '>= 65': 'Adults (>= 18)'})
 
     # parental survival
-    # survival, total = get_stat_data(
-    #     ['mother alive', 'father alive'], geo, session)
-    #
-    # parental_survival_dist = OrderedDict()
-    # parental_survival_dist['metadata'] = survival['metadata']
-    #
-    # parental_survival_dist['Both parents'] = survival['Yes']['Yes']
-    # parental_survival_dist['Both parents']['name'] = 'Both parents'
-    #
-    # parental_survival_dist['Neither parent'] = survival['No']['No']
-    # parental_survival_dist['Neither parent']['name'] = 'Neither parent'
-    #
-    # parental_survival_dist['One parent'] = survival['Yes']['No']
-    # parental_survival_dist['One parent']['numerators']['this'] += survival['No']['Yes']['numerators']['this']
-    #
-    # rest = (total - parental_survival_dist['Both parents']['values']['this']
-    #         - parental_survival_dist['Neither parent']['values']['this']
-    #         - parental_survival_dist['One parent']['values']['this'])
-    #
-    # parental_survival_dist['Uncertain'] = {
-    #     'name': 'Uncertain',
-    #     'numerators': {'this': rest},
-    # }
+    survival, total = get_stat_data(
+        ['mother alive', 'father alive'], geo, session)
+
+    parental_survival_dist = OrderedDict()
+    parental_survival_dist['metadata'] = survival['metadata']
+
+    parental_survival_dist['Both parents'] = survival['Yes']['Yes']
+    parental_survival_dist['Both parents']['name'] = 'Both parents'
+
+    parental_survival_dist['Neither parent'] = survival['No']['No']
+    parental_survival_dist['Neither parent']['name'] = 'Neither parent'
+
+    parental_survival_dist['One parent'] = survival['Yes']['No']
+    parental_survival_dist['One parent']['numerators']['this'] += survival['No']['Yes']['numerators']['this']
+
+    rest = (total - parental_survival_dist['Both parents']['values']['this']
+            - parental_survival_dist['Neither parent']['values']['this']
+            - parental_survival_dist['One parent']['values']['this'])
+
+    parental_survival_dist['Uncertain'] = {
+        'name': 'Uncertain',
+        'numerators': {'this': rest},
+    }
 
     # calculate percentage
-    # for data in parental_survival_dist.itervalues():
-    #     if 'numerators' in data:
-    #         data['values'] = {'this': percent(data['numerators']['this'], total)}
+    for data in parental_survival_dist.itervalues():
+        if 'numerators' in data:
+            data['values'] = {'this': percent(data['numerators']['this'], total)}
 
     # gender
     gender_dist, _ = get_stat_data(
@@ -860,12 +860,12 @@ def get_children_profile(geo, session):
                 "values": {"this": child_adult_dist['Children (< 18)']['numerators']['this']}
             },
             'gender_distribution': gender_dist,
-#            'parental_survival_distribution': parental_survival_dist,
-#            'percent_no_parent': {
-#                "name": "Of children 14 and under have no living biological parents",
-#                "values": parental_survival_dist["Neither parent"]['values'],
-#                "numerators": parental_survival_dist["Neither parent"]['numerators'],
-#            },
+            'parental_survival_distribution': parental_survival_dist,
+            'percent_no_parent': {
+                "name": "Of children 14 and under have no living biological parents",
+                "values": parental_survival_dist["Neither parent"]['values'],
+                "numerators": parental_survival_dist["Neither parent"]['numerators'],
+            },
         },
         'school': {
             'school_attendance_distribution': school_attendance_dist,
