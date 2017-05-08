@@ -24,14 +24,14 @@ POPULATION_GROUP_ORDER = ('Black African', 'Coloured', 'Indian or Asian', 'White
 GENDER_ORDER = ('Female', 'Male')
 
 
-def get_profile(geo_code, geo_level, profile_name=None):
+def get_profile(geo, profile_name, request):
     session = get_session()
 
     try:
-        geo_summary_levels = geo_data.get_summary_geo_info(geo_code, geo_level)
+        geo_summary_levels = geo_data.get_summary_geo_info(geo)
         data = {}
         sections = list(PROFILE_SECTIONS)
-        if geo_level not in ['country', 'province', 'district', 'municipality']:
+        if geo.geo_level not in ['country', 'province', 'district', 'municipality']:
             pass
             # Raise error as we don't have this data
 
@@ -39,12 +39,12 @@ def get_profile(geo_code, geo_level, profile_name=None):
             function_name = 'get_%s_profile' % section
             if function_name in globals():
                 func = globals()[function_name]
-                data[section] = func(geo_code, geo_level, session)
+                data[section] = func(geo, session)
 
                 # get profiles for province and/or country
                 for level, code in geo_summary_levels:
                     # merge summary profile into current geo profile
-                    merge_dicts(data[section], func(code, level, session, comparative=True), level)
+                    merge_dicts(data[section], func(geo, session, comparative=True), level)
 
         return data
 
@@ -52,22 +52,22 @@ def get_profile(geo_code, geo_level, profile_name=None):
         session.close()
 
 
-def get_demographics_profile(geo_code, geo_level, session, comparative=False):
+def get_demographics_profile(geo, session, comparative=False):
     youth_pop_table = get_datatable('youth_population')
     youth_pop, pop_total = youth_pop_table.get_stat_data(
-        geo_level, geo_code, total='total_pop', percent='False')
+        geo, total='total_pop', percent='False')
 
     youth_pop_dist_data, _ = get_stat_data(
-        ['age in completed years'], geo_level, geo_code, session,
+        ['age in completed years'], geo, session,
         table_name='youth_gender_age_in_completed_years')
 
     youth_gender_data, _ = get_stat_data(
-        ['gender'], geo_level, geo_code, session,
+        ['gender'], geo, session,
         table_name='youth_gender_population_group',
         key_order=GENDER_ORDER)
 
     youth_pop_group_data, _ = get_stat_data(
-        ['population group'], geo_level, geo_code, session,
+        ['population group'], geo, session,
         table_name='youth_population_group_gender',
         key_order=POPULATION_GROUP_ORDER)
 
@@ -90,7 +90,6 @@ def get_demographics_profile(geo_code, geo_level, session, comparative=False):
     }
 
     # The following info is displayed in the block over the map
-    geo = geo_data.get_geography(geo_code, geo_level)
     if geo.square_kms:
         final_data['population_density'] = {
             'name': "youth per square kilometre",
@@ -100,19 +99,19 @@ def get_demographics_profile(geo_code, geo_level, session, comparative=False):
     return final_data
 
 
-def get_education_profile(geo_code, geo_level, session, comparative=False):
+def get_education_profile(geo, session, comparative=False):
     youth_completed_grade9, _ = get_stat_data(
-        ['completed grade9'], geo_level, geo_code, session,
+        ['completed grade9'], geo, session,
         key_order=('Completed', 'Not completed'),
         table_name='youth_age_16_to_17_gender_completed_grade9')
 
     youth_completed_grade9_by_gender, _ = get_stat_data(
-        ['completed grade9', 'gender'], geo_level, geo_code, session,
+        ['completed grade9', 'gender'], geo, session,
         percent_grouping=['gender'], slices=['Completed'],
         table_name='youth_age_16_to_17_gender_completed_grade9')
 
     youth_education_level, youth_pop_20_to_24 = get_stat_data(
-        ['education level'], geo_level, geo_code, session,
+        ['education level'], geo, session,
         table_name='youth_age_20_to_24_gender_education_level',
         recode=EDUCATION_LEVELS_RECODE,
         key_order=(
@@ -127,90 +126,90 @@ def get_education_profile(geo_code, geo_level, session, comparative=False):
         youth_education_level['Any tertiary']['numerators']['this'])
 
     youth_education_attendance, _ = get_stat_data(
-        ['attendance'], geo_level, geo_code, session,
+        ['attendance'], geo, session,
         table_name='youth_education_attendance_gender_age_incompleted_years')
 
     youth_education_attending_by_age, _ = get_stat_data(
-        ['attendance', 'age in completed years'], geo_level, geo_code, session,
+        ['attendance', 'age in completed years'], geo, session,
         percent_grouping=['age in completed years'], slices=['Yes'],
         table_name='youth_education_attendance_age_incompleted_years_gender')
 
     youth_education_attending_by_gender, _ = get_stat_data(
-        ['attendance', 'gender'], geo_level, geo_code, session,
+        ['attendance', 'gender'], geo, session,
         percent_grouping=['gender'], slices=['Yes'],
         table_name='youth_education_attendance_gender_age_incompleted_years')
 
     youth_average_mean_score_by_year, _ = get_stat_data(
-        ['year'], geo_level, geo_code, session,
+        ['year'], geo, session,
         table_name='youth_average_mean_score_by_year',
         percent=False)
 
     youth_average_language_score_by_year, _ = get_stat_data(
-        ['year'], geo_level, geo_code, session,
+        ['year'], geo, session,
         table_name='youth_average_language_score_by_year',
         percent=False)
 
     youth_average_maths_score_by_year, _ = get_stat_data(
-        ['year'], geo_level, geo_code, session,
+        ['year'], geo, session,
         table_name='youth_average_maths_score_by_year',
         percent=False)
 
     youth_language_outcome_latest, _ = get_stat_data(
-        ['year', 'outcome'], geo_level, geo_code, session,
+        ['year', 'outcome'], geo, session,
         table_name='youth_language_outcome_by_year',
         key_order={'outcome': ['Passed', 'Failed']},
         percent=False, slices=['2015'])
 
     youth_maths_outcome_latest, _ = get_stat_data(
-        ['year', 'outcome'], geo_level, geo_code, session,
+        ['year', 'outcome'], geo, session,
         table_name='youth_maths_outcome_by_year',
         key_order={'outcome': ['Passed', 'Failed']},
         percent=False, slices=['2015'])
 
     youth_matric_outcome_by_year, _ = get_stat_data(
-        ['year'], geo_level, geo_code, session,
+        ['year'], geo, session,
         table_name='youth_matric_outcome_by_year',
         only={'outcome': ['Passed']},
         percent=False)
 
     youth_matric_outcome_latest, _ = get_stat_data(
-        ['year', 'outcome'], geo_level, geo_code, session,
+        ['year', 'outcome'], geo, session,
         table_name='youth_matric_outcome_by_year',
         key_order={'outcome': ['Passed', 'Failed']},
         percent=False, slices=['2015'])
 
     youth_matric_throughput_rate_by_year, _ = get_stat_data(
-        ['year'], geo_level, geo_code, session,
+        ['year'], geo, session,
         table_name='youth_matric_passes_as_percentage_of_grade8_enrolment_by_year',
         only={'outcome': ['Passed']},
         percent=False)
 
     youth_matric_throughput_latest, _ = get_stat_data(
-        ['year', 'outcome'], geo_level, geo_code, session,
+        ['year', 'outcome'], geo, session,
         table_name='youth_matric_passes_as_percentage_of_grade8_enrolment_by_year',
         key_order={'outcome': ['Passed', 'Dropped out or failed']},
         percent=False, slices=['2015'])
 
     youth_bachelor_passes_by_year, _ = get_stat_data(
-        ['year'], geo_level, geo_code, session,
+        ['year'], geo, session,
         table_name='youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year',
         only={'outcome': ['Bachelor pass']},
         percent=False)
 
     youth_bachelor_outcome_latest, _ = get_stat_data(
-        ['year', 'outcome'], geo_level, geo_code, session,
+        ['year', 'outcome'], geo, session,
         table_name='youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year',
         key_order={'outcome': ['Bachelor pass', 'No bachelor pass']},
         percent=False, slices=['2015'])
 
     youth_student_dropout_rate_by_year, _ = get_stat_data(
-        ['year'], geo_level, geo_code, session,
+        ['year'], geo, session,
         table_name='youth_student_dropout_rate_by_year',
         only={'outcome': ['Dropped out']},
         percent=False)
 
     youth_student_dropout_rate_latest, _ = get_stat_data(
-        ['year', 'outcome'], geo_level, geo_code, session,
+        ['year', 'outcome'], geo, session,
         table_name='youth_student_dropout_rate_by_year',
         percent=False, slices=['2015'])
 
@@ -277,13 +276,13 @@ def get_education_profile(geo_code, geo_level, session, comparative=False):
     return final_data
 
 
-def get_economic_opportunities_profile(geo_code, geo_level, session, comparative=False):
+def get_economic_opportunities_profile(geo, session, comparative=False):
     youth_labour_force_official, _ = get_stat_data(
-        ['employment status'], geo_level, geo_code, session,
+        ['employment status'], geo, session,
         table_name='youth_labour_force_official_gender')
 
     youth_labour_force_expanded, _ = get_stat_data(
-        ['employment status'], geo_level, geo_code, session,
+        ['employment status'], geo, session,
         table_name='youth_labour_force_expanded_gender')
 
     youth_unemployment_by_definition = OrderedDict((
@@ -301,22 +300,22 @@ def get_economic_opportunities_profile(geo_code, geo_level, session, comparative
     youth_unemployment_by_definition['metadata'] = youth_labour_force_official['metadata']
 
     youth_employment_status, _ = get_stat_data(
-        ['employment status'], geo_level, geo_code, session,
+        ['employment status'], geo, session,
         key_order=('Employed', 'Unemployed', 'Discouraged work-seeker', 'Other not economically active'),
         table_name='youth_employment_status_gender')
 
     youth_emp_edu_train_status, _ = get_stat_data(
-        ['employment education training'], geo_level, geo_code, session,
+        ['employment education training'], geo, session,
         key_order=('Employed', 'School/post-school', 'NEET'),
         table_name='youth_employment_education_training_gender')
 
     youth_neet_by_gender, _ = get_stat_data(
-        ['employment education training', 'gender'], geo_level, geo_code, session,
+        ['employment education training', 'gender'], geo, session,
         percent_grouping=['gender'], slices=['NEET'],
         table_name='youth_employment_education_training_gender')
 
     youth_household_employment, _ = get_stat_data(
-        ['household employment'], geo_level, geo_code, session,
+        ['household employment'], geo, session,
         key_order=('No employed adult', 'At least one employed adult'),
         table_name='youth_household_employment')
 
@@ -345,65 +344,65 @@ def get_economic_opportunities_profile(geo_code, geo_level, session, comparative
     return final_data
 
 
-def get_living_environment_profile(geo_code, geo_level, session, comparative=False):
+def get_living_environment_profile(geo, session, comparative=False):
     youth_electricity_access, _ = get_stat_data(
-        ['electricity access'], geo_level, geo_code, session,
+        ['electricity access'], geo, session,
         key_order=('No electricity', 'Have electricity for some things', 'Have electricity for everything'),
         table_name='youth_electricity_access')
     youth_toilet_access, _ = get_stat_data(
-        ['toilet access'], geo_level, geo_code, session,
+        ['toilet access'], geo, session,
         key_order=('Flush toilet', 'Pit latrine-ventilated', 'Chemical toilet', 'Unventilated pit latrine/Bucket toilet', 'Other', 'No toilet facilities'),
         table_name='youth_toilet_access')
     youth_water_access, _ = get_stat_data(
-        ['water access'], geo_level, geo_code, session,
+        ['water access'], geo, session,
         key_order=('On site', '< 1km', '> 1km', 'No piped water'),
         table_name='youth_water_access')
 
     youth_dwelling_type, _ = get_stat_data(
-        ['dwelling type'], geo_level, geo_code, session,
+        ['dwelling type'], geo, session,
         key_order=('Formal', 'Informal not in backyard', 'Informal in backyard', 'Traditional', 'Other'),
         table_name='youth_dwelling_type')
 
     youth_household_crowded, _ = get_stat_data(
-        ['household crowded'], geo_level, geo_code, session,
+        ['household crowded'], geo, session,
         key_order=('Overcrowded', 'Non-overcrowded'),
         table_name='youth_household_crowded')
 
     youth_income_poverty, _ = get_stat_data(
-        ['income poverty'], geo_level, geo_code, session,
+        ['income poverty'], geo, session,
         key_order=('Income-poor', 'Non-poor'),
         table_name='youth_income_poverty_gender_population_group')
 
     youth_income_poor_by_pop_group, _ = get_stat_data(
-        ['income poverty', 'population group'], geo_level, geo_code, session,
+        ['income poverty', 'population group'], geo, session,
         percent_grouping=['population group'], slices=['Income-poor'],
         key_order={'population group': POPULATION_GROUP_ORDER},
         table_name='youth_income_poverty_population_group_gender')
 
     youth_income_poor_by_gender, _ = get_stat_data(
-        ['income poverty', 'gender'], geo_level, geo_code, session,
+        ['income poverty', 'gender'], geo, session,
         percent_grouping=['gender'], slices=['Income-poor'],
         table_name='youth_income_poverty_gender_population_group')
 
     youth_multid_poverty, _ = get_stat_data(
-        ['multidimensionally poor'], geo_level, geo_code, session,
+        ['multidimensionally poor'], geo, session,
         key_order=('Multidimensionally poor', 'Non-poor'),
         table_name='youth_multidimensionally_poor_gender_population_group')
 
     youth_multid_poor_by_pop_group, _ = get_stat_data(
-        ['multidimensionally poor', 'population group'], geo_level, geo_code, session,
+        ['multidimensionally poor', 'population group'], geo, session,
         percent_grouping=['population group'], slices=['Multidimensionally poor'],
         key_order={'population group': POPULATION_GROUP_ORDER},
         table_name='youth_multidimensionally_poor_population_group_gender')
 
     youth_multid_poor_by_gender, _ = get_stat_data(
-        ['multidimensionally poor', 'gender'], geo_level, geo_code, session,
+        ['multidimensionally poor', 'gender'], geo, session,
         percent_grouping=['gender'], slices=['Multidimensionally poor'],
         table_name='youth_multidimensionally_poor_gender_population_group')
 
     youth_mpi_table = get_datatable('youth_mpi_score')
     youth_mpi_score, _ = youth_mpi_table.get_stat_data(
-        geo_level, geo_code, percent=False)
+        geo, percent=False)
     youth_mpi_score['youth_mpi_score']['name'] = 'Youth MPI score (0-1)*'
 
 
@@ -445,21 +444,21 @@ def get_living_environment_profile(geo_code, geo_level, session, comparative=Fal
     return final_data
 
 
-def get_safety_profile(geo_code, geo_level, session, comparative=False):
+def get_safety_profile(geo, session, comparative=False):
 
     def rate_per_10k_pop(value, population):
         return value / population * 10000
 
     youth_pop_table = get_datatable('youth_population')
     youth, pop_total = youth_pop_table.get_stat_data(
-        geo_level, geo_code, total='total_pop', percent='False')
+        geo, total='total_pop', percent='False')
 
     victims_by_age_group_per_10k_pop, total_victims_per_10k_pop = get_stat_data(
-        ['age group'], geo_level, geo_code, session,
+        ['age group'], geo, session,
         table_name='crimes_victims_age_group',
         percent=False)
     accused_by_age_group_per_10k_pop, total_accused_per_10k_pop = get_stat_data(
-        ['age group'], geo_level, geo_code, session,
+        ['age group'], geo, session,
         table_name='crimes_accused_age_group',
         percent=False)
 
@@ -467,41 +466,41 @@ def get_safety_profile(geo_code, geo_level, session, comparative=False):
     youth_accused_per_10k_youth = accused_by_age_group_per_10k_pop['15-24']['values']['this']
 
     youth_victims_by_offence_per_10k_youth, _ = get_stat_data(
-        ['type of offence'], geo_level, geo_code, session,
+        ['type of offence'], geo, session,
         table_name='youth_victims_offence_type')
     youth_accused_by_offence_per_10k_youth, _ = get_stat_data(
-        ['type of offence'], geo_level, geo_code, session,
+        ['type of offence'], geo, session,
         table_name='youth_accused_offence_type')
 
     youth_victims_by_pop_group_per_10k, _ = get_stat_data(
-        ['population group'], geo_level, geo_code, session,
+        ['population group'], geo, session,
         table_name='youth_victims_population_group',
         percent=False)
     youth_accused_by_pop_group_per_10k, _ = get_stat_data(
-        ['population group'], geo_level, geo_code, session,
+        ['population group'], geo, session,
         table_name='youth_accused_population_group',
         percent=False)
 
     youth_victims_by_gender_per_10k, _ = get_stat_data(
-        ['gender'], geo_level, geo_code, session,
+        ['gender'], geo, session,
         table_name='youth_victims_gender',
         percent=False)
     youth_accused_by_gender_per_10k, _ = get_stat_data(
-        ['gender'], geo_level, geo_code, session,
+        ['gender'], geo, session,
         table_name='youth_accused_gender',
         percent=False)
 
     youth_victims_by_year, _ = get_stat_data(
-        ['year'], geo_level, geo_code, session,
+        ['year'], geo, session,
         table_name='youth_victims_year',
         percent=False)
     youth_accused_by_year, _ = get_stat_data(
-        ['year'], geo_level, geo_code, session,
+        ['year'], geo, session,
         table_name='youth_accused_year',
         percent=False)
 
     crimes_by_year, _ = get_stat_data(
-        ['type of crime', 'year'], geo_level, geo_code, session,
+        ['type of crime', 'year'], geo, session,
         table_name='crimes_type_of_crime_year',
         percent=False)
 
@@ -547,9 +546,9 @@ def get_safety_profile(geo_code, geo_level, session, comparative=False):
     return final_data
 
 
-def get_health_profile(geo_code, geo_level, session, comparative=False):
+def get_health_profile(geo, session, comparative=False):
     youth_difficulty_by_function, _ = get_stat_data(
-        ['function type'], geo_level, geo_code, session,
+        ['function type'], geo, session,
         key_order=['Seeing, even when using eye glasses', 'Hearing, even when using a hearing aid', 'Communication', 'Walking', 'Remembering', 'Self care'],
         table_name='youth_difficulty_functioning')
 
@@ -561,33 +560,33 @@ def get_health_profile(geo_code, geo_level, session, comparative=False):
         'youth_difficulty_by_function': youth_difficulty_by_function
     }
 
-    if geo_level != 'ward':
+    if geo.geo_level != 'ward':
         # We don't have data on ward level for the following
         youth_pregnancy_rate_by_year, _ = get_stat_data(
-            ['year'], geo_level, geo_code, session,
+            ['year'], geo, session,
             table_name='youth_pregnancy_rate_year',
             percent=False)
 
         youth_delivery_rate_by_year, _ = get_stat_data(
-            ['year'], geo_level, geo_code, session,
+            ['year'], geo, session,
             table_name='youth_delivery_rate_year',
             percent=False)
 
         youth_female_causes_of_death_perc, _ = get_stat_data(
-            ['cause of death'], geo_level, geo_code, session,
+            ['cause of death'], geo, session,
             order_by='-total',
             table_name='youth_causes_of_death_female')
         youth_male_causes_of_death_perc, _ = get_stat_data(
-            ['cause of death'], geo_level, geo_code, session,
+            ['cause of death'], geo, session,
             order_by='-total',
             table_name='youth_causes_of_death_male')
 
         youth_female_causes_of_death, _ = get_stat_data(
-            ['cause of death'], geo_level, geo_code, session,
+            ['cause of death'], geo, session,
             order_by='-total',
             table_name='youth_causes_of_death_female')
         youth_male_causes_of_death, _ = get_stat_data(
-            ['cause of death'], geo_level, geo_code, session,
+            ['cause of death'], geo, session,
             order_by='-total',
             table_name='youth_causes_of_death_male')
 
