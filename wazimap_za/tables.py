@@ -55,10 +55,18 @@ FieldTable(['age group'], id='crimes_victims_age_group', universe='Victims of cr
 FieldTable(['age group'], id='crimes_accused_age_group', universe='Accused of crime per 10,000 population in age group', year='2015', has_total=False)
 
 # Elections
+
+FieldTable(['party'], universe='Votes', id='party_votes_municipal_2016', description='2016 Municipal Election results',
+           dataset='2016 Municipal Elections', year='2016')
 FieldTable(['party'], universe='Votes', id='party_votes_national_2014', description='2014 National Election results',
            dataset='2014 National Elections', year='2014')
 FieldTable(['party'], universe='Votes', id='party_votes_provincial_2014', description='2014 Provincial Election results',
            dataset='2014 Provincial Elections', year='2014')
+# http://www.elections.org.za/content/Elections/Municipal-elections-results/
+# Report type: Downloadable detailed results - Displays the number of votes cast, including spoilt votes for each party in the selected municipality and voting district. Reports available in (Excel/CSV) - Levels: P,M,W,B,VD
+# Download for each province, selecting all municipalities of that province as the criteria
+# wards: For each ward, get the sum of TotalValidVotes for each voting district for the PR and Ward BallotTypes.
+# bigger geographies: get the sum of wards making up that geography
 FieldTable(['party'], universe='Votes', id='party_votes_municipal_2011', description='2011 Municipal Election results',
            dataset='2011 Municipal Elections', year='2011')
 
@@ -128,6 +136,14 @@ SimpleTable(
 )
 
 # Elections
+SimpleTable(
+    id='voter_turnout_municipal_2016',
+    universe='Registered and MEC7 voters',
+    total_column='registered_voters',
+    description='2016 Municipal Election voter turnout',
+    dataset='2016 Municipal Elections',
+    year='2016'
+)
 SimpleTable(
     id='voter_turnout_national_2014',
     universe='Registered voters',

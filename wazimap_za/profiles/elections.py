@@ -21,6 +21,11 @@ ELECTIONS = [
 #         'table_code': 'municipal_2011',
 #         'dataset': '2011 Municipal Elections',
 #     },
+    {
+        'name': 'Municipal 2016',
+        'table_code': 'municipal_2016',
+        'dataset': '2016 Municipal Elections',
+    },
 ]
 
 
@@ -32,6 +37,7 @@ def make_party_acronym(name):
     exceptions = {
         "AFRICAN CHRISTIAN ALLIANCE-AFRIKANER CHRISTEN ALLIANSIE": "ACA",
         "DEMOCRATIC ALLIANCE/DEMOKRATIESE ALLIANSIE": "DA",
+        "DEMOCRATIC ALLIANCE": "DA",
         "CAPE PARTY/ KAAPSE PARTY": "CP",
         "KOUGA 2000": "K2000",
         "CONGRESS  OF THE PEOPLE": "COPE",
