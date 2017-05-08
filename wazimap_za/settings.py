@@ -17,7 +17,7 @@ STRIP_WWW = True
 
 
 # Localise this instance of Wazimap
-WAZIMAP['name'] = 'Wazimap South Africa'
+WAZIMAP['name'] = 'Wazimap'
 WAZIMAP['url'] = 'https://wazimap.co.za'
 WAZIMAP['country_code'] = 'ZA'
 WAZIMAP['comparative_levels'] = ['district', 'province', 'country']

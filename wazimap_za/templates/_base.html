@@ -35,14 +35,6 @@
   {% endif %}
 {% endblock %}
 
-{% block footer_content %}
-  {% if WAZIMAP.default_profile == 'youth' %}
-    {% include 'footer_youth.html' %}
-  {% else %}
-    {{ block.super }}
-  {% endif %}
-{% endblock %}
-
 {% block body_javascript_extra %}
 {{ block.super }}
 <!--Start of Zendesk Chat Script-->
