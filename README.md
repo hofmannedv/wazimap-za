@@ -15,6 +15,9 @@ The South African instance of [Wazimap](https://github.com/Code4SA/wazimap), a D
 Set the `WAZI_PROFILE` environment variable to the instance you are working on, e.g.
 `export WAZI_PROFILE=ecd`
 
+Set the `DEFAULT_GEO_VERSION` environment variable if you don't want to default to the latest, e.g. for youth and ecd
+`export DEFAULT_GEO_VERSION=2011`
+
 You will need a Postgres database:
 
 ```
@@ -46,6 +49,7 @@ See the [Wazimap deployment docs](http://wazimap.readthedocs.org/en/latest/deplo
 Set the profile
 ```
 dokku config:set wazimap_za WAZI_PROFILE=<profile name>
+dokku config:set wazimap_za DEFAULT_GEO_VERSION=<geography version>
 ```
 
 Add dokku as a remote, and then deploy:
