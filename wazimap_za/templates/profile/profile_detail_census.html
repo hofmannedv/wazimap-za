@@ -31,6 +31,10 @@
                     <i class="fa fa-link"></i>
                   </a>
                 </h2>
+                {% if election_data|get:"geo_version" != geography.this.version %}
+                <aside>
+                    *This election data is for the {{ election_data|get:"geo_version" }} municipal boundaries, which may be different to the {{ geography.this.version }} municipal boundaries used elsewhere on this page.
+                </aside>{% endif %}
                 <div class="column-quarter">
                     {% include 'profile/_blocks/_stat_list.html' with stat=election_data|get:"Number of registered voters" stat_type='number' %}
                 </div>
@@ -38,8 +42,6 @@
                     {% include 'profile/_blocks/_stat_list.html' with stat=election_data|get:"Of registered voters cast their vote" stat_type='percentage' %}
                 </div>
                 <div class="column-half" id="chart-histogram-elections-{{ key }}-party_distribution" data-stat-type="scaled-percentage" data-chart-title="Voters by party"></div>
-                {% if election_data|get:"geo_version" != geography.this.version %}*Note this election data is for {{ election_data|get:"geo_version" }} municipal boundaries while the rest of the population data is for {{ geography.this.version }} municipal boundaries.{% endif %}
-
             </section>
             {% endwith %}
         {% endfor %}
