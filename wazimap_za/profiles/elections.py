@@ -78,6 +78,7 @@ def get_elections_profile(geo):
                 data[section] = get_election_data(geo, election, session)
                 # get profiles for province and/or country
                 for comp_geo in comparative_geos:
+                    comp_geo.version = election['geo_version']
                     merge_dicts(data[section], get_election_data(comp_geo, election, session), comp_geo.geo_level)
 
                 # tweaks to make the data nicer
