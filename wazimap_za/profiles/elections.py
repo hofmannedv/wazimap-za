@@ -4,31 +4,6 @@ from wazimap.geo import geo_data
 from wazimap.data.tables import get_datatable
 from wazimap.data.utils import merge_dicts, group_remainder, get_stat_data, get_session
 
-
-ELECTIONS = [
-#     {
-#         'name': 'National 2014',
-#         'table_code': 'national_2014',
-#         'dataset': '2014 National Elections',
-#     },
-#     {
-#         'name': 'Provincial 2014',
-#         'table_code': 'provincial_2014',
-#         'dataset': '2014 Provincial Elections',
-#     },
-#     {
-#         'name': 'Municipal 2011',
-#         'table_code': 'municipal_2011',
-#         'dataset': '2011 Municipal Elections',
-#     },
-    {
-        'name': 'Municipal 2016',
-        'table_code': 'municipal_2016',
-        'dataset': '2016 Municipal Elections',
-    },
-]
-
-
 def make_party_acronym(name):
     '''
     This is good enough since only 2 parties have the same acronym,
@@ -57,6 +32,35 @@ def make_party_acronym(name):
 
 
 def get_elections_profile(geo):
+    ELECTIONS = [
+        {
+            'name': 'Municipal 2016',
+            'table_code': 'municipal_2016',
+            'dataset': '2016 Municipal Elections',
+            'geo_version': '2016',
+        },
+    ]
+    if geo.version == '2011' or geo.geo_level != 'ward':
+        ELECTIONS.extend([
+            {
+                'name': 'National 2014',
+                'table_code': 'national_2014',
+                'dataset': '2014 National Elections',
+                'geo_version': '2011',
+            },
+            {
+                'name': 'Provincial 2014',
+                'table_code': 'provincial_2014',
+                'dataset': '2014 Provincial Elections',
+                'geo_version': '2011',
+            },
+            {
+                'name': 'Municipal 2011',
+                'table_code': 'municipal_2011',
+                'dataset': '2011 Municipal Elections',
+                'geo_version': '2011',
+            },
+        ])
     data = OrderedDict()
     session = get_session()
     try:
@@ -64,7 +68,11 @@ def get_elections_profile(geo):
 
         for election in ELECTIONS:
             section = election['name'].lower().replace(' ', '_')
+            # TODO: Hack to request data for different geo_version than this geo.
+            actual_geo_version = geo.version
+            geo.version = election['geo_version']
             data[section] = get_election_data(geo, election, session)
+            geo.version = actual_geo_version
 
             # get profiles for province and/or country
             for level, code in geo_summary_levels:
@@ -95,6 +103,7 @@ def get_election_data(geo, election, session):
     results = {
         'name': election['name'],
         'party_distribution': party_data,
+        'geo_version': election['geo_version']
     }
 
     # voter registration and turnout
