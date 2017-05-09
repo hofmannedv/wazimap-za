@@ -4621,7 +4621,7 @@ COPY wazimap_geography (id, geo_level, geo_code, name, square_kms, parent_level,
 31465	district	DC40	Dr Kenneth Kaunda	14759.3892099999994	province	NW	Dr Kenneth Kaunda, North West	2016
 31461	district	DC37	Bojanala	18489.5336300000017	province	NW	Bojanala, North West	2016
 31463	district	DC39	Dr Ruth Segomotsi Mompati	44052.3903900000005	province	NW	Dr Ruth Segomotsi Mompati, North West	2016
-22336	country	ZA	South Africa	\N	\N	\N	\N	2016
+22336	country	ZA	South Africa	1229341.48919999995	\N	\N	\N	2016
 31472	district	DC5	Central Karoo	39073.0871299999999	province	WC	Central Karoo, Western Cape	2016
 31433	district	DC1	West Coast	31301.2417700000005	province	WC	West Coast, Western Cape	2016
 31464	district	DC4	Eden	23450.6392599999999	province	WC	Eden, Western Cape	2016
