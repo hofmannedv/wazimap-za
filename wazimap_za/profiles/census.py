@@ -281,7 +281,7 @@ def get_profile(geo, profile_name, request):
     session = get_session()
 
     try:
-        geo_summary_levels = geo_data.get_summary_geo_info(geo)
+        comparative_geos = geo_data.get_comparative_geos(geo)
         data = {}
 
         sections = list(PROFILE_SECTIONS)
@@ -294,15 +294,12 @@ def get_profile(geo, profile_name, request):
                 func = globals()[function_name]
                 data[section] = func(geo, session)
 
-                # get profiles for province and/or country
-                for level, code in geo_summary_levels:
-                    # merge summary profile into current geo profile
+                # get profiles for comparative geometries
+                for comp_geo in comparative_geos:
                     try:
-                        # XXX
-                        #merge_dicts(data[section], func(code, level, session), level)
-                        pass
+                        merge_dicts(data[section], func(comp_geo, session), comp_geo.geo_level)
                     except KeyError as e:
-                        msg = "Error merging data into %s for section '%s' from %s-%s: KeyError: %s" % (geo.geoid, section, level, code, e)
+                        msg = "Error merging data into %s for section '%s' from %s: KeyError: %s" % (geo.geoid, section, comp_geo.geoid, e)
                         log.fatal(msg, exc_info=e)
                         raise ValueError(msg)
     finally:

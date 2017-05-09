@@ -4,6 +4,7 @@ from wazimap.geo import geo_data
 from wazimap.data.tables import get_datatable
 from wazimap.data.utils import merge_dicts, group_remainder, get_stat_data, get_session, LocationNotFound
 
+
 def make_party_acronym(name):
     '''
     This is good enough since only 2 parties have the same acronym,
@@ -64,7 +65,7 @@ def get_elections_profile(geo):
     data = OrderedDict()
     session = get_session()
     try:
-        geo_summary_levels = geo_data.get_summary_geo_info(geo)
+        comparative_geos = geo_data.get_comparative_geos(geo)
 
         for election in ELECTIONS:
             section = election['name'].lower().replace(' ', '_')
@@ -76,17 +77,12 @@ def get_elections_profile(geo):
             try:
                 data[section] = get_election_data(geo, election, session)
                 # get profiles for province and/or country
-                for level, code in geo_summary_levels:
-                    # merge summary profile into current geo profile
-                    # XXX
-                    #merge_dicts(data[section], get_election_data(code, level, election, session), level)
-                    pass
+                for comp_geo in comparative_geos:
+                    merge_dicts(data[section], get_election_data(comp_geo, election, session), comp_geo.geo_level)
 
                 # tweaks to make the data nicer
                 # show 8 largest parties on their own and group the rest as 'Other'
                 group_remainder(data[section]['party_distribution'], 9)
-            except LocationNotFound:
-                pass
             finally:
                 geo.version = actual_geo_version
 
