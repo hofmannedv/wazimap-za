@@ -2,7 +2,7 @@ from collections import OrderedDict
 
 from wazimap.geo import geo_data
 from wazimap.data.tables import get_datatable
-from wazimap.data.utils import merge_dicts, group_remainder, get_stat_data, get_session
+from wazimap.data.utils import merge_dicts, group_remainder, get_stat_data, get_session, LocationNotFound
 
 def make_party_acronym(name):
     '''
@@ -71,19 +71,24 @@ def get_elections_profile(geo):
             # TODO: Hack to request data for different geo_version than this geo.
             actual_geo_version = geo.version
             geo.version = election['geo_version']
-            data[section] = get_election_data(geo, election, session)
-            geo.version = actual_geo_version
+            # If we can't find election data with the relevant geo version then
+            # we don't want to show anything for this election.
+            try:
+                data[section] = get_election_data(geo, election, session)
+                # get profiles for province and/or country
+                for level, code in geo_summary_levels:
+                    # merge summary profile into current geo profile
+                    # XXX
+                    #merge_dicts(data[section], get_election_data(code, level, election, session), level)
+                    pass
 
-            # get profiles for province and/or country
-            for level, code in geo_summary_levels:
-                # merge summary profile into current geo profile
-                # XXX
-                #merge_dicts(data[section], get_election_data(code, level, election, session), level)
+                # tweaks to make the data nicer
+                # show 8 largest parties on their own and group the rest as 'Other'
+                group_remainder(data[section]['party_distribution'], 9)
+            except LocationNotFound:
                 pass
-
-            # tweaks to make the data nicer
-            # show 8 largest parties on their own and group the rest as 'Other'
-            group_remainder(data[section]['party_distribution'], 9)
+            finally:
+                geo.version = actual_geo_version
 
         if geo.geo_level == 'country':
             add_elections_media_coverage(data)
