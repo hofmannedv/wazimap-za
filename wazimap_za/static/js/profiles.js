@@ -1,0 +1,16 @@
+$('.floating-nav').affix({
+  offset: {
+    top: $('.floating-nav').offset().top,
+  },
+});
+
+$('.floating-nav a').on('click', function(e) {
+  e.preventDefault();
+
+  var target = this.hash;
+  var $target = $(target);
+
+  if ($target.length) {
+    window.scroll(0, $target.offset().top - 90);
+  }
+});

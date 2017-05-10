@@ -2,6 +2,28 @@
 
 {% block head_meta_description %}Population data and election figures from {{ geography.this.short_name}}, broken down by category: Demographics, Service delivery, Economics and Education.{% endblock %}
 
+{% block header_content %}
+{{ block.super }}
+
+<div class="floating-nav-wrapper">
+    <nav class="floating-nav">
+        <div class="wrapper clearfix">
+            <h3>{{ geography.this.name }}</h3>
+            <ul>
+                <li><a href="#elections"><i class="fa fa-user"></i> <span>Elections</span></a></li>
+                <li><a href="#demographics"><i class="fa fa-user"></i> <span>Demographics</span></a></li>
+                <li><a href="#households"><i class="fa fa-user"></i> <span>Households</span></a></li>
+                <li><a href="#service_delivery"><i class="fa fa-user"></i> <span>Service Delivery</span></a></li>
+                <li><a href="#economics"><i class="fa fa-user"></i> <span>Economics</span></a></li>
+                <li><a href="#education"><i class="fa fa-user"></i> <span>Education</span></a></li>
+                <li><a href="#children"><i class="fa fa-user"></i> <span>Children</span></a></li>
+                <li><a href="#child_headed_households"><i class="fa fa-user"></i> <span>Child-headed Households</span></a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+{% endblock %}
+
 {% block profile_header_tail %}
 <div class="column-full">
     <p class="caption">
@@ -111,7 +133,7 @@
     </div>
 </article>
 
-<article id="service_delivery" class="clearfix">
+<article id="households" class="clearfix">
     <header class="section-contents">
         <h1>Households</h1>
     </header>
