@@ -99,6 +99,10 @@
   display: block;
 }
 
+#profile .floating-nav li a .fa {
+  font-size: 18px;
+}
+
 @media only screen and (max-width: 768px) {
   #profile .floating-nav {
     display: none;
