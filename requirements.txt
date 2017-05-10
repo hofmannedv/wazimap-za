@@ -4,7 +4,7 @@ gevent==1.0.1
 greenlet==0.4.6
 gunicorn==18.0
 newrelic==2.40.0.34
-wazimap[gdal]==0.8.2
+#wazimap[gdal]==0.8.2
 git+https://github.com/Code4SA/wazimap.git@geography-versions#egg=wazimap
 GDAL==1.11.0
 Shapely>=1.5.13
