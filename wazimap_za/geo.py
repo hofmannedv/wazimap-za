@@ -31,15 +31,15 @@ SETTINGS.setdefault('level_simplify', {
 
 
 class GeoData(BaseGeoData):
-    def get_geometry(self, geo_level, geo_code, version=None):
+    def get_geometry(self, geo):
         """ Get the geometry description for a geography. This is a dict
         with two keys, 'properties' which is a dict of properties,
         and 'shape' which is a shapely shape (may be None).
         """
 
-        mapit_level = SETTINGS['level_codes'][geo_level]
-        url = SETTINGS['url'] + '/area/MDB:%s/feature.geojson?type=%s' % (geo_code, mapit_level)
-        url = url + '&generation=%s' % SETTINGS['generations'][version]
+        mapit_level = SETTINGS['level_codes'][geo.geo_level]
+        url = SETTINGS['url'] + '/area/MDB:%s/feature.geojson?type=%s' % (geo.geo_code, mapit_level)
+        url = url + '&generation=%s' % SETTINGS['generations'][geo.version]
         simplify = SETTINGS['level_simplify'].get(mapit_level)
         if simplify:
             url = url + '&simplification_level=%s' % simplify
