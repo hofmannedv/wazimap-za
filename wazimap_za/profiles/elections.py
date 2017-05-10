@@ -74,8 +74,15 @@ def get_elections_profile(geo):
             geo.version = election['geo_version']
             # If we can't find election data with the relevant geo version then
             # we don't want to show anything for this election.
+            election_data = None
             try:
-                data[section] = get_election_data(geo, election, session)
+                election_data = get_election_data(geo, election, session)
+            except LocationNotFound:
+                pass
+            finally:
+                geo.version = actual_geo_version
+            if election_data:
+                data[section] = election_data
                 # get profiles for province and/or country
                 for comp_geo in comparative_geos:
                     comp_geo.version = election['geo_version']
@@ -84,8 +91,6 @@ def get_elections_profile(geo):
                 # tweaks to make the data nicer
                 # show 8 largest parties on their own and group the rest as 'Other'
                 group_remainder(data[section]['party_distribution'], 9)
-            finally:
-                geo.version = actual_geo_version
 
         if geo.geo_level == 'country':
             add_elections_media_coverage(data)
