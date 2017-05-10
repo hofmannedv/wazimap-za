@@ -130,50 +130,98 @@ COLLAPSED_AGE_CATEGORIES = {
 }
 
 # Income categories
+#
+# Note from StatsSA on different income categories between '2011 census'
+# and '2011 census along 2016 boundaries':
+# The community profile dataset (Census 2011) was based on the first version of
+# Census 2011 data released in 2013. The first version did not have information
+# such as migration, fertility and complete employment. In 2015 the census
+# dataset was revised to include all the missing information. The process of
+# revision also ensured that the entire dataset is consistent with the
+# questionnaire and metadata. Income variable was one of the variables affected
+# and the individual income categories were corrected to match metadata,
+# however, that did not change the totals. All the products from 2015 dataset,
+# i.e., Census 2011 10% sample and Census 2011(Boundaries 2016) are based on the
+# revised version. The above mentioned products are final and they are in line
+# with metadata. In addition we have kept all the income categories as annual
+# and the corresponding monthly income can be obtained in a questionnaire and
+# metadata.
 
-COLLAPSED_INCOME_CATEGORIES = OrderedDict()
-COLLAPSED_INCOME_CATEGORIES["No income"] = "R0"
-COLLAPSED_INCOME_CATEGORIES["R 1 - R 400"] = "Under R400"
-COLLAPSED_INCOME_CATEGORIES["R 401 - R 800"] = "R400 - R800"
-COLLAPSED_INCOME_CATEGORIES["R 801 - R 1 600"] = "R800 - R2k"
-COLLAPSED_INCOME_CATEGORIES["R 1 601 - R 3 200"] = "R2k - R3k"
-COLLAPSED_INCOME_CATEGORIES["R 3 201 - R 6 400"] = "R3k - R6k"
-COLLAPSED_INCOME_CATEGORIES["R 6 401 - R 12 800"] = "R6k - R13k"
-COLLAPSED_INCOME_CATEGORIES["R 12 801 - R 25 600"] = "R13k - R26k"
-COLLAPSED_INCOME_CATEGORIES["R 25 601 - R 51 200"] = "R26k - R51k"
-COLLAPSED_INCOME_CATEGORIES["R 51 201 - R 102 400"] = "R51k - R102k"
-COLLAPSED_INCOME_CATEGORIES["R 102 401 - R 204 800"] = "Over R102k"
-COLLAPSED_INCOME_CATEGORIES["R 204 801 or more"] = "Over R102k"
-COLLAPSED_INCOME_CATEGORIES["Unspecified"] = "Unspecified"
+COLLAPSED_MONTHLY_INCOME_CATEGORIES = OrderedDict()
+COLLAPSED_MONTHLY_INCOME_CATEGORIES["No income"] = "R0"
+COLLAPSED_MONTHLY_INCOME_CATEGORIES["R 1 - R 400"] = "Under R400"
+COLLAPSED_MONTHLY_INCOME_CATEGORIES["R 401 - R 800"] = "R400 - R800"
+COLLAPSED_MONTHLY_INCOME_CATEGORIES["R 801 - R 1 600"] = "R800 - R2k"
+COLLAPSED_MONTHLY_INCOME_CATEGORIES["R 1 601 - R 3 200"] = "R2k - R3k"
+COLLAPSED_MONTHLY_INCOME_CATEGORIES["R 3 201 - R 6 400"] = "R3k - R6k"
+COLLAPSED_MONTHLY_INCOME_CATEGORIES["R 6 401 - R 12 800"] = "R6k - R13k"
+COLLAPSED_MONTHLY_INCOME_CATEGORIES["R 12 801 - R 25 600"] = "R13k - R26k"
+COLLAPSED_MONTHLY_INCOME_CATEGORIES["R 25 601 - R 51 200"] = "R26k - R51k"
+COLLAPSED_MONTHLY_INCOME_CATEGORIES["R 51 201 - R 102 400"] = "R51k - R102k"
+COLLAPSED_MONTHLY_INCOME_CATEGORIES["R 102 401 - R 204 800"] = "Over R102k"
+COLLAPSED_MONTHLY_INCOME_CATEGORIES["R 204 801 or more"] = "Over R102k"
+COLLAPSED_MONTHLY_INCOME_CATEGORIES["Unspecified"] = "Unspecified"
 
-ESTIMATED_INCOME_CATEGORIES = {}
-ESTIMATED_INCOME_CATEGORIES["R0"] = 0
-ESTIMATED_INCOME_CATEGORIES["Under R400"] = 200
-ESTIMATED_INCOME_CATEGORIES["R400 - R800"] = 600
-ESTIMATED_INCOME_CATEGORIES["R800 - R2k"] = 1200
-ESTIMATED_INCOME_CATEGORIES["R2k - R3k"] = 2400
-ESTIMATED_INCOME_CATEGORIES["R3k - R6k"] = 4800
-ESTIMATED_INCOME_CATEGORIES["R6k - R13k"] = 9600
-ESTIMATED_INCOME_CATEGORIES["R13k - R26k"] = 19200
-ESTIMATED_INCOME_CATEGORIES["R26k - R51k"] = 38400
-ESTIMATED_INCOME_CATEGORIES["R51k - R102k"] = 76800
-ESTIMATED_INCOME_CATEGORIES["Over R102k"] = 204800
-ESTIMATED_INCOME_CATEGORIES["Unspecified"] = None
+ESTIMATED_MONTHLY_INCOME_CATEGORIES = {}
+ESTIMATED_MONTHLY_INCOME_CATEGORIES["R0"] = 0
+ESTIMATED_MONTHLY_INCOME_CATEGORIES["Under R400"] = 200
+ESTIMATED_MONTHLY_INCOME_CATEGORIES["R400 - R800"] = 600
+ESTIMATED_MONTHLY_INCOME_CATEGORIES["R800 - R2k"] = 1200
+ESTIMATED_MONTHLY_INCOME_CATEGORIES["R2k - R3k"] = 2400
+ESTIMATED_MONTHLY_INCOME_CATEGORIES["R3k - R6k"] = 4800
+ESTIMATED_MONTHLY_INCOME_CATEGORIES["R6k - R13k"] = 9600
+ESTIMATED_MONTHLY_INCOME_CATEGORIES["R13k - R26k"] = 19200
+ESTIMATED_MONTHLY_INCOME_CATEGORIES["R26k - R51k"] = 38400
+ESTIMATED_MONTHLY_INCOME_CATEGORIES["R51k - R102k"] = 76800
+ESTIMATED_MONTHLY_INCOME_CATEGORIES["Over R102k"] = 204800
+ESTIMATED_MONTHLY_INCOME_CATEGORIES["Unspecified"] = None
+
+ESTIMATED_ANNUAL_INCOME_CATEGORIES = {}
+ESTIMATED_ANNUAL_INCOME_CATEGORIES["R0"] = 0
+ESTIMATED_ANNUAL_INCOME_CATEGORIES["Under R4800"] = 2400
+ESTIMATED_ANNUAL_INCOME_CATEGORIES["R5k - R10k"] = 7500
+ESTIMATED_ANNUAL_INCOME_CATEGORIES["R10k - R20k"] = 15000
+ESTIMATED_ANNUAL_INCOME_CATEGORIES["R20k - R40k"] = 30000
+ESTIMATED_ANNUAL_INCOME_CATEGORIES["R40k - R75k"] = 57500
+ESTIMATED_ANNUAL_INCOME_CATEGORIES["R75k - R159k"] = 117000
+ESTIMATED_ANNUAL_INCOME_CATEGORIES["R150k - R300k"] = 225000
+ESTIMATED_ANNUAL_INCOME_CATEGORIES["R300k - R600k"] = 450000
+ESTIMATED_ANNUAL_INCOME_CATEGORIES["R600k - R1.2M"] = 900000
+ESTIMATED_ANNUAL_INCOME_CATEGORIES["R1.2M - R2.5M"] = 1350000
+ESTIMATED_ANNUAL_INCOME_CATEGORIES["Over R2.5M"] = 2457600
+ESTIMATED_ANNUAL_INCOME_CATEGORIES["Unspecified"] = None
 
 # Household income
-HOUSEHOLD_INCOME_RECODE = OrderedDict()
-HOUSEHOLD_INCOME_RECODE['No income'] = 'R0'
-HOUSEHOLD_INCOME_RECODE['R 1 - R 4800'] = 'Under R4800'
-HOUSEHOLD_INCOME_RECODE['R 4801 - R 9600'] = 'R5k - R10k'
-HOUSEHOLD_INCOME_RECODE['R 9601 - R 19 600'] = 'R10k - R20k'
-HOUSEHOLD_INCOME_RECODE['R 19 601 - R 38 200'] = 'R20k - R40k'
-HOUSEHOLD_INCOME_RECODE['R 38 201 - R 76 400'] = 'R40k - R75k'
-HOUSEHOLD_INCOME_RECODE['R 76 401 - R 153 800'] = 'R75k - R150k'
-HOUSEHOLD_INCOME_RECODE['R 153 801 - R 307 600'] = 'R150k - R300k'
-HOUSEHOLD_INCOME_RECODE['R 307 601 - R 614 400'] = 'R300k - R600k'
-HOUSEHOLD_INCOME_RECODE['R 614 001 - R 1 228 800'] = 'R600k - R1.2M'
-HOUSEHOLD_INCOME_RECODE['R 1 228 801 - R 2 457 600'] = 'R1.2M - R2.5M'
-HOUSEHOLD_INCOME_RECODE['R 2 457 601 or more'] = 'Over R2.5M'
+HOUSEHOLD_INCOME_RECODE_2011 = OrderedDict()
+HOUSEHOLD_INCOME_RECODE_2011['No income'] = 'R0'
+HOUSEHOLD_INCOME_RECODE_2011['R 1 - R 4800'] = 'Under R4800'
+HOUSEHOLD_INCOME_RECODE_2011['R 4801 - R 9600'] = 'R5k - R10k'
+HOUSEHOLD_INCOME_RECODE_2011['R 9601 - R 19 600'] = 'R10k - R20k'
+HOUSEHOLD_INCOME_RECODE_2011['R 19 601 - R 38 200'] = 'R20k - R40k'
+HOUSEHOLD_INCOME_RECODE_2011['R 38 201 - R 76 400'] = 'R40k - R75k'
+HOUSEHOLD_INCOME_RECODE_2011['R 76 401 - R 153 800'] = 'R75k - R150k'
+HOUSEHOLD_INCOME_RECODE_2011['R 153 801 - R 307 600'] = 'R150k - R300k'
+HOUSEHOLD_INCOME_RECODE_2011['R 307 601 - R 614 400'] = 'R300k - R600k'
+HOUSEHOLD_INCOME_RECODE_2011['R 614 001 - R 1 228 800'] = 'R600k - R1.2M'
+HOUSEHOLD_INCOME_RECODE_2011['R 1 228 801 - R 2 457 600'] = 'R1.2M - R2.5M'
+HOUSEHOLD_INCOME_RECODE_2011['R 2 457 601 or more'] = 'Over R2.5M'
+
+COLLAPSED_ANNUAL_INCOME_CATEGORIES = OrderedDict()
+COLLAPSED_ANNUAL_INCOME_CATEGORIES['No income'] = 'R0'
+COLLAPSED_ANNUAL_INCOME_CATEGORIES['R 1 - R 4800'] = 'Under R4800'
+COLLAPSED_ANNUAL_INCOME_CATEGORIES["R 4801 - R 9600"] = "R5k - R10k"
+COLLAPSED_ANNUAL_INCOME_CATEGORIES["R 9601 - R 19200"] = "R10k - R20k"
+COLLAPSED_ANNUAL_INCOME_CATEGORIES["R 19201 - R 38400"] = "R20k - R40k"
+# Note double space is intentional to match SuperWeb export.
+COLLAPSED_ANNUAL_INCOME_CATEGORIES["R 38401 -  R 76800"] = "R40k - R75k"
+COLLAPSED_ANNUAL_INCOME_CATEGORIES["R 38401 - R 76800"] = "R40k - R75k"
+COLLAPSED_ANNUAL_INCOME_CATEGORIES["R 76801 - R 153600"] = "R75k - R150k"
+COLLAPSED_ANNUAL_INCOME_CATEGORIES["R 153601 - R 307200"] = "R150k - R300k"
+COLLAPSED_ANNUAL_INCOME_CATEGORIES["R 307201 - R 614400"] = "R300k - R600k"
+# Note missing space is intentional to match SuperWeb export.
+COLLAPSED_ANNUAL_INCOME_CATEGORIES["R 614401- R 1228800"] = "R600k - R1.2M"
+COLLAPSED_ANNUAL_INCOME_CATEGORIES["R 1228801 - R 2457600"] = "R1.2M - R2.5M"
+COLLAPSED_ANNUAL_INCOME_CATEGORIES["R2457601 or more"] = "Over R2.5M"
 
 HOUSEHOLD_INCOME_ESTIMATE = {}
 HOUSEHOLD_INCOME_ESTIMATE['R0'] = 0
@@ -462,6 +510,10 @@ def get_households_profile(geo, session):
             owned += data['numerators']['this']
 
     # annual household income
+    if geo.version == '2011':
+        HOUSEHOLD_INCOME_RECODE = HOUSEHOLD_INCOME_RECODE_2011
+    else:
+        HOUSEHOLD_INCOME_RECODE = COLLAPSED_ANNUAL_INCOME_CATEGORIES
     income_dist_data, _ = get_stat_data(
             ['annual household income'], geo, session,
             exclude=['Unspecified'],
@@ -524,16 +576,48 @@ def get_households_profile(geo, session):
 
 
 def get_economics_profile(geo, session):
+    profile = {}
     # income
-    income_dist_data, total_workers = get_stat_data(
-            ['employed individual monthly income'], geo, session,
+    if geo.version == '2011':
+        # distribution
+        recode = COLLAPSED_MONTHLY_INCOME_CATEGORIES
+        fields = ['employed individual monthly income']
+        income_dist_data, total_workers = get_stat_data(
+            fields, geo, session,
             exclude=['Not applicable'],
-            recode=COLLAPSED_INCOME_CATEGORIES,
-            key_order=COLLAPSED_INCOME_CATEGORIES.values())
+            recode=recode,
+            key_order=recode.values())
 
-    # median income
-    median = calculate_median_stat(income_dist_data)
-    median_income = ESTIMATED_INCOME_CATEGORIES[median]
+        # median income
+        median = calculate_median_stat(income_dist_data)
+        median_income = ESTIMATED_MONTHLY_INCOME_CATEGORIES[median]
+        profile.update({
+            'individual_income_distribution': income_dist_data,
+            'median_individual_income': {
+                'name': 'Average monthly income',
+                'values': {'this': median_income},
+            }
+        })
+    else:
+        # distribution
+        recode = COLLAPSED_ANNUAL_INCOME_CATEGORIES
+        fields = ['employed individual annual income']
+        income_dist_data, total_workers = get_stat_data(
+            fields, geo, session,
+            exclude=['Not applicable'],
+            recode=recode,
+            key_order=recode.values())
+
+        # median income
+        median = calculate_median_stat(income_dist_data)
+        median_income = ESTIMATED_ANNUAL_INCOME_CATEGORIES[median]
+        profile.update({
+            'individual_annual_income_distribution': income_dist_data,
+            'median_annual_individual_income': {
+                'name': 'Average annual income',
+                'values': {'this': median_income},
+            }
+        })
 
     # employment status
     employ_status, total_workers = get_stat_data(
@@ -556,21 +640,18 @@ def get_economics_profile(geo, session):
             ['access to internet'], geo, session, only=['No access to internet'])
     total_households = total_with_access + total_without_access
 
-    return {'individual_income_distribution': income_dist_data,
-            'median_individual_income': {
-                'name': 'Average monthly income',
-                'values': {'this': median_income},
-                },
-            'employment_status': employ_status,
-            'sector_type_distribution': sector_dist_data,
-            'internet_access_distribution': internet_access_dist,
-            'internet_access': {
-                'name': 'Households with internet access',
-                'values': {'this': percent(total_with_access, total_households)},
-                'numerators': {'this': total_with_access},
-                }
-            }
+    profile.update({
+        'employment_status': employ_status,
+        'sector_type_distribution': sector_dist_data,
+        'internet_access_distribution': internet_access_dist,
+        'internet_access': {
+            'name': 'Households with internet access',
+            'values': {'this': percent(total_with_access, total_households)},
+            'numerators': {'this': total_with_access},
+        }
+    })
 
+    return profile
 
 def get_service_delivery_profile(geo, session):
     # water source
@@ -751,6 +832,7 @@ def get_education_profile(geo, session):
 
 
 def get_children_profile(geo, session):
+    profile = {}
     # age
     child_adult_dist, _ = get_stat_data(
         ['age in completed years'], geo, session,
@@ -838,18 +920,55 @@ def get_children_profile(geo, session):
                                       if COLLAPSED_EMPLOYMENT_CATEGORIES.get(k, None)
                                       == 'In labour force'))
 
+    employment_indicators = {
+        'percent_in_labour_force': {
+            "name": "Of children between 15 and 17 are in the labour force",
+            "numerators": {"this": total_in_labour_force},
+            "values": {"this": percent(total_in_labour_force, total_15to17)}
+        },
+        'employment_distribution': employment_dist,
+    }
     # median income
-    income_dist_data, total_workers = get_stat_data(
-        ['individual monthly income'], geo, session,
-        exclude=['Not applicable'],
-        recode=COLLAPSED_INCOME_CATEGORIES,
-        key_order=COLLAPSED_INCOME_CATEGORIES.values(),
-        table_name='individualmonthlyincome15to17'
-    )
-    median = calculate_median_stat(income_dist_data)
-    median_income = ESTIMATED_INCOME_CATEGORIES[median]
+    if geo.version == '2011':
+        recode = COLLAPSED_MONTHLY_INCOME_CATEGORIES
+        fields = ['individual monthly income']
+        table_name = 'individualmonthlyincome15to17'
+        income_dist_data, total_workers = get_stat_data(
+            fields, geo, session,
+            exclude=['Not applicable'],
+            recode=recode,
+            key_order=recode.values(),
+            table_name=table_name
+        )
+        median = calculate_median_stat(income_dist_data)
+        median_income = ESTIMATED_MONTHLY_INCOME_CATEGORIES[median]
+        employment_indicators.update({
+            'median_income': {
+                'name': 'Average monthly income of employed children between 15 and 17',
+                'values': {'this': median_income},
+            }
+        })
+    else:
+        recode = COLLAPSED_ANNUAL_INCOME_CATEGORIES
+        fields = ['individual annual income']
+        table_name = 'individualannualincome15to17'
+        income_dist_data, total_workers = get_stat_data(
+            fields, geo, session,
+            exclude=['Not applicable'],
+            recode=recode,
+            key_order=recode.values(),
+            table_name=table_name
+        )
+        median = calculate_median_stat(income_dist_data)
+        median_income = ESTIMATED_ANNUAL_INCOME_CATEGORIES[median]
+        employment_indicators.update({
+            'median_annual_income': {
+                'name': 'Average annual income of employed children between 15 and 17',
+                'values': {'this': median_income},
+            }
+        })
 
-    return {
+    profile.update({
         'demographics': {
             'child_adult_distribution': child_adult_dist,
             'total_children': {
@@ -874,19 +993,9 @@ def get_children_profile(geo, session):
             },
             'education17_distribution': education17_dist,
         },
-        'employment': {
-            'percent_in_labour_force': {
-                "name": "Of children between 15 and 17 are in the labour force",
-                "numerators": {"this": total_in_labour_force},
-                "values": {"this": percent(total_in_labour_force, total_15to17)}
-            },
-            'employment_distribution': employment_dist,
-            'median_income': {
-                'name': 'Average monthly income of employed children between 15 and 17',
-                'values': {'this': median_income},
-            },
-        }
-    }
+        'employment': employment_indicators
+    })
+    return profile
 
 
 def get_child_households_profile(geo, session):
@@ -899,6 +1008,10 @@ def get_child_households_profile(geo, session):
     female_heads = head_gender_dist['Female']['numerators']['this']
 
     # annual household income
+    if geo.version == '2011':
+        HOUSEHOLD_INCOME_RECODE = HOUSEHOLD_INCOME_RECODE_2011
+    else:
+        HOUSEHOLD_INCOME_RECODE = COLLAPSED_ANNUAL_INCOME_CATEGORIES
     income_dist_data, _ = get_stat_data(
             ['annual household income'], geo, session,
             exclude=['Unspecified'],

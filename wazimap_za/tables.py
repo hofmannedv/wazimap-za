@@ -21,6 +21,7 @@ if settings.WAZIMAP['default_profile'] == 'census':
     FieldTable(['highest educational level'], id="highesteducationallevel20", universe='Individuals 20 and older')
     FieldTable(['language'], description='Population by primary language spoken at home')
     FieldTable(['employed individual monthly income'], universe='Employed individuals')
+    FieldTable(['employed individual annual income'], universe='Employed individuals')
     FieldTable(['official employment status'], universe='Individuals 15 and older')
     FieldTable(['type of sector'], universe='Workers 15 and older')
     FieldTable(['population group'])
@@ -47,6 +48,7 @@ if settings.WAZIMAP['default_profile'] == 'census':
     FieldTable(['official employment status'], id="officialemploymentstatus15to17", universe="Children 15 to 17")
     FieldTable(['highest educational level'], id="highesteducationallevel17", universe="17-year-old children")
     FieldTable(['individual monthly income'], id="individualmonthlyincome15to17", universe="Children 15 to 17 who are employed")
+    FieldTable(['individual annual income'], id="individualannualincome15to17", universe="Children 15 to 17 who are employed")
     FieldTable(['gender'], id='genderunder18', universe='Children under 18')
 
     # child-headed households
