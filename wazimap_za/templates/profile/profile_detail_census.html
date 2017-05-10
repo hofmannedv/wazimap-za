@@ -23,8 +23,18 @@
 
         {% for key in elections %}
             {% with elections|get:key as election_data %}
-            <section class="clearfix stat-row">
-                <h2 class="header-for-columns"><a class="permalink" href="#{{ election_data.name }}" id="{{ election_data.name }}">{{ election_data.name.capitalize }} <i class="fa fa-link"></i></a></h2>
+              <section class="clearfix stat-row">
+                <h2 class="header-for-columns">
+                  <a class="permalink" href="#{{ election_data.name }}" id="{{ election_data.name }}">
+                    {{ election_data.name.capitalize }}
+                    {% if election_data|get:"geo_version" != geography.this.version %}*{% endif %}
+                    <i class="fa fa-link"></i>
+                  </a>
+                </h2>
+                {% if election_data|get:"geo_version" != geography.this.version %}
+                <aside>
+                    *This election data is for the {{ election_data|get:"geo_version" }} municipal boundaries, which may be different to the {{ geography.this.version }} municipal boundaries used elsewhere on this page.
+                </aside>{% endif %}
                 <div class="column-quarter">
                     {% include 'profile/_blocks/_stat_list.html' with stat=election_data|get:"Number of registered voters" stat_type='number' %}
                 </div>
@@ -167,6 +177,7 @@
             <div class="column-third" id="chart-pie-service_delivery-water_source_distribution" data-stat-type="percentage" data-chart-title="Population by water source"></div>
         </section>
 
+        {% if geography.this.version == "2011" %}
         <section class="clearfix stat-row">
             <h2><a class="permalink" href="#electricity" id="electricity">Electricity <i class="fa fa-link"></i></a></h2>
             <aside>
@@ -176,6 +187,7 @@
             </div>
             <div class="column-third" id="chart-pie-service_delivery-electricity_access_distribution" data-stat-type="percentage" data-chart-title="Population by electricity usage"></div>
         </section>
+        {% endif %}
 
         <section class="clearfix stat-row">
             <h2><a class="permalink" href="#toilets" id="toilets">Toilet facilities <i class="fa fa-link"></i></a></h2>
@@ -208,33 +220,46 @@
         <h1>Economics</h1>
     </header>
     <div class="section-container">
-        <section class="clearfix stat-row">
-            <h2><a class="permalink" href="#employment" id="employment">Employment <i class="fa fa-link"></i></a></h2>
-            <aside>
-            </aside>
-            <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=economics.employment_status.Employed stat_type='percentage' %}
-            </div>
-            <div class="column-third" id="chart-pie-economics-employment_status" data-chart-title="Population by employment status" data-stat-type="percentage" data-initial-sort="-value" data-qualifier="Universe: {{ economics.employment_status.metadata.universe }}"></div>
-            <div class="column-third" id="chart-pie-economics-sector_type_distribution" data-chart-title="Sector of employment" data-stat-type="percentage" data-initial-sort="-value" data-qualifier="Universe: {{ economics.sector_type_distribution.metadata.universe }}"></div>
-        </section>
-        <section class="clearfix stat-row">
-            <h2><a class="permalink" href="#income" id="income">Monthly income <i class="fa fa-link"></i></a></h2>
-            <aside>
-                Average monthly income is <a href="/help#faq-average-hh-income">a median estimate</a>, be careful with this value.
-            </aside>
-            <div class="column-quarter">
-                {% include 'profile/_blocks/_stat_list.html' with stat=economics.median_individual_income stat_type='dollar' %}
-            </div>
-            <div class="column-three-quarters" id="chart-histogram-economics-individual_income_distribution" data-chart-title="Employees by monthly income" data-stat-type="scaled-percentage" data-qualifier="Universe: {{ economics.individual_income_distribution.metadata.universe }}"></div>
-        </section>
-        <section class="clearfix stat-row">
-            <h2><a class="permalink" href="#internet" id="internet">Internet access <i class="fa fa-link"></i></a></h2>
-            <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=economics.internet_access stat_type='percentage' %}
-            </div>
-            <div class="column-third" id="chart-pie-economics-internet_access_distribution" data-chart-title="Primary means of internet access" data-stat-type="scaled-percentage" data-initial-sort="-value"></div>
-        </section>
+      <section class="clearfix stat-row">
+        <h2><a class="permalink" href="#employment" id="employment">Employment <i class="fa fa-link"></i></a></h2>
+        <aside>
+        </aside>
+        <div class="column-third">
+          {% include 'profile/_blocks/_stat_list.html' with stat=economics.employment_status.Employed stat_type='percentage' %}
+        </div>
+        <div class="column-third" id="chart-pie-economics-employment_status" data-chart-title="Population by employment status" data-stat-type="percentage" data-initial-sort="-value" data-qualifier="Universe: {{ economics.employment_status.metadata.universe }}"></div>
+        <div class="column-third" id="chart-pie-economics-sector_type_distribution" data-chart-title="Sector of employment" data-stat-type="percentage" data-initial-sort="-value" data-qualifier="Universe: {{ economics.sector_type_distribution.metadata.universe }}"></div>
+      </section>
+      {% if geography.this.version == "2011" %}
+      <section class="clearfix stat-row">
+        <h2><a class="permalink" href="#income" id="income">Monthly income <i class="fa fa-link"></i></a></h2>
+        <aside>
+          Average monthly income is <a href="/help#faq-average-hh-income">a median estimate</a>, be careful with this value.
+        </aside>
+        <div class="column-quarter">
+          {% include 'profile/_blocks/_stat_list.html' with stat=economics.median_individual_income stat_type='dollar' %}
+        </div>
+        <div class="column-three-quarters" id="chart-histogram-economics-individual_income_distribution" data-chart-title="Employees by monthly income" data-stat-type="scaled-percentage" data-qualifier="Universe: {{ economics.individual_income_distribution.metadata.universe }}"></div>
+      </section>
+      {% else %}
+      <section class="clearfix stat-row">
+        <h2><a class="permalink" href="#income" id="income">Annual income <i class="fa fa-link"></i></a></h2>
+        <aside>
+          Average annual income is <a href="/help#faq-average-hh-income">a median estimate</a>, be careful with this value.
+        </aside>
+        <div class="column-quarter">
+          {% include 'profile/_blocks/_stat_list.html' with stat=economics.median_annual_individual_income stat_type='dollar' %}
+        </div>
+        <div class="column-three-quarters" id="chart-histogram-economics-individual_annual_income_distribution" data-chart-title="Employees by annual income" data-stat-type="scaled-percentage" data-qualifier="Universe: {{ economics.individual_annual_income_distribution.metadata.universe }}"></div>
+      </section>
+      {% endif %}
+      <section class="clearfix stat-row">
+        <h2><a class="permalink" href="#internet" id="internet">Internet access <i class="fa fa-link"></i></a></h2>
+        <div class="column-third">
+          {% include 'profile/_blocks/_stat_list.html' with stat=economics.internet_access stat_type='percentage' %}
+        </div>
+        <div class="column-third" id="chart-pie-economics-internet_access_distribution" data-chart-title="Primary means of internet access" data-stat-type="scaled-percentage" data-initial-sort="-value"></div>
+      </section>
     </div>
 </article>
 
@@ -316,12 +341,21 @@
         </section>
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#child_employment" id="child_employment">Employment of 15- to 17-year-olds <i class="fa fa-link"></i></a></h2>
+            {% if geography.this.version = "2011" %}
             <aside>
                 Average monthly income is a median estimate, be careful with this value.
             </aside>
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=children.employment.median_income stat_type='dollar' %}
             </div>
+            {% else %}
+            <aside>
+                Average annual income is a median estimate, be careful with this value.
+            </aside>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=children.employment.median_annual_income stat_type='dollar' %}
+            </div>
+            {% endif %}
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=children.employment.percent_in_labour_force stat_type='percentage' %}
             </div>
@@ -365,10 +399,6 @@
                 {% include 'profile/_blocks/_stat_list.html' with stat=child_households.median_annual_income stat_type='dollar' %}
             </div>
             <div class="column-three-quarters" id="chart-column-child_households-annual_income_distribution" data-stat-type="scaled-percentage" data-chart-title="Annual child-headed household income" data-qualifier="Universe: {{ child_households.annual_income_distribution.metadata.universe }}"></div>
-        </section>
-        <section class="clearfix stat-row">
-            <h2><a class="permalink" href="#child-household-size" id="child-household-size">Household size <i class="fa fa-link"></i></a></h2>
-            <div class="column-full" id="chart-grouped_column-child_households-household_size_distribution" data-stat-type="scaled-percentage" data-chart-title="Size of household by age of household head"></div>
         </section>
     </div>
 </article>

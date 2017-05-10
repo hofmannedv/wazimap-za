@@ -20,7 +20,7 @@ ProfileMaps = function() {
         }
 
         // load districts and metros in WC
-        GeometryLoader.loadGeometrySet('PR-WC|MN,MDB-levels:PR-WC|DC', 'district', function(features) {
+        GeometryLoader.loadGeometrySet('PR-WC|MN,MDB-levels:PR-WC|DC', 'district', '2011', function(features) {
             // remove features that aren't districts or metros
             features.features = _.select(features.features, function(feat) {
                 return feat.properties.type == 'DC' || feat.properties.codes.MDB.length == 3;

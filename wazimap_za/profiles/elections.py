@@ -2,26 +2,7 @@ from collections import OrderedDict
 
 from wazimap.geo import geo_data
 from wazimap.data.tables import get_datatable
-from wazimap.data.utils import merge_dicts, group_remainder, get_stat_data, get_session
-
-
-ELECTIONS = [
-    {
-        'name': 'National 2014',
-        'table_code': 'national_2014',
-        'dataset': '2014 National Elections',
-    },
-    {
-        'name': 'Provincial 2014',
-        'table_code': 'provincial_2014',
-        'dataset': '2014 Provincial Elections',
-    },
-    {
-        'name': 'Municipal 2011',
-        'table_code': 'municipal_2011',
-        'dataset': '2011 Municipal Elections',
-    },
-]
+from wazimap.data.utils import merge_dicts, group_remainder, get_stat_data, get_session, LocationNotFound
 
 
 def make_party_acronym(name):
@@ -32,6 +13,7 @@ def make_party_acronym(name):
     exceptions = {
         "AFRICAN CHRISTIAN ALLIANCE-AFRIKANER CHRISTEN ALLIANSIE": "ACA",
         "DEMOCRATIC ALLIANCE/DEMOKRATIESE ALLIANSIE": "DA",
+        "DEMOCRATIC ALLIANCE": "DA",
         "CAPE PARTY/ KAAPSE PARTY": "CP",
         "KOUGA 2000": "K2000",
         "CONGRESS  OF THE PEOPLE": "COPE",
@@ -50,26 +32,62 @@ def make_party_acronym(name):
         return acronym
 
 
-def get_elections_profile(geo_code, geo_level):
+def get_elections_profile(geo):
+    ELECTIONS = [
+        {
+            'name': 'Municipal 2016',
+            'table_code': 'municipal_2016',
+            'dataset': '2016 Municipal Elections',
+            'geo_version': '2016',
+        },
+    ]
+    if geo.version == '2011' or geo.geo_level != 'ward':
+        ELECTIONS.extend([
+            {
+                'name': 'National 2014',
+                'table_code': 'national_2014',
+                'dataset': '2014 National Elections',
+                'geo_version': '2011',
+            },
+            {
+                'name': 'Provincial 2014',
+                'table_code': 'provincial_2014',
+                'dataset': '2014 Provincial Elections',
+                'geo_version': '2011',
+            },
+            {
+                'name': 'Municipal 2011',
+                'table_code': 'municipal_2011',
+                'dataset': '2011 Municipal Elections',
+                'geo_version': '2011',
+            },
+        ])
     data = OrderedDict()
     session = get_session()
     try:
-        geo_summary_levels = geo_data.get_summary_geo_info(geo_code, geo_level)
+        comparative_geos = geo_data.get_comparative_geos(geo)
 
         for election in ELECTIONS:
             section = election['name'].lower().replace(' ', '_')
-            data[section] = get_election_data(geo_code, geo_level, election, session)
+            # TODO: Hack to request data for different geo_version than this geo.
+            actual_geo_version = geo.version
+            geo.version = election['geo_version']
+            # If we can't find election data with the relevant geo version then
+            # we don't want to show anything for this election.
+            try:
+                data[section] = get_election_data(geo, election, session)
+                # get profiles for province and/or country
+                for comp_geo in comparative_geos:
+                    comp_geo.version = election['geo_version']
+                    merge_dicts(data[section], get_election_data(comp_geo, election, session), comp_geo.geo_level)
 
-            # get profiles for province and/or country
-            for level, code in geo_summary_levels:
-                # merge summary profile into current geo profile
-                merge_dicts(data[section], get_election_data(code, level, election, session), level)
+                # tweaks to make the data nicer
+                # show 8 largest parties on their own and group the rest as 'Other'
+                group_remainder(data[section]['party_distribution'], 9)
+            finally:
+                geo.version = actual_geo_version
 
-            # tweaks to make the data nicer
-            # show 8 largest parties on their own and group the rest as 'Other'
-            group_remainder(data[section]['party_distribution'], 9)
-
-        if geo_level == 'country':
+        if geo.geo_level == 'country':
             add_elections_media_coverage(data)
 
         return data
@@ -77,9 +95,9 @@ def get_elections_profile(geo_code, geo_level):
         session.close()
 
 
-def get_election_data(geo_code, geo_level, election, session):
+def get_election_data(geo, election, session):
     party_data, total_valid_votes = get_stat_data(
-        ['party'], geo_level, geo_code, session,
+        ['party'], geo, session,
         table_dataset=election['dataset'],
         recode=lambda f, v: make_party_acronym(v),
         order_by='-total')
@@ -87,13 +105,14 @@ def get_election_data(geo_code, geo_level, election, session):
     results = {
         'name': election['name'],
         'party_distribution': party_data,
+        'geo_version': election['geo_version']
     }
 
     # voter registration and turnout
     table = get_datatable('voter_turnout_%s' % election['table_code'])
-    results.update(table.get_stat_data(geo_level, geo_code, 'registered_voters', percent=False,
+    results.update(table.get_stat_data(geo, 'registered_voters', percent=False,
                                        recode={'registered_voters': 'Number of registered voters'})[0])
-    results.update(table.get_stat_data(geo_level, geo_code, 'total_votes', percent=True, total='registered_voters',
+    results.update(table.get_stat_data(geo, 'total_votes', percent=True, total='registered_voters',
                                        recode={'total_votes': 'Of registered voters cast their vote'})[0])
 
     return results

@@ -2,6 +2,9 @@
 -- PostgreSQL database dump
 --
 
+-- Dumped from database version 9.6.2
+-- Dumped by pg_dump version 9.6.2
+
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET client_encoding = 'UTF8';
@@ -11,7 +14,7 @@ SET client_min_messages = warning;
 
 SET search_path = public, pg_catalog;
 
-ALTER TABLE IF EXISTS ONLY public.crimes_type_of_crime_year DROP CONSTRAINT IF EXISTS crimes_type_of_crime_year_pkey;
+ALTER TABLE IF EXISTS ONLY public.crimes_type_of_crime_year DROP CONSTRAINT IF EXISTS pk_crimes_type_of_crime_year;
 DROP TABLE IF EXISTS public.crimes_type_of_crime_year;
 SET search_path = public, pg_catalog;
 
@@ -20,7 +23,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: crimes_type_of_crime_year; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+-- Name: crimes_type_of_crime_year; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE crimes_type_of_crime_year (
@@ -28,7 +31,8 @@ CREATE TABLE crimes_type_of_crime_year (
     geo_code character varying(10) NOT NULL,
     "type of crime" character varying(128) NOT NULL,
     year character varying(128) NOT NULL,
-    total integer NOT NULL
+    total integer NOT NULL,
+    geo_version character varying(100) NOT NULL
 );
 
 
@@ -36,8836 +40,8836 @@ CREATE TABLE crimes_type_of_crime_year (
 -- Data for Name: crimes_type_of_crime_year; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY crimes_type_of_crime_year (geo_level, geo_code, "type of crime", year, total) FROM stdin;
-ward	10101001	Property crime	2005-06	47
-ward	10101001	Contact crime	2005-06	253
-ward	10101001	Property crime	2006-07	50
-ward	10101001	Contact crime	2006-07	246
-ward	10101001	Property crime	2007-08	63
-ward	10101001	Contact crime	2007-08	303
-ward	10101001	Property crime	2008-09	123
-ward	10101001	Contact crime	2008-09	257
-ward	10101001	Property crime	2009-10	101
-ward	10101001	Contact crime	2009-10	181
-ward	10101001	Property crime	2010-11	83
-ward	10101001	Contact crime	2010-11	194
-ward	10101001	Property crime	2011-12	69
-ward	10101001	Contact crime	2011-12	168
-ward	10101001	Property crime	2012-13	93
-ward	10101001	Contact crime	2012-13	234
-ward	10101001	Property crime	2013-14	97
-ward	10101001	Contact crime	2013-14	265
-ward	10101001	Property crime	2014-15	130
-ward	10101001	Contact crime	2014-15	240
-ward	10101002	Property crime	2005-06	41
-ward	10101002	Contact crime	2005-06	135
-ward	10101002	Property crime	2006-07	37
-ward	10101002	Contact crime	2006-07	127
-ward	10101002	Property crime	2007-08	41
-ward	10101002	Contact crime	2007-08	136
-ward	10101002	Property crime	2008-09	55
-ward	10101002	Contact crime	2008-09	122
-ward	10101002	Property crime	2009-10	61
-ward	10101002	Contact crime	2009-10	106
-ward	10101002	Property crime	2010-11	63
-ward	10101002	Contact crime	2010-11	117
-ward	10101002	Property crime	2011-12	58
-ward	10101002	Contact crime	2011-12	131
-ward	10101002	Property crime	2012-13	74
-ward	10101002	Contact crime	2012-13	148
-ward	10101002	Property crime	2013-14	81
-ward	10101002	Contact crime	2013-14	163
-ward	10101002	Property crime	2014-15	78
-ward	10101002	Contact crime	2014-15	157
-ward	10101003	Property crime	2005-06	52
-ward	10101003	Contact crime	2005-06	129
-ward	10101003	Property crime	2006-07	55
-ward	10101003	Contact crime	2006-07	129
-ward	10101003	Property crime	2007-08	54
-ward	10101003	Contact crime	2007-08	112
-ward	10101003	Property crime	2008-09	58
-ward	10101003	Contact crime	2008-09	109
-ward	10101003	Property crime	2009-10	79
-ward	10101003	Contact crime	2009-10	126
-ward	10101003	Property crime	2010-11	68
-ward	10101003	Contact crime	2010-11	141
-ward	10101003	Property crime	2011-12	83
-ward	10101003	Contact crime	2011-12	186
-ward	10101003	Property crime	2012-13	103
-ward	10101003	Contact crime	2012-13	161
-ward	10101003	Property crime	2013-14	129
-ward	10101003	Contact crime	2013-14	173
-ward	10101003	Property crime	2014-15	110
-ward	10101003	Contact crime	2014-15	191
-ward	10101004	Property crime	2005-06	54
-ward	10101004	Contact crime	2005-06	133
-ward	10101004	Property crime	2006-07	57
-ward	10101004	Contact crime	2006-07	133
-ward	10101004	Property crime	2007-08	56
-ward	10101004	Contact crime	2007-08	116
-ward	10101004	Property crime	2008-09	59
-ward	10101004	Contact crime	2008-09	113
-ward	10101004	Property crime	2009-10	81
-ward	10101004	Contact crime	2009-10	130
-ward	10101004	Property crime	2010-11	70
-ward	10101004	Contact crime	2010-11	145
-ward	10101004	Property crime	2011-12	86
-ward	10101004	Contact crime	2011-12	192
-ward	10101004	Property crime	2012-13	106
-ward	10101004	Contact crime	2012-13	166
-ward	10101004	Property crime	2013-14	133
-ward	10101004	Contact crime	2013-14	178
-ward	10101004	Property crime	2014-15	113
-ward	10101004	Contact crime	2014-15	197
-ward	10101005	Property crime	2005-06	41
-ward	10101005	Contact crime	2005-06	112
-ward	10101005	Property crime	2006-07	41
-ward	10101005	Contact crime	2006-07	119
-ward	10101005	Property crime	2007-08	43
-ward	10101005	Contact crime	2007-08	108
-ward	10101005	Property crime	2008-09	49
-ward	10101005	Contact crime	2008-09	97
-ward	10101005	Property crime	2009-10	61
-ward	10101005	Contact crime	2009-10	106
-ward	10101005	Property crime	2010-11	56
-ward	10101005	Contact crime	2010-11	123
-ward	10101005	Property crime	2011-12	70
-ward	10101005	Contact crime	2011-12	148
-ward	10101005	Property crime	2012-13	90
-ward	10101005	Contact crime	2012-13	144
-ward	10101005	Property crime	2013-14	94
-ward	10101005	Contact crime	2013-14	140
-ward	10101005	Property crime	2014-15	86
-ward	10101005	Contact crime	2014-15	148
-ward	10101006	Property crime	2005-06	31
-ward	10101006	Contact crime	2005-06	122
-ward	10101006	Property crime	2006-07	25
-ward	10101006	Contact crime	2006-07	151
-ward	10101006	Property crime	2007-08	34
-ward	10101006	Contact crime	2007-08	147
-ward	10101006	Property crime	2008-09	53
-ward	10101006	Contact crime	2008-09	112
-ward	10101006	Property crime	2009-10	43
-ward	10101006	Contact crime	2009-10	109
-ward	10101006	Property crime	2010-11	47
-ward	10101006	Contact crime	2010-11	140
-ward	10101006	Property crime	2011-12	69
-ward	10101006	Contact crime	2011-12	126
-ward	10101006	Property crime	2012-13	102
-ward	10101006	Contact crime	2012-13	170
-ward	10101006	Property crime	2013-14	52
-ward	10101006	Contact crime	2013-14	119
-ward	10101006	Property crime	2014-15	67
-ward	10101006	Contact crime	2014-15	112
-ward	10101007	Property crime	2005-06	29
-ward	10101007	Contact crime	2005-06	89
-ward	10101007	Property crime	2006-07	19
-ward	10101007	Contact crime	2006-07	85
-ward	10101007	Property crime	2007-08	15
-ward	10101007	Contact crime	2007-08	75
-ward	10101007	Property crime	2008-09	22
-ward	10101007	Contact crime	2008-09	59
-ward	10101007	Property crime	2009-10	41
-ward	10101007	Contact crime	2009-10	115
-ward	10101007	Property crime	2010-11	48
-ward	10101007	Contact crime	2010-11	98
-ward	10101007	Property crime	2011-12	45
-ward	10101007	Contact crime	2011-12	106
-ward	10101007	Property crime	2012-13	60
-ward	10101007	Contact crime	2012-13	115
-ward	10101007	Property crime	2013-14	61
-ward	10101007	Contact crime	2013-14	133
-ward	10101007	Property crime	2014-15	52
-ward	10101007	Contact crime	2014-15	146
-ward	10101008	Property crime	2005-06	40
-ward	10101008	Contact crime	2005-06	154
-ward	10101008	Property crime	2006-07	27
-ward	10101008	Contact crime	2006-07	133
-ward	10101008	Property crime	2007-08	35
-ward	10101008	Contact crime	2007-08	147
-ward	10101008	Property crime	2008-09	50
-ward	10101008	Contact crime	2008-09	131
-ward	10101008	Property crime	2009-10	54
-ward	10101008	Contact crime	2009-10	112
-ward	10101008	Property crime	2010-11	47
-ward	10101008	Contact crime	2010-11	123
-ward	10101008	Property crime	2011-12	44
-ward	10101008	Contact crime	2011-12	115
-ward	10101008	Property crime	2012-13	53
-ward	10101008	Contact crime	2012-13	123
-ward	10101008	Property crime	2013-14	60
-ward	10101008	Contact crime	2013-14	145
-ward	10101008	Property crime	2014-15	65
-ward	10101008	Contact crime	2014-15	142
-ward	10102001	Property crime	2005-06	47
-ward	10102001	Contact crime	2005-06	150
-ward	10102001	Property crime	2006-07	31
-ward	10102001	Contact crime	2006-07	175
-ward	10102001	Property crime	2007-08	57
-ward	10102001	Contact crime	2007-08	201
-ward	10102001	Property crime	2008-09	63
-ward	10102001	Contact crime	2008-09	173
-ward	10102001	Property crime	2009-10	67
-ward	10102001	Contact crime	2009-10	180
-ward	10102001	Property crime	2010-11	88
-ward	10102001	Contact crime	2010-11	189
-ward	10102001	Property crime	2011-12	96
-ward	10102001	Contact crime	2011-12	210
-ward	10102001	Property crime	2012-13	79
-ward	10102001	Contact crime	2012-13	183
-ward	10102001	Property crime	2013-14	106
-ward	10102001	Contact crime	2013-14	166
-ward	10102001	Property crime	2014-15	88
-ward	10102001	Contact crime	2014-15	163
-ward	10102002	Property crime	2005-06	27
-ward	10102002	Contact crime	2005-06	87
-ward	10102002	Property crime	2006-07	18
-ward	10102002	Contact crime	2006-07	102
-ward	10102002	Property crime	2007-08	33
-ward	10102002	Contact crime	2007-08	118
-ward	10102002	Property crime	2008-09	37
-ward	10102002	Contact crime	2008-09	101
-ward	10102002	Property crime	2009-10	39
-ward	10102002	Contact crime	2009-10	105
-ward	10102002	Property crime	2010-11	52
-ward	10102002	Contact crime	2010-11	110
-ward	10102002	Property crime	2011-12	57
-ward	10102002	Contact crime	2011-12	123
-ward	10102002	Property crime	2012-13	46
-ward	10102002	Contact crime	2012-13	107
-ward	10102002	Property crime	2013-14	62
-ward	10102002	Contact crime	2013-14	97
-ward	10102002	Property crime	2014-15	52
-ward	10102002	Contact crime	2014-15	95
-ward	10102003	Property crime	2005-06	57
-ward	10102003	Contact crime	2005-06	150
-ward	10102003	Property crime	2006-07	50
-ward	10102003	Contact crime	2006-07	149
-ward	10102003	Property crime	2007-08	34
-ward	10102003	Contact crime	2007-08	123
-ward	10102003	Property crime	2008-09	39
-ward	10102003	Contact crime	2008-09	117
-ward	10102003	Property crime	2009-10	53
-ward	10102003	Contact crime	2009-10	120
-ward	10102003	Property crime	2010-11	47
-ward	10102003	Contact crime	2010-11	112
-ward	10102003	Property crime	2011-12	53
-ward	10102003	Contact crime	2011-12	121
-ward	10102003	Property crime	2012-13	63
-ward	10102003	Contact crime	2012-13	127
-ward	10102003	Property crime	2013-14	60
-ward	10102003	Contact crime	2013-14	138
-ward	10102003	Property crime	2014-15	48
-ward	10102003	Contact crime	2014-15	137
-ward	10102004	Property crime	2005-06	60
-ward	10102004	Contact crime	2005-06	150
-ward	10102004	Property crime	2006-07	39
-ward	10102004	Contact crime	2006-07	167
-ward	10102004	Property crime	2007-08	38
-ward	10102004	Contact crime	2007-08	150
-ward	10102004	Property crime	2008-09	31
-ward	10102004	Contact crime	2008-09	107
-ward	10102004	Property crime	2009-10	50
-ward	10102004	Contact crime	2009-10	172
-ward	10102004	Property crime	2010-11	53
-ward	10102004	Contact crime	2010-11	185
-ward	10102004	Property crime	2011-12	62
-ward	10102004	Contact crime	2011-12	197
-ward	10102004	Property crime	2012-13	65
-ward	10102004	Contact crime	2012-13	212
-ward	10102004	Property crime	2013-14	56
-ward	10102004	Contact crime	2013-14	193
-ward	10102004	Property crime	2014-15	76
-ward	10102004	Contact crime	2014-15	197
-ward	10102005	Property crime	2005-06	80
-ward	10102005	Contact crime	2005-06	165
-ward	10102005	Property crime	2006-07	72
-ward	10102005	Contact crime	2006-07	141
-ward	10102005	Property crime	2007-08	81
-ward	10102005	Contact crime	2007-08	153
-ward	10102005	Property crime	2008-09	106
-ward	10102005	Contact crime	2008-09	115
-ward	10102005	Property crime	2009-10	104
-ward	10102005	Contact crime	2009-10	120
-ward	10102005	Property crime	2010-11	93
-ward	10102005	Contact crime	2010-11	106
-ward	10102005	Property crime	2011-12	112
-ward	10102005	Contact crime	2011-12	120
-ward	10102005	Property crime	2012-13	119
-ward	10102005	Contact crime	2012-13	102
-ward	10102005	Property crime	2013-14	130
-ward	10102005	Contact crime	2013-14	141
-ward	10102005	Property crime	2014-15	169
-ward	10102005	Contact crime	2014-15	115
-ward	10102006	Property crime	2005-06	40
-ward	10102006	Contact crime	2005-06	106
-ward	10102006	Property crime	2006-07	35
-ward	10102006	Contact crime	2006-07	106
-ward	10102006	Property crime	2007-08	24
-ward	10102006	Contact crime	2007-08	89
-ward	10102006	Property crime	2008-09	27
-ward	10102006	Contact crime	2008-09	84
-ward	10102006	Property crime	2009-10	37
-ward	10102006	Contact crime	2009-10	86
-ward	10102006	Property crime	2010-11	34
-ward	10102006	Contact crime	2010-11	81
-ward	10102006	Property crime	2011-12	38
-ward	10102006	Contact crime	2011-12	87
-ward	10102006	Property crime	2012-13	45
-ward	10102006	Contact crime	2012-13	92
-ward	10102006	Property crime	2013-14	43
-ward	10102006	Contact crime	2013-14	98
-ward	10102006	Property crime	2014-15	35
-ward	10102006	Contact crime	2014-15	99
-ward	10103001	Property crime	2005-06	19
-ward	10103001	Contact crime	2005-06	83
-ward	10103001	Property crime	2006-07	14
-ward	10103001	Contact crime	2006-07	91
-ward	10103001	Property crime	2007-08	20
-ward	10103001	Contact crime	2007-08	127
-ward	10103001	Property crime	2008-09	29
-ward	10103001	Contact crime	2008-09	113
-ward	10103001	Property crime	2009-10	30
-ward	10103001	Contact crime	2009-10	123
-ward	10103001	Property crime	2010-11	30
-ward	10103001	Contact crime	2010-11	121
-ward	10103001	Property crime	2011-12	38
-ward	10103001	Contact crime	2011-12	131
-ward	10103001	Property crime	2012-13	50
-ward	10103001	Contact crime	2012-13	129
-ward	10103001	Property crime	2013-14	42
-ward	10103001	Contact crime	2013-14	126
-ward	10103001	Property crime	2014-15	52
-ward	10103001	Contact crime	2014-15	132
-ward	10103002	Property crime	2005-06	25
-ward	10103002	Contact crime	2005-06	109
-ward	10103002	Property crime	2006-07	18
-ward	10103002	Contact crime	2006-07	118
-ward	10103002	Property crime	2007-08	24
-ward	10103002	Contact crime	2007-08	168
-ward	10103002	Property crime	2008-09	37
-ward	10103002	Contact crime	2008-09	150
-ward	10103002	Property crime	2009-10	38
-ward	10103002	Contact crime	2009-10	164
-ward	10103002	Property crime	2010-11	37
-ward	10103002	Contact crime	2010-11	160
-ward	10103002	Property crime	2011-12	48
-ward	10103002	Contact crime	2011-12	172
-ward	10103002	Property crime	2012-13	66
-ward	10103002	Contact crime	2012-13	171
-ward	10103002	Property crime	2013-14	53
-ward	10103002	Contact crime	2013-14	168
-ward	10103002	Property crime	2014-15	69
-ward	10103002	Contact crime	2014-15	177
-ward	10103003	Property crime	2005-06	29
-ward	10103003	Contact crime	2005-06	99
-ward	10103003	Property crime	2006-07	21
-ward	10103003	Contact crime	2006-07	101
-ward	10103003	Property crime	2007-08	21
-ward	10103003	Contact crime	2007-08	112
-ward	10103003	Property crime	2008-09	25
-ward	10103003	Contact crime	2008-09	102
-ward	10103003	Property crime	2009-10	33
-ward	10103003	Contact crime	2009-10	93
-ward	10103003	Property crime	2010-11	34
-ward	10103003	Contact crime	2010-11	112
-ward	10103003	Property crime	2011-12	38
-ward	10103003	Contact crime	2011-12	106
-ward	10103003	Property crime	2012-13	41
-ward	10103003	Contact crime	2012-13	112
-ward	10103003	Property crime	2013-14	37
-ward	10103003	Contact crime	2013-14	118
-ward	10103003	Property crime	2014-15	40
-ward	10103003	Contact crime	2014-15	115
-ward	10103004	Property crime	2005-06	32
-ward	10103004	Contact crime	2005-06	103
-ward	10103004	Property crime	2006-07	29
-ward	10103004	Contact crime	2006-07	84
-ward	10103004	Property crime	2007-08	29
-ward	10103004	Contact crime	2007-08	108
-ward	10103004	Property crime	2008-09	34
-ward	10103004	Contact crime	2008-09	100
-ward	10103004	Property crime	2009-10	40
-ward	10103004	Contact crime	2009-10	91
-ward	10103004	Property crime	2010-11	48
-ward	10103004	Contact crime	2010-11	100
-ward	10103004	Property crime	2011-12	42
-ward	10103004	Contact crime	2011-12	103
-ward	10103004	Property crime	2012-13	58
-ward	10103004	Contact crime	2012-13	107
-ward	10103004	Property crime	2013-14	47
-ward	10103004	Contact crime	2013-14	111
-ward	10103004	Property crime	2014-15	55
-ward	10103004	Contact crime	2014-15	114
-ward	10103005	Property crime	2005-06	41
-ward	10103005	Contact crime	2005-06	131
-ward	10103005	Property crime	2006-07	31
-ward	10103005	Contact crime	2006-07	117
-ward	10103005	Property crime	2007-08	33
-ward	10103005	Contact crime	2007-08	129
-ward	10103005	Property crime	2008-09	36
-ward	10103005	Contact crime	2008-09	113
-ward	10103005	Property crime	2009-10	43
-ward	10103005	Contact crime	2009-10	122
-ward	10103005	Property crime	2010-11	43
-ward	10103005	Contact crime	2010-11	130
-ward	10103005	Property crime	2011-12	47
-ward	10103005	Contact crime	2011-12	133
-ward	10103005	Property crime	2012-13	57
-ward	10103005	Contact crime	2012-13	130
-ward	10103005	Property crime	2013-14	47
-ward	10103005	Contact crime	2013-14	133
-ward	10103005	Property crime	2014-15	54
-ward	10103005	Contact crime	2014-15	136
-ward	10103006	Property crime	2005-06	32
-ward	10103006	Contact crime	2005-06	69
-ward	10103006	Property crime	2006-07	36
-ward	10103006	Contact crime	2006-07	63
-ward	10103006	Property crime	2007-08	31
-ward	10103006	Contact crime	2007-08	61
-ward	10103006	Property crime	2008-09	37
-ward	10103006	Contact crime	2008-09	56
-ward	10103006	Property crime	2009-10	43
-ward	10103006	Contact crime	2009-10	70
-ward	10103006	Property crime	2010-11	32
-ward	10103006	Contact crime	2010-11	67
-ward	10103006	Property crime	2011-12	45
-ward	10103006	Contact crime	2011-12	69
-ward	10103006	Property crime	2012-13	54
-ward	10103006	Contact crime	2012-13	74
-ward	10103006	Property crime	2013-14	43
-ward	10103006	Contact crime	2013-14	60
-ward	10103006	Property crime	2014-15	52
-ward	10103006	Contact crime	2014-15	61
-ward	10103007	Property crime	2005-06	73
-ward	10103007	Contact crime	2005-06	136
-ward	10103007	Property crime	2006-07	103
-ward	10103007	Contact crime	2006-07	127
-ward	10103007	Property crime	2007-08	82
-ward	10103007	Contact crime	2007-08	117
-ward	10103007	Property crime	2008-09	110
-ward	10103007	Contact crime	2008-09	127
-ward	10103007	Property crime	2009-10	123
-ward	10103007	Contact crime	2009-10	122
-ward	10103007	Property crime	2010-11	92
-ward	10103007	Contact crime	2010-11	119
-ward	10103007	Property crime	2011-12	129
-ward	10103007	Contact crime	2011-12	120
-ward	10103007	Property crime	2012-13	158
-ward	10103007	Contact crime	2012-13	146
-ward	10103007	Property crime	2013-14	126
-ward	10103007	Contact crime	2013-14	100
-ward	10103007	Property crime	2014-15	155
-ward	10103007	Contact crime	2014-15	103
-ward	10104001	Property crime	2005-06	100
-ward	10104001	Contact crime	2005-06	127
-ward	10104001	Property crime	2006-07	113
-ward	10104001	Contact crime	2006-07	77
-ward	10104001	Property crime	2007-08	111
-ward	10104001	Contact crime	2007-08	58
-ward	10104001	Property crime	2008-09	148
-ward	10104001	Contact crime	2008-09	74
-ward	10104001	Property crime	2009-10	145
-ward	10104001	Contact crime	2009-10	86
-ward	10104001	Property crime	2010-11	128
-ward	10104001	Contact crime	2010-11	77
-ward	10104001	Property crime	2011-12	140
-ward	10104001	Contact crime	2011-12	93
-ward	10104001	Property crime	2012-13	171
-ward	10104001	Contact crime	2012-13	117
-ward	10104001	Property crime	2013-14	151
-ward	10104001	Contact crime	2013-14	114
-ward	10104001	Property crime	2014-15	194
-ward	10104001	Contact crime	2014-15	115
-ward	10104002	Property crime	2005-06	156
-ward	10104002	Contact crime	2005-06	187
-ward	10104002	Property crime	2006-07	235
-ward	10104002	Contact crime	2006-07	171
-ward	10104002	Property crime	2007-08	281
-ward	10104002	Contact crime	2007-08	195
-ward	10104002	Property crime	2008-09	276
-ward	10104002	Contact crime	2008-09	173
-ward	10104002	Property crime	2009-10	214
-ward	10104002	Contact crime	2009-10	200
-ward	10104002	Property crime	2010-11	211
-ward	10104002	Contact crime	2010-11	167
-ward	10104002	Property crime	2011-12	251
-ward	10104002	Contact crime	2011-12	173
-ward	10104002	Property crime	2012-13	303
-ward	10104002	Contact crime	2012-13	175
-ward	10104002	Property crime	2013-14	290
-ward	10104002	Contact crime	2013-14	186
-ward	10104002	Property crime	2014-15	293
-ward	10104002	Contact crime	2014-15	239
-ward	10104003	Property crime	2005-06	76
-ward	10104003	Contact crime	2005-06	96
-ward	10104003	Property crime	2006-07	86
-ward	10104003	Contact crime	2006-07	58
-ward	10104003	Property crime	2007-08	84
-ward	10104003	Contact crime	2007-08	44
-ward	10104003	Property crime	2008-09	112
-ward	10104003	Contact crime	2008-09	56
-ward	10104003	Property crime	2009-10	110
-ward	10104003	Contact crime	2009-10	65
-ward	10104003	Property crime	2010-11	97
-ward	10104003	Contact crime	2010-11	59
-ward	10104003	Property crime	2011-12	106
-ward	10104003	Contact crime	2011-12	71
-ward	10104003	Property crime	2012-13	130
-ward	10104003	Contact crime	2012-13	89
-ward	10104003	Property crime	2013-14	115
-ward	10104003	Contact crime	2013-14	86
-ward	10104003	Property crime	2014-15	147
-ward	10104003	Contact crime	2014-15	87
-ward	10104004	Property crime	2005-06	102
-ward	10104004	Contact crime	2005-06	130
-ward	10104004	Property crime	2006-07	116
-ward	10104004	Contact crime	2006-07	79
-ward	10104004	Property crime	2007-08	114
-ward	10104004	Contact crime	2007-08	60
-ward	10104004	Property crime	2008-09	152
-ward	10104004	Contact crime	2008-09	76
-ward	10104004	Property crime	2009-10	149
-ward	10104004	Contact crime	2009-10	88
-ward	10104004	Property crime	2010-11	132
-ward	10104004	Contact crime	2010-11	79
-ward	10104004	Property crime	2011-12	144
-ward	10104004	Contact crime	2011-12	96
-ward	10104004	Property crime	2012-13	175
-ward	10104004	Contact crime	2012-13	120
-ward	10104004	Property crime	2013-14	156
-ward	10104004	Contact crime	2013-14	117
-ward	10104004	Property crime	2014-15	200
-ward	10104004	Contact crime	2014-15	118
-ward	10104005	Property crime	2005-06	66
-ward	10104005	Contact crime	2005-06	83
-ward	10104005	Property crime	2006-07	75
-ward	10104005	Contact crime	2006-07	51
-ward	10104005	Property crime	2007-08	74
-ward	10104005	Contact crime	2007-08	40
-ward	10104005	Property crime	2008-09	97
-ward	10104005	Contact crime	2008-09	49
-ward	10104005	Property crime	2009-10	95
-ward	10104005	Contact crime	2009-10	57
-ward	10104005	Property crime	2010-11	84
-ward	10104005	Contact crime	2010-11	52
-ward	10104005	Property crime	2011-12	93
-ward	10104005	Contact crime	2011-12	62
-ward	10104005	Property crime	2012-13	113
-ward	10104005	Contact crime	2012-13	77
-ward	10104005	Property crime	2013-14	100
-ward	10104005	Contact crime	2013-14	75
-ward	10104005	Property crime	2014-15	127
-ward	10104005	Contact crime	2014-15	76
-ward	10104006	Property crime	2005-06	109
-ward	10104006	Contact crime	2005-06	65
-ward	10104006	Property crime	2006-07	118
-ward	10104006	Contact crime	2006-07	84
-ward	10104006	Property crime	2007-08	158
-ward	10104006	Contact crime	2007-08	94
-ward	10104006	Property crime	2008-09	150
-ward	10104006	Contact crime	2008-09	110
-ward	10104006	Property crime	2009-10	114
-ward	10104006	Contact crime	2009-10	114
-ward	10104006	Property crime	2010-11	160
-ward	10104006	Contact crime	2010-11	144
-ward	10104006	Property crime	2011-12	174
-ward	10104006	Contact crime	2011-12	144
-ward	10104006	Property crime	2012-13	272
-ward	10104006	Contact crime	2012-13	129
-ward	10104006	Property crime	2013-14	143
-ward	10104006	Contact crime	2013-14	143
-ward	10104006	Property crime	2014-15	192
-ward	10104006	Contact crime	2014-15	133
-ward	10104007	Property crime	2005-06	18
-ward	10104007	Contact crime	2005-06	70
-ward	10104007	Property crime	2006-07	13
-ward	10104007	Contact crime	2006-07	69
-ward	10104007	Property crime	2007-08	19
-ward	10104007	Contact crime	2007-08	69
-ward	10104007	Property crime	2008-09	24
-ward	10104007	Contact crime	2008-09	70
-ward	10104007	Property crime	2009-10	36
-ward	10104007	Contact crime	2009-10	73
-ward	10104007	Property crime	2010-11	33
-ward	10104007	Contact crime	2010-11	73
-ward	10104007	Property crime	2011-12	60
-ward	10104007	Contact crime	2011-12	75
-ward	10104007	Property crime	2012-13	55
-ward	10104007	Contact crime	2012-13	102
-ward	10104007	Property crime	2013-14	70
-ward	10104007	Contact crime	2013-14	107
-ward	10104007	Property crime	2014-15	77
-ward	10104007	Contact crime	2014-15	102
-ward	10104008	Property crime	2005-06	70
-ward	10104008	Contact crime	2005-06	90
-ward	10104008	Property crime	2006-07	103
-ward	10104008	Contact crime	2006-07	83
-ward	10104008	Property crime	2007-08	123
-ward	10104008	Contact crime	2007-08	93
-ward	10104008	Property crime	2008-09	122
-ward	10104008	Contact crime	2008-09	84
-ward	10104008	Property crime	2009-10	98
-ward	10104008	Contact crime	2009-10	96
-ward	10104008	Property crime	2010-11	96
-ward	10104008	Contact crime	2010-11	82
-ward	10104008	Property crime	2011-12	116
-ward	10104008	Contact crime	2011-12	85
-ward	10104008	Property crime	2012-13	139
-ward	10104008	Contact crime	2012-13	90
-ward	10104008	Property crime	2013-14	134
-ward	10104008	Contact crime	2013-14	95
-ward	10104008	Property crime	2014-15	137
-ward	10104008	Contact crime	2014-15	117
-ward	10104009	Property crime	2005-06	98
-ward	10104009	Contact crime	2005-06	118
-ward	10104009	Property crime	2006-07	148
-ward	10104009	Contact crime	2006-07	107
-ward	10104009	Property crime	2007-08	177
-ward	10104009	Contact crime	2007-08	122
-ward	10104009	Property crime	2008-09	173
-ward	10104009	Contact crime	2008-09	109
-ward	10104009	Property crime	2009-10	135
-ward	10104009	Contact crime	2009-10	125
-ward	10104009	Property crime	2010-11	132
-ward	10104009	Contact crime	2010-11	105
-ward	10104009	Property crime	2011-12	158
-ward	10104009	Contact crime	2011-12	109
-ward	10104009	Property crime	2012-13	191
-ward	10104009	Contact crime	2012-13	110
-ward	10104009	Property crime	2013-14	182
-ward	10104009	Contact crime	2013-14	117
-ward	10104009	Property crime	2014-15	184
-ward	10104009	Contact crime	2014-15	151
-ward	10104010	Property crime	2005-06	110
-ward	10104010	Contact crime	2005-06	132
-ward	10104010	Property crime	2006-07	166
-ward	10104010	Contact crime	2006-07	121
-ward	10104010	Property crime	2007-08	199
-ward	10104010	Contact crime	2007-08	138
-ward	10104010	Property crime	2008-09	195
-ward	10104010	Contact crime	2008-09	122
-ward	10104010	Property crime	2009-10	152
-ward	10104010	Contact crime	2009-10	141
-ward	10104010	Property crime	2010-11	149
-ward	10104010	Contact crime	2010-11	118
-ward	10104010	Property crime	2011-12	177
-ward	10104010	Contact crime	2011-12	122
-ward	10104010	Property crime	2012-13	214
-ward	10104010	Contact crime	2012-13	124
-ward	10104010	Property crime	2013-14	205
-ward	10104010	Contact crime	2013-14	131
-ward	10104010	Property crime	2014-15	207
-ward	10104010	Contact crime	2014-15	169
-ward	10104011	Property crime	2005-06	51
-ward	10104011	Contact crime	2005-06	80
-ward	10104011	Property crime	2006-07	62
-ward	10104011	Contact crime	2006-07	68
-ward	10104011	Property crime	2007-08	64
-ward	10104011	Contact crime	2007-08	69
-ward	10104011	Property crime	2008-09	72
-ward	10104011	Contact crime	2008-09	71
-ward	10104011	Property crime	2009-10	67
-ward	10104011	Contact crime	2009-10	77
-ward	10104011	Property crime	2010-11	68
-ward	10104011	Contact crime	2010-11	68
-ward	10104011	Property crime	2011-12	78
-ward	10104011	Contact crime	2011-12	80
-ward	10104011	Property crime	2012-13	113
-ward	10104011	Contact crime	2012-13	82
-ward	10104011	Property crime	2013-14	87
-ward	10104011	Contact crime	2013-14	73
-ward	10104011	Property crime	2014-15	104
-ward	10104011	Contact crime	2014-15	94
-ward	10104012	Property crime	2005-06	62
-ward	10104012	Contact crime	2005-06	128
-ward	10104012	Property crime	2006-07	53
-ward	10104012	Contact crime	2006-07	103
-ward	10104012	Property crime	2007-08	35
-ward	10104012	Contact crime	2007-08	93
-ward	10104012	Property crime	2008-09	62
-ward	10104012	Contact crime	2008-09	110
-ward	10104012	Property crime	2009-10	76
-ward	10104012	Contact crime	2009-10	113
-ward	10104012	Property crime	2010-11	82
-ward	10104012	Contact crime	2010-11	105
-ward	10104012	Property crime	2011-12	91
-ward	10104012	Contact crime	2011-12	135
-ward	10104012	Property crime	2012-13	161
-ward	10104012	Contact crime	2012-13	139
-ward	10104012	Property crime	2013-14	95
-ward	10104012	Contact crime	2013-14	108
-ward	10104012	Property crime	2014-15	139
-ward	10104012	Contact crime	2014-15	139
-ward	10104013	Property crime	2005-06	97
-ward	10104013	Contact crime	2005-06	116
-ward	10104013	Property crime	2006-07	146
-ward	10104013	Contact crime	2006-07	106
-ward	10104013	Property crime	2007-08	175
-ward	10104013	Contact crime	2007-08	121
-ward	10104013	Property crime	2008-09	172
-ward	10104013	Contact crime	2008-09	107
-ward	10104013	Property crime	2009-10	133
-ward	10104013	Contact crime	2009-10	124
-ward	10104013	Property crime	2010-11	131
-ward	10104013	Contact crime	2010-11	104
-ward	10104013	Property crime	2011-12	156
-ward	10104013	Contact crime	2011-12	108
-ward	10104013	Property crime	2012-13	189
-ward	10104013	Contact crime	2012-13	109
-ward	10104013	Property crime	2013-14	180
-ward	10104013	Contact crime	2013-14	116
-ward	10104013	Property crime	2014-15	182
-ward	10104013	Contact crime	2014-15	149
-ward	10105001	Property crime	2005-06	55
-ward	10105001	Contact crime	2005-06	148
-ward	10105001	Property crime	2006-07	61
-ward	10105001	Contact crime	2006-07	133
-ward	10105001	Property crime	2007-08	74
-ward	10105001	Contact crime	2007-08	116
-ward	10105001	Property crime	2008-09	66
-ward	10105001	Contact crime	2008-09	131
-ward	10105001	Property crime	2009-10	75
-ward	10105001	Contact crime	2009-10	130
-ward	10105001	Property crime	2010-11	66
-ward	10105001	Contact crime	2010-11	99
-ward	10105001	Property crime	2011-12	59
-ward	10105001	Contact crime	2011-12	112
-ward	10105001	Property crime	2012-13	75
-ward	10105001	Contact crime	2012-13	106
-ward	10105001	Property crime	2013-14	78
-ward	10105001	Contact crime	2013-14	109
-ward	10105001	Property crime	2014-15	77
-ward	10105001	Contact crime	2014-15	121
-ward	10105002	Property crime	2005-06	50
-ward	10105002	Contact crime	2005-06	133
-ward	10105002	Property crime	2006-07	55
-ward	10105002	Contact crime	2006-07	120
-ward	10105002	Property crime	2007-08	67
-ward	10105002	Contact crime	2007-08	105
-ward	10105002	Property crime	2008-09	59
-ward	10105002	Contact crime	2008-09	118
-ward	10105002	Property crime	2009-10	68
-ward	10105002	Contact crime	2009-10	118
-ward	10105002	Property crime	2010-11	59
-ward	10105002	Contact crime	2010-11	90
-ward	10105002	Property crime	2011-12	53
-ward	10105002	Contact crime	2011-12	102
-ward	10105002	Property crime	2012-13	68
-ward	10105002	Contact crime	2012-13	96
-ward	10105002	Property crime	2013-14	71
-ward	10105002	Contact crime	2013-14	98
-ward	10105002	Property crime	2014-15	69
-ward	10105002	Contact crime	2014-15	109
-ward	10105003	Property crime	2005-06	57
-ward	10105003	Contact crime	2005-06	178
-ward	10105003	Property crime	2006-07	50
-ward	10105003	Contact crime	2006-07	168
-ward	10105003	Property crime	2007-08	49
-ward	10105003	Contact crime	2007-08	181
-ward	10105003	Property crime	2008-09	66
-ward	10105003	Contact crime	2008-09	177
-ward	10105003	Property crime	2009-10	96
-ward	10105003	Contact crime	2009-10	204
-ward	10105003	Property crime	2010-11	78
-ward	10105003	Contact crime	2010-11	163
-ward	10105003	Property crime	2011-12	76
-ward	10105003	Contact crime	2011-12	169
-ward	10105003	Property crime	2012-13	94
-ward	10105003	Contact crime	2012-13	199
-ward	10105003	Property crime	2013-14	93
-ward	10105003	Contact crime	2013-14	206
-ward	10105003	Property crime	2014-15	89
-ward	10105003	Contact crime	2014-15	241
-ward	10105004	Property crime	2005-06	76
-ward	10105004	Contact crime	2005-06	131
-ward	10105004	Property crime	2006-07	83
-ward	10105004	Contact crime	2006-07	122
-ward	10105004	Property crime	2007-08	85
-ward	10105004	Contact crime	2007-08	125
-ward	10105004	Property crime	2008-09	78
-ward	10105004	Contact crime	2008-09	111
-ward	10105004	Property crime	2009-10	87
-ward	10105004	Contact crime	2009-10	128
-ward	10105004	Property crime	2010-11	79
-ward	10105004	Contact crime	2010-11	133
-ward	10105004	Property crime	2011-12	86
-ward	10105004	Contact crime	2011-12	148
-ward	10105004	Property crime	2012-13	120
-ward	10105004	Contact crime	2012-13	166
-ward	10105004	Property crime	2013-14	127
-ward	10105004	Contact crime	2013-14	161
-ward	10105004	Property crime	2014-15	141
-ward	10105004	Contact crime	2014-15	163
-ward	10105005	Property crime	2005-06	67
-ward	10105005	Contact crime	2005-06	96
-ward	10105005	Property crime	2006-07	45
-ward	10105005	Contact crime	2006-07	83
-ward	10105005	Property crime	2007-08	49
-ward	10105005	Contact crime	2007-08	88
-ward	10105005	Property crime	2008-09	75
-ward	10105005	Contact crime	2008-09	91
-ward	10105005	Property crime	2009-10	62
-ward	10105005	Contact crime	2009-10	66
-ward	10105005	Property crime	2010-11	70
-ward	10105005	Contact crime	2010-11	87
-ward	10105005	Property crime	2011-12	59
-ward	10105005	Contact crime	2011-12	88
-ward	10105005	Property crime	2012-13	64
-ward	10105005	Contact crime	2012-13	70
-ward	10105005	Property crime	2013-14	57
-ward	10105005	Contact crime	2013-14	73
-ward	10105005	Property crime	2014-15	72
-ward	10105005	Contact crime	2014-15	88
-ward	10105006	Property crime	2005-06	99
-ward	10105006	Contact crime	2005-06	149
-ward	10105006	Property crime	2006-07	69
-ward	10105006	Contact crime	2006-07	130
-ward	10105006	Property crime	2007-08	76
-ward	10105006	Contact crime	2007-08	135
-ward	10105006	Property crime	2008-09	111
-ward	10105006	Contact crime	2008-09	141
-ward	10105006	Property crime	2009-10	95
-ward	10105006	Contact crime	2009-10	106
-ward	10105006	Property crime	2010-11	104
-ward	10105006	Contact crime	2010-11	132
-ward	10105006	Property crime	2011-12	89
-ward	10105006	Contact crime	2011-12	135
-ward	10105006	Property crime	2012-13	98
-ward	10105006	Contact crime	2012-13	110
-ward	10105006	Property crime	2013-14	88
-ward	10105006	Contact crime	2013-14	114
-ward	10105006	Property crime	2014-15	108
-ward	10105006	Contact crime	2014-15	136
-ward	10105007	Property crime	2005-06	98
-ward	10105007	Contact crime	2005-06	159
-ward	10105007	Property crime	2006-07	110
-ward	10105007	Contact crime	2006-07	149
-ward	10105007	Property crime	2007-08	112
-ward	10105007	Contact crime	2007-08	152
-ward	10105007	Property crime	2008-09	98
-ward	10105007	Contact crime	2008-09	131
-ward	10105007	Property crime	2009-10	108
-ward	10105007	Contact crime	2009-10	154
-ward	10105007	Property crime	2010-11	99
-ward	10105007	Contact crime	2010-11	168
-ward	10105007	Property crime	2011-12	111
-ward	10105007	Contact crime	2011-12	190
-ward	10105007	Property crime	2012-13	160
-ward	10105007	Contact crime	2012-13	215
-ward	10105007	Property crime	2013-14	171
-ward	10105007	Contact crime	2013-14	206
-ward	10105007	Property crime	2014-15	191
-ward	10105007	Contact crime	2014-15	201
-ward	10105008	Property crime	2005-06	58
-ward	10105008	Contact crime	2005-06	93
-ward	10105008	Property crime	2006-07	65
-ward	10105008	Contact crime	2006-07	88
-ward	10105008	Property crime	2007-08	66
-ward	10105008	Contact crime	2007-08	90
-ward	10105008	Property crime	2008-09	57
-ward	10105008	Contact crime	2008-09	77
-ward	10105008	Property crime	2009-10	64
-ward	10105008	Contact crime	2009-10	90
-ward	10105008	Property crime	2010-11	58
-ward	10105008	Contact crime	2010-11	99
-ward	10105008	Property crime	2011-12	65
-ward	10105008	Contact crime	2011-12	111
-ward	10105008	Property crime	2012-13	94
-ward	10105008	Contact crime	2012-13	126
-ward	10105008	Property crime	2013-14	100
-ward	10105008	Contact crime	2013-14	121
-ward	10105008	Property crime	2014-15	113
-ward	10105008	Contact crime	2014-15	118
-ward	10105009	Property crime	2005-06	62
-ward	10105009	Contact crime	2005-06	100
-ward	10105009	Property crime	2006-07	69
-ward	10105009	Contact crime	2006-07	94
-ward	10105009	Property crime	2007-08	71
-ward	10105009	Contact crime	2007-08	96
-ward	10105009	Property crime	2008-09	61
-ward	10105009	Contact crime	2008-09	82
-ward	10105009	Property crime	2009-10	68
-ward	10105009	Contact crime	2009-10	96
-ward	10105009	Property crime	2010-11	62
-ward	10105009	Contact crime	2010-11	106
-ward	10105009	Property crime	2011-12	70
-ward	10105009	Contact crime	2011-12	119
-ward	10105009	Property crime	2012-13	101
-ward	10105009	Contact crime	2012-13	135
-ward	10105009	Property crime	2013-14	108
-ward	10105009	Contact crime	2013-14	130
-ward	10105009	Property crime	2014-15	120
-ward	10105009	Contact crime	2014-15	127
-ward	10105010	Property crime	2005-06	57
-ward	10105010	Contact crime	2005-06	92
-ward	10105010	Property crime	2006-07	64
-ward	10105010	Contact crime	2006-07	86
-ward	10105010	Property crime	2007-08	65
-ward	10105010	Contact crime	2007-08	88
-ward	10105010	Property crime	2008-09	56
-ward	10105010	Contact crime	2008-09	75
-ward	10105010	Property crime	2009-10	62
-ward	10105010	Contact crime	2009-10	88
-ward	10105010	Property crime	2010-11	57
-ward	10105010	Contact crime	2010-11	97
-ward	10105010	Property crime	2011-12	64
-ward	10105010	Contact crime	2011-12	109
-ward	10105010	Property crime	2012-13	92
-ward	10105010	Contact crime	2012-13	124
-ward	10105010	Property crime	2013-14	98
-ward	10105010	Contact crime	2013-14	119
-ward	10105010	Property crime	2014-15	110
-ward	10105010	Contact crime	2014-15	116
-ward	10105011	Property crime	2005-06	72
-ward	10105011	Contact crime	2005-06	117
-ward	10105011	Property crime	2006-07	81
-ward	10105011	Contact crime	2006-07	109
-ward	10105011	Property crime	2007-08	83
-ward	10105011	Contact crime	2007-08	112
-ward	10105011	Property crime	2008-09	71
-ward	10105011	Contact crime	2008-09	96
-ward	10105011	Property crime	2009-10	79
-ward	10105011	Contact crime	2009-10	112
-ward	10105011	Property crime	2010-11	72
-ward	10105011	Contact crime	2010-11	123
-ward	10105011	Property crime	2011-12	81
-ward	10105011	Contact crime	2011-12	139
-ward	10105011	Property crime	2012-13	118
-ward	10105011	Contact crime	2012-13	157
-ward	10105011	Property crime	2013-14	125
-ward	10105011	Contact crime	2013-14	151
-ward	10105011	Property crime	2014-15	140
-ward	10105011	Contact crime	2014-15	148
-ward	10105012	Property crime	2005-06	82
-ward	10105012	Contact crime	2005-06	215
-ward	10105012	Property crime	2006-07	77
-ward	10105012	Contact crime	2006-07	204
-ward	10105012	Property crime	2007-08	74
-ward	10105012	Contact crime	2007-08	223
-ward	10105012	Property crime	2008-09	89
-ward	10105012	Contact crime	2008-09	208
-ward	10105012	Property crime	2009-10	124
-ward	10105012	Contact crime	2009-10	245
-ward	10105012	Property crime	2010-11	103
-ward	10105012	Contact crime	2010-11	211
-ward	10105012	Property crime	2011-12	106
-ward	10105012	Contact crime	2011-12	223
-ward	10105012	Property crime	2012-13	138
-ward	10105012	Contact crime	2012-13	265
-ward	10105012	Property crime	2013-14	140
-ward	10105012	Contact crime	2013-14	269
-ward	10105012	Property crime	2014-15	142
-ward	10105012	Contact crime	2014-15	303
-ward	10202001	Property crime	2005-06	66
-ward	10202001	Contact crime	2005-06	168
-ward	10202001	Property crime	2006-07	52
-ward	10202001	Contact crime	2006-07	142
-ward	10202001	Property crime	2007-08	46
-ward	10202001	Contact crime	2007-08	158
-ward	10202001	Property crime	2008-09	69
-ward	10202001	Contact crime	2008-09	133
-ward	10202001	Property crime	2009-10	92
-ward	10202001	Contact crime	2009-10	133
-ward	10202001	Property crime	2010-11	82
-ward	10202001	Contact crime	2010-11	130
-ward	10202001	Property crime	2011-12	85
-ward	10202001	Contact crime	2011-12	135
-ward	10202001	Property crime	2012-13	108
-ward	10202001	Contact crime	2012-13	154
-ward	10202001	Property crime	2013-14	127
-ward	10202001	Contact crime	2013-14	158
-ward	10202001	Property crime	2014-15	131
-ward	10202001	Contact crime	2014-15	154
-ward	10202002	Property crime	2005-06	65
-ward	10202002	Contact crime	2005-06	140
-ward	10202002	Property crime	2006-07	58
-ward	10202002	Contact crime	2006-07	151
-ward	10202002	Property crime	2007-08	67
-ward	10202002	Contact crime	2007-08	130
-ward	10202002	Property crime	2008-09	65
-ward	10202002	Contact crime	2008-09	111
-ward	10202002	Property crime	2009-10	93
-ward	10202002	Contact crime	2009-10	121
-ward	10202002	Property crime	2010-11	107
-ward	10202002	Contact crime	2010-11	117
-ward	10202002	Property crime	2011-12	95
-ward	10202002	Contact crime	2011-12	116
-ward	10202002	Property crime	2012-13	102
-ward	10202002	Contact crime	2012-13	117
-ward	10202002	Property crime	2013-14	116
-ward	10202002	Contact crime	2013-14	147
-ward	10202002	Property crime	2014-15	106
-ward	10202002	Contact crime	2014-15	154
-ward	10202003	Property crime	2005-06	72
-ward	10202003	Contact crime	2005-06	187
-ward	10202003	Property crime	2006-07	56
-ward	10202003	Contact crime	2006-07	165
-ward	10202003	Property crime	2007-08	51
-ward	10202003	Contact crime	2007-08	187
-ward	10202003	Property crime	2008-09	75
-ward	10202003	Contact crime	2008-09	163
-ward	10202003	Property crime	2009-10	98
-ward	10202003	Contact crime	2009-10	157
-ward	10202003	Property crime	2010-11	89
-ward	10202003	Contact crime	2010-11	158
-ward	10202003	Property crime	2011-12	93
-ward	10202003	Contact crime	2011-12	161
-ward	10202003	Property crime	2012-13	117
-ward	10202003	Contact crime	2012-13	176
-ward	10202003	Property crime	2013-14	135
-ward	10202003	Contact crime	2013-14	183
-ward	10202003	Property crime	2014-15	140
-ward	10202003	Contact crime	2014-15	180
-ward	10202004	Property crime	2005-06	37
-ward	10202004	Contact crime	2005-06	109
-ward	10202004	Property crime	2006-07	30
-ward	10202004	Contact crime	2006-07	110
-ward	10202004	Property crime	2007-08	29
-ward	10202004	Contact crime	2007-08	129
-ward	10202004	Property crime	2008-09	41
-ward	10202004	Contact crime	2008-09	122
-ward	10202004	Property crime	2009-10	50
-ward	10202004	Contact crime	2009-10	110
-ward	10202004	Property crime	2010-11	49
-ward	10202004	Contact crime	2010-11	117
-ward	10202004	Property crime	2011-12	51
-ward	10202004	Contact crime	2011-12	114
-ward	10202004	Property crime	2012-13	62
-ward	10202004	Contact crime	2012-13	113
-ward	10202004	Property crime	2013-14	67
-ward	10202004	Contact crime	2013-14	121
-ward	10202004	Property crime	2014-15	70
-ward	10202004	Contact crime	2014-15	120
-ward	10202005	Property crime	2005-06	90
-ward	10202005	Contact crime	2005-06	210
-ward	10202005	Property crime	2006-07	80
-ward	10202005	Contact crime	2006-07	182
-ward	10202005	Property crime	2007-08	76
-ward	10202005	Contact crime	2007-08	188
-ward	10202005	Property crime	2008-09	94
-ward	10202005	Contact crime	2008-09	160
-ward	10202005	Property crime	2009-10	113
-ward	10202005	Contact crime	2009-10	164
-ward	10202005	Property crime	2010-11	113
-ward	10202005	Contact crime	2010-11	166
-ward	10202005	Property crime	2011-12	123
-ward	10202005	Contact crime	2011-12	177
-ward	10202005	Property crime	2012-13	145
-ward	10202005	Contact crime	2012-13	193
-ward	10202005	Property crime	2013-14	155
-ward	10202005	Contact crime	2013-14	197
-ward	10202005	Property crime	2014-15	158
-ward	10202005	Contact crime	2014-15	197
-ward	10202006	Property crime	2005-06	103
-ward	10202006	Contact crime	2005-06	260
-ward	10202006	Property crime	2006-07	80
-ward	10202006	Contact crime	2006-07	220
-ward	10202006	Property crime	2007-08	71
-ward	10202006	Contact crime	2007-08	245
-ward	10202006	Property crime	2008-09	107
-ward	10202006	Contact crime	2008-09	207
-ward	10202006	Property crime	2009-10	142
-ward	10202006	Contact crime	2009-10	205
-ward	10202006	Property crime	2010-11	126
-ward	10202006	Contact crime	2010-11	201
-ward	10202006	Property crime	2011-12	132
-ward	10202006	Contact crime	2011-12	209
-ward	10202006	Property crime	2012-13	166
-ward	10202006	Contact crime	2012-13	238
-ward	10202006	Property crime	2013-14	196
-ward	10202006	Contact crime	2013-14	245
-ward	10202006	Property crime	2014-15	203
-ward	10202006	Contact crime	2014-15	239
-ward	10202007	Property crime	2005-06	122
-ward	10202007	Contact crime	2005-06	261
-ward	10202007	Property crime	2006-07	101
-ward	10202007	Contact crime	2006-07	305
-ward	10202007	Property crime	2007-08	121
-ward	10202007	Contact crime	2007-08	257
-ward	10202007	Property crime	2008-09	119
-ward	10202007	Contact crime	2008-09	218
-ward	10202007	Property crime	2009-10	189
-ward	10202007	Contact crime	2009-10	233
-ward	10202007	Property crime	2010-11	210
-ward	10202007	Contact crime	2010-11	217
-ward	10202007	Property crime	2011-12	168
-ward	10202007	Contact crime	2011-12	206
-ward	10202007	Property crime	2012-13	192
-ward	10202007	Contact crime	2012-13	215
-ward	10202007	Property crime	2013-14	236
-ward	10202007	Contact crime	2013-14	294
-ward	10202007	Property crime	2014-15	211
-ward	10202007	Contact crime	2014-15	303
-ward	10202008	Property crime	2005-06	31
-ward	10202008	Contact crime	2005-06	107
-ward	10202008	Property crime	2006-07	26
-ward	10202008	Contact crime	2006-07	128
-ward	10202008	Property crime	2007-08	27
-ward	10202008	Contact crime	2007-08	158
-ward	10202008	Property crime	2008-09	35
-ward	10202008	Contact crime	2008-09	160
-ward	10202008	Property crime	2009-10	39
-ward	10202008	Contact crime	2009-10	137
-ward	10202008	Property crime	2010-11	45
-ward	10202008	Contact crime	2010-11	152
-ward	10202008	Property crime	2011-12	46
-ward	10202008	Contact crime	2011-12	143
-ward	10202008	Property crime	2012-13	53
-ward	10202008	Contact crime	2012-13	126
-ward	10202008	Property crime	2013-14	49
-ward	10202008	Contact crime	2013-14	140
-ward	10202008	Property crime	2014-15	53
-ward	10202008	Contact crime	2014-15	140
-ward	10202009	Property crime	2005-06	28
-ward	10202009	Contact crime	2005-06	98
-ward	10202009	Property crime	2006-07	24
-ward	10202009	Contact crime	2006-07	118
-ward	10202009	Property crime	2007-08	25
-ward	10202009	Contact crime	2007-08	145
-ward	10202009	Property crime	2008-09	32
-ward	10202009	Contact crime	2008-09	147
-ward	10202009	Property crime	2009-10	36
-ward	10202009	Contact crime	2009-10	125
-ward	10202009	Property crime	2010-11	41
-ward	10202009	Contact crime	2010-11	140
-ward	10202009	Property crime	2011-12	42
-ward	10202009	Contact crime	2011-12	131
-ward	10202009	Property crime	2012-13	49
-ward	10202009	Contact crime	2012-13	116
-ward	10202009	Property crime	2013-14	45
-ward	10202009	Contact crime	2013-14	128
-ward	10202009	Property crime	2014-15	48
-ward	10202009	Contact crime	2014-15	129
-ward	10202010	Property crime	2005-06	28
-ward	10202010	Contact crime	2005-06	97
-ward	10202010	Property crime	2006-07	24
-ward	10202010	Contact crime	2006-07	114
-ward	10202010	Property crime	2007-08	25
-ward	10202010	Contact crime	2007-08	140
-ward	10202010	Property crime	2008-09	32
-ward	10202010	Contact crime	2008-09	141
-ward	10202010	Property crime	2009-10	36
-ward	10202010	Contact crime	2009-10	121
-ward	10202010	Property crime	2010-11	41
-ward	10202010	Contact crime	2010-11	135
-ward	10202010	Property crime	2011-12	42
-ward	10202010	Contact crime	2011-12	126
-ward	10202010	Property crime	2012-13	49
-ward	10202010	Contact crime	2012-13	113
-ward	10202010	Property crime	2013-14	46
-ward	10202010	Contact crime	2013-14	125
-ward	10202010	Property crime	2014-15	49
-ward	10202010	Contact crime	2014-15	125
-ward	10202011	Property crime	2005-06	87
-ward	10202011	Contact crime	2005-06	166
-ward	10202011	Property crime	2006-07	85
-ward	10202011	Contact crime	2006-07	171
-ward	10202011	Property crime	2007-08	88
-ward	10202011	Contact crime	2007-08	149
-ward	10202011	Property crime	2008-09	92
-ward	10202011	Contact crime	2008-09	132
-ward	10202011	Property crime	2009-10	93
-ward	10202011	Contact crime	2009-10	124
-ward	10202011	Property crime	2010-11	98
-ward	10202011	Contact crime	2010-11	130
-ward	10202011	Property crime	2011-12	94
-ward	10202011	Contact crime	2011-12	147
-ward	10202011	Property crime	2012-13	142
-ward	10202011	Contact crime	2012-13	174
-ward	10202011	Property crime	2013-14	147
-ward	10202011	Contact crime	2013-14	180
-ward	10202011	Property crime	2014-15	140
-ward	10202011	Contact crime	2014-15	168
-ward	10202012	Property crime	2005-06	82
-ward	10202012	Contact crime	2005-06	208
-ward	10202012	Property crime	2006-07	63
-ward	10202012	Contact crime	2006-07	179
-ward	10202012	Property crime	2007-08	57
-ward	10202012	Contact crime	2007-08	200
-ward	10202012	Property crime	2008-09	85
-ward	10202012	Contact crime	2008-09	170
-ward	10202012	Property crime	2009-10	112
-ward	10202012	Contact crime	2009-10	168
-ward	10202012	Property crime	2010-11	101
-ward	10202012	Contact crime	2010-11	166
-ward	10202012	Property crime	2011-12	105
-ward	10202012	Contact crime	2011-12	171
-ward	10202012	Property crime	2012-13	132
-ward	10202012	Contact crime	2012-13	192
-ward	10202012	Property crime	2013-14	155
-ward	10202012	Contact crime	2013-14	199
-ward	10202012	Property crime	2014-15	161
-ward	10202012	Contact crime	2014-15	194
-ward	10203001	Property crime	2005-06	83
-ward	10203001	Contact crime	2005-06	107
-ward	10203001	Property crime	2006-07	86
-ward	10203001	Contact crime	2006-07	94
-ward	10203001	Property crime	2007-08	95
-ward	10203001	Contact crime	2007-08	91
-ward	10203001	Property crime	2008-09	86
-ward	10203001	Contact crime	2008-09	74
-ward	10203001	Property crime	2009-10	104
-ward	10203001	Contact crime	2009-10	101
-ward	10203001	Property crime	2010-11	125
-ward	10203001	Contact crime	2010-11	102
-ward	10203001	Property crime	2011-12	138
-ward	10203001	Contact crime	2011-12	116
-ward	10203001	Property crime	2012-13	140
-ward	10203001	Contact crime	2012-13	117
-ward	10203001	Property crime	2013-14	142
-ward	10203001	Contact crime	2013-14	118
-ward	10203001	Property crime	2014-15	180
-ward	10203001	Contact crime	2014-15	131
-ward	10203002	Property crime	2005-06	57
-ward	10203002	Contact crime	2005-06	99
-ward	10203002	Property crime	2006-07	65
-ward	10203002	Contact crime	2006-07	87
-ward	10203002	Property crime	2007-08	53
-ward	10203002	Contact crime	2007-08	87
-ward	10203002	Property crime	2008-09	67
-ward	10203002	Contact crime	2008-09	73
-ward	10203002	Property crime	2009-10	72
-ward	10203002	Contact crime	2009-10	97
-ward	10203002	Property crime	2010-11	81
-ward	10203002	Contact crime	2010-11	99
-ward	10203002	Property crime	2011-12	86
-ward	10203002	Contact crime	2011-12	89
-ward	10203002	Property crime	2012-13	85
-ward	10203002	Contact crime	2012-13	90
-ward	10203002	Property crime	2013-14	94
-ward	10203002	Contact crime	2013-14	94
-ward	10203002	Property crime	2014-15	115
-ward	10203002	Contact crime	2014-15	104
-ward	10203003	Property crime	2005-06	223
-ward	10203003	Contact crime	2005-06	219
-ward	10203003	Property crime	2006-07	206
-ward	10203003	Contact crime	2006-07	172
-ward	10203003	Property crime	2007-08	162
-ward	10203003	Contact crime	2007-08	131
-ward	10203003	Property crime	2008-09	160
-ward	10203003	Contact crime	2008-09	121
-ward	10203003	Property crime	2009-10	261
-ward	10203003	Contact crime	2009-10	175
-ward	10203003	Property crime	2010-11	303
-ward	10203003	Contact crime	2010-11	180
-ward	10203003	Property crime	2011-12	328
-ward	10203003	Contact crime	2011-12	192
-ward	10203003	Property crime	2012-13	339
-ward	10203003	Contact crime	2012-13	173
-ward	10203003	Property crime	2013-14	335
-ward	10203003	Contact crime	2013-14	183
-ward	10203003	Property crime	2014-15	450
-ward	10203003	Contact crime	2014-15	189
-ward	10203004	Property crime	2005-06	143
-ward	10203004	Contact crime	2005-06	123
-ward	10203004	Property crime	2006-07	127
-ward	10203004	Contact crime	2006-07	91
-ward	10203004	Property crime	2007-08	97
-ward	10203004	Contact crime	2007-08	62
-ward	10203004	Property crime	2008-09	91
-ward	10203004	Contact crime	2008-09	61
-ward	10203004	Property crime	2009-10	165
-ward	10203004	Contact crime	2009-10	90
-ward	10203004	Property crime	2010-11	192
-ward	10203004	Contact crime	2010-11	92
-ward	10203004	Property crime	2011-12	207
-ward	10203004	Contact crime	2011-12	102
-ward	10203004	Property crime	2012-13	217
-ward	10203004	Contact crime	2012-13	88
-ward	10203004	Property crime	2013-14	210
-ward	10203004	Contact crime	2013-14	95
-ward	10203004	Property crime	2014-15	287
-ward	10203004	Contact crime	2014-15	93
-ward	10203005	Property crime	2005-06	81
-ward	10203005	Contact crime	2005-06	164
-ward	10203005	Property crime	2006-07	91
-ward	10203005	Contact crime	2006-07	147
-ward	10203005	Property crime	2007-08	78
-ward	10203005	Contact crime	2007-08	148
-ward	10203005	Property crime	2008-09	97
-ward	10203005	Contact crime	2008-09	125
-ward	10203005	Property crime	2009-10	105
-ward	10203005	Contact crime	2009-10	155
-ward	10203005	Property crime	2010-11	114
-ward	10203005	Contact crime	2010-11	158
-ward	10203005	Property crime	2011-12	124
-ward	10203005	Contact crime	2011-12	147
-ward	10203005	Property crime	2012-13	122
-ward	10203005	Contact crime	2012-13	151
-ward	10203005	Property crime	2013-14	130
-ward	10203005	Contact crime	2013-14	152
-ward	10203005	Property crime	2014-15	166
-ward	10203005	Contact crime	2014-15	172
-ward	10203006	Property crime	2005-06	27
-ward	10203006	Contact crime	2005-06	102
-ward	10203006	Property crime	2006-07	29
-ward	10203006	Contact crime	2006-07	95
-ward	10203006	Property crime	2007-08	34
-ward	10203006	Contact crime	2007-08	99
-ward	10203006	Property crime	2008-09	36
-ward	10203006	Contact crime	2008-09	83
-ward	10203006	Property crime	2009-10	43
-ward	10203006	Contact crime	2009-10	86
-ward	10203006	Property crime	2010-11	38
-ward	10203006	Contact crime	2010-11	87
-ward	10203006	Property crime	2011-12	48
-ward	10203006	Contact crime	2011-12	89
-ward	10203006	Property crime	2012-13	46
-ward	10203006	Contact crime	2012-13	96
-ward	10203006	Property crime	2013-14	39
-ward	10203006	Contact crime	2013-14	89
-ward	10203006	Property crime	2014-15	60
-ward	10203006	Contact crime	2014-15	105
-ward	10203007	Property crime	2005-06	94
-ward	10203007	Contact crime	2005-06	170
-ward	10203007	Property crime	2006-07	107
-ward	10203007	Contact crime	2006-07	150
-ward	10203007	Property crime	2007-08	88
-ward	10203007	Contact crime	2007-08	150
-ward	10203007	Property crime	2008-09	111
-ward	10203007	Contact crime	2008-09	127
-ward	10203007	Property crime	2009-10	119
-ward	10203007	Contact crime	2009-10	165
-ward	10203007	Property crime	2010-11	132
-ward	10203007	Contact crime	2010-11	168
-ward	10203007	Property crime	2011-12	142
-ward	10203007	Contact crime	2011-12	153
-ward	10203007	Property crime	2012-13	140
-ward	10203007	Contact crime	2012-13	155
-ward	10203007	Property crime	2013-14	153
-ward	10203007	Contact crime	2013-14	160
-ward	10203007	Property crime	2014-15	190
-ward	10203007	Contact crime	2014-15	179
-ward	10203008	Property crime	2005-06	16
-ward	10203008	Contact crime	2005-06	58
-ward	10203008	Property crime	2006-07	17
-ward	10203008	Contact crime	2006-07	54
-ward	10203008	Property crime	2007-08	19
-ward	10203008	Contact crime	2007-08	57
-ward	10203008	Property crime	2008-09	21
-ward	10203008	Contact crime	2008-09	48
-ward	10203008	Property crime	2009-10	25
-ward	10203008	Contact crime	2009-10	49
-ward	10203008	Property crime	2010-11	22
-ward	10203008	Contact crime	2010-11	50
-ward	10203008	Property crime	2011-12	28
-ward	10203008	Contact crime	2011-12	51
-ward	10203008	Property crime	2012-13	27
-ward	10203008	Contact crime	2012-13	55
-ward	10203008	Property crime	2013-14	23
-ward	10203008	Contact crime	2013-14	51
-ward	10203008	Property crime	2014-15	35
-ward	10203008	Contact crime	2014-15	61
-ward	10203009	Property crime	2005-06	36
-ward	10203009	Contact crime	2005-06	134
-ward	10203009	Property crime	2006-07	37
-ward	10203009	Contact crime	2006-07	125
-ward	10203009	Property crime	2007-08	44
-ward	10203009	Contact crime	2007-08	131
-ward	10203009	Property crime	2008-09	48
-ward	10203009	Contact crime	2008-09	109
-ward	10203009	Property crime	2009-10	56
-ward	10203009	Contact crime	2009-10	113
-ward	10203009	Property crime	2010-11	49
-ward	10203009	Contact crime	2010-11	114
-ward	10203009	Property crime	2011-12	62
-ward	10203009	Contact crime	2011-12	117
-ward	10203009	Property crime	2012-13	60
-ward	10203009	Contact crime	2012-13	126
-ward	10203009	Property crime	2013-14	51
-ward	10203009	Contact crime	2013-14	117
-ward	10203009	Property crime	2014-15	79
-ward	10203009	Contact crime	2014-15	138
-ward	10203010	Property crime	2005-06	85
-ward	10203010	Contact crime	2005-06	147
-ward	10203010	Property crime	2006-07	97
-ward	10203010	Contact crime	2006-07	129
-ward	10203010	Property crime	2007-08	78
-ward	10203010	Contact crime	2007-08	128
-ward	10203010	Property crime	2008-09	100
-ward	10203010	Contact crime	2008-09	109
-ward	10203010	Property crime	2009-10	106
-ward	10203010	Contact crime	2009-10	145
-ward	10203010	Property crime	2010-11	120
-ward	10203010	Contact crime	2010-11	147
-ward	10203010	Property crime	2011-12	127
-ward	10203010	Contact crime	2011-12	133
-ward	10203010	Property crime	2012-13	126
-ward	10203010	Contact crime	2012-13	134
-ward	10203010	Property crime	2013-14	139
-ward	10203010	Contact crime	2013-14	140
-ward	10203010	Property crime	2014-15	171
-ward	10203010	Contact crime	2014-15	155
-ward	10203011	Property crime	2005-06	87
-ward	10203011	Contact crime	2005-06	232
-ward	10203011	Property crime	2006-07	94
-ward	10203011	Contact crime	2006-07	212
-ward	10203011	Property crime	2007-08	92
-ward	10203011	Contact crime	2007-08	219
-ward	10203011	Property crime	2008-09	108
-ward	10203011	Contact crime	2008-09	184
-ward	10203011	Property crime	2009-10	121
-ward	10203011	Contact crime	2009-10	207
-ward	10203011	Property crime	2010-11	120
-ward	10203011	Contact crime	2010-11	210
-ward	10203011	Property crime	2011-12	139
-ward	10203011	Contact crime	2011-12	207
-ward	10203011	Property crime	2012-13	137
-ward	10203011	Contact crime	2012-13	218
-ward	10203011	Property crime	2013-14	132
-ward	10203011	Contact crime	2013-14	210
-ward	10203011	Property crime	2014-15	182
-ward	10203011	Contact crime	2014-15	243
-ward	10203012	Property crime	2005-06	32
-ward	10203012	Contact crime	2005-06	119
-ward	10203012	Property crime	2006-07	33
-ward	10203012	Contact crime	2006-07	111
-ward	10203012	Property crime	2007-08	39
-ward	10203012	Contact crime	2007-08	116
-ward	10203012	Property crime	2008-09	42
-ward	10203012	Contact crime	2008-09	97
-ward	10203012	Property crime	2009-10	50
-ward	10203012	Contact crime	2009-10	100
-ward	10203012	Property crime	2010-11	44
-ward	10203012	Contact crime	2010-11	101
-ward	10203012	Property crime	2011-12	55
-ward	10203012	Contact crime	2011-12	104
-ward	10203012	Property crime	2012-13	53
-ward	10203012	Contact crime	2012-13	112
-ward	10203012	Property crime	2013-14	45
-ward	10203012	Contact crime	2013-14	103
-ward	10203012	Property crime	2014-15	70
-ward	10203012	Contact crime	2014-15	123
-ward	10203013	Property crime	2005-06	53
-ward	10203013	Contact crime	2005-06	96
-ward	10203013	Property crime	2006-07	49
-ward	10203013	Contact crime	2006-07	72
-ward	10203013	Property crime	2007-08	49
-ward	10203013	Contact crime	2007-08	57
-ward	10203013	Property crime	2008-09	56
-ward	10203013	Contact crime	2008-09	65
-ward	10203013	Property crime	2009-10	62
-ward	10203013	Contact crime	2009-10	89
-ward	10203013	Property crime	2010-11	60
-ward	10203013	Contact crime	2010-11	105
-ward	10203013	Property crime	2011-12	62
-ward	10203013	Contact crime	2011-12	118
-ward	10203013	Property crime	2012-13	82
-ward	10203013	Contact crime	2012-13	129
-ward	10203013	Property crime	2013-14	82
-ward	10203013	Contact crime	2013-14	125
-ward	10203013	Property crime	2014-15	83
-ward	10203013	Contact crime	2014-15	129
-ward	10203014	Property crime	2005-06	104
-ward	10203014	Contact crime	2005-06	188
-ward	10203014	Property crime	2006-07	96
-ward	10203014	Contact crime	2006-07	141
-ward	10203014	Property crime	2007-08	95
-ward	10203014	Contact crime	2007-08	111
-ward	10203014	Property crime	2008-09	109
-ward	10203014	Contact crime	2008-09	126
-ward	10203014	Property crime	2009-10	122
-ward	10203014	Contact crime	2009-10	174
-ward	10203014	Property crime	2010-11	118
-ward	10203014	Contact crime	2010-11	205
-ward	10203014	Property crime	2011-12	121
-ward	10203014	Contact crime	2011-12	231
-ward	10203014	Property crime	2012-13	159
-ward	10203014	Contact crime	2012-13	251
-ward	10203014	Property crime	2013-14	160
-ward	10203014	Contact crime	2013-14	244
-ward	10203014	Property crime	2014-15	161
-ward	10203014	Contact crime	2014-15	251
-ward	10203015	Property crime	2005-06	174
-ward	10203015	Contact crime	2005-06	150
-ward	10203015	Property crime	2006-07	155
-ward	10203015	Contact crime	2006-07	112
-ward	10203015	Property crime	2007-08	118
-ward	10203015	Contact crime	2007-08	76
-ward	10203015	Property crime	2008-09	112
-ward	10203015	Contact crime	2008-09	74
-ward	10203015	Property crime	2009-10	201
-ward	10203015	Contact crime	2009-10	110
-ward	10203015	Property crime	2010-11	234
-ward	10203015	Contact crime	2010-11	113
-ward	10203015	Property crime	2011-12	252
-ward	10203015	Contact crime	2011-12	126
-ward	10203015	Property crime	2012-13	264
-ward	10203015	Contact crime	2012-13	108
-ward	10203015	Property crime	2013-14	256
-ward	10203015	Contact crime	2013-14	117
-ward	10203015	Property crime	2014-15	350
-ward	10203015	Contact crime	2014-15	115
-ward	10203016	Property crime	2005-06	36
-ward	10203016	Contact crime	2005-06	134
-ward	10203016	Property crime	2006-07	37
-ward	10203016	Contact crime	2006-07	125
-ward	10203016	Property crime	2007-08	44
-ward	10203016	Contact crime	2007-08	131
-ward	10203016	Property crime	2008-09	48
-ward	10203016	Contact crime	2008-09	109
-ward	10203016	Property crime	2009-10	56
-ward	10203016	Contact crime	2009-10	113
-ward	10203016	Property crime	2010-11	49
-ward	10203016	Contact crime	2010-11	114
-ward	10203016	Property crime	2011-12	62
-ward	10203016	Contact crime	2011-12	117
-ward	10203016	Property crime	2012-13	60
-ward	10203016	Contact crime	2012-13	126
-ward	10203016	Property crime	2013-14	51
-ward	10203016	Contact crime	2013-14	117
-ward	10203016	Property crime	2014-15	79
-ward	10203016	Contact crime	2014-15	138
-ward	10203017	Property crime	2005-06	177
-ward	10203017	Contact crime	2005-06	180
-ward	10203017	Property crime	2006-07	159
-ward	10203017	Contact crime	2006-07	136
-ward	10203017	Property crime	2007-08	126
-ward	10203017	Contact crime	2007-08	98
-ward	10203017	Property crime	2008-09	124
-ward	10203017	Contact crime	2008-09	99
-ward	10203017	Property crime	2009-10	206
-ward	10203017	Contact crime	2009-10	140
-ward	10203017	Property crime	2010-11	233
-ward	10203017	Contact crime	2010-11	149
-ward	10203017	Property crime	2011-12	251
-ward	10203017	Contact crime	2011-12	166
-ward	10203017	Property crime	2012-13	270
-ward	10203017	Contact crime	2012-13	155
-ward	10203017	Property crime	2013-14	262
-ward	10203017	Contact crime	2013-14	161
-ward	10203017	Property crime	2014-15	346
-ward	10203017	Contact crime	2014-15	162
-ward	10203018	Property crime	2005-06	82
-ward	10203018	Contact crime	2005-06	143
-ward	10203018	Property crime	2006-07	93
-ward	10203018	Contact crime	2006-07	126
-ward	10203018	Property crime	2007-08	76
-ward	10203018	Contact crime	2007-08	126
-ward	10203018	Property crime	2008-09	96
-ward	10203018	Contact crime	2008-09	107
-ward	10203018	Property crime	2009-10	103
-ward	10203018	Contact crime	2009-10	141
-ward	10203018	Property crime	2010-11	116
-ward	10203018	Contact crime	2010-11	143
-ward	10203018	Property crime	2011-12	123
-ward	10203018	Contact crime	2011-12	130
-ward	10203018	Property crime	2012-13	122
-ward	10203018	Contact crime	2012-13	131
-ward	10203018	Property crime	2013-14	135
-ward	10203018	Contact crime	2013-14	137
-ward	10203018	Property crime	2014-15	166
-ward	10203018	Contact crime	2014-15	152
-ward	10203019	Property crime	2005-06	144
-ward	10203019	Contact crime	2005-06	124
-ward	10203019	Property crime	2006-07	128
-ward	10203019	Contact crime	2006-07	92
-ward	10203019	Property crime	2007-08	97
-ward	10203019	Contact crime	2007-08	62
-ward	10203019	Property crime	2008-09	92
-ward	10203019	Contact crime	2008-09	61
-ward	10203019	Property crime	2009-10	166
-ward	10203019	Contact crime	2009-10	91
-ward	10203019	Property crime	2010-11	193
-ward	10203019	Contact crime	2010-11	93
-ward	10203019	Property crime	2011-12	208
-ward	10203019	Contact crime	2011-12	103
-ward	10203019	Property crime	2012-13	218
-ward	10203019	Contact crime	2012-13	89
-ward	10203019	Property crime	2013-14	211
-ward	10203019	Contact crime	2013-14	96
-ward	10203019	Property crime	2014-15	289
-ward	10203019	Contact crime	2014-15	94
-ward	10203020	Property crime	2005-06	38
-ward	10203020	Contact crime	2005-06	68
-ward	10203020	Property crime	2006-07	35
-ward	10203020	Contact crime	2006-07	51
-ward	10203020	Property crime	2007-08	34
-ward	10203020	Contact crime	2007-08	40
-ward	10203020	Property crime	2008-09	40
-ward	10203020	Contact crime	2008-09	46
-ward	10203020	Property crime	2009-10	44
-ward	10203020	Contact crime	2009-10	63
-ward	10203020	Property crime	2010-11	43
-ward	10203020	Contact crime	2010-11	74
-ward	10203020	Property crime	2011-12	44
-ward	10203020	Contact crime	2011-12	84
-ward	10203020	Property crime	2012-13	58
-ward	10203020	Contact crime	2012-13	91
-ward	10203020	Property crime	2013-14	58
-ward	10203020	Contact crime	2013-14	89
-ward	10203020	Property crime	2014-15	59
-ward	10203020	Contact crime	2014-15	91
-ward	10203021	Property crime	2005-06	59
-ward	10203021	Contact crime	2005-06	106
-ward	10203021	Property crime	2006-07	54
-ward	10203021	Contact crime	2006-07	79
-ward	10203021	Property crime	2007-08	53
-ward	10203021	Contact crime	2007-08	62
-ward	10203021	Property crime	2008-09	61
-ward	10203021	Contact crime	2008-09	71
-ward	10203021	Property crime	2009-10	68
-ward	10203021	Contact crime	2009-10	98
-ward	10203021	Property crime	2010-11	66
-ward	10203021	Contact crime	2010-11	115
-ward	10203021	Property crime	2011-12	68
-ward	10203021	Contact crime	2011-12	130
-ward	10203021	Property crime	2012-13	90
-ward	10203021	Contact crime	2012-13	141
-ward	10203021	Property crime	2013-14	90
-ward	10203021	Contact crime	2013-14	137
-ward	10203021	Property crime	2014-15	91
-ward	10203021	Contact crime	2014-15	141
-ward	10203022	Property crime	2005-06	84
-ward	10203022	Contact crime	2005-06	135
-ward	10203022	Property crime	2006-07	77
-ward	10203022	Contact crime	2006-07	101
-ward	10203022	Property crime	2007-08	72
-ward	10203022	Contact crime	2007-08	78
-ward	10203022	Property crime	2008-09	81
-ward	10203022	Contact crime	2008-09	88
-ward	10203022	Property crime	2009-10	98
-ward	10203022	Contact crime	2009-10	122
-ward	10203022	Property crime	2010-11	99
-ward	10203022	Contact crime	2010-11	142
-ward	10203022	Property crime	2011-12	103
-ward	10203022	Contact crime	2011-12	160
-ward	10203022	Property crime	2012-13	129
-ward	10203022	Contact crime	2012-13	171
-ward	10203022	Property crime	2013-14	128
-ward	10203022	Contact crime	2013-14	167
-ward	10203022	Property crime	2014-15	138
-ward	10203022	Contact crime	2014-15	171
-ward	10203023	Property crime	2005-06	114
-ward	10203023	Contact crime	2005-06	129
-ward	10203023	Property crime	2006-07	103
-ward	10203023	Contact crime	2006-07	96
-ward	10203023	Property crime	2007-08	85
-ward	10203023	Contact crime	2007-08	70
-ward	10203023	Property crime	2008-09	86
-ward	10203023	Contact crime	2008-09	74
-ward	10203023	Property crime	2009-10	132
-ward	10203023	Contact crime	2009-10	106
-ward	10203023	Property crime	2010-11	146
-ward	10203023	Contact crime	2010-11	116
-ward	10203023	Property crime	2011-12	156
-ward	10203023	Contact crime	2011-12	131
-ward	10203023	Property crime	2012-13	174
-ward	10203023	Contact crime	2012-13	129
-ward	10203023	Property crime	2013-14	170
-ward	10203023	Contact crime	2013-14	130
-ward	10203023	Property crime	2014-15	214
-ward	10203023	Contact crime	2014-15	131
-ward	10203024	Property crime	2005-06	53
-ward	10203024	Contact crime	2005-06	95
-ward	10203024	Property crime	2006-07	49
-ward	10203024	Contact crime	2006-07	71
-ward	10203024	Property crime	2007-08	48
-ward	10203024	Contact crime	2007-08	56
-ward	10203024	Property crime	2008-09	55
-ward	10203024	Contact crime	2008-09	64
-ward	10203024	Property crime	2009-10	61
-ward	10203024	Contact crime	2009-10	88
-ward	10203024	Property crime	2010-11	59
-ward	10203024	Contact crime	2010-11	103
-ward	10203024	Property crime	2011-12	61
-ward	10203024	Contact crime	2011-12	117
-ward	10203024	Property crime	2012-13	81
-ward	10203024	Contact crime	2012-13	127
-ward	10203024	Property crime	2013-14	81
-ward	10203024	Contact crime	2013-14	124
-ward	10203024	Property crime	2014-15	81
-ward	10203024	Contact crime	2014-15	127
-ward	10203025	Property crime	2005-06	89
-ward	10203025	Contact crime	2005-06	154
-ward	10203025	Property crime	2006-07	82
-ward	10203025	Contact crime	2006-07	116
-ward	10203025	Property crime	2007-08	79
-ward	10203025	Contact crime	2007-08	91
-ward	10203025	Property crime	2008-09	91
-ward	10203025	Contact crime	2008-09	103
-ward	10203025	Property crime	2009-10	103
-ward	10203025	Contact crime	2009-10	142
-ward	10203025	Property crime	2010-11	102
-ward	10203025	Contact crime	2010-11	166
-ward	10203025	Property crime	2011-12	105
-ward	10203025	Contact crime	2011-12	187
-ward	10203025	Property crime	2012-13	135
-ward	10203025	Contact crime	2012-13	202
-ward	10203025	Property crime	2013-14	135
-ward	10203025	Contact crime	2013-14	197
-ward	10203025	Property crime	2014-15	140
-ward	10203025	Contact crime	2014-15	202
-ward	10203026	Property crime	2005-06	66
-ward	10203026	Contact crime	2005-06	118
-ward	10203026	Property crime	2006-07	61
-ward	10203026	Contact crime	2006-07	89
-ward	10203026	Property crime	2007-08	60
-ward	10203026	Contact crime	2007-08	70
-ward	10203026	Property crime	2008-09	69
-ward	10203026	Contact crime	2008-09	80
-ward	10203026	Property crime	2009-10	77
-ward	10203026	Contact crime	2009-10	110
-ward	10203026	Property crime	2010-11	74
-ward	10203026	Contact crime	2010-11	129
-ward	10203026	Property crime	2011-12	76
-ward	10203026	Contact crime	2011-12	146
-ward	10203026	Property crime	2012-13	101
-ward	10203026	Contact crime	2012-13	158
-ward	10203026	Property crime	2013-14	101
-ward	10203026	Contact crime	2013-14	154
-ward	10203026	Property crime	2014-15	102
-ward	10203026	Contact crime	2014-15	158
-ward	10203027	Property crime	2005-06	53
-ward	10203027	Contact crime	2005-06	93
-ward	10203027	Property crime	2006-07	49
-ward	10203027	Contact crime	2006-07	70
-ward	10203027	Property crime	2007-08	48
-ward	10203027	Contact crime	2007-08	55
-ward	10203027	Property crime	2008-09	54
-ward	10203027	Contact crime	2008-09	62
-ward	10203027	Property crime	2009-10	62
-ward	10203027	Contact crime	2009-10	86
-ward	10203027	Property crime	2010-11	60
-ward	10203027	Contact crime	2010-11	100
-ward	10203027	Property crime	2011-12	62
-ward	10203027	Contact crime	2011-12	113
-ward	10203027	Property crime	2012-13	81
-ward	10203027	Contact crime	2012-13	123
-ward	10203027	Property crime	2013-14	81
-ward	10203027	Contact crime	2013-14	120
-ward	10203027	Property crime	2014-15	83
-ward	10203027	Contact crime	2014-15	123
-ward	10203028	Property crime	2005-06	188
-ward	10203028	Contact crime	2005-06	165
-ward	10203028	Property crime	2006-07	168
-ward	10203028	Contact crime	2006-07	124
-ward	10203028	Property crime	2007-08	130
-ward	10203028	Contact crime	2007-08	86
-ward	10203028	Property crime	2008-09	124
-ward	10203028	Contact crime	2008-09	84
-ward	10203028	Property crime	2009-10	218
-ward	10203028	Contact crime	2009-10	123
-ward	10203028	Property crime	2010-11	253
-ward	10203028	Contact crime	2010-11	126
-ward	10203028	Property crime	2011-12	272
-ward	10203028	Contact crime	2011-12	140
-ward	10203028	Property crime	2012-13	286
-ward	10203028	Contact crime	2012-13	122
-ward	10203028	Property crime	2013-14	277
-ward	10203028	Contact crime	2013-14	131
-ward	10203028	Property crime	2014-15	376
-ward	10203028	Contact crime	2014-15	128
-ward	10203029	Property crime	2005-06	79
-ward	10203029	Contact crime	2005-06	135
-ward	10203029	Property crime	2006-07	89
-ward	10203029	Contact crime	2006-07	117
-ward	10203029	Property crime	2007-08	72
-ward	10203029	Contact crime	2007-08	115
-ward	10203029	Property crime	2008-09	90
-ward	10203029	Contact crime	2008-09	99
-ward	10203029	Property crime	2009-10	99
-ward	10203029	Contact crime	2009-10	131
-ward	10203029	Property crime	2010-11	111
-ward	10203029	Contact crime	2010-11	134
-ward	10203029	Property crime	2011-12	118
-ward	10203029	Contact crime	2011-12	123
-ward	10203029	Property crime	2012-13	118
-ward	10203029	Contact crime	2012-13	124
-ward	10203029	Property crime	2013-14	129
-ward	10203029	Contact crime	2013-14	129
-ward	10203029	Property crime	2014-15	159
-ward	10203029	Contact crime	2014-15	142
-ward	10203030	Property crime	2005-06	56
-ward	10203030	Contact crime	2005-06	155
-ward	10203030	Property crime	2006-07	43
-ward	10203030	Contact crime	2006-07	163
-ward	10203030	Property crime	2007-08	59
-ward	10203030	Contact crime	2007-08	136
-ward	10203030	Property crime	2008-09	63
-ward	10203030	Contact crime	2008-09	126
-ward	10203030	Property crime	2009-10	55
-ward	10203030	Contact crime	2009-10	126
-ward	10203030	Property crime	2010-11	43
-ward	10203030	Contact crime	2010-11	127
-ward	10203030	Property crime	2011-12	50
-ward	10203030	Contact crime	2011-12	106
-ward	10203030	Property crime	2012-13	50
-ward	10203030	Contact crime	2012-13	121
-ward	10203030	Property crime	2013-14	52
-ward	10203030	Contact crime	2013-14	155
-ward	10203030	Property crime	2014-15	56
-ward	10203030	Contact crime	2014-15	161
-ward	10203031	Property crime	2005-06	74
-ward	10203031	Contact crime	2005-06	146
-ward	10203031	Property crime	2006-07	75
-ward	10203031	Contact crime	2006-07	141
-ward	10203031	Property crime	2007-08	70
-ward	10203031	Contact crime	2007-08	134
-ward	10203031	Property crime	2008-09	82
-ward	10203031	Contact crime	2008-09	119
-ward	10203031	Property crime	2009-10	89
-ward	10203031	Contact crime	2009-10	133
-ward	10203031	Property crime	2010-11	93
-ward	10203031	Contact crime	2010-11	131
-ward	10203031	Property crime	2011-12	95
-ward	10203031	Contact crime	2011-12	132
-ward	10203031	Property crime	2012-13	115
-ward	10203031	Contact crime	2012-13	148
-ward	10203031	Property crime	2013-14	121
-ward	10203031	Contact crime	2013-14	155
-ward	10203031	Property crime	2014-15	130
-ward	10203031	Contact crime	2014-15	161
-ward	10204001	Property crime	2005-06	93
-ward	10204001	Contact crime	2005-06	155
-ward	10204001	Property crime	2006-07	115
-ward	10204001	Contact crime	2006-07	156
-ward	10204001	Property crime	2007-08	111
-ward	10204001	Contact crime	2007-08	143
-ward	10204001	Property crime	2008-09	169
-ward	10204001	Contact crime	2008-09	141
-ward	10204001	Property crime	2009-10	148
-ward	10204001	Contact crime	2009-10	144
-ward	10204001	Property crime	2010-11	165
-ward	10204001	Contact crime	2010-11	177
-ward	10204001	Property crime	2011-12	176
-ward	10204001	Contact crime	2011-12	202
-ward	10204001	Property crime	2012-13	176
-ward	10204001	Contact crime	2012-13	172
-ward	10204001	Property crime	2013-14	193
-ward	10204001	Contact crime	2013-14	150
-ward	10204001	Property crime	2014-15	149
-ward	10204001	Contact crime	2014-15	133
-ward	10204002	Property crime	2005-06	49
-ward	10204002	Contact crime	2005-06	87
-ward	10204002	Property crime	2006-07	62
-ward	10204002	Contact crime	2006-07	88
-ward	10204002	Property crime	2007-08	59
-ward	10204002	Contact crime	2007-08	80
-ward	10204002	Property crime	2008-09	93
-ward	10204002	Contact crime	2008-09	79
-ward	10204002	Property crime	2009-10	80
-ward	10204002	Contact crime	2009-10	80
-ward	10204002	Property crime	2010-11	88
-ward	10204002	Contact crime	2010-11	100
-ward	10204002	Property crime	2011-12	95
-ward	10204002	Contact crime	2011-12	115
-ward	10204002	Property crime	2012-13	94
-ward	10204002	Contact crime	2012-13	96
-ward	10204002	Property crime	2013-14	104
-ward	10204002	Contact crime	2013-14	83
-ward	10204002	Property crime	2014-15	79
-ward	10204002	Contact crime	2014-15	73
-ward	10204003	Property crime	2005-06	64
-ward	10204003	Contact crime	2005-06	102
-ward	10204003	Property crime	2006-07	74
-ward	10204003	Contact crime	2006-07	90
-ward	10204003	Property crime	2007-08	91
-ward	10204003	Contact crime	2007-08	109
-ward	10204003	Property crime	2008-09	99
-ward	10204003	Contact crime	2008-09	90
-ward	10204003	Property crime	2009-10	89
-ward	10204003	Contact crime	2009-10	97
-ward	10204003	Property crime	2010-11	91
-ward	10204003	Contact crime	2010-11	91
-ward	10204003	Property crime	2011-12	95
-ward	10204003	Contact crime	2011-12	93
-ward	10204003	Property crime	2012-13	120
-ward	10204003	Contact crime	2012-13	107
-ward	10204003	Property crime	2013-14	114
-ward	10204003	Contact crime	2013-14	107
-ward	10204003	Property crime	2014-15	126
-ward	10204003	Contact crime	2014-15	102
-ward	10204004	Property crime	2005-06	54
-ward	10204004	Contact crime	2005-06	82
-ward	10204004	Property crime	2006-07	61
-ward	10204004	Contact crime	2006-07	69
-ward	10204004	Property crime	2007-08	79
-ward	10204004	Contact crime	2007-08	91
-ward	10204004	Property crime	2008-09	78
-ward	10204004	Contact crime	2008-09	72
-ward	10204004	Property crime	2009-10	72
-ward	10204004	Contact crime	2009-10	79
-ward	10204004	Property crime	2010-11	72
-ward	10204004	Contact crime	2010-11	67
-ward	10204004	Property crime	2011-12	74
-ward	10204004	Contact crime	2011-12	66
-ward	10204004	Property crime	2012-13	101
-ward	10204004	Contact crime	2012-13	85
-ward	10204004	Property crime	2013-14	92
-ward	10204004	Contact crime	2013-14	89
-ward	10204004	Property crime	2014-15	110
-ward	10204004	Contact crime	2014-15	86
-ward	10204005	Property crime	2005-06	52
-ward	10204005	Contact crime	2005-06	48
-ward	10204005	Property crime	2006-07	68
-ward	10204005	Contact crime	2006-07	45
-ward	10204005	Property crime	2007-08	61
-ward	10204005	Contact crime	2007-08	45
-ward	10204005	Property crime	2008-09	63
-ward	10204005	Contact crime	2008-09	42
-ward	10204005	Property crime	2009-10	64
-ward	10204005	Contact crime	2009-10	46
-ward	10204005	Property crime	2010-11	70
-ward	10204005	Contact crime	2010-11	57
-ward	10204005	Property crime	2011-12	66
-ward	10204005	Contact crime	2011-12	52
-ward	10204005	Property crime	2012-13	70
-ward	10204005	Contact crime	2012-13	53
-ward	10204005	Property crime	2013-14	80
-ward	10204005	Contact crime	2013-14	59
-ward	10204005	Property crime	2014-15	79
-ward	10204005	Contact crime	2014-15	61
-ward	10204006	Property crime	2005-06	99
-ward	10204006	Contact crime	2005-06	62
-ward	10204006	Property crime	2006-07	122
-ward	10204006	Contact crime	2006-07	59
-ward	10204006	Property crime	2007-08	119
-ward	10204006	Contact crime	2007-08	60
-ward	10204006	Property crime	2008-09	119
-ward	10204006	Contact crime	2008-09	59
-ward	10204006	Property crime	2009-10	126
-ward	10204006	Contact crime	2009-10	64
-ward	10204006	Property crime	2010-11	154
-ward	10204006	Contact crime	2010-11	77
-ward	10204006	Property crime	2011-12	140
-ward	10204006	Contact crime	2011-12	73
-ward	10204006	Property crime	2012-13	154
-ward	10204006	Contact crime	2012-13	79
-ward	10204006	Property crime	2013-14	163
-ward	10204006	Contact crime	2013-14	87
-ward	10204006	Property crime	2014-15	153
-ward	10204006	Contact crime	2014-15	93
-ward	10204007	Property crime	2005-06	154
-ward	10204007	Contact crime	2005-06	62
-ward	10204007	Property crime	2006-07	177
-ward	10204007	Contact crime	2006-07	59
-ward	10204007	Property crime	2007-08	189
-ward	10204007	Contact crime	2007-08	65
-ward	10204007	Property crime	2008-09	182
-ward	10204007	Contact crime	2008-09	67
-ward	10204007	Property crime	2009-10	201
-ward	10204007	Contact crime	2009-10	72
-ward	10204007	Property crime	2010-11	262
-ward	10204007	Contact crime	2010-11	80
-ward	10204007	Property crime	2011-12	234
-ward	10204007	Contact crime	2011-12	82
-ward	10204007	Property crime	2012-13	268
-ward	10204007	Contact crime	2012-13	98
-ward	10204007	Property crime	2013-14	267
-ward	10204007	Contact crime	2013-14	105
-ward	10204007	Property crime	2014-15	242
-ward	10204007	Contact crime	2014-15	116
-ward	10204008	Property crime	2005-06	225
-ward	10204008	Contact crime	2005-06	88
-ward	10204008	Property crime	2006-07	258
-ward	10204008	Contact crime	2006-07	84
-ward	10204008	Property crime	2007-08	278
-ward	10204008	Contact crime	2007-08	93
-ward	10204008	Property crime	2008-09	267
-ward	10204008	Contact crime	2008-09	96
-ward	10204008	Property crime	2009-10	295
-ward	10204008	Contact crime	2009-10	103
-ward	10204008	Property crime	2010-11	388
-ward	10204008	Contact crime	2010-11	114
-ward	10204008	Property crime	2011-12	345
-ward	10204008	Contact crime	2011-12	118
-ward	10204008	Property crime	2012-13	397
-ward	10204008	Contact crime	2012-13	141
-ward	10204008	Property crime	2013-14	393
-ward	10204008	Contact crime	2013-14	151
-ward	10204008	Property crime	2014-15	356
-ward	10204008	Contact crime	2014-15	167
-ward	10204009	Property crime	2005-06	42
-ward	10204009	Contact crime	2005-06	16
-ward	10204009	Property crime	2006-07	48
-ward	10204009	Contact crime	2006-07	15
-ward	10204009	Property crime	2007-08	51
-ward	10204009	Contact crime	2007-08	17
-ward	10204009	Property crime	2008-09	49
-ward	10204009	Contact crime	2008-09	18
-ward	10204009	Property crime	2009-10	54
-ward	10204009	Contact crime	2009-10	19
-ward	10204009	Property crime	2010-11	71
-ward	10204009	Contact crime	2010-11	21
-ward	10204009	Property crime	2011-12	64
-ward	10204009	Contact crime	2011-12	22
-ward	10204009	Property crime	2012-13	73
-ward	10204009	Contact crime	2012-13	26
-ward	10204009	Property crime	2013-14	72
-ward	10204009	Contact crime	2013-14	28
-ward	10204009	Property crime	2014-15	66
-ward	10204009	Contact crime	2014-15	31
-ward	10204010	Property crime	2005-06	207
-ward	10204010	Contact crime	2005-06	88
-ward	10204010	Property crime	2006-07	240
-ward	10204010	Contact crime	2006-07	84
-ward	10204010	Property crime	2007-08	254
-ward	10204010	Contact crime	2007-08	91
-ward	10204010	Property crime	2008-09	246
-ward	10204010	Contact crime	2008-09	94
-ward	10204010	Property crime	2009-10	270
-ward	10204010	Contact crime	2009-10	101
-ward	10204010	Property crime	2010-11	351
-ward	10204010	Contact crime	2010-11	113
-ward	10204010	Property crime	2011-12	313
-ward	10204010	Contact crime	2011-12	115
-ward	10204010	Property crime	2012-13	358
-ward	10204010	Contact crime	2012-13	135
-ward	10204010	Property crime	2013-14	357
-ward	10204010	Contact crime	2013-14	145
-ward	10204010	Property crime	2014-15	326
-ward	10204010	Contact crime	2014-15	160
-ward	10204011	Property crime	2005-06	257
-ward	10204011	Contact crime	2005-06	100
-ward	10204011	Property crime	2006-07	295
-ward	10204011	Contact crime	2006-07	96
-ward	10204011	Property crime	2007-08	316
-ward	10204011	Contact crime	2007-08	106
-ward	10204011	Property crime	2008-09	305
-ward	10204011	Contact crime	2008-09	110
-ward	10204011	Property crime	2009-10	337
-ward	10204011	Contact crime	2009-10	118
-ward	10204011	Property crime	2010-11	442
-ward	10204011	Contact crime	2010-11	130
-ward	10204011	Property crime	2011-12	393
-ward	10204011	Contact crime	2011-12	135
-ward	10204011	Property crime	2012-13	452
-ward	10204011	Contact crime	2012-13	161
-ward	10204011	Property crime	2013-14	447
-ward	10204011	Contact crime	2013-14	173
-ward	10204011	Property crime	2014-15	406
-ward	10204011	Contact crime	2014-15	191
-ward	10204012	Property crime	2005-06	66
-ward	10204012	Contact crime	2005-06	74
-ward	10204012	Property crime	2006-07	92
-ward	10204012	Contact crime	2006-07	69
-ward	10204012	Property crime	2007-08	74
-ward	10204012	Contact crime	2007-08	66
-ward	10204012	Property crime	2008-09	80
-ward	10204012	Contact crime	2008-09	61
-ward	10204012	Property crime	2009-10	78
-ward	10204012	Contact crime	2009-10	68
-ward	10204012	Property crime	2010-11	78
-ward	10204012	Contact crime	2010-11	89
-ward	10204012	Property crime	2011-12	75
-ward	10204012	Contact crime	2011-12	78
-ward	10204012	Property crime	2012-13	73
-ward	10204012	Contact crime	2012-13	76
-ward	10204012	Property crime	2013-14	94
-ward	10204012	Contact crime	2013-14	86
-ward	10204012	Property crime	2014-15	96
-ward	10204012	Contact crime	2014-15	88
-ward	10204013	Property crime	2005-06	25
-ward	10204013	Contact crime	2005-06	30
-ward	10204013	Property crime	2006-07	35
-ward	10204013	Contact crime	2006-07	28
-ward	10204013	Property crime	2007-08	27
-ward	10204013	Contact crime	2007-08	27
-ward	10204013	Property crime	2008-09	30
-ward	10204013	Contact crime	2008-09	24
-ward	10204013	Property crime	2009-10	28
-ward	10204013	Contact crime	2009-10	27
-ward	10204013	Property crime	2010-11	27
-ward	10204013	Contact crime	2010-11	36
-ward	10204013	Property crime	2011-12	27
-ward	10204013	Contact crime	2011-12	31
-ward	10204013	Property crime	2012-13	25
-ward	10204013	Contact crime	2012-13	30
-ward	10204013	Property crime	2013-14	34
-ward	10204013	Contact crime	2013-14	34
-ward	10204013	Property crime	2014-15	35
-ward	10204013	Contact crime	2014-15	35
-ward	10204014	Property crime	2005-06	37
-ward	10204014	Contact crime	2005-06	46
-ward	10204014	Property crime	2006-07	54
-ward	10204014	Contact crime	2006-07	43
-ward	10204014	Property crime	2007-08	41
-ward	10204014	Contact crime	2007-08	41
-ward	10204014	Property crime	2008-09	45
-ward	10204014	Contact crime	2008-09	38
-ward	10204014	Property crime	2009-10	43
-ward	10204014	Contact crime	2009-10	42
-ward	10204014	Property crime	2010-11	41
-ward	10204014	Contact crime	2010-11	55
-ward	10204014	Property crime	2011-12	40
-ward	10204014	Contact crime	2011-12	48
-ward	10204014	Property crime	2012-13	38
-ward	10204014	Contact crime	2012-13	46
-ward	10204014	Property crime	2013-14	51
-ward	10204014	Contact crime	2013-14	52
-ward	10204014	Property crime	2014-15	54
-ward	10204014	Contact crime	2014-15	53
-ward	10204015	Property crime	2005-06	59
-ward	10204015	Contact crime	2005-06	73
-ward	10204015	Property crime	2006-07	85
-ward	10204015	Contact crime	2006-07	68
-ward	10204015	Property crime	2007-08	65
-ward	10204015	Contact crime	2007-08	65
-ward	10204015	Property crime	2008-09	71
-ward	10204015	Contact crime	2008-09	59
-ward	10204015	Property crime	2009-10	68
-ward	10204015	Contact crime	2009-10	66
-ward	10204015	Property crime	2010-11	65
-ward	10204015	Contact crime	2010-11	87
-ward	10204015	Property crime	2011-12	64
-ward	10204015	Contact crime	2011-12	75
-ward	10204015	Property crime	2012-13	59
-ward	10204015	Contact crime	2012-13	72
-ward	10204015	Property crime	2013-14	81
-ward	10204015	Contact crime	2013-14	82
-ward	10204015	Property crime	2014-15	85
-ward	10204015	Contact crime	2014-15	84
-ward	10204016	Property crime	2005-06	60
-ward	10204016	Contact crime	2005-06	71
-ward	10204016	Property crime	2006-07	85
-ward	10204016	Contact crime	2006-07	66
-ward	10204016	Property crime	2007-08	67
-ward	10204016	Contact crime	2007-08	63
-ward	10204016	Property crime	2008-09	73
-ward	10204016	Contact crime	2008-09	58
-ward	10204016	Property crime	2009-10	70
-ward	10204016	Contact crime	2009-10	64
-ward	10204016	Property crime	2010-11	69
-ward	10204016	Contact crime	2010-11	85
-ward	10204016	Property crime	2011-12	67
-ward	10204016	Contact crime	2011-12	74
-ward	10204016	Property crime	2012-13	64
-ward	10204016	Contact crime	2012-13	71
-ward	10204016	Property crime	2013-14	84
-ward	10204016	Contact crime	2013-14	81
-ward	10204016	Property crime	2014-15	87
-ward	10204016	Contact crime	2014-15	82
-ward	10204017	Property crime	2005-06	69
-ward	10204017	Contact crime	2005-06	73
-ward	10204017	Property crime	2006-07	95
-ward	10204017	Contact crime	2006-07	68
-ward	10204017	Property crime	2007-08	78
-ward	10204017	Contact crime	2007-08	66
-ward	10204017	Property crime	2008-09	83
-ward	10204017	Contact crime	2008-09	61
-ward	10204017	Property crime	2009-10	82
-ward	10204017	Contact crime	2009-10	68
-ward	10204017	Property crime	2010-11	85
-ward	10204017	Contact crime	2010-11	88
-ward	10204017	Property crime	2011-12	81
-ward	10204017	Contact crime	2011-12	77
-ward	10204017	Property crime	2012-13	80
-ward	10204017	Contact crime	2012-13	76
-ward	10204017	Property crime	2013-14	100
-ward	10204017	Contact crime	2013-14	86
-ward	10204017	Property crime	2014-15	101
-ward	10204017	Contact crime	2014-15	88
-ward	10204018	Property crime	2005-06	77
-ward	10204018	Contact crime	2005-06	129
-ward	10204018	Property crime	2006-07	89
-ward	10204018	Contact crime	2006-07	126
-ward	10204018	Property crime	2007-08	118
-ward	10204018	Contact crime	2007-08	118
-ward	10204018	Property crime	2008-09	97
-ward	10204018	Contact crime	2008-09	91
-ward	10204018	Property crime	2009-10	102
-ward	10204018	Contact crime	2009-10	139
-ward	10204018	Property crime	2010-11	142
-ward	10204018	Contact crime	2010-11	151
-ward	10204018	Property crime	2011-12	167
-ward	10204018	Contact crime	2011-12	184
-ward	10204018	Property crime	2012-13	138
-ward	10204018	Contact crime	2012-13	179
-ward	10204018	Property crime	2013-14	158
-ward	10204018	Contact crime	2013-14	172
-ward	10204018	Property crime	2014-15	190
-ward	10204018	Contact crime	2014-15	214
-ward	10204019	Property crime	2005-06	359
-ward	10204019	Contact crime	2005-06	154
-ward	10204019	Property crime	2006-07	404
-ward	10204019	Contact crime	2006-07	149
-ward	10204019	Property crime	2007-08	432
-ward	10204019	Contact crime	2007-08	158
-ward	10204019	Property crime	2008-09	423
-ward	10204019	Contact crime	2008-09	162
-ward	10204019	Property crime	2009-10	458
-ward	10204019	Contact crime	2009-10	175
-ward	10204019	Property crime	2010-11	583
-ward	10204019	Contact crime	2010-11	191
-ward	10204019	Property crime	2011-12	537
-ward	10204019	Contact crime	2011-12	198
-ward	10204019	Property crime	2012-13	607
-ward	10204019	Contact crime	2012-13	229
-ward	10204019	Property crime	2013-14	599
-ward	10204019	Contact crime	2013-14	244
-ward	10204019	Property crime	2014-15	543
-ward	10204019	Contact crime	2014-15	270
-ward	10204020	Property crime	2005-06	393
-ward	10204020	Contact crime	2005-06	158
-ward	10204020	Property crime	2006-07	448
-ward	10204020	Contact crime	2006-07	147
-ward	10204020	Property crime	2007-08	473
-ward	10204020	Contact crime	2007-08	160
-ward	10204020	Property crime	2008-09	448
-ward	10204020	Contact crime	2008-09	159
-ward	10204020	Property crime	2009-10	506
-ward	10204020	Contact crime	2009-10	174
-ward	10204020	Property crime	2010-11	623
-ward	10204020	Contact crime	2010-11	183
-ward	10204020	Property crime	2011-12	553
-ward	10204020	Contact crime	2011-12	193
-ward	10204020	Property crime	2012-13	634
-ward	10204020	Contact crime	2012-13	225
-ward	10204020	Property crime	2013-14	638
-ward	10204020	Contact crime	2013-14	247
-ward	10204020	Property crime	2014-15	564
-ward	10204020	Contact crime	2014-15	271
-ward	10204021	Property crime	2005-06	267
-ward	10204021	Contact crime	2005-06	104
-ward	10204021	Property crime	2006-07	306
-ward	10204021	Contact crime	2006-07	99
-ward	10204021	Property crime	2007-08	328
-ward	10204021	Contact crime	2007-08	110
-ward	10204021	Property crime	2008-09	316
-ward	10204021	Contact crime	2008-09	114
-ward	10204021	Property crime	2009-10	349
-ward	10204021	Contact crime	2009-10	122
-ward	10204021	Property crime	2010-11	458
-ward	10204021	Contact crime	2010-11	134
-ward	10204021	Property crime	2011-12	408
-ward	10204021	Contact crime	2011-12	139
-ward	10204021	Property crime	2012-13	469
-ward	10204021	Contact crime	2012-13	166
-ward	10204021	Property crime	2013-14	464
-ward	10204021	Contact crime	2013-14	179
-ward	10204021	Property crime	2014-15	420
-ward	10204021	Contact crime	2014-15	198
-ward	10204022	Property crime	2005-06	211
-ward	10204022	Contact crime	2005-06	82
-ward	10204022	Property crime	2006-07	242
-ward	10204022	Contact crime	2006-07	78
-ward	10204022	Property crime	2007-08	260
-ward	10204022	Contact crime	2007-08	87
-ward	10204022	Property crime	2008-09	250
-ward	10204022	Contact crime	2008-09	90
-ward	10204022	Property crime	2009-10	276
-ward	10204022	Contact crime	2009-10	96
-ward	10204022	Property crime	2010-11	363
-ward	10204022	Contact crime	2010-11	106
-ward	10204022	Property crime	2011-12	323
-ward	10204022	Contact crime	2011-12	110
-ward	10204022	Property crime	2012-13	371
-ward	10204022	Contact crime	2012-13	132
-ward	10204022	Property crime	2013-14	367
-ward	10204022	Contact crime	2013-14	141
-ward	10204022	Property crime	2014-15	333
-ward	10204022	Contact crime	2014-15	157
-ward	10205001	Property crime	2005-06	105
-ward	10205001	Contact crime	2005-06	188
-ward	10205001	Property crime	2006-07	129
-ward	10205001	Contact crime	2006-07	159
-ward	10205001	Property crime	2007-08	138
-ward	10205001	Contact crime	2007-08	165
-ward	10205001	Property crime	2008-09	183
-ward	10205001	Contact crime	2008-09	173
-ward	10205001	Property crime	2009-10	151
-ward	10205001	Contact crime	2009-10	230
-ward	10205001	Property crime	2010-11	145
-ward	10205001	Contact crime	2010-11	255
-ward	10205001	Property crime	2011-12	161
-ward	10205001	Contact crime	2011-12	274
-ward	10205001	Property crime	2012-13	206
-ward	10205001	Contact crime	2012-13	254
-ward	10205001	Property crime	2013-14	160
-ward	10205001	Contact crime	2013-14	236
-ward	10205001	Property crime	2014-15	106
-ward	10205001	Contact crime	2014-15	239
-ward	10205002	Property crime	2005-06	66
-ward	10205002	Contact crime	2005-06	110
-ward	10205002	Property crime	2006-07	62
-ward	10205002	Contact crime	2006-07	120
-ward	10205002	Property crime	2007-08	96
-ward	10205002	Contact crime	2007-08	154
-ward	10205002	Property crime	2008-09	84
-ward	10205002	Contact crime	2008-09	141
-ward	10205002	Property crime	2009-10	84
-ward	10205002	Contact crime	2009-10	147
-ward	10205002	Property crime	2010-11	79
-ward	10205002	Contact crime	2010-11	153
-ward	10205002	Property crime	2011-12	88
-ward	10205002	Contact crime	2011-12	154
-ward	10205002	Property crime	2012-13	102
-ward	10205002	Contact crime	2012-13	204
-ward	10205002	Property crime	2013-14	109
-ward	10205002	Contact crime	2013-14	185
-ward	10205002	Property crime	2014-15	130
-ward	10205002	Contact crime	2014-15	199
-ward	10205003	Property crime	2005-06	48
-ward	10205003	Contact crime	2005-06	80
-ward	10205003	Property crime	2006-07	45
-ward	10205003	Contact crime	2006-07	87
-ward	10205003	Property crime	2007-08	70
-ward	10205003	Contact crime	2007-08	112
-ward	10205003	Property crime	2008-09	61
-ward	10205003	Contact crime	2008-09	102
-ward	10205003	Property crime	2009-10	61
-ward	10205003	Contact crime	2009-10	106
-ward	10205003	Property crime	2010-11	57
-ward	10205003	Contact crime	2010-11	111
-ward	10205003	Property crime	2011-12	64
-ward	10205003	Contact crime	2011-12	111
-ward	10205003	Property crime	2012-13	74
-ward	10205003	Contact crime	2012-13	148
-ward	10205003	Property crime	2013-14	79
-ward	10205003	Contact crime	2013-14	134
-ward	10205003	Property crime	2014-15	95
-ward	10205003	Contact crime	2014-15	144
-ward	10205004	Property crime	2005-06	66
-ward	10205004	Contact crime	2005-06	110
-ward	10205004	Property crime	2006-07	62
-ward	10205004	Contact crime	2006-07	120
-ward	10205004	Property crime	2007-08	95
-ward	10205004	Contact crime	2007-08	152
-ward	10205004	Property crime	2008-09	84
-ward	10205004	Contact crime	2008-09	139
-ward	10205004	Property crime	2009-10	83
-ward	10205004	Contact crime	2009-10	145
-ward	10205004	Property crime	2010-11	79
-ward	10205004	Contact crime	2010-11	151
-ward	10205004	Property crime	2011-12	88
-ward	10205004	Contact crime	2011-12	152
-ward	10205004	Property crime	2012-13	102
-ward	10205004	Contact crime	2012-13	201
-ward	10205004	Property crime	2013-14	109
-ward	10205004	Contact crime	2013-14	183
-ward	10205004	Property crime	2014-15	129
-ward	10205004	Contact crime	2014-15	197
-ward	10205005	Property crime	2005-06	121
-ward	10205005	Contact crime	2005-06	225
-ward	10205005	Property crime	2006-07	122
-ward	10205005	Contact crime	2006-07	213
-ward	10205005	Property crime	2007-08	141
-ward	10205005	Contact crime	2007-08	219
-ward	10205005	Property crime	2008-09	133
-ward	10205005	Contact crime	2008-09	195
-ward	10205005	Property crime	2009-10	138
-ward	10205005	Contact crime	2009-10	208
-ward	10205005	Property crime	2010-11	155
-ward	10205005	Contact crime	2010-11	223
-ward	10205005	Property crime	2011-12	175
-ward	10205005	Contact crime	2011-12	239
-ward	10205005	Property crime	2012-13	192
-ward	10205005	Contact crime	2012-13	272
-ward	10205005	Property crime	2013-14	188
-ward	10205005	Contact crime	2013-14	265
-ward	10205005	Property crime	2014-15	199
-ward	10205005	Contact crime	2014-15	281
-ward	10205006	Property crime	2005-06	75
-ward	10205006	Contact crime	2005-06	148
-ward	10205006	Property crime	2006-07	79
-ward	10205006	Contact crime	2006-07	131
-ward	10205006	Property crime	2007-08	79
-ward	10205006	Contact crime	2007-08	120
-ward	10205006	Property crime	2008-09	78
-ward	10205006	Contact crime	2008-09	104
-ward	10205006	Property crime	2009-10	82
-ward	10205006	Contact crime	2009-10	114
-ward	10205006	Property crime	2010-11	99
-ward	10205006	Contact crime	2010-11	124
-ward	10205006	Property crime	2011-12	113
-ward	10205006	Contact crime	2011-12	138
-ward	10205006	Property crime	2012-13	122
-ward	10205006	Contact crime	2012-13	142
-ward	10205006	Property crime	2013-14	114
-ward	10205006	Contact crime	2013-14	146
-ward	10205006	Property crime	2014-15	113
-ward	10205006	Contact crime	2014-15	153
-ward	10205007	Property crime	2005-06	95
-ward	10205007	Contact crime	2005-06	186
-ward	10205007	Property crime	2006-07	100
-ward	10205007	Contact crime	2006-07	166
-ward	10205007	Property crime	2007-08	99
-ward	10205007	Contact crime	2007-08	151
-ward	10205007	Property crime	2008-09	98
-ward	10205007	Contact crime	2008-09	132
-ward	10205007	Property crime	2009-10	103
-ward	10205007	Contact crime	2009-10	143
-ward	10205007	Property crime	2010-11	125
-ward	10205007	Contact crime	2010-11	156
-ward	10205007	Property crime	2011-12	142
-ward	10205007	Contact crime	2011-12	174
-ward	10205007	Property crime	2012-13	153
-ward	10205007	Contact crime	2012-13	179
-ward	10205007	Property crime	2013-14	144
-ward	10205007	Contact crime	2013-14	184
-ward	10205007	Property crime	2014-15	143
-ward	10205007	Contact crime	2014-15	193
-ward	10205008	Property crime	2005-06	127
-ward	10205008	Contact crime	2005-06	248
-ward	10205008	Property crime	2006-07	133
-ward	10205008	Contact crime	2006-07	221
-ward	10205008	Property crime	2007-08	132
-ward	10205008	Contact crime	2007-08	201
-ward	10205008	Property crime	2008-09	130
-ward	10205008	Contact crime	2008-09	175
-ward	10205008	Property crime	2009-10	138
-ward	10205008	Contact crime	2009-10	191
-ward	10205008	Property crime	2010-11	167
-ward	10205008	Contact crime	2010-11	208
-ward	10205008	Property crime	2011-12	189
-ward	10205008	Contact crime	2011-12	232
-ward	10205008	Property crime	2012-13	204
-ward	10205008	Contact crime	2012-13	238
-ward	10205008	Property crime	2013-14	192
-ward	10205008	Contact crime	2013-14	245
-ward	10205008	Property crime	2014-15	190
-ward	10205008	Contact crime	2014-15	257
-ward	10205009	Property crime	2005-06	108
-ward	10205009	Contact crime	2005-06	211
-ward	10205009	Property crime	2006-07	113
-ward	10205009	Contact crime	2006-07	187
-ward	10205009	Property crime	2007-08	112
-ward	10205009	Contact crime	2007-08	171
-ward	10205009	Property crime	2008-09	111
-ward	10205009	Contact crime	2008-09	149
-ward	10205009	Property crime	2009-10	117
-ward	10205009	Contact crime	2009-10	162
-ward	10205009	Property crime	2010-11	142
-ward	10205009	Contact crime	2010-11	177
-ward	10205009	Property crime	2011-12	161
-ward	10205009	Contact crime	2011-12	197
-ward	10205009	Property crime	2012-13	173
-ward	10205009	Contact crime	2012-13	202
-ward	10205009	Property crime	2013-14	163
-ward	10205009	Contact crime	2013-14	208
-ward	10205009	Property crime	2014-15	162
-ward	10205009	Contact crime	2014-15	218
-ward	10205010	Property crime	2005-06	127
-ward	10205010	Contact crime	2005-06	248
-ward	10205010	Property crime	2006-07	132
-ward	10205010	Contact crime	2006-07	220
-ward	10205010	Property crime	2007-08	132
-ward	10205010	Contact crime	2007-08	201
-ward	10205010	Property crime	2008-09	130
-ward	10205010	Contact crime	2008-09	175
-ward	10205010	Property crime	2009-10	138
-ward	10205010	Contact crime	2009-10	191
-ward	10205010	Property crime	2010-11	167
-ward	10205010	Contact crime	2010-11	208
-ward	10205010	Property crime	2011-12	189
-ward	10205010	Contact crime	2011-12	232
-ward	10205010	Property crime	2012-13	204
-ward	10205010	Contact crime	2012-13	238
-ward	10205010	Property crime	2013-14	192
-ward	10205010	Contact crime	2013-14	245
-ward	10205010	Property crime	2014-15	190
-ward	10205010	Contact crime	2014-15	256
-ward	10205011	Property crime	2005-06	103
-ward	10205011	Contact crime	2005-06	202
-ward	10205011	Property crime	2006-07	108
-ward	10205011	Contact crime	2006-07	180
-ward	10205011	Property crime	2007-08	107
-ward	10205011	Contact crime	2007-08	164
-ward	10205011	Property crime	2008-09	106
-ward	10205011	Contact crime	2008-09	143
-ward	10205011	Property crime	2009-10	112
-ward	10205011	Contact crime	2009-10	155
-ward	10205011	Property crime	2010-11	136
-ward	10205011	Contact crime	2010-11	169
-ward	10205011	Property crime	2011-12	154
-ward	10205011	Contact crime	2011-12	189
-ward	10205011	Property crime	2012-13	166
-ward	10205011	Contact crime	2012-13	194
-ward	10205011	Property crime	2013-14	156
-ward	10205011	Contact crime	2013-14	199
-ward	10205011	Property crime	2014-15	155
-ward	10205011	Contact crime	2014-15	209
-ward	10205012	Property crime	2005-06	122
-ward	10205012	Contact crime	2005-06	238
-ward	10205012	Property crime	2006-07	127
-ward	10205012	Contact crime	2006-07	212
-ward	10205012	Property crime	2007-08	127
-ward	10205012	Contact crime	2007-08	193
-ward	10205012	Property crime	2008-09	125
-ward	10205012	Contact crime	2008-09	168
-ward	10205012	Property crime	2009-10	132
-ward	10205012	Contact crime	2009-10	183
-ward	10205012	Property crime	2010-11	160
-ward	10205012	Contact crime	2010-11	199
-ward	10205012	Property crime	2011-12	182
-ward	10205012	Contact crime	2011-12	223
-ward	10205012	Property crime	2012-13	196
-ward	10205012	Contact crime	2012-13	229
-ward	10205012	Property crime	2013-14	184
-ward	10205012	Contact crime	2013-14	235
-ward	10205012	Property crime	2014-15	183
-ward	10205012	Contact crime	2014-15	246
-ward	10205013	Property crime	2005-06	116
-ward	10205013	Contact crime	2005-06	227
-ward	10205013	Property crime	2006-07	121
-ward	10205013	Contact crime	2006-07	202
-ward	10205013	Property crime	2007-08	121
-ward	10205013	Contact crime	2007-08	184
-ward	10205013	Property crime	2008-09	119
-ward	10205013	Contact crime	2008-09	160
-ward	10205013	Property crime	2009-10	126
-ward	10205013	Contact crime	2009-10	174
-ward	10205013	Property crime	2010-11	153
-ward	10205013	Contact crime	2010-11	190
-ward	10205013	Property crime	2011-12	173
-ward	10205013	Contact crime	2011-12	212
-ward	10205013	Property crime	2012-13	187
-ward	10205013	Contact crime	2012-13	218
-ward	10205013	Property crime	2013-14	175
-ward	10205013	Contact crime	2013-14	224
-ward	10205013	Property crime	2014-15	174
-ward	10205013	Contact crime	2014-15	235
-ward	10205014	Property crime	2005-06	94
-ward	10205014	Contact crime	2005-06	184
-ward	10205014	Property crime	2006-07	98
-ward	10205014	Contact crime	2006-07	164
-ward	10205014	Property crime	2007-08	98
-ward	10205014	Contact crime	2007-08	149
-ward	10205014	Property crime	2008-09	97
-ward	10205014	Contact crime	2008-09	130
-ward	10205014	Property crime	2009-10	102
-ward	10205014	Contact crime	2009-10	142
-ward	10205014	Property crime	2010-11	124
-ward	10205014	Contact crime	2010-11	154
-ward	10205014	Property crime	2011-12	140
-ward	10205014	Contact crime	2011-12	172
-ward	10205014	Property crime	2012-13	152
-ward	10205014	Contact crime	2012-13	177
-ward	10205014	Property crime	2013-14	143
-ward	10205014	Contact crime	2013-14	182
-ward	10205014	Property crime	2014-15	141
-ward	10205014	Contact crime	2014-15	191
-ward	10205015	Property crime	2005-06	99
-ward	10205015	Contact crime	2005-06	202
-ward	10205015	Property crime	2006-07	103
-ward	10205015	Contact crime	2006-07	182
-ward	10205015	Property crime	2007-08	104
-ward	10205015	Contact crime	2007-08	165
-ward	10205015	Property crime	2008-09	102
-ward	10205015	Contact crime	2008-09	145
-ward	10205015	Property crime	2009-10	107
-ward	10205015	Contact crime	2009-10	156
-ward	10205015	Property crime	2010-11	128
-ward	10205015	Contact crime	2010-11	168
-ward	10205015	Property crime	2011-12	145
-ward	10205015	Contact crime	2011-12	185
-ward	10205015	Property crime	2012-13	157
-ward	10205015	Contact crime	2012-13	188
-ward	10205015	Property crime	2013-14	146
-ward	10205015	Contact crime	2013-14	190
-ward	10205015	Property crime	2014-15	144
-ward	10205015	Contact crime	2014-15	198
-ward	10205016	Property crime	2005-06	117
-ward	10205016	Contact crime	2005-06	228
-ward	10205016	Property crime	2006-07	122
-ward	10205016	Contact crime	2006-07	203
-ward	10205016	Property crime	2007-08	122
-ward	10205016	Contact crime	2007-08	185
-ward	10205016	Property crime	2008-09	120
-ward	10205016	Contact crime	2008-09	161
-ward	10205016	Property crime	2009-10	127
-ward	10205016	Contact crime	2009-10	176
-ward	10205016	Property crime	2010-11	154
-ward	10205016	Contact crime	2010-11	192
-ward	10205016	Property crime	2011-12	174
-ward	10205016	Contact crime	2011-12	214
-ward	10205016	Property crime	2012-13	188
-ward	10205016	Contact crime	2012-13	220
-ward	10205016	Property crime	2013-14	177
-ward	10205016	Contact crime	2013-14	226
-ward	10205016	Property crime	2014-15	175
-ward	10205016	Contact crime	2014-15	236
-ward	10205017	Property crime	2005-06	57
-ward	10205017	Contact crime	2005-06	111
-ward	10205017	Property crime	2006-07	60
-ward	10205017	Contact crime	2006-07	99
-ward	10205017	Property crime	2007-08	59
-ward	10205017	Contact crime	2007-08	90
-ward	10205017	Property crime	2008-09	59
-ward	10205017	Contact crime	2008-09	79
-ward	10205017	Property crime	2009-10	62
-ward	10205017	Contact crime	2009-10	86
-ward	10205017	Property crime	2010-11	75
-ward	10205017	Contact crime	2010-11	93
-ward	10205017	Property crime	2011-12	85
-ward	10205017	Contact crime	2011-12	104
-ward	10205017	Property crime	2012-13	92
-ward	10205017	Contact crime	2012-13	107
-ward	10205017	Property crime	2013-14	86
-ward	10205017	Contact crime	2013-14	110
-ward	10205017	Property crime	2014-15	85
-ward	10205017	Contact crime	2014-15	115
-ward	10205018	Property crime	2005-06	124
-ward	10205018	Contact crime	2005-06	242
-ward	10205018	Property crime	2006-07	129
-ward	10205018	Contact crime	2006-07	216
-ward	10205018	Property crime	2007-08	129
-ward	10205018	Contact crime	2007-08	197
-ward	10205018	Property crime	2008-09	127
-ward	10205018	Contact crime	2008-09	171
-ward	10205018	Property crime	2009-10	135
-ward	10205018	Contact crime	2009-10	187
-ward	10205018	Property crime	2010-11	163
-ward	10205018	Contact crime	2010-11	203
-ward	10205018	Property crime	2011-12	185
-ward	10205018	Contact crime	2011-12	227
-ward	10205018	Property crime	2012-13	199
-ward	10205018	Contact crime	2012-13	233
-ward	10205018	Property crime	2013-14	188
-ward	10205018	Contact crime	2013-14	239
-ward	10205018	Property crime	2014-15	186
-ward	10205018	Contact crime	2014-15	251
-ward	10205019	Property crime	2005-06	61
-ward	10205019	Contact crime	2005-06	152
-ward	10205019	Property crime	2006-07	62
-ward	10205019	Contact crime	2006-07	146
-ward	10205019	Property crime	2007-08	70
-ward	10205019	Contact crime	2007-08	128
-ward	10205019	Property crime	2008-09	66
-ward	10205019	Contact crime	2008-09	119
-ward	10205019	Property crime	2009-10	66
-ward	10205019	Contact crime	2009-10	122
-ward	10205019	Property crime	2010-11	74
-ward	10205019	Contact crime	2010-11	123
-ward	10205019	Property crime	2011-12	80
-ward	10205019	Contact crime	2011-12	125
-ward	10205019	Property crime	2012-13	89
-ward	10205019	Contact crime	2012-13	122
-ward	10205019	Property crime	2013-14	78
-ward	10205019	Contact crime	2013-14	115
-ward	10205019	Property crime	2014-15	75
-ward	10205019	Contact crime	2014-15	116
-ward	10205020	Property crime	2005-06	87
-ward	10205020	Contact crime	2005-06	255
-ward	10205020	Property crime	2006-07	85
-ward	10205020	Contact crime	2006-07	250
-ward	10205020	Property crime	2007-08	105
-ward	10205020	Contact crime	2007-08	216
-ward	10205020	Property crime	2008-09	96
-ward	10205020	Contact crime	2008-09	208
-ward	10205020	Property crime	2009-10	92
-ward	10205020	Contact crime	2009-10	207
-ward	10205020	Property crime	2010-11	94
-ward	10205020	Contact crime	2010-11	199
-ward	10205020	Property crime	2011-12	99
-ward	10205020	Contact crime	2011-12	193
-ward	10205020	Property crime	2012-13	113
-ward	10205020	Contact crime	2012-13	181
-ward	10205020	Property crime	2013-14	92
-ward	10205020	Contact crime	2013-14	159
-ward	10205020	Property crime	2014-15	83
-ward	10205020	Contact crime	2014-15	152
-ward	10205021	Property crime	2005-06	218
-ward	10205021	Contact crime	2005-06	443
-ward	10205021	Property crime	2006-07	228
-ward	10205021	Contact crime	2006-07	398
-ward	10205021	Property crime	2007-08	230
-ward	10205021	Contact crime	2007-08	361
-ward	10205021	Property crime	2008-09	226
-ward	10205021	Contact crime	2008-09	318
-ward	10205021	Property crime	2009-10	237
-ward	10205021	Contact crime	2009-10	343
-ward	10205021	Property crime	2010-11	284
-ward	10205021	Contact crime	2010-11	369
-ward	10205021	Property crime	2011-12	321
-ward	10205021	Contact crime	2011-12	407
-ward	10205021	Property crime	2012-13	347
-ward	10205021	Contact crime	2012-13	414
-ward	10205021	Property crime	2013-14	324
-ward	10205021	Contact crime	2013-14	421
-ward	10205021	Property crime	2014-15	320
-ward	10205021	Contact crime	2014-15	438
-ward	10206001	Property crime	2005-06	51
-ward	10206001	Contact crime	2005-06	116
-ward	10206001	Property crime	2006-07	50
-ward	10206001	Contact crime	2006-07	121
-ward	10206001	Property crime	2007-08	43
-ward	10206001	Contact crime	2007-08	102
-ward	10206001	Property crime	2008-09	42
-ward	10206001	Contact crime	2008-09	103
-ward	10206001	Property crime	2009-10	54
-ward	10206001	Contact crime	2009-10	103
-ward	10206001	Property crime	2010-11	59
-ward	10206001	Contact crime	2010-11	125
-ward	10206001	Property crime	2011-12	66
-ward	10206001	Contact crime	2011-12	112
-ward	10206001	Property crime	2012-13	95
-ward	10206001	Contact crime	2012-13	137
-ward	10206001	Property crime	2013-14	105
-ward	10206001	Contact crime	2013-14	132
-ward	10206001	Property crime	2014-15	84
-ward	10206001	Contact crime	2014-15	146
-ward	10206002	Property crime	2005-06	67
-ward	10206002	Contact crime	2005-06	154
-ward	10206002	Property crime	2006-07	66
-ward	10206002	Contact crime	2006-07	160
-ward	10206002	Property crime	2007-08	57
-ward	10206002	Contact crime	2007-08	135
-ward	10206002	Property crime	2008-09	55
-ward	10206002	Contact crime	2008-09	136
-ward	10206002	Property crime	2009-10	72
-ward	10206002	Contact crime	2009-10	136
-ward	10206002	Property crime	2010-11	78
-ward	10206002	Contact crime	2010-11	166
-ward	10206002	Property crime	2011-12	87
-ward	10206002	Contact crime	2011-12	148
-ward	10206002	Property crime	2012-13	126
-ward	10206002	Contact crime	2012-13	181
-ward	10206002	Property crime	2013-14	139
-ward	10206002	Contact crime	2013-14	174
-ward	10206002	Property crime	2014-15	112
-ward	10206002	Contact crime	2014-15	194
-ward	10206003	Property crime	2005-06	71
-ward	10206003	Contact crime	2005-06	163
-ward	10206003	Property crime	2006-07	70
-ward	10206003	Contact crime	2006-07	169
-ward	10206003	Property crime	2007-08	61
-ward	10206003	Contact crime	2007-08	143
-ward	10206003	Property crime	2008-09	59
-ward	10206003	Contact crime	2008-09	145
-ward	10206003	Property crime	2009-10	76
-ward	10206003	Contact crime	2009-10	144
-ward	10206003	Property crime	2010-11	83
-ward	10206003	Contact crime	2010-11	176
-ward	10206003	Property crime	2011-12	93
-ward	10206003	Contact crime	2011-12	157
-ward	10206003	Property crime	2012-13	133
-ward	10206003	Contact crime	2012-13	192
-ward	10206003	Property crime	2013-14	147
-ward	10206003	Contact crime	2013-14	185
-ward	10206003	Property crime	2014-15	118
-ward	10206003	Contact crime	2014-15	205
-ward	10206004	Property crime	2005-06	66
-ward	10206004	Contact crime	2005-06	130
-ward	10206004	Property crime	2006-07	82
-ward	10206004	Contact crime	2006-07	124
-ward	10206004	Property crime	2007-08	41
-ward	10206004	Contact crime	2007-08	112
-ward	10206004	Property crime	2008-09	61
-ward	10206004	Contact crime	2008-09	111
-ward	10206004	Property crime	2009-10	49
-ward	10206004	Contact crime	2009-10	93
-ward	10206004	Property crime	2010-11	60
-ward	10206004	Contact crime	2010-11	93
-ward	10206004	Property crime	2011-12	76
-ward	10206004	Contact crime	2011-12	76
-ward	10206004	Property crime	2012-13	82
-ward	10206004	Contact crime	2012-13	80
-ward	10206004	Property crime	2013-14	67
-ward	10206004	Contact crime	2013-14	83
-ward	10206004	Property crime	2014-15	69
-ward	10206004	Contact crime	2014-15	109
-ward	10206005	Property crime	2005-06	48
-ward	10206005	Contact crime	2005-06	139
-ward	10206005	Property crime	2006-07	47
-ward	10206005	Contact crime	2006-07	113
-ward	10206005	Property crime	2007-08	44
-ward	10206005	Contact crime	2007-08	81
-ward	10206005	Property crime	2008-09	34
-ward	10206005	Contact crime	2008-09	79
-ward	10206005	Property crime	2009-10	39
-ward	10206005	Contact crime	2009-10	84
-ward	10206005	Property crime	2010-11	54
-ward	10206005	Contact crime	2010-11	97
-ward	10206005	Property crime	2011-12	48
-ward	10206005	Contact crime	2011-12	101
-ward	10206005	Property crime	2012-13	81
-ward	10206005	Contact crime	2012-13	129
-ward	10206005	Property crime	2013-14	72
-ward	10206005	Contact crime	2013-14	118
-ward	10206005	Property crime	2014-15	62
-ward	10206005	Contact crime	2014-15	124
-ward	10206006	Property crime	2005-06	66
-ward	10206006	Contact crime	2005-06	152
-ward	10206006	Property crime	2006-07	65
-ward	10206006	Contact crime	2006-07	157
-ward	10206006	Property crime	2007-08	56
-ward	10206006	Contact crime	2007-08	133
-ward	10206006	Property crime	2008-09	55
-ward	10206006	Contact crime	2008-09	134
-ward	10206006	Property crime	2009-10	71
-ward	10206006	Contact crime	2009-10	134
-ward	10206006	Property crime	2010-11	77
-ward	10206006	Contact crime	2010-11	163
-ward	10206006	Property crime	2011-12	86
-ward	10206006	Contact crime	2011-12	146
-ward	10206006	Property crime	2012-13	124
-ward	10206006	Contact crime	2012-13	178
-ward	10206006	Property crime	2013-14	136
-ward	10206006	Contact crime	2013-14	172
-ward	10206006	Property crime	2014-15	110
-ward	10206006	Contact crime	2014-15	190
-ward	10206007	Property crime	2005-06	62
-ward	10206007	Contact crime	2005-06	98
-ward	10206007	Property crime	2006-07	78
-ward	10206007	Contact crime	2006-07	95
-ward	10206007	Property crime	2007-08	39
-ward	10206007	Contact crime	2007-08	91
-ward	10206007	Property crime	2008-09	54
-ward	10206007	Contact crime	2008-09	107
-ward	10206007	Property crime	2009-10	60
-ward	10206007	Contact crime	2009-10	126
-ward	10206007	Property crime	2010-11	67
-ward	10206007	Contact crime	2010-11	122
-ward	10206007	Property crime	2011-12	58
-ward	10206007	Contact crime	2011-12	106
-ward	10206007	Property crime	2012-13	97
-ward	10206007	Contact crime	2012-13	131
-ward	10206007	Property crime	2013-14	85
-ward	10206007	Contact crime	2013-14	128
-ward	10206007	Property crime	2014-15	98
-ward	10206007	Contact crime	2014-15	131
-ward	10206008	Property crime	2005-06	62
-ward	10206008	Contact crime	2005-06	136
-ward	10206008	Property crime	2006-07	73
-ward	10206008	Contact crime	2006-07	124
-ward	10206008	Property crime	2007-08	44
-ward	10206008	Contact crime	2007-08	108
-ward	10206008	Property crime	2008-09	56
-ward	10206008	Contact crime	2008-09	107
-ward	10206008	Property crime	2009-10	49
-ward	10206008	Contact crime	2009-10	99
-ward	10206008	Property crime	2010-11	61
-ward	10206008	Contact crime	2010-11	101
-ward	10206008	Property crime	2011-12	71
-ward	10206008	Contact crime	2011-12	93
-ward	10206008	Property crime	2012-13	84
-ward	10206008	Contact crime	2012-13	102
-ward	10206008	Property crime	2013-14	73
-ward	10206008	Contact crime	2013-14	103
-ward	10206008	Property crime	2014-15	72
-ward	10206008	Contact crime	2014-15	120
-ward	10206009	Property crime	2005-06	40
-ward	10206009	Contact crime	2005-06	109
-ward	10206009	Property crime	2006-07	41
-ward	10206009	Contact crime	2006-07	125
-ward	10206009	Property crime	2007-08	54
-ward	10206009	Contact crime	2007-08	120
-ward	10206009	Property crime	2008-09	40
-ward	10206009	Contact crime	2008-09	97
-ward	10206009	Property crime	2009-10	42
-ward	10206009	Contact crime	2009-10	159
-ward	10206009	Property crime	2010-11	46
-ward	10206009	Contact crime	2010-11	145
-ward	10206009	Property crime	2011-12	60
-ward	10206009	Contact crime	2011-12	169
-ward	10206009	Property crime	2012-13	72
-ward	10206009	Contact crime	2012-13	153
-ward	10206009	Property crime	2013-14	72
-ward	10206009	Contact crime	2013-14	168
-ward	10206009	Property crime	2014-15	82
-ward	10206009	Contact crime	2014-15	158
-ward	10206010	Property crime	2005-06	30
-ward	10206010	Contact crime	2005-06	82
-ward	10206010	Property crime	2006-07	31
-ward	10206010	Contact crime	2006-07	93
-ward	10206010	Property crime	2007-08	41
-ward	10206010	Contact crime	2007-08	90
-ward	10206010	Property crime	2008-09	30
-ward	10206010	Contact crime	2008-09	73
-ward	10206010	Property crime	2009-10	31
-ward	10206010	Contact crime	2009-10	120
-ward	10206010	Property crime	2010-11	34
-ward	10206010	Contact crime	2010-11	109
-ward	10206010	Property crime	2011-12	45
-ward	10206010	Contact crime	2011-12	127
-ward	10206010	Property crime	2012-13	54
-ward	10206010	Contact crime	2012-13	115
-ward	10206010	Property crime	2013-14	54
-ward	10206010	Contact crime	2013-14	126
-ward	10206010	Property crime	2014-15	61
-ward	10206010	Contact crime	2014-15	119
-ward	10206011	Property crime	2005-06	33
-ward	10206011	Contact crime	2005-06	84
-ward	10206011	Property crime	2006-07	35
-ward	10206011	Contact crime	2006-07	94
-ward	10206011	Property crime	2007-08	41
-ward	10206011	Contact crime	2007-08	90
-ward	10206011	Property crime	2008-09	32
-ward	10206011	Contact crime	2008-09	76
-ward	10206011	Property crime	2009-10	34
-ward	10206011	Contact crime	2009-10	120
-ward	10206011	Property crime	2010-11	38
-ward	10206011	Contact crime	2010-11	110
-ward	10206011	Property crime	2011-12	46
-ward	10206011	Contact crime	2011-12	125
-ward	10206011	Property crime	2012-13	59
-ward	10206011	Contact crime	2012-13	117
-ward	10206011	Property crime	2013-14	57
-ward	10206011	Contact crime	2013-14	126
-ward	10206011	Property crime	2014-15	65
-ward	10206011	Contact crime	2014-15	120
-ward	10206012	Property crime	2005-06	82
-ward	10206012	Contact crime	2005-06	131
-ward	10206012	Property crime	2006-07	103
-ward	10206012	Contact crime	2006-07	128
-ward	10206012	Property crime	2007-08	53
-ward	10206012	Contact crime	2007-08	122
-ward	10206012	Property crime	2008-09	72
-ward	10206012	Contact crime	2008-09	144
-ward	10206012	Property crime	2009-10	80
-ward	10206012	Contact crime	2009-10	169
-ward	10206012	Property crime	2010-11	89
-ward	10206012	Contact crime	2010-11	163
-ward	10206012	Property crime	2011-12	78
-ward	10206012	Contact crime	2011-12	143
-ward	10206012	Property crime	2012-13	130
-ward	10206012	Contact crime	2012-13	175
-ward	10206012	Property crime	2013-14	114
-ward	10206012	Contact crime	2013-14	172
-ward	10206012	Property crime	2014-15	131
-ward	10206012	Contact crime	2014-15	176
-ward	10301001	Property crime	2005-06	66
-ward	10301001	Contact crime	2005-06	101
-ward	10301001	Property crime	2006-07	61
-ward	10301001	Contact crime	2006-07	117
-ward	10301001	Property crime	2007-08	52
-ward	10301001	Contact crime	2007-08	111
-ward	10301001	Property crime	2008-09	58
-ward	10301001	Contact crime	2008-09	131
-ward	10301001	Property crime	2009-10	84
-ward	10301001	Contact crime	2009-10	137
-ward	10301001	Property crime	2010-11	104
-ward	10301001	Contact crime	2010-11	174
-ward	10301001	Property crime	2011-12	93
-ward	10301001	Contact crime	2011-12	155
-ward	10301001	Property crime	2012-13	118
-ward	10301001	Contact crime	2012-13	150
-ward	10301001	Property crime	2013-14	143
-ward	10301001	Contact crime	2013-14	196
-ward	10301001	Property crime	2014-15	169
-ward	10301001	Contact crime	2014-15	189
-ward	10301002	Property crime	2005-06	63
-ward	10301002	Contact crime	2005-06	100
-ward	10301002	Property crime	2006-07	59
-ward	10301002	Contact crime	2006-07	102
-ward	10301002	Property crime	2007-08	48
-ward	10301002	Contact crime	2007-08	117
-ward	10301002	Property crime	2008-09	60
-ward	10301002	Contact crime	2008-09	127
-ward	10301002	Property crime	2009-10	80
-ward	10301002	Contact crime	2009-10	158
-ward	10301002	Property crime	2010-11	120
-ward	10301002	Contact crime	2010-11	134
-ward	10301002	Property crime	2011-12	118
-ward	10301002	Contact crime	2011-12	134
-ward	10301002	Property crime	2012-13	200
-ward	10301002	Contact crime	2012-13	162
-ward	10301002	Property crime	2013-14	157
-ward	10301002	Contact crime	2013-14	163
-ward	10301002	Property crime	2014-15	170
-ward	10301002	Contact crime	2014-15	180
-ward	10301003	Property crime	2005-06	116
-ward	10301003	Contact crime	2005-06	178
-ward	10301003	Property crime	2006-07	148
-ward	10301003	Contact crime	2006-07	186
-ward	10301003	Property crime	2007-08	88
-ward	10301003	Contact crime	2007-08	197
-ward	10301003	Property crime	2008-09	103
-ward	10301003	Contact crime	2008-09	155
-ward	10301003	Property crime	2009-10	129
-ward	10301003	Contact crime	2009-10	157
-ward	10301003	Property crime	2010-11	100
-ward	10301003	Contact crime	2010-11	169
-ward	10301003	Property crime	2011-12	102
-ward	10301003	Contact crime	2011-12	157
-ward	10301003	Property crime	2012-13	132
-ward	10301003	Contact crime	2012-13	170
-ward	10301003	Property crime	2013-14	154
-ward	10301003	Contact crime	2013-14	173
-ward	10301003	Property crime	2014-15	162
-ward	10301003	Contact crime	2014-15	205
-ward	10301004	Property crime	2005-06	59
-ward	10301004	Contact crime	2005-06	91
-ward	10301004	Property crime	2006-07	74
-ward	10301004	Contact crime	2006-07	95
-ward	10301004	Property crime	2007-08	45
-ward	10301004	Contact crime	2007-08	102
-ward	10301004	Property crime	2008-09	53
-ward	10301004	Contact crime	2008-09	83
-ward	10301004	Property crime	2009-10	67
-ward	10301004	Contact crime	2009-10	86
-ward	10301004	Property crime	2010-11	57
-ward	10301004	Contact crime	2010-11	90
-ward	10301004	Property crime	2011-12	58
-ward	10301004	Contact crime	2011-12	84
-ward	10301004	Property crime	2012-13	78
-ward	10301004	Contact crime	2012-13	92
-ward	10301004	Property crime	2013-14	85
-ward	10301004	Contact crime	2013-14	94
-ward	10301004	Property crime	2014-15	90
-ward	10301004	Contact crime	2014-15	111
-ward	10301005	Property crime	2005-06	76
-ward	10301005	Contact crime	2005-06	107
-ward	10301005	Property crime	2006-07	77
-ward	10301005	Contact crime	2006-07	129
-ward	10301005	Property crime	2007-08	69
-ward	10301005	Contact crime	2007-08	134
-ward	10301005	Property crime	2008-09	67
-ward	10301005	Contact crime	2008-09	105
-ward	10301005	Property crime	2009-10	77
-ward	10301005	Contact crime	2009-10	113
-ward	10301005	Property crime	2010-11	96
-ward	10301005	Contact crime	2010-11	120
-ward	10301005	Property crime	2011-12	89
-ward	10301005	Contact crime	2011-12	105
-ward	10301005	Property crime	2012-13	113
-ward	10301005	Contact crime	2012-13	122
-ward	10301005	Property crime	2013-14	122
-ward	10301005	Contact crime	2013-14	117
-ward	10301005	Property crime	2014-15	151
-ward	10301005	Contact crime	2014-15	157
-ward	10301006	Property crime	2005-06	60
-ward	10301006	Contact crime	2005-06	82
-ward	10301006	Property crime	2006-07	54
-ward	10301006	Contact crime	2006-07	107
-ward	10301006	Property crime	2007-08	60
-ward	10301006	Contact crime	2007-08	109
-ward	10301006	Property crime	2008-09	54
-ward	10301006	Contact crime	2008-09	84
-ward	10301006	Property crime	2009-10	58
-ward	10301006	Contact crime	2009-10	94
-ward	10301006	Property crime	2010-11	89
-ward	10301006	Contact crime	2010-11	99
-ward	10301006	Property crime	2011-12	80
-ward	10301006	Contact crime	2011-12	83
-ward	10301006	Property crime	2012-13	99
-ward	10301006	Contact crime	2012-13	102
-ward	10301006	Property crime	2013-14	106
-ward	10301006	Contact crime	2013-14	94
-ward	10301006	Property crime	2014-15	139
-ward	10301006	Contact crime	2014-15	134
-ward	10301007	Property crime	2005-06	78
-ward	10301007	Contact crime	2005-06	113
-ward	10301007	Property crime	2006-07	91
-ward	10301007	Contact crime	2006-07	116
-ward	10301007	Property crime	2007-08	62
-ward	10301007	Contact crime	2007-08	122
-ward	10301007	Property crime	2008-09	71
-ward	10301007	Contact crime	2008-09	99
-ward	10301007	Property crime	2009-10	88
-ward	10301007	Contact crime	2009-10	106
-ward	10301007	Property crime	2010-11	80
-ward	10301007	Contact crime	2010-11	111
-ward	10301007	Property crime	2011-12	75
-ward	10301007	Contact crime	2011-12	104
-ward	10301007	Property crime	2012-13	98
-ward	10301007	Contact crime	2012-13	115
-ward	10301007	Property crime	2013-14	115
-ward	10301007	Contact crime	2013-14	118
-ward	10301007	Property crime	2014-15	122
-ward	10301007	Contact crime	2014-15	141
-ward	10301008	Property crime	2005-06	67
-ward	10301008	Contact crime	2005-06	73
-ward	10301008	Property crime	2006-07	53
-ward	10301008	Contact crime	2006-07	48
-ward	10301008	Property crime	2007-08	59
-ward	10301008	Contact crime	2007-08	52
-ward	10301008	Property crime	2008-09	76
-ward	10301008	Contact crime	2008-09	59
-ward	10301008	Property crime	2009-10	94
-ward	10301008	Contact crime	2009-10	86
-ward	10301008	Property crime	2010-11	107
-ward	10301008	Contact crime	2010-11	79
-ward	10301008	Property crime	2011-12	76
-ward	10301008	Contact crime	2011-12	86
-ward	10301008	Property crime	2012-13	111
-ward	10301008	Contact crime	2012-13	96
-ward	10301008	Property crime	2013-14	142
-ward	10301008	Contact crime	2013-14	112
-ward	10301008	Property crime	2014-15	137
-ward	10301008	Contact crime	2014-15	122
-ward	10301009	Property crime	2005-06	55
-ward	10301009	Contact crime	2005-06	68
-ward	10301009	Property crime	2006-07	46
-ward	10301009	Contact crime	2006-07	73
-ward	10301009	Property crime	2007-08	52
-ward	10301009	Contact crime	2007-08	76
-ward	10301009	Property crime	2008-09	54
-ward	10301009	Contact crime	2008-09	65
-ward	10301009	Property crime	2009-10	62
-ward	10301009	Contact crime	2009-10	79
-ward	10301009	Property crime	2010-11	83
-ward	10301009	Contact crime	2010-11	79
-ward	10301009	Property crime	2011-12	68
-ward	10301009	Contact crime	2011-12	73
-ward	10301009	Property crime	2012-13	90
-ward	10301009	Contact crime	2012-13	86
-ward	10301009	Property crime	2013-14	104
-ward	10301009	Contact crime	2013-14	87
-ward	10301009	Property crime	2014-15	120
-ward	10301009	Contact crime	2014-15	112
-ward	10301010	Property crime	2005-06	48
-ward	10301010	Contact crime	2005-06	53
-ward	10301010	Property crime	2006-07	38
-ward	10301010	Contact crime	2006-07	35
-ward	10301010	Property crime	2007-08	42
-ward	10301010	Contact crime	2007-08	37
-ward	10301010	Property crime	2008-09	54
-ward	10301010	Contact crime	2008-09	43
-ward	10301010	Property crime	2009-10	68
-ward	10301010	Contact crime	2009-10	62
-ward	10301010	Property crime	2010-11	77
-ward	10301010	Contact crime	2010-11	57
-ward	10301010	Property crime	2011-12	55
-ward	10301010	Contact crime	2011-12	62
-ward	10301010	Property crime	2012-13	80
-ward	10301010	Contact crime	2012-13	69
-ward	10301010	Property crime	2013-14	102
-ward	10301010	Contact crime	2013-14	80
-ward	10301010	Property crime	2014-15	99
-ward	10301010	Contact crime	2014-15	88
-ward	10301011	Property crime	2005-06	52
-ward	10301011	Contact crime	2005-06	57
-ward	10301011	Property crime	2006-07	42
-ward	10301011	Contact crime	2006-07	38
-ward	10301011	Property crime	2007-08	46
-ward	10301011	Contact crime	2007-08	40
-ward	10301011	Property crime	2008-09	59
-ward	10301011	Contact crime	2008-09	46
-ward	10301011	Property crime	2009-10	73
-ward	10301011	Contact crime	2009-10	67
-ward	10301011	Property crime	2010-11	83
-ward	10301011	Contact crime	2010-11	62
-ward	10301011	Property crime	2011-12	59
-ward	10301011	Contact crime	2011-12	67
-ward	10301011	Property crime	2012-13	87
-ward	10301011	Contact crime	2012-13	75
-ward	10301011	Property crime	2013-14	111
-ward	10301011	Contact crime	2013-14	87
-ward	10301011	Property crime	2014-15	107
-ward	10301011	Contact crime	2014-15	95
-ward	10301012	Property crime	2005-06	76
-ward	10301012	Contact crime	2005-06	83
-ward	10301012	Property crime	2006-07	61
-ward	10301012	Contact crime	2006-07	55
-ward	10301012	Property crime	2007-08	67
-ward	10301012	Contact crime	2007-08	59
-ward	10301012	Property crime	2008-09	86
-ward	10301012	Contact crime	2008-09	68
-ward	10301012	Property crime	2009-10	107
-ward	10301012	Contact crime	2009-10	98
-ward	10301012	Property crime	2010-11	122
-ward	10301012	Contact crime	2010-11	90
-ward	10301012	Property crime	2011-12	86
-ward	10301012	Contact crime	2011-12	98
-ward	10301012	Property crime	2012-13	126
-ward	10301012	Contact crime	2012-13	110
-ward	10301012	Property crime	2013-14	162
-ward	10301012	Contact crime	2013-14	127
-ward	10301012	Property crime	2014-15	156
-ward	10301012	Contact crime	2014-15	139
-ward	10301013	Property crime	2005-06	146
-ward	10301013	Contact crime	2005-06	159
-ward	10301013	Property crime	2006-07	116
-ward	10301013	Contact crime	2006-07	105
-ward	10301013	Property crime	2007-08	127
-ward	10301013	Contact crime	2007-08	113
-ward	10301013	Property crime	2008-09	165
-ward	10301013	Contact crime	2008-09	129
-ward	10301013	Property crime	2009-10	205
-ward	10301013	Contact crime	2009-10	187
-ward	10301013	Property crime	2010-11	233
-ward	10301013	Contact crime	2010-11	172
-ward	10301013	Property crime	2011-12	165
-ward	10301013	Contact crime	2011-12	187
-ward	10301013	Property crime	2012-13	242
-ward	10301013	Contact crime	2012-13	210
-ward	10301013	Property crime	2013-14	309
-ward	10301013	Contact crime	2013-14	243
-ward	10301013	Property crime	2014-15	299
-ward	10301013	Contact crime	2014-15	267
-ward	10302001	Property crime	2005-06	102
-ward	10302001	Contact crime	2005-06	91
-ward	10302001	Property crime	2006-07	109
-ward	10302001	Contact crime	2006-07	89
-ward	10302001	Property crime	2007-08	120
-ward	10302001	Contact crime	2007-08	87
-ward	10302001	Property crime	2008-09	173
-ward	10302001	Contact crime	2008-09	95
-ward	10302001	Property crime	2009-10	227
-ward	10302001	Contact crime	2009-10	97
-ward	10302001	Property crime	2010-11	172
-ward	10302001	Contact crime	2010-11	104
-ward	10302001	Property crime	2011-12	183
-ward	10302001	Contact crime	2011-12	96
-ward	10302001	Property crime	2012-13	163
-ward	10302001	Contact crime	2012-13	104
-ward	10302001	Property crime	2013-14	171
-ward	10302001	Contact crime	2013-14	109
-ward	10302001	Property crime	2014-15	234
-ward	10302001	Contact crime	2014-15	122
-ward	10302002	Property crime	2005-06	109
-ward	10302002	Contact crime	2005-06	97
-ward	10302002	Property crime	2006-07	117
-ward	10302002	Contact crime	2006-07	95
-ward	10302002	Property crime	2007-08	128
-ward	10302002	Contact crime	2007-08	92
-ward	10302002	Property crime	2008-09	184
-ward	10302002	Contact crime	2008-09	101
-ward	10302002	Property crime	2009-10	242
-ward	10302002	Contact crime	2009-10	103
-ward	10302002	Property crime	2010-11	183
-ward	10302002	Contact crime	2010-11	110
-ward	10302002	Property crime	2011-12	194
-ward	10302002	Contact crime	2011-12	102
-ward	10302002	Property crime	2012-13	173
-ward	10302002	Contact crime	2012-13	110
-ward	10302002	Property crime	2013-14	182
-ward	10302002	Contact crime	2013-14	116
-ward	10302002	Property crime	2014-15	250
-ward	10302002	Contact crime	2014-15	130
-ward	10302003	Property crime	2005-06	50
-ward	10302003	Contact crime	2005-06	39
-ward	10302003	Property crime	2006-07	59
-ward	10302003	Contact crime	2006-07	45
-ward	10302003	Property crime	2007-08	41
-ward	10302003	Contact crime	2007-08	38
-ward	10302003	Property crime	2008-09	52
-ward	10302003	Contact crime	2008-09	38
-ward	10302003	Property crime	2009-10	59
-ward	10302003	Contact crime	2009-10	54
-ward	10302003	Property crime	2010-11	55
-ward	10302003	Contact crime	2010-11	58
-ward	10302003	Property crime	2011-12	70
-ward	10302003	Contact crime	2011-12	53
-ward	10302003	Property crime	2012-13	61
-ward	10302003	Contact crime	2012-13	55
-ward	10302003	Property crime	2013-14	72
-ward	10302003	Contact crime	2013-14	72
-ward	10302003	Property crime	2014-15	87
-ward	10302003	Contact crime	2014-15	73
-ward	10302004	Property crime	2005-06	92
-ward	10302004	Contact crime	2005-06	70
-ward	10302004	Property crime	2006-07	107
-ward	10302004	Contact crime	2006-07	82
-ward	10302004	Property crime	2007-08	74
-ward	10302004	Contact crime	2007-08	69
-ward	10302004	Property crime	2008-09	94
-ward	10302004	Contact crime	2008-09	68
-ward	10302004	Property crime	2009-10	107
-ward	10302004	Contact crime	2009-10	97
-ward	10302004	Property crime	2010-11	100
-ward	10302004	Contact crime	2010-11	104
-ward	10302004	Property crime	2011-12	126
-ward	10302004	Contact crime	2011-12	95
-ward	10302004	Property crime	2012-13	111
-ward	10302004	Contact crime	2012-13	100
-ward	10302004	Property crime	2013-14	131
-ward	10302004	Contact crime	2013-14	130
-ward	10302004	Property crime	2014-15	160
-ward	10302004	Contact crime	2014-15	131
-ward	10302005	Property crime	2005-06	98
-ward	10302005	Contact crime	2005-06	74
-ward	10302005	Property crime	2006-07	115
-ward	10302005	Contact crime	2006-07	88
-ward	10302005	Property crime	2007-08	79
-ward	10302005	Contact crime	2007-08	73
-ward	10302005	Property crime	2008-09	100
-ward	10302005	Contact crime	2008-09	72
-ward	10302005	Property crime	2009-10	115
-ward	10302005	Contact crime	2009-10	104
-ward	10302005	Property crime	2010-11	107
-ward	10302005	Contact crime	2010-11	112
-ward	10302005	Property crime	2011-12	135
-ward	10302005	Contact crime	2011-12	102
-ward	10302005	Property crime	2012-13	118
-ward	10302005	Contact crime	2012-13	107
-ward	10302005	Property crime	2013-14	139
-ward	10302005	Contact crime	2013-14	140
-ward	10302005	Property crime	2014-15	169
-ward	10302005	Contact crime	2014-15	141
-ward	10302006	Property crime	2005-06	74
-ward	10302006	Contact crime	2005-06	56
-ward	10302006	Property crime	2006-07	87
-ward	10302006	Contact crime	2006-07	66
-ward	10302006	Property crime	2007-08	59
-ward	10302006	Contact crime	2007-08	55
-ward	10302006	Property crime	2008-09	76
-ward	10302006	Contact crime	2008-09	55
-ward	10302006	Property crime	2009-10	87
-ward	10302006	Contact crime	2009-10	78
-ward	10302006	Property crime	2010-11	80
-ward	10302006	Contact crime	2010-11	84
-ward	10302006	Property crime	2011-12	102
-ward	10302006	Contact crime	2011-12	77
-ward	10302006	Property crime	2012-13	89
-ward	10302006	Contact crime	2012-13	81
-ward	10302006	Property crime	2013-14	105
-ward	10302006	Contact crime	2013-14	106
-ward	10302006	Property crime	2014-15	128
-ward	10302006	Contact crime	2014-15	106
-ward	10302007	Property crime	2005-06	55
-ward	10302007	Contact crime	2005-06	41
-ward	10302007	Property crime	2006-07	64
-ward	10302007	Contact crime	2006-07	49
-ward	10302007	Property crime	2007-08	44
-ward	10302007	Contact crime	2007-08	41
-ward	10302007	Property crime	2008-09	56
-ward	10302007	Contact crime	2008-09	40
-ward	10302007	Property crime	2009-10	64
-ward	10302007	Contact crime	2009-10	57
-ward	10302007	Property crime	2010-11	59
-ward	10302007	Contact crime	2010-11	62
-ward	10302007	Property crime	2011-12	75
-ward	10302007	Contact crime	2011-12	57
-ward	10302007	Property crime	2012-13	66
-ward	10302007	Contact crime	2012-13	60
-ward	10302007	Property crime	2013-14	77
-ward	10302007	Contact crime	2013-14	78
-ward	10302007	Property crime	2014-15	94
-ward	10302007	Contact crime	2014-15	78
-ward	10302008	Property crime	2005-06	132
-ward	10302008	Contact crime	2005-06	100
-ward	10302008	Property crime	2006-07	152
-ward	10302008	Contact crime	2006-07	115
-ward	10302008	Property crime	2007-08	107
-ward	10302008	Contact crime	2007-08	98
-ward	10302008	Property crime	2008-09	134
-ward	10302008	Contact crime	2008-09	96
-ward	10302008	Property crime	2009-10	153
-ward	10302008	Contact crime	2009-10	135
-ward	10302008	Property crime	2010-11	143
-ward	10302008	Contact crime	2010-11	146
-ward	10302008	Property crime	2011-12	179
-ward	10302008	Contact crime	2011-12	133
-ward	10302008	Property crime	2012-13	163
-ward	10302008	Contact crime	2012-13	141
-ward	10302008	Property crime	2013-14	193
-ward	10302008	Contact crime	2013-14	182
-ward	10302008	Property crime	2014-15	235
-ward	10302008	Contact crime	2014-15	184
-ward	10302009	Property crime	2005-06	86
-ward	10302009	Contact crime	2005-06	51
-ward	10302009	Property crime	2006-07	75
-ward	10302009	Contact crime	2006-07	34
-ward	10302009	Property crime	2007-08	83
-ward	10302009	Contact crime	2007-08	42
-ward	10302009	Property crime	2008-09	74
-ward	10302009	Contact crime	2008-09	36
-ward	10302009	Property crime	2009-10	86
-ward	10302009	Contact crime	2009-10	37
-ward	10302009	Property crime	2010-11	91
-ward	10302009	Contact crime	2010-11	36
-ward	10302009	Property crime	2011-12	104
-ward	10302009	Contact crime	2011-12	31
-ward	10302009	Property crime	2012-13	153
-ward	10302009	Contact crime	2012-13	41
-ward	10302009	Property crime	2013-14	191
-ward	10302009	Contact crime	2013-14	35
-ward	10302009	Property crime	2014-15	251
-ward	10302009	Contact crime	2014-15	45
-ward	10302010	Property crime	2005-06	210
-ward	10302010	Contact crime	2005-06	124
-ward	10302010	Property crime	2006-07	183
-ward	10302010	Contact crime	2006-07	83
-ward	10302010	Property crime	2007-08	201
-ward	10302010	Contact crime	2007-08	101
-ward	10302010	Property crime	2008-09	181
-ward	10302010	Contact crime	2008-09	87
-ward	10302010	Property crime	2009-10	209
-ward	10302010	Contact crime	2009-10	89
-ward	10302010	Property crime	2010-11	221
-ward	10302010	Contact crime	2010-11	86
-ward	10302010	Property crime	2011-12	253
-ward	10302010	Contact crime	2011-12	74
-ward	10302010	Property crime	2012-13	372
-ward	10302010	Contact crime	2012-13	99
-ward	10302010	Property crime	2013-14	466
-ward	10302010	Contact crime	2013-14	85
-ward	10302010	Property crime	2014-15	610
-ward	10302010	Contact crime	2014-15	108
-ward	10302011	Property crime	2005-06	81
-ward	10302011	Contact crime	2005-06	193
-ward	10302011	Property crime	2006-07	102
-ward	10302011	Contact crime	2006-07	151
-ward	10302011	Property crime	2007-08	108
-ward	10302011	Contact crime	2007-08	166
-ward	10302011	Property crime	2008-09	160
-ward	10302011	Contact crime	2008-09	190
-ward	10302011	Property crime	2009-10	174
-ward	10302011	Contact crime	2009-10	190
-ward	10302011	Property crime	2010-11	163
-ward	10302011	Contact crime	2010-11	196
-ward	10302011	Property crime	2011-12	222
-ward	10302011	Contact crime	2011-12	171
-ward	10302011	Property crime	2012-13	185
-ward	10302011	Contact crime	2012-13	149
-ward	10302011	Property crime	2013-14	159
-ward	10302011	Contact crime	2013-14	155
-ward	10302011	Property crime	2014-15	237
-ward	10302011	Contact crime	2014-15	198
-ward	10302012	Property crime	2005-06	58
-ward	10302012	Contact crime	2005-06	43
-ward	10302012	Property crime	2006-07	67
-ward	10302012	Contact crime	2006-07	51
-ward	10302012	Property crime	2007-08	46
-ward	10302012	Contact crime	2007-08	43
-ward	10302012	Property crime	2008-09	59
-ward	10302012	Contact crime	2008-09	42
-ward	10302012	Property crime	2009-10	67
-ward	10302012	Contact crime	2009-10	61
-ward	10302012	Property crime	2010-11	63
-ward	10302012	Contact crime	2010-11	66
-ward	10302012	Property crime	2011-12	79
-ward	10302012	Contact crime	2011-12	60
-ward	10302012	Property crime	2012-13	69
-ward	10302012	Contact crime	2012-13	63
-ward	10302012	Property crime	2013-14	82
-ward	10302012	Contact crime	2013-14	82
-ward	10302012	Property crime	2014-15	99
-ward	10302012	Contact crime	2014-15	83
-ward	10302013	Property crime	2005-06	60
-ward	10302013	Contact crime	2005-06	45
-ward	10302013	Property crime	2006-07	70
-ward	10302013	Contact crime	2006-07	53
-ward	10302013	Property crime	2007-08	48
-ward	10302013	Contact crime	2007-08	44
-ward	10302013	Property crime	2008-09	61
-ward	10302013	Contact crime	2008-09	44
-ward	10302013	Property crime	2009-10	70
-ward	10302013	Contact crime	2009-10	63
-ward	10302013	Property crime	2010-11	65
-ward	10302013	Contact crime	2010-11	68
-ward	10302013	Property crime	2011-12	82
-ward	10302013	Contact crime	2011-12	62
-ward	10302013	Property crime	2012-13	72
-ward	10302013	Contact crime	2012-13	65
-ward	10302013	Property crime	2013-14	84
-ward	10302013	Contact crime	2013-14	85
-ward	10302013	Property crime	2014-15	103
-ward	10302013	Contact crime	2014-15	85
-ward	10303001	Property crime	2005-06	71
-ward	10303001	Contact crime	2005-06	97
-ward	10303001	Property crime	2006-07	58
-ward	10303001	Contact crime	2006-07	90
-ward	10303001	Property crime	2007-08	46
-ward	10303001	Contact crime	2007-08	92
-ward	10303001	Property crime	2008-09	43
-ward	10303001	Contact crime	2008-09	86
-ward	10303001	Property crime	2009-10	48
-ward	10303001	Contact crime	2009-10	86
-ward	10303001	Property crime	2010-11	61
-ward	10303001	Contact crime	2010-11	97
-ward	10303001	Property crime	2011-12	52
-ward	10303001	Contact crime	2011-12	100
-ward	10303001	Property crime	2012-13	65
-ward	10303001	Contact crime	2012-13	88
-ward	10303001	Property crime	2013-14	80
-ward	10303001	Contact crime	2013-14	100
-ward	10303001	Property crime	2014-15	86
-ward	10303001	Contact crime	2014-15	108
-ward	10303002	Property crime	2005-06	102
-ward	10303002	Contact crime	2005-06	138
-ward	10303002	Property crime	2006-07	84
-ward	10303002	Contact crime	2006-07	125
-ward	10303002	Property crime	2007-08	68
-ward	10303002	Contact crime	2007-08	136
-ward	10303002	Property crime	2008-09	60
-ward	10303002	Contact crime	2008-09	120
-ward	10303002	Property crime	2009-10	70
-ward	10303002	Contact crime	2009-10	140
-ward	10303002	Property crime	2010-11	79
-ward	10303002	Contact crime	2010-11	168
-ward	10303002	Property crime	2011-12	67
-ward	10303002	Contact crime	2011-12	149
-ward	10303002	Property crime	2012-13	96
-ward	10303002	Contact crime	2012-13	151
-ward	10303002	Property crime	2013-14	122
-ward	10303002	Contact crime	2013-14	169
-ward	10303002	Property crime	2014-15	125
-ward	10303002	Contact crime	2014-15	187
-ward	10303003	Property crime	2005-06	84
-ward	10303003	Contact crime	2005-06	112
-ward	10303003	Property crime	2006-07	68
-ward	10303003	Contact crime	2006-07	100
-ward	10303003	Property crime	2007-08	56
-ward	10303003	Contact crime	2007-08	111
-ward	10303003	Property crime	2008-09	48
-ward	10303003	Contact crime	2008-09	96
-ward	10303003	Property crime	2009-10	57
-ward	10303003	Contact crime	2009-10	120
-ward	10303003	Property crime	2010-11	62
-ward	10303003	Contact crime	2010-11	147
-ward	10303003	Property crime	2011-12	51
-ward	10303003	Contact crime	2011-12	123
-ward	10303003	Property crime	2012-13	79
-ward	10303003	Contact crime	2012-13	132
-ward	10303003	Property crime	2013-14	102
-ward	10303003	Contact crime	2013-14	147
-ward	10303003	Property crime	2014-15	102
-ward	10303003	Contact crime	2014-15	163
-ward	10303004	Property crime	2005-06	73
-ward	10303004	Contact crime	2005-06	97
-ward	10303004	Property crime	2006-07	59
-ward	10303004	Contact crime	2006-07	87
-ward	10303004	Property crime	2007-08	48
-ward	10303004	Contact crime	2007-08	97
-ward	10303004	Property crime	2008-09	42
-ward	10303004	Contact crime	2008-09	84
-ward	10303004	Property crime	2009-10	49
-ward	10303004	Contact crime	2009-10	103
-ward	10303004	Property crime	2010-11	54
-ward	10303004	Contact crime	2010-11	126
-ward	10303004	Property crime	2011-12	45
-ward	10303004	Contact crime	2011-12	107
-ward	10303004	Property crime	2012-13	69
-ward	10303004	Contact crime	2012-13	113
-ward	10303004	Property crime	2013-14	88
-ward	10303004	Contact crime	2013-14	127
-ward	10303004	Property crime	2014-15	88
-ward	10303004	Contact crime	2014-15	140
-ward	10303005	Property crime	2005-06	105
-ward	10303005	Contact crime	2005-06	109
-ward	10303005	Property crime	2006-07	89
-ward	10303005	Contact crime	2006-07	110
-ward	10303005	Property crime	2007-08	78
-ward	10303005	Contact crime	2007-08	115
-ward	10303005	Property crime	2008-09	55
-ward	10303005	Contact crime	2008-09	119
-ward	10303005	Property crime	2009-10	70
-ward	10303005	Contact crime	2009-10	128
-ward	10303005	Property crime	2010-11	131
-ward	10303005	Contact crime	2010-11	165
-ward	10303005	Property crime	2011-12	106
-ward	10303005	Contact crime	2011-12	150
-ward	10303005	Property crime	2012-13	99
-ward	10303005	Contact crime	2012-13	147
-ward	10303005	Property crime	2013-14	114
-ward	10303005	Contact crime	2013-14	139
-ward	10303005	Property crime	2014-15	100
-ward	10303005	Contact crime	2014-15	148
-ward	10304001	Property crime	2005-06	89
-ward	10304001	Contact crime	2005-06	175
-ward	10304001	Property crime	2006-07	85
-ward	10304001	Contact crime	2006-07	143
-ward	10304001	Property crime	2007-08	68
-ward	10304001	Contact crime	2007-08	133
-ward	10304001	Property crime	2008-09	86
-ward	10304001	Contact crime	2008-09	159
-ward	10304001	Property crime	2009-10	108
-ward	10304001	Contact crime	2009-10	158
-ward	10304001	Property crime	2010-11	109
-ward	10304001	Contact crime	2010-11	172
-ward	10304001	Property crime	2011-12	120
-ward	10304001	Contact crime	2011-12	180
-ward	10304001	Property crime	2012-13	120
-ward	10304001	Contact crime	2012-13	185
-ward	10304001	Property crime	2013-14	149
-ward	10304001	Contact crime	2013-14	202
-ward	10304001	Property crime	2014-15	144
-ward	10304001	Contact crime	2014-15	196
-ward	10304002	Property crime	2005-06	52
-ward	10304002	Contact crime	2005-06	153
-ward	10304002	Property crime	2006-07	27
-ward	10304002	Contact crime	2006-07	145
-ward	10304002	Property crime	2007-08	37
-ward	10304002	Contact crime	2007-08	177
-ward	10304002	Property crime	2008-09	54
-ward	10304002	Contact crime	2008-09	171
-ward	10304002	Property crime	2009-10	60
-ward	10304002	Contact crime	2009-10	172
-ward	10304002	Property crime	2010-11	49
-ward	10304002	Contact crime	2010-11	182
-ward	10304002	Property crime	2011-12	38
-ward	10304002	Contact crime	2011-12	162
-ward	10304002	Property crime	2012-13	40
-ward	10304002	Contact crime	2012-13	162
-ward	10304002	Property crime	2013-14	49
-ward	10304002	Contact crime	2013-14	207
-ward	10304002	Property crime	2014-15	47
-ward	10304002	Contact crime	2014-15	205
-ward	10304003	Property crime	2005-06	92
-ward	10304003	Contact crime	2005-06	207
-ward	10304003	Property crime	2006-07	92
-ward	10304003	Contact crime	2006-07	186
-ward	10304003	Property crime	2007-08	76
-ward	10304003	Contact crime	2007-08	186
-ward	10304003	Property crime	2008-09	88
-ward	10304003	Contact crime	2008-09	193
-ward	10304003	Property crime	2009-10	110
-ward	10304003	Contact crime	2009-10	186
-ward	10304003	Property crime	2010-11	104
-ward	10304003	Contact crime	2010-11	207
-ward	10304003	Property crime	2011-12	122
-ward	10304003	Contact crime	2011-12	208
-ward	10304003	Property crime	2012-13	124
-ward	10304003	Contact crime	2012-13	210
-ward	10304003	Property crime	2013-14	145
-ward	10304003	Contact crime	2013-14	238
-ward	10304003	Property crime	2014-15	143
-ward	10304003	Contact crime	2014-15	212
-ward	10304004	Property crime	2005-06	53
-ward	10304004	Contact crime	2005-06	107
-ward	10304004	Property crime	2006-07	51
-ward	10304004	Contact crime	2006-07	84
-ward	10304004	Property crime	2007-08	41
-ward	10304004	Contact crime	2007-08	79
-ward	10304004	Property crime	2008-09	52
-ward	10304004	Contact crime	2008-09	94
-ward	10304004	Property crime	2009-10	64
-ward	10304004	Contact crime	2009-10	93
-ward	10304004	Property crime	2010-11	64
-ward	10304004	Contact crime	2010-11	99
-ward	10304004	Property crime	2011-12	71
-ward	10304004	Contact crime	2011-12	106
-ward	10304004	Property crime	2012-13	71
-ward	10304004	Contact crime	2012-13	110
-ward	10304004	Property crime	2013-14	87
-ward	10304004	Contact crime	2013-14	117
-ward	10304004	Property crime	2014-15	82
-ward	10304004	Contact crime	2014-15	114
-ward	10304005	Property crime	2005-06	124
-ward	10304005	Contact crime	2005-06	249
-ward	10304005	Property crime	2006-07	119
-ward	10304005	Contact crime	2006-07	197
-ward	10304005	Property crime	2007-08	95
-ward	10304005	Contact crime	2007-08	184
-ward	10304005	Property crime	2008-09	121
-ward	10304005	Contact crime	2008-09	220
-ward	10304005	Property crime	2009-10	150
-ward	10304005	Contact crime	2009-10	218
-ward	10304005	Property crime	2010-11	148
-ward	10304005	Contact crime	2010-11	231
-ward	10304005	Property crime	2011-12	167
-ward	10304005	Contact crime	2011-12	248
-ward	10304005	Property crime	2012-13	165
-ward	10304005	Contact crime	2012-13	257
-ward	10304005	Property crime	2013-14	203
-ward	10304005	Contact crime	2013-14	274
-ward	10304005	Property crime	2014-15	191
-ward	10304005	Contact crime	2014-15	267
-ward	10401001	Property crime	2005-06	57
-ward	10401001	Contact crime	2005-06	112
-ward	10401001	Property crime	2006-07	54
-ward	10401001	Contact crime	2006-07	132
-ward	10401001	Property crime	2007-08	46
-ward	10401001	Contact crime	2007-08	118
-ward	10401001	Property crime	2008-09	53
-ward	10401001	Contact crime	2008-09	126
-ward	10401001	Property crime	2009-10	62
-ward	10401001	Contact crime	2009-10	112
-ward	10401001	Property crime	2010-11	67
-ward	10401001	Contact crime	2010-11	125
-ward	10401001	Property crime	2011-12	56
-ward	10401001	Contact crime	2011-12	116
-ward	10401001	Property crime	2012-13	58
-ward	10401001	Contact crime	2012-13	115
-ward	10401001	Property crime	2013-14	68
-ward	10401001	Contact crime	2013-14	112
-ward	10401001	Property crime	2014-15	56
-ward	10401001	Contact crime	2014-15	108
-ward	10401002	Property crime	2005-06	84
-ward	10401002	Contact crime	2005-06	246
-ward	10401002	Property crime	2006-07	89
-ward	10401002	Contact crime	2006-07	220
-ward	10401002	Property crime	2007-08	115
-ward	10401002	Contact crime	2007-08	220
-ward	10401002	Property crime	2008-09	95
-ward	10401002	Contact crime	2008-09	145
-ward	10401002	Property crime	2009-10	119
-ward	10401002	Contact crime	2009-10	160
-ward	10401002	Property crime	2010-11	143
-ward	10401002	Contact crime	2010-11	146
-ward	10401002	Property crime	2011-12	132
-ward	10401002	Contact crime	2011-12	181
-ward	10401002	Property crime	2012-13	166
-ward	10401002	Contact crime	2012-13	172
-ward	10401002	Property crime	2013-14	122
-ward	10401002	Contact crime	2013-14	141
-ward	10401002	Property crime	2014-15	149
-ward	10401002	Contact crime	2014-15	128
-ward	10401003	Property crime	2005-06	44
-ward	10401003	Contact crime	2005-06	88
-ward	10401003	Property crime	2006-07	42
-ward	10401003	Contact crime	2006-07	103
-ward	10401003	Property crime	2007-08	36
-ward	10401003	Contact crime	2007-08	93
-ward	10401003	Property crime	2008-09	41
-ward	10401003	Contact crime	2008-09	97
-ward	10401003	Property crime	2009-10	49
-ward	10401003	Contact crime	2009-10	87
-ward	10401003	Property crime	2010-11	53
-ward	10401003	Contact crime	2010-11	97
-ward	10401003	Property crime	2011-12	45
-ward	10401003	Contact crime	2011-12	90
-ward	10401003	Property crime	2012-13	47
-ward	10401003	Contact crime	2012-13	90
-ward	10401003	Property crime	2013-14	53
-ward	10401003	Contact crime	2013-14	87
-ward	10401003	Property crime	2014-15	45
-ward	10401003	Contact crime	2014-15	83
-ward	10401004	Property crime	2005-06	64
-ward	10401004	Contact crime	2005-06	135
-ward	10401004	Property crime	2006-07	61
-ward	10401004	Contact crime	2006-07	151
-ward	10401004	Property crime	2007-08	57
-ward	10401004	Contact crime	2007-08	138
-ward	10401004	Property crime	2008-09	61
-ward	10401004	Contact crime	2008-09	136
-ward	10401004	Property crime	2009-10	73
-ward	10401004	Contact crime	2009-10	125
-ward	10401004	Property crime	2010-11	81
-ward	10401004	Contact crime	2010-11	135
-ward	10401004	Property crime	2011-12	69
-ward	10401004	Contact crime	2011-12	131
-ward	10401004	Property crime	2012-13	75
-ward	10401004	Contact crime	2012-13	129
-ward	10401004	Property crime	2013-14	78
-ward	10401004	Contact crime	2013-14	122
-ward	10401004	Property crime	2014-15	71
-ward	10401004	Contact crime	2014-15	117
-ward	10402001	Property crime	2005-06	41
-ward	10402001	Contact crime	2005-06	67
-ward	10402001	Property crime	2006-07	30
-ward	10402001	Contact crime	2006-07	66
-ward	10402001	Property crime	2007-08	30
-ward	10402001	Contact crime	2007-08	70
-ward	10402001	Property crime	2008-09	32
-ward	10402001	Contact crime	2008-09	61
-ward	10402001	Property crime	2009-10	41
-ward	10402001	Contact crime	2009-10	76
-ward	10402001	Property crime	2010-11	42
-ward	10402001	Contact crime	2010-11	77
-ward	10402001	Property crime	2011-12	38
-ward	10402001	Contact crime	2011-12	76
-ward	10402001	Property crime	2012-13	57
-ward	10402001	Contact crime	2012-13	91
-ward	10402001	Property crime	2013-14	70
-ward	10402001	Contact crime	2013-14	88
-ward	10402001	Property crime	2014-15	62
-ward	10402001	Contact crime	2014-15	98
-ward	10402002	Property crime	2005-06	50
-ward	10402002	Contact crime	2005-06	97
-ward	10402002	Property crime	2006-07	37
-ward	10402002	Contact crime	2006-07	140
-ward	10402002	Property crime	2007-08	29
-ward	10402002	Contact crime	2007-08	135
-ward	10402002	Property crime	2008-09	47
-ward	10402002	Contact crime	2008-09	123
-ward	10402002	Property crime	2009-10	49
-ward	10402002	Contact crime	2009-10	125
-ward	10402002	Property crime	2010-11	35
-ward	10402002	Contact crime	2010-11	99
-ward	10402002	Property crime	2011-12	57
-ward	10402002	Contact crime	2011-12	123
-ward	10402002	Property crime	2012-13	79
-ward	10402002	Contact crime	2012-13	160
-ward	10402002	Property crime	2013-14	94
-ward	10402002	Contact crime	2013-14	159
-ward	10402002	Property crime	2014-15	76
-ward	10402002	Contact crime	2014-15	147
-ward	10402003	Property crime	2005-06	35
-ward	10402003	Contact crime	2005-06	82
-ward	10402003	Property crime	2006-07	35
-ward	10402003	Contact crime	2006-07	75
-ward	10402003	Property crime	2007-08	33
-ward	10402003	Contact crime	2007-08	79
-ward	10402003	Property crime	2008-09	33
-ward	10402003	Contact crime	2008-09	74
-ward	10402003	Property crime	2009-10	39
-ward	10402003	Contact crime	2009-10	78
-ward	10402003	Property crime	2010-11	40
-ward	10402003	Contact crime	2010-11	73
-ward	10402003	Property crime	2011-12	39
-ward	10402003	Contact crime	2011-12	75
-ward	10402003	Property crime	2012-13	46
-ward	10402003	Contact crime	2012-13	82
-ward	10402003	Property crime	2013-14	58
-ward	10402003	Contact crime	2013-14	88
-ward	10402003	Property crime	2014-15	58
-ward	10402003	Contact crime	2014-15	95
-ward	10402004	Property crime	2005-06	58
-ward	10402004	Contact crime	2005-06	205
-ward	10402004	Property crime	2006-07	75
-ward	10402004	Contact crime	2006-07	189
-ward	10402004	Property crime	2007-08	63
-ward	10402004	Contact crime	2007-08	190
-ward	10402004	Property crime	2008-09	58
-ward	10402004	Contact crime	2008-09	170
-ward	10402004	Property crime	2009-10	60
-ward	10402004	Contact crime	2009-10	152
-ward	10402004	Property crime	2010-11	58
-ward	10402004	Contact crime	2010-11	116
-ward	10402004	Property crime	2011-12	73
-ward	10402004	Contact crime	2011-12	129
-ward	10402004	Property crime	2012-13	52
-ward	10402004	Contact crime	2012-13	137
-ward	10402004	Property crime	2013-14	64
-ward	10402004	Contact crime	2013-14	160
-ward	10402004	Property crime	2014-15	70
-ward	10402004	Contact crime	2014-15	158
-ward	10402005	Property crime	2005-06	34
-ward	10402005	Contact crime	2005-06	123
-ward	10402005	Property crime	2006-07	45
-ward	10402005	Contact crime	2006-07	114
-ward	10402005	Property crime	2007-08	37
-ward	10402005	Contact crime	2007-08	114
-ward	10402005	Property crime	2008-09	34
-ward	10402005	Contact crime	2008-09	102
-ward	10402005	Property crime	2009-10	35
-ward	10402005	Contact crime	2009-10	90
-ward	10402005	Property crime	2010-11	34
-ward	10402005	Contact crime	2010-11	69
-ward	10402005	Property crime	2011-12	43
-ward	10402005	Contact crime	2011-12	76
-ward	10402005	Property crime	2012-13	30
-ward	10402005	Contact crime	2012-13	81
-ward	10402005	Property crime	2013-14	37
-ward	10402005	Contact crime	2013-14	95
-ward	10402005	Property crime	2014-15	40
-ward	10402005	Contact crime	2014-15	94
-ward	10402006	Property crime	2005-06	22
-ward	10402006	Contact crime	2005-06	54
-ward	10402006	Property crime	2006-07	33
-ward	10402006	Contact crime	2006-07	63
-ward	10402006	Property crime	2007-08	33
-ward	10402006	Contact crime	2007-08	62
-ward	10402006	Property crime	2008-09	40
-ward	10402006	Contact crime	2008-09	86
-ward	10402006	Property crime	2009-10	41
-ward	10402006	Contact crime	2009-10	77
-ward	10402006	Property crime	2010-11	40
-ward	10402006	Contact crime	2010-11	80
-ward	10402006	Property crime	2011-12	42
-ward	10402006	Contact crime	2011-12	86
-ward	10402006	Property crime	2012-13	56
-ward	10402006	Contact crime	2012-13	87
-ward	10402006	Property crime	2013-14	70
-ward	10402006	Contact crime	2013-14	104
-ward	10402006	Property crime	2014-15	85
-ward	10402006	Contact crime	2014-15	110
-ward	10402007	Property crime	2005-06	26
-ward	10402007	Contact crime	2005-06	65
-ward	10402007	Property crime	2006-07	39
-ward	10402007	Contact crime	2006-07	76
-ward	10402007	Property crime	2007-08	38
-ward	10402007	Contact crime	2007-08	75
-ward	10402007	Property crime	2008-09	46
-ward	10402007	Contact crime	2008-09	100
-ward	10402007	Property crime	2009-10	48
-ward	10402007	Contact crime	2009-10	90
-ward	10402007	Property crime	2010-11	46
-ward	10402007	Contact crime	2010-11	94
-ward	10402007	Property crime	2011-12	49
-ward	10402007	Contact crime	2011-12	100
-ward	10402007	Property crime	2012-13	65
-ward	10402007	Contact crime	2012-13	102
-ward	10402007	Property crime	2013-14	81
-ward	10402007	Contact crime	2013-14	120
-ward	10402007	Property crime	2014-15	97
-ward	10402007	Contact crime	2014-15	127
-ward	10402008	Property crime	2005-06	25
-ward	10402008	Contact crime	2005-06	63
-ward	10402008	Property crime	2006-07	39
-ward	10402008	Contact crime	2006-07	74
-ward	10402008	Property crime	2007-08	38
-ward	10402008	Contact crime	2007-08	73
-ward	10402008	Property crime	2008-09	46
-ward	10402008	Contact crime	2008-09	100
-ward	10402008	Property crime	2009-10	48
-ward	10402008	Contact crime	2009-10	90
-ward	10402008	Property crime	2010-11	46
-ward	10402008	Contact crime	2010-11	94
-ward	10402008	Property crime	2011-12	49
-ward	10402008	Contact crime	2011-12	101
-ward	10402008	Property crime	2012-13	66
-ward	10402008	Contact crime	2012-13	102
-ward	10402008	Property crime	2013-14	82
-ward	10402008	Contact crime	2013-14	121
-ward	10402008	Property crime	2014-15	100
-ward	10402008	Contact crime	2014-15	129
-ward	10403001	Property crime	2005-06	79
-ward	10403001	Contact crime	2005-06	127
-ward	10403001	Property crime	2006-07	62
-ward	10403001	Contact crime	2006-07	111
-ward	10403001	Property crime	2007-08	70
-ward	10403001	Contact crime	2007-08	127
-ward	10403001	Property crime	2008-09	68
-ward	10403001	Contact crime	2008-09	113
-ward	10403001	Property crime	2009-10	78
-ward	10403001	Contact crime	2009-10	136
-ward	10403001	Property crime	2010-11	84
-ward	10403001	Contact crime	2010-11	154
-ward	10403001	Property crime	2011-12	96
-ward	10403001	Contact crime	2011-12	143
-ward	10403001	Property crime	2012-13	116
-ward	10403001	Contact crime	2012-13	140
-ward	10403001	Property crime	2013-14	104
-ward	10403001	Contact crime	2013-14	169
-ward	10403001	Property crime	2014-15	108
-ward	10403001	Contact crime	2014-15	172
-ward	10403002	Property crime	2005-06	72
-ward	10403002	Contact crime	2005-06	116
-ward	10403002	Property crime	2006-07	57
-ward	10403002	Contact crime	2006-07	101
-ward	10403002	Property crime	2007-08	64
-ward	10403002	Contact crime	2007-08	116
-ward	10403002	Property crime	2008-09	62
-ward	10403002	Contact crime	2008-09	103
-ward	10403002	Property crime	2009-10	71
-ward	10403002	Contact crime	2009-10	124
-ward	10403002	Property crime	2010-11	76
-ward	10403002	Contact crime	2010-11	141
-ward	10403002	Property crime	2011-12	87
-ward	10403002	Contact crime	2011-12	130
-ward	10403002	Property crime	2012-13	106
-ward	10403002	Contact crime	2012-13	127
-ward	10403002	Property crime	2013-14	95
-ward	10403002	Contact crime	2013-14	154
-ward	10403002	Property crime	2014-15	98
-ward	10403002	Contact crime	2014-15	157
-ward	10403003	Property crime	2005-06	106
-ward	10403003	Contact crime	2005-06	171
-ward	10403003	Property crime	2006-07	84
-ward	10403003	Contact crime	2006-07	149
-ward	10403003	Property crime	2007-08	94
-ward	10403003	Contact crime	2007-08	171
-ward	10403003	Property crime	2008-09	92
-ward	10403003	Contact crime	2008-09	152
-ward	10403003	Property crime	2009-10	105
-ward	10403003	Contact crime	2009-10	184
-ward	10403003	Property crime	2010-11	112
-ward	10403003	Contact crime	2010-11	208
-ward	10403003	Property crime	2011-12	129
-ward	10403003	Contact crime	2011-12	193
-ward	10403003	Property crime	2012-13	156
-ward	10403003	Contact crime	2012-13	188
-ward	10403003	Property crime	2013-14	140
-ward	10403003	Contact crime	2013-14	228
-ward	10403003	Property crime	2014-15	145
-ward	10403003	Contact crime	2014-15	231
-ward	10403004	Property crime	2005-06	74
-ward	10403004	Contact crime	2005-06	108
-ward	10403004	Property crime	2006-07	52
-ward	10403004	Contact crime	2006-07	96
-ward	10403004	Property crime	2007-08	58
-ward	10403004	Contact crime	2007-08	101
-ward	10403004	Property crime	2008-09	53
-ward	10403004	Contact crime	2008-09	102
-ward	10403004	Property crime	2009-10	77
-ward	10403004	Contact crime	2009-10	105
-ward	10403004	Property crime	2010-11	83
-ward	10403004	Contact crime	2010-11	97
-ward	10403004	Property crime	2011-12	78
-ward	10403004	Contact crime	2011-12	102
-ward	10403004	Property crime	2012-13	88
-ward	10403004	Contact crime	2012-13	99
-ward	10403004	Property crime	2013-14	98
-ward	10403004	Contact crime	2013-14	120
-ward	10403004	Property crime	2014-15	95
-ward	10403004	Contact crime	2014-15	124
-ward	10403005	Property crime	2005-06	55
-ward	10403005	Contact crime	2005-06	86
-ward	10403005	Property crime	2006-07	24
-ward	10403005	Contact crime	2006-07	78
-ward	10403005	Property crime	2007-08	37
-ward	10403005	Contact crime	2007-08	95
-ward	10403005	Property crime	2008-09	36
-ward	10403005	Contact crime	2008-09	93
-ward	10403005	Property crime	2009-10	63
-ward	10403005	Contact crime	2009-10	97
-ward	10403005	Property crime	2010-11	70
-ward	10403005	Contact crime	2010-11	86
-ward	10403005	Property crime	2011-12	61
-ward	10403005	Contact crime	2011-12	82
-ward	10403005	Property crime	2012-13	59
-ward	10403005	Contact crime	2012-13	78
-ward	10403005	Property crime	2013-14	64
-ward	10403005	Contact crime	2013-14	91
-ward	10403005	Property crime	2014-15	63
-ward	10403005	Contact crime	2014-15	98
-ward	10403006	Property crime	2005-06	264
-ward	10403006	Contact crime	2005-06	108
-ward	10403006	Property crime	2006-07	266
-ward	10403006	Contact crime	2006-07	113
-ward	10403006	Property crime	2007-08	221
-ward	10403006	Contact crime	2007-08	122
-ward	10403006	Property crime	2008-09	144
-ward	10403006	Contact crime	2008-09	107
-ward	10403006	Property crime	2009-10	210
-ward	10403006	Contact crime	2009-10	115
-ward	10403006	Property crime	2010-11	220
-ward	10403006	Contact crime	2010-11	100
-ward	10403006	Property crime	2011-12	218
-ward	10403006	Contact crime	2011-12	84
-ward	10403006	Property crime	2012-13	277
-ward	10403006	Contact crime	2012-13	115
-ward	10403006	Property crime	2013-14	312
-ward	10403006	Contact crime	2013-14	113
-ward	10403006	Property crime	2014-15	237
-ward	10403006	Contact crime	2014-15	107
-ward	10403007	Property crime	2005-06	88
-ward	10403007	Contact crime	2005-06	130
-ward	10403007	Property crime	2006-07	71
-ward	10403007	Contact crime	2006-07	114
-ward	10403007	Property crime	2007-08	75
-ward	10403007	Contact crime	2007-08	117
-ward	10403007	Property crime	2008-09	69
-ward	10403007	Contact crime	2008-09	114
-ward	10403007	Property crime	2009-10	87
-ward	10403007	Contact crime	2009-10	125
-ward	10403007	Property crime	2010-11	92
-ward	10403007	Contact crime	2010-11	127
-ward	10403007	Property crime	2011-12	95
-ward	10403007	Contact crime	2011-12	130
-ward	10403007	Property crime	2012-13	116
-ward	10403007	Contact crime	2012-13	128
-ward	10403007	Property crime	2013-14	121
-ward	10403007	Contact crime	2013-14	157
-ward	10403007	Property crime	2014-15	119
-ward	10403007	Contact crime	2014-15	159
-ward	10403008	Property crime	2005-06	182
-ward	10403008	Contact crime	2005-06	82
-ward	10403008	Property crime	2006-07	182
-ward	10403008	Contact crime	2006-07	84
-ward	10403008	Property crime	2007-08	152
-ward	10403008	Contact crime	2007-08	89
-ward	10403008	Property crime	2008-09	101
-ward	10403008	Contact crime	2008-09	80
-ward	10403008	Property crime	2009-10	146
-ward	10403008	Contact crime	2009-10	85
-ward	10403008	Property crime	2010-11	153
-ward	10403008	Contact crime	2010-11	75
-ward	10403008	Property crime	2011-12	152
-ward	10403008	Contact crime	2011-12	65
-ward	10403008	Property crime	2012-13	192
-ward	10403008	Contact crime	2012-13	86
-ward	10403008	Property crime	2013-14	217
-ward	10403008	Contact crime	2013-14	87
-ward	10403008	Property crime	2014-15	167
-ward	10403008	Contact crime	2014-15	83
-ward	10403009	Property crime	2005-06	115
-ward	10403009	Contact crime	2005-06	158
-ward	10403009	Property crime	2006-07	96
-ward	10403009	Contact crime	2006-07	138
-ward	10403009	Property crime	2007-08	97
-ward	10403009	Contact crime	2007-08	130
-ward	10403009	Property crime	2008-09	85
-ward	10403009	Contact crime	2008-09	136
-ward	10403009	Property crime	2009-10	112
-ward	10403009	Contact crime	2009-10	139
-ward	10403009	Property crime	2010-11	117
-ward	10403009	Contact crime	2010-11	130
-ward	10403009	Property crime	2011-12	114
-ward	10403009	Contact crime	2011-12	146
-ward	10403009	Property crime	2012-13	141
-ward	10403009	Contact crime	2012-13	144
-ward	10403009	Property crime	2013-14	161
-ward	10403009	Contact crime	2013-14	179
-ward	10403009	Property crime	2014-15	154
-ward	10403009	Contact crime	2014-15	180
-ward	10403010	Property crime	2005-06	69
-ward	10403010	Contact crime	2005-06	97
-ward	10403010	Property crime	2006-07	58
-ward	10403010	Contact crime	2006-07	84
-ward	10403010	Property crime	2007-08	58
-ward	10403010	Contact crime	2007-08	80
-ward	10403010	Property crime	2008-09	52
-ward	10403010	Contact crime	2008-09	83
-ward	10403010	Property crime	2009-10	68
-ward	10403010	Contact crime	2009-10	85
-ward	10403010	Property crime	2010-11	71
-ward	10403010	Contact crime	2010-11	79
-ward	10403010	Property crime	2011-12	69
-ward	10403010	Contact crime	2011-12	89
-ward	10403010	Property crime	2012-13	85
-ward	10403010	Contact crime	2012-13	88
-ward	10403010	Property crime	2013-14	98
-ward	10403010	Contact crime	2013-14	109
-ward	10403010	Property crime	2014-15	94
-ward	10403010	Contact crime	2014-15	110
-ward	10403011	Property crime	2005-06	84
-ward	10403011	Contact crime	2005-06	128
-ward	10403011	Property crime	2006-07	67
-ward	10403011	Contact crime	2006-07	112
-ward	10403011	Property crime	2007-08	74
-ward	10403011	Contact crime	2007-08	129
-ward	10403011	Property crime	2008-09	71
-ward	10403011	Contact crime	2008-09	114
-ward	10403011	Property crime	2009-10	82
-ward	10403011	Contact crime	2009-10	138
-ward	10403011	Property crime	2010-11	87
-ward	10403011	Contact crime	2010-11	155
-ward	10403011	Property crime	2011-12	100
-ward	10403011	Contact crime	2011-12	144
-ward	10403011	Property crime	2012-13	121
-ward	10403011	Contact crime	2012-13	141
-ward	10403011	Property crime	2013-14	110
-ward	10403011	Contact crime	2013-14	171
-ward	10403011	Property crime	2014-15	112
-ward	10403011	Contact crime	2014-15	173
-ward	10403012	Property crime	2005-06	84
-ward	10403012	Contact crime	2005-06	116
-ward	10403012	Property crime	2006-07	70
-ward	10403012	Contact crime	2006-07	101
-ward	10403012	Property crime	2007-08	70
-ward	10403012	Contact crime	2007-08	95
-ward	10403012	Property crime	2008-09	62
-ward	10403012	Contact crime	2008-09	100
-ward	10403012	Property crime	2009-10	82
-ward	10403012	Contact crime	2009-10	102
-ward	10403012	Property crime	2010-11	86
-ward	10403012	Contact crime	2010-11	95
-ward	10403012	Property crime	2011-12	83
-ward	10403012	Contact crime	2011-12	107
-ward	10403012	Property crime	2012-13	103
-ward	10403012	Contact crime	2012-13	106
-ward	10403012	Property crime	2013-14	118
-ward	10403012	Contact crime	2013-14	131
-ward	10403012	Property crime	2014-15	113
-ward	10403012	Contact crime	2014-15	132
-ward	10403013	Property crime	2005-06	113
-ward	10403013	Contact crime	2005-06	163
-ward	10403013	Property crime	2006-07	93
-ward	10403013	Contact crime	2006-07	142
-ward	10403013	Property crime	2007-08	97
-ward	10403013	Contact crime	2007-08	142
-ward	10403013	Property crime	2008-09	87
-ward	10403013	Contact crime	2008-09	142
-ward	10403013	Property crime	2009-10	111
-ward	10403013	Contact crime	2009-10	152
-ward	10403013	Property crime	2010-11	117
-ward	10403013	Contact crime	2010-11	152
-ward	10403013	Property crime	2011-12	119
-ward	10403013	Contact crime	2011-12	160
-ward	10403013	Property crime	2012-13	146
-ward	10403013	Contact crime	2012-13	157
-ward	10403013	Property crime	2013-14	157
-ward	10403013	Contact crime	2013-14	194
-ward	10403013	Property crime	2014-15	153
-ward	10403013	Contact crime	2014-15	195
-ward	10403014	Property crime	2005-06	97
-ward	10403014	Contact crime	2005-06	151
-ward	10403014	Property crime	2006-07	44
-ward	10403014	Contact crime	2006-07	136
-ward	10403014	Property crime	2007-08	66
-ward	10403014	Contact crime	2007-08	165
-ward	10403014	Property crime	2008-09	64
-ward	10403014	Contact crime	2008-09	162
-ward	10403014	Property crime	2009-10	110
-ward	10403014	Contact crime	2009-10	168
-ward	10403014	Property crime	2010-11	122
-ward	10403014	Contact crime	2010-11	151
-ward	10403014	Property crime	2011-12	108
-ward	10403014	Contact crime	2011-12	145
-ward	10403014	Property crime	2012-13	105
-ward	10403014	Contact crime	2012-13	137
-ward	10403014	Property crime	2013-14	114
-ward	10403014	Contact crime	2013-14	160
-ward	10403014	Property crime	2014-15	112
-ward	10403014	Contact crime	2014-15	172
-ward	10404001	Property crime	2005-06	249
-ward	10404001	Contact crime	2005-06	141
-ward	10404001	Property crime	2006-07	213
-ward	10404001	Contact crime	2006-07	134
-ward	10404001	Property crime	2007-08	238
-ward	10404001	Contact crime	2007-08	102
-ward	10404001	Property crime	2008-09	213
-ward	10404001	Contact crime	2008-09	97
-ward	10404001	Property crime	2009-10	232
-ward	10404001	Contact crime	2009-10	93
-ward	10404001	Property crime	2010-11	288
-ward	10404001	Contact crime	2010-11	129
-ward	10404001	Property crime	2011-12	280
-ward	10404001	Contact crime	2011-12	134
-ward	10404001	Property crime	2012-13	353
-ward	10404001	Contact crime	2012-13	147
-ward	10404001	Property crime	2013-14	327
-ward	10404001	Contact crime	2013-14	148
-ward	10404001	Property crime	2014-15	259
-ward	10404001	Contact crime	2014-15	143
-ward	10404002	Property crime	2005-06	105
-ward	10404002	Contact crime	2005-06	59
-ward	10404002	Property crime	2006-07	90
-ward	10404002	Contact crime	2006-07	57
-ward	10404002	Property crime	2007-08	100
-ward	10404002	Contact crime	2007-08	43
-ward	10404002	Property crime	2008-09	90
-ward	10404002	Contact crime	2008-09	41
-ward	10404002	Property crime	2009-10	98
-ward	10404002	Contact crime	2009-10	39
-ward	10404002	Property crime	2010-11	122
-ward	10404002	Contact crime	2010-11	54
-ward	10404002	Property crime	2011-12	118
-ward	10404002	Contact crime	2011-12	57
-ward	10404002	Property crime	2012-13	149
-ward	10404002	Contact crime	2012-13	62
-ward	10404002	Property crime	2013-14	138
-ward	10404002	Contact crime	2013-14	62
-ward	10404002	Property crime	2014-15	109
-ward	10404002	Contact crime	2014-15	60
-ward	10404003	Property crime	2005-06	154
-ward	10404003	Contact crime	2005-06	87
-ward	10404003	Property crime	2006-07	132
-ward	10404003	Contact crime	2006-07	83
-ward	10404003	Property crime	2007-08	147
-ward	10404003	Contact crime	2007-08	63
-ward	10404003	Property crime	2008-09	132
-ward	10404003	Contact crime	2008-09	60
-ward	10404003	Property crime	2009-10	144
-ward	10404003	Contact crime	2009-10	58
-ward	10404003	Property crime	2010-11	178
-ward	10404003	Contact crime	2010-11	80
-ward	10404003	Property crime	2011-12	173
-ward	10404003	Contact crime	2011-12	83
-ward	10404003	Property crime	2012-13	218
-ward	10404003	Contact crime	2012-13	91
-ward	10404003	Property crime	2013-14	202
-ward	10404003	Contact crime	2013-14	91
-ward	10404003	Property crime	2014-15	160
-ward	10404003	Contact crime	2014-15	89
-ward	10404004	Property crime	2005-06	225
-ward	10404004	Contact crime	2005-06	131
-ward	10404004	Property crime	2006-07	193
-ward	10404004	Contact crime	2006-07	125
-ward	10404004	Property crime	2007-08	216
-ward	10404004	Contact crime	2007-08	97
-ward	10404004	Property crime	2008-09	194
-ward	10404004	Contact crime	2008-09	93
-ward	10404004	Property crime	2009-10	211
-ward	10404004	Contact crime	2009-10	89
-ward	10404004	Property crime	2010-11	261
-ward	10404004	Contact crime	2010-11	122
-ward	10404004	Property crime	2011-12	254
-ward	10404004	Contact crime	2011-12	127
-ward	10404004	Property crime	2012-13	320
-ward	10404004	Contact crime	2012-13	139
-ward	10404004	Property crime	2013-14	297
-ward	10404004	Contact crime	2013-14	139
-ward	10404004	Property crime	2014-15	236
-ward	10404004	Contact crime	2014-15	136
-ward	10404005	Property crime	2005-06	128
-ward	10404005	Contact crime	2005-06	110
-ward	10404005	Property crime	2006-07	114
-ward	10404005	Contact crime	2006-07	114
-ward	10404005	Property crime	2007-08	129
-ward	10404005	Contact crime	2007-08	85
-ward	10404005	Property crime	2008-09	114
-ward	10404005	Contact crime	2008-09	80
-ward	10404005	Property crime	2009-10	125
-ward	10404005	Contact crime	2009-10	81
-ward	10404005	Property crime	2010-11	156
-ward	10404005	Contact crime	2010-11	113
-ward	10404005	Property crime	2011-12	163
-ward	10404005	Contact crime	2011-12	131
-ward	10404005	Property crime	2012-13	191
-ward	10404005	Contact crime	2012-13	143
-ward	10404005	Property crime	2013-14	185
-ward	10404005	Contact crime	2013-14	136
-ward	10404005	Property crime	2014-15	151
-ward	10404005	Contact crime	2014-15	132
-ward	10404006	Property crime	2005-06	99
-ward	10404006	Contact crime	2005-06	223
-ward	10404006	Property crime	2006-07	102
-ward	10404006	Contact crime	2006-07	253
-ward	10404006	Property crime	2007-08	123
-ward	10404006	Contact crime	2007-08	186
-ward	10404006	Property crime	2008-09	102
-ward	10404006	Contact crime	2008-09	171
-ward	10404006	Property crime	2009-10	117
-ward	10404006	Contact crime	2009-10	183
-ward	10404006	Property crime	2010-11	148
-ward	10404006	Contact crime	2010-11	258
-ward	10404006	Property crime	2011-12	193
-ward	10404006	Contact crime	2011-12	333
-ward	10404006	Property crime	2012-13	182
-ward	10404006	Contact crime	2012-13	360
-ward	10404006	Property crime	2013-14	203
-ward	10404006	Contact crime	2013-14	327
-ward	10404006	Property crime	2014-15	181
-ward	10404006	Contact crime	2014-15	317
-ward	10404007	Property crime	2005-06	78
-ward	10404007	Contact crime	2005-06	178
-ward	10404007	Property crime	2006-07	81
-ward	10404007	Contact crime	2006-07	202
-ward	10404007	Property crime	2007-08	97
-ward	10404007	Contact crime	2007-08	149
-ward	10404007	Property crime	2008-09	81
-ward	10404007	Contact crime	2008-09	137
-ward	10404007	Property crime	2009-10	93
-ward	10404007	Contact crime	2009-10	147
-ward	10404007	Property crime	2010-11	117
-ward	10404007	Contact crime	2010-11	206
-ward	10404007	Property crime	2011-12	153
-ward	10404007	Contact crime	2011-12	266
-ward	10404007	Property crime	2012-13	145
-ward	10404007	Contact crime	2012-13	287
-ward	10404007	Property crime	2013-14	162
-ward	10404007	Contact crime	2013-14	261
-ward	10404007	Property crime	2014-15	144
-ward	10404007	Contact crime	2014-15	254
-ward	10404008	Property crime	2005-06	71
-ward	10404008	Contact crime	2005-06	162
-ward	10404008	Property crime	2006-07	74
-ward	10404008	Contact crime	2006-07	184
-ward	10404008	Property crime	2007-08	89
-ward	10404008	Contact crime	2007-08	135
-ward	10404008	Property crime	2008-09	74
-ward	10404008	Contact crime	2008-09	125
-ward	10404008	Property crime	2009-10	85
-ward	10404008	Contact crime	2009-10	134
-ward	10404008	Property crime	2010-11	107
-ward	10404008	Contact crime	2010-11	188
-ward	10404008	Property crime	2011-12	140
-ward	10404008	Contact crime	2011-12	242
-ward	10404008	Property crime	2012-13	132
-ward	10404008	Contact crime	2012-13	262
-ward	10404008	Property crime	2013-14	147
-ward	10404008	Contact crime	2013-14	238
-ward	10404008	Property crime	2014-15	131
-ward	10404008	Contact crime	2014-15	231
-ward	10404009	Property crime	2005-06	31
-ward	10404009	Contact crime	2005-06	76
-ward	10404009	Property crime	2006-07	38
-ward	10404009	Contact crime	2006-07	94
-ward	10404009	Property crime	2007-08	46
-ward	10404009	Contact crime	2007-08	116
-ward	10404009	Property crime	2008-09	60
-ward	10404009	Contact crime	2008-09	122
-ward	10404009	Property crime	2009-10	42
-ward	10404009	Contact crime	2009-10	102
-ward	10404009	Property crime	2010-11	47
-ward	10404009	Contact crime	2010-11	120
-ward	10404009	Property crime	2011-12	48
-ward	10404009	Contact crime	2011-12	125
-ward	10404009	Property crime	2012-13	55
-ward	10404009	Contact crime	2012-13	132
-ward	10404009	Property crime	2013-14	61
-ward	10404009	Contact crime	2013-14	134
-ward	10404009	Property crime	2014-15	64
-ward	10404009	Contact crime	2014-15	144
-ward	10404010	Property crime	2005-06	14
-ward	10404010	Contact crime	2005-06	34
-ward	10404010	Property crime	2006-07	17
-ward	10404010	Contact crime	2006-07	42
-ward	10404010	Property crime	2007-08	20
-ward	10404010	Contact crime	2007-08	51
-ward	10404010	Property crime	2008-09	26
-ward	10404010	Contact crime	2008-09	54
-ward	10404010	Property crime	2009-10	19
-ward	10404010	Contact crime	2009-10	45
-ward	10404010	Property crime	2010-11	21
-ward	10404010	Contact crime	2010-11	53
-ward	10404010	Property crime	2011-12	21
-ward	10404010	Contact crime	2011-12	55
-ward	10404010	Property crime	2012-13	24
-ward	10404010	Contact crime	2012-13	58
-ward	10404010	Property crime	2013-14	27
-ward	10404010	Contact crime	2013-14	59
-ward	10404010	Property crime	2014-15	28
-ward	10404010	Contact crime	2014-15	63
-ward	10404011	Property crime	2005-06	53
-ward	10404011	Contact crime	2005-06	99
-ward	10404011	Property crime	2006-07	59
-ward	10404011	Contact crime	2006-07	119
-ward	10404011	Property crime	2007-08	70
-ward	10404011	Contact crime	2007-08	141
-ward	10404011	Property crime	2008-09	83
-ward	10404011	Contact crime	2008-09	147
-ward	10404011	Property crime	2009-10	65
-ward	10404011	Contact crime	2009-10	125
-ward	10404011	Property crime	2010-11	74
-ward	10404011	Contact crime	2010-11	148
-ward	10404011	Property crime	2011-12	76
-ward	10404011	Contact crime	2011-12	155
-ward	10404011	Property crime	2012-13	88
-ward	10404011	Contact crime	2012-13	165
-ward	10404011	Property crime	2013-14	93
-ward	10404011	Contact crime	2013-14	166
-ward	10404011	Property crime	2014-15	92
-ward	10404011	Contact crime	2014-15	177
-ward	10404012	Property crime	2005-06	24
-ward	10404012	Contact crime	2005-06	59
-ward	10404012	Property crime	2006-07	30
-ward	10404012	Contact crime	2006-07	72
-ward	10404012	Property crime	2007-08	35
-ward	10404012	Contact crime	2007-08	88
-ward	10404012	Property crime	2008-09	46
-ward	10404012	Contact crime	2008-09	93
-ward	10404012	Property crime	2009-10	33
-ward	10404012	Contact crime	2009-10	78
-ward	10404012	Property crime	2010-11	36
-ward	10404012	Contact crime	2010-11	91
-ward	10404012	Property crime	2011-12	37
-ward	10404012	Contact crime	2011-12	95
-ward	10404012	Property crime	2012-13	42
-ward	10404012	Contact crime	2012-13	101
-ward	10404012	Property crime	2013-14	47
-ward	10404012	Contact crime	2013-14	103
-ward	10404012	Property crime	2014-15	49
-ward	10404012	Contact crime	2014-15	110
-ward	10404013	Property crime	2005-06	38
-ward	10404013	Contact crime	2005-06	92
-ward	10404013	Property crime	2006-07	47
-ward	10404013	Contact crime	2006-07	113
-ward	10404013	Property crime	2007-08	56
-ward	10404013	Contact crime	2007-08	138
-ward	10404013	Property crime	2008-09	72
-ward	10404013	Contact crime	2008-09	145
-ward	10404013	Property crime	2009-10	52
-ward	10404013	Contact crime	2009-10	122
-ward	10404013	Property crime	2010-11	58
-ward	10404013	Contact crime	2010-11	143
-ward	10404013	Property crime	2011-12	59
-ward	10404013	Contact crime	2011-12	149
-ward	10404013	Property crime	2012-13	68
-ward	10404013	Contact crime	2012-13	158
-ward	10404013	Property crime	2013-14	75
-ward	10404013	Contact crime	2013-14	160
-ward	10404013	Property crime	2014-15	77
-ward	10404013	Contact crime	2014-15	171
-ward	10404014	Property crime	2005-06	104
-ward	10404014	Contact crime	2005-06	194
-ward	10404014	Property crime	2006-07	86
-ward	10404014	Contact crime	2006-07	149
-ward	10404014	Property crime	2007-08	89
-ward	10404014	Contact crime	2007-08	136
-ward	10404014	Property crime	2008-09	87
-ward	10404014	Contact crime	2008-09	124
-ward	10404014	Property crime	2009-10	91
-ward	10404014	Contact crime	2009-10	147
-ward	10404014	Property crime	2010-11	99
-ward	10404014	Contact crime	2010-11	133
-ward	10404014	Property crime	2011-12	107
-ward	10404014	Contact crime	2011-12	114
-ward	10404014	Property crime	2012-13	129
-ward	10404014	Contact crime	2012-13	156
-ward	10404014	Property crime	2013-14	147
-ward	10404014	Contact crime	2013-14	185
-ward	10404014	Property crime	2014-15	193
-ward	10404014	Contact crime	2014-15	228
-ward	10404015	Property crime	2005-06	30
-ward	10404015	Contact crime	2005-06	74
-ward	10404015	Property crime	2006-07	37
-ward	10404015	Contact crime	2006-07	92
-ward	10404015	Property crime	2007-08	45
-ward	10404015	Contact crime	2007-08	113
-ward	10404015	Property crime	2008-09	58
-ward	10404015	Contact crime	2008-09	118
-ward	10404015	Property crime	2009-10	41
-ward	10404015	Contact crime	2009-10	99
-ward	10404015	Property crime	2010-11	46
-ward	10404015	Contact crime	2010-11	116
-ward	10404015	Property crime	2011-12	47
-ward	10404015	Contact crime	2011-12	121
-ward	10404015	Property crime	2012-13	54
-ward	10404015	Contact crime	2012-13	129
-ward	10404015	Property crime	2013-14	59
-ward	10404015	Contact crime	2013-14	130
-ward	10404015	Property crime	2014-15	62
-ward	10404015	Contact crime	2014-15	139
-ward	10404016	Property crime	2005-06	120
-ward	10404016	Contact crime	2005-06	224
-ward	10404016	Property crime	2006-07	99
-ward	10404016	Contact crime	2006-07	172
-ward	10404016	Property crime	2007-08	103
-ward	10404016	Contact crime	2007-08	158
-ward	10404016	Property crime	2008-09	101
-ward	10404016	Contact crime	2008-09	143
-ward	10404016	Property crime	2009-10	105
-ward	10404016	Contact crime	2009-10	170
-ward	10404016	Property crime	2010-11	115
-ward	10404016	Contact crime	2010-11	154
-ward	10404016	Property crime	2011-12	123
-ward	10404016	Contact crime	2011-12	132
-ward	10404016	Property crime	2012-13	149
-ward	10404016	Contact crime	2012-13	180
-ward	10404016	Property crime	2013-14	170
-ward	10404016	Contact crime	2013-14	214
-ward	10404016	Property crime	2014-15	223
-ward	10404016	Contact crime	2014-15	264
-ward	10404017	Property crime	2005-06	88
-ward	10404017	Contact crime	2005-06	198
-ward	10404017	Property crime	2006-07	91
-ward	10404017	Contact crime	2006-07	224
-ward	10404017	Property crime	2007-08	109
-ward	10404017	Contact crime	2007-08	165
-ward	10404017	Property crime	2008-09	91
-ward	10404017	Contact crime	2008-09	152
-ward	10404017	Property crime	2009-10	104
-ward	10404017	Contact crime	2009-10	163
-ward	10404017	Property crime	2010-11	131
-ward	10404017	Contact crime	2010-11	229
-ward	10404017	Property crime	2011-12	171
-ward	10404017	Contact crime	2011-12	295
-ward	10404017	Property crime	2012-13	162
-ward	10404017	Contact crime	2012-13	319
-ward	10404017	Property crime	2013-14	180
-ward	10404017	Contact crime	2013-14	290
-ward	10404017	Property crime	2014-15	160
-ward	10404017	Contact crime	2014-15	281
-ward	10404018	Property crime	2005-06	123
-ward	10404018	Contact crime	2005-06	70
-ward	10404018	Property crime	2006-07	105
-ward	10404018	Contact crime	2006-07	66
-ward	10404018	Property crime	2007-08	117
-ward	10404018	Contact crime	2007-08	51
-ward	10404018	Property crime	2008-09	105
-ward	10404018	Contact crime	2008-09	48
-ward	10404018	Property crime	2009-10	115
-ward	10404018	Contact crime	2009-10	46
-ward	10404018	Property crime	2010-11	143
-ward	10404018	Contact crime	2010-11	64
-ward	10404018	Property crime	2011-12	138
-ward	10404018	Contact crime	2011-12	66
-ward	10404018	Property crime	2012-13	175
-ward	10404018	Contact crime	2012-13	73
-ward	10404018	Property crime	2013-14	161
-ward	10404018	Contact crime	2013-14	73
-ward	10404018	Property crime	2014-15	128
-ward	10404018	Contact crime	2014-15	71
-ward	10404019	Property crime	2005-06	245
-ward	10404019	Contact crime	2005-06	139
-ward	10404019	Property crime	2006-07	209
-ward	10404019	Contact crime	2006-07	132
-ward	10404019	Property crime	2007-08	234
-ward	10404019	Contact crime	2007-08	101
-ward	10404019	Property crime	2008-09	209
-ward	10404019	Contact crime	2008-09	96
-ward	10404019	Property crime	2009-10	229
-ward	10404019	Contact crime	2009-10	92
-ward	10404019	Property crime	2010-11	283
-ward	10404019	Contact crime	2010-11	127
-ward	10404019	Property crime	2011-12	275
-ward	10404019	Contact crime	2011-12	132
-ward	10404019	Property crime	2012-13	347
-ward	10404019	Contact crime	2012-13	145
-ward	10404019	Property crime	2013-14	321
-ward	10404019	Contact crime	2013-14	145
-ward	10404019	Property crime	2014-15	255
-ward	10404019	Contact crime	2014-15	141
-ward	10404020	Property crime	2005-06	66
-ward	10404020	Contact crime	2005-06	151
-ward	10404020	Property crime	2006-07	69
-ward	10404020	Contact crime	2006-07	171
-ward	10404020	Property crime	2007-08	83
-ward	10404020	Contact crime	2007-08	126
-ward	10404020	Property crime	2008-09	69
-ward	10404020	Contact crime	2008-09	116
-ward	10404020	Property crime	2009-10	79
-ward	10404020	Contact crime	2009-10	124
-ward	10404020	Property crime	2010-11	100
-ward	10404020	Contact crime	2010-11	175
-ward	10404020	Property crime	2011-12	130
-ward	10404020	Contact crime	2011-12	226
-ward	10404020	Property crime	2012-13	123
-ward	10404020	Contact crime	2012-13	244
-ward	10404020	Property crime	2013-14	137
-ward	10404020	Contact crime	2013-14	222
-ward	10404020	Property crime	2014-15	122
-ward	10404020	Contact crime	2014-15	215
-ward	10404021	Property crime	2005-06	58
-ward	10404021	Contact crime	2005-06	125
-ward	10404021	Property crime	2006-07	69
-ward	10404021	Contact crime	2006-07	153
-ward	10404021	Property crime	2007-08	82
-ward	10404021	Contact crime	2007-08	185
-ward	10404021	Property crime	2008-09	102
-ward	10404021	Contact crime	2008-09	194
-ward	10404021	Property crime	2009-10	75
-ward	10404021	Contact crime	2009-10	164
-ward	10404021	Property crime	2010-11	85
-ward	10404021	Contact crime	2010-11	193
-ward	10404021	Property crime	2011-12	87
-ward	10404021	Contact crime	2011-12	200
-ward	10404021	Property crime	2012-13	100
-ward	10404021	Contact crime	2012-13	213
-ward	10404021	Property crime	2013-14	108
-ward	10404021	Contact crime	2013-14	216
-ward	10404021	Property crime	2014-15	110
-ward	10404021	Contact crime	2014-15	230
-ward	10404022	Property crime	2005-06	195
-ward	10404022	Contact crime	2005-06	136
-ward	10404022	Property crime	2006-07	156
-ward	10404022	Contact crime	2006-07	127
-ward	10404022	Property crime	2007-08	179
-ward	10404022	Contact crime	2007-08	112
-ward	10404022	Property crime	2008-09	161
-ward	10404022	Contact crime	2008-09	108
-ward	10404022	Property crime	2009-10	187
-ward	10404022	Contact crime	2009-10	107
-ward	10404022	Property crime	2010-11	228
-ward	10404022	Contact crime	2010-11	127
-ward	10404022	Property crime	2011-12	218
-ward	10404022	Contact crime	2011-12	128
-ward	10404022	Property crime	2012-13	268
-ward	10404022	Contact crime	2012-13	136
-ward	10404022	Property crime	2013-14	252
-ward	10404022	Contact crime	2013-14	142
-ward	10404022	Property crime	2014-15	207
-ward	10404022	Contact crime	2014-15	143
-ward	10404023	Property crime	2005-06	191
-ward	10404023	Contact crime	2005-06	166
-ward	10404023	Property crime	2006-07	160
-ward	10404023	Contact crime	2006-07	143
-ward	10404023	Property crime	2007-08	177
-ward	10404023	Contact crime	2007-08	121
-ward	10404023	Property crime	2008-09	161
-ward	10404023	Contact crime	2008-09	113
-ward	10404023	Property crime	2009-10	177
-ward	10404023	Contact crime	2009-10	120
-ward	10404023	Property crime	2010-11	213
-ward	10404023	Contact crime	2010-11	135
-ward	10404023	Property crime	2011-12	211
-ward	10404023	Contact crime	2011-12	130
-ward	10404023	Property crime	2012-13	262
-ward	10404023	Contact crime	2012-13	154
-ward	10404023	Property crime	2013-14	254
-ward	10404023	Contact crime	2013-14	166
-ward	10404023	Property crime	2014-15	232
-ward	10404023	Contact crime	2014-15	181
-ward	10404024	Property crime	2005-06	96
-ward	10404024	Contact crime	2005-06	188
-ward	10404024	Property crime	2006-07	103
-ward	10404024	Contact crime	2006-07	179
-ward	10404024	Property crime	2007-08	99
-ward	10404024	Contact crime	2007-08	231
-ward	10404024	Property crime	2008-09	93
-ward	10404024	Contact crime	2008-09	190
-ward	10404024	Property crime	2009-10	79
-ward	10404024	Contact crime	2009-10	180
-ward	10404024	Property crime	2010-11	87
-ward	10404024	Contact crime	2010-11	174
-ward	10404024	Property crime	2011-12	91
-ward	10404024	Contact crime	2011-12	174
-ward	10404024	Property crime	2012-13	115
-ward	10404024	Contact crime	2012-13	164
-ward	10404024	Property crime	2013-14	85
-ward	10404024	Contact crime	2013-14	147
-ward	10404024	Property crime	2014-15	80
-ward	10404024	Contact crime	2014-15	141
-ward	10404025	Property crime	2005-06	131
-ward	10404025	Contact crime	2005-06	201
-ward	10404025	Property crime	2006-07	132
-ward	10404025	Contact crime	2006-07	191
-ward	10404025	Property crime	2007-08	133
-ward	10404025	Contact crime	2007-08	236
-ward	10404025	Property crime	2008-09	123
-ward	10404025	Contact crime	2008-09	196
-ward	10404025	Property crime	2009-10	112
-ward	10404025	Contact crime	2009-10	186
-ward	10404025	Property crime	2010-11	130
-ward	10404025	Contact crime	2010-11	186
-ward	10404025	Property crime	2011-12	132
-ward	10404025	Contact crime	2011-12	187
-ward	10404025	Property crime	2012-13	166
-ward	10404025	Contact crime	2012-13	179
-ward	10404025	Property crime	2013-14	134
-ward	10404025	Contact crime	2013-14	163
-ward	10404025	Property crime	2014-15	118
-ward	10404025	Contact crime	2014-15	157
-ward	10405001	Property crime	2005-06	56
-ward	10405001	Contact crime	2005-06	117
-ward	10405001	Property crime	2006-07	50
-ward	10405001	Contact crime	2006-07	92
-ward	10405001	Property crime	2007-08	44
-ward	10405001	Contact crime	2007-08	75
-ward	10405001	Property crime	2008-09	50
-ward	10405001	Contact crime	2008-09	69
-ward	10405001	Property crime	2009-10	69
-ward	10405001	Contact crime	2009-10	80
-ward	10405001	Property crime	2010-11	74
-ward	10405001	Contact crime	2010-11	92
-ward	10405001	Property crime	2011-12	85
-ward	10405001	Contact crime	2011-12	110
-ward	10405001	Property crime	2012-13	113
-ward	10405001	Contact crime	2012-13	122
-ward	10405001	Property crime	2013-14	111
-ward	10405001	Contact crime	2013-14	133
-ward	10405001	Property crime	2014-15	100
-ward	10405001	Contact crime	2014-15	144
-ward	10405002	Property crime	2005-06	58
-ward	10405002	Contact crime	2005-06	122
-ward	10405002	Property crime	2006-07	52
-ward	10405002	Contact crime	2006-07	96
-ward	10405002	Property crime	2007-08	46
-ward	10405002	Contact crime	2007-08	78
-ward	10405002	Property crime	2008-09	52
-ward	10405002	Contact crime	2008-09	72
-ward	10405002	Property crime	2009-10	72
-ward	10405002	Contact crime	2009-10	84
-ward	10405002	Property crime	2010-11	78
-ward	10405002	Contact crime	2010-11	96
-ward	10405002	Property crime	2011-12	88
-ward	10405002	Contact crime	2011-12	114
-ward	10405002	Property crime	2012-13	118
-ward	10405002	Contact crime	2012-13	128
-ward	10405002	Property crime	2013-14	116
-ward	10405002	Contact crime	2013-14	139
-ward	10405002	Property crime	2014-15	104
-ward	10405002	Contact crime	2014-15	150
-ward	10405003	Property crime	2005-06	73
-ward	10405003	Contact crime	2005-06	154
-ward	10405003	Property crime	2006-07	65
-ward	10405003	Contact crime	2006-07	121
-ward	10405003	Property crime	2007-08	58
-ward	10405003	Contact crime	2007-08	98
-ward	10405003	Property crime	2008-09	66
-ward	10405003	Contact crime	2008-09	90
-ward	10405003	Property crime	2009-10	91
-ward	10405003	Contact crime	2009-10	105
-ward	10405003	Property crime	2010-11	98
-ward	10405003	Contact crime	2010-11	121
-ward	10405003	Property crime	2011-12	112
-ward	10405003	Contact crime	2011-12	144
-ward	10405003	Property crime	2012-13	149
-ward	10405003	Contact crime	2012-13	161
-ward	10405003	Property crime	2013-14	146
-ward	10405003	Contact crime	2013-14	175
-ward	10405003	Property crime	2014-15	132
-ward	10405003	Contact crime	2014-15	189
-ward	10405004	Property crime	2005-06	49
-ward	10405004	Contact crime	2005-06	102
-ward	10405004	Property crime	2006-07	43
-ward	10405004	Contact crime	2006-07	80
-ward	10405004	Property crime	2007-08	39
-ward	10405004	Contact crime	2007-08	65
-ward	10405004	Property crime	2008-09	44
-ward	10405004	Contact crime	2008-09	60
-ward	10405004	Property crime	2009-10	61
-ward	10405004	Contact crime	2009-10	70
-ward	10405004	Property crime	2010-11	65
-ward	10405004	Contact crime	2010-11	80
-ward	10405004	Property crime	2011-12	74
-ward	10405004	Contact crime	2011-12	96
-ward	10405004	Property crime	2012-13	99
-ward	10405004	Contact crime	2012-13	107
-ward	10405004	Property crime	2013-14	97
-ward	10405004	Contact crime	2013-14	116
-ward	10405004	Property crime	2014-15	87
-ward	10405004	Contact crime	2014-15	126
-ward	10405005	Property crime	2005-06	64
-ward	10405005	Contact crime	2005-06	135
-ward	10405005	Property crime	2006-07	57
-ward	10405005	Contact crime	2006-07	107
-ward	10405005	Property crime	2007-08	51
-ward	10405005	Contact crime	2007-08	86
-ward	10405005	Property crime	2008-09	58
-ward	10405005	Contact crime	2008-09	79
-ward	10405005	Property crime	2009-10	80
-ward	10405005	Contact crime	2009-10	93
-ward	10405005	Property crime	2010-11	86
-ward	10405005	Contact crime	2010-11	107
-ward	10405005	Property crime	2011-12	98
-ward	10405005	Contact crime	2011-12	127
-ward	10405005	Property crime	2012-13	131
-ward	10405005	Contact crime	2012-13	142
-ward	10405005	Property crime	2013-14	128
-ward	10405005	Contact crime	2013-14	154
-ward	10405005	Property crime	2014-15	116
-ward	10405005	Contact crime	2014-15	166
-ward	10405006	Property crime	2005-06	102
-ward	10405006	Contact crime	2005-06	215
-ward	10405006	Property crime	2006-07	92
-ward	10405006	Contact crime	2006-07	170
-ward	10405006	Property crime	2007-08	82
-ward	10405006	Contact crime	2007-08	138
-ward	10405006	Property crime	2008-09	92
-ward	10405006	Contact crime	2008-09	126
-ward	10405006	Property crime	2009-10	128
-ward	10405006	Contact crime	2009-10	148
-ward	10405006	Property crime	2010-11	137
-ward	10405006	Contact crime	2010-11	170
-ward	10405006	Property crime	2011-12	156
-ward	10405006	Contact crime	2011-12	202
-ward	10405006	Property crime	2012-13	209
-ward	10405006	Contact crime	2012-13	226
-ward	10405006	Property crime	2013-14	205
-ward	10405006	Contact crime	2013-14	246
-ward	10405006	Property crime	2014-15	184
-ward	10405006	Contact crime	2014-15	265
-ward	10405007	Property crime	2005-06	68
-ward	10405007	Contact crime	2005-06	144
-ward	10405007	Property crime	2006-07	61
-ward	10405007	Contact crime	2006-07	113
-ward	10405007	Property crime	2007-08	55
-ward	10405007	Contact crime	2007-08	92
-ward	10405007	Property crime	2008-09	61
-ward	10405007	Contact crime	2008-09	84
-ward	10405007	Property crime	2009-10	85
-ward	10405007	Contact crime	2009-10	99
-ward	10405007	Property crime	2010-11	91
-ward	10405007	Contact crime	2010-11	113
-ward	10405007	Property crime	2011-12	104
-ward	10405007	Contact crime	2011-12	135
-ward	10405007	Property crime	2012-13	139
-ward	10405007	Contact crime	2012-13	150
-ward	10405007	Property crime	2013-14	136
-ward	10405007	Contact crime	2013-14	164
-ward	10405007	Property crime	2014-15	123
-ward	10405007	Contact crime	2014-15	177
-ward	10405008	Property crime	2005-06	93
-ward	10405008	Contact crime	2005-06	196
-ward	10405008	Property crime	2006-07	83
-ward	10405008	Contact crime	2006-07	154
-ward	10405008	Property crime	2007-08	74
-ward	10405008	Contact crime	2007-08	125
-ward	10405008	Property crime	2008-09	83
-ward	10405008	Contact crime	2008-09	115
-ward	10405008	Property crime	2009-10	116
-ward	10405008	Contact crime	2009-10	134
-ward	10405008	Property crime	2010-11	125
-ward	10405008	Contact crime	2010-11	154
-ward	10405008	Property crime	2011-12	142
-ward	10405008	Contact crime	2011-12	184
-ward	10405008	Property crime	2012-13	190
-ward	10405008	Contact crime	2012-13	205
-ward	10405008	Property crime	2013-14	186
-ward	10405008	Contact crime	2013-14	223
-ward	10405008	Property crime	2014-15	168
-ward	10405008	Contact crime	2014-15	241
-ward	10405009	Property crime	2005-06	37
-ward	10405009	Contact crime	2005-06	71
-ward	10405009	Property crime	2006-07	31
-ward	10405009	Contact crime	2006-07	71
-ward	10405009	Property crime	2007-08	28
-ward	10405009	Contact crime	2007-08	69
-ward	10405009	Property crime	2008-09	39
-ward	10405009	Contact crime	2008-09	66
-ward	10405009	Property crime	2009-10	45
-ward	10405009	Contact crime	2009-10	70
-ward	10405009	Property crime	2010-11	37
-ward	10405009	Contact crime	2010-11	69
-ward	10405009	Property crime	2011-12	34
-ward	10405009	Contact crime	2011-12	67
-ward	10405009	Property crime	2012-13	47
-ward	10405009	Contact crime	2012-13	69
-ward	10405009	Property crime	2013-14	36
-ward	10405009	Contact crime	2013-14	79
-ward	10405009	Property crime	2014-15	48
-ward	10405009	Contact crime	2014-15	99
-ward	10405010	Property crime	2005-06	37
-ward	10405010	Contact crime	2005-06	71
-ward	10405010	Property crime	2006-07	30
-ward	10405010	Contact crime	2006-07	75
-ward	10405010	Property crime	2007-08	27
-ward	10405010	Contact crime	2007-08	75
-ward	10405010	Property crime	2008-09	41
-ward	10405010	Contact crime	2008-09	73
-ward	10405010	Property crime	2009-10	45
-ward	10405010	Contact crime	2009-10	77
-ward	10405010	Property crime	2010-11	36
-ward	10405010	Contact crime	2010-11	72
-ward	10405010	Property crime	2011-12	30
-ward	10405010	Contact crime	2011-12	67
-ward	10405010	Property crime	2012-13	41
-ward	10405010	Contact crime	2012-13	67
-ward	10405010	Property crime	2013-14	28
-ward	10405010	Contact crime	2013-14	78
-ward	10405010	Property crime	2014-15	45
-ward	10405010	Contact crime	2014-15	103
-ward	10405011	Property crime	2005-06	130
-ward	10405011	Contact crime	2005-06	215
-ward	10405011	Property crime	2006-07	118
-ward	10405011	Contact crime	2006-07	192
-ward	10405011	Property crime	2007-08	114
-ward	10405011	Contact crime	2007-08	182
-ward	10405011	Property crime	2008-09	121
-ward	10405011	Contact crime	2008-09	153
-ward	10405011	Property crime	2009-10	148
-ward	10405011	Contact crime	2009-10	160
-ward	10405011	Property crime	2010-11	128
-ward	10405011	Contact crime	2010-11	191
-ward	10405011	Property crime	2011-12	136
-ward	10405011	Contact crime	2011-12	198
-ward	10405011	Property crime	2012-13	194
-ward	10405011	Contact crime	2012-13	219
-ward	10405011	Property crime	2013-14	181
-ward	10405011	Contact crime	2013-14	262
-ward	10405011	Property crime	2014-15	177
-ward	10405011	Contact crime	2014-15	269
-ward	10405012	Property crime	2005-06	68
-ward	10405012	Contact crime	2005-06	127
-ward	10405012	Property crime	2006-07	60
-ward	10405012	Contact crime	2006-07	101
-ward	10405012	Property crime	2007-08	56
-ward	10405012	Contact crime	2007-08	82
-ward	10405012	Property crime	2008-09	60
-ward	10405012	Contact crime	2008-09	75
-ward	10405012	Property crime	2009-10	81
-ward	10405012	Contact crime	2009-10	87
-ward	10405012	Property crime	2010-11	89
-ward	10405012	Contact crime	2010-11	101
-ward	10405012	Property crime	2011-12	99
-ward	10405012	Contact crime	2011-12	119
-ward	10405012	Property crime	2012-13	132
-ward	10405012	Contact crime	2012-13	133
-ward	10405012	Property crime	2013-14	128
-ward	10405012	Contact crime	2013-14	144
-ward	10405012	Property crime	2014-15	114
-ward	10405012	Contact crime	2014-15	155
-ward	10405013	Property crime	2005-06	47
-ward	10405013	Contact crime	2005-06	98
-ward	10405013	Property crime	2006-07	42
-ward	10405013	Contact crime	2006-07	77
-ward	10405013	Property crime	2007-08	37
-ward	10405013	Contact crime	2007-08	63
-ward	10405013	Property crime	2008-09	42
-ward	10405013	Contact crime	2008-09	58
-ward	10405013	Property crime	2009-10	58
-ward	10405013	Contact crime	2009-10	67
-ward	10405013	Property crime	2010-11	62
-ward	10405013	Contact crime	2010-11	77
-ward	10405013	Property crime	2011-12	71
-ward	10405013	Contact crime	2011-12	92
-ward	10405013	Property crime	2012-13	95
-ward	10405013	Contact crime	2012-13	103
-ward	10405013	Property crime	2013-14	93
-ward	10405013	Contact crime	2013-14	112
-ward	10405013	Property crime	2014-15	84
-ward	10405013	Contact crime	2014-15	121
-ward	10407001	Property crime	2005-06	286
-ward	10407001	Contact crime	2005-06	178
-ward	10407001	Property crime	2006-07	269
-ward	10407001	Contact crime	2006-07	186
-ward	10407001	Property crime	2007-08	273
-ward	10407001	Contact crime	2007-08	198
-ward	10407001	Property crime	2008-09	261
-ward	10407001	Contact crime	2008-09	153
-ward	10407001	Property crime	2009-10	280
-ward	10407001	Contact crime	2009-10	130
-ward	10407001	Property crime	2010-11	271
-ward	10407001	Contact crime	2010-11	146
-ward	10407001	Property crime	2011-12	269
-ward	10407001	Contact crime	2011-12	175
-ward	10407001	Property crime	2012-13	428
-ward	10407001	Contact crime	2012-13	173
-ward	10407001	Property crime	2013-14	428
-ward	10407001	Contact crime	2013-14	194
-ward	10407001	Property crime	2014-15	356
-ward	10407001	Contact crime	2014-15	226
-ward	10407002	Property crime	2005-06	219
-ward	10407002	Contact crime	2005-06	134
-ward	10407002	Property crime	2006-07	208
-ward	10407002	Contact crime	2006-07	147
-ward	10407002	Property crime	2007-08	211
-ward	10407002	Contact crime	2007-08	154
-ward	10407002	Property crime	2008-09	202
-ward	10407002	Contact crime	2008-09	118
-ward	10407002	Property crime	2009-10	216
-ward	10407002	Contact crime	2009-10	99
-ward	10407002	Property crime	2010-11	209
-ward	10407002	Contact crime	2010-11	112
-ward	10407002	Property crime	2011-12	208
-ward	10407002	Contact crime	2011-12	135
-ward	10407002	Property crime	2012-13	330
-ward	10407002	Contact crime	2012-13	135
-ward	10407002	Property crime	2013-14	332
-ward	10407002	Contact crime	2013-14	151
-ward	10407002	Property crime	2014-15	277
-ward	10407002	Contact crime	2014-15	176
-ward	10407003	Property crime	2005-06	147
-ward	10407003	Contact crime	2005-06	86
-ward	10407003	Property crime	2006-07	137
-ward	10407003	Contact crime	2006-07	92
-ward	10407003	Property crime	2007-08	140
-ward	10407003	Contact crime	2007-08	97
-ward	10407003	Property crime	2008-09	133
-ward	10407003	Contact crime	2008-09	74
-ward	10407003	Property crime	2009-10	143
-ward	10407003	Contact crime	2009-10	62
-ward	10407003	Property crime	2010-11	138
-ward	10407003	Contact crime	2010-11	70
-ward	10407003	Property crime	2011-12	137
-ward	10407003	Contact crime	2011-12	85
-ward	10407003	Property crime	2012-13	221
-ward	10407003	Contact crime	2012-13	84
-ward	10407003	Property crime	2013-14	221
-ward	10407003	Contact crime	2013-14	95
-ward	10407003	Property crime	2014-15	181
-ward	10407003	Contact crime	2014-15	112
-ward	10407004	Property crime	2005-06	169
-ward	10407004	Contact crime	2005-06	108
-ward	10407004	Property crime	2006-07	163
-ward	10407004	Contact crime	2006-07	122
-ward	10407004	Property crime	2007-08	165
-ward	10407004	Contact crime	2007-08	126
-ward	10407004	Property crime	2008-09	159
-ward	10407004	Contact crime	2008-09	98
-ward	10407004	Property crime	2009-10	168
-ward	10407004	Contact crime	2009-10	83
-ward	10407004	Property crime	2010-11	164
-ward	10407004	Contact crime	2010-11	93
-ward	10407004	Property crime	2011-12	163
-ward	10407004	Contact crime	2011-12	111
-ward	10407004	Property crime	2012-13	254
-ward	10407004	Contact crime	2012-13	113
-ward	10407004	Property crime	2013-14	257
-ward	10407004	Contact crime	2013-14	124
-ward	10407004	Property crime	2014-15	220
-ward	10407004	Contact crime	2014-15	143
-ward	10407005	Property crime	2005-06	47
-ward	10407005	Contact crime	2005-06	68
-ward	10407005	Property crime	2006-07	68
-ward	10407005	Contact crime	2006-07	109
-ward	10407005	Property crime	2007-08	63
-ward	10407005	Contact crime	2007-08	100
-ward	10407005	Property crime	2008-09	73
-ward	10407005	Contact crime	2008-09	81
-ward	10407005	Property crime	2009-10	63
-ward	10407005	Contact crime	2009-10	75
-ward	10407005	Property crime	2010-11	71
-ward	10407005	Contact crime	2010-11	78
-ward	10407005	Property crime	2011-12	66
-ward	10407005	Contact crime	2011-12	91
-ward	10407005	Property crime	2012-13	68
-ward	10407005	Contact crime	2012-13	104
-ward	10407005	Property crime	2013-14	86
-ward	10407005	Contact crime	2013-14	103
-ward	10407005	Property crime	2014-15	114
-ward	10407005	Contact crime	2014-15	105
-ward	10407006	Property crime	2005-06	33
-ward	10407006	Contact crime	2005-06	48
-ward	10407006	Property crime	2006-07	48
-ward	10407006	Contact crime	2006-07	77
-ward	10407006	Property crime	2007-08	44
-ward	10407006	Contact crime	2007-08	71
-ward	10407006	Property crime	2008-09	52
-ward	10407006	Contact crime	2008-09	57
-ward	10407006	Property crime	2009-10	44
-ward	10407006	Contact crime	2009-10	53
-ward	10407006	Property crime	2010-11	50
-ward	10407006	Contact crime	2010-11	55
-ward	10407006	Property crime	2011-12	47
-ward	10407006	Contact crime	2011-12	64
-ward	10407006	Property crime	2012-13	48
-ward	10407006	Contact crime	2012-13	74
-ward	10407006	Property crime	2013-14	61
-ward	10407006	Contact crime	2013-14	73
-ward	10407006	Property crime	2014-15	80
-ward	10407006	Contact crime	2014-15	74
-ward	10407007	Property crime	2005-06	113
-ward	10407007	Contact crime	2005-06	128
-ward	10407007	Property crime	2006-07	138
-ward	10407007	Contact crime	2006-07	182
-ward	10407007	Property crime	2007-08	131
-ward	10407007	Contact crime	2007-08	173
-ward	10407007	Property crime	2008-09	145
-ward	10407007	Contact crime	2008-09	139
-ward	10407007	Property crime	2009-10	133
-ward	10407007	Contact crime	2009-10	129
-ward	10407007	Property crime	2010-11	143
-ward	10407007	Contact crime	2010-11	136
-ward	10407007	Property crime	2011-12	136
-ward	10407007	Contact crime	2011-12	158
-ward	10407007	Property crime	2012-13	163
-ward	10407007	Contact crime	2012-13	176
-ward	10407007	Property crime	2013-14	188
-ward	10407007	Contact crime	2013-14	177
-ward	10407007	Property crime	2014-15	215
-ward	10407007	Contact crime	2014-15	185
-ward	10408001	Property crime	2005-06	142
-ward	10408001	Contact crime	2005-06	151
-ward	10408001	Property crime	2006-07	127
-ward	10408001	Contact crime	2006-07	97
-ward	10408001	Property crime	2007-08	123
-ward	10408001	Contact crime	2007-08	91
-ward	10408001	Property crime	2008-09	149
-ward	10408001	Contact crime	2008-09	93
-ward	10408001	Property crime	2009-10	145
-ward	10408001	Contact crime	2009-10	106
-ward	10408001	Property crime	2010-11	146
-ward	10408001	Contact crime	2010-11	120
-ward	10408001	Property crime	2011-12	150
-ward	10408001	Contact crime	2011-12	131
-ward	10408001	Property crime	2012-13	170
-ward	10408001	Contact crime	2012-13	140
-ward	10408001	Property crime	2013-14	193
-ward	10408001	Contact crime	2013-14	151
-ward	10408001	Property crime	2014-15	204
-ward	10408001	Contact crime	2014-15	154
-ward	10408002	Property crime	2005-06	94
-ward	10408002	Contact crime	2005-06	98
-ward	10408002	Property crime	2006-07	85
-ward	10408002	Contact crime	2006-07	64
-ward	10408002	Property crime	2007-08	83
-ward	10408002	Contact crime	2007-08	59
-ward	10408002	Property crime	2008-09	98
-ward	10408002	Contact crime	2008-09	60
-ward	10408002	Property crime	2009-10	96
-ward	10408002	Contact crime	2009-10	69
-ward	10408002	Property crime	2010-11	98
-ward	10408002	Contact crime	2010-11	78
-ward	10408002	Property crime	2011-12	100
-ward	10408002	Contact crime	2011-12	85
-ward	10408002	Property crime	2012-13	115
-ward	10408002	Contact crime	2012-13	91
-ward	10408002	Property crime	2013-14	129
-ward	10408002	Contact crime	2013-14	98
-ward	10408002	Property crime	2014-15	134
-ward	10408002	Contact crime	2014-15	100
-ward	10408003	Property crime	2005-06	103
-ward	10408003	Contact crime	2005-06	115
-ward	10408003	Property crime	2006-07	93
-ward	10408003	Contact crime	2006-07	73
-ward	10408003	Property crime	2007-08	89
-ward	10408003	Contact crime	2007-08	69
-ward	10408003	Property crime	2008-09	110
-ward	10408003	Contact crime	2008-09	71
-ward	10408003	Property crime	2009-10	106
-ward	10408003	Contact crime	2009-10	81
-ward	10408003	Property crime	2010-11	105
-ward	10408003	Contact crime	2010-11	91
-ward	10408003	Property crime	2011-12	109
-ward	10408003	Contact crime	2011-12	100
-ward	10408003	Property crime	2012-13	122
-ward	10408003	Contact crime	2012-13	106
-ward	10408003	Property crime	2013-14	141
-ward	10408003	Contact crime	2013-14	115
-ward	10408003	Property crime	2014-15	151
-ward	10408003	Contact crime	2014-15	117
-ward	10408004	Property crime	2005-06	112
-ward	10408004	Contact crime	2005-06	124
-ward	10408004	Property crime	2006-07	101
-ward	10408004	Contact crime	2006-07	78
-ward	10408004	Property crime	2007-08	97
-ward	10408004	Contact crime	2007-08	74
-ward	10408004	Property crime	2008-09	120
-ward	10408004	Contact crime	2008-09	76
-ward	10408004	Property crime	2009-10	115
-ward	10408004	Contact crime	2009-10	87
-ward	10408004	Property crime	2010-11	114
-ward	10408004	Contact crime	2010-11	98
-ward	10408004	Property crime	2011-12	118
-ward	10408004	Contact crime	2011-12	107
-ward	10408004	Property crime	2012-13	133
-ward	10408004	Contact crime	2012-13	114
-ward	10408004	Property crime	2013-14	153
-ward	10408004	Contact crime	2013-14	124
-ward	10408004	Property crime	2014-15	164
-ward	10408004	Contact crime	2014-15	126
-ward	10408005	Property crime	2005-06	121
-ward	10408005	Contact crime	2005-06	133
-ward	10408005	Property crime	2006-07	109
-ward	10408005	Contact crime	2006-07	84
-ward	10408005	Property crime	2007-08	104
-ward	10408005	Contact crime	2007-08	79
-ward	10408005	Property crime	2008-09	129
-ward	10408005	Contact crime	2008-09	81
-ward	10408005	Property crime	2009-10	124
-ward	10408005	Contact crime	2009-10	94
-ward	10408005	Property crime	2010-11	123
-ward	10408005	Contact crime	2010-11	105
-ward	10408005	Property crime	2011-12	127
-ward	10408005	Contact crime	2011-12	115
-ward	10408005	Property crime	2012-13	143
-ward	10408005	Contact crime	2012-13	123
-ward	10408005	Property crime	2013-14	165
-ward	10408005	Contact crime	2013-14	133
-ward	10408005	Property crime	2014-15	177
-ward	10408005	Contact crime	2014-15	136
-ward	10408006	Property crime	2005-06	174
-ward	10408006	Contact crime	2005-06	192
-ward	10408006	Property crime	2006-07	157
-ward	10408006	Contact crime	2006-07	121
-ward	10408006	Property crime	2007-08	150
-ward	10408006	Contact crime	2007-08	114
-ward	10408006	Property crime	2008-09	185
-ward	10408006	Contact crime	2008-09	117
-ward	10408006	Property crime	2009-10	179
-ward	10408006	Contact crime	2009-10	136
-ward	10408006	Property crime	2010-11	177
-ward	10408006	Contact crime	2010-11	152
-ward	10408006	Property crime	2011-12	183
-ward	10408006	Contact crime	2011-12	166
-ward	10408006	Property crime	2012-13	205
-ward	10408006	Contact crime	2012-13	177
-ward	10408006	Property crime	2013-14	237
-ward	10408006	Contact crime	2013-14	192
-ward	10408006	Property crime	2014-15	255
-ward	10408006	Contact crime	2014-15	196
-ward	10408007	Property crime	2005-06	257
-ward	10408007	Contact crime	2005-06	284
-ward	10408007	Property crime	2006-07	232
-ward	10408007	Contact crime	2006-07	179
-ward	10408007	Property crime	2007-08	222
-ward	10408007	Contact crime	2007-08	169
-ward	10408007	Property crime	2008-09	275
-ward	10408007	Contact crime	2008-09	174
-ward	10408007	Property crime	2009-10	265
-ward	10408007	Contact crime	2009-10	201
-ward	10408007	Property crime	2010-11	262
-ward	10408007	Contact crime	2010-11	224
-ward	10408007	Property crime	2011-12	271
-ward	10408007	Contact crime	2011-12	246
-ward	10408007	Property crime	2012-13	304
-ward	10408007	Contact crime	2012-13	262
-ward	10408007	Property crime	2013-14	352
-ward	10408007	Contact crime	2013-14	284
-ward	10408007	Property crime	2014-15	377
-ward	10408007	Contact crime	2014-15	290
-ward	10408008	Property crime	2005-06	115
-ward	10408008	Contact crime	2005-06	127
-ward	10408008	Property crime	2006-07	103
-ward	10408008	Contact crime	2006-07	80
-ward	10408008	Property crime	2007-08	99
-ward	10408008	Contact crime	2007-08	75
-ward	10408008	Property crime	2008-09	122
-ward	10408008	Contact crime	2008-09	77
-ward	10408008	Property crime	2009-10	118
-ward	10408008	Contact crime	2009-10	90
-ward	10408008	Property crime	2010-11	117
-ward	10408008	Contact crime	2010-11	100
-ward	10408008	Property crime	2011-12	121
-ward	10408008	Contact crime	2011-12	110
-ward	10408008	Property crime	2012-13	136
-ward	10408008	Contact crime	2012-13	117
-ward	10408008	Property crime	2013-14	157
-ward	10408008	Contact crime	2013-14	127
-ward	10408008	Property crime	2014-15	168
-ward	10408008	Contact crime	2014-15	129
-ward	10408009	Property crime	2005-06	148
-ward	10408009	Contact crime	2005-06	163
-ward	10408009	Property crime	2006-07	133
-ward	10408009	Contact crime	2006-07	103
-ward	10408009	Property crime	2007-08	127
-ward	10408009	Contact crime	2007-08	97
-ward	10408009	Property crime	2008-09	158
-ward	10408009	Contact crime	2008-09	100
-ward	10408009	Property crime	2009-10	152
-ward	10408009	Contact crime	2009-10	115
-ward	10408009	Property crime	2010-11	150
-ward	10408009	Contact crime	2010-11	129
-ward	10408009	Property crime	2011-12	155
-ward	10408009	Contact crime	2011-12	141
-ward	10408009	Property crime	2012-13	175
-ward	10408009	Contact crime	2012-13	150
-ward	10408009	Property crime	2013-14	202
-ward	10408009	Contact crime	2013-14	163
-ward	10408009	Property crime	2014-15	217
-ward	10408009	Contact crime	2014-15	166
-ward	10408010	Property crime	2005-06	122
-ward	10408010	Contact crime	2005-06	135
-ward	10408010	Property crime	2006-07	110
-ward	10408010	Contact crime	2006-07	85
-ward	10408010	Property crime	2007-08	105
-ward	10408010	Contact crime	2007-08	80
-ward	10408010	Property crime	2008-09	130
-ward	10408010	Contact crime	2008-09	82
-ward	10408010	Property crime	2009-10	126
-ward	10408010	Contact crime	2009-10	95
-ward	10408010	Property crime	2010-11	124
-ward	10408010	Contact crime	2010-11	107
-ward	10408010	Property crime	2011-12	129
-ward	10408010	Contact crime	2011-12	117
-ward	10408010	Property crime	2012-13	144
-ward	10408010	Contact crime	2012-13	124
-ward	10408010	Property crime	2013-14	167
-ward	10408010	Contact crime	2013-14	135
-ward	10408010	Property crime	2014-15	179
-ward	10408010	Contact crime	2014-15	138
-ward	10501001	Property crime	2005-06	31
-ward	10501001	Contact crime	2005-06	55
-ward	10501001	Property crime	2006-07	17
-ward	10501001	Contact crime	2006-07	41
-ward	10501001	Property crime	2007-08	17
-ward	10501001	Contact crime	2007-08	38
-ward	10501001	Property crime	2008-09	31
-ward	10501001	Contact crime	2008-09	40
-ward	10501001	Property crime	2009-10	58
-ward	10501001	Contact crime	2009-10	46
-ward	10501001	Property crime	2010-11	32
-ward	10501001	Contact crime	2010-11	44
-ward	10501001	Property crime	2011-12	40
-ward	10501001	Contact crime	2011-12	56
-ward	10501001	Property crime	2012-13	69
-ward	10501001	Contact crime	2012-13	54
-ward	10501001	Property crime	2013-14	62
-ward	10501001	Contact crime	2013-14	56
-ward	10501001	Property crime	2014-15	86
-ward	10501001	Contact crime	2014-15	68
-ward	10501002	Property crime	2005-06	11
-ward	10501002	Contact crime	2005-06	20
-ward	10501002	Property crime	2006-07	6
-ward	10501002	Contact crime	2006-07	15
-ward	10501002	Property crime	2007-08	6
-ward	10501002	Contact crime	2007-08	14
-ward	10501002	Property crime	2008-09	11
-ward	10501002	Contact crime	2008-09	15
-ward	10501002	Property crime	2009-10	21
-ward	10501002	Contact crime	2009-10	17
-ward	10501002	Property crime	2010-11	12
-ward	10501002	Contact crime	2010-11	16
-ward	10501002	Property crime	2011-12	14
-ward	10501002	Contact crime	2011-12	21
-ward	10501002	Property crime	2012-13	25
-ward	10501002	Contact crime	2012-13	20
-ward	10501002	Property crime	2013-14	22
-ward	10501002	Contact crime	2013-14	20
-ward	10501002	Property crime	2014-15	31
-ward	10501002	Contact crime	2014-15	25
-ward	10501003	Property crime	2005-06	4
-ward	10501003	Contact crime	2005-06	8
-ward	10501003	Property crime	2006-07	2
-ward	10501003	Contact crime	2006-07	6
-ward	10501003	Property crime	2007-08	2
-ward	10501003	Contact crime	2007-08	5
-ward	10501003	Property crime	2008-09	4
-ward	10501003	Contact crime	2008-09	6
-ward	10501003	Property crime	2009-10	8
-ward	10501003	Contact crime	2009-10	7
-ward	10501003	Property crime	2010-11	5
-ward	10501003	Contact crime	2010-11	6
-ward	10501003	Property crime	2011-12	6
-ward	10501003	Contact crime	2011-12	8
-ward	10501003	Property crime	2012-13	10
-ward	10501003	Contact crime	2012-13	8
-ward	10501003	Property crime	2013-14	9
-ward	10501003	Contact crime	2013-14	8
-ward	10501003	Property crime	2014-15	12
-ward	10501003	Contact crime	2014-15	10
-ward	10501004	Property crime	2005-06	41
-ward	10501004	Contact crime	2005-06	74
-ward	10501004	Property crime	2006-07	22
-ward	10501004	Contact crime	2006-07	53
-ward	10501004	Property crime	2007-08	23
-ward	10501004	Contact crime	2007-08	50
-ward	10501004	Property crime	2008-09	41
-ward	10501004	Contact crime	2008-09	53
-ward	10501004	Property crime	2009-10	77
-ward	10501004	Contact crime	2009-10	62
-ward	10501004	Property crime	2010-11	43
-ward	10501004	Contact crime	2010-11	58
-ward	10501004	Property crime	2011-12	52
-ward	10501004	Contact crime	2011-12	75
-ward	10501004	Property crime	2012-13	91
-ward	10501004	Contact crime	2012-13	72
-ward	10501004	Property crime	2013-14	82
-ward	10501004	Contact crime	2013-14	73
-ward	10501004	Property crime	2014-15	113
-ward	10501004	Contact crime	2014-15	90
-ward	10502001	Property crime	2005-06	22
-ward	10502001	Contact crime	2005-06	49
-ward	10502001	Property crime	2006-07	15
-ward	10502001	Contact crime	2006-07	68
-ward	10502001	Property crime	2007-08	21
-ward	10502001	Contact crime	2007-08	74
-ward	10502001	Property crime	2008-09	36
-ward	10502001	Contact crime	2008-09	77
-ward	10502001	Property crime	2009-10	30
-ward	10502001	Contact crime	2009-10	63
-ward	10502001	Property crime	2010-11	19
-ward	10502001	Contact crime	2010-11	82
-ward	10502001	Property crime	2011-12	38
-ward	10502001	Contact crime	2011-12	74
-ward	10502001	Property crime	2012-13	38
-ward	10502001	Contact crime	2012-13	78
-ward	10502001	Property crime	2013-14	45
-ward	10502001	Contact crime	2013-14	81
-ward	10502001	Property crime	2014-15	69
-ward	10502001	Contact crime	2014-15	87
-ward	10502002	Property crime	2005-06	23
-ward	10502002	Contact crime	2005-06	70
-ward	10502002	Property crime	2006-07	12
-ward	10502002	Contact crime	2006-07	33
-ward	10502002	Property crime	2007-08	14
-ward	10502002	Contact crime	2007-08	41
-ward	10502002	Property crime	2008-09	14
-ward	10502002	Contact crime	2008-09	41
-ward	10502002	Property crime	2009-10	16
-ward	10502002	Contact crime	2009-10	46
-ward	10502002	Property crime	2010-11	22
-ward	10502002	Contact crime	2010-11	54
-ward	10502002	Property crime	2011-12	24
-ward	10502002	Contact crime	2011-12	56
-ward	10502002	Property crime	2012-13	26
-ward	10502002	Contact crime	2012-13	44
-ward	10502002	Property crime	2013-14	18
-ward	10502002	Contact crime	2013-14	40
-ward	10502002	Property crime	2014-15	31
-ward	10502002	Contact crime	2014-15	52
-ward	10502003	Property crime	2005-06	16
-ward	10502003	Contact crime	2005-06	48
-ward	10502003	Property crime	2006-07	8
-ward	10502003	Contact crime	2006-07	23
-ward	10502003	Property crime	2007-08	10
-ward	10502003	Contact crime	2007-08	28
-ward	10502003	Property crime	2008-09	9
-ward	10502003	Contact crime	2008-09	28
-ward	10502003	Property crime	2009-10	11
-ward	10502003	Contact crime	2009-10	32
-ward	10502003	Property crime	2010-11	15
-ward	10502003	Contact crime	2010-11	37
-ward	10502003	Property crime	2011-12	16
-ward	10502003	Contact crime	2011-12	38
-ward	10502003	Property crime	2012-13	18
-ward	10502003	Contact crime	2012-13	30
-ward	10502003	Property crime	2013-14	13
-ward	10502003	Contact crime	2013-14	27
-ward	10502003	Property crime	2014-15	21
-ward	10502003	Contact crime	2014-15	36
-ward	10502004	Property crime	2005-06	38
-ward	10502004	Contact crime	2005-06	115
-ward	10502004	Property crime	2006-07	19
-ward	10502004	Contact crime	2006-07	55
-ward	10502004	Property crime	2007-08	24
-ward	10502004	Contact crime	2007-08	68
-ward	10502004	Property crime	2008-09	23
-ward	10502004	Contact crime	2008-09	69
-ward	10502004	Property crime	2009-10	26
-ward	10502004	Contact crime	2009-10	77
-ward	10502004	Property crime	2010-11	36
-ward	10502004	Contact crime	2010-11	89
-ward	10502004	Property crime	2011-12	39
-ward	10502004	Contact crime	2011-12	93
-ward	10502004	Property crime	2012-13	43
-ward	10502004	Contact crime	2012-13	73
-ward	10502004	Property crime	2013-14	31
-ward	10502004	Contact crime	2013-14	67
-ward	10502004	Property crime	2014-15	52
-ward	10502004	Contact crime	2014-15	86
-ward	10503001	Property crime	2005-06	25
-ward	10503001	Contact crime	2005-06	170
-ward	10503001	Property crime	2006-07	48
-ward	10503001	Contact crime	2006-07	133
-ward	10503001	Property crime	2007-08	58
-ward	10503001	Contact crime	2007-08	99
-ward	10503001	Property crime	2008-09	74
-ward	10503001	Contact crime	2008-09	73
-ward	10503001	Property crime	2009-10	102
-ward	10503001	Contact crime	2009-10	117
-ward	10503001	Property crime	2010-11	76
-ward	10503001	Contact crime	2010-11	98
-ward	10503001	Property crime	2011-12	92
-ward	10503001	Contact crime	2011-12	114
-ward	10503001	Property crime	2012-13	80
-ward	10503001	Contact crime	2012-13	102
-ward	10503001	Property crime	2013-14	66
-ward	10503001	Contact crime	2013-14	101
-ward	10503001	Property crime	2014-15	101
-ward	10503001	Contact crime	2014-15	176
-ward	10503002	Property crime	2005-06	89
-ward	10503002	Contact crime	2005-06	201
-ward	10503002	Property crime	2006-07	110
-ward	10503002	Contact crime	2006-07	217
-ward	10503002	Property crime	2007-08	127
-ward	10503002	Contact crime	2007-08	213
-ward	10503002	Property crime	2008-09	124
-ward	10503002	Contact crime	2008-09	201
-ward	10503002	Property crime	2009-10	131
-ward	10503002	Contact crime	2009-10	224
-ward	10503002	Property crime	2010-11	148
-ward	10503002	Contact crime	2010-11	238
-ward	10503002	Property crime	2011-12	181
-ward	10503002	Contact crime	2011-12	232
-ward	10503002	Property crime	2012-13	220
-ward	10503002	Contact crime	2012-13	229
-ward	10503002	Property crime	2013-14	252
-ward	10503002	Contact crime	2013-14	268
-ward	10503002	Property crime	2014-15	247
-ward	10503002	Contact crime	2014-15	270
-ward	10503003	Property crime	2005-06	96
-ward	10503003	Contact crime	2005-06	215
-ward	10503003	Property crime	2006-07	119
-ward	10503003	Contact crime	2006-07	233
-ward	10503003	Property crime	2007-08	136
-ward	10503003	Contact crime	2007-08	229
-ward	10503003	Property crime	2008-09	133
-ward	10503003	Contact crime	2008-09	216
-ward	10503003	Property crime	2009-10	141
-ward	10503003	Contact crime	2009-10	241
-ward	10503003	Property crime	2010-11	159
-ward	10503003	Contact crime	2010-11	256
-ward	10503003	Property crime	2011-12	194
-ward	10503003	Contact crime	2011-12	249
-ward	10503003	Property crime	2012-13	236
-ward	10503003	Contact crime	2012-13	247
-ward	10503003	Property crime	2013-14	271
-ward	10503003	Contact crime	2013-14	288
-ward	10503003	Property crime	2014-15	265
-ward	10503003	Contact crime	2014-15	290
-ward	10503004	Property crime	2005-06	72
-ward	10503004	Contact crime	2005-06	161
-ward	10503004	Property crime	2006-07	88
-ward	10503004	Contact crime	2006-07	174
-ward	10503004	Property crime	2007-08	102
-ward	10503004	Contact crime	2007-08	171
-ward	10503004	Property crime	2008-09	100
-ward	10503004	Contact crime	2008-09	161
-ward	10503004	Property crime	2009-10	105
-ward	10503004	Contact crime	2009-10	180
-ward	10503004	Property crime	2010-11	119
-ward	10503004	Contact crime	2010-11	191
-ward	10503004	Property crime	2011-12	145
-ward	10503004	Contact crime	2011-12	186
-ward	10503004	Property crime	2012-13	176
-ward	10503004	Contact crime	2012-13	184
-ward	10503004	Property crime	2013-14	202
-ward	10503004	Contact crime	2013-14	215
-ward	10503004	Property crime	2014-15	198
-ward	10503004	Contact crime	2014-15	216
-ward	10503005	Property crime	2005-06	75
-ward	10503005	Contact crime	2005-06	169
-ward	10503005	Property crime	2006-07	93
-ward	10503005	Contact crime	2006-07	183
-ward	10503005	Property crime	2007-08	107
-ward	10503005	Contact crime	2007-08	180
-ward	10503005	Property crime	2008-09	105
-ward	10503005	Contact crime	2008-09	170
-ward	10503005	Property crime	2009-10	111
-ward	10503005	Contact crime	2009-10	189
-ward	10503005	Property crime	2010-11	125
-ward	10503005	Contact crime	2010-11	201
-ward	10503005	Property crime	2011-12	153
-ward	10503005	Contact crime	2011-12	196
-ward	10503005	Property crime	2012-13	186
-ward	10503005	Contact crime	2012-13	194
-ward	10503005	Property crime	2013-14	213
-ward	10503005	Contact crime	2013-14	226
-ward	10503005	Property crime	2014-15	208
-ward	10503005	Contact crime	2014-15	228
-ward	10503006	Property crime	2005-06	66
-ward	10503006	Contact crime	2005-06	148
-ward	10503006	Property crime	2006-07	82
-ward	10503006	Contact crime	2006-07	160
-ward	10503006	Property crime	2007-08	94
-ward	10503006	Contact crime	2007-08	157
-ward	10503006	Property crime	2008-09	92
-ward	10503006	Contact crime	2008-09	149
-ward	10503006	Property crime	2009-10	97
-ward	10503006	Contact crime	2009-10	166
-ward	10503006	Property crime	2010-11	109
-ward	10503006	Contact crime	2010-11	176
-ward	10503006	Property crime	2011-12	134
-ward	10503006	Contact crime	2011-12	171
-ward	10503006	Property crime	2012-13	163
-ward	10503006	Contact crime	2012-13	170
-ward	10503006	Property crime	2013-14	187
-ward	10503006	Contact crime	2013-14	198
-ward	10503006	Property crime	2014-15	182
-ward	10503006	Contact crime	2014-15	200
-ward	10503007	Property crime	2005-06	123
-ward	10503007	Contact crime	2005-06	273
-ward	10503007	Property crime	2006-07	146
-ward	10503007	Contact crime	2006-07	311
-ward	10503007	Property crime	2007-08	170
-ward	10503007	Contact crime	2007-08	309
-ward	10503007	Property crime	2008-09	177
-ward	10503007	Contact crime	2008-09	296
-ward	10503007	Property crime	2009-10	181
-ward	10503007	Contact crime	2009-10	315
-ward	10503007	Property crime	2010-11	194
-ward	10503007	Contact crime	2010-11	344
-ward	10503007	Property crime	2011-12	247
-ward	10503007	Contact crime	2011-12	330
-ward	10503007	Property crime	2012-13	295
-ward	10503007	Contact crime	2012-13	332
-ward	10503007	Property crime	2013-14	342
-ward	10503007	Contact crime	2013-14	383
-ward	10503007	Property crime	2014-15	349
-ward	10503007	Contact crime	2014-15	387
-ward	19100001	Property crime	2005-06	866
-ward	19100001	Contact crime	2005-06	478
-ward	19100001	Property crime	2006-07	901
-ward	19100001	Contact crime	2006-07	433
-ward	19100001	Property crime	2007-08	858
-ward	19100001	Contact crime	2007-08	437
-ward	19100001	Property crime	2008-09	795
-ward	19100001	Contact crime	2008-09	410
-ward	19100001	Property crime	2009-10	835
-ward	19100001	Contact crime	2009-10	445
-ward	19100001	Property crime	2010-11	968
-ward	19100001	Contact crime	2010-11	459
-ward	19100001	Property crime	2011-12	1093
-ward	19100001	Contact crime	2011-12	481
-ward	19100001	Property crime	2012-13	1055
-ward	19100001	Contact crime	2012-13	493
-ward	19100001	Property crime	2013-14	1132
-ward	19100001	Contact crime	2013-14	537
-ward	19100001	Property crime	2014-15	1098
-ward	19100001	Contact crime	2014-15	651
-ward	19100002	Property crime	2005-06	998
-ward	19100002	Contact crime	2005-06	447
-ward	19100002	Property crime	2006-07	1047
-ward	19100002	Contact crime	2006-07	412
-ward	19100002	Property crime	2007-08	987
-ward	19100002	Contact crime	2007-08	434
-ward	19100002	Property crime	2008-09	926
-ward	19100002	Contact crime	2008-09	423
-ward	19100002	Property crime	2009-10	927
-ward	19100002	Contact crime	2009-10	456
-ward	19100002	Property crime	2010-11	1131
-ward	19100002	Contact crime	2010-11	535
-ward	19100002	Property crime	2011-12	1297
-ward	19100002	Contact crime	2011-12	528
-ward	19100002	Property crime	2012-13	1278
-ward	19100002	Contact crime	2012-13	569
-ward	19100002	Property crime	2013-14	1366
-ward	19100002	Contact crime	2013-14	644
-ward	19100002	Property crime	2014-15	1355
-ward	19100002	Contact crime	2014-15	734
-ward	19100003	Property crime	2005-06	1307
-ward	19100003	Contact crime	2005-06	502
-ward	19100003	Property crime	2006-07	1420
-ward	19100003	Contact crime	2006-07	513
-ward	19100003	Property crime	2007-08	1268
-ward	19100003	Contact crime	2007-08	578
-ward	19100003	Property crime	2008-09	1293
-ward	19100003	Contact crime	2008-09	604
-ward	19100003	Property crime	2009-10	1226
-ward	19100003	Contact crime	2009-10	581
-ward	19100003	Property crime	2010-11	1515
-ward	19100003	Contact crime	2010-11	729
-ward	19100003	Property crime	2011-12	1712
-ward	19100003	Contact crime	2011-12	711
-ward	19100003	Property crime	2012-13	1685
-ward	19100003	Contact crime	2012-13	696
-ward	19100003	Property crime	2013-14	1734
-ward	19100003	Contact crime	2013-14	779
-ward	19100003	Property crime	2014-15	1753
-ward	19100003	Contact crime	2014-15	786
-ward	19100004	Property crime	2005-06	770
-ward	19100004	Contact crime	2005-06	552
-ward	19100004	Property crime	2006-07	844
-ward	19100004	Contact crime	2006-07	564
-ward	19100004	Property crime	2007-08	922
-ward	19100004	Contact crime	2007-08	535
-ward	19100004	Property crime	2008-09	834
-ward	19100004	Contact crime	2008-09	544
-ward	19100004	Property crime	2009-10	983
-ward	19100004	Contact crime	2009-10	664
-ward	19100004	Property crime	2010-11	866
-ward	19100004	Contact crime	2010-11	582
-ward	19100004	Property crime	2011-12	837
-ward	19100004	Contact crime	2011-12	594
-ward	19100004	Property crime	2012-13	950
-ward	19100004	Contact crime	2012-13	630
-ward	19100004	Property crime	2013-14	1028
-ward	19100004	Contact crime	2013-14	665
-ward	19100004	Property crime	2014-15	900
-ward	19100004	Contact crime	2014-15	783
-ward	19100005	Property crime	2005-06	516
-ward	19100005	Contact crime	2005-06	253
-ward	19100005	Property crime	2006-07	535
-ward	19100005	Contact crime	2006-07	242
-ward	19100005	Property crime	2007-08	629
-ward	19100005	Contact crime	2007-08	249
-ward	19100005	Property crime	2008-09	511
-ward	19100005	Contact crime	2008-09	181
-ward	19100005	Property crime	2009-10	602
-ward	19100005	Contact crime	2009-10	249
-ward	19100005	Property crime	2010-11	731
-ward	19100005	Contact crime	2010-11	227
-ward	19100005	Property crime	2011-12	717
-ward	19100005	Contact crime	2011-12	227
-ward	19100005	Property crime	2012-13	663
-ward	19100005	Contact crime	2012-13	201
-ward	19100005	Property crime	2013-14	640
-ward	19100005	Contact crime	2013-14	210
-ward	19100005	Property crime	2014-15	533
-ward	19100005	Contact crime	2014-15	227
-ward	19100006	Property crime	2005-06	290
-ward	19100006	Contact crime	2005-06	321
-ward	19100006	Property crime	2006-07	306
-ward	19100006	Contact crime	2006-07	307
-ward	19100006	Property crime	2007-08	304
-ward	19100006	Contact crime	2007-08	250
-ward	19100006	Property crime	2008-09	282
-ward	19100006	Contact crime	2008-09	245
-ward	19100006	Property crime	2009-10	302
-ward	19100006	Contact crime	2009-10	273
-ward	19100006	Property crime	2010-11	319
-ward	19100006	Contact crime	2010-11	315
-ward	19100006	Property crime	2011-12	395
-ward	19100006	Contact crime	2011-12	318
-ward	19100006	Property crime	2012-13	374
-ward	19100006	Contact crime	2012-13	342
-ward	19100006	Property crime	2013-14	388
-ward	19100006	Contact crime	2013-14	382
-ward	19100006	Property crime	2014-15	355
-ward	19100006	Contact crime	2014-15	384
-ward	19100007	Property crime	2005-06	310
-ward	19100007	Contact crime	2005-06	428
-ward	19100007	Property crime	2006-07	337
-ward	19100007	Contact crime	2006-07	406
-ward	19100007	Property crime	2007-08	331
-ward	19100007	Contact crime	2007-08	320
-ward	19100007	Property crime	2008-09	280
-ward	19100007	Contact crime	2008-09	311
-ward	19100007	Property crime	2009-10	319
-ward	19100007	Contact crime	2009-10	354
-ward	19100007	Property crime	2010-11	349
-ward	19100007	Contact crime	2010-11	417
-ward	19100007	Property crime	2011-12	444
-ward	19100007	Contact crime	2011-12	424
-ward	19100007	Property crime	2012-13	400
-ward	19100007	Contact crime	2012-13	462
-ward	19100007	Property crime	2013-14	436
-ward	19100007	Contact crime	2013-14	520
-ward	19100007	Property crime	2014-15	410
-ward	19100007	Contact crime	2014-15	518
-ward	19100008	Property crime	2005-06	918
-ward	19100008	Contact crime	2005-06	470
-ward	19100008	Property crime	2006-07	912
-ward	19100008	Contact crime	2006-07	393
-ward	19100008	Property crime	2007-08	959
-ward	19100008	Contact crime	2007-08	430
-ward	19100008	Property crime	2008-09	1082
-ward	19100008	Contact crime	2008-09	448
-ward	19100008	Property crime	2009-10	998
-ward	19100008	Contact crime	2009-10	429
-ward	19100008	Property crime	2010-11	961
-ward	19100008	Contact crime	2010-11	414
-ward	19100008	Property crime	2011-12	1084
-ward	19100008	Contact crime	2011-12	401
-ward	19100008	Property crime	2012-13	1189
-ward	19100008	Contact crime	2012-13	387
-ward	19100008	Property crime	2013-14	1102
-ward	19100008	Contact crime	2013-14	388
-ward	19100008	Property crime	2014-15	961
-ward	19100008	Contact crime	2014-15	444
-ward	19100009	Property crime	2005-06	342
-ward	19100009	Contact crime	2005-06	399
-ward	19100009	Property crime	2006-07	461
-ward	19100009	Contact crime	2006-07	370
-ward	19100009	Property crime	2007-08	437
-ward	19100009	Contact crime	2007-08	373
-ward	19100009	Property crime	2008-09	492
-ward	19100009	Contact crime	2008-09	431
-ward	19100009	Property crime	2009-10	542
-ward	19100009	Contact crime	2009-10	513
-ward	19100009	Property crime	2010-11	456
-ward	19100009	Contact crime	2010-11	486
-ward	19100009	Property crime	2011-12	430
-ward	19100009	Contact crime	2011-12	451
-ward	19100009	Property crime	2012-13	418
-ward	19100009	Contact crime	2012-13	521
-ward	19100009	Property crime	2013-14	459
-ward	19100009	Contact crime	2013-14	542
-ward	19100009	Property crime	2014-15	487
-ward	19100009	Contact crime	2014-15	554
-ward	19100010	Property crime	2005-06	915
-ward	19100010	Contact crime	2005-06	591
-ward	19100010	Property crime	2006-07	971
-ward	19100010	Contact crime	2006-07	517
-ward	19100010	Property crime	2007-08	934
-ward	19100010	Contact crime	2007-08	520
-ward	19100010	Property crime	2008-09	853
-ward	19100010	Contact crime	2008-09	483
-ward	19100010	Property crime	2009-10	867
-ward	19100010	Contact crime	2009-10	540
-ward	19100010	Property crime	2010-11	1005
-ward	19100010	Contact crime	2010-11	589
-ward	19100010	Property crime	2011-12	1110
-ward	19100010	Contact crime	2011-12	574
-ward	19100010	Property crime	2012-13	1100
-ward	19100010	Contact crime	2012-13	633
-ward	19100010	Property crime	2013-14	1173
-ward	19100010	Contact crime	2013-14	701
-ward	19100010	Property crime	2014-15	1173
-ward	19100010	Contact crime	2014-15	818
-ward	19100011	Property crime	2005-06	797
-ward	19100011	Contact crime	2005-06	977
-ward	19100011	Property crime	2006-07	894
-ward	19100011	Contact crime	2006-07	612
-ward	19100011	Property crime	2007-08	1008
-ward	19100011	Contact crime	2007-08	663
-ward	19100011	Property crime	2008-09	967
-ward	19100011	Contact crime	2008-09	715
-ward	19100011	Property crime	2009-10	929
-ward	19100011	Contact crime	2009-10	668
-ward	19100011	Property crime	2010-11	898
-ward	19100011	Contact crime	2010-11	664
-ward	19100011	Property crime	2011-12	968
-ward	19100011	Contact crime	2011-12	664
-ward	19100011	Property crime	2012-13	1089
-ward	19100011	Contact crime	2012-13	699
-ward	19100011	Property crime	2013-14	1154
-ward	19100011	Contact crime	2013-14	722
-ward	19100011	Property crime	2014-15	1159
-ward	19100011	Contact crime	2014-15	851
-ward	19100012	Property crime	2005-06	5
-ward	19100012	Contact crime	2005-06	6
-ward	19100012	Property crime	2006-07	6
-ward	19100012	Contact crime	2006-07	4
-ward	19100012	Property crime	2007-08	125
-ward	19100012	Contact crime	2007-08	145
-ward	19100012	Property crime	2008-09	379
-ward	19100012	Contact crime	2008-09	520
-ward	19100012	Property crime	2009-10	511
-ward	19100012	Contact crime	2009-10	581
-ward	19100012	Property crime	2010-11	474
-ward	19100012	Contact crime	2010-11	545
-ward	19100012	Property crime	2011-12	430
-ward	19100012	Contact crime	2011-12	474
-ward	19100012	Property crime	2012-13	415
-ward	19100012	Contact crime	2012-13	494
-ward	19100012	Property crime	2013-14	441
-ward	19100012	Contact crime	2013-14	516
-ward	19100012	Property crime	2014-15	463
-ward	19100012	Contact crime	2014-15	572
-ward	19100013	Property crime	2005-06	464
-ward	19100013	Contact crime	2005-06	767
-ward	19100013	Property crime	2006-07	465
-ward	19100013	Contact crime	2006-07	666
-ward	19100013	Property crime	2007-08	513
-ward	19100013	Contact crime	2007-08	776
-ward	19100013	Property crime	2008-09	370
-ward	19100013	Contact crime	2008-09	642
-ward	19100013	Property crime	2009-10	327
-ward	19100013	Contact crime	2009-10	633
-ward	19100013	Property crime	2010-11	315
-ward	19100013	Contact crime	2010-11	561
-ward	19100013	Property crime	2011-12	338
-ward	19100013	Contact crime	2011-12	580
-ward	19100013	Property crime	2012-13	353
-ward	19100013	Contact crime	2012-13	621
-ward	19100013	Property crime	2013-14	362
-ward	19100013	Contact crime	2013-14	627
-ward	19100013	Property crime	2014-15	360
-ward	19100013	Contact crime	2014-15	726
-ward	19100014	Property crime	2005-06	569
-ward	19100014	Contact crime	2005-06	927
-ward	19100014	Property crime	2006-07	667
-ward	19100014	Contact crime	2006-07	824
-ward	19100014	Property crime	2007-08	793
-ward	19100014	Contact crime	2007-08	829
-ward	19100014	Property crime	2008-09	759
-ward	19100014	Contact crime	2008-09	812
-ward	19100014	Property crime	2009-10	679
-ward	19100014	Contact crime	2009-10	767
-ward	19100014	Property crime	2010-11	698
-ward	19100014	Contact crime	2010-11	744
-ward	19100014	Property crime	2011-12	726
-ward	19100014	Contact crime	2011-12	764
-ward	19100014	Property crime	2012-13	856
-ward	19100014	Contact crime	2012-13	829
-ward	19100014	Property crime	2013-14	916
-ward	19100014	Contact crime	2013-14	921
-ward	19100014	Property crime	2014-15	848
-ward	19100014	Contact crime	2014-15	982
-ward	19100015	Property crime	2005-06	658
-ward	19100015	Contact crime	2005-06	292
-ward	19100015	Property crime	2006-07	748
-ward	19100015	Contact crime	2006-07	263
-ward	19100015	Property crime	2007-08	746
-ward	19100015	Contact crime	2007-08	275
-ward	19100015	Property crime	2008-09	656
-ward	19100015	Contact crime	2008-09	231
-ward	19100015	Property crime	2009-10	805
-ward	19100015	Contact crime	2009-10	275
-ward	19100015	Property crime	2010-11	779
-ward	19100015	Contact crime	2010-11	241
-ward	19100015	Property crime	2011-12	676
-ward	19100015	Contact crime	2011-12	265
-ward	19100015	Property crime	2012-13	760
-ward	19100015	Contact crime	2012-13	284
-ward	19100015	Property crime	2013-14	829
-ward	19100015	Contact crime	2013-14	339
-ward	19100015	Property crime	2014-15	652
-ward	19100015	Contact crime	2014-15	363
-ward	19100016	Property crime	2005-06	441
-ward	19100016	Contact crime	2005-06	912
-ward	19100016	Property crime	2006-07	518
-ward	19100016	Contact crime	2006-07	914
-ward	19100016	Property crime	2007-08	654
-ward	19100016	Contact crime	2007-08	887
-ward	19100016	Property crime	2008-09	622
-ward	19100016	Contact crime	2008-09	826
-ward	19100016	Property crime	2009-10	515
-ward	19100016	Contact crime	2009-10	788
-ward	19100016	Property crime	2010-11	543
-ward	19100016	Contact crime	2010-11	763
-ward	19100016	Property crime	2011-12	567
-ward	19100016	Contact crime	2011-12	790
-ward	19100016	Property crime	2012-13	700
-ward	19100016	Contact crime	2012-13	864
-ward	19100016	Property crime	2013-14	758
-ward	19100016	Contact crime	2013-14	991
-ward	19100016	Property crime	2014-15	650
-ward	19100016	Contact crime	2014-15	1004
-ward	19100017	Property crime	2005-06	466
-ward	19100017	Contact crime	2005-06	926
-ward	19100017	Property crime	2006-07	520
-ward	19100017	Contact crime	2006-07	887
-ward	19100017	Property crime	2007-08	663
-ward	19100017	Contact crime	2007-08	852
-ward	19100017	Property crime	2008-09	627
-ward	19100017	Contact crime	2008-09	782
-ward	19100017	Property crime	2009-10	518
-ward	19100017	Contact crime	2009-10	754
-ward	19100017	Property crime	2010-11	543
-ward	19100017	Contact crime	2010-11	741
-ward	19100017	Property crime	2011-12	582
-ward	19100017	Contact crime	2011-12	765
-ward	19100017	Property crime	2012-13	719
-ward	19100017	Contact crime	2012-13	834
-ward	19100017	Property crime	2013-14	777
-ward	19100017	Contact crime	2013-14	957
-ward	19100017	Property crime	2014-15	660
-ward	19100017	Contact crime	2014-15	957
-ward	19100018	Property crime	2005-06	87
-ward	19100018	Contact crime	2005-06	516
-ward	19100018	Property crime	2006-07	96
-ward	19100018	Contact crime	2006-07	478
-ward	19100018	Property crime	2007-08	88
-ward	19100018	Contact crime	2007-08	430
-ward	19100018	Property crime	2008-09	90
-ward	19100018	Contact crime	2008-09	362
-ward	19100018	Property crime	2009-10	96
-ward	19100018	Contact crime	2009-10	374
-ward	19100018	Property crime	2010-11	97
-ward	19100018	Contact crime	2010-11	345
-ward	19100018	Property crime	2011-12	94
-ward	19100018	Contact crime	2011-12	405
-ward	19100018	Property crime	2012-13	112
-ward	19100018	Contact crime	2012-13	475
-ward	19100018	Property crime	2013-14	135
-ward	19100018	Contact crime	2013-14	492
-ward	19100018	Property crime	2014-15	134
-ward	19100018	Contact crime	2014-15	530
-ward	19100019	Property crime	2005-06	416
-ward	19100019	Contact crime	2005-06	890
-ward	19100019	Property crime	2006-07	602
-ward	19100019	Contact crime	2006-07	1001
-ward	19100019	Property crime	2007-08	704
-ward	19100019	Contact crime	2007-08	1032
-ward	19100019	Property crime	2008-09	687
-ward	19100019	Contact crime	2008-09	1034
-ward	19100019	Property crime	2009-10	596
-ward	19100019	Contact crime	2009-10	946
-ward	19100019	Property crime	2010-11	620
-ward	19100019	Contact crime	2010-11	866
-ward	19100019	Property crime	2011-12	588
-ward	19100019	Contact crime	2011-12	903
-ward	19100019	Property crime	2012-13	700
-ward	19100019	Contact crime	2012-13	994
-ward	19100019	Property crime	2013-14	759
-ward	19100019	Contact crime	2013-14	1112
-ward	19100019	Property crime	2014-15	720
-ward	19100019	Contact crime	2014-15	1217
-ward	19100020	Property crime	2005-06	435
-ward	19100020	Contact crime	2005-06	719
-ward	19100020	Property crime	2006-07	435
-ward	19100020	Contact crime	2006-07	625
-ward	19100020	Property crime	2007-08	479
-ward	19100020	Contact crime	2007-08	726
-ward	19100020	Property crime	2008-09	342
-ward	19100020	Contact crime	2008-09	595
-ward	19100020	Property crime	2009-10	300
-ward	19100020	Contact crime	2009-10	585
-ward	19100020	Property crime	2010-11	288
-ward	19100020	Contact crime	2010-11	519
-ward	19100020	Property crime	2011-12	311
-ward	19100020	Contact crime	2011-12	538
-ward	19100020	Property crime	2012-13	326
-ward	19100020	Contact crime	2012-13	576
-ward	19100020	Property crime	2013-14	333
-ward	19100020	Contact crime	2013-14	581
-ward	19100020	Property crime	2014-15	332
-ward	19100020	Contact crime	2014-15	673
-ward	19100021	Property crime	2005-06	477
-ward	19100021	Contact crime	2005-06	171
-ward	19100021	Property crime	2006-07	533
-ward	19100021	Contact crime	2006-07	158
-ward	19100021	Property crime	2007-08	490
-ward	19100021	Contact crime	2007-08	150
-ward	19100021	Property crime	2008-09	533
-ward	19100021	Contact crime	2008-09	162
-ward	19100021	Property crime	2009-10	437
-ward	19100021	Contact crime	2009-10	169
-ward	19100021	Property crime	2010-11	525
-ward	19100021	Contact crime	2010-11	165
-ward	19100021	Property crime	2011-12	593
-ward	19100021	Contact crime	2011-12	167
-ward	19100021	Property crime	2012-13	694
-ward	19100021	Contact crime	2012-13	188
-ward	19100021	Property crime	2013-14	625
-ward	19100021	Contact crime	2013-14	193
-ward	19100021	Property crime	2014-15	491
-ward	19100021	Contact crime	2014-15	197
-ward	19100022	Property crime	2005-06	163
-ward	19100022	Contact crime	2005-06	254
-ward	19100022	Property crime	2006-07	187
-ward	19100022	Contact crime	2006-07	210
-ward	19100022	Property crime	2007-08	258
-ward	19100022	Contact crime	2007-08	281
-ward	19100022	Property crime	2008-09	378
-ward	19100022	Contact crime	2008-09	471
-ward	19100022	Property crime	2009-10	463
-ward	19100022	Contact crime	2009-10	534
-ward	19100022	Property crime	2010-11	426
-ward	19100022	Contact crime	2010-11	505
-ward	19100022	Property crime	2011-12	376
-ward	19100022	Contact crime	2011-12	454
-ward	19100022	Property crime	2012-13	372
-ward	19100022	Contact crime	2012-13	487
-ward	19100022	Property crime	2013-14	387
-ward	19100022	Contact crime	2013-14	511
-ward	19100022	Property crime	2014-15	411
-ward	19100022	Contact crime	2014-15	583
-ward	19100023	Property crime	2005-06	680
-ward	19100023	Contact crime	2005-06	269
-ward	19100023	Property crime	2006-07	576
-ward	19100023	Contact crime	2006-07	239
-ward	19100023	Property crime	2007-08	723
-ward	19100023	Contact crime	2007-08	264
-ward	19100023	Property crime	2008-09	776
-ward	19100023	Contact crime	2008-09	272
-ward	19100023	Property crime	2009-10	871
-ward	19100023	Contact crime	2009-10	307
-ward	19100023	Property crime	2010-11	818
-ward	19100023	Contact crime	2010-11	307
-ward	19100023	Property crime	2011-12	709
-ward	19100023	Contact crime	2011-12	283
-ward	19100023	Property crime	2012-13	741
-ward	19100023	Contact crime	2012-13	287
-ward	19100023	Property crime	2013-14	786
-ward	19100023	Contact crime	2013-14	317
-ward	19100023	Property crime	2014-15	653
-ward	19100023	Contact crime	2014-15	359
-ward	19100024	Property crime	2005-06	386
-ward	19100024	Contact crime	2005-06	492
-ward	19100024	Property crime	2006-07	412
-ward	19100024	Contact crime	2006-07	494
-ward	19100024	Property crime	2007-08	400
-ward	19100024	Contact crime	2007-08	384
-ward	19100024	Property crime	2008-09	327
-ward	19100024	Contact crime	2008-09	385
-ward	19100024	Property crime	2009-10	374
-ward	19100024	Contact crime	2009-10	521
-ward	19100024	Property crime	2010-11	295
-ward	19100024	Contact crime	2010-11	470
-ward	19100024	Property crime	2011-12	319
-ward	19100024	Contact crime	2011-12	498
-ward	19100024	Property crime	2012-13	362
-ward	19100024	Contact crime	2012-13	565
-ward	19100024	Property crime	2013-14	376
-ward	19100024	Contact crime	2013-14	594
-ward	19100024	Property crime	2014-15	428
-ward	19100024	Contact crime	2014-15	634
-ward	19100025	Property crime	2005-06	592
-ward	19100025	Contact crime	2005-06	917
-ward	19100025	Property crime	2006-07	677
-ward	19100025	Contact crime	2006-07	756
-ward	19100025	Property crime	2007-08	684
-ward	19100025	Contact crime	2007-08	718
-ward	19100025	Property crime	2008-09	584
-ward	19100025	Contact crime	2008-09	618
-ward	19100025	Property crime	2009-10	614
-ward	19100025	Contact crime	2009-10	716
-ward	19100025	Property crime	2010-11	559
-ward	19100025	Contact crime	2010-11	692
-ward	19100025	Property crime	2011-12	474
-ward	19100025	Contact crime	2011-12	655
-ward	19100025	Property crime	2012-13	492
-ward	19100025	Contact crime	2012-13	734
-ward	19100025	Property crime	2013-14	494
-ward	19100025	Contact crime	2013-14	774
-ward	19100025	Property crime	2014-15	534
-ward	19100025	Contact crime	2014-15	919
-ward	19100026	Property crime	2005-06	750
-ward	19100026	Contact crime	2005-06	577
-ward	19100026	Property crime	2006-07	803
-ward	19100026	Contact crime	2006-07	511
-ward	19100026	Property crime	2007-08	810
-ward	19100026	Contact crime	2007-08	474
-ward	19100026	Property crime	2008-09	706
-ward	19100026	Contact crime	2008-09	435
-ward	19100026	Property crime	2009-10	718
-ward	19100026	Contact crime	2009-10	516
-ward	19100026	Property crime	2010-11	827
-ward	19100026	Contact crime	2010-11	585
-ward	19100026	Property crime	2011-12	929
-ward	19100026	Contact crime	2011-12	597
-ward	19100026	Property crime	2012-13	926
-ward	19100026	Contact crime	2012-13	666
-ward	19100026	Property crime	2013-14	1041
-ward	19100026	Contact crime	2013-14	733
-ward	19100026	Property crime	2014-15	1009
-ward	19100026	Contact crime	2014-15	890
-ward	19100027	Property crime	2005-06	827
-ward	19100027	Contact crime	2005-06	523
-ward	19100027	Property crime	2006-07	891
-ward	19100027	Contact crime	2006-07	503
-ward	19100027	Property crime	2007-08	783
-ward	19100027	Contact crime	2007-08	518
-ward	19100027	Property crime	2008-09	806
-ward	19100027	Contact crime	2008-09	502
-ward	19100027	Property crime	2009-10	837
-ward	19100027	Contact crime	2009-10	485
-ward	19100027	Property crime	2010-11	913
-ward	19100027	Contact crime	2010-11	461
-ward	19100027	Property crime	2011-12	999
-ward	19100027	Contact crime	2011-12	518
-ward	19100027	Property crime	2012-13	933
-ward	19100027	Contact crime	2012-13	442
-ward	19100027	Property crime	2013-14	962
-ward	19100027	Contact crime	2013-14	442
-ward	19100027	Property crime	2014-15	933
-ward	19100027	Contact crime	2014-15	517
-ward	19100028	Property crime	2005-06	390
-ward	19100028	Contact crime	2005-06	647
-ward	19100028	Property crime	2006-07	491
-ward	19100028	Contact crime	2006-07	593
-ward	19100028	Property crime	2007-08	519
-ward	19100028	Contact crime	2007-08	513
-ward	19100028	Property crime	2008-09	453
-ward	19100028	Contact crime	2008-09	473
-ward	19100028	Property crime	2009-10	421
-ward	19100028	Contact crime	2009-10	557
-ward	19100028	Property crime	2010-11	420
-ward	19100028	Contact crime	2010-11	649
-ward	19100028	Property crime	2011-12	416
-ward	19100028	Contact crime	2011-12	678
-ward	19100028	Property crime	2012-13	434
-ward	19100028	Contact crime	2012-13	720
-ward	19100028	Property crime	2013-14	517
-ward	19100028	Contact crime	2013-14	760
-ward	19100028	Property crime	2014-15	490
-ward	19100028	Contact crime	2014-15	898
-ward	19100029	Property crime	2005-06	456
-ward	19100029	Contact crime	2005-06	694
-ward	19100029	Property crime	2006-07	613
-ward	19100029	Contact crime	2006-07	653
-ward	19100029	Property crime	2007-08	616
-ward	19100029	Contact crime	2007-08	686
-ward	19100029	Property crime	2008-09	581
-ward	19100029	Contact crime	2008-09	716
-ward	19100029	Property crime	2009-10	569
-ward	19100029	Contact crime	2009-10	825
-ward	19100029	Property crime	2010-11	477
-ward	19100029	Contact crime	2010-11	651
-ward	19100029	Property crime	2011-12	476
-ward	19100029	Contact crime	2011-12	684
-ward	19100029	Property crime	2012-13	531
-ward	19100029	Contact crime	2012-13	653
-ward	19100029	Property crime	2013-14	501
-ward	19100029	Contact crime	2013-14	737
-ward	19100029	Property crime	2014-15	550
-ward	19100029	Contact crime	2014-15	874
-ward	19100030	Property crime	2005-06	485
-ward	19100030	Contact crime	2005-06	708
-ward	19100030	Property crime	2006-07	566
-ward	19100030	Contact crime	2006-07	678
-ward	19100030	Property crime	2007-08	575
-ward	19100030	Contact crime	2007-08	555
-ward	19100030	Property crime	2008-09	489
-ward	19100030	Contact crime	2008-09	531
-ward	19100030	Property crime	2009-10	497
-ward	19100030	Contact crime	2009-10	670
-ward	19100030	Property crime	2010-11	448
-ward	19100030	Contact crime	2010-11	699
-ward	19100030	Property crime	2011-12	463
-ward	19100030	Contact crime	2011-12	737
-ward	19100030	Property crime	2012-13	500
-ward	19100030	Contact crime	2012-13	804
-ward	19100030	Property crime	2013-14	564
-ward	19100030	Contact crime	2013-14	848
-ward	19100030	Property crime	2014-15	578
-ward	19100030	Contact crime	2014-15	959
-ward	19100031	Property crime	2005-06	443
-ward	19100031	Contact crime	2005-06	534
-ward	19100031	Property crime	2006-07	461
-ward	19100031	Contact crime	2006-07	556
-ward	19100031	Property crime	2007-08	437
-ward	19100031	Contact crime	2007-08	411
-ward	19100031	Property crime	2008-09	349
-ward	19100031	Contact crime	2008-09	419
-ward	19100031	Property crime	2009-10	422
-ward	19100031	Contact crime	2009-10	593
-ward	19100031	Property crime	2010-11	312
-ward	19100031	Contact crime	2010-11	505
-ward	19100031	Property crime	2011-12	350
-ward	19100031	Contact crime	2011-12	541
-ward	19100031	Property crime	2012-13	406
-ward	19100031	Contact crime	2012-13	627
-ward	19100031	Property crime	2013-14	408
-ward	19100031	Contact crime	2013-14	658
-ward	19100031	Property crime	2014-15	485
-ward	19100031	Contact crime	2014-15	680
-ward	19100032	Property crime	2005-06	395
-ward	19100032	Contact crime	2005-06	595
-ward	19100032	Property crime	2006-07	523
-ward	19100032	Contact crime	2006-07	559
-ward	19100032	Property crime	2007-08	530
-ward	19100032	Contact crime	2007-08	588
-ward	19100032	Property crime	2008-09	508
-ward	19100032	Contact crime	2008-09	613
-ward	19100032	Property crime	2009-10	497
-ward	19100032	Contact crime	2009-10	712
-ward	19100032	Property crime	2010-11	415
-ward	19100032	Contact crime	2010-11	566
-ward	19100032	Property crime	2011-12	417
-ward	19100032	Contact crime	2011-12	593
-ward	19100032	Property crime	2012-13	464
-ward	19100032	Contact crime	2012-13	570
-ward	19100032	Property crime	2013-14	443
-ward	19100032	Contact crime	2013-14	633
-ward	19100032	Property crime	2014-15	483
-ward	19100032	Contact crime	2014-15	749
-ward	19100033	Property crime	2005-06	183
-ward	19100033	Contact crime	2005-06	898
-ward	19100033	Property crime	2006-07	212
-ward	19100033	Contact crime	2006-07	913
-ward	19100033	Property crime	2007-08	193
-ward	19100033	Contact crime	2007-08	807
-ward	19100033	Property crime	2008-09	183
-ward	19100033	Contact crime	2008-09	687
-ward	19100033	Property crime	2009-10	207
-ward	19100033	Contact crime	2009-10	718
-ward	19100033	Property crime	2010-11	201
-ward	19100033	Contact crime	2010-11	720
-ward	19100033	Property crime	2011-12	227
-ward	19100033	Contact crime	2011-12	831
-ward	19100033	Property crime	2012-13	270
-ward	19100033	Contact crime	2012-13	827
-ward	19100033	Property crime	2013-14	265
-ward	19100033	Contact crime	2013-14	817
-ward	19100033	Property crime	2014-15	281
-ward	19100033	Contact crime	2014-15	885
-ward	19100034	Property crime	2005-06	140
-ward	19100034	Contact crime	2005-06	693
-ward	19100034	Property crime	2006-07	163
-ward	19100034	Contact crime	2006-07	706
-ward	19100034	Property crime	2007-08	148
-ward	19100034	Contact crime	2007-08	623
-ward	19100034	Property crime	2008-09	140
-ward	19100034	Contact crime	2008-09	531
-ward	19100034	Property crime	2009-10	159
-ward	19100034	Contact crime	2009-10	555
-ward	19100034	Property crime	2010-11	154
-ward	19100034	Contact crime	2010-11	556
-ward	19100034	Property crime	2011-12	174
-ward	19100034	Contact crime	2011-12	642
-ward	19100034	Property crime	2012-13	208
-ward	19100034	Contact crime	2012-13	639
-ward	19100034	Property crime	2013-14	204
-ward	19100034	Contact crime	2013-14	631
-ward	19100034	Property crime	2014-15	216
-ward	19100034	Contact crime	2014-15	683
-ward	19100035	Property crime	2005-06	186
-ward	19100035	Contact crime	2005-06	756
-ward	19100035	Property crime	2006-07	249
-ward	19100035	Contact crime	2006-07	844
-ward	19100035	Property crime	2007-08	206
-ward	19100035	Contact crime	2007-08	616
-ward	19100035	Property crime	2008-09	203
-ward	19100035	Contact crime	2008-09	536
-ward	19100035	Property crime	2009-10	210
-ward	19100035	Contact crime	2009-10	571
-ward	19100035	Property crime	2010-11	262
-ward	19100035	Contact crime	2010-11	560
-ward	19100035	Property crime	2011-12	278
-ward	19100035	Contact crime	2011-12	692
-ward	19100035	Property crime	2012-13	250
-ward	19100035	Contact crime	2012-13	635
-ward	19100035	Property crime	2013-14	279
-ward	19100035	Contact crime	2013-14	659
-ward	19100035	Property crime	2014-15	336
-ward	19100035	Contact crime	2014-15	791
-ward	19100036	Property crime	2005-06	138
-ward	19100036	Contact crime	2005-06	683
-ward	19100036	Property crime	2006-07	160
-ward	19100036	Contact crime	2006-07	695
-ward	19100036	Property crime	2007-08	146
-ward	19100036	Contact crime	2007-08	614
-ward	19100036	Property crime	2008-09	139
-ward	19100036	Contact crime	2008-09	523
-ward	19100036	Property crime	2009-10	156
-ward	19100036	Contact crime	2009-10	546
-ward	19100036	Property crime	2010-11	152
-ward	19100036	Contact crime	2010-11	547
-ward	19100036	Property crime	2011-12	172
-ward	19100036	Contact crime	2011-12	633
-ward	19100036	Property crime	2012-13	205
-ward	19100036	Contact crime	2012-13	629
-ward	19100036	Property crime	2013-14	201
-ward	19100036	Contact crime	2013-14	621
-ward	19100036	Property crime	2014-15	213
-ward	19100036	Contact crime	2014-15	673
-ward	19100037	Property crime	2005-06	99
-ward	19100037	Contact crime	2005-06	476
-ward	19100037	Property crime	2006-07	109
-ward	19100037	Contact crime	2006-07	461
-ward	19100037	Property crime	2007-08	104
-ward	19100037	Contact crime	2007-08	404
-ward	19100037	Property crime	2008-09	98
-ward	19100037	Contact crime	2008-09	349
-ward	19100037	Property crime	2009-10	115
-ward	19100037	Contact crime	2009-10	359
-ward	19100037	Property crime	2010-11	111
-ward	19100037	Contact crime	2010-11	368
-ward	19100037	Property crime	2011-12	127
-ward	19100037	Contact crime	2011-12	419
-ward	19100037	Property crime	2012-13	150
-ward	19100037	Contact crime	2012-13	424
-ward	19100037	Property crime	2013-14	143
-ward	19100037	Contact crime	2013-14	424
-ward	19100037	Property crime	2014-15	143
-ward	19100037	Contact crime	2014-15	450
-ward	19100038	Property crime	2005-06	116
-ward	19100038	Contact crime	2005-06	511
-ward	19100038	Property crime	2006-07	110
-ward	19100038	Contact crime	2006-07	429
-ward	19100038	Property crime	2007-08	117
-ward	19100038	Contact crime	2007-08	365
-ward	19100038	Property crime	2008-09	110
-ward	19100038	Contact crime	2008-09	330
-ward	19100038	Property crime	2009-10	141
-ward	19100038	Contact crime	2009-10	325
-ward	19100038	Property crime	2010-11	136
-ward	19100038	Contact crime	2010-11	359
-ward	19100038	Property crime	2011-12	158
-ward	19100038	Contact crime	2011-12	389
-ward	19100038	Property crime	2012-13	181
-ward	19100038	Contact crime	2012-13	416
-ward	19100038	Property crime	2013-14	162
-ward	19100038	Contact crime	2013-14	429
-ward	19100038	Property crime	2014-15	138
-ward	19100038	Contact crime	2014-15	429
-ward	19100039	Property crime	2005-06	125
-ward	19100039	Contact crime	2005-06	568
-ward	19100039	Property crime	2006-07	126
-ward	19100039	Contact crime	2006-07	507
-ward	19100039	Property crime	2007-08	128
-ward	19100039	Contact crime	2007-08	437
-ward	19100039	Property crime	2008-09	120
-ward	19100039	Contact crime	2008-09	388
-ward	19100039	Property crime	2009-10	149
-ward	19100039	Contact crime	2009-10	390
-ward	19100039	Property crime	2010-11	144
-ward	19100039	Contact crime	2010-11	416
-ward	19100039	Property crime	2011-12	166
-ward	19100039	Contact crime	2011-12	461
-ward	19100039	Property crime	2012-13	192
-ward	19100039	Contact crime	2012-13	481
-ward	19100039	Property crime	2013-14	176
-ward	19100039	Contact crime	2013-14	489
-ward	19100039	Property crime	2014-15	160
-ward	19100039	Contact crime	2014-15	502
-ward	19100040	Property crime	2005-06	169
-ward	19100040	Contact crime	2005-06	736
-ward	19100040	Property crime	2006-07	157
-ward	19100040	Contact crime	2006-07	605
-ward	19100040	Property crime	2007-08	170
-ward	19100040	Contact crime	2007-08	513
-ward	19100040	Property crime	2008-09	160
-ward	19100040	Contact crime	2008-09	467
-ward	19100040	Property crime	2009-10	206
-ward	19100040	Contact crime	2009-10	457
-ward	19100040	Property crime	2010-11	199
-ward	19100040	Contact crime	2010-11	510
-ward	19100040	Property crime	2011-12	231
-ward	19100040	Contact crime	2011-12	549
-ward	19100040	Property crime	2012-13	264
-ward	19100040	Contact crime	2012-13	592
-ward	19100040	Property crime	2013-14	234
-ward	19100040	Contact crime	2013-14	612
-ward	19100040	Property crime	2014-15	196
-ward	19100040	Contact crime	2014-15	607
-ward	19100041	Property crime	2005-06	125
-ward	19100041	Contact crime	2005-06	541
-ward	19100041	Property crime	2006-07	117
-ward	19100041	Contact crime	2006-07	446
-ward	19100041	Property crime	2007-08	126
-ward	19100041	Contact crime	2007-08	378
-ward	19100041	Property crime	2008-09	118
-ward	19100041	Contact crime	2008-09	344
-ward	19100041	Property crime	2009-10	153
-ward	19100041	Contact crime	2009-10	337
-ward	19100041	Property crime	2010-11	147
-ward	19100041	Contact crime	2010-11	376
-ward	19100041	Property crime	2011-12	171
-ward	19100041	Contact crime	2011-12	404
-ward	19100041	Property crime	2012-13	195
-ward	19100041	Contact crime	2012-13	436
-ward	19100041	Property crime	2013-14	173
-ward	19100041	Contact crime	2013-14	451
-ward	19100041	Property crime	2014-15	145
-ward	19100041	Contact crime	2014-15	447
-ward	19100042	Property crime	2005-06	205
-ward	19100042	Contact crime	2005-06	615
-ward	19100042	Property crime	2006-07	230
-ward	19100042	Contact crime	2006-07	572
-ward	19100042	Property crime	2007-08	239
-ward	19100042	Contact crime	2007-08	493
-ward	19100042	Property crime	2008-09	199
-ward	19100042	Contact crime	2008-09	411
-ward	19100042	Property crime	2009-10	245
-ward	19100042	Contact crime	2009-10	433
-ward	19100042	Property crime	2010-11	220
-ward	19100042	Contact crime	2010-11	445
-ward	19100042	Property crime	2011-12	250
-ward	19100042	Contact crime	2011-12	476
-ward	19100042	Property crime	2012-13	282
-ward	19100042	Contact crime	2012-13	537
-ward	19100042	Property crime	2013-14	258
-ward	19100042	Contact crime	2013-14	548
-ward	19100042	Property crime	2014-15	228
-ward	19100042	Contact crime	2014-15	553
-ward	19100043	Property crime	2005-06	899
-ward	19100043	Contact crime	2005-06	729
-ward	19100043	Property crime	2006-07	967
-ward	19100043	Contact crime	2006-07	766
-ward	19100043	Property crime	2007-08	843
-ward	19100043	Contact crime	2007-08	671
-ward	19100043	Property crime	2008-09	697
-ward	19100043	Contact crime	2008-09	685
-ward	19100043	Property crime	2009-10	676
-ward	19100043	Contact crime	2009-10	636
-ward	19100043	Property crime	2010-11	619
-ward	19100043	Contact crime	2010-11	628
-ward	19100043	Property crime	2011-12	834
-ward	19100043	Contact crime	2011-12	694
-ward	19100043	Property crime	2012-13	756
-ward	19100043	Contact crime	2012-13	712
-ward	19100043	Property crime	2013-14	952
-ward	19100043	Contact crime	2013-14	677
-ward	19100043	Property crime	2014-15	712
-ward	19100043	Contact crime	2014-15	667
-ward	19100044	Property crime	2005-06	310
-ward	19100044	Contact crime	2005-06	704
-ward	19100044	Property crime	2006-07	381
-ward	19100044	Contact crime	2006-07	728
-ward	19100044	Property crime	2007-08	389
-ward	19100044	Contact crime	2007-08	636
-ward	19100044	Property crime	2008-09	304
-ward	19100044	Contact crime	2008-09	492
-ward	19100044	Property crime	2009-10	365
-ward	19100044	Contact crime	2009-10	552
-ward	19100044	Property crime	2010-11	313
-ward	19100044	Contact crime	2010-11	529
-ward	19100044	Property crime	2011-12	352
-ward	19100044	Contact crime	2011-12	561
-ward	19100044	Property crime	2012-13	398
-ward	19100044	Contact crime	2012-13	664
-ward	19100044	Property crime	2013-14	366
-ward	19100044	Contact crime	2013-14	670
-ward	19100044	Property crime	2014-15	334
-ward	19100044	Contact crime	2014-15	682
-ward	19100045	Property crime	2005-06	339
-ward	19100045	Contact crime	2005-06	661
-ward	19100045	Property crime	2006-07	434
-ward	19100045	Contact crime	2006-07	736
-ward	19100045	Property crime	2007-08	442
-ward	19100045	Contact crime	2007-08	648
-ward	19100045	Property crime	2008-09	335
-ward	19100045	Contact crime	2008-09	477
-ward	19100045	Property crime	2009-10	398
-ward	19100045	Contact crime	2009-10	556
-ward	19100045	Property crime	2010-11	335
-ward	19100045	Contact crime	2010-11	509
-ward	19100045	Property crime	2011-12	374
-ward	19100045	Contact crime	2011-12	538
-ward	19100045	Property crime	2012-13	422
-ward	19100045	Contact crime	2012-13	656
-ward	19100045	Property crime	2013-14	390
-ward	19100045	Contact crime	2013-14	656
-ward	19100045	Property crime	2014-15	361
-ward	19100045	Contact crime	2014-15	674
-ward	19100046	Property crime	2005-06	432
-ward	19100046	Contact crime	2005-06	628
-ward	19100046	Property crime	2006-07	520
-ward	19100046	Contact crime	2006-07	740
-ward	19100046	Property crime	2007-08	511
-ward	19100046	Contact crime	2007-08	652
-ward	19100046	Property crime	2008-09	407
-ward	19100046	Contact crime	2008-09	483
-ward	19100046	Property crime	2009-10	508
-ward	19100046	Contact crime	2009-10	574
-ward	19100046	Property crime	2010-11	431
-ward	19100046	Contact crime	2010-11	528
-ward	19100046	Property crime	2011-12	470
-ward	19100046	Contact crime	2011-12	545
-ward	19100046	Property crime	2012-13	471
-ward	19100046	Contact crime	2012-13	656
-ward	19100046	Property crime	2013-14	499
-ward	19100046	Contact crime	2013-14	654
-ward	19100046	Property crime	2014-15	487
-ward	19100046	Contact crime	2014-15	697
-ward	19100047	Property crime	2005-06	483
-ward	19100047	Contact crime	2005-06	626
-ward	19100047	Property crime	2006-07	473
-ward	19100047	Contact crime	2006-07	686
-ward	19100047	Property crime	2007-08	462
-ward	19100047	Contact crime	2007-08	591
-ward	19100047	Property crime	2008-09	417
-ward	19100047	Contact crime	2008-09	510
-ward	19100047	Property crime	2009-10	573
-ward	19100047	Contact crime	2009-10	549
-ward	19100047	Property crime	2010-11	489
-ward	19100047	Contact crime	2010-11	596
-ward	19100047	Property crime	2011-12	545
-ward	19100047	Contact crime	2011-12	593
-ward	19100047	Property crime	2012-13	405
-ward	19100047	Contact crime	2012-13	633
-ward	19100047	Property crime	2013-14	600
-ward	19100047	Contact crime	2013-14	637
-ward	19100047	Property crime	2014-15	649
-ward	19100047	Contact crime	2014-15	738
-ward	19100048	Property crime	2005-06	870
-ward	19100048	Contact crime	2005-06	514
-ward	19100048	Property crime	2006-07	906
-ward	19100048	Contact crime	2006-07	535
-ward	19100048	Property crime	2007-08	746
-ward	19100048	Contact crime	2007-08	474
-ward	19100048	Property crime	2008-09	752
-ward	19100048	Contact crime	2008-09	477
-ward	19100048	Property crime	2009-10	945
-ward	19100048	Contact crime	2009-10	572
-ward	19100048	Property crime	2010-11	941
-ward	19100048	Contact crime	2010-11	504
-ward	19100048	Property crime	2011-12	917
-ward	19100048	Contact crime	2011-12	536
-ward	19100048	Property crime	2012-13	932
-ward	19100048	Contact crime	2012-13	612
-ward	19100048	Property crime	2013-14	949
-ward	19100048	Contact crime	2013-14	621
-ward	19100048	Property crime	2014-15	818
-ward	19100048	Contact crime	2014-15	688
-ward	19100049	Property crime	2005-06	1035
-ward	19100049	Contact crime	2005-06	701
-ward	19100049	Property crime	2006-07	1119
-ward	19100049	Contact crime	2006-07	760
-ward	19100049	Property crime	2007-08	1025
-ward	19100049	Contact crime	2007-08	695
-ward	19100049	Property crime	2008-09	951
-ward	19100049	Contact crime	2008-09	681
-ward	19100049	Property crime	2009-10	1069
-ward	19100049	Contact crime	2009-10	768
-ward	19100049	Property crime	2010-11	1037
-ward	19100049	Contact crime	2010-11	678
-ward	19100049	Property crime	2011-12	1066
-ward	19100049	Contact crime	2011-12	752
-ward	19100049	Property crime	2012-13	1110
-ward	19100049	Contact crime	2012-13	878
-ward	19100049	Property crime	2013-14	1128
-ward	19100049	Contact crime	2013-14	887
-ward	19100049	Property crime	2014-15	980
-ward	19100049	Contact crime	2014-15	1003
-ward	19100050	Property crime	2005-06	424
-ward	19100050	Contact crime	2005-06	506
-ward	19100050	Property crime	2006-07	441
-ward	19100050	Contact crime	2006-07	527
-ward	19100050	Property crime	2007-08	417
-ward	19100050	Contact crime	2007-08	388
-ward	19100050	Property crime	2008-09	334
-ward	19100050	Contact crime	2008-09	398
-ward	19100050	Property crime	2009-10	403
-ward	19100050	Contact crime	2009-10	565
-ward	19100050	Property crime	2010-11	298
-ward	19100050	Contact crime	2010-11	481
-ward	19100050	Property crime	2011-12	334
-ward	19100050	Contact crime	2011-12	514
-ward	19100050	Property crime	2012-13	387
-ward	19100050	Contact crime	2012-13	596
-ward	19100050	Property crime	2013-14	390
-ward	19100050	Contact crime	2013-14	626
-ward	19100050	Property crime	2014-15	465
-ward	19100050	Contact crime	2014-15	647
-ward	19100051	Property crime	2005-06	149
-ward	19100051	Contact crime	2005-06	678
-ward	19100051	Property crime	2006-07	132
-ward	19100051	Contact crime	2006-07	590
-ward	19100051	Property crime	2007-08	153
-ward	19100051	Contact crime	2007-08	524
-ward	19100051	Property crime	2008-09	154
-ward	19100051	Contact crime	2008-09	560
-ward	19100051	Property crime	2009-10	158
-ward	19100051	Contact crime	2009-10	607
-ward	19100051	Property crime	2010-11	183
-ward	19100051	Contact crime	2010-11	615
-ward	19100051	Property crime	2011-12	209
-ward	19100051	Contact crime	2011-12	509
-ward	19100051	Property crime	2012-13	244
-ward	19100051	Contact crime	2012-13	542
-ward	19100051	Property crime	2013-14	228
-ward	19100051	Contact crime	2013-14	534
-ward	19100051	Property crime	2014-15	238
-ward	19100051	Contact crime	2014-15	618
-ward	19100052	Property crime	2005-06	213
-ward	19100052	Contact crime	2005-06	627
-ward	19100052	Property crime	2006-07	205
-ward	19100052	Contact crime	2006-07	562
-ward	19100052	Property crime	2007-08	215
-ward	19100052	Contact crime	2007-08	492
-ward	19100052	Property crime	2008-09	204
-ward	19100052	Contact crime	2008-09	521
-ward	19100052	Property crime	2009-10	220
-ward	19100052	Contact crime	2009-10	580
-ward	19100052	Property crime	2010-11	228
-ward	19100052	Contact crime	2010-11	574
-ward	19100052	Property crime	2011-12	254
-ward	19100052	Contact crime	2011-12	495
-ward	19100052	Property crime	2012-13	289
-ward	19100052	Contact crime	2012-13	536
-ward	19100052	Property crime	2013-14	278
-ward	19100052	Contact crime	2013-14	533
-ward	19100052	Property crime	2014-15	285
-ward	19100052	Contact crime	2014-15	608
-ward	19100053	Property crime	2005-06	1092
-ward	19100053	Contact crime	2005-06	624
-ward	19100053	Property crime	2006-07	1224
-ward	19100053	Contact crime	2006-07	681
-ward	19100053	Property crime	2007-08	1174
-ward	19100053	Contact crime	2007-08	659
-ward	19100053	Property crime	2008-09	1123
-ward	19100053	Contact crime	2008-09	671
-ward	19100053	Property crime	2009-10	1152
-ward	19100053	Contact crime	2009-10	623
-ward	19100053	Property crime	2010-11	1091
-ward	19100053	Contact crime	2010-11	575
-ward	19100053	Property crime	2011-12	955
-ward	19100053	Contact crime	2011-12	536
-ward	19100053	Property crime	2012-13	1047
-ward	19100053	Contact crime	2012-13	483
-ward	19100053	Property crime	2013-14	1108
-ward	19100053	Contact crime	2013-14	458
-ward	19100053	Property crime	2014-15	890
-ward	19100053	Contact crime	2014-15	485
-ward	19100054	Property crime	2005-06	2089
-ward	19100054	Contact crime	2005-06	566
-ward	19100054	Property crime	2006-07	1910
-ward	19100054	Contact crime	2006-07	478
-ward	19100054	Property crime	2007-08	1751
-ward	19100054	Contact crime	2007-08	516
-ward	19100054	Property crime	2008-09	1303
-ward	19100054	Contact crime	2008-09	445
-ward	19100054	Property crime	2009-10	1521
-ward	19100054	Contact crime	2009-10	458
-ward	19100054	Property crime	2010-11	1709
-ward	19100054	Contact crime	2010-11	411
-ward	19100054	Property crime	2011-12	1656
-ward	19100054	Contact crime	2011-12	370
-ward	19100054	Property crime	2012-13	1840
-ward	19100054	Contact crime	2012-13	321
-ward	19100054	Property crime	2013-14	1743
-ward	19100054	Contact crime	2013-14	318
-ward	19100054	Property crime	2014-15	1691
-ward	19100054	Contact crime	2014-15	344
-ward	19100055	Property crime	2005-06	1369
-ward	19100055	Contact crime	2005-06	819
-ward	19100055	Property crime	2006-07	1513
-ward	19100055	Contact crime	2006-07	821
-ward	19100055	Property crime	2007-08	1383
-ward	19100055	Contact crime	2007-08	789
-ward	19100055	Property crime	2008-09	1342
-ward	19100055	Contact crime	2008-09	832
-ward	19100055	Property crime	2009-10	1397
-ward	19100055	Contact crime	2009-10	794
-ward	19100055	Property crime	2010-11	1158
-ward	19100055	Contact crime	2010-11	685
-ward	19100055	Property crime	2011-12	1117
-ward	19100055	Contact crime	2011-12	685
-ward	19100055	Property crime	2012-13	1170
-ward	19100055	Contact crime	2012-13	653
-ward	19100055	Property crime	2013-14	1233
-ward	19100055	Contact crime	2013-14	670
-ward	19100055	Property crime	2014-15	1162
-ward	19100055	Contact crime	2014-15	773
-ward	19100056	Property crime	2005-06	703
-ward	19100056	Contact crime	2005-06	635
-ward	19100056	Property crime	2006-07	859
-ward	19100056	Contact crime	2006-07	652
-ward	19100056	Property crime	2007-08	880
-ward	19100056	Contact crime	2007-08	588
-ward	19100056	Property crime	2008-09	841
-ward	19100056	Contact crime	2008-09	623
-ward	19100056	Property crime	2009-10	781
-ward	19100056	Contact crime	2009-10	489
-ward	19100056	Property crime	2010-11	643
-ward	19100056	Contact crime	2010-11	433
-ward	19100056	Property crime	2011-12	656
-ward	19100056	Contact crime	2011-12	419
-ward	19100056	Property crime	2012-13	611
-ward	19100056	Contact crime	2012-13	425
-ward	19100056	Property crime	2013-14	704
-ward	19100056	Contact crime	2013-14	463
-ward	19100056	Property crime	2014-15	664
-ward	19100056	Contact crime	2014-15	512
-ward	19100057	Property crime	2005-06	3607
-ward	19100057	Contact crime	2005-06	1574
-ward	19100057	Property crime	2006-07	3735
-ward	19100057	Contact crime	2006-07	1456
-ward	19100057	Property crime	2007-08	3099
-ward	19100057	Contact crime	2007-08	1279
-ward	19100057	Property crime	2008-09	3124
-ward	19100057	Contact crime	2008-09	1186
-ward	19100057	Property crime	2009-10	3030
-ward	19100057	Contact crime	2009-10	1149
-ward	19100057	Property crime	2010-11	2630
-ward	19100057	Contact crime	2010-11	1044
-ward	19100057	Property crime	2011-12	2493
-ward	19100057	Contact crime	2011-12	974
-ward	19100057	Property crime	2012-13	2610
-ward	19100057	Contact crime	2012-13	948
-ward	19100057	Property crime	2013-14	2665
-ward	19100057	Contact crime	2013-14	979
-ward	19100057	Property crime	2014-15	2511
-ward	19100057	Contact crime	2014-15	1090
-ward	19100058	Property crime	2005-06	2611
-ward	19100058	Contact crime	2005-06	648
-ward	19100058	Property crime	2006-07	2505
-ward	19100058	Contact crime	2006-07	780
-ward	19100058	Property crime	2007-08	2095
-ward	19100058	Contact crime	2007-08	656
-ward	19100058	Property crime	2008-09	1948
-ward	19100058	Contact crime	2008-09	614
-ward	19100058	Property crime	2009-10	2042
-ward	19100058	Contact crime	2009-10	546
-ward	19100058	Property crime	2010-11	1673
-ward	19100058	Contact crime	2010-11	470
-ward	19100058	Property crime	2011-12	1519
-ward	19100058	Contact crime	2011-12	416
-ward	19100058	Property crime	2012-13	1789
-ward	19100058	Contact crime	2012-13	452
-ward	19100058	Property crime	2013-14	1773
-ward	19100058	Contact crime	2013-14	462
-ward	19100058	Property crime	2014-15	1775
-ward	19100058	Contact crime	2014-15	490
-ward	19100059	Property crime	2005-06	2050
-ward	19100059	Contact crime	2005-06	494
-ward	19100059	Property crime	2006-07	1929
-ward	19100059	Contact crime	2006-07	583
-ward	19100059	Property crime	2007-08	1654
-ward	19100059	Contact crime	2007-08	520
-ward	19100059	Property crime	2008-09	1495
-ward	19100059	Contact crime	2008-09	469
-ward	19100059	Property crime	2009-10	1584
-ward	19100059	Contact crime	2009-10	432
-ward	19100059	Property crime	2010-11	1311
-ward	19100059	Contact crime	2010-11	380
-ward	19100059	Property crime	2011-12	1186
-ward	19100059	Contact crime	2011-12	329
-ward	19100059	Property crime	2012-13	1402
-ward	19100059	Contact crime	2012-13	368
-ward	19100059	Property crime	2013-14	1378
-ward	19100059	Contact crime	2013-14	362
-ward	19100059	Property crime	2014-15	1443
-ward	19100059	Contact crime	2014-15	361
-ward	19100060	Property crime	2005-06	1041
-ward	19100060	Contact crime	2005-06	465
-ward	19100060	Property crime	2006-07	1031
-ward	19100060	Contact crime	2006-07	449
-ward	19100060	Property crime	2007-08	705
-ward	19100060	Contact crime	2007-08	360
-ward	19100060	Property crime	2008-09	816
-ward	19100060	Contact crime	2008-09	389
-ward	19100060	Property crime	2009-10	1156
-ward	19100060	Contact crime	2009-10	513
-ward	19100060	Property crime	2010-11	1170
-ward	19100060	Contact crime	2010-11	451
-ward	19100060	Property crime	2011-12	1061
-ward	19100060	Contact crime	2011-12	430
-ward	19100060	Property crime	2012-13	1060
-ward	19100060	Contact crime	2012-13	463
-ward	19100060	Property crime	2013-14	1088
-ward	19100060	Contact crime	2013-14	478
-ward	19100060	Property crime	2014-15	923
-ward	19100060	Contact crime	2014-15	507
-ward	19100061	Property crime	2005-06	667
-ward	19100061	Contact crime	2005-06	301
-ward	19100061	Property crime	2006-07	682
-ward	19100061	Contact crime	2006-07	289
-ward	19100061	Property crime	2007-08	655
-ward	19100061	Contact crime	2007-08	317
-ward	19100061	Property crime	2008-09	663
-ward	19100061	Contact crime	2008-09	292
-ward	19100061	Property crime	2009-10	647
-ward	19100061	Contact crime	2009-10	238
-ward	19100061	Property crime	2010-11	694
-ward	19100061	Contact crime	2010-11	237
-ward	19100061	Property crime	2011-12	582
-ward	19100061	Contact crime	2011-12	232
-ward	19100061	Property crime	2012-13	618
-ward	19100061	Contact crime	2012-13	318
-ward	19100061	Property crime	2013-14	678
-ward	19100061	Contact crime	2013-14	315
-ward	19100061	Property crime	2014-15	703
-ward	19100061	Contact crime	2014-15	368
-ward	19100062	Property crime	2005-06	1597
-ward	19100062	Contact crime	2005-06	491
-ward	19100062	Property crime	2006-07	1639
-ward	19100062	Contact crime	2006-07	510
-ward	19100062	Property crime	2007-08	1381
-ward	19100062	Contact crime	2007-08	480
-ward	19100062	Property crime	2008-09	1246
-ward	19100062	Contact crime	2008-09	473
-ward	19100062	Property crime	2009-10	1315
-ward	19100062	Contact crime	2009-10	472
-ward	19100062	Property crime	2010-11	1206
-ward	19100062	Contact crime	2010-11	443
-ward	19100062	Property crime	2011-12	1126
-ward	19100062	Contact crime	2011-12	373
-ward	19100062	Property crime	2012-13	1392
-ward	19100062	Contact crime	2012-13	453
-ward	19100062	Property crime	2013-14	1344
-ward	19100062	Contact crime	2013-14	426
-ward	19100062	Property crime	2014-15	1276
-ward	19100062	Contact crime	2014-15	423
-ward	19100063	Property crime	2005-06	1147
-ward	19100063	Contact crime	2005-06	456
-ward	19100063	Property crime	2006-07	1172
-ward	19100063	Contact crime	2006-07	450
-ward	19100063	Property crime	2007-08	920
-ward	19100063	Contact crime	2007-08	394
-ward	19100063	Property crime	2008-09	920
-ward	19100063	Contact crime	2008-09	416
-ward	19100063	Property crime	2009-10	1086
-ward	19100063	Contact crime	2009-10	479
-ward	19100063	Property crime	2010-11	1081
-ward	19100063	Contact crime	2010-11	452
-ward	19100063	Property crime	2011-12	985
-ward	19100063	Contact crime	2011-12	395
-ward	19100063	Property crime	2012-13	1110
-ward	19100063	Contact crime	2012-13	458
-ward	19100063	Property crime	2013-14	1113
-ward	19100063	Contact crime	2013-14	451
-ward	19100063	Property crime	2014-15	982
-ward	19100063	Contact crime	2014-15	460
-ward	19100064	Property crime	2005-06	885
-ward	19100064	Contact crime	2005-06	248
-ward	19100064	Property crime	2006-07	897
-ward	19100064	Contact crime	2006-07	257
-ward	19100064	Property crime	2007-08	798
-ward	19100064	Contact crime	2007-08	271
-ward	19100064	Property crime	2008-09	740
-ward	19100064	Contact crime	2008-09	227
-ward	19100064	Property crime	2009-10	705
-ward	19100064	Contact crime	2009-10	299
-ward	19100064	Property crime	2010-11	678
-ward	19100064	Contact crime	2010-11	301
-ward	19100064	Property crime	2011-12	593
-ward	19100064	Contact crime	2011-12	345
-ward	19100064	Property crime	2012-13	635
-ward	19100064	Contact crime	2012-13	325
-ward	19100064	Property crime	2013-14	693
-ward	19100064	Contact crime	2013-14	345
-ward	19100064	Property crime	2014-15	710
-ward	19100064	Contact crime	2014-15	361
-ward	19100065	Property crime	2005-06	576
-ward	19100065	Contact crime	2005-06	323
-ward	19100065	Property crime	2006-07	541
-ward	19100065	Contact crime	2006-07	374
-ward	19100065	Property crime	2007-08	559
-ward	19100065	Contact crime	2007-08	352
-ward	19100065	Property crime	2008-09	549
-ward	19100065	Contact crime	2008-09	361
-ward	19100065	Property crime	2009-10	559
-ward	19100065	Contact crime	2009-10	361
-ward	19100065	Property crime	2010-11	547
-ward	19100065	Contact crime	2010-11	378
-ward	19100065	Property crime	2011-12	461
-ward	19100065	Contact crime	2011-12	343
-ward	19100065	Property crime	2012-13	540
-ward	19100065	Contact crime	2012-13	401
-ward	19100065	Property crime	2013-14	540
-ward	19100065	Contact crime	2013-14	420
-ward	19100065	Property crime	2014-15	480
-ward	19100065	Contact crime	2014-15	444
-ward	19100066	Property crime	2005-06	591
-ward	19100066	Contact crime	2005-06	327
-ward	19100066	Property crime	2006-07	556
-ward	19100066	Contact crime	2006-07	377
-ward	19100066	Property crime	2007-08	567
-ward	19100066	Contact crime	2007-08	354
-ward	19100066	Property crime	2008-09	560
-ward	19100066	Contact crime	2008-09	364
-ward	19100066	Property crime	2009-10	576
-ward	19100066	Contact crime	2009-10	367
-ward	19100066	Property crime	2010-11	565
-ward	19100066	Contact crime	2010-11	382
-ward	19100066	Property crime	2011-12	477
-ward	19100066	Contact crime	2011-12	347
-ward	19100066	Property crime	2012-13	557
-ward	19100066	Contact crime	2012-13	405
-ward	19100066	Property crime	2013-14	556
-ward	19100066	Contact crime	2013-14	423
-ward	19100066	Property crime	2014-15	493
-ward	19100066	Contact crime	2014-15	447
-ward	19100067	Property crime	2005-06	1261
-ward	19100067	Contact crime	2005-06	544
-ward	19100067	Property crime	2006-07	1348
-ward	19100067	Contact crime	2006-07	607
-ward	19100067	Property crime	2007-08	1255
-ward	19100067	Contact crime	2007-08	637
-ward	19100067	Property crime	2008-09	1215
-ward	19100067	Contact crime	2008-09	553
-ward	19100067	Property crime	2009-10	1214
-ward	19100067	Contact crime	2009-10	684
-ward	19100067	Property crime	2010-11	1161
-ward	19100067	Contact crime	2010-11	685
-ward	19100067	Property crime	2011-12	951
-ward	19100067	Contact crime	2011-12	729
-ward	19100067	Property crime	2012-13	997
-ward	19100067	Contact crime	2012-13	737
-ward	19100067	Property crime	2013-14	1079
-ward	19100067	Contact crime	2013-14	763
-ward	19100067	Property crime	2014-15	1081
-ward	19100067	Contact crime	2014-15	783
-ward	19100068	Property crime	2005-06	553
-ward	19100068	Contact crime	2005-06	412
-ward	19100068	Property crime	2006-07	589
-ward	19100068	Contact crime	2006-07	405
-ward	19100068	Property crime	2007-08	574
-ward	19100068	Contact crime	2007-08	473
-ward	19100068	Property crime	2008-09	543
-ward	19100068	Contact crime	2008-09	397
-ward	19100068	Property crime	2009-10	537
-ward	19100068	Contact crime	2009-10	467
-ward	19100068	Property crime	2010-11	494
-ward	19100068	Contact crime	2010-11	463
-ward	19100068	Property crime	2011-12	446
-ward	19100068	Contact crime	2011-12	462
-ward	19100068	Property crime	2012-13	542
-ward	19100068	Contact crime	2012-13	472
-ward	19100068	Property crime	2013-14	522
-ward	19100068	Contact crime	2013-14	497
-ward	19100068	Property crime	2014-15	497
-ward	19100068	Contact crime	2014-15	500
-ward	19100069	Property crime	2005-06	964
-ward	19100069	Contact crime	2005-06	434
-ward	19100069	Property crime	2006-07	986
-ward	19100069	Contact crime	2006-07	426
-ward	19100069	Property crime	2007-08	889
-ward	19100069	Contact crime	2007-08	451
-ward	19100069	Property crime	2008-09	776
-ward	19100069	Contact crime	2008-09	429
-ward	19100069	Property crime	2009-10	627
-ward	19100069	Contact crime	2009-10	313
-ward	19100069	Property crime	2010-11	661
-ward	19100069	Contact crime	2010-11	345
-ward	19100069	Property crime	2011-12	598
-ward	19100069	Contact crime	2011-12	335
-ward	19100069	Property crime	2012-13	719
-ward	19100069	Contact crime	2012-13	452
-ward	19100069	Property crime	2013-14	735
-ward	19100069	Contact crime	2013-14	475
-ward	19100069	Property crime	2014-15	761
-ward	19100069	Contact crime	2014-15	522
-ward	19100070	Property crime	2005-06	861
-ward	19100070	Contact crime	2005-06	323
-ward	19100070	Property crime	2006-07	941
-ward	19100070	Contact crime	2006-07	324
-ward	19100070	Property crime	2007-08	845
-ward	19100070	Contact crime	2007-08	354
-ward	19100070	Property crime	2008-09	875
-ward	19100070	Contact crime	2008-09	372
-ward	19100070	Property crime	2009-10	802
-ward	19100070	Contact crime	2009-10	363
-ward	19100070	Property crime	2010-11	986
-ward	19100070	Contact crime	2010-11	437
-ward	19100070	Property crime	2011-12	1114
-ward	19100070	Contact crime	2011-12	428
-ward	19100070	Property crime	2012-13	1143
-ward	19100070	Contact crime	2012-13	430
-ward	19100070	Property crime	2013-14	1139
-ward	19100070	Contact crime	2013-14	474
-ward	19100070	Property crime	2014-15	1092
-ward	19100070	Contact crime	2014-15	479
-ward	19100071	Property crime	2005-06	1133
-ward	19100071	Contact crime	2005-06	332
-ward	19100071	Property crime	2006-07	1173
-ward	19100071	Contact crime	2006-07	365
-ward	19100071	Property crime	2007-08	1045
-ward	19100071	Contact crime	2007-08	419
-ward	19100071	Property crime	2008-09	919
-ward	19100071	Contact crime	2008-09	414
-ward	19100071	Property crime	2009-10	1035
-ward	19100071	Contact crime	2009-10	392
-ward	19100071	Property crime	2010-11	1044
-ward	19100071	Contact crime	2010-11	384
-ward	19100071	Property crime	2011-12	923
-ward	19100071	Contact crime	2011-12	300
-ward	19100071	Property crime	2012-13	1137
-ward	19100071	Contact crime	2012-13	375
-ward	19100071	Property crime	2013-14	893
-ward	19100071	Contact crime	2013-14	325
-ward	19100071	Property crime	2014-15	986
-ward	19100071	Contact crime	2014-15	352
-ward	19100072	Property crime	2005-06	587
-ward	19100072	Contact crime	2005-06	361
-ward	19100072	Property crime	2006-07	629
-ward	19100072	Contact crime	2006-07	356
-ward	19100072	Property crime	2007-08	594
-ward	19100072	Contact crime	2007-08	403
-ward	19100072	Property crime	2008-09	557
-ward	19100072	Contact crime	2008-09	348
-ward	19100072	Property crime	2009-10	554
-ward	19100072	Contact crime	2009-10	384
-ward	19100072	Property crime	2010-11	499
-ward	19100072	Contact crime	2010-11	375
-ward	19100072	Property crime	2011-12	486
-ward	19100072	Contact crime	2011-12	366
-ward	19100072	Property crime	2012-13	641
-ward	19100072	Contact crime	2012-13	386
-ward	19100072	Property crime	2013-14	579
-ward	19100072	Contact crime	2013-14	403
-ward	19100072	Property crime	2014-15	509
-ward	19100072	Contact crime	2014-15	400
-ward	19100073	Property crime	2005-06	1102
-ward	19100073	Contact crime	2005-06	288
-ward	19100073	Property crime	2006-07	1239
-ward	19100073	Contact crime	2006-07	306
-ward	19100073	Property crime	2007-08	1064
-ward	19100073	Contact crime	2007-08	294
-ward	19100073	Property crime	2008-09	1000
-ward	19100073	Contact crime	2008-09	262
-ward	19100073	Property crime	2009-10	993
-ward	19100073	Contact crime	2009-10	257
-ward	19100073	Property crime	2010-11	871
-ward	19100073	Contact crime	2010-11	226
-ward	19100073	Property crime	2011-12	903
-ward	19100073	Contact crime	2011-12	244
-ward	19100073	Property crime	2012-13	1236
-ward	19100073	Contact crime	2012-13	266
-ward	19100073	Property crime	2013-14	1095
-ward	19100073	Contact crime	2013-14	265
-ward	19100073	Property crime	2014-15	894
-ward	19100073	Contact crime	2014-15	236
-ward	19100074	Property crime	2005-06	1307
-ward	19100074	Contact crime	2005-06	740
-ward	19100074	Property crime	2006-07	996
-ward	19100074	Contact crime	2006-07	530
-ward	19100074	Property crime	2007-08	1215
-ward	19100074	Contact crime	2007-08	539
-ward	19100074	Property crime	2008-09	1107
-ward	19100074	Contact crime	2008-09	570
-ward	19100074	Property crime	2009-10	1353
-ward	19100074	Contact crime	2009-10	662
-ward	19100074	Property crime	2010-11	1212
-ward	19100074	Contact crime	2010-11	638
-ward	19100074	Property crime	2011-12	1388
-ward	19100074	Contact crime	2011-12	651
-ward	19100074	Property crime	2012-13	1323
-ward	19100074	Contact crime	2012-13	687
-ward	19100074	Property crime	2013-14	1023
-ward	19100074	Contact crime	2013-14	594
-ward	19100074	Property crime	2014-15	866
-ward	19100074	Contact crime	2014-15	654
-ward	19100075	Property crime	2005-06	45
-ward	19100075	Contact crime	2005-06	210
-ward	19100075	Property crime	2006-07	52
-ward	19100075	Contact crime	2006-07	214
-ward	19100075	Property crime	2007-08	48
-ward	19100075	Contact crime	2007-08	189
-ward	19100075	Property crime	2008-09	45
-ward	19100075	Contact crime	2008-09	161
-ward	19100075	Property crime	2009-10	51
-ward	19100075	Contact crime	2009-10	169
-ward	19100075	Property crime	2010-11	49
-ward	19100075	Contact crime	2010-11	169
-ward	19100075	Property crime	2011-12	56
-ward	19100075	Contact crime	2011-12	195
-ward	19100075	Property crime	2012-13	65
-ward	19100075	Contact crime	2012-13	194
-ward	19100075	Property crime	2013-14	311
-ward	19100075	Contact crime	2013-14	549
-ward	19100075	Property crime	2014-15	529
-ward	19100075	Contact crime	2014-15	816
-ward	19100076	Property crime	2005-06	1
-ward	19100076	Contact crime	2005-06	4
-ward	19100076	Property crime	2006-07	1
-ward	19100076	Contact crime	2006-07	4
-ward	19100076	Property crime	2007-08	1
-ward	19100076	Contact crime	2007-08	3
-ward	19100076	Property crime	2008-09	1
-ward	19100076	Contact crime	2008-09	3
-ward	19100076	Property crime	2009-10	1
-ward	19100076	Contact crime	2009-10	3
-ward	19100076	Property crime	2010-11	1
-ward	19100076	Contact crime	2010-11	3
-ward	19100076	Property crime	2011-12	1
-ward	19100076	Contact crime	2011-12	3
-ward	19100076	Property crime	2012-13	1
-ward	19100076	Contact crime	2012-13	3
-ward	19100076	Property crime	2013-14	350
-ward	19100076	Contact crime	2013-14	509
-ward	19100076	Property crime	2014-15	653
-ward	19100076	Contact crime	2014-15	863
-ward	19100077	Property crime	2005-06	4415
-ward	19100077	Contact crime	2005-06	2349
-ward	19100077	Property crime	2006-07	4142
-ward	19100077	Contact crime	2006-07	2143
-ward	19100077	Property crime	2007-08	3409
-ward	19100077	Contact crime	2007-08	1875
-ward	19100077	Property crime	2008-09	2730
-ward	19100077	Contact crime	2008-09	1733
-ward	19100077	Property crime	2009-10	3599
-ward	19100077	Contact crime	2009-10	1882
-ward	19100077	Property crime	2010-11	3561
-ward	19100077	Contact crime	2010-11	1899
-ward	19100077	Property crime	2011-12	3854
-ward	19100077	Contact crime	2011-12	1765
-ward	19100077	Property crime	2012-13	3977
-ward	19100077	Contact crime	2012-13	1906
-ward	19100077	Property crime	2013-14	4141
-ward	19100077	Contact crime	2013-14	1910
-ward	19100077	Property crime	2014-15	3824
-ward	19100077	Contact crime	2014-15	1929
-ward	19100078	Property crime	2005-06	961
-ward	19100078	Contact crime	2005-06	1257
-ward	19100078	Property crime	2006-07	1147
-ward	19100078	Contact crime	2006-07	1213
-ward	19100078	Property crime	2007-08	1119
-ward	19100078	Contact crime	2007-08	1177
-ward	19100078	Property crime	2008-09	1024
-ward	19100078	Contact crime	2008-09	1231
-ward	19100078	Property crime	2009-10	977
-ward	19100078	Contact crime	2009-10	1172
-ward	19100078	Property crime	2010-11	920
-ward	19100078	Contact crime	2010-11	1217
-ward	19100078	Property crime	2011-12	970
-ward	19100078	Contact crime	2011-12	1289
-ward	19100078	Property crime	2012-13	927
-ward	19100078	Contact crime	2012-13	1307
-ward	19100078	Property crime	2013-14	790
-ward	19100078	Contact crime	2013-14	1158
-ward	19100078	Property crime	2014-15	668
-ward	19100078	Contact crime	2014-15	1073
-ward	19100079	Property crime	2005-06	864
-ward	19100079	Contact crime	2005-06	1131
-ward	19100079	Property crime	2006-07	1031
-ward	19100079	Contact crime	2006-07	1091
-ward	19100079	Property crime	2007-08	1007
-ward	19100079	Contact crime	2007-08	1058
-ward	19100079	Property crime	2008-09	921
-ward	19100079	Contact crime	2008-09	1108
-ward	19100079	Property crime	2009-10	879
-ward	19100079	Contact crime	2009-10	1054
-ward	19100079	Property crime	2010-11	828
-ward	19100079	Contact crime	2010-11	1094
-ward	19100079	Property crime	2011-12	872
-ward	19100079	Contact crime	2011-12	1159
-ward	19100079	Property crime	2012-13	834
-ward	19100079	Contact crime	2012-13	1175
-ward	19100079	Property crime	2013-14	705
-ward	19100079	Contact crime	2013-14	1034
-ward	19100079	Property crime	2014-15	590
-ward	19100079	Contact crime	2014-15	951
-ward	19100080	Property crime	2005-06	284
-ward	19100080	Contact crime	2005-06	913
-ward	19100080	Property crime	2006-07	306
-ward	19100080	Contact crime	2006-07	941
-ward	19100080	Property crime	2007-08	287
-ward	19100080	Contact crime	2007-08	828
-ward	19100080	Property crime	2008-09	267
-ward	19100080	Contact crime	2008-09	707
-ward	19100080	Property crime	2009-10	329
-ward	19100080	Contact crime	2009-10	743
-ward	19100080	Property crime	2010-11	301
-ward	19100080	Contact crime	2010-11	757
-ward	19100080	Property crime	2011-12	338
-ward	19100080	Contact crime	2011-12	848
-ward	19100080	Property crime	2012-13	336
-ward	19100080	Contact crime	2012-13	856
-ward	19100080	Property crime	2013-14	384
-ward	19100080	Contact crime	2013-14	849
-ward	19100080	Property crime	2014-15	410
-ward	19100080	Contact crime	2014-15	932
-ward	19100081	Property crime	2005-06	775
-ward	19100081	Contact crime	2005-06	1014
-ward	19100081	Property crime	2006-07	925
-ward	19100081	Contact crime	2006-07	978
-ward	19100081	Property crime	2007-08	903
-ward	19100081	Contact crime	2007-08	949
-ward	19100081	Property crime	2008-09	825
-ward	19100081	Contact crime	2008-09	993
-ward	19100081	Property crime	2009-10	788
-ward	19100081	Contact crime	2009-10	945
-ward	19100081	Property crime	2010-11	742
-ward	19100081	Contact crime	2010-11	981
-ward	19100081	Property crime	2011-12	782
-ward	19100081	Contact crime	2011-12	1039
-ward	19100081	Property crime	2012-13	748
-ward	19100081	Contact crime	2012-13	1053
-ward	19100081	Property crime	2013-14	632
-ward	19100081	Contact crime	2013-14	927
-ward	19100081	Property crime	2014-15	530
-ward	19100081	Contact crime	2014-15	853
-ward	19100082	Property crime	2005-06	982
-ward	19100082	Contact crime	2005-06	1285
-ward	19100082	Property crime	2006-07	1172
-ward	19100082	Contact crime	2006-07	1240
-ward	19100082	Property crime	2007-08	1144
-ward	19100082	Contact crime	2007-08	1203
-ward	19100082	Property crime	2008-09	1046
-ward	19100082	Contact crime	2008-09	1259
-ward	19100082	Property crime	2009-10	999
-ward	19100082	Contact crime	2009-10	1198
-ward	19100082	Property crime	2010-11	941
-ward	19100082	Contact crime	2010-11	1244
-ward	19100082	Property crime	2011-12	991
-ward	19100082	Contact crime	2011-12	1318
-ward	19100082	Property crime	2012-13	948
-ward	19100082	Contact crime	2012-13	1336
-ward	19100082	Property crime	2013-14	801
-ward	19100082	Contact crime	2013-14	1175
-ward	19100082	Property crime	2014-15	671
-ward	19100082	Contact crime	2014-15	1081
-ward	19100083	Property crime	2005-06	412
-ward	19100083	Contact crime	2005-06	399
-ward	19100083	Property crime	2006-07	480
-ward	19100083	Contact crime	2006-07	419
-ward	19100083	Property crime	2007-08	616
-ward	19100083	Contact crime	2007-08	427
-ward	19100083	Property crime	2008-09	581
-ward	19100083	Contact crime	2008-09	348
-ward	19100083	Property crime	2009-10	482
-ward	19100083	Contact crime	2009-10	270
-ward	19100083	Property crime	2010-11	492
-ward	19100083	Contact crime	2010-11	220
-ward	19100083	Property crime	2011-12	511
-ward	19100083	Contact crime	2011-12	250
-ward	19100083	Property crime	2012-13	548
-ward	19100083	Contact crime	2012-13	305
-ward	19100083	Property crime	2013-14	504
-ward	19100083	Contact crime	2013-14	363
-ward	19100083	Property crime	2014-15	410
-ward	19100083	Contact crime	2014-15	416
-ward	19100084	Property crime	2005-06	759
-ward	19100084	Contact crime	2005-06	345
-ward	19100084	Property crime	2006-07	858
-ward	19100084	Contact crime	2006-07	312
-ward	19100084	Property crime	2007-08	871
-ward	19100084	Contact crime	2007-08	328
-ward	19100084	Property crime	2008-09	773
-ward	19100084	Contact crime	2008-09	260
-ward	19100084	Property crime	2009-10	919
-ward	19100084	Contact crime	2009-10	289
-ward	19100084	Property crime	2010-11	888
-ward	19100084	Contact crime	2010-11	251
-ward	19100084	Property crime	2011-12	779
-ward	19100084	Contact crime	2011-12	282
-ward	19100084	Property crime	2012-13	879
-ward	19100084	Contact crime	2012-13	306
-ward	19100084	Property crime	2013-14	945
-ward	19100084	Contact crime	2013-14	367
-ward	19100084	Property crime	2014-15	733
-ward	19100084	Contact crime	2014-15	389
-ward	19100085	Property crime	2005-06	288
-ward	19100085	Contact crime	2005-06	280
-ward	19100085	Property crime	2006-07	336
-ward	19100085	Contact crime	2006-07	294
-ward	19100085	Property crime	2007-08	431
-ward	19100085	Contact crime	2007-08	299
-ward	19100085	Property crime	2008-09	437
-ward	19100085	Contact crime	2008-09	329
-ward	19100085	Property crime	2009-10	404
-ward	19100085	Contact crime	2009-10	335
-ward	19100085	Property crime	2010-11	435
-ward	19100085	Contact crime	2010-11	289
-ward	19100085	Property crime	2011-12	450
-ward	19100085	Contact crime	2011-12	336
-ward	19100085	Property crime	2012-13	475
-ward	19100085	Contact crime	2012-13	415
-ward	19100085	Property crime	2013-14	451
-ward	19100085	Contact crime	2013-14	520
-ward	19100085	Property crime	2014-15	415
-ward	19100085	Contact crime	2014-15	605
-ward	19100086	Property crime	2005-06	375
-ward	19100086	Contact crime	2005-06	365
-ward	19100086	Property crime	2006-07	437
-ward	19100086	Contact crime	2006-07	383
-ward	19100086	Property crime	2007-08	561
-ward	19100086	Contact crime	2007-08	390
-ward	19100086	Property crime	2008-09	558
-ward	19100086	Contact crime	2008-09	397
-ward	19100086	Property crime	2009-10	501
-ward	19100086	Contact crime	2009-10	382
-ward	19100086	Property crime	2010-11	533
-ward	19100086	Contact crime	2010-11	326
-ward	19100086	Property crime	2011-12	552
-ward	19100086	Contact crime	2011-12	379
-ward	19100086	Property crime	2012-13	585
-ward	19100086	Contact crime	2012-13	467
-ward	19100086	Property crime	2013-14	551
-ward	19100086	Contact crime	2013-14	580
-ward	19100086	Property crime	2014-15	493
-ward	19100086	Contact crime	2014-15	672
-ward	19100087	Property crime	2005-06	118
-ward	19100087	Contact crime	2005-06	697
-ward	19100087	Property crime	2006-07	129
-ward	19100087	Contact crime	2006-07	646
-ward	19100087	Property crime	2007-08	118
-ward	19100087	Contact crime	2007-08	581
-ward	19100087	Property crime	2008-09	121
-ward	19100087	Contact crime	2008-09	488
-ward	19100087	Property crime	2009-10	129
-ward	19100087	Contact crime	2009-10	505
-ward	19100087	Property crime	2010-11	130
-ward	19100087	Contact crime	2010-11	466
-ward	19100087	Property crime	2011-12	126
-ward	19100087	Contact crime	2011-12	547
-ward	19100087	Property crime	2012-13	150
-ward	19100087	Contact crime	2012-13	642
-ward	19100087	Property crime	2013-14	181
-ward	19100087	Contact crime	2013-14	663
-ward	19100087	Property crime	2014-15	180
-ward	19100087	Contact crime	2014-15	716
-ward	19100088	Property crime	2005-06	128
-ward	19100088	Contact crime	2005-06	547
-ward	19100088	Property crime	2006-07	165
-ward	19100088	Contact crime	2006-07	595
-ward	19100088	Property crime	2007-08	140
-ward	19100088	Contact crime	2007-08	459
-ward	19100088	Property crime	2008-09	136
-ward	19100088	Contact crime	2008-09	396
-ward	19100088	Property crime	2009-10	144
-ward	19100088	Contact crime	2009-10	420
-ward	19100088	Property crime	2010-11	170
-ward	19100088	Contact crime	2010-11	415
-ward	19100088	Property crime	2011-12	183
-ward	19100088	Contact crime	2011-12	502
-ward	19100088	Property crime	2012-13	176
-ward	19100088	Contact crime	2012-13	472
-ward	19100088	Property crime	2013-14	296
-ward	19100088	Contact crime	2013-14	635
-ward	19100088	Property crime	2014-15	419
-ward	19100088	Contact crime	2014-15	822
-ward	19100089	Property crime	2005-06	108
-ward	19100089	Contact crime	2005-06	642
-ward	19100089	Property crime	2006-07	119
-ward	19100089	Contact crime	2006-07	594
-ward	19100089	Property crime	2007-08	108
-ward	19100089	Contact crime	2007-08	535
-ward	19100089	Property crime	2008-09	111
-ward	19100089	Contact crime	2008-09	449
-ward	19100089	Property crime	2009-10	119
-ward	19100089	Contact crime	2009-10	465
-ward	19100089	Property crime	2010-11	119
-ward	19100089	Contact crime	2010-11	429
-ward	19100089	Property crime	2011-12	116
-ward	19100089	Contact crime	2011-12	504
-ward	19100089	Property crime	2012-13	138
-ward	19100089	Contact crime	2012-13	591
-ward	19100089	Property crime	2013-14	166
-ward	19100089	Contact crime	2013-14	611
-ward	19100089	Property crime	2014-15	166
-ward	19100089	Contact crime	2014-15	659
-ward	19100090	Property crime	2005-06	141
-ward	19100090	Contact crime	2005-06	661
-ward	19100090	Property crime	2006-07	145
-ward	19100090	Contact crime	2006-07	612
-ward	19100090	Property crime	2007-08	128
-ward	19100090	Contact crime	2007-08	512
-ward	19100090	Property crime	2008-09	133
-ward	19100090	Contact crime	2008-09	439
-ward	19100090	Property crime	2009-10	162
-ward	19100090	Contact crime	2009-10	467
-ward	19100090	Property crime	2010-11	160
-ward	19100090	Contact crime	2010-11	424
-ward	19100090	Property crime	2011-12	166
-ward	19100090	Contact crime	2011-12	484
-ward	19100090	Property crime	2012-13	187
-ward	19100090	Contact crime	2012-13	574
-ward	19100090	Property crime	2013-14	226
-ward	19100090	Contact crime	2013-14	594
-ward	19100090	Property crime	2014-15	222
-ward	19100090	Contact crime	2014-15	639
-ward	19100091	Property crime	2005-06	118
-ward	19100091	Contact crime	2005-06	700
-ward	19100091	Property crime	2006-07	129
-ward	19100091	Contact crime	2006-07	647
-ward	19100091	Property crime	2007-08	118
-ward	19100091	Contact crime	2007-08	582
-ward	19100091	Property crime	2008-09	121
-ward	19100091	Contact crime	2008-09	489
-ward	19100091	Property crime	2009-10	129
-ward	19100091	Contact crime	2009-10	507
-ward	19100091	Property crime	2010-11	130
-ward	19100091	Contact crime	2010-11	467
-ward	19100091	Property crime	2011-12	126
-ward	19100091	Contact crime	2011-12	548
-ward	19100091	Property crime	2012-13	150
-ward	19100091	Contact crime	2012-13	644
-ward	19100091	Property crime	2013-14	181
-ward	19100091	Contact crime	2013-14	665
-ward	19100091	Property crime	2014-15	181
-ward	19100091	Contact crime	2014-15	717
-ward	19100092	Property crime	2005-06	238
-ward	19100092	Contact crime	2005-06	738
-ward	19100092	Property crime	2006-07	227
-ward	19100092	Contact crime	2006-07	699
-ward	19100092	Property crime	2007-08	194
-ward	19100092	Contact crime	2007-08	495
-ward	19100092	Property crime	2008-09	208
-ward	19100092	Contact crime	2008-09	449
-ward	19100092	Property crime	2009-10	297
-ward	19100092	Contact crime	2009-10	509
-ward	19100092	Property crime	2010-11	288
-ward	19100092	Contact crime	2010-11	452
-ward	19100092	Property crime	2011-12	311
-ward	19100092	Contact crime	2011-12	473
-ward	19100092	Property crime	2012-13	330
-ward	19100092	Contact crime	2012-13	561
-ward	19100092	Property crime	2013-14	399
-ward	19100092	Contact crime	2013-14	596
-ward	19100092	Property crime	2014-15	389
-ward	19100092	Contact crime	2014-15	631
-ward	19100093	Property crime	2005-06	125
-ward	19100093	Contact crime	2005-06	670
-ward	19100093	Property crime	2006-07	134
-ward	19100093	Contact crime	2006-07	636
-ward	19100093	Property crime	2007-08	126
-ward	19100093	Contact crime	2007-08	576
-ward	19100093	Property crime	2008-09	131
-ward	19100093	Contact crime	2008-09	487
-ward	19100093	Property crime	2009-10	146
-ward	19100093	Contact crime	2009-10	503
-ward	19100093	Property crime	2010-11	146
-ward	19100093	Contact crime	2010-11	472
-ward	19100093	Property crime	2011-12	135
-ward	19100093	Contact crime	2011-12	541
-ward	19100093	Property crime	2012-13	155
-ward	19100093	Contact crime	2012-13	621
-ward	19100093	Property crime	2013-14	188
-ward	19100093	Contact crime	2013-14	656
-ward	19100093	Property crime	2014-15	191
-ward	19100093	Contact crime	2014-15	701
-ward	19100094	Property crime	2005-06	161
-ward	19100094	Contact crime	2005-06	514
-ward	19100094	Property crime	2006-07	155
-ward	19100094	Contact crime	2006-07	496
-ward	19100094	Property crime	2007-08	136
-ward	19100094	Contact crime	2007-08	370
-ward	19100094	Property crime	2008-09	147
-ward	19100094	Contact crime	2008-09	333
-ward	19100094	Property crime	2009-10	205
-ward	19100094	Contact crime	2009-10	370
-ward	19100094	Property crime	2010-11	199
-ward	19100094	Contact crime	2010-11	336
-ward	19100094	Property crime	2011-12	206
-ward	19100094	Contact crime	2011-12	352
-ward	19100094	Property crime	2012-13	219
-ward	19100094	Contact crime	2012-13	407
-ward	19100094	Property crime	2013-14	265
-ward	19100094	Contact crime	2013-14	439
-ward	19100094	Property crime	2014-15	261
-ward	19100094	Contact crime	2014-15	463
-ward	19100095	Property crime	2005-06	244
-ward	19100095	Contact crime	2005-06	907
-ward	19100095	Property crime	2006-07	250
-ward	19100095	Contact crime	2006-07	968
-ward	19100095	Property crime	2007-08	269
-ward	19100095	Contact crime	2007-08	923
-ward	19100095	Property crime	2008-09	285
-ward	19100095	Contact crime	2008-09	799
-ward	19100095	Property crime	2009-10	345
-ward	19100095	Contact crime	2009-10	814
-ward	19100095	Property crime	2010-11	338
-ward	19100095	Contact crime	2010-11	815
-ward	19100095	Property crime	2011-12	268
-ward	19100095	Contact crime	2011-12	859
-ward	19100095	Property crime	2012-13	281
-ward	19100095	Contact crime	2012-13	885
-ward	19100095	Property crime	2013-14	343
-ward	19100095	Contact crime	2013-14	1032
-ward	19100095	Property crime	2014-15	372
-ward	19100095	Contact crime	2014-15	1061
-ward	19100096	Property crime	2005-06	107
-ward	19100096	Contact crime	2005-06	409
-ward	19100096	Property crime	2006-07	108
-ward	19100096	Contact crime	2006-07	437
-ward	19100096	Property crime	2007-08	116
-ward	19100096	Contact crime	2007-08	417
-ward	19100096	Property crime	2008-09	125
-ward	19100096	Contact crime	2008-09	359
-ward	19100096	Property crime	2009-10	152
-ward	19100096	Contact crime	2009-10	365
-ward	19100096	Property crime	2010-11	148
-ward	19100096	Contact crime	2010-11	367
-ward	19100096	Property crime	2011-12	117
-ward	19100096	Contact crime	2011-12	387
-ward	19100096	Property crime	2012-13	123
-ward	19100096	Contact crime	2012-13	399
-ward	19100096	Property crime	2013-14	151
-ward	19100096	Contact crime	2013-14	466
-ward	19100096	Property crime	2014-15	164
-ward	19100096	Contact crime	2014-15	478
-ward	19100097	Property crime	2005-06	146
-ward	19100097	Contact crime	2005-06	505
-ward	19100097	Property crime	2006-07	143
-ward	19100097	Contact crime	2006-07	511
-ward	19100097	Property crime	2007-08	138
-ward	19100097	Contact crime	2007-08	435
-ward	19100097	Property crime	2008-09	149
-ward	19100097	Contact crime	2008-09	382
-ward	19100097	Property crime	2009-10	195
-ward	19100097	Contact crime	2009-10	405
-ward	19100097	Property crime	2010-11	189
-ward	19100097	Contact crime	2010-11	388
-ward	19100097	Property crime	2011-12	175
-ward	19100097	Contact crime	2011-12	408
-ward	19100097	Property crime	2012-13	185
-ward	19100097	Contact crime	2012-13	444
-ward	19100097	Property crime	2013-14	225
-ward	19100097	Contact crime	2013-14	499
-ward	19100097	Property crime	2014-15	231
-ward	19100097	Contact crime	2014-15	518
-ward	19100098	Property crime	2005-06	121
-ward	19100098	Contact crime	2005-06	464
-ward	19100098	Property crime	2006-07	123
-ward	19100098	Contact crime	2006-07	495
-ward	19100098	Property crime	2007-08	131
-ward	19100098	Contact crime	2007-08	472
-ward	19100098	Property crime	2008-09	141
-ward	19100098	Contact crime	2008-09	407
-ward	19100098	Property crime	2009-10	172
-ward	19100098	Contact crime	2009-10	414
-ward	19100098	Property crime	2010-11	168
-ward	19100098	Contact crime	2010-11	415
-ward	19100098	Property crime	2011-12	132
-ward	19100098	Contact crime	2011-12	438
-ward	19100098	Property crime	2012-13	139
-ward	19100098	Contact crime	2012-13	452
-ward	19100098	Property crime	2013-14	171
-ward	19100098	Contact crime	2013-14	527
-ward	19100098	Property crime	2014-15	185
-ward	19100098	Contact crime	2014-15	541
-ward	19100099	Property crime	2005-06	911
-ward	19100099	Contact crime	2005-06	1319
-ward	19100099	Property crime	2006-07	1076
-ward	19100099	Contact crime	2006-07	1285
-ward	19100099	Property crime	2007-08	1051
-ward	19100099	Contact crime	2007-08	1227
-ward	19100099	Property crime	2008-09	970
-ward	19100099	Contact crime	2008-09	1253
-ward	19100099	Property crime	2009-10	946
-ward	19100099	Contact crime	2009-10	1208
-ward	19100099	Property crime	2010-11	893
-ward	19100099	Contact crime	2010-11	1242
-ward	19100099	Property crime	2011-12	929
-ward	19100099	Contact crime	2011-12	1315
-ward	19100099	Property crime	2012-13	895
-ward	19100099	Contact crime	2012-13	1343
-ward	19100099	Property crime	2013-14	841
-ward	19100099	Contact crime	2013-14	1313
-ward	19100099	Property crime	2014-15	782
-ward	19100099	Contact crime	2014-15	1297
-ward	19100100	Property crime	2005-06	1399
-ward	19100100	Contact crime	2005-06	823
-ward	19100100	Property crime	2006-07	1388
-ward	19100100	Contact crime	2006-07	813
-ward	19100100	Property crime	2007-08	1553
-ward	19100100	Contact crime	2007-08	826
-ward	19100100	Property crime	2008-09	1517
-ward	19100100	Contact crime	2008-09	641
-ward	19100100	Property crime	2009-10	1631
-ward	19100100	Contact crime	2009-10	592
-ward	19100100	Property crime	2010-11	1658
-ward	19100100	Contact crime	2010-11	510
-ward	19100100	Property crime	2011-12	1796
-ward	19100100	Contact crime	2011-12	602
-ward	19100100	Property crime	2012-13	1692
-ward	19100100	Contact crime	2012-13	594
-ward	19100100	Property crime	2013-14	1535
-ward	19100100	Contact crime	2013-14	654
-ward	19100100	Property crime	2014-15	1199
-ward	19100100	Contact crime	2014-15	731
-ward	19100101	Property crime	2005-06	363
-ward	19100101	Contact crime	2005-06	512
-ward	19100101	Property crime	2006-07	396
-ward	19100101	Contact crime	2006-07	485
-ward	19100101	Property crime	2007-08	388
-ward	19100101	Contact crime	2007-08	382
-ward	19100101	Property crime	2008-09	325
-ward	19100101	Contact crime	2008-09	371
-ward	19100101	Property crime	2009-10	373
-ward	19100101	Contact crime	2009-10	422
-ward	19100101	Property crime	2010-11	410
-ward	19100101	Contact crime	2010-11	499
-ward	19100101	Property crime	2011-12	522
-ward	19100101	Contact crime	2011-12	507
-ward	19100101	Property crime	2012-13	469
-ward	19100101	Contact crime	2012-13	553
-ward	19100101	Property crime	2013-14	513
-ward	19100101	Contact crime	2013-14	624
-ward	19100101	Property crime	2014-15	483
-ward	19100101	Contact crime	2014-15	621
-ward	19100102	Property crime	2005-06	566
-ward	19100102	Contact crime	2005-06	281
-ward	19100102	Property crime	2006-07	557
-ward	19100102	Contact crime	2006-07	278
-ward	19100102	Property crime	2007-08	569
-ward	19100102	Contact crime	2007-08	271
-ward	19100102	Property crime	2008-09	641
-ward	19100102	Contact crime	2008-09	273
-ward	19100102	Property crime	2009-10	602
-ward	19100102	Contact crime	2009-10	279
-ward	19100102	Property crime	2010-11	591
-ward	19100102	Contact crime	2010-11	287
-ward	19100102	Property crime	2011-12	687
-ward	19100102	Contact crime	2011-12	280
-ward	19100102	Property crime	2012-13	726
-ward	19100102	Contact crime	2012-13	277
-ward	19100102	Property crime	2013-14	670
-ward	19100102	Contact crime	2013-14	290
-ward	19100102	Property crime	2014-15	570
-ward	19100102	Contact crime	2014-15	307
-ward	19100103	Property crime	2005-06	721
-ward	19100103	Contact crime	2005-06	413
-ward	19100103	Property crime	2006-07	800
-ward	19100103	Contact crime	2006-07	386
-ward	19100103	Property crime	2007-08	747
-ward	19100103	Contact crime	2007-08	335
-ward	19100103	Property crime	2008-09	776
-ward	19100103	Contact crime	2008-09	345
-ward	19100103	Property crime	2009-10	679
-ward	19100103	Contact crime	2009-10	374
-ward	19100103	Property crime	2010-11	797
-ward	19100103	Contact crime	2010-11	399
-ward	19100103	Property crime	2011-12	923
-ward	19100103	Contact crime	2011-12	404
-ward	19100103	Property crime	2012-13	1025
-ward	19100103	Contact crime	2012-13	448
-ward	19100103	Property crime	2013-14	958
-ward	19100103	Contact crime	2013-14	481
-ward	19100103	Property crime	2014-15	781
-ward	19100103	Contact crime	2014-15	486
-ward	19100104	Property crime	2005-06	719
-ward	19100104	Contact crime	2005-06	504
-ward	19100104	Property crime	2006-07	776
-ward	19100104	Contact crime	2006-07	513
-ward	19100104	Property crime	2007-08	857
-ward	19100104	Contact crime	2007-08	489
-ward	19100104	Property crime	2008-09	782
-ward	19100104	Contact crime	2008-09	496
-ward	19100104	Property crime	2009-10	916
-ward	19100104	Contact crime	2009-10	610
-ward	19100104	Property crime	2010-11	815
-ward	19100104	Contact crime	2010-11	538
-ward	19100104	Property crime	2011-12	787
-ward	19100104	Contact crime	2011-12	547
-ward	19100104	Property crime	2012-13	889
-ward	19100104	Contact crime	2012-13	582
-ward	19100104	Property crime	2013-14	962
-ward	19100104	Contact crime	2013-14	609
-ward	19100104	Property crime	2014-15	840
-ward	19100104	Contact crime	2014-15	714
-ward	19100105	Property crime	2005-06	632
-ward	19100105	Contact crime	2005-06	432
-ward	19100105	Property crime	2006-07	681
-ward	19100105	Contact crime	2006-07	403
-ward	19100105	Property crime	2007-08	674
-ward	19100105	Contact crime	2007-08	363
-ward	19100105	Property crime	2008-09	678
-ward	19100105	Contact crime	2008-09	355
-ward	19100105	Property crime	2009-10	641
-ward	19100105	Contact crime	2009-10	427
-ward	19100105	Property crime	2010-11	725
-ward	19100105	Contact crime	2010-11	447
-ward	19100105	Property crime	2011-12	837
-ward	19100105	Contact crime	2011-12	450
-ward	19100105	Property crime	2012-13	886
-ward	19100105	Contact crime	2012-13	495
-ward	19100105	Property crime	2013-14	870
-ward	19100105	Contact crime	2013-14	505
-ward	19100105	Property crime	2014-15	752
-ward	19100105	Contact crime	2014-15	523
-ward	19100106	Property crime	2005-06	686
-ward	19100106	Contact crime	2005-06	1132
-ward	19100106	Property crime	2006-07	686
-ward	19100106	Contact crime	2006-07	983
-ward	19100106	Property crime	2007-08	756
-ward	19100106	Contact crime	2007-08	1143
-ward	19100106	Property crime	2008-09	540
-ward	19100106	Contact crime	2008-09	938
-ward	19100106	Property crime	2009-10	474
-ward	19100106	Contact crime	2009-10	924
-ward	19100106	Property crime	2010-11	456
-ward	19100106	Contact crime	2010-11	819
-ward	19100106	Property crime	2011-12	491
-ward	19100106	Contact crime	2011-12	849
-ward	19100106	Property crime	2012-13	514
-ward	19100106	Contact crime	2012-13	908
-ward	19100106	Property crime	2013-14	526
-ward	19100106	Contact crime	2013-14	917
-ward	19100106	Property crime	2014-15	524
-ward	19100106	Contact crime	2014-15	1062
-ward	19100107	Property crime	2005-06	1189
-ward	19100107	Contact crime	2005-06	409
-ward	19100107	Property crime	2006-07	984
-ward	19100107	Contact crime	2006-07	371
-ward	19100107	Property crime	2007-08	1137
-ward	19100107	Contact crime	2007-08	384
-ward	19100107	Property crime	2008-09	1138
-ward	19100107	Contact crime	2008-09	408
-ward	19100107	Property crime	2009-10	1254
-ward	19100107	Contact crime	2009-10	483
-ward	19100107	Property crime	2010-11	1295
-ward	19100107	Contact crime	2010-11	469
-ward	19100107	Property crime	2011-12	1217
-ward	19100107	Contact crime	2011-12	458
-ward	19100107	Property crime	2012-13	1327
-ward	19100107	Contact crime	2012-13	469
-ward	19100107	Property crime	2013-14	1472
-ward	19100107	Contact crime	2013-14	555
-ward	19100107	Property crime	2014-15	1180
-ward	19100107	Contact crime	2014-15	599
-ward	19100108	Property crime	2005-06	264
-ward	19100108	Contact crime	2005-06	770
-ward	19100108	Property crime	2006-07	459
-ward	19100108	Contact crime	2006-07	1004
-ward	19100108	Property crime	2007-08	548
-ward	19100108	Contact crime	2007-08	1024
-ward	19100108	Property crime	2008-09	543
-ward	19100108	Contact crime	2008-09	1017
-ward	19100108	Property crime	2009-10	447
-ward	19100108	Contact crime	2009-10	925
-ward	19100108	Property crime	2010-11	484
-ward	19100108	Contact crime	2010-11	833
-ward	19100108	Property crime	2011-12	426
-ward	19100108	Contact crime	2011-12	877
-ward	19100108	Property crime	2012-13	525
-ward	19100108	Contact crime	2012-13	974
-ward	19100108	Property crime	2013-14	579
-ward	19100108	Contact crime	2013-14	1108
-ward	19100108	Property crime	2014-15	530
-ward	19100108	Contact crime	2014-15	1195
-ward	19100109	Property crime	2005-06	394
-ward	19100109	Contact crime	2005-06	627
-ward	19100109	Property crime	2006-07	541
-ward	19100109	Contact crime	2006-07	712
-ward	19100109	Property crime	2007-08	621
-ward	19100109	Contact crime	2007-08	673
-ward	19100109	Property crime	2008-09	480
-ward	19100109	Contact crime	2008-09	687
-ward	19100109	Property crime	2009-10	503
-ward	19100109	Contact crime	2009-10	742
-ward	19100109	Property crime	2010-11	534
-ward	19100109	Contact crime	2010-11	651
-ward	19100109	Property crime	2011-12	513
-ward	19100109	Contact crime	2011-12	633
-ward	19100109	Property crime	2012-13	473
-ward	19100109	Contact crime	2012-13	650
-ward	19100109	Property crime	2013-14	528
-ward	19100109	Contact crime	2013-14	733
-ward	19100109	Property crime	2014-15	560
-ward	19100109	Contact crime	2014-15	847
-ward	19100110	Property crime	2005-06	484
-ward	19100110	Contact crime	2005-06	336
-ward	19100110	Property crime	2006-07	475
-ward	19100110	Contact crime	2006-07	355
-ward	19100110	Property crime	2007-08	486
-ward	19100110	Contact crime	2007-08	375
-ward	19100110	Property crime	2008-09	468
-ward	19100110	Contact crime	2008-09	350
-ward	19100110	Property crime	2009-10	470
-ward	19100110	Contact crime	2009-10	373
-ward	19100110	Property crime	2010-11	447
-ward	19100110	Contact crime	2010-11	379
-ward	19100110	Property crime	2011-12	394
-ward	19100110	Contact crime	2011-12	356
-ward	19100110	Property crime	2012-13	483
-ward	19100110	Contact crime	2012-13	392
-ward	19100110	Property crime	2013-14	465
-ward	19100110	Contact crime	2013-14	413
-ward	19100110	Property crime	2014-15	418
-ward	19100110	Contact crime	2014-15	425
-ward	19100111	Property crime	2005-06	374
-ward	19100111	Contact crime	2005-06	521
-ward	19100111	Property crime	2006-07	407
-ward	19100111	Contact crime	2006-07	494
-ward	19100111	Property crime	2007-08	399
-ward	19100111	Contact crime	2007-08	389
-ward	19100111	Property crime	2008-09	336
-ward	19100111	Contact crime	2008-09	378
-ward	19100111	Property crime	2009-10	385
-ward	19100111	Contact crime	2009-10	430
-ward	19100111	Property crime	2010-11	421
-ward	19100111	Contact crime	2010-11	508
-ward	19100111	Property crime	2011-12	536
-ward	19100111	Contact crime	2011-12	516
-ward	19100111	Property crime	2012-13	483
-ward	19100111	Contact crime	2012-13	562
-ward	19100111	Property crime	2013-14	527
-ward	19100111	Contact crime	2013-14	634
-ward	19100111	Property crime	2014-15	496
-ward	19100111	Contact crime	2014-15	631
-ward	21001001	Property crime	2005-06	0
-ward	21001001	Contact crime	2005-06	0
-ward	21001001	Property crime	2006-07	0
-ward	21001001	Contact crime	2006-07	0
-ward	21001001	Property crime	2007-08	0
-ward	21001001	Contact crime	2007-08	0
-ward	21001001	Property crime	2008-09	0
-ward	21001001	Contact crime	2008-09	0
-ward	21001001	Property crime	2009-10	0
-ward	21001001	Contact crime	2009-10	0
-ward	21001001	Property crime	2010-11	0
-ward	21001001	Contact crime	2010-11	0
-ward	21001001	Property crime	2011-12	0
-ward	21001001	Contact crime	2011-12	0
-ward	21001001	Property crime	2012-13	0
-ward	21001001	Contact crime	2012-13	0
-ward	21001001	Property crime	2013-14	0
-ward	21001001	Contact crime	2013-14	0
-ward	21001001	Property crime	2014-15	0
-ward	21001001	Contact crime	2014-15	0
-ward	21001007	Property crime	2005-06	0
-ward	21001007	Contact crime	2005-06	0
-ward	21001007	Property crime	2006-07	0
-ward	21001007	Contact crime	2006-07	0
-ward	21001007	Property crime	2007-08	0
-ward	21001007	Contact crime	2007-08	0
-ward	21001007	Property crime	2008-09	0
-ward	21001007	Contact crime	2008-09	0
-ward	21001007	Property crime	2009-10	0
-ward	21001007	Contact crime	2009-10	0
-ward	21001007	Property crime	2010-11	0
-ward	21001007	Contact crime	2010-11	0
-ward	21001007	Property crime	2011-12	0
-ward	21001007	Contact crime	2011-12	0
-ward	21001007	Property crime	2012-13	0
-ward	21001007	Contact crime	2012-13	0
-ward	21001007	Property crime	2013-14	0
-ward	21001007	Contact crime	2013-14	0
-ward	21001007	Property crime	2014-15	0
-ward	21001007	Contact crime	2014-15	0
-ward	21007001	Property crime	2005-06	0
-ward	21007001	Contact crime	2005-06	0
-ward	21007001	Property crime	2006-07	0
-ward	21007001	Contact crime	2006-07	0
-ward	21007001	Property crime	2007-08	0
-ward	21007001	Contact crime	2007-08	0
-ward	21007001	Property crime	2008-09	0
-ward	21007001	Contact crime	2008-09	0
-ward	21007001	Property crime	2009-10	0
-ward	21007001	Contact crime	2009-10	0
-ward	21007001	Property crime	2010-11	0
-ward	21007001	Contact crime	2010-11	0
-ward	21007001	Property crime	2011-12	0
-ward	21007001	Contact crime	2011-12	0
-ward	21007001	Property crime	2012-13	0
-ward	21007001	Contact crime	2012-13	0
-ward	21007001	Property crime	2013-14	0
-ward	21007001	Contact crime	2013-14	0
-ward	21007001	Property crime	2014-15	0
-ward	21007001	Contact crime	2014-15	0
-ward	21007004	Property crime	2005-06	0
-ward	21007004	Contact crime	2005-06	0
-ward	21007004	Property crime	2006-07	0
-ward	21007004	Contact crime	2006-07	0
-ward	21007004	Property crime	2007-08	0
-ward	21007004	Contact crime	2007-08	0
-ward	21007004	Property crime	2008-09	0
-ward	21007004	Contact crime	2008-09	0
-ward	21007004	Property crime	2009-10	0
-ward	21007004	Contact crime	2009-10	0
-ward	21007004	Property crime	2010-11	0
-ward	21007004	Contact crime	2010-11	0
-ward	21007004	Property crime	2011-12	0
-ward	21007004	Contact crime	2011-12	0
-ward	21007004	Property crime	2012-13	0
-ward	21007004	Contact crime	2012-13	0
-ward	21007004	Property crime	2013-14	0
-ward	21007004	Contact crime	2013-14	0
-ward	21007004	Property crime	2014-15	0
-ward	21007004	Contact crime	2014-15	0
-ward	21009001	Property crime	2005-06	0
-ward	21009001	Contact crime	2005-06	0
-ward	21009001	Property crime	2006-07	0
-ward	21009001	Contact crime	2006-07	0
-ward	21009001	Property crime	2007-08	0
-ward	21009001	Contact crime	2007-08	0
-ward	21009001	Property crime	2008-09	0
-ward	21009001	Contact crime	2008-09	0
-ward	21009001	Property crime	2009-10	0
-ward	21009001	Contact crime	2009-10	0
-ward	21009001	Property crime	2010-11	0
-ward	21009001	Contact crime	2010-11	0
-ward	21009001	Property crime	2011-12	0
-ward	21009001	Contact crime	2011-12	0
-ward	21009001	Property crime	2012-13	0
-ward	21009001	Contact crime	2012-13	0
-ward	21009001	Property crime	2013-14	0
-ward	21009001	Contact crime	2013-14	0
-ward	21009001	Property crime	2014-15	0
-ward	21009001	Contact crime	2014-15	0
-ward	21009002	Property crime	2005-06	0
-ward	21009002	Contact crime	2005-06	0
-ward	21009002	Property crime	2006-07	0
-ward	21009002	Contact crime	2006-07	0
-ward	21009002	Property crime	2007-08	0
-ward	21009002	Contact crime	2007-08	0
-ward	21009002	Property crime	2008-09	0
-ward	21009002	Contact crime	2008-09	0
-ward	21009002	Property crime	2009-10	0
-ward	21009002	Contact crime	2009-10	0
-ward	21009002	Property crime	2010-11	0
-ward	21009002	Contact crime	2010-11	0
-ward	21009002	Property crime	2011-12	0
-ward	21009002	Contact crime	2011-12	0
-ward	21009002	Property crime	2012-13	0
-ward	21009002	Contact crime	2012-13	0
-ward	21009002	Property crime	2013-14	0
-ward	21009002	Contact crime	2013-14	0
-ward	21009002	Property crime	2014-15	0
-ward	21009002	Contact crime	2014-15	0
-ward	21009006	Property crime	2005-06	0
-ward	21009006	Contact crime	2005-06	0
-ward	21009006	Property crime	2006-07	0
-ward	21009006	Contact crime	2006-07	0
-ward	21009006	Property crime	2007-08	0
-ward	21009006	Contact crime	2007-08	0
-ward	21009006	Property crime	2008-09	0
-ward	21009006	Contact crime	2008-09	0
-ward	21009006	Property crime	2009-10	0
-ward	21009006	Contact crime	2009-10	0
-ward	21009006	Property crime	2010-11	0
-ward	21009006	Contact crime	2010-11	0
-ward	21009006	Property crime	2011-12	0
-ward	21009006	Contact crime	2011-12	0
-ward	21009006	Property crime	2012-13	0
-ward	21009006	Contact crime	2012-13	0
-ward	21009006	Property crime	2013-14	0
-ward	21009006	Contact crime	2013-14	0
-ward	21009006	Property crime	2014-15	0
-ward	21009006	Contact crime	2014-15	0
-ward	30604002	Property crime	2005-06	0
-ward	30604002	Contact crime	2005-06	0
-ward	30604002	Property crime	2006-07	0
-ward	30604002	Contact crime	2006-07	0
-ward	30604002	Property crime	2007-08	0
-ward	30604002	Contact crime	2007-08	0
-ward	30604002	Property crime	2008-09	0
-ward	30604002	Contact crime	2008-09	0
-ward	30604002	Property crime	2009-10	0
-ward	30604002	Contact crime	2009-10	0
-ward	30604002	Property crime	2010-11	0
-ward	30604002	Contact crime	2010-11	0
-ward	30604002	Property crime	2011-12	0
-ward	30604002	Contact crime	2011-12	0
-ward	30604002	Property crime	2012-13	0
-ward	30604002	Contact crime	2012-13	0
-ward	30604002	Property crime	2013-14	0
-ward	30604002	Contact crime	2013-14	0
-ward	30604002	Property crime	2014-15	0
-ward	30604002	Contact crime	2014-15	0
-ward	30604004	Property crime	2005-06	0
-ward	30604004	Contact crime	2005-06	0
-ward	30604004	Property crime	2006-07	0
-ward	30604004	Contact crime	2006-07	0
-ward	30604004	Property crime	2007-08	0
-ward	30604004	Contact crime	2007-08	0
-ward	30604004	Property crime	2008-09	0
-ward	30604004	Contact crime	2008-09	0
-ward	30604004	Property crime	2009-10	0
-ward	30604004	Contact crime	2009-10	0
-ward	30604004	Property crime	2010-11	0
-ward	30604004	Contact crime	2010-11	0
-ward	30604004	Property crime	2011-12	0
-ward	30604004	Contact crime	2011-12	0
-ward	30604004	Property crime	2012-13	0
-ward	30604004	Contact crime	2012-13	0
-ward	30604004	Property crime	2013-14	0
-ward	30604004	Contact crime	2013-14	0
-ward	30604004	Property crime	2014-15	0
-ward	30604004	Contact crime	2014-15	0
-ward	30605004	Property crime	2005-06	0
-ward	30605004	Contact crime	2005-06	0
-ward	30605004	Property crime	2006-07	0
-ward	30605004	Contact crime	2006-07	0
-ward	30605004	Property crime	2007-08	0
-ward	30605004	Contact crime	2007-08	0
-ward	30605004	Property crime	2008-09	0
-ward	30605004	Contact crime	2008-09	0
-ward	30605004	Property crime	2009-10	0
-ward	30605004	Contact crime	2009-10	0
-ward	30605004	Property crime	2010-11	0
-ward	30605004	Contact crime	2010-11	0
-ward	30605004	Property crime	2011-12	0
-ward	30605004	Contact crime	2011-12	0
-ward	30605004	Property crime	2012-13	0
-ward	30605004	Contact crime	2012-13	0
-ward	30605004	Property crime	2013-14	0
-ward	30605004	Contact crime	2013-14	0
-ward	30605004	Property crime	2014-15	0
-ward	30605004	Contact crime	2014-15	0
-ward	30605005	Property crime	2005-06	0
-ward	30605005	Contact crime	2005-06	0
-ward	30605005	Property crime	2006-07	0
-ward	30605005	Contact crime	2006-07	0
-ward	30605005	Property crime	2007-08	0
-ward	30605005	Contact crime	2007-08	0
-ward	30605005	Property crime	2008-09	0
-ward	30605005	Contact crime	2008-09	0
-ward	30605005	Property crime	2009-10	0
-ward	30605005	Contact crime	2009-10	0
-ward	30605005	Property crime	2010-11	0
-ward	30605005	Contact crime	2010-11	0
-ward	30605005	Property crime	2011-12	0
-ward	30605005	Contact crime	2011-12	0
-ward	30605005	Property crime	2012-13	0
-ward	30605005	Contact crime	2012-13	0
-ward	30605005	Property crime	2013-14	0
-ward	30605005	Contact crime	2013-14	0
-ward	30605005	Property crime	2014-15	0
-ward	30605005	Contact crime	2014-15	0
-ward	30606003	Property crime	2005-06	0
-ward	30606003	Contact crime	2005-06	0
-ward	30606003	Property crime	2006-07	0
-ward	30606003	Contact crime	2006-07	0
-ward	30606003	Property crime	2007-08	0
-ward	30606003	Contact crime	2007-08	0
-ward	30606003	Property crime	2008-09	0
-ward	30606003	Contact crime	2008-09	0
-ward	30606003	Property crime	2009-10	0
-ward	30606003	Contact crime	2009-10	0
-ward	30606003	Property crime	2010-11	0
-ward	30606003	Contact crime	2010-11	0
-ward	30606003	Property crime	2011-12	0
-ward	30606003	Contact crime	2011-12	0
-ward	30606003	Property crime	2012-13	0
-ward	30606003	Contact crime	2012-13	0
-ward	30606003	Property crime	2013-14	0
-ward	30606003	Contact crime	2013-14	0
-ward	30606003	Property crime	2014-15	0
-ward	30606003	Contact crime	2014-15	0
-ward	30606004	Property crime	2005-06	0
-ward	30606004	Contact crime	2005-06	0
-ward	30606004	Property crime	2006-07	0
-ward	30606004	Contact crime	2006-07	0
-ward	30606004	Property crime	2007-08	0
-ward	30606004	Contact crime	2007-08	0
-ward	30606004	Property crime	2008-09	0
-ward	30606004	Contact crime	2008-09	0
-ward	30606004	Property crime	2009-10	0
-ward	30606004	Contact crime	2009-10	0
-ward	30606004	Property crime	2010-11	0
-ward	30606004	Contact crime	2010-11	0
-ward	30606004	Property crime	2011-12	0
-ward	30606004	Contact crime	2011-12	0
-ward	30606004	Property crime	2012-13	0
-ward	30606004	Contact crime	2012-13	0
-ward	30606004	Property crime	2013-14	0
-ward	30606004	Contact crime	2013-14	0
-ward	30606004	Property crime	2014-15	0
-ward	30606004	Contact crime	2014-15	0
-ward	30701003	Property crime	2005-06	0
-ward	30701003	Contact crime	2005-06	0
-ward	30701003	Property crime	2006-07	0
-ward	30701003	Contact crime	2006-07	0
-ward	30701003	Property crime	2007-08	0
-ward	30701003	Contact crime	2007-08	0
-ward	30701003	Property crime	2008-09	0
-ward	30701003	Contact crime	2008-09	0
-ward	30701003	Property crime	2009-10	0
-ward	30701003	Contact crime	2009-10	0
-ward	30701003	Property crime	2010-11	0
-ward	30701003	Contact crime	2010-11	0
-ward	30701003	Property crime	2011-12	0
-ward	30701003	Contact crime	2011-12	0
-ward	30701003	Property crime	2012-13	0
-ward	30701003	Contact crime	2012-13	0
-ward	30701003	Property crime	2013-14	0
-ward	30701003	Contact crime	2013-14	0
-ward	30701003	Property crime	2014-15	0
-ward	30701003	Contact crime	2014-15	0
-municipality	WC023	Contact crime	2010-11	3518
-municipality	WC053	Contact crime	2005-06	917
-district	DC2	Contact crime	2007-08	9458
-municipality	WC011	Property crime	2012-13	681
-municipality	WC033	Contact crime	2009-10	491
-district	DC1	Property crime	2005-06	2022
-municipality	WC048	Contact crime	2010-11	1105
-district	DC3	Property crime	2009-10	1544
-municipality	WC025	Property crime	2010-11	2615
-municipality	WC026	Contact crime	2007-08	1139
-municipality	WC043	Contact crime	2007-08	1679
-municipality	WC013	Contact crime	2009-10	664
-municipality	WC034	Contact crime	2009-10	668
-municipality	EC107	Contact crime	2014-15	0
-district	DC4	Contact crime	2013-14	8348
-municipality	NC066	Property crime	2006-07	0
-district	DC5	Property crime	2006-07	447
-municipality	EC101	Contact crime	2005-06	0
-municipality	WC043	Property crime	2005-06	1482
-municipality	NC066	Property crime	2009-10	0
-municipality	WC026	Property crime	2011-12	695
-municipality	WC032	Contact crime	2009-10	1164
-province	WC	Contact crime	2012-13	84988
-municipality	WC044	Contact crime	2005-06	3318
-municipality	WC025	Property crime	2005-06	2028
-municipality	WC032	Contact crime	2006-07	1002
-municipality	EC107	Contact crime	2009-10	0
-district	DC4	Contact crime	2008-09	5542
-municipality	EC107	Property crime	2007-08	0
-municipality	WC014	Contact crime	2012-13	1153
-municipality	WC026	Contact crime	2012-13	1459
-municipality	WC047	Property crime	2008-09	1025
-municipality	NC066	Contact crime	2012-13	0
-municipality	WC011	Contact crime	2010-11	1080
-country	ZA	Property crime	2012-13	94544
-municipality	WC013	Contact crime	2006-07	575
-municipality	WC032	Property crime	2014-15	2657
-municipality	WC043	Property crime	2006-07	1226
-municipality	WC047	Contact crime	2012-13	858
-municipality	WC043	Contact crime	2014-15	2091
-municipality	NC065	Contact crime	2009-10	0
-municipality	WC025	Property crime	2009-10	2240
-province	WC	Property crime	2007-08	76827
-municipality	WC053	Contact crime	2009-10	952
-municipality	WC053	Property crime	2014-15	1019
-municipality	WC044	Contact crime	2008-09	2962
-district	DC1	Contact crime	2014-15	4384
-municipality	WC011	Contact crime	2007-08	1144
-municipality	WC025	Contact crime	2013-14	4095
-district	DC5	Property crime	2005-06	424
-municipality	WC041	Contact crime	2011-12	518
-district	DC3	Contact crime	2013-14	2312
-municipality	WC031	Contact crime	2012-13	689
-municipality	WC031	Property crime	2007-08	411
-municipality	WC024	Property crime	2008-09	3373
-district	DC4	Contact crime	2010-11	6639
-municipality	WC025	Property crime	2006-07	2089
-municipality	EC101	Contact crime	2007-08	0
-municipality	EC109	Contact crime	2013-14	0
-municipality	WC015	Contact crime	2014-15	1549
-district	DC10	Property crime	2005-06	0
-municipality	WC042	Property crime	2009-10	312
-municipality	WC012	Property crime	2005-06	312
-municipality	WC044	Property crime	2009-10	2711
-municipality	WC033	Property crime	2011-12	269
-municipality	WC014	Property crime	2007-08	1361
-municipality	WC032	Contact crime	2008-09	963
-municipality	WC013	Contact crime	2011-12	714
-municipality	WC032	Property crime	2013-14	2052
-municipality	WC048	Contact crime	2009-10	987
-municipality	WC014	Contact crime	2005-06	1136
-municipality	CPT	Property crime	2009-10	72121
-municipality	NC064	Property crime	2010-11	0
-municipality	NC065	Contact crime	2007-08	0
-municipality	EC107	Contact crime	2013-14	0
-municipality	WC025	Property crime	2012-13	3211
-municipality	WC045	Property crime	2007-08	711
-province	WC	Property crime	2008-09	73983
-municipality	EC109	Property crime	2006-07	0
-municipality	WC024	Contact crime	2006-07	1601
-municipality	WC045	Contact crime	2008-09	1121
-district	DC2	Contact crime	2009-10	9767
-province	WC	Contact crime	2010-11	77061
-municipality	WC026	Contact crime	2005-06	1218
-municipality	EC101	Property crime	2013-14	0
-municipality	WC013	Property crime	2013-14	269
-municipality	WC026	Property crime	2009-10	570
-municipality	WC032	Contact crime	2005-06	1024
-municipality	WC048	Property crime	2011-12	1344
-municipality	WC042	Contact crime	2005-06	660
-province	WC	Contact crime	2005-06	84786
-municipality	WC014	Contact crime	2009-10	1103
-district	DC2	Contact crime	2005-06	11066
-municipality	WC051	Contact crime	2007-08	107
-municipality	WC047	Contact crime	2010-11	690
-municipality	WC014	Contact crime	2007-08	974
-municipality	NC064	Property crime	2014-15	0
-municipality	WC044	Property crime	2010-11	3275
-municipality	WC014	Property crime	2008-09	1461
-municipality	WC042	Property crime	2006-07	297
-municipality	CPT	Contact crime	2005-06	66667
-municipality	NC064	Contact crime	2013-14	0
-municipality	WC041	Property crime	2012-13	346
-district	DC5	Contact crime	2010-11	1051
-municipality	NC066	Contact crime	2014-15	0
-municipality	WC025	Property crime	2011-12	2946
-municipality	WC047	Property crime	2010-11	1047
-district	DC1	Property crime	2012-13	3605
-municipality	CPT	Contact crime	2010-11	58720
-municipality	EC109	Property crime	2005-06	0
-municipality	WC051	Contact crime	2013-14	157
-municipality	WC043	Contact crime	2012-13	1734
-municipality	WC026	Property crime	2007-08	487
-municipality	WC031	Property crime	2013-14	912
-municipality	WC041	Contact crime	2012-13	506
-municipality	EC101	Property crime	2014-15	0
-municipality	WC013	Property crime	2014-15	322
-municipality	WC033	Contact crime	2013-14	582
-municipality	EC109	Contact crime	2014-15	0
-municipality	NC066	Property crime	2014-15	0
-municipality	WC026	Property crime	2010-11	631
-municipality	WC024	Property crime	2006-07	3241
-country	ZA	Contact crime	2011-12	82090
-municipality	EC101	Property crime	2008-09	0
-district	DC1	Contact crime	2012-13	4150
-municipality	CPT	Property crime	2010-11	70351
-municipality	WC013	Contact crime	2013-14	717
-municipality	EC109	Property crime	2012-13	0
-municipality	WC041	Contact crime	2008-09	505
-municipality	WC012	Property crime	2007-08	268
-municipality	WC032	Property crime	2005-06	1207
-municipality	WC052	Property crime	2007-08	69
-municipality	WC012	Contact crime	2005-06	809
-municipality	WC034	Contact crime	2012-13	739
-municipality	WC042	Property crime	2005-06	241
-municipality	WC031	Property crime	2008-09	485
-district	DC2	Property crime	2005-06	6957
-municipality	WC052	Contact crime	2008-09	216
-municipality	WC032	Contact crime	2013-14	1376
-municipality	WC051	Property crime	2008-09	87
-district	DC2	Contact crime	2011-12	10965
-municipality	WC025	Property crime	2014-15	3074
-municipality	WC047	Property crime	2009-10	1047
-municipality	WC022	Property crime	2013-14	1475
-municipality	WC045	Contact crime	2007-08	1228
-district	DC10	Property crime	2009-10	0
-municipality	WC031	Property crime	2014-15	951
-district	DC2	Property crime	2009-10	8385
-municipality	WC031	Contact crime	2007-08	493
-municipality	EC101	Contact crime	2013-14	0
-municipality	NC066	Property crime	2013-14	0
-municipality	WC024	Property crime	2005-06	2742
-municipality	EC101	Property crime	2007-08	0
-municipality	NC066	Contact crime	2008-09	0
-district	DC10	Property crime	2010-11	0
-municipality	WC042	Contact crime	2009-10	653
-district	DC3	Contact crime	2007-08	1793
-municipality	WC013	Property crime	2006-07	149
-municipality	WC012	Property crime	2008-09	304
-municipality	WC015	Property crime	2008-09	724
-municipality	WC043	Property crime	2014-15	1771
-municipality	WC025	Contact crime	2009-10	3336
-municipality	WC042	Contact crime	2007-08	664
-municipality	WC014	Property crime	2005-06	927
-province	WC	Contact crime	2007-08	75935
-district	DC2	Property crime	2006-07	7209
-municipality	WC032	Property crime	2010-11	1502
-municipality	WC048	Property crime	2006-07	1149
-province	WC	Property crime	2009-10	79450
-municipality	WC022	Contact crime	2010-11	1829
-municipality	WC044	Property crime	2008-09	2646
-municipality	WC025	Property crime	2013-14	3041
-municipality	WC041	Contact crime	2014-15	436
-province	EC	Contact crime	2012-13	0
-municipality	WC022	Property crime	2014-15	1470
-municipality	WC025	Contact crime	2005-06	4049
-district	DC4	Property crime	2010-11	6100
-district	DC1	Contact crime	2010-11	3706
-municipality	WC014	Property crime	2012-13	1861
-municipality	WC026	Property crime	2008-09	499
-municipality	WC011	Contact crime	2013-14	1316
-municipality	WC013	Property crime	2012-13	326
-municipality	WC048	Contact crime	2013-14	1399
-municipality	WC041	Contact crime	2006-07	606
-country	ZA	Contact crime	2012-13	87354
-district	DC3	Contact crime	2009-10	1956
-municipality	WC052	Contact crime	2012-13	226
-municipality	WC043	Contact crime	2006-07	1559
-municipality	WC034	Property crime	2005-06	322
-municipality	WC051	Contact crime	2012-13	153
-district	DC4	Contact crime	2014-15	8668
-municipality	WC047	Contact crime	2005-06	750
-municipality	CPT	Property crime	2012-13	75784
-municipality	EC109	Contact crime	2009-10	0
-municipality	WC048	Contact crime	2005-06	1396
-country	ZA	Property crime	2005-06	78745
-municipality	NC065	Property crime	2007-08	0
-municipality	WC015	Property crime	2007-08	686
-country	ZA	Contact crime	2008-09	73626
-municipality	WC044	Property crime	2013-14	3975
-municipality	NC066	Contact crime	2006-07	0
-municipality	WC031	Contact crime	2010-11	600
-municipality	WC014	Property crime	2006-07	1204
-municipality	WC032	Property crime	2009-10	1659
-municipality	WC048	Property crime	2005-06	1274
-province	WC	Contact crime	2013-14	89341
-province	WC	Property crime	2012-13	91748
-municipality	WC051	Property crime	2006-07	48
-district	DC1	Property crime	2008-09	2724
-district	DC4	Property crime	2008-09	5082
-municipality	WC022	Property crime	2011-12	1077
-municipality	EC107	Property crime	2013-14	0
-municipality	WC024	Contact crime	2011-12	2023
-municipality	WC032	Contact crime	2011-12	1110
-municipality	WC031	Property crime	2011-12	535
-municipality	WC014	Property crime	2011-12	1427
-municipality	WC024	Property crime	2009-10	3568
-municipality	WC031	Property crime	2012-13	747
-municipality	EC101	Property crime	2009-10	0
-municipality	NC066	Property crime	2010-11	0
-municipality	WC013	Property crime	2009-10	226
-municipality	WC026	Property crime	2013-14	975
-municipality	WC034	Property crime	2006-07	290
-municipality	NC065	Property crime	2011-12	0
-municipality	CPT	Property crime	2011-12	71342
-municipality	WC013	Property crime	2008-09	197
-municipality	WC026	Contact crime	2014-15	1548
-municipality	WC033	Property crime	2006-07	299
-municipality	WC015	Contact crime	2005-06	1303
-municipality	WC051	Contact crime	2009-10	131
-municipality	WC045	Contact crime	2010-11	1443
-municipality	WC044	Property crime	2014-15	3573
-district	DC3	Property crime	2006-07	1319
-municipality	EC109	Contact crime	2011-12	0
-municipality	WC012	Property crime	2012-13	417
-municipality	WC022	Contact crime	2009-10	1800
-district	DC2	Property crime	2007-08	7098
-district	DC5	Contact crime	2014-15	1224
-province	WC	Property crime	2011-12	83038
-municipality	NC066	Contact crime	2007-08	0
-municipality	WC051	Property crime	2005-06	88
-municipality	WC023	Property crime	2005-06	2449
-district	DC1	Property crime	2007-08	2483
-municipality	WC015	Contact crime	2009-10	1253
-municipality	WC012	Contact crime	2011-12	859
-municipality	WC047	Property crime	2014-15	1441
-district	DC5	Contact crime	2008-09	899
-municipality	NC065	Contact crime	2012-13	0
-municipality	WC022	Property crime	2012-13	1318
-country	ZA	Contact crime	2014-15	98348
-municipality	WC031	Contact crime	2005-06	542
-municipality	CPT	Contact crime	2014-15	73507
-municipality	EC101	Contact crime	2012-13	0
-municipality	WC051	Contact crime	2011-12	160
-district	DC4	Property crime	2012-13	7734
-district	DC1	Contact crime	2006-07	3645
-municipality	WC024	Property crime	2010-11	4394
-municipality	WC031	Property crime	2009-10	589
-municipality	EC101	Property crime	2010-11	0
-municipality	WC013	Property crime	2010-11	224
-municipality	WC051	Contact crime	2005-06	157
-district	DC10	Contact crime	2013-14	0
-country	ZA	Contact crime	2006-07	82976
-district	DC2	Contact crime	2008-09	8601
-municipality	NC065	Property crime	2012-13	0
-municipality	WC033	Contact crime	2010-11	606
-municipality	CPT	Property crime	2014-15	73072
-municipality	WC013	Property crime	2007-08	157
-municipality	WC011	Contact crime	2011-12	1171
-country	ZA	Property crime	2007-08	78862
-district	DC2	Contact crime	2014-15	12421
-municipality	WC031	Contact crime	2009-10	620
-municipality	WC043	Contact crime	2008-09	1600
-municipality	WC015	Property crime	2006-07	658
-municipality	WC013	Contact crime	2010-11	690
-municipality	WC034	Contact crime	2007-08	626
-municipality	WC047	Property crime	2007-08	1027
-district	DC2	Property crime	2008-09	7302
-municipality	WC048	Property crime	2008-09	1357
-municipality	WC023	Property crime	2006-07	2338
-municipality	WC026	Contact crime	2011-12	1310
-municipality	WC042	Contact crime	2013-14	776
-municipality	WC022	Property crime	2009-10	1094
-province	WC	Contact crime	2011-12	79707
-district	DC4	Property crime	2011-12	6448
-municipality	WC015	Property crime	2009-10	804
-municipality	WC014	Property crime	2013-14	1554
-municipality	WC024	Property crime	2011-12	4027
-municipality	WC052	Property crime	2013-14	107
-municipality	EC101	Property crime	2011-12	0
-municipality	WC014	Contact crime	2011-12	1100
-country	ZA	Property crime	2014-15	94670
-municipality	EC101	Contact crime	2009-10	0
-municipality	NC066	Contact crime	2011-12	0
-municipality	WC051	Property crime	2007-08	49
-municipality	WC045	Contact crime	2012-13	1831
-municipality	WC026	Contact crime	2013-14	1466
-municipality	WC047	Contact crime	2011-12	821
-province	EC	Contact crime	2007-08	0
-municipality	CPT	Property crime	2013-14	77513
-country	ZA	Property crime	2008-09	76118
-province	EC	Property crime	2013-14	0
-municipality	WC013	Contact crime	2008-09	633
-municipality	WC043	Property crime	2010-11	1491
-municipality	WC015	Property crime	2005-06	681
-municipality	WC053	Property crime	2007-08	530
-municipality	WC045	Property crime	2010-11	1106
-municipality	WC042	Contact crime	2010-11	602
-municipality	WC047	Property crime	2005-06	1012
-municipality	WC053	Contact crime	2010-11	985
-district	DC10	Contact crime	2012-13	0
-district	DC5	Property crime	2007-08	512
-municipality	WC048	Property crime	2007-08	1102
-municipality	WC041	Contact crime	2010-11	503
-district	DC3	Contact crime	2014-15	2514
-municipality	WC048	Property crime	2013-14	1742
-municipality	WC025	Property crime	2008-09	2152
-municipality	NC065	Property crime	2009-10	0
-district	DC4	Contact crime	2009-10	5820
-municipality	WC051	Property crime	2011-12	112
-municipality	EC109	Property crime	2014-15	0
-district	DC4	Property crime	2014-15	7627
-municipality	WC015	Property crime	2010-11	742
-municipality	WC024	Property crime	2012-13	4528
-district	DC4	Property crime	2013-14	8000
-municipality	WC011	Contact crime	2009-10	985
-country	ZA	Contact crime	2005-06	87106
-country	ZA	Property crime	2013-14	97156
-municipality	WC015	Contact crime	2007-08	1242
-municipality	NC065	Property crime	2014-15	0
-municipality	WC014	Contact crime	2006-07	948
-province	EC	Property crime	2012-13	0
-municipality	WC041	Property crime	2007-08	254
-municipality	WC052	Property crime	2008-09	82
-municipality	EC101	Contact crime	2006-07	0
-municipality	WC045	Property crime	2009-10	1079
-district	DC3	Property crime	2008-09	1290
-municipality	WC026	Property crime	2012-13	970
-municipality	WC024	Contact crime	2005-06	1693
-municipality	WC022	Property crime	2006-07	678
-municipality	WC011	Property crime	2013-14	706
-municipality	WC034	Property crime	2013-14	484
-district	DC4	Contact crime	2007-08	5788
-district	DC10	Contact crime	2009-10	0
-municipality	WC023	Property crime	2007-08	2054
-municipality	WC034	Contact crime	2005-06	716
-municipality	WC048	Property crime	2014-15	1861
-province	WC	Contact crime	2006-07	80774
-district	DC2	Contact crime	2006-07	10044
-municipality	WC024	Property crime	2013-14	4629
-municipality	WC047	Contact crime	2009-10	632
-municipality	WC042	Contact crime	2011-12	643
-municipality	WC022	Contact crime	2013-14	2118
-municipality	WC033	Property crime	2012-13	343
-municipality	CPT	Property crime	2007-08	73339
-municipality	WC041	Property crime	2014-15	321
-municipality	NC065	Contact crime	2010-11	0
-municipality	CPT	Contact crime	2006-07	64873
-district	DC5	Contact crime	2011-12	1053
-district	DC3	Property crime	2010-11	1569
-province	EC	Property crime	2011-12	0
-municipality	NC066	Contact crime	2013-14	0
-municipality	WC041	Property crime	2008-09	251
-municipality	WC045	Contact crime	2014-15	2205
-municipality	EC109	Property crime	2010-11	0
-district	DC3	Property crime	2007-08	1085
-municipality	WC022	Contact crime	2008-09	1865
-municipality	WC051	Contact crime	2014-15	193
-municipality	WC022	Property crime	2005-06	812
-municipality	WC011	Property crime	2014-15	700
-municipality	WC023	Contact crime	2013-14	3787
-province	EC	Contact crime	2009-10	0
-municipality	WC015	Contact crime	2013-14	1444
-municipality	WC023	Property crime	2008-09	2236
-municipality	WC051	Contact crime	2008-09	114
-municipality	NC064	Contact crime	2014-15	0
-municipality	WC023	Contact crime	2012-13	3764
-country	ZA	Contact crime	2010-11	79405
-municipality	WC031	Contact crime	2013-14	748
-municipality	WC052	Contact crime	2007-08	210
-municipality	WC013	Contact crime	2014-15	735
-municipality	WC053	Property crime	2011-12	766
-municipality	WC024	Property crime	2014-15	4255
-province	EC	Contact crime	2005-06	0
-country	ZA	Property crime	2011-12	85507
-municipality	EC107	Property crime	2014-15	0
-municipality	WC034	Contact crime	2011-12	724
-municipality	WC041	Property crime	2013-14	321
-district	DC5	Property crime	2009-10	637
-municipality	EC109	Contact crime	2012-13	0
-municipality	WC012	Contact crime	2007-08	834
-municipality	WC024	Contact crime	2007-08	1683
-district	DC10	Property crime	2007-08	0
-district	DC2	Contact crime	2010-11	10473
-municipality	WC015	Contact crime	2008-09	1176
-municipality	WC047	Property crime	2006-07	1031
-municipality	WC052	Contact crime	2009-10	218
-municipality	EC107	Contact crime	2011-12	0
-district	DC4	Property crime	2009-10	5548
-municipality	WC026	Contact crime	2009-10	1304
-municipality	WC024	Property crime	2007-08	3333
-municipality	EC101	Contact crime	2014-15	0
-municipality	WC048	Property crime	2012-13	1513
-province	WC	Property crime	2005-06	76729
-municipality	WC023	Property crime	2013-14	3672
-municipality	WC042	Property crime	2010-11	307
-municipality	WC012	Property crime	2006-07	244
-municipality	WC015	Property crime	2013-14	1007
-municipality	WC053	Property crime	2012-13	899
-municipality	NC065	Contact crime	2006-07	0
-municipality	WC011	Property crime	2008-09	470
-municipality	WC014	Contact crime	2008-09	982
-country	ZA	Property crime	2010-11	83010
-municipality	CPT	Property crime	2005-06	72034
-municipality	WC033	Contact crime	2011-12	529
-municipality	WC025	Contact crime	2012-13	4106
-district	DC5	Property crime	2010-11	627
-province	WC	Contact crime	2008-09	71485
-municipality	WC053	Contact crime	2011-12	976
-municipality	WC048	Contact crime	2011-12	1212
-municipality	EC109	Contact crime	2006-07	0
-municipality	WC045	Property crime	2008-09	808
-municipality	WC041	Contact crime	2013-14	461
-municipality	WC026	Contact crime	2008-09	1127
-province	EC	Contact crime	2011-12	0
-municipality	WC015	Contact crime	2011-12	1343
-municipality	CPT	Contact crime	2009-10	60419
-municipality	WC025	Contact crime	2006-07	3716
-municipality	WC045	Property crime	2014-15	1482
-district	DC10	Contact crime	2005-06	0
-district	DC1	Contact crime	2011-12	3964
-municipality	WC022	Property crime	2008-09	846
-municipality	WC045	Contact crime	2006-07	1450
-municipality	WC011	Contact crime	2014-15	1333
-municipality	WC048	Contact crime	2014-15	1425
-municipality	WC052	Contact crime	2011-12	261
-municipality	WC048	Property crime	2009-10	1312
-district	DC1	Property crime	2013-14	3299
-province	WC	Property crime	2006-07	80091
-municipality	WC023	Property crime	2012-13	3707
-municipality	WC042	Property crime	2011-12	332
-municipality	WC043	Contact crime	2011-12	1720
-municipality	WC053	Property crime	2009-10	589
-municipality	WC033	Contact crime	2012-13	543
-municipality	WC011	Property crime	2007-08	341
-country	ZA	Property crime	2009-10	81788
-municipality	CPT	Property crime	2006-07	75984
-municipality	WC041	Property crime	2011-12	302
-district	DC5	Property crime	2011-12	778
-municipality	EC101	Property crime	2006-07	0
-municipality	WC024	Contact crime	2008-09	1635
-municipality	NC066	Contact crime	2010-11	0
-municipality	WC022	Contact crime	2006-07	1985
-municipality	EC109	Property crime	2013-14	0
-municipality	WC034	Contact crime	2013-14	836
-municipality	WC023	Contact crime	2007-08	2724
-municipality	WC044	Contact crime	2009-10	2895
-municipality	WC045	Property crime	2013-14	1592
-municipality	WC024	Contact crime	2012-13	2196
-municipality	WC011	Property crime	2009-10	521
-municipality	WC022	Property crime	2007-08	682
-municipality	NC064	Contact crime	2012-13	0
-municipality	WC033	Contact crime	2014-15	639
-municipality	WC024	Contact crime	2013-14	2322
-municipality	WC053	Contact crime	2013-14	1098
-district	DC10	Property crime	2014-15	0
-district	DC1	Property crime	2014-15	3655
-municipality	NC066	Contact crime	2009-10	0
-municipality	WC023	Property crime	2011-12	3418
-municipality	WC042	Property crime	2012-13	372
-municipality	WC053	Property crime	2010-11	626
-municipality	WC032	Property crime	2006-07	1308
-municipality	WC011	Property crime	2005-06	337
-municipality	WC051	Contact crime	2010-11	123
-municipality	WC043	Property crime	2013-14	1909
-municipality	WC045	Contact crime	2009-10	1275
-municipality	WC012	Property crime	2014-15	468
-municipality	WC041	Property crime	2010-11	344
-district	DC5	Property crime	2012-13	987
-municipality	NC066	Property crime	2012-13	0
-municipality	WC025	Contact crime	2008-09	3113
-municipality	WC043	Contact crime	2005-06	1741
-municipality	WC047	Property crime	2012-13	1512
-municipality	NC065	Property crime	2010-11	0
-municipality	WC015	Contact crime	2010-11	1241
-municipality	WC012	Contact crime	2010-11	784
-district	DC10	Contact crime	2014-15	0
-country	ZA	Contact crime	2013-14	91867
-municipality	CPT	Contact crime	2013-14	68024
-municipality	EC109	Contact crime	2008-09	0
-district	DC5	Contact crime	2006-07	941
-municipality	NC065	Contact crime	2014-15	0
-municipality	WC011	Property crime	2010-11	482
-municipality	WC023	Property crime	2014-15	4612
-municipality	EC107	Contact crime	2008-09	0
-municipality	NC064	Property crime	2007-08	0
-municipality	WC013	Property crime	2005-06	178
-municipality	WC023	Property crime	2010-11	3158
-municipality	WC051	Property crime	2012-13	195
-municipality	NC064	Contact crime	2005-06	0
-municipality	EC107	Property crime	2006-07	0
-municipality	WC011	Contact crime	2012-13	1261
-district	DC2	Contact crime	2013-14	11823
-municipality	WC052	Contact crime	2013-14	215
-municipality	WC012	Property crime	2013-14	457
-municipality	WC034	Contact crime	2008-09	678
-municipality	WC043	Property crime	2007-08	1233
-municipality	WC041	Property crime	2009-10	303
-district	DC5	Property crime	2013-14	1084
-municipality	NC066	Property crime	2011-12	0
-municipality	WC044	Contact crime	2011-12	3856
-municipality	WC044	Property crime	2007-08	2815
-municipality	NC065	Contact crime	2013-14	0
-municipality	WC034	Contact crime	2014-15	798
-municipality	WC047	Property crime	2011-12	1026
-district	DC10	Property crime	2008-09	0
-municipality	WC042	Contact crime	2014-15	810
-municipality	WC047	Contact crime	2007-08	919
-municipality	WC032	Property crime	2012-13	1796
-municipality	WC048	Contact crime	2008-09	856
-municipality	NC064	Contact crime	2009-10	0
-district	DC1	Property crime	2006-07	2251
-municipality	EC101	Contact crime	2010-11	0
-municipality	NC064	Property crime	2008-09	0
-municipality	WC045	Contact crime	2011-12	1656
-municipality	WC014	Contact crime	2013-14	1152
-country	ZA	Property crime	2006-07	81918
-province	EC	Contact crime	2008-09	0
-municipality	EC107	Property crime	2005-06	0
-municipality	WC013	Contact crime	2007-08	704
-district	DC2	Property crime	2014-15	11810
-municipality	WC012	Contact crime	2012-13	822
-municipality	WC025	Contact crime	2007-08	3515
-municipality	WC043	Property crime	2008-09	1045
-municipality	NC065	Property crime	2013-14	0
-district	DC5	Property crime	2014-15	1155
-municipality	WC034	Property crime	2007-08	249
-district	DC10	Contact crime	2011-12	0
-municipality	WC023	Contact crime	2005-06	3789
-municipality	WC052	Property crime	2010-11	93
-municipality	WC041	Contact crime	2009-10	483
-district	DC3	Contact crime	2011-12	2012
-district	DC10	Contact crime	2008-09	0
-municipality	WC044	Property crime	2011-12	3446
-municipality	EC109	Property crime	2011-12	0
-district	DC4	Contact crime	2012-13	7889
-district	DC10	Property crime	2006-07	0
-province	WC	Property crime	2014-15	91949
-province	EC	Contact crime	2010-11	0
-municipality	WC026	Property crime	2014-15	931
-municipality	WC051	Property crime	2009-10	165
-district	DC1	Property crime	2009-10	2611
-municipality	WC033	Property crime	2005-06	364
-municipality	WC052	Contact crime	2014-15	261
-district	DC10	Contact crime	2010-11	0
-municipality	EC107	Contact crime	2006-07	0
-district	DC2	Property crime	2013-14	11180
-municipality	WC012	Property crime	2011-12	417
-municipality	WC032	Property crime	2011-12	1803
-municipality	WC052	Contact crime	2006-07	179
-municipality	WC024	Contact crime	2009-10	1761
-municipality	WC034	Property crime	2008-09	315
-municipality	WC047	Property crime	2013-14	1573
-municipality	EC109	Property crime	2009-10	0
-municipality	WC034	Contact crime	2006-07	613
-municipality	EC109	Property crime	2008-09	0
-municipality	WC044	Property crime	2012-13	4019
-municipality	WC044	Contact crime	2013-14	4117
-district	DC4	Contact crime	2005-06	6979
-province	EC	Property crime	2010-11	0
-municipality	WC033	Contact crime	2008-09	419
-municipality	WC031	Property crime	2010-11	700
-municipality	WC042	Contact crime	2012-13	683
-municipality	WC011	Contact crime	2006-07	1123
-province	WC	Property crime	2013-14	94198
-municipality	NC064	Contact crime	2007-08	0
-municipality	WC022	Contact crime	2014-15	2104
-district	DC1	Contact crime	2008-09	3521
-municipality	WC013	Contact crime	2005-06	594
-municipality	WC051	Property crime	2010-11	92
-municipality	NC064	Property crime	2005-06	0
-district	DC1	Property crime	2010-11	2523
-municipality	WC012	Contact crime	2014-15	806
-municipality	WC022	Contact crime	2011-12	1837
-district	DC5	Contact crime	2012-13	1036
-municipality	WC041	Contact crime	2005-06	581
-municipality	WC041	Property crime	2006-07	246
-municipality	WC052	Property crime	2012-13	124
-municipality	WC042	Property crime	2008-09	288
-municipality	WC045	Contact crime	2013-14	2025
-district	DC2	Property crime	2012-13	11084
-municipality	WC012	Property crime	2010-11	366
-municipality	CPT	Contact crime	2012-13	64490
-municipality	WC022	Contact crime	2007-08	2087
-municipality	NC064	Property crime	2012-13	0
-municipality	WC048	Contact crime	2006-07	885
-district	DC3	Contact crime	2005-06	1953
-municipality	WC045	Property crime	2005-06	880
-municipality	WC022	Property crime	2010-11	1102
-municipality	EC109	Property crime	2007-08	0
-municipality	WC023	Contact crime	2011-12	3684
-municipality	WC053	Contact crime	2006-07	940
-country	ZA	Contact crime	2009-10	78548
-municipality	WC031	Contact crime	2014-15	880
-municipality	EC101	Property crime	2012-13	0
-province	EC	Contact crime	2006-07	0
-municipality	WC031	Contact crime	2011-12	602
-municipality	WC013	Contact crime	2012-13	723
-municipality	WC034	Contact crime	2010-11	719
-municipality	NC064	Property crime	2006-07	0
-district	DC1	Property crime	2011-12	2844
-municipality	WC052	Contact crime	2010-11	262
-municipality	WC012	Contact crime	2008-09	697
-municipality	WC043	Property crime	2009-10	1403
-municipality	WC052	Property crime	2011-12	117
-municipality	WC042	Property crime	2007-08	273
-district	DC2	Property crime	2011-12	9903
-municipality	WC012	Property crime	2009-10	350
-municipality	WC032	Contact crime	2010-11	1233
-district	DC10	Contact crime	2006-07	0
-province	WC	Contact crime	2009-10	76206
-municipality	WC044	Contact crime	2006-07	3391
-municipality	EC107	Contact crime	2012-13	0
-municipality	NC064	Property crime	2011-12	0
-province	EC	Contact crime	2014-15	0
-municipality	WC026	Contact crime	2010-11	1373
-municipality	WC048	Contact crime	2012-13	1289
-municipality	NC065	Property crime	2008-09	0
-municipality	WC015	Property crime	2011-12	750
-municipality	NC066	Property crime	2008-09	0
-municipality	NC065	Contact crime	2005-06	0
-municipality	WC034	Property crime	2012-13	399
-municipality	WC025	Contact crime	2011-12	3882
-municipality	WC053	Contact crime	2012-13	956
-district	DC1	Contact crime	2013-14	4120
-municipality	EC109	Contact crime	2005-06	0
-municipality	WC011	Contact crime	2008-09	1000
-municipality	WC025	Contact crime	2014-15	4285
-municipality	WC043	Property crime	2012-13	1812
-municipality	WC014	Property crime	2010-11	1247
-municipality	WC032	Property crime	2007-08	1138
-municipality	WC053	Contact crime	2008-09	820
-district	DC2	Property crime	2010-11	9492
-municipality	WC015	Contact crime	2012-13	1448
-municipality	WC033	Property crime	2013-14	426
-province	EC	Property crime	2014-15	0
-municipality	WC052	Property crime	2005-06	98
-municipality	CPT	Property crime	2008-09	68562
-municipality	EC101	Contact crime	2008-09	0
-municipality	WC047	Contact crime	2006-07	916
-municipality	WC041	Property crime	2005-06	249
-municipality	WC032	Contact crime	2007-08	947
-municipality	WC015	Property crime	2012-13	988
-municipality	WC023	Contact crime	2014-15	4027
-municipality	WC026	Property crime	2006-07	622
-municipality	WC012	Contact crime	2006-07	841
-province	WC	Property crime	2010-11	80603
-municipality	WC034	Property crime	2011-12	398
-municipality	NC065	Property crime	2006-07	0
-municipality	WC051	Property crime	2013-14	175
-district	DC3	Property crime	2005-06	1324
-district	DC10	Contact crime	2007-08	0
-municipality	WC053	Property crime	2008-09	536
-municipality	WC026	Contact crime	2006-07	1267
-municipality	WC022	Contact crime	2005-06	2010
-municipality	WC014	Property crime	2009-10	1245
-municipality	WC032	Property crime	2008-09	1403
-municipality	WC053	Contact crime	2014-15	1180
-municipality	WC013	Property crime	2011-12	258
-municipality	WC023	Contact crime	2008-09	2565
-municipality	WC044	Contact crime	2010-11	3516
-municipality	EC107	Property crime	2011-12	0
-municipality	WC042	Contact crime	2006-07	657
-municipality	WC014	Contact crime	2010-11	1001
-municipality	NC064	Property crime	2013-14	0
-municipality	WC044	Property crime	2006-07	2504
-municipality	CPT	Contact crime	2007-08	61005
-municipality	NC064	Contact crime	2011-12	0
-municipality	WC024	Contact crime	2014-15	2445
-municipality	WC052	Contact crime	2005-06	282
-province	EC	Property crime	2005-06	0
-municipality	NC066	Property crime	2007-08	0
-municipality	WC011	Contact crime	2005-06	1127
-municipality	WC026	Property crime	2005-06	567
-district	DC5	Contact crime	2009-10	985
-municipality	WC034	Property crime	2010-11	364
-municipality	NC065	Property crime	2005-06	0
-district	DC4	Property crime	2007-08	4933
-municipality	WC051	Property crime	2014-15	243
-municipality	WC043	Contact crime	2009-10	1757
-province	EC	Property crime	2009-10	0
-municipality	WC012	Contact crime	2009-10	783
-municipality	WC043	Property crime	2011-12	1510
-municipality	WC045	Contact crime	2005-06	1767
-municipality	WC045	Property crime	2006-07	784
-municipality	EC107	Property crime	2012-13	0
-municipality	EC109	Contact crime	2007-08	0
-municipality	NC064	Property crime	2009-10	0
-district	DC5	Contact crime	2005-06	928
-municipality	WC044	Property crime	2005-06	2719
-municipality	WC041	Contact crime	2007-08	569
-district	DC3	Property crime	2013-14	2100
-district	DC3	Contact crime	2010-11	2083
-municipality	WC052	Property crime	2009-10	82
-municipality	EC107	Contact crime	2007-08	0
-province	EC	Property crime	2006-07	0
-municipality	WC015	Property crime	2014-15	1104
-municipality	NC064	Contact crime	2006-07	0
-municipality	WC032	Contact crime	2014-15	1483
-municipality	NC065	Contact crime	2008-09	0
-district	DC2	Contact crime	2012-13	11595
-municipality	WC034	Property crime	2009-10	384
-municipality	WC033	Property crime	2014-15	414
-district	DC10	Property crime	2013-14	0
-municipality	WC044	Contact crime	2012-13	4197
-municipality	WC032	Contact crime	2012-13	1175
-municipality	WC033	Property crime	2008-09	205
-municipality	WC052	Property crime	2006-07	54
-municipality	WC031	Contact crime	2008-09	474
-municipality	WC053	Property crime	2006-07	459
-municipality	WC047	Contact crime	2008-09	721
-municipality	WC011	Property crime	2006-07	311
-district	DC10	Property crime	2012-13	0
-municipality	EC107	Property crime	2009-10	0
-municipality	WC048	Contact crime	2007-08	835
-district	DC3	Contact crime	2008-09	1754
-district	DC3	Property crime	2014-15	2252
-municipality	WC048	Property crime	2010-11	1302
-municipality	EC101	Contact crime	2011-12	0
-municipality	WC025	Contact crime	2010-11	3569
-municipality	WC042	Contact crime	2008-09	692
-municipality	WC045	Property crime	2012-13	1659
-municipality	WC047	Contact crime	2013-14	915
-municipality	EC107	Contact crime	2010-11	0
-municipality	EC107	Property crime	2010-11	0
-municipality	NC064	Contact crime	2010-11	0
-municipality	WC031	Property crime	2006-07	388
-province	EC	Contact crime	2013-14	0
-district	DC4	Property crime	2005-06	5259
-municipality	EC101	Property crime	2005-06	0
-municipality	WC043	Contact crime	2010-11	1750
-municipality	WC053	Contact crime	2007-08	891
-municipality	WC023	Contact crime	2006-07	3129
-district	DC1	Contact crime	2009-10	3662
-municipality	WC033	Property crime	2007-08	249
-municipality	WC042	Property crime	2013-14	462
-municipality	WC033	Contact crime	2005-06	456
-district	DC5	Contact crime	2007-08	931
-municipality	WC014	Property crime	2014-15	1776
-municipality	WC052	Property crime	2014-15	172
-municipality	WC053	Property crime	2005-06	358
-district	DC3	Contact crime	2012-13	2100
-municipality	WC033	Property crime	2009-10	246
-district	DC10	Property crime	2011-12	0
-district	DC4	Contact crime	2011-12	7328
-district	DC1	Contact crime	2005-06	3885
-municipality	WC023	Contact crime	2009-10	3294
-district	DC3	Property crime	2011-12	1561
-country	ZA	Contact crime	2007-08	78243
-municipality	NC066	Contact crime	2005-06	0
-province	EC	Property crime	2007-08	0
-municipality	CPT	Contact crime	2008-09	57911
-municipality	WC045	Property crime	2011-12	1231
-municipality	EC109	Contact crime	2010-11	0
-province	WC	Contact crime	2014-15	95683
-municipality	WC053	Property crime	2013-14	1005
-district	DC5	Property crime	2008-09	550
-municipality	EC107	Contact crime	2005-06	0
-municipality	WC031	Property crime	2005-06	459
-district	DC4	Property crime	2006-07	4741
-municipality	WC024	Contact crime	2010-11	2007
-municipality	WC025	Property crime	2007-08	2228
-municipality	WC042	Property crime	2014-15	512
-municipality	WC033	Property crime	2010-11	326
-municipality	WC044	Contact crime	2014-15	4220
-district	DC4	Contact crime	2006-07	6363
-municipality	WC011	Property crime	2011-12	524
-municipality	WC033	Contact crime	2007-08	459
-municipality	WC014	Contact crime	2014-15	1355
-municipality	WC015	Contact crime	2006-07	1204
-district	DC3	Property crime	2012-13	1787
-municipality	NC064	Contact crime	2008-09	0
-district	DC1	Contact crime	2007-08	3767
-municipality	WC023	Property crime	2009-10	2954
-municipality	WC047	Contact crime	2014-15	1021
-province	EC	Property crime	2008-09	0
-municipality	WC012	Contact crime	2013-14	833
-municipality	WC022	Contact crime	2012-13	1925
-district	DC5	Contact crime	2013-14	1173
-municipality	WC044	Contact crime	2007-08	3131
-municipality	NC066	Property crime	2005-06	0
-municipality	WC034	Property crime	2014-15	462
-municipality	NC065	Contact crime	2011-12	0
-municipality	WC031	Contact crime	2006-07	468
-municipality	CPT	Contact crime	2011-12	60461
-municipality	WC033	Contact crime	2006-07	423
-municipality	WC043	Contact crime	2013-14	2062
-municipality	EC107	Property crime	2008-09	0
-district	DC3	Contact crime	2006-07	1754
-municipality	WC051	Contact crime	2006-07	115
+COPY crimes_type_of_crime_year (geo_level, geo_code, "type of crime", year, total, geo_version) FROM stdin;
+ward	10101001	Property crime	2005-06	47	2011
+ward	10101001	Contact crime	2005-06	253	2011
+ward	10101001	Property crime	2006-07	50	2011
+ward	10101001	Contact crime	2006-07	246	2011
+ward	10101001	Property crime	2007-08	63	2011
+ward	10101001	Contact crime	2007-08	303	2011
+ward	10101001	Property crime	2008-09	123	2011
+ward	10101001	Contact crime	2008-09	257	2011
+ward	10101001	Property crime	2009-10	101	2011
+ward	10101001	Contact crime	2009-10	181	2011
+ward	10101001	Property crime	2010-11	83	2011
+ward	10101001	Contact crime	2010-11	194	2011
+ward	10101001	Property crime	2011-12	69	2011
+ward	10101001	Contact crime	2011-12	168	2011
+ward	10101001	Property crime	2012-13	93	2011
+ward	10101001	Contact crime	2012-13	234	2011
+ward	10101001	Property crime	2013-14	97	2011
+ward	10101001	Contact crime	2013-14	265	2011
+ward	10101001	Property crime	2014-15	130	2011
+ward	10101001	Contact crime	2014-15	240	2011
+ward	10101002	Property crime	2005-06	41	2011
+ward	10101002	Contact crime	2005-06	135	2011
+ward	10101002	Property crime	2006-07	37	2011
+ward	10101002	Contact crime	2006-07	127	2011
+ward	10101002	Property crime	2007-08	41	2011
+ward	10101002	Contact crime	2007-08	136	2011
+ward	10101002	Property crime	2008-09	55	2011
+ward	10101002	Contact crime	2008-09	122	2011
+ward	10101002	Property crime	2009-10	61	2011
+ward	10101002	Contact crime	2009-10	106	2011
+ward	10101002	Property crime	2010-11	63	2011
+ward	10101002	Contact crime	2010-11	117	2011
+ward	10101002	Property crime	2011-12	58	2011
+ward	10101002	Contact crime	2011-12	131	2011
+ward	10101002	Property crime	2012-13	74	2011
+ward	10101002	Contact crime	2012-13	148	2011
+ward	10101002	Property crime	2013-14	81	2011
+ward	10101002	Contact crime	2013-14	163	2011
+ward	10101002	Property crime	2014-15	78	2011
+ward	10101002	Contact crime	2014-15	157	2011
+ward	10101003	Property crime	2005-06	52	2011
+ward	10101003	Contact crime	2005-06	129	2011
+ward	10101003	Property crime	2006-07	55	2011
+ward	10101003	Contact crime	2006-07	129	2011
+ward	10101003	Property crime	2007-08	54	2011
+ward	10101003	Contact crime	2007-08	112	2011
+ward	10101003	Property crime	2008-09	58	2011
+ward	10101003	Contact crime	2008-09	109	2011
+ward	10101003	Property crime	2009-10	79	2011
+ward	10101003	Contact crime	2009-10	126	2011
+ward	10101003	Property crime	2010-11	68	2011
+ward	10101003	Contact crime	2010-11	141	2011
+ward	10101003	Property crime	2011-12	83	2011
+ward	10101003	Contact crime	2011-12	186	2011
+ward	10101003	Property crime	2012-13	103	2011
+ward	10101003	Contact crime	2012-13	161	2011
+ward	10101003	Property crime	2013-14	129	2011
+ward	10101003	Contact crime	2013-14	173	2011
+ward	10101003	Property crime	2014-15	110	2011
+ward	10101003	Contact crime	2014-15	191	2011
+ward	10101004	Property crime	2005-06	54	2011
+ward	10101004	Contact crime	2005-06	133	2011
+ward	10101004	Property crime	2006-07	57	2011
+ward	10101004	Contact crime	2006-07	133	2011
+ward	10101004	Property crime	2007-08	56	2011
+ward	10101004	Contact crime	2007-08	116	2011
+ward	10101004	Property crime	2008-09	59	2011
+ward	10101004	Contact crime	2008-09	113	2011
+ward	10101004	Property crime	2009-10	81	2011
+ward	10101004	Contact crime	2009-10	130	2011
+ward	10101004	Property crime	2010-11	70	2011
+ward	10101004	Contact crime	2010-11	145	2011
+ward	10101004	Property crime	2011-12	86	2011
+ward	10101004	Contact crime	2011-12	192	2011
+ward	10101004	Property crime	2012-13	106	2011
+ward	10101004	Contact crime	2012-13	166	2011
+ward	10101004	Property crime	2013-14	133	2011
+ward	10101004	Contact crime	2013-14	178	2011
+ward	10101004	Property crime	2014-15	113	2011
+ward	10101004	Contact crime	2014-15	197	2011
+ward	10101005	Property crime	2005-06	41	2011
+ward	10101005	Contact crime	2005-06	112	2011
+ward	10101005	Property crime	2006-07	41	2011
+ward	10101005	Contact crime	2006-07	119	2011
+ward	10101005	Property crime	2007-08	43	2011
+ward	10101005	Contact crime	2007-08	108	2011
+ward	10101005	Property crime	2008-09	49	2011
+ward	10101005	Contact crime	2008-09	97	2011
+ward	10101005	Property crime	2009-10	61	2011
+ward	10101005	Contact crime	2009-10	106	2011
+ward	10101005	Property crime	2010-11	56	2011
+ward	10101005	Contact crime	2010-11	123	2011
+ward	10101005	Property crime	2011-12	70	2011
+ward	10101005	Contact crime	2011-12	148	2011
+ward	10101005	Property crime	2012-13	90	2011
+ward	10101005	Contact crime	2012-13	144	2011
+ward	10101005	Property crime	2013-14	94	2011
+ward	10101005	Contact crime	2013-14	140	2011
+ward	10101005	Property crime	2014-15	86	2011
+ward	10101005	Contact crime	2014-15	148	2011
+ward	10101006	Property crime	2005-06	31	2011
+ward	10101006	Contact crime	2005-06	122	2011
+ward	10101006	Property crime	2006-07	25	2011
+ward	10101006	Contact crime	2006-07	151	2011
+ward	10101006	Property crime	2007-08	34	2011
+ward	10101006	Contact crime	2007-08	147	2011
+ward	10101006	Property crime	2008-09	53	2011
+ward	10101006	Contact crime	2008-09	112	2011
+ward	10101006	Property crime	2009-10	43	2011
+ward	10101006	Contact crime	2009-10	109	2011
+ward	10101006	Property crime	2010-11	47	2011
+ward	10101006	Contact crime	2010-11	140	2011
+ward	10101006	Property crime	2011-12	69	2011
+ward	10101006	Contact crime	2011-12	126	2011
+ward	10101006	Property crime	2012-13	102	2011
+ward	10101006	Contact crime	2012-13	170	2011
+ward	10101006	Property crime	2013-14	52	2011
+ward	10101006	Contact crime	2013-14	119	2011
+ward	10101006	Property crime	2014-15	67	2011
+ward	10101006	Contact crime	2014-15	112	2011
+ward	10101007	Property crime	2005-06	29	2011
+ward	10101007	Contact crime	2005-06	89	2011
+ward	10101007	Property crime	2006-07	19	2011
+ward	10101007	Contact crime	2006-07	85	2011
+ward	10101007	Property crime	2007-08	15	2011
+ward	10101007	Contact crime	2007-08	75	2011
+ward	10101007	Property crime	2008-09	22	2011
+ward	10101007	Contact crime	2008-09	59	2011
+ward	10101007	Property crime	2009-10	41	2011
+ward	10101007	Contact crime	2009-10	115	2011
+ward	10101007	Property crime	2010-11	48	2011
+ward	10101007	Contact crime	2010-11	98	2011
+ward	10101007	Property crime	2011-12	45	2011
+ward	10101007	Contact crime	2011-12	106	2011
+ward	10101007	Property crime	2012-13	60	2011
+ward	10101007	Contact crime	2012-13	115	2011
+ward	10101007	Property crime	2013-14	61	2011
+ward	10101007	Contact crime	2013-14	133	2011
+ward	10101007	Property crime	2014-15	52	2011
+ward	10101007	Contact crime	2014-15	146	2011
+ward	10101008	Property crime	2005-06	40	2011
+ward	10101008	Contact crime	2005-06	154	2011
+ward	10101008	Property crime	2006-07	27	2011
+ward	10101008	Contact crime	2006-07	133	2011
+ward	10101008	Property crime	2007-08	35	2011
+ward	10101008	Contact crime	2007-08	147	2011
+ward	10101008	Property crime	2008-09	50	2011
+ward	10101008	Contact crime	2008-09	131	2011
+ward	10101008	Property crime	2009-10	54	2011
+ward	10101008	Contact crime	2009-10	112	2011
+ward	10101008	Property crime	2010-11	47	2011
+ward	10101008	Contact crime	2010-11	123	2011
+ward	10101008	Property crime	2011-12	44	2011
+ward	10101008	Contact crime	2011-12	115	2011
+ward	10101008	Property crime	2012-13	53	2011
+ward	10101008	Contact crime	2012-13	123	2011
+ward	10101008	Property crime	2013-14	60	2011
+ward	10101008	Contact crime	2013-14	145	2011
+ward	10101008	Property crime	2014-15	65	2011
+ward	10101008	Contact crime	2014-15	142	2011
+ward	10102001	Property crime	2005-06	47	2011
+ward	10102001	Contact crime	2005-06	150	2011
+ward	10102001	Property crime	2006-07	31	2011
+ward	10102001	Contact crime	2006-07	175	2011
+ward	10102001	Property crime	2007-08	57	2011
+ward	10102001	Contact crime	2007-08	201	2011
+ward	10102001	Property crime	2008-09	63	2011
+ward	10102001	Contact crime	2008-09	173	2011
+ward	10102001	Property crime	2009-10	67	2011
+ward	10102001	Contact crime	2009-10	180	2011
+ward	10102001	Property crime	2010-11	88	2011
+ward	10102001	Contact crime	2010-11	189	2011
+ward	10102001	Property crime	2011-12	96	2011
+ward	10102001	Contact crime	2011-12	210	2011
+ward	10102001	Property crime	2012-13	79	2011
+ward	10102001	Contact crime	2012-13	183	2011
+ward	10102001	Property crime	2013-14	106	2011
+ward	10102001	Contact crime	2013-14	166	2011
+ward	10102001	Property crime	2014-15	88	2011
+ward	10102001	Contact crime	2014-15	163	2011
+ward	10102002	Property crime	2005-06	27	2011
+ward	10102002	Contact crime	2005-06	87	2011
+ward	10102002	Property crime	2006-07	18	2011
+ward	10102002	Contact crime	2006-07	102	2011
+ward	10102002	Property crime	2007-08	33	2011
+ward	10102002	Contact crime	2007-08	118	2011
+ward	10102002	Property crime	2008-09	37	2011
+ward	10102002	Contact crime	2008-09	101	2011
+ward	10102002	Property crime	2009-10	39	2011
+ward	10102002	Contact crime	2009-10	105	2011
+ward	10102002	Property crime	2010-11	52	2011
+ward	10102002	Contact crime	2010-11	110	2011
+ward	10102002	Property crime	2011-12	57	2011
+ward	10102002	Contact crime	2011-12	123	2011
+ward	10102002	Property crime	2012-13	46	2011
+ward	10102002	Contact crime	2012-13	107	2011
+ward	10102002	Property crime	2013-14	62	2011
+ward	10102002	Contact crime	2013-14	97	2011
+ward	10102002	Property crime	2014-15	52	2011
+ward	10102002	Contact crime	2014-15	95	2011
+ward	10102003	Property crime	2005-06	57	2011
+ward	10102003	Contact crime	2005-06	150	2011
+ward	10102003	Property crime	2006-07	50	2011
+ward	10102003	Contact crime	2006-07	149	2011
+ward	10102003	Property crime	2007-08	34	2011
+ward	10102003	Contact crime	2007-08	123	2011
+ward	10102003	Property crime	2008-09	39	2011
+ward	10102003	Contact crime	2008-09	117	2011
+ward	10102003	Property crime	2009-10	53	2011
+ward	10102003	Contact crime	2009-10	120	2011
+ward	10102003	Property crime	2010-11	47	2011
+ward	10102003	Contact crime	2010-11	112	2011
+ward	10102003	Property crime	2011-12	53	2011
+ward	10102003	Contact crime	2011-12	121	2011
+ward	10102003	Property crime	2012-13	63	2011
+ward	10102003	Contact crime	2012-13	127	2011
+ward	10102003	Property crime	2013-14	60	2011
+ward	10102003	Contact crime	2013-14	138	2011
+ward	10102003	Property crime	2014-15	48	2011
+ward	10102003	Contact crime	2014-15	137	2011
+ward	10102004	Property crime	2005-06	60	2011
+ward	10102004	Contact crime	2005-06	150	2011
+ward	10102004	Property crime	2006-07	39	2011
+ward	10102004	Contact crime	2006-07	167	2011
+ward	10102004	Property crime	2007-08	38	2011
+ward	10102004	Contact crime	2007-08	150	2011
+ward	10102004	Property crime	2008-09	31	2011
+ward	10102004	Contact crime	2008-09	107	2011
+ward	10102004	Property crime	2009-10	50	2011
+ward	10102004	Contact crime	2009-10	172	2011
+ward	10102004	Property crime	2010-11	53	2011
+ward	10102004	Contact crime	2010-11	185	2011
+ward	10102004	Property crime	2011-12	62	2011
+ward	10102004	Contact crime	2011-12	197	2011
+ward	10102004	Property crime	2012-13	65	2011
+ward	10102004	Contact crime	2012-13	212	2011
+ward	10102004	Property crime	2013-14	56	2011
+ward	10102004	Contact crime	2013-14	193	2011
+ward	10102004	Property crime	2014-15	76	2011
+ward	10102004	Contact crime	2014-15	197	2011
+ward	10102005	Property crime	2005-06	80	2011
+ward	10102005	Contact crime	2005-06	165	2011
+ward	10102005	Property crime	2006-07	72	2011
+ward	10102005	Contact crime	2006-07	141	2011
+ward	10102005	Property crime	2007-08	81	2011
+ward	10102005	Contact crime	2007-08	153	2011
+ward	10102005	Property crime	2008-09	106	2011
+ward	10102005	Contact crime	2008-09	115	2011
+ward	10102005	Property crime	2009-10	104	2011
+ward	10102005	Contact crime	2009-10	120	2011
+ward	10102005	Property crime	2010-11	93	2011
+ward	10102005	Contact crime	2010-11	106	2011
+ward	10102005	Property crime	2011-12	112	2011
+ward	10102005	Contact crime	2011-12	120	2011
+ward	10102005	Property crime	2012-13	119	2011
+ward	10102005	Contact crime	2012-13	102	2011
+ward	10102005	Property crime	2013-14	130	2011
+ward	10102005	Contact crime	2013-14	141	2011
+ward	10102005	Property crime	2014-15	169	2011
+ward	10102005	Contact crime	2014-15	115	2011
+ward	10102006	Property crime	2005-06	40	2011
+ward	10102006	Contact crime	2005-06	106	2011
+ward	10102006	Property crime	2006-07	35	2011
+ward	10102006	Contact crime	2006-07	106	2011
+ward	10102006	Property crime	2007-08	24	2011
+ward	10102006	Contact crime	2007-08	89	2011
+ward	10102006	Property crime	2008-09	27	2011
+ward	10102006	Contact crime	2008-09	84	2011
+ward	10102006	Property crime	2009-10	37	2011
+ward	10102006	Contact crime	2009-10	86	2011
+ward	10102006	Property crime	2010-11	34	2011
+ward	10102006	Contact crime	2010-11	81	2011
+ward	10102006	Property crime	2011-12	38	2011
+ward	10102006	Contact crime	2011-12	87	2011
+ward	10102006	Property crime	2012-13	45	2011
+ward	10102006	Contact crime	2012-13	92	2011
+ward	10102006	Property crime	2013-14	43	2011
+ward	10102006	Contact crime	2013-14	98	2011
+ward	10102006	Property crime	2014-15	35	2011
+ward	10102006	Contact crime	2014-15	99	2011
+ward	10103001	Property crime	2005-06	19	2011
+ward	10103001	Contact crime	2005-06	83	2011
+ward	10103001	Property crime	2006-07	14	2011
+ward	10103001	Contact crime	2006-07	91	2011
+ward	10103001	Property crime	2007-08	20	2011
+ward	10103001	Contact crime	2007-08	127	2011
+ward	10103001	Property crime	2008-09	29	2011
+ward	10103001	Contact crime	2008-09	113	2011
+ward	10103001	Property crime	2009-10	30	2011
+ward	10103001	Contact crime	2009-10	123	2011
+ward	10103001	Property crime	2010-11	30	2011
+ward	10103001	Contact crime	2010-11	121	2011
+ward	10103001	Property crime	2011-12	38	2011
+ward	10103001	Contact crime	2011-12	131	2011
+ward	10103001	Property crime	2012-13	50	2011
+ward	10103001	Contact crime	2012-13	129	2011
+ward	10103001	Property crime	2013-14	42	2011
+ward	10103001	Contact crime	2013-14	126	2011
+ward	10103001	Property crime	2014-15	52	2011
+ward	10103001	Contact crime	2014-15	132	2011
+ward	10103002	Property crime	2005-06	25	2011
+ward	10103002	Contact crime	2005-06	109	2011
+ward	10103002	Property crime	2006-07	18	2011
+ward	10103002	Contact crime	2006-07	118	2011
+ward	10103002	Property crime	2007-08	24	2011
+ward	10103002	Contact crime	2007-08	168	2011
+ward	10103002	Property crime	2008-09	37	2011
+ward	10103002	Contact crime	2008-09	150	2011
+ward	10103002	Property crime	2009-10	38	2011
+ward	10103002	Contact crime	2009-10	164	2011
+ward	10103002	Property crime	2010-11	37	2011
+ward	10103002	Contact crime	2010-11	160	2011
+ward	10103002	Property crime	2011-12	48	2011
+ward	10103002	Contact crime	2011-12	172	2011
+ward	10103002	Property crime	2012-13	66	2011
+ward	10103002	Contact crime	2012-13	171	2011
+ward	10103002	Property crime	2013-14	53	2011
+ward	10103002	Contact crime	2013-14	168	2011
+ward	10103002	Property crime	2014-15	69	2011
+ward	10103002	Contact crime	2014-15	177	2011
+ward	10103003	Property crime	2005-06	29	2011
+ward	10103003	Contact crime	2005-06	99	2011
+ward	10103003	Property crime	2006-07	21	2011
+ward	10103003	Contact crime	2006-07	101	2011
+ward	10103003	Property crime	2007-08	21	2011
+ward	10103003	Contact crime	2007-08	112	2011
+ward	10103003	Property crime	2008-09	25	2011
+ward	10103003	Contact crime	2008-09	102	2011
+ward	10103003	Property crime	2009-10	33	2011
+ward	10103003	Contact crime	2009-10	93	2011
+ward	10103003	Property crime	2010-11	34	2011
+ward	10103003	Contact crime	2010-11	112	2011
+ward	10103003	Property crime	2011-12	38	2011
+ward	10103003	Contact crime	2011-12	106	2011
+ward	10103003	Property crime	2012-13	41	2011
+ward	10103003	Contact crime	2012-13	112	2011
+ward	10103003	Property crime	2013-14	37	2011
+ward	10103003	Contact crime	2013-14	118	2011
+ward	10103003	Property crime	2014-15	40	2011
+ward	10103003	Contact crime	2014-15	115	2011
+ward	10103004	Property crime	2005-06	32	2011
+ward	10103004	Contact crime	2005-06	103	2011
+ward	10103004	Property crime	2006-07	29	2011
+ward	10103004	Contact crime	2006-07	84	2011
+ward	10103004	Property crime	2007-08	29	2011
+ward	10103004	Contact crime	2007-08	108	2011
+ward	10103004	Property crime	2008-09	34	2011
+ward	10103004	Contact crime	2008-09	100	2011
+ward	10103004	Property crime	2009-10	40	2011
+ward	10103004	Contact crime	2009-10	91	2011
+ward	10103004	Property crime	2010-11	48	2011
+ward	10103004	Contact crime	2010-11	100	2011
+ward	10103004	Property crime	2011-12	42	2011
+ward	10103004	Contact crime	2011-12	103	2011
+ward	10103004	Property crime	2012-13	58	2011
+ward	10103004	Contact crime	2012-13	107	2011
+ward	10103004	Property crime	2013-14	47	2011
+ward	10103004	Contact crime	2013-14	111	2011
+ward	10103004	Property crime	2014-15	55	2011
+ward	10103004	Contact crime	2014-15	114	2011
+ward	10103005	Property crime	2005-06	41	2011
+ward	10103005	Contact crime	2005-06	131	2011
+ward	10103005	Property crime	2006-07	31	2011
+ward	10103005	Contact crime	2006-07	117	2011
+ward	10103005	Property crime	2007-08	33	2011
+ward	10103005	Contact crime	2007-08	129	2011
+ward	10103005	Property crime	2008-09	36	2011
+ward	10103005	Contact crime	2008-09	113	2011
+ward	10103005	Property crime	2009-10	43	2011
+ward	10103005	Contact crime	2009-10	122	2011
+ward	10103005	Property crime	2010-11	43	2011
+ward	10103005	Contact crime	2010-11	130	2011
+ward	10103005	Property crime	2011-12	47	2011
+ward	10103005	Contact crime	2011-12	133	2011
+ward	10103005	Property crime	2012-13	57	2011
+ward	10103005	Contact crime	2012-13	130	2011
+ward	10103005	Property crime	2013-14	47	2011
+ward	10103005	Contact crime	2013-14	133	2011
+ward	10103005	Property crime	2014-15	54	2011
+ward	10103005	Contact crime	2014-15	136	2011
+ward	10103006	Property crime	2005-06	32	2011
+ward	10103006	Contact crime	2005-06	69	2011
+ward	10103006	Property crime	2006-07	36	2011
+ward	10103006	Contact crime	2006-07	63	2011
+ward	10103006	Property crime	2007-08	31	2011
+ward	10103006	Contact crime	2007-08	61	2011
+ward	10103006	Property crime	2008-09	37	2011
+ward	10103006	Contact crime	2008-09	56	2011
+ward	10103006	Property crime	2009-10	43	2011
+ward	10103006	Contact crime	2009-10	70	2011
+ward	10103006	Property crime	2010-11	32	2011
+ward	10103006	Contact crime	2010-11	67	2011
+ward	10103006	Property crime	2011-12	45	2011
+ward	10103006	Contact crime	2011-12	69	2011
+ward	10103006	Property crime	2012-13	54	2011
+ward	10103006	Contact crime	2012-13	74	2011
+ward	10103006	Property crime	2013-14	43	2011
+ward	10103006	Contact crime	2013-14	60	2011
+ward	10103006	Property crime	2014-15	52	2011
+ward	10103006	Contact crime	2014-15	61	2011
+ward	10103007	Property crime	2005-06	73	2011
+ward	10103007	Contact crime	2005-06	136	2011
+ward	10103007	Property crime	2006-07	103	2011
+ward	10103007	Contact crime	2006-07	127	2011
+ward	10103007	Property crime	2007-08	82	2011
+ward	10103007	Contact crime	2007-08	117	2011
+ward	10103007	Property crime	2008-09	110	2011
+ward	10103007	Contact crime	2008-09	127	2011
+ward	10103007	Property crime	2009-10	123	2011
+ward	10103007	Contact crime	2009-10	122	2011
+ward	10103007	Property crime	2010-11	92	2011
+ward	10103007	Contact crime	2010-11	119	2011
+ward	10103007	Property crime	2011-12	129	2011
+ward	10103007	Contact crime	2011-12	120	2011
+ward	10103007	Property crime	2012-13	158	2011
+ward	10103007	Contact crime	2012-13	146	2011
+ward	10103007	Property crime	2013-14	126	2011
+ward	10103007	Contact crime	2013-14	100	2011
+ward	10103007	Property crime	2014-15	155	2011
+ward	10103007	Contact crime	2014-15	103	2011
+ward	10104001	Property crime	2005-06	100	2011
+ward	10104001	Contact crime	2005-06	127	2011
+ward	10104001	Property crime	2006-07	113	2011
+ward	10104001	Contact crime	2006-07	77	2011
+ward	10104001	Property crime	2007-08	111	2011
+ward	10104001	Contact crime	2007-08	58	2011
+ward	10104001	Property crime	2008-09	148	2011
+ward	10104001	Contact crime	2008-09	74	2011
+ward	10104001	Property crime	2009-10	145	2011
+ward	10104001	Contact crime	2009-10	86	2011
+ward	10104001	Property crime	2010-11	128	2011
+ward	10104001	Contact crime	2010-11	77	2011
+ward	10104001	Property crime	2011-12	140	2011
+ward	10104001	Contact crime	2011-12	93	2011
+ward	10104001	Property crime	2012-13	171	2011
+ward	10104001	Contact crime	2012-13	117	2011
+ward	10104001	Property crime	2013-14	151	2011
+ward	10104001	Contact crime	2013-14	114	2011
+ward	10104001	Property crime	2014-15	194	2011
+ward	10104001	Contact crime	2014-15	115	2011
+ward	10104002	Property crime	2005-06	156	2011
+ward	10104002	Contact crime	2005-06	187	2011
+ward	10104002	Property crime	2006-07	235	2011
+ward	10104002	Contact crime	2006-07	171	2011
+ward	10104002	Property crime	2007-08	281	2011
+ward	10104002	Contact crime	2007-08	195	2011
+ward	10104002	Property crime	2008-09	276	2011
+ward	10104002	Contact crime	2008-09	173	2011
+ward	10104002	Property crime	2009-10	214	2011
+ward	10104002	Contact crime	2009-10	200	2011
+ward	10104002	Property crime	2010-11	211	2011
+ward	10104002	Contact crime	2010-11	167	2011
+ward	10104002	Property crime	2011-12	251	2011
+ward	10104002	Contact crime	2011-12	173	2011
+ward	10104002	Property crime	2012-13	303	2011
+ward	10104002	Contact crime	2012-13	175	2011
+ward	10104002	Property crime	2013-14	290	2011
+ward	10104002	Contact crime	2013-14	186	2011
+ward	10104002	Property crime	2014-15	293	2011
+ward	10104002	Contact crime	2014-15	239	2011
+ward	10104003	Property crime	2005-06	76	2011
+ward	10104003	Contact crime	2005-06	96	2011
+ward	10104003	Property crime	2006-07	86	2011
+ward	10104003	Contact crime	2006-07	58	2011
+ward	10104003	Property crime	2007-08	84	2011
+ward	10104003	Contact crime	2007-08	44	2011
+ward	10104003	Property crime	2008-09	112	2011
+ward	10104003	Contact crime	2008-09	56	2011
+ward	10104003	Property crime	2009-10	110	2011
+ward	10104003	Contact crime	2009-10	65	2011
+ward	10104003	Property crime	2010-11	97	2011
+ward	10104003	Contact crime	2010-11	59	2011
+ward	10104003	Property crime	2011-12	106	2011
+ward	10104003	Contact crime	2011-12	71	2011
+ward	10104003	Property crime	2012-13	130	2011
+ward	10104003	Contact crime	2012-13	89	2011
+ward	10104003	Property crime	2013-14	115	2011
+ward	10104003	Contact crime	2013-14	86	2011
+ward	10104003	Property crime	2014-15	147	2011
+ward	10104003	Contact crime	2014-15	87	2011
+ward	10104004	Property crime	2005-06	102	2011
+ward	10104004	Contact crime	2005-06	130	2011
+ward	10104004	Property crime	2006-07	116	2011
+ward	10104004	Contact crime	2006-07	79	2011
+ward	10104004	Property crime	2007-08	114	2011
+ward	10104004	Contact crime	2007-08	60	2011
+ward	10104004	Property crime	2008-09	152	2011
+ward	10104004	Contact crime	2008-09	76	2011
+ward	10104004	Property crime	2009-10	149	2011
+ward	10104004	Contact crime	2009-10	88	2011
+ward	10104004	Property crime	2010-11	132	2011
+ward	10104004	Contact crime	2010-11	79	2011
+ward	10104004	Property crime	2011-12	144	2011
+ward	10104004	Contact crime	2011-12	96	2011
+ward	10104004	Property crime	2012-13	175	2011
+ward	10104004	Contact crime	2012-13	120	2011
+ward	10104004	Property crime	2013-14	156	2011
+ward	10104004	Contact crime	2013-14	117	2011
+ward	10104004	Property crime	2014-15	200	2011
+ward	10104004	Contact crime	2014-15	118	2011
+ward	10104005	Property crime	2005-06	66	2011
+ward	10104005	Contact crime	2005-06	83	2011
+ward	10104005	Property crime	2006-07	75	2011
+ward	10104005	Contact crime	2006-07	51	2011
+ward	10104005	Property crime	2007-08	74	2011
+ward	10104005	Contact crime	2007-08	40	2011
+ward	10104005	Property crime	2008-09	97	2011
+ward	10104005	Contact crime	2008-09	49	2011
+ward	10104005	Property crime	2009-10	95	2011
+ward	10104005	Contact crime	2009-10	57	2011
+ward	10104005	Property crime	2010-11	84	2011
+ward	10104005	Contact crime	2010-11	52	2011
+ward	10104005	Property crime	2011-12	93	2011
+ward	10104005	Contact crime	2011-12	62	2011
+ward	10104005	Property crime	2012-13	113	2011
+ward	10104005	Contact crime	2012-13	77	2011
+ward	10104005	Property crime	2013-14	100	2011
+ward	10104005	Contact crime	2013-14	75	2011
+ward	10104005	Property crime	2014-15	127	2011
+ward	10104005	Contact crime	2014-15	76	2011
+ward	10104006	Property crime	2005-06	109	2011
+ward	10104006	Contact crime	2005-06	65	2011
+ward	10104006	Property crime	2006-07	118	2011
+ward	10104006	Contact crime	2006-07	84	2011
+ward	10104006	Property crime	2007-08	158	2011
+ward	10104006	Contact crime	2007-08	94	2011
+ward	10104006	Property crime	2008-09	150	2011
+ward	10104006	Contact crime	2008-09	110	2011
+ward	10104006	Property crime	2009-10	114	2011
+ward	10104006	Contact crime	2009-10	114	2011
+ward	10104006	Property crime	2010-11	160	2011
+ward	10104006	Contact crime	2010-11	144	2011
+ward	10104006	Property crime	2011-12	174	2011
+ward	10104006	Contact crime	2011-12	144	2011
+ward	10104006	Property crime	2012-13	272	2011
+ward	10104006	Contact crime	2012-13	129	2011
+ward	10104006	Property crime	2013-14	143	2011
+ward	10104006	Contact crime	2013-14	143	2011
+ward	10104006	Property crime	2014-15	192	2011
+ward	10104006	Contact crime	2014-15	133	2011
+ward	10104007	Property crime	2005-06	18	2011
+ward	10104007	Contact crime	2005-06	70	2011
+ward	10104007	Property crime	2006-07	13	2011
+ward	10104007	Contact crime	2006-07	69	2011
+ward	10104007	Property crime	2007-08	19	2011
+ward	10104007	Contact crime	2007-08	69	2011
+ward	10104007	Property crime	2008-09	24	2011
+ward	10104007	Contact crime	2008-09	70	2011
+ward	10104007	Property crime	2009-10	36	2011
+ward	10104007	Contact crime	2009-10	73	2011
+ward	10104007	Property crime	2010-11	33	2011
+ward	10104007	Contact crime	2010-11	73	2011
+ward	10104007	Property crime	2011-12	60	2011
+ward	10104007	Contact crime	2011-12	75	2011
+ward	10104007	Property crime	2012-13	55	2011
+ward	10104007	Contact crime	2012-13	102	2011
+ward	10104007	Property crime	2013-14	70	2011
+ward	10104007	Contact crime	2013-14	107	2011
+ward	10104007	Property crime	2014-15	77	2011
+ward	10104007	Contact crime	2014-15	102	2011
+ward	10104008	Property crime	2005-06	70	2011
+ward	10104008	Contact crime	2005-06	90	2011
+ward	10104008	Property crime	2006-07	103	2011
+ward	10104008	Contact crime	2006-07	83	2011
+ward	10104008	Property crime	2007-08	123	2011
+ward	10104008	Contact crime	2007-08	93	2011
+ward	10104008	Property crime	2008-09	122	2011
+ward	10104008	Contact crime	2008-09	84	2011
+ward	10104008	Property crime	2009-10	98	2011
+ward	10104008	Contact crime	2009-10	96	2011
+ward	10104008	Property crime	2010-11	96	2011
+ward	10104008	Contact crime	2010-11	82	2011
+ward	10104008	Property crime	2011-12	116	2011
+ward	10104008	Contact crime	2011-12	85	2011
+ward	10104008	Property crime	2012-13	139	2011
+ward	10104008	Contact crime	2012-13	90	2011
+ward	10104008	Property crime	2013-14	134	2011
+ward	10104008	Contact crime	2013-14	95	2011
+ward	10104008	Property crime	2014-15	137	2011
+ward	10104008	Contact crime	2014-15	117	2011
+ward	10104009	Property crime	2005-06	98	2011
+ward	10104009	Contact crime	2005-06	118	2011
+ward	10104009	Property crime	2006-07	148	2011
+ward	10104009	Contact crime	2006-07	107	2011
+ward	10104009	Property crime	2007-08	177	2011
+ward	10104009	Contact crime	2007-08	122	2011
+ward	10104009	Property crime	2008-09	173	2011
+ward	10104009	Contact crime	2008-09	109	2011
+ward	10104009	Property crime	2009-10	135	2011
+ward	10104009	Contact crime	2009-10	125	2011
+ward	10104009	Property crime	2010-11	132	2011
+ward	10104009	Contact crime	2010-11	105	2011
+ward	10104009	Property crime	2011-12	158	2011
+ward	10104009	Contact crime	2011-12	109	2011
+ward	10104009	Property crime	2012-13	191	2011
+ward	10104009	Contact crime	2012-13	110	2011
+ward	10104009	Property crime	2013-14	182	2011
+ward	10104009	Contact crime	2013-14	117	2011
+ward	10104009	Property crime	2014-15	184	2011
+ward	10104009	Contact crime	2014-15	151	2011
+ward	10104010	Property crime	2005-06	110	2011
+ward	10104010	Contact crime	2005-06	132	2011
+ward	10104010	Property crime	2006-07	166	2011
+ward	10104010	Contact crime	2006-07	121	2011
+ward	10104010	Property crime	2007-08	199	2011
+ward	10104010	Contact crime	2007-08	138	2011
+ward	10104010	Property crime	2008-09	195	2011
+ward	10104010	Contact crime	2008-09	122	2011
+ward	10104010	Property crime	2009-10	152	2011
+ward	10104010	Contact crime	2009-10	141	2011
+ward	10104010	Property crime	2010-11	149	2011
+ward	10104010	Contact crime	2010-11	118	2011
+ward	10104010	Property crime	2011-12	177	2011
+ward	10104010	Contact crime	2011-12	122	2011
+ward	10104010	Property crime	2012-13	214	2011
+ward	10104010	Contact crime	2012-13	124	2011
+ward	10104010	Property crime	2013-14	205	2011
+ward	10104010	Contact crime	2013-14	131	2011
+ward	10104010	Property crime	2014-15	207	2011
+ward	10104010	Contact crime	2014-15	169	2011
+ward	10104011	Property crime	2005-06	51	2011
+ward	10104011	Contact crime	2005-06	80	2011
+ward	10104011	Property crime	2006-07	62	2011
+ward	10104011	Contact crime	2006-07	68	2011
+ward	10104011	Property crime	2007-08	64	2011
+ward	10104011	Contact crime	2007-08	69	2011
+ward	10104011	Property crime	2008-09	72	2011
+ward	10104011	Contact crime	2008-09	71	2011
+ward	10104011	Property crime	2009-10	67	2011
+ward	10104011	Contact crime	2009-10	77	2011
+ward	10104011	Property crime	2010-11	68	2011
+ward	10104011	Contact crime	2010-11	68	2011
+ward	10104011	Property crime	2011-12	78	2011
+ward	10104011	Contact crime	2011-12	80	2011
+ward	10104011	Property crime	2012-13	113	2011
+ward	10104011	Contact crime	2012-13	82	2011
+ward	10104011	Property crime	2013-14	87	2011
+ward	10104011	Contact crime	2013-14	73	2011
+ward	10104011	Property crime	2014-15	104	2011
+ward	10104011	Contact crime	2014-15	94	2011
+ward	10104012	Property crime	2005-06	62	2011
+ward	10104012	Contact crime	2005-06	128	2011
+ward	10104012	Property crime	2006-07	53	2011
+ward	10104012	Contact crime	2006-07	103	2011
+ward	10104012	Property crime	2007-08	35	2011
+ward	10104012	Contact crime	2007-08	93	2011
+ward	10104012	Property crime	2008-09	62	2011
+ward	10104012	Contact crime	2008-09	110	2011
+ward	10104012	Property crime	2009-10	76	2011
+ward	10104012	Contact crime	2009-10	113	2011
+ward	10104012	Property crime	2010-11	82	2011
+ward	10104012	Contact crime	2010-11	105	2011
+ward	10104012	Property crime	2011-12	91	2011
+ward	10104012	Contact crime	2011-12	135	2011
+ward	10104012	Property crime	2012-13	161	2011
+ward	10104012	Contact crime	2012-13	139	2011
+ward	10104012	Property crime	2013-14	95	2011
+ward	10104012	Contact crime	2013-14	108	2011
+ward	10104012	Property crime	2014-15	139	2011
+ward	10104012	Contact crime	2014-15	139	2011
+ward	10104013	Property crime	2005-06	97	2011
+ward	10104013	Contact crime	2005-06	116	2011
+ward	10104013	Property crime	2006-07	146	2011
+ward	10104013	Contact crime	2006-07	106	2011
+ward	10104013	Property crime	2007-08	175	2011
+ward	10104013	Contact crime	2007-08	121	2011
+ward	10104013	Property crime	2008-09	172	2011
+ward	10104013	Contact crime	2008-09	107	2011
+ward	10104013	Property crime	2009-10	133	2011
+ward	10104013	Contact crime	2009-10	124	2011
+ward	10104013	Property crime	2010-11	131	2011
+ward	10104013	Contact crime	2010-11	104	2011
+ward	10104013	Property crime	2011-12	156	2011
+ward	10104013	Contact crime	2011-12	108	2011
+ward	10104013	Property crime	2012-13	189	2011
+ward	10104013	Contact crime	2012-13	109	2011
+ward	10104013	Property crime	2013-14	180	2011
+ward	10104013	Contact crime	2013-14	116	2011
+ward	10104013	Property crime	2014-15	182	2011
+ward	10104013	Contact crime	2014-15	149	2011
+ward	10105001	Property crime	2005-06	55	2011
+ward	10105001	Contact crime	2005-06	148	2011
+ward	10105001	Property crime	2006-07	61	2011
+ward	10105001	Contact crime	2006-07	133	2011
+ward	10105001	Property crime	2007-08	74	2011
+ward	10105001	Contact crime	2007-08	116	2011
+ward	10105001	Property crime	2008-09	66	2011
+ward	10105001	Contact crime	2008-09	131	2011
+ward	10105001	Property crime	2009-10	75	2011
+ward	10105001	Contact crime	2009-10	130	2011
+ward	10105001	Property crime	2010-11	66	2011
+ward	10105001	Contact crime	2010-11	99	2011
+ward	10105001	Property crime	2011-12	59	2011
+ward	10105001	Contact crime	2011-12	112	2011
+ward	10105001	Property crime	2012-13	75	2011
+ward	10105001	Contact crime	2012-13	106	2011
+ward	10105001	Property crime	2013-14	78	2011
+ward	10105001	Contact crime	2013-14	109	2011
+ward	10105001	Property crime	2014-15	77	2011
+ward	10105001	Contact crime	2014-15	121	2011
+ward	10105002	Property crime	2005-06	50	2011
+ward	10105002	Contact crime	2005-06	133	2011
+ward	10105002	Property crime	2006-07	55	2011
+ward	10105002	Contact crime	2006-07	120	2011
+ward	10105002	Property crime	2007-08	67	2011
+ward	10105002	Contact crime	2007-08	105	2011
+ward	10105002	Property crime	2008-09	59	2011
+ward	10105002	Contact crime	2008-09	118	2011
+ward	10105002	Property crime	2009-10	68	2011
+ward	10105002	Contact crime	2009-10	118	2011
+ward	10105002	Property crime	2010-11	59	2011
+ward	10105002	Contact crime	2010-11	90	2011
+ward	10105002	Property crime	2011-12	53	2011
+ward	10105002	Contact crime	2011-12	102	2011
+ward	10105002	Property crime	2012-13	68	2011
+ward	10105002	Contact crime	2012-13	96	2011
+ward	10105002	Property crime	2013-14	71	2011
+ward	10105002	Contact crime	2013-14	98	2011
+ward	10105002	Property crime	2014-15	69	2011
+ward	10105002	Contact crime	2014-15	109	2011
+ward	10105003	Property crime	2005-06	57	2011
+ward	10105003	Contact crime	2005-06	178	2011
+ward	10105003	Property crime	2006-07	50	2011
+ward	10105003	Contact crime	2006-07	168	2011
+ward	10105003	Property crime	2007-08	49	2011
+ward	10105003	Contact crime	2007-08	181	2011
+ward	10105003	Property crime	2008-09	66	2011
+ward	10105003	Contact crime	2008-09	177	2011
+ward	10105003	Property crime	2009-10	96	2011
+ward	10105003	Contact crime	2009-10	204	2011
+ward	10105003	Property crime	2010-11	78	2011
+ward	10105003	Contact crime	2010-11	163	2011
+ward	10105003	Property crime	2011-12	76	2011
+ward	10105003	Contact crime	2011-12	169	2011
+ward	10105003	Property crime	2012-13	94	2011
+ward	10105003	Contact crime	2012-13	199	2011
+ward	10105003	Property crime	2013-14	93	2011
+ward	10105003	Contact crime	2013-14	206	2011
+ward	10105003	Property crime	2014-15	89	2011
+ward	10105003	Contact crime	2014-15	241	2011
+ward	10105004	Property crime	2005-06	76	2011
+ward	10105004	Contact crime	2005-06	131	2011
+ward	10105004	Property crime	2006-07	83	2011
+ward	10105004	Contact crime	2006-07	122	2011
+ward	10105004	Property crime	2007-08	85	2011
+ward	10105004	Contact crime	2007-08	125	2011
+ward	10105004	Property crime	2008-09	78	2011
+ward	10105004	Contact crime	2008-09	111	2011
+ward	10105004	Property crime	2009-10	87	2011
+ward	10105004	Contact crime	2009-10	128	2011
+ward	10105004	Property crime	2010-11	79	2011
+ward	10105004	Contact crime	2010-11	133	2011
+ward	10105004	Property crime	2011-12	86	2011
+ward	10105004	Contact crime	2011-12	148	2011
+ward	10105004	Property crime	2012-13	120	2011
+ward	10105004	Contact crime	2012-13	166	2011
+ward	10105004	Property crime	2013-14	127	2011
+ward	10105004	Contact crime	2013-14	161	2011
+ward	10105004	Property crime	2014-15	141	2011
+ward	10105004	Contact crime	2014-15	163	2011
+ward	10105005	Property crime	2005-06	67	2011
+ward	10105005	Contact crime	2005-06	96	2011
+ward	10105005	Property crime	2006-07	45	2011
+ward	10105005	Contact crime	2006-07	83	2011
+ward	10105005	Property crime	2007-08	49	2011
+ward	10105005	Contact crime	2007-08	88	2011
+ward	10105005	Property crime	2008-09	75	2011
+ward	10105005	Contact crime	2008-09	91	2011
+ward	10105005	Property crime	2009-10	62	2011
+ward	10105005	Contact crime	2009-10	66	2011
+ward	10105005	Property crime	2010-11	70	2011
+ward	10105005	Contact crime	2010-11	87	2011
+ward	10105005	Property crime	2011-12	59	2011
+ward	10105005	Contact crime	2011-12	88	2011
+ward	10105005	Property crime	2012-13	64	2011
+ward	10105005	Contact crime	2012-13	70	2011
+ward	10105005	Property crime	2013-14	57	2011
+ward	10105005	Contact crime	2013-14	73	2011
+ward	10105005	Property crime	2014-15	72	2011
+ward	10105005	Contact crime	2014-15	88	2011
+ward	10105006	Property crime	2005-06	99	2011
+ward	10105006	Contact crime	2005-06	149	2011
+ward	10105006	Property crime	2006-07	69	2011
+ward	10105006	Contact crime	2006-07	130	2011
+ward	10105006	Property crime	2007-08	76	2011
+ward	10105006	Contact crime	2007-08	135	2011
+ward	10105006	Property crime	2008-09	111	2011
+ward	10105006	Contact crime	2008-09	141	2011
+ward	10105006	Property crime	2009-10	95	2011
+ward	10105006	Contact crime	2009-10	106	2011
+ward	10105006	Property crime	2010-11	104	2011
+ward	10105006	Contact crime	2010-11	132	2011
+ward	10105006	Property crime	2011-12	89	2011
+ward	10105006	Contact crime	2011-12	135	2011
+ward	10105006	Property crime	2012-13	98	2011
+ward	10105006	Contact crime	2012-13	110	2011
+ward	10105006	Property crime	2013-14	88	2011
+ward	10105006	Contact crime	2013-14	114	2011
+ward	10105006	Property crime	2014-15	108	2011
+ward	10105006	Contact crime	2014-15	136	2011
+ward	10105007	Property crime	2005-06	98	2011
+ward	10105007	Contact crime	2005-06	159	2011
+ward	10105007	Property crime	2006-07	110	2011
+ward	10105007	Contact crime	2006-07	149	2011
+ward	10105007	Property crime	2007-08	112	2011
+ward	10105007	Contact crime	2007-08	152	2011
+ward	10105007	Property crime	2008-09	98	2011
+ward	10105007	Contact crime	2008-09	131	2011
+ward	10105007	Property crime	2009-10	108	2011
+ward	10105007	Contact crime	2009-10	154	2011
+ward	10105007	Property crime	2010-11	99	2011
+ward	10105007	Contact crime	2010-11	168	2011
+ward	10105007	Property crime	2011-12	111	2011
+ward	10105007	Contact crime	2011-12	190	2011
+ward	10105007	Property crime	2012-13	160	2011
+ward	10105007	Contact crime	2012-13	215	2011
+ward	10105007	Property crime	2013-14	171	2011
+ward	10105007	Contact crime	2013-14	206	2011
+ward	10105007	Property crime	2014-15	191	2011
+ward	10105007	Contact crime	2014-15	201	2011
+ward	10105008	Property crime	2005-06	58	2011
+ward	10105008	Contact crime	2005-06	93	2011
+ward	10105008	Property crime	2006-07	65	2011
+ward	10105008	Contact crime	2006-07	88	2011
+ward	10105008	Property crime	2007-08	66	2011
+ward	10105008	Contact crime	2007-08	90	2011
+ward	10105008	Property crime	2008-09	57	2011
+ward	10105008	Contact crime	2008-09	77	2011
+ward	10105008	Property crime	2009-10	64	2011
+ward	10105008	Contact crime	2009-10	90	2011
+ward	10105008	Property crime	2010-11	58	2011
+ward	10105008	Contact crime	2010-11	99	2011
+ward	10105008	Property crime	2011-12	65	2011
+ward	10105008	Contact crime	2011-12	111	2011
+ward	10105008	Property crime	2012-13	94	2011
+ward	10105008	Contact crime	2012-13	126	2011
+ward	10105008	Property crime	2013-14	100	2011
+ward	10105008	Contact crime	2013-14	121	2011
+ward	10105008	Property crime	2014-15	113	2011
+ward	10105008	Contact crime	2014-15	118	2011
+ward	10105009	Property crime	2005-06	62	2011
+ward	10105009	Contact crime	2005-06	100	2011
+ward	10105009	Property crime	2006-07	69	2011
+ward	10105009	Contact crime	2006-07	94	2011
+ward	10105009	Property crime	2007-08	71	2011
+ward	10105009	Contact crime	2007-08	96	2011
+ward	10105009	Property crime	2008-09	61	2011
+ward	10105009	Contact crime	2008-09	82	2011
+ward	10105009	Property crime	2009-10	68	2011
+ward	10105009	Contact crime	2009-10	96	2011
+ward	10105009	Property crime	2010-11	62	2011
+ward	10105009	Contact crime	2010-11	106	2011
+ward	10105009	Property crime	2011-12	70	2011
+ward	10105009	Contact crime	2011-12	119	2011
+ward	10105009	Property crime	2012-13	101	2011
+ward	10105009	Contact crime	2012-13	135	2011
+ward	10105009	Property crime	2013-14	108	2011
+ward	10105009	Contact crime	2013-14	130	2011
+ward	10105009	Property crime	2014-15	120	2011
+ward	10105009	Contact crime	2014-15	127	2011
+ward	10105010	Property crime	2005-06	57	2011
+ward	10105010	Contact crime	2005-06	92	2011
+ward	10105010	Property crime	2006-07	64	2011
+ward	10105010	Contact crime	2006-07	86	2011
+ward	10105010	Property crime	2007-08	65	2011
+ward	10105010	Contact crime	2007-08	88	2011
+ward	10105010	Property crime	2008-09	56	2011
+ward	10105010	Contact crime	2008-09	75	2011
+ward	10105010	Property crime	2009-10	62	2011
+ward	10105010	Contact crime	2009-10	88	2011
+ward	10105010	Property crime	2010-11	57	2011
+ward	10105010	Contact crime	2010-11	97	2011
+ward	10105010	Property crime	2011-12	64	2011
+ward	10105010	Contact crime	2011-12	109	2011
+ward	10105010	Property crime	2012-13	92	2011
+ward	10105010	Contact crime	2012-13	124	2011
+ward	10105010	Property crime	2013-14	98	2011
+ward	10105010	Contact crime	2013-14	119	2011
+ward	10105010	Property crime	2014-15	110	2011
+ward	10105010	Contact crime	2014-15	116	2011
+ward	10105011	Property crime	2005-06	72	2011
+ward	10105011	Contact crime	2005-06	117	2011
+ward	10105011	Property crime	2006-07	81	2011
+ward	10105011	Contact crime	2006-07	109	2011
+ward	10105011	Property crime	2007-08	83	2011
+ward	10105011	Contact crime	2007-08	112	2011
+ward	10105011	Property crime	2008-09	71	2011
+ward	10105011	Contact crime	2008-09	96	2011
+ward	10105011	Property crime	2009-10	79	2011
+ward	10105011	Contact crime	2009-10	112	2011
+ward	10105011	Property crime	2010-11	72	2011
+ward	10105011	Contact crime	2010-11	123	2011
+ward	10105011	Property crime	2011-12	81	2011
+ward	10105011	Contact crime	2011-12	139	2011
+ward	10105011	Property crime	2012-13	118	2011
+ward	10105011	Contact crime	2012-13	157	2011
+ward	10105011	Property crime	2013-14	125	2011
+ward	10105011	Contact crime	2013-14	151	2011
+ward	10105011	Property crime	2014-15	140	2011
+ward	10105011	Contact crime	2014-15	148	2011
+ward	10105012	Property crime	2005-06	82	2011
+ward	10105012	Contact crime	2005-06	215	2011
+ward	10105012	Property crime	2006-07	77	2011
+ward	10105012	Contact crime	2006-07	204	2011
+ward	10105012	Property crime	2007-08	74	2011
+ward	10105012	Contact crime	2007-08	223	2011
+ward	10105012	Property crime	2008-09	89	2011
+ward	10105012	Contact crime	2008-09	208	2011
+ward	10105012	Property crime	2009-10	124	2011
+ward	10105012	Contact crime	2009-10	245	2011
+ward	10105012	Property crime	2010-11	103	2011
+ward	10105012	Contact crime	2010-11	211	2011
+ward	10105012	Property crime	2011-12	106	2011
+ward	10105012	Contact crime	2011-12	223	2011
+ward	10105012	Property crime	2012-13	138	2011
+ward	10105012	Contact crime	2012-13	265	2011
+ward	10105012	Property crime	2013-14	140	2011
+ward	10105012	Contact crime	2013-14	269	2011
+ward	10105012	Property crime	2014-15	142	2011
+ward	10105012	Contact crime	2014-15	303	2011
+ward	10202001	Property crime	2005-06	66	2011
+ward	10202001	Contact crime	2005-06	168	2011
+ward	10202001	Property crime	2006-07	52	2011
+ward	10202001	Contact crime	2006-07	142	2011
+ward	10202001	Property crime	2007-08	46	2011
+ward	10202001	Contact crime	2007-08	158	2011
+ward	10202001	Property crime	2008-09	69	2011
+ward	10202001	Contact crime	2008-09	133	2011
+ward	10202001	Property crime	2009-10	92	2011
+ward	10202001	Contact crime	2009-10	133	2011
+ward	10202001	Property crime	2010-11	82	2011
+ward	10202001	Contact crime	2010-11	130	2011
+ward	10202001	Property crime	2011-12	85	2011
+ward	10202001	Contact crime	2011-12	135	2011
+ward	10202001	Property crime	2012-13	108	2011
+ward	10202001	Contact crime	2012-13	154	2011
+ward	10202001	Property crime	2013-14	127	2011
+ward	10202001	Contact crime	2013-14	158	2011
+ward	10202001	Property crime	2014-15	131	2011
+ward	10202001	Contact crime	2014-15	154	2011
+ward	10202002	Property crime	2005-06	65	2011
+ward	10202002	Contact crime	2005-06	140	2011
+ward	10202002	Property crime	2006-07	58	2011
+ward	10202002	Contact crime	2006-07	151	2011
+ward	10202002	Property crime	2007-08	67	2011
+ward	10202002	Contact crime	2007-08	130	2011
+ward	10202002	Property crime	2008-09	65	2011
+ward	10202002	Contact crime	2008-09	111	2011
+ward	10202002	Property crime	2009-10	93	2011
+ward	10202002	Contact crime	2009-10	121	2011
+ward	10202002	Property crime	2010-11	107	2011
+ward	10202002	Contact crime	2010-11	117	2011
+ward	10202002	Property crime	2011-12	95	2011
+ward	10202002	Contact crime	2011-12	116	2011
+ward	10202002	Property crime	2012-13	102	2011
+ward	10202002	Contact crime	2012-13	117	2011
+ward	10202002	Property crime	2013-14	116	2011
+ward	10202002	Contact crime	2013-14	147	2011
+ward	10202002	Property crime	2014-15	106	2011
+ward	10202002	Contact crime	2014-15	154	2011
+ward	10202003	Property crime	2005-06	72	2011
+ward	10202003	Contact crime	2005-06	187	2011
+ward	10202003	Property crime	2006-07	56	2011
+ward	10202003	Contact crime	2006-07	165	2011
+ward	10202003	Property crime	2007-08	51	2011
+ward	10202003	Contact crime	2007-08	187	2011
+ward	10202003	Property crime	2008-09	75	2011
+ward	10202003	Contact crime	2008-09	163	2011
+ward	10202003	Property crime	2009-10	98	2011
+ward	10202003	Contact crime	2009-10	157	2011
+ward	10202003	Property crime	2010-11	89	2011
+ward	10202003	Contact crime	2010-11	158	2011
+ward	10202003	Property crime	2011-12	93	2011
+ward	10202003	Contact crime	2011-12	161	2011
+ward	10202003	Property crime	2012-13	117	2011
+ward	10202003	Contact crime	2012-13	176	2011
+ward	10202003	Property crime	2013-14	135	2011
+ward	10202003	Contact crime	2013-14	183	2011
+ward	10202003	Property crime	2014-15	140	2011
+ward	10202003	Contact crime	2014-15	180	2011
+ward	10202004	Property crime	2005-06	37	2011
+ward	10202004	Contact crime	2005-06	109	2011
+ward	10202004	Property crime	2006-07	30	2011
+ward	10202004	Contact crime	2006-07	110	2011
+ward	10202004	Property crime	2007-08	29	2011
+ward	10202004	Contact crime	2007-08	129	2011
+ward	10202004	Property crime	2008-09	41	2011
+ward	10202004	Contact crime	2008-09	122	2011
+ward	10202004	Property crime	2009-10	50	2011
+ward	10202004	Contact crime	2009-10	110	2011
+ward	10202004	Property crime	2010-11	49	2011
+ward	10202004	Contact crime	2010-11	117	2011
+ward	10202004	Property crime	2011-12	51	2011
+ward	10202004	Contact crime	2011-12	114	2011
+ward	10202004	Property crime	2012-13	62	2011
+ward	10202004	Contact crime	2012-13	113	2011
+ward	10202004	Property crime	2013-14	67	2011
+ward	10202004	Contact crime	2013-14	121	2011
+ward	10202004	Property crime	2014-15	70	2011
+ward	10202004	Contact crime	2014-15	120	2011
+ward	10202005	Property crime	2005-06	90	2011
+ward	10202005	Contact crime	2005-06	210	2011
+ward	10202005	Property crime	2006-07	80	2011
+ward	10202005	Contact crime	2006-07	182	2011
+ward	10202005	Property crime	2007-08	76	2011
+ward	10202005	Contact crime	2007-08	188	2011
+ward	10202005	Property crime	2008-09	94	2011
+ward	10202005	Contact crime	2008-09	160	2011
+ward	10202005	Property crime	2009-10	113	2011
+ward	10202005	Contact crime	2009-10	164	2011
+ward	10202005	Property crime	2010-11	113	2011
+ward	10202005	Contact crime	2010-11	166	2011
+ward	10202005	Property crime	2011-12	123	2011
+ward	10202005	Contact crime	2011-12	177	2011
+ward	10202005	Property crime	2012-13	145	2011
+ward	10202005	Contact crime	2012-13	193	2011
+ward	10202005	Property crime	2013-14	155	2011
+ward	10202005	Contact crime	2013-14	197	2011
+ward	10202005	Property crime	2014-15	158	2011
+ward	10202005	Contact crime	2014-15	197	2011
+ward	10202006	Property crime	2005-06	103	2011
+ward	10202006	Contact crime	2005-06	260	2011
+ward	10202006	Property crime	2006-07	80	2011
+ward	10202006	Contact crime	2006-07	220	2011
+ward	10202006	Property crime	2007-08	71	2011
+ward	10202006	Contact crime	2007-08	245	2011
+ward	10202006	Property crime	2008-09	107	2011
+ward	10202006	Contact crime	2008-09	207	2011
+ward	10202006	Property crime	2009-10	142	2011
+ward	10202006	Contact crime	2009-10	205	2011
+ward	10202006	Property crime	2010-11	126	2011
+ward	10202006	Contact crime	2010-11	201	2011
+ward	10202006	Property crime	2011-12	132	2011
+ward	10202006	Contact crime	2011-12	209	2011
+ward	10202006	Property crime	2012-13	166	2011
+ward	10202006	Contact crime	2012-13	238	2011
+ward	10202006	Property crime	2013-14	196	2011
+ward	10202006	Contact crime	2013-14	245	2011
+ward	10202006	Property crime	2014-15	203	2011
+ward	10202006	Contact crime	2014-15	239	2011
+ward	10202007	Property crime	2005-06	122	2011
+ward	10202007	Contact crime	2005-06	261	2011
+ward	10202007	Property crime	2006-07	101	2011
+ward	10202007	Contact crime	2006-07	305	2011
+ward	10202007	Property crime	2007-08	121	2011
+ward	10202007	Contact crime	2007-08	257	2011
+ward	10202007	Property crime	2008-09	119	2011
+ward	10202007	Contact crime	2008-09	218	2011
+ward	10202007	Property crime	2009-10	189	2011
+ward	10202007	Contact crime	2009-10	233	2011
+ward	10202007	Property crime	2010-11	210	2011
+ward	10202007	Contact crime	2010-11	217	2011
+ward	10202007	Property crime	2011-12	168	2011
+ward	10202007	Contact crime	2011-12	206	2011
+ward	10202007	Property crime	2012-13	192	2011
+ward	10202007	Contact crime	2012-13	215	2011
+ward	10202007	Property crime	2013-14	236	2011
+ward	10202007	Contact crime	2013-14	294	2011
+ward	10202007	Property crime	2014-15	211	2011
+ward	10202007	Contact crime	2014-15	303	2011
+ward	10202008	Property crime	2005-06	31	2011
+ward	10202008	Contact crime	2005-06	107	2011
+ward	10202008	Property crime	2006-07	26	2011
+ward	10202008	Contact crime	2006-07	128	2011
+ward	10202008	Property crime	2007-08	27	2011
+ward	10202008	Contact crime	2007-08	158	2011
+ward	10202008	Property crime	2008-09	35	2011
+ward	10202008	Contact crime	2008-09	160	2011
+ward	10202008	Property crime	2009-10	39	2011
+ward	10202008	Contact crime	2009-10	137	2011
+ward	10202008	Property crime	2010-11	45	2011
+ward	10202008	Contact crime	2010-11	152	2011
+ward	10202008	Property crime	2011-12	46	2011
+ward	10202008	Contact crime	2011-12	143	2011
+ward	10202008	Property crime	2012-13	53	2011
+ward	10202008	Contact crime	2012-13	126	2011
+ward	10202008	Property crime	2013-14	49	2011
+ward	10202008	Contact crime	2013-14	140	2011
+ward	10202008	Property crime	2014-15	53	2011
+ward	10202008	Contact crime	2014-15	140	2011
+ward	10202009	Property crime	2005-06	28	2011
+ward	10202009	Contact crime	2005-06	98	2011
+ward	10202009	Property crime	2006-07	24	2011
+ward	10202009	Contact crime	2006-07	118	2011
+ward	10202009	Property crime	2007-08	25	2011
+ward	10202009	Contact crime	2007-08	145	2011
+ward	10202009	Property crime	2008-09	32	2011
+ward	10202009	Contact crime	2008-09	147	2011
+ward	10202009	Property crime	2009-10	36	2011
+ward	10202009	Contact crime	2009-10	125	2011
+ward	10202009	Property crime	2010-11	41	2011
+ward	10202009	Contact crime	2010-11	140	2011
+ward	10202009	Property crime	2011-12	42	2011
+ward	10202009	Contact crime	2011-12	131	2011
+ward	10202009	Property crime	2012-13	49	2011
+ward	10202009	Contact crime	2012-13	116	2011
+ward	10202009	Property crime	2013-14	45	2011
+ward	10202009	Contact crime	2013-14	128	2011
+ward	10202009	Property crime	2014-15	48	2011
+ward	10202009	Contact crime	2014-15	129	2011
+ward	10202010	Property crime	2005-06	28	2011
+ward	10202010	Contact crime	2005-06	97	2011
+ward	10202010	Property crime	2006-07	24	2011
+ward	10202010	Contact crime	2006-07	114	2011
+ward	10202010	Property crime	2007-08	25	2011
+ward	10202010	Contact crime	2007-08	140	2011
+ward	10202010	Property crime	2008-09	32	2011
+ward	10202010	Contact crime	2008-09	141	2011
+ward	10202010	Property crime	2009-10	36	2011
+ward	10202010	Contact crime	2009-10	121	2011
+ward	10202010	Property crime	2010-11	41	2011
+ward	10202010	Contact crime	2010-11	135	2011
+ward	10202010	Property crime	2011-12	42	2011
+ward	10202010	Contact crime	2011-12	126	2011
+ward	10202010	Property crime	2012-13	49	2011
+ward	10202010	Contact crime	2012-13	113	2011
+ward	10202010	Property crime	2013-14	46	2011
+ward	10202010	Contact crime	2013-14	125	2011
+ward	10202010	Property crime	2014-15	49	2011
+ward	10202010	Contact crime	2014-15	125	2011
+ward	10202011	Property crime	2005-06	87	2011
+ward	10202011	Contact crime	2005-06	166	2011
+ward	10202011	Property crime	2006-07	85	2011
+ward	10202011	Contact crime	2006-07	171	2011
+ward	10202011	Property crime	2007-08	88	2011
+ward	10202011	Contact crime	2007-08	149	2011
+ward	10202011	Property crime	2008-09	92	2011
+ward	10202011	Contact crime	2008-09	132	2011
+ward	10202011	Property crime	2009-10	93	2011
+ward	10202011	Contact crime	2009-10	124	2011
+ward	10202011	Property crime	2010-11	98	2011
+ward	10202011	Contact crime	2010-11	130	2011
+ward	10202011	Property crime	2011-12	94	2011
+ward	10202011	Contact crime	2011-12	147	2011
+ward	10202011	Property crime	2012-13	142	2011
+ward	10202011	Contact crime	2012-13	174	2011
+ward	10202011	Property crime	2013-14	147	2011
+ward	10202011	Contact crime	2013-14	180	2011
+ward	10202011	Property crime	2014-15	140	2011
+ward	10202011	Contact crime	2014-15	168	2011
+ward	10202012	Property crime	2005-06	82	2011
+ward	10202012	Contact crime	2005-06	208	2011
+ward	10202012	Property crime	2006-07	63	2011
+ward	10202012	Contact crime	2006-07	179	2011
+ward	10202012	Property crime	2007-08	57	2011
+ward	10202012	Contact crime	2007-08	200	2011
+ward	10202012	Property crime	2008-09	85	2011
+ward	10202012	Contact crime	2008-09	170	2011
+ward	10202012	Property crime	2009-10	112	2011
+ward	10202012	Contact crime	2009-10	168	2011
+ward	10202012	Property crime	2010-11	101	2011
+ward	10202012	Contact crime	2010-11	166	2011
+ward	10202012	Property crime	2011-12	105	2011
+ward	10202012	Contact crime	2011-12	171	2011
+ward	10202012	Property crime	2012-13	132	2011
+ward	10202012	Contact crime	2012-13	192	2011
+ward	10202012	Property crime	2013-14	155	2011
+ward	10202012	Contact crime	2013-14	199	2011
+ward	10202012	Property crime	2014-15	161	2011
+ward	10202012	Contact crime	2014-15	194	2011
+ward	10203001	Property crime	2005-06	83	2011
+ward	10203001	Contact crime	2005-06	107	2011
+ward	10203001	Property crime	2006-07	86	2011
+ward	10203001	Contact crime	2006-07	94	2011
+ward	10203001	Property crime	2007-08	95	2011
+ward	10203001	Contact crime	2007-08	91	2011
+ward	10203001	Property crime	2008-09	86	2011
+ward	10203001	Contact crime	2008-09	74	2011
+ward	10203001	Property crime	2009-10	104	2011
+ward	10203001	Contact crime	2009-10	101	2011
+ward	10203001	Property crime	2010-11	125	2011
+ward	10203001	Contact crime	2010-11	102	2011
+ward	10203001	Property crime	2011-12	138	2011
+ward	10203001	Contact crime	2011-12	116	2011
+ward	10203001	Property crime	2012-13	140	2011
+ward	10203001	Contact crime	2012-13	117	2011
+ward	10203001	Property crime	2013-14	142	2011
+ward	10203001	Contact crime	2013-14	118	2011
+ward	10203001	Property crime	2014-15	180	2011
+ward	10203001	Contact crime	2014-15	131	2011
+ward	10203002	Property crime	2005-06	57	2011
+ward	10203002	Contact crime	2005-06	99	2011
+ward	10203002	Property crime	2006-07	65	2011
+ward	10203002	Contact crime	2006-07	87	2011
+ward	10203002	Property crime	2007-08	53	2011
+ward	10203002	Contact crime	2007-08	87	2011
+ward	10203002	Property crime	2008-09	67	2011
+ward	10203002	Contact crime	2008-09	73	2011
+ward	10203002	Property crime	2009-10	72	2011
+ward	10203002	Contact crime	2009-10	97	2011
+ward	10203002	Property crime	2010-11	81	2011
+ward	10203002	Contact crime	2010-11	99	2011
+ward	10203002	Property crime	2011-12	86	2011
+ward	10203002	Contact crime	2011-12	89	2011
+ward	10203002	Property crime	2012-13	85	2011
+ward	10203002	Contact crime	2012-13	90	2011
+ward	10203002	Property crime	2013-14	94	2011
+ward	10203002	Contact crime	2013-14	94	2011
+ward	10203002	Property crime	2014-15	115	2011
+ward	10203002	Contact crime	2014-15	104	2011
+ward	10203003	Property crime	2005-06	223	2011
+ward	10203003	Contact crime	2005-06	219	2011
+ward	10203003	Property crime	2006-07	206	2011
+ward	10203003	Contact crime	2006-07	172	2011
+ward	10203003	Property crime	2007-08	162	2011
+ward	10203003	Contact crime	2007-08	131	2011
+ward	10203003	Property crime	2008-09	160	2011
+ward	10203003	Contact crime	2008-09	121	2011
+ward	10203003	Property crime	2009-10	261	2011
+ward	10203003	Contact crime	2009-10	175	2011
+ward	10203003	Property crime	2010-11	303	2011
+ward	10203003	Contact crime	2010-11	180	2011
+ward	10203003	Property crime	2011-12	328	2011
+ward	10203003	Contact crime	2011-12	192	2011
+ward	10203003	Property crime	2012-13	339	2011
+ward	10203003	Contact crime	2012-13	173	2011
+ward	10203003	Property crime	2013-14	335	2011
+ward	10203003	Contact crime	2013-14	183	2011
+ward	10203003	Property crime	2014-15	450	2011
+ward	10203003	Contact crime	2014-15	189	2011
+ward	10203004	Property crime	2005-06	143	2011
+ward	10203004	Contact crime	2005-06	123	2011
+ward	10203004	Property crime	2006-07	127	2011
+ward	10203004	Contact crime	2006-07	91	2011
+ward	10203004	Property crime	2007-08	97	2011
+ward	10203004	Contact crime	2007-08	62	2011
+ward	10203004	Property crime	2008-09	91	2011
+ward	10203004	Contact crime	2008-09	61	2011
+ward	10203004	Property crime	2009-10	165	2011
+ward	10203004	Contact crime	2009-10	90	2011
+ward	10203004	Property crime	2010-11	192	2011
+ward	10203004	Contact crime	2010-11	92	2011
+ward	10203004	Property crime	2011-12	207	2011
+ward	10203004	Contact crime	2011-12	102	2011
+ward	10203004	Property crime	2012-13	217	2011
+ward	10203004	Contact crime	2012-13	88	2011
+ward	10203004	Property crime	2013-14	210	2011
+ward	10203004	Contact crime	2013-14	95	2011
+ward	10203004	Property crime	2014-15	287	2011
+ward	10203004	Contact crime	2014-15	93	2011
+ward	10203005	Property crime	2005-06	81	2011
+ward	10203005	Contact crime	2005-06	164	2011
+ward	10203005	Property crime	2006-07	91	2011
+ward	10203005	Contact crime	2006-07	147	2011
+ward	10203005	Property crime	2007-08	78	2011
+ward	10203005	Contact crime	2007-08	148	2011
+ward	10203005	Property crime	2008-09	97	2011
+ward	10203005	Contact crime	2008-09	125	2011
+ward	10203005	Property crime	2009-10	105	2011
+ward	10203005	Contact crime	2009-10	155	2011
+ward	10203005	Property crime	2010-11	114	2011
+ward	10203005	Contact crime	2010-11	158	2011
+ward	10203005	Property crime	2011-12	124	2011
+ward	10203005	Contact crime	2011-12	147	2011
+ward	10203005	Property crime	2012-13	122	2011
+ward	10203005	Contact crime	2012-13	151	2011
+ward	10203005	Property crime	2013-14	130	2011
+ward	10203005	Contact crime	2013-14	152	2011
+ward	10203005	Property crime	2014-15	166	2011
+ward	10203005	Contact crime	2014-15	172	2011
+ward	10203006	Property crime	2005-06	27	2011
+ward	10203006	Contact crime	2005-06	102	2011
+ward	10203006	Property crime	2006-07	29	2011
+ward	10203006	Contact crime	2006-07	95	2011
+ward	10203006	Property crime	2007-08	34	2011
+ward	10203006	Contact crime	2007-08	99	2011
+ward	10203006	Property crime	2008-09	36	2011
+ward	10203006	Contact crime	2008-09	83	2011
+ward	10203006	Property crime	2009-10	43	2011
+ward	10203006	Contact crime	2009-10	86	2011
+ward	10203006	Property crime	2010-11	38	2011
+ward	10203006	Contact crime	2010-11	87	2011
+ward	10203006	Property crime	2011-12	48	2011
+ward	10203006	Contact crime	2011-12	89	2011
+ward	10203006	Property crime	2012-13	46	2011
+ward	10203006	Contact crime	2012-13	96	2011
+ward	10203006	Property crime	2013-14	39	2011
+ward	10203006	Contact crime	2013-14	89	2011
+ward	10203006	Property crime	2014-15	60	2011
+ward	10203006	Contact crime	2014-15	105	2011
+ward	10203007	Property crime	2005-06	94	2011
+ward	10203007	Contact crime	2005-06	170	2011
+ward	10203007	Property crime	2006-07	107	2011
+ward	10203007	Contact crime	2006-07	150	2011
+ward	10203007	Property crime	2007-08	88	2011
+ward	10203007	Contact crime	2007-08	150	2011
+ward	10203007	Property crime	2008-09	111	2011
+ward	10203007	Contact crime	2008-09	127	2011
+ward	10203007	Property crime	2009-10	119	2011
+ward	10203007	Contact crime	2009-10	165	2011
+ward	10203007	Property crime	2010-11	132	2011
+ward	10203007	Contact crime	2010-11	168	2011
+ward	10203007	Property crime	2011-12	142	2011
+ward	10203007	Contact crime	2011-12	153	2011
+ward	10203007	Property crime	2012-13	140	2011
+ward	10203007	Contact crime	2012-13	155	2011
+ward	10203007	Property crime	2013-14	153	2011
+ward	10203007	Contact crime	2013-14	160	2011
+ward	10203007	Property crime	2014-15	190	2011
+ward	10203007	Contact crime	2014-15	179	2011
+ward	10203008	Property crime	2005-06	16	2011
+ward	10203008	Contact crime	2005-06	58	2011
+ward	10203008	Property crime	2006-07	17	2011
+ward	10203008	Contact crime	2006-07	54	2011
+ward	10203008	Property crime	2007-08	19	2011
+ward	10203008	Contact crime	2007-08	57	2011
+ward	10203008	Property crime	2008-09	21	2011
+ward	10203008	Contact crime	2008-09	48	2011
+ward	10203008	Property crime	2009-10	25	2011
+ward	10203008	Contact crime	2009-10	49	2011
+ward	10203008	Property crime	2010-11	22	2011
+ward	10203008	Contact crime	2010-11	50	2011
+ward	10203008	Property crime	2011-12	28	2011
+ward	10203008	Contact crime	2011-12	51	2011
+ward	10203008	Property crime	2012-13	27	2011
+ward	10203008	Contact crime	2012-13	55	2011
+ward	10203008	Property crime	2013-14	23	2011
+ward	10203008	Contact crime	2013-14	51	2011
+ward	10203008	Property crime	2014-15	35	2011
+ward	10203008	Contact crime	2014-15	61	2011
+ward	10203009	Property crime	2005-06	36	2011
+ward	10203009	Contact crime	2005-06	134	2011
+ward	10203009	Property crime	2006-07	37	2011
+ward	10203009	Contact crime	2006-07	125	2011
+ward	10203009	Property crime	2007-08	44	2011
+ward	10203009	Contact crime	2007-08	131	2011
+ward	10203009	Property crime	2008-09	48	2011
+ward	10203009	Contact crime	2008-09	109	2011
+ward	10203009	Property crime	2009-10	56	2011
+ward	10203009	Contact crime	2009-10	113	2011
+ward	10203009	Property crime	2010-11	49	2011
+ward	10203009	Contact crime	2010-11	114	2011
+ward	10203009	Property crime	2011-12	62	2011
+ward	10203009	Contact crime	2011-12	117	2011
+ward	10203009	Property crime	2012-13	60	2011
+ward	10203009	Contact crime	2012-13	126	2011
+ward	10203009	Property crime	2013-14	51	2011
+ward	10203009	Contact crime	2013-14	117	2011
+ward	10203009	Property crime	2014-15	79	2011
+ward	10203009	Contact crime	2014-15	138	2011
+ward	10203010	Property crime	2005-06	85	2011
+ward	10203010	Contact crime	2005-06	147	2011
+ward	10203010	Property crime	2006-07	97	2011
+ward	10203010	Contact crime	2006-07	129	2011
+ward	10203010	Property crime	2007-08	78	2011
+ward	10203010	Contact crime	2007-08	128	2011
+ward	10203010	Property crime	2008-09	100	2011
+ward	10203010	Contact crime	2008-09	109	2011
+ward	10203010	Property crime	2009-10	106	2011
+ward	10203010	Contact crime	2009-10	145	2011
+ward	10203010	Property crime	2010-11	120	2011
+ward	10203010	Contact crime	2010-11	147	2011
+ward	10203010	Property crime	2011-12	127	2011
+ward	10203010	Contact crime	2011-12	133	2011
+ward	10203010	Property crime	2012-13	126	2011
+ward	10203010	Contact crime	2012-13	134	2011
+ward	10203010	Property crime	2013-14	139	2011
+ward	10203010	Contact crime	2013-14	140	2011
+ward	10203010	Property crime	2014-15	171	2011
+ward	10203010	Contact crime	2014-15	155	2011
+ward	10203011	Property crime	2005-06	87	2011
+ward	10203011	Contact crime	2005-06	232	2011
+ward	10203011	Property crime	2006-07	94	2011
+ward	10203011	Contact crime	2006-07	212	2011
+ward	10203011	Property crime	2007-08	92	2011
+ward	10203011	Contact crime	2007-08	219	2011
+ward	10203011	Property crime	2008-09	108	2011
+ward	10203011	Contact crime	2008-09	184	2011
+ward	10203011	Property crime	2009-10	121	2011
+ward	10203011	Contact crime	2009-10	207	2011
+ward	10203011	Property crime	2010-11	120	2011
+ward	10203011	Contact crime	2010-11	210	2011
+ward	10203011	Property crime	2011-12	139	2011
+ward	10203011	Contact crime	2011-12	207	2011
+ward	10203011	Property crime	2012-13	137	2011
+ward	10203011	Contact crime	2012-13	218	2011
+ward	10203011	Property crime	2013-14	132	2011
+ward	10203011	Contact crime	2013-14	210	2011
+ward	10203011	Property crime	2014-15	182	2011
+ward	10203011	Contact crime	2014-15	243	2011
+ward	10203012	Property crime	2005-06	32	2011
+ward	10203012	Contact crime	2005-06	119	2011
+ward	10203012	Property crime	2006-07	33	2011
+ward	10203012	Contact crime	2006-07	111	2011
+ward	10203012	Property crime	2007-08	39	2011
+ward	10203012	Contact crime	2007-08	116	2011
+ward	10203012	Property crime	2008-09	42	2011
+ward	10203012	Contact crime	2008-09	97	2011
+ward	10203012	Property crime	2009-10	50	2011
+ward	10203012	Contact crime	2009-10	100	2011
+ward	10203012	Property crime	2010-11	44	2011
+ward	10203012	Contact crime	2010-11	101	2011
+ward	10203012	Property crime	2011-12	55	2011
+ward	10203012	Contact crime	2011-12	104	2011
+ward	10203012	Property crime	2012-13	53	2011
+ward	10203012	Contact crime	2012-13	112	2011
+ward	10203012	Property crime	2013-14	45	2011
+ward	10203012	Contact crime	2013-14	103	2011
+ward	10203012	Property crime	2014-15	70	2011
+ward	10203012	Contact crime	2014-15	123	2011
+ward	10203013	Property crime	2005-06	53	2011
+ward	10203013	Contact crime	2005-06	96	2011
+ward	10203013	Property crime	2006-07	49	2011
+ward	10203013	Contact crime	2006-07	72	2011
+ward	10203013	Property crime	2007-08	49	2011
+ward	10203013	Contact crime	2007-08	57	2011
+ward	10203013	Property crime	2008-09	56	2011
+ward	10203013	Contact crime	2008-09	65	2011
+ward	10203013	Property crime	2009-10	62	2011
+ward	10203013	Contact crime	2009-10	89	2011
+ward	10203013	Property crime	2010-11	60	2011
+ward	10203013	Contact crime	2010-11	105	2011
+ward	10203013	Property crime	2011-12	62	2011
+ward	10203013	Contact crime	2011-12	118	2011
+ward	10203013	Property crime	2012-13	82	2011
+ward	10203013	Contact crime	2012-13	129	2011
+ward	10203013	Property crime	2013-14	82	2011
+ward	10203013	Contact crime	2013-14	125	2011
+ward	10203013	Property crime	2014-15	83	2011
+ward	10203013	Contact crime	2014-15	129	2011
+ward	10203014	Property crime	2005-06	104	2011
+ward	10203014	Contact crime	2005-06	188	2011
+ward	10203014	Property crime	2006-07	96	2011
+ward	10203014	Contact crime	2006-07	141	2011
+ward	10203014	Property crime	2007-08	95	2011
+ward	10203014	Contact crime	2007-08	111	2011
+ward	10203014	Property crime	2008-09	109	2011
+ward	10203014	Contact crime	2008-09	126	2011
+ward	10203014	Property crime	2009-10	122	2011
+ward	10203014	Contact crime	2009-10	174	2011
+ward	10203014	Property crime	2010-11	118	2011
+ward	10203014	Contact crime	2010-11	205	2011
+ward	10203014	Property crime	2011-12	121	2011
+ward	10203014	Contact crime	2011-12	231	2011
+ward	10203014	Property crime	2012-13	159	2011
+ward	10203014	Contact crime	2012-13	251	2011
+ward	10203014	Property crime	2013-14	160	2011
+ward	10203014	Contact crime	2013-14	244	2011
+ward	10203014	Property crime	2014-15	161	2011
+ward	10203014	Contact crime	2014-15	251	2011
+ward	10203015	Property crime	2005-06	174	2011
+ward	10203015	Contact crime	2005-06	150	2011
+ward	10203015	Property crime	2006-07	155	2011
+ward	10203015	Contact crime	2006-07	112	2011
+ward	10203015	Property crime	2007-08	118	2011
+ward	10203015	Contact crime	2007-08	76	2011
+ward	10203015	Property crime	2008-09	112	2011
+ward	10203015	Contact crime	2008-09	74	2011
+ward	10203015	Property crime	2009-10	201	2011
+ward	10203015	Contact crime	2009-10	110	2011
+ward	10203015	Property crime	2010-11	234	2011
+ward	10203015	Contact crime	2010-11	113	2011
+ward	10203015	Property crime	2011-12	252	2011
+ward	10203015	Contact crime	2011-12	126	2011
+ward	10203015	Property crime	2012-13	264	2011
+ward	10203015	Contact crime	2012-13	108	2011
+ward	10203015	Property crime	2013-14	256	2011
+ward	10203015	Contact crime	2013-14	117	2011
+ward	10203015	Property crime	2014-15	350	2011
+ward	10203015	Contact crime	2014-15	115	2011
+ward	10203016	Property crime	2005-06	36	2011
+ward	10203016	Contact crime	2005-06	134	2011
+ward	10203016	Property crime	2006-07	37	2011
+ward	10203016	Contact crime	2006-07	125	2011
+ward	10203016	Property crime	2007-08	44	2011
+ward	10203016	Contact crime	2007-08	131	2011
+ward	10203016	Property crime	2008-09	48	2011
+ward	10203016	Contact crime	2008-09	109	2011
+ward	10203016	Property crime	2009-10	56	2011
+ward	10203016	Contact crime	2009-10	113	2011
+ward	10203016	Property crime	2010-11	49	2011
+ward	10203016	Contact crime	2010-11	114	2011
+ward	10203016	Property crime	2011-12	62	2011
+ward	10203016	Contact crime	2011-12	117	2011
+ward	10203016	Property crime	2012-13	60	2011
+ward	10203016	Contact crime	2012-13	126	2011
+ward	10203016	Property crime	2013-14	51	2011
+ward	10203016	Contact crime	2013-14	117	2011
+ward	10203016	Property crime	2014-15	79	2011
+ward	10203016	Contact crime	2014-15	138	2011
+ward	10203017	Property crime	2005-06	177	2011
+ward	10203017	Contact crime	2005-06	180	2011
+ward	10203017	Property crime	2006-07	159	2011
+ward	10203017	Contact crime	2006-07	136	2011
+ward	10203017	Property crime	2007-08	126	2011
+ward	10203017	Contact crime	2007-08	98	2011
+ward	10203017	Property crime	2008-09	124	2011
+ward	10203017	Contact crime	2008-09	99	2011
+ward	10203017	Property crime	2009-10	206	2011
+ward	10203017	Contact crime	2009-10	140	2011
+ward	10203017	Property crime	2010-11	233	2011
+ward	10203017	Contact crime	2010-11	149	2011
+ward	10203017	Property crime	2011-12	251	2011
+ward	10203017	Contact crime	2011-12	166	2011
+ward	10203017	Property crime	2012-13	270	2011
+ward	10203017	Contact crime	2012-13	155	2011
+ward	10203017	Property crime	2013-14	262	2011
+ward	10203017	Contact crime	2013-14	161	2011
+ward	10203017	Property crime	2014-15	346	2011
+ward	10203017	Contact crime	2014-15	162	2011
+ward	10203018	Property crime	2005-06	82	2011
+ward	10203018	Contact crime	2005-06	143	2011
+ward	10203018	Property crime	2006-07	93	2011
+ward	10203018	Contact crime	2006-07	126	2011
+ward	10203018	Property crime	2007-08	76	2011
+ward	10203018	Contact crime	2007-08	126	2011
+ward	10203018	Property crime	2008-09	96	2011
+ward	10203018	Contact crime	2008-09	107	2011
+ward	10203018	Property crime	2009-10	103	2011
+ward	10203018	Contact crime	2009-10	141	2011
+ward	10203018	Property crime	2010-11	116	2011
+ward	10203018	Contact crime	2010-11	143	2011
+ward	10203018	Property crime	2011-12	123	2011
+ward	10203018	Contact crime	2011-12	130	2011
+ward	10203018	Property crime	2012-13	122	2011
+ward	10203018	Contact crime	2012-13	131	2011
+ward	10203018	Property crime	2013-14	135	2011
+ward	10203018	Contact crime	2013-14	137	2011
+ward	10203018	Property crime	2014-15	166	2011
+ward	10203018	Contact crime	2014-15	152	2011
+ward	10203019	Property crime	2005-06	144	2011
+ward	10203019	Contact crime	2005-06	124	2011
+ward	10203019	Property crime	2006-07	128	2011
+ward	10203019	Contact crime	2006-07	92	2011
+ward	10203019	Property crime	2007-08	97	2011
+ward	10203019	Contact crime	2007-08	62	2011
+ward	10203019	Property crime	2008-09	92	2011
+ward	10203019	Contact crime	2008-09	61	2011
+ward	10203019	Property crime	2009-10	166	2011
+ward	10203019	Contact crime	2009-10	91	2011
+ward	10203019	Property crime	2010-11	193	2011
+ward	10203019	Contact crime	2010-11	93	2011
+ward	10203019	Property crime	2011-12	208	2011
+ward	10203019	Contact crime	2011-12	103	2011
+ward	10203019	Property crime	2012-13	218	2011
+ward	10203019	Contact crime	2012-13	89	2011
+ward	10203019	Property crime	2013-14	211	2011
+ward	10203019	Contact crime	2013-14	96	2011
+ward	10203019	Property crime	2014-15	289	2011
+ward	10203019	Contact crime	2014-15	94	2011
+ward	10203020	Property crime	2005-06	38	2011
+ward	10203020	Contact crime	2005-06	68	2011
+ward	10203020	Property crime	2006-07	35	2011
+ward	10203020	Contact crime	2006-07	51	2011
+ward	10203020	Property crime	2007-08	34	2011
+ward	10203020	Contact crime	2007-08	40	2011
+ward	10203020	Property crime	2008-09	40	2011
+ward	10203020	Contact crime	2008-09	46	2011
+ward	10203020	Property crime	2009-10	44	2011
+ward	10203020	Contact crime	2009-10	63	2011
+ward	10203020	Property crime	2010-11	43	2011
+ward	10203020	Contact crime	2010-11	74	2011
+ward	10203020	Property crime	2011-12	44	2011
+ward	10203020	Contact crime	2011-12	84	2011
+ward	10203020	Property crime	2012-13	58	2011
+ward	10203020	Contact crime	2012-13	91	2011
+ward	10203020	Property crime	2013-14	58	2011
+ward	10203020	Contact crime	2013-14	89	2011
+ward	10203020	Property crime	2014-15	59	2011
+ward	10203020	Contact crime	2014-15	91	2011
+ward	10203021	Property crime	2005-06	59	2011
+ward	10203021	Contact crime	2005-06	106	2011
+ward	10203021	Property crime	2006-07	54	2011
+ward	10203021	Contact crime	2006-07	79	2011
+ward	10203021	Property crime	2007-08	53	2011
+ward	10203021	Contact crime	2007-08	62	2011
+ward	10203021	Property crime	2008-09	61	2011
+ward	10203021	Contact crime	2008-09	71	2011
+ward	10203021	Property crime	2009-10	68	2011
+ward	10203021	Contact crime	2009-10	98	2011
+ward	10203021	Property crime	2010-11	66	2011
+ward	10203021	Contact crime	2010-11	115	2011
+ward	10203021	Property crime	2011-12	68	2011
+ward	10203021	Contact crime	2011-12	130	2011
+ward	10203021	Property crime	2012-13	90	2011
+ward	10203021	Contact crime	2012-13	141	2011
+ward	10203021	Property crime	2013-14	90	2011
+ward	10203021	Contact crime	2013-14	137	2011
+ward	10203021	Property crime	2014-15	91	2011
+ward	10203021	Contact crime	2014-15	141	2011
+ward	10203022	Property crime	2005-06	84	2011
+ward	10203022	Contact crime	2005-06	135	2011
+ward	10203022	Property crime	2006-07	77	2011
+ward	10203022	Contact crime	2006-07	101	2011
+ward	10203022	Property crime	2007-08	72	2011
+ward	10203022	Contact crime	2007-08	78	2011
+ward	10203022	Property crime	2008-09	81	2011
+ward	10203022	Contact crime	2008-09	88	2011
+ward	10203022	Property crime	2009-10	98	2011
+ward	10203022	Contact crime	2009-10	122	2011
+ward	10203022	Property crime	2010-11	99	2011
+ward	10203022	Contact crime	2010-11	142	2011
+ward	10203022	Property crime	2011-12	103	2011
+ward	10203022	Contact crime	2011-12	160	2011
+ward	10203022	Property crime	2012-13	129	2011
+ward	10203022	Contact crime	2012-13	171	2011
+ward	10203022	Property crime	2013-14	128	2011
+ward	10203022	Contact crime	2013-14	167	2011
+ward	10203022	Property crime	2014-15	138	2011
+ward	10203022	Contact crime	2014-15	171	2011
+ward	10203023	Property crime	2005-06	114	2011
+ward	10203023	Contact crime	2005-06	129	2011
+ward	10203023	Property crime	2006-07	103	2011
+ward	10203023	Contact crime	2006-07	96	2011
+ward	10203023	Property crime	2007-08	85	2011
+ward	10203023	Contact crime	2007-08	70	2011
+ward	10203023	Property crime	2008-09	86	2011
+ward	10203023	Contact crime	2008-09	74	2011
+ward	10203023	Property crime	2009-10	132	2011
+ward	10203023	Contact crime	2009-10	106	2011
+ward	10203023	Property crime	2010-11	146	2011
+ward	10203023	Contact crime	2010-11	116	2011
+ward	10203023	Property crime	2011-12	156	2011
+ward	10203023	Contact crime	2011-12	131	2011
+ward	10203023	Property crime	2012-13	174	2011
+ward	10203023	Contact crime	2012-13	129	2011
+ward	10203023	Property crime	2013-14	170	2011
+ward	10203023	Contact crime	2013-14	130	2011
+ward	10203023	Property crime	2014-15	214	2011
+ward	10203023	Contact crime	2014-15	131	2011
+ward	10203024	Property crime	2005-06	53	2011
+ward	10203024	Contact crime	2005-06	95	2011
+ward	10203024	Property crime	2006-07	49	2011
+ward	10203024	Contact crime	2006-07	71	2011
+ward	10203024	Property crime	2007-08	48	2011
+ward	10203024	Contact crime	2007-08	56	2011
+ward	10203024	Property crime	2008-09	55	2011
+ward	10203024	Contact crime	2008-09	64	2011
+ward	10203024	Property crime	2009-10	61	2011
+ward	10203024	Contact crime	2009-10	88	2011
+ward	10203024	Property crime	2010-11	59	2011
+ward	10203024	Contact crime	2010-11	103	2011
+ward	10203024	Property crime	2011-12	61	2011
+ward	10203024	Contact crime	2011-12	117	2011
+ward	10203024	Property crime	2012-13	81	2011
+ward	10203024	Contact crime	2012-13	127	2011
+ward	10203024	Property crime	2013-14	81	2011
+ward	10203024	Contact crime	2013-14	124	2011
+ward	10203024	Property crime	2014-15	81	2011
+ward	10203024	Contact crime	2014-15	127	2011
+ward	10203025	Property crime	2005-06	89	2011
+ward	10203025	Contact crime	2005-06	154	2011
+ward	10203025	Property crime	2006-07	82	2011
+ward	10203025	Contact crime	2006-07	116	2011
+ward	10203025	Property crime	2007-08	79	2011
+ward	10203025	Contact crime	2007-08	91	2011
+ward	10203025	Property crime	2008-09	91	2011
+ward	10203025	Contact crime	2008-09	103	2011
+ward	10203025	Property crime	2009-10	103	2011
+ward	10203025	Contact crime	2009-10	142	2011
+ward	10203025	Property crime	2010-11	102	2011
+ward	10203025	Contact crime	2010-11	166	2011
+ward	10203025	Property crime	2011-12	105	2011
+ward	10203025	Contact crime	2011-12	187	2011
+ward	10203025	Property crime	2012-13	135	2011
+ward	10203025	Contact crime	2012-13	202	2011
+ward	10203025	Property crime	2013-14	135	2011
+ward	10203025	Contact crime	2013-14	197	2011
+ward	10203025	Property crime	2014-15	140	2011
+ward	10203025	Contact crime	2014-15	202	2011
+ward	10203026	Property crime	2005-06	66	2011
+ward	10203026	Contact crime	2005-06	118	2011
+ward	10203026	Property crime	2006-07	61	2011
+ward	10203026	Contact crime	2006-07	89	2011
+ward	10203026	Property crime	2007-08	60	2011
+ward	10203026	Contact crime	2007-08	70	2011
+ward	10203026	Property crime	2008-09	69	2011
+ward	10203026	Contact crime	2008-09	80	2011
+ward	10203026	Property crime	2009-10	77	2011
+ward	10203026	Contact crime	2009-10	110	2011
+ward	10203026	Property crime	2010-11	74	2011
+ward	10203026	Contact crime	2010-11	129	2011
+ward	10203026	Property crime	2011-12	76	2011
+ward	10203026	Contact crime	2011-12	146	2011
+ward	10203026	Property crime	2012-13	101	2011
+ward	10203026	Contact crime	2012-13	158	2011
+ward	10203026	Property crime	2013-14	101	2011
+ward	10203026	Contact crime	2013-14	154	2011
+ward	10203026	Property crime	2014-15	102	2011
+ward	10203026	Contact crime	2014-15	158	2011
+ward	10203027	Property crime	2005-06	53	2011
+ward	10203027	Contact crime	2005-06	93	2011
+ward	10203027	Property crime	2006-07	49	2011
+ward	10203027	Contact crime	2006-07	70	2011
+ward	10203027	Property crime	2007-08	48	2011
+ward	10203027	Contact crime	2007-08	55	2011
+ward	10203027	Property crime	2008-09	54	2011
+ward	10203027	Contact crime	2008-09	62	2011
+ward	10203027	Property crime	2009-10	62	2011
+ward	10203027	Contact crime	2009-10	86	2011
+ward	10203027	Property crime	2010-11	60	2011
+ward	10203027	Contact crime	2010-11	100	2011
+ward	10203027	Property crime	2011-12	62	2011
+ward	10203027	Contact crime	2011-12	113	2011
+ward	10203027	Property crime	2012-13	81	2011
+ward	10203027	Contact crime	2012-13	123	2011
+ward	10203027	Property crime	2013-14	81	2011
+ward	10203027	Contact crime	2013-14	120	2011
+ward	10203027	Property crime	2014-15	83	2011
+ward	10203027	Contact crime	2014-15	123	2011
+ward	10203028	Property crime	2005-06	188	2011
+ward	10203028	Contact crime	2005-06	165	2011
+ward	10203028	Property crime	2006-07	168	2011
+ward	10203028	Contact crime	2006-07	124	2011
+ward	10203028	Property crime	2007-08	130	2011
+ward	10203028	Contact crime	2007-08	86	2011
+ward	10203028	Property crime	2008-09	124	2011
+ward	10203028	Contact crime	2008-09	84	2011
+ward	10203028	Property crime	2009-10	218	2011
+ward	10203028	Contact crime	2009-10	123	2011
+ward	10203028	Property crime	2010-11	253	2011
+ward	10203028	Contact crime	2010-11	126	2011
+ward	10203028	Property crime	2011-12	272	2011
+ward	10203028	Contact crime	2011-12	140	2011
+ward	10203028	Property crime	2012-13	286	2011
+ward	10203028	Contact crime	2012-13	122	2011
+ward	10203028	Property crime	2013-14	277	2011
+ward	10203028	Contact crime	2013-14	131	2011
+ward	10203028	Property crime	2014-15	376	2011
+ward	10203028	Contact crime	2014-15	128	2011
+ward	10203029	Property crime	2005-06	79	2011
+ward	10203029	Contact crime	2005-06	135	2011
+ward	10203029	Property crime	2006-07	89	2011
+ward	10203029	Contact crime	2006-07	117	2011
+ward	10203029	Property crime	2007-08	72	2011
+ward	10203029	Contact crime	2007-08	115	2011
+ward	10203029	Property crime	2008-09	90	2011
+ward	10203029	Contact crime	2008-09	99	2011
+ward	10203029	Property crime	2009-10	99	2011
+ward	10203029	Contact crime	2009-10	131	2011
+ward	10203029	Property crime	2010-11	111	2011
+ward	10203029	Contact crime	2010-11	134	2011
+ward	10203029	Property crime	2011-12	118	2011
+ward	10203029	Contact crime	2011-12	123	2011
+ward	10203029	Property crime	2012-13	118	2011
+ward	10203029	Contact crime	2012-13	124	2011
+ward	10203029	Property crime	2013-14	129	2011
+ward	10203029	Contact crime	2013-14	129	2011
+ward	10203029	Property crime	2014-15	159	2011
+ward	10203029	Contact crime	2014-15	142	2011
+ward	10203030	Property crime	2005-06	56	2011
+ward	10203030	Contact crime	2005-06	155	2011
+ward	10203030	Property crime	2006-07	43	2011
+ward	10203030	Contact crime	2006-07	163	2011
+ward	10203030	Property crime	2007-08	59	2011
+ward	10203030	Contact crime	2007-08	136	2011
+ward	10203030	Property crime	2008-09	63	2011
+ward	10203030	Contact crime	2008-09	126	2011
+ward	10203030	Property crime	2009-10	55	2011
+ward	10203030	Contact crime	2009-10	126	2011
+ward	10203030	Property crime	2010-11	43	2011
+ward	10203030	Contact crime	2010-11	127	2011
+ward	10203030	Property crime	2011-12	50	2011
+ward	10203030	Contact crime	2011-12	106	2011
+ward	10203030	Property crime	2012-13	50	2011
+ward	10203030	Contact crime	2012-13	121	2011
+ward	10203030	Property crime	2013-14	52	2011
+ward	10203030	Contact crime	2013-14	155	2011
+ward	10203030	Property crime	2014-15	56	2011
+ward	10203030	Contact crime	2014-15	161	2011
+ward	10203031	Property crime	2005-06	74	2011
+ward	10203031	Contact crime	2005-06	146	2011
+ward	10203031	Property crime	2006-07	75	2011
+ward	10203031	Contact crime	2006-07	141	2011
+ward	10203031	Property crime	2007-08	70	2011
+ward	10203031	Contact crime	2007-08	134	2011
+ward	10203031	Property crime	2008-09	82	2011
+ward	10203031	Contact crime	2008-09	119	2011
+ward	10203031	Property crime	2009-10	89	2011
+ward	10203031	Contact crime	2009-10	133	2011
+ward	10203031	Property crime	2010-11	93	2011
+ward	10203031	Contact crime	2010-11	131	2011
+ward	10203031	Property crime	2011-12	95	2011
+ward	10203031	Contact crime	2011-12	132	2011
+ward	10203031	Property crime	2012-13	115	2011
+ward	10203031	Contact crime	2012-13	148	2011
+ward	10203031	Property crime	2013-14	121	2011
+ward	10203031	Contact crime	2013-14	155	2011
+ward	10203031	Property crime	2014-15	130	2011
+ward	10203031	Contact crime	2014-15	161	2011
+ward	10204001	Property crime	2005-06	93	2011
+ward	10204001	Contact crime	2005-06	155	2011
+ward	10204001	Property crime	2006-07	115	2011
+ward	10204001	Contact crime	2006-07	156	2011
+ward	10204001	Property crime	2007-08	111	2011
+ward	10204001	Contact crime	2007-08	143	2011
+ward	10204001	Property crime	2008-09	169	2011
+ward	10204001	Contact crime	2008-09	141	2011
+ward	10204001	Property crime	2009-10	148	2011
+ward	10204001	Contact crime	2009-10	144	2011
+ward	10204001	Property crime	2010-11	165	2011
+ward	10204001	Contact crime	2010-11	177	2011
+ward	10204001	Property crime	2011-12	176	2011
+ward	10204001	Contact crime	2011-12	202	2011
+ward	10204001	Property crime	2012-13	176	2011
+ward	10204001	Contact crime	2012-13	172	2011
+ward	10204001	Property crime	2013-14	193	2011
+ward	10204001	Contact crime	2013-14	150	2011
+ward	10204001	Property crime	2014-15	149	2011
+ward	10204001	Contact crime	2014-15	133	2011
+ward	10204002	Property crime	2005-06	49	2011
+ward	10204002	Contact crime	2005-06	87	2011
+ward	10204002	Property crime	2006-07	62	2011
+ward	10204002	Contact crime	2006-07	88	2011
+ward	10204002	Property crime	2007-08	59	2011
+ward	10204002	Contact crime	2007-08	80	2011
+ward	10204002	Property crime	2008-09	93	2011
+ward	10204002	Contact crime	2008-09	79	2011
+ward	10204002	Property crime	2009-10	80	2011
+ward	10204002	Contact crime	2009-10	80	2011
+ward	10204002	Property crime	2010-11	88	2011
+ward	10204002	Contact crime	2010-11	100	2011
+ward	10204002	Property crime	2011-12	95	2011
+ward	10204002	Contact crime	2011-12	115	2011
+ward	10204002	Property crime	2012-13	94	2011
+ward	10204002	Contact crime	2012-13	96	2011
+ward	10204002	Property crime	2013-14	104	2011
+ward	10204002	Contact crime	2013-14	83	2011
+ward	10204002	Property crime	2014-15	79	2011
+ward	10204002	Contact crime	2014-15	73	2011
+ward	10204003	Property crime	2005-06	64	2011
+ward	10204003	Contact crime	2005-06	102	2011
+ward	10204003	Property crime	2006-07	74	2011
+ward	10204003	Contact crime	2006-07	90	2011
+ward	10204003	Property crime	2007-08	91	2011
+ward	10204003	Contact crime	2007-08	109	2011
+ward	10204003	Property crime	2008-09	99	2011
+ward	10204003	Contact crime	2008-09	90	2011
+ward	10204003	Property crime	2009-10	89	2011
+ward	10204003	Contact crime	2009-10	97	2011
+ward	10204003	Property crime	2010-11	91	2011
+ward	10204003	Contact crime	2010-11	91	2011
+ward	10204003	Property crime	2011-12	95	2011
+ward	10204003	Contact crime	2011-12	93	2011
+ward	10204003	Property crime	2012-13	120	2011
+ward	10204003	Contact crime	2012-13	107	2011
+ward	10204003	Property crime	2013-14	114	2011
+ward	10204003	Contact crime	2013-14	107	2011
+ward	10204003	Property crime	2014-15	126	2011
+ward	10204003	Contact crime	2014-15	102	2011
+ward	10204004	Property crime	2005-06	54	2011
+ward	10204004	Contact crime	2005-06	82	2011
+ward	10204004	Property crime	2006-07	61	2011
+ward	10204004	Contact crime	2006-07	69	2011
+ward	10204004	Property crime	2007-08	79	2011
+ward	10204004	Contact crime	2007-08	91	2011
+ward	10204004	Property crime	2008-09	78	2011
+ward	10204004	Contact crime	2008-09	72	2011
+ward	10204004	Property crime	2009-10	72	2011
+ward	10204004	Contact crime	2009-10	79	2011
+ward	10204004	Property crime	2010-11	72	2011
+ward	10204004	Contact crime	2010-11	67	2011
+ward	10204004	Property crime	2011-12	74	2011
+ward	10204004	Contact crime	2011-12	66	2011
+ward	10204004	Property crime	2012-13	101	2011
+ward	10204004	Contact crime	2012-13	85	2011
+ward	10204004	Property crime	2013-14	92	2011
+ward	10204004	Contact crime	2013-14	89	2011
+ward	10204004	Property crime	2014-15	110	2011
+ward	10204004	Contact crime	2014-15	86	2011
+ward	10204005	Property crime	2005-06	52	2011
+ward	10204005	Contact crime	2005-06	48	2011
+ward	10204005	Property crime	2006-07	68	2011
+ward	10204005	Contact crime	2006-07	45	2011
+ward	10204005	Property crime	2007-08	61	2011
+ward	10204005	Contact crime	2007-08	45	2011
+ward	10204005	Property crime	2008-09	63	2011
+ward	10204005	Contact crime	2008-09	42	2011
+ward	10204005	Property crime	2009-10	64	2011
+ward	10204005	Contact crime	2009-10	46	2011
+ward	10204005	Property crime	2010-11	70	2011
+ward	10204005	Contact crime	2010-11	57	2011
+ward	10204005	Property crime	2011-12	66	2011
+ward	10204005	Contact crime	2011-12	52	2011
+ward	10204005	Property crime	2012-13	70	2011
+ward	10204005	Contact crime	2012-13	53	2011
+ward	10204005	Property crime	2013-14	80	2011
+ward	10204005	Contact crime	2013-14	59	2011
+ward	10204005	Property crime	2014-15	79	2011
+ward	10204005	Contact crime	2014-15	61	2011
+ward	10204006	Property crime	2005-06	99	2011
+ward	10204006	Contact crime	2005-06	62	2011
+ward	10204006	Property crime	2006-07	122	2011
+ward	10204006	Contact crime	2006-07	59	2011
+ward	10204006	Property crime	2007-08	119	2011
+ward	10204006	Contact crime	2007-08	60	2011
+ward	10204006	Property crime	2008-09	119	2011
+ward	10204006	Contact crime	2008-09	59	2011
+ward	10204006	Property crime	2009-10	126	2011
+ward	10204006	Contact crime	2009-10	64	2011
+ward	10204006	Property crime	2010-11	154	2011
+ward	10204006	Contact crime	2010-11	77	2011
+ward	10204006	Property crime	2011-12	140	2011
+ward	10204006	Contact crime	2011-12	73	2011
+ward	10204006	Property crime	2012-13	154	2011
+ward	10204006	Contact crime	2012-13	79	2011
+ward	10204006	Property crime	2013-14	163	2011
+ward	10204006	Contact crime	2013-14	87	2011
+ward	10204006	Property crime	2014-15	153	2011
+ward	10204006	Contact crime	2014-15	93	2011
+ward	10204007	Property crime	2005-06	154	2011
+ward	10204007	Contact crime	2005-06	62	2011
+ward	10204007	Property crime	2006-07	177	2011
+ward	10204007	Contact crime	2006-07	59	2011
+ward	10204007	Property crime	2007-08	189	2011
+ward	10204007	Contact crime	2007-08	65	2011
+ward	10204007	Property crime	2008-09	182	2011
+ward	10204007	Contact crime	2008-09	67	2011
+ward	10204007	Property crime	2009-10	201	2011
+ward	10204007	Contact crime	2009-10	72	2011
+ward	10204007	Property crime	2010-11	262	2011
+ward	10204007	Contact crime	2010-11	80	2011
+ward	10204007	Property crime	2011-12	234	2011
+ward	10204007	Contact crime	2011-12	82	2011
+ward	10204007	Property crime	2012-13	268	2011
+ward	10204007	Contact crime	2012-13	98	2011
+ward	10204007	Property crime	2013-14	267	2011
+ward	10204007	Contact crime	2013-14	105	2011
+ward	10204007	Property crime	2014-15	242	2011
+ward	10204007	Contact crime	2014-15	116	2011
+ward	10204008	Property crime	2005-06	225	2011
+ward	10204008	Contact crime	2005-06	88	2011
+ward	10204008	Property crime	2006-07	258	2011
+ward	10204008	Contact crime	2006-07	84	2011
+ward	10204008	Property crime	2007-08	278	2011
+ward	10204008	Contact crime	2007-08	93	2011
+ward	10204008	Property crime	2008-09	267	2011
+ward	10204008	Contact crime	2008-09	96	2011
+ward	10204008	Property crime	2009-10	295	2011
+ward	10204008	Contact crime	2009-10	103	2011
+ward	10204008	Property crime	2010-11	388	2011
+ward	10204008	Contact crime	2010-11	114	2011
+ward	10204008	Property crime	2011-12	345	2011
+ward	10204008	Contact crime	2011-12	118	2011
+ward	10204008	Property crime	2012-13	397	2011
+ward	10204008	Contact crime	2012-13	141	2011
+ward	10204008	Property crime	2013-14	393	2011
+ward	10204008	Contact crime	2013-14	151	2011
+ward	10204008	Property crime	2014-15	356	2011
+ward	10204008	Contact crime	2014-15	167	2011
+ward	10204009	Property crime	2005-06	42	2011
+ward	10204009	Contact crime	2005-06	16	2011
+ward	10204009	Property crime	2006-07	48	2011
+ward	10204009	Contact crime	2006-07	15	2011
+ward	10204009	Property crime	2007-08	51	2011
+ward	10204009	Contact crime	2007-08	17	2011
+ward	10204009	Property crime	2008-09	49	2011
+ward	10204009	Contact crime	2008-09	18	2011
+ward	10204009	Property crime	2009-10	54	2011
+ward	10204009	Contact crime	2009-10	19	2011
+ward	10204009	Property crime	2010-11	71	2011
+ward	10204009	Contact crime	2010-11	21	2011
+ward	10204009	Property crime	2011-12	64	2011
+ward	10204009	Contact crime	2011-12	22	2011
+ward	10204009	Property crime	2012-13	73	2011
+ward	10204009	Contact crime	2012-13	26	2011
+ward	10204009	Property crime	2013-14	72	2011
+ward	10204009	Contact crime	2013-14	28	2011
+ward	10204009	Property crime	2014-15	66	2011
+ward	10204009	Contact crime	2014-15	31	2011
+ward	10204010	Property crime	2005-06	207	2011
+ward	10204010	Contact crime	2005-06	88	2011
+ward	10204010	Property crime	2006-07	240	2011
+ward	10204010	Contact crime	2006-07	84	2011
+ward	10204010	Property crime	2007-08	254	2011
+ward	10204010	Contact crime	2007-08	91	2011
+ward	10204010	Property crime	2008-09	246	2011
+ward	10204010	Contact crime	2008-09	94	2011
+ward	10204010	Property crime	2009-10	270	2011
+ward	10204010	Contact crime	2009-10	101	2011
+ward	10204010	Property crime	2010-11	351	2011
+ward	10204010	Contact crime	2010-11	113	2011
+ward	10204010	Property crime	2011-12	313	2011
+ward	10204010	Contact crime	2011-12	115	2011
+ward	10204010	Property crime	2012-13	358	2011
+ward	10204010	Contact crime	2012-13	135	2011
+ward	10204010	Property crime	2013-14	357	2011
+ward	10204010	Contact crime	2013-14	145	2011
+ward	10204010	Property crime	2014-15	326	2011
+ward	10204010	Contact crime	2014-15	160	2011
+ward	10204011	Property crime	2005-06	257	2011
+ward	10204011	Contact crime	2005-06	100	2011
+ward	10204011	Property crime	2006-07	295	2011
+ward	10204011	Contact crime	2006-07	96	2011
+ward	10204011	Property crime	2007-08	316	2011
+ward	10204011	Contact crime	2007-08	106	2011
+ward	10204011	Property crime	2008-09	305	2011
+ward	10204011	Contact crime	2008-09	110	2011
+ward	10204011	Property crime	2009-10	337	2011
+ward	10204011	Contact crime	2009-10	118	2011
+ward	10204011	Property crime	2010-11	442	2011
+ward	10204011	Contact crime	2010-11	130	2011
+ward	10204011	Property crime	2011-12	393	2011
+ward	10204011	Contact crime	2011-12	135	2011
+ward	10204011	Property crime	2012-13	452	2011
+ward	10204011	Contact crime	2012-13	161	2011
+ward	10204011	Property crime	2013-14	447	2011
+ward	10204011	Contact crime	2013-14	173	2011
+ward	10204011	Property crime	2014-15	406	2011
+ward	10204011	Contact crime	2014-15	191	2011
+ward	10204012	Property crime	2005-06	66	2011
+ward	10204012	Contact crime	2005-06	74	2011
+ward	10204012	Property crime	2006-07	92	2011
+ward	10204012	Contact crime	2006-07	69	2011
+ward	10204012	Property crime	2007-08	74	2011
+ward	10204012	Contact crime	2007-08	66	2011
+ward	10204012	Property crime	2008-09	80	2011
+ward	10204012	Contact crime	2008-09	61	2011
+ward	10204012	Property crime	2009-10	78	2011
+ward	10204012	Contact crime	2009-10	68	2011
+ward	10204012	Property crime	2010-11	78	2011
+ward	10204012	Contact crime	2010-11	89	2011
+ward	10204012	Property crime	2011-12	75	2011
+ward	10204012	Contact crime	2011-12	78	2011
+ward	10204012	Property crime	2012-13	73	2011
+ward	10204012	Contact crime	2012-13	76	2011
+ward	10204012	Property crime	2013-14	94	2011
+ward	10204012	Contact crime	2013-14	86	2011
+ward	10204012	Property crime	2014-15	96	2011
+ward	10204012	Contact crime	2014-15	88	2011
+ward	10204013	Property crime	2005-06	25	2011
+ward	10204013	Contact crime	2005-06	30	2011
+ward	10204013	Property crime	2006-07	35	2011
+ward	10204013	Contact crime	2006-07	28	2011
+ward	10204013	Property crime	2007-08	27	2011
+ward	10204013	Contact crime	2007-08	27	2011
+ward	10204013	Property crime	2008-09	30	2011
+ward	10204013	Contact crime	2008-09	24	2011
+ward	10204013	Property crime	2009-10	28	2011
+ward	10204013	Contact crime	2009-10	27	2011
+ward	10204013	Property crime	2010-11	27	2011
+ward	10204013	Contact crime	2010-11	36	2011
+ward	10204013	Property crime	2011-12	27	2011
+ward	10204013	Contact crime	2011-12	31	2011
+ward	10204013	Property crime	2012-13	25	2011
+ward	10204013	Contact crime	2012-13	30	2011
+ward	10204013	Property crime	2013-14	34	2011
+ward	10204013	Contact crime	2013-14	34	2011
+ward	10204013	Property crime	2014-15	35	2011
+ward	10204013	Contact crime	2014-15	35	2011
+ward	10204014	Property crime	2005-06	37	2011
+ward	10204014	Contact crime	2005-06	46	2011
+ward	10204014	Property crime	2006-07	54	2011
+ward	10204014	Contact crime	2006-07	43	2011
+ward	10204014	Property crime	2007-08	41	2011
+ward	10204014	Contact crime	2007-08	41	2011
+ward	10204014	Property crime	2008-09	45	2011
+ward	10204014	Contact crime	2008-09	38	2011
+ward	10204014	Property crime	2009-10	43	2011
+ward	10204014	Contact crime	2009-10	42	2011
+ward	10204014	Property crime	2010-11	41	2011
+ward	10204014	Contact crime	2010-11	55	2011
+ward	10204014	Property crime	2011-12	40	2011
+ward	10204014	Contact crime	2011-12	48	2011
+ward	10204014	Property crime	2012-13	38	2011
+ward	10204014	Contact crime	2012-13	46	2011
+ward	10204014	Property crime	2013-14	51	2011
+ward	10204014	Contact crime	2013-14	52	2011
+ward	10204014	Property crime	2014-15	54	2011
+ward	10204014	Contact crime	2014-15	53	2011
+ward	10204015	Property crime	2005-06	59	2011
+ward	10204015	Contact crime	2005-06	73	2011
+ward	10204015	Property crime	2006-07	85	2011
+ward	10204015	Contact crime	2006-07	68	2011
+ward	10204015	Property crime	2007-08	65	2011
+ward	10204015	Contact crime	2007-08	65	2011
+ward	10204015	Property crime	2008-09	71	2011
+ward	10204015	Contact crime	2008-09	59	2011
+ward	10204015	Property crime	2009-10	68	2011
+ward	10204015	Contact crime	2009-10	66	2011
+ward	10204015	Property crime	2010-11	65	2011
+ward	10204015	Contact crime	2010-11	87	2011
+ward	10204015	Property crime	2011-12	64	2011
+ward	10204015	Contact crime	2011-12	75	2011
+ward	10204015	Property crime	2012-13	59	2011
+ward	10204015	Contact crime	2012-13	72	2011
+ward	10204015	Property crime	2013-14	81	2011
+ward	10204015	Contact crime	2013-14	82	2011
+ward	10204015	Property crime	2014-15	85	2011
+ward	10204015	Contact crime	2014-15	84	2011
+ward	10204016	Property crime	2005-06	60	2011
+ward	10204016	Contact crime	2005-06	71	2011
+ward	10204016	Property crime	2006-07	85	2011
+ward	10204016	Contact crime	2006-07	66	2011
+ward	10204016	Property crime	2007-08	67	2011
+ward	10204016	Contact crime	2007-08	63	2011
+ward	10204016	Property crime	2008-09	73	2011
+ward	10204016	Contact crime	2008-09	58	2011
+ward	10204016	Property crime	2009-10	70	2011
+ward	10204016	Contact crime	2009-10	64	2011
+ward	10204016	Property crime	2010-11	69	2011
+ward	10204016	Contact crime	2010-11	85	2011
+ward	10204016	Property crime	2011-12	67	2011
+ward	10204016	Contact crime	2011-12	74	2011
+ward	10204016	Property crime	2012-13	64	2011
+ward	10204016	Contact crime	2012-13	71	2011
+ward	10204016	Property crime	2013-14	84	2011
+ward	10204016	Contact crime	2013-14	81	2011
+ward	10204016	Property crime	2014-15	87	2011
+ward	10204016	Contact crime	2014-15	82	2011
+ward	10204017	Property crime	2005-06	69	2011
+ward	10204017	Contact crime	2005-06	73	2011
+ward	10204017	Property crime	2006-07	95	2011
+ward	10204017	Contact crime	2006-07	68	2011
+ward	10204017	Property crime	2007-08	78	2011
+ward	10204017	Contact crime	2007-08	66	2011
+ward	10204017	Property crime	2008-09	83	2011
+ward	10204017	Contact crime	2008-09	61	2011
+ward	10204017	Property crime	2009-10	82	2011
+ward	10204017	Contact crime	2009-10	68	2011
+ward	10204017	Property crime	2010-11	85	2011
+ward	10204017	Contact crime	2010-11	88	2011
+ward	10204017	Property crime	2011-12	81	2011
+ward	10204017	Contact crime	2011-12	77	2011
+ward	10204017	Property crime	2012-13	80	2011
+ward	10204017	Contact crime	2012-13	76	2011
+ward	10204017	Property crime	2013-14	100	2011
+ward	10204017	Contact crime	2013-14	86	2011
+ward	10204017	Property crime	2014-15	101	2011
+ward	10204017	Contact crime	2014-15	88	2011
+ward	10204018	Property crime	2005-06	77	2011
+ward	10204018	Contact crime	2005-06	129	2011
+ward	10204018	Property crime	2006-07	89	2011
+ward	10204018	Contact crime	2006-07	126	2011
+ward	10204018	Property crime	2007-08	118	2011
+ward	10204018	Contact crime	2007-08	118	2011
+ward	10204018	Property crime	2008-09	97	2011
+ward	10204018	Contact crime	2008-09	91	2011
+ward	10204018	Property crime	2009-10	102	2011
+ward	10204018	Contact crime	2009-10	139	2011
+ward	10204018	Property crime	2010-11	142	2011
+ward	10204018	Contact crime	2010-11	151	2011
+ward	10204018	Property crime	2011-12	167	2011
+ward	10204018	Contact crime	2011-12	184	2011
+ward	10204018	Property crime	2012-13	138	2011
+ward	10204018	Contact crime	2012-13	179	2011
+ward	10204018	Property crime	2013-14	158	2011
+ward	10204018	Contact crime	2013-14	172	2011
+ward	10204018	Property crime	2014-15	190	2011
+ward	10204018	Contact crime	2014-15	214	2011
+ward	10204019	Property crime	2005-06	359	2011
+ward	10204019	Contact crime	2005-06	154	2011
+ward	10204019	Property crime	2006-07	404	2011
+ward	10204019	Contact crime	2006-07	149	2011
+ward	10204019	Property crime	2007-08	432	2011
+ward	10204019	Contact crime	2007-08	158	2011
+ward	10204019	Property crime	2008-09	423	2011
+ward	10204019	Contact crime	2008-09	162	2011
+ward	10204019	Property crime	2009-10	458	2011
+ward	10204019	Contact crime	2009-10	175	2011
+ward	10204019	Property crime	2010-11	583	2011
+ward	10204019	Contact crime	2010-11	191	2011
+ward	10204019	Property crime	2011-12	537	2011
+ward	10204019	Contact crime	2011-12	198	2011
+ward	10204019	Property crime	2012-13	607	2011
+ward	10204019	Contact crime	2012-13	229	2011
+ward	10204019	Property crime	2013-14	599	2011
+ward	10204019	Contact crime	2013-14	244	2011
+ward	10204019	Property crime	2014-15	543	2011
+ward	10204019	Contact crime	2014-15	270	2011
+ward	10204020	Property crime	2005-06	393	2011
+ward	10204020	Contact crime	2005-06	158	2011
+ward	10204020	Property crime	2006-07	448	2011
+ward	10204020	Contact crime	2006-07	147	2011
+ward	10204020	Property crime	2007-08	473	2011
+ward	10204020	Contact crime	2007-08	160	2011
+ward	10204020	Property crime	2008-09	448	2011
+ward	10204020	Contact crime	2008-09	159	2011
+ward	10204020	Property crime	2009-10	506	2011
+ward	10204020	Contact crime	2009-10	174	2011
+ward	10204020	Property crime	2010-11	623	2011
+ward	10204020	Contact crime	2010-11	183	2011
+ward	10204020	Property crime	2011-12	553	2011
+ward	10204020	Contact crime	2011-12	193	2011
+ward	10204020	Property crime	2012-13	634	2011
+ward	10204020	Contact crime	2012-13	225	2011
+ward	10204020	Property crime	2013-14	638	2011
+ward	10204020	Contact crime	2013-14	247	2011
+ward	10204020	Property crime	2014-15	564	2011
+ward	10204020	Contact crime	2014-15	271	2011
+ward	10204021	Property crime	2005-06	267	2011
+ward	10204021	Contact crime	2005-06	104	2011
+ward	10204021	Property crime	2006-07	306	2011
+ward	10204021	Contact crime	2006-07	99	2011
+ward	10204021	Property crime	2007-08	328	2011
+ward	10204021	Contact crime	2007-08	110	2011
+ward	10204021	Property crime	2008-09	316	2011
+ward	10204021	Contact crime	2008-09	114	2011
+ward	10204021	Property crime	2009-10	349	2011
+ward	10204021	Contact crime	2009-10	122	2011
+ward	10204021	Property crime	2010-11	458	2011
+ward	10204021	Contact crime	2010-11	134	2011
+ward	10204021	Property crime	2011-12	408	2011
+ward	10204021	Contact crime	2011-12	139	2011
+ward	10204021	Property crime	2012-13	469	2011
+ward	10204021	Contact crime	2012-13	166	2011
+ward	10204021	Property crime	2013-14	464	2011
+ward	10204021	Contact crime	2013-14	179	2011
+ward	10204021	Property crime	2014-15	420	2011
+ward	10204021	Contact crime	2014-15	198	2011
+ward	10204022	Property crime	2005-06	211	2011
+ward	10204022	Contact crime	2005-06	82	2011
+ward	10204022	Property crime	2006-07	242	2011
+ward	10204022	Contact crime	2006-07	78	2011
+ward	10204022	Property crime	2007-08	260	2011
+ward	10204022	Contact crime	2007-08	87	2011
+ward	10204022	Property crime	2008-09	250	2011
+ward	10204022	Contact crime	2008-09	90	2011
+ward	10204022	Property crime	2009-10	276	2011
+ward	10204022	Contact crime	2009-10	96	2011
+ward	10204022	Property crime	2010-11	363	2011
+ward	10204022	Contact crime	2010-11	106	2011
+ward	10204022	Property crime	2011-12	323	2011
+ward	10204022	Contact crime	2011-12	110	2011
+ward	10204022	Property crime	2012-13	371	2011
+ward	10204022	Contact crime	2012-13	132	2011
+ward	10204022	Property crime	2013-14	367	2011
+ward	10204022	Contact crime	2013-14	141	2011
+ward	10204022	Property crime	2014-15	333	2011
+ward	10204022	Contact crime	2014-15	157	2011
+ward	10205001	Property crime	2005-06	105	2011
+ward	10205001	Contact crime	2005-06	188	2011
+ward	10205001	Property crime	2006-07	129	2011
+ward	10205001	Contact crime	2006-07	159	2011
+ward	10205001	Property crime	2007-08	138	2011
+ward	10205001	Contact crime	2007-08	165	2011
+ward	10205001	Property crime	2008-09	183	2011
+ward	10205001	Contact crime	2008-09	173	2011
+ward	10205001	Property crime	2009-10	151	2011
+ward	10205001	Contact crime	2009-10	230	2011
+ward	10205001	Property crime	2010-11	145	2011
+ward	10205001	Contact crime	2010-11	255	2011
+ward	10205001	Property crime	2011-12	161	2011
+ward	10205001	Contact crime	2011-12	274	2011
+ward	10205001	Property crime	2012-13	206	2011
+ward	10205001	Contact crime	2012-13	254	2011
+ward	10205001	Property crime	2013-14	160	2011
+ward	10205001	Contact crime	2013-14	236	2011
+ward	10205001	Property crime	2014-15	106	2011
+ward	10205001	Contact crime	2014-15	239	2011
+ward	10205002	Property crime	2005-06	66	2011
+ward	10205002	Contact crime	2005-06	110	2011
+ward	10205002	Property crime	2006-07	62	2011
+ward	10205002	Contact crime	2006-07	120	2011
+ward	10205002	Property crime	2007-08	96	2011
+ward	10205002	Contact crime	2007-08	154	2011
+ward	10205002	Property crime	2008-09	84	2011
+ward	10205002	Contact crime	2008-09	141	2011
+ward	10205002	Property crime	2009-10	84	2011
+ward	10205002	Contact crime	2009-10	147	2011
+ward	10205002	Property crime	2010-11	79	2011
+ward	10205002	Contact crime	2010-11	153	2011
+ward	10205002	Property crime	2011-12	88	2011
+ward	10205002	Contact crime	2011-12	154	2011
+ward	10205002	Property crime	2012-13	102	2011
+ward	10205002	Contact crime	2012-13	204	2011
+ward	10205002	Property crime	2013-14	109	2011
+ward	10205002	Contact crime	2013-14	185	2011
+ward	10205002	Property crime	2014-15	130	2011
+ward	10205002	Contact crime	2014-15	199	2011
+ward	10205003	Property crime	2005-06	48	2011
+ward	10205003	Contact crime	2005-06	80	2011
+ward	10205003	Property crime	2006-07	45	2011
+ward	10205003	Contact crime	2006-07	87	2011
+ward	10205003	Property crime	2007-08	70	2011
+ward	10205003	Contact crime	2007-08	112	2011
+ward	10205003	Property crime	2008-09	61	2011
+ward	10205003	Contact crime	2008-09	102	2011
+ward	10205003	Property crime	2009-10	61	2011
+ward	10205003	Contact crime	2009-10	106	2011
+ward	10205003	Property crime	2010-11	57	2011
+ward	10205003	Contact crime	2010-11	111	2011
+ward	10205003	Property crime	2011-12	64	2011
+ward	10205003	Contact crime	2011-12	111	2011
+ward	10205003	Property crime	2012-13	74	2011
+ward	10205003	Contact crime	2012-13	148	2011
+ward	10205003	Property crime	2013-14	79	2011
+ward	10205003	Contact crime	2013-14	134	2011
+ward	10205003	Property crime	2014-15	95	2011
+ward	10205003	Contact crime	2014-15	144	2011
+ward	10205004	Property crime	2005-06	66	2011
+ward	10205004	Contact crime	2005-06	110	2011
+ward	10205004	Property crime	2006-07	62	2011
+ward	10205004	Contact crime	2006-07	120	2011
+ward	10205004	Property crime	2007-08	95	2011
+ward	10205004	Contact crime	2007-08	152	2011
+ward	10205004	Property crime	2008-09	84	2011
+ward	10205004	Contact crime	2008-09	139	2011
+ward	10205004	Property crime	2009-10	83	2011
+ward	10205004	Contact crime	2009-10	145	2011
+ward	10205004	Property crime	2010-11	79	2011
+ward	10205004	Contact crime	2010-11	151	2011
+ward	10205004	Property crime	2011-12	88	2011
+ward	10205004	Contact crime	2011-12	152	2011
+ward	10205004	Property crime	2012-13	102	2011
+ward	10205004	Contact crime	2012-13	201	2011
+ward	10205004	Property crime	2013-14	109	2011
+ward	10205004	Contact crime	2013-14	183	2011
+ward	10205004	Property crime	2014-15	129	2011
+ward	10205004	Contact crime	2014-15	197	2011
+ward	10205005	Property crime	2005-06	121	2011
+ward	10205005	Contact crime	2005-06	225	2011
+ward	10205005	Property crime	2006-07	122	2011
+ward	10205005	Contact crime	2006-07	213	2011
+ward	10205005	Property crime	2007-08	141	2011
+ward	10205005	Contact crime	2007-08	219	2011
+ward	10205005	Property crime	2008-09	133	2011
+ward	10205005	Contact crime	2008-09	195	2011
+ward	10205005	Property crime	2009-10	138	2011
+ward	10205005	Contact crime	2009-10	208	2011
+ward	10205005	Property crime	2010-11	155	2011
+ward	10205005	Contact crime	2010-11	223	2011
+ward	10205005	Property crime	2011-12	175	2011
+ward	10205005	Contact crime	2011-12	239	2011
+ward	10205005	Property crime	2012-13	192	2011
+ward	10205005	Contact crime	2012-13	272	2011
+ward	10205005	Property crime	2013-14	188	2011
+ward	10205005	Contact crime	2013-14	265	2011
+ward	10205005	Property crime	2014-15	199	2011
+ward	10205005	Contact crime	2014-15	281	2011
+ward	10205006	Property crime	2005-06	75	2011
+ward	10205006	Contact crime	2005-06	148	2011
+ward	10205006	Property crime	2006-07	79	2011
+ward	10205006	Contact crime	2006-07	131	2011
+ward	10205006	Property crime	2007-08	79	2011
+ward	10205006	Contact crime	2007-08	120	2011
+ward	10205006	Property crime	2008-09	78	2011
+ward	10205006	Contact crime	2008-09	104	2011
+ward	10205006	Property crime	2009-10	82	2011
+ward	10205006	Contact crime	2009-10	114	2011
+ward	10205006	Property crime	2010-11	99	2011
+ward	10205006	Contact crime	2010-11	124	2011
+ward	10205006	Property crime	2011-12	113	2011
+ward	10205006	Contact crime	2011-12	138	2011
+ward	10205006	Property crime	2012-13	122	2011
+ward	10205006	Contact crime	2012-13	142	2011
+ward	10205006	Property crime	2013-14	114	2011
+ward	10205006	Contact crime	2013-14	146	2011
+ward	10205006	Property crime	2014-15	113	2011
+ward	10205006	Contact crime	2014-15	153	2011
+ward	10205007	Property crime	2005-06	95	2011
+ward	10205007	Contact crime	2005-06	186	2011
+ward	10205007	Property crime	2006-07	100	2011
+ward	10205007	Contact crime	2006-07	166	2011
+ward	10205007	Property crime	2007-08	99	2011
+ward	10205007	Contact crime	2007-08	151	2011
+ward	10205007	Property crime	2008-09	98	2011
+ward	10205007	Contact crime	2008-09	132	2011
+ward	10205007	Property crime	2009-10	103	2011
+ward	10205007	Contact crime	2009-10	143	2011
+ward	10205007	Property crime	2010-11	125	2011
+ward	10205007	Contact crime	2010-11	156	2011
+ward	10205007	Property crime	2011-12	142	2011
+ward	10205007	Contact crime	2011-12	174	2011
+ward	10205007	Property crime	2012-13	153	2011
+ward	10205007	Contact crime	2012-13	179	2011
+ward	10205007	Property crime	2013-14	144	2011
+ward	10205007	Contact crime	2013-14	184	2011
+ward	10205007	Property crime	2014-15	143	2011
+ward	10205007	Contact crime	2014-15	193	2011
+ward	10205008	Property crime	2005-06	127	2011
+ward	10205008	Contact crime	2005-06	248	2011
+ward	10205008	Property crime	2006-07	133	2011
+ward	10205008	Contact crime	2006-07	221	2011
+ward	10205008	Property crime	2007-08	132	2011
+ward	10205008	Contact crime	2007-08	201	2011
+ward	10205008	Property crime	2008-09	130	2011
+ward	10205008	Contact crime	2008-09	175	2011
+ward	10205008	Property crime	2009-10	138	2011
+ward	10205008	Contact crime	2009-10	191	2011
+ward	10205008	Property crime	2010-11	167	2011
+ward	10205008	Contact crime	2010-11	208	2011
+ward	10205008	Property crime	2011-12	189	2011
+ward	10205008	Contact crime	2011-12	232	2011
+ward	10205008	Property crime	2012-13	204	2011
+ward	10205008	Contact crime	2012-13	238	2011
+ward	10205008	Property crime	2013-14	192	2011
+ward	10205008	Contact crime	2013-14	245	2011
+ward	10205008	Property crime	2014-15	190	2011
+ward	10205008	Contact crime	2014-15	257	2011
+ward	10205009	Property crime	2005-06	108	2011
+ward	10205009	Contact crime	2005-06	211	2011
+ward	10205009	Property crime	2006-07	113	2011
+ward	10205009	Contact crime	2006-07	187	2011
+ward	10205009	Property crime	2007-08	112	2011
+ward	10205009	Contact crime	2007-08	171	2011
+ward	10205009	Property crime	2008-09	111	2011
+ward	10205009	Contact crime	2008-09	149	2011
+ward	10205009	Property crime	2009-10	117	2011
+ward	10205009	Contact crime	2009-10	162	2011
+ward	10205009	Property crime	2010-11	142	2011
+ward	10205009	Contact crime	2010-11	177	2011
+ward	10205009	Property crime	2011-12	161	2011
+ward	10205009	Contact crime	2011-12	197	2011
+ward	10205009	Property crime	2012-13	173	2011
+ward	10205009	Contact crime	2012-13	202	2011
+ward	10205009	Property crime	2013-14	163	2011
+ward	10205009	Contact crime	2013-14	208	2011
+ward	10205009	Property crime	2014-15	162	2011
+ward	10205009	Contact crime	2014-15	218	2011
+ward	10205010	Property crime	2005-06	127	2011
+ward	10205010	Contact crime	2005-06	248	2011
+ward	10205010	Property crime	2006-07	132	2011
+ward	10205010	Contact crime	2006-07	220	2011
+ward	10205010	Property crime	2007-08	132	2011
+ward	10205010	Contact crime	2007-08	201	2011
+ward	10205010	Property crime	2008-09	130	2011
+ward	10205010	Contact crime	2008-09	175	2011
+ward	10205010	Property crime	2009-10	138	2011
+ward	10205010	Contact crime	2009-10	191	2011
+ward	10205010	Property crime	2010-11	167	2011
+ward	10205010	Contact crime	2010-11	208	2011
+ward	10205010	Property crime	2011-12	189	2011
+ward	10205010	Contact crime	2011-12	232	2011
+ward	10205010	Property crime	2012-13	204	2011
+ward	10205010	Contact crime	2012-13	238	2011
+ward	10205010	Property crime	2013-14	192	2011
+ward	10205010	Contact crime	2013-14	245	2011
+ward	10205010	Property crime	2014-15	190	2011
+ward	10205010	Contact crime	2014-15	256	2011
+ward	10205011	Property crime	2005-06	103	2011
+ward	10205011	Contact crime	2005-06	202	2011
+ward	10205011	Property crime	2006-07	108	2011
+ward	10205011	Contact crime	2006-07	180	2011
+ward	10205011	Property crime	2007-08	107	2011
+ward	10205011	Contact crime	2007-08	164	2011
+ward	10205011	Property crime	2008-09	106	2011
+ward	10205011	Contact crime	2008-09	143	2011
+ward	10205011	Property crime	2009-10	112	2011
+ward	10205011	Contact crime	2009-10	155	2011
+ward	10205011	Property crime	2010-11	136	2011
+ward	10205011	Contact crime	2010-11	169	2011
+ward	10205011	Property crime	2011-12	154	2011
+ward	10205011	Contact crime	2011-12	189	2011
+ward	10205011	Property crime	2012-13	166	2011
+ward	10205011	Contact crime	2012-13	194	2011
+ward	10205011	Property crime	2013-14	156	2011
+ward	10205011	Contact crime	2013-14	199	2011
+ward	10205011	Property crime	2014-15	155	2011
+ward	10205011	Contact crime	2014-15	209	2011
+ward	10205012	Property crime	2005-06	122	2011
+ward	10205012	Contact crime	2005-06	238	2011
+ward	10205012	Property crime	2006-07	127	2011
+ward	10205012	Contact crime	2006-07	212	2011
+ward	10205012	Property crime	2007-08	127	2011
+ward	10205012	Contact crime	2007-08	193	2011
+ward	10205012	Property crime	2008-09	125	2011
+ward	10205012	Contact crime	2008-09	168	2011
+ward	10205012	Property crime	2009-10	132	2011
+ward	10205012	Contact crime	2009-10	183	2011
+ward	10205012	Property crime	2010-11	160	2011
+ward	10205012	Contact crime	2010-11	199	2011
+ward	10205012	Property crime	2011-12	182	2011
+ward	10205012	Contact crime	2011-12	223	2011
+ward	10205012	Property crime	2012-13	196	2011
+ward	10205012	Contact crime	2012-13	229	2011
+ward	10205012	Property crime	2013-14	184	2011
+ward	10205012	Contact crime	2013-14	235	2011
+ward	10205012	Property crime	2014-15	183	2011
+ward	10205012	Contact crime	2014-15	246	2011
+ward	10205013	Property crime	2005-06	116	2011
+ward	10205013	Contact crime	2005-06	227	2011
+ward	10205013	Property crime	2006-07	121	2011
+ward	10205013	Contact crime	2006-07	202	2011
+ward	10205013	Property crime	2007-08	121	2011
+ward	10205013	Contact crime	2007-08	184	2011
+ward	10205013	Property crime	2008-09	119	2011
+ward	10205013	Contact crime	2008-09	160	2011
+ward	10205013	Property crime	2009-10	126	2011
+ward	10205013	Contact crime	2009-10	174	2011
+ward	10205013	Property crime	2010-11	153	2011
+ward	10205013	Contact crime	2010-11	190	2011
+ward	10205013	Property crime	2011-12	173	2011
+ward	10205013	Contact crime	2011-12	212	2011
+ward	10205013	Property crime	2012-13	187	2011
+ward	10205013	Contact crime	2012-13	218	2011
+ward	10205013	Property crime	2013-14	175	2011
+ward	10205013	Contact crime	2013-14	224	2011
+ward	10205013	Property crime	2014-15	174	2011
+ward	10205013	Contact crime	2014-15	235	2011
+ward	10205014	Property crime	2005-06	94	2011
+ward	10205014	Contact crime	2005-06	184	2011
+ward	10205014	Property crime	2006-07	98	2011
+ward	10205014	Contact crime	2006-07	164	2011
+ward	10205014	Property crime	2007-08	98	2011
+ward	10205014	Contact crime	2007-08	149	2011
+ward	10205014	Property crime	2008-09	97	2011
+ward	10205014	Contact crime	2008-09	130	2011
+ward	10205014	Property crime	2009-10	102	2011
+ward	10205014	Contact crime	2009-10	142	2011
+ward	10205014	Property crime	2010-11	124	2011
+ward	10205014	Contact crime	2010-11	154	2011
+ward	10205014	Property crime	2011-12	140	2011
+ward	10205014	Contact crime	2011-12	172	2011
+ward	10205014	Property crime	2012-13	152	2011
+ward	10205014	Contact crime	2012-13	177	2011
+ward	10205014	Property crime	2013-14	143	2011
+ward	10205014	Contact crime	2013-14	182	2011
+ward	10205014	Property crime	2014-15	141	2011
+ward	10205014	Contact crime	2014-15	191	2011
+ward	10205015	Property crime	2005-06	99	2011
+ward	10205015	Contact crime	2005-06	202	2011
+ward	10205015	Property crime	2006-07	103	2011
+ward	10205015	Contact crime	2006-07	182	2011
+ward	10205015	Property crime	2007-08	104	2011
+ward	10205015	Contact crime	2007-08	165	2011
+ward	10205015	Property crime	2008-09	102	2011
+ward	10205015	Contact crime	2008-09	145	2011
+ward	10205015	Property crime	2009-10	107	2011
+ward	10205015	Contact crime	2009-10	156	2011
+ward	10205015	Property crime	2010-11	128	2011
+ward	10205015	Contact crime	2010-11	168	2011
+ward	10205015	Property crime	2011-12	145	2011
+ward	10205015	Contact crime	2011-12	185	2011
+ward	10205015	Property crime	2012-13	157	2011
+ward	10205015	Contact crime	2012-13	188	2011
+ward	10205015	Property crime	2013-14	146	2011
+ward	10205015	Contact crime	2013-14	190	2011
+ward	10205015	Property crime	2014-15	144	2011
+ward	10205015	Contact crime	2014-15	198	2011
+ward	10205016	Property crime	2005-06	117	2011
+ward	10205016	Contact crime	2005-06	228	2011
+ward	10205016	Property crime	2006-07	122	2011
+ward	10205016	Contact crime	2006-07	203	2011
+ward	10205016	Property crime	2007-08	122	2011
+ward	10205016	Contact crime	2007-08	185	2011
+ward	10205016	Property crime	2008-09	120	2011
+ward	10205016	Contact crime	2008-09	161	2011
+ward	10205016	Property crime	2009-10	127	2011
+ward	10205016	Contact crime	2009-10	176	2011
+ward	10205016	Property crime	2010-11	154	2011
+ward	10205016	Contact crime	2010-11	192	2011
+ward	10205016	Property crime	2011-12	174	2011
+ward	10205016	Contact crime	2011-12	214	2011
+ward	10205016	Property crime	2012-13	188	2011
+ward	10205016	Contact crime	2012-13	220	2011
+ward	10205016	Property crime	2013-14	177	2011
+ward	10205016	Contact crime	2013-14	226	2011
+ward	10205016	Property crime	2014-15	175	2011
+ward	10205016	Contact crime	2014-15	236	2011
+ward	10205017	Property crime	2005-06	57	2011
+ward	10205017	Contact crime	2005-06	111	2011
+ward	10205017	Property crime	2006-07	60	2011
+ward	10205017	Contact crime	2006-07	99	2011
+ward	10205017	Property crime	2007-08	59	2011
+ward	10205017	Contact crime	2007-08	90	2011
+ward	10205017	Property crime	2008-09	59	2011
+ward	10205017	Contact crime	2008-09	79	2011
+ward	10205017	Property crime	2009-10	62	2011
+ward	10205017	Contact crime	2009-10	86	2011
+ward	10205017	Property crime	2010-11	75	2011
+ward	10205017	Contact crime	2010-11	93	2011
+ward	10205017	Property crime	2011-12	85	2011
+ward	10205017	Contact crime	2011-12	104	2011
+ward	10205017	Property crime	2012-13	92	2011
+ward	10205017	Contact crime	2012-13	107	2011
+ward	10205017	Property crime	2013-14	86	2011
+ward	10205017	Contact crime	2013-14	110	2011
+ward	10205017	Property crime	2014-15	85	2011
+ward	10205017	Contact crime	2014-15	115	2011
+ward	10205018	Property crime	2005-06	124	2011
+ward	10205018	Contact crime	2005-06	242	2011
+ward	10205018	Property crime	2006-07	129	2011
+ward	10205018	Contact crime	2006-07	216	2011
+ward	10205018	Property crime	2007-08	129	2011
+ward	10205018	Contact crime	2007-08	197	2011
+ward	10205018	Property crime	2008-09	127	2011
+ward	10205018	Contact crime	2008-09	171	2011
+ward	10205018	Property crime	2009-10	135	2011
+ward	10205018	Contact crime	2009-10	187	2011
+ward	10205018	Property crime	2010-11	163	2011
+ward	10205018	Contact crime	2010-11	203	2011
+ward	10205018	Property crime	2011-12	185	2011
+ward	10205018	Contact crime	2011-12	227	2011
+ward	10205018	Property crime	2012-13	199	2011
+ward	10205018	Contact crime	2012-13	233	2011
+ward	10205018	Property crime	2013-14	188	2011
+ward	10205018	Contact crime	2013-14	239	2011
+ward	10205018	Property crime	2014-15	186	2011
+ward	10205018	Contact crime	2014-15	251	2011
+ward	10205019	Property crime	2005-06	61	2011
+ward	10205019	Contact crime	2005-06	152	2011
+ward	10205019	Property crime	2006-07	62	2011
+ward	10205019	Contact crime	2006-07	146	2011
+ward	10205019	Property crime	2007-08	70	2011
+ward	10205019	Contact crime	2007-08	128	2011
+ward	10205019	Property crime	2008-09	66	2011
+ward	10205019	Contact crime	2008-09	119	2011
+ward	10205019	Property crime	2009-10	66	2011
+ward	10205019	Contact crime	2009-10	122	2011
+ward	10205019	Property crime	2010-11	74	2011
+ward	10205019	Contact crime	2010-11	123	2011
+ward	10205019	Property crime	2011-12	80	2011
+ward	10205019	Contact crime	2011-12	125	2011
+ward	10205019	Property crime	2012-13	89	2011
+ward	10205019	Contact crime	2012-13	122	2011
+ward	10205019	Property crime	2013-14	78	2011
+ward	10205019	Contact crime	2013-14	115	2011
+ward	10205019	Property crime	2014-15	75	2011
+ward	10205019	Contact crime	2014-15	116	2011
+ward	10205020	Property crime	2005-06	87	2011
+ward	10205020	Contact crime	2005-06	255	2011
+ward	10205020	Property crime	2006-07	85	2011
+ward	10205020	Contact crime	2006-07	250	2011
+ward	10205020	Property crime	2007-08	105	2011
+ward	10205020	Contact crime	2007-08	216	2011
+ward	10205020	Property crime	2008-09	96	2011
+ward	10205020	Contact crime	2008-09	208	2011
+ward	10205020	Property crime	2009-10	92	2011
+ward	10205020	Contact crime	2009-10	207	2011
+ward	10205020	Property crime	2010-11	94	2011
+ward	10205020	Contact crime	2010-11	199	2011
+ward	10205020	Property crime	2011-12	99	2011
+ward	10205020	Contact crime	2011-12	193	2011
+ward	10205020	Property crime	2012-13	113	2011
+ward	10205020	Contact crime	2012-13	181	2011
+ward	10205020	Property crime	2013-14	92	2011
+ward	10205020	Contact crime	2013-14	159	2011
+ward	10205020	Property crime	2014-15	83	2011
+ward	10205020	Contact crime	2014-15	152	2011
+ward	10205021	Property crime	2005-06	218	2011
+ward	10205021	Contact crime	2005-06	443	2011
+ward	10205021	Property crime	2006-07	228	2011
+ward	10205021	Contact crime	2006-07	398	2011
+ward	10205021	Property crime	2007-08	230	2011
+ward	10205021	Contact crime	2007-08	361	2011
+ward	10205021	Property crime	2008-09	226	2011
+ward	10205021	Contact crime	2008-09	318	2011
+ward	10205021	Property crime	2009-10	237	2011
+ward	10205021	Contact crime	2009-10	343	2011
+ward	10205021	Property crime	2010-11	284	2011
+ward	10205021	Contact crime	2010-11	369	2011
+ward	10205021	Property crime	2011-12	321	2011
+ward	10205021	Contact crime	2011-12	407	2011
+ward	10205021	Property crime	2012-13	347	2011
+ward	10205021	Contact crime	2012-13	414	2011
+ward	10205021	Property crime	2013-14	324	2011
+ward	10205021	Contact crime	2013-14	421	2011
+ward	10205021	Property crime	2014-15	320	2011
+ward	10205021	Contact crime	2014-15	438	2011
+ward	10206001	Property crime	2005-06	51	2011
+ward	10206001	Contact crime	2005-06	116	2011
+ward	10206001	Property crime	2006-07	50	2011
+ward	10206001	Contact crime	2006-07	121	2011
+ward	10206001	Property crime	2007-08	43	2011
+ward	10206001	Contact crime	2007-08	102	2011
+ward	10206001	Property crime	2008-09	42	2011
+ward	10206001	Contact crime	2008-09	103	2011
+ward	10206001	Property crime	2009-10	54	2011
+ward	10206001	Contact crime	2009-10	103	2011
+ward	10206001	Property crime	2010-11	59	2011
+ward	10206001	Contact crime	2010-11	125	2011
+ward	10206001	Property crime	2011-12	66	2011
+ward	10206001	Contact crime	2011-12	112	2011
+ward	10206001	Property crime	2012-13	95	2011
+ward	10206001	Contact crime	2012-13	137	2011
+ward	10206001	Property crime	2013-14	105	2011
+ward	10206001	Contact crime	2013-14	132	2011
+ward	10206001	Property crime	2014-15	84	2011
+ward	10206001	Contact crime	2014-15	146	2011
+ward	10206002	Property crime	2005-06	67	2011
+ward	10206002	Contact crime	2005-06	154	2011
+ward	10206002	Property crime	2006-07	66	2011
+ward	10206002	Contact crime	2006-07	160	2011
+ward	10206002	Property crime	2007-08	57	2011
+ward	10206002	Contact crime	2007-08	135	2011
+ward	10206002	Property crime	2008-09	55	2011
+ward	10206002	Contact crime	2008-09	136	2011
+ward	10206002	Property crime	2009-10	72	2011
+ward	10206002	Contact crime	2009-10	136	2011
+ward	10206002	Property crime	2010-11	78	2011
+ward	10206002	Contact crime	2010-11	166	2011
+ward	10206002	Property crime	2011-12	87	2011
+ward	10206002	Contact crime	2011-12	148	2011
+ward	10206002	Property crime	2012-13	126	2011
+ward	10206002	Contact crime	2012-13	181	2011
+ward	10206002	Property crime	2013-14	139	2011
+ward	10206002	Contact crime	2013-14	174	2011
+ward	10206002	Property crime	2014-15	112	2011
+ward	10206002	Contact crime	2014-15	194	2011
+ward	10206003	Property crime	2005-06	71	2011
+ward	10206003	Contact crime	2005-06	163	2011
+ward	10206003	Property crime	2006-07	70	2011
+ward	10206003	Contact crime	2006-07	169	2011
+ward	10206003	Property crime	2007-08	61	2011
+ward	10206003	Contact crime	2007-08	143	2011
+ward	10206003	Property crime	2008-09	59	2011
+ward	10206003	Contact crime	2008-09	145	2011
+ward	10206003	Property crime	2009-10	76	2011
+ward	10206003	Contact crime	2009-10	144	2011
+ward	10206003	Property crime	2010-11	83	2011
+ward	10206003	Contact crime	2010-11	176	2011
+ward	10206003	Property crime	2011-12	93	2011
+ward	10206003	Contact crime	2011-12	157	2011
+ward	10206003	Property crime	2012-13	133	2011
+ward	10206003	Contact crime	2012-13	192	2011
+ward	10206003	Property crime	2013-14	147	2011
+ward	10206003	Contact crime	2013-14	185	2011
+ward	10206003	Property crime	2014-15	118	2011
+ward	10206003	Contact crime	2014-15	205	2011
+ward	10206004	Property crime	2005-06	66	2011
+ward	10206004	Contact crime	2005-06	130	2011
+ward	10206004	Property crime	2006-07	82	2011
+ward	10206004	Contact crime	2006-07	124	2011
+ward	10206004	Property crime	2007-08	41	2011
+ward	10206004	Contact crime	2007-08	112	2011
+ward	10206004	Property crime	2008-09	61	2011
+ward	10206004	Contact crime	2008-09	111	2011
+ward	10206004	Property crime	2009-10	49	2011
+ward	10206004	Contact crime	2009-10	93	2011
+ward	10206004	Property crime	2010-11	60	2011
+ward	10206004	Contact crime	2010-11	93	2011
+ward	10206004	Property crime	2011-12	76	2011
+ward	10206004	Contact crime	2011-12	76	2011
+ward	10206004	Property crime	2012-13	82	2011
+ward	10206004	Contact crime	2012-13	80	2011
+ward	10206004	Property crime	2013-14	67	2011
+ward	10206004	Contact crime	2013-14	83	2011
+ward	10206004	Property crime	2014-15	69	2011
+ward	10206004	Contact crime	2014-15	109	2011
+ward	10206005	Property crime	2005-06	48	2011
+ward	10206005	Contact crime	2005-06	139	2011
+ward	10206005	Property crime	2006-07	47	2011
+ward	10206005	Contact crime	2006-07	113	2011
+ward	10206005	Property crime	2007-08	44	2011
+ward	10206005	Contact crime	2007-08	81	2011
+ward	10206005	Property crime	2008-09	34	2011
+ward	10206005	Contact crime	2008-09	79	2011
+ward	10206005	Property crime	2009-10	39	2011
+ward	10206005	Contact crime	2009-10	84	2011
+ward	10206005	Property crime	2010-11	54	2011
+ward	10206005	Contact crime	2010-11	97	2011
+ward	10206005	Property crime	2011-12	48	2011
+ward	10206005	Contact crime	2011-12	101	2011
+ward	10206005	Property crime	2012-13	81	2011
+ward	10206005	Contact crime	2012-13	129	2011
+ward	10206005	Property crime	2013-14	72	2011
+ward	10206005	Contact crime	2013-14	118	2011
+ward	10206005	Property crime	2014-15	62	2011
+ward	10206005	Contact crime	2014-15	124	2011
+ward	10206006	Property crime	2005-06	66	2011
+ward	10206006	Contact crime	2005-06	152	2011
+ward	10206006	Property crime	2006-07	65	2011
+ward	10206006	Contact crime	2006-07	157	2011
+ward	10206006	Property crime	2007-08	56	2011
+ward	10206006	Contact crime	2007-08	133	2011
+ward	10206006	Property crime	2008-09	55	2011
+ward	10206006	Contact crime	2008-09	134	2011
+ward	10206006	Property crime	2009-10	71	2011
+ward	10206006	Contact crime	2009-10	134	2011
+ward	10206006	Property crime	2010-11	77	2011
+ward	10206006	Contact crime	2010-11	163	2011
+ward	10206006	Property crime	2011-12	86	2011
+ward	10206006	Contact crime	2011-12	146	2011
+ward	10206006	Property crime	2012-13	124	2011
+ward	10206006	Contact crime	2012-13	178	2011
+ward	10206006	Property crime	2013-14	136	2011
+ward	10206006	Contact crime	2013-14	172	2011
+ward	10206006	Property crime	2014-15	110	2011
+ward	10206006	Contact crime	2014-15	190	2011
+ward	10206007	Property crime	2005-06	62	2011
+ward	10206007	Contact crime	2005-06	98	2011
+ward	10206007	Property crime	2006-07	78	2011
+ward	10206007	Contact crime	2006-07	95	2011
+ward	10206007	Property crime	2007-08	39	2011
+ward	10206007	Contact crime	2007-08	91	2011
+ward	10206007	Property crime	2008-09	54	2011
+ward	10206007	Contact crime	2008-09	107	2011
+ward	10206007	Property crime	2009-10	60	2011
+ward	10206007	Contact crime	2009-10	126	2011
+ward	10206007	Property crime	2010-11	67	2011
+ward	10206007	Contact crime	2010-11	122	2011
+ward	10206007	Property crime	2011-12	58	2011
+ward	10206007	Contact crime	2011-12	106	2011
+ward	10206007	Property crime	2012-13	97	2011
+ward	10206007	Contact crime	2012-13	131	2011
+ward	10206007	Property crime	2013-14	85	2011
+ward	10206007	Contact crime	2013-14	128	2011
+ward	10206007	Property crime	2014-15	98	2011
+ward	10206007	Contact crime	2014-15	131	2011
+ward	10206008	Property crime	2005-06	62	2011
+ward	10206008	Contact crime	2005-06	136	2011
+ward	10206008	Property crime	2006-07	73	2011
+ward	10206008	Contact crime	2006-07	124	2011
+ward	10206008	Property crime	2007-08	44	2011
+ward	10206008	Contact crime	2007-08	108	2011
+ward	10206008	Property crime	2008-09	56	2011
+ward	10206008	Contact crime	2008-09	107	2011
+ward	10206008	Property crime	2009-10	49	2011
+ward	10206008	Contact crime	2009-10	99	2011
+ward	10206008	Property crime	2010-11	61	2011
+ward	10206008	Contact crime	2010-11	101	2011
+ward	10206008	Property crime	2011-12	71	2011
+ward	10206008	Contact crime	2011-12	93	2011
+ward	10206008	Property crime	2012-13	84	2011
+ward	10206008	Contact crime	2012-13	102	2011
+ward	10206008	Property crime	2013-14	73	2011
+ward	10206008	Contact crime	2013-14	103	2011
+ward	10206008	Property crime	2014-15	72	2011
+ward	10206008	Contact crime	2014-15	120	2011
+ward	10206009	Property crime	2005-06	40	2011
+ward	10206009	Contact crime	2005-06	109	2011
+ward	10206009	Property crime	2006-07	41	2011
+ward	10206009	Contact crime	2006-07	125	2011
+ward	10206009	Property crime	2007-08	54	2011
+ward	10206009	Contact crime	2007-08	120	2011
+ward	10206009	Property crime	2008-09	40	2011
+ward	10206009	Contact crime	2008-09	97	2011
+ward	10206009	Property crime	2009-10	42	2011
+ward	10206009	Contact crime	2009-10	159	2011
+ward	10206009	Property crime	2010-11	46	2011
+ward	10206009	Contact crime	2010-11	145	2011
+ward	10206009	Property crime	2011-12	60	2011
+ward	10206009	Contact crime	2011-12	169	2011
+ward	10206009	Property crime	2012-13	72	2011
+ward	10206009	Contact crime	2012-13	153	2011
+ward	10206009	Property crime	2013-14	72	2011
+ward	10206009	Contact crime	2013-14	168	2011
+ward	10206009	Property crime	2014-15	82	2011
+ward	10206009	Contact crime	2014-15	158	2011
+ward	10206010	Property crime	2005-06	30	2011
+ward	10206010	Contact crime	2005-06	82	2011
+ward	10206010	Property crime	2006-07	31	2011
+ward	10206010	Contact crime	2006-07	93	2011
+ward	10206010	Property crime	2007-08	41	2011
+ward	10206010	Contact crime	2007-08	90	2011
+ward	10206010	Property crime	2008-09	30	2011
+ward	10206010	Contact crime	2008-09	73	2011
+ward	10206010	Property crime	2009-10	31	2011
+ward	10206010	Contact crime	2009-10	120	2011
+ward	10206010	Property crime	2010-11	34	2011
+ward	10206010	Contact crime	2010-11	109	2011
+ward	10206010	Property crime	2011-12	45	2011
+ward	10206010	Contact crime	2011-12	127	2011
+ward	10206010	Property crime	2012-13	54	2011
+ward	10206010	Contact crime	2012-13	115	2011
+ward	10206010	Property crime	2013-14	54	2011
+ward	10206010	Contact crime	2013-14	126	2011
+ward	10206010	Property crime	2014-15	61	2011
+ward	10206010	Contact crime	2014-15	119	2011
+ward	10206011	Property crime	2005-06	33	2011
+ward	10206011	Contact crime	2005-06	84	2011
+ward	10206011	Property crime	2006-07	35	2011
+ward	10206011	Contact crime	2006-07	94	2011
+ward	10206011	Property crime	2007-08	41	2011
+ward	10206011	Contact crime	2007-08	90	2011
+ward	10206011	Property crime	2008-09	32	2011
+ward	10206011	Contact crime	2008-09	76	2011
+ward	10206011	Property crime	2009-10	34	2011
+ward	10206011	Contact crime	2009-10	120	2011
+ward	10206011	Property crime	2010-11	38	2011
+ward	10206011	Contact crime	2010-11	110	2011
+ward	10206011	Property crime	2011-12	46	2011
+ward	10206011	Contact crime	2011-12	125	2011
+ward	10206011	Property crime	2012-13	59	2011
+ward	10206011	Contact crime	2012-13	117	2011
+ward	10206011	Property crime	2013-14	57	2011
+ward	10206011	Contact crime	2013-14	126	2011
+ward	10206011	Property crime	2014-15	65	2011
+ward	10206011	Contact crime	2014-15	120	2011
+ward	10206012	Property crime	2005-06	82	2011
+ward	10206012	Contact crime	2005-06	131	2011
+ward	10206012	Property crime	2006-07	103	2011
+ward	10206012	Contact crime	2006-07	128	2011
+ward	10206012	Property crime	2007-08	53	2011
+ward	10206012	Contact crime	2007-08	122	2011
+ward	10206012	Property crime	2008-09	72	2011
+ward	10206012	Contact crime	2008-09	144	2011
+ward	10206012	Property crime	2009-10	80	2011
+ward	10206012	Contact crime	2009-10	169	2011
+ward	10206012	Property crime	2010-11	89	2011
+ward	10206012	Contact crime	2010-11	163	2011
+ward	10206012	Property crime	2011-12	78	2011
+ward	10206012	Contact crime	2011-12	143	2011
+ward	10206012	Property crime	2012-13	130	2011
+ward	10206012	Contact crime	2012-13	175	2011
+ward	10206012	Property crime	2013-14	114	2011
+ward	10206012	Contact crime	2013-14	172	2011
+ward	10206012	Property crime	2014-15	131	2011
+ward	10206012	Contact crime	2014-15	176	2011
+ward	10301001	Property crime	2005-06	66	2011
+ward	10301001	Contact crime	2005-06	101	2011
+ward	10301001	Property crime	2006-07	61	2011
+ward	10301001	Contact crime	2006-07	117	2011
+ward	10301001	Property crime	2007-08	52	2011
+ward	10301001	Contact crime	2007-08	111	2011
+ward	10301001	Property crime	2008-09	58	2011
+ward	10301001	Contact crime	2008-09	131	2011
+ward	10301001	Property crime	2009-10	84	2011
+ward	10301001	Contact crime	2009-10	137	2011
+ward	10301001	Property crime	2010-11	104	2011
+ward	10301001	Contact crime	2010-11	174	2011
+ward	10301001	Property crime	2011-12	93	2011
+ward	10301001	Contact crime	2011-12	155	2011
+ward	10301001	Property crime	2012-13	118	2011
+ward	10301001	Contact crime	2012-13	150	2011
+ward	10301001	Property crime	2013-14	143	2011
+ward	10301001	Contact crime	2013-14	196	2011
+ward	10301001	Property crime	2014-15	169	2011
+ward	10301001	Contact crime	2014-15	189	2011
+ward	10301002	Property crime	2005-06	63	2011
+ward	10301002	Contact crime	2005-06	100	2011
+ward	10301002	Property crime	2006-07	59	2011
+ward	10301002	Contact crime	2006-07	102	2011
+ward	10301002	Property crime	2007-08	48	2011
+ward	10301002	Contact crime	2007-08	117	2011
+ward	10301002	Property crime	2008-09	60	2011
+ward	10301002	Contact crime	2008-09	127	2011
+ward	10301002	Property crime	2009-10	80	2011
+ward	10301002	Contact crime	2009-10	158	2011
+ward	10301002	Property crime	2010-11	120	2011
+ward	10301002	Contact crime	2010-11	134	2011
+ward	10301002	Property crime	2011-12	118	2011
+ward	10301002	Contact crime	2011-12	134	2011
+ward	10301002	Property crime	2012-13	200	2011
+ward	10301002	Contact crime	2012-13	162	2011
+ward	10301002	Property crime	2013-14	157	2011
+ward	10301002	Contact crime	2013-14	163	2011
+ward	10301002	Property crime	2014-15	170	2011
+ward	10301002	Contact crime	2014-15	180	2011
+ward	10301003	Property crime	2005-06	116	2011
+ward	10301003	Contact crime	2005-06	178	2011
+ward	10301003	Property crime	2006-07	148	2011
+ward	10301003	Contact crime	2006-07	186	2011
+ward	10301003	Property crime	2007-08	88	2011
+ward	10301003	Contact crime	2007-08	197	2011
+ward	10301003	Property crime	2008-09	103	2011
+ward	10301003	Contact crime	2008-09	155	2011
+ward	10301003	Property crime	2009-10	129	2011
+ward	10301003	Contact crime	2009-10	157	2011
+ward	10301003	Property crime	2010-11	100	2011
+ward	10301003	Contact crime	2010-11	169	2011
+ward	10301003	Property crime	2011-12	102	2011
+ward	10301003	Contact crime	2011-12	157	2011
+ward	10301003	Property crime	2012-13	132	2011
+ward	10301003	Contact crime	2012-13	170	2011
+ward	10301003	Property crime	2013-14	154	2011
+ward	10301003	Contact crime	2013-14	173	2011
+ward	10301003	Property crime	2014-15	162	2011
+ward	10301003	Contact crime	2014-15	205	2011
+ward	10301004	Property crime	2005-06	59	2011
+ward	10301004	Contact crime	2005-06	91	2011
+ward	10301004	Property crime	2006-07	74	2011
+ward	10301004	Contact crime	2006-07	95	2011
+ward	10301004	Property crime	2007-08	45	2011
+ward	10301004	Contact crime	2007-08	102	2011
+ward	10301004	Property crime	2008-09	53	2011
+ward	10301004	Contact crime	2008-09	83	2011
+ward	10301004	Property crime	2009-10	67	2011
+ward	10301004	Contact crime	2009-10	86	2011
+ward	10301004	Property crime	2010-11	57	2011
+ward	10301004	Contact crime	2010-11	90	2011
+ward	10301004	Property crime	2011-12	58	2011
+ward	10301004	Contact crime	2011-12	84	2011
+ward	10301004	Property crime	2012-13	78	2011
+ward	10301004	Contact crime	2012-13	92	2011
+ward	10301004	Property crime	2013-14	85	2011
+ward	10301004	Contact crime	2013-14	94	2011
+ward	10301004	Property crime	2014-15	90	2011
+ward	10301004	Contact crime	2014-15	111	2011
+ward	10301005	Property crime	2005-06	76	2011
+ward	10301005	Contact crime	2005-06	107	2011
+ward	10301005	Property crime	2006-07	77	2011
+ward	10301005	Contact crime	2006-07	129	2011
+ward	10301005	Property crime	2007-08	69	2011
+ward	10301005	Contact crime	2007-08	134	2011
+ward	10301005	Property crime	2008-09	67	2011
+ward	10301005	Contact crime	2008-09	105	2011
+ward	10301005	Property crime	2009-10	77	2011
+ward	10301005	Contact crime	2009-10	113	2011
+ward	10301005	Property crime	2010-11	96	2011
+ward	10301005	Contact crime	2010-11	120	2011
+ward	10301005	Property crime	2011-12	89	2011
+ward	10301005	Contact crime	2011-12	105	2011
+ward	10301005	Property crime	2012-13	113	2011
+ward	10301005	Contact crime	2012-13	122	2011
+ward	10301005	Property crime	2013-14	122	2011
+ward	10301005	Contact crime	2013-14	117	2011
+ward	10301005	Property crime	2014-15	151	2011
+ward	10301005	Contact crime	2014-15	157	2011
+ward	10301006	Property crime	2005-06	60	2011
+ward	10301006	Contact crime	2005-06	82	2011
+ward	10301006	Property crime	2006-07	54	2011
+ward	10301006	Contact crime	2006-07	107	2011
+ward	10301006	Property crime	2007-08	60	2011
+ward	10301006	Contact crime	2007-08	109	2011
+ward	10301006	Property crime	2008-09	54	2011
+ward	10301006	Contact crime	2008-09	84	2011
+ward	10301006	Property crime	2009-10	58	2011
+ward	10301006	Contact crime	2009-10	94	2011
+ward	10301006	Property crime	2010-11	89	2011
+ward	10301006	Contact crime	2010-11	99	2011
+ward	10301006	Property crime	2011-12	80	2011
+ward	10301006	Contact crime	2011-12	83	2011
+ward	10301006	Property crime	2012-13	99	2011
+ward	10301006	Contact crime	2012-13	102	2011
+ward	10301006	Property crime	2013-14	106	2011
+ward	10301006	Contact crime	2013-14	94	2011
+ward	10301006	Property crime	2014-15	139	2011
+ward	10301006	Contact crime	2014-15	134	2011
+ward	10301007	Property crime	2005-06	78	2011
+ward	10301007	Contact crime	2005-06	113	2011
+ward	10301007	Property crime	2006-07	91	2011
+ward	10301007	Contact crime	2006-07	116	2011
+ward	10301007	Property crime	2007-08	62	2011
+ward	10301007	Contact crime	2007-08	122	2011
+ward	10301007	Property crime	2008-09	71	2011
+ward	10301007	Contact crime	2008-09	99	2011
+ward	10301007	Property crime	2009-10	88	2011
+ward	10301007	Contact crime	2009-10	106	2011
+ward	10301007	Property crime	2010-11	80	2011
+ward	10301007	Contact crime	2010-11	111	2011
+ward	10301007	Property crime	2011-12	75	2011
+ward	10301007	Contact crime	2011-12	104	2011
+ward	10301007	Property crime	2012-13	98	2011
+ward	10301007	Contact crime	2012-13	115	2011
+ward	10301007	Property crime	2013-14	115	2011
+ward	10301007	Contact crime	2013-14	118	2011
+ward	10301007	Property crime	2014-15	122	2011
+ward	10301007	Contact crime	2014-15	141	2011
+ward	10301008	Property crime	2005-06	67	2011
+ward	10301008	Contact crime	2005-06	73	2011
+ward	10301008	Property crime	2006-07	53	2011
+ward	10301008	Contact crime	2006-07	48	2011
+ward	10301008	Property crime	2007-08	59	2011
+ward	10301008	Contact crime	2007-08	52	2011
+ward	10301008	Property crime	2008-09	76	2011
+ward	10301008	Contact crime	2008-09	59	2011
+ward	10301008	Property crime	2009-10	94	2011
+ward	10301008	Contact crime	2009-10	86	2011
+ward	10301008	Property crime	2010-11	107	2011
+ward	10301008	Contact crime	2010-11	79	2011
+ward	10301008	Property crime	2011-12	76	2011
+ward	10301008	Contact crime	2011-12	86	2011
+ward	10301008	Property crime	2012-13	111	2011
+ward	10301008	Contact crime	2012-13	96	2011
+ward	10301008	Property crime	2013-14	142	2011
+ward	10301008	Contact crime	2013-14	112	2011
+ward	10301008	Property crime	2014-15	137	2011
+ward	10301008	Contact crime	2014-15	122	2011
+ward	10301009	Property crime	2005-06	55	2011
+ward	10301009	Contact crime	2005-06	68	2011
+ward	10301009	Property crime	2006-07	46	2011
+ward	10301009	Contact crime	2006-07	73	2011
+ward	10301009	Property crime	2007-08	52	2011
+ward	10301009	Contact crime	2007-08	76	2011
+ward	10301009	Property crime	2008-09	54	2011
+ward	10301009	Contact crime	2008-09	65	2011
+ward	10301009	Property crime	2009-10	62	2011
+ward	10301009	Contact crime	2009-10	79	2011
+ward	10301009	Property crime	2010-11	83	2011
+ward	10301009	Contact crime	2010-11	79	2011
+ward	10301009	Property crime	2011-12	68	2011
+ward	10301009	Contact crime	2011-12	73	2011
+ward	10301009	Property crime	2012-13	90	2011
+ward	10301009	Contact crime	2012-13	86	2011
+ward	10301009	Property crime	2013-14	104	2011
+ward	10301009	Contact crime	2013-14	87	2011
+ward	10301009	Property crime	2014-15	120	2011
+ward	10301009	Contact crime	2014-15	112	2011
+ward	10301010	Property crime	2005-06	48	2011
+ward	10301010	Contact crime	2005-06	53	2011
+ward	10301010	Property crime	2006-07	38	2011
+ward	10301010	Contact crime	2006-07	35	2011
+ward	10301010	Property crime	2007-08	42	2011
+ward	10301010	Contact crime	2007-08	37	2011
+ward	10301010	Property crime	2008-09	54	2011
+ward	10301010	Contact crime	2008-09	43	2011
+ward	10301010	Property crime	2009-10	68	2011
+ward	10301010	Contact crime	2009-10	62	2011
+ward	10301010	Property crime	2010-11	77	2011
+ward	10301010	Contact crime	2010-11	57	2011
+ward	10301010	Property crime	2011-12	55	2011
+ward	10301010	Contact crime	2011-12	62	2011
+ward	10301010	Property crime	2012-13	80	2011
+ward	10301010	Contact crime	2012-13	69	2011
+ward	10301010	Property crime	2013-14	102	2011
+ward	10301010	Contact crime	2013-14	80	2011
+ward	10301010	Property crime	2014-15	99	2011
+ward	10301010	Contact crime	2014-15	88	2011
+ward	10301011	Property crime	2005-06	52	2011
+ward	10301011	Contact crime	2005-06	57	2011
+ward	10301011	Property crime	2006-07	42	2011
+ward	10301011	Contact crime	2006-07	38	2011
+ward	10301011	Property crime	2007-08	46	2011
+ward	10301011	Contact crime	2007-08	40	2011
+ward	10301011	Property crime	2008-09	59	2011
+ward	10301011	Contact crime	2008-09	46	2011
+ward	10301011	Property crime	2009-10	73	2011
+ward	10301011	Contact crime	2009-10	67	2011
+ward	10301011	Property crime	2010-11	83	2011
+ward	10301011	Contact crime	2010-11	62	2011
+ward	10301011	Property crime	2011-12	59	2011
+ward	10301011	Contact crime	2011-12	67	2011
+ward	10301011	Property crime	2012-13	87	2011
+ward	10301011	Contact crime	2012-13	75	2011
+ward	10301011	Property crime	2013-14	111	2011
+ward	10301011	Contact crime	2013-14	87	2011
+ward	10301011	Property crime	2014-15	107	2011
+ward	10301011	Contact crime	2014-15	95	2011
+ward	10301012	Property crime	2005-06	76	2011
+ward	10301012	Contact crime	2005-06	83	2011
+ward	10301012	Property crime	2006-07	61	2011
+ward	10301012	Contact crime	2006-07	55	2011
+ward	10301012	Property crime	2007-08	67	2011
+ward	10301012	Contact crime	2007-08	59	2011
+ward	10301012	Property crime	2008-09	86	2011
+ward	10301012	Contact crime	2008-09	68	2011
+ward	10301012	Property crime	2009-10	107	2011
+ward	10301012	Contact crime	2009-10	98	2011
+ward	10301012	Property crime	2010-11	122	2011
+ward	10301012	Contact crime	2010-11	90	2011
+ward	10301012	Property crime	2011-12	86	2011
+ward	10301012	Contact crime	2011-12	98	2011
+ward	10301012	Property crime	2012-13	126	2011
+ward	10301012	Contact crime	2012-13	110	2011
+ward	10301012	Property crime	2013-14	162	2011
+ward	10301012	Contact crime	2013-14	127	2011
+ward	10301012	Property crime	2014-15	156	2011
+ward	10301012	Contact crime	2014-15	139	2011
+ward	10301013	Property crime	2005-06	146	2011
+ward	10301013	Contact crime	2005-06	159	2011
+ward	10301013	Property crime	2006-07	116	2011
+ward	10301013	Contact crime	2006-07	105	2011
+ward	10301013	Property crime	2007-08	127	2011
+ward	10301013	Contact crime	2007-08	113	2011
+ward	10301013	Property crime	2008-09	165	2011
+ward	10301013	Contact crime	2008-09	129	2011
+ward	10301013	Property crime	2009-10	205	2011
+ward	10301013	Contact crime	2009-10	187	2011
+ward	10301013	Property crime	2010-11	233	2011
+ward	10301013	Contact crime	2010-11	172	2011
+ward	10301013	Property crime	2011-12	165	2011
+ward	10301013	Contact crime	2011-12	187	2011
+ward	10301013	Property crime	2012-13	242	2011
+ward	10301013	Contact crime	2012-13	210	2011
+ward	10301013	Property crime	2013-14	309	2011
+ward	10301013	Contact crime	2013-14	243	2011
+ward	10301013	Property crime	2014-15	299	2011
+ward	10301013	Contact crime	2014-15	267	2011
+ward	10302001	Property crime	2005-06	102	2011
+ward	10302001	Contact crime	2005-06	91	2011
+ward	10302001	Property crime	2006-07	109	2011
+ward	10302001	Contact crime	2006-07	89	2011
+ward	10302001	Property crime	2007-08	120	2011
+ward	10302001	Contact crime	2007-08	87	2011
+ward	10302001	Property crime	2008-09	173	2011
+ward	10302001	Contact crime	2008-09	95	2011
+ward	10302001	Property crime	2009-10	227	2011
+ward	10302001	Contact crime	2009-10	97	2011
+ward	10302001	Property crime	2010-11	172	2011
+ward	10302001	Contact crime	2010-11	104	2011
+ward	10302001	Property crime	2011-12	183	2011
+ward	10302001	Contact crime	2011-12	96	2011
+ward	10302001	Property crime	2012-13	163	2011
+ward	10302001	Contact crime	2012-13	104	2011
+ward	10302001	Property crime	2013-14	171	2011
+ward	10302001	Contact crime	2013-14	109	2011
+ward	10302001	Property crime	2014-15	234	2011
+ward	10302001	Contact crime	2014-15	122	2011
+ward	10302002	Property crime	2005-06	109	2011
+ward	10302002	Contact crime	2005-06	97	2011
+ward	10302002	Property crime	2006-07	117	2011
+ward	10302002	Contact crime	2006-07	95	2011
+ward	10302002	Property crime	2007-08	128	2011
+ward	10302002	Contact crime	2007-08	92	2011
+ward	10302002	Property crime	2008-09	184	2011
+ward	10302002	Contact crime	2008-09	101	2011
+ward	10302002	Property crime	2009-10	242	2011
+ward	10302002	Contact crime	2009-10	103	2011
+ward	10302002	Property crime	2010-11	183	2011
+ward	10302002	Contact crime	2010-11	110	2011
+ward	10302002	Property crime	2011-12	194	2011
+ward	10302002	Contact crime	2011-12	102	2011
+ward	10302002	Property crime	2012-13	173	2011
+ward	10302002	Contact crime	2012-13	110	2011
+ward	10302002	Property crime	2013-14	182	2011
+ward	10302002	Contact crime	2013-14	116	2011
+ward	10302002	Property crime	2014-15	250	2011
+ward	10302002	Contact crime	2014-15	130	2011
+ward	10302003	Property crime	2005-06	50	2011
+ward	10302003	Contact crime	2005-06	39	2011
+ward	10302003	Property crime	2006-07	59	2011
+ward	10302003	Contact crime	2006-07	45	2011
+ward	10302003	Property crime	2007-08	41	2011
+ward	10302003	Contact crime	2007-08	38	2011
+ward	10302003	Property crime	2008-09	52	2011
+ward	10302003	Contact crime	2008-09	38	2011
+ward	10302003	Property crime	2009-10	59	2011
+ward	10302003	Contact crime	2009-10	54	2011
+ward	10302003	Property crime	2010-11	55	2011
+ward	10302003	Contact crime	2010-11	58	2011
+ward	10302003	Property crime	2011-12	70	2011
+ward	10302003	Contact crime	2011-12	53	2011
+ward	10302003	Property crime	2012-13	61	2011
+ward	10302003	Contact crime	2012-13	55	2011
+ward	10302003	Property crime	2013-14	72	2011
+ward	10302003	Contact crime	2013-14	72	2011
+ward	10302003	Property crime	2014-15	87	2011
+ward	10302003	Contact crime	2014-15	73	2011
+ward	10302004	Property crime	2005-06	92	2011
+ward	10302004	Contact crime	2005-06	70	2011
+ward	10302004	Property crime	2006-07	107	2011
+ward	10302004	Contact crime	2006-07	82	2011
+ward	10302004	Property crime	2007-08	74	2011
+ward	10302004	Contact crime	2007-08	69	2011
+ward	10302004	Property crime	2008-09	94	2011
+ward	10302004	Contact crime	2008-09	68	2011
+ward	10302004	Property crime	2009-10	107	2011
+ward	10302004	Contact crime	2009-10	97	2011
+ward	10302004	Property crime	2010-11	100	2011
+ward	10302004	Contact crime	2010-11	104	2011
+ward	10302004	Property crime	2011-12	126	2011
+ward	10302004	Contact crime	2011-12	95	2011
+ward	10302004	Property crime	2012-13	111	2011
+ward	10302004	Contact crime	2012-13	100	2011
+ward	10302004	Property crime	2013-14	131	2011
+ward	10302004	Contact crime	2013-14	130	2011
+ward	10302004	Property crime	2014-15	160	2011
+ward	10302004	Contact crime	2014-15	131	2011
+ward	10302005	Property crime	2005-06	98	2011
+ward	10302005	Contact crime	2005-06	74	2011
+ward	10302005	Property crime	2006-07	115	2011
+ward	10302005	Contact crime	2006-07	88	2011
+ward	10302005	Property crime	2007-08	79	2011
+ward	10302005	Contact crime	2007-08	73	2011
+ward	10302005	Property crime	2008-09	100	2011
+ward	10302005	Contact crime	2008-09	72	2011
+ward	10302005	Property crime	2009-10	115	2011
+ward	10302005	Contact crime	2009-10	104	2011
+ward	10302005	Property crime	2010-11	107	2011
+ward	10302005	Contact crime	2010-11	112	2011
+ward	10302005	Property crime	2011-12	135	2011
+ward	10302005	Contact crime	2011-12	102	2011
+ward	10302005	Property crime	2012-13	118	2011
+ward	10302005	Contact crime	2012-13	107	2011
+ward	10302005	Property crime	2013-14	139	2011
+ward	10302005	Contact crime	2013-14	140	2011
+ward	10302005	Property crime	2014-15	169	2011
+ward	10302005	Contact crime	2014-15	141	2011
+ward	10302006	Property crime	2005-06	74	2011
+ward	10302006	Contact crime	2005-06	56	2011
+ward	10302006	Property crime	2006-07	87	2011
+ward	10302006	Contact crime	2006-07	66	2011
+ward	10302006	Property crime	2007-08	59	2011
+ward	10302006	Contact crime	2007-08	55	2011
+ward	10302006	Property crime	2008-09	76	2011
+ward	10302006	Contact crime	2008-09	55	2011
+ward	10302006	Property crime	2009-10	87	2011
+ward	10302006	Contact crime	2009-10	78	2011
+ward	10302006	Property crime	2010-11	80	2011
+ward	10302006	Contact crime	2010-11	84	2011
+ward	10302006	Property crime	2011-12	102	2011
+ward	10302006	Contact crime	2011-12	77	2011
+ward	10302006	Property crime	2012-13	89	2011
+ward	10302006	Contact crime	2012-13	81	2011
+ward	10302006	Property crime	2013-14	105	2011
+ward	10302006	Contact crime	2013-14	106	2011
+ward	10302006	Property crime	2014-15	128	2011
+ward	10302006	Contact crime	2014-15	106	2011
+ward	10302007	Property crime	2005-06	55	2011
+ward	10302007	Contact crime	2005-06	41	2011
+ward	10302007	Property crime	2006-07	64	2011
+ward	10302007	Contact crime	2006-07	49	2011
+ward	10302007	Property crime	2007-08	44	2011
+ward	10302007	Contact crime	2007-08	41	2011
+ward	10302007	Property crime	2008-09	56	2011
+ward	10302007	Contact crime	2008-09	40	2011
+ward	10302007	Property crime	2009-10	64	2011
+ward	10302007	Contact crime	2009-10	57	2011
+ward	10302007	Property crime	2010-11	59	2011
+ward	10302007	Contact crime	2010-11	62	2011
+ward	10302007	Property crime	2011-12	75	2011
+ward	10302007	Contact crime	2011-12	57	2011
+ward	10302007	Property crime	2012-13	66	2011
+ward	10302007	Contact crime	2012-13	60	2011
+ward	10302007	Property crime	2013-14	77	2011
+ward	10302007	Contact crime	2013-14	78	2011
+ward	10302007	Property crime	2014-15	94	2011
+ward	10302007	Contact crime	2014-15	78	2011
+ward	10302008	Property crime	2005-06	132	2011
+ward	10302008	Contact crime	2005-06	100	2011
+ward	10302008	Property crime	2006-07	152	2011
+ward	10302008	Contact crime	2006-07	115	2011
+ward	10302008	Property crime	2007-08	107	2011
+ward	10302008	Contact crime	2007-08	98	2011
+ward	10302008	Property crime	2008-09	134	2011
+ward	10302008	Contact crime	2008-09	96	2011
+ward	10302008	Property crime	2009-10	153	2011
+ward	10302008	Contact crime	2009-10	135	2011
+ward	10302008	Property crime	2010-11	143	2011
+ward	10302008	Contact crime	2010-11	146	2011
+ward	10302008	Property crime	2011-12	179	2011
+ward	10302008	Contact crime	2011-12	133	2011
+ward	10302008	Property crime	2012-13	163	2011
+ward	10302008	Contact crime	2012-13	141	2011
+ward	10302008	Property crime	2013-14	193	2011
+ward	10302008	Contact crime	2013-14	182	2011
+ward	10302008	Property crime	2014-15	235	2011
+ward	10302008	Contact crime	2014-15	184	2011
+ward	10302009	Property crime	2005-06	86	2011
+ward	10302009	Contact crime	2005-06	51	2011
+ward	10302009	Property crime	2006-07	75	2011
+ward	10302009	Contact crime	2006-07	34	2011
+ward	10302009	Property crime	2007-08	83	2011
+ward	10302009	Contact crime	2007-08	42	2011
+ward	10302009	Property crime	2008-09	74	2011
+ward	10302009	Contact crime	2008-09	36	2011
+ward	10302009	Property crime	2009-10	86	2011
+ward	10302009	Contact crime	2009-10	37	2011
+ward	10302009	Property crime	2010-11	91	2011
+ward	10302009	Contact crime	2010-11	36	2011
+ward	10302009	Property crime	2011-12	104	2011
+ward	10302009	Contact crime	2011-12	31	2011
+ward	10302009	Property crime	2012-13	153	2011
+ward	10302009	Contact crime	2012-13	41	2011
+ward	10302009	Property crime	2013-14	191	2011
+ward	10302009	Contact crime	2013-14	35	2011
+ward	10302009	Property crime	2014-15	251	2011
+ward	10302009	Contact crime	2014-15	45	2011
+ward	10302010	Property crime	2005-06	210	2011
+ward	10302010	Contact crime	2005-06	124	2011
+ward	10302010	Property crime	2006-07	183	2011
+ward	10302010	Contact crime	2006-07	83	2011
+ward	10302010	Property crime	2007-08	201	2011
+ward	10302010	Contact crime	2007-08	101	2011
+ward	10302010	Property crime	2008-09	181	2011
+ward	10302010	Contact crime	2008-09	87	2011
+ward	10302010	Property crime	2009-10	209	2011
+ward	10302010	Contact crime	2009-10	89	2011
+ward	10302010	Property crime	2010-11	221	2011
+ward	10302010	Contact crime	2010-11	86	2011
+ward	10302010	Property crime	2011-12	253	2011
+ward	10302010	Contact crime	2011-12	74	2011
+ward	10302010	Property crime	2012-13	372	2011
+ward	10302010	Contact crime	2012-13	99	2011
+ward	10302010	Property crime	2013-14	466	2011
+ward	10302010	Contact crime	2013-14	85	2011
+ward	10302010	Property crime	2014-15	610	2011
+ward	10302010	Contact crime	2014-15	108	2011
+ward	10302011	Property crime	2005-06	81	2011
+ward	10302011	Contact crime	2005-06	193	2011
+ward	10302011	Property crime	2006-07	102	2011
+ward	10302011	Contact crime	2006-07	151	2011
+ward	10302011	Property crime	2007-08	108	2011
+ward	10302011	Contact crime	2007-08	166	2011
+ward	10302011	Property crime	2008-09	160	2011
+ward	10302011	Contact crime	2008-09	190	2011
+ward	10302011	Property crime	2009-10	174	2011
+ward	10302011	Contact crime	2009-10	190	2011
+ward	10302011	Property crime	2010-11	163	2011
+ward	10302011	Contact crime	2010-11	196	2011
+ward	10302011	Property crime	2011-12	222	2011
+ward	10302011	Contact crime	2011-12	171	2011
+ward	10302011	Property crime	2012-13	185	2011
+ward	10302011	Contact crime	2012-13	149	2011
+ward	10302011	Property crime	2013-14	159	2011
+ward	10302011	Contact crime	2013-14	155	2011
+ward	10302011	Property crime	2014-15	237	2011
+ward	10302011	Contact crime	2014-15	198	2011
+ward	10302012	Property crime	2005-06	58	2011
+ward	10302012	Contact crime	2005-06	43	2011
+ward	10302012	Property crime	2006-07	67	2011
+ward	10302012	Contact crime	2006-07	51	2011
+ward	10302012	Property crime	2007-08	46	2011
+ward	10302012	Contact crime	2007-08	43	2011
+ward	10302012	Property crime	2008-09	59	2011
+ward	10302012	Contact crime	2008-09	42	2011
+ward	10302012	Property crime	2009-10	67	2011
+ward	10302012	Contact crime	2009-10	61	2011
+ward	10302012	Property crime	2010-11	63	2011
+ward	10302012	Contact crime	2010-11	66	2011
+ward	10302012	Property crime	2011-12	79	2011
+ward	10302012	Contact crime	2011-12	60	2011
+ward	10302012	Property crime	2012-13	69	2011
+ward	10302012	Contact crime	2012-13	63	2011
+ward	10302012	Property crime	2013-14	82	2011
+ward	10302012	Contact crime	2013-14	82	2011
+ward	10302012	Property crime	2014-15	99	2011
+ward	10302012	Contact crime	2014-15	83	2011
+ward	10302013	Property crime	2005-06	60	2011
+ward	10302013	Contact crime	2005-06	45	2011
+ward	10302013	Property crime	2006-07	70	2011
+ward	10302013	Contact crime	2006-07	53	2011
+ward	10302013	Property crime	2007-08	48	2011
+ward	10302013	Contact crime	2007-08	44	2011
+ward	10302013	Property crime	2008-09	61	2011
+ward	10302013	Contact crime	2008-09	44	2011
+ward	10302013	Property crime	2009-10	70	2011
+ward	10302013	Contact crime	2009-10	63	2011
+ward	10302013	Property crime	2010-11	65	2011
+ward	10302013	Contact crime	2010-11	68	2011
+ward	10302013	Property crime	2011-12	82	2011
+ward	10302013	Contact crime	2011-12	62	2011
+ward	10302013	Property crime	2012-13	72	2011
+ward	10302013	Contact crime	2012-13	65	2011
+ward	10302013	Property crime	2013-14	84	2011
+ward	10302013	Contact crime	2013-14	85	2011
+ward	10302013	Property crime	2014-15	103	2011
+ward	10302013	Contact crime	2014-15	85	2011
+ward	10303001	Property crime	2005-06	71	2011
+ward	10303001	Contact crime	2005-06	97	2011
+ward	10303001	Property crime	2006-07	58	2011
+ward	10303001	Contact crime	2006-07	90	2011
+ward	10303001	Property crime	2007-08	46	2011
+ward	10303001	Contact crime	2007-08	92	2011
+ward	10303001	Property crime	2008-09	43	2011
+ward	10303001	Contact crime	2008-09	86	2011
+ward	10303001	Property crime	2009-10	48	2011
+ward	10303001	Contact crime	2009-10	86	2011
+ward	10303001	Property crime	2010-11	61	2011
+ward	10303001	Contact crime	2010-11	97	2011
+ward	10303001	Property crime	2011-12	52	2011
+ward	10303001	Contact crime	2011-12	100	2011
+ward	10303001	Property crime	2012-13	65	2011
+ward	10303001	Contact crime	2012-13	88	2011
+ward	10303001	Property crime	2013-14	80	2011
+ward	10303001	Contact crime	2013-14	100	2011
+ward	10303001	Property crime	2014-15	86	2011
+ward	10303001	Contact crime	2014-15	108	2011
+ward	10303002	Property crime	2005-06	102	2011
+ward	10303002	Contact crime	2005-06	138	2011
+ward	10303002	Property crime	2006-07	84	2011
+ward	10303002	Contact crime	2006-07	125	2011
+ward	10303002	Property crime	2007-08	68	2011
+ward	10303002	Contact crime	2007-08	136	2011
+ward	10303002	Property crime	2008-09	60	2011
+ward	10303002	Contact crime	2008-09	120	2011
+ward	10303002	Property crime	2009-10	70	2011
+ward	10303002	Contact crime	2009-10	140	2011
+ward	10303002	Property crime	2010-11	79	2011
+ward	10303002	Contact crime	2010-11	168	2011
+ward	10303002	Property crime	2011-12	67	2011
+ward	10303002	Contact crime	2011-12	149	2011
+ward	10303002	Property crime	2012-13	96	2011
+ward	10303002	Contact crime	2012-13	151	2011
+ward	10303002	Property crime	2013-14	122	2011
+ward	10303002	Contact crime	2013-14	169	2011
+ward	10303002	Property crime	2014-15	125	2011
+ward	10303002	Contact crime	2014-15	187	2011
+ward	10303003	Property crime	2005-06	84	2011
+ward	10303003	Contact crime	2005-06	112	2011
+ward	10303003	Property crime	2006-07	68	2011
+ward	10303003	Contact crime	2006-07	100	2011
+ward	10303003	Property crime	2007-08	56	2011
+ward	10303003	Contact crime	2007-08	111	2011
+ward	10303003	Property crime	2008-09	48	2011
+ward	10303003	Contact crime	2008-09	96	2011
+ward	10303003	Property crime	2009-10	57	2011
+ward	10303003	Contact crime	2009-10	120	2011
+ward	10303003	Property crime	2010-11	62	2011
+ward	10303003	Contact crime	2010-11	147	2011
+ward	10303003	Property crime	2011-12	51	2011
+ward	10303003	Contact crime	2011-12	123	2011
+ward	10303003	Property crime	2012-13	79	2011
+ward	10303003	Contact crime	2012-13	132	2011
+ward	10303003	Property crime	2013-14	102	2011
+ward	10303003	Contact crime	2013-14	147	2011
+ward	10303003	Property crime	2014-15	102	2011
+ward	10303003	Contact crime	2014-15	163	2011
+ward	10303004	Property crime	2005-06	73	2011
+ward	10303004	Contact crime	2005-06	97	2011
+ward	10303004	Property crime	2006-07	59	2011
+ward	10303004	Contact crime	2006-07	87	2011
+ward	10303004	Property crime	2007-08	48	2011
+ward	10303004	Contact crime	2007-08	97	2011
+ward	10303004	Property crime	2008-09	42	2011
+ward	10303004	Contact crime	2008-09	84	2011
+ward	10303004	Property crime	2009-10	49	2011
+ward	10303004	Contact crime	2009-10	103	2011
+ward	10303004	Property crime	2010-11	54	2011
+ward	10303004	Contact crime	2010-11	126	2011
+ward	10303004	Property crime	2011-12	45	2011
+ward	10303004	Contact crime	2011-12	107	2011
+ward	10303004	Property crime	2012-13	69	2011
+ward	10303004	Contact crime	2012-13	113	2011
+ward	10303004	Property crime	2013-14	88	2011
+ward	10303004	Contact crime	2013-14	127	2011
+ward	10303004	Property crime	2014-15	88	2011
+ward	10303004	Contact crime	2014-15	140	2011
+ward	10303005	Property crime	2005-06	105	2011
+ward	10303005	Contact crime	2005-06	109	2011
+ward	10303005	Property crime	2006-07	89	2011
+ward	10303005	Contact crime	2006-07	110	2011
+ward	10303005	Property crime	2007-08	78	2011
+ward	10303005	Contact crime	2007-08	115	2011
+ward	10303005	Property crime	2008-09	55	2011
+ward	10303005	Contact crime	2008-09	119	2011
+ward	10303005	Property crime	2009-10	70	2011
+ward	10303005	Contact crime	2009-10	128	2011
+ward	10303005	Property crime	2010-11	131	2011
+ward	10303005	Contact crime	2010-11	165	2011
+ward	10303005	Property crime	2011-12	106	2011
+ward	10303005	Contact crime	2011-12	150	2011
+ward	10303005	Property crime	2012-13	99	2011
+ward	10303005	Contact crime	2012-13	147	2011
+ward	10303005	Property crime	2013-14	114	2011
+ward	10303005	Contact crime	2013-14	139	2011
+ward	10303005	Property crime	2014-15	100	2011
+ward	10303005	Contact crime	2014-15	148	2011
+ward	10304001	Property crime	2005-06	89	2011
+ward	10304001	Contact crime	2005-06	175	2011
+ward	10304001	Property crime	2006-07	85	2011
+ward	10304001	Contact crime	2006-07	143	2011
+ward	10304001	Property crime	2007-08	68	2011
+ward	10304001	Contact crime	2007-08	133	2011
+ward	10304001	Property crime	2008-09	86	2011
+ward	10304001	Contact crime	2008-09	159	2011
+ward	10304001	Property crime	2009-10	108	2011
+ward	10304001	Contact crime	2009-10	158	2011
+ward	10304001	Property crime	2010-11	109	2011
+ward	10304001	Contact crime	2010-11	172	2011
+ward	10304001	Property crime	2011-12	120	2011
+ward	10304001	Contact crime	2011-12	180	2011
+ward	10304001	Property crime	2012-13	120	2011
+ward	10304001	Contact crime	2012-13	185	2011
+ward	10304001	Property crime	2013-14	149	2011
+ward	10304001	Contact crime	2013-14	202	2011
+ward	10304001	Property crime	2014-15	144	2011
+ward	10304001	Contact crime	2014-15	196	2011
+ward	10304002	Property crime	2005-06	52	2011
+ward	10304002	Contact crime	2005-06	153	2011
+ward	10304002	Property crime	2006-07	27	2011
+ward	10304002	Contact crime	2006-07	145	2011
+ward	10304002	Property crime	2007-08	37	2011
+ward	10304002	Contact crime	2007-08	177	2011
+ward	10304002	Property crime	2008-09	54	2011
+ward	10304002	Contact crime	2008-09	171	2011
+ward	10304002	Property crime	2009-10	60	2011
+ward	10304002	Contact crime	2009-10	172	2011
+ward	10304002	Property crime	2010-11	49	2011
+ward	10304002	Contact crime	2010-11	182	2011
+ward	10304002	Property crime	2011-12	38	2011
+ward	10304002	Contact crime	2011-12	162	2011
+ward	10304002	Property crime	2012-13	40	2011
+ward	10304002	Contact crime	2012-13	162	2011
+ward	10304002	Property crime	2013-14	49	2011
+ward	10304002	Contact crime	2013-14	207	2011
+ward	10304002	Property crime	2014-15	47	2011
+ward	10304002	Contact crime	2014-15	205	2011
+ward	10304003	Property crime	2005-06	92	2011
+ward	10304003	Contact crime	2005-06	207	2011
+ward	10304003	Property crime	2006-07	92	2011
+ward	10304003	Contact crime	2006-07	186	2011
+ward	10304003	Property crime	2007-08	76	2011
+ward	10304003	Contact crime	2007-08	186	2011
+ward	10304003	Property crime	2008-09	88	2011
+ward	10304003	Contact crime	2008-09	193	2011
+ward	10304003	Property crime	2009-10	110	2011
+ward	10304003	Contact crime	2009-10	186	2011
+ward	10304003	Property crime	2010-11	104	2011
+ward	10304003	Contact crime	2010-11	207	2011
+ward	10304003	Property crime	2011-12	122	2011
+ward	10304003	Contact crime	2011-12	208	2011
+ward	10304003	Property crime	2012-13	124	2011
+ward	10304003	Contact crime	2012-13	210	2011
+ward	10304003	Property crime	2013-14	145	2011
+ward	10304003	Contact crime	2013-14	238	2011
+ward	10304003	Property crime	2014-15	143	2011
+ward	10304003	Contact crime	2014-15	212	2011
+ward	10304004	Property crime	2005-06	53	2011
+ward	10304004	Contact crime	2005-06	107	2011
+ward	10304004	Property crime	2006-07	51	2011
+ward	10304004	Contact crime	2006-07	84	2011
+ward	10304004	Property crime	2007-08	41	2011
+ward	10304004	Contact crime	2007-08	79	2011
+ward	10304004	Property crime	2008-09	52	2011
+ward	10304004	Contact crime	2008-09	94	2011
+ward	10304004	Property crime	2009-10	64	2011
+ward	10304004	Contact crime	2009-10	93	2011
+ward	10304004	Property crime	2010-11	64	2011
+ward	10304004	Contact crime	2010-11	99	2011
+ward	10304004	Property crime	2011-12	71	2011
+ward	10304004	Contact crime	2011-12	106	2011
+ward	10304004	Property crime	2012-13	71	2011
+ward	10304004	Contact crime	2012-13	110	2011
+ward	10304004	Property crime	2013-14	87	2011
+ward	10304004	Contact crime	2013-14	117	2011
+ward	10304004	Property crime	2014-15	82	2011
+ward	10304004	Contact crime	2014-15	114	2011
+ward	10304005	Property crime	2005-06	124	2011
+ward	10304005	Contact crime	2005-06	249	2011
+ward	10304005	Property crime	2006-07	119	2011
+ward	10304005	Contact crime	2006-07	197	2011
+ward	10304005	Property crime	2007-08	95	2011
+ward	10304005	Contact crime	2007-08	184	2011
+ward	10304005	Property crime	2008-09	121	2011
+ward	10304005	Contact crime	2008-09	220	2011
+ward	10304005	Property crime	2009-10	150	2011
+ward	10304005	Contact crime	2009-10	218	2011
+ward	10304005	Property crime	2010-11	148	2011
+ward	10304005	Contact crime	2010-11	231	2011
+ward	10304005	Property crime	2011-12	167	2011
+ward	10304005	Contact crime	2011-12	248	2011
+ward	10304005	Property crime	2012-13	165	2011
+ward	10304005	Contact crime	2012-13	257	2011
+ward	10304005	Property crime	2013-14	203	2011
+ward	10304005	Contact crime	2013-14	274	2011
+ward	10304005	Property crime	2014-15	191	2011
+ward	10304005	Contact crime	2014-15	267	2011
+ward	10401001	Property crime	2005-06	57	2011
+ward	10401001	Contact crime	2005-06	112	2011
+ward	10401001	Property crime	2006-07	54	2011
+ward	10401001	Contact crime	2006-07	132	2011
+ward	10401001	Property crime	2007-08	46	2011
+ward	10401001	Contact crime	2007-08	118	2011
+ward	10401001	Property crime	2008-09	53	2011
+ward	10401001	Contact crime	2008-09	126	2011
+ward	10401001	Property crime	2009-10	62	2011
+ward	10401001	Contact crime	2009-10	112	2011
+ward	10401001	Property crime	2010-11	67	2011
+ward	10401001	Contact crime	2010-11	125	2011
+ward	10401001	Property crime	2011-12	56	2011
+ward	10401001	Contact crime	2011-12	116	2011
+ward	10401001	Property crime	2012-13	58	2011
+ward	10401001	Contact crime	2012-13	115	2011
+ward	10401001	Property crime	2013-14	68	2011
+ward	10401001	Contact crime	2013-14	112	2011
+ward	10401001	Property crime	2014-15	56	2011
+ward	10401001	Contact crime	2014-15	108	2011
+ward	10401002	Property crime	2005-06	84	2011
+ward	10401002	Contact crime	2005-06	246	2011
+ward	10401002	Property crime	2006-07	89	2011
+ward	10401002	Contact crime	2006-07	220	2011
+ward	10401002	Property crime	2007-08	115	2011
+ward	10401002	Contact crime	2007-08	220	2011
+ward	10401002	Property crime	2008-09	95	2011
+ward	10401002	Contact crime	2008-09	145	2011
+ward	10401002	Property crime	2009-10	119	2011
+ward	10401002	Contact crime	2009-10	160	2011
+ward	10401002	Property crime	2010-11	143	2011
+ward	10401002	Contact crime	2010-11	146	2011
+ward	10401002	Property crime	2011-12	132	2011
+ward	10401002	Contact crime	2011-12	181	2011
+ward	10401002	Property crime	2012-13	166	2011
+ward	10401002	Contact crime	2012-13	172	2011
+ward	10401002	Property crime	2013-14	122	2011
+ward	10401002	Contact crime	2013-14	141	2011
+ward	10401002	Property crime	2014-15	149	2011
+ward	10401002	Contact crime	2014-15	128	2011
+ward	10401003	Property crime	2005-06	44	2011
+ward	10401003	Contact crime	2005-06	88	2011
+ward	10401003	Property crime	2006-07	42	2011
+ward	10401003	Contact crime	2006-07	103	2011
+ward	10401003	Property crime	2007-08	36	2011
+ward	10401003	Contact crime	2007-08	93	2011
+ward	10401003	Property crime	2008-09	41	2011
+ward	10401003	Contact crime	2008-09	97	2011
+ward	10401003	Property crime	2009-10	49	2011
+ward	10401003	Contact crime	2009-10	87	2011
+ward	10401003	Property crime	2010-11	53	2011
+ward	10401003	Contact crime	2010-11	97	2011
+ward	10401003	Property crime	2011-12	45	2011
+ward	10401003	Contact crime	2011-12	90	2011
+ward	10401003	Property crime	2012-13	47	2011
+ward	10401003	Contact crime	2012-13	90	2011
+ward	10401003	Property crime	2013-14	53	2011
+ward	10401003	Contact crime	2013-14	87	2011
+ward	10401003	Property crime	2014-15	45	2011
+ward	10401003	Contact crime	2014-15	83	2011
+ward	10401004	Property crime	2005-06	64	2011
+ward	10401004	Contact crime	2005-06	135	2011
+ward	10401004	Property crime	2006-07	61	2011
+ward	10401004	Contact crime	2006-07	151	2011
+ward	10401004	Property crime	2007-08	57	2011
+ward	10401004	Contact crime	2007-08	138	2011
+ward	10401004	Property crime	2008-09	61	2011
+ward	10401004	Contact crime	2008-09	136	2011
+ward	10401004	Property crime	2009-10	73	2011
+ward	10401004	Contact crime	2009-10	125	2011
+ward	10401004	Property crime	2010-11	81	2011
+ward	10401004	Contact crime	2010-11	135	2011
+ward	10401004	Property crime	2011-12	69	2011
+ward	10401004	Contact crime	2011-12	131	2011
+ward	10401004	Property crime	2012-13	75	2011
+ward	10401004	Contact crime	2012-13	129	2011
+ward	10401004	Property crime	2013-14	78	2011
+ward	10401004	Contact crime	2013-14	122	2011
+ward	10401004	Property crime	2014-15	71	2011
+ward	10401004	Contact crime	2014-15	117	2011
+ward	10402001	Property crime	2005-06	41	2011
+ward	10402001	Contact crime	2005-06	67	2011
+ward	10402001	Property crime	2006-07	30	2011
+ward	10402001	Contact crime	2006-07	66	2011
+ward	10402001	Property crime	2007-08	30	2011
+ward	10402001	Contact crime	2007-08	70	2011
+ward	10402001	Property crime	2008-09	32	2011
+ward	10402001	Contact crime	2008-09	61	2011
+ward	10402001	Property crime	2009-10	41	2011
+ward	10402001	Contact crime	2009-10	76	2011
+ward	10402001	Property crime	2010-11	42	2011
+ward	10402001	Contact crime	2010-11	77	2011
+ward	10402001	Property crime	2011-12	38	2011
+ward	10402001	Contact crime	2011-12	76	2011
+ward	10402001	Property crime	2012-13	57	2011
+ward	10402001	Contact crime	2012-13	91	2011
+ward	10402001	Property crime	2013-14	70	2011
+ward	10402001	Contact crime	2013-14	88	2011
+ward	10402001	Property crime	2014-15	62	2011
+ward	10402001	Contact crime	2014-15	98	2011
+ward	10402002	Property crime	2005-06	50	2011
+ward	10402002	Contact crime	2005-06	97	2011
+ward	10402002	Property crime	2006-07	37	2011
+ward	10402002	Contact crime	2006-07	140	2011
+ward	10402002	Property crime	2007-08	29	2011
+ward	10402002	Contact crime	2007-08	135	2011
+ward	10402002	Property crime	2008-09	47	2011
+ward	10402002	Contact crime	2008-09	123	2011
+ward	10402002	Property crime	2009-10	49	2011
+ward	10402002	Contact crime	2009-10	125	2011
+ward	10402002	Property crime	2010-11	35	2011
+ward	10402002	Contact crime	2010-11	99	2011
+ward	10402002	Property crime	2011-12	57	2011
+ward	10402002	Contact crime	2011-12	123	2011
+ward	10402002	Property crime	2012-13	79	2011
+ward	10402002	Contact crime	2012-13	160	2011
+ward	10402002	Property crime	2013-14	94	2011
+ward	10402002	Contact crime	2013-14	159	2011
+ward	10402002	Property crime	2014-15	76	2011
+ward	10402002	Contact crime	2014-15	147	2011
+ward	10402003	Property crime	2005-06	35	2011
+ward	10402003	Contact crime	2005-06	82	2011
+ward	10402003	Property crime	2006-07	35	2011
+ward	10402003	Contact crime	2006-07	75	2011
+ward	10402003	Property crime	2007-08	33	2011
+ward	10402003	Contact crime	2007-08	79	2011
+ward	10402003	Property crime	2008-09	33	2011
+ward	10402003	Contact crime	2008-09	74	2011
+ward	10402003	Property crime	2009-10	39	2011
+ward	10402003	Contact crime	2009-10	78	2011
+ward	10402003	Property crime	2010-11	40	2011
+ward	10402003	Contact crime	2010-11	73	2011
+ward	10402003	Property crime	2011-12	39	2011
+ward	10402003	Contact crime	2011-12	75	2011
+ward	10402003	Property crime	2012-13	46	2011
+ward	10402003	Contact crime	2012-13	82	2011
+ward	10402003	Property crime	2013-14	58	2011
+ward	10402003	Contact crime	2013-14	88	2011
+ward	10402003	Property crime	2014-15	58	2011
+ward	10402003	Contact crime	2014-15	95	2011
+ward	10402004	Property crime	2005-06	58	2011
+ward	10402004	Contact crime	2005-06	205	2011
+ward	10402004	Property crime	2006-07	75	2011
+ward	10402004	Contact crime	2006-07	189	2011
+ward	10402004	Property crime	2007-08	63	2011
+ward	10402004	Contact crime	2007-08	190	2011
+ward	10402004	Property crime	2008-09	58	2011
+ward	10402004	Contact crime	2008-09	170	2011
+ward	10402004	Property crime	2009-10	60	2011
+ward	10402004	Contact crime	2009-10	152	2011
+ward	10402004	Property crime	2010-11	58	2011
+ward	10402004	Contact crime	2010-11	116	2011
+ward	10402004	Property crime	2011-12	73	2011
+ward	10402004	Contact crime	2011-12	129	2011
+ward	10402004	Property crime	2012-13	52	2011
+ward	10402004	Contact crime	2012-13	137	2011
+ward	10402004	Property crime	2013-14	64	2011
+ward	10402004	Contact crime	2013-14	160	2011
+ward	10402004	Property crime	2014-15	70	2011
+ward	10402004	Contact crime	2014-15	158	2011
+ward	10402005	Property crime	2005-06	34	2011
+ward	10402005	Contact crime	2005-06	123	2011
+ward	10402005	Property crime	2006-07	45	2011
+ward	10402005	Contact crime	2006-07	114	2011
+ward	10402005	Property crime	2007-08	37	2011
+ward	10402005	Contact crime	2007-08	114	2011
+ward	10402005	Property crime	2008-09	34	2011
+ward	10402005	Contact crime	2008-09	102	2011
+ward	10402005	Property crime	2009-10	35	2011
+ward	10402005	Contact crime	2009-10	90	2011
+ward	10402005	Property crime	2010-11	34	2011
+ward	10402005	Contact crime	2010-11	69	2011
+ward	10402005	Property crime	2011-12	43	2011
+ward	10402005	Contact crime	2011-12	76	2011
+ward	10402005	Property crime	2012-13	30	2011
+ward	10402005	Contact crime	2012-13	81	2011
+ward	10402005	Property crime	2013-14	37	2011
+ward	10402005	Contact crime	2013-14	95	2011
+ward	10402005	Property crime	2014-15	40	2011
+ward	10402005	Contact crime	2014-15	94	2011
+ward	10402006	Property crime	2005-06	22	2011
+ward	10402006	Contact crime	2005-06	54	2011
+ward	10402006	Property crime	2006-07	33	2011
+ward	10402006	Contact crime	2006-07	63	2011
+ward	10402006	Property crime	2007-08	33	2011
+ward	10402006	Contact crime	2007-08	62	2011
+ward	10402006	Property crime	2008-09	40	2011
+ward	10402006	Contact crime	2008-09	86	2011
+ward	10402006	Property crime	2009-10	41	2011
+ward	10402006	Contact crime	2009-10	77	2011
+ward	10402006	Property crime	2010-11	40	2011
+ward	10402006	Contact crime	2010-11	80	2011
+ward	10402006	Property crime	2011-12	42	2011
+ward	10402006	Contact crime	2011-12	86	2011
+ward	10402006	Property crime	2012-13	56	2011
+ward	10402006	Contact crime	2012-13	87	2011
+ward	10402006	Property crime	2013-14	70	2011
+ward	10402006	Contact crime	2013-14	104	2011
+ward	10402006	Property crime	2014-15	85	2011
+ward	10402006	Contact crime	2014-15	110	2011
+ward	10402007	Property crime	2005-06	26	2011
+ward	10402007	Contact crime	2005-06	65	2011
+ward	10402007	Property crime	2006-07	39	2011
+ward	10402007	Contact crime	2006-07	76	2011
+ward	10402007	Property crime	2007-08	38	2011
+ward	10402007	Contact crime	2007-08	75	2011
+ward	10402007	Property crime	2008-09	46	2011
+ward	10402007	Contact crime	2008-09	100	2011
+ward	10402007	Property crime	2009-10	48	2011
+ward	10402007	Contact crime	2009-10	90	2011
+ward	10402007	Property crime	2010-11	46	2011
+ward	10402007	Contact crime	2010-11	94	2011
+ward	10402007	Property crime	2011-12	49	2011
+ward	10402007	Contact crime	2011-12	100	2011
+ward	10402007	Property crime	2012-13	65	2011
+ward	10402007	Contact crime	2012-13	102	2011
+ward	10402007	Property crime	2013-14	81	2011
+ward	10402007	Contact crime	2013-14	120	2011
+ward	10402007	Property crime	2014-15	97	2011
+ward	10402007	Contact crime	2014-15	127	2011
+ward	10402008	Property crime	2005-06	25	2011
+ward	10402008	Contact crime	2005-06	63	2011
+ward	10402008	Property crime	2006-07	39	2011
+ward	10402008	Contact crime	2006-07	74	2011
+ward	10402008	Property crime	2007-08	38	2011
+ward	10402008	Contact crime	2007-08	73	2011
+ward	10402008	Property crime	2008-09	46	2011
+ward	10402008	Contact crime	2008-09	100	2011
+ward	10402008	Property crime	2009-10	48	2011
+ward	10402008	Contact crime	2009-10	90	2011
+ward	10402008	Property crime	2010-11	46	2011
+ward	10402008	Contact crime	2010-11	94	2011
+ward	10402008	Property crime	2011-12	49	2011
+ward	10402008	Contact crime	2011-12	101	2011
+ward	10402008	Property crime	2012-13	66	2011
+ward	10402008	Contact crime	2012-13	102	2011
+ward	10402008	Property crime	2013-14	82	2011
+ward	10402008	Contact crime	2013-14	121	2011
+ward	10402008	Property crime	2014-15	100	2011
+ward	10402008	Contact crime	2014-15	129	2011
+ward	10403001	Property crime	2005-06	79	2011
+ward	10403001	Contact crime	2005-06	127	2011
+ward	10403001	Property crime	2006-07	62	2011
+ward	10403001	Contact crime	2006-07	111	2011
+ward	10403001	Property crime	2007-08	70	2011
+ward	10403001	Contact crime	2007-08	127	2011
+ward	10403001	Property crime	2008-09	68	2011
+ward	10403001	Contact crime	2008-09	113	2011
+ward	10403001	Property crime	2009-10	78	2011
+ward	10403001	Contact crime	2009-10	136	2011
+ward	10403001	Property crime	2010-11	84	2011
+ward	10403001	Contact crime	2010-11	154	2011
+ward	10403001	Property crime	2011-12	96	2011
+ward	10403001	Contact crime	2011-12	143	2011
+ward	10403001	Property crime	2012-13	116	2011
+ward	10403001	Contact crime	2012-13	140	2011
+ward	10403001	Property crime	2013-14	104	2011
+ward	10403001	Contact crime	2013-14	169	2011
+ward	10403001	Property crime	2014-15	108	2011
+ward	10403001	Contact crime	2014-15	172	2011
+ward	10403002	Property crime	2005-06	72	2011
+ward	10403002	Contact crime	2005-06	116	2011
+ward	10403002	Property crime	2006-07	57	2011
+ward	10403002	Contact crime	2006-07	101	2011
+ward	10403002	Property crime	2007-08	64	2011
+ward	10403002	Contact crime	2007-08	116	2011
+ward	10403002	Property crime	2008-09	62	2011
+ward	10403002	Contact crime	2008-09	103	2011
+ward	10403002	Property crime	2009-10	71	2011
+ward	10403002	Contact crime	2009-10	124	2011
+ward	10403002	Property crime	2010-11	76	2011
+ward	10403002	Contact crime	2010-11	141	2011
+ward	10403002	Property crime	2011-12	87	2011
+ward	10403002	Contact crime	2011-12	130	2011
+ward	10403002	Property crime	2012-13	106	2011
+ward	10403002	Contact crime	2012-13	127	2011
+ward	10403002	Property crime	2013-14	95	2011
+ward	10403002	Contact crime	2013-14	154	2011
+ward	10403002	Property crime	2014-15	98	2011
+ward	10403002	Contact crime	2014-15	157	2011
+ward	10403003	Property crime	2005-06	106	2011
+ward	10403003	Contact crime	2005-06	171	2011
+ward	10403003	Property crime	2006-07	84	2011
+ward	10403003	Contact crime	2006-07	149	2011
+ward	10403003	Property crime	2007-08	94	2011
+ward	10403003	Contact crime	2007-08	171	2011
+ward	10403003	Property crime	2008-09	92	2011
+ward	10403003	Contact crime	2008-09	152	2011
+ward	10403003	Property crime	2009-10	105	2011
+ward	10403003	Contact crime	2009-10	184	2011
+ward	10403003	Property crime	2010-11	112	2011
+ward	10403003	Contact crime	2010-11	208	2011
+ward	10403003	Property crime	2011-12	129	2011
+ward	10403003	Contact crime	2011-12	193	2011
+ward	10403003	Property crime	2012-13	156	2011
+ward	10403003	Contact crime	2012-13	188	2011
+ward	10403003	Property crime	2013-14	140	2011
+ward	10403003	Contact crime	2013-14	228	2011
+ward	10403003	Property crime	2014-15	145	2011
+ward	10403003	Contact crime	2014-15	231	2011
+ward	10403004	Property crime	2005-06	74	2011
+ward	10403004	Contact crime	2005-06	108	2011
+ward	10403004	Property crime	2006-07	52	2011
+ward	10403004	Contact crime	2006-07	96	2011
+ward	10403004	Property crime	2007-08	58	2011
+ward	10403004	Contact crime	2007-08	101	2011
+ward	10403004	Property crime	2008-09	53	2011
+ward	10403004	Contact crime	2008-09	102	2011
+ward	10403004	Property crime	2009-10	77	2011
+ward	10403004	Contact crime	2009-10	105	2011
+ward	10403004	Property crime	2010-11	83	2011
+ward	10403004	Contact crime	2010-11	97	2011
+ward	10403004	Property crime	2011-12	78	2011
+ward	10403004	Contact crime	2011-12	102	2011
+ward	10403004	Property crime	2012-13	88	2011
+ward	10403004	Contact crime	2012-13	99	2011
+ward	10403004	Property crime	2013-14	98	2011
+ward	10403004	Contact crime	2013-14	120	2011
+ward	10403004	Property crime	2014-15	95	2011
+ward	10403004	Contact crime	2014-15	124	2011
+ward	10403005	Property crime	2005-06	55	2011
+ward	10403005	Contact crime	2005-06	86	2011
+ward	10403005	Property crime	2006-07	24	2011
+ward	10403005	Contact crime	2006-07	78	2011
+ward	10403005	Property crime	2007-08	37	2011
+ward	10403005	Contact crime	2007-08	95	2011
+ward	10403005	Property crime	2008-09	36	2011
+ward	10403005	Contact crime	2008-09	93	2011
+ward	10403005	Property crime	2009-10	63	2011
+ward	10403005	Contact crime	2009-10	97	2011
+ward	10403005	Property crime	2010-11	70	2011
+ward	10403005	Contact crime	2010-11	86	2011
+ward	10403005	Property crime	2011-12	61	2011
+ward	10403005	Contact crime	2011-12	82	2011
+ward	10403005	Property crime	2012-13	59	2011
+ward	10403005	Contact crime	2012-13	78	2011
+ward	10403005	Property crime	2013-14	64	2011
+ward	10403005	Contact crime	2013-14	91	2011
+ward	10403005	Property crime	2014-15	63	2011
+ward	10403005	Contact crime	2014-15	98	2011
+ward	10403006	Property crime	2005-06	264	2011
+ward	10403006	Contact crime	2005-06	108	2011
+ward	10403006	Property crime	2006-07	266	2011
+ward	10403006	Contact crime	2006-07	113	2011
+ward	10403006	Property crime	2007-08	221	2011
+ward	10403006	Contact crime	2007-08	122	2011
+ward	10403006	Property crime	2008-09	144	2011
+ward	10403006	Contact crime	2008-09	107	2011
+ward	10403006	Property crime	2009-10	210	2011
+ward	10403006	Contact crime	2009-10	115	2011
+ward	10403006	Property crime	2010-11	220	2011
+ward	10403006	Contact crime	2010-11	100	2011
+ward	10403006	Property crime	2011-12	218	2011
+ward	10403006	Contact crime	2011-12	84	2011
+ward	10403006	Property crime	2012-13	277	2011
+ward	10403006	Contact crime	2012-13	115	2011
+ward	10403006	Property crime	2013-14	312	2011
+ward	10403006	Contact crime	2013-14	113	2011
+ward	10403006	Property crime	2014-15	237	2011
+ward	10403006	Contact crime	2014-15	107	2011
+ward	10403007	Property crime	2005-06	88	2011
+ward	10403007	Contact crime	2005-06	130	2011
+ward	10403007	Property crime	2006-07	71	2011
+ward	10403007	Contact crime	2006-07	114	2011
+ward	10403007	Property crime	2007-08	75	2011
+ward	10403007	Contact crime	2007-08	117	2011
+ward	10403007	Property crime	2008-09	69	2011
+ward	10403007	Contact crime	2008-09	114	2011
+ward	10403007	Property crime	2009-10	87	2011
+ward	10403007	Contact crime	2009-10	125	2011
+ward	10403007	Property crime	2010-11	92	2011
+ward	10403007	Contact crime	2010-11	127	2011
+ward	10403007	Property crime	2011-12	95	2011
+ward	10403007	Contact crime	2011-12	130	2011
+ward	10403007	Property crime	2012-13	116	2011
+ward	10403007	Contact crime	2012-13	128	2011
+ward	10403007	Property crime	2013-14	121	2011
+ward	10403007	Contact crime	2013-14	157	2011
+ward	10403007	Property crime	2014-15	119	2011
+ward	10403007	Contact crime	2014-15	159	2011
+ward	10403008	Property crime	2005-06	182	2011
+ward	10403008	Contact crime	2005-06	82	2011
+ward	10403008	Property crime	2006-07	182	2011
+ward	10403008	Contact crime	2006-07	84	2011
+ward	10403008	Property crime	2007-08	152	2011
+ward	10403008	Contact crime	2007-08	89	2011
+ward	10403008	Property crime	2008-09	101	2011
+ward	10403008	Contact crime	2008-09	80	2011
+ward	10403008	Property crime	2009-10	146	2011
+ward	10403008	Contact crime	2009-10	85	2011
+ward	10403008	Property crime	2010-11	153	2011
+ward	10403008	Contact crime	2010-11	75	2011
+ward	10403008	Property crime	2011-12	152	2011
+ward	10403008	Contact crime	2011-12	65	2011
+ward	10403008	Property crime	2012-13	192	2011
+ward	10403008	Contact crime	2012-13	86	2011
+ward	10403008	Property crime	2013-14	217	2011
+ward	10403008	Contact crime	2013-14	87	2011
+ward	10403008	Property crime	2014-15	167	2011
+ward	10403008	Contact crime	2014-15	83	2011
+ward	10403009	Property crime	2005-06	115	2011
+ward	10403009	Contact crime	2005-06	158	2011
+ward	10403009	Property crime	2006-07	96	2011
+ward	10403009	Contact crime	2006-07	138	2011
+ward	10403009	Property crime	2007-08	97	2011
+ward	10403009	Contact crime	2007-08	130	2011
+ward	10403009	Property crime	2008-09	85	2011
+ward	10403009	Contact crime	2008-09	136	2011
+ward	10403009	Property crime	2009-10	112	2011
+ward	10403009	Contact crime	2009-10	139	2011
+ward	10403009	Property crime	2010-11	117	2011
+ward	10403009	Contact crime	2010-11	130	2011
+ward	10403009	Property crime	2011-12	114	2011
+ward	10403009	Contact crime	2011-12	146	2011
+ward	10403009	Property crime	2012-13	141	2011
+ward	10403009	Contact crime	2012-13	144	2011
+ward	10403009	Property crime	2013-14	161	2011
+ward	10403009	Contact crime	2013-14	179	2011
+ward	10403009	Property crime	2014-15	154	2011
+ward	10403009	Contact crime	2014-15	180	2011
+ward	10403010	Property crime	2005-06	69	2011
+ward	10403010	Contact crime	2005-06	97	2011
+ward	10403010	Property crime	2006-07	58	2011
+ward	10403010	Contact crime	2006-07	84	2011
+ward	10403010	Property crime	2007-08	58	2011
+ward	10403010	Contact crime	2007-08	80	2011
+ward	10403010	Property crime	2008-09	52	2011
+ward	10403010	Contact crime	2008-09	83	2011
+ward	10403010	Property crime	2009-10	68	2011
+ward	10403010	Contact crime	2009-10	85	2011
+ward	10403010	Property crime	2010-11	71	2011
+ward	10403010	Contact crime	2010-11	79	2011
+ward	10403010	Property crime	2011-12	69	2011
+ward	10403010	Contact crime	2011-12	89	2011
+ward	10403010	Property crime	2012-13	85	2011
+ward	10403010	Contact crime	2012-13	88	2011
+ward	10403010	Property crime	2013-14	98	2011
+ward	10403010	Contact crime	2013-14	109	2011
+ward	10403010	Property crime	2014-15	94	2011
+ward	10403010	Contact crime	2014-15	110	2011
+ward	10403011	Property crime	2005-06	84	2011
+ward	10403011	Contact crime	2005-06	128	2011
+ward	10403011	Property crime	2006-07	67	2011
+ward	10403011	Contact crime	2006-07	112	2011
+ward	10403011	Property crime	2007-08	74	2011
+ward	10403011	Contact crime	2007-08	129	2011
+ward	10403011	Property crime	2008-09	71	2011
+ward	10403011	Contact crime	2008-09	114	2011
+ward	10403011	Property crime	2009-10	82	2011
+ward	10403011	Contact crime	2009-10	138	2011
+ward	10403011	Property crime	2010-11	87	2011
+ward	10403011	Contact crime	2010-11	155	2011
+ward	10403011	Property crime	2011-12	100	2011
+ward	10403011	Contact crime	2011-12	144	2011
+ward	10403011	Property crime	2012-13	121	2011
+ward	10403011	Contact crime	2012-13	141	2011
+ward	10403011	Property crime	2013-14	110	2011
+ward	10403011	Contact crime	2013-14	171	2011
+ward	10403011	Property crime	2014-15	112	2011
+ward	10403011	Contact crime	2014-15	173	2011
+ward	10403012	Property crime	2005-06	84	2011
+ward	10403012	Contact crime	2005-06	116	2011
+ward	10403012	Property crime	2006-07	70	2011
+ward	10403012	Contact crime	2006-07	101	2011
+ward	10403012	Property crime	2007-08	70	2011
+ward	10403012	Contact crime	2007-08	95	2011
+ward	10403012	Property crime	2008-09	62	2011
+ward	10403012	Contact crime	2008-09	100	2011
+ward	10403012	Property crime	2009-10	82	2011
+ward	10403012	Contact crime	2009-10	102	2011
+ward	10403012	Property crime	2010-11	86	2011
+ward	10403012	Contact crime	2010-11	95	2011
+ward	10403012	Property crime	2011-12	83	2011
+ward	10403012	Contact crime	2011-12	107	2011
+ward	10403012	Property crime	2012-13	103	2011
+ward	10403012	Contact crime	2012-13	106	2011
+ward	10403012	Property crime	2013-14	118	2011
+ward	10403012	Contact crime	2013-14	131	2011
+ward	10403012	Property crime	2014-15	113	2011
+ward	10403012	Contact crime	2014-15	132	2011
+ward	10403013	Property crime	2005-06	113	2011
+ward	10403013	Contact crime	2005-06	163	2011
+ward	10403013	Property crime	2006-07	93	2011
+ward	10403013	Contact crime	2006-07	142	2011
+ward	10403013	Property crime	2007-08	97	2011
+ward	10403013	Contact crime	2007-08	142	2011
+ward	10403013	Property crime	2008-09	87	2011
+ward	10403013	Contact crime	2008-09	142	2011
+ward	10403013	Property crime	2009-10	111	2011
+ward	10403013	Contact crime	2009-10	152	2011
+ward	10403013	Property crime	2010-11	117	2011
+ward	10403013	Contact crime	2010-11	152	2011
+ward	10403013	Property crime	2011-12	119	2011
+ward	10403013	Contact crime	2011-12	160	2011
+ward	10403013	Property crime	2012-13	146	2011
+ward	10403013	Contact crime	2012-13	157	2011
+ward	10403013	Property crime	2013-14	157	2011
+ward	10403013	Contact crime	2013-14	194	2011
+ward	10403013	Property crime	2014-15	153	2011
+ward	10403013	Contact crime	2014-15	195	2011
+ward	10403014	Property crime	2005-06	97	2011
+ward	10403014	Contact crime	2005-06	151	2011
+ward	10403014	Property crime	2006-07	44	2011
+ward	10403014	Contact crime	2006-07	136	2011
+ward	10403014	Property crime	2007-08	66	2011
+ward	10403014	Contact crime	2007-08	165	2011
+ward	10403014	Property crime	2008-09	64	2011
+ward	10403014	Contact crime	2008-09	162	2011
+ward	10403014	Property crime	2009-10	110	2011
+ward	10403014	Contact crime	2009-10	168	2011
+ward	10403014	Property crime	2010-11	122	2011
+ward	10403014	Contact crime	2010-11	151	2011
+ward	10403014	Property crime	2011-12	108	2011
+ward	10403014	Contact crime	2011-12	145	2011
+ward	10403014	Property crime	2012-13	105	2011
+ward	10403014	Contact crime	2012-13	137	2011
+ward	10403014	Property crime	2013-14	114	2011
+ward	10403014	Contact crime	2013-14	160	2011
+ward	10403014	Property crime	2014-15	112	2011
+ward	10403014	Contact crime	2014-15	172	2011
+ward	10404001	Property crime	2005-06	249	2011
+ward	10404001	Contact crime	2005-06	141	2011
+ward	10404001	Property crime	2006-07	213	2011
+ward	10404001	Contact crime	2006-07	134	2011
+ward	10404001	Property crime	2007-08	238	2011
+ward	10404001	Contact crime	2007-08	102	2011
+ward	10404001	Property crime	2008-09	213	2011
+ward	10404001	Contact crime	2008-09	97	2011
+ward	10404001	Property crime	2009-10	232	2011
+ward	10404001	Contact crime	2009-10	93	2011
+ward	10404001	Property crime	2010-11	288	2011
+ward	10404001	Contact crime	2010-11	129	2011
+ward	10404001	Property crime	2011-12	280	2011
+ward	10404001	Contact crime	2011-12	134	2011
+ward	10404001	Property crime	2012-13	353	2011
+ward	10404001	Contact crime	2012-13	147	2011
+ward	10404001	Property crime	2013-14	327	2011
+ward	10404001	Contact crime	2013-14	148	2011
+ward	10404001	Property crime	2014-15	259	2011
+ward	10404001	Contact crime	2014-15	143	2011
+ward	10404002	Property crime	2005-06	105	2011
+ward	10404002	Contact crime	2005-06	59	2011
+ward	10404002	Property crime	2006-07	90	2011
+ward	10404002	Contact crime	2006-07	57	2011
+ward	10404002	Property crime	2007-08	100	2011
+ward	10404002	Contact crime	2007-08	43	2011
+ward	10404002	Property crime	2008-09	90	2011
+ward	10404002	Contact crime	2008-09	41	2011
+ward	10404002	Property crime	2009-10	98	2011
+ward	10404002	Contact crime	2009-10	39	2011
+ward	10404002	Property crime	2010-11	122	2011
+ward	10404002	Contact crime	2010-11	54	2011
+ward	10404002	Property crime	2011-12	118	2011
+ward	10404002	Contact crime	2011-12	57	2011
+ward	10404002	Property crime	2012-13	149	2011
+ward	10404002	Contact crime	2012-13	62	2011
+ward	10404002	Property crime	2013-14	138	2011
+ward	10404002	Contact crime	2013-14	62	2011
+ward	10404002	Property crime	2014-15	109	2011
+ward	10404002	Contact crime	2014-15	60	2011
+ward	10404003	Property crime	2005-06	154	2011
+ward	10404003	Contact crime	2005-06	87	2011
+ward	10404003	Property crime	2006-07	132	2011
+ward	10404003	Contact crime	2006-07	83	2011
+ward	10404003	Property crime	2007-08	147	2011
+ward	10404003	Contact crime	2007-08	63	2011
+ward	10404003	Property crime	2008-09	132	2011
+ward	10404003	Contact crime	2008-09	60	2011
+ward	10404003	Property crime	2009-10	144	2011
+ward	10404003	Contact crime	2009-10	58	2011
+ward	10404003	Property crime	2010-11	178	2011
+ward	10404003	Contact crime	2010-11	80	2011
+ward	10404003	Property crime	2011-12	173	2011
+ward	10404003	Contact crime	2011-12	83	2011
+ward	10404003	Property crime	2012-13	218	2011
+ward	10404003	Contact crime	2012-13	91	2011
+ward	10404003	Property crime	2013-14	202	2011
+ward	10404003	Contact crime	2013-14	91	2011
+ward	10404003	Property crime	2014-15	160	2011
+ward	10404003	Contact crime	2014-15	89	2011
+ward	10404004	Property crime	2005-06	225	2011
+ward	10404004	Contact crime	2005-06	131	2011
+ward	10404004	Property crime	2006-07	193	2011
+ward	10404004	Contact crime	2006-07	125	2011
+ward	10404004	Property crime	2007-08	216	2011
+ward	10404004	Contact crime	2007-08	97	2011
+ward	10404004	Property crime	2008-09	194	2011
+ward	10404004	Contact crime	2008-09	93	2011
+ward	10404004	Property crime	2009-10	211	2011
+ward	10404004	Contact crime	2009-10	89	2011
+ward	10404004	Property crime	2010-11	261	2011
+ward	10404004	Contact crime	2010-11	122	2011
+ward	10404004	Property crime	2011-12	254	2011
+ward	10404004	Contact crime	2011-12	127	2011
+ward	10404004	Property crime	2012-13	320	2011
+ward	10404004	Contact crime	2012-13	139	2011
+ward	10404004	Property crime	2013-14	297	2011
+ward	10404004	Contact crime	2013-14	139	2011
+ward	10404004	Property crime	2014-15	236	2011
+ward	10404004	Contact crime	2014-15	136	2011
+ward	10404005	Property crime	2005-06	128	2011
+ward	10404005	Contact crime	2005-06	110	2011
+ward	10404005	Property crime	2006-07	114	2011
+ward	10404005	Contact crime	2006-07	114	2011
+ward	10404005	Property crime	2007-08	129	2011
+ward	10404005	Contact crime	2007-08	85	2011
+ward	10404005	Property crime	2008-09	114	2011
+ward	10404005	Contact crime	2008-09	80	2011
+ward	10404005	Property crime	2009-10	125	2011
+ward	10404005	Contact crime	2009-10	81	2011
+ward	10404005	Property crime	2010-11	156	2011
+ward	10404005	Contact crime	2010-11	113	2011
+ward	10404005	Property crime	2011-12	163	2011
+ward	10404005	Contact crime	2011-12	131	2011
+ward	10404005	Property crime	2012-13	191	2011
+ward	10404005	Contact crime	2012-13	143	2011
+ward	10404005	Property crime	2013-14	185	2011
+ward	10404005	Contact crime	2013-14	136	2011
+ward	10404005	Property crime	2014-15	151	2011
+ward	10404005	Contact crime	2014-15	132	2011
+ward	10404006	Property crime	2005-06	99	2011
+ward	10404006	Contact crime	2005-06	223	2011
+ward	10404006	Property crime	2006-07	102	2011
+ward	10404006	Contact crime	2006-07	253	2011
+ward	10404006	Property crime	2007-08	123	2011
+ward	10404006	Contact crime	2007-08	186	2011
+ward	10404006	Property crime	2008-09	102	2011
+ward	10404006	Contact crime	2008-09	171	2011
+ward	10404006	Property crime	2009-10	117	2011
+ward	10404006	Contact crime	2009-10	183	2011
+ward	10404006	Property crime	2010-11	148	2011
+ward	10404006	Contact crime	2010-11	258	2011
+ward	10404006	Property crime	2011-12	193	2011
+ward	10404006	Contact crime	2011-12	333	2011
+ward	10404006	Property crime	2012-13	182	2011
+ward	10404006	Contact crime	2012-13	360	2011
+ward	10404006	Property crime	2013-14	203	2011
+ward	10404006	Contact crime	2013-14	327	2011
+ward	10404006	Property crime	2014-15	181	2011
+ward	10404006	Contact crime	2014-15	317	2011
+ward	10404007	Property crime	2005-06	78	2011
+ward	10404007	Contact crime	2005-06	178	2011
+ward	10404007	Property crime	2006-07	81	2011
+ward	10404007	Contact crime	2006-07	202	2011
+ward	10404007	Property crime	2007-08	97	2011
+ward	10404007	Contact crime	2007-08	149	2011
+ward	10404007	Property crime	2008-09	81	2011
+ward	10404007	Contact crime	2008-09	137	2011
+ward	10404007	Property crime	2009-10	93	2011
+ward	10404007	Contact crime	2009-10	147	2011
+ward	10404007	Property crime	2010-11	117	2011
+ward	10404007	Contact crime	2010-11	206	2011
+ward	10404007	Property crime	2011-12	153	2011
+ward	10404007	Contact crime	2011-12	266	2011
+ward	10404007	Property crime	2012-13	145	2011
+ward	10404007	Contact crime	2012-13	287	2011
+ward	10404007	Property crime	2013-14	162	2011
+ward	10404007	Contact crime	2013-14	261	2011
+ward	10404007	Property crime	2014-15	144	2011
+ward	10404007	Contact crime	2014-15	254	2011
+ward	10404008	Property crime	2005-06	71	2011
+ward	10404008	Contact crime	2005-06	162	2011
+ward	10404008	Property crime	2006-07	74	2011
+ward	10404008	Contact crime	2006-07	184	2011
+ward	10404008	Property crime	2007-08	89	2011
+ward	10404008	Contact crime	2007-08	135	2011
+ward	10404008	Property crime	2008-09	74	2011
+ward	10404008	Contact crime	2008-09	125	2011
+ward	10404008	Property crime	2009-10	85	2011
+ward	10404008	Contact crime	2009-10	134	2011
+ward	10404008	Property crime	2010-11	107	2011
+ward	10404008	Contact crime	2010-11	188	2011
+ward	10404008	Property crime	2011-12	140	2011
+ward	10404008	Contact crime	2011-12	242	2011
+ward	10404008	Property crime	2012-13	132	2011
+ward	10404008	Contact crime	2012-13	262	2011
+ward	10404008	Property crime	2013-14	147	2011
+ward	10404008	Contact crime	2013-14	238	2011
+ward	10404008	Property crime	2014-15	131	2011
+ward	10404008	Contact crime	2014-15	231	2011
+ward	10404009	Property crime	2005-06	31	2011
+ward	10404009	Contact crime	2005-06	76	2011
+ward	10404009	Property crime	2006-07	38	2011
+ward	10404009	Contact crime	2006-07	94	2011
+ward	10404009	Property crime	2007-08	46	2011
+ward	10404009	Contact crime	2007-08	116	2011
+ward	10404009	Property crime	2008-09	60	2011
+ward	10404009	Contact crime	2008-09	122	2011
+ward	10404009	Property crime	2009-10	42	2011
+ward	10404009	Contact crime	2009-10	102	2011
+ward	10404009	Property crime	2010-11	47	2011
+ward	10404009	Contact crime	2010-11	120	2011
+ward	10404009	Property crime	2011-12	48	2011
+ward	10404009	Contact crime	2011-12	125	2011
+ward	10404009	Property crime	2012-13	55	2011
+ward	10404009	Contact crime	2012-13	132	2011
+ward	10404009	Property crime	2013-14	61	2011
+ward	10404009	Contact crime	2013-14	134	2011
+ward	10404009	Property crime	2014-15	64	2011
+ward	10404009	Contact crime	2014-15	144	2011
+ward	10404010	Property crime	2005-06	14	2011
+ward	10404010	Contact crime	2005-06	34	2011
+ward	10404010	Property crime	2006-07	17	2011
+ward	10404010	Contact crime	2006-07	42	2011
+ward	10404010	Property crime	2007-08	20	2011
+ward	10404010	Contact crime	2007-08	51	2011
+ward	10404010	Property crime	2008-09	26	2011
+ward	10404010	Contact crime	2008-09	54	2011
+ward	10404010	Property crime	2009-10	19	2011
+ward	10404010	Contact crime	2009-10	45	2011
+ward	10404010	Property crime	2010-11	21	2011
+ward	10404010	Contact crime	2010-11	53	2011
+ward	10404010	Property crime	2011-12	21	2011
+ward	10404010	Contact crime	2011-12	55	2011
+ward	10404010	Property crime	2012-13	24	2011
+ward	10404010	Contact crime	2012-13	58	2011
+ward	10404010	Property crime	2013-14	27	2011
+ward	10404010	Contact crime	2013-14	59	2011
+ward	10404010	Property crime	2014-15	28	2011
+ward	10404010	Contact crime	2014-15	63	2011
+ward	10404011	Property crime	2005-06	53	2011
+ward	10404011	Contact crime	2005-06	99	2011
+ward	10404011	Property crime	2006-07	59	2011
+ward	10404011	Contact crime	2006-07	119	2011
+ward	10404011	Property crime	2007-08	70	2011
+ward	10404011	Contact crime	2007-08	141	2011
+ward	10404011	Property crime	2008-09	83	2011
+ward	10404011	Contact crime	2008-09	147	2011
+ward	10404011	Property crime	2009-10	65	2011
+ward	10404011	Contact crime	2009-10	125	2011
+ward	10404011	Property crime	2010-11	74	2011
+ward	10404011	Contact crime	2010-11	148	2011
+ward	10404011	Property crime	2011-12	76	2011
+ward	10404011	Contact crime	2011-12	155	2011
+ward	10404011	Property crime	2012-13	88	2011
+ward	10404011	Contact crime	2012-13	165	2011
+ward	10404011	Property crime	2013-14	93	2011
+ward	10404011	Contact crime	2013-14	166	2011
+ward	10404011	Property crime	2014-15	92	2011
+ward	10404011	Contact crime	2014-15	177	2011
+ward	10404012	Property crime	2005-06	24	2011
+ward	10404012	Contact crime	2005-06	59	2011
+ward	10404012	Property crime	2006-07	30	2011
+ward	10404012	Contact crime	2006-07	72	2011
+ward	10404012	Property crime	2007-08	35	2011
+ward	10404012	Contact crime	2007-08	88	2011
+ward	10404012	Property crime	2008-09	46	2011
+ward	10404012	Contact crime	2008-09	93	2011
+ward	10404012	Property crime	2009-10	33	2011
+ward	10404012	Contact crime	2009-10	78	2011
+ward	10404012	Property crime	2010-11	36	2011
+ward	10404012	Contact crime	2010-11	91	2011
+ward	10404012	Property crime	2011-12	37	2011
+ward	10404012	Contact crime	2011-12	95	2011
+ward	10404012	Property crime	2012-13	42	2011
+ward	10404012	Contact crime	2012-13	101	2011
+ward	10404012	Property crime	2013-14	47	2011
+ward	10404012	Contact crime	2013-14	103	2011
+ward	10404012	Property crime	2014-15	49	2011
+ward	10404012	Contact crime	2014-15	110	2011
+ward	10404013	Property crime	2005-06	38	2011
+ward	10404013	Contact crime	2005-06	92	2011
+ward	10404013	Property crime	2006-07	47	2011
+ward	10404013	Contact crime	2006-07	113	2011
+ward	10404013	Property crime	2007-08	56	2011
+ward	10404013	Contact crime	2007-08	138	2011
+ward	10404013	Property crime	2008-09	72	2011
+ward	10404013	Contact crime	2008-09	145	2011
+ward	10404013	Property crime	2009-10	52	2011
+ward	10404013	Contact crime	2009-10	122	2011
+ward	10404013	Property crime	2010-11	58	2011
+ward	10404013	Contact crime	2010-11	143	2011
+ward	10404013	Property crime	2011-12	59	2011
+ward	10404013	Contact crime	2011-12	149	2011
+ward	10404013	Property crime	2012-13	68	2011
+ward	10404013	Contact crime	2012-13	158	2011
+ward	10404013	Property crime	2013-14	75	2011
+ward	10404013	Contact crime	2013-14	160	2011
+ward	10404013	Property crime	2014-15	77	2011
+ward	10404013	Contact crime	2014-15	171	2011
+ward	10404014	Property crime	2005-06	104	2011
+ward	10404014	Contact crime	2005-06	194	2011
+ward	10404014	Property crime	2006-07	86	2011
+ward	10404014	Contact crime	2006-07	149	2011
+ward	10404014	Property crime	2007-08	89	2011
+ward	10404014	Contact crime	2007-08	136	2011
+ward	10404014	Property crime	2008-09	87	2011
+ward	10404014	Contact crime	2008-09	124	2011
+ward	10404014	Property crime	2009-10	91	2011
+ward	10404014	Contact crime	2009-10	147	2011
+ward	10404014	Property crime	2010-11	99	2011
+ward	10404014	Contact crime	2010-11	133	2011
+ward	10404014	Property crime	2011-12	107	2011
+ward	10404014	Contact crime	2011-12	114	2011
+ward	10404014	Property crime	2012-13	129	2011
+ward	10404014	Contact crime	2012-13	156	2011
+ward	10404014	Property crime	2013-14	147	2011
+ward	10404014	Contact crime	2013-14	185	2011
+ward	10404014	Property crime	2014-15	193	2011
+ward	10404014	Contact crime	2014-15	228	2011
+ward	10404015	Property crime	2005-06	30	2011
+ward	10404015	Contact crime	2005-06	74	2011
+ward	10404015	Property crime	2006-07	37	2011
+ward	10404015	Contact crime	2006-07	92	2011
+ward	10404015	Property crime	2007-08	45	2011
+ward	10404015	Contact crime	2007-08	113	2011
+ward	10404015	Property crime	2008-09	58	2011
+ward	10404015	Contact crime	2008-09	118	2011
+ward	10404015	Property crime	2009-10	41	2011
+ward	10404015	Contact crime	2009-10	99	2011
+ward	10404015	Property crime	2010-11	46	2011
+ward	10404015	Contact crime	2010-11	116	2011
+ward	10404015	Property crime	2011-12	47	2011
+ward	10404015	Contact crime	2011-12	121	2011
+ward	10404015	Property crime	2012-13	54	2011
+ward	10404015	Contact crime	2012-13	129	2011
+ward	10404015	Property crime	2013-14	59	2011
+ward	10404015	Contact crime	2013-14	130	2011
+ward	10404015	Property crime	2014-15	62	2011
+ward	10404015	Contact crime	2014-15	139	2011
+ward	10404016	Property crime	2005-06	120	2011
+ward	10404016	Contact crime	2005-06	224	2011
+ward	10404016	Property crime	2006-07	99	2011
+ward	10404016	Contact crime	2006-07	172	2011
+ward	10404016	Property crime	2007-08	103	2011
+ward	10404016	Contact crime	2007-08	158	2011
+ward	10404016	Property crime	2008-09	101	2011
+ward	10404016	Contact crime	2008-09	143	2011
+ward	10404016	Property crime	2009-10	105	2011
+ward	10404016	Contact crime	2009-10	170	2011
+ward	10404016	Property crime	2010-11	115	2011
+ward	10404016	Contact crime	2010-11	154	2011
+ward	10404016	Property crime	2011-12	123	2011
+ward	10404016	Contact crime	2011-12	132	2011
+ward	10404016	Property crime	2012-13	149	2011
+ward	10404016	Contact crime	2012-13	180	2011
+ward	10404016	Property crime	2013-14	170	2011
+ward	10404016	Contact crime	2013-14	214	2011
+ward	10404016	Property crime	2014-15	223	2011
+ward	10404016	Contact crime	2014-15	264	2011
+ward	10404017	Property crime	2005-06	88	2011
+ward	10404017	Contact crime	2005-06	198	2011
+ward	10404017	Property crime	2006-07	91	2011
+ward	10404017	Contact crime	2006-07	224	2011
+ward	10404017	Property crime	2007-08	109	2011
+ward	10404017	Contact crime	2007-08	165	2011
+ward	10404017	Property crime	2008-09	91	2011
+ward	10404017	Contact crime	2008-09	152	2011
+ward	10404017	Property crime	2009-10	104	2011
+ward	10404017	Contact crime	2009-10	163	2011
+ward	10404017	Property crime	2010-11	131	2011
+ward	10404017	Contact crime	2010-11	229	2011
+ward	10404017	Property crime	2011-12	171	2011
+ward	10404017	Contact crime	2011-12	295	2011
+ward	10404017	Property crime	2012-13	162	2011
+ward	10404017	Contact crime	2012-13	319	2011
+ward	10404017	Property crime	2013-14	180	2011
+ward	10404017	Contact crime	2013-14	290	2011
+ward	10404017	Property crime	2014-15	160	2011
+ward	10404017	Contact crime	2014-15	281	2011
+ward	10404018	Property crime	2005-06	123	2011
+ward	10404018	Contact crime	2005-06	70	2011
+ward	10404018	Property crime	2006-07	105	2011
+ward	10404018	Contact crime	2006-07	66	2011
+ward	10404018	Property crime	2007-08	117	2011
+ward	10404018	Contact crime	2007-08	51	2011
+ward	10404018	Property crime	2008-09	105	2011
+ward	10404018	Contact crime	2008-09	48	2011
+ward	10404018	Property crime	2009-10	115	2011
+ward	10404018	Contact crime	2009-10	46	2011
+ward	10404018	Property crime	2010-11	143	2011
+ward	10404018	Contact crime	2010-11	64	2011
+ward	10404018	Property crime	2011-12	138	2011
+ward	10404018	Contact crime	2011-12	66	2011
+ward	10404018	Property crime	2012-13	175	2011
+ward	10404018	Contact crime	2012-13	73	2011
+ward	10404018	Property crime	2013-14	161	2011
+ward	10404018	Contact crime	2013-14	73	2011
+ward	10404018	Property crime	2014-15	128	2011
+ward	10404018	Contact crime	2014-15	71	2011
+ward	10404019	Property crime	2005-06	245	2011
+ward	10404019	Contact crime	2005-06	139	2011
+ward	10404019	Property crime	2006-07	209	2011
+ward	10404019	Contact crime	2006-07	132	2011
+ward	10404019	Property crime	2007-08	234	2011
+ward	10404019	Contact crime	2007-08	101	2011
+ward	10404019	Property crime	2008-09	209	2011
+ward	10404019	Contact crime	2008-09	96	2011
+ward	10404019	Property crime	2009-10	229	2011
+ward	10404019	Contact crime	2009-10	92	2011
+ward	10404019	Property crime	2010-11	283	2011
+ward	10404019	Contact crime	2010-11	127	2011
+ward	10404019	Property crime	2011-12	275	2011
+ward	10404019	Contact crime	2011-12	132	2011
+ward	10404019	Property crime	2012-13	347	2011
+ward	10404019	Contact crime	2012-13	145	2011
+ward	10404019	Property crime	2013-14	321	2011
+ward	10404019	Contact crime	2013-14	145	2011
+ward	10404019	Property crime	2014-15	255	2011
+ward	10404019	Contact crime	2014-15	141	2011
+ward	10404020	Property crime	2005-06	66	2011
+ward	10404020	Contact crime	2005-06	151	2011
+ward	10404020	Property crime	2006-07	69	2011
+ward	10404020	Contact crime	2006-07	171	2011
+ward	10404020	Property crime	2007-08	83	2011
+ward	10404020	Contact crime	2007-08	126	2011
+ward	10404020	Property crime	2008-09	69	2011
+ward	10404020	Contact crime	2008-09	116	2011
+ward	10404020	Property crime	2009-10	79	2011
+ward	10404020	Contact crime	2009-10	124	2011
+ward	10404020	Property crime	2010-11	100	2011
+ward	10404020	Contact crime	2010-11	175	2011
+ward	10404020	Property crime	2011-12	130	2011
+ward	10404020	Contact crime	2011-12	226	2011
+ward	10404020	Property crime	2012-13	123	2011
+ward	10404020	Contact crime	2012-13	244	2011
+ward	10404020	Property crime	2013-14	137	2011
+ward	10404020	Contact crime	2013-14	222	2011
+ward	10404020	Property crime	2014-15	122	2011
+ward	10404020	Contact crime	2014-15	215	2011
+ward	10404021	Property crime	2005-06	58	2011
+ward	10404021	Contact crime	2005-06	125	2011
+ward	10404021	Property crime	2006-07	69	2011
+ward	10404021	Contact crime	2006-07	153	2011
+ward	10404021	Property crime	2007-08	82	2011
+ward	10404021	Contact crime	2007-08	185	2011
+ward	10404021	Property crime	2008-09	102	2011
+ward	10404021	Contact crime	2008-09	194	2011
+ward	10404021	Property crime	2009-10	75	2011
+ward	10404021	Contact crime	2009-10	164	2011
+ward	10404021	Property crime	2010-11	85	2011
+ward	10404021	Contact crime	2010-11	193	2011
+ward	10404021	Property crime	2011-12	87	2011
+ward	10404021	Contact crime	2011-12	200	2011
+ward	10404021	Property crime	2012-13	100	2011
+ward	10404021	Contact crime	2012-13	213	2011
+ward	10404021	Property crime	2013-14	108	2011
+ward	10404021	Contact crime	2013-14	216	2011
+ward	10404021	Property crime	2014-15	110	2011
+ward	10404021	Contact crime	2014-15	230	2011
+ward	10404022	Property crime	2005-06	195	2011
+ward	10404022	Contact crime	2005-06	136	2011
+ward	10404022	Property crime	2006-07	156	2011
+ward	10404022	Contact crime	2006-07	127	2011
+ward	10404022	Property crime	2007-08	179	2011
+ward	10404022	Contact crime	2007-08	112	2011
+ward	10404022	Property crime	2008-09	161	2011
+ward	10404022	Contact crime	2008-09	108	2011
+ward	10404022	Property crime	2009-10	187	2011
+ward	10404022	Contact crime	2009-10	107	2011
+ward	10404022	Property crime	2010-11	228	2011
+ward	10404022	Contact crime	2010-11	127	2011
+ward	10404022	Property crime	2011-12	218	2011
+ward	10404022	Contact crime	2011-12	128	2011
+ward	10404022	Property crime	2012-13	268	2011
+ward	10404022	Contact crime	2012-13	136	2011
+ward	10404022	Property crime	2013-14	252	2011
+ward	10404022	Contact crime	2013-14	142	2011
+ward	10404022	Property crime	2014-15	207	2011
+ward	10404022	Contact crime	2014-15	143	2011
+ward	10404023	Property crime	2005-06	191	2011
+ward	10404023	Contact crime	2005-06	166	2011
+ward	10404023	Property crime	2006-07	160	2011
+ward	10404023	Contact crime	2006-07	143	2011
+ward	10404023	Property crime	2007-08	177	2011
+ward	10404023	Contact crime	2007-08	121	2011
+ward	10404023	Property crime	2008-09	161	2011
+ward	10404023	Contact crime	2008-09	113	2011
+ward	10404023	Property crime	2009-10	177	2011
+ward	10404023	Contact crime	2009-10	120	2011
+ward	10404023	Property crime	2010-11	213	2011
+ward	10404023	Contact crime	2010-11	135	2011
+ward	10404023	Property crime	2011-12	211	2011
+ward	10404023	Contact crime	2011-12	130	2011
+ward	10404023	Property crime	2012-13	262	2011
+ward	10404023	Contact crime	2012-13	154	2011
+ward	10404023	Property crime	2013-14	254	2011
+ward	10404023	Contact crime	2013-14	166	2011
+ward	10404023	Property crime	2014-15	232	2011
+ward	10404023	Contact crime	2014-15	181	2011
+ward	10404024	Property crime	2005-06	96	2011
+ward	10404024	Contact crime	2005-06	188	2011
+ward	10404024	Property crime	2006-07	103	2011
+ward	10404024	Contact crime	2006-07	179	2011
+ward	10404024	Property crime	2007-08	99	2011
+ward	10404024	Contact crime	2007-08	231	2011
+ward	10404024	Property crime	2008-09	93	2011
+ward	10404024	Contact crime	2008-09	190	2011
+ward	10404024	Property crime	2009-10	79	2011
+ward	10404024	Contact crime	2009-10	180	2011
+ward	10404024	Property crime	2010-11	87	2011
+ward	10404024	Contact crime	2010-11	174	2011
+ward	10404024	Property crime	2011-12	91	2011
+ward	10404024	Contact crime	2011-12	174	2011
+ward	10404024	Property crime	2012-13	115	2011
+ward	10404024	Contact crime	2012-13	164	2011
+ward	10404024	Property crime	2013-14	85	2011
+ward	10404024	Contact crime	2013-14	147	2011
+ward	10404024	Property crime	2014-15	80	2011
+ward	10404024	Contact crime	2014-15	141	2011
+ward	10404025	Property crime	2005-06	131	2011
+ward	10404025	Contact crime	2005-06	201	2011
+ward	10404025	Property crime	2006-07	132	2011
+ward	10404025	Contact crime	2006-07	191	2011
+ward	10404025	Property crime	2007-08	133	2011
+ward	10404025	Contact crime	2007-08	236	2011
+ward	10404025	Property crime	2008-09	123	2011
+ward	10404025	Contact crime	2008-09	196	2011
+ward	10404025	Property crime	2009-10	112	2011
+ward	10404025	Contact crime	2009-10	186	2011
+ward	10404025	Property crime	2010-11	130	2011
+ward	10404025	Contact crime	2010-11	186	2011
+ward	10404025	Property crime	2011-12	132	2011
+ward	10404025	Contact crime	2011-12	187	2011
+ward	10404025	Property crime	2012-13	166	2011
+ward	10404025	Contact crime	2012-13	179	2011
+ward	10404025	Property crime	2013-14	134	2011
+ward	10404025	Contact crime	2013-14	163	2011
+ward	10404025	Property crime	2014-15	118	2011
+ward	10404025	Contact crime	2014-15	157	2011
+ward	10405001	Property crime	2005-06	56	2011
+ward	10405001	Contact crime	2005-06	117	2011
+ward	10405001	Property crime	2006-07	50	2011
+ward	10405001	Contact crime	2006-07	92	2011
+ward	10405001	Property crime	2007-08	44	2011
+ward	10405001	Contact crime	2007-08	75	2011
+ward	10405001	Property crime	2008-09	50	2011
+ward	10405001	Contact crime	2008-09	69	2011
+ward	10405001	Property crime	2009-10	69	2011
+ward	10405001	Contact crime	2009-10	80	2011
+ward	10405001	Property crime	2010-11	74	2011
+ward	10405001	Contact crime	2010-11	92	2011
+ward	10405001	Property crime	2011-12	85	2011
+ward	10405001	Contact crime	2011-12	110	2011
+ward	10405001	Property crime	2012-13	113	2011
+ward	10405001	Contact crime	2012-13	122	2011
+ward	10405001	Property crime	2013-14	111	2011
+ward	10405001	Contact crime	2013-14	133	2011
+ward	10405001	Property crime	2014-15	100	2011
+ward	10405001	Contact crime	2014-15	144	2011
+ward	10405002	Property crime	2005-06	58	2011
+ward	10405002	Contact crime	2005-06	122	2011
+ward	10405002	Property crime	2006-07	52	2011
+ward	10405002	Contact crime	2006-07	96	2011
+ward	10405002	Property crime	2007-08	46	2011
+ward	10405002	Contact crime	2007-08	78	2011
+ward	10405002	Property crime	2008-09	52	2011
+ward	10405002	Contact crime	2008-09	72	2011
+ward	10405002	Property crime	2009-10	72	2011
+ward	10405002	Contact crime	2009-10	84	2011
+ward	10405002	Property crime	2010-11	78	2011
+ward	10405002	Contact crime	2010-11	96	2011
+ward	10405002	Property crime	2011-12	88	2011
+ward	10405002	Contact crime	2011-12	114	2011
+ward	10405002	Property crime	2012-13	118	2011
+ward	10405002	Contact crime	2012-13	128	2011
+ward	10405002	Property crime	2013-14	116	2011
+ward	10405002	Contact crime	2013-14	139	2011
+ward	10405002	Property crime	2014-15	104	2011
+ward	10405002	Contact crime	2014-15	150	2011
+ward	10405003	Property crime	2005-06	73	2011
+ward	10405003	Contact crime	2005-06	154	2011
+ward	10405003	Property crime	2006-07	65	2011
+ward	10405003	Contact crime	2006-07	121	2011
+ward	10405003	Property crime	2007-08	58	2011
+ward	10405003	Contact crime	2007-08	98	2011
+ward	10405003	Property crime	2008-09	66	2011
+ward	10405003	Contact crime	2008-09	90	2011
+ward	10405003	Property crime	2009-10	91	2011
+ward	10405003	Contact crime	2009-10	105	2011
+ward	10405003	Property crime	2010-11	98	2011
+ward	10405003	Contact crime	2010-11	121	2011
+ward	10405003	Property crime	2011-12	112	2011
+ward	10405003	Contact crime	2011-12	144	2011
+ward	10405003	Property crime	2012-13	149	2011
+ward	10405003	Contact crime	2012-13	161	2011
+ward	10405003	Property crime	2013-14	146	2011
+ward	10405003	Contact crime	2013-14	175	2011
+ward	10405003	Property crime	2014-15	132	2011
+ward	10405003	Contact crime	2014-15	189	2011
+ward	10405004	Property crime	2005-06	49	2011
+ward	10405004	Contact crime	2005-06	102	2011
+ward	10405004	Property crime	2006-07	43	2011
+ward	10405004	Contact crime	2006-07	80	2011
+ward	10405004	Property crime	2007-08	39	2011
+ward	10405004	Contact crime	2007-08	65	2011
+ward	10405004	Property crime	2008-09	44	2011
+ward	10405004	Contact crime	2008-09	60	2011
+ward	10405004	Property crime	2009-10	61	2011
+ward	10405004	Contact crime	2009-10	70	2011
+ward	10405004	Property crime	2010-11	65	2011
+ward	10405004	Contact crime	2010-11	80	2011
+ward	10405004	Property crime	2011-12	74	2011
+ward	10405004	Contact crime	2011-12	96	2011
+ward	10405004	Property crime	2012-13	99	2011
+ward	10405004	Contact crime	2012-13	107	2011
+ward	10405004	Property crime	2013-14	97	2011
+ward	10405004	Contact crime	2013-14	116	2011
+ward	10405004	Property crime	2014-15	87	2011
+ward	10405004	Contact crime	2014-15	126	2011
+ward	10405005	Property crime	2005-06	64	2011
+ward	10405005	Contact crime	2005-06	135	2011
+ward	10405005	Property crime	2006-07	57	2011
+ward	10405005	Contact crime	2006-07	107	2011
+ward	10405005	Property crime	2007-08	51	2011
+ward	10405005	Contact crime	2007-08	86	2011
+ward	10405005	Property crime	2008-09	58	2011
+ward	10405005	Contact crime	2008-09	79	2011
+ward	10405005	Property crime	2009-10	80	2011
+ward	10405005	Contact crime	2009-10	93	2011
+ward	10405005	Property crime	2010-11	86	2011
+ward	10405005	Contact crime	2010-11	107	2011
+ward	10405005	Property crime	2011-12	98	2011
+ward	10405005	Contact crime	2011-12	127	2011
+ward	10405005	Property crime	2012-13	131	2011
+ward	10405005	Contact crime	2012-13	142	2011
+ward	10405005	Property crime	2013-14	128	2011
+ward	10405005	Contact crime	2013-14	154	2011
+ward	10405005	Property crime	2014-15	116	2011
+ward	10405005	Contact crime	2014-15	166	2011
+ward	10405006	Property crime	2005-06	102	2011
+ward	10405006	Contact crime	2005-06	215	2011
+ward	10405006	Property crime	2006-07	92	2011
+ward	10405006	Contact crime	2006-07	170	2011
+ward	10405006	Property crime	2007-08	82	2011
+ward	10405006	Contact crime	2007-08	138	2011
+ward	10405006	Property crime	2008-09	92	2011
+ward	10405006	Contact crime	2008-09	126	2011
+ward	10405006	Property crime	2009-10	128	2011
+ward	10405006	Contact crime	2009-10	148	2011
+ward	10405006	Property crime	2010-11	137	2011
+ward	10405006	Contact crime	2010-11	170	2011
+ward	10405006	Property crime	2011-12	156	2011
+ward	10405006	Contact crime	2011-12	202	2011
+ward	10405006	Property crime	2012-13	209	2011
+ward	10405006	Contact crime	2012-13	226	2011
+ward	10405006	Property crime	2013-14	205	2011
+ward	10405006	Contact crime	2013-14	246	2011
+ward	10405006	Property crime	2014-15	184	2011
+ward	10405006	Contact crime	2014-15	265	2011
+ward	10405007	Property crime	2005-06	68	2011
+ward	10405007	Contact crime	2005-06	144	2011
+ward	10405007	Property crime	2006-07	61	2011
+ward	10405007	Contact crime	2006-07	113	2011
+ward	10405007	Property crime	2007-08	55	2011
+ward	10405007	Contact crime	2007-08	92	2011
+ward	10405007	Property crime	2008-09	61	2011
+ward	10405007	Contact crime	2008-09	84	2011
+ward	10405007	Property crime	2009-10	85	2011
+ward	10405007	Contact crime	2009-10	99	2011
+ward	10405007	Property crime	2010-11	91	2011
+ward	10405007	Contact crime	2010-11	113	2011
+ward	10405007	Property crime	2011-12	104	2011
+ward	10405007	Contact crime	2011-12	135	2011
+ward	10405007	Property crime	2012-13	139	2011
+ward	10405007	Contact crime	2012-13	150	2011
+ward	10405007	Property crime	2013-14	136	2011
+ward	10405007	Contact crime	2013-14	164	2011
+ward	10405007	Property crime	2014-15	123	2011
+ward	10405007	Contact crime	2014-15	177	2011
+ward	10405008	Property crime	2005-06	93	2011
+ward	10405008	Contact crime	2005-06	196	2011
+ward	10405008	Property crime	2006-07	83	2011
+ward	10405008	Contact crime	2006-07	154	2011
+ward	10405008	Property crime	2007-08	74	2011
+ward	10405008	Contact crime	2007-08	125	2011
+ward	10405008	Property crime	2008-09	83	2011
+ward	10405008	Contact crime	2008-09	115	2011
+ward	10405008	Property crime	2009-10	116	2011
+ward	10405008	Contact crime	2009-10	134	2011
+ward	10405008	Property crime	2010-11	125	2011
+ward	10405008	Contact crime	2010-11	154	2011
+ward	10405008	Property crime	2011-12	142	2011
+ward	10405008	Contact crime	2011-12	184	2011
+ward	10405008	Property crime	2012-13	190	2011
+ward	10405008	Contact crime	2012-13	205	2011
+ward	10405008	Property crime	2013-14	186	2011
+ward	10405008	Contact crime	2013-14	223	2011
+ward	10405008	Property crime	2014-15	168	2011
+ward	10405008	Contact crime	2014-15	241	2011
+ward	10405009	Property crime	2005-06	37	2011
+ward	10405009	Contact crime	2005-06	71	2011
+ward	10405009	Property crime	2006-07	31	2011
+ward	10405009	Contact crime	2006-07	71	2011
+ward	10405009	Property crime	2007-08	28	2011
+ward	10405009	Contact crime	2007-08	69	2011
+ward	10405009	Property crime	2008-09	39	2011
+ward	10405009	Contact crime	2008-09	66	2011
+ward	10405009	Property crime	2009-10	45	2011
+ward	10405009	Contact crime	2009-10	70	2011
+ward	10405009	Property crime	2010-11	37	2011
+ward	10405009	Contact crime	2010-11	69	2011
+ward	10405009	Property crime	2011-12	34	2011
+ward	10405009	Contact crime	2011-12	67	2011
+ward	10405009	Property crime	2012-13	47	2011
+ward	10405009	Contact crime	2012-13	69	2011
+ward	10405009	Property crime	2013-14	36	2011
+ward	10405009	Contact crime	2013-14	79	2011
+ward	10405009	Property crime	2014-15	48	2011
+ward	10405009	Contact crime	2014-15	99	2011
+ward	10405010	Property crime	2005-06	37	2011
+ward	10405010	Contact crime	2005-06	71	2011
+ward	10405010	Property crime	2006-07	30	2011
+ward	10405010	Contact crime	2006-07	75	2011
+ward	10405010	Property crime	2007-08	27	2011
+ward	10405010	Contact crime	2007-08	75	2011
+ward	10405010	Property crime	2008-09	41	2011
+ward	10405010	Contact crime	2008-09	73	2011
+ward	10405010	Property crime	2009-10	45	2011
+ward	10405010	Contact crime	2009-10	77	2011
+ward	10405010	Property crime	2010-11	36	2011
+ward	10405010	Contact crime	2010-11	72	2011
+ward	10405010	Property crime	2011-12	30	2011
+ward	10405010	Contact crime	2011-12	67	2011
+ward	10405010	Property crime	2012-13	41	2011
+ward	10405010	Contact crime	2012-13	67	2011
+ward	10405010	Property crime	2013-14	28	2011
+ward	10405010	Contact crime	2013-14	78	2011
+ward	10405010	Property crime	2014-15	45	2011
+ward	10405010	Contact crime	2014-15	103	2011
+ward	10405011	Property crime	2005-06	130	2011
+ward	10405011	Contact crime	2005-06	215	2011
+ward	10405011	Property crime	2006-07	118	2011
+ward	10405011	Contact crime	2006-07	192	2011
+ward	10405011	Property crime	2007-08	114	2011
+ward	10405011	Contact crime	2007-08	182	2011
+ward	10405011	Property crime	2008-09	121	2011
+ward	10405011	Contact crime	2008-09	153	2011
+ward	10405011	Property crime	2009-10	148	2011
+ward	10405011	Contact crime	2009-10	160	2011
+ward	10405011	Property crime	2010-11	128	2011
+ward	10405011	Contact crime	2010-11	191	2011
+ward	10405011	Property crime	2011-12	136	2011
+ward	10405011	Contact crime	2011-12	198	2011
+ward	10405011	Property crime	2012-13	194	2011
+ward	10405011	Contact crime	2012-13	219	2011
+ward	10405011	Property crime	2013-14	181	2011
+ward	10405011	Contact crime	2013-14	262	2011
+ward	10405011	Property crime	2014-15	177	2011
+ward	10405011	Contact crime	2014-15	269	2011
+ward	10405012	Property crime	2005-06	68	2011
+ward	10405012	Contact crime	2005-06	127	2011
+ward	10405012	Property crime	2006-07	60	2011
+ward	10405012	Contact crime	2006-07	101	2011
+ward	10405012	Property crime	2007-08	56	2011
+ward	10405012	Contact crime	2007-08	82	2011
+ward	10405012	Property crime	2008-09	60	2011
+ward	10405012	Contact crime	2008-09	75	2011
+ward	10405012	Property crime	2009-10	81	2011
+ward	10405012	Contact crime	2009-10	87	2011
+ward	10405012	Property crime	2010-11	89	2011
+ward	10405012	Contact crime	2010-11	101	2011
+ward	10405012	Property crime	2011-12	99	2011
+ward	10405012	Contact crime	2011-12	119	2011
+ward	10405012	Property crime	2012-13	132	2011
+ward	10405012	Contact crime	2012-13	133	2011
+ward	10405012	Property crime	2013-14	128	2011
+ward	10405012	Contact crime	2013-14	144	2011
+ward	10405012	Property crime	2014-15	114	2011
+ward	10405012	Contact crime	2014-15	155	2011
+ward	10405013	Property crime	2005-06	47	2011
+ward	10405013	Contact crime	2005-06	98	2011
+ward	10405013	Property crime	2006-07	42	2011
+ward	10405013	Contact crime	2006-07	77	2011
+ward	10405013	Property crime	2007-08	37	2011
+ward	10405013	Contact crime	2007-08	63	2011
+ward	10405013	Property crime	2008-09	42	2011
+ward	10405013	Contact crime	2008-09	58	2011
+ward	10405013	Property crime	2009-10	58	2011
+ward	10405013	Contact crime	2009-10	67	2011
+ward	10405013	Property crime	2010-11	62	2011
+ward	10405013	Contact crime	2010-11	77	2011
+ward	10405013	Property crime	2011-12	71	2011
+ward	10405013	Contact crime	2011-12	92	2011
+ward	10405013	Property crime	2012-13	95	2011
+ward	10405013	Contact crime	2012-13	103	2011
+ward	10405013	Property crime	2013-14	93	2011
+ward	10405013	Contact crime	2013-14	112	2011
+ward	10405013	Property crime	2014-15	84	2011
+ward	10405013	Contact crime	2014-15	121	2011
+ward	10407001	Property crime	2005-06	286	2011
+ward	10407001	Contact crime	2005-06	178	2011
+ward	10407001	Property crime	2006-07	269	2011
+ward	10407001	Contact crime	2006-07	186	2011
+ward	10407001	Property crime	2007-08	273	2011
+ward	10407001	Contact crime	2007-08	198	2011
+ward	10407001	Property crime	2008-09	261	2011
+ward	10407001	Contact crime	2008-09	153	2011
+ward	10407001	Property crime	2009-10	280	2011
+ward	10407001	Contact crime	2009-10	130	2011
+ward	10407001	Property crime	2010-11	271	2011
+ward	10407001	Contact crime	2010-11	146	2011
+ward	10407001	Property crime	2011-12	269	2011
+ward	10407001	Contact crime	2011-12	175	2011
+ward	10407001	Property crime	2012-13	428	2011
+ward	10407001	Contact crime	2012-13	173	2011
+ward	10407001	Property crime	2013-14	428	2011
+ward	10407001	Contact crime	2013-14	194	2011
+ward	10407001	Property crime	2014-15	356	2011
+ward	10407001	Contact crime	2014-15	226	2011
+ward	10407002	Property crime	2005-06	219	2011
+ward	10407002	Contact crime	2005-06	134	2011
+ward	10407002	Property crime	2006-07	208	2011
+ward	10407002	Contact crime	2006-07	147	2011
+ward	10407002	Property crime	2007-08	211	2011
+ward	10407002	Contact crime	2007-08	154	2011
+ward	10407002	Property crime	2008-09	202	2011
+ward	10407002	Contact crime	2008-09	118	2011
+ward	10407002	Property crime	2009-10	216	2011
+ward	10407002	Contact crime	2009-10	99	2011
+ward	10407002	Property crime	2010-11	209	2011
+ward	10407002	Contact crime	2010-11	112	2011
+ward	10407002	Property crime	2011-12	208	2011
+ward	10407002	Contact crime	2011-12	135	2011
+ward	10407002	Property crime	2012-13	330	2011
+ward	10407002	Contact crime	2012-13	135	2011
+ward	10407002	Property crime	2013-14	332	2011
+ward	10407002	Contact crime	2013-14	151	2011
+ward	10407002	Property crime	2014-15	277	2011
+ward	10407002	Contact crime	2014-15	176	2011
+ward	10407003	Property crime	2005-06	147	2011
+ward	10407003	Contact crime	2005-06	86	2011
+ward	10407003	Property crime	2006-07	137	2011
+ward	10407003	Contact crime	2006-07	92	2011
+ward	10407003	Property crime	2007-08	140	2011
+ward	10407003	Contact crime	2007-08	97	2011
+ward	10407003	Property crime	2008-09	133	2011
+ward	10407003	Contact crime	2008-09	74	2011
+ward	10407003	Property crime	2009-10	143	2011
+ward	10407003	Contact crime	2009-10	62	2011
+ward	10407003	Property crime	2010-11	138	2011
+ward	10407003	Contact crime	2010-11	70	2011
+ward	10407003	Property crime	2011-12	137	2011
+ward	10407003	Contact crime	2011-12	85	2011
+ward	10407003	Property crime	2012-13	221	2011
+ward	10407003	Contact crime	2012-13	84	2011
+ward	10407003	Property crime	2013-14	221	2011
+ward	10407003	Contact crime	2013-14	95	2011
+ward	10407003	Property crime	2014-15	181	2011
+ward	10407003	Contact crime	2014-15	112	2011
+ward	10407004	Property crime	2005-06	169	2011
+ward	10407004	Contact crime	2005-06	108	2011
+ward	10407004	Property crime	2006-07	163	2011
+ward	10407004	Contact crime	2006-07	122	2011
+ward	10407004	Property crime	2007-08	165	2011
+ward	10407004	Contact crime	2007-08	126	2011
+ward	10407004	Property crime	2008-09	159	2011
+ward	10407004	Contact crime	2008-09	98	2011
+ward	10407004	Property crime	2009-10	168	2011
+ward	10407004	Contact crime	2009-10	83	2011
+ward	10407004	Property crime	2010-11	164	2011
+ward	10407004	Contact crime	2010-11	93	2011
+ward	10407004	Property crime	2011-12	163	2011
+ward	10407004	Contact crime	2011-12	111	2011
+ward	10407004	Property crime	2012-13	254	2011
+ward	10407004	Contact crime	2012-13	113	2011
+ward	10407004	Property crime	2013-14	257	2011
+ward	10407004	Contact crime	2013-14	124	2011
+ward	10407004	Property crime	2014-15	220	2011
+ward	10407004	Contact crime	2014-15	143	2011
+ward	10407005	Property crime	2005-06	47	2011
+ward	10407005	Contact crime	2005-06	68	2011
+ward	10407005	Property crime	2006-07	68	2011
+ward	10407005	Contact crime	2006-07	109	2011
+ward	10407005	Property crime	2007-08	63	2011
+ward	10407005	Contact crime	2007-08	100	2011
+ward	10407005	Property crime	2008-09	73	2011
+ward	10407005	Contact crime	2008-09	81	2011
+ward	10407005	Property crime	2009-10	63	2011
+ward	10407005	Contact crime	2009-10	75	2011
+ward	10407005	Property crime	2010-11	71	2011
+ward	10407005	Contact crime	2010-11	78	2011
+ward	10407005	Property crime	2011-12	66	2011
+ward	10407005	Contact crime	2011-12	91	2011
+ward	10407005	Property crime	2012-13	68	2011
+ward	10407005	Contact crime	2012-13	104	2011
+ward	10407005	Property crime	2013-14	86	2011
+ward	10407005	Contact crime	2013-14	103	2011
+ward	10407005	Property crime	2014-15	114	2011
+ward	10407005	Contact crime	2014-15	105	2011
+ward	10407006	Property crime	2005-06	33	2011
+ward	10407006	Contact crime	2005-06	48	2011
+ward	10407006	Property crime	2006-07	48	2011
+ward	10407006	Contact crime	2006-07	77	2011
+ward	10407006	Property crime	2007-08	44	2011
+ward	10407006	Contact crime	2007-08	71	2011
+ward	10407006	Property crime	2008-09	52	2011
+ward	10407006	Contact crime	2008-09	57	2011
+ward	10407006	Property crime	2009-10	44	2011
+ward	10407006	Contact crime	2009-10	53	2011
+ward	10407006	Property crime	2010-11	50	2011
+ward	10407006	Contact crime	2010-11	55	2011
+ward	10407006	Property crime	2011-12	47	2011
+ward	10407006	Contact crime	2011-12	64	2011
+ward	10407006	Property crime	2012-13	48	2011
+ward	10407006	Contact crime	2012-13	74	2011
+ward	10407006	Property crime	2013-14	61	2011
+ward	10407006	Contact crime	2013-14	73	2011
+ward	10407006	Property crime	2014-15	80	2011
+ward	10407006	Contact crime	2014-15	74	2011
+ward	10407007	Property crime	2005-06	113	2011
+ward	10407007	Contact crime	2005-06	128	2011
+ward	10407007	Property crime	2006-07	138	2011
+ward	10407007	Contact crime	2006-07	182	2011
+ward	10407007	Property crime	2007-08	131	2011
+ward	10407007	Contact crime	2007-08	173	2011
+ward	10407007	Property crime	2008-09	145	2011
+ward	10407007	Contact crime	2008-09	139	2011
+ward	10407007	Property crime	2009-10	133	2011
+ward	10407007	Contact crime	2009-10	129	2011
+ward	10407007	Property crime	2010-11	143	2011
+ward	10407007	Contact crime	2010-11	136	2011
+ward	10407007	Property crime	2011-12	136	2011
+ward	10407007	Contact crime	2011-12	158	2011
+ward	10407007	Property crime	2012-13	163	2011
+ward	10407007	Contact crime	2012-13	176	2011
+ward	10407007	Property crime	2013-14	188	2011
+ward	10407007	Contact crime	2013-14	177	2011
+ward	10407007	Property crime	2014-15	215	2011
+ward	10407007	Contact crime	2014-15	185	2011
+ward	10408001	Property crime	2005-06	142	2011
+ward	10408001	Contact crime	2005-06	151	2011
+ward	10408001	Property crime	2006-07	127	2011
+ward	10408001	Contact crime	2006-07	97	2011
+ward	10408001	Property crime	2007-08	123	2011
+ward	10408001	Contact crime	2007-08	91	2011
+ward	10408001	Property crime	2008-09	149	2011
+ward	10408001	Contact crime	2008-09	93	2011
+ward	10408001	Property crime	2009-10	145	2011
+ward	10408001	Contact crime	2009-10	106	2011
+ward	10408001	Property crime	2010-11	146	2011
+ward	10408001	Contact crime	2010-11	120	2011
+ward	10408001	Property crime	2011-12	150	2011
+ward	10408001	Contact crime	2011-12	131	2011
+ward	10408001	Property crime	2012-13	170	2011
+ward	10408001	Contact crime	2012-13	140	2011
+ward	10408001	Property crime	2013-14	193	2011
+ward	10408001	Contact crime	2013-14	151	2011
+ward	10408001	Property crime	2014-15	204	2011
+ward	10408001	Contact crime	2014-15	154	2011
+ward	10408002	Property crime	2005-06	94	2011
+ward	10408002	Contact crime	2005-06	98	2011
+ward	10408002	Property crime	2006-07	85	2011
+ward	10408002	Contact crime	2006-07	64	2011
+ward	10408002	Property crime	2007-08	83	2011
+ward	10408002	Contact crime	2007-08	59	2011
+ward	10408002	Property crime	2008-09	98	2011
+ward	10408002	Contact crime	2008-09	60	2011
+ward	10408002	Property crime	2009-10	96	2011
+ward	10408002	Contact crime	2009-10	69	2011
+ward	10408002	Property crime	2010-11	98	2011
+ward	10408002	Contact crime	2010-11	78	2011
+ward	10408002	Property crime	2011-12	100	2011
+ward	10408002	Contact crime	2011-12	85	2011
+ward	10408002	Property crime	2012-13	115	2011
+ward	10408002	Contact crime	2012-13	91	2011
+ward	10408002	Property crime	2013-14	129	2011
+ward	10408002	Contact crime	2013-14	98	2011
+ward	10408002	Property crime	2014-15	134	2011
+ward	10408002	Contact crime	2014-15	100	2011
+ward	10408003	Property crime	2005-06	103	2011
+ward	10408003	Contact crime	2005-06	115	2011
+ward	10408003	Property crime	2006-07	93	2011
+ward	10408003	Contact crime	2006-07	73	2011
+ward	10408003	Property crime	2007-08	89	2011
+ward	10408003	Contact crime	2007-08	69	2011
+ward	10408003	Property crime	2008-09	110	2011
+ward	10408003	Contact crime	2008-09	71	2011
+ward	10408003	Property crime	2009-10	106	2011
+ward	10408003	Contact crime	2009-10	81	2011
+ward	10408003	Property crime	2010-11	105	2011
+ward	10408003	Contact crime	2010-11	91	2011
+ward	10408003	Property crime	2011-12	109	2011
+ward	10408003	Contact crime	2011-12	100	2011
+ward	10408003	Property crime	2012-13	122	2011
+ward	10408003	Contact crime	2012-13	106	2011
+ward	10408003	Property crime	2013-14	141	2011
+ward	10408003	Contact crime	2013-14	115	2011
+ward	10408003	Property crime	2014-15	151	2011
+ward	10408003	Contact crime	2014-15	117	2011
+ward	10408004	Property crime	2005-06	112	2011
+ward	10408004	Contact crime	2005-06	124	2011
+ward	10408004	Property crime	2006-07	101	2011
+ward	10408004	Contact crime	2006-07	78	2011
+ward	10408004	Property crime	2007-08	97	2011
+ward	10408004	Contact crime	2007-08	74	2011
+ward	10408004	Property crime	2008-09	120	2011
+ward	10408004	Contact crime	2008-09	76	2011
+ward	10408004	Property crime	2009-10	115	2011
+ward	10408004	Contact crime	2009-10	87	2011
+ward	10408004	Property crime	2010-11	114	2011
+ward	10408004	Contact crime	2010-11	98	2011
+ward	10408004	Property crime	2011-12	118	2011
+ward	10408004	Contact crime	2011-12	107	2011
+ward	10408004	Property crime	2012-13	133	2011
+ward	10408004	Contact crime	2012-13	114	2011
+ward	10408004	Property crime	2013-14	153	2011
+ward	10408004	Contact crime	2013-14	124	2011
+ward	10408004	Property crime	2014-15	164	2011
+ward	10408004	Contact crime	2014-15	126	2011
+ward	10408005	Property crime	2005-06	121	2011
+ward	10408005	Contact crime	2005-06	133	2011
+ward	10408005	Property crime	2006-07	109	2011
+ward	10408005	Contact crime	2006-07	84	2011
+ward	10408005	Property crime	2007-08	104	2011
+ward	10408005	Contact crime	2007-08	79	2011
+ward	10408005	Property crime	2008-09	129	2011
+ward	10408005	Contact crime	2008-09	81	2011
+ward	10408005	Property crime	2009-10	124	2011
+ward	10408005	Contact crime	2009-10	94	2011
+ward	10408005	Property crime	2010-11	123	2011
+ward	10408005	Contact crime	2010-11	105	2011
+ward	10408005	Property crime	2011-12	127	2011
+ward	10408005	Contact crime	2011-12	115	2011
+ward	10408005	Property crime	2012-13	143	2011
+ward	10408005	Contact crime	2012-13	123	2011
+ward	10408005	Property crime	2013-14	165	2011
+ward	10408005	Contact crime	2013-14	133	2011
+ward	10408005	Property crime	2014-15	177	2011
+ward	10408005	Contact crime	2014-15	136	2011
+ward	10408006	Property crime	2005-06	174	2011
+ward	10408006	Contact crime	2005-06	192	2011
+ward	10408006	Property crime	2006-07	157	2011
+ward	10408006	Contact crime	2006-07	121	2011
+ward	10408006	Property crime	2007-08	150	2011
+ward	10408006	Contact crime	2007-08	114	2011
+ward	10408006	Property crime	2008-09	185	2011
+ward	10408006	Contact crime	2008-09	117	2011
+ward	10408006	Property crime	2009-10	179	2011
+ward	10408006	Contact crime	2009-10	136	2011
+ward	10408006	Property crime	2010-11	177	2011
+ward	10408006	Contact crime	2010-11	152	2011
+ward	10408006	Property crime	2011-12	183	2011
+ward	10408006	Contact crime	2011-12	166	2011
+ward	10408006	Property crime	2012-13	205	2011
+ward	10408006	Contact crime	2012-13	177	2011
+ward	10408006	Property crime	2013-14	237	2011
+ward	10408006	Contact crime	2013-14	192	2011
+ward	10408006	Property crime	2014-15	255	2011
+ward	10408006	Contact crime	2014-15	196	2011
+ward	10408007	Property crime	2005-06	257	2011
+ward	10408007	Contact crime	2005-06	284	2011
+ward	10408007	Property crime	2006-07	232	2011
+ward	10408007	Contact crime	2006-07	179	2011
+ward	10408007	Property crime	2007-08	222	2011
+ward	10408007	Contact crime	2007-08	169	2011
+ward	10408007	Property crime	2008-09	275	2011
+ward	10408007	Contact crime	2008-09	174	2011
+ward	10408007	Property crime	2009-10	265	2011
+ward	10408007	Contact crime	2009-10	201	2011
+ward	10408007	Property crime	2010-11	262	2011
+ward	10408007	Contact crime	2010-11	224	2011
+ward	10408007	Property crime	2011-12	271	2011
+ward	10408007	Contact crime	2011-12	246	2011
+ward	10408007	Property crime	2012-13	304	2011
+ward	10408007	Contact crime	2012-13	262	2011
+ward	10408007	Property crime	2013-14	352	2011
+ward	10408007	Contact crime	2013-14	284	2011
+ward	10408007	Property crime	2014-15	377	2011
+ward	10408007	Contact crime	2014-15	290	2011
+ward	10408008	Property crime	2005-06	115	2011
+ward	10408008	Contact crime	2005-06	127	2011
+ward	10408008	Property crime	2006-07	103	2011
+ward	10408008	Contact crime	2006-07	80	2011
+ward	10408008	Property crime	2007-08	99	2011
+ward	10408008	Contact crime	2007-08	75	2011
+ward	10408008	Property crime	2008-09	122	2011
+ward	10408008	Contact crime	2008-09	77	2011
+ward	10408008	Property crime	2009-10	118	2011
+ward	10408008	Contact crime	2009-10	90	2011
+ward	10408008	Property crime	2010-11	117	2011
+ward	10408008	Contact crime	2010-11	100	2011
+ward	10408008	Property crime	2011-12	121	2011
+ward	10408008	Contact crime	2011-12	110	2011
+ward	10408008	Property crime	2012-13	136	2011
+ward	10408008	Contact crime	2012-13	117	2011
+ward	10408008	Property crime	2013-14	157	2011
+ward	10408008	Contact crime	2013-14	127	2011
+ward	10408008	Property crime	2014-15	168	2011
+ward	10408008	Contact crime	2014-15	129	2011
+ward	10408009	Property crime	2005-06	148	2011
+ward	10408009	Contact crime	2005-06	163	2011
+ward	10408009	Property crime	2006-07	133	2011
+ward	10408009	Contact crime	2006-07	103	2011
+ward	10408009	Property crime	2007-08	127	2011
+ward	10408009	Contact crime	2007-08	97	2011
+ward	10408009	Property crime	2008-09	158	2011
+ward	10408009	Contact crime	2008-09	100	2011
+ward	10408009	Property crime	2009-10	152	2011
+ward	10408009	Contact crime	2009-10	115	2011
+ward	10408009	Property crime	2010-11	150	2011
+ward	10408009	Contact crime	2010-11	129	2011
+ward	10408009	Property crime	2011-12	155	2011
+ward	10408009	Contact crime	2011-12	141	2011
+ward	10408009	Property crime	2012-13	175	2011
+ward	10408009	Contact crime	2012-13	150	2011
+ward	10408009	Property crime	2013-14	202	2011
+ward	10408009	Contact crime	2013-14	163	2011
+ward	10408009	Property crime	2014-15	217	2011
+ward	10408009	Contact crime	2014-15	166	2011
+ward	10408010	Property crime	2005-06	122	2011
+ward	10408010	Contact crime	2005-06	135	2011
+ward	10408010	Property crime	2006-07	110	2011
+ward	10408010	Contact crime	2006-07	85	2011
+ward	10408010	Property crime	2007-08	105	2011
+ward	10408010	Contact crime	2007-08	80	2011
+ward	10408010	Property crime	2008-09	130	2011
+ward	10408010	Contact crime	2008-09	82	2011
+ward	10408010	Property crime	2009-10	126	2011
+ward	10408010	Contact crime	2009-10	95	2011
+ward	10408010	Property crime	2010-11	124	2011
+ward	10408010	Contact crime	2010-11	107	2011
+ward	10408010	Property crime	2011-12	129	2011
+ward	10408010	Contact crime	2011-12	117	2011
+ward	10408010	Property crime	2012-13	144	2011
+ward	10408010	Contact crime	2012-13	124	2011
+ward	10408010	Property crime	2013-14	167	2011
+ward	10408010	Contact crime	2013-14	135	2011
+ward	10408010	Property crime	2014-15	179	2011
+ward	10408010	Contact crime	2014-15	138	2011
+ward	10501001	Property crime	2005-06	31	2011
+ward	10501001	Contact crime	2005-06	55	2011
+ward	10501001	Property crime	2006-07	17	2011
+ward	10501001	Contact crime	2006-07	41	2011
+ward	10501001	Property crime	2007-08	17	2011
+ward	10501001	Contact crime	2007-08	38	2011
+ward	10501001	Property crime	2008-09	31	2011
+ward	10501001	Contact crime	2008-09	40	2011
+ward	10501001	Property crime	2009-10	58	2011
+ward	10501001	Contact crime	2009-10	46	2011
+ward	10501001	Property crime	2010-11	32	2011
+ward	10501001	Contact crime	2010-11	44	2011
+ward	10501001	Property crime	2011-12	40	2011
+ward	10501001	Contact crime	2011-12	56	2011
+ward	10501001	Property crime	2012-13	69	2011
+ward	10501001	Contact crime	2012-13	54	2011
+ward	10501001	Property crime	2013-14	62	2011
+ward	10501001	Contact crime	2013-14	56	2011
+ward	10501001	Property crime	2014-15	86	2011
+ward	10501001	Contact crime	2014-15	68	2011
+ward	10501002	Property crime	2005-06	11	2011
+ward	10501002	Contact crime	2005-06	20	2011
+ward	10501002	Property crime	2006-07	6	2011
+ward	10501002	Contact crime	2006-07	15	2011
+ward	10501002	Property crime	2007-08	6	2011
+ward	10501002	Contact crime	2007-08	14	2011
+ward	10501002	Property crime	2008-09	11	2011
+ward	10501002	Contact crime	2008-09	15	2011
+ward	10501002	Property crime	2009-10	21	2011
+ward	10501002	Contact crime	2009-10	17	2011
+ward	10501002	Property crime	2010-11	12	2011
+ward	10501002	Contact crime	2010-11	16	2011
+ward	10501002	Property crime	2011-12	14	2011
+ward	10501002	Contact crime	2011-12	21	2011
+ward	10501002	Property crime	2012-13	25	2011
+ward	10501002	Contact crime	2012-13	20	2011
+ward	10501002	Property crime	2013-14	22	2011
+ward	10501002	Contact crime	2013-14	20	2011
+ward	10501002	Property crime	2014-15	31	2011
+ward	10501002	Contact crime	2014-15	25	2011
+ward	10501003	Property crime	2005-06	4	2011
+ward	10501003	Contact crime	2005-06	8	2011
+ward	10501003	Property crime	2006-07	2	2011
+ward	10501003	Contact crime	2006-07	6	2011
+ward	10501003	Property crime	2007-08	2	2011
+ward	10501003	Contact crime	2007-08	5	2011
+ward	10501003	Property crime	2008-09	4	2011
+ward	10501003	Contact crime	2008-09	6	2011
+ward	10501003	Property crime	2009-10	8	2011
+ward	10501003	Contact crime	2009-10	7	2011
+ward	10501003	Property crime	2010-11	5	2011
+ward	10501003	Contact crime	2010-11	6	2011
+ward	10501003	Property crime	2011-12	6	2011
+ward	10501003	Contact crime	2011-12	8	2011
+ward	10501003	Property crime	2012-13	10	2011
+ward	10501003	Contact crime	2012-13	8	2011
+ward	10501003	Property crime	2013-14	9	2011
+ward	10501003	Contact crime	2013-14	8	2011
+ward	10501003	Property crime	2014-15	12	2011
+ward	10501003	Contact crime	2014-15	10	2011
+ward	10501004	Property crime	2005-06	41	2011
+ward	10501004	Contact crime	2005-06	74	2011
+ward	10501004	Property crime	2006-07	22	2011
+ward	10501004	Contact crime	2006-07	53	2011
+ward	10501004	Property crime	2007-08	23	2011
+ward	10501004	Contact crime	2007-08	50	2011
+ward	10501004	Property crime	2008-09	41	2011
+ward	10501004	Contact crime	2008-09	53	2011
+ward	10501004	Property crime	2009-10	77	2011
+ward	10501004	Contact crime	2009-10	62	2011
+ward	10501004	Property crime	2010-11	43	2011
+ward	10501004	Contact crime	2010-11	58	2011
+ward	10501004	Property crime	2011-12	52	2011
+ward	10501004	Contact crime	2011-12	75	2011
+ward	10501004	Property crime	2012-13	91	2011
+ward	10501004	Contact crime	2012-13	72	2011
+ward	10501004	Property crime	2013-14	82	2011
+ward	10501004	Contact crime	2013-14	73	2011
+ward	10501004	Property crime	2014-15	113	2011
+ward	10501004	Contact crime	2014-15	90	2011
+ward	10502001	Property crime	2005-06	22	2011
+ward	10502001	Contact crime	2005-06	49	2011
+ward	10502001	Property crime	2006-07	15	2011
+ward	10502001	Contact crime	2006-07	68	2011
+ward	10502001	Property crime	2007-08	21	2011
+ward	10502001	Contact crime	2007-08	74	2011
+ward	10502001	Property crime	2008-09	36	2011
+ward	10502001	Contact crime	2008-09	77	2011
+ward	10502001	Property crime	2009-10	30	2011
+ward	10502001	Contact crime	2009-10	63	2011
+ward	10502001	Property crime	2010-11	19	2011
+ward	10502001	Contact crime	2010-11	82	2011
+ward	10502001	Property crime	2011-12	38	2011
+ward	10502001	Contact crime	2011-12	74	2011
+ward	10502001	Property crime	2012-13	38	2011
+ward	10502001	Contact crime	2012-13	78	2011
+ward	10502001	Property crime	2013-14	45	2011
+ward	10502001	Contact crime	2013-14	81	2011
+ward	10502001	Property crime	2014-15	69	2011
+ward	10502001	Contact crime	2014-15	87	2011
+ward	10502002	Property crime	2005-06	23	2011
+ward	10502002	Contact crime	2005-06	70	2011
+ward	10502002	Property crime	2006-07	12	2011
+ward	10502002	Contact crime	2006-07	33	2011
+ward	10502002	Property crime	2007-08	14	2011
+ward	10502002	Contact crime	2007-08	41	2011
+ward	10502002	Property crime	2008-09	14	2011
+ward	10502002	Contact crime	2008-09	41	2011
+ward	10502002	Property crime	2009-10	16	2011
+ward	10502002	Contact crime	2009-10	46	2011
+ward	10502002	Property crime	2010-11	22	2011
+ward	10502002	Contact crime	2010-11	54	2011
+ward	10502002	Property crime	2011-12	24	2011
+ward	10502002	Contact crime	2011-12	56	2011
+ward	10502002	Property crime	2012-13	26	2011
+ward	10502002	Contact crime	2012-13	44	2011
+ward	10502002	Property crime	2013-14	18	2011
+ward	10502002	Contact crime	2013-14	40	2011
+ward	10502002	Property crime	2014-15	31	2011
+ward	10502002	Contact crime	2014-15	52	2011
+ward	10502003	Property crime	2005-06	16	2011
+ward	10502003	Contact crime	2005-06	48	2011
+ward	10502003	Property crime	2006-07	8	2011
+ward	10502003	Contact crime	2006-07	23	2011
+ward	10502003	Property crime	2007-08	10	2011
+ward	10502003	Contact crime	2007-08	28	2011
+ward	10502003	Property crime	2008-09	9	2011
+ward	10502003	Contact crime	2008-09	28	2011
+ward	10502003	Property crime	2009-10	11	2011
+ward	10502003	Contact crime	2009-10	32	2011
+ward	10502003	Property crime	2010-11	15	2011
+ward	10502003	Contact crime	2010-11	37	2011
+ward	10502003	Property crime	2011-12	16	2011
+ward	10502003	Contact crime	2011-12	38	2011
+ward	10502003	Property crime	2012-13	18	2011
+ward	10502003	Contact crime	2012-13	30	2011
+ward	10502003	Property crime	2013-14	13	2011
+ward	10502003	Contact crime	2013-14	27	2011
+ward	10502003	Property crime	2014-15	21	2011
+ward	10502003	Contact crime	2014-15	36	2011
+ward	10502004	Property crime	2005-06	38	2011
+ward	10502004	Contact crime	2005-06	115	2011
+ward	10502004	Property crime	2006-07	19	2011
+ward	10502004	Contact crime	2006-07	55	2011
+ward	10502004	Property crime	2007-08	24	2011
+ward	10502004	Contact crime	2007-08	68	2011
+ward	10502004	Property crime	2008-09	23	2011
+ward	10502004	Contact crime	2008-09	69	2011
+ward	10502004	Property crime	2009-10	26	2011
+ward	10502004	Contact crime	2009-10	77	2011
+ward	10502004	Property crime	2010-11	36	2011
+ward	10502004	Contact crime	2010-11	89	2011
+ward	10502004	Property crime	2011-12	39	2011
+ward	10502004	Contact crime	2011-12	93	2011
+ward	10502004	Property crime	2012-13	43	2011
+ward	10502004	Contact crime	2012-13	73	2011
+ward	10502004	Property crime	2013-14	31	2011
+ward	10502004	Contact crime	2013-14	67	2011
+ward	10502004	Property crime	2014-15	52	2011
+ward	10502004	Contact crime	2014-15	86	2011
+ward	10503001	Property crime	2005-06	25	2011
+ward	10503001	Contact crime	2005-06	170	2011
+ward	10503001	Property crime	2006-07	48	2011
+ward	10503001	Contact crime	2006-07	133	2011
+ward	10503001	Property crime	2007-08	58	2011
+ward	10503001	Contact crime	2007-08	99	2011
+ward	10503001	Property crime	2008-09	74	2011
+ward	10503001	Contact crime	2008-09	73	2011
+ward	10503001	Property crime	2009-10	102	2011
+ward	10503001	Contact crime	2009-10	117	2011
+ward	10503001	Property crime	2010-11	76	2011
+ward	10503001	Contact crime	2010-11	98	2011
+ward	10503001	Property crime	2011-12	92	2011
+ward	10503001	Contact crime	2011-12	114	2011
+ward	10503001	Property crime	2012-13	80	2011
+ward	10503001	Contact crime	2012-13	102	2011
+ward	10503001	Property crime	2013-14	66	2011
+ward	10503001	Contact crime	2013-14	101	2011
+ward	10503001	Property crime	2014-15	101	2011
+ward	10503001	Contact crime	2014-15	176	2011
+ward	10503002	Property crime	2005-06	89	2011
+ward	10503002	Contact crime	2005-06	201	2011
+ward	10503002	Property crime	2006-07	110	2011
+ward	10503002	Contact crime	2006-07	217	2011
+ward	10503002	Property crime	2007-08	127	2011
+ward	10503002	Contact crime	2007-08	213	2011
+ward	10503002	Property crime	2008-09	124	2011
+ward	10503002	Contact crime	2008-09	201	2011
+ward	10503002	Property crime	2009-10	131	2011
+ward	10503002	Contact crime	2009-10	224	2011
+ward	10503002	Property crime	2010-11	148	2011
+ward	10503002	Contact crime	2010-11	238	2011
+ward	10503002	Property crime	2011-12	181	2011
+ward	10503002	Contact crime	2011-12	232	2011
+ward	10503002	Property crime	2012-13	220	2011
+ward	10503002	Contact crime	2012-13	229	2011
+ward	10503002	Property crime	2013-14	252	2011
+ward	10503002	Contact crime	2013-14	268	2011
+ward	10503002	Property crime	2014-15	247	2011
+ward	10503002	Contact crime	2014-15	270	2011
+ward	10503003	Property crime	2005-06	96	2011
+ward	10503003	Contact crime	2005-06	215	2011
+ward	10503003	Property crime	2006-07	119	2011
+ward	10503003	Contact crime	2006-07	233	2011
+ward	10503003	Property crime	2007-08	136	2011
+ward	10503003	Contact crime	2007-08	229	2011
+ward	10503003	Property crime	2008-09	133	2011
+ward	10503003	Contact crime	2008-09	216	2011
+ward	10503003	Property crime	2009-10	141	2011
+ward	10503003	Contact crime	2009-10	241	2011
+ward	10503003	Property crime	2010-11	159	2011
+ward	10503003	Contact crime	2010-11	256	2011
+ward	10503003	Property crime	2011-12	194	2011
+ward	10503003	Contact crime	2011-12	249	2011
+ward	10503003	Property crime	2012-13	236	2011
+ward	10503003	Contact crime	2012-13	247	2011
+ward	10503003	Property crime	2013-14	271	2011
+ward	10503003	Contact crime	2013-14	288	2011
+ward	10503003	Property crime	2014-15	265	2011
+ward	10503003	Contact crime	2014-15	290	2011
+ward	10503004	Property crime	2005-06	72	2011
+ward	10503004	Contact crime	2005-06	161	2011
+ward	10503004	Property crime	2006-07	88	2011
+ward	10503004	Contact crime	2006-07	174	2011
+ward	10503004	Property crime	2007-08	102	2011
+ward	10503004	Contact crime	2007-08	171	2011
+ward	10503004	Property crime	2008-09	100	2011
+ward	10503004	Contact crime	2008-09	161	2011
+ward	10503004	Property crime	2009-10	105	2011
+ward	10503004	Contact crime	2009-10	180	2011
+ward	10503004	Property crime	2010-11	119	2011
+ward	10503004	Contact crime	2010-11	191	2011
+ward	10503004	Property crime	2011-12	145	2011
+ward	10503004	Contact crime	2011-12	186	2011
+ward	10503004	Property crime	2012-13	176	2011
+ward	10503004	Contact crime	2012-13	184	2011
+ward	10503004	Property crime	2013-14	202	2011
+ward	10503004	Contact crime	2013-14	215	2011
+ward	10503004	Property crime	2014-15	198	2011
+ward	10503004	Contact crime	2014-15	216	2011
+ward	10503005	Property crime	2005-06	75	2011
+ward	10503005	Contact crime	2005-06	169	2011
+ward	10503005	Property crime	2006-07	93	2011
+ward	10503005	Contact crime	2006-07	183	2011
+ward	10503005	Property crime	2007-08	107	2011
+ward	10503005	Contact crime	2007-08	180	2011
+ward	10503005	Property crime	2008-09	105	2011
+ward	10503005	Contact crime	2008-09	170	2011
+ward	10503005	Property crime	2009-10	111	2011
+ward	10503005	Contact crime	2009-10	189	2011
+ward	10503005	Property crime	2010-11	125	2011
+ward	10503005	Contact crime	2010-11	201	2011
+ward	10503005	Property crime	2011-12	153	2011
+ward	10503005	Contact crime	2011-12	196	2011
+ward	10503005	Property crime	2012-13	186	2011
+ward	10503005	Contact crime	2012-13	194	2011
+ward	10503005	Property crime	2013-14	213	2011
+ward	10503005	Contact crime	2013-14	226	2011
+ward	10503005	Property crime	2014-15	208	2011
+ward	10503005	Contact crime	2014-15	228	2011
+ward	10503006	Property crime	2005-06	66	2011
+ward	10503006	Contact crime	2005-06	148	2011
+ward	10503006	Property crime	2006-07	82	2011
+ward	10503006	Contact crime	2006-07	160	2011
+ward	10503006	Property crime	2007-08	94	2011
+ward	10503006	Contact crime	2007-08	157	2011
+ward	10503006	Property crime	2008-09	92	2011
+ward	10503006	Contact crime	2008-09	149	2011
+ward	10503006	Property crime	2009-10	97	2011
+ward	10503006	Contact crime	2009-10	166	2011
+ward	10503006	Property crime	2010-11	109	2011
+ward	10503006	Contact crime	2010-11	176	2011
+ward	10503006	Property crime	2011-12	134	2011
+ward	10503006	Contact crime	2011-12	171	2011
+ward	10503006	Property crime	2012-13	163	2011
+ward	10503006	Contact crime	2012-13	170	2011
+ward	10503006	Property crime	2013-14	187	2011
+ward	10503006	Contact crime	2013-14	198	2011
+ward	10503006	Property crime	2014-15	182	2011
+ward	10503006	Contact crime	2014-15	200	2011
+ward	10503007	Property crime	2005-06	123	2011
+ward	10503007	Contact crime	2005-06	273	2011
+ward	10503007	Property crime	2006-07	146	2011
+ward	10503007	Contact crime	2006-07	311	2011
+ward	10503007	Property crime	2007-08	170	2011
+ward	10503007	Contact crime	2007-08	309	2011
+ward	10503007	Property crime	2008-09	177	2011
+ward	10503007	Contact crime	2008-09	296	2011
+ward	10503007	Property crime	2009-10	181	2011
+ward	10503007	Contact crime	2009-10	315	2011
+ward	10503007	Property crime	2010-11	194	2011
+ward	10503007	Contact crime	2010-11	344	2011
+ward	10503007	Property crime	2011-12	247	2011
+ward	10503007	Contact crime	2011-12	330	2011
+ward	10503007	Property crime	2012-13	295	2011
+ward	10503007	Contact crime	2012-13	332	2011
+ward	10503007	Property crime	2013-14	342	2011
+ward	10503007	Contact crime	2013-14	383	2011
+ward	10503007	Property crime	2014-15	349	2011
+ward	10503007	Contact crime	2014-15	387	2011
+ward	19100001	Property crime	2005-06	866	2011
+ward	19100001	Contact crime	2005-06	478	2011
+ward	19100001	Property crime	2006-07	901	2011
+ward	19100001	Contact crime	2006-07	433	2011
+ward	19100001	Property crime	2007-08	858	2011
+ward	19100001	Contact crime	2007-08	437	2011
+ward	19100001	Property crime	2008-09	795	2011
+ward	19100001	Contact crime	2008-09	410	2011
+ward	19100001	Property crime	2009-10	835	2011
+ward	19100001	Contact crime	2009-10	445	2011
+ward	19100001	Property crime	2010-11	968	2011
+ward	19100001	Contact crime	2010-11	459	2011
+ward	19100001	Property crime	2011-12	1093	2011
+ward	19100001	Contact crime	2011-12	481	2011
+ward	19100001	Property crime	2012-13	1055	2011
+ward	19100001	Contact crime	2012-13	493	2011
+ward	19100001	Property crime	2013-14	1132	2011
+ward	19100001	Contact crime	2013-14	537	2011
+ward	19100001	Property crime	2014-15	1098	2011
+ward	19100001	Contact crime	2014-15	651	2011
+ward	19100002	Property crime	2005-06	998	2011
+ward	19100002	Contact crime	2005-06	447	2011
+ward	19100002	Property crime	2006-07	1047	2011
+ward	19100002	Contact crime	2006-07	412	2011
+ward	19100002	Property crime	2007-08	987	2011
+ward	19100002	Contact crime	2007-08	434	2011
+ward	19100002	Property crime	2008-09	926	2011
+ward	19100002	Contact crime	2008-09	423	2011
+ward	19100002	Property crime	2009-10	927	2011
+ward	19100002	Contact crime	2009-10	456	2011
+ward	19100002	Property crime	2010-11	1131	2011
+ward	19100002	Contact crime	2010-11	535	2011
+ward	19100002	Property crime	2011-12	1297	2011
+ward	19100002	Contact crime	2011-12	528	2011
+ward	19100002	Property crime	2012-13	1278	2011
+ward	19100002	Contact crime	2012-13	569	2011
+ward	19100002	Property crime	2013-14	1366	2011
+ward	19100002	Contact crime	2013-14	644	2011
+ward	19100002	Property crime	2014-15	1355	2011
+ward	19100002	Contact crime	2014-15	734	2011
+ward	19100003	Property crime	2005-06	1307	2011
+ward	19100003	Contact crime	2005-06	502	2011
+ward	19100003	Property crime	2006-07	1420	2011
+ward	19100003	Contact crime	2006-07	513	2011
+ward	19100003	Property crime	2007-08	1268	2011
+ward	19100003	Contact crime	2007-08	578	2011
+ward	19100003	Property crime	2008-09	1293	2011
+ward	19100003	Contact crime	2008-09	604	2011
+ward	19100003	Property crime	2009-10	1226	2011
+ward	19100003	Contact crime	2009-10	581	2011
+ward	19100003	Property crime	2010-11	1515	2011
+ward	19100003	Contact crime	2010-11	729	2011
+ward	19100003	Property crime	2011-12	1712	2011
+ward	19100003	Contact crime	2011-12	711	2011
+ward	19100003	Property crime	2012-13	1685	2011
+ward	19100003	Contact crime	2012-13	696	2011
+ward	19100003	Property crime	2013-14	1734	2011
+ward	19100003	Contact crime	2013-14	779	2011
+ward	19100003	Property crime	2014-15	1753	2011
+ward	19100003	Contact crime	2014-15	786	2011
+ward	19100004	Property crime	2005-06	770	2011
+ward	19100004	Contact crime	2005-06	552	2011
+ward	19100004	Property crime	2006-07	844	2011
+ward	19100004	Contact crime	2006-07	564	2011
+ward	19100004	Property crime	2007-08	922	2011
+ward	19100004	Contact crime	2007-08	535	2011
+ward	19100004	Property crime	2008-09	834	2011
+ward	19100004	Contact crime	2008-09	544	2011
+ward	19100004	Property crime	2009-10	983	2011
+ward	19100004	Contact crime	2009-10	664	2011
+ward	19100004	Property crime	2010-11	866	2011
+ward	19100004	Contact crime	2010-11	582	2011
+ward	19100004	Property crime	2011-12	837	2011
+ward	19100004	Contact crime	2011-12	594	2011
+ward	19100004	Property crime	2012-13	950	2011
+ward	19100004	Contact crime	2012-13	630	2011
+ward	19100004	Property crime	2013-14	1028	2011
+ward	19100004	Contact crime	2013-14	665	2011
+ward	19100004	Property crime	2014-15	900	2011
+ward	19100004	Contact crime	2014-15	783	2011
+ward	19100005	Property crime	2005-06	516	2011
+ward	19100005	Contact crime	2005-06	253	2011
+ward	19100005	Property crime	2006-07	535	2011
+ward	19100005	Contact crime	2006-07	242	2011
+ward	19100005	Property crime	2007-08	629	2011
+ward	19100005	Contact crime	2007-08	249	2011
+ward	19100005	Property crime	2008-09	511	2011
+ward	19100005	Contact crime	2008-09	181	2011
+ward	19100005	Property crime	2009-10	602	2011
+ward	19100005	Contact crime	2009-10	249	2011
+ward	19100005	Property crime	2010-11	731	2011
+ward	19100005	Contact crime	2010-11	227	2011
+ward	19100005	Property crime	2011-12	717	2011
+ward	19100005	Contact crime	2011-12	227	2011
+ward	19100005	Property crime	2012-13	663	2011
+ward	19100005	Contact crime	2012-13	201	2011
+ward	19100005	Property crime	2013-14	640	2011
+ward	19100005	Contact crime	2013-14	210	2011
+ward	19100005	Property crime	2014-15	533	2011
+ward	19100005	Contact crime	2014-15	227	2011
+ward	19100006	Property crime	2005-06	290	2011
+ward	19100006	Contact crime	2005-06	321	2011
+ward	19100006	Property crime	2006-07	306	2011
+ward	19100006	Contact crime	2006-07	307	2011
+ward	19100006	Property crime	2007-08	304	2011
+ward	19100006	Contact crime	2007-08	250	2011
+ward	19100006	Property crime	2008-09	282	2011
+ward	19100006	Contact crime	2008-09	245	2011
+ward	19100006	Property crime	2009-10	302	2011
+ward	19100006	Contact crime	2009-10	273	2011
+ward	19100006	Property crime	2010-11	319	2011
+ward	19100006	Contact crime	2010-11	315	2011
+ward	19100006	Property crime	2011-12	395	2011
+ward	19100006	Contact crime	2011-12	318	2011
+ward	19100006	Property crime	2012-13	374	2011
+ward	19100006	Contact crime	2012-13	342	2011
+ward	19100006	Property crime	2013-14	388	2011
+ward	19100006	Contact crime	2013-14	382	2011
+ward	19100006	Property crime	2014-15	355	2011
+ward	19100006	Contact crime	2014-15	384	2011
+ward	19100007	Property crime	2005-06	310	2011
+ward	19100007	Contact crime	2005-06	428	2011
+ward	19100007	Property crime	2006-07	337	2011
+ward	19100007	Contact crime	2006-07	406	2011
+ward	19100007	Property crime	2007-08	331	2011
+ward	19100007	Contact crime	2007-08	320	2011
+ward	19100007	Property crime	2008-09	280	2011
+ward	19100007	Contact crime	2008-09	311	2011
+ward	19100007	Property crime	2009-10	319	2011
+ward	19100007	Contact crime	2009-10	354	2011
+ward	19100007	Property crime	2010-11	349	2011
+ward	19100007	Contact crime	2010-11	417	2011
+ward	19100007	Property crime	2011-12	444	2011
+ward	19100007	Contact crime	2011-12	424	2011
+ward	19100007	Property crime	2012-13	400	2011
+ward	19100007	Contact crime	2012-13	462	2011
+ward	19100007	Property crime	2013-14	436	2011
+ward	19100007	Contact crime	2013-14	520	2011
+ward	19100007	Property crime	2014-15	410	2011
+ward	19100007	Contact crime	2014-15	518	2011
+ward	19100008	Property crime	2005-06	918	2011
+ward	19100008	Contact crime	2005-06	470	2011
+ward	19100008	Property crime	2006-07	912	2011
+ward	19100008	Contact crime	2006-07	393	2011
+ward	19100008	Property crime	2007-08	959	2011
+ward	19100008	Contact crime	2007-08	430	2011
+ward	19100008	Property crime	2008-09	1082	2011
+ward	19100008	Contact crime	2008-09	448	2011
+ward	19100008	Property crime	2009-10	998	2011
+ward	19100008	Contact crime	2009-10	429	2011
+ward	19100008	Property crime	2010-11	961	2011
+ward	19100008	Contact crime	2010-11	414	2011
+ward	19100008	Property crime	2011-12	1084	2011
+ward	19100008	Contact crime	2011-12	401	2011
+ward	19100008	Property crime	2012-13	1189	2011
+ward	19100008	Contact crime	2012-13	387	2011
+ward	19100008	Property crime	2013-14	1102	2011
+ward	19100008	Contact crime	2013-14	388	2011
+ward	19100008	Property crime	2014-15	961	2011
+ward	19100008	Contact crime	2014-15	444	2011
+ward	19100009	Property crime	2005-06	342	2011
+ward	19100009	Contact crime	2005-06	399	2011
+ward	19100009	Property crime	2006-07	461	2011
+ward	19100009	Contact crime	2006-07	370	2011
+ward	19100009	Property crime	2007-08	437	2011
+ward	19100009	Contact crime	2007-08	373	2011
+ward	19100009	Property crime	2008-09	492	2011
+ward	19100009	Contact crime	2008-09	431	2011
+ward	19100009	Property crime	2009-10	542	2011
+ward	19100009	Contact crime	2009-10	513	2011
+ward	19100009	Property crime	2010-11	456	2011
+ward	19100009	Contact crime	2010-11	486	2011
+ward	19100009	Property crime	2011-12	430	2011
+ward	19100009	Contact crime	2011-12	451	2011
+ward	19100009	Property crime	2012-13	418	2011
+ward	19100009	Contact crime	2012-13	521	2011
+ward	19100009	Property crime	2013-14	459	2011
+ward	19100009	Contact crime	2013-14	542	2011
+ward	19100009	Property crime	2014-15	487	2011
+ward	19100009	Contact crime	2014-15	554	2011
+ward	19100010	Property crime	2005-06	915	2011
+ward	19100010	Contact crime	2005-06	591	2011
+ward	19100010	Property crime	2006-07	971	2011
+ward	19100010	Contact crime	2006-07	517	2011
+ward	19100010	Property crime	2007-08	934	2011
+ward	19100010	Contact crime	2007-08	520	2011
+ward	19100010	Property crime	2008-09	853	2011
+ward	19100010	Contact crime	2008-09	483	2011
+ward	19100010	Property crime	2009-10	867	2011
+ward	19100010	Contact crime	2009-10	540	2011
+ward	19100010	Property crime	2010-11	1005	2011
+ward	19100010	Contact crime	2010-11	589	2011
+ward	19100010	Property crime	2011-12	1110	2011
+ward	19100010	Contact crime	2011-12	574	2011
+ward	19100010	Property crime	2012-13	1100	2011
+ward	19100010	Contact crime	2012-13	633	2011
+ward	19100010	Property crime	2013-14	1173	2011
+ward	19100010	Contact crime	2013-14	701	2011
+ward	19100010	Property crime	2014-15	1173	2011
+ward	19100010	Contact crime	2014-15	818	2011
+ward	19100011	Property crime	2005-06	797	2011
+ward	19100011	Contact crime	2005-06	977	2011
+ward	19100011	Property crime	2006-07	894	2011
+ward	19100011	Contact crime	2006-07	612	2011
+ward	19100011	Property crime	2007-08	1008	2011
+ward	19100011	Contact crime	2007-08	663	2011
+ward	19100011	Property crime	2008-09	967	2011
+ward	19100011	Contact crime	2008-09	715	2011
+ward	19100011	Property crime	2009-10	929	2011
+ward	19100011	Contact crime	2009-10	668	2011
+ward	19100011	Property crime	2010-11	898	2011
+ward	19100011	Contact crime	2010-11	664	2011
+ward	19100011	Property crime	2011-12	968	2011
+ward	19100011	Contact crime	2011-12	664	2011
+ward	19100011	Property crime	2012-13	1089	2011
+ward	19100011	Contact crime	2012-13	699	2011
+ward	19100011	Property crime	2013-14	1154	2011
+ward	19100011	Contact crime	2013-14	722	2011
+ward	19100011	Property crime	2014-15	1159	2011
+ward	19100011	Contact crime	2014-15	851	2011
+ward	19100012	Property crime	2005-06	5	2011
+ward	19100012	Contact crime	2005-06	6	2011
+ward	19100012	Property crime	2006-07	6	2011
+ward	19100012	Contact crime	2006-07	4	2011
+ward	19100012	Property crime	2007-08	125	2011
+ward	19100012	Contact crime	2007-08	145	2011
+ward	19100012	Property crime	2008-09	379	2011
+ward	19100012	Contact crime	2008-09	520	2011
+ward	19100012	Property crime	2009-10	511	2011
+ward	19100012	Contact crime	2009-10	581	2011
+ward	19100012	Property crime	2010-11	474	2011
+ward	19100012	Contact crime	2010-11	545	2011
+ward	19100012	Property crime	2011-12	430	2011
+ward	19100012	Contact crime	2011-12	474	2011
+ward	19100012	Property crime	2012-13	415	2011
+ward	19100012	Contact crime	2012-13	494	2011
+ward	19100012	Property crime	2013-14	441	2011
+ward	19100012	Contact crime	2013-14	516	2011
+ward	19100012	Property crime	2014-15	463	2011
+ward	19100012	Contact crime	2014-15	572	2011
+ward	19100013	Property crime	2005-06	464	2011
+ward	19100013	Contact crime	2005-06	767	2011
+ward	19100013	Property crime	2006-07	465	2011
+ward	19100013	Contact crime	2006-07	666	2011
+ward	19100013	Property crime	2007-08	513	2011
+ward	19100013	Contact crime	2007-08	776	2011
+ward	19100013	Property crime	2008-09	370	2011
+ward	19100013	Contact crime	2008-09	642	2011
+ward	19100013	Property crime	2009-10	327	2011
+ward	19100013	Contact crime	2009-10	633	2011
+ward	19100013	Property crime	2010-11	315	2011
+ward	19100013	Contact crime	2010-11	561	2011
+ward	19100013	Property crime	2011-12	338	2011
+ward	19100013	Contact crime	2011-12	580	2011
+ward	19100013	Property crime	2012-13	353	2011
+ward	19100013	Contact crime	2012-13	621	2011
+ward	19100013	Property crime	2013-14	362	2011
+ward	19100013	Contact crime	2013-14	627	2011
+ward	19100013	Property crime	2014-15	360	2011
+ward	19100013	Contact crime	2014-15	726	2011
+ward	19100014	Property crime	2005-06	569	2011
+ward	19100014	Contact crime	2005-06	927	2011
+ward	19100014	Property crime	2006-07	667	2011
+ward	19100014	Contact crime	2006-07	824	2011
+ward	19100014	Property crime	2007-08	793	2011
+ward	19100014	Contact crime	2007-08	829	2011
+ward	19100014	Property crime	2008-09	759	2011
+ward	19100014	Contact crime	2008-09	812	2011
+ward	19100014	Property crime	2009-10	679	2011
+ward	19100014	Contact crime	2009-10	767	2011
+ward	19100014	Property crime	2010-11	698	2011
+ward	19100014	Contact crime	2010-11	744	2011
+ward	19100014	Property crime	2011-12	726	2011
+ward	19100014	Contact crime	2011-12	764	2011
+ward	19100014	Property crime	2012-13	856	2011
+ward	19100014	Contact crime	2012-13	829	2011
+ward	19100014	Property crime	2013-14	916	2011
+ward	19100014	Contact crime	2013-14	921	2011
+ward	19100014	Property crime	2014-15	848	2011
+ward	19100014	Contact crime	2014-15	982	2011
+ward	19100015	Property crime	2005-06	658	2011
+ward	19100015	Contact crime	2005-06	292	2011
+ward	19100015	Property crime	2006-07	748	2011
+ward	19100015	Contact crime	2006-07	263	2011
+ward	19100015	Property crime	2007-08	746	2011
+ward	19100015	Contact crime	2007-08	275	2011
+ward	19100015	Property crime	2008-09	656	2011
+ward	19100015	Contact crime	2008-09	231	2011
+ward	19100015	Property crime	2009-10	805	2011
+ward	19100015	Contact crime	2009-10	275	2011
+ward	19100015	Property crime	2010-11	779	2011
+ward	19100015	Contact crime	2010-11	241	2011
+ward	19100015	Property crime	2011-12	676	2011
+ward	19100015	Contact crime	2011-12	265	2011
+ward	19100015	Property crime	2012-13	760	2011
+ward	19100015	Contact crime	2012-13	284	2011
+ward	19100015	Property crime	2013-14	829	2011
+ward	19100015	Contact crime	2013-14	339	2011
+ward	19100015	Property crime	2014-15	652	2011
+ward	19100015	Contact crime	2014-15	363	2011
+ward	19100016	Property crime	2005-06	441	2011
+ward	19100016	Contact crime	2005-06	912	2011
+ward	19100016	Property crime	2006-07	518	2011
+ward	19100016	Contact crime	2006-07	914	2011
+ward	19100016	Property crime	2007-08	654	2011
+ward	19100016	Contact crime	2007-08	887	2011
+ward	19100016	Property crime	2008-09	622	2011
+ward	19100016	Contact crime	2008-09	826	2011
+ward	19100016	Property crime	2009-10	515	2011
+ward	19100016	Contact crime	2009-10	788	2011
+ward	19100016	Property crime	2010-11	543	2011
+ward	19100016	Contact crime	2010-11	763	2011
+ward	19100016	Property crime	2011-12	567	2011
+ward	19100016	Contact crime	2011-12	790	2011
+ward	19100016	Property crime	2012-13	700	2011
+ward	19100016	Contact crime	2012-13	864	2011
+ward	19100016	Property crime	2013-14	758	2011
+ward	19100016	Contact crime	2013-14	991	2011
+ward	19100016	Property crime	2014-15	650	2011
+ward	19100016	Contact crime	2014-15	1004	2011
+ward	19100017	Property crime	2005-06	466	2011
+ward	19100017	Contact crime	2005-06	926	2011
+ward	19100017	Property crime	2006-07	520	2011
+ward	19100017	Contact crime	2006-07	887	2011
+ward	19100017	Property crime	2007-08	663	2011
+ward	19100017	Contact crime	2007-08	852	2011
+ward	19100017	Property crime	2008-09	627	2011
+ward	19100017	Contact crime	2008-09	782	2011
+ward	19100017	Property crime	2009-10	518	2011
+ward	19100017	Contact crime	2009-10	754	2011
+ward	19100017	Property crime	2010-11	543	2011
+ward	19100017	Contact crime	2010-11	741	2011
+ward	19100017	Property crime	2011-12	582	2011
+ward	19100017	Contact crime	2011-12	765	2011
+ward	19100017	Property crime	2012-13	719	2011
+ward	19100017	Contact crime	2012-13	834	2011
+ward	19100017	Property crime	2013-14	777	2011
+ward	19100017	Contact crime	2013-14	957	2011
+ward	19100017	Property crime	2014-15	660	2011
+ward	19100017	Contact crime	2014-15	957	2011
+ward	19100018	Property crime	2005-06	87	2011
+ward	19100018	Contact crime	2005-06	516	2011
+ward	19100018	Property crime	2006-07	96	2011
+ward	19100018	Contact crime	2006-07	478	2011
+ward	19100018	Property crime	2007-08	88	2011
+ward	19100018	Contact crime	2007-08	430	2011
+ward	19100018	Property crime	2008-09	90	2011
+ward	19100018	Contact crime	2008-09	362	2011
+ward	19100018	Property crime	2009-10	96	2011
+ward	19100018	Contact crime	2009-10	374	2011
+ward	19100018	Property crime	2010-11	97	2011
+ward	19100018	Contact crime	2010-11	345	2011
+ward	19100018	Property crime	2011-12	94	2011
+ward	19100018	Contact crime	2011-12	405	2011
+ward	19100018	Property crime	2012-13	112	2011
+ward	19100018	Contact crime	2012-13	475	2011
+ward	19100018	Property crime	2013-14	135	2011
+ward	19100018	Contact crime	2013-14	492	2011
+ward	19100018	Property crime	2014-15	134	2011
+ward	19100018	Contact crime	2014-15	530	2011
+ward	19100019	Property crime	2005-06	416	2011
+ward	19100019	Contact crime	2005-06	890	2011
+ward	19100019	Property crime	2006-07	602	2011
+ward	19100019	Contact crime	2006-07	1001	2011
+ward	19100019	Property crime	2007-08	704	2011
+ward	19100019	Contact crime	2007-08	1032	2011
+ward	19100019	Property crime	2008-09	687	2011
+ward	19100019	Contact crime	2008-09	1034	2011
+ward	19100019	Property crime	2009-10	596	2011
+ward	19100019	Contact crime	2009-10	946	2011
+ward	19100019	Property crime	2010-11	620	2011
+ward	19100019	Contact crime	2010-11	866	2011
+ward	19100019	Property crime	2011-12	588	2011
+ward	19100019	Contact crime	2011-12	903	2011
+ward	19100019	Property crime	2012-13	700	2011
+ward	19100019	Contact crime	2012-13	994	2011
+ward	19100019	Property crime	2013-14	759	2011
+ward	19100019	Contact crime	2013-14	1112	2011
+ward	19100019	Property crime	2014-15	720	2011
+ward	19100019	Contact crime	2014-15	1217	2011
+ward	19100020	Property crime	2005-06	435	2011
+ward	19100020	Contact crime	2005-06	719	2011
+ward	19100020	Property crime	2006-07	435	2011
+ward	19100020	Contact crime	2006-07	625	2011
+ward	19100020	Property crime	2007-08	479	2011
+ward	19100020	Contact crime	2007-08	726	2011
+ward	19100020	Property crime	2008-09	342	2011
+ward	19100020	Contact crime	2008-09	595	2011
+ward	19100020	Property crime	2009-10	300	2011
+ward	19100020	Contact crime	2009-10	585	2011
+ward	19100020	Property crime	2010-11	288	2011
+ward	19100020	Contact crime	2010-11	519	2011
+ward	19100020	Property crime	2011-12	311	2011
+ward	19100020	Contact crime	2011-12	538	2011
+ward	19100020	Property crime	2012-13	326	2011
+ward	19100020	Contact crime	2012-13	576	2011
+ward	19100020	Property crime	2013-14	333	2011
+ward	19100020	Contact crime	2013-14	581	2011
+ward	19100020	Property crime	2014-15	332	2011
+ward	19100020	Contact crime	2014-15	673	2011
+ward	19100021	Property crime	2005-06	477	2011
+ward	19100021	Contact crime	2005-06	171	2011
+ward	19100021	Property crime	2006-07	533	2011
+ward	19100021	Contact crime	2006-07	158	2011
+ward	19100021	Property crime	2007-08	490	2011
+ward	19100021	Contact crime	2007-08	150	2011
+ward	19100021	Property crime	2008-09	533	2011
+ward	19100021	Contact crime	2008-09	162	2011
+ward	19100021	Property crime	2009-10	437	2011
+ward	19100021	Contact crime	2009-10	169	2011
+ward	19100021	Property crime	2010-11	525	2011
+ward	19100021	Contact crime	2010-11	165	2011
+ward	19100021	Property crime	2011-12	593	2011
+ward	19100021	Contact crime	2011-12	167	2011
+ward	19100021	Property crime	2012-13	694	2011
+ward	19100021	Contact crime	2012-13	188	2011
+ward	19100021	Property crime	2013-14	625	2011
+ward	19100021	Contact crime	2013-14	193	2011
+ward	19100021	Property crime	2014-15	491	2011
+ward	19100021	Contact crime	2014-15	197	2011
+ward	19100022	Property crime	2005-06	163	2011
+ward	19100022	Contact crime	2005-06	254	2011
+ward	19100022	Property crime	2006-07	187	2011
+ward	19100022	Contact crime	2006-07	210	2011
+ward	19100022	Property crime	2007-08	258	2011
+ward	19100022	Contact crime	2007-08	281	2011
+ward	19100022	Property crime	2008-09	378	2011
+ward	19100022	Contact crime	2008-09	471	2011
+ward	19100022	Property crime	2009-10	463	2011
+ward	19100022	Contact crime	2009-10	534	2011
+ward	19100022	Property crime	2010-11	426	2011
+ward	19100022	Contact crime	2010-11	505	2011
+ward	19100022	Property crime	2011-12	376	2011
+ward	19100022	Contact crime	2011-12	454	2011
+ward	19100022	Property crime	2012-13	372	2011
+ward	19100022	Contact crime	2012-13	487	2011
+ward	19100022	Property crime	2013-14	387	2011
+ward	19100022	Contact crime	2013-14	511	2011
+ward	19100022	Property crime	2014-15	411	2011
+ward	19100022	Contact crime	2014-15	583	2011
+ward	19100023	Property crime	2005-06	680	2011
+ward	19100023	Contact crime	2005-06	269	2011
+ward	19100023	Property crime	2006-07	576	2011
+ward	19100023	Contact crime	2006-07	239	2011
+ward	19100023	Property crime	2007-08	723	2011
+ward	19100023	Contact crime	2007-08	264	2011
+ward	19100023	Property crime	2008-09	776	2011
+ward	19100023	Contact crime	2008-09	272	2011
+ward	19100023	Property crime	2009-10	871	2011
+ward	19100023	Contact crime	2009-10	307	2011
+ward	19100023	Property crime	2010-11	818	2011
+ward	19100023	Contact crime	2010-11	307	2011
+ward	19100023	Property crime	2011-12	709	2011
+ward	19100023	Contact crime	2011-12	283	2011
+ward	19100023	Property crime	2012-13	741	2011
+ward	19100023	Contact crime	2012-13	287	2011
+ward	19100023	Property crime	2013-14	786	2011
+ward	19100023	Contact crime	2013-14	317	2011
+ward	19100023	Property crime	2014-15	653	2011
+ward	19100023	Contact crime	2014-15	359	2011
+ward	19100024	Property crime	2005-06	386	2011
+ward	19100024	Contact crime	2005-06	492	2011
+ward	19100024	Property crime	2006-07	412	2011
+ward	19100024	Contact crime	2006-07	494	2011
+ward	19100024	Property crime	2007-08	400	2011
+ward	19100024	Contact crime	2007-08	384	2011
+ward	19100024	Property crime	2008-09	327	2011
+ward	19100024	Contact crime	2008-09	385	2011
+ward	19100024	Property crime	2009-10	374	2011
+ward	19100024	Contact crime	2009-10	521	2011
+ward	19100024	Property crime	2010-11	295	2011
+ward	19100024	Contact crime	2010-11	470	2011
+ward	19100024	Property crime	2011-12	319	2011
+ward	19100024	Contact crime	2011-12	498	2011
+ward	19100024	Property crime	2012-13	362	2011
+ward	19100024	Contact crime	2012-13	565	2011
+ward	19100024	Property crime	2013-14	376	2011
+ward	19100024	Contact crime	2013-14	594	2011
+ward	19100024	Property crime	2014-15	428	2011
+ward	19100024	Contact crime	2014-15	634	2011
+ward	19100025	Property crime	2005-06	592	2011
+ward	19100025	Contact crime	2005-06	917	2011
+ward	19100025	Property crime	2006-07	677	2011
+ward	19100025	Contact crime	2006-07	756	2011
+ward	19100025	Property crime	2007-08	684	2011
+ward	19100025	Contact crime	2007-08	718	2011
+ward	19100025	Property crime	2008-09	584	2011
+ward	19100025	Contact crime	2008-09	618	2011
+ward	19100025	Property crime	2009-10	614	2011
+ward	19100025	Contact crime	2009-10	716	2011
+ward	19100025	Property crime	2010-11	559	2011
+ward	19100025	Contact crime	2010-11	692	2011
+ward	19100025	Property crime	2011-12	474	2011
+ward	19100025	Contact crime	2011-12	655	2011
+ward	19100025	Property crime	2012-13	492	2011
+ward	19100025	Contact crime	2012-13	734	2011
+ward	19100025	Property crime	2013-14	494	2011
+ward	19100025	Contact crime	2013-14	774	2011
+ward	19100025	Property crime	2014-15	534	2011
+ward	19100025	Contact crime	2014-15	919	2011
+ward	19100026	Property crime	2005-06	750	2011
+ward	19100026	Contact crime	2005-06	577	2011
+ward	19100026	Property crime	2006-07	803	2011
+ward	19100026	Contact crime	2006-07	511	2011
+ward	19100026	Property crime	2007-08	810	2011
+ward	19100026	Contact crime	2007-08	474	2011
+ward	19100026	Property crime	2008-09	706	2011
+ward	19100026	Contact crime	2008-09	435	2011
+ward	19100026	Property crime	2009-10	718	2011
+ward	19100026	Contact crime	2009-10	516	2011
+ward	19100026	Property crime	2010-11	827	2011
+ward	19100026	Contact crime	2010-11	585	2011
+ward	19100026	Property crime	2011-12	929	2011
+ward	19100026	Contact crime	2011-12	597	2011
+ward	19100026	Property crime	2012-13	926	2011
+ward	19100026	Contact crime	2012-13	666	2011
+ward	19100026	Property crime	2013-14	1041	2011
+ward	19100026	Contact crime	2013-14	733	2011
+ward	19100026	Property crime	2014-15	1009	2011
+ward	19100026	Contact crime	2014-15	890	2011
+ward	19100027	Property crime	2005-06	827	2011
+ward	19100027	Contact crime	2005-06	523	2011
+ward	19100027	Property crime	2006-07	891	2011
+ward	19100027	Contact crime	2006-07	503	2011
+ward	19100027	Property crime	2007-08	783	2011
+ward	19100027	Contact crime	2007-08	518	2011
+ward	19100027	Property crime	2008-09	806	2011
+ward	19100027	Contact crime	2008-09	502	2011
+ward	19100027	Property crime	2009-10	837	2011
+ward	19100027	Contact crime	2009-10	485	2011
+ward	19100027	Property crime	2010-11	913	2011
+ward	19100027	Contact crime	2010-11	461	2011
+ward	19100027	Property crime	2011-12	999	2011
+ward	19100027	Contact crime	2011-12	518	2011
+ward	19100027	Property crime	2012-13	933	2011
+ward	19100027	Contact crime	2012-13	442	2011
+ward	19100027	Property crime	2013-14	962	2011
+ward	19100027	Contact crime	2013-14	442	2011
+ward	19100027	Property crime	2014-15	933	2011
+ward	19100027	Contact crime	2014-15	517	2011
+ward	19100028	Property crime	2005-06	390	2011
+ward	19100028	Contact crime	2005-06	647	2011
+ward	19100028	Property crime	2006-07	491	2011
+ward	19100028	Contact crime	2006-07	593	2011
+ward	19100028	Property crime	2007-08	519	2011
+ward	19100028	Contact crime	2007-08	513	2011
+ward	19100028	Property crime	2008-09	453	2011
+ward	19100028	Contact crime	2008-09	473	2011
+ward	19100028	Property crime	2009-10	421	2011
+ward	19100028	Contact crime	2009-10	557	2011
+ward	19100028	Property crime	2010-11	420	2011
+ward	19100028	Contact crime	2010-11	649	2011
+ward	19100028	Property crime	2011-12	416	2011
+ward	19100028	Contact crime	2011-12	678	2011
+ward	19100028	Property crime	2012-13	434	2011
+ward	19100028	Contact crime	2012-13	720	2011
+ward	19100028	Property crime	2013-14	517	2011
+ward	19100028	Contact crime	2013-14	760	2011
+ward	19100028	Property crime	2014-15	490	2011
+ward	19100028	Contact crime	2014-15	898	2011
+ward	19100029	Property crime	2005-06	456	2011
+ward	19100029	Contact crime	2005-06	694	2011
+ward	19100029	Property crime	2006-07	613	2011
+ward	19100029	Contact crime	2006-07	653	2011
+ward	19100029	Property crime	2007-08	616	2011
+ward	19100029	Contact crime	2007-08	686	2011
+ward	19100029	Property crime	2008-09	581	2011
+ward	19100029	Contact crime	2008-09	716	2011
+ward	19100029	Property crime	2009-10	569	2011
+ward	19100029	Contact crime	2009-10	825	2011
+ward	19100029	Property crime	2010-11	477	2011
+ward	19100029	Contact crime	2010-11	651	2011
+ward	19100029	Property crime	2011-12	476	2011
+ward	19100029	Contact crime	2011-12	684	2011
+ward	19100029	Property crime	2012-13	531	2011
+ward	19100029	Contact crime	2012-13	653	2011
+ward	19100029	Property crime	2013-14	501	2011
+ward	19100029	Contact crime	2013-14	737	2011
+ward	19100029	Property crime	2014-15	550	2011
+ward	19100029	Contact crime	2014-15	874	2011
+ward	19100030	Property crime	2005-06	485	2011
+ward	19100030	Contact crime	2005-06	708	2011
+ward	19100030	Property crime	2006-07	566	2011
+ward	19100030	Contact crime	2006-07	678	2011
+ward	19100030	Property crime	2007-08	575	2011
+ward	19100030	Contact crime	2007-08	555	2011
+ward	19100030	Property crime	2008-09	489	2011
+ward	19100030	Contact crime	2008-09	531	2011
+ward	19100030	Property crime	2009-10	497	2011
+ward	19100030	Contact crime	2009-10	670	2011
+ward	19100030	Property crime	2010-11	448	2011
+ward	19100030	Contact crime	2010-11	699	2011
+ward	19100030	Property crime	2011-12	463	2011
+ward	19100030	Contact crime	2011-12	737	2011
+ward	19100030	Property crime	2012-13	500	2011
+ward	19100030	Contact crime	2012-13	804	2011
+ward	19100030	Property crime	2013-14	564	2011
+ward	19100030	Contact crime	2013-14	848	2011
+ward	19100030	Property crime	2014-15	578	2011
+ward	19100030	Contact crime	2014-15	959	2011
+ward	19100031	Property crime	2005-06	443	2011
+ward	19100031	Contact crime	2005-06	534	2011
+ward	19100031	Property crime	2006-07	461	2011
+ward	19100031	Contact crime	2006-07	556	2011
+ward	19100031	Property crime	2007-08	437	2011
+ward	19100031	Contact crime	2007-08	411	2011
+ward	19100031	Property crime	2008-09	349	2011
+ward	19100031	Contact crime	2008-09	419	2011
+ward	19100031	Property crime	2009-10	422	2011
+ward	19100031	Contact crime	2009-10	593	2011
+ward	19100031	Property crime	2010-11	312	2011
+ward	19100031	Contact crime	2010-11	505	2011
+ward	19100031	Property crime	2011-12	350	2011
+ward	19100031	Contact crime	2011-12	541	2011
+ward	19100031	Property crime	2012-13	406	2011
+ward	19100031	Contact crime	2012-13	627	2011
+ward	19100031	Property crime	2013-14	408	2011
+ward	19100031	Contact crime	2013-14	658	2011
+ward	19100031	Property crime	2014-15	485	2011
+ward	19100031	Contact crime	2014-15	680	2011
+ward	19100032	Property crime	2005-06	395	2011
+ward	19100032	Contact crime	2005-06	595	2011
+ward	19100032	Property crime	2006-07	523	2011
+ward	19100032	Contact crime	2006-07	559	2011
+ward	19100032	Property crime	2007-08	530	2011
+ward	19100032	Contact crime	2007-08	588	2011
+ward	19100032	Property crime	2008-09	508	2011
+ward	19100032	Contact crime	2008-09	613	2011
+ward	19100032	Property crime	2009-10	497	2011
+ward	19100032	Contact crime	2009-10	712	2011
+ward	19100032	Property crime	2010-11	415	2011
+ward	19100032	Contact crime	2010-11	566	2011
+ward	19100032	Property crime	2011-12	417	2011
+ward	19100032	Contact crime	2011-12	593	2011
+ward	19100032	Property crime	2012-13	464	2011
+ward	19100032	Contact crime	2012-13	570	2011
+ward	19100032	Property crime	2013-14	443	2011
+ward	19100032	Contact crime	2013-14	633	2011
+ward	19100032	Property crime	2014-15	483	2011
+ward	19100032	Contact crime	2014-15	749	2011
+ward	19100033	Property crime	2005-06	183	2011
+ward	19100033	Contact crime	2005-06	898	2011
+ward	19100033	Property crime	2006-07	212	2011
+ward	19100033	Contact crime	2006-07	913	2011
+ward	19100033	Property crime	2007-08	193	2011
+ward	19100033	Contact crime	2007-08	807	2011
+ward	19100033	Property crime	2008-09	183	2011
+ward	19100033	Contact crime	2008-09	687	2011
+ward	19100033	Property crime	2009-10	207	2011
+ward	19100033	Contact crime	2009-10	718	2011
+ward	19100033	Property crime	2010-11	201	2011
+ward	19100033	Contact crime	2010-11	720	2011
+ward	19100033	Property crime	2011-12	227	2011
+ward	19100033	Contact crime	2011-12	831	2011
+ward	19100033	Property crime	2012-13	270	2011
+ward	19100033	Contact crime	2012-13	827	2011
+ward	19100033	Property crime	2013-14	265	2011
+ward	19100033	Contact crime	2013-14	817	2011
+ward	19100033	Property crime	2014-15	281	2011
+ward	19100033	Contact crime	2014-15	885	2011
+ward	19100034	Property crime	2005-06	140	2011
+ward	19100034	Contact crime	2005-06	693	2011
+ward	19100034	Property crime	2006-07	163	2011
+ward	19100034	Contact crime	2006-07	706	2011
+ward	19100034	Property crime	2007-08	148	2011
+ward	19100034	Contact crime	2007-08	623	2011
+ward	19100034	Property crime	2008-09	140	2011
+ward	19100034	Contact crime	2008-09	531	2011
+ward	19100034	Property crime	2009-10	159	2011
+ward	19100034	Contact crime	2009-10	555	2011
+ward	19100034	Property crime	2010-11	154	2011
+ward	19100034	Contact crime	2010-11	556	2011
+ward	19100034	Property crime	2011-12	174	2011
+ward	19100034	Contact crime	2011-12	642	2011
+ward	19100034	Property crime	2012-13	208	2011
+ward	19100034	Contact crime	2012-13	639	2011
+ward	19100034	Property crime	2013-14	204	2011
+ward	19100034	Contact crime	2013-14	631	2011
+ward	19100034	Property crime	2014-15	216	2011
+ward	19100034	Contact crime	2014-15	683	2011
+ward	19100035	Property crime	2005-06	186	2011
+ward	19100035	Contact crime	2005-06	756	2011
+ward	19100035	Property crime	2006-07	249	2011
+ward	19100035	Contact crime	2006-07	844	2011
+ward	19100035	Property crime	2007-08	206	2011
+ward	19100035	Contact crime	2007-08	616	2011
+ward	19100035	Property crime	2008-09	203	2011
+ward	19100035	Contact crime	2008-09	536	2011
+ward	19100035	Property crime	2009-10	210	2011
+ward	19100035	Contact crime	2009-10	571	2011
+ward	19100035	Property crime	2010-11	262	2011
+ward	19100035	Contact crime	2010-11	560	2011
+ward	19100035	Property crime	2011-12	278	2011
+ward	19100035	Contact crime	2011-12	692	2011
+ward	19100035	Property crime	2012-13	250	2011
+ward	19100035	Contact crime	2012-13	635	2011
+ward	19100035	Property crime	2013-14	279	2011
+ward	19100035	Contact crime	2013-14	659	2011
+ward	19100035	Property crime	2014-15	336	2011
+ward	19100035	Contact crime	2014-15	791	2011
+ward	19100036	Property crime	2005-06	138	2011
+ward	19100036	Contact crime	2005-06	683	2011
+ward	19100036	Property crime	2006-07	160	2011
+ward	19100036	Contact crime	2006-07	695	2011
+ward	19100036	Property crime	2007-08	146	2011
+ward	19100036	Contact crime	2007-08	614	2011
+ward	19100036	Property crime	2008-09	139	2011
+ward	19100036	Contact crime	2008-09	523	2011
+ward	19100036	Property crime	2009-10	156	2011
+ward	19100036	Contact crime	2009-10	546	2011
+ward	19100036	Property crime	2010-11	152	2011
+ward	19100036	Contact crime	2010-11	547	2011
+ward	19100036	Property crime	2011-12	172	2011
+ward	19100036	Contact crime	2011-12	633	2011
+ward	19100036	Property crime	2012-13	205	2011
+ward	19100036	Contact crime	2012-13	629	2011
+ward	19100036	Property crime	2013-14	201	2011
+ward	19100036	Contact crime	2013-14	621	2011
+ward	19100036	Property crime	2014-15	213	2011
+ward	19100036	Contact crime	2014-15	673	2011
+ward	19100037	Property crime	2005-06	99	2011
+ward	19100037	Contact crime	2005-06	476	2011
+ward	19100037	Property crime	2006-07	109	2011
+ward	19100037	Contact crime	2006-07	461	2011
+ward	19100037	Property crime	2007-08	104	2011
+ward	19100037	Contact crime	2007-08	404	2011
+ward	19100037	Property crime	2008-09	98	2011
+ward	19100037	Contact crime	2008-09	349	2011
+ward	19100037	Property crime	2009-10	115	2011
+ward	19100037	Contact crime	2009-10	359	2011
+ward	19100037	Property crime	2010-11	111	2011
+ward	19100037	Contact crime	2010-11	368	2011
+ward	19100037	Property crime	2011-12	127	2011
+ward	19100037	Contact crime	2011-12	419	2011
+ward	19100037	Property crime	2012-13	150	2011
+ward	19100037	Contact crime	2012-13	424	2011
+ward	19100037	Property crime	2013-14	143	2011
+ward	19100037	Contact crime	2013-14	424	2011
+ward	19100037	Property crime	2014-15	143	2011
+ward	19100037	Contact crime	2014-15	450	2011
+ward	19100038	Property crime	2005-06	116	2011
+ward	19100038	Contact crime	2005-06	511	2011
+ward	19100038	Property crime	2006-07	110	2011
+ward	19100038	Contact crime	2006-07	429	2011
+ward	19100038	Property crime	2007-08	117	2011
+ward	19100038	Contact crime	2007-08	365	2011
+ward	19100038	Property crime	2008-09	110	2011
+ward	19100038	Contact crime	2008-09	330	2011
+ward	19100038	Property crime	2009-10	141	2011
+ward	19100038	Contact crime	2009-10	325	2011
+ward	19100038	Property crime	2010-11	136	2011
+ward	19100038	Contact crime	2010-11	359	2011
+ward	19100038	Property crime	2011-12	158	2011
+ward	19100038	Contact crime	2011-12	389	2011
+ward	19100038	Property crime	2012-13	181	2011
+ward	19100038	Contact crime	2012-13	416	2011
+ward	19100038	Property crime	2013-14	162	2011
+ward	19100038	Contact crime	2013-14	429	2011
+ward	19100038	Property crime	2014-15	138	2011
+ward	19100038	Contact crime	2014-15	429	2011
+ward	19100039	Property crime	2005-06	125	2011
+ward	19100039	Contact crime	2005-06	568	2011
+ward	19100039	Property crime	2006-07	126	2011
+ward	19100039	Contact crime	2006-07	507	2011
+ward	19100039	Property crime	2007-08	128	2011
+ward	19100039	Contact crime	2007-08	437	2011
+ward	19100039	Property crime	2008-09	120	2011
+ward	19100039	Contact crime	2008-09	388	2011
+ward	19100039	Property crime	2009-10	149	2011
+ward	19100039	Contact crime	2009-10	390	2011
+ward	19100039	Property crime	2010-11	144	2011
+ward	19100039	Contact crime	2010-11	416	2011
+ward	19100039	Property crime	2011-12	166	2011
+ward	19100039	Contact crime	2011-12	461	2011
+ward	19100039	Property crime	2012-13	192	2011
+ward	19100039	Contact crime	2012-13	481	2011
+ward	19100039	Property crime	2013-14	176	2011
+ward	19100039	Contact crime	2013-14	489	2011
+ward	19100039	Property crime	2014-15	160	2011
+ward	19100039	Contact crime	2014-15	502	2011
+ward	19100040	Property crime	2005-06	169	2011
+ward	19100040	Contact crime	2005-06	736	2011
+ward	19100040	Property crime	2006-07	157	2011
+ward	19100040	Contact crime	2006-07	605	2011
+ward	19100040	Property crime	2007-08	170	2011
+ward	19100040	Contact crime	2007-08	513	2011
+ward	19100040	Property crime	2008-09	160	2011
+ward	19100040	Contact crime	2008-09	467	2011
+ward	19100040	Property crime	2009-10	206	2011
+ward	19100040	Contact crime	2009-10	457	2011
+ward	19100040	Property crime	2010-11	199	2011
+ward	19100040	Contact crime	2010-11	510	2011
+ward	19100040	Property crime	2011-12	231	2011
+ward	19100040	Contact crime	2011-12	549	2011
+ward	19100040	Property crime	2012-13	264	2011
+ward	19100040	Contact crime	2012-13	592	2011
+ward	19100040	Property crime	2013-14	234	2011
+ward	19100040	Contact crime	2013-14	612	2011
+ward	19100040	Property crime	2014-15	196	2011
+ward	19100040	Contact crime	2014-15	607	2011
+ward	19100041	Property crime	2005-06	125	2011
+ward	19100041	Contact crime	2005-06	541	2011
+ward	19100041	Property crime	2006-07	117	2011
+ward	19100041	Contact crime	2006-07	446	2011
+ward	19100041	Property crime	2007-08	126	2011
+ward	19100041	Contact crime	2007-08	378	2011
+ward	19100041	Property crime	2008-09	118	2011
+ward	19100041	Contact crime	2008-09	344	2011
+ward	19100041	Property crime	2009-10	153	2011
+ward	19100041	Contact crime	2009-10	337	2011
+ward	19100041	Property crime	2010-11	147	2011
+ward	19100041	Contact crime	2010-11	376	2011
+ward	19100041	Property crime	2011-12	171	2011
+ward	19100041	Contact crime	2011-12	404	2011
+ward	19100041	Property crime	2012-13	195	2011
+ward	19100041	Contact crime	2012-13	436	2011
+ward	19100041	Property crime	2013-14	173	2011
+ward	19100041	Contact crime	2013-14	451	2011
+ward	19100041	Property crime	2014-15	145	2011
+ward	19100041	Contact crime	2014-15	447	2011
+ward	19100042	Property crime	2005-06	205	2011
+ward	19100042	Contact crime	2005-06	615	2011
+ward	19100042	Property crime	2006-07	230	2011
+ward	19100042	Contact crime	2006-07	572	2011
+ward	19100042	Property crime	2007-08	239	2011
+ward	19100042	Contact crime	2007-08	493	2011
+ward	19100042	Property crime	2008-09	199	2011
+ward	19100042	Contact crime	2008-09	411	2011
+ward	19100042	Property crime	2009-10	245	2011
+ward	19100042	Contact crime	2009-10	433	2011
+ward	19100042	Property crime	2010-11	220	2011
+ward	19100042	Contact crime	2010-11	445	2011
+ward	19100042	Property crime	2011-12	250	2011
+ward	19100042	Contact crime	2011-12	476	2011
+ward	19100042	Property crime	2012-13	282	2011
+ward	19100042	Contact crime	2012-13	537	2011
+ward	19100042	Property crime	2013-14	258	2011
+ward	19100042	Contact crime	2013-14	548	2011
+ward	19100042	Property crime	2014-15	228	2011
+ward	19100042	Contact crime	2014-15	553	2011
+ward	19100043	Property crime	2005-06	899	2011
+ward	19100043	Contact crime	2005-06	729	2011
+ward	19100043	Property crime	2006-07	967	2011
+ward	19100043	Contact crime	2006-07	766	2011
+ward	19100043	Property crime	2007-08	843	2011
+ward	19100043	Contact crime	2007-08	671	2011
+ward	19100043	Property crime	2008-09	697	2011
+ward	19100043	Contact crime	2008-09	685	2011
+ward	19100043	Property crime	2009-10	676	2011
+ward	19100043	Contact crime	2009-10	636	2011
+ward	19100043	Property crime	2010-11	619	2011
+ward	19100043	Contact crime	2010-11	628	2011
+ward	19100043	Property crime	2011-12	834	2011
+ward	19100043	Contact crime	2011-12	694	2011
+ward	19100043	Property crime	2012-13	756	2011
+ward	19100043	Contact crime	2012-13	712	2011
+ward	19100043	Property crime	2013-14	952	2011
+ward	19100043	Contact crime	2013-14	677	2011
+ward	19100043	Property crime	2014-15	712	2011
+ward	19100043	Contact crime	2014-15	667	2011
+ward	19100044	Property crime	2005-06	310	2011
+ward	19100044	Contact crime	2005-06	704	2011
+ward	19100044	Property crime	2006-07	381	2011
+ward	19100044	Contact crime	2006-07	728	2011
+ward	19100044	Property crime	2007-08	389	2011
+ward	19100044	Contact crime	2007-08	636	2011
+ward	19100044	Property crime	2008-09	304	2011
+ward	19100044	Contact crime	2008-09	492	2011
+ward	19100044	Property crime	2009-10	365	2011
+ward	19100044	Contact crime	2009-10	552	2011
+ward	19100044	Property crime	2010-11	313	2011
+ward	19100044	Contact crime	2010-11	529	2011
+ward	19100044	Property crime	2011-12	352	2011
+ward	19100044	Contact crime	2011-12	561	2011
+ward	19100044	Property crime	2012-13	398	2011
+ward	19100044	Contact crime	2012-13	664	2011
+ward	19100044	Property crime	2013-14	366	2011
+ward	19100044	Contact crime	2013-14	670	2011
+ward	19100044	Property crime	2014-15	334	2011
+ward	19100044	Contact crime	2014-15	682	2011
+ward	19100045	Property crime	2005-06	339	2011
+ward	19100045	Contact crime	2005-06	661	2011
+ward	19100045	Property crime	2006-07	434	2011
+ward	19100045	Contact crime	2006-07	736	2011
+ward	19100045	Property crime	2007-08	442	2011
+ward	19100045	Contact crime	2007-08	648	2011
+ward	19100045	Property crime	2008-09	335	2011
+ward	19100045	Contact crime	2008-09	477	2011
+ward	19100045	Property crime	2009-10	398	2011
+ward	19100045	Contact crime	2009-10	556	2011
+ward	19100045	Property crime	2010-11	335	2011
+ward	19100045	Contact crime	2010-11	509	2011
+ward	19100045	Property crime	2011-12	374	2011
+ward	19100045	Contact crime	2011-12	538	2011
+ward	19100045	Property crime	2012-13	422	2011
+ward	19100045	Contact crime	2012-13	656	2011
+ward	19100045	Property crime	2013-14	390	2011
+ward	19100045	Contact crime	2013-14	656	2011
+ward	19100045	Property crime	2014-15	361	2011
+ward	19100045	Contact crime	2014-15	674	2011
+ward	19100046	Property crime	2005-06	432	2011
+ward	19100046	Contact crime	2005-06	628	2011
+ward	19100046	Property crime	2006-07	520	2011
+ward	19100046	Contact crime	2006-07	740	2011
+ward	19100046	Property crime	2007-08	511	2011
+ward	19100046	Contact crime	2007-08	652	2011
+ward	19100046	Property crime	2008-09	407	2011
+ward	19100046	Contact crime	2008-09	483	2011
+ward	19100046	Property crime	2009-10	508	2011
+ward	19100046	Contact crime	2009-10	574	2011
+ward	19100046	Property crime	2010-11	431	2011
+ward	19100046	Contact crime	2010-11	528	2011
+ward	19100046	Property crime	2011-12	470	2011
+ward	19100046	Contact crime	2011-12	545	2011
+ward	19100046	Property crime	2012-13	471	2011
+ward	19100046	Contact crime	2012-13	656	2011
+ward	19100046	Property crime	2013-14	499	2011
+ward	19100046	Contact crime	2013-14	654	2011
+ward	19100046	Property crime	2014-15	487	2011
+ward	19100046	Contact crime	2014-15	697	2011
+ward	19100047	Property crime	2005-06	483	2011
+ward	19100047	Contact crime	2005-06	626	2011
+ward	19100047	Property crime	2006-07	473	2011
+ward	19100047	Contact crime	2006-07	686	2011
+ward	19100047	Property crime	2007-08	462	2011
+ward	19100047	Contact crime	2007-08	591	2011
+ward	19100047	Property crime	2008-09	417	2011
+ward	19100047	Contact crime	2008-09	510	2011
+ward	19100047	Property crime	2009-10	573	2011
+ward	19100047	Contact crime	2009-10	549	2011
+ward	19100047	Property crime	2010-11	489	2011
+ward	19100047	Contact crime	2010-11	596	2011
+ward	19100047	Property crime	2011-12	545	2011
+ward	19100047	Contact crime	2011-12	593	2011
+ward	19100047	Property crime	2012-13	405	2011
+ward	19100047	Contact crime	2012-13	633	2011
+ward	19100047	Property crime	2013-14	600	2011
+ward	19100047	Contact crime	2013-14	637	2011
+ward	19100047	Property crime	2014-15	649	2011
+ward	19100047	Contact crime	2014-15	738	2011
+ward	19100048	Property crime	2005-06	870	2011
+ward	19100048	Contact crime	2005-06	514	2011
+ward	19100048	Property crime	2006-07	906	2011
+ward	19100048	Contact crime	2006-07	535	2011
+ward	19100048	Property crime	2007-08	746	2011
+ward	19100048	Contact crime	2007-08	474	2011
+ward	19100048	Property crime	2008-09	752	2011
+ward	19100048	Contact crime	2008-09	477	2011
+ward	19100048	Property crime	2009-10	945	2011
+ward	19100048	Contact crime	2009-10	572	2011
+ward	19100048	Property crime	2010-11	941	2011
+ward	19100048	Contact crime	2010-11	504	2011
+ward	19100048	Property crime	2011-12	917	2011
+ward	19100048	Contact crime	2011-12	536	2011
+ward	19100048	Property crime	2012-13	932	2011
+ward	19100048	Contact crime	2012-13	612	2011
+ward	19100048	Property crime	2013-14	949	2011
+ward	19100048	Contact crime	2013-14	621	2011
+ward	19100048	Property crime	2014-15	818	2011
+ward	19100048	Contact crime	2014-15	688	2011
+ward	19100049	Property crime	2005-06	1035	2011
+ward	19100049	Contact crime	2005-06	701	2011
+ward	19100049	Property crime	2006-07	1119	2011
+ward	19100049	Contact crime	2006-07	760	2011
+ward	19100049	Property crime	2007-08	1025	2011
+ward	19100049	Contact crime	2007-08	695	2011
+ward	19100049	Property crime	2008-09	951	2011
+ward	19100049	Contact crime	2008-09	681	2011
+ward	19100049	Property crime	2009-10	1069	2011
+ward	19100049	Contact crime	2009-10	768	2011
+ward	19100049	Property crime	2010-11	1037	2011
+ward	19100049	Contact crime	2010-11	678	2011
+ward	19100049	Property crime	2011-12	1066	2011
+ward	19100049	Contact crime	2011-12	752	2011
+ward	19100049	Property crime	2012-13	1110	2011
+ward	19100049	Contact crime	2012-13	878	2011
+ward	19100049	Property crime	2013-14	1128	2011
+ward	19100049	Contact crime	2013-14	887	2011
+ward	19100049	Property crime	2014-15	980	2011
+ward	19100049	Contact crime	2014-15	1003	2011
+ward	19100050	Property crime	2005-06	424	2011
+ward	19100050	Contact crime	2005-06	506	2011
+ward	19100050	Property crime	2006-07	441	2011
+ward	19100050	Contact crime	2006-07	527	2011
+ward	19100050	Property crime	2007-08	417	2011
+ward	19100050	Contact crime	2007-08	388	2011
+ward	19100050	Property crime	2008-09	334	2011
+ward	19100050	Contact crime	2008-09	398	2011
+ward	19100050	Property crime	2009-10	403	2011
+ward	19100050	Contact crime	2009-10	565	2011
+ward	19100050	Property crime	2010-11	298	2011
+ward	19100050	Contact crime	2010-11	481	2011
+ward	19100050	Property crime	2011-12	334	2011
+ward	19100050	Contact crime	2011-12	514	2011
+ward	19100050	Property crime	2012-13	387	2011
+ward	19100050	Contact crime	2012-13	596	2011
+ward	19100050	Property crime	2013-14	390	2011
+ward	19100050	Contact crime	2013-14	626	2011
+ward	19100050	Property crime	2014-15	465	2011
+ward	19100050	Contact crime	2014-15	647	2011
+ward	19100051	Property crime	2005-06	149	2011
+ward	19100051	Contact crime	2005-06	678	2011
+ward	19100051	Property crime	2006-07	132	2011
+ward	19100051	Contact crime	2006-07	590	2011
+ward	19100051	Property crime	2007-08	153	2011
+ward	19100051	Contact crime	2007-08	524	2011
+ward	19100051	Property crime	2008-09	154	2011
+ward	19100051	Contact crime	2008-09	560	2011
+ward	19100051	Property crime	2009-10	158	2011
+ward	19100051	Contact crime	2009-10	607	2011
+ward	19100051	Property crime	2010-11	183	2011
+ward	19100051	Contact crime	2010-11	615	2011
+ward	19100051	Property crime	2011-12	209	2011
+ward	19100051	Contact crime	2011-12	509	2011
+ward	19100051	Property crime	2012-13	244	2011
+ward	19100051	Contact crime	2012-13	542	2011
+ward	19100051	Property crime	2013-14	228	2011
+ward	19100051	Contact crime	2013-14	534	2011
+ward	19100051	Property crime	2014-15	238	2011
+ward	19100051	Contact crime	2014-15	618	2011
+ward	19100052	Property crime	2005-06	213	2011
+ward	19100052	Contact crime	2005-06	627	2011
+ward	19100052	Property crime	2006-07	205	2011
+ward	19100052	Contact crime	2006-07	562	2011
+ward	19100052	Property crime	2007-08	215	2011
+ward	19100052	Contact crime	2007-08	492	2011
+ward	19100052	Property crime	2008-09	204	2011
+ward	19100052	Contact crime	2008-09	521	2011
+ward	19100052	Property crime	2009-10	220	2011
+ward	19100052	Contact crime	2009-10	580	2011
+ward	19100052	Property crime	2010-11	228	2011
+ward	19100052	Contact crime	2010-11	574	2011
+ward	19100052	Property crime	2011-12	254	2011
+ward	19100052	Contact crime	2011-12	495	2011
+ward	19100052	Property crime	2012-13	289	2011
+ward	19100052	Contact crime	2012-13	536	2011
+ward	19100052	Property crime	2013-14	278	2011
+ward	19100052	Contact crime	2013-14	533	2011
+ward	19100052	Property crime	2014-15	285	2011
+ward	19100052	Contact crime	2014-15	608	2011
+ward	19100053	Property crime	2005-06	1092	2011
+ward	19100053	Contact crime	2005-06	624	2011
+ward	19100053	Property crime	2006-07	1224	2011
+ward	19100053	Contact crime	2006-07	681	2011
+ward	19100053	Property crime	2007-08	1174	2011
+ward	19100053	Contact crime	2007-08	659	2011
+ward	19100053	Property crime	2008-09	1123	2011
+ward	19100053	Contact crime	2008-09	671	2011
+ward	19100053	Property crime	2009-10	1152	2011
+ward	19100053	Contact crime	2009-10	623	2011
+ward	19100053	Property crime	2010-11	1091	2011
+ward	19100053	Contact crime	2010-11	575	2011
+ward	19100053	Property crime	2011-12	955	2011
+ward	19100053	Contact crime	2011-12	536	2011
+ward	19100053	Property crime	2012-13	1047	2011
+ward	19100053	Contact crime	2012-13	483	2011
+ward	19100053	Property crime	2013-14	1108	2011
+ward	19100053	Contact crime	2013-14	458	2011
+ward	19100053	Property crime	2014-15	890	2011
+ward	19100053	Contact crime	2014-15	485	2011
+ward	19100054	Property crime	2005-06	2089	2011
+ward	19100054	Contact crime	2005-06	566	2011
+ward	19100054	Property crime	2006-07	1910	2011
+ward	19100054	Contact crime	2006-07	478	2011
+ward	19100054	Property crime	2007-08	1751	2011
+ward	19100054	Contact crime	2007-08	516	2011
+ward	19100054	Property crime	2008-09	1303	2011
+ward	19100054	Contact crime	2008-09	445	2011
+ward	19100054	Property crime	2009-10	1521	2011
+ward	19100054	Contact crime	2009-10	458	2011
+ward	19100054	Property crime	2010-11	1709	2011
+ward	19100054	Contact crime	2010-11	411	2011
+ward	19100054	Property crime	2011-12	1656	2011
+ward	19100054	Contact crime	2011-12	370	2011
+ward	19100054	Property crime	2012-13	1840	2011
+ward	19100054	Contact crime	2012-13	321	2011
+ward	19100054	Property crime	2013-14	1743	2011
+ward	19100054	Contact crime	2013-14	318	2011
+ward	19100054	Property crime	2014-15	1691	2011
+ward	19100054	Contact crime	2014-15	344	2011
+ward	19100055	Property crime	2005-06	1369	2011
+ward	19100055	Contact crime	2005-06	819	2011
+ward	19100055	Property crime	2006-07	1513	2011
+ward	19100055	Contact crime	2006-07	821	2011
+ward	19100055	Property crime	2007-08	1383	2011
+ward	19100055	Contact crime	2007-08	789	2011
+ward	19100055	Property crime	2008-09	1342	2011
+ward	19100055	Contact crime	2008-09	832	2011
+ward	19100055	Property crime	2009-10	1397	2011
+ward	19100055	Contact crime	2009-10	794	2011
+ward	19100055	Property crime	2010-11	1158	2011
+ward	19100055	Contact crime	2010-11	685	2011
+ward	19100055	Property crime	2011-12	1117	2011
+ward	19100055	Contact crime	2011-12	685	2011
+ward	19100055	Property crime	2012-13	1170	2011
+ward	19100055	Contact crime	2012-13	653	2011
+ward	19100055	Property crime	2013-14	1233	2011
+ward	19100055	Contact crime	2013-14	670	2011
+ward	19100055	Property crime	2014-15	1162	2011
+ward	19100055	Contact crime	2014-15	773	2011
+ward	19100056	Property crime	2005-06	703	2011
+ward	19100056	Contact crime	2005-06	635	2011
+ward	19100056	Property crime	2006-07	859	2011
+ward	19100056	Contact crime	2006-07	652	2011
+ward	19100056	Property crime	2007-08	880	2011
+ward	19100056	Contact crime	2007-08	588	2011
+ward	19100056	Property crime	2008-09	841	2011
+ward	19100056	Contact crime	2008-09	623	2011
+ward	19100056	Property crime	2009-10	781	2011
+ward	19100056	Contact crime	2009-10	489	2011
+ward	19100056	Property crime	2010-11	643	2011
+ward	19100056	Contact crime	2010-11	433	2011
+ward	19100056	Property crime	2011-12	656	2011
+ward	19100056	Contact crime	2011-12	419	2011
+ward	19100056	Property crime	2012-13	611	2011
+ward	19100056	Contact crime	2012-13	425	2011
+ward	19100056	Property crime	2013-14	704	2011
+ward	19100056	Contact crime	2013-14	463	2011
+ward	19100056	Property crime	2014-15	664	2011
+ward	19100056	Contact crime	2014-15	512	2011
+ward	19100057	Property crime	2005-06	3607	2011
+ward	19100057	Contact crime	2005-06	1574	2011
+ward	19100057	Property crime	2006-07	3735	2011
+ward	19100057	Contact crime	2006-07	1456	2011
+ward	19100057	Property crime	2007-08	3099	2011
+ward	19100057	Contact crime	2007-08	1279	2011
+ward	19100057	Property crime	2008-09	3124	2011
+ward	19100057	Contact crime	2008-09	1186	2011
+ward	19100057	Property crime	2009-10	3030	2011
+ward	19100057	Contact crime	2009-10	1149	2011
+ward	19100057	Property crime	2010-11	2630	2011
+ward	19100057	Contact crime	2010-11	1044	2011
+ward	19100057	Property crime	2011-12	2493	2011
+ward	19100057	Contact crime	2011-12	974	2011
+ward	19100057	Property crime	2012-13	2610	2011
+ward	19100057	Contact crime	2012-13	948	2011
+ward	19100057	Property crime	2013-14	2665	2011
+ward	19100057	Contact crime	2013-14	979	2011
+ward	19100057	Property crime	2014-15	2511	2011
+ward	19100057	Contact crime	2014-15	1090	2011
+ward	19100058	Property crime	2005-06	2611	2011
+ward	19100058	Contact crime	2005-06	648	2011
+ward	19100058	Property crime	2006-07	2505	2011
+ward	19100058	Contact crime	2006-07	780	2011
+ward	19100058	Property crime	2007-08	2095	2011
+ward	19100058	Contact crime	2007-08	656	2011
+ward	19100058	Property crime	2008-09	1948	2011
+ward	19100058	Contact crime	2008-09	614	2011
+ward	19100058	Property crime	2009-10	2042	2011
+ward	19100058	Contact crime	2009-10	546	2011
+ward	19100058	Property crime	2010-11	1673	2011
+ward	19100058	Contact crime	2010-11	470	2011
+ward	19100058	Property crime	2011-12	1519	2011
+ward	19100058	Contact crime	2011-12	416	2011
+ward	19100058	Property crime	2012-13	1789	2011
+ward	19100058	Contact crime	2012-13	452	2011
+ward	19100058	Property crime	2013-14	1773	2011
+ward	19100058	Contact crime	2013-14	462	2011
+ward	19100058	Property crime	2014-15	1775	2011
+ward	19100058	Contact crime	2014-15	490	2011
+ward	19100059	Property crime	2005-06	2050	2011
+ward	19100059	Contact crime	2005-06	494	2011
+ward	19100059	Property crime	2006-07	1929	2011
+ward	19100059	Contact crime	2006-07	583	2011
+ward	19100059	Property crime	2007-08	1654	2011
+ward	19100059	Contact crime	2007-08	520	2011
+ward	19100059	Property crime	2008-09	1495	2011
+ward	19100059	Contact crime	2008-09	469	2011
+ward	19100059	Property crime	2009-10	1584	2011
+ward	19100059	Contact crime	2009-10	432	2011
+ward	19100059	Property crime	2010-11	1311	2011
+ward	19100059	Contact crime	2010-11	380	2011
+ward	19100059	Property crime	2011-12	1186	2011
+ward	19100059	Contact crime	2011-12	329	2011
+ward	19100059	Property crime	2012-13	1402	2011
+ward	19100059	Contact crime	2012-13	368	2011
+ward	19100059	Property crime	2013-14	1378	2011
+ward	19100059	Contact crime	2013-14	362	2011
+ward	19100059	Property crime	2014-15	1443	2011
+ward	19100059	Contact crime	2014-15	361	2011
+ward	19100060	Property crime	2005-06	1041	2011
+ward	19100060	Contact crime	2005-06	465	2011
+ward	19100060	Property crime	2006-07	1031	2011
+ward	19100060	Contact crime	2006-07	449	2011
+ward	19100060	Property crime	2007-08	705	2011
+ward	19100060	Contact crime	2007-08	360	2011
+ward	19100060	Property crime	2008-09	816	2011
+ward	19100060	Contact crime	2008-09	389	2011
+ward	19100060	Property crime	2009-10	1156	2011
+ward	19100060	Contact crime	2009-10	513	2011
+ward	19100060	Property crime	2010-11	1170	2011
+ward	19100060	Contact crime	2010-11	451	2011
+ward	19100060	Property crime	2011-12	1061	2011
+ward	19100060	Contact crime	2011-12	430	2011
+ward	19100060	Property crime	2012-13	1060	2011
+ward	19100060	Contact crime	2012-13	463	2011
+ward	19100060	Property crime	2013-14	1088	2011
+ward	19100060	Contact crime	2013-14	478	2011
+ward	19100060	Property crime	2014-15	923	2011
+ward	19100060	Contact crime	2014-15	507	2011
+ward	19100061	Property crime	2005-06	667	2011
+ward	19100061	Contact crime	2005-06	301	2011
+ward	19100061	Property crime	2006-07	682	2011
+ward	19100061	Contact crime	2006-07	289	2011
+ward	19100061	Property crime	2007-08	655	2011
+ward	19100061	Contact crime	2007-08	317	2011
+ward	19100061	Property crime	2008-09	663	2011
+ward	19100061	Contact crime	2008-09	292	2011
+ward	19100061	Property crime	2009-10	647	2011
+ward	19100061	Contact crime	2009-10	238	2011
+ward	19100061	Property crime	2010-11	694	2011
+ward	19100061	Contact crime	2010-11	237	2011
+ward	19100061	Property crime	2011-12	582	2011
+ward	19100061	Contact crime	2011-12	232	2011
+ward	19100061	Property crime	2012-13	618	2011
+ward	19100061	Contact crime	2012-13	318	2011
+ward	19100061	Property crime	2013-14	678	2011
+ward	19100061	Contact crime	2013-14	315	2011
+ward	19100061	Property crime	2014-15	703	2011
+ward	19100061	Contact crime	2014-15	368	2011
+ward	19100062	Property crime	2005-06	1597	2011
+ward	19100062	Contact crime	2005-06	491	2011
+ward	19100062	Property crime	2006-07	1639	2011
+ward	19100062	Contact crime	2006-07	510	2011
+ward	19100062	Property crime	2007-08	1381	2011
+ward	19100062	Contact crime	2007-08	480	2011
+ward	19100062	Property crime	2008-09	1246	2011
+ward	19100062	Contact crime	2008-09	473	2011
+ward	19100062	Property crime	2009-10	1315	2011
+ward	19100062	Contact crime	2009-10	472	2011
+ward	19100062	Property crime	2010-11	1206	2011
+ward	19100062	Contact crime	2010-11	443	2011
+ward	19100062	Property crime	2011-12	1126	2011
+ward	19100062	Contact crime	2011-12	373	2011
+ward	19100062	Property crime	2012-13	1392	2011
+ward	19100062	Contact crime	2012-13	453	2011
+ward	19100062	Property crime	2013-14	1344	2011
+ward	19100062	Contact crime	2013-14	426	2011
+ward	19100062	Property crime	2014-15	1276	2011
+ward	19100062	Contact crime	2014-15	423	2011
+ward	19100063	Property crime	2005-06	1147	2011
+ward	19100063	Contact crime	2005-06	456	2011
+ward	19100063	Property crime	2006-07	1172	2011
+ward	19100063	Contact crime	2006-07	450	2011
+ward	19100063	Property crime	2007-08	920	2011
+ward	19100063	Contact crime	2007-08	394	2011
+ward	19100063	Property crime	2008-09	920	2011
+ward	19100063	Contact crime	2008-09	416	2011
+ward	19100063	Property crime	2009-10	1086	2011
+ward	19100063	Contact crime	2009-10	479	2011
+ward	19100063	Property crime	2010-11	1081	2011
+ward	19100063	Contact crime	2010-11	452	2011
+ward	19100063	Property crime	2011-12	985	2011
+ward	19100063	Contact crime	2011-12	395	2011
+ward	19100063	Property crime	2012-13	1110	2011
+ward	19100063	Contact crime	2012-13	458	2011
+ward	19100063	Property crime	2013-14	1113	2011
+ward	19100063	Contact crime	2013-14	451	2011
+ward	19100063	Property crime	2014-15	982	2011
+ward	19100063	Contact crime	2014-15	460	2011
+ward	19100064	Property crime	2005-06	885	2011
+ward	19100064	Contact crime	2005-06	248	2011
+ward	19100064	Property crime	2006-07	897	2011
+ward	19100064	Contact crime	2006-07	257	2011
+ward	19100064	Property crime	2007-08	798	2011
+ward	19100064	Contact crime	2007-08	271	2011
+ward	19100064	Property crime	2008-09	740	2011
+ward	19100064	Contact crime	2008-09	227	2011
+ward	19100064	Property crime	2009-10	705	2011
+ward	19100064	Contact crime	2009-10	299	2011
+ward	19100064	Property crime	2010-11	678	2011
+ward	19100064	Contact crime	2010-11	301	2011
+ward	19100064	Property crime	2011-12	593	2011
+ward	19100064	Contact crime	2011-12	345	2011
+ward	19100064	Property crime	2012-13	635	2011
+ward	19100064	Contact crime	2012-13	325	2011
+ward	19100064	Property crime	2013-14	693	2011
+ward	19100064	Contact crime	2013-14	345	2011
+ward	19100064	Property crime	2014-15	710	2011
+ward	19100064	Contact crime	2014-15	361	2011
+ward	19100065	Property crime	2005-06	576	2011
+ward	19100065	Contact crime	2005-06	323	2011
+ward	19100065	Property crime	2006-07	541	2011
+ward	19100065	Contact crime	2006-07	374	2011
+ward	19100065	Property crime	2007-08	559	2011
+ward	19100065	Contact crime	2007-08	352	2011
+ward	19100065	Property crime	2008-09	549	2011
+ward	19100065	Contact crime	2008-09	361	2011
+ward	19100065	Property crime	2009-10	559	2011
+ward	19100065	Contact crime	2009-10	361	2011
+ward	19100065	Property crime	2010-11	547	2011
+ward	19100065	Contact crime	2010-11	378	2011
+ward	19100065	Property crime	2011-12	461	2011
+ward	19100065	Contact crime	2011-12	343	2011
+ward	19100065	Property crime	2012-13	540	2011
+ward	19100065	Contact crime	2012-13	401	2011
+ward	19100065	Property crime	2013-14	540	2011
+ward	19100065	Contact crime	2013-14	420	2011
+ward	19100065	Property crime	2014-15	480	2011
+ward	19100065	Contact crime	2014-15	444	2011
+ward	19100066	Property crime	2005-06	591	2011
+ward	19100066	Contact crime	2005-06	327	2011
+ward	19100066	Property crime	2006-07	556	2011
+ward	19100066	Contact crime	2006-07	377	2011
+ward	19100066	Property crime	2007-08	567	2011
+ward	19100066	Contact crime	2007-08	354	2011
+ward	19100066	Property crime	2008-09	560	2011
+ward	19100066	Contact crime	2008-09	364	2011
+ward	19100066	Property crime	2009-10	576	2011
+ward	19100066	Contact crime	2009-10	367	2011
+ward	19100066	Property crime	2010-11	565	2011
+ward	19100066	Contact crime	2010-11	382	2011
+ward	19100066	Property crime	2011-12	477	2011
+ward	19100066	Contact crime	2011-12	347	2011
+ward	19100066	Property crime	2012-13	557	2011
+ward	19100066	Contact crime	2012-13	405	2011
+ward	19100066	Property crime	2013-14	556	2011
+ward	19100066	Contact crime	2013-14	423	2011
+ward	19100066	Property crime	2014-15	493	2011
+ward	19100066	Contact crime	2014-15	447	2011
+ward	19100067	Property crime	2005-06	1261	2011
+ward	19100067	Contact crime	2005-06	544	2011
+ward	19100067	Property crime	2006-07	1348	2011
+ward	19100067	Contact crime	2006-07	607	2011
+ward	19100067	Property crime	2007-08	1255	2011
+ward	19100067	Contact crime	2007-08	637	2011
+ward	19100067	Property crime	2008-09	1215	2011
+ward	19100067	Contact crime	2008-09	553	2011
+ward	19100067	Property crime	2009-10	1214	2011
+ward	19100067	Contact crime	2009-10	684	2011
+ward	19100067	Property crime	2010-11	1161	2011
+ward	19100067	Contact crime	2010-11	685	2011
+ward	19100067	Property crime	2011-12	951	2011
+ward	19100067	Contact crime	2011-12	729	2011
+ward	19100067	Property crime	2012-13	997	2011
+ward	19100067	Contact crime	2012-13	737	2011
+ward	19100067	Property crime	2013-14	1079	2011
+ward	19100067	Contact crime	2013-14	763	2011
+ward	19100067	Property crime	2014-15	1081	2011
+ward	19100067	Contact crime	2014-15	783	2011
+ward	19100068	Property crime	2005-06	553	2011
+ward	19100068	Contact crime	2005-06	412	2011
+ward	19100068	Property crime	2006-07	589	2011
+ward	19100068	Contact crime	2006-07	405	2011
+ward	19100068	Property crime	2007-08	574	2011
+ward	19100068	Contact crime	2007-08	473	2011
+ward	19100068	Property crime	2008-09	543	2011
+ward	19100068	Contact crime	2008-09	397	2011
+ward	19100068	Property crime	2009-10	537	2011
+ward	19100068	Contact crime	2009-10	467	2011
+ward	19100068	Property crime	2010-11	494	2011
+ward	19100068	Contact crime	2010-11	463	2011
+ward	19100068	Property crime	2011-12	446	2011
+ward	19100068	Contact crime	2011-12	462	2011
+ward	19100068	Property crime	2012-13	542	2011
+ward	19100068	Contact crime	2012-13	472	2011
+ward	19100068	Property crime	2013-14	522	2011
+ward	19100068	Contact crime	2013-14	497	2011
+ward	19100068	Property crime	2014-15	497	2011
+ward	19100068	Contact crime	2014-15	500	2011
+ward	19100069	Property crime	2005-06	964	2011
+ward	19100069	Contact crime	2005-06	434	2011
+ward	19100069	Property crime	2006-07	986	2011
+ward	19100069	Contact crime	2006-07	426	2011
+ward	19100069	Property crime	2007-08	889	2011
+ward	19100069	Contact crime	2007-08	451	2011
+ward	19100069	Property crime	2008-09	776	2011
+ward	19100069	Contact crime	2008-09	429	2011
+ward	19100069	Property crime	2009-10	627	2011
+ward	19100069	Contact crime	2009-10	313	2011
+ward	19100069	Property crime	2010-11	661	2011
+ward	19100069	Contact crime	2010-11	345	2011
+ward	19100069	Property crime	2011-12	598	2011
+ward	19100069	Contact crime	2011-12	335	2011
+ward	19100069	Property crime	2012-13	719	2011
+ward	19100069	Contact crime	2012-13	452	2011
+ward	19100069	Property crime	2013-14	735	2011
+ward	19100069	Contact crime	2013-14	475	2011
+ward	19100069	Property crime	2014-15	761	2011
+ward	19100069	Contact crime	2014-15	522	2011
+ward	19100070	Property crime	2005-06	861	2011
+ward	19100070	Contact crime	2005-06	323	2011
+ward	19100070	Property crime	2006-07	941	2011
+ward	19100070	Contact crime	2006-07	324	2011
+ward	19100070	Property crime	2007-08	845	2011
+ward	19100070	Contact crime	2007-08	354	2011
+ward	19100070	Property crime	2008-09	875	2011
+ward	19100070	Contact crime	2008-09	372	2011
+ward	19100070	Property crime	2009-10	802	2011
+ward	19100070	Contact crime	2009-10	363	2011
+ward	19100070	Property crime	2010-11	986	2011
+ward	19100070	Contact crime	2010-11	437	2011
+ward	19100070	Property crime	2011-12	1114	2011
+ward	19100070	Contact crime	2011-12	428	2011
+ward	19100070	Property crime	2012-13	1143	2011
+ward	19100070	Contact crime	2012-13	430	2011
+ward	19100070	Property crime	2013-14	1139	2011
+ward	19100070	Contact crime	2013-14	474	2011
+ward	19100070	Property crime	2014-15	1092	2011
+ward	19100070	Contact crime	2014-15	479	2011
+ward	19100071	Property crime	2005-06	1133	2011
+ward	19100071	Contact crime	2005-06	332	2011
+ward	19100071	Property crime	2006-07	1173	2011
+ward	19100071	Contact crime	2006-07	365	2011
+ward	19100071	Property crime	2007-08	1045	2011
+ward	19100071	Contact crime	2007-08	419	2011
+ward	19100071	Property crime	2008-09	919	2011
+ward	19100071	Contact crime	2008-09	414	2011
+ward	19100071	Property crime	2009-10	1035	2011
+ward	19100071	Contact crime	2009-10	392	2011
+ward	19100071	Property crime	2010-11	1044	2011
+ward	19100071	Contact crime	2010-11	384	2011
+ward	19100071	Property crime	2011-12	923	2011
+ward	19100071	Contact crime	2011-12	300	2011
+ward	19100071	Property crime	2012-13	1137	2011
+ward	19100071	Contact crime	2012-13	375	2011
+ward	19100071	Property crime	2013-14	893	2011
+ward	19100071	Contact crime	2013-14	325	2011
+ward	19100071	Property crime	2014-15	986	2011
+ward	19100071	Contact crime	2014-15	352	2011
+ward	19100072	Property crime	2005-06	587	2011
+ward	19100072	Contact crime	2005-06	361	2011
+ward	19100072	Property crime	2006-07	629	2011
+ward	19100072	Contact crime	2006-07	356	2011
+ward	19100072	Property crime	2007-08	594	2011
+ward	19100072	Contact crime	2007-08	403	2011
+ward	19100072	Property crime	2008-09	557	2011
+ward	19100072	Contact crime	2008-09	348	2011
+ward	19100072	Property crime	2009-10	554	2011
+ward	19100072	Contact crime	2009-10	384	2011
+ward	19100072	Property crime	2010-11	499	2011
+ward	19100072	Contact crime	2010-11	375	2011
+ward	19100072	Property crime	2011-12	486	2011
+ward	19100072	Contact crime	2011-12	366	2011
+ward	19100072	Property crime	2012-13	641	2011
+ward	19100072	Contact crime	2012-13	386	2011
+ward	19100072	Property crime	2013-14	579	2011
+ward	19100072	Contact crime	2013-14	403	2011
+ward	19100072	Property crime	2014-15	509	2011
+ward	19100072	Contact crime	2014-15	400	2011
+ward	19100073	Property crime	2005-06	1102	2011
+ward	19100073	Contact crime	2005-06	288	2011
+ward	19100073	Property crime	2006-07	1239	2011
+ward	19100073	Contact crime	2006-07	306	2011
+ward	19100073	Property crime	2007-08	1064	2011
+ward	19100073	Contact crime	2007-08	294	2011
+ward	19100073	Property crime	2008-09	1000	2011
+ward	19100073	Contact crime	2008-09	262	2011
+ward	19100073	Property crime	2009-10	993	2011
+ward	19100073	Contact crime	2009-10	257	2011
+ward	19100073	Property crime	2010-11	871	2011
+ward	19100073	Contact crime	2010-11	226	2011
+ward	19100073	Property crime	2011-12	903	2011
+ward	19100073	Contact crime	2011-12	244	2011
+ward	19100073	Property crime	2012-13	1236	2011
+ward	19100073	Contact crime	2012-13	266	2011
+ward	19100073	Property crime	2013-14	1095	2011
+ward	19100073	Contact crime	2013-14	265	2011
+ward	19100073	Property crime	2014-15	894	2011
+ward	19100073	Contact crime	2014-15	236	2011
+ward	19100074	Property crime	2005-06	1307	2011
+ward	19100074	Contact crime	2005-06	740	2011
+ward	19100074	Property crime	2006-07	996	2011
+ward	19100074	Contact crime	2006-07	530	2011
+ward	19100074	Property crime	2007-08	1215	2011
+ward	19100074	Contact crime	2007-08	539	2011
+ward	19100074	Property crime	2008-09	1107	2011
+ward	19100074	Contact crime	2008-09	570	2011
+ward	19100074	Property crime	2009-10	1353	2011
+ward	19100074	Contact crime	2009-10	662	2011
+ward	19100074	Property crime	2010-11	1212	2011
+ward	19100074	Contact crime	2010-11	638	2011
+ward	19100074	Property crime	2011-12	1388	2011
+ward	19100074	Contact crime	2011-12	651	2011
+ward	19100074	Property crime	2012-13	1323	2011
+ward	19100074	Contact crime	2012-13	687	2011
+ward	19100074	Property crime	2013-14	1023	2011
+ward	19100074	Contact crime	2013-14	594	2011
+ward	19100074	Property crime	2014-15	866	2011
+ward	19100074	Contact crime	2014-15	654	2011
+ward	19100075	Property crime	2005-06	45	2011
+ward	19100075	Contact crime	2005-06	210	2011
+ward	19100075	Property crime	2006-07	52	2011
+ward	19100075	Contact crime	2006-07	214	2011
+ward	19100075	Property crime	2007-08	48	2011
+ward	19100075	Contact crime	2007-08	189	2011
+ward	19100075	Property crime	2008-09	45	2011
+ward	19100075	Contact crime	2008-09	161	2011
+ward	19100075	Property crime	2009-10	51	2011
+ward	19100075	Contact crime	2009-10	169	2011
+ward	19100075	Property crime	2010-11	49	2011
+ward	19100075	Contact crime	2010-11	169	2011
+ward	19100075	Property crime	2011-12	56	2011
+ward	19100075	Contact crime	2011-12	195	2011
+ward	19100075	Property crime	2012-13	65	2011
+ward	19100075	Contact crime	2012-13	194	2011
+ward	19100075	Property crime	2013-14	311	2011
+ward	19100075	Contact crime	2013-14	549	2011
+ward	19100075	Property crime	2014-15	529	2011
+ward	19100075	Contact crime	2014-15	816	2011
+ward	19100076	Property crime	2005-06	1	2011
+ward	19100076	Contact crime	2005-06	4	2011
+ward	19100076	Property crime	2006-07	1	2011
+ward	19100076	Contact crime	2006-07	4	2011
+ward	19100076	Property crime	2007-08	1	2011
+ward	19100076	Contact crime	2007-08	3	2011
+ward	19100076	Property crime	2008-09	1	2011
+ward	19100076	Contact crime	2008-09	3	2011
+ward	19100076	Property crime	2009-10	1	2011
+ward	19100076	Contact crime	2009-10	3	2011
+ward	19100076	Property crime	2010-11	1	2011
+ward	19100076	Contact crime	2010-11	3	2011
+ward	19100076	Property crime	2011-12	1	2011
+ward	19100076	Contact crime	2011-12	3	2011
+ward	19100076	Property crime	2012-13	1	2011
+ward	19100076	Contact crime	2012-13	3	2011
+ward	19100076	Property crime	2013-14	350	2011
+ward	19100076	Contact crime	2013-14	509	2011
+ward	19100076	Property crime	2014-15	653	2011
+ward	19100076	Contact crime	2014-15	863	2011
+ward	19100077	Property crime	2005-06	4415	2011
+ward	19100077	Contact crime	2005-06	2349	2011
+ward	19100077	Property crime	2006-07	4142	2011
+ward	19100077	Contact crime	2006-07	2143	2011
+ward	19100077	Property crime	2007-08	3409	2011
+ward	19100077	Contact crime	2007-08	1875	2011
+ward	19100077	Property crime	2008-09	2730	2011
+ward	19100077	Contact crime	2008-09	1733	2011
+ward	19100077	Property crime	2009-10	3599	2011
+ward	19100077	Contact crime	2009-10	1882	2011
+ward	19100077	Property crime	2010-11	3561	2011
+ward	19100077	Contact crime	2010-11	1899	2011
+ward	19100077	Property crime	2011-12	3854	2011
+ward	19100077	Contact crime	2011-12	1765	2011
+ward	19100077	Property crime	2012-13	3977	2011
+ward	19100077	Contact crime	2012-13	1906	2011
+ward	19100077	Property crime	2013-14	4141	2011
+ward	19100077	Contact crime	2013-14	1910	2011
+ward	19100077	Property crime	2014-15	3824	2011
+ward	19100077	Contact crime	2014-15	1929	2011
+ward	19100078	Property crime	2005-06	961	2011
+ward	19100078	Contact crime	2005-06	1257	2011
+ward	19100078	Property crime	2006-07	1147	2011
+ward	19100078	Contact crime	2006-07	1213	2011
+ward	19100078	Property crime	2007-08	1119	2011
+ward	19100078	Contact crime	2007-08	1177	2011
+ward	19100078	Property crime	2008-09	1024	2011
+ward	19100078	Contact crime	2008-09	1231	2011
+ward	19100078	Property crime	2009-10	977	2011
+ward	19100078	Contact crime	2009-10	1172	2011
+ward	19100078	Property crime	2010-11	920	2011
+ward	19100078	Contact crime	2010-11	1217	2011
+ward	19100078	Property crime	2011-12	970	2011
+ward	19100078	Contact crime	2011-12	1289	2011
+ward	19100078	Property crime	2012-13	927	2011
+ward	19100078	Contact crime	2012-13	1307	2011
+ward	19100078	Property crime	2013-14	790	2011
+ward	19100078	Contact crime	2013-14	1158	2011
+ward	19100078	Property crime	2014-15	668	2011
+ward	19100078	Contact crime	2014-15	1073	2011
+ward	19100079	Property crime	2005-06	864	2011
+ward	19100079	Contact crime	2005-06	1131	2011
+ward	19100079	Property crime	2006-07	1031	2011
+ward	19100079	Contact crime	2006-07	1091	2011
+ward	19100079	Property crime	2007-08	1007	2011
+ward	19100079	Contact crime	2007-08	1058	2011
+ward	19100079	Property crime	2008-09	921	2011
+ward	19100079	Contact crime	2008-09	1108	2011
+ward	19100079	Property crime	2009-10	879	2011
+ward	19100079	Contact crime	2009-10	1054	2011
+ward	19100079	Property crime	2010-11	828	2011
+ward	19100079	Contact crime	2010-11	1094	2011
+ward	19100079	Property crime	2011-12	872	2011
+ward	19100079	Contact crime	2011-12	1159	2011
+ward	19100079	Property crime	2012-13	834	2011
+ward	19100079	Contact crime	2012-13	1175	2011
+ward	19100079	Property crime	2013-14	705	2011
+ward	19100079	Contact crime	2013-14	1034	2011
+ward	19100079	Property crime	2014-15	590	2011
+ward	19100079	Contact crime	2014-15	951	2011
+ward	19100080	Property crime	2005-06	284	2011
+ward	19100080	Contact crime	2005-06	913	2011
+ward	19100080	Property crime	2006-07	306	2011
+ward	19100080	Contact crime	2006-07	941	2011
+ward	19100080	Property crime	2007-08	287	2011
+ward	19100080	Contact crime	2007-08	828	2011
+ward	19100080	Property crime	2008-09	267	2011
+ward	19100080	Contact crime	2008-09	707	2011
+ward	19100080	Property crime	2009-10	329	2011
+ward	19100080	Contact crime	2009-10	743	2011
+ward	19100080	Property crime	2010-11	301	2011
+ward	19100080	Contact crime	2010-11	757	2011
+ward	19100080	Property crime	2011-12	338	2011
+ward	19100080	Contact crime	2011-12	848	2011
+ward	19100080	Property crime	2012-13	336	2011
+ward	19100080	Contact crime	2012-13	856	2011
+ward	19100080	Property crime	2013-14	384	2011
+ward	19100080	Contact crime	2013-14	849	2011
+ward	19100080	Property crime	2014-15	410	2011
+ward	19100080	Contact crime	2014-15	932	2011
+ward	19100081	Property crime	2005-06	775	2011
+ward	19100081	Contact crime	2005-06	1014	2011
+ward	19100081	Property crime	2006-07	925	2011
+ward	19100081	Contact crime	2006-07	978	2011
+ward	19100081	Property crime	2007-08	903	2011
+ward	19100081	Contact crime	2007-08	949	2011
+ward	19100081	Property crime	2008-09	825	2011
+ward	19100081	Contact crime	2008-09	993	2011
+ward	19100081	Property crime	2009-10	788	2011
+ward	19100081	Contact crime	2009-10	945	2011
+ward	19100081	Property crime	2010-11	742	2011
+ward	19100081	Contact crime	2010-11	981	2011
+ward	19100081	Property crime	2011-12	782	2011
+ward	19100081	Contact crime	2011-12	1039	2011
+ward	19100081	Property crime	2012-13	748	2011
+ward	19100081	Contact crime	2012-13	1053	2011
+ward	19100081	Property crime	2013-14	632	2011
+ward	19100081	Contact crime	2013-14	927	2011
+ward	19100081	Property crime	2014-15	530	2011
+ward	19100081	Contact crime	2014-15	853	2011
+ward	19100082	Property crime	2005-06	982	2011
+ward	19100082	Contact crime	2005-06	1285	2011
+ward	19100082	Property crime	2006-07	1172	2011
+ward	19100082	Contact crime	2006-07	1240	2011
+ward	19100082	Property crime	2007-08	1144	2011
+ward	19100082	Contact crime	2007-08	1203	2011
+ward	19100082	Property crime	2008-09	1046	2011
+ward	19100082	Contact crime	2008-09	1259	2011
+ward	19100082	Property crime	2009-10	999	2011
+ward	19100082	Contact crime	2009-10	1198	2011
+ward	19100082	Property crime	2010-11	941	2011
+ward	19100082	Contact crime	2010-11	1244	2011
+ward	19100082	Property crime	2011-12	991	2011
+ward	19100082	Contact crime	2011-12	1318	2011
+ward	19100082	Property crime	2012-13	948	2011
+ward	19100082	Contact crime	2012-13	1336	2011
+ward	19100082	Property crime	2013-14	801	2011
+ward	19100082	Contact crime	2013-14	1175	2011
+ward	19100082	Property crime	2014-15	671	2011
+ward	19100082	Contact crime	2014-15	1081	2011
+ward	19100083	Property crime	2005-06	412	2011
+ward	19100083	Contact crime	2005-06	399	2011
+ward	19100083	Property crime	2006-07	480	2011
+ward	19100083	Contact crime	2006-07	419	2011
+ward	19100083	Property crime	2007-08	616	2011
+ward	19100083	Contact crime	2007-08	427	2011
+ward	19100083	Property crime	2008-09	581	2011
+ward	19100083	Contact crime	2008-09	348	2011
+ward	19100083	Property crime	2009-10	482	2011
+ward	19100083	Contact crime	2009-10	270	2011
+ward	19100083	Property crime	2010-11	492	2011
+ward	19100083	Contact crime	2010-11	220	2011
+ward	19100083	Property crime	2011-12	511	2011
+ward	19100083	Contact crime	2011-12	250	2011
+ward	19100083	Property crime	2012-13	548	2011
+ward	19100083	Contact crime	2012-13	305	2011
+ward	19100083	Property crime	2013-14	504	2011
+ward	19100083	Contact crime	2013-14	363	2011
+ward	19100083	Property crime	2014-15	410	2011
+ward	19100083	Contact crime	2014-15	416	2011
+ward	19100084	Property crime	2005-06	759	2011
+ward	19100084	Contact crime	2005-06	345	2011
+ward	19100084	Property crime	2006-07	858	2011
+ward	19100084	Contact crime	2006-07	312	2011
+ward	19100084	Property crime	2007-08	871	2011
+ward	19100084	Contact crime	2007-08	328	2011
+ward	19100084	Property crime	2008-09	773	2011
+ward	19100084	Contact crime	2008-09	260	2011
+ward	19100084	Property crime	2009-10	919	2011
+ward	19100084	Contact crime	2009-10	289	2011
+ward	19100084	Property crime	2010-11	888	2011
+ward	19100084	Contact crime	2010-11	251	2011
+ward	19100084	Property crime	2011-12	779	2011
+ward	19100084	Contact crime	2011-12	282	2011
+ward	19100084	Property crime	2012-13	879	2011
+ward	19100084	Contact crime	2012-13	306	2011
+ward	19100084	Property crime	2013-14	945	2011
+ward	19100084	Contact crime	2013-14	367	2011
+ward	19100084	Property crime	2014-15	733	2011
+ward	19100084	Contact crime	2014-15	389	2011
+ward	19100085	Property crime	2005-06	288	2011
+ward	19100085	Contact crime	2005-06	280	2011
+ward	19100085	Property crime	2006-07	336	2011
+ward	19100085	Contact crime	2006-07	294	2011
+ward	19100085	Property crime	2007-08	431	2011
+ward	19100085	Contact crime	2007-08	299	2011
+ward	19100085	Property crime	2008-09	437	2011
+ward	19100085	Contact crime	2008-09	329	2011
+ward	19100085	Property crime	2009-10	404	2011
+ward	19100085	Contact crime	2009-10	335	2011
+ward	19100085	Property crime	2010-11	435	2011
+ward	19100085	Contact crime	2010-11	289	2011
+ward	19100085	Property crime	2011-12	450	2011
+ward	19100085	Contact crime	2011-12	336	2011
+ward	19100085	Property crime	2012-13	475	2011
+ward	19100085	Contact crime	2012-13	415	2011
+ward	19100085	Property crime	2013-14	451	2011
+ward	19100085	Contact crime	2013-14	520	2011
+ward	19100085	Property crime	2014-15	415	2011
+ward	19100085	Contact crime	2014-15	605	2011
+ward	19100086	Property crime	2005-06	375	2011
+ward	19100086	Contact crime	2005-06	365	2011
+ward	19100086	Property crime	2006-07	437	2011
+ward	19100086	Contact crime	2006-07	383	2011
+ward	19100086	Property crime	2007-08	561	2011
+ward	19100086	Contact crime	2007-08	390	2011
+ward	19100086	Property crime	2008-09	558	2011
+ward	19100086	Contact crime	2008-09	397	2011
+ward	19100086	Property crime	2009-10	501	2011
+ward	19100086	Contact crime	2009-10	382	2011
+ward	19100086	Property crime	2010-11	533	2011
+ward	19100086	Contact crime	2010-11	326	2011
+ward	19100086	Property crime	2011-12	552	2011
+ward	19100086	Contact crime	2011-12	379	2011
+ward	19100086	Property crime	2012-13	585	2011
+ward	19100086	Contact crime	2012-13	467	2011
+ward	19100086	Property crime	2013-14	551	2011
+ward	19100086	Contact crime	2013-14	580	2011
+ward	19100086	Property crime	2014-15	493	2011
+ward	19100086	Contact crime	2014-15	672	2011
+ward	19100087	Property crime	2005-06	118	2011
+ward	19100087	Contact crime	2005-06	697	2011
+ward	19100087	Property crime	2006-07	129	2011
+ward	19100087	Contact crime	2006-07	646	2011
+ward	19100087	Property crime	2007-08	118	2011
+ward	19100087	Contact crime	2007-08	581	2011
+ward	19100087	Property crime	2008-09	121	2011
+ward	19100087	Contact crime	2008-09	488	2011
+ward	19100087	Property crime	2009-10	129	2011
+ward	19100087	Contact crime	2009-10	505	2011
+ward	19100087	Property crime	2010-11	130	2011
+ward	19100087	Contact crime	2010-11	466	2011
+ward	19100087	Property crime	2011-12	126	2011
+ward	19100087	Contact crime	2011-12	547	2011
+ward	19100087	Property crime	2012-13	150	2011
+ward	19100087	Contact crime	2012-13	642	2011
+ward	19100087	Property crime	2013-14	181	2011
+ward	19100087	Contact crime	2013-14	663	2011
+ward	19100087	Property crime	2014-15	180	2011
+ward	19100087	Contact crime	2014-15	716	2011
+ward	19100088	Property crime	2005-06	128	2011
+ward	19100088	Contact crime	2005-06	547	2011
+ward	19100088	Property crime	2006-07	165	2011
+ward	19100088	Contact crime	2006-07	595	2011
+ward	19100088	Property crime	2007-08	140	2011
+ward	19100088	Contact crime	2007-08	459	2011
+ward	19100088	Property crime	2008-09	136	2011
+ward	19100088	Contact crime	2008-09	396	2011
+ward	19100088	Property crime	2009-10	144	2011
+ward	19100088	Contact crime	2009-10	420	2011
+ward	19100088	Property crime	2010-11	170	2011
+ward	19100088	Contact crime	2010-11	415	2011
+ward	19100088	Property crime	2011-12	183	2011
+ward	19100088	Contact crime	2011-12	502	2011
+ward	19100088	Property crime	2012-13	176	2011
+ward	19100088	Contact crime	2012-13	472	2011
+ward	19100088	Property crime	2013-14	296	2011
+ward	19100088	Contact crime	2013-14	635	2011
+ward	19100088	Property crime	2014-15	419	2011
+ward	19100088	Contact crime	2014-15	822	2011
+ward	19100089	Property crime	2005-06	108	2011
+ward	19100089	Contact crime	2005-06	642	2011
+ward	19100089	Property crime	2006-07	119	2011
+ward	19100089	Contact crime	2006-07	594	2011
+ward	19100089	Property crime	2007-08	108	2011
+ward	19100089	Contact crime	2007-08	535	2011
+ward	19100089	Property crime	2008-09	111	2011
+ward	19100089	Contact crime	2008-09	449	2011
+ward	19100089	Property crime	2009-10	119	2011
+ward	19100089	Contact crime	2009-10	465	2011
+ward	19100089	Property crime	2010-11	119	2011
+ward	19100089	Contact crime	2010-11	429	2011
+ward	19100089	Property crime	2011-12	116	2011
+ward	19100089	Contact crime	2011-12	504	2011
+ward	19100089	Property crime	2012-13	138	2011
+ward	19100089	Contact crime	2012-13	591	2011
+ward	19100089	Property crime	2013-14	166	2011
+ward	19100089	Contact crime	2013-14	611	2011
+ward	19100089	Property crime	2014-15	166	2011
+ward	19100089	Contact crime	2014-15	659	2011
+ward	19100090	Property crime	2005-06	141	2011
+ward	19100090	Contact crime	2005-06	661	2011
+ward	19100090	Property crime	2006-07	145	2011
+ward	19100090	Contact crime	2006-07	612	2011
+ward	19100090	Property crime	2007-08	128	2011
+ward	19100090	Contact crime	2007-08	512	2011
+ward	19100090	Property crime	2008-09	133	2011
+ward	19100090	Contact crime	2008-09	439	2011
+ward	19100090	Property crime	2009-10	162	2011
+ward	19100090	Contact crime	2009-10	467	2011
+ward	19100090	Property crime	2010-11	160	2011
+ward	19100090	Contact crime	2010-11	424	2011
+ward	19100090	Property crime	2011-12	166	2011
+ward	19100090	Contact crime	2011-12	484	2011
+ward	19100090	Property crime	2012-13	187	2011
+ward	19100090	Contact crime	2012-13	574	2011
+ward	19100090	Property crime	2013-14	226	2011
+ward	19100090	Contact crime	2013-14	594	2011
+ward	19100090	Property crime	2014-15	222	2011
+ward	19100090	Contact crime	2014-15	639	2011
+ward	19100091	Property crime	2005-06	118	2011
+ward	19100091	Contact crime	2005-06	700	2011
+ward	19100091	Property crime	2006-07	129	2011
+ward	19100091	Contact crime	2006-07	647	2011
+ward	19100091	Property crime	2007-08	118	2011
+ward	19100091	Contact crime	2007-08	582	2011
+ward	19100091	Property crime	2008-09	121	2011
+ward	19100091	Contact crime	2008-09	489	2011
+ward	19100091	Property crime	2009-10	129	2011
+ward	19100091	Contact crime	2009-10	507	2011
+ward	19100091	Property crime	2010-11	130	2011
+ward	19100091	Contact crime	2010-11	467	2011
+ward	19100091	Property crime	2011-12	126	2011
+ward	19100091	Contact crime	2011-12	548	2011
+ward	19100091	Property crime	2012-13	150	2011
+ward	19100091	Contact crime	2012-13	644	2011
+ward	19100091	Property crime	2013-14	181	2011
+ward	19100091	Contact crime	2013-14	665	2011
+ward	19100091	Property crime	2014-15	181	2011
+ward	19100091	Contact crime	2014-15	717	2011
+ward	19100092	Property crime	2005-06	238	2011
+ward	19100092	Contact crime	2005-06	738	2011
+ward	19100092	Property crime	2006-07	227	2011
+ward	19100092	Contact crime	2006-07	699	2011
+ward	19100092	Property crime	2007-08	194	2011
+ward	19100092	Contact crime	2007-08	495	2011
+ward	19100092	Property crime	2008-09	208	2011
+ward	19100092	Contact crime	2008-09	449	2011
+ward	19100092	Property crime	2009-10	297	2011
+ward	19100092	Contact crime	2009-10	509	2011
+ward	19100092	Property crime	2010-11	288	2011
+ward	19100092	Contact crime	2010-11	452	2011
+ward	19100092	Property crime	2011-12	311	2011
+ward	19100092	Contact crime	2011-12	473	2011
+ward	19100092	Property crime	2012-13	330	2011
+ward	19100092	Contact crime	2012-13	561	2011
+ward	19100092	Property crime	2013-14	399	2011
+ward	19100092	Contact crime	2013-14	596	2011
+ward	19100092	Property crime	2014-15	389	2011
+ward	19100092	Contact crime	2014-15	631	2011
+ward	19100093	Property crime	2005-06	125	2011
+ward	19100093	Contact crime	2005-06	670	2011
+ward	19100093	Property crime	2006-07	134	2011
+ward	19100093	Contact crime	2006-07	636	2011
+ward	19100093	Property crime	2007-08	126	2011
+ward	19100093	Contact crime	2007-08	576	2011
+ward	19100093	Property crime	2008-09	131	2011
+ward	19100093	Contact crime	2008-09	487	2011
+ward	19100093	Property crime	2009-10	146	2011
+ward	19100093	Contact crime	2009-10	503	2011
+ward	19100093	Property crime	2010-11	146	2011
+ward	19100093	Contact crime	2010-11	472	2011
+ward	19100093	Property crime	2011-12	135	2011
+ward	19100093	Contact crime	2011-12	541	2011
+ward	19100093	Property crime	2012-13	155	2011
+ward	19100093	Contact crime	2012-13	621	2011
+ward	19100093	Property crime	2013-14	188	2011
+ward	19100093	Contact crime	2013-14	656	2011
+ward	19100093	Property crime	2014-15	191	2011
+ward	19100093	Contact crime	2014-15	701	2011
+ward	19100094	Property crime	2005-06	161	2011
+ward	19100094	Contact crime	2005-06	514	2011
+ward	19100094	Property crime	2006-07	155	2011
+ward	19100094	Contact crime	2006-07	496	2011
+ward	19100094	Property crime	2007-08	136	2011
+ward	19100094	Contact crime	2007-08	370	2011
+ward	19100094	Property crime	2008-09	147	2011
+ward	19100094	Contact crime	2008-09	333	2011
+ward	19100094	Property crime	2009-10	205	2011
+ward	19100094	Contact crime	2009-10	370	2011
+ward	19100094	Property crime	2010-11	199	2011
+ward	19100094	Contact crime	2010-11	336	2011
+ward	19100094	Property crime	2011-12	206	2011
+ward	19100094	Contact crime	2011-12	352	2011
+ward	19100094	Property crime	2012-13	219	2011
+ward	19100094	Contact crime	2012-13	407	2011
+ward	19100094	Property crime	2013-14	265	2011
+ward	19100094	Contact crime	2013-14	439	2011
+ward	19100094	Property crime	2014-15	261	2011
+ward	19100094	Contact crime	2014-15	463	2011
+ward	19100095	Property crime	2005-06	244	2011
+ward	19100095	Contact crime	2005-06	907	2011
+ward	19100095	Property crime	2006-07	250	2011
+ward	19100095	Contact crime	2006-07	968	2011
+ward	19100095	Property crime	2007-08	269	2011
+ward	19100095	Contact crime	2007-08	923	2011
+ward	19100095	Property crime	2008-09	285	2011
+ward	19100095	Contact crime	2008-09	799	2011
+ward	19100095	Property crime	2009-10	345	2011
+ward	19100095	Contact crime	2009-10	814	2011
+ward	19100095	Property crime	2010-11	338	2011
+ward	19100095	Contact crime	2010-11	815	2011
+ward	19100095	Property crime	2011-12	268	2011
+ward	19100095	Contact crime	2011-12	859	2011
+ward	19100095	Property crime	2012-13	281	2011
+ward	19100095	Contact crime	2012-13	885	2011
+ward	19100095	Property crime	2013-14	343	2011
+ward	19100095	Contact crime	2013-14	1032	2011
+ward	19100095	Property crime	2014-15	372	2011
+ward	19100095	Contact crime	2014-15	1061	2011
+ward	19100096	Property crime	2005-06	107	2011
+ward	19100096	Contact crime	2005-06	409	2011
+ward	19100096	Property crime	2006-07	108	2011
+ward	19100096	Contact crime	2006-07	437	2011
+ward	19100096	Property crime	2007-08	116	2011
+ward	19100096	Contact crime	2007-08	417	2011
+ward	19100096	Property crime	2008-09	125	2011
+ward	19100096	Contact crime	2008-09	359	2011
+ward	19100096	Property crime	2009-10	152	2011
+ward	19100096	Contact crime	2009-10	365	2011
+ward	19100096	Property crime	2010-11	148	2011
+ward	19100096	Contact crime	2010-11	367	2011
+ward	19100096	Property crime	2011-12	117	2011
+ward	19100096	Contact crime	2011-12	387	2011
+ward	19100096	Property crime	2012-13	123	2011
+ward	19100096	Contact crime	2012-13	399	2011
+ward	19100096	Property crime	2013-14	151	2011
+ward	19100096	Contact crime	2013-14	466	2011
+ward	19100096	Property crime	2014-15	164	2011
+ward	19100096	Contact crime	2014-15	478	2011
+ward	19100097	Property crime	2005-06	146	2011
+ward	19100097	Contact crime	2005-06	505	2011
+ward	19100097	Property crime	2006-07	143	2011
+ward	19100097	Contact crime	2006-07	511	2011
+ward	19100097	Property crime	2007-08	138	2011
+ward	19100097	Contact crime	2007-08	435	2011
+ward	19100097	Property crime	2008-09	149	2011
+ward	19100097	Contact crime	2008-09	382	2011
+ward	19100097	Property crime	2009-10	195	2011
+ward	19100097	Contact crime	2009-10	405	2011
+ward	19100097	Property crime	2010-11	189	2011
+ward	19100097	Contact crime	2010-11	388	2011
+ward	19100097	Property crime	2011-12	175	2011
+ward	19100097	Contact crime	2011-12	408	2011
+ward	19100097	Property crime	2012-13	185	2011
+ward	19100097	Contact crime	2012-13	444	2011
+ward	19100097	Property crime	2013-14	225	2011
+ward	19100097	Contact crime	2013-14	499	2011
+ward	19100097	Property crime	2014-15	231	2011
+ward	19100097	Contact crime	2014-15	518	2011
+ward	19100098	Property crime	2005-06	121	2011
+ward	19100098	Contact crime	2005-06	464	2011
+ward	19100098	Property crime	2006-07	123	2011
+ward	19100098	Contact crime	2006-07	495	2011
+ward	19100098	Property crime	2007-08	131	2011
+ward	19100098	Contact crime	2007-08	472	2011
+ward	19100098	Property crime	2008-09	141	2011
+ward	19100098	Contact crime	2008-09	407	2011
+ward	19100098	Property crime	2009-10	172	2011
+ward	19100098	Contact crime	2009-10	414	2011
+ward	19100098	Property crime	2010-11	168	2011
+ward	19100098	Contact crime	2010-11	415	2011
+ward	19100098	Property crime	2011-12	132	2011
+ward	19100098	Contact crime	2011-12	438	2011
+ward	19100098	Property crime	2012-13	139	2011
+ward	19100098	Contact crime	2012-13	452	2011
+ward	19100098	Property crime	2013-14	171	2011
+ward	19100098	Contact crime	2013-14	527	2011
+ward	19100098	Property crime	2014-15	185	2011
+ward	19100098	Contact crime	2014-15	541	2011
+ward	19100099	Property crime	2005-06	911	2011
+ward	19100099	Contact crime	2005-06	1319	2011
+ward	19100099	Property crime	2006-07	1076	2011
+ward	19100099	Contact crime	2006-07	1285	2011
+ward	19100099	Property crime	2007-08	1051	2011
+ward	19100099	Contact crime	2007-08	1227	2011
+ward	19100099	Property crime	2008-09	970	2011
+ward	19100099	Contact crime	2008-09	1253	2011
+ward	19100099	Property crime	2009-10	946	2011
+ward	19100099	Contact crime	2009-10	1208	2011
+ward	19100099	Property crime	2010-11	893	2011
+ward	19100099	Contact crime	2010-11	1242	2011
+ward	19100099	Property crime	2011-12	929	2011
+ward	19100099	Contact crime	2011-12	1315	2011
+ward	19100099	Property crime	2012-13	895	2011
+ward	19100099	Contact crime	2012-13	1343	2011
+ward	19100099	Property crime	2013-14	841	2011
+ward	19100099	Contact crime	2013-14	1313	2011
+ward	19100099	Property crime	2014-15	782	2011
+ward	19100099	Contact crime	2014-15	1297	2011
+ward	19100100	Property crime	2005-06	1399	2011
+ward	19100100	Contact crime	2005-06	823	2011
+ward	19100100	Property crime	2006-07	1388	2011
+ward	19100100	Contact crime	2006-07	813	2011
+ward	19100100	Property crime	2007-08	1553	2011
+ward	19100100	Contact crime	2007-08	826	2011
+ward	19100100	Property crime	2008-09	1517	2011
+ward	19100100	Contact crime	2008-09	641	2011
+ward	19100100	Property crime	2009-10	1631	2011
+ward	19100100	Contact crime	2009-10	592	2011
+ward	19100100	Property crime	2010-11	1658	2011
+ward	19100100	Contact crime	2010-11	510	2011
+ward	19100100	Property crime	2011-12	1796	2011
+ward	19100100	Contact crime	2011-12	602	2011
+ward	19100100	Property crime	2012-13	1692	2011
+ward	19100100	Contact crime	2012-13	594	2011
+ward	19100100	Property crime	2013-14	1535	2011
+ward	19100100	Contact crime	2013-14	654	2011
+ward	19100100	Property crime	2014-15	1199	2011
+ward	19100100	Contact crime	2014-15	731	2011
+ward	19100101	Property crime	2005-06	363	2011
+ward	19100101	Contact crime	2005-06	512	2011
+ward	19100101	Property crime	2006-07	396	2011
+ward	19100101	Contact crime	2006-07	485	2011
+ward	19100101	Property crime	2007-08	388	2011
+ward	19100101	Contact crime	2007-08	382	2011
+ward	19100101	Property crime	2008-09	325	2011
+ward	19100101	Contact crime	2008-09	371	2011
+ward	19100101	Property crime	2009-10	373	2011
+ward	19100101	Contact crime	2009-10	422	2011
+ward	19100101	Property crime	2010-11	410	2011
+ward	19100101	Contact crime	2010-11	499	2011
+ward	19100101	Property crime	2011-12	522	2011
+ward	19100101	Contact crime	2011-12	507	2011
+ward	19100101	Property crime	2012-13	469	2011
+ward	19100101	Contact crime	2012-13	553	2011
+ward	19100101	Property crime	2013-14	513	2011
+ward	19100101	Contact crime	2013-14	624	2011
+ward	19100101	Property crime	2014-15	483	2011
+ward	19100101	Contact crime	2014-15	621	2011
+ward	19100102	Property crime	2005-06	566	2011
+ward	19100102	Contact crime	2005-06	281	2011
+ward	19100102	Property crime	2006-07	557	2011
+ward	19100102	Contact crime	2006-07	278	2011
+ward	19100102	Property crime	2007-08	569	2011
+ward	19100102	Contact crime	2007-08	271	2011
+ward	19100102	Property crime	2008-09	641	2011
+ward	19100102	Contact crime	2008-09	273	2011
+ward	19100102	Property crime	2009-10	602	2011
+ward	19100102	Contact crime	2009-10	279	2011
+ward	19100102	Property crime	2010-11	591	2011
+ward	19100102	Contact crime	2010-11	287	2011
+ward	19100102	Property crime	2011-12	687	2011
+ward	19100102	Contact crime	2011-12	280	2011
+ward	19100102	Property crime	2012-13	726	2011
+ward	19100102	Contact crime	2012-13	277	2011
+ward	19100102	Property crime	2013-14	670	2011
+ward	19100102	Contact crime	2013-14	290	2011
+ward	19100102	Property crime	2014-15	570	2011
+ward	19100102	Contact crime	2014-15	307	2011
+ward	19100103	Property crime	2005-06	721	2011
+ward	19100103	Contact crime	2005-06	413	2011
+ward	19100103	Property crime	2006-07	800	2011
+ward	19100103	Contact crime	2006-07	386	2011
+ward	19100103	Property crime	2007-08	747	2011
+ward	19100103	Contact crime	2007-08	335	2011
+ward	19100103	Property crime	2008-09	776	2011
+ward	19100103	Contact crime	2008-09	345	2011
+ward	19100103	Property crime	2009-10	679	2011
+ward	19100103	Contact crime	2009-10	374	2011
+ward	19100103	Property crime	2010-11	797	2011
+ward	19100103	Contact crime	2010-11	399	2011
+ward	19100103	Property crime	2011-12	923	2011
+ward	19100103	Contact crime	2011-12	404	2011
+ward	19100103	Property crime	2012-13	1025	2011
+ward	19100103	Contact crime	2012-13	448	2011
+ward	19100103	Property crime	2013-14	958	2011
+ward	19100103	Contact crime	2013-14	481	2011
+ward	19100103	Property crime	2014-15	781	2011
+ward	19100103	Contact crime	2014-15	486	2011
+ward	19100104	Property crime	2005-06	719	2011
+ward	19100104	Contact crime	2005-06	504	2011
+ward	19100104	Property crime	2006-07	776	2011
+ward	19100104	Contact crime	2006-07	513	2011
+ward	19100104	Property crime	2007-08	857	2011
+ward	19100104	Contact crime	2007-08	489	2011
+ward	19100104	Property crime	2008-09	782	2011
+ward	19100104	Contact crime	2008-09	496	2011
+ward	19100104	Property crime	2009-10	916	2011
+ward	19100104	Contact crime	2009-10	610	2011
+ward	19100104	Property crime	2010-11	815	2011
+ward	19100104	Contact crime	2010-11	538	2011
+ward	19100104	Property crime	2011-12	787	2011
+ward	19100104	Contact crime	2011-12	547	2011
+ward	19100104	Property crime	2012-13	889	2011
+ward	19100104	Contact crime	2012-13	582	2011
+ward	19100104	Property crime	2013-14	962	2011
+ward	19100104	Contact crime	2013-14	609	2011
+ward	19100104	Property crime	2014-15	840	2011
+ward	19100104	Contact crime	2014-15	714	2011
+ward	19100105	Property crime	2005-06	632	2011
+ward	19100105	Contact crime	2005-06	432	2011
+ward	19100105	Property crime	2006-07	681	2011
+ward	19100105	Contact crime	2006-07	403	2011
+ward	19100105	Property crime	2007-08	674	2011
+ward	19100105	Contact crime	2007-08	363	2011
+ward	19100105	Property crime	2008-09	678	2011
+ward	19100105	Contact crime	2008-09	355	2011
+ward	19100105	Property crime	2009-10	641	2011
+ward	19100105	Contact crime	2009-10	427	2011
+ward	19100105	Property crime	2010-11	725	2011
+ward	19100105	Contact crime	2010-11	447	2011
+ward	19100105	Property crime	2011-12	837	2011
+ward	19100105	Contact crime	2011-12	450	2011
+ward	19100105	Property crime	2012-13	886	2011
+ward	19100105	Contact crime	2012-13	495	2011
+ward	19100105	Property crime	2013-14	870	2011
+ward	19100105	Contact crime	2013-14	505	2011
+ward	19100105	Property crime	2014-15	752	2011
+ward	19100105	Contact crime	2014-15	523	2011
+ward	19100106	Property crime	2005-06	686	2011
+ward	19100106	Contact crime	2005-06	1132	2011
+ward	19100106	Property crime	2006-07	686	2011
+ward	19100106	Contact crime	2006-07	983	2011
+ward	19100106	Property crime	2007-08	756	2011
+ward	19100106	Contact crime	2007-08	1143	2011
+ward	19100106	Property crime	2008-09	540	2011
+ward	19100106	Contact crime	2008-09	938	2011
+ward	19100106	Property crime	2009-10	474	2011
+ward	19100106	Contact crime	2009-10	924	2011
+ward	19100106	Property crime	2010-11	456	2011
+ward	19100106	Contact crime	2010-11	819	2011
+ward	19100106	Property crime	2011-12	491	2011
+ward	19100106	Contact crime	2011-12	849	2011
+ward	19100106	Property crime	2012-13	514	2011
+ward	19100106	Contact crime	2012-13	908	2011
+ward	19100106	Property crime	2013-14	526	2011
+ward	19100106	Contact crime	2013-14	917	2011
+ward	19100106	Property crime	2014-15	524	2011
+ward	19100106	Contact crime	2014-15	1062	2011
+ward	19100107	Property crime	2005-06	1189	2011
+ward	19100107	Contact crime	2005-06	409	2011
+ward	19100107	Property crime	2006-07	984	2011
+ward	19100107	Contact crime	2006-07	371	2011
+ward	19100107	Property crime	2007-08	1137	2011
+ward	19100107	Contact crime	2007-08	384	2011
+ward	19100107	Property crime	2008-09	1138	2011
+ward	19100107	Contact crime	2008-09	408	2011
+ward	19100107	Property crime	2009-10	1254	2011
+ward	19100107	Contact crime	2009-10	483	2011
+ward	19100107	Property crime	2010-11	1295	2011
+ward	19100107	Contact crime	2010-11	469	2011
+ward	19100107	Property crime	2011-12	1217	2011
+ward	19100107	Contact crime	2011-12	458	2011
+ward	19100107	Property crime	2012-13	1327	2011
+ward	19100107	Contact crime	2012-13	469	2011
+ward	19100107	Property crime	2013-14	1472	2011
+ward	19100107	Contact crime	2013-14	555	2011
+ward	19100107	Property crime	2014-15	1180	2011
+ward	19100107	Contact crime	2014-15	599	2011
+ward	19100108	Property crime	2005-06	264	2011
+ward	19100108	Contact crime	2005-06	770	2011
+ward	19100108	Property crime	2006-07	459	2011
+ward	19100108	Contact crime	2006-07	1004	2011
+ward	19100108	Property crime	2007-08	548	2011
+ward	19100108	Contact crime	2007-08	1024	2011
+ward	19100108	Property crime	2008-09	543	2011
+ward	19100108	Contact crime	2008-09	1017	2011
+ward	19100108	Property crime	2009-10	447	2011
+ward	19100108	Contact crime	2009-10	925	2011
+ward	19100108	Property crime	2010-11	484	2011
+ward	19100108	Contact crime	2010-11	833	2011
+ward	19100108	Property crime	2011-12	426	2011
+ward	19100108	Contact crime	2011-12	877	2011
+ward	19100108	Property crime	2012-13	525	2011
+ward	19100108	Contact crime	2012-13	974	2011
+ward	19100108	Property crime	2013-14	579	2011
+ward	19100108	Contact crime	2013-14	1108	2011
+ward	19100108	Property crime	2014-15	530	2011
+ward	19100108	Contact crime	2014-15	1195	2011
+ward	19100109	Property crime	2005-06	394	2011
+ward	19100109	Contact crime	2005-06	627	2011
+ward	19100109	Property crime	2006-07	541	2011
+ward	19100109	Contact crime	2006-07	712	2011
+ward	19100109	Property crime	2007-08	621	2011
+ward	19100109	Contact crime	2007-08	673	2011
+ward	19100109	Property crime	2008-09	480	2011
+ward	19100109	Contact crime	2008-09	687	2011
+ward	19100109	Property crime	2009-10	503	2011
+ward	19100109	Contact crime	2009-10	742	2011
+ward	19100109	Property crime	2010-11	534	2011
+ward	19100109	Contact crime	2010-11	651	2011
+ward	19100109	Property crime	2011-12	513	2011
+ward	19100109	Contact crime	2011-12	633	2011
+ward	19100109	Property crime	2012-13	473	2011
+ward	19100109	Contact crime	2012-13	650	2011
+ward	19100109	Property crime	2013-14	528	2011
+ward	19100109	Contact crime	2013-14	733	2011
+ward	19100109	Property crime	2014-15	560	2011
+ward	19100109	Contact crime	2014-15	847	2011
+ward	19100110	Property crime	2005-06	484	2011
+ward	19100110	Contact crime	2005-06	336	2011
+ward	19100110	Property crime	2006-07	475	2011
+ward	19100110	Contact crime	2006-07	355	2011
+ward	19100110	Property crime	2007-08	486	2011
+ward	19100110	Contact crime	2007-08	375	2011
+ward	19100110	Property crime	2008-09	468	2011
+ward	19100110	Contact crime	2008-09	350	2011
+ward	19100110	Property crime	2009-10	470	2011
+ward	19100110	Contact crime	2009-10	373	2011
+ward	19100110	Property crime	2010-11	447	2011
+ward	19100110	Contact crime	2010-11	379	2011
+ward	19100110	Property crime	2011-12	394	2011
+ward	19100110	Contact crime	2011-12	356	2011
+ward	19100110	Property crime	2012-13	483	2011
+ward	19100110	Contact crime	2012-13	392	2011
+ward	19100110	Property crime	2013-14	465	2011
+ward	19100110	Contact crime	2013-14	413	2011
+ward	19100110	Property crime	2014-15	418	2011
+ward	19100110	Contact crime	2014-15	425	2011
+ward	19100111	Property crime	2005-06	374	2011
+ward	19100111	Contact crime	2005-06	521	2011
+ward	19100111	Property crime	2006-07	407	2011
+ward	19100111	Contact crime	2006-07	494	2011
+ward	19100111	Property crime	2007-08	399	2011
+ward	19100111	Contact crime	2007-08	389	2011
+ward	19100111	Property crime	2008-09	336	2011
+ward	19100111	Contact crime	2008-09	378	2011
+ward	19100111	Property crime	2009-10	385	2011
+ward	19100111	Contact crime	2009-10	430	2011
+ward	19100111	Property crime	2010-11	421	2011
+ward	19100111	Contact crime	2010-11	508	2011
+ward	19100111	Property crime	2011-12	536	2011
+ward	19100111	Contact crime	2011-12	516	2011
+ward	19100111	Property crime	2012-13	483	2011
+ward	19100111	Contact crime	2012-13	562	2011
+ward	19100111	Property crime	2013-14	527	2011
+ward	19100111	Contact crime	2013-14	634	2011
+ward	19100111	Property crime	2014-15	496	2011
+ward	19100111	Contact crime	2014-15	631	2011
+ward	21001001	Property crime	2005-06	0	2011
+ward	21001001	Contact crime	2005-06	0	2011
+ward	21001001	Property crime	2006-07	0	2011
+ward	21001001	Contact crime	2006-07	0	2011
+ward	21001001	Property crime	2007-08	0	2011
+ward	21001001	Contact crime	2007-08	0	2011
+ward	21001001	Property crime	2008-09	0	2011
+ward	21001001	Contact crime	2008-09	0	2011
+ward	21001001	Property crime	2009-10	0	2011
+ward	21001001	Contact crime	2009-10	0	2011
+ward	21001001	Property crime	2010-11	0	2011
+ward	21001001	Contact crime	2010-11	0	2011
+ward	21001001	Property crime	2011-12	0	2011
+ward	21001001	Contact crime	2011-12	0	2011
+ward	21001001	Property crime	2012-13	0	2011
+ward	21001001	Contact crime	2012-13	0	2011
+ward	21001001	Property crime	2013-14	0	2011
+ward	21001001	Contact crime	2013-14	0	2011
+ward	21001001	Property crime	2014-15	0	2011
+ward	21001001	Contact crime	2014-15	0	2011
+ward	21001007	Property crime	2005-06	0	2011
+ward	21001007	Contact crime	2005-06	0	2011
+ward	21001007	Property crime	2006-07	0	2011
+ward	21001007	Contact crime	2006-07	0	2011
+ward	21001007	Property crime	2007-08	0	2011
+ward	21001007	Contact crime	2007-08	0	2011
+ward	21001007	Property crime	2008-09	0	2011
+ward	21001007	Contact crime	2008-09	0	2011
+ward	21001007	Property crime	2009-10	0	2011
+ward	21001007	Contact crime	2009-10	0	2011
+ward	21001007	Property crime	2010-11	0	2011
+ward	21001007	Contact crime	2010-11	0	2011
+ward	21001007	Property crime	2011-12	0	2011
+ward	21001007	Contact crime	2011-12	0	2011
+ward	21001007	Property crime	2012-13	0	2011
+ward	21001007	Contact crime	2012-13	0	2011
+ward	21001007	Property crime	2013-14	0	2011
+ward	21001007	Contact crime	2013-14	0	2011
+ward	21001007	Property crime	2014-15	0	2011
+ward	21001007	Contact crime	2014-15	0	2011
+ward	21007001	Property crime	2005-06	0	2011
+ward	21007001	Contact crime	2005-06	0	2011
+ward	21007001	Property crime	2006-07	0	2011
+ward	21007001	Contact crime	2006-07	0	2011
+ward	21007001	Property crime	2007-08	0	2011
+ward	21007001	Contact crime	2007-08	0	2011
+ward	21007001	Property crime	2008-09	0	2011
+ward	21007001	Contact crime	2008-09	0	2011
+ward	21007001	Property crime	2009-10	0	2011
+ward	21007001	Contact crime	2009-10	0	2011
+ward	21007001	Property crime	2010-11	0	2011
+ward	21007001	Contact crime	2010-11	0	2011
+ward	21007001	Property crime	2011-12	0	2011
+ward	21007001	Contact crime	2011-12	0	2011
+ward	21007001	Property crime	2012-13	0	2011
+ward	21007001	Contact crime	2012-13	0	2011
+ward	21007001	Property crime	2013-14	0	2011
+ward	21007001	Contact crime	2013-14	0	2011
+ward	21007001	Property crime	2014-15	0	2011
+ward	21007001	Contact crime	2014-15	0	2011
+ward	21007004	Property crime	2005-06	0	2011
+ward	21007004	Contact crime	2005-06	0	2011
+ward	21007004	Property crime	2006-07	0	2011
+ward	21007004	Contact crime	2006-07	0	2011
+ward	21007004	Property crime	2007-08	0	2011
+ward	21007004	Contact crime	2007-08	0	2011
+ward	21007004	Property crime	2008-09	0	2011
+ward	21007004	Contact crime	2008-09	0	2011
+ward	21007004	Property crime	2009-10	0	2011
+ward	21007004	Contact crime	2009-10	0	2011
+ward	21007004	Property crime	2010-11	0	2011
+ward	21007004	Contact crime	2010-11	0	2011
+ward	21007004	Property crime	2011-12	0	2011
+ward	21007004	Contact crime	2011-12	0	2011
+ward	21007004	Property crime	2012-13	0	2011
+ward	21007004	Contact crime	2012-13	0	2011
+ward	21007004	Property crime	2013-14	0	2011
+ward	21007004	Contact crime	2013-14	0	2011
+ward	21007004	Property crime	2014-15	0	2011
+ward	21007004	Contact crime	2014-15	0	2011
+ward	21009001	Property crime	2005-06	0	2011
+ward	21009001	Contact crime	2005-06	0	2011
+ward	21009001	Property crime	2006-07	0	2011
+ward	21009001	Contact crime	2006-07	0	2011
+ward	21009001	Property crime	2007-08	0	2011
+ward	21009001	Contact crime	2007-08	0	2011
+ward	21009001	Property crime	2008-09	0	2011
+ward	21009001	Contact crime	2008-09	0	2011
+ward	21009001	Property crime	2009-10	0	2011
+ward	21009001	Contact crime	2009-10	0	2011
+ward	21009001	Property crime	2010-11	0	2011
+ward	21009001	Contact crime	2010-11	0	2011
+ward	21009001	Property crime	2011-12	0	2011
+ward	21009001	Contact crime	2011-12	0	2011
+ward	21009001	Property crime	2012-13	0	2011
+ward	21009001	Contact crime	2012-13	0	2011
+ward	21009001	Property crime	2013-14	0	2011
+ward	21009001	Contact crime	2013-14	0	2011
+ward	21009001	Property crime	2014-15	0	2011
+ward	21009001	Contact crime	2014-15	0	2011
+ward	21009002	Property crime	2005-06	0	2011
+ward	21009002	Contact crime	2005-06	0	2011
+ward	21009002	Property crime	2006-07	0	2011
+ward	21009002	Contact crime	2006-07	0	2011
+ward	21009002	Property crime	2007-08	0	2011
+ward	21009002	Contact crime	2007-08	0	2011
+ward	21009002	Property crime	2008-09	0	2011
+ward	21009002	Contact crime	2008-09	0	2011
+ward	21009002	Property crime	2009-10	0	2011
+ward	21009002	Contact crime	2009-10	0	2011
+ward	21009002	Property crime	2010-11	0	2011
+ward	21009002	Contact crime	2010-11	0	2011
+ward	21009002	Property crime	2011-12	0	2011
+ward	21009002	Contact crime	2011-12	0	2011
+ward	21009002	Property crime	2012-13	0	2011
+ward	21009002	Contact crime	2012-13	0	2011
+ward	21009002	Property crime	2013-14	0	2011
+ward	21009002	Contact crime	2013-14	0	2011
+ward	21009002	Property crime	2014-15	0	2011
+ward	21009002	Contact crime	2014-15	0	2011
+ward	21009006	Property crime	2005-06	0	2011
+ward	21009006	Contact crime	2005-06	0	2011
+ward	21009006	Property crime	2006-07	0	2011
+ward	21009006	Contact crime	2006-07	0	2011
+ward	21009006	Property crime	2007-08	0	2011
+ward	21009006	Contact crime	2007-08	0	2011
+ward	21009006	Property crime	2008-09	0	2011
+ward	21009006	Contact crime	2008-09	0	2011
+ward	21009006	Property crime	2009-10	0	2011
+ward	21009006	Contact crime	2009-10	0	2011
+ward	21009006	Property crime	2010-11	0	2011
+ward	21009006	Contact crime	2010-11	0	2011
+ward	21009006	Property crime	2011-12	0	2011
+ward	21009006	Contact crime	2011-12	0	2011
+ward	21009006	Property crime	2012-13	0	2011
+ward	21009006	Contact crime	2012-13	0	2011
+ward	21009006	Property crime	2013-14	0	2011
+ward	21009006	Contact crime	2013-14	0	2011
+ward	21009006	Property crime	2014-15	0	2011
+ward	21009006	Contact crime	2014-15	0	2011
+ward	30604002	Property crime	2005-06	0	2011
+ward	30604002	Contact crime	2005-06	0	2011
+ward	30604002	Property crime	2006-07	0	2011
+ward	30604002	Contact crime	2006-07	0	2011
+ward	30604002	Property crime	2007-08	0	2011
+ward	30604002	Contact crime	2007-08	0	2011
+ward	30604002	Property crime	2008-09	0	2011
+ward	30604002	Contact crime	2008-09	0	2011
+ward	30604002	Property crime	2009-10	0	2011
+ward	30604002	Contact crime	2009-10	0	2011
+ward	30604002	Property crime	2010-11	0	2011
+ward	30604002	Contact crime	2010-11	0	2011
+ward	30604002	Property crime	2011-12	0	2011
+ward	30604002	Contact crime	2011-12	0	2011
+ward	30604002	Property crime	2012-13	0	2011
+ward	30604002	Contact crime	2012-13	0	2011
+ward	30604002	Property crime	2013-14	0	2011
+ward	30604002	Contact crime	2013-14	0	2011
+ward	30604002	Property crime	2014-15	0	2011
+ward	30604002	Contact crime	2014-15	0	2011
+ward	30604004	Property crime	2005-06	0	2011
+ward	30604004	Contact crime	2005-06	0	2011
+ward	30604004	Property crime	2006-07	0	2011
+ward	30604004	Contact crime	2006-07	0	2011
+ward	30604004	Property crime	2007-08	0	2011
+ward	30604004	Contact crime	2007-08	0	2011
+ward	30604004	Property crime	2008-09	0	2011
+ward	30604004	Contact crime	2008-09	0	2011
+ward	30604004	Property crime	2009-10	0	2011
+ward	30604004	Contact crime	2009-10	0	2011
+ward	30604004	Property crime	2010-11	0	2011
+ward	30604004	Contact crime	2010-11	0	2011
+ward	30604004	Property crime	2011-12	0	2011
+ward	30604004	Contact crime	2011-12	0	2011
+ward	30604004	Property crime	2012-13	0	2011
+ward	30604004	Contact crime	2012-13	0	2011
+ward	30604004	Property crime	2013-14	0	2011
+ward	30604004	Contact crime	2013-14	0	2011
+ward	30604004	Property crime	2014-15	0	2011
+ward	30604004	Contact crime	2014-15	0	2011
+ward	30605004	Property crime	2005-06	0	2011
+ward	30605004	Contact crime	2005-06	0	2011
+ward	30605004	Property crime	2006-07	0	2011
+ward	30605004	Contact crime	2006-07	0	2011
+ward	30605004	Property crime	2007-08	0	2011
+ward	30605004	Contact crime	2007-08	0	2011
+ward	30605004	Property crime	2008-09	0	2011
+ward	30605004	Contact crime	2008-09	0	2011
+ward	30605004	Property crime	2009-10	0	2011
+ward	30605004	Contact crime	2009-10	0	2011
+ward	30605004	Property crime	2010-11	0	2011
+ward	30605004	Contact crime	2010-11	0	2011
+ward	30605004	Property crime	2011-12	0	2011
+ward	30605004	Contact crime	2011-12	0	2011
+ward	30605004	Property crime	2012-13	0	2011
+ward	30605004	Contact crime	2012-13	0	2011
+ward	30605004	Property crime	2013-14	0	2011
+ward	30605004	Contact crime	2013-14	0	2011
+ward	30605004	Property crime	2014-15	0	2011
+ward	30605004	Contact crime	2014-15	0	2011
+ward	30605005	Property crime	2005-06	0	2011
+ward	30605005	Contact crime	2005-06	0	2011
+ward	30605005	Property crime	2006-07	0	2011
+ward	30605005	Contact crime	2006-07	0	2011
+ward	30605005	Property crime	2007-08	0	2011
+ward	30605005	Contact crime	2007-08	0	2011
+ward	30605005	Property crime	2008-09	0	2011
+ward	30605005	Contact crime	2008-09	0	2011
+ward	30605005	Property crime	2009-10	0	2011
+ward	30605005	Contact crime	2009-10	0	2011
+ward	30605005	Property crime	2010-11	0	2011
+ward	30605005	Contact crime	2010-11	0	2011
+ward	30605005	Property crime	2011-12	0	2011
+ward	30605005	Contact crime	2011-12	0	2011
+ward	30605005	Property crime	2012-13	0	2011
+ward	30605005	Contact crime	2012-13	0	2011
+ward	30605005	Property crime	2013-14	0	2011
+ward	30605005	Contact crime	2013-14	0	2011
+ward	30605005	Property crime	2014-15	0	2011
+ward	30605005	Contact crime	2014-15	0	2011
+ward	30606003	Property crime	2005-06	0	2011
+ward	30606003	Contact crime	2005-06	0	2011
+ward	30606003	Property crime	2006-07	0	2011
+ward	30606003	Contact crime	2006-07	0	2011
+ward	30606003	Property crime	2007-08	0	2011
+ward	30606003	Contact crime	2007-08	0	2011
+ward	30606003	Property crime	2008-09	0	2011
+ward	30606003	Contact crime	2008-09	0	2011
+ward	30606003	Property crime	2009-10	0	2011
+ward	30606003	Contact crime	2009-10	0	2011
+ward	30606003	Property crime	2010-11	0	2011
+ward	30606003	Contact crime	2010-11	0	2011
+ward	30606003	Property crime	2011-12	0	2011
+ward	30606003	Contact crime	2011-12	0	2011
+ward	30606003	Property crime	2012-13	0	2011
+ward	30606003	Contact crime	2012-13	0	2011
+ward	30606003	Property crime	2013-14	0	2011
+ward	30606003	Contact crime	2013-14	0	2011
+ward	30606003	Property crime	2014-15	0	2011
+ward	30606003	Contact crime	2014-15	0	2011
+ward	30606004	Property crime	2005-06	0	2011
+ward	30606004	Contact crime	2005-06	0	2011
+ward	30606004	Property crime	2006-07	0	2011
+ward	30606004	Contact crime	2006-07	0	2011
+ward	30606004	Property crime	2007-08	0	2011
+ward	30606004	Contact crime	2007-08	0	2011
+ward	30606004	Property crime	2008-09	0	2011
+ward	30606004	Contact crime	2008-09	0	2011
+ward	30606004	Property crime	2009-10	0	2011
+ward	30606004	Contact crime	2009-10	0	2011
+ward	30606004	Property crime	2010-11	0	2011
+ward	30606004	Contact crime	2010-11	0	2011
+ward	30606004	Property crime	2011-12	0	2011
+ward	30606004	Contact crime	2011-12	0	2011
+ward	30606004	Property crime	2012-13	0	2011
+ward	30606004	Contact crime	2012-13	0	2011
+ward	30606004	Property crime	2013-14	0	2011
+ward	30606004	Contact crime	2013-14	0	2011
+ward	30606004	Property crime	2014-15	0	2011
+ward	30606004	Contact crime	2014-15	0	2011
+ward	30701003	Property crime	2005-06	0	2011
+ward	30701003	Contact crime	2005-06	0	2011
+ward	30701003	Property crime	2006-07	0	2011
+ward	30701003	Contact crime	2006-07	0	2011
+ward	30701003	Property crime	2007-08	0	2011
+ward	30701003	Contact crime	2007-08	0	2011
+ward	30701003	Property crime	2008-09	0	2011
+ward	30701003	Contact crime	2008-09	0	2011
+ward	30701003	Property crime	2009-10	0	2011
+ward	30701003	Contact crime	2009-10	0	2011
+ward	30701003	Property crime	2010-11	0	2011
+ward	30701003	Contact crime	2010-11	0	2011
+ward	30701003	Property crime	2011-12	0	2011
+ward	30701003	Contact crime	2011-12	0	2011
+ward	30701003	Property crime	2012-13	0	2011
+ward	30701003	Contact crime	2012-13	0	2011
+ward	30701003	Property crime	2013-14	0	2011
+ward	30701003	Contact crime	2013-14	0	2011
+ward	30701003	Property crime	2014-15	0	2011
+ward	30701003	Contact crime	2014-15	0	2011
+municipality	WC023	Contact crime	2010-11	3518	2011
+municipality	WC053	Contact crime	2005-06	917	2011
+district	DC2	Contact crime	2007-08	9458	2011
+municipality	WC011	Property crime	2012-13	681	2011
+municipality	WC033	Contact crime	2009-10	491	2011
+district	DC1	Property crime	2005-06	2022	2011
+municipality	WC048	Contact crime	2010-11	1105	2011
+district	DC3	Property crime	2009-10	1544	2011
+municipality	WC025	Property crime	2010-11	2615	2011
+municipality	WC026	Contact crime	2007-08	1139	2011
+municipality	WC043	Contact crime	2007-08	1679	2011
+municipality	WC013	Contact crime	2009-10	664	2011
+municipality	WC034	Contact crime	2009-10	668	2011
+municipality	EC107	Contact crime	2014-15	0	2011
+district	DC4	Contact crime	2013-14	8348	2011
+municipality	NC066	Property crime	2006-07	0	2011
+district	DC5	Property crime	2006-07	447	2011
+municipality	EC101	Contact crime	2005-06	0	2011
+municipality	WC043	Property crime	2005-06	1482	2011
+municipality	NC066	Property crime	2009-10	0	2011
+municipality	WC026	Property crime	2011-12	695	2011
+municipality	WC032	Contact crime	2009-10	1164	2011
+province	WC	Contact crime	2012-13	84988	2011
+municipality	WC044	Contact crime	2005-06	3318	2011
+municipality	WC025	Property crime	2005-06	2028	2011
+municipality	WC032	Contact crime	2006-07	1002	2011
+municipality	EC107	Contact crime	2009-10	0	2011
+district	DC4	Contact crime	2008-09	5542	2011
+municipality	EC107	Property crime	2007-08	0	2011
+municipality	WC014	Contact crime	2012-13	1153	2011
+municipality	WC026	Contact crime	2012-13	1459	2011
+municipality	WC047	Property crime	2008-09	1025	2011
+municipality	NC066	Contact crime	2012-13	0	2011
+municipality	WC011	Contact crime	2010-11	1080	2011
+country	ZA	Property crime	2012-13	94544	2011
+municipality	WC013	Contact crime	2006-07	575	2011
+municipality	WC032	Property crime	2014-15	2657	2011
+municipality	WC043	Property crime	2006-07	1226	2011
+municipality	WC047	Contact crime	2012-13	858	2011
+municipality	WC043	Contact crime	2014-15	2091	2011
+municipality	NC065	Contact crime	2009-10	0	2011
+municipality	WC025	Property crime	2009-10	2240	2011
+province	WC	Property crime	2007-08	76827	2011
+municipality	WC053	Contact crime	2009-10	952	2011
+municipality	WC053	Property crime	2014-15	1019	2011
+municipality	WC044	Contact crime	2008-09	2962	2011
+district	DC1	Contact crime	2014-15	4384	2011
+municipality	WC011	Contact crime	2007-08	1144	2011
+municipality	WC025	Contact crime	2013-14	4095	2011
+district	DC5	Property crime	2005-06	424	2011
+municipality	WC041	Contact crime	2011-12	518	2011
+district	DC3	Contact crime	2013-14	2312	2011
+municipality	WC031	Contact crime	2012-13	689	2011
+municipality	WC031	Property crime	2007-08	411	2011
+municipality	WC024	Property crime	2008-09	3373	2011
+district	DC4	Contact crime	2010-11	6639	2011
+municipality	WC025	Property crime	2006-07	2089	2011
+municipality	EC101	Contact crime	2007-08	0	2011
+municipality	EC109	Contact crime	2013-14	0	2011
+municipality	WC015	Contact crime	2014-15	1549	2011
+district	DC10	Property crime	2005-06	0	2011
+municipality	WC042	Property crime	2009-10	312	2011
+municipality	WC012	Property crime	2005-06	312	2011
+municipality	WC044	Property crime	2009-10	2711	2011
+municipality	WC033	Property crime	2011-12	269	2011
+municipality	WC014	Property crime	2007-08	1361	2011
+municipality	WC032	Contact crime	2008-09	963	2011
+municipality	WC013	Contact crime	2011-12	714	2011
+municipality	WC032	Property crime	2013-14	2052	2011
+municipality	WC048	Contact crime	2009-10	987	2011
+municipality	WC014	Contact crime	2005-06	1136	2011
+municipality	CPT	Property crime	2009-10	72121	2011
+municipality	NC064	Property crime	2010-11	0	2011
+municipality	NC065	Contact crime	2007-08	0	2011
+municipality	EC107	Contact crime	2013-14	0	2011
+municipality	WC025	Property crime	2012-13	3211	2011
+municipality	WC045	Property crime	2007-08	711	2011
+province	WC	Property crime	2008-09	73983	2011
+municipality	EC109	Property crime	2006-07	0	2011
+municipality	WC024	Contact crime	2006-07	1601	2011
+municipality	WC045	Contact crime	2008-09	1121	2011
+district	DC2	Contact crime	2009-10	9767	2011
+province	WC	Contact crime	2010-11	77061	2011
+municipality	WC026	Contact crime	2005-06	1218	2011
+municipality	EC101	Property crime	2013-14	0	2011
+municipality	WC013	Property crime	2013-14	269	2011
+municipality	WC026	Property crime	2009-10	570	2011
+municipality	WC032	Contact crime	2005-06	1024	2011
+municipality	WC048	Property crime	2011-12	1344	2011
+municipality	WC042	Contact crime	2005-06	660	2011
+province	WC	Contact crime	2005-06	84786	2011
+municipality	WC014	Contact crime	2009-10	1103	2011
+district	DC2	Contact crime	2005-06	11066	2011
+municipality	WC051	Contact crime	2007-08	107	2011
+municipality	WC047	Contact crime	2010-11	690	2011
+municipality	WC014	Contact crime	2007-08	974	2011
+municipality	NC064	Property crime	2014-15	0	2011
+municipality	WC044	Property crime	2010-11	3275	2011
+municipality	WC014	Property crime	2008-09	1461	2011
+municipality	WC042	Property crime	2006-07	297	2011
+municipality	CPT	Contact crime	2005-06	66667	2011
+municipality	NC064	Contact crime	2013-14	0	2011
+municipality	WC041	Property crime	2012-13	346	2011
+district	DC5	Contact crime	2010-11	1051	2011
+municipality	NC066	Contact crime	2014-15	0	2011
+municipality	WC025	Property crime	2011-12	2946	2011
+municipality	WC047	Property crime	2010-11	1047	2011
+district	DC1	Property crime	2012-13	3605	2011
+municipality	CPT	Contact crime	2010-11	58720	2011
+municipality	EC109	Property crime	2005-06	0	2011
+municipality	WC051	Contact crime	2013-14	157	2011
+municipality	WC043	Contact crime	2012-13	1734	2011
+municipality	WC026	Property crime	2007-08	487	2011
+municipality	WC031	Property crime	2013-14	912	2011
+municipality	WC041	Contact crime	2012-13	506	2011
+municipality	EC101	Property crime	2014-15	0	2011
+municipality	WC013	Property crime	2014-15	322	2011
+municipality	WC033	Contact crime	2013-14	582	2011
+municipality	EC109	Contact crime	2014-15	0	2011
+municipality	NC066	Property crime	2014-15	0	2011
+municipality	WC026	Property crime	2010-11	631	2011
+municipality	WC024	Property crime	2006-07	3241	2011
+country	ZA	Contact crime	2011-12	82090	2011
+municipality	EC101	Property crime	2008-09	0	2011
+district	DC1	Contact crime	2012-13	4150	2011
+municipality	CPT	Property crime	2010-11	70351	2011
+municipality	WC013	Contact crime	2013-14	717	2011
+municipality	EC109	Property crime	2012-13	0	2011
+municipality	WC041	Contact crime	2008-09	505	2011
+municipality	WC012	Property crime	2007-08	268	2011
+municipality	WC032	Property crime	2005-06	1207	2011
+municipality	WC052	Property crime	2007-08	69	2011
+municipality	WC012	Contact crime	2005-06	809	2011
+municipality	WC034	Contact crime	2012-13	739	2011
+municipality	WC042	Property crime	2005-06	241	2011
+municipality	WC031	Property crime	2008-09	485	2011
+district	DC2	Property crime	2005-06	6957	2011
+municipality	WC052	Contact crime	2008-09	216	2011
+municipality	WC032	Contact crime	2013-14	1376	2011
+municipality	WC051	Property crime	2008-09	87	2011
+district	DC2	Contact crime	2011-12	10965	2011
+municipality	WC025	Property crime	2014-15	3074	2011
+municipality	WC047	Property crime	2009-10	1047	2011
+municipality	WC022	Property crime	2013-14	1475	2011
+municipality	WC045	Contact crime	2007-08	1228	2011
+district	DC10	Property crime	2009-10	0	2011
+municipality	WC031	Property crime	2014-15	951	2011
+district	DC2	Property crime	2009-10	8385	2011
+municipality	WC031	Contact crime	2007-08	493	2011
+municipality	EC101	Contact crime	2013-14	0	2011
+municipality	NC066	Property crime	2013-14	0	2011
+municipality	WC024	Property crime	2005-06	2742	2011
+municipality	EC101	Property crime	2007-08	0	2011
+municipality	NC066	Contact crime	2008-09	0	2011
+district	DC10	Property crime	2010-11	0	2011
+municipality	WC042	Contact crime	2009-10	653	2011
+district	DC3	Contact crime	2007-08	1793	2011
+municipality	WC013	Property crime	2006-07	149	2011
+municipality	WC012	Property crime	2008-09	304	2011
+municipality	WC015	Property crime	2008-09	724	2011
+municipality	WC043	Property crime	2014-15	1771	2011
+municipality	WC025	Contact crime	2009-10	3336	2011
+municipality	WC042	Contact crime	2007-08	664	2011
+municipality	WC014	Property crime	2005-06	927	2011
+province	WC	Contact crime	2007-08	75935	2011
+district	DC2	Property crime	2006-07	7209	2011
+municipality	WC032	Property crime	2010-11	1502	2011
+municipality	WC048	Property crime	2006-07	1149	2011
+province	WC	Property crime	2009-10	79450	2011
+municipality	WC022	Contact crime	2010-11	1829	2011
+municipality	WC044	Property crime	2008-09	2646	2011
+municipality	WC025	Property crime	2013-14	3041	2011
+municipality	WC041	Contact crime	2014-15	436	2011
+province	EC	Contact crime	2012-13	0	2011
+municipality	WC022	Property crime	2014-15	1470	2011
+municipality	WC025	Contact crime	2005-06	4049	2011
+district	DC4	Property crime	2010-11	6100	2011
+district	DC1	Contact crime	2010-11	3706	2011
+municipality	WC014	Property crime	2012-13	1861	2011
+municipality	WC026	Property crime	2008-09	499	2011
+municipality	WC011	Contact crime	2013-14	1316	2011
+municipality	WC013	Property crime	2012-13	326	2011
+municipality	WC048	Contact crime	2013-14	1399	2011
+municipality	WC041	Contact crime	2006-07	606	2011
+country	ZA	Contact crime	2012-13	87354	2011
+district	DC3	Contact crime	2009-10	1956	2011
+municipality	WC052	Contact crime	2012-13	226	2011
+municipality	WC043	Contact crime	2006-07	1559	2011
+municipality	WC034	Property crime	2005-06	322	2011
+municipality	WC051	Contact crime	2012-13	153	2011
+district	DC4	Contact crime	2014-15	8668	2011
+municipality	WC047	Contact crime	2005-06	750	2011
+municipality	CPT	Property crime	2012-13	75784	2011
+municipality	EC109	Contact crime	2009-10	0	2011
+municipality	WC048	Contact crime	2005-06	1396	2011
+country	ZA	Property crime	2005-06	78745	2011
+municipality	NC065	Property crime	2007-08	0	2011
+municipality	WC015	Property crime	2007-08	686	2011
+country	ZA	Contact crime	2008-09	73626	2011
+municipality	WC044	Property crime	2013-14	3975	2011
+municipality	NC066	Contact crime	2006-07	0	2011
+municipality	WC031	Contact crime	2010-11	600	2011
+municipality	WC014	Property crime	2006-07	1204	2011
+municipality	WC032	Property crime	2009-10	1659	2011
+municipality	WC048	Property crime	2005-06	1274	2011
+province	WC	Contact crime	2013-14	89341	2011
+province	WC	Property crime	2012-13	91748	2011
+municipality	WC051	Property crime	2006-07	48	2011
+district	DC1	Property crime	2008-09	2724	2011
+district	DC4	Property crime	2008-09	5082	2011
+municipality	WC022	Property crime	2011-12	1077	2011
+municipality	EC107	Property crime	2013-14	0	2011
+municipality	WC024	Contact crime	2011-12	2023	2011
+municipality	WC032	Contact crime	2011-12	1110	2011
+municipality	WC031	Property crime	2011-12	535	2011
+municipality	WC014	Property crime	2011-12	1427	2011
+municipality	WC024	Property crime	2009-10	3568	2011
+municipality	WC031	Property crime	2012-13	747	2011
+municipality	EC101	Property crime	2009-10	0	2011
+municipality	NC066	Property crime	2010-11	0	2011
+municipality	WC013	Property crime	2009-10	226	2011
+municipality	WC026	Property crime	2013-14	975	2011
+municipality	WC034	Property crime	2006-07	290	2011
+municipality	NC065	Property crime	2011-12	0	2011
+municipality	CPT	Property crime	2011-12	71342	2011
+municipality	WC013	Property crime	2008-09	197	2011
+municipality	WC026	Contact crime	2014-15	1548	2011
+municipality	WC033	Property crime	2006-07	299	2011
+municipality	WC015	Contact crime	2005-06	1303	2011
+municipality	WC051	Contact crime	2009-10	131	2011
+municipality	WC045	Contact crime	2010-11	1443	2011
+municipality	WC044	Property crime	2014-15	3573	2011
+district	DC3	Property crime	2006-07	1319	2011
+municipality	EC109	Contact crime	2011-12	0	2011
+municipality	WC012	Property crime	2012-13	417	2011
+municipality	WC022	Contact crime	2009-10	1800	2011
+district	DC2	Property crime	2007-08	7098	2011
+district	DC5	Contact crime	2014-15	1224	2011
+province	WC	Property crime	2011-12	83038	2011
+municipality	NC066	Contact crime	2007-08	0	2011
+municipality	WC051	Property crime	2005-06	88	2011
+municipality	WC023	Property crime	2005-06	2449	2011
+district	DC1	Property crime	2007-08	2483	2011
+municipality	WC015	Contact crime	2009-10	1253	2011
+municipality	WC012	Contact crime	2011-12	859	2011
+municipality	WC047	Property crime	2014-15	1441	2011
+district	DC5	Contact crime	2008-09	899	2011
+municipality	NC065	Contact crime	2012-13	0	2011
+municipality	WC022	Property crime	2012-13	1318	2011
+country	ZA	Contact crime	2014-15	98348	2011
+municipality	WC031	Contact crime	2005-06	542	2011
+municipality	CPT	Contact crime	2014-15	73507	2011
+municipality	EC101	Contact crime	2012-13	0	2011
+municipality	WC051	Contact crime	2011-12	160	2011
+district	DC4	Property crime	2012-13	7734	2011
+district	DC1	Contact crime	2006-07	3645	2011
+municipality	WC024	Property crime	2010-11	4394	2011
+municipality	WC031	Property crime	2009-10	589	2011
+municipality	EC101	Property crime	2010-11	0	2011
+municipality	WC013	Property crime	2010-11	224	2011
+municipality	WC051	Contact crime	2005-06	157	2011
+district	DC10	Contact crime	2013-14	0	2011
+country	ZA	Contact crime	2006-07	82976	2011
+district	DC2	Contact crime	2008-09	8601	2011
+municipality	NC065	Property crime	2012-13	0	2011
+municipality	WC033	Contact crime	2010-11	606	2011
+municipality	CPT	Property crime	2014-15	73072	2011
+municipality	WC013	Property crime	2007-08	157	2011
+municipality	WC011	Contact crime	2011-12	1171	2011
+country	ZA	Property crime	2007-08	78862	2011
+district	DC2	Contact crime	2014-15	12421	2011
+municipality	WC031	Contact crime	2009-10	620	2011
+municipality	WC043	Contact crime	2008-09	1600	2011
+municipality	WC015	Property crime	2006-07	658	2011
+municipality	WC013	Contact crime	2010-11	690	2011
+municipality	WC034	Contact crime	2007-08	626	2011
+municipality	WC047	Property crime	2007-08	1027	2011
+district	DC2	Property crime	2008-09	7302	2011
+municipality	WC048	Property crime	2008-09	1357	2011
+municipality	WC023	Property crime	2006-07	2338	2011
+municipality	WC026	Contact crime	2011-12	1310	2011
+municipality	WC042	Contact crime	2013-14	776	2011
+municipality	WC022	Property crime	2009-10	1094	2011
+province	WC	Contact crime	2011-12	79707	2011
+district	DC4	Property crime	2011-12	6448	2011
+municipality	WC015	Property crime	2009-10	804	2011
+municipality	WC014	Property crime	2013-14	1554	2011
+municipality	WC024	Property crime	2011-12	4027	2011
+municipality	WC052	Property crime	2013-14	107	2011
+municipality	EC101	Property crime	2011-12	0	2011
+municipality	WC014	Contact crime	2011-12	1100	2011
+country	ZA	Property crime	2014-15	94670	2011
+municipality	EC101	Contact crime	2009-10	0	2011
+municipality	NC066	Contact crime	2011-12	0	2011
+municipality	WC051	Property crime	2007-08	49	2011
+municipality	WC045	Contact crime	2012-13	1831	2011
+municipality	WC026	Contact crime	2013-14	1466	2011
+municipality	WC047	Contact crime	2011-12	821	2011
+province	EC	Contact crime	2007-08	0	2011
+municipality	CPT	Property crime	2013-14	77513	2011
+country	ZA	Property crime	2008-09	76118	2011
+province	EC	Property crime	2013-14	0	2011
+municipality	WC013	Contact crime	2008-09	633	2011
+municipality	WC043	Property crime	2010-11	1491	2011
+municipality	WC015	Property crime	2005-06	681	2011
+municipality	WC053	Property crime	2007-08	530	2011
+municipality	WC045	Property crime	2010-11	1106	2011
+municipality	WC042	Contact crime	2010-11	602	2011
+municipality	WC047	Property crime	2005-06	1012	2011
+municipality	WC053	Contact crime	2010-11	985	2011
+district	DC10	Contact crime	2012-13	0	2011
+district	DC5	Property crime	2007-08	512	2011
+municipality	WC048	Property crime	2007-08	1102	2011
+municipality	WC041	Contact crime	2010-11	503	2011
+district	DC3	Contact crime	2014-15	2514	2011
+municipality	WC048	Property crime	2013-14	1742	2011
+municipality	WC025	Property crime	2008-09	2152	2011
+municipality	NC065	Property crime	2009-10	0	2011
+district	DC4	Contact crime	2009-10	5820	2011
+municipality	WC051	Property crime	2011-12	112	2011
+municipality	EC109	Property crime	2014-15	0	2011
+district	DC4	Property crime	2014-15	7627	2011
+municipality	WC015	Property crime	2010-11	742	2011
+municipality	WC024	Property crime	2012-13	4528	2011
+district	DC4	Property crime	2013-14	8000	2011
+municipality	WC011	Contact crime	2009-10	985	2011
+country	ZA	Contact crime	2005-06	87106	2011
+country	ZA	Property crime	2013-14	97156	2011
+municipality	WC015	Contact crime	2007-08	1242	2011
+municipality	NC065	Property crime	2014-15	0	2011
+municipality	WC014	Contact crime	2006-07	948	2011
+province	EC	Property crime	2012-13	0	2011
+municipality	WC041	Property crime	2007-08	254	2011
+municipality	WC052	Property crime	2008-09	82	2011
+municipality	EC101	Contact crime	2006-07	0	2011
+municipality	WC045	Property crime	2009-10	1079	2011
+district	DC3	Property crime	2008-09	1290	2011
+municipality	WC026	Property crime	2012-13	970	2011
+municipality	WC024	Contact crime	2005-06	1693	2011
+municipality	WC022	Property crime	2006-07	678	2011
+municipality	WC011	Property crime	2013-14	706	2011
+municipality	WC034	Property crime	2013-14	484	2011
+district	DC4	Contact crime	2007-08	5788	2011
+district	DC10	Contact crime	2009-10	0	2011
+municipality	WC023	Property crime	2007-08	2054	2011
+municipality	WC034	Contact crime	2005-06	716	2011
+municipality	WC048	Property crime	2014-15	1861	2011
+province	WC	Contact crime	2006-07	80774	2011
+district	DC2	Contact crime	2006-07	10044	2011
+municipality	WC024	Property crime	2013-14	4629	2011
+municipality	WC047	Contact crime	2009-10	632	2011
+municipality	WC042	Contact crime	2011-12	643	2011
+municipality	WC022	Contact crime	2013-14	2118	2011
+municipality	WC033	Property crime	2012-13	343	2011
+municipality	CPT	Property crime	2007-08	73339	2011
+municipality	WC041	Property crime	2014-15	321	2011
+municipality	NC065	Contact crime	2010-11	0	2011
+municipality	CPT	Contact crime	2006-07	64873	2011
+district	DC5	Contact crime	2011-12	1053	2011
+district	DC3	Property crime	2010-11	1569	2011
+province	EC	Property crime	2011-12	0	2011
+municipality	NC066	Contact crime	2013-14	0	2011
+municipality	WC041	Property crime	2008-09	251	2011
+municipality	WC045	Contact crime	2014-15	2205	2011
+municipality	EC109	Property crime	2010-11	0	2011
+district	DC3	Property crime	2007-08	1085	2011
+municipality	WC022	Contact crime	2008-09	1865	2011
+municipality	WC051	Contact crime	2014-15	193	2011
+municipality	WC022	Property crime	2005-06	812	2011
+municipality	WC011	Property crime	2014-15	700	2011
+municipality	WC023	Contact crime	2013-14	3787	2011
+province	EC	Contact crime	2009-10	0	2011
+municipality	WC015	Contact crime	2013-14	1444	2011
+municipality	WC023	Property crime	2008-09	2236	2011
+municipality	WC051	Contact crime	2008-09	114	2011
+municipality	NC064	Contact crime	2014-15	0	2011
+municipality	WC023	Contact crime	2012-13	3764	2011
+country	ZA	Contact crime	2010-11	79405	2011
+municipality	WC031	Contact crime	2013-14	748	2011
+municipality	WC052	Contact crime	2007-08	210	2011
+municipality	WC013	Contact crime	2014-15	735	2011
+municipality	WC053	Property crime	2011-12	766	2011
+municipality	WC024	Property crime	2014-15	4255	2011
+province	EC	Contact crime	2005-06	0	2011
+country	ZA	Property crime	2011-12	85507	2011
+municipality	EC107	Property crime	2014-15	0	2011
+municipality	WC034	Contact crime	2011-12	724	2011
+municipality	WC041	Property crime	2013-14	321	2011
+district	DC5	Property crime	2009-10	637	2011
+municipality	EC109	Contact crime	2012-13	0	2011
+municipality	WC012	Contact crime	2007-08	834	2011
+municipality	WC024	Contact crime	2007-08	1683	2011
+district	DC10	Property crime	2007-08	0	2011
+district	DC2	Contact crime	2010-11	10473	2011
+municipality	WC015	Contact crime	2008-09	1176	2011
+municipality	WC047	Property crime	2006-07	1031	2011
+municipality	WC052	Contact crime	2009-10	218	2011
+municipality	EC107	Contact crime	2011-12	0	2011
+district	DC4	Property crime	2009-10	5548	2011
+municipality	WC026	Contact crime	2009-10	1304	2011
+municipality	WC024	Property crime	2007-08	3333	2011
+municipality	EC101	Contact crime	2014-15	0	2011
+municipality	WC048	Property crime	2012-13	1513	2011
+province	WC	Property crime	2005-06	76729	2011
+municipality	WC023	Property crime	2013-14	3672	2011
+municipality	WC042	Property crime	2010-11	307	2011
+municipality	WC012	Property crime	2006-07	244	2011
+municipality	WC015	Property crime	2013-14	1007	2011
+municipality	WC053	Property crime	2012-13	899	2011
+municipality	NC065	Contact crime	2006-07	0	2011
+municipality	WC011	Property crime	2008-09	470	2011
+municipality	WC014	Contact crime	2008-09	982	2011
+country	ZA	Property crime	2010-11	83010	2011
+municipality	CPT	Property crime	2005-06	72034	2011
+municipality	WC033	Contact crime	2011-12	529	2011
+municipality	WC025	Contact crime	2012-13	4106	2011
+district	DC5	Property crime	2010-11	627	2011
+province	WC	Contact crime	2008-09	71485	2011
+municipality	WC053	Contact crime	2011-12	976	2011
+municipality	WC048	Contact crime	2011-12	1212	2011
+municipality	EC109	Contact crime	2006-07	0	2011
+municipality	WC045	Property crime	2008-09	808	2011
+municipality	WC041	Contact crime	2013-14	461	2011
+municipality	WC026	Contact crime	2008-09	1127	2011
+province	EC	Contact crime	2011-12	0	2011
+municipality	WC015	Contact crime	2011-12	1343	2011
+municipality	CPT	Contact crime	2009-10	60419	2011
+municipality	WC025	Contact crime	2006-07	3716	2011
+municipality	WC045	Property crime	2014-15	1482	2011
+district	DC10	Contact crime	2005-06	0	2011
+district	DC1	Contact crime	2011-12	3964	2011
+municipality	WC022	Property crime	2008-09	846	2011
+municipality	WC045	Contact crime	2006-07	1450	2011
+municipality	WC011	Contact crime	2014-15	1333	2011
+municipality	WC048	Contact crime	2014-15	1425	2011
+municipality	WC052	Contact crime	2011-12	261	2011
+municipality	WC048	Property crime	2009-10	1312	2011
+district	DC1	Property crime	2013-14	3299	2011
+province	WC	Property crime	2006-07	80091	2011
+municipality	WC023	Property crime	2012-13	3707	2011
+municipality	WC042	Property crime	2011-12	332	2011
+municipality	WC043	Contact crime	2011-12	1720	2011
+municipality	WC053	Property crime	2009-10	589	2011
+municipality	WC033	Contact crime	2012-13	543	2011
+municipality	WC011	Property crime	2007-08	341	2011
+country	ZA	Property crime	2009-10	81788	2011
+municipality	CPT	Property crime	2006-07	75984	2011
+municipality	WC041	Property crime	2011-12	302	2011
+district	DC5	Property crime	2011-12	778	2011
+municipality	EC101	Property crime	2006-07	0	2011
+municipality	WC024	Contact crime	2008-09	1635	2011
+municipality	NC066	Contact crime	2010-11	0	2011
+municipality	WC022	Contact crime	2006-07	1985	2011
+municipality	EC109	Property crime	2013-14	0	2011
+municipality	WC034	Contact crime	2013-14	836	2011
+municipality	WC023	Contact crime	2007-08	2724	2011
+municipality	WC044	Contact crime	2009-10	2895	2011
+municipality	WC045	Property crime	2013-14	1592	2011
+municipality	WC024	Contact crime	2012-13	2196	2011
+municipality	WC011	Property crime	2009-10	521	2011
+municipality	WC022	Property crime	2007-08	682	2011
+municipality	NC064	Contact crime	2012-13	0	2011
+municipality	WC033	Contact crime	2014-15	639	2011
+municipality	WC024	Contact crime	2013-14	2322	2011
+municipality	WC053	Contact crime	2013-14	1098	2011
+district	DC10	Property crime	2014-15	0	2011
+district	DC1	Property crime	2014-15	3655	2011
+municipality	NC066	Contact crime	2009-10	0	2011
+municipality	WC023	Property crime	2011-12	3418	2011
+municipality	WC042	Property crime	2012-13	372	2011
+municipality	WC053	Property crime	2010-11	626	2011
+municipality	WC032	Property crime	2006-07	1308	2011
+municipality	WC011	Property crime	2005-06	337	2011
+municipality	WC051	Contact crime	2010-11	123	2011
+municipality	WC043	Property crime	2013-14	1909	2011
+municipality	WC045	Contact crime	2009-10	1275	2011
+municipality	WC012	Property crime	2014-15	468	2011
+municipality	WC041	Property crime	2010-11	344	2011
+district	DC5	Property crime	2012-13	987	2011
+municipality	NC066	Property crime	2012-13	0	2011
+municipality	WC025	Contact crime	2008-09	3113	2011
+municipality	WC043	Contact crime	2005-06	1741	2011
+municipality	WC047	Property crime	2012-13	1512	2011
+municipality	NC065	Property crime	2010-11	0	2011
+municipality	WC015	Contact crime	2010-11	1241	2011
+municipality	WC012	Contact crime	2010-11	784	2011
+district	DC10	Contact crime	2014-15	0	2011
+country	ZA	Contact crime	2013-14	91867	2011
+municipality	CPT	Contact crime	2013-14	68024	2011
+municipality	EC109	Contact crime	2008-09	0	2011
+district	DC5	Contact crime	2006-07	941	2011
+municipality	NC065	Contact crime	2014-15	0	2011
+municipality	WC011	Property crime	2010-11	482	2011
+municipality	WC023	Property crime	2014-15	4612	2011
+municipality	EC107	Contact crime	2008-09	0	2011
+municipality	NC064	Property crime	2007-08	0	2011
+municipality	WC013	Property crime	2005-06	178	2011
+municipality	WC023	Property crime	2010-11	3158	2011
+municipality	WC051	Property crime	2012-13	195	2011
+municipality	NC064	Contact crime	2005-06	0	2011
+municipality	EC107	Property crime	2006-07	0	2011
+municipality	WC011	Contact crime	2012-13	1261	2011
+district	DC2	Contact crime	2013-14	11823	2011
+municipality	WC052	Contact crime	2013-14	215	2011
+municipality	WC012	Property crime	2013-14	457	2011
+municipality	WC034	Contact crime	2008-09	678	2011
+municipality	WC043	Property crime	2007-08	1233	2011
+municipality	WC041	Property crime	2009-10	303	2011
+district	DC5	Property crime	2013-14	1084	2011
+municipality	NC066	Property crime	2011-12	0	2011
+municipality	WC044	Contact crime	2011-12	3856	2011
+municipality	WC044	Property crime	2007-08	2815	2011
+municipality	NC065	Contact crime	2013-14	0	2011
+municipality	WC034	Contact crime	2014-15	798	2011
+municipality	WC047	Property crime	2011-12	1026	2011
+district	DC10	Property crime	2008-09	0	2011
+municipality	WC042	Contact crime	2014-15	810	2011
+municipality	WC047	Contact crime	2007-08	919	2011
+municipality	WC032	Property crime	2012-13	1796	2011
+municipality	WC048	Contact crime	2008-09	856	2011
+municipality	NC064	Contact crime	2009-10	0	2011
+district	DC1	Property crime	2006-07	2251	2011
+municipality	EC101	Contact crime	2010-11	0	2011
+municipality	NC064	Property crime	2008-09	0	2011
+municipality	WC045	Contact crime	2011-12	1656	2011
+municipality	WC014	Contact crime	2013-14	1152	2011
+country	ZA	Property crime	2006-07	81918	2011
+province	EC	Contact crime	2008-09	0	2011
+municipality	EC107	Property crime	2005-06	0	2011
+municipality	WC013	Contact crime	2007-08	704	2011
+district	DC2	Property crime	2014-15	11810	2011
+municipality	WC012	Contact crime	2012-13	822	2011
+municipality	WC025	Contact crime	2007-08	3515	2011
+municipality	WC043	Property crime	2008-09	1045	2011
+municipality	NC065	Property crime	2013-14	0	2011
+district	DC5	Property crime	2014-15	1155	2011
+municipality	WC034	Property crime	2007-08	249	2011
+district	DC10	Contact crime	2011-12	0	2011
+municipality	WC023	Contact crime	2005-06	3789	2011
+municipality	WC052	Property crime	2010-11	93	2011
+municipality	WC041	Contact crime	2009-10	483	2011
+district	DC3	Contact crime	2011-12	2012	2011
+district	DC10	Contact crime	2008-09	0	2011
+municipality	WC044	Property crime	2011-12	3446	2011
+municipality	EC109	Property crime	2011-12	0	2011
+district	DC4	Contact crime	2012-13	7889	2011
+district	DC10	Property crime	2006-07	0	2011
+province	WC	Property crime	2014-15	91949	2011
+province	EC	Contact crime	2010-11	0	2011
+municipality	WC026	Property crime	2014-15	931	2011
+municipality	WC051	Property crime	2009-10	165	2011
+district	DC1	Property crime	2009-10	2611	2011
+municipality	WC033	Property crime	2005-06	364	2011
+municipality	WC052	Contact crime	2014-15	261	2011
+district	DC10	Contact crime	2010-11	0	2011
+municipality	EC107	Contact crime	2006-07	0	2011
+district	DC2	Property crime	2013-14	11180	2011
+municipality	WC012	Property crime	2011-12	417	2011
+municipality	WC032	Property crime	2011-12	1803	2011
+municipality	WC052	Contact crime	2006-07	179	2011
+municipality	WC024	Contact crime	2009-10	1761	2011
+municipality	WC034	Property crime	2008-09	315	2011
+municipality	WC047	Property crime	2013-14	1573	2011
+municipality	EC109	Property crime	2009-10	0	2011
+municipality	WC034	Contact crime	2006-07	613	2011
+municipality	EC109	Property crime	2008-09	0	2011
+municipality	WC044	Property crime	2012-13	4019	2011
+municipality	WC044	Contact crime	2013-14	4117	2011
+district	DC4	Contact crime	2005-06	6979	2011
+province	EC	Property crime	2010-11	0	2011
+municipality	WC033	Contact crime	2008-09	419	2011
+municipality	WC031	Property crime	2010-11	700	2011
+municipality	WC042	Contact crime	2012-13	683	2011
+municipality	WC011	Contact crime	2006-07	1123	2011
+province	WC	Property crime	2013-14	94198	2011
+municipality	NC064	Contact crime	2007-08	0	2011
+municipality	WC022	Contact crime	2014-15	2104	2011
+district	DC1	Contact crime	2008-09	3521	2011
+municipality	WC013	Contact crime	2005-06	594	2011
+municipality	WC051	Property crime	2010-11	92	2011
+municipality	NC064	Property crime	2005-06	0	2011
+district	DC1	Property crime	2010-11	2523	2011
+municipality	WC012	Contact crime	2014-15	806	2011
+municipality	WC022	Contact crime	2011-12	1837	2011
+district	DC5	Contact crime	2012-13	1036	2011
+municipality	WC041	Contact crime	2005-06	581	2011
+municipality	WC041	Property crime	2006-07	246	2011
+municipality	WC052	Property crime	2012-13	124	2011
+municipality	WC042	Property crime	2008-09	288	2011
+municipality	WC045	Contact crime	2013-14	2025	2011
+district	DC2	Property crime	2012-13	11084	2011
+municipality	WC012	Property crime	2010-11	366	2011
+municipality	CPT	Contact crime	2012-13	64490	2011
+municipality	WC022	Contact crime	2007-08	2087	2011
+municipality	NC064	Property crime	2012-13	0	2011
+municipality	WC048	Contact crime	2006-07	885	2011
+district	DC3	Contact crime	2005-06	1953	2011
+municipality	WC045	Property crime	2005-06	880	2011
+municipality	WC022	Property crime	2010-11	1102	2011
+municipality	EC109	Property crime	2007-08	0	2011
+municipality	WC023	Contact crime	2011-12	3684	2011
+municipality	WC053	Contact crime	2006-07	940	2011
+country	ZA	Contact crime	2009-10	78548	2011
+municipality	WC031	Contact crime	2014-15	880	2011
+municipality	EC101	Property crime	2012-13	0	2011
+province	EC	Contact crime	2006-07	0	2011
+municipality	WC031	Contact crime	2011-12	602	2011
+municipality	WC013	Contact crime	2012-13	723	2011
+municipality	WC034	Contact crime	2010-11	719	2011
+municipality	NC064	Property crime	2006-07	0	2011
+district	DC1	Property crime	2011-12	2844	2011
+municipality	WC052	Contact crime	2010-11	262	2011
+municipality	WC012	Contact crime	2008-09	697	2011
+municipality	WC043	Property crime	2009-10	1403	2011
+municipality	WC052	Property crime	2011-12	117	2011
+municipality	WC042	Property crime	2007-08	273	2011
+district	DC2	Property crime	2011-12	9903	2011
+municipality	WC012	Property crime	2009-10	350	2011
+municipality	WC032	Contact crime	2010-11	1233	2011
+district	DC10	Contact crime	2006-07	0	2011
+province	WC	Contact crime	2009-10	76206	2011
+municipality	WC044	Contact crime	2006-07	3391	2011
+municipality	EC107	Contact crime	2012-13	0	2011
+municipality	NC064	Property crime	2011-12	0	2011
+province	EC	Contact crime	2014-15	0	2011
+municipality	WC026	Contact crime	2010-11	1373	2011
+municipality	WC048	Contact crime	2012-13	1289	2011
+municipality	NC065	Property crime	2008-09	0	2011
+municipality	WC015	Property crime	2011-12	750	2011
+municipality	NC066	Property crime	2008-09	0	2011
+municipality	NC065	Contact crime	2005-06	0	2011
+municipality	WC034	Property crime	2012-13	399	2011
+municipality	WC025	Contact crime	2011-12	3882	2011
+municipality	WC053	Contact crime	2012-13	956	2011
+district	DC1	Contact crime	2013-14	4120	2011
+municipality	EC109	Contact crime	2005-06	0	2011
+municipality	WC011	Contact crime	2008-09	1000	2011
+municipality	WC025	Contact crime	2014-15	4285	2011
+municipality	WC043	Property crime	2012-13	1812	2011
+municipality	WC014	Property crime	2010-11	1247	2011
+municipality	WC032	Property crime	2007-08	1138	2011
+municipality	WC053	Contact crime	2008-09	820	2011
+district	DC2	Property crime	2010-11	9492	2011
+municipality	WC015	Contact crime	2012-13	1448	2011
+municipality	WC033	Property crime	2013-14	426	2011
+province	EC	Property crime	2014-15	0	2011
+municipality	WC052	Property crime	2005-06	98	2011
+municipality	CPT	Property crime	2008-09	68562	2011
+municipality	EC101	Contact crime	2008-09	0	2011
+municipality	WC047	Contact crime	2006-07	916	2011
+municipality	WC041	Property crime	2005-06	249	2011
+municipality	WC032	Contact crime	2007-08	947	2011
+municipality	WC015	Property crime	2012-13	988	2011
+municipality	WC023	Contact crime	2014-15	4027	2011
+municipality	WC026	Property crime	2006-07	622	2011
+municipality	WC012	Contact crime	2006-07	841	2011
+province	WC	Property crime	2010-11	80603	2011
+municipality	WC034	Property crime	2011-12	398	2011
+municipality	NC065	Property crime	2006-07	0	2011
+municipality	WC051	Property crime	2013-14	175	2011
+district	DC3	Property crime	2005-06	1324	2011
+district	DC10	Contact crime	2007-08	0	2011
+municipality	WC053	Property crime	2008-09	536	2011
+municipality	WC026	Contact crime	2006-07	1267	2011
+municipality	WC022	Contact crime	2005-06	2010	2011
+municipality	WC014	Property crime	2009-10	1245	2011
+municipality	WC032	Property crime	2008-09	1403	2011
+municipality	WC053	Contact crime	2014-15	1180	2011
+municipality	WC013	Property crime	2011-12	258	2011
+municipality	WC023	Contact crime	2008-09	2565	2011
+municipality	WC044	Contact crime	2010-11	3516	2011
+municipality	EC107	Property crime	2011-12	0	2011
+municipality	WC042	Contact crime	2006-07	657	2011
+municipality	WC014	Contact crime	2010-11	1001	2011
+municipality	NC064	Property crime	2013-14	0	2011
+municipality	WC044	Property crime	2006-07	2504	2011
+municipality	CPT	Contact crime	2007-08	61005	2011
+municipality	NC064	Contact crime	2011-12	0	2011
+municipality	WC024	Contact crime	2014-15	2445	2011
+municipality	WC052	Contact crime	2005-06	282	2011
+province	EC	Property crime	2005-06	0	2011
+municipality	NC066	Property crime	2007-08	0	2011
+municipality	WC011	Contact crime	2005-06	1127	2011
+municipality	WC026	Property crime	2005-06	567	2011
+district	DC5	Contact crime	2009-10	985	2011
+municipality	WC034	Property crime	2010-11	364	2011
+municipality	NC065	Property crime	2005-06	0	2011
+district	DC4	Property crime	2007-08	4933	2011
+municipality	WC051	Property crime	2014-15	243	2011
+municipality	WC043	Contact crime	2009-10	1757	2011
+province	EC	Property crime	2009-10	0	2011
+municipality	WC012	Contact crime	2009-10	783	2011
+municipality	WC043	Property crime	2011-12	1510	2011
+municipality	WC045	Contact crime	2005-06	1767	2011
+municipality	WC045	Property crime	2006-07	784	2011
+municipality	EC107	Property crime	2012-13	0	2011
+municipality	EC109	Contact crime	2007-08	0	2011
+municipality	NC064	Property crime	2009-10	0	2011
+district	DC5	Contact crime	2005-06	928	2011
+municipality	WC044	Property crime	2005-06	2719	2011
+municipality	WC041	Contact crime	2007-08	569	2011
+district	DC3	Property crime	2013-14	2100	2011
+district	DC3	Contact crime	2010-11	2083	2011
+municipality	WC052	Property crime	2009-10	82	2011
+municipality	EC107	Contact crime	2007-08	0	2011
+province	EC	Property crime	2006-07	0	2011
+municipality	WC015	Property crime	2014-15	1104	2011
+municipality	NC064	Contact crime	2006-07	0	2011
+municipality	WC032	Contact crime	2014-15	1483	2011
+municipality	NC065	Contact crime	2008-09	0	2011
+district	DC2	Contact crime	2012-13	11595	2011
+municipality	WC034	Property crime	2009-10	384	2011
+municipality	WC033	Property crime	2014-15	414	2011
+district	DC10	Property crime	2013-14	0	2011
+municipality	WC044	Contact crime	2012-13	4197	2011
+municipality	WC032	Contact crime	2012-13	1175	2011
+municipality	WC033	Property crime	2008-09	205	2011
+municipality	WC052	Property crime	2006-07	54	2011
+municipality	WC031	Contact crime	2008-09	474	2011
+municipality	WC053	Property crime	2006-07	459	2011
+municipality	WC047	Contact crime	2008-09	721	2011
+municipality	WC011	Property crime	2006-07	311	2011
+district	DC10	Property crime	2012-13	0	2011
+municipality	EC107	Property crime	2009-10	0	2011
+municipality	WC048	Contact crime	2007-08	835	2011
+district	DC3	Contact crime	2008-09	1754	2011
+district	DC3	Property crime	2014-15	2252	2011
+municipality	WC048	Property crime	2010-11	1302	2011
+municipality	EC101	Contact crime	2011-12	0	2011
+municipality	WC025	Contact crime	2010-11	3569	2011
+municipality	WC042	Contact crime	2008-09	692	2011
+municipality	WC045	Property crime	2012-13	1659	2011
+municipality	WC047	Contact crime	2013-14	915	2011
+municipality	EC107	Contact crime	2010-11	0	2011
+municipality	EC107	Property crime	2010-11	0	2011
+municipality	NC064	Contact crime	2010-11	0	2011
+municipality	WC031	Property crime	2006-07	388	2011
+province	EC	Contact crime	2013-14	0	2011
+district	DC4	Property crime	2005-06	5259	2011
+municipality	EC101	Property crime	2005-06	0	2011
+municipality	WC043	Contact crime	2010-11	1750	2011
+municipality	WC053	Contact crime	2007-08	891	2011
+municipality	WC023	Contact crime	2006-07	3129	2011
+district	DC1	Contact crime	2009-10	3662	2011
+municipality	WC033	Property crime	2007-08	249	2011
+municipality	WC042	Property crime	2013-14	462	2011
+municipality	WC033	Contact crime	2005-06	456	2011
+district	DC5	Contact crime	2007-08	931	2011
+municipality	WC014	Property crime	2014-15	1776	2011
+municipality	WC052	Property crime	2014-15	172	2011
+municipality	WC053	Property crime	2005-06	358	2011
+district	DC3	Contact crime	2012-13	2100	2011
+municipality	WC033	Property crime	2009-10	246	2011
+district	DC10	Property crime	2011-12	0	2011
+district	DC4	Contact crime	2011-12	7328	2011
+district	DC1	Contact crime	2005-06	3885	2011
+municipality	WC023	Contact crime	2009-10	3294	2011
+district	DC3	Property crime	2011-12	1561	2011
+country	ZA	Contact crime	2007-08	78243	2011
+municipality	NC066	Contact crime	2005-06	0	2011
+province	EC	Property crime	2007-08	0	2011
+municipality	CPT	Contact crime	2008-09	57911	2011
+municipality	WC045	Property crime	2011-12	1231	2011
+municipality	EC109	Contact crime	2010-11	0	2011
+province	WC	Contact crime	2014-15	95683	2011
+municipality	WC053	Property crime	2013-14	1005	2011
+district	DC5	Property crime	2008-09	550	2011
+municipality	EC107	Contact crime	2005-06	0	2011
+municipality	WC031	Property crime	2005-06	459	2011
+district	DC4	Property crime	2006-07	4741	2011
+municipality	WC024	Contact crime	2010-11	2007	2011
+municipality	WC025	Property crime	2007-08	2228	2011
+municipality	WC042	Property crime	2014-15	512	2011
+municipality	WC033	Property crime	2010-11	326	2011
+municipality	WC044	Contact crime	2014-15	4220	2011
+district	DC4	Contact crime	2006-07	6363	2011
+municipality	WC011	Property crime	2011-12	524	2011
+municipality	WC033	Contact crime	2007-08	459	2011
+municipality	WC014	Contact crime	2014-15	1355	2011
+municipality	WC015	Contact crime	2006-07	1204	2011
+district	DC3	Property crime	2012-13	1787	2011
+municipality	NC064	Contact crime	2008-09	0	2011
+district	DC1	Contact crime	2007-08	3767	2011
+municipality	WC023	Property crime	2009-10	2954	2011
+municipality	WC047	Contact crime	2014-15	1021	2011
+province	EC	Property crime	2008-09	0	2011
+municipality	WC012	Contact crime	2013-14	833	2011
+municipality	WC022	Contact crime	2012-13	1925	2011
+district	DC5	Contact crime	2013-14	1173	2011
+municipality	WC044	Contact crime	2007-08	3131	2011
+municipality	NC066	Property crime	2005-06	0	2011
+municipality	WC034	Property crime	2014-15	462	2011
+municipality	NC065	Contact crime	2011-12	0	2011
+municipality	WC031	Contact crime	2006-07	468	2011
+municipality	CPT	Contact crime	2011-12	60461	2011
+municipality	WC033	Contact crime	2006-07	423	2011
+municipality	WC043	Contact crime	2013-14	2062	2011
+municipality	EC107	Property crime	2008-09	0	2011
+district	DC3	Contact crime	2006-07	1754	2011
+municipality	WC051	Contact crime	2006-07	115	2011
 \.
 
 
 --
--- Name: crimes_type_of_crime_year_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+-- Name: crimes_type_of_crime_year pk_crimes_type_of_crime_year; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY crimes_type_of_crime_year
-    ADD CONSTRAINT crimes_type_of_crime_year_pkey PRIMARY KEY (geo_level, geo_code, "type of crime", year);
+    ADD CONSTRAINT pk_crimes_type_of_crime_year PRIMARY KEY (geo_level, geo_code, geo_version, "type of crime", year);
 
 
 --

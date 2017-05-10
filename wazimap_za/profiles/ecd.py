@@ -71,15 +71,15 @@ COLLAPSED_TOILET_CATEGORIES = {
 }
 
 
-def get_profile(geo_code, geo_level, profile_name=None):
+def get_profile(geo, profile_name, request):
     session = get_session()
 
     try:
-        geo_summary_levels = geo_data.get_summary_geo_info(geo_code, geo_level)
+        geo_summary_levels = geo_data.get_summary_geo_info(geo)
         data = {}
 
         sections = list(PROFILE_SECTIONS)
-        if geo_level not in ['country', 'province', 'municipality']:
+        if geo.geo_level not in ['country', 'province', 'municipality']:
             pass
             # Raise error as we don't have this data
 
@@ -87,12 +87,12 @@ def get_profile(geo_code, geo_level, profile_name=None):
             function_name = 'get_%s_profile' % section
             if function_name in globals():
                 func = globals()[function_name]
-                data[section] = func(geo_code, geo_level, session)
+                data[section] = func(geo, session)
 
                 # get profiles for province and/or country
                 for level, code in geo_summary_levels:
                     # merge summary profile into current geo profile
-                    merge_dicts(data[section], func(code, level, session), level)
+                    merge_dicts(data[section], func(geo, session), level)
 
         group_remainder(data['households']['type_of_dwelling_distribution'], 5)
         group_remainder(data['service_delivery']['water_source_distribution'], 5)
@@ -104,23 +104,23 @@ def get_profile(geo_code, geo_level, profile_name=None):
         session.close()
 
 
-def get_demographics_profile(geo_code, geo_level, session):
+def get_demographics_profile(geo, session):
     # population group
     pop_dist_data, total_pop = get_stat_data(
-        ['population group'], geo_level, geo_code, session, table_dataset='Census 2011')
+        ['population group'], geo, session, table_dataset='Census 2011')
 
     ecd_age_groups, ecd_children = get_stat_data(
-        ['age in completed years'], geo_level, geo_code, session,
+        ['age in completed years'], geo, session,
         table_name='ageincompletedyears',
         only=['0', '1', '2', '3', '4', '5'],
         recode=ECD_AGE_CATEGORIES)
 
     ecd_gender, total_ecd_gender = get_stat_data(
-        ['gender'], geo_level, geo_code, session,
+        ['gender'], geo, session,
         table_name='genderunder9')
 
     women_child_bearing_age, total_women_child_bearing_age = get_stat_data(
-        ['age groups in 5 years'], geo_level, geo_code, session,
+        ['age groups in 5 years'], geo, session,
         table_name='womenagegroupsin5years15to44',
         order_by='age groups in 5 years'
     )
@@ -143,7 +143,6 @@ def get_demographics_profile(geo_code, geo_level, session):
         }
     }
 
-    geo = geo_data.get_geography(geo_code, geo_level)
     if geo.square_kms:
         final_data['population_density'] = {
             'name': "people per square kilometre",
@@ -174,27 +173,27 @@ def get_demographics_profile(geo_code, geo_level, session):
     return final_data
 
 
-def get_schools_profile(geo_code, geo_level, session):
+def get_schools_profile(geo, session):
     # population group
     _, total_pop = get_stat_data(
-        ['population group'], geo_level, geo_code, session, table_dataset='Census 2011')
+        ['population group'], geo, session, table_dataset='Census 2011')
 
     # Schools
     table = get_datatable('schools_2015')
     keys = ['primary_schools', 'combined_schools', 'intermediate_schools', 'secondary_schools']
     school_breakdown, total_schools = table.get_stat_data(
-        geo_level, geo_code, keys, percent=False)
+        geo, keys, percent=False)
 
     primary_school_ages = ['6', '7', '8', '9', '10', '11', '12', '13']
     secondary_school_ages = ['14', '15', '16', '17', '18']
 
     _, total_primary_children = get_stat_data(
-        ['age in completed years'], geo_level, geo_code, session,
+        ['age in completed years'], geo, session,
         table_name='ageincompletedyears',
         only=primary_school_ages)
 
     _, total_secondary_children = get_stat_data(
-        ['age in completed years'], geo_level, geo_code, session,
+        ['age in completed years'], geo, session,
         table_name='ageincompletedyears',
         only=secondary_school_ages)
 
@@ -220,10 +219,10 @@ def get_schools_profile(geo_code, geo_level, session):
     return final_data
 
 
-def get_ecd_centres_profile(geo_code, geo_level, session):
+def get_ecd_centres_profile(geo, session):
 
     children_age_groups, total_children = get_stat_data(
-        ['age in completed years'], geo_level, geo_code, session,
+        ['age in completed years'], geo, session,
         table_name='ageincompletedyears',
         only=['3', '4', '5', '6'],
         recode=ECD_AGE_CATEGORIES,
@@ -242,11 +241,11 @@ def get_ecd_centres_profile(geo_code, geo_level, session):
     table = get_datatable('ecd_centres_by_registration')
 
     ecd_centres_by_registration, total_ecd_centres = table.get_stat_data(
-        geo_level, geo_code, percent=True, recode=reg_recode)
+        geo, percent=True, recode=reg_recode)
 
     table = get_datatable('ecd_children_enrolled')
     children_enrolled, _ = table.get_stat_data(
-         geo_level, geo_code, percent=False)
+         geo, percent=False)
     children_enrolled['children_enrolled_age_3_to_5']['name'] = 'Children enrolled in ECD centres'
 
     children_3_to_5_coverage = percent(
@@ -263,13 +262,13 @@ def get_ecd_centres_profile(geo_code, geo_level, session):
 
     table = get_datatable('ecd_centres_by_type')
     ecd_centres_by_type, _ = table.get_stat_data(
-        geo_level, geo_code,
+        geo,
         key_order=['community_based', 'home_based', 'school_based', 'other', 'not_specified'])
 
 
     table = get_datatable('ecd_grade_r')
     grade_r, _ = table.get_stat_data(
-        geo_level, geo_code, percent=False)
+        geo, percent=False)
 
     grade_r['centres_with_grade_r_learners']['name'] = "Centres with Grade R learners"
 
@@ -327,22 +326,22 @@ def get_ecd_centres_profile(geo_code, geo_level, session):
     }
 
 
-def get_ecd_educators_profile(geo_code, geo_level, session):
+def get_ecd_educators_profile(geo, session):
     # These values will be filled as information becomes available.
     table = get_datatable('ecd_educators')
     ecd_educators, _ = table.get_stat_data(
-        geo_level, geo_code, percent=False)
+        geo, percent=False)
 
     table = get_datatable('ecd_children_enrolled')
     children_enrolled, _ = table.get_stat_data(
-         geo_level, geo_code, percent=False)
+         geo, percent=False)
 
     children_per_practitioner = ratio(
         children_enrolled['children_enrolled_age_3_to_5']['values']['this'],
         ecd_educators['practitioners_for_ages_3_to_5']['values']['this'])
 
     _, children_age_3_to_5_in_area = get_stat_data(
-        ['age in completed years'], geo_level, geo_code, session,
+        ['age in completed years'], geo, session,
         table_name='ageincompletedyears',
         only=['3', '4', '5'],
         recode=ECD_AGE_CATEGORIES)
@@ -372,10 +371,10 @@ def get_ecd_educators_profile(geo_code, geo_level, session):
     }
 
 
-def get_ecd_budgets_profile(geo_code, geo_level, session):
+def get_ecd_budgets_profile(geo, session):
     table = get_datatable('ecd_grants')
     ecd_grants, _ = table.get_stat_data(
-        geo_level, geo_code, percent=False)
+        geo, percent=False)
 
     # http://www.gov.za/services/child-care-social-benefits/child-support-grant
     monthly_csg = 350.00
@@ -416,22 +415,22 @@ def get_ecd_budgets_profile(geo_code, geo_level, session):
     }
 
 
-def get_hospitals_profile(geo_code, geo_level, session):
+def get_hospitals_profile(geo, session):
     # population group
     _, total_pop = get_stat_data(
-        ['population group'], geo_level, geo_code, session, table_dataset='Census 2011')
+        ['population group'], geo, session, table_dataset='Census 2011')
 
     # Hospitals
     table = get_datatable('hospitals_2012')
     keys = ['regional_hospital', 'central_hospital', 'district_hospital', 'clinic', 'chc']
     hospital_breakdown, total_hospitals = table.get_stat_data(
-        geo_level, geo_code, keys, percent=False,
+        geo, keys, percent=False,
         recode={'chc': 'Community health centre'})
 
     people_per_hospital = ratio(total_pop, total_hospitals)
 
     _, ecd_children = get_stat_data(
-        ['age in completed years'], geo_level, geo_code, session,
+        ['age in completed years'], geo, session,
         table_name='ageincompletedyears',
         only=['0', '1', '2', '3', '4', '5'])
 
@@ -454,31 +453,31 @@ def get_hospitals_profile(geo_code, geo_level, session):
     }
 
 
-def get_households_profile(geo_code, geo_level, session):
+def get_households_profile(geo, session):
     # head of household
     # gender
     head_gender_dist, total_households = get_stat_data(
-        ['gender of household head'], geo_level, geo_code, session,
+        ['gender of household head'], geo, session,
         order_by='gender of household head')
     female_heads = head_gender_dist['Female']['numerators']['this']
 
     # age
     db_model_u18 = get_model_from_fields(
-        ['gender of head of household'], geo_level,
+        ['gender of head of household'], geo.geo_level,
         table_name='genderofheadofhouseholdunder18'
     )
-    objects = get_objects_by_geo(db_model_u18, geo_code, geo_level, session)
+    objects = get_objects_by_geo(db_model_u18, geo, session)
     total_under_18 = float(sum(o[0] for o in objects))
 
     # type of dwelling
     type_of_dwelling_dist, _ = get_stat_data(
-        ['type of dwelling'], geo_level, geo_code, session,
+        ['type of dwelling'], geo, session,
         recode=TYPE_OF_DWELLING_RECODE,
         order_by='-total')
     informal = type_of_dwelling_dist['Shack']['numerators']['this']
 
     _, total_ecd_children = get_stat_data(
-        ['age in completed years'], geo_level, geo_code, session,
+        ['age in completed years'], geo, session,
         table_name='ageincompletedyears',
         only=['0', '1', '2', '3', '4', '5'])
 
@@ -514,10 +513,10 @@ def get_households_profile(geo_code, geo_level, session):
     }
 
 
-def get_service_delivery_profile(geo_code, geo_level, session):
+def get_service_delivery_profile(geo, session):
     # water source
     water_src_data, total_wsrc = get_stat_data(
-        ['source of water'], geo_level, geo_code, session,
+        ['source of water'], geo, session,
         recode=SHORT_WATER_SOURCE_CATEGORIES,
         order_by='-total')
     if 'Service provider' in water_src_data:
@@ -529,8 +528,8 @@ def get_service_delivery_profile(geo_code, geo_level, session):
     elec_attrs = ['electricity for cooking',
                   'electricity for heating',
                   'electricity for lighting']
-    db_model_elec = get_model_from_fields(elec_attrs, geo_level)
-    objects = get_objects_by_geo(db_model_elec, geo_code, geo_level, session)
+    db_model_elec = get_model_from_fields(elec_attrs, geo.geo_level)
+    objects = get_objects_by_geo(db_model_elec, geo, session)
     total_elec = 0.0
     total_some_elec = 0.0
     elec_access_data = {
@@ -572,7 +571,7 @@ def get_service_delivery_profile(geo_code, geo_level, session):
 
     # toilets
     toilet_data, total_toilet = get_stat_data(
-        ['toilet facilities'], geo_level, geo_code, session,
+        ['toilet facilities'], geo, session,
         exclude_zero=True,
         recode=COLLAPSED_TOILET_CATEGORIES,
         order_by='-total')
