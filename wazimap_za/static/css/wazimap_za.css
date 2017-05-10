@@ -49,6 +49,10 @@
   border-color: #1A9D95;
 }
 
+#profile.profile-head2head-frame .floating-nav-wrapper {
+  display: none;
+}
+
 #profile .floating-nav-wrapper {
   height: 100px;
   margin-top: -2em;
