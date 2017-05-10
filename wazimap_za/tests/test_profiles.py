@@ -31,3 +31,6 @@ class ProfileTests(TestCase):
 
         resp = self.client.get('/profiles/district-DC4-eden/')
         self.assertEqual(resp.status_code, 200)
+
+        resp = self.client.get('/profiles/municipality-LIM345-makhado-thulamela/')
+        self.assertEqual(resp.status_code, 200)
