@@ -3,8 +3,6 @@
 {% block head_meta_description %}Population data and election figures from {{ geography.this.short_name}}, broken down by category: Demographics, Service delivery, Economics and Education.{% endblock %}
 
 {% block header_content %}
-{{ block.super }}
-
 <div class="floating-nav-wrapper">
     <nav class="floating-nav">
         <div class="wrapper clearfix">
@@ -22,6 +20,8 @@
         </div>
     </nav>
 </div>
+
+{{ block.super }}
 {% endblock %}
 
 {% block profile_header_tail %}
