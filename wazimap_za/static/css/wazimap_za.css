@@ -118,3 +118,13 @@
     display: none;
   }
 }
+
+#banner {
+  background-color: #f55b2c;
+  color: white;
+}
+
+#banner a {
+  color: white;
+  font-weight: bold;
+}
