@@ -77,6 +77,13 @@
   display: none;
 }
 
+#profile .floating-nav h3 img {
+  width: auto;
+  height: 17px;
+  margin-right: 10px;
+  vertical-align: text-bottom;
+}
+
 #profile .floating-nav.affix h3 {
   display: block;
 }
