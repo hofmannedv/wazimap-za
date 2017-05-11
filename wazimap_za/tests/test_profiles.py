@@ -32,5 +32,10 @@ class ProfileTests(TestCase):
         resp = self.client.get('/profiles/district-DC4-eden/')
         self.assertEqual(resp.status_code, 200)
 
+        # Established in 2016
         resp = self.client.get('/profiles/municipality-LIM345-makhado-thulamela/')
+        self.assertEqual(resp.status_code, 200)
+
+        # Disestablished in 2016
+        resp = self.client.get('/profiles/municipality-EC103-ikwezi/')
         self.assertEqual(resp.status_code, 200)
