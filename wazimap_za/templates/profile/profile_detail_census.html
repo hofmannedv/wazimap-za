@@ -2,10 +2,32 @@
 
 {% block head_meta_description %}Population data and election figures from {{ geography.this.short_name}}, broken down by category: Demographics, Service delivery, Economics and Education.{% endblock %}
 
+{% block header_content %}
+<div class="floating-nav-wrapper">
+    <nav class="floating-nav">
+        <div class="wrapper clearfix">
+            <h3><img src="{% static 'img/wazi-logo.png' %}">{{ geography.this.name }}</h3>
+            <ul>
+                <li><a href="#elections"><i class="fa fa-check"></i> <span>Elections</span></a></li>
+                <li><a href="#demographics"><i class="fa fa-user"></i> <span>Demographics</span></a></li>
+                <li><a href="#households"><i class="fa fa-home"></i> <span>Households</span></a></li>
+                <li><a href="#service_delivery"><i class="fa fa-bolt"></i> <span>Service Delivery</span></a></li>
+                <li><a href="#economics"><i class="fa fa-money"></i> <span>Economics</span></a></li>
+                <li><a href="#education"><i class="fa fa-graduation-cap"></i> <span>Education</span></a></li>
+                <li><a href="#children"><i class="fa fa-futbol-o"></i> <span>Children</span></a></li>
+                <li><a href="#child_headed_households"><i class="fa fa-child"></i> <span>Child-headed Households</span></a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+{{ block.super }}
+{% endblock %}
+
 {% block profile_header_tail %}
 <div class="column-full">
     <p class="caption">
-        <strong>Census data:</strong> 2011
+        <strong>Census data:</strong> 2011 with {{ geography.this.version }} boundaries
         {% if crime %}
         <br>
         <strong>Crime data:</strong> {{ crime.dataset }}</p>
@@ -17,7 +39,7 @@
 {% block profile_detail %}
 <article id="elections" class="clearfix">
     <header class="section-contents">
-        <h1>Elections</h1>
+        <h1><i class="fa fa-fw fa-check"></i> Elections</h1>
     </header>
     <div class="section-container">
 
@@ -62,7 +84,7 @@
 
 <article id="demographics" class="clearfix">
     <header class="section-contents">
-        <h1>Demographics</h1>
+        <h1><i class="fa fa-fw fa-user"></i> Demographics</h1>
     </header>
     <div class="section-container">
 
@@ -114,9 +136,9 @@
     </div>
 </article>
 
-<article id="service_delivery" class="clearfix">
+<article id="households" class="clearfix">
     <header class="section-contents">
-        <h1>Households</h1>
+        <h1><i class="fa fa-fw fa-home"></i> Households</h1>
     </header>
     <div class="section-container">
 
@@ -166,7 +188,7 @@
 
 <article id="service_delivery" class="clearfix">
     <header class="section-contents">
-        <h1>Service delivery</h1>
+        <h1><i class="fa fa-fw fa-bolt"></i> Service delivery</h1>
     </header>
     <div class="section-container">
 
@@ -220,7 +242,7 @@
 
 <article id="economics" class="clearfix">
     <header class="section-contents">
-        <h1>Economics</h1>
+        <h1><i class="fa fa-fw fa-money"></i> Economics</h1>
     </header>
     <div class="section-container">
       <section class="clearfix stat-row">
@@ -268,7 +290,7 @@
 
 <article id="education" class="clearfix">
     <header class="section-contents">
-        <h1>Education</h1>
+        <h1><i class="fa fa-fw fa-graduation-cap"></i> Education</h1>
     </header>
     <div class="section-container">
 
@@ -292,7 +314,7 @@
 
 <article id="children" class="clearfix">
     <header class="section-contents">
-        <h1>Children</h1>
+        <h1><i class="fa fa-fw fa-futbol-o"></i> Children</h1>
     </header>
     <div class="section-container">
 
@@ -372,7 +394,7 @@
 
 <article id="child_headed_households" class="clearfix">
     <header class="section-contents">
-        <h1>Child-headed households</h1>
+        <h1><i class="fa fa-fw fa-child"></i> Child-headed households</h1>
     </header>
     <div class="section-container">
 
