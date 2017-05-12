@@ -75,7 +75,7 @@ def get_profile(geo, profile_name, request):
     session = get_session()
 
     try:
-        geo_summary_levels = geo_data.get_summary_geo_info(geo)
+        comp_geos = geo_data.get_comparative_geos(geo)
         data = {}
 
         sections = list(PROFILE_SECTIONS)
@@ -90,9 +90,9 @@ def get_profile(geo, profile_name, request):
                 data[section] = func(geo, session)
 
                 # get profiles for province and/or country
-                for level, code in geo_summary_levels:
+                for comp_geo in comp_geos:
                     # merge summary profile into current geo profile
-                    merge_dicts(data[section], func(geo, session), level)
+                    merge_dicts(data[section], func(comp_geo, session), comp_geo.geo_level)
 
         group_remainder(data['households']['type_of_dwelling_distribution'], 5)
         group_remainder(data['service_delivery']['water_source_distribution'], 5)
