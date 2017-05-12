@@ -26,15 +26,18 @@
               <section class="clearfix stat-row">
                 <h2 class="header-for-columns">
                   <a class="permalink" href="#{{ election_data.name }}" id="{{ election_data.name }}">
-                    {{ election_data.name.capitalize }}
-                    {% if election_data|get:"geo_version" != geography.this.version %}*{% endif %}
+                    {{ election_data.name.capitalize }}{% if election_data|get:"geo_version" != geography.this.version %}*{% endif %}
                     <i class="fa fa-link"></i>
                   </a>
                 </h2>
-                {% if election_data|get:"geo_version" != geography.this.version %}
                 <aside>
-                    *This election data is for the {{ election_data|get:"geo_version" }} municipal boundaries, which may be different to the {{ geography.this.version }} municipal boundaries used elsewhere on this page.
-                </aside>{% endif %}
+                  {% if "municipal" in election_data.name|lower %}
+                  <a href="/help#faq-municipal-elections">What does this show?</a>
+                  {% endif %}
+                  {% if election_data|get:"geo_version" != geography.this.version %}
+                  *This election data is for the {{ election_data|get:"geo_version" }} municipal boundaries, which may be different to the {{ geography.this.version }} municipal boundaries used elsewhere on this page.
+                  {% endif %}
+                </aside>
                 <div class="column-quarter">
                     {% include 'profile/_blocks/_stat_list.html' with stat=election_data|get:"Number of registered voters" stat_type='number' %}
                 </div>
