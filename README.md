@@ -8,11 +8,15 @@ The South African instance of [Wazimap](https://github.com/Code4SA/wazimap), a D
 
 1. clone the repo
 2. ``cd wazimap_za``
-2. ``virtualenv --no-site-packages env``
-3. ``pip install -r requirements.txt``
+3. ``virtualenv --no-site-packages env``
+4. ``source env/bin/activate``
+5. ``pip install -r requirements.txt``
 
 Set the `WAZI_PROFILE` environment variable to the instance you are working on, e.g.
 `export WAZI_PROFILE=ecd`
+
+Set the `DEFAULT_GEO_VERSION` environment variable if you don't want to default to the latest, e.g. for youth and ecd
+`export DEFAULT_GEO_VERSION=2011`
 
 You will need a Postgres database:
 
@@ -45,6 +49,7 @@ See the [Wazimap deployment docs](http://wazimap.readthedocs.org/en/latest/deplo
 Set the profile
 ```
 dokku config:set wazimap_za WAZI_PROFILE=<profile name>
+dokku config:set wazimap_za DEFAULT_GEO_VERSION=<geography version>
 ```
 
 Add dokku as a remote, and then deploy:
@@ -87,6 +92,16 @@ Let's suppose you want to add a new table with two fields: favourite colour and 
 5. Commit to git.
 6. All done!
 
+To dump all data tables at once, run
+```shell
+for t in `ls sql/[a-z]*.sql`
+do
+    pg_dump "postgres://wazimap_za@localhost/wazimap_za" \
+        -O -c --if-exists -t $(basename $t .sql) \
+      | egrep -v "(idle_in_transaction_session_timeout|row_security)" \
+      > sql/$(basename $t .sql).sql
+done
+```
 # License
 
 MIT License

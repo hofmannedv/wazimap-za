@@ -17,7 +17,7 @@ STRIP_WWW = True
 
 
 # Localise this instance of Wazimap
-WAZIMAP['name'] = 'Wazimap South Africa'
+WAZIMAP['name'] = 'Wazimap'
 WAZIMAP['url'] = 'https://wazimap.co.za'
 WAZIMAP['country_code'] = 'ZA'
 WAZIMAP['comparative_levels'] = ['district', 'province', 'country']
@@ -49,6 +49,8 @@ wazi_profile = os.environ.get('WAZI_PROFILE', 'census')
 
 WAZIMAP['default_profile'] = wazi_profile
 WAZIMAP['profile_builder'] = 'wazimap_za.profiles.{}.get_profile'.format(wazi_profile)
+WAZIMAP['default_geo_version'] = os.environ.get('DEFAULT_GEO_VERSION', None)
+WAZIMAP['legacy_embed_geo_version'] = '2011'
 
 if wazi_profile == 'census':
     WAZIMAP['ga_tracking_id'] = 'UA-48399585-5'

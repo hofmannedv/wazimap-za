@@ -18,8 +18,8 @@ env:
     - DATABASE_URL=postgres://postgres:@localhost:5432/test_wazimap_za
   matrix:
     - WAZI_PROFILE=census
-    - WAZI_PROFILE=youth
-    - WAZI_PROFILE=ecd
+    - WAZI_PROFILE=youth DEFAULT_GEO_VERSION=2011
+    - WAZI_PROFILE=ecd DEFAULT_GEO_VERSION=2011
 install:
   - sed 's/GDAL==1.11.0/GDAL==1.10.0/' -i requirements.txt
   - pip install -r requirements.txt

@@ -5,7 +5,6 @@ from wazimap.data.tables import FieldTable, SimpleTable
 
 # All profiles
 
-
 # Census tables
 if settings.WAZIMAP['default_profile'] == 'census':
     FieldTable(['age groups in 5 years'])
@@ -22,6 +21,7 @@ if settings.WAZIMAP['default_profile'] == 'census':
     FieldTable(['highest educational level'], id="highesteducationallevel20", universe='Individuals 20 and older')
     FieldTable(['language'], description='Population by primary language spoken at home')
     FieldTable(['employed individual monthly income'], universe='Employed individuals')
+    FieldTable(['employed individual annual income'], universe='Employed individuals')
     FieldTable(['official employment status'], universe='Individuals 15 and older')
     FieldTable(['type of sector'], universe='Workers 15 and older')
     FieldTable(['population group'])
@@ -48,6 +48,7 @@ if settings.WAZIMAP['default_profile'] == 'census':
     FieldTable(['official employment status'], id="officialemploymentstatus15to17", universe="Children 15 to 17")
     FieldTable(['highest educational level'], id="highesteducationallevel17", universe="17-year-old children")
     FieldTable(['individual monthly income'], id="individualmonthlyincome15to17", universe="Children 15 to 17 who are employed")
+    FieldTable(['individual annual income'], id="individualannualincome15to17", universe="Children 15 to 17 who are employed")
     FieldTable(['gender'], id='genderunder18', universe='Children under 18')
 
     # child-headed households
@@ -56,6 +57,12 @@ if settings.WAZIMAP['default_profile'] == 'census':
     FieldTable(['type of main dwelling'], id='typeofmaindwellingunder18', universe='Households headed by children under 18')
 
     # Elections
+
+    # The source of this is the "Downloadable detailed results - Levels P,M,W,B,VD"
+    # CSV from http://www.elections.org.za/content/Elections/Municipal-elections-results/
+    # This is the sum of PR and Ward total valid votes.
+    FieldTable(['party'], universe='Votes', id='party_votes_municipal_2016', description='2016 Municipal Election results',
+               dataset='2016 Municipal Elections', year='2016')
     FieldTable(['party'], universe='Votes', id='party_votes_national_2014', description='2014 National Election results',
                dataset='2014 National Elections', year='2014')
     FieldTable(['party'], universe='Votes', id='party_votes_provincial_2014', description='2014 Provincial Election results',
@@ -77,6 +84,20 @@ if settings.WAZIMAP['default_profile'] == 'census':
     )
 
     # Elections
+    # The source of this is a combination of ward-level voter turnout summaries
+    # provided manually by the IEC, based on the Percent Voter Turnout summaries
+    # available per-municipality on their website.
+    # The detailed downloads containing all ward data didn't include MEC7 votes,
+    # which is necessary to calculate turnout correctly.
+    # The registered population registered_voters figure is registered_population + mec7_votes
+    SimpleTable(
+        id='voter_turnout_municipal_2016',
+        universe='Registered and MEC7 voters',
+        total_column='registered_voters',
+        description='2016 Municipal Election voter turnout',
+        dataset='2016 Municipal Elections',
+        year='2016'
+    )
     SimpleTable(
         id='voter_turnout_national_2014',
         universe='Registered voters',
@@ -286,4 +307,3 @@ elif settings.WAZIMAP['default_profile'] == 'ecd':
         dataset='Audit of ECD Centres - National Report',
         year='2013'
     )
-
