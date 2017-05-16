@@ -82,9 +82,9 @@ def get_demographics_profile(geo, session, comparative=False):
     youth_pop, pop_total = youth_pop_table.get_stat_data(
         geo, total='total_pop', percent='False')
 
-    youth_pop_dist_data, _ = get_stat_data(
-        ['age in completed years'], geo, session,
-        table_name='youth_gender_age_in_completed_years')
+    youth_age_group_data, _ = get_stat_data(
+        ['age groups in 10 years'], geo, session,
+        table_name='youth_age_groups_in_10_years')
 
     youth_gender_data, _ = get_stat_data(
         ['gender'], geo, session,
@@ -109,7 +109,7 @@ def get_demographics_profile(geo, session, comparative=False):
             "name": "Of population are youth aged 15-24",
             "values": {"this": youth_pop['youth_pop']['values']['this']},
         },
-        'youth_population_by_year': youth_pop_dist_data,
+        'youth_population_by_age_group': youth_age_group_data,
         'youth_population_by_gender': youth_gender_data,
         'youth_population_by_pop_group': youth_pop_group_data
     }
@@ -128,6 +128,10 @@ def get_demographics_za_profile(geo, session, comparative=False):
     youth_pop, pop_total = youth_pop_table.get_stat_data(
         geo, total='total_pop', percent='False')
 
+    youth_age_group_data, _ = get_stat_data(
+        ['age groups in 10 years'], geo, session,
+        table_name='youth_age_groups_in_10_years')
+
     youth_gender_data, _ = get_stat_data(
         ['gender'], geo, session,
         table_name='youth_gender_population_group',
@@ -150,6 +154,7 @@ def get_demographics_za_profile(geo, session, comparative=False):
             "name": "Of population are youth aged 15-24",
             "values": {"this": youth_pop['youth_pop']['values']['this']},
         },
+        'youth_population_by_age_group': youth_age_group_data,
         'youth_population_by_gender': youth_gender_data,
         'youth_population_by_pop_group': youth_pop_group_data
     }
