@@ -26,6 +26,9 @@ EDUCATION_LEVELS_RECODE = {
 
 POPULATION_GROUP_ORDER = ('Black African', 'Coloured', 'Indian or Asian', 'White', 'Other')
 GENDER_ORDER = ('Female', 'Male')
+PROVINCE_ORDER = ('Eastern Cape', 'Free State', 'Gauteng', 'KwaZulu-Natal', 'Limpopo', 'Mpumalanga', 'North West',
+    'Northern Cape', 'Western Cape', 'Outside South Africa', 'Unspecified')
+REGION_ORDER = ('South Africa', 'SADC', 'Rest of Africa', 'Other', 'Unspecified')
 
 def get_profile(geo, profile_name, request):
     session = get_session()
@@ -103,6 +106,17 @@ def get_demographics_profile(geo, session, comparative=False):
     )
     youth_language_most_spoken = youth_language_data[youth_language_data.keys()[0]]
 
+    youth_province_birth_data, _ = get_stat_data(
+        ['province of birth'], geo, session,
+        table_name='youth_province_of_birth',
+        key_order=PROVINCE_ORDER)
+    youth_region_birth_data, _ = get_stat_data(
+        ['region of birth'], geo, session,
+        table_name='youth_region_of_birth',
+        key_order=REGION_ORDER)
+
+    youth_region_birth_data['SADC']['name'] = 'SADC*'
+
     final_data = {
         'total_population': {
             "name": "People",
@@ -120,7 +134,13 @@ def get_demographics_profile(geo, session, comparative=False):
         'youth_population_by_gender': youth_gender_data,
         'youth_population_by_pop_group': youth_pop_group_data,
         'youth_language_most_spoken': youth_language_most_spoken,
-        'youth_population_by_language': youth_language_data
+        'youth_population_by_language': youth_language_data,
+        'youth_born_in_sa': {
+            "name": "Of the youth population were born in South Africa",
+            "values": {"this": youth_region_birth_data['South Africa']['values']['this']},
+        },
+        'youth_by_province_of_birth': youth_province_birth_data,
+        'youth_by_region_of_birth': youth_region_birth_data
     }
 
     # The following info is displayed in the block over the map
@@ -157,6 +177,17 @@ def get_demographics_za_profile(geo, session, comparative=False):
     )
     youth_language_most_spoken = youth_language_data[youth_language_data.keys()[0]]
 
+    youth_province_birth_data, _ = get_stat_data(
+        ['province of birth'], geo, session,
+        table_name='youth_province_of_birth',
+        key_order=PROVINCE_ORDER)
+    youth_region_birth_data, _ = get_stat_data(
+        ['region of birth'], geo, session,
+        table_name='youth_region_of_birth',
+        key_order=REGION_ORDER)
+
+    youth_region_birth_data['SADC']['name'] = 'SADC*'
+
     final_data = {
         'total_population': {
             "name": "People",
@@ -175,7 +206,13 @@ def get_demographics_za_profile(geo, session, comparative=False):
         'youth_population_by_pop_group': youth_pop_group_data,
         'youth_population_by_pop_group': youth_pop_group_data,
         'youth_language_most_spoken': youth_language_most_spoken,
-        'youth_population_by_language': youth_language_data
+        'youth_population_by_language': youth_language_data,
+        'youth_born_in_sa': {
+            "name": "Of the youth population were born in South Africa",
+            "values": {"this": youth_region_birth_data['South Africa']['values']['this']},
+        },
+        'youth_by_province_of_birth': youth_province_birth_data,
+        'youth_by_region_of_birth': youth_region_birth_data
     }
 
     # The following info is displayed in the block over the map
