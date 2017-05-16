@@ -96,6 +96,13 @@ def get_demographics_profile(geo, session, comparative=False):
         table_name='youth_population_group_gender',
         key_order=POPULATION_GROUP_ORDER)
 
+    youth_language_data, _ = get_stat_data(
+        ['language'], geo, session,
+        table_name='youth_language',
+        order_by='-total'
+    )
+    youth_language_most_spoken = youth_language_data[youth_language_data.keys()[0]]
+
     final_data = {
         'total_population': {
             "name": "People",
@@ -111,7 +118,9 @@ def get_demographics_profile(geo, session, comparative=False):
         },
         'youth_population_by_age_group': youth_age_group_data,
         'youth_population_by_gender': youth_gender_data,
-        'youth_population_by_pop_group': youth_pop_group_data
+        'youth_population_by_pop_group': youth_pop_group_data,
+        'youth_language_most_spoken': youth_language_most_spoken,
+        'youth_population_by_language': youth_language_data
     }
 
     # The following info is displayed in the block over the map
@@ -141,6 +150,13 @@ def get_demographics_za_profile(geo, session, comparative=False):
         table_name='youth_population_group_gender',
         key_order=POPULATION_GROUP_ORDER)
 
+    youth_language_data, _ = get_stat_data(
+        ['language'], geo, session,
+        table_name='youth_language',
+        order_by='-total'
+    )
+    youth_language_most_spoken = youth_language_data[youth_language_data.keys()[0]]
+
     final_data = {
         'total_population': {
             "name": "People",
@@ -156,7 +172,10 @@ def get_demographics_za_profile(geo, session, comparative=False):
         },
         'youth_population_by_age_group': youth_age_group_data,
         'youth_population_by_gender': youth_gender_data,
-        'youth_population_by_pop_group': youth_pop_group_data
+        'youth_population_by_pop_group': youth_pop_group_data,
+        'youth_population_by_pop_group': youth_pop_group_data,
+        'youth_language_most_spoken': youth_language_most_spoken,
+        'youth_population_by_language': youth_language_data
     }
 
     # The following info is displayed in the block over the map

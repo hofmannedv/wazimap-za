@@ -52,6 +52,12 @@
             <div class="column-half" id="chart-histogram-demographics-youth_population_by_pop_group" data-stat-type="scaled-percentage" data-chart-title="Youth population by race"></div>
             <div class="column-quarter" id="chart-pie-demographics-youth_population_by_gender" data-stat-type="percentage" data-chart-title="Youth population by gender"></div>
         </section>
+        <section class="clearfix stat-row">
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=demographics.youth_language_most_spoken stat_type='name' stat_name='Youth by language most spoken at home' %}
+            </div>
+            <div class="column-three-quarters" id="chart-histogram-demographics-youth_population_by_language" data-stat-type="scaled-percentage" data-chart-title="Youth by language most spoken at home"></div>
+        </section>
     </div>
 </article>
 
@@ -78,6 +84,12 @@
             </div>
             <div class="column-half" id="chart-histogram-demographics-youth_population_by_pop_group" data-stat-type="scaled-percentage" data-chart-title="Youth population by race"></div>
             <div class="column-quarter" id="chart-pie-demographics-youth_population_by_gender" data-stat-type="percentage" data-chart-title="Youth population by gender"></div>
+        </section>
+        <section class="clearfix stat-row">
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=demographics.youth_language_most_spoken stat_type='name' stat_name='Youth by language most spoken at home' %}
+            </div>
+            <div class="column-three-quarters" id="chart-histogram-demographics-youth_population_by_language" data-stat-type="scaled-percentage" data-chart-title="Youth by language most spoken at home"></div>
         </section>
     </div>
 </article>
