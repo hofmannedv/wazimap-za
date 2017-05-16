@@ -26,6 +26,10 @@ EDUCATION_LEVELS_RECODE = {
 
 POPULATION_GROUP_ORDER = ('Black African', 'Coloured', 'Indian or Asian', 'White', 'Other')
 GENDER_ORDER = ('Female', 'Male')
+PROVINCE_ORDER = ('Eastern Cape', 'Free State', 'Gauteng', 'KwaZulu-Natal', 'Limpopo', 'Mpumalanga', 'North West',
+    'Northern Cape', 'Western Cape', 'Outside South Africa', 'Unspecified')
+REGION_ORDER = ('South Africa', 'SADC', 'Rest of Africa', 'Other', 'Unspecified')
+CITIZENSHIP_ORDER = ('Yes', 'No', 'Unspecified')
 
 def get_profile(geo, profile_name, request):
     session = get_session()
@@ -82,9 +86,9 @@ def get_demographics_profile(geo, session, comparative=False):
     youth_pop, pop_total = youth_pop_table.get_stat_data(
         geo, total='total_pop', percent='False')
 
-    youth_pop_dist_data, _ = get_stat_data(
-        ['age in completed years'], geo, session,
-        table_name='youth_gender_age_in_completed_years')
+    youth_age_group_data, _ = get_stat_data(
+        ['age groups in 10 years'], geo, session,
+        table_name='youth_age_groups_in_10_years')
 
     youth_gender_data, _ = get_stat_data(
         ['gender'], geo, session,
@@ -95,6 +99,29 @@ def get_demographics_profile(geo, session, comparative=False):
         ['population group'], geo, session,
         table_name='youth_population_group_gender',
         key_order=POPULATION_GROUP_ORDER)
+
+    youth_language_data, _ = get_stat_data(
+        ['language'], geo, session,
+        table_name='youth_language',
+        order_by='-total'
+    )
+    youth_language_most_spoken = youth_language_data[youth_language_data.keys()[0]]
+
+    youth_province_birth_data, _ = get_stat_data(
+        ['province of birth'], geo, session,
+        table_name='youth_province_of_birth',
+        key_order=PROVINCE_ORDER)
+    youth_region_birth_data, _ = get_stat_data(
+        ['region of birth'], geo, session,
+        table_name='youth_region_of_birth',
+        key_order=REGION_ORDER)
+
+    youth_region_birth_data['SADC']['name'] = 'SADC*'
+
+    youth_citizenship_data, _ = get_stat_data(
+        ['citizenship'], geo, session,
+        table_name='youth_citizenship',
+        key_order=CITIZENSHIP_ORDER)
 
     final_data = {
         'total_population': {
@@ -109,9 +136,22 @@ def get_demographics_profile(geo, session, comparative=False):
             "name": "Of population are youth aged 15-24",
             "values": {"this": youth_pop['youth_pop']['values']['this']},
         },
-        'youth_population_by_year': youth_pop_dist_data,
+        'youth_population_by_age_group': youth_age_group_data,
         'youth_population_by_gender': youth_gender_data,
-        'youth_population_by_pop_group': youth_pop_group_data
+        'youth_population_by_pop_group': youth_pop_group_data,
+        'youth_language_most_spoken': youth_language_most_spoken,
+        'youth_population_by_language': youth_language_data,
+        'youth_born_in_sa': {
+            "name": "Of the youth population were born in South Africa",
+            "values": {"this": youth_region_birth_data['South Africa']['values']['this']},
+        },
+        'youth_by_province_of_birth': youth_province_birth_data,
+        'youth_by_region_of_birth': youth_region_birth_data,
+        'youth_sa_citizenship': {
+            'name': 'of the youth population are South African citizens',
+            'values': {'this': youth_citizenship_data['Yes']['values']['this']}
+        },
+        'youth_by_citizenship': youth_citizenship_data,
     }
 
     # The following info is displayed in the block over the map
@@ -128,6 +168,10 @@ def get_demographics_za_profile(geo, session, comparative=False):
     youth_pop, pop_total = youth_pop_table.get_stat_data(
         geo, total='total_pop', percent='False')
 
+    youth_age_group_data, _ = get_stat_data(
+        ['age groups in 10 years'], geo, session,
+        table_name='youth_age_groups_in_10_years')
+
     youth_gender_data, _ = get_stat_data(
         ['gender'], geo, session,
         table_name='youth_gender_population_group',
@@ -136,6 +180,29 @@ def get_demographics_za_profile(geo, session, comparative=False):
         ['population group'], geo, session,
         table_name='youth_population_group_gender',
         key_order=POPULATION_GROUP_ORDER)
+
+    youth_language_data, _ = get_stat_data(
+        ['language'], geo, session,
+        table_name='youth_language',
+        order_by='-total'
+    )
+    youth_language_most_spoken = youth_language_data[youth_language_data.keys()[0]]
+
+    youth_province_birth_data, _ = get_stat_data(
+        ['province of birth'], geo, session,
+        table_name='youth_province_of_birth',
+        key_order=PROVINCE_ORDER)
+    youth_region_birth_data, _ = get_stat_data(
+        ['region of birth'], geo, session,
+        table_name='youth_region_of_birth',
+        key_order=REGION_ORDER)
+
+    youth_region_birth_data['SADC']['name'] = 'SADC*'
+
+    youth_citizenship_data, _ = get_stat_data(
+        ['citizenship'], geo, session,
+        table_name='youth_citizenship',
+        key_order=CITIZENSHIP_ORDER)
 
     final_data = {
         'total_population': {
@@ -150,8 +217,23 @@ def get_demographics_za_profile(geo, session, comparative=False):
             "name": "Of population are youth aged 15-24",
             "values": {"this": youth_pop['youth_pop']['values']['this']},
         },
+        'youth_population_by_age_group': youth_age_group_data,
         'youth_population_by_gender': youth_gender_data,
-        'youth_population_by_pop_group': youth_pop_group_data
+        'youth_population_by_pop_group': youth_pop_group_data,
+        'youth_population_by_pop_group': youth_pop_group_data,
+        'youth_language_most_spoken': youth_language_most_spoken,
+        'youth_population_by_language': youth_language_data,
+        'youth_born_in_sa': {
+            "name": "Of the youth population were born in South Africa",
+            "values": {"this": youth_region_birth_data['South Africa']['values']['this']},
+        },
+        'youth_by_province_of_birth': youth_province_birth_data,
+        'youth_by_region_of_birth': youth_region_birth_data,
+        'youth_sa_citizenship': {
+            'name': 'of the youth population are South African citizens',
+            'values': {'this': youth_citizenship_data['Yes']['values']['this']}
+        },
+        'youth_by_citizenship': youth_citizenship_data,
     }
 
     # The following info is displayed in the block over the map
@@ -173,7 +255,8 @@ def get_education_profile(geo, session, comparative=False):
     youth_completed_grade9_by_gender, _ = get_stat_data(
         ['completed grade9', 'gender'], geo, session,
         percent_grouping=['gender'], slices=['Completed'],
-        table_name='youth_age_16_to_17_gender_completed_grade9')
+        table_name='youth_age_16_to_17_gender_completed_grade9',
+        key_order={'gender': GENDER_ORDER})
 
     youth_education_level, youth_pop_20_to_24 = get_stat_data(
         ['education level'], geo, session,
@@ -202,7 +285,8 @@ def get_education_profile(geo, session, comparative=False):
     youth_education_attending_by_gender, _ = get_stat_data(
         ['attendance', 'gender'], geo, session,
         percent_grouping=['gender'], slices=['Yes'],
-        table_name='youth_education_attendance_gender_age_incompleted_years')
+        table_name='youth_education_attendance_gender_age_incompleted_years',
+        key_order={'gender': GENDER_ORDER})
 
     youth_average_mean_score_by_year, _ = get_stat_data(
         ['year'], geo, session,
@@ -377,7 +461,8 @@ def get_economic_opportunities_profile(geo, session, comparative=False):
     youth_neet_by_gender, _ = get_stat_data(
         ['employment education training', 'gender'], geo, session,
         percent_grouping=['gender'], slices=['NEET'],
-        table_name='youth_employment_education_training_gender')
+        table_name='youth_employment_education_training_gender',
+        key_order={'gender': GENDER_ORDER})
 
     youth_household_employment, _ = get_stat_data(
         ['household employment'], geo, session,
@@ -447,7 +532,8 @@ def get_living_environment_profile(geo, session, comparative=False):
     youth_income_poor_by_gender, _ = get_stat_data(
         ['income poverty', 'gender'], geo, session,
         percent_grouping=['gender'], slices=['Income-poor'],
-        table_name='youth_income_poverty_gender_population_group')
+        table_name='youth_income_poverty_gender_population_group',
+        key_order={'gender': GENDER_ORDER})
 
     youth_multid_poverty, _ = get_stat_data(
         ['multidimensionally poor'], geo, session,
@@ -463,7 +549,8 @@ def get_living_environment_profile(geo, session, comparative=False):
     youth_multid_poor_by_gender, _ = get_stat_data(
         ['multidimensionally poor', 'gender'], geo, session,
         percent_grouping=['gender'], slices=['Multidimensionally poor'],
-        table_name='youth_multidimensionally_poor_gender_population_group')
+        table_name='youth_multidimensionally_poor_gender_population_group',
+        key_order={'gender': GENDER_ORDER})
 
     youth_mpi_table = get_datatable('youth_mpi_score')
     youth_mpi_score, _ = youth_mpi_table.get_stat_data(
@@ -549,11 +636,13 @@ def get_safety_profile(geo, session, comparative=False):
     youth_victims_by_gender_per_10k, _ = get_stat_data(
         ['gender'], geo, session,
         table_name='youth_victims_gender',
-        percent=False)
+        percent=False,
+        key_order=GENDER_ORDER)
     youth_accused_by_gender_per_10k, _ = get_stat_data(
         ['gender'], geo, session,
         table_name='youth_accused_gender',
-        percent=False)
+        percent=False,
+        key_order=GENDER_ORDER)
 
     youth_victims_by_year, _ = get_stat_data(
         ['year'], geo, session,

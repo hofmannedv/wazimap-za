@@ -34413,6 +34413,11361 @@ ward	94705031	Indian or Asian	Female	3	2011
 ward	94705031	White	Male	94	2011
 ward	94705031	White	Female	102	2011
 ward	94705031	Other	Female	1	2011
+ward	41901012	Indian or Asian	Female	0	2011
+ward	93601010	Indian or Asian	Male	0	2011
+ward	83106007	Coloured	Female	0	2011
+ward	93301007	Indian or Asian	Female	0	2011
+ward	52606012	Indian or Asian	Male	0	2011
+ward	52806002	Other	Female	0	2011
+ward	93403033	Other	Male	0	2011
+ward	93505019	Coloured	Male	0	2011
+ward	21201006	Coloured	Male	0	2011
+ward	21304002	Coloured	Male	0	2011
+ward	74801012	Other	Female	0	2011
+ward	52606007	Indian or Asian	Male	0	2011
+ward	42001018	Indian or Asian	Male	0	2011
+ward	21008002	Other	Female	0	2011
+ward	10105002	Other	Female	0	2011
+ward	74201030	Coloured	Female	0	2011
+ward	52606008	Indian or Asian	Male	0	2011
+ward	83102031	White	Male	0	2011
+ward	52502013	White	Male	0	2011
+ward	52605013	Other	Female	0	2011
+ward	63803022	White	Female	0	2011
+ward	93305002	Indian or Asian	Male	0	2011
+ward	93302017	Coloured	Female	0	2011
+ward	21304003	Indian or Asian	Male	0	2011
+ward	83103001	Coloured	Male	0	2011
+ward	24403012	Other	Female	0	2011
+ward	93303034	Indian or Asian	Male	0	2011
+ward	79800051	Indian or Asian	Female	0	2011
+ward	24401024	Other	Male	0	2011
+ward	83204031	Indian or Asian	Female	0	2011
+ward	52302007	White	Male	0	2011
+ward	21304023	White	Female	0	2011
+ward	52702019	Indian or Asian	Male	0	2011
+ward	30901029	White	Male	0	2011
+ward	21207005	White	Female	0	2011
+ward	21004009	Other	Female	0	2011
+ward	93404006	White	Female	0	2011
+ward	79900067	Indian or Asian	Male	0	2011
+ward	94703022	Coloured	Male	0	2011
+ward	93607023	Other	Male	0	2011
+ward	21304013	White	Female	0	2011
+ward	74201037	Other	Female	0	2011
+ward	93304017	Indian or Asian	Male	0	2011
+ward	41902005	Indian or Asian	Female	0	2011
+ward	21506004	White	Female	0	2011
+ward	52602007	Coloured	Female	0	2011
+ward	41901017	Indian or Asian	Female	0	2011
+ward	93504012	Other	Male	0	2011
+ward	30602003	White	Male	0	2011
+ward	52804009	White	Male	0	2011
+ward	83106020	Indian or Asian	Male	0	2011
+ward	30803010	White	Male	0	2011
+ward	52305014	Other	Female	0	2011
+ward	93305007	Indian or Asian	Male	0	2011
+ward	41805004	Indian or Asian	Female	0	2011
+ward	52803003	Indian or Asian	Female	0	2011
+ward	10502003	Indian or Asian	Male	0	2011
+ward	42001004	Other	Male	0	2011
+ward	83103027	White	Female	0	2011
+ward	83204032	Indian or Asian	Female	0	2011
+ward	52205004	White	Female	0	2011
+ward	42001001	Indian or Asian	Female	0	2011
+ward	64002012	White	Female	0	2011
+ward	93505005	Coloured	Female	0	2011
+ward	52201004	Other	Male	0	2011
+ward	93303020	White	Female	0	2011
+ward	24401021	Coloured	Male	0	2011
+ward	21207007	Other	Female	0	2011
+ward	21507028	Coloured	Female	0	2011
+ward	52902009	Indian or Asian	Male	0	2011
+ward	54304007	Coloured	Female	0	2011
+ward	63804015	Other	Female	0	2011
+ward	94704005	Coloured	Female	0	2011
+ward	34501005	Indian or Asian	Female	0	2011
+ward	21504008	Other	Male	0	2011
+ward	54305014	Coloured	Male	0	2011
+ward	93301030	Indian or Asian	Male	0	2011
+ward	21503004	Coloured	Male	0	2011
+ward	21202013	Coloured	Male	0	2011
+ward	52101005	White	Female	0	2011
+ward	24403006	Indian or Asian	Male	0	2011
+ward	30704004	Other	Male	0	2011
+ward	21307009	White	Female	0	2011
+ward	93503014	Other	Male	0	2011
+ward	21208003	Indian or Asian	Male	0	2011
+ward	83102003	Other	Female	0	2011
+ward	93304010	Indian or Asian	Male	0	2011
+ward	93505023	White	Female	0	2011
+ward	83201009	White	Female	0	2011
+ward	21202015	White	Male	0	2011
+ward	93402009	Other	Female	0	2011
+ward	10404017	Other	Female	0	2011
+ward	42003008	Other	Female	0	2011
+ward	93303002	Coloured	Female	0	2011
+ward	52803003	Other	Female	0	2011
+ward	93601007	Indian or Asian	Male	0	2011
+ward	93402007	Coloured	Male	0	2011
+ward	41803003	White	Female	0	2011
+ward	63803003	White	Female	0	2011
+ward	93305007	Other	Male	0	2011
+ward	52103004	White	Female	0	2011
+ward	21004013	Indian or Asian	Female	0	2011
+ward	52904002	Other	Male	0	2011
+ward	29200007	White	Female	0	2011
+ward	42001004	Indian or Asian	Male	0	2011
+ward	52402016	Coloured	Female	0	2011
+ward	24404013	White	Female	0	2011
+ward	52402012	White	Male	0	2011
+ward	10408004	Indian or Asian	Male	0	2011
+ward	21305010	Indian or Asian	Female	0	2011
+ward	63805001	White	Female	0	2011
+ward	10304003	Indian or Asian	Female	0	2011
+ward	83204032	Other	Female	0	2011
+ward	42001001	Other	Female	0	2011
+ward	52902009	Other	Male	0	2011
+ward	10203027	Indian or Asian	Male	0	2011
+ward	21207007	Indian or Asian	Female	0	2011
+ward	52405002	White	Male	0	2011
+ward	93301030	Other	Male	0	2011
+ward	63903008	White	Female	0	2011
+ward	30903001	White	Male	0	2011
+ward	52306006	White	Female	0	2011
+ward	93302010	White	Female	0	2011
+ward	34501005	Other	Female	0	2011
+ward	83204028	White	Female	0	2011
+ward	93503014	Indian or Asian	Male	0	2011
+ward	52904009	Indian or Asian	Female	0	2011
+ward	42001013	Other	Male	0	2011
+ward	93301027	White	Male	0	2011
+ward	24403018	Other	Male	0	2011
+ward	79700054	White	Male	0	2011
+ward	74803014	Coloured	Male	0	2011
+ward	83102003	Indian or Asian	Female	0	2011
+ward	93304010	Other	Male	0	2011
+ward	52903007	Coloured	Male	0	2011
+ward	52806002	Indian or Asian	Female	0	2011
+ward	52402004	White	Male	0	2011
+ward	93402005	Indian or Asian	Female	0	2011
+ward	93301007	Other	Female	0	2011
+ward	93601010	Other	Male	0	2011
+ward	41901012	Other	Female	0	2011
+ward	79900006	Indian or Asian	Male	0	2011
+ward	29200049	White	Male	0	2011
+ward	93403033	Indian or Asian	Male	0	2011
+ward	52104007	Other	Female	0	2011
+ward	52903001	Other	Male	0	2011
+ward	52701014	White	Female	0	2011
+ward	21206006	White	Female	0	2011
+ward	29300059	Indian or Asian	Male	0	2011
+ward	52606007	Other	Male	0	2011
+ward	83202024	White	Female	0	2011
+ward	93404016	White	Female	0	2011
+ward	34501014	Other	Female	0	2011
+ward	41903002	Other	Female	0	2011
+ward	52605013	Indian or Asian	Female	0	2011
+ward	24401004	Coloured	Female	0	2011
+ward	24402011	Coloured	Female	0	2011
+ward	93303028	Other	Male	0	2011
+ward	52702019	Other	Male	0	2011
+ward	41801006	Indian or Asian	Female	0	2011
+ward	24401024	Indian or Asian	Male	0	2011
+ward	41905006	Coloured	Female	0	2011
+ward	79700090	White	Female	0	2011
+ward	52704007	Other	Male	0	2011
+ward	41903008	White	Female	0	2011
+ward	21202022	White	Male	0	2011
+ward	21505003	White	Female	0	2011
+ward	52502019	White	Female	0	2011
+ward	21004009	Indian or Asian	Female	0	2011
+municipality	KZN273	Other	Female	0	2011
+ward	41902005	Other	Female	0	2011
+ward	52901005	White	Male	0	2011
+ward	52306012	White	Male	0	2011
+ward	10405001	Indian or Asian	Female	0	2011
+ward	74201037	Indian or Asian	Female	0	2011
+ward	93304017	Other	Male	0	2011
+ward	52105005	Indian or Asian	Female	0	2011
+ward	29300043	Other	Female	0	2011
+ward	63803031	Indian or Asian	Female	0	2011
+ward	83105025	Coloured	Male	0	2011
+ward	93504012	Indian or Asian	Male	0	2011
+ward	41901017	Other	Female	0	2011
+ward	42004013	White	Male	0	2011
+ward	94702002	Coloured	Male	0	2011
+ward	30901016	Indian or Asian	Female	0	2011
+ward	59500073	White	Male	0	2011
+ward	52404007	Coloured	Female	0	2011
+ward	74801013	Indian or Asian	Female	0	2011
+ward	52207006	Other	Female	0	2011
+ward	21201022	White	Female	0	2011
+ward	83001024	White	Female	0	2011
+ward	93606005	Indian or Asian	Female	0	2011
+ward	63701016	Coloured	Male	0	2011
+ward	52803004	Coloured	Male	0	2011
+ward	64003026	White	Female	0	2011
+ward	83103018	Other	Female	0	2011
+ward	52606024	White	Male	0	2011
+ward	21504015	Other	Female	0	2011
+ward	41601006	Other	Female	0	2011
+ward	52903014	Other	Male	0	2011
+ward	21305020	White	Male	0	2011
+ward	59500076	White	Female	0	2011
+ward	21506016	Coloured	Male	0	2011
+ward	52802017	White	Male	0	2011
+ward	41901014	White	Female	0	2011
+ward	52902010	Indian or Asian	Female	0	2011
+ward	21506009	Coloured	Female	0	2011
+ward	52504004	Indian or Asian	Male	0	2011
+ward	21401014	Indian or Asian	Female	0	2011
+ward	52405006	Other	Male	0	2011
+ward	83105018	Coloured	Male	0	2011
+ward	21201005	White	Male	0	2011
+ward	94705025	Indian or Asian	Female	0	2011
+ward	21202007	Other	Male	0	2011
+ward	21402003	Coloured	Male	0	2011
+ward	21307005	Indian or Asian	Male	0	2011
+ward	21201031	Coloured	Male	0	2011
+ward	21401017	Other	Female	0	2011
+ward	83005001	Coloured	Female	0	2011
+ward	83001002	Indian or Asian	Female	0	2011
+ward	83003018	Coloured	Female	0	2011
+ward	30702003	Indian or Asian	Female	0	2011
+ward	52602002	Coloured	Male	0	2011
+ward	94701010	Indian or Asian	Male	0	2011
+ward	93501015	Other	Female	0	2011
+ward	83205030	Other	Male	0	2011
+ward	93504009	White	Female	0	2011
+ward	52605014	Coloured	Female	0	2011
+ward	93607003	White	Female	0	2011
+ward	83102019	Indian or Asian	Female	0	2011
+ward	52903019	White	Female	0	2011
+ward	52702003	Coloured	Male	0	2011
+ward	52806008	Coloured	Male	0	2011
+ward	79800012	Other	Male	0	2011
+ward	83003012	Other	Female	0	2011
+ward	52901007	Indian or Asian	Female	0	2011
+ward	94703015	Coloured	Male	0	2011
+ward	83202013	Indian or Asian	Female	0	2011
+ward	52101008	Coloured	Female	0	2011
+ward	52205009	White	Female	0	2011
+ward	52903004	Coloured	Male	0	2011
+ward	63805003	Coloured	Male	0	2011
+ward	83106022	Indian or Asian	Male	0	2011
+ward	41901003	Other	Male	0	2011
+ward	52603019	Coloured	Female	0	2011
+ward	21204018	Other	Female	0	2011
+ward	52603005	Other	Male	0	2011
+ward	21202020	Coloured	Male	0	2011
+ward	94705011	White	Male	0	2011
+ward	52601002	Other	Male	0	2011
+ward	52404015	Other	Female	0	2011
+ward	93403006	Coloured	Male	0	2011
+ward	79900011	Indian or Asian	Female	0	2011
+ward	93302028	Indian or Asian	Female	0	2011
+ward	93403018	Coloured	Female	0	2011
+ward	93403002	White	Male	0	2011
+ward	21007002	Indian or Asian	Female	0	2011
+ward	63703019	Indian or Asian	Female	0	2011
+ward	41804015	Other	Female	0	2011
+ward	94702028	Coloured	Female	0	2011
+ward	21504019	Other	Female	0	2011
+ward	93607014	White	Female	0	2011
+ward	29200042	White	Male	0	2011
+ward	24404015	Other	Female	0	2011
+ward	93302002	Other	Male	0	2011
+ward	24403013	Other	Male	0	2011
+ward	63802009	Indian or Asian	Female	0	2011
+ward	21402005	Indian or Asian	Female	0	2011
+ward	42005009	White	Female	0	2011
+ward	83005011	Indian or Asian	Male	0	2011
+ward	83205022	Other	Male	0	2011
+ward	83102019	Other	Female	0	2011
+ward	21204020	White	Female	0	2011
+ward	24402025	White	Male	0	2011
+ward	52304005	Coloured	Female	0	2011
+ward	52304001	Other	Male	0	2011
+ward	24403011	Coloured	Female	0	2011
+ward	52901007	Other	Female	0	2011
+ward	30901010	Indian or Asian	Male	0	2011
+ward	83106022	Other	Male	0	2011
+ward	74203002	White	Female	0	2011
+ward	10402008	White	Female	0	2011
+ward	94703026	Indian or Asian	Male	0	2011
+ward	54305006	Indian or Asian	Male	0	2011
+ward	41905003	Other	Female	0	2011
+ward	94705008	Indian or Asian	Female	0	2011
+ward	52205005	Coloured	Male	0	2011
+ward	52806014	Coloured	Female	0	2011
+ward	21204018	Indian or Asian	Female	0	2011
+ward	24404004	Coloured	Female	0	2011
+ward	52606006	Other	Male	0	2011
+ward	10205010	White	Female	0	2011
+ward	10205005	Indian or Asian	Female	0	2011
+ward	52305008	Indian or Asian	Male	0	2011
+ward	83106027	White	Female	0	2011
+ward	52405008	Other	Male	0	2011
+ward	83202031	Indian or Asian	Female	0	2011
+ward	52303008	Other	Male	0	2011
+ward	41804015	Indian or Asian	Female	0	2011
+ward	21505006	Coloured	Male	0	2011
+ward	24403031	Coloured	Male	0	2011
+ward	21304007	White	Female	0	2011
+ward	93302028	Other	Female	0	2011
+ward	21304005	White	Male	0	2011
+ward	54301005	Indian or Asian	Male	0	2011
+ward	34501007	Coloured	Male	0	2011
+ward	52701006	White	Female	0	2011
+ward	21305016	White	Male	0	2011
+ward	93302002	Indian or Asian	Male	0	2011
+ward	24404015	Indian or Asian	Female	0	2011
+ward	21204010	Coloured	Male	0	2011
+ward	21506017	Coloured	Male	0	2011
+ward	21402005	Other	Female	0	2011
+ward	93302026	Coloured	Female	0	2011
+ward	52404003	Coloured	Male	0	2011
+ward	29200040	White	Female	0	2011
+ward	63802009	Other	Female	0	2011
+ward	24403013	Indian or Asian	Male	0	2011
+ward	52106029	White	Female	0	2011
+ward	34502005	White	Male	0	2011
+ward	52702007	Coloured	Male	0	2011
+ward	63803019	Other	Male	0	2011
+ward	63702012	Other	Male	0	2011
+ward	74801013	Other	Female	0	2011
+ward	63803013	White	Female	0	2011
+ward	30607002	White	Female	0	2011
+ward	83205002	Coloured	Male	0	2011
+ward	30901016	Other	Female	0	2011
+ward	83205028	White	Female	0	2011
+ward	10301009	Other	Female	0	2011
+ward	93606005	Other	Female	0	2011
+ward	93501003	White	Female	0	2011
+ward	83105009	White	Male	0	2011
+ward	52903012	White	Male	0	2011
+ward	21507026	Coloured	Female	0	2011
+ward	52303010	Indian or Asian	Female	0	2011
+ward	83103018	Indian or Asian	Female	0	2011
+ward	52404008	Coloured	Female	0	2011
+ward	64001002	Indian or Asian	Female	0	2011
+ward	41601006	Indian or Asian	Female	0	2011
+ward	52806012	White	Male	0	2011
+ward	52405006	Indian or Asian	Male	0	2011
+ward	94703019	White	Female	0	2011
+ward	52902010	Other	Female	0	2011
+ward	21304022	Other	Female	0	2011
+ward	52102002	White	Female	0	2011
+ward	52804002	White	Male	0	2011
+ward	63705020	Coloured	Male	0	2011
+ward	52606010	White	Female	0	2011
+ward	29200030	Coloured	Male	0	2011
+ward	83106014	White	Male	0	2011
+ward	21307005	Other	Male	0	2011
+ward	21401017	Indian or Asian	Female	0	2011
+ward	94705025	Other	Female	0	2011
+ward	74201031	Indian or Asian	Male	0	2011
+ward	93404017	Coloured	Female	0	2011
+ward	52702013	White	Male	0	2011
+ward	93501015	Indian or Asian	Female	0	2011
+ward	21402007	White	Female	0	2011
+ward	30702003	Other	Female	0	2011
+ward	52504007	Coloured	Female	0	2011
+ward	52502006	Coloured	Male	0	2011
+ward	21402013	White	Male	0	2011
+ward	52705001	White	Female	0	2011
+ward	63904019	Indian or Asian	Female	0	2011
+ward	52603010	Coloured	Female	0	2011
+ward	24402009	White	Male	0	2011
+ward	94705006	Indian or Asian	Male	0	2011
+ward	94701002	White	Male	0	2011
+ward	52405001	Coloured	Female	0	2011
+ward	64002017	Other	Female	0	2011
+ward	64003020	White	Male	0	2011
+ward	41601004	White	Female	0	2011
+ward	24403010	Coloured	Male	0	2011
+ward	52103010	White	Female	0	2011
+ward	21402001	Other	Male	0	2011
+ward	21402012	Other	Male	0	2011
+ward	83001022	Other	Female	0	2011
+ward	21401006	White	Male	0	2011
+ward	83103023	White	Male	0	2011
+ward	63805018	White	Female	0	2011
+ward	41901018	Indian or Asian	Male	0	2011
+ward	52205011	Indian or Asian	Female	0	2011
+ward	74804005	Indian or Asian	Male	0	2011
+ward	52201003	Coloured	Female	0	2011
+ward	10501004	Other	Male	0	2011
+ward	63702003	Coloured	Male	0	2011
+ward	79900095	Indian or Asian	Female	0	2011
+ward	21304004	Coloured	Female	0	2011
+ward	52302022	Other	Female	0	2011
+ward	93301020	White	Male	0	2011
+ward	52602003	Indian or Asian	Female	0	2011
+ward	21005006	Indian or Asian	Female	0	2011
+ward	63801003	White	Male	0	2011
+ward	21507021	Other	Male	0	2011
+ward	52404011	Coloured	Female	0	2011
+ward	93501007	White	Male	0	2011
+ward	52804008	Other	Male	0	2011
+ward	83103024	White	Male	0	2011
+ward	94704003	White	Male	0	2011
+ward	64003021	Other	Male	0	2011
+ward	93301019	Indian or Asian	Male	0	2011
+ward	52804025	White	Male	0	2011
+ward	10204006	Indian or Asian	Female	0	2011
+ward	52806011	Indian or Asian	Female	0	2011
+ward	41901008	White	Female	0	2011
+ward	41905001	Indian or Asian	Female	0	2011
+ward	21504007	Indian or Asian	Male	0	2011
+ward	63801005	White	Female	0	2011
+ward	21507017	Other	Female	0	2011
+ward	63703034	Indian or Asian	Male	0	2011
+ward	63702019	White	Female	0	2011
+ward	63703027	Other	Female	0	2011
+ward	52902008	Indian or Asian	Male	0	2011
+ward	52903009	Coloured	Female	0	2011
+ward	21506024	Indian or Asian	Male	0	2011
+ward	21503023	Other	Male	0	2011
+ward	74803012	White	Female	0	2011
+ward	10403013	Other	Female	0	2011
+ward	30901013	White	Female	0	2011
+ward	83102010	Indian or Asian	Female	0	2011
+ward	21507016	White	Female	0	2011
+ward	83106013	Coloured	Female	0	2011
+ward	93404037	Other	Female	0	2011
+ward	93505012	White	Female	0	2011
+ward	24404012	Indian or Asian	Male	0	2011
+ward	29300021	Indian or Asian	Female	0	2011
+ward	93501012	Coloured	Male	0	2011
+ward	21204016	Coloured	Male	0	2011
+ward	83106003	Indian or Asian	Male	0	2011
+ward	30904008	Indian or Asian	Female	0	2011
+ward	63705012	Coloured	Female	0	2011
+ward	83001012	Other	Female	0	2011
+ward	21505022	White	Male	0	2011
+ward	93303004	White	Female	0	2011
+ward	93404038	White	Male	0	2011
+ward	21504011	White	Male	0	2011
+ward	74201019	Indian or Asian	Female	0	2011
+ward	93501016	White	Female	0	2011
+ward	21308007	White	Female	0	2011
+ward	63904010	Coloured	Female	0	2011
+ward	21202023	White	Male	0	2011
+ward	49400034	White	Female	0	2011
+ward	24401007	Other	Female	0	2011
+ward	24401023	White	Female	0	2011
+ward	52605003	Other	Female	0	2011
+ward	41905001	Other	Female	0	2011
+ward	21504007	Other	Male	0	2011
+ward	24403014	White	Male	0	2011
+ward	52804005	Other	Female	0	2011
+ward	94702017	White	Male	0	2011
+ward	83204002	White	Female	0	2011
+ward	29200005	Other	Female	0	2011
+ward	21506024	Other	Male	0	2011
+ward	21302001	White	Male	0	2011
+ward	74203013	Other	Female	0	2011
+ward	83001003	Coloured	Male	0	2011
+ward	10401003	Indian or Asian	Male	0	2011
+ward	24404012	Other	Male	0	2011
+ward	93605002	Coloured	Female	0	2011
+ward	93404037	Indian or Asian	Female	0	2011
+ward	83102010	Other	Female	0	2011
+ward	63701001	White	Male	0	2011
+ward	52404013	White	Female	0	2011
+ward	52404001	White	Female	0	2011
+ward	24404002	White	Male	0	2011
+ward	10403008	Indian or Asian	Female	0	2011
+ward	83106003	Other	Male	0	2011
+ward	93607027	Indian or Asian	Male	0	2011
+ward	94705022	Indian or Asian	Male	0	2011
+ward	24402004	Other	Female	0	2011
+ward	21401015	Indian or Asian	Female	0	2011
+ward	52103002	White	Male	0	2011
+ward	93505028	Coloured	Female	0	2011
+ward	52606017	Coloured	Female	0	2011
+ward	93504033	Coloured	Female	0	2011
+ward	29300055	White	Male	0	2011
+ward	10203007	White	Female	0	2011
+ward	21506025	Coloured	Female	0	2011
+ward	21401011	Indian or Asian	Male	0	2011
+ward	74804001	Indian or Asian	Male	0	2011
+ward	93504003	White	Male	0	2011
+ward	83001004	Other	Male	0	2011
+ward	94705006	Other	Male	0	2011
+ward	94703004	Other	Female	0	2011
+ward	21302004	Indian or Asian	Male	0	2011
+ward	63904019	Other	Female	0	2011
+ward	79700086	White	Female	0	2011
+ward	21402012	Indian or Asian	Male	0	2011
+ward	10203013	White	Male	0	2011
+ward	49400007	White	Male	0	2011
+ward	63804017	White	Female	0	2011
+ward	94703009	Indian or Asian	Female	0	2011
+ward	64002017	Indian or Asian	Female	0	2011
+ward	93305008	White	Female	0	2011
+ward	52305007	Other	Male	0	2011
+ward	83105016	White	Female	0	2011
+ward	93403040	Other	Female	0	2011
+ward	83204033	White	Male	0	2011
+ward	94703023	Coloured	Female	0	2011
+ward	21306017	White	Female	0	2011
+ward	83001022	Indian or Asian	Female	0	2011
+ward	49400042	White	Female	0	2011
+ward	10501004	Indian or Asian	Male	0	2011
+ward	21401005	Indian or Asian	Female	0	2011
+ward	21402006	White	Female	0	2011
+ward	21404004	Other	Female	0	2011
+ward	41901018	Other	Male	0	2011
+ward	52205011	Other	Female	0	2011
+ward	74804005	Other	Male	0	2011
+ward	94702008	White	Male	0	2011
+ward	41901005	Other	Male	0	2011
+ward	49400030	White	Male	0	2011
+ward	63701008	White	Female	0	2011
+ward	52606015	Other	Male	0	2011
+ward	52902014	White	Male	0	2011
+ward	21202025	Other	Female	0	2011
+ward	21306001	White	Male	0	2011
+ward	21005006	Other	Female	0	2011
+ward	52201008	Other	Male	0	2011
+ward	24403005	White	Male	0	2011
+ward	79700066	Other	Female	0	2011
+ward	21307019	Other	Female	0	2011
+ward	93602009	Coloured	Female	0	2011
+ward	52804008	Indian or Asian	Male	0	2011
+ward	54305020	Other	Female	0	2011
+ward	29200050	White	Male	0	2011
+ward	93401005	Coloured	Male	0	2011
+ward	52806011	Other	Female	0	2011
+ward	21504003	Other	Female	0	2011
+ward	52106021	White	Female	0	2011
+ward	21305017	White	Male	0	2011
+ward	93301019	Other	Male	0	2011
+ward	93403025	Coloured	Female	0	2011
+ward	52701003	Other	Female	0	2011
+ward	21503002	Indian or Asian	Female	0	2011
+ward	93302025	White	Male	0	2011
+ward	34502010	White	Female	0	2011
+ward	83205027	Coloured	Female	0	2011
+ward	21202011	Other	Female	0	2011
+ward	21503008	Indian or Asian	Female	0	2011
+ward	63705029	Coloured	Male	0	2011
+ward	21202010	Coloured	Female	0	2011
+ward	93404010	Coloured	Male	0	2011
+ward	24401016	White	Female	0	2011
+ward	83001016	Other	Female	0	2011
+ward	52801013	Other	Male	0	2011
+ward	24402027	White	Male	0	2011
+ward	79900016	White	Male	0	2011
+ward	21202016	Coloured	Female	0	2011
+ward	93301024	White	Male	0	2011
+ward	83105021	Indian or Asian	Female	0	2011
+ward	21402011	Coloured	Male	0	2011
+ward	83205017	White	Male	0	2011
+ward	34501011	White	Male	0	2011
+ward	29300038	White	Female	0	2011
+ward	93402011	Other	Female	0	2011
+ward	21307016	White	Female	0	2011
+ward	83101004	White	Male	0	2011
+ward	63902001	Indian or Asian	Female	0	2011
+ward	52801005	Other	Female	0	2011
+ward	52803006	White	Male	0	2011
+ward	52705011	Coloured	Male	0	2011
+ward	83104001	Other	Male	0	2011
+ward	21204013	Other	Female	0	2011
+ward	52605007	Indian or Asian	Male	0	2011
+ward	21201021	Indian or Asian	Female	0	2011
+ward	21306003	Coloured	Male	0	2011
+ward	24404003	Coloured	Female	0	2011
+ward	83204016	Other	Female	0	2011
+ward	83205010	White	Male	0	2011
+ward	64003028	Other	Female	0	2011
+ward	52402015	Other	Female	0	2011
+ward	52705016	Other	Female	0	2011
+ward	83103020	White	Female	0	2011
+ward	24403015	White	Male	0	2011
+ward	21506007	Other	Male	0	2011
+ward	30806001	Other	Female	0	2011
+ward	52605005	Coloured	Female	0	2011
+ward	52606011	White	Male	0	2011
+ward	93404027	Coloured	Male	0	2011
+ward	52606003	White	Female	0	2011
+ward	42005006	Other	Female	0	2011
+ward	83005013	Indian or Asian	Female	0	2011
+ward	52205012	Indian or Asian	Male	0	2011
+ward	74203011	Other	Female	0	2011
+ward	52701011	Coloured	Male	0	2011
+ward	21307013	White	Male	0	2011
+ward	52404002	Other	Female	0	2011
+ward	93301018	Other	Male	0	2011
+ward	21206003	Coloured	Male	0	2011
+ward	21402004	Indian or Asian	Male	0	2011
+ward	93404001	Indian or Asian	Female	0	2011
+ward	24402015	Indian or Asian	Female	0	2011
+ward	10302003	Other	Male	0	2011
+ward	94701001	White	Male	0	2011
+ward	21207003	White	Male	0	2011
+ward	52304002	Indian or Asian	Female	0	2011
+ward	93403032	Coloured	Female	0	2011
+ward	42003017	White	Female	0	2011
+ward	74203012	Other	Female	0	2011
+ward	63904026	Coloured	Male	0	2011
+ward	63701007	White	Male	0	2011
+ward	52405003	White	Male	0	2011
+ward	52104010	Indian or Asian	Female	0	2011
+ward	42003013	Indian or Asian	Female	0	2011
+ward	24402006	Coloured	Male	0	2011
+ward	29200014	Coloured	Male	0	2011
+ward	83005007	White	Female	0	2011
+ward	21301002	Indian or Asian	Female	0	2011
+ward	79700030	Indian or Asian	Male	0	2011
+ward	93403031	Coloured	Female	0	2011
+ward	63801006	Other	Female	0	2011
+ward	29200008	Indian or Asian	Female	0	2011
+ward	21202017	Coloured	Female	0	2011
+ward	10205009	White	Male	0	2011
+ward	24403030	Other	Male	0	2011
+ward	21304014	Indian or Asian	Female	0	2011
+ward	24403029	Indian or Asian	Male	0	2011
+ward	52903005	Coloured	Female	0	2011
+ward	93604005	Other	Female	0	2011
+ward	21507027	Other	Female	0	2011
+ward	74804004	White	Male	0	2011
+ward	93303017	Coloured	Female	0	2011
+ward	52205008	Other	Male	0	2011
+ward	74804009	White	Male	0	2011
+ward	41902002	White	Male	0	2011
+ward	21307001	Coloured	Female	0	2011
+ward	30901011	Other	Male	0	2011
+ward	42005006	Indian or Asian	Female	0	2011
+ward	30901019	White	Female	0	2011
+ward	63904023	White	Female	0	2011
+ward	21306004	White	Male	0	2011
+ward	54301008	Coloured	Female	0	2011
+ward	21506007	Indian or Asian	Male	0	2011
+ward	52207004	Indian or Asian	Female	0	2011
+ward	21204001	White	Female	0	2011
+ward	10203003	Indian or Asian	Male	0	2011
+ward	52801001	Coloured	Male	0	2011
+ward	74203011	Indian or Asian	Female	0	2011
+ward	74802021	White	Female	0	2011
+ward	52304008	Other	Male	0	2011
+ward	34502009	White	Male	0	2011
+ward	52705010	Other	Female	0	2011
+ward	93402004	Coloured	Male	0	2011
+ward	93504016	White	Female	0	2011
+ward	21207019	White	Male	0	2011
+ward	52701007	White	Male	0	2011
+ward	21304009	White	Male	0	2011
+ward	52702015	White	Female	0	2011
+ward	93404001	Other	Female	0	2011
+ward	24402014	White	Female	0	2011
+ward	52404002	Indian or Asian	Female	0	2011
+ward	93301018	Indian or Asian	Male	0	2011
+ward	52804013	Indian or Asian	Male	0	2011
+ward	93303011	Coloured	Female	0	2011
+ward	52106007	White	Female	0	2011
+ward	52502007	Other	Male	0	2011
+ward	21201027	White	Male	0	2011
+ward	52404012	White	Male	0	2011
+ward	52306002	Coloured	Male	0	2011
+ward	74803003	White	Male	0	2011
+ward	24403008	White	Female	0	2011
+ward	24401018	Indian or Asian	Female	0	2011
+ward	29200008	Other	Female	0	2011
+ward	63803011	Indian or Asian	Female	0	2011
+ward	83202032	Indian or Asian	Female	0	2011
+ward	93404013	Indian or Asian	Male	0	2011
+ward	94705017	Other	Male	0	2011
+ward	93604005	Indian or Asian	Female	0	2011
+ward	21507027	Indian or Asian	Female	0	2011
+ward	94702007	Indian or Asian	Female	0	2011
+ward	42001015	White	Female	0	2011
+ward	24403029	Other	Male	0	2011
+ward	74802022	Indian or Asian	Male	0	2011
+ward	24403017	Coloured	Male	0	2011
+ward	93504034	Coloured	Female	0	2011
+ward	93404035	Coloured	Male	0	2011
+ward	93501013	Coloured	Female	0	2011
+ward	83205024	White	Female	0	2011
+ward	93501020	Coloured	Female	0	2011
+ward	21503002	Other	Female	0	2011
+ward	83205004	White	Female	0	2011
+ward	21202011	Indian or Asian	Female	0	2011
+ward	21503008	Other	Female	0	2011
+ward	21201023	Other	Female	0	2011
+ward	94703014	White	Female	0	2011
+ward	74203006	Indian or Asian	Male	0	2011
+ward	83001016	Indian or Asian	Female	0	2011
+ward	93305006	Indian or Asian	Male	0	2011
+ward	63701005	Coloured	Male	0	2011
+ward	94705020	White	Male	0	2011
+ward	52305006	White	Female	0	2011
+ward	93504030	Other	Female	0	2011
+ward	52704006	White	Female	0	2011
+ward	79800024	Indian or Asian	Female	0	2011
+ward	93302013	White	Male	0	2011
+ward	83105021	Other	Female	0	2011
+ward	52402001	White	Male	0	2011
+ward	52902027	Other	Male	0	2011
+ward	93402011	Indian or Asian	Female	0	2011
+ward	83003009	Indian or Asian	Male	0	2011
+ward	74201024	Indian or Asian	Female	0	2011
+ward	93303032	Other	Male	0	2011
+ward	64003028	Indian or Asian	Female	0	2011
+ward	52205007	White	Male	0	2011
+ward	21203002	Other	Female	0	2011
+ward	21201021	Other	Female	0	2011
+ward	83104001	Indian or Asian	Male	0	2011
+ward	52605007	Other	Male	0	2011
+ward	21204013	Indian or Asian	Female	0	2011
+ward	63803027	Other	Female	0	2011
+ward	93301002	Indian or Asian	Female	0	2011
+ward	93301005	White	Female	0	2011
+ward	21206004	Other	Female	0	2011
+ward	63701023	Other	Female	0	2011
+ward	93404024	Indian or Asian	Female	0	2011
+ward	24402011	White	Female	0	2011
+ward	24401004	White	Female	0	2011
+ward	52603015	Indian or Asian	Female	0	2011
+ward	83105005	Indian or Asian	Male	0	2011
+ward	74803015	Other	Male	0	2011
+ward	63803001	White	Female	0	2011
+ward	42004008	Indian or Asian	Female	0	2011
+ward	24401001	Indian or Asian	Female	0	2011
+ward	93505026	Other	Female	0	2011
+ward	52306012	Coloured	Male	0	2011
+ward	83201013	Other	Female	0	2011
+ward	63705010	Indian or Asian	Female	0	2011
+ward	29200049	Coloured	Male	0	2011
+ward	94702030	Other	Female	0	2011
+ward	21507033	Other	Female	0	2011
+ward	52106022	Other	Female	0	2011
+ward	30605003	Other	Male	0	2011
+ward	21402010	Other	Male	0	2011
+ward	93403003	Indian or Asian	Female	0	2011
+ward	21206006	Coloured	Female	0	2011
+ward	21002005	Indian or Asian	Female	0	2011
+ward	93403017	White	Female	0	2011
+ward	83204028	Coloured	Female	0	2011
+ward	63805019	Other	Female	0	2011
+ward	93302010	Coloured	Female	0	2011
+ward	93601003	Indian or Asian	Female	0	2011
+ward	10205017	White	Male	0	2011
+ward	21503025	Coloured	Female	0	2011
+ward	41801008	White	Female	0	2011
+ward	52903007	White	Male	0	2011
+ward	41804010	Other	Male	0	2011
+ward	63907007	Indian or Asian	Female	0	2011
+ward	83106009	Other	Female	0	2011
+ward	41904025	Other	Male	0	2011
+ward	52103004	Coloured	Female	0	2011
+ward	79800027	Indian or Asian	Male	0	2011
+ward	93402007	White	Male	0	2011
+ward	94705009	Other	Male	0	2011
+ward	41904034	White	Male	0	2011
+ward	83201002	White	Male	0	2011
+ward	52302008	Other	Male	0	2011
+ward	21503001	Coloured	Female	0	2011
+ward	49400049	Other	Female	0	2011
+ward	93501008	Indian or Asian	Female	0	2011
+ward	21202015	Coloured	Male	0	2011
+ward	63802005	Indian or Asian	Female	0	2011
+ward	52804021	Indian or Asian	Male	0	2011
+ward	94701006	Indian or Asian	Male	0	2011
+ward	63805001	Coloured	Female	0	2011
+ward	83203001	Other	Male	0	2011
+ward	94704010	Other	Female	0	2011
+ward	30904001	White	Female	0	2011
+ward	63906007	Indian or Asian	Female	0	2011
+ward	24404013	Coloured	Female	0	2011
+ward	52402012	Coloured	Male	0	2011
+ward	52402016	White	Female	0	2011
+ward	21001005	White	Female	0	2011
+ward	30708004	White	Male	0	2011
+ward	64004001	Other	Female	0	2011
+ward	24404017	Coloured	Male	0	2011
+ward	52502031	White	Female	0	2011
+ward	52802013	Other	Male	0	2011
+ward	54305014	White	Male	0	2011
+ward	83205025	Other	Male	0	2011
+ward	94704005	White	Female	0	2011
+ward	54304007	White	Female	0	2011
+ward	93505023	Coloured	Female	0	2011
+ward	21404002	White	Female	0	2011
+ward	52302006	White	Female	0	2011
+ward	21005009	Indian or Asian	Female	0	2011
+ward	21307009	Coloured	Female	0	2011
+ward	83106009	Indian or Asian	Female	0	2011
+ward	21202013	White	Male	0	2011
+ward	21503004	White	Male	0	2011
+ward	41904012	Other	Female	0	2011
+ward	94705009	Indian or Asian	Male	0	2011
+ward	52804021	Other	Male	0	2011
+ward	52302013	White	Female	0	2011
+ward	93501008	Other	Female	0	2011
+ward	49400049	Indian or Asian	Female	0	2011
+ward	21204019	White	Male	0	2011
+ward	83007003	Indian or Asian	Female	0	2011
+ward	94704010	Indian or Asian	Female	0	2011
+ward	93505005	White	Female	0	2011
+ward	79800042	Indian or Asian	Male	0	2011
+ward	52205004	Coloured	Female	0	2011
+ward	94701006	Other	Male	0	2011
+ward	52802013	Indian or Asian	Male	0	2011
+ward	93302018	Coloured	Female	0	2011
+ward	64004001	Indian or Asian	Female	0	2011
+ward	63904004	White	Male	0	2011
+ward	94705005	White	Male	0	2011
+ward	63804009	White	Female	0	2011
+ward	54301010	Indian or Asian	Male	0	2011
+ward	52806007	White	Male	0	2011
+ward	29200010	White	Male	0	2011
+ward	94703022	White	Male	0	2011
+ward	93301002	Other	Female	0	2011
+ward	93404006	Coloured	Female	0	2011
+ward	21207005	Coloured	Female	0	2011
+ward	63701023	Indian or Asian	Female	0	2011
+ward	21206004	Indian or Asian	Female	0	2011
+ward	30803001	White	Male	0	2011
+ward	83106018	Other	Male	0	2011
+ward	42004008	Other	Female	0	2011
+ward	52302016	Indian or Asian	Female	0	2011
+ward	24401001	Other	Female	0	2011
+ward	30902005	White	Female	0	2011
+ward	83105005	Other	Male	0	2011
+ward	79900103	White	Male	0	2011
+ward	52602007	White	Female	0	2011
+ward	93602012	White	Male	0	2011
+ward	21204004	Indian or Asian	Male	0	2011
+ward	52702004	Coloured	Male	0	2011
+ward	52603015	Other	Female	0	2011
+ward	94703027	Indian or Asian	Male	0	2011
+ward	21506004	Coloured	Female	0	2011
+ward	79900021	Indian or Asian	Female	0	2011
+ward	83203007	Indian or Asian	Male	0	2011
+ward	52801009	Other	Female	0	2011
+ward	29300023	Indian or Asian	Female	0	2011
+ward	52801006	White	Male	0	2011
+ward	24404014	White	Female	0	2011
+ward	93504011	Coloured	Female	0	2011
+ward	93505026	Indian or Asian	Female	0	2011
+ward	21506020	Other	Female	0	2011
+ward	10203016	White	Male	0	2011
+ward	93505019	White	Male	0	2011
+ward	83007027	Other	Male	0	2011
+ward	83201013	Indian or Asian	Female	0	2011
+ward	52306011	White	Male	0	2011
+ward	30707001	White	Male	0	2011
+ward	83106007	White	Female	0	2011
+ward	52402014	White	Male	0	2011
+ward	21506013	White	Female	0	2011
+ward	83103001	White	Male	0	2011
+ward	52206001	Other	Male	0	2011
+ward	93302017	White	Female	0	2011
+ward	52502013	Coloured	Male	0	2011
+ward	79900029	Indian or Asian	Female	0	2011
+ward	10203009	White	Male	0	2011
+ward	52306013	Other	Female	0	2011
+ward	63904006	White	Male	0	2011
+ward	41805007	White	Female	0	2011
+ward	29300036	Other	Female	0	2011
+ward	93403003	Other	Female	0	2011
+ward	54305009	White	Male	0	2011
+ward	21201006	White	Male	0	2011
+ward	83106014	Coloured	Male	0	2011
+ward	29200030	White	Male	0	2011
+ward	52903003	Coloured	Female	0	2011
+ward	63705020	White	Male	0	2011
+ward	52102002	Coloured	Female	0	2011
+ward	93505003	Other	Male	0	2011
+ward	94703019	Coloured	Female	0	2011
+ward	64003014	White	Male	0	2011
+ward	21204012	Indian or Asian	Male	0	2011
+ward	10203024	White	Male	0	2011
+ward	52705001	Coloured	Female	0	2011
+ward	30605004	Indian or Asian	Male	0	2011
+ward	41604004	White	Female	0	2011
+ward	94705012	Other	Female	0	2011
+ward	10502002	Indian or Asian	Male	0	2011
+ward	94701003	Coloured	Male	0	2011
+ward	52504007	White	Female	0	2011
+ward	83106010	Indian or Asian	Female	0	2011
+ward	21202019	Indian or Asian	Female	0	2011
+ward	21402007	Coloured	Female	0	2011
+ward	52702013	Coloured	Male	0	2011
+ward	93404017	White	Female	0	2011
+ward	52103013	Coloured	Female	0	2011
+ward	10502004	Other	Female	0	2011
+ward	52502023	White	Female	0	2011
+ward	83103004	Indian or Asian	Female	0	2011
+ward	21303004	Coloured	Male	0	2011
+ward	30706001	Other	Female	0	2011
+ward	30704002	Indian or Asian	Female	0	2011
+ward	21507026	White	Female	0	2011
+ward	93403027	Other	Male	0	2011
+ward	63804007	White	Female	0	2011
+ward	83202002	Indian or Asian	Female	0	2011
+ward	93501003	Coloured	Female	0	2011
+ward	93305012	Other	Female	0	2011
+ward	52904008	Other	Male	0	2011
+ward	93503002	White	Male	0	2011
+ward	93607024	White	Female	0	2011
+ward	83205028	Coloured	Female	0	2011
+ward	52402008	Indian or Asian	Male	0	2011
+ward	83205002	White	Male	0	2011
+ward	21308009	Other	Female	0	2011
+ward	34502005	Coloured	Male	0	2011
+ward	79700050	Indian or Asian	Female	0	2011
+ward	24404011	White	Female	0	2011
+ward	21206009	Other	Female	0	2011
+ward	21202024	Other	Female	0	2011
+ward	93303007	Other	Female	0	2011
+ward	52404008	White	Female	0	2011
+ward	41801010	Indian or Asian	Female	0	2011
+ward	34501007	White	Male	0	2011
+ward	21304016	Coloured	Male	0	2011
+ward	21202003	White	Female	0	2011
+ward	94703001	Other	Female	0	2011
+ward	21206013	Other	Female	0	2011
+ward	21304007	Coloured	Female	0	2011
+ward	21505006	White	Male	0	2011
+ward	24403031	White	Male	0	2011
+ward	52103014	Coloured	Male	0	2011
+ward	83202011	White	Male	0	2011
+ward	79700069	White	Female	0	2011
+ward	83106027	Coloured	Female	0	2011
+ward	52205006	Indian or Asian	Female	0	2011
+ward	30705003	Other	Female	0	2011
+ward	94702027	Indian or Asian	Female	0	2011
+ward	52404003	White	Male	0	2011
+ward	21306012	Indian or Asian	Female	0	2011
+ward	34502007	White	Male	0	2011
+ward	52205023	Indian or Asian	Male	0	2011
+ward	93302026	White	Female	0	2011
+ward	93501019	Coloured	Female	0	2011
+ward	52805005	Coloured	Male	0	2011
+ward	63702031	White	Female	0	2011
+ward	21204010	White	Male	0	2011
+ward	52504009	White	Female	0	2011
+ward	83204014	Other	Female	0	2011
+ward	52605004	Coloured	Male	0	2011
+ward	21008013	Other	Female	0	2011
+ward	93403016	Indian or Asian	Female	0	2011
+ward	24403011	White	Female	0	2011
+ward	21304011	White	Female	0	2011
+ward	41901011	White	Male	0	2011
+ward	21507018	White	Male	0	2011
+ward	30903003	White	Female	0	2011
+ward	41804021	White	Male	0	2011
+ward	63701014	Other	Male	0	2011
+ward	21204009	Indian or Asian	Male	0	2011
+ward	24404004	White	Female	0	2011
+ward	83105001	Other	Male	0	2011
+ward	83001008	Other	Male	0	2011
+ward	52205005	White	Male	0	2011
+ward	21201008	Other	Female	0	2011
+ward	21206013	Indian or Asian	Female	0	2011
+ward	93403002	Coloured	Male	0	2011
+ward	41901001	Other	Female	0	2011
+ward	93403018	White	Female	0	2011
+ward	41902015	Other	Female	0	2011
+ward	93403006	White	Male	0	2011
+ward	52205006	Other	Female	0	2011
+ward	93302006	Indian or Asian	Male	0	2011
+ward	94705011	Coloured	Male	0	2011
+ward	21507010	White	Male	0	2011
+ward	94702027	Other	Female	0	2011
+ward	21306012	Other	Female	0	2011
+ward	63904013	Other	Female	0	2011
+ward	30705003	Indian or Asian	Female	0	2011
+ward	21505015	Other	Female	0	2011
+ward	10203014	White	Female	0	2011
+ward	29200042	Coloured	Male	0	2011
+ward	21001006	White	Male	0	2011
+ward	63802015	Indian or Asian	Male	0	2011
+ward	93607014	Coloured	Female	0	2011
+ward	83205006	White	Female	0	2011
+ward	94703015	White	Male	0	2011
+ward	93402010	Indian or Asian	Male	0	2011
+ward	93403016	Other	Female	0	2011
+ward	21008013	Indian or Asian	Female	0	2011
+ward	52702003	White	Male	0	2011
+ward	52806008	White	Male	0	2011
+ward	52903019	Coloured	Female	0	2011
+ward	93607003	Coloured	Female	0	2011
+ward	94703031	Other	Male	0	2011
+municipality	LIM474	Coloured	Male	0	2011
+ward	52605014	White	Female	0	2011
+ward	21202020	White	Male	0	2011
+ward	52603019	White	Female	0	2011
+ward	52302027	Other	Female	0	2011
+ward	63805003	White	Male	0	2011
+ward	54305007	White	Female	0	2011
+ward	83103022	Indian or Asian	Male	0	2011
+ward	83001008	Indian or Asian	Male	0	2011
+ward	52101008	White	Female	0	2011
+ward	94702021	Indian or Asian	Male	0	2011
+ward	83003019	Other	Female	0	2011
+ward	83105018	White	Male	0	2011
+ward	63705015	Other	Male	0	2011
+ward	21506016	White	Male	0	2011
+ward	21202019	Other	Female	0	2011
+ward	21505023	Other	Female	0	2011
+ward	52602002	White	Male	0	2011
+ward	93404011	White	Female	0	2011
+ward	21204012	Other	Male	0	2011
+ward	83005001	White	Female	0	2011
+ward	83103004	Other	Female	0	2011
+ward	21201031	White	Male	0	2011
+ward	21402003	White	Male	0	2011
+ward	21304010	Indian or Asian	Male	0	2011
+ward	54301003	White	Female	0	2011
+ward	10502004	Indian or Asian	Female	0	2011
+ward	52904008	Indian or Asian	Male	0	2011
+ward	52402008	Other	Male	0	2011
+ward	83202002	Other	Female	0	2011
+ward	63701016	White	Male	0	2011
+ward	21504002	White	Male	0	2011
+ward	93502013	Indian or Asian	Female	0	2011
+ward	21201022	Coloured	Female	0	2011
+ward	63907005	White	Female	0	2011
+ward	93403027	Indian or Asian	Male	0	2011
+ward	30706001	Indian or Asian	Female	0	2011
+ward	30704002	Other	Female	0	2011
+ward	52805004	Other	Female	0	2011
+ward	83105010	Other	Male	0	2011
+ward	52404007	White	Female	0	2011
+ward	94702002	White	Male	0	2011
+ward	21305020	Coloured	Male	0	2011
+ward	54302003	Other	Male	0	2011
+ward	52302009	White	Male	0	2011
+ward	21308001	Other	Female	0	2011
+ward	41801010	Other	Female	0	2011
+ward	83103026	Coloured	Male	0	2011
+ward	93303007	Indian or Asian	Female	0	2011
+ward	21401016	Coloured	Male	0	2011
+ward	21506008	Indian or Asian	Female	0	2011
+ward	83006002	Indian or Asian	Male	0	2011
+ward	41904014	Other	Female	0	2011
+ward	21306001	Coloured	Male	0	2011
+ward	93505027	Indian or Asian	Male	0	2011
+ward	54303008	White	Male	0	2011
+ward	63701008	Coloured	Female	0	2011
+ward	41801009	Indian or Asian	Female	0	2011
+ward	94702008	Coloured	Male	0	2011
+ward	34501010	Indian or Asian	Female	0	2011
+ward	64002026	Indian or Asian	Female	0	2011
+ward	63701022	Coloured	Male	0	2011
+ward	54301001	Other	Male	0	2011
+ward	24401010	Indian or Asian	Male	0	2011
+ward	52302002	White	Male	0	2011
+ward	93403035	Coloured	Male	0	2011
+ward	83202005	Indian or Asian	Female	0	2011
+ward	83203004	Indian or Asian	Female	0	2011
+ward	63705004	Other	Female	0	2011
+ward	21506002	Indian or Asian	Male	0	2011
+ward	93401005	White	Male	0	2011
+ward	63801001	Other	Female	0	2011
+ward	52102008	Other	Male	0	2011
+ward	94703028	White	Female	0	2011
+ward	34501006	White	Male	0	2011
+ward	52802021	White	Male	0	2011
+ward	24403005	Coloured	Male	0	2011
+ward	63904015	White	Female	0	2011
+ward	63804017	Coloured	Female	0	2011
+ward	63705006	Coloured	Female	0	2011
+ward	21305003	White	Male	0	2011
+ward	21506021	Indian or Asian	Female	0	2011
+ward	52206007	Indian or Asian	Male	0	2011
+ward	94705023	Indian or Asian	Male	0	2011
+ward	52206006	Coloured	Female	0	2011
+ward	10407006	White	Female	0	2011
+ward	21402006	Coloured	Female	0	2011
+ward	83001020	Indian or Asian	Female	0	2011
+ward	24403020	Other	Female	0	2011
+ward	21306017	Coloured	Female	0	2011
+ward	21304001	Indian or Asian	Female	0	2011
+ward	42001008	Indian or Asian	Male	0	2011
+ward	64003013	Other	Female	0	2011
+ward	10302013	Indian or Asian	Female	0	2011
+ward	93607010	Indian or Asian	Male	0	2011
+ward	52802012	Other	Female	0	2011
+ward	52404001	Coloured	Female	0	2011
+ward	52404013	Coloured	Female	0	2011
+ward	93607022	Indian or Asian	Male	0	2011
+ward	93504003	Coloured	Male	0	2011
+ward	83205011	Other	Male	0	2011
+ward	21401007	White	Female	0	2011
+ward	21201015	Coloured	Male	0	2011
+ward	93402012	Other	Male	0	2011
+ward	41804017	Indian or Asian	Female	0	2011
+ward	21506025	White	Female	0	2011
+ward	93501001	Other	Female	0	2011
+ward	93404004	Indian or Asian	Female	0	2011
+ward	52902005	White	Female	0	2011
+ward	34502011	Indian or Asian	Female	0	2011
+ward	42003006	Other	Female	0	2011
+ward	29300055	Coloured	Male	0	2011
+ward	52702010	White	Male	0	2011
+ward	52103002	Coloured	Male	0	2011
+ward	52502011	White	Male	0	2011
+ward	79900088	White	Female	0	2011
+ward	52202011	White	Female	0	2011
+ward	83002004	Indian or Asian	Female	0	2011
+ward	52605020	Other	Female	0	2011
+ward	83204002	Coloured	Female	0	2011
+ward	94702017	Coloured	Male	0	2011
+ward	24403014	Coloured	Male	0	2011
+ward	63804011	Other	Male	0	2011
+ward	94702015	Coloured	Male	0	2011
+ward	63701015	Other	Female	0	2011
+ward	83001001	Other	Male	0	2011
+ward	74802018	Other	Female	0	2011
+ward	24401023	Coloured	Female	0	2011
+ward	21304021	Indian or Asian	Female	0	2011
+ward	41904030	Indian or Asian	Male	0	2011
+ward	52304007	Other	Male	0	2011
+ward	83001003	White	Male	0	2011
+ward	94702019	Other	Female	0	2011
+ward	10302013	Other	Female	0	2011
+ward	42001008	Other	Male	0	2011
+ward	64003013	Indian or Asian	Female	0	2011
+ward	93404038	Coloured	Male	0	2011
+ward	52605008	Other	Male	0	2011
+ward	21304001	Other	Female	0	2011
+ward	54305010	Indian or Asian	Male	0	2011
+ward	21505022	Coloured	Male	0	2011
+ward	93303004	Coloured	Female	0	2011
+ward	52802012	Indian or Asian	Female	0	2011
+ward	63705012	White	Female	0	2011
+ward	83204013	Other	Male	0	2011
+ward	63906003	Indian or Asian	Female	0	2011
+ward	93607010	Other	Male	0	2011
+ward	93501001	Indian or Asian	Female	0	2011
+ward	41804017	Other	Female	0	2011
+ward	93402012	Indian or Asian	Male	0	2011
+ward	24403022	Other	Male	0	2011
+ward	21202023	Coloured	Male	0	2011
+ward	83205011	Indian or Asian	Male	0	2011
+ward	52102009	Coloured	Male	0	2011
+ward	94705015	Other	Male	0	2011
+ward	63904010	White	Female	0	2011
+ward	93501016	Coloured	Female	0	2011
+ward	42003006	Indian or Asian	Female	0	2011
+ward	52702002	White	Male	0	2011
+ward	83002004	Other	Female	0	2011
+ward	52903009	White	Female	0	2011
+ward	30706004	White	Male	0	2011
+ward	74802017	White	Male	0	2011
+ward	93607025	Indian or Asian	Female	0	2011
+ward	83105017	White	Female	0	2011
+ward	21402018	Other	Female	0	2011
+ward	52103008	Other	Male	0	2011
+ward	21401002	White	Female	0	2011
+ward	74802018	Indian or Asian	Female	0	2011
+ward	63701015	Indian or Asian	Female	0	2011
+ward	52802011	Other	Male	0	2011
+ward	52606018	Indian or Asian	Female	0	2011
+ward	93304002	Coloured	Male	0	2011
+ward	93505012	Coloured	Female	0	2011
+ward	24401014	White	Male	0	2011
+ward	83106013	White	Female	0	2011
+ward	21304021	Other	Female	0	2011
+ward	52704008	White	Male	0	2011
+ward	83106016	White	Female	0	2011
+ward	10404009	Indian or Asian	Female	0	2011
+ward	10105009	Indian or Asian	Female	0	2011
+ward	64004003	White	Male	0	2011
+ward	52902020	White	Female	0	2011
+ward	93505027	Other	Male	0	2011
+ward	63803005	White	Male	0	2011
+ward	21506008	Other	Female	0	2011
+ward	64002026	Other	Female	0	2011
+ward	34501010	Other	Female	0	2011
+ward	21304004	White	Female	0	2011
+ward	59500094	Other	Male	0	2011
+ward	64003033	Other	Female	0	2011
+ward	63702003	White	Male	0	2011
+ward	63705004	Indian or Asian	Female	0	2011
+ward	21505025	Coloured	Female	0	2011
+ward	83202005	Other	Female	0	2011
+ward	83203004	Other	Female	0	2011
+ward	52804025	Coloured	Male	0	2011
+ward	54301001	Indian or Asian	Male	0	2011
+ward	54303001	White	Male	0	2011
+ward	54305001	Coloured	Male	0	2011
+ward	94704003	Coloured	Male	0	2011
+ward	83103024	Coloured	Male	0	2011
+ward	93501007	Coloured	Male	0	2011
+ward	63801001	Indian or Asian	Female	0	2011
+ward	63704005	White	Female	0	2011
+ward	52803001	White	Female	0	2011
+ward	52801008	Indian or Asian	Male	0	2011
+ward	52103010	Coloured	Female	0	2011
+ward	63904017	Other	Male	0	2011
+ward	24403010	White	Male	0	2011
+ward	54301007	Coloured	Male	0	2011
+ward	94705023	Other	Male	0	2011
+ward	83204026	White	Male	0	2011
+ward	94701002	Coloured	Male	0	2011
+ward	21206011	Other	Female	0	2011
+ward	52603010	White	Female	0	2011
+ward	21506021	Other	Female	0	2011
+ward	83001020	Other	Female	0	2011
+ward	10301006	Indian or Asian	Female	0	2011
+ward	29300058	Other	Female	0	2011
+ward	93505013	Indian or Asian	Female	0	2011
+ward	63805018	Coloured	Female	0	2011
+ward	21401006	Coloured	Male	0	2011
+ward	52606001	Coloured	Female	0	2011
+ward	83104004	Other	Female	0	2011
+ward	30602001	Indian or Asian	Female	0	2011
+ward	93505025	Other	Female	0	2011
+ward	10204012	Other	Female	0	2011
+ward	21006001	White	Female	0	2011
+ward	63804008	Indian or Asian	Female	0	2011
+ward	21004011	Indian or Asian	Female	0	2011
+ward	83205023	Other	Female	0	2011
+ward	52504006	Other	Female	0	2011
+ward	93403028	White	Male	0	2011
+ward	21206010	Other	Female	0	2011
+ward	74803008	White	Female	0	2011
+ward	59500039	White	Male	0	2011
+ward	42004007	Indian or Asian	Male	0	2011
+ward	83105027	Other	Female	0	2011
+ward	52205007	Coloured	Male	0	2011
+ward	52703001	Other	Male	0	2011
+ward	63904007	White	Male	0	2011
+ward	93304013	White	Male	0	2011
+ward	93403011	Other	Female	0	2011
+ward	21504009	White	Male	0	2011
+ward	52602008	Other	Female	0	2011
+ward	24402001	Indian or Asian	Female	0	2011
+ward	83202028	White	Female	0	2011
+ward	63705017	White	Male	0	2011
+ward	83205004	Coloured	Female	0	2011
+ward	21305011	Indian or Asian	Female	0	2011
+ward	24404016	Indian or Asian	Female	0	2011
+ward	30803003	Other	Female	0	2011
+ward	74801006	Other	Male	0	2011
+ward	93501020	White	Female	0	2011
+ward	41805006	Indian or Asian	Female	0	2011
+ward	93602006	Coloured	Female	0	2011
+ward	93501013	White	Female	0	2011
+ward	63705001	Indian or Asian	Male	0	2011
+ward	93404035	White	Male	0	2011
+ward	41804016	White	Female	0	2011
+ward	29300024	Indian or Asian	Male	0	2011
+ward	54303002	Indian or Asian	Male	0	2011
+ward	52602004	Indian or Asian	Female	0	2011
+ward	83106019	Other	Male	0	2011
+ward	41803005	Other	Male	0	2011
+ward	52704006	Coloured	Female	0	2011
+ward	52903016	Other	Female	0	2011
+ward	52305006	Coloured	Female	0	2011
+ward	63701005	White	Male	0	2011
+ward	94703014	Coloured	Female	0	2011
+ward	52402010	Other	Male	0	2011
+ward	83106024	Indian or Asian	Male	0	2011
+ward	52103017	Other	Male	0	2011
+ward	79900097	White	Male	0	2011
+ward	21306009	Indian or Asian	Female	0	2011
+ward	24403008	Coloured	Female	0	2011
+ward	21207013	Other	Female	0	2011
+ward	83202020	Other	Male	0	2011
+ward	83002009	Other	Female	0	2011
+ward	52303003	Other	Female	0	2011
+ward	74803003	Coloured	Male	0	2011
+ward	52306002	White	Male	0	2011
+ward	21306010	White	Male	0	2011
+ward	52404012	Coloured	Male	0	2011
+ward	41901007	Other	Female	0	2011
+ward	21202002	Indian or Asian	Female	0	2011
+ward	93607020	White	Male	0	2011
+ward	24401006	Indian or Asian	Female	0	2011
+ward	42005001	Indian or Asian	Female	0	2011
+ward	63803025	Indian or Asian	Male	0	2011
+ward	52204004	Other	Female	0	2011
+ward	24403017	White	Male	0	2011
+ward	52404016	Other	Female	0	2011
+ward	63701025	Indian or Asian	Female	0	2011
+ward	74802021	Coloured	Female	0	2011
+ward	52801001	White	Male	0	2011
+ward	42001023	Other	Male	0	2011
+ward	21306004	Coloured	Male	0	2011
+ward	54301008	White	Female	0	2011
+ward	52902011	Other	Female	0	2011
+ward	21505028	Other	Female	0	2011
+ward	52305005	Other	Female	0	2011
+ward	21201027	Coloured	Male	0	2011
+ward	30904006	Indian or Asian	Female	0	2011
+ward	41805011	Other	Female	0	2011
+ward	52503004	Indian or Asian	Male	0	2011
+ward	52106007	Coloured	Female	0	2011
+ward	42003010	Indian or Asian	Female	0	2011
+ward	93303011	White	Female	0	2011
+ward	24402014	Coloured	Female	0	2011
+ward	52705015	Other	Female	0	2011
+ward	21304009	Coloured	Male	0	2011
+ward	41804004	Indian or Asian	Female	0	2011
+ward	52702015	Coloured	Female	0	2011
+ward	21207019	Coloured	Male	0	2011
+ward	52701007	Coloured	Male	0	2011
+ward	93402004	White	Male	0	2011
+ward	74801025	Indian or Asian	Female	0	2011
+ward	29200048	Coloured	Male	0	2011
+ward	21306009	Other	Female	0	2011
+ward	93403031	White	Female	0	2011
+ward	52103017	Indian or Asian	Male	0	2011
+ward	52904001	Other	Female	0	2011
+ward	29200014	White	Male	0	2011
+ward	24402006	White	Male	0	2011
+ward	52605011	White	Male	0	2011
+ward	21503021	White	Male	0	2011
+ward	30706002	Indian or Asian	Female	0	2011
+ward	10203030	White	Female	0	2011
+ward	21505017	White	Male	0	2011
+ward	63904026	White	Male	0	2011
+ward	83002009	Indian or Asian	Female	0	2011
+ward	83202020	Indian or Asian	Male	0	2011
+ward	52804017	Coloured	Female	0	2011
+ward	21307001	White	Female	0	2011
+ward	24401006	Other	Female	0	2011
+ward	74804009	Coloured	Male	0	2011
+ward	93303022	White	Female	0	2011
+ward	41901007	Indian or Asian	Female	0	2011
+ward	52801015	White	Male	0	2011
+ward	63904024	Other	Female	0	2011
+ward	83102015	White	Male	0	2011
+ward	10206010	White	Female	0	2011
+ward	63701018	Other	Male	0	2011
+ward	52903005	White	Female	0	2011
+ward	21201016	Other	Male	0	2011
+ward	52603012	Indian or Asian	Female	0	2011
+ward	42005001	Other	Female	0	2011
+ward	93402003	Indian or Asian	Male	0	2011
+ward	52204004	Indian or Asian	Female	0	2011
+ward	21202017	White	Female	0	2011
+ward	52705004	Indian or Asian	Male	0	2011
+ward	74201038	Indian or Asian	Male	0	2011
+ward	52701011	White	Male	0	2011
+ward	42003019	Indian or Asian	Male	0	2011
+ward	93503009	Coloured	Female	0	2011
+ward	63701025	Other	Female	0	2011
+ward	52305005	Indian or Asian	Female	0	2011
+ward	93404027	White	Male	0	2011
+ward	21505028	Indian or Asian	Female	0	2011
+ward	24403015	Coloured	Male	0	2011
+ward	52802014	White	Male	0	2011
+ward	21503018	Other	Female	0	2011
+ward	83103020	Coloured	Female	0	2011
+ward	21202005	Other	Female	0	2011
+ward	42001023	Indian or Asian	Male	0	2011
+ward	42003010	Other	Female	0	2011
+ward	83007023	White	Male	0	2011
+ward	52603009	Other	Male	0	2011
+ward	52503004	Other	Male	0	2011
+ward	41805011	Indian or Asian	Female	0	2011
+ward	21207003	Coloured	Male	0	2011
+ward	94701001	Coloured	Male	0	2011
+ward	74801025	Other	Female	0	2011
+ward	21202031	Other	Male	0	2011
+ward	21307013	Coloured	Male	0	2011
+ward	52903011	Coloured	Male	0	2011
+ward	93505025	Indian or Asian	Female	0	2011
+ward	10204016	Indian or Asian	Female	0	2011
+ward	21307016	Coloured	Female	0	2011
+ward	42004009	White	Male	0	2011
+ward	21004005	White	Female	0	2011
+ward	52504011	Other	Female	0	2011
+ward	21206010	Indian or Asian	Female	0	2011
+ward	21402011	White	Male	0	2011
+ward	52504006	Indian or Asian	Female	0	2011
+ward	21307017	Coloured	Male	0	2011
+ward	83205023	Indian or Asian	Female	0	2011
+ward	63804008	Other	Female	0	2011
+ward	83205010	Coloured	Male	0	2011
+ward	24404003	White	Female	0	2011
+ward	21306003	White	Male	0	2011
+ward	42004007	Other	Male	0	2011
+ward	52705011	White	Male	0	2011
+ward	63802004	White	Male	0	2011
+ward	24401005	Coloured	Female	0	2011
+ward	52602008	Indian or Asian	Female	0	2011
+ward	52402006	Indian or Asian	Female	0	2011
+ward	52306005	White	Female	0	2011
+ward	52803006	Coloured	Male	0	2011
+ward	93304003	White	Male	0	2011
+ward	83106004	White	Female	0	2011
+ward	21503009	White	Male	0	2011
+ward	93403011	Indian or Asian	Female	0	2011
+ward	21504004	Indian or Asian	Male	0	2011
+ward	93503003	Other	Male	0	2011
+ward	21305011	Other	Female	0	2011
+ward	52104009	Coloured	Female	0	2011
+ward	52104008	White	Female	0	2011
+ward	21202010	White	Female	0	2011
+ward	63705029	White	Male	0	2011
+ward	24402001	Other	Female	0	2011
+ward	63705001	Other	Male	0	2011
+ward	41805006	Other	Female	0	2011
+ward	74801006	Indian or Asian	Male	0	2011
+ward	63801004	White	Female	0	2011
+ward	21504018	Other	Female	0	2011
+ward	93403025	White	Female	0	2011
+ward	34502004	White	Female	0	2011
+ward	54303002	Other	Male	0	2011
+ward	21306007	Indian or Asian	Female	0	2011
+ward	63705022	Other	Male	0	2011
+ward	41803005	Indian or Asian	Male	0	2011
+ward	24402027	Coloured	Male	0	2011
+ward	83205020	Other	Male	0	2011
+ward	10404015	Indian or Asian	Female	0	2011
+ward	93303005	White	Male	0	2011
+ward	24401016	Coloured	Female	0	2011
+ward	93404010	White	Male	0	2011
+ward	21505031	Other	Female	0	2011
+ward	63701019	Coloured	Female	0	2011
+ward	52903002	Indian or Asian	Female	0	2011
+ward	19100091	White	Female	0	2011
+ward	52103001	Other	Male	0	2011
+ward	93302023	Indian or Asian	Female	0	2011
+ward	24403002	Indian or Asian	Male	0	2011
+ward	52101003	White	Male	0	2011
+ward	21202014	White	Female	0	2011
+ward	21507025	Coloured	Male	0	2011
+ward	21305006	Coloured	Male	0	2011
+ward	21503016	Other	Female	0	2011
+ward	74202003	Other	Female	0	2011
+ward	93303003	White	Male	0	2011
+ward	21505024	Other	Male	0	2011
+ward	94705004	Coloured	Female	0	2011
+ward	19100018	White	Male	0	2011
+ward	52101006	Other	Female	0	2011
+ward	52101004	Indian or Asian	Female	0	2011
+ward	52402013	Other	Male	0	2011
+ward	52103007	Coloured	Female	0	2011
+ward	21506014	Other	Male	0	2011
+ward	74802010	White	Female	0	2011
+ward	21506018	Indian or Asian	Male	0	2011
+ward	52103011	Other	Male	0	2011
+ward	41905005	Other	Female	0	2011
+ward	83106021	White	Female	0	2011
+ward	83204023	Other	Male	0	2011
+ward	29200011	Indian or Asian	Male	0	2011
+ward	21401008	Coloured	Male	0	2011
+ward	41801001	Other	Male	0	2011
+ward	21505030	Other	Female	0	2011
+ward	52303006	Other	Female	0	2011
+ward	93302012	White	Male	0	2011
+ward	79700004	Indian or Asian	Female	0	2011
+ward	94701012	Coloured	Male	0	2011
+ward	41804006	White	Female	0	2011
+ward	52804010	Other	Female	0	2011
+ward	19100052	Other	Female	0	2011
+ward	29300027	White	Male	0	2011
+ward	93304008	Indian or Asian	Male	0	2011
+ward	41804026	Coloured	Male	0	2011
+ward	63801002	White	Male	0	2011
+ward	93504004	Indian or Asian	Female	0	2011
+ward	94703006	Coloured	Male	0	2011
+ward	93501010	Coloured	Female	0	2011
+ward	29300017	Indian or Asian	Male	0	2011
+ward	21202008	White	Male	0	2011
+ward	93505011	Other	Male	0	2011
+ward	52504008	Other	Female	0	2011
+ward	83201012	Indian or Asian	Female	0	2011
+ward	21305002	Indian or Asian	Male	0	2011
+ward	21505016	White	Male	0	2011
+ward	52605002	Indian or Asian	Male	0	2011
+ward	21304020	Other	Female	0	2011
+ward	83004006	Other	Female	0	2011
+ward	74804008	Coloured	Female	0	2011
+ward	63802001	Other	Male	0	2011
+ward	93502005	Other	Female	0	2011
+ward	52302018	Coloured	Male	0	2011
+ward	21307003	Indian or Asian	Female	0	2011
+ward	83003016	Coloured	Female	0	2011
+ward	93402008	Other	Female	0	2011
+ward	10101008	Other	Female	0	2011
+ward	93403037	Indian or Asian	Male	0	2011
+ward	54305008	White	Female	0	2011
+ward	21305019	White	Female	0	2011
+ward	74804011	Indian or Asian	Female	0	2011
+ward	21403006	Other	Female	0	2011
+ward	93505006	Indian or Asian	Female	0	2011
+ward	93504028	White	Male	0	2011
+ward	94704001	White	Female	0	2011
+ward	64003022	White	Female	0	2011
+ward	41904004	Indian or Asian	Female	0	2011
+ward	54301002	Indian or Asian	Female	0	2011
+ward	52701012	Coloured	Male	0	2011
+ward	79800061	Other	Male	0	2011
+ward	94703010	Coloured	Male	0	2011
+ward	30805003	Other	Female	0	2011
+ward	83105023	White	Female	0	2011
+ward	93502003	White	Female	0	2011
+ward	83205009	White	Male	0	2011
+ward	52605012	Other	Male	0	2011
+ward	83204018	Other	Female	0	2011
+ward	93501017	White	Male	0	2011
+ward	30604004	Other	Male	0	2011
+ward	54302002	Indian or Asian	Female	0	2011
+ward	93607005	Other	Female	0	2011
+ward	52801007	White	Male	0	2011
+ward	24403026	White	Female	0	2011
+ward	74803013	Indian or Asian	Male	0	2011
+ward	52705008	Other	Male	0	2011
+ward	93302027	Other	Female	0	2011
+ward	93404034	White	Male	0	2011
+ward	52402017	Other	Male	0	2011
+ward	94703013	Coloured	Male	0	2011
+ward	83106008	White	Male	0	2011
+ward	52605002	Other	Male	0	2011
+ward	93505002	White	Female	0	2011
+ward	93502005	Indian or Asian	Female	0	2011
+ward	52606009	White	Female	0	2011
+ward	94702004	White	Male	0	2011
+ward	63907011	White	Female	0	2011
+ward	30705002	White	Male	0	2011
+ward	52205017	Other	Female	0	2011
+ward	41804022	White	Male	0	2011
+ward	93402008	Indian or Asian	Female	0	2011
+ward	42003016	Indian or Asian	Female	0	2011
+ward	21507015	White	Male	0	2011
+ward	52205022	Other	Male	0	2011
+ward	93505006	Other	Female	0	2011
+ward	21403006	Indian or Asian	Female	0	2011
+ward	83003006	Coloured	Male	0	2011
+ward	74804011	Other	Female	0	2011
+ward	94701011	White	Female	0	2011
+ward	41804018	Coloured	Female	0	2011
+ward	52101002	White	Female	0	2011
+ward	30805004	White	Female	0	2011
+ward	63703023	White	Male	0	2011
+ward	52205028	White	Female	0	2011
+ward	74803001	Coloured	Female	0	2011
+ward	63904018	White	Female	0	2011
+ward	52605019	White	Male	0	2011
+ward	93607005	Indian or Asian	Female	0	2011
+ward	94703007	Coloured	Male	0	2011
+ward	52801010	Coloured	Male	0	2011
+ward	63803023	White	Female	0	2011
+ward	93302027	Indian or Asian	Female	0	2011
+ward	10202001	Indian or Asian	Female	0	2011
+ward	21503022	Other	Female	0	2011
+ward	52201006	White	Female	0	2011
+ward	93404018	Coloured	Male	0	2011
+ward	63803010	Other	Female	0	2011
+ward	63803021	White	Male	0	2011
+ward	10404002	Other	Male	0	2011
+ward	24403002	Other	Male	0	2011
+ward	93302023	Other	Female	0	2011
+ward	52103001	Indian or Asian	Male	0	2011
+ward	52103012	White	Male	0	2011
+ward	63702009	White	Female	0	2011
+ward	94703018	Indian or Asian	Male	0	2011
+ward	52701009	Coloured	Female	0	2011
+ward	52101006	Indian or Asian	Female	0	2011
+ward	93501011	Indian or Asian	Male	0	2011
+ward	52101004	Other	Female	0	2011
+ward	52402013	Indian or Asian	Male	0	2011
+ward	24403003	White	Male	0	2011
+ward	63803016	White	Female	0	2011
+ward	93302001	White	Male	0	2011
+ward	21505024	Indian or Asian	Male	0	2011
+ward	93301009	White	Male	0	2011
+ward	41905005	Indian or Asian	Female	0	2011
+ward	59500081	Other	Male	0	2011
+ward	52103011	Indian or Asian	Male	0	2011
+ward	21204015	White	Male	0	2011
+ward	21506018	Other	Male	0	2011
+ward	63705003	Other	Male	0	2011
+ward	21506014	Indian or Asian	Male	0	2011
+ward	52103009	White	Male	0	2011
+ward	29200045	Coloured	Female	0	2011
+ward	21505030	Indian or Asian	Female	0	2011
+ward	79900038	White	Male	0	2011
+ward	30904009	Indian or Asian	Female	0	2011
+ward	21402009	Coloured	Male	0	2011
+ward	74803011	Coloured	Female	0	2011
+ward	42001005	Indian or Asian	Female	0	2011
+ward	79700004	Other	Female	0	2011
+ward	59500002	White	Female	0	2011
+ward	52302004	Coloured	Female	0	2011
+ward	52206002	Indian or Asian	Male	0	2011
+ward	21306013	White	Female	0	2011
+ward	19100052	Indian or Asian	Female	0	2011
+ward	83105008	Indian or Asian	Female	0	2011
+ward	63701024	White	Female	0	2011
+ward	52504008	Indian or Asian	Female	0	2011
+ward	93505011	Indian or Asian	Male	0	2011
+ward	93403014	Coloured	Female	0	2011
+ward	52306010	Indian or Asian	Female	0	2011
+ward	93501004	Coloured	Male	0	2011
+ward	93501009	Other	Female	0	2011
+ward	63801010	White	Male	0	2011
+ward	29200044	Other	Female	0	2011
+ward	63702010	Indian or Asian	Female	0	2011
+ward	93504007	White	Female	0	2011
+ward	94702011	Other	Female	0	2011
+ward	93504031	White	Male	0	2011
+ward	21307008	Coloured	Female	0	2011
+ward	83001019	Other	Female	0	2011
+ward	93301028	White	Female	0	2011
+ward	63801008	Other	Female	0	2011
+ward	21308004	Other	Female	0	2011
+ward	94704006	Coloured	Male	0	2011
+ward	74801010	Indian or Asian	Male	0	2011
+ward	93505004	Other	Male	0	2011
+ward	83105011	Coloured	Male	0	2011
+ward	63803002	Other	Female	0	2011
+ward	52601007	Coloured	Male	0	2011
+ward	52104006	Indian or Asian	Male	0	2011
+ward	63902008	White	Male	0	2011
+ward	52901001	Coloured	Female	0	2011
+ward	21204007	Coloured	Female	0	2011
+ward	83007031	Indian or Asian	Female	0	2011
+ward	52901006	Other	Male	0	2011
+ward	83004008	White	Male	0	2011
+ward	93301008	Indian or Asian	Male	0	2011
+ward	41902008	Indian or Asian	Female	0	2011
+ward	63701010	Coloured	Female	0	2011
+ward	93304007	Coloured	Male	0	2011
+ward	29200025	Coloured	Female	0	2011
+ward	41902013	Other	Male	0	2011
+ward	93304006	White	Female	0	2011
+ward	83103028	Indian or Asian	Female	0	2011
+ward	10404012	White	Male	0	2011
+ward	52502009	Other	Male	0	2011
+ward	24402003	Indian or Asian	Female	0	2011
+ward	63702002	Indian or Asian	Female	0	2011
+ward	74804024	Indian or Asian	Female	0	2011
+ward	24404001	Coloured	Female	0	2011
+ward	52804022	White	Female	0	2011
+ward	41901013	White	Male	0	2011
+ward	21305021	Indian or Asian	Female	0	2011
+ward	83102004	White	Female	0	2011
+ward	30901009	White	Male	0	2011
+ward	63703020	Indian or Asian	Male	0	2011
+ward	63703008	Other	Male	0	2011
+ward	41603005	Other	Male	0	2011
+ward	83001010	Indian or Asian	Female	0	2011
+ward	83004009	Other	Female	0	2011
+ward	52803008	White	Female	0	2011
+ward	52901012	Other	Female	0	2011
+ward	24402002	Indian or Asian	Male	0	2011
+ward	52202008	White	Female	0	2011
+ward	93304001	White	Female	0	2011
+ward	63701021	Coloured	Female	0	2011
+ward	52303001	White	Female	0	2011
+ward	83204019	Indian or Asian	Male	0	2011
+ward	52106026	White	Female	0	2011
+ward	54304005	Indian or Asian	Female	0	2011
+ward	83106031	Other	Female	0	2011
+ward	63701011	Indian or Asian	Female	0	2011
+ward	52702017	White	Male	0	2011
+ward	63702004	Other	Female	0	2011
+ward	74804023	Coloured	Female	0	2011
+ward	93601001	Other	Female	0	2011
+ward	93502001	Coloured	Female	0	2011
+ward	52305003	White	Male	0	2011
+ward	93404022	Coloured	Female	0	2011
+ward	52106005	White	Female	0	2011
+ward	74802012	Indian or Asian	Female	0	2011
+ward	52104001	Coloured	Male	0	2011
+ward	83205029	White	Female	0	2011
+ward	41805010	Other	Female	0	2011
+ward	63802002	White	Female	0	2011
+ward	93303010	Other	Female	0	2011
+ward	10203002	Other	Male	0	2011
+ward	63704004	White	Female	0	2011
+ward	10303005	Indian or Asian	Female	0	2011
+ward	42003005	Indian or Asian	Male	0	2011
+ward	52804012	Indian or Asian	Male	0	2011
+ward	79800127	Indian or Asian	Female	0	2011
+ward	21201004	Coloured	Female	0	2011
+ward	63701006	Other	Female	0	2011
+ward	59500004	Other	Female	0	2011
+ward	94703025	White	Male	0	2011
+ward	21503020	Other	Female	0	2011
+ward	93301029	Indian or Asian	Female	0	2011
+ward	21503029	Other	Male	0	2011
+ward	21201024	White	Female	0	2011
+ward	41805001	Indian or Asian	Female	0	2011
+ward	74804024	Other	Female	0	2011
+ward	52806006	Coloured	Male	0	2011
+ward	52901002	White	Male	0	2011
+ward	24402003	Other	Female	0	2011
+ward	83204010	Other	Female	0	2011
+ward	52502029	White	Male	0	2011
+ward	94702018	White	Female	0	2011
+ward	10404010	Indian or Asian	Female	0	2011
+ward	21305021	Other	Female	0	2011
+ward	79900062	Indian or Asian	Male	0	2011
+ward	21201010	Indian or Asian	Male	0	2011
+ward	21206012	Indian or Asian	Male	0	2011
+ward	83001010	Other	Female	0	2011
+ward	83204019	Other	Male	0	2011
+ward	93607002	White	Female	0	2011
+ward	41804029	Coloured	Male	0	2011
+ward	21505018	Other	Male	0	2011
+ward	93302003	White	Female	0	2011
+ward	93301023	White	Male	0	2011
+ward	63702004	Indian or Asian	Female	0	2011
+ward	63701011	Other	Female	0	2011
+ward	54304005	Other	Female	0	2011
+ward	83106031	Indian or Asian	Female	0	2011
+ward	93301016	Coloured	Female	0	2011
+ward	93404009	Coloured	Male	0	2011
+ward	93607007	Indian or Asian	Male	0	2011
+ward	74201040	Other	Female	0	2011
+ward	74802012	Other	Female	0	2011
+ward	21503017	White	Male	0	2011
+ward	52502027	Indian or Asian	Female	0	2011
+ward	94702010	Coloured	Female	0	2011
+ward	24402010	Coloured	Female	0	2011
+ward	21207001	Indian or Asian	Female	0	2011
+ward	52901015	Indian or Asian	Female	0	2011
+ward	10203002	Indian or Asian	Male	0	2011
+ward	93303010	Indian or Asian	Female	0	2011
+ward	10103002	Indian or Asian	Male	0	2011
+ward	41805010	Indian or Asian	Female	0	2011
+ward	93301013	Coloured	Male	0	2011
+ward	83205033	White	Male	0	2011
+ward	93301029	Other	Female	0	2011
+ward	52804012	Other	Male	0	2011
+ward	94702005	White	Male	0	2011
+ward	63701006	Indian or Asian	Female	0	2011
+ward	21202009	White	Female	0	2011
+ward	94704004	Coloured	Female	0	2011
+ward	83007013	Other	Male	0	2011
+ward	63702035	White	Male	0	2011
+ward	52306010	Other	Female	0	2011
+ward	52705018	Coloured	Female	0	2011
+ward	93303006	Indian or Asian	Male	0	2011
+ward	41904026	Coloured	Female	0	2011
+ward	42004012	White	Male	0	2011
+ward	94702011	Indian or Asian	Female	0	2011
+ward	52603021	Coloured	Male	0	2011
+ward	83202009	White	Male	0	2011
+ward	21308004	Indian or Asian	Female	0	2011
+ward	93503011	White	Male	0	2011
+ward	63801008	Indian or Asian	Female	0	2011
+ward	21507007	White	Male	0	2011
+ward	83105013	Other	Female	0	2011
+ward	83001019	Indian or Asian	Female	0	2011
+ward	21204003	Indian or Asian	Male	0	2011
+ward	52806009	White	Female	0	2011
+ward	74801010	Other	Male	0	2011
+ward	52801014	Indian or Asian	Female	0	2011
+ward	83202034	White	Male	0	2011
+ward	52304006	Other	Female	0	2011
+ward	93607001	White	Female	0	2011
+ward	24401003	Coloured	Male	0	2011
+ward	52104006	Other	Male	0	2011
+ward	63803002	Indian or Asian	Female	0	2011
+ward	52901006	Indian or Asian	Male	0	2011
+ward	52802015	White	Female	0	2011
+ward	63902006	White	Female	0	2011
+ward	63703006	Indian or Asian	Male	0	2011
+ward	93404003	Indian or Asian	Male	0	2011
+ward	52303005	Other	Male	0	2011
+ward	41902008	Other	Female	0	2011
+ward	93502011	White	Male	0	2011
+ward	59500091	Other	Female	0	2011
+ward	83205037	White	Female	0	2011
+ward	83105019	White	Male	0	2011
+ward	83205001	White	Female	0	2011
+ward	93501014	Indian or Asian	Female	0	2011
+ward	24402022	Other	Male	0	2011
+ward	63703038	Indian or Asian	Male	0	2011
+ward	52704005	White	Female	0	2011
+ward	63703021	Indian or Asian	Female	0	2011
+ward	21307014	Coloured	Female	0	2011
+ward	30901005	White	Male	0	2011
+ward	24401008	White	Male	0	2011
+ward	52602013	Indian or Asian	Female	0	2011
+ward	21204011	Indian or Asian	Female	0	2011
+ward	52204003	White	Male	0	2011
+ward	83002006	Indian or Asian	Male	0	2011
+ward	83002005	Indian or Asian	Female	0	2011
+ward	93302016	Coloured	Male	0	2011
+ward	21401010	White	Female	0	2011
+ward	93301006	Coloured	Female	0	2011
+ward	83005012	Indian or Asian	Male	0	2011
+ward	93602008	Other	Female	0	2011
+ward	63805006	Indian or Asian	Female	0	2011
+ward	52601006	White	Female	0	2011
+ward	83205032	Coloured	Female	0	2011
+ward	52503001	Indian or Asian	Female	0	2011
+ward	93602010	Other	Male	0	2011
+ward	21306006	Other	Female	0	2011
+ward	94703017	Coloured	Female	0	2011
+ward	83006001	Coloured	Male	0	2011
+ward	21305004	White	Female	0	2011
+ward	93302005	White	Male	0	2011
+ward	34501009	Other	Male	0	2011
+ward	93302020	Indian or Asian	Male	0	2011
+ward	24403028	White	Female	0	2011
+ward	42004002	Indian or Asian	Male	0	2011
+ward	29200017	Indian or Asian	Male	0	2011
+ward	63701028	Coloured	Male	0	2011
+ward	83205026	Other	Female	0	2011
+ward	30901012	Indian or Asian	Male	0	2011
+ward	52602001	Other	Female	0	2011
+ward	63907001	Indian or Asian	Female	0	2011
+ward	21507031	Indian or Asian	Female	0	2011
+ward	94705029	Other	Female	0	2011
+ward	21506026	White	Female	0	2011
+ward	63906002	White	Male	0	2011
+ward	30801001	Indian or Asian	Female	0	2011
+ward	52102001	Coloured	Female	0	2011
+ward	52701001	Indian or Asian	Female	0	2011
+ward	93505001	Coloured	Female	0	2011
+ward	93303009	White	Female	0	2011
+ward	83105030	Other	Female	0	2011
+ward	52302024	Coloured	Male	0	2011
+ward	52303009	White	Female	0	2011
+ward	21302002	Indian or Asian	Female	0	2011
+ward	29200038	Indian or Asian	Female	0	2011
+ward	74202012	Other	Female	0	2011
+ward	63801011	Other	Female	0	2011
+ward	93302004	Other	Female	0	2011
+ward	10402002	Other	Female	0	2011
+ward	52903018	Coloured	Male	0	2011
+ward	21003004	Other	Female	0	2011
+ward	93305011	Other	Female	0	2011
+ward	24404005	Indian or Asian	Female	0	2011
+ward	52804004	Coloured	Male	0	2011
+ward	93504002	White	Male	0	2011
+ward	52903013	Other	Male	0	2011
+ward	79800004	Indian or Asian	Female	0	2011
+ward	24404010	White	Male	0	2011
+ward	21506001	Coloured	Female	0	2011
+ward	21503027	Indian or Asian	Female	0	2011
+ward	52804006	Indian or Asian	Male	0	2011
+ward	42004003	White	Female	0	2011
+ward	21005004	Indian or Asian	Female	0	2011
+ward	21005008	White	Female	0	2011
+ward	52106011	Indian or Asian	Female	0	2011
+ward	54305013	Other	Female	0	2011
+ward	52606021	Other	Female	0	2011
+ward	79900028	Other	Male	0	2011
+ward	21001003	White	Male	0	2011
+ward	94705016	Other	Male	0	2011
+ward	21206008	Other	Male	0	2011
+ward	94705029	Indian or Asian	Female	0	2011
+ward	21507031	Other	Female	0	2011
+ward	21201003	Indian or Asian	Male	0	2011
+ward	93404031	Indian or Asian	Male	0	2011
+ward	52602001	Indian or Asian	Female	0	2011
+ward	41603001	Coloured	Male	0	2011
+ward	93504014	Indian or Asian	Female	0	2011
+ward	41902017	Indian or Asian	Male	0	2011
+ward	63907010	White	Male	0	2011
+ward	10104013	White	Male	0	2011
+ward	52701001	Other	Female	0	2011
+ward	83201001	Indian or Asian	Male	0	2011
+ward	52704001	White	Female	0	2011
+ward	54303007	Other	Female	0	2011
+ward	30801001	Other	Female	0	2011
+ward	52702014	Indian or Asian	Female	0	2011
+ward	21505002	Coloured	Female	0	2011
+ward	93403026	Indian or Asian	Female	0	2011
+ward	79900071	Indian or Asian	Male	0	2011
+ward	63801011	Indian or Asian	Female	0	2011
+ward	83106015	White	Female	0	2011
+ward	74201032	White	Female	0	2011
+ward	41906009	Indian or Asian	Male	0	2011
+ward	52704003	White	Male	0	2011
+ward	24404005	Other	Female	0	2011
+ward	63805007	Other	Male	0	2011
+ward	21003004	Indian or Asian	Female	0	2011
+ward	21302003	White	Male	0	2011
+ward	93302004	Indian or Asian	Female	0	2011
+ward	52606014	White	Male	0	2011
+ward	63805004	Coloured	Female	0	2011
+ward	21503027	Other	Female	0	2011
+ward	52804006	Other	Male	0	2011
+ward	41903007	Coloured	Female	0	2011
+ward	52903013	Indian or Asian	Male	0	2011
+ward	79800004	Other	Female	0	2011
+ward	21304012	White	Female	0	2011
+ward	42001011	Coloured	Male	0	2011
+ward	21008005	White	Female	0	2011
+ward	21005004	Other	Female	0	2011
+ward	94704012	Coloured	Female	0	2011
+ward	21308005	Indian or Asian	Male	0	2011
+ward	94705016	Indian or Asian	Male	0	2011
+ward	52402007	Coloured	Male	0	2011
+ward	52606021	Indian or Asian	Female	0	2011
+ward	93302022	Indian or Asian	Male	0	2011
+ward	21201030	Other	Male	0	2011
+ward	52106011	Other	Female	0	2011
+ward	54304011	Coloured	Female	0	2011
+ward	54305013	Indian or Asian	Female	0	2011
+ward	30801002	Indian or Asian	Male	0	2011
+ward	52902024	White	Male	0	2011
+ward	79900023	White	Female	0	2011
+ward	93501014	Other	Female	0	2011
+ward	94705027	Other	Female	0	2011
+ward	29300057	Indian or Asian	Female	0	2011
+ward	83007007	Other	Male	0	2011
+ward	21301001	White	Female	0	2011
+ward	83105006	White	Female	0	2011
+ward	83007006	Coloured	Male	0	2011
+ward	21305018	White	Female	0	2011
+ward	83001007	Coloured	Female	0	2011
+ward	93404036	Indian or Asian	Male	0	2011
+ward	29200023	White	Male	0	2011
+ward	63703038	Other	Male	0	2011
+ward	24402022	Indian or Asian	Male	0	2011
+ward	94703024	Coloured	Female	0	2011
+ward	94702022	Other	Female	0	2011
+ward	63705027	Coloured	Male	0	2011
+ward	63701012	Other	Male	0	2011
+ward	52106008	White	Female	0	2011
+ward	21204011	Other	Female	0	2011
+ward	52404004	Coloured	Male	0	2011
+ward	64002006	Other	Male	0	2011
+ward	52602013	Other	Female	0	2011
+ward	21201026	White	Male	0	2011
+ward	21206002	White	Male	0	2011
+ward	93607026	White	Male	0	2011
+ward	34502006	Indian or Asian	Male	0	2011
+ward	29200001	White	Female	0	2011
+ward	30904003	White	Male	0	2011
+ward	49400032	Coloured	Male	0	2011
+ward	63805006	Other	Female	0	2011
+ward	93602008	Indian or Asian	Female	0	2011
+ward	83002005	Other	Female	0	2011
+ward	63906005	White	Male	0	2011
+ward	21306006	Indian or Asian	Female	0	2011
+ward	93602010	Indian or Asian	Male	0	2011
+ward	79800020	Other	Female	0	2011
+ward	63703033	Indian or Asian	Male	0	2011
+ward	63805008	White	Male	0	2011
+ward	21401001	Indian or Asian	Male	0	2011
+ward	52503001	Other	Female	0	2011
+ward	93505007	White	Female	0	2011
+ward	83105024	Indian or Asian	Female	0	2011
+ward	52306004	Coloured	Male	0	2011
+ward	52806003	Indian or Asian	Female	0	2011
+ward	52206005	Other	Male	0	2011
+ward	93607013	Coloured	Male	0	2011
+ward	21307012	Coloured	Male	0	2011
+ward	83204025	Coloured	Male	0	2011
+ward	83003008	Coloured	Female	0	2011
+ward	63702015	White	Male	0	2011
+ward	93302020	Other	Male	0	2011
+ward	63904002	White	Female	0	2011
+ward	83106011	Other	Female	0	2011
+ward	83205036	Coloured	Female	0	2011
+ward	52606004	Indian or Asian	Female	0	2011
+ward	21201011	Other	Male	0	2011
+ward	41902006	Indian or Asian	Female	0	2011
+ward	63705011	Other	Female	0	2011
+ward	52305002	Coloured	Male	0	2011
+ward	54304006	Other	Male	0	2011
+ward	21201019	Indian or Asian	Male	0	2011
+ward	93403039	Indian or Asian	Female	0	2011
+ward	52603017	Coloured	Male	0	2011
+ward	74202001	Indian or Asian	Male	0	2011
+ward	83006006	Coloured	Female	0	2011
+ward	21201012	Indian or Asian	Male	0	2011
+ward	52102005	Other	Male	0	2011
+ward	93403008	Other	Female	0	2011
+ward	63804002	White	Female	0	2011
+ward	79800011	White	Male	0	2011
+ward	63802011	White	Male	0	2011
+ward	52606022	White	Male	0	2011
+ward	63701003	Indian or Asian	Female	0	2011
+ward	21201002	White	Female	0	2011
+ward	21008012	Other	Female	0	2011
+ward	79900039	White	Male	0	2011
+ward	63801012	Indian or Asian	Female	0	2011
+ward	21003003	Indian or Asian	Female	0	2011
+ward	94705003	Other	Female	0	2011
+ward	93404028	Indian or Asian	Female	0	2011
+ward	52701008	Coloured	Female	0	2011
+ward	74804010	White	Female	0	2011
+ward	83205014	Coloured	Male	0	2011
+ward	93305004	Indian or Asian	Male	0	2011
+ward	93404005	Coloured	Male	0	2011
+ward	52101001	White	Female	0	2011
+ward	83205015	White	Female	0	2011
+ward	93403022	Other	Male	0	2011
+ward	21506003	White	Male	0	2011
+ward	83202023	Indian or Asian	Female	0	2011
+ward	63803017	White	Male	0	2011
+ward	41902007	Other	Female	0	2011
+ward	21203004	Indian or Asian	Male	0	2011
+ward	59500003	Indian or Asian	Male	0	2011
+ward	21507012	Other	Female	0	2011
+ward	93502002	White	Male	0	2011
+ward	94703016	White	Male	0	2011
+ward	42004004	White	Male	0	2011
+ward	21308003	White	Female	0	2011
+ward	63702006	Indian or Asian	Female	0	2011
+ward	52305004	Indian or Asian	Male	0	2011
+ward	52903008	White	Female	0	2011
+ward	83106025	White	Male	0	2011
+ward	29200039	White	Male	0	2011
+ward	21206001	Indian or Asian	Female	0	2011
+ward	64003010	Other	Female	0	2011
+ward	21305005	Indian or Asian	Male	0	2011
+ward	74802019	Other	Female	0	2011
+ward	93301001	White	Female	0	2011
+ward	83002017	Coloured	Female	0	2011
+ward	52902001	White	Female	0	2011
+ward	21504012	Other	Male	0	2011
+ward	52703002	Coloured	Male	0	2011
+ward	30801004	Indian or Asian	Female	0	2011
+ward	94702024	White	Male	0	2011
+ward	63702032	Coloured	Female	0	2011
+ward	24403004	Coloured	Female	0	2011
+ward	93305014	Coloured	Male	0	2011
+ward	29300015	Indian or Asian	Female	0	2011
+ward	93303029	White	Female	0	2011
+ward	94702009	Other	Female	0	2011
+ward	52705014	White	Male	0	2011
+ward	94703030	White	Male	0	2011
+ward	83106002	Indian or Asian	Female	0	2011
+ward	21207014	Indian or Asian	Female	0	2011
+ward	52502012	Coloured	Female	0	2011
+ward	93303030	Coloured	Female	0	2011
+ward	74201013	White	Female	0	2011
+ward	21305009	White	Male	0	2011
+ward	30901018	White	Female	0	2011
+ward	24402008	Indian or Asian	Male	0	2011
+ward	54301004	Other	Female	0	2011
+ward	93304018	Indian or Asian	Female	0	2011
+ward	52404018	Other	Female	0	2011
+ward	52903010	Other	Female	0	2011
+ward	93301015	Indian or Asian	Male	0	2011
+ward	52603004	Indian or Asian	Male	0	2011
+ward	52601001	Indian or Asian	Male	0	2011
+ward	21307010	Indian or Asian	Male	0	2011
+ward	64004007	Indian or Asian	Female	0	2011
+ward	54305015	Other	Female	0	2011
+ward	83205013	White	Female	0	2011
+ward	63803029	White	Male	0	2011
+ward	52305004	Other	Male	0	2011
+ward	10503002	Other	Female	0	2011
+ward	74803009	Indian or Asian	Male	0	2011
+ward	74802019	Indian or Asian	Female	0	2011
+ward	21503031	Coloured	Male	0	2011
+ward	21206001	Other	Female	0	2011
+ward	93403005	Indian or Asian	Female	0	2011
+ward	21506010	Coloured	Female	0	2011
+ward	30801004	Other	Female	0	2011
+ward	21207017	Coloured	Male	0	2011
+ward	29300015	Other	Female	0	2011
+municipality	KZN432	Other	Male	0	2011
+ward	54305003	Other	Female	0	2011
+ward	63805020	White	Male	0	2011
+ward	83001017	Coloured	Male	0	2011
+ward	83106002	Other	Female	0	2011
+ward	21505005	White	Female	0	2011
+ward	30705004	Indian or Asian	Female	0	2011
+ward	94702009	Indian or Asian	Female	0	2011
+ward	21009003	Other	Female	0	2011
+ward	29300014	White	Male	0	2011
+ward	24402008	Other	Male	0	2011
+ward	42001019	White	Female	0	2011
+ward	93404014	White	Female	0	2011
+ward	64002020	White	Male	0	2011
+ward	10501002	Indian or Asian	Male	0	2011
+ward	52903010	Indian or Asian	Female	0	2011
+ward	52904006	Coloured	Male	0	2011
+ward	93304018	Other	Female	0	2011
+ward	93403010	Coloured	Male	0	2011
+ward	52404018	Indian or Asian	Female	0	2011
+ward	83001005	Coloured	Male	0	2011
+ward	54301004	Indian or Asian	Female	0	2011
+ward	21207002	Indian or Asian	Male	0	2011
+ward	41804001	Indian or Asian	Female	0	2011
+ward	54305015	Indian or Asian	Female	0	2011
+ward	64004007	Other	Female	0	2011
+ward	52603004	Other	Male	0	2011
+ward	93301025	White	Female	0	2011
+ward	21307010	Other	Male	0	2011
+ward	52601001	Other	Male	0	2011
+ward	83202036	Indian or Asian	Female	0	2011
+ward	63705011	Indian or Asian	Female	0	2011
+ward	63801014	Other	Male	0	2011
+ward	21201011	Indian or Asian	Male	0	2011
+ward	41902006	Other	Female	0	2011
+ward	93505024	Coloured	Female	0	2011
+ward	21503026	Other	Male	0	2011
+ward	52606004	Other	Female	0	2011
+ward	94701016	Other	Male	0	2011
+ward	83106011	Indian or Asian	Female	0	2011
+ward	54302004	Indian or Asian	Female	0	2011
+ward	94704007	White	Male	0	2011
+ward	93403039	Other	Female	0	2011
+ward	21201019	Other	Male	0	2011
+ward	52106004	White	Male	0	2011
+ward	54304006	Indian or Asian	Male	0	2011
+ward	30602007	Other	Male	0	2011
+ward	52704004	Coloured	Male	0	2011
+ward	83001018	White	Male	0	2011
+ward	10301010	Indian or Asian	Male	0	2011
+ward	21008012	Indian or Asian	Female	0	2011
+ward	74203003	White	Female	0	2011
+ward	63701003	Other	Female	0	2011
+ward	52804024	White	Female	0	2011
+ward	93404028	Other	Female	0	2011
+ward	24401009	Coloured	Male	0	2011
+ward	52802008	Coloured	Female	0	2011
+ward	41904029	White	Female	0	2011
+ward	21003003	Other	Female	0	2011
+ward	94705003	Indian or Asian	Female	0	2011
+ward	74201012	White	Female	0	2011
+ward	83202023	Other	Female	0	2011
+ward	29300056	Indian or Asian	Female	0	2011
+ward	93305004	Other	Male	0	2011
+ward	52401005	Coloured	Female	0	2011
+ward	93401001	Other	Female	0	2011
+ward	52701013	White	Male	0	2011
+ward	21203004	Other	Male	0	2011
+ward	41902007	Indian or Asian	Female	0	2011
+ward	63702006	Other	Female	0	2011
+ward	52605006	Coloured	Female	0	2011
+ward	93301004	Coloured	Female	0	2011
+ward	21206005	Indian or Asian	Male	0	2011
+ward	52306008	Indian or Asian	Female	0	2011
+ward	52603003	Coloured	Male	0	2011
+ward	74803011	White	Female	0	2011
+ward	21506019	Indian or Asian	Female	0	2011
+ward	93303033	Other	Female	0	2011
+ward	21304015	White	Female	0	2011
+ward	52602006	Coloured	Female	0	2011
+ward	10203005	White	Female	0	2011
+ward	10302006	Indian or Asian	Female	0	2011
+ward	52804001	White	Female	0	2011
+ward	93403014	White	Female	0	2011
+ward	41803006	White	Male	0	2011
+ward	64001001	Indian or Asian	Female	0	2011
+ward	63701024	Coloured	Female	0	2011
+ward	21306013	Coloured	Female	0	2011
+ward	93302007	Other	Female	0	2011
+ward	74801011	Other	Female	0	2011
+ward	52502015	Other	Female	0	2011
+ward	93501002	Indian or Asian	Female	0	2011
+ward	52502010	Indian or Asian	Female	0	2011
+ward	21008014	Indian or Asian	Male	0	2011
+ward	52103012	Coloured	Male	0	2011
+ward	63903006	Indian or Asian	Female	0	2011
+ward	83204001	White	Male	0	2011
+ward	63803021	Coloured	Male	0	2011
+ward	93403004	Indian or Asian	Female	0	2011
+ward	64004002	Other	Female	0	2011
+ward	52103009	Coloured	Male	0	2011
+ward	93401004	Coloured	Female	0	2011
+ward	10205013	Indian or Asian	Male	0	2011
+ward	21507019	Coloured	Female	0	2011
+ward	21204015	Coloured	Male	0	2011
+ward	74803016	Indian or Asian	Male	0	2011
+ward	24402020	Coloured	Male	0	2011
+ward	93301009	Coloured	Male	0	2011
+ward	21307020	Coloured	Male	0	2011
+ward	52801012	Other	Female	0	2011
+ward	41902018	Other	Female	0	2011
+ward	93302001	Coloured	Male	0	2011
+ward	24403003	Coloured	Male	0	2011
+ward	94704002	Indian or Asian	Female	0	2011
+ward	63904025	Indian or Asian	Female	0	2011
+ward	21008011	Indian or Asian	Male	0	2011
+ward	93601006	Coloured	Female	0	2011
+ward	63907004	White	Male	0	2011
+ward	24401017	Indian or Asian	Female	0	2011
+ward	93403001	Other	Female	0	2011
+ward	52605017	Other	Male	0	2011
+ward	21503030	Indian or Asian	Female	0	2011
+ward	52904007	Indian or Asian	Male	0	2011
+ward	52101002	Coloured	Female	0	2011
+ward	52804014	Coloured	Male	0	2011
+ward	52201006	Coloured	Female	0	2011
+ward	63803023	Coloured	Female	0	2011
+ward	83005004	Other	Female	0	2011
+ward	94702004	Coloured	Male	0	2011
+ward	52606009	Coloured	Female	0	2011
+ward	79700095	Indian or Asian	Female	0	2011
+ward	42004011	Other	Female	0	2011
+ward	21504017	Other	Male	0	2011
+ward	64003011	Other	Female	0	2011
+ward	42001002	Other	Female	0	2011
+ward	63805010	Indian or Asian	Female	0	2011
+ward	83106008	Coloured	Male	0	2011
+ward	94703013	White	Male	0	2011
+ward	83204004	White	Male	0	2011
+ward	29200012	Other	Female	0	2011
+ward	52902012	White	Female	0	2011
+ward	94701011	Coloured	Female	0	2011
+ward	41904020	Other	Male	0	2011
+ward	10408003	Indian or Asian	Male	0	2011
+ward	79800116	Indian or Asian	Male	0	2011
+ward	63804019	Other	Female	0	2011
+ward	79700062	Other	Female	0	2011
+ward	93505015	Other	Male	0	2011
+ward	63907011	Coloured	Female	0	2011
+ward	24402023	Other	Female	0	2011
+ward	21307018	Indian or Asian	Female	0	2011
+ward	93501017	Coloured	Male	0	2011
+ward	24401017	Other	Female	0	2011
+ward	93607030	White	Female	0	2011
+ward	93502003	Coloured	Female	0	2011
+ward	52104005	Coloured	Male	0	2011
+ward	52603013	White	Male	0	2011
+ward	93403012	Coloured	Female	0	2011
+ward	41805012	Other	Male	0	2011
+ward	83105023	Coloured	Female	0	2011
+ward	94703010	White	Male	0	2011
+ward	21503030	Other	Female	0	2011
+ward	52605017	Indian or Asian	Male	0	2011
+ward	83106005	Other	Female	0	2011
+ward	52302014	Coloured	Male	0	2011
+ward	93403001	Indian or Asian	Female	0	2011
+ward	24402019	Indian or Asian	Male	0	2011
+ward	24403026	Coloured	Female	0	2011
+ward	52801007	Coloured	Male	0	2011
+ward	64003011	Indian or Asian	Female	0	2011
+ward	52302018	White	Male	0	2011
+ward	21504017	Indian or Asian	Male	0	2011
+ward	42004011	Indian or Asian	Female	0	2011
+ward	93607018	White	Female	0	2011
+ward	74804008	White	Female	0	2011
+ward	52504003	Indian or Asian	Female	0	2011
+ward	52202002	Other	Male	0	2011
+ward	79900019	Other	Female	0	2011
+ward	83202007	White	Male	0	2011
+ward	41904020	Indian or Asian	Male	0	2011
+ward	93504028	Coloured	Male	0	2011
+ward	21305019	Coloured	Female	0	2011
+ward	21307018	Other	Female	0	2011
+ward	93505022	White	Female	0	2011
+ward	21201014	Coloured	Male	0	2011
+ward	54305008	Coloured	Female	0	2011
+ward	41906004	White	Male	0	2011
+ward	24402023	Indian or Asian	Female	0	2011
+ward	79700048	Indian or Asian	Female	0	2011
+ward	83003016	White	Female	0	2011
+ward	94701012	White	Male	0	2011
+ward	52603016	Indian or Asian	Female	0	2011
+ward	24401012	White	Male	0	2011
+ward	21206005	Other	Male	0	2011
+ward	93302012	Coloured	Male	0	2011
+ward	52306008	Other	Female	0	2011
+ward	42004001	Other	Female	0	2011
+ward	79800036	Indian or Asian	Male	0	2011
+ward	21401008	White	Male	0	2011
+ward	52705019	Other	Male	0	2011
+ward	21503014	Indian or Asian	Female	0	2011
+ward	83106021	Coloured	Female	0	2011
+ward	21505016	Coloured	Male	0	2011
+ward	10204014	Indian or Asian	Male	0	2011
+ward	41906005	White	Male	0	2011
+ward	52702009	Indian or Asian	Male	0	2011
+ward	21202008	Coloured	Male	0	2011
+ward	83007009	Indian or Asian	Male	0	2011
+ward	41804026	White	Male	0	2011
+ward	52605010	White	Male	0	2011
+ward	93502016	Coloured	Female	0	2011
+ward	63702027	Other	Female	0	2011
+ward	29300027	Coloured	Male	0	2011
+ward	93505029	Other	Female	0	2011
+ward	93501021	Coloured	Female	0	2011
+ward	93607021	White	Male	0	2011
+ward	52105001	Coloured	Male	0	2011
+ward	93501002	Other	Female	0	2011
+ward	21305006	White	Male	0	2011
+ward	74801011	Indian or Asian	Female	0	2011
+ward	21202014	Coloured	Female	0	2011
+ward	63805005	White	Male	0	2011
+ward	52101003	Coloured	Male	0	2011
+ward	64004002	Indian or Asian	Female	0	2011
+ward	83007005	Other	Female	0	2011
+ward	93403004	Other	Female	0	2011
+ward	63906004	Other	Male	0	2011
+ward	21004006	White	Male	0	2011
+ward	63701019	White	Female	0	2011
+ward	52306003	White	Male	0	2011
+ward	83204024	White	Female	0	2011
+ward	63705030	Indian or Asian	Female	0	2011
+ward	74202008	Other	Male	0	2011
+ward	52504005	Coloured	Male	0	2011
+ward	21008011	Other	Male	0	2011
+ward	52103007	White	Female	0	2011
+ward	94705004	White	Female	0	2011
+ward	63904025	Other	Female	0	2011
+ward	93303003	Coloured	Male	0	2011
+ward	93504018	White	Female	0	2011
+ward	79900009	White	Female	0	2011
+ward	21202004	Indian or Asian	Male	0	2011
+ward	52303002	White	Female	0	2011
+ward	30601002	Other	Female	0	2011
+ward	21203006	Indian or Asian	Female	0	2011
+ward	30804004	White	Female	0	2011
+ward	24401003	White	Male	0	2011
+ward	30607001	Indian or Asian	Female	0	2011
+ward	93607001	Coloured	Female	0	2011
+ward	83204015	Other	Male	0	2011
+ward	94703029	Indian or Asian	Female	0	2011
+ward	93502011	Coloured	Male	0	2011
+ward	94704013	Other	Female	0	2011
+ward	74202006	White	Male	0	2011
+ward	52803005	White	Male	0	2011
+ward	93403029	Other	Female	0	2011
+ward	94702023	Other	Female	0	2011
+ward	41904018	Indian or Asian	Female	0	2011
+ward	21003001	Indian or Asian	Female	0	2011
+ward	52603021	White	Male	0	2011
+ward	54304010	Indian or Asian	Female	0	2011
+ward	41904026	White	Female	0	2011
+ward	52705018	White	Female	0	2011
+ward	41904002	Other	Male	0	2011
+ward	41906006	White	Female	0	2011
+ward	52205019	Indian or Asian	Male	0	2011
+ward	94704004	White	Female	0	2011
+ward	52405007	Indian or Asian	Male	0	2011
+ward	21306002	Indian or Asian	Female	0	2011
+ward	24401002	White	Female	0	2011
+ward	21202009	Coloured	Female	0	2011
+ward	93304009	Coloured	Female	0	2011
+ward	64004011	Other	Male	0	2011
+ward	52806009	Coloured	Female	0	2011
+ward	30901015	White	Male	0	2011
+ward	93401003	Indian or Asian	Male	0	2011
+ward	52306009	White	Male	0	2011
+ward	41904007	White	Female	0	2011
+ward	94702010	White	Female	0	2011
+ward	83102006	Other	Female	0	2011
+ward	21505004	Coloured	Male	0	2011
+ward	52701016	Indian or Asian	Female	0	2011
+ward	41904016	Other	Male	0	2011
+ward	93404009	White	Male	0	2011
+ward	93505014	Other	Male	0	2011
+ward	79700052	Indian or Asian	Female	0	2011
+ward	93301022	Other	Male	0	2011
+ward	10104002	White	Male	0	2011
+ward	93301023	Coloured	Male	0	2011
+ward	94702005	Coloured	Male	0	2011
+ward	94701004	Indian or Asian	Male	0	2011
+ward	83105003	Indian or Asian	Female	0	2011
+ward	93301013	White	Male	0	2011
+ward	52302017	Other	Male	0	2011
+ward	93301017	Indian or Asian	Male	0	2011
+ward	64002008	Indian or Asian	Female	0	2011
+ward	34501002	White	Male	0	2011
+ward	24402010	White	Female	0	2011
+ward	21303001	Other	Female	0	2011
+ward	41904015	Other	Male	0	2011
+ward	41904023	White	Male	0	2011
+ward	83205034	Other	Female	0	2011
+ward	54304003	Coloured	Female	0	2011
+ward	52302001	Other	Female	0	2011
+ward	24401015	Coloured	Male	0	2011
+ward	21506011	White	Male	0	2011
+ward	52402003	White	Female	0	2011
+ward	52806006	White	Male	0	2011
+ward	93607011	White	Male	0	2011
+ward	21201024	Coloured	Female	0	2011
+ward	74201041	Indian or Asian	Male	0	2011
+ward	64003024	White	Female	0	2011
+ward	83006004	Indian or Asian	Female	0	2011
+ward	41804035	Other	Male	0	2011
+ward	93607002	Coloured	Female	0	2011
+ward	52602014	Indian or Asian	Male	0	2011
+ward	83204021	White	Female	0	2011
+ward	21201018	White	Female	0	2011
+ward	24402016	Indian or Asian	Female	0	2011
+ward	93304005	Coloured	Male	0	2011
+ward	83205029	Coloured	Female	0	2011
+ward	52701016	Other	Female	0	2011
+ward	83007014	White	Female	0	2011
+ward	21201029	Indian or Asian	Male	0	2011
+ward	52302023	Indian or Asian	Female	0	2011
+ward	41904016	Indian or Asian	Male	0	2011
+ward	21504014	Other	Female	0	2011
+ward	83102006	Indian or Asian	Female	0	2011
+ward	30903002	Other	Male	0	2011
+ward	52106005	Coloured	Female	0	2011
+ward	93404022	White	Female	0	2011
+ward	93502001	White	Female	0	2011
+ward	93403024	White	Male	0	2011
+ward	83205016	White	Female	0	2011
+ward	74804023	White	Female	0	2011
+ward	52702017	Coloured	Male	0	2011
+ward	52205001	White	Male	0	2011
+ward	83105029	Other	Male	0	2011
+ward	93301022	Indian or Asian	Male	0	2011
+ward	83105003	Other	Female	0	2011
+ward	94703025	Coloured	Male	0	2011
+ward	42003015	Coloured	Male	0	2011
+ward	21201004	White	Female	0	2011
+ward	94701004	Other	Male	0	2011
+ward	29200024	Other	Female	0	2011
+ward	94703021	Other	Female	0	2011
+ward	21303001	Indian or Asian	Female	0	2011
+ward	94705021	Other	Male	0	2011
+ward	64002008	Other	Female	0	2011
+ward	52302017	Indian or Asian	Male	0	2011
+municipality	LIM352	Indian or Asian	Female	0	2011
+ward	93301017	Other	Male	0	2011
+ward	83007010	Indian or Asian	Female	0	2011
+ward	63904012	White	Male	0	2011
+ward	63802002	Coloured	Female	0	2011
+ward	93504024	Other	Female	0	2011
+ward	83205034	Indian or Asian	Female	0	2011
+ward	52302001	Indian or Asian	Female	0	2011
+ward	41904015	Indian or Asian	Male	0	2011
+ward	52804022	Coloured	Female	0	2011
+ward	21008003	Black African	Male	0	2011
+ward	41904006	Other	Male	0	2011
+ward	83006004	Other	Female	0	2011
+ward	83007026	Coloured	Male	0	2011
+ward	21503010	White	Male	0	2011
+ward	64004010	Indian or Asian	Female	0	2011
+ward	24402016	Other	Female	0	2011
+ward	83202010	White	Female	0	2011
+ward	59500074	Other	Female	0	2011
+ward	52502018	White	Male	0	2011
+ward	93607019	White	Male	0	2011
+ward	64002011	Coloured	Female	0	2011
+ward	30601002	Indian or Asian	Female	0	2011
+ward	21204007	White	Female	0	2011
+ward	93503013	Coloured	Female	0	2011
+ward	93503012	Coloured	Male	0	2011
+ward	93607015	Other	Female	0	2011
+ward	94703029	Other	Female	0	2011
+ward	93402013	Other	Male	0	2011
+ward	93304016	Coloured	Female	0	2011
+ward	94704013	Indian or Asian	Female	0	2011
+ward	29200025	White	Female	0	2011
+ward	83106030	Other	Female	0	2011
+ward	93304007	White	Male	0	2011
+ward	93403029	Indian or Asian	Female	0	2011
+ward	83004008	Coloured	Male	0	2011
+ward	52105002	Coloured	Male	0	2011
+ward	54304010	Other	Female	0	2011
+ward	93504007	Coloured	Female	0	2011
+ward	52902013	White	Female	0	2011
+ward	21003001	Other	Female	0	2011
+ward	24404009	White	Female	0	2011
+ward	63801010	Coloured	Male	0	2011
+ward	94702023	Indian or Asian	Female	0	2011
+ward	21306002	Other	Female	0	2011
+ward	52205019	Other	Male	0	2011
+ward	93501004	White	Male	0	2011
+ward	24403021	Other	Male	0	2011
+ward	74202013	Indian or Asian	Male	0	2011
+ward	41904002	Indian or Asian	Male	0	2011
+ward	21308006	White	Male	0	2011
+ward	93303013	Other	Male	0	2011
+ward	94702026	Other	Female	0	2011
+ward	83105011	White	Male	0	2011
+ward	52606002	White	Female	0	2011
+ward	94704006	White	Male	0	2011
+ward	52902018	White	Female	0	2011
+ward	21307008	White	Female	0	2011
+ward	83106001	Other	Female	0	2011
+ward	63701009	Other	Female	0	2011
+ward	52803002	Other	Female	0	2011
+ward	54302001	Indian or Asian	Female	0	2011
+ward	42004010	Indian or Asian	Female	0	2011
+ward	30708003	White	Male	0	2011
+ward	49400043	Indian or Asian	Female	0	2011
+ward	63701017	White	Female	0	2011
+ward	24404008	White	Female	0	2011
+ward	93303024	White	Male	0	2011
+ward	52601008	Indian or Asian	Male	0	2011
+ward	21507023	White	Female	0	2011
+ward	63802013	White	Female	0	2011
+ward	21505027	Other	Female	0	2011
+ward	41803001	Other	Male	0	2011
+ward	41804019	Coloured	Male	0	2011
+ward	63702015	Coloured	Male	0	2011
+ward	21204008	White	Female	0	2011
+ward	21307012	White	Male	0	2011
+ward	93607013	White	Male	0	2011
+ward	93504027	Indian or Asian	Male	0	2011
+ward	24402026	Indian or Asian	Male	0	2011
+ward	94705019	Coloured	Female	0	2011
+ward	52306004	White	Male	0	2011
+ward	93505007	Coloured	Female	0	2011
+ward	30602002	Indian or Asian	Female	0	2011
+ward	41904019	White	Male	0	2011
+ward	83001007	White	Female	0	2011
+ward	21305018	Coloured	Female	0	2011
+ward	10408005	Indian or Asian	Male	0	2011
+ward	21503024	Indian or Asian	Female	0	2011
+ward	52201010	Coloured	Male	0	2011
+ward	83105006	Coloured	Female	0	2011
+ward	21008006	Indian or Asian	Female	0	2011
+ward	83105022	Coloured	Female	0	2011
+ward	24402024	Indian or Asian	Female	0	2011
+ward	83005002	Other	Male	0	2011
+ward	10206008	Indian or Asian	Female	0	2011
+ward	21206002	Coloured	Male	0	2011
+ward	52602009	Other	Female	0	2011
+ward	21201026	Coloured	Male	0	2011
+ward	10302009	Other	Female	0	2011
+ward	21504013	Indian or Asian	Female	0	2011
+ward	52404004	White	Male	0	2011
+ward	83104003	Other	Male	0	2011
+ward	93607008	White	Male	0	2011
+ward	41804030	Other	Female	0	2011
+ward	10302005	White	Male	0	2011
+ward	63805004	White	Female	0	2011
+ward	52801003	White	Female	0	2011
+ward	52606014	Coloured	Male	0	2011
+ward	63903005	White	Female	0	2011
+ward	79800038	White	Male	0	2011
+ward	42005003	Indian or Asian	Male	0	2011
+ward	54304008	White	Male	0	2011
+ward	29200032	Other	Male	0	2011
+ward	83203002	Other	Female	0	2011
+ward	52402007	White	Male	0	2011
+ward	52106023	Indian or Asian	Male	0	2011
+ward	83002018	Indian or Asian	Female	0	2011
+ward	24403027	Indian or Asian	Female	0	2011
+ward	21507034	Indian or Asian	Female	0	2011
+ward	49400012	Other	Female	0	2011
+ward	34502003	White	Female	0	2011
+ward	63904016	Other	Male	0	2011
+ward	42001011	White	Male	0	2011
+ward	21202026	White	Female	0	2011
+ward	21304012	Coloured	Female	0	2011
+ward	93505008	Indian or Asian	Female	0	2011
+ward	21308008	Other	Female	0	2011
+ward	63705002	Other	Male	0	2011
+ward	21505002	White	Female	0	2011
+ward	52702001	Other	Male	0	2011
+ward	63703009	White	Male	0	2011
+ward	21503013	White	Male	0	2011
+ward	41603001	White	Male	0	2011
+ward	63803014	Other	Male	0	2011
+ward	74201018	White	Female	0	2011
+ward	54305005	Coloured	Female	0	2011
+ward	93502010	Coloured	Male	0	2011
+ward	52704003	Coloured	Male	0	2011
+ward	74201042	White	Male	0	2011
+ward	93501018	Coloured	Male	0	2011
+ward	74201032	Coloured	Female	0	2011
+ward	83106015	Coloured	Female	0	2011
+ward	93502008	Other	Female	0	2011
+ward	94703020	Indian or Asian	Female	0	2011
+ward	21505021	White	Female	0	2011
+ward	94704008	Indian or Asian	Female	0	2011
+ward	93404012	Other	Male	0	2011
+ward	63703005	Indian or Asian	Female	0	2011
+ward	63903004	White	Female	0	2011
+ward	21208002	White	Male	0	2011
+ward	52904004	Indian or Asian	Male	0	2011
+ward	83104003	Indian or Asian	Male	0	2011
+ward	29200032	Indian or Asian	Male	0	2011
+ward	21306015	Indian or Asian	Male	0	2011
+ward	52804004	White	Male	0	2011
+ward	93504002	Coloured	Male	0	2011
+ward	93505009	Coloured	Male	0	2011
+ward	52903018	White	Male	0	2011
+ward	41906002	Indian or Asian	Male	0	2011
+ward	21507034	Other	Female	0	2011
+ward	21201017	Other	Female	0	2011
+ward	21005008	Coloured	Female	0	2011
+ward	21308008	Indian or Asian	Female	0	2011
+ward	74804007	Indian or Asian	Male	0	2011
+ward	52305009	Coloured	Female	0	2011
+ward	94705001	Coloured	Male	0	2011
+ward	42004003	Coloured	Female	0	2011
+ward	93303009	Coloured	Female	0	2011
+ward	93505001	White	Female	0	2011
+ward	21505010	Indian or Asian	Female	0	2011
+ward	52102001	White	Female	0	2011
+ward	52702001	Indian or Asian	Male	0	2011
+ward	52904011	Coloured	Male	0	2011
+ward	30707002	Other	Female	0	2011
+ward	54305004	White	Female	0	2011
+ward	63803026	Other	Female	0	2011
+ward	93404029	White	Female	0	2011
+ward	52901016	Other	Female	0	2011
+ward	30801003	White	Female	0	2011
+ward	94705024	White	Male	0	2011
+ward	52702008	Coloured	Female	0	2011
+ward	93404012	Indian or Asian	Male	0	2011
+ward	52705009	Other	Female	0	2011
+ward	94703020	Other	Female	0	2011
+ward	52605001	White	Male	0	2011
+ward	93502008	Indian or Asian	Female	0	2011
+ward	83006001	White	Male	0	2011
+ward	49400043	Other	Female	0	2011
+ward	52103006	Indian or Asian	Female	0	2011
+ward	94703017	White	Female	0	2011
+ward	93403034	Coloured	Male	0	2011
+ward	42004010	Other	Female	0	2011
+ward	52306007	Indian or Asian	Female	0	2011
+ward	63701009	Indian or Asian	Female	0	2011
+ward	52201013	Other	Male	0	2011
+ward	54302001	Other	Female	0	2011
+ward	83106001	Indian or Asian	Female	0	2011
+ward	52601006	Coloured	Female	0	2011
+ward	83205032	White	Female	0	2011
+ward	83003017	White	Male	0	2011
+ward	10202010	Indian or Asian	Male	0	2011
+ward	93301006	White	Female	0	2011
+ward	83106023	Other	Female	0	2011
+ward	21401010	Coloured	Female	0	2011
+ward	93504015	Indian or Asian	Female	0	2011
+ward	83007020	White	Female	0	2011
+ward	21204005	Coloured	Male	0	2011
+ward	94703012	Indian or Asian	Male	0	2011
+ward	93302016	White	Male	0	2011
+ward	93605003	Other	Male	0	2011
+ward	94701013	Other	Female	0	2011
+ward	24403028	Coloured	Female	0	2011
+ward	49400002	White	Male	0	2011
+ward	93302005	Coloured	Male	0	2011
+ward	21305004	Coloured	Female	0	2011
+ward	24402026	Other	Male	0	2011
+ward	24401008	Coloured	Male	0	2011
+ward	21503024	Other	Female	0	2011
+ward	52606019	White	Female	0	2011
+ward	41902001	White	Female	0	2011
+ward	93505018	Indian or Asian	Male	0	2011
+ward	52704005	Coloured	Female	0	2011
+ward	10206008	Other	Female	0	2011
+ward	83105019	Coloured	Male	0	2011
+ward	83005002	Indian or Asian	Male	0	2011
+ward	21008006	Other	Female	0	2011
+ward	24402024	Other	Female	0	2011
+ward	83105015	White	Female	0	2011
+ward	10302009	Indian or Asian	Female	0	2011
+ward	21504013	Other	Female	0	2011
+ward	52204003	Coloured	Male	0	2011
+ward	41906003	Other	Female	0	2011
+ward	93503005	Coloured	Male	0	2011
+ward	52401004	Other	Male	0	2011
+ward	21207021	Coloured	Female	0	2011
+ward	52103005	Other	Female	0	2011
+ward	21506022	Indian or Asian	Male	0	2011
+ward	83105028	White	Female	0	2011
+ward	64004004	Indian or Asian	Female	0	2011
+ward	64002001	Other	Male	0	2011
+ward	83105020	White	Male	0	2011
+ward	24401009	White	Male	0	2011
+ward	93501006	Coloured	Female	0	2011
+ward	83106028	White	Female	0	2011
+ward	41904035	Other	Female	0	2011
+ward	93301004	White	Female	0	2011
+ward	41805003	Indian or Asian	Female	0	2011
+ward	52605006	White	Female	0	2011
+ward	93304004	Other	Male	0	2011
+ward	94701014	Other	Male	0	2011
+ward	21301003	White	Female	0	2011
+ward	93303026	Indian or Asian	Female	0	2011
+ward	64003025	White	Male	0	2011
+ward	93502007	Indian or Asian	Female	0	2011
+ward	52205016	White	Female	0	2011
+ward	52106004	Coloured	Male	0	2011
+ward	30901004	White	Male	0	2011
+ward	94704007	Coloured	Male	0	2011
+ward	74201035	White	Male	0	2011
+ward	10203006	White	Male	0	2011
+ward	93502019	Other	Female	0	2011
+ward	93302024	White	Male	0	2011
+ward	24401013	Indian or Asian	Male	0	2011
+ward	63702008	White	Male	0	2011
+ward	52201011	Indian or Asian	Male	0	2011
+ward	93302021	Indian or Asian	Male	0	2011
+ward	21505019	Other	Male	0	2011
+ward	41902004	Indian or Asian	Male	0	2011
+ward	21207012	Other	Female	0	2011
+ward	52606020	Other	Female	0	2011
+ward	42003004	Other	Female	0	2011
+ward	94702001	Indian or Asian	Female	0	2011
+ward	21004010	Other	Female	0	2011
+ward	52804024	Coloured	Female	0	2011
+ward	79800080	White	Female	0	2011
+ward	93403007	Other	Male	0	2011
+ward	52901013	Indian or Asian	Male	0	2011
+ward	64002004	Indian or Asian	Female	0	2011
+ward	30803004	White	Male	0	2011
+ward	21305012	Indian or Asian	Female	0	2011
+ward	21404001	Indian or Asian	Female	0	2011
+ward	10301008	Other	Female	0	2011
+ward	52402002	Indian or Asian	Male	0	2011
+ward	74201033	Other	Female	0	2011
+ward	52903017	Other	Male	0	2011
+ward	83007029	Indian or Asian	Male	0	2011
+ward	24402021	White	Male	0	2011
+ward	94705030	White	Male	0	2011
+ward	63904014	Other	Female	0	2011
+ward	52402009	Other	Female	0	2011
+ward	52306001	Indian or Asian	Female	0	2011
+ward	74801015	Indian or Asian	Female	0	2011
+ward	93301003	Coloured	Male	0	2011
+ward	52702018	Indian or Asian	Female	0	2011
+ward	21201007	Indian or Asian	Female	0	2011
+ward	93402001	Indian or Asian	Female	0	2011
+ward	52901017	Indian or Asian	Female	0	2011
+ward	24404018	Indian or Asian	Male	0	2011
+ward	63705031	Coloured	Male	0	2011
+ward	24402005	Indian or Asian	Female	0	2011
+ward	52805006	Coloured	Female	0	2011
+ward	52904006	White	Male	0	2011
+ward	42003018	Indian or Asian	Female	0	2011
+ward	21503031	White	Male	0	2011
+ward	21504006	Other	Male	0	2011
+ward	93502014	Other	Female	0	2011
+ward	94703005	Other	Female	0	2011
+ward	52502024	Other	Female	0	2011
+ward	93301010	Other	Male	0	2011
+ward	93303008	Other	Female	0	2011
+ward	83205013	Coloured	Female	0	2011
+ward	63705009	Other	Female	0	2011
+ward	83003005	White	Male	0	2011
+ward	93607004	Indian or Asian	Female	0	2011
+ward	63805020	Coloured	Male	0	2011
+ward	83205019	Indian or Asian	Female	0	2011
+ward	94704009	Other	Female	0	2011
+ward	21505029	Indian or Asian	Female	0	2011
+ward	93302011	Indian or Asian	Female	0	2011
+ward	10404021	Indian or Asian	Female	0	2011
+ward	21207017	White	Male	0	2011
+ward	52103003	Other	Female	0	2011
+ward	83003002	Other	Female	0	2011
+ward	94703002	Indian or Asian	Male	0	2011
+ward	52502014	White	Male	0	2011
+ward	94704011	Other	Male	0	2011
+ward	52402002	Other	Male	0	2011
+ward	74201033	Indian or Asian	Female	0	2011
+ward	52502012	White	Female	0	2011
+ward	93303030	White	Female	0	2011
+ward	74804015	Coloured	Male	0	2011
+ward	74801015	Other	Female	0	2011
+ward	93403030	Indian or Asian	Male	0	2011
+ward	42001014	White	Male	0	2011
+ward	94703030	Coloured	Male	0	2011
+ward	52705014	Coloured	Male	0	2011
+ward	52306001	Other	Female	0	2011
+ward	93303029	Coloured	Female	0	2011
+ward	93403036	Coloured	Male	0	2011
+ward	74804003	Indian or Asian	Male	0	2011
+ward	52404019	Coloured	Female	0	2011
+ward	52901017	Other	Female	0	2011
+ward	21201007	Other	Female	0	2011
+ward	21507035	Other	Female	0	2011
+ward	52702018	Other	Female	0	2011
+ward	52601005	Coloured	Female	0	2011
+ward	63902004	White	Female	0	2011
+ward	24402005	Other	Female	0	2011
+ward	52404006	Coloured	Female	0	2011
+ward	52902001	Coloured	Female	0	2011
+ward	41904008	Indian or Asian	Male	0	2011
+ward	52802007	White	Male	0	2011
+ward	83002017	White	Female	0	2011
+ward	93301001	Coloured	Female	0	2011
+ward	21307006	Indian or Asian	Male	0	2011
+ward	93502014	Indian or Asian	Female	0	2011
+ward	63701026	Indian or Asian	Male	0	2011
+ward	94703005	Indian or Asian	Female	0	2011
+ward	63805011	White	Male	0	2011
+ward	42003018	Other	Female	0	2011
+ward	63705019	Coloured	Female	0	2011
+ward	63705009	Indian or Asian	Female	0	2011
+ward	21202029	White	Male	0	2011
+ward	52606005	Coloured	Female	0	2011
+ward	83106025	Coloured	Male	0	2011
+ward	52903008	Coloured	Female	0	2011
+ward	21507020	White	Male	0	2011
+ward	93305014	White	Male	0	2011
+ward	19100040	White	Male	0	2011
+ward	21505029	Other	Female	0	2011
+ward	10404021	Other	Female	0	2011
+ward	93302011	Other	Female	0	2011
+ward	83205019	Other	Female	0	2011
+ward	94704009	Indian or Asian	Female	0	2011
+ward	24403004	White	Female	0	2011
+ward	21503003	White	Female	0	2011
+ward	63803012	White	Female	0	2011
+ward	94704011	Indian or Asian	Male	0	2011
+ward	63702032	White	Female	0	2011
+ward	94703002	Other	Male	0	2011
+ward	52103003	Indian or Asian	Female	0	2011
+ward	52703002	White	Male	0	2011
+ward	21506003	Coloured	Male	0	2011
+ward	64004004	Other	Female	0	2011
+ward	21506022	Other	Male	0	2011
+ward	83205015	Coloured	Female	0	2011
+ward	52103005	Indian or Asian	Female	0	2011
+ward	52101001	Coloured	Female	0	2011
+ward	83204003	White	Female	0	2011
+ward	83102013	White	Female	0	2011
+ward	93404005	White	Male	0	2011
+ward	83205014	White	Male	0	2011
+ward	83204012	Other	Male	0	2011
+ward	49400009	White	Male	0	2011
+ward	52701008	White	Female	0	2011
+ward	74201044	Indian or Asian	Female	0	2011
+ward	41805003	Other	Female	0	2011
+ward	79900104	White	Male	0	2011
+ward	41904035	Indian or Asian	Female	0	2011
+ward	94703016	Coloured	Male	0	2011
+ward	63805009	Other	Female	0	2011
+ward	21503019	Other	Male	0	2011
+ward	83102001	White	Male	0	2011
+ward	93502002	Coloured	Male	0	2011
+ward	42001006	Other	Female	0	2011
+ward	52802029	White	Male	0	2011
+ward	94701014	Indian or Asian	Male	0	2011
+ward	74201017	Other	Female	0	2011
+ward	83002002	White	Female	0	2011
+ward	52305002	White	Male	0	2011
+ward	10203008	Indian or Asian	Male	0	2011
+ward	52603018	Coloured	Female	0	2011
+ward	52201011	Other	Male	0	2011
+ward	52303004	Other	Male	0	2011
+ward	93403020	White	Female	0	2011
+ward	93502019	Indian or Asian	Female	0	2011
+ward	24401013	Other	Male	0	2011
+ward	52901013	Other	Male	0	2011
+ward	93403007	Indian or Asian	Male	0	2011
+ward	21201002	Coloured	Female	0	2011
+ward	52606022	Coloured	Male	0	2011
+ward	21004010	Indian or Asian	Female	0	2011
+ward	42003004	Indian or Asian	Female	0	2011
+ward	21207012	Indian or Asian	Female	0	2011
+ward	10301008	Indian or Asian	Female	0	2011
+ward	21305012	Other	Female	0	2011
+ward	63803020	White	Female	0	2011
+ward	52202005	Other	Female	0	2011
+ward	83007027	Indian or Asian	Female	0	2011
+ward	21506020	Indian or Asian	Male	0	2011
+ward	83201013	Other	Male	0	2011
+ward	63702001	Coloured	Male	0	2011
+ward	29200049	Coloured	Female	0	2011
+ward	21202012	Indian or Asian	Male	0	2011
+ward	94702030	Other	Male	0	2011
+ward	83202006	Other	Female	0	2011
+ward	52206001	Indian or Asian	Female	0	2011
+ward	30605003	Other	Female	0	2011
+ward	52106022	Other	Male	0	2011
+ward	21206006	Coloured	Male	0	2011
+ward	52701014	Coloured	Male	0	2011
+ward	29300036	Indian or Asian	Male	0	2011
+ward	93404016	Coloured	Male	0	2011
+ward	63804010	Indian or Asian	Female	0	2011
+ward	83204007	Coloured	Female	0	2011
+ward	54301010	Other	Female	0	2011
+ward	63803027	Other	Male	0	2011
+ward	93301002	Indian or Asian	Male	0	2011
+ward	21202022	Coloured	Female	0	2011
+ward	52502019	Coloured	Male	0	2011
+ward	93301005	White	Male	0	2011
+ward	24401004	White	Male	0	2011
+ward	24402011	White	Male	0	2011
+ward	21206004	Other	Male	0	2011
+ward	83106018	Indian or Asian	Female	0	2011
+ward	41905006	White	Male	0	2011
+ward	63701023	Other	Male	0	2011
+ward	74803015	Other	Female	0	2011
+ward	52105004	White	Male	0	2011
+ward	83105005	Indian or Asian	Female	0	2011
+ward	64003031	Indian or Asian	Female	0	2011
+ward	52302016	Other	Male	0	2011
+ward	42004008	Indian or Asian	Male	0	2011
+ward	21204004	Other	Female	0	2011
+ward	83203007	Other	Female	0	2011
+ward	74201039	Other	Female	0	2011
+ward	93505026	Other	Male	0	2011
+ward	52306012	Coloured	Female	0	2011
+ward	21505014	White	Female	0	2011
+ward	94705009	Other	Female	0	2011
+ward	83201002	White	Female	0	2011
+ward	41904012	Indian or Asian	Male	0	2011
+ward	93402007	White	Female	0	2011
+ward	21201020	Coloured	Female	0	2011
+ward	21202015	Coloured	Female	0	2011
+ward	93501008	Indian or Asian	Male	0	2011
+ward	52302008	Other	Female	0	2011
+ward	93404007	Other	Female	0	2011
+ward	52104004	White	Female	0	2011
+ward	30904001	White	Male	0	2011
+ward	24404013	Coloured	Male	0	2011
+ward	94701006	Indian or Asian	Female	0	2011
+ward	21505026	White	Male	0	2011
+ward	83203001	Other	Female	0	2011
+ward	52702012	Indian or Asian	Female	0	2011
+ward	30703007	Indian or Asian	Female	0	2011
+ward	24404017	Coloured	Female	0	2011
+ward	93403009	Other	Female	0	2011
+ward	52802013	Other	Female	0	2011
+ward	21001005	White	Male	0	2011
+ward	52402016	White	Male	0	2011
+ward	52306006	Coloured	Male	0	2011
+ward	10204015	Indian or Asian	Female	0	2011
+ward	93302010	Coloured	Male	0	2011
+ward	83204028	Coloured	Male	0	2011
+ward	93403017	White	Male	0	2011
+ward	34502008	Indian or Asian	Female	0	2011
+ward	41801008	White	Male	0	2011
+ward	10205017	White	Female	0	2011
+ward	52903007	White	Female	0	2011
+ward	83106009	Other	Male	0	2011
+ward	41804010	Other	Female	0	2011
+ward	21503011	White	Female	0	2011
+ward	83204011	Indian or Asian	Female	0	2011
+ward	42004018	Other	Male	0	2011
+ward	41904012	Other	Male	0	2011
+ward	93404007	Indian or Asian	Female	0	2011
+ward	52804009	Coloured	Female	0	2011
+ward	52302008	Indian or Asian	Female	0	2011
+ward	83005003	Other	Female	0	2011
+ward	52302013	White	Male	0	2011
+ward	52804021	Other	Female	0	2011
+ward	63802005	Other	Male	0	2011
+ward	83203001	Indian or Asian	Female	0	2011
+ward	52201012	Indian or Asian	Female	0	2011
+ward	64002012	Coloured	Male	0	2011
+ward	94701006	Other	Female	0	2011
+ward	93505005	White	Male	0	2011
+ward	94704010	Indian or Asian	Male	0	2011
+ward	94705005	White	Female	0	2011
+ward	63904004	White	Female	0	2011
+ward	64004001	Indian or Asian	Male	0	2011
+ward	63804009	White	Male	0	2011
+ward	93403009	Indian or Asian	Female	0	2011
+ward	63705008	Coloured	Male	0	2011
+ward	21206007	Coloured	Male	0	2011
+ward	94704005	White	Male	0	2011
+ward	63805019	Indian or Asian	Male	0	2011
+ward	83205025	Other	Female	0	2011
+ward	54305014	White	Female	0	2011
+ward	63701002	Other	Female	0	2011
+ward	21507028	White	Male	0	2011
+ward	34502008	Other	Female	0	2011
+ward	52302006	White	Male	0	2011
+ward	93505023	Coloured	Male	0	2011
+ward	94702020	White	Female	0	2011
+ward	21202013	White	Female	0	2011
+ward	52101005	Coloured	Male	0	2011
+ward	21503004	White	Female	0	2011
+ward	24401011	Other	Female	0	2011
+ward	41904025	Indian or Asian	Female	0	2011
+ward	83106009	Indian or Asian	Male	0	2011
+ward	21403005	Indian or Asian	Male	0	2011
+ward	83201013	Indian or Asian	Male	0	2011
+ward	30803007	White	Female	0	2011
+ward	21506020	Other	Male	0	2011
+ward	83007027	Other	Female	0	2011
+ward	10203016	White	Female	0	2011
+ward	30707001	White	Female	0	2011
+ward	83001021	Other	Female	0	2011
+ward	59500087	Indian or Asian	Male	0	2011
+ward	21207009	White	Male	0	2011
+ward	83106007	White	Male	0	2011
+ward	52306011	White	Female	0	2011
+ward	30605003	Indian or Asian	Female	0	2011
+ward	93302017	White	Male	0	2011
+ward	21305008	Other	Male	0	2011
+ward	54305009	White	Female	0	2011
+ward	59500040	White	Male	0	2011
+ward	93607012	Other	Female	0	2011
+ward	21201006	White	Female	0	2011
+ward	49400035	White	Male	0	2011
+ward	63904006	White	Female	0	2011
+ward	52306013	Other	Male	0	2011
+ward	63803008	Other	Male	0	2011
+ward	10203009	White	Female	0	2011
+ward	74801008	Indian or Asian	Male	0	2011
+ward	21207005	Coloured	Male	0	2011
+ward	93301002	Other	Male	0	2011
+ward	52603001	Other	Female	0	2011
+ward	29200010	White	Female	0	2011
+ward	21304013	Coloured	Male	0	2011
+ward	52806007	White	Female	0	2011
+ward	94703022	White	Female	0	2011
+ward	63701023	Indian or Asian	Male	0	2011
+ward	30803001	White	Female	0	2011
+ward	83106018	Other	Female	0	2011
+ward	21206004	Indian or Asian	Male	0	2011
+ward	21304023	Coloured	Male	0	2011
+ward	52603015	Other	Male	0	2011
+ward	52702004	Coloured	Female	0	2011
+ward	21506004	Coloured	Male	0	2011
+ward	52302016	Indian or Asian	Male	0	2011
+ward	93602012	White	Female	0	2011
+ward	79900103	White	Female	0	2011
+ward	74803015	Indian or Asian	Female	0	2011
+ward	83105005	Other	Female	0	2011
+ward	24404014	White	Male	0	2011
+ward	52801006	White	Female	0	2011
+ward	83001009	Other	Female	0	2011
+ward	93505026	Indian or Asian	Male	0	2011
+ward	74201039	Indian or Asian	Female	0	2011
+ward	52801009	Other	Male	0	2011
+ward	83203007	Indian or Asian	Female	0	2011
+ward	93501003	Coloured	Male	0	2011
+ward	63804007	White	Male	0	2011
+ward	93607024	White	Male	0	2011
+ward	93503002	White	Female	0	2011
+ward	52904008	Other	Female	0	2011
+ward	21507026	White	Male	0	2011
+ward	21403003	Other	Female	0	2011
+ward	63705007	Coloured	Male	0	2011
+ward	83205002	White	Female	0	2011
+ward	21002006	Indian or Asian	Female	0	2011
+ward	21202024	Other	Male	0	2011
+ward	54302003	Indian or Asian	Female	0	2011
+ward	41801010	Indian or Asian	Male	0	2011
+ward	52404008	White	Male	0	2011
+ward	74201006	White	Male	0	2011
+ward	52606010	Coloured	Male	0	2011
+ward	63705020	White	Female	0	2011
+ward	29200030	White	Female	0	2011
+ward	83106014	Coloured	Female	0	2011
+ward	52404005	Other	Female	0	2011
+ward	93505003	Other	Female	0	2011
+ward	52502030	Indian or Asian	Female	0	2011
+ward	52806012	Coloured	Female	0	2011
+ward	52207005	White	Male	0	2011
+ward	79700101	White	Male	0	2011
+ward	52504007	White	Male	0	2011
+ward	10502002	Indian or Asian	Female	0	2011
+ward	94701003	Coloured	Female	0	2011
+ward	93404017	White	Male	0	2011
+ward	52702013	Coloured	Female	0	2011
+ward	52502008	Other	Female	0	2011
+ward	21202019	Indian or Asian	Male	0	2011
+ward	21204012	Indian or Asian	Female	0	2011
+ward	64003014	White	Female	0	2011
+ward	41604004	White	Male	0	2011
+ward	52705001	Coloured	Male	0	2011
+ward	21304010	Other	Female	0	2011
+ward	52502023	White	Male	0	2011
+ward	52103013	Coloured	Male	0	2011
+ward	93302009	Coloured	Female	0	2011
+ward	10502004	Other	Male	0	2011
+ward	21304011	White	Male	0	2011
+ward	63903002	Indian or Asian	Female	0	2011
+ward	24403011	White	Male	0	2011
+ward	93403016	Indian or Asian	Male	0	2011
+ward	21308002	Other	Female	0	2011
+ward	30903003	White	Male	0	2011
+ward	63701014	Other	Female	0	2011
+ward	94703031	Indian or Asian	Female	0	2011
+ward	83105001	Other	Female	0	2011
+ward	24404004	White	Male	0	2011
+ward	24404007	Indian or Asian	Female	0	2011
+ward	21204009	Indian or Asian	Female	0	2011
+ward	34501001	Other	Female	0	2011
+ward	52205005	White	Female	0	2011
+ward	83103022	Other	Female	0	2011
+ward	83001008	Other	Female	0	2011
+ward	21304007	Coloured	Male	0	2011
+ward	24403031	White	Female	0	2011
+ward	21505006	White	Female	0	2011
+ward	21201008	Indian or Asian	Male	0	2011
+ward	34501007	White	Female	0	2011
+ward	41902015	Indian or Asian	Male	0	2011
+ward	93302006	Other	Female	0	2011
+ward	21307007	Indian or Asian	Female	0	2011
+ward	83204017	Indian or Asian	Male	0	2011
+ward	52805005	Coloured	Female	0	2011
+ward	93302026	White	Male	0	2011
+ward	21506017	White	Female	0	2011
+ward	21204010	White	Female	0	2011
+ward	52504009	White	Male	0	2011
+ward	30705003	Other	Male	0	2011
+ward	83106006	Other	Female	0	2011
+ward	34502007	White	Female	0	2011
+ward	52404003	White	Female	0	2011
+ward	21305016	Coloured	Female	0	2011
+ward	83001013	Other	Female	0	2011
+ward	52701006	Coloured	Male	0	2011
+ward	83204014	Other	Male	0	2011
+ward	63802015	Other	Female	0	2011
+ward	21308002	Indian or Asian	Female	0	2011
+ward	93402010	Indian or Asian	Female	0	2011
+ward	21008013	Indian or Asian	Male	0	2011
+ward	94703015	White	Female	0	2011
+ward	94703031	Other	Female	0	2011
+ward	63703024	Indian or Asian	Female	0	2011
+ward	52806008	White	Female	0	2011
+ward	63701014	Indian or Asian	Female	0	2011
+ward	93607003	Coloured	Male	0	2011
+ward	10405004	White	Female	0	2011
+ward	21204009	Other	Female	0	2011
+ward	21303003	White	Male	0	2011
+ward	34501001	Indian or Asian	Female	0	2011
+ward	30703004	Other	Female	0	2011
+ward	21202020	White	Female	0	2011
+ward	52603019	White	Male	0	2011
+ward	83105001	Indian or Asian	Female	0	2011
+ward	52101008	White	Male	0	2011
+ward	83001008	Indian or Asian	Female	0	2011
+ward	54305007	White	Male	0	2011
+ward	83103022	Indian or Asian	Female	0	2011
+ward	59500085	Other	Male	0	2011
+ward	52903004	White	Female	0	2011
+ward	63805003	White	Female	0	2011
+ward	93403018	White	Male	0	2011
+ward	93403002	Coloured	Female	0	2011
+ward	93403006	White	Female	0	2011
+ward	41902015	Other	Male	0	2011
+ward	21201008	Other	Male	0	2011
+ward	21206013	Indian or Asian	Male	0	2011
+ward	93302006	Indian or Asian	Female	0	2011
+ward	94705011	Coloured	Female	0	2011
+ward	52806013	White	Male	0	2011
+ward	52205023	Other	Female	0	2011
+ward	83106006	Indian or Asian	Female	0	2011
+ward	83204017	Other	Male	0	2011
+ward	83105007	Indian or Asian	Female	0	2011
+ward	83205006	White	Male	0	2011
+ward	63802015	Indian or Asian	Female	0	2011
+ward	21001006	White	Female	0	2011
+ward	83001013	Indian or Asian	Female	0	2011
+ward	63907005	White	Male	0	2011
+ward	30704002	Other	Male	0	2011
+ward	52803004	White	Female	0	2011
+ward	52402008	Other	Female	0	2011
+ward	52904008	Indian or Asian	Female	0	2011
+ward	21504002	White	Female	0	2011
+ward	93502013	Indian or Asian	Male	0	2011
+ward	63701016	White	Female	0	2011
+ward	52305001	Other	Male	0	2011
+ward	52404007	White	Male	0	2011
+ward	83105010	Other	Female	0	2011
+ward	94702002	White	Female	0	2011
+ward	21403003	Indian or Asian	Female	0	2011
+ward	54302003	Other	Female	0	2011
+ward	21305020	Coloured	Female	0	2011
+ward	41804014	Other	Female	0	2011
+ward	93303007	Indian or Asian	Male	0	2011
+ward	83103026	Coloured	Female	0	2011
+ward	52302009	White	Female	0	2011
+ward	52606024	Coloured	Female	0	2011
+ward	10205002	White	Male	0	2011
+ward	83105018	White	Female	0	2011
+ward	83002019	Other	Female	0	2011
+ward	94702021	Indian or Asian	Female	0	2011
+ward	52502028	Other	Female	0	2011
+ward	21506016	White	Female	0	2011
+ward	93607017	White	Male	0	2011
+ward	29300022	Other	Female	0	2011
+ward	52502030	Other	Female	0	2011
+ward	63907012	White	Female	0	2011
+ward	10405005	Indian or Asian	Male	0	2011
+ward	93505003	Indian or Asian	Female	0	2011
+ward	83102014	White	Female	0	2011
+ward	93302014	Indian or Asian	Male	0	2011
+ward	94705012	Indian or Asian	Male	0	2011
+ward	83005001	White	Male	0	2011
+ward	21204012	Other	Female	0	2011
+ward	94705002	Coloured	Female	0	2011
+ward	21202019	Other	Male	0	2011
+ward	10502002	Other	Female	0	2011
+ward	52602002	White	Female	0	2011
+ward	83106010	Other	Male	0	2011
+ward	10502004	Indian or Asian	Male	0	2011
+ward	21201031	White	Female	0	2011
+ward	83103004	Other	Male	0	2011
+ward	54301003	White	Male	0	2011
+ward	21304010	Indian or Asian	Female	0	2011
+ward	21402003	White	Female	0	2011
+ward	21305003	White	Female	0	2011
+ward	52801008	Other	Female	0	2011
+ward	63904015	White	Male	0	2011
+ward	41602002	Other	Female	0	2011
+ward	63904017	Indian or Asian	Female	0	2011
+ward	52806005	Indian or Asian	Female	0	2011
+ward	63804017	Coloured	Male	0	2011
+ward	21206011	Indian or Asian	Male	0	2011
+ward	52206007	Indian or Asian	Female	0	2011
+ward	94705023	Indian or Asian	Female	0	2011
+ward	21506021	Indian or Asian	Male	0	2011
+ward	21402006	Coloured	Male	0	2011
+ward	93304014	White	Male	0	2011
+ward	10407006	White	Male	0	2011
+ward	83105016	Coloured	Male	0	2011
+ward	63701020	Indian or Asian	Female	0	2011
+ward	54305002	Other	Female	0	2011
+ward	41904014	Other	Male	0	2011
+ward	93402006	Indian or Asian	Female	0	2011
+ward	54303008	White	Female	0	2011
+ward	93505027	Indian or Asian	Female	0	2011
+ward	21306001	Coloured	Female	0	2011
+ward	74201020	White	Male	0	2011
+ward	83006002	Indian or Asian	Female	0	2011
+ward	63702017	White	Female	0	2011
+ward	54301001	Other	Female	0	2011
+ward	21305017	Coloured	Female	0	2011
+ward	52302002	White	Female	0	2011
+ward	52904003	Other	Female	0	2011
+ward	52802021	White	Female	0	2011
+ward	94703028	White	Male	0	2011
+ward	52102008	Other	Female	0	2011
+ward	24403005	Coloured	Female	0	2011
+ward	21506002	Indian or Asian	Female	0	2011
+ward	29200050	Coloured	Female	0	2011
+ward	63801001	Other	Male	0	2011
+ward	52202011	White	Male	0	2011
+ward	83002004	Indian or Asian	Male	0	2011
+ward	79900013	Indian or Asian	Female	0	2011
+ward	21302001	Coloured	Female	0	2011
+ward	52502011	White	Female	0	2011
+ward	63701015	Other	Male	0	2011
+ward	94702015	Coloured	Female	0	2011
+ward	63804011	Other	Female	0	2011
+ward	24401023	Coloured	Male	0	2011
+ward	74802018	Other	Male	0	2011
+ward	83001001	Other	Female	0	2011
+ward	83204002	Coloured	Male	0	2011
+ward	52802011	Indian or Asian	Female	0	2011
+ward	24403014	Coloured	Female	0	2011
+ward	94702017	Coloured	Female	0	2011
+ward	52304007	Other	Female	0	2011
+ward	63701001	Coloured	Female	0	2011
+ward	59500096	Coloured	Male	0	2011
+ward	49400040	White	Female	0	2011
+ward	42001008	Indian or Asian	Female	0	2011
+ward	64003013	Other	Male	0	2011
+ward	10302013	Indian or Asian	Male	0	2011
+ward	54305010	Other	Female	0	2011
+ward	52605008	Indian or Asian	Female	0	2011
+ward	52404013	Coloured	Male	0	2011
+ward	52404001	Coloured	Male	0	2011
+ward	93607010	Indian or Asian	Female	0	2011
+ward	30604003	Indian or Asian	Female	0	2011
+ward	63702007	Other	Female	0	2011
+ward	21401007	White	Male	0	2011
+ward	93404004	Indian or Asian	Male	0	2011
+ward	21506025	White	Male	0	2011
+ward	24403022	Indian or Asian	Female	0	2011
+ward	83205011	Other	Female	0	2011
+ward	93607022	Indian or Asian	Female	0	2011
+ward	52103002	Coloured	Female	0	2011
+ward	94705015	Indian or Asian	Female	0	2011
+ward	93504033	White	Male	0	2011
+ward	42003006	Other	Male	0	2011
+ward	52902005	White	Male	0	2011
+ward	52606017	White	Male	0	2011
+ward	21503007	White	Female	0	2011
+ward	83105017	White	Male	0	2011
+ward	93607025	Indian or Asian	Male	0	2011
+ward	74802017	White	Female	0	2011
+ward	21402018	Other	Male	0	2011
+ward	30706004	White	Female	0	2011
+ward	52802011	Other	Female	0	2011
+ward	52605020	Indian or Asian	Male	0	2011
+ward	21401002	White	Male	0	2011
+ward	93302008	White	Female	0	2011
+ward	63701015	Indian or Asian	Male	0	2011
+ward	63804011	Indian or Asian	Female	0	2011
+ward	52704008	White	Female	0	2011
+ward	52804016	Other	Male	0	2011
+ward	52606018	Indian or Asian	Male	0	2011
+ward	93304002	Coloured	Female	0	2011
+ward	93505012	Coloured	Male	0	2011
+ward	74803012	Coloured	Male	0	2011
+ward	64004003	White	Female	0	2011
+ward	52902020	White	Male	0	2011
+ward	83106016	White	Male	0	2011
+ward	54305010	Indian or Asian	Female	0	2011
+ward	52605008	Other	Female	0	2011
+ward	21505022	Coloured	Female	0	2011
+ward	93303004	Coloured	Male	0	2011
+ward	63705025	Coloured	Female	0	2011
+ward	93404038	Coloured	Female	0	2011
+ward	21507029	Coloured	Female	0	2011
+ward	42001008	Other	Female	0	2011
+ward	30604003	Other	Female	0	2011
+ward	93607010	Other	Female	0	2011
+ward	21204016	White	Female	0	2011
+ward	83204013	Other	Female	0	2011
+ward	52802012	Indian or Asian	Male	0	2011
+ward	63705012	White	Male	0	2011
+ward	21202023	Coloured	Female	0	2011
+ward	83205011	Indian or Asian	Female	0	2011
+ward	24403022	Other	Female	0	2011
+ward	93607022	Other	Female	0	2011
+ward	93501001	Indian or Asian	Male	0	2011
+ward	93402012	Indian or Asian	Female	0	2011
+ward	41804017	Other	Male	0	2011
+ward	42003006	Indian or Asian	Male	0	2011
+ward	63904010	White	Male	0	2011
+ward	94705015	Other	Female	0	2011
+ward	93501016	Coloured	Male	0	2011
+ward	21308007	Coloured	Male	0	2011
+ward	52106001	Other	Female	0	2011
+ward	52806005	Other	Female	0	2011
+ward	63904017	Other	Female	0	2011
+ward	52103010	Coloured	Male	0	2011
+ward	93302015	Other	Female	0	2011
+ward	52603010	White	Male	0	2011
+ward	93404033	Coloured	Female	0	2011
+ward	83204026	White	Female	0	2011
+ward	52405001	White	Male	0	2011
+ward	21206011	Other	Male	0	2011
+ward	24402009	Coloured	Female	0	2011
+ward	94701002	Coloured	Female	0	2011
+ward	52206007	Other	Female	0	2011
+ward	21401006	Coloured	Female	0	2011
+ward	54305002	Indian or Asian	Female	0	2011
+ward	63701020	Other	Female	0	2011
+ward	41902020	Indian or Asian	Female	0	2011
+ward	63805018	Coloured	Male	0	2011
+ward	83006002	Other	Female	0	2011
+ward	93505027	Other	Female	0	2011
+ward	52606023	Other	Female	0	2011
+ward	41904014	Indian or Asian	Male	0	2011
+ward	63803005	White	Female	0	2011
+ward	93402006	Other	Female	0	2011
+ward	21304004	White	Male	0	2011
+ward	63702003	White	Female	0	2011
+ward	34501010	Other	Male	0	2011
+ward	41801009	Other	Male	0	2011
+ward	52804025	Coloured	Female	0	2011
+ward	54301001	Indian or Asian	Female	0	2011
+ward	52404011	White	Male	0	2011
+ward	63801001	Indian or Asian	Male	0	2011
+ward	93501007	Coloured	Female	0	2011
+ward	83103017	White	Male	0	2011
+ward	83103024	Coloured	Female	0	2011
+ward	52803001	White	Male	0	2011
+ward	63704005	White	Male	0	2011
+ward	21506002	Other	Female	0	2011
+ward	54303001	White	Female	0	2011
+ward	94704003	Coloured	Female	0	2011
+ward	24404016	Indian or Asian	Male	0	2011
+ward	83205004	Coloured	Male	0	2011
+ward	83202028	White	Male	0	2011
+ward	41805006	Indian or Asian	Male	0	2011
+ward	41804016	White	Male	0	2011
+ward	93404035	White	Female	0	2011
+ward	63705001	Indian or Asian	Female	0	2011
+ward	93501013	White	Male	0	2011
+ward	93602006	Coloured	Male	0	2011
+ward	93501020	White	Male	0	2011
+ward	74801006	Other	Female	0	2011
+ward	52305006	Coloured	Male	0	2011
+ward	29300024	Indian or Asian	Female	0	2011
+ward	52704006	Coloured	Male	0	2011
+ward	41803005	Other	Female	0	2011
+ward	83106019	Other	Female	0	2011
+ward	54303002	Indian or Asian	Female	0	2011
+ward	63705022	Indian or Asian	Female	0	2011
+ward	63802006	Other	Female	0	2011
+ward	83205020	Indian or Asian	Female	0	2011
+ward	94703014	Coloured	Male	0	2011
+ward	21004007	Indian or Asian	Female	0	2011
+ward	63701005	White	Female	0	2011
+ward	30602001	Indian or Asian	Male	0	2011
+ward	42001012	Other	Male	0	2011
+ward	52606001	Coloured	Male	0	2011
+ward	83104004	Other	Male	0	2011
+ward	93403028	White	Female	0	2011
+ward	52504006	Other	Male	0	2011
+ward	52202003	Other	Female	0	2011
+ward	63904007	White	Female	0	2011
+ward	52703001	Other	Female	0	2011
+ward	74803008	White	Male	0	2011
+ward	42004007	Indian or Asian	Female	0	2011
+ward	52603014	Other	Male	0	2011
+ward	52402006	Other	Male	0	2011
+ward	52602008	Other	Male	0	2011
+ward	21504009	White	Female	0	2011
+ward	21504004	Other	Female	0	2011
+ward	93503003	Indian or Asian	Female	0	2011
+ward	79800017	White	Female	0	2011
+ward	93305009	Other	Female	0	2011
+ward	93504037	Indian or Asian	Female	0	2011
+ward	93403011	Other	Male	0	2011
+ward	52801001	White	Female	0	2011
+ward	83105032	Indian or Asian	Female	0	2011
+ward	83106012	Indian or Asian	Female	0	2011
+ward	63701025	Indian or Asian	Male	0	2011
+ward	42003019	Other	Female	0	2011
+ward	93404008	Other	Female	0	2011
+ward	74802021	Coloured	Male	0	2011
+ward	52305005	Other	Male	0	2011
+ward	79700059	Indian or Asian	Female	0	2011
+ward	21505028	Other	Male	0	2011
+ward	42001023	Other	Female	0	2011
+ward	21202027	Other	Female	0	2011
+ward	52503004	Indian or Asian	Female	0	2011
+ward	93303011	White	Male	0	2011
+ward	21207019	Coloured	Female	0	2011
+ward	52701007	Coloured	Female	0	2011
+ward	24403023	Other	Female	0	2011
+ward	42003002	Indian or Asian	Female	0	2011
+ward	74801025	Indian or Asian	Male	0	2011
+ward	21207006	White	Male	0	2011
+ward	21202031	Indian or Asian	Female	0	2011
+ward	21304009	Coloured	Female	0	2011
+ward	52702015	Coloured	Male	0	2011
+ward	52705015	Other	Male	0	2011
+ward	79900097	White	Female	0	2011
+ward	52103017	Other	Female	0	2011
+ward	83106024	Indian or Asian	Female	0	2011
+ward	52402010	Other	Female	0	2011
+ward	21503005	Other	Male	0	2011
+ward	52306002	White	Female	0	2011
+ward	74803003	Coloured	Female	0	2011
+ward	83202020	Other	Female	0	2011
+ward	93607020	White	Female	0	2011
+ward	24401006	Indian or Asian	Male	0	2011
+ward	42004017	Other	Female	0	2011
+ward	21301009	Indian or Asian	Female	0	2011
+ward	41901007	Other	Male	0	2011
+ward	21201016	Indian or Asian	Female	0	2011
+ward	52404016	Other	Male	0	2011
+ward	83205007	Coloured	Male	0	2011
+ward	52204004	Other	Male	0	2011
+ward	93504034	White	Male	0	2011
+ward	74201038	Other	Female	0	2011
+ward	63803025	Indian or Asian	Female	0	2011
+ward	24403017	White	Female	0	2011
+ward	83201008	Coloured	Male	0	2011
+ward	42003019	Indian or Asian	Female	0	2011
+ward	93404008	Indian or Asian	Female	0	2011
+ward	52701011	White	Female	0	2011
+ward	42001023	Indian or Asian	Female	0	2011
+ward	83103020	Coloured	Male	0	2011
+ward	63804004	Other	Female	0	2011
+ward	52605005	White	Male	0	2011
+ward	52606011	Coloured	Female	0	2011
+ward	93404027	White	Female	0	2011
+ward	79700059	Other	Female	0	2011
+ward	52802014	White	Female	0	2011
+ward	24403015	Coloured	Female	0	2011
+ward	79900094	Other	Female	0	2011
+ward	41805011	Indian or Asian	Male	0	2011
+ward	94701001	Coloured	Female	0	2011
+ward	52603009	Other	Female	0	2011
+ward	52503004	Other	Female	0	2011
+ward	93403032	White	Male	0	2011
+ward	21307013	Coloured	Female	0	2011
+ward	21202031	Other	Female	0	2011
+ward	42003002	Other	Female	0	2011
+ward	24403023	Indian or Asian	Female	0	2011
+ward	52302021	White	Male	0	2011
+ward	29200014	White	Female	0	2011
+ward	52402010	Indian or Asian	Female	0	2011
+ward	93403031	White	Male	0	2011
+ward	21306009	Other	Male	0	2011
+ward	29200048	Coloured	Female	0	2011
+ward	52904001	Other	Male	0	2011
+ward	52901011	Other	Female	0	2011
+ward	52405003	Coloured	Female	0	2011
+ward	52804017	Coloured	Male	0	2011
+ward	21207013	Indian or Asian	Male	0	2011
+ward	63904026	White	Female	0	2011
+ward	52605011	White	Female	0	2011
+ward	63904024	Other	Male	0	2011
+ward	93504035	White	Male	0	2011
+ward	21307001	White	Male	0	2011
+ward	93303022	White	Male	0	2011
+ward	21202017	White	Male	0	2011
+ward	74201038	Indian or Asian	Female	0	2011
+ward	52204004	Indian or Asian	Male	0	2011
+ward	93402003	Indian or Asian	Female	0	2011
+ward	63803025	Other	Female	0	2011
+ward	52903005	White	Male	0	2011
+ward	21305007	White	Female	0	2011
+ward	63701018	Other	Female	0	2011
+ward	29300030	White	Female	0	2011
+ward	21201016	Other	Female	0	2011
+ward	52804015	White	Female	0	2011
+ward	63705029	White	Female	0	2011
+ward	24402001	Other	Male	0	2011
+ward	52104009	Coloured	Male	0	2011
+ward	21305011	Other	Male	0	2011
+ward	24404016	Other	Male	0	2011
+ward	21202010	White	Male	0	2011
+ward	52104008	White	Male	0	2011
+ward	63801004	White	Male	0	2011
+ward	93302025	Coloured	Female	0	2011
+ward	74801006	Indian or Asian	Female	0	2011
+ward	93403025	White	Male	0	2011
+ward	21504018	Other	Male	0	2011
+ward	83205027	White	Male	0	2011
+ward	63705001	Other	Female	0	2011
+ward	41803005	Indian or Asian	Female	0	2011
+ward	63705022	Other	Female	0	2011
+ward	54303002	Other	Female	0	2011
+ward	83106019	Indian or Asian	Female	0	2011
+ward	34502004	White	Male	0	2011
+ward	42004021	White	Female	0	2011
+ward	52903016	Indian or Asian	Male	0	2011
+ward	24401016	Coloured	Male	0	2011
+ward	41904010	White	Female	0	2011
+ward	10404015	Indian or Asian	Male	0	2011
+ward	52105003	Other	Male	0	2011
+ward	24402027	Coloured	Female	0	2011
+ward	83205020	Other	Female	0	2011
+ward	21004007	Other	Female	0	2011
+ward	74201034	Other	Female	0	2011
+ward	93303005	White	Female	0	2011
+ward	42004009	White	Female	0	2011
+ward	52504011	Other	Male	0	2011
+ward	74203004	Other	Female	0	2011
+ward	52903011	Coloured	Female	0	2011
+ward	21307016	Coloured	Male	0	2011
+ward	93505025	Indian or Asian	Male	0	2011
+ward	93301024	Coloured	Female	0	2011
+ward	63804008	Other	Male	0	2011
+ward	21402011	White	Female	0	2011
+ward	83205017	Coloured	Female	0	2011
+ward	21307017	Coloured	Female	0	2011
+ward	52504006	Indian or Asian	Male	0	2011
+ward	21306003	White	Female	0	2011
+ward	42004007	Other	Female	0	2011
+ward	24404003	White	Male	0	2011
+ward	52705011	White	Female	0	2011
+ward	79800014	Indian or Asian	Female	0	2011
+ward	21503009	White	Female	0	2011
+ward	21504004	Indian or Asian	Female	0	2011
+ward	93503003	Other	Female	0	2011
+ward	52602008	Indian or Asian	Male	0	2011
+ward	63802004	White	Female	0	2011
+ward	83106004	White	Male	0	2011
+ward	93304003	White	Female	0	2011
+ward	52306005	White	Male	0	2011
+ward	52803006	Coloured	Female	0	2011
+ward	52302007	White	Female	0	2011
+ward	93303028	Indian or Asian	Female	0	2011
+ward	52702019	Indian or Asian	Female	0	2011
+ward	21304023	White	Male	0	2011
+ward	74201007	Indian or Asian	Female	0	2011
+ward	41804003	Indian or Asian	Female	0	2011
+ward	52203003	Coloured	Female	0	2011
+ward	24401024	Other	Female	0	2011
+ward	30708002	Indian or Asian	Female	0	2011
+ward	94703022	Coloured	Female	0	2011
+ward	93504005	Indian or Asian	Female	0	2011
+ward	21307011	Other	Female	0	2011
+ward	52806007	Coloured	Female	0	2011
+ward	93607023	Other	Female	0	2011
+ward	93404006	White	Male	0	2011
+ward	21207005	White	Male	0	2011
+ward	30901029	White	Female	0	2011
+ward	10405001	Other	Male	0	2011
+ward	93504011	White	Male	0	2011
+ward	24404014	Coloured	Male	0	2011
+ward	29200026	Indian or Asian	Female	0	2011
+ward	41604001	Other	Female	0	2011
+ward	41901017	Indian or Asian	Male	0	2011
+ward	52602007	Coloured	Male	0	2011
+ward	21307015	Other	Female	0	2011
+ward	21506004	White	Male	0	2011
+ward	42003007	White	Female	0	2011
+ward	52702004	White	Female	0	2011
+ward	52606012	Indian or Asian	Female	0	2011
+ward	52806002	Other	Male	0	2011
+ward	83106007	Coloured	Male	0	2011
+ward	93601010	Indian or Asian	Female	0	2011
+ward	41901012	Indian or Asian	Male	0	2011
+ward	41801007	White	Male	0	2011
+ward	93402005	Other	Male	0	2011
+ward	93301007	Indian or Asian	Male	0	2011
+ward	52901014	White	Female	0	2011
+ward	93602003	Coloured	Male	0	2011
+ward	42001018	Indian or Asian	Female	0	2011
+ward	83102031	White	Female	0	2011
+ward	21304002	Coloured	Female	0	2011
+ward	21201006	Coloured	Female	0	2011
+ward	29300059	Other	Female	0	2011
+ward	93303034	Indian or Asian	Female	0	2011
+ward	21506013	Coloured	Male	0	2011
+ward	21304003	Indian or Asian	Female	0	2011
+ward	52605013	Other	Male	0	2011
+ward	63803022	White	Male	0	2011
+ward	52502013	White	Female	0	2011
+ward	93302017	Coloured	Male	0	2011
+ward	93305002	Indian or Asian	Female	0	2011
+ward	21507028	Coloured	Male	0	2011
+ward	52902009	Indian or Asian	Female	0	2011
+ward	54305018	Indian or Asian	Female	0	2011
+ward	93303020	White	Male	0	2011
+ward	21207007	Other	Male	0	2011
+ward	93301030	Indian or Asian	Female	0	2011
+ward	21504008	Other	Female	0	2011
+ward	54305014	Coloured	Female	0	2011
+ward	94704005	Coloured	Male	0	2011
+ward	30704004	Other	Female	0	2011
+ward	30901031	White	Female	0	2011
+ward	24403006	Indian or Asian	Female	0	2011
+ward	93503014	Other	Female	0	2011
+ward	42001013	Indian or Asian	Female	0	2011
+ward	52101005	White	Male	0	2011
+ward	21202013	Coloured	Female	0	2011
+ward	52701010	Other	Female	0	2011
+ward	93505023	White	Male	0	2011
+ward	93304010	Indian or Asian	Female	0	2011
+ward	21208003	Indian or Asian	Female	0	2011
+ward	93402009	Indian or Asian	Male	0	2011
+ward	52302013	Coloured	Male	0	2011
+ward	52106006	Other	Female	0	2011
+ward	83106020	Indian or Asian	Female	0	2011
+ward	83203008	Other	Female	0	2011
+ward	94702003	Indian or Asian	Female	0	2011
+ward	93305007	Indian or Asian	Female	0	2011
+ward	83103027	White	Male	0	2011
+ward	42001004	Other	Female	0	2011
+ward	10502003	Indian or Asian	Female	0	2011
+ward	52904002	Indian or Asian	Female	0	2011
+ward	93302018	White	Male	0	2011
+ward	93505005	Coloured	Male	0	2011
+ward	52201004	Other	Female	0	2011
+ward	42001001	Indian or Asian	Male	0	2011
+ward	10304003	Other	Male	0	2011
+ward	64002012	White	Male	0	2011
+ward	21207007	Indian or Asian	Male	0	2011
+ward	79800046	White	Female	0	2011
+ward	52205014	Other	Male	0	2011
+ward	54305018	Other	Female	0	2011
+ward	52902009	Other	Female	0	2011
+ward	30607004	Other	Male	0	2011
+ward	83204028	White	Male	0	2011
+ward	83102032	Coloured	Male	0	2011
+ward	52702016	White	Female	0	2011
+ward	93302010	White	Male	0	2011
+ward	63903008	White	Male	0	2011
+ward	93301030	Other	Female	0	2011
+ward	21504008	Indian or Asian	Female	0	2011
+ward	52405002	White	Female	0	2011
+ward	52306006	White	Male	0	2011
+ward	52904009	Indian or Asian	Male	0	2011
+ward	21503011	Coloured	Female	0	2011
+ward	93503014	Indian or Asian	Female	0	2011
+ward	52903015	Other	Female	0	2011
+ward	30704004	Indian or Asian	Female	0	2011
+ward	24403006	Other	Female	0	2011
+ward	93304010	Other	Female	0	2011
+ward	74803014	Coloured	Female	0	2011
+ward	52903007	Coloured	Female	0	2011
+ward	93301027	White	Female	0	2011
+ward	79900075	White	Male	0	2011
+ward	24403018	Other	Female	0	2011
+ward	52701010	Indian or Asian	Female	0	2011
+ward	21503001	White	Male	0	2011
+ward	83106020	Other	Female	0	2011
+ward	83201009	White	Male	0	2011
+ward	21202015	White	Female	0	2011
+ward	21201020	White	Female	0	2011
+ward	41803003	White	Male	0	2011
+ward	93402007	Coloured	Female	0	2011
+ward	52103004	White	Male	0	2011
+ward	52205024	Other	Female	0	2011
+ward	93305007	Other	Female	0	2011
+ward	63803003	White	Male	0	2011
+ward	93303002	Coloured	Male	0	2011
+ward	30803006	Indian or Asian	Female	0	2011
+ward	52803003	Other	Male	0	2011
+ward	21505011	Other	Male	0	2011
+ward	52904002	Other	Female	0	2011
+ward	52402016	Coloured	Male	0	2011
+ward	42001004	Indian or Asian	Female	0	2011
+ward	93404032	Other	Female	0	2011
+ward	52405004	Coloured	Female	0	2011
+ward	21305010	Indian or Asian	Male	0	2011
+ward	94702012	Indian or Asian	Female	0	2011
+ward	21505026	Coloured	Male	0	2011
+ward	83204032	Other	Male	0	2011
+ward	24404013	White	Male	0	2011
+ward	52402012	White	Female	0	2011
+ward	24401024	Indian or Asian	Female	0	2011
+ward	74201007	Other	Female	0	2011
+ward	52702019	Other	Female	0	2011
+ward	93303028	Other	Female	0	2011
+ward	24402011	Coloured	Male	0	2011
+ward	24401004	Coloured	Male	0	2011
+ward	83204031	Other	Male	0	2011
+ward	93301005	Coloured	Male	0	2011
+ward	21202022	White	Female	0	2011
+ward	21307011	Indian or Asian	Female	0	2011
+ward	41903004	Other	Male	0	2011
+ward	93504005	Other	Female	0	2011
+ward	41903008	White	Male	0	2011
+ward	52704007	Other	Female	0	2011
+ward	83003013	White	Male	0	2011
+ward	93607023	Indian or Asian	Female	0	2011
+ward	21505014	Coloured	Female	0	2011
+ward	52306012	White	Female	0	2011
+ward	29200026	Other	Female	0	2011
+ward	52105005	Indian or Asian	Male	0	2011
+ward	93304017	Other	Female	0	2011
+ward	41901017	Other	Male	0	2011
+ward	93504012	Indian or Asian	Female	0	2011
+ward	93301007	Other	Male	0	2011
+ward	93402005	Indian or Asian	Male	0	2011
+ward	41901012	Other	Male	0	2011
+ward	93601010	Other	Female	0	2011
+ward	52806002	Indian or Asian	Male	0	2011
+ward	10205008	Indian or Asian	Female	0	2011
+ward	93403033	Indian or Asian	Female	0	2011
+ward	79900006	Indian or Asian	Female	0	2011
+ward	29300059	Indian or Asian	Female	0	2011
+ward	52606007	Other	Female	0	2011
+ward	74801012	Indian or Asian	Male	0	2011
+ward	93404016	White	Male	0	2011
+ward	52104007	Other	Male	0	2011
+ward	21206006	White	Male	0	2011
+ward	42001018	Other	Female	0	2011
+ward	52701014	White	Male	0	2011
+ward	10105002	Indian or Asian	Male	0	2011
+ward	52903001	Other	Female	0	2011
+ward	52605013	Indian or Asian	Male	0	2011
+ward	24403012	Indian or Asian	Male	0	2011
+ward	21304003	Other	Female	0	2011
+ward	94705028	Other	Female	0	2011
+ward	52405006	Other	Female	0	2011
+ward	21401014	Indian or Asian	Male	0	2011
+ward	52504004	Indian or Asian	Female	0	2011
+ward	49400029	Other	Female	0	2011
+ward	93607017	Coloured	Male	0	2011
+ward	41901014	White	Male	0	2011
+ward	83105031	Other	Female	0	2011
+ward	83105018	Coloured	Female	0	2011
+ward	21201005	White	Female	0	2011
+ward	42005007	Other	Female	0	2011
+ward	52701002	Indian or Asian	Female	0	2011
+ward	21402003	Coloured	Female	0	2011
+ward	21201031	Coloured	Female	0	2011
+ward	83205021	Indian or Asian	Female	0	2011
+ward	30702003	Indian or Asian	Male	0	2011
+ward	94701010	Indian or Asian	Female	0	2011
+ward	83205030	Other	Female	0	2011
+ward	83005001	Coloured	Male	0	2011
+ward	83105012	Other	Female	0	2011
+ward	83003018	Coloured	Male	0	2011
+ward	29200020	Indian or Asian	Female	0	2011
+ward	63803019	Indian or Asian	Female	0	2011
+ward	63702012	Indian or Asian	Female	0	2011
+ward	74801013	Indian or Asian	Male	0	2011
+ward	52404007	Coloured	Male	0	2011
+ward	63701016	Coloured	Female	0	2011
+ward	10301009	Indian or Asian	Male	0	2011
+ward	83205008	Indian or Asian	Female	0	2011
+ward	64003026	White	Male	0	2011
+ward	52803004	Coloured	Female	0	2011
+ward	52207006	Other	Male	0	2011
+ward	52303010	Other	Male	0	2011
+ward	21201022	White	Male	0	2011
+ward	63907005	Coloured	Male	0	2011
+ward	52606024	White	Female	0	2011
+ward	21305020	White	Female	0	2011
+ward	21504015	Other	Male	0	2011
+ward	30605001	Other	Female	0	2011
+ward	52903014	Other	Female	0	2011
+ward	52405008	Indian or Asian	Female	0	2011
+ward	52404015	Other	Male	0	2011
+ward	94705011	White	Female	0	2011
+ward	52806013	Coloured	Male	0	2011
+ward	83202031	Other	Male	0	2011
+ward	94702028	Coloured	Male	0	2011
+ward	93403002	White	Female	0	2011
+ward	93302028	Indian or Asian	Male	0	2011
+ward	10401001	Other	Female	0	2011
+ward	93607014	White	Male	0	2011
+ward	21504019	Other	Male	0	2011
+ward	93302002	Other	Female	0	2011
+ward	24404015	Other	Male	0	2011
+ward	30902001	White	Female	0	2011
+ward	42005009	White	Male	0	2011
+ward	21402005	Indian or Asian	Male	0	2011
+ward	21507010	Coloured	Female	0	2011
+ward	83005011	Indian or Asian	Female	0	2011
+ward	83205022	Other	Female	0	2011
+ward	63802009	Indian or Asian	Male	0	2011
+ward	24403013	Other	Female	0	2011
+ward	21305015	Indian or Asian	Female	0	2011
+ward	93607003	White	Male	0	2011
+ward	52806008	Coloured	Female	0	2011
+ward	52903019	White	Male	0	2011
+ward	52605014	Coloured	Male	0	2011
+ward	83202013	Indian or Asian	Male	0	2011
+ward	94703015	Coloured	Female	0	2011
+ward	24401020	White	Female	0	2011
+ward	52304001	Indian or Asian	Female	0	2011
+ward	63805003	Coloured	Female	0	2011
+ward	52903004	Coloured	Female	0	2011
+ward	54305007	Coloured	Male	0	2011
+ward	52205009	White	Male	0	2011
+ward	52101008	Coloured	Male	0	2011
+ward	94705008	Other	Male	0	2011
+ward	54305006	Other	Female	0	2011
+ward	21204018	Other	Male	0	2011
+ward	41901003	Other	Female	0	2011
+ward	21202020	Coloured	Female	0	2011
+ward	52303008	Other	Female	0	2011
+ward	52305008	Indian or Asian	Female	0	2011
+ward	52404015	Indian or Asian	Male	0	2011
+ward	10205005	Indian or Asian	Male	0	2011
+ward	52405008	Other	Female	0	2011
+ward	83106027	White	Male	0	2011
+ward	21304005	White	Female	0	2011
+ward	93302028	Other	Male	0	2011
+ward	24403031	Coloured	Female	0	2011
+ward	21304007	White	Male	0	2011
+ward	24404015	Indian or Asian	Male	0	2011
+ward	93302002	Indian or Asian	Female	0	2011
+ward	21305016	White	Female	0	2011
+ward	29200040	White	Male	0	2011
+ward	52404003	Coloured	Female	0	2011
+ward	29300013	White	Female	0	2011
+ward	24403013	Indian or Asian	Female	0	2011
+ward	63802009	Other	Male	0	2011
+ward	83005011	Other	Female	0	2011
+ward	83205022	Indian or Asian	Female	0	2011
+ward	21204010	Coloured	Female	0	2011
+ward	52504009	Coloured	Male	0	2011
+ward	52805005	White	Female	0	2011
+ward	93302026	Coloured	Male	0	2011
+ward	93501019	White	Male	0	2011
+ward	63702031	Coloured	Male	0	2011
+ward	63907013	White	Female	0	2011
+ward	21402005	Other	Male	0	2011
+ward	21204020	White	Male	0	2011
+ward	79800012	Indian or Asian	Female	0	2011
+ward	21305015	Other	Female	0	2011
+ward	24403011	Coloured	Male	0	2011
+ward	21304011	Coloured	Male	0	2011
+ward	24402025	White	Female	0	2011
+ward	52304005	Coloured	Male	0	2011
+ward	54305006	Indian or Asian	Female	0	2011
+ward	10402008	White	Male	0	2011
+ward	94703026	Indian or Asian	Female	0	2011
+ward	74203002	White	Male	0	2011
+ward	52205005	Coloured	Female	0	2011
+ward	93303027	Coloured	Male	0	2011
+ward	30901010	Indian or Asian	Female	0	2011
+ward	83106022	Other	Female	0	2011
+ward	10205010	White	Male	0	2011
+ward	52806014	Coloured	Male	0	2011
+ward	21204018	Indian or Asian	Male	0	2011
+ward	41901003	Indian or Asian	Female	0	2011
+ward	10408001	Indian or Asian	Female	0	2011
+ward	10503001	Indian or Asian	Male	0	2011
+ward	52207005	Coloured	Male	0	2011
+ward	83105031	Indian or Asian	Female	0	2011
+ward	52504004	Other	Female	0	2011
+ward	52804003	Other	Female	0	2011
+ward	93404030	Indian or Asian	Female	0	2011
+ward	52806012	White	Female	0	2011
+ward	94705028	Indian or Asian	Female	0	2011
+ward	52902010	Other	Male	0	2011
+ward	52606010	White	Male	0	2011
+ward	21202007	Indian or Asian	Female	0	2011
+ward	83205021	Other	Female	0	2011
+ward	93302009	White	Female	0	2011
+ward	74201031	Indian or Asian	Female	0	2011
+ward	21307005	Other	Female	0	2011
+ward	83002011	Indian or Asian	Female	0	2011
+ward	52701002	Other	Female	0	2011
+ward	52705001	White	Male	0	2011
+ward	30805006	Indian or Asian	Female	0	2011
+ward	52502006	Coloured	Female	0	2011
+ward	21402007	White	Male	0	2011
+ward	83205030	Indian or Asian	Female	0	2011
+ward	94701003	White	Female	0	2011
+ward	52504007	Coloured	Male	0	2011
+ward	63702012	Other	Female	0	2011
+ward	74801013	Other	Male	0	2011
+ward	30607002	White	Male	0	2011
+ward	63803013	White	Male	0	2011
+ward	34502005	White	Female	0	2011
+ward	63705007	White	Male	0	2011
+ward	63803019	Other	Female	0	2011
+ward	29200020	Other	Female	0	2011
+ward	21507026	Coloured	Male	0	2011
+ward	52903012	White	Female	0	2011
+ward	52303010	Indian or Asian	Male	0	2011
+ward	83205008	Other	Female	0	2011
+ward	93607024	Coloured	Male	0	2011
+ward	10301009	Other	Male	0	2011
+ward	83205028	White	Male	0	2011
+ward	93501003	White	Male	0	2011
+ward	93606005	Other	Male	0	2011
+ward	63703022	White	Male	0	2011
+ward	52404008	Coloured	Male	0	2011
+ward	24404011	Coloured	Male	0	2011
+ward	63705018	Other	Female	0	2011
+ward	52602003	Indian or Asian	Male	0	2011
+ward	10405011	Indian or Asian	Female	0	2011
+ward	52606015	Indian or Asian	Female	0	2011
+ward	93301020	White	Female	0	2011
+ward	41901005	Indian or Asian	Female	0	2011
+ward	21304004	Coloured	Male	0	2011
+ward	52302022	Other	Male	0	2011
+ward	21202025	Indian or Asian	Male	0	2011
+ward	54305011	White	Female	0	2011
+ward	63703026	Other	Female	0	2011
+ward	94704003	White	Female	0	2011
+ward	21307019	Indian or Asian	Male	0	2011
+ward	54305001	White	Female	0	2011
+ward	52601004	Other	Female	0	2011
+ward	93503004	Indian or Asian	Female	0	2011
+ward	74801034	White	Female	0	2011
+ward	21507021	Other	Female	0	2011
+ward	52803001	Coloured	Male	0	2011
+ward	83103024	White	Female	0	2011
+ward	93501007	White	Female	0	2011
+ward	63803028	Other	Female	0	2011
+ward	83007004	Indian or Asian	Female	0	2011
+ward	41901008	White	Male	0	2011
+ward	52806011	Indian or Asian	Male	0	2011
+ward	21504003	Indian or Asian	Male	0	2011
+ward	93301019	Indian or Asian	Female	0	2011
+ward	21503012	Other	Female	0	2011
+ward	52804025	White	Female	0	2011
+ward	94701002	White	Female	0	2011
+ward	24402009	White	Female	0	2011
+ward	49400005	White	Female	0	2011
+ward	52405001	Coloured	Male	0	2011
+ward	74801004	Other	Female	0	2011
+ward	83002010	Indian or Asian	Female	0	2011
+ward	52603010	Coloured	Male	0	2011
+ward	21302004	Other	Female	0	2011
+ward	63904019	Indian or Asian	Male	0	2011
+ward	21402001	Other	Female	0	2011
+ward	52103010	White	Male	0	2011
+ward	21402012	Other	Female	0	2011
+ward	54301007	White	Female	0	2011
+ward	41804005	Indian or Asian	Female	0	2011
+ward	41601004	White	Male	0	2011
+ward	64003020	White	Female	0	2011
+ward	24403010	Coloured	Female	0	2011
+ward	52305007	Indian or Asian	Female	0	2011
+ward	63805018	White	Male	0	2011
+ward	93403040	Indian or Asian	Male	0	2011
+ward	83001022	Other	Male	0	2011
+ward	21401006	White	Female	0	2011
+ward	83103023	White	Female	0	2011
+ward	21401005	Other	Male	0	2011
+ward	52502016	Other	Female	0	2011
+ward	10501004	Other	Female	0	2011
+ward	52201003	Coloured	Male	0	2011
+ward	41901018	Indian or Asian	Female	0	2011
+ward	52205011	Indian or Asian	Male	0	2011
+ward	74804005	Indian or Asian	Female	0	2011
+ward	93403019	Indian or Asian	Male	0	2011
+ward	59500079	White	Male	0	2011
+ward	63705012	Coloured	Male	0	2011
+ward	93605006	Indian or Asian	Female	0	2011
+ward	83103019	Indian or Asian	Female	0	2011
+ward	52502026	Other	Female	0	2011
+ward	21204016	Coloured	Female	0	2011
+ward	83106003	Indian or Asian	Female	0	2011
+ward	24402004	Indian or Asian	Male	0	2011
+ward	21507029	White	Female	0	2011
+ward	93404038	White	Female	0	2011
+ward	94705022	Other	Female	0	2011
+ward	63705025	White	Female	0	2011
+ward	21005007	Indian or Asian	Female	0	2011
+ward	21505022	White	Female	0	2011
+ward	83001012	Other	Male	0	2011
+ward	21308007	White	Male	0	2011
+ward	93501016	White	Male	0	2011
+ward	63904010	Coloured	Male	0	2011
+ward	49400033	White	Female	0	2011
+ward	24401007	Other	Male	0	2011
+ward	74804025	Indian or Asian	Female	0	2011
+ward	49400034	White	Male	0	2011
+ward	21202023	White	Female	0	2011
+ward	74804001	Other	Female	0	2011
+ward	21504007	Indian or Asian	Female	0	2011
+ward	52804005	Indian or Asian	Male	0	2011
+ward	93502017	Indian or Asian	Female	0	2011
+ward	21506024	Indian or Asian	Female	0	2011
+ward	52903009	Coloured	Male	0	2011
+ward	83007024	Indian or Asian	Female	0	2011
+ward	41804028	Indian or Asian	Female	0	2011
+ward	30607003	White	Female	0	2011
+ward	74802017	Coloured	Female	0	2011
+ward	83105017	Coloured	Male	0	2011
+ward	63702019	White	Male	0	2011
+ward	93502004	Indian or Asian	Female	0	2011
+ward	10403013	Other	Male	0	2011
+ward	52703004	Other	Female	0	2011
+ward	74803012	White	Male	0	2011
+ward	21503023	Other	Female	0	2011
+ward	74801024	Other	Female	0	2011
+ward	93404037	Other	Male	0	2011
+ward	93505012	White	Male	0	2011
+ward	93501012	Coloured	Female	0	2011
+ward	30901013	White	Male	0	2011
+ward	83106003	Other	Female	0	2011
+ward	93607027	Indian or Asian	Female	0	2011
+ward	24404002	White	Female	0	2011
+ward	93605006	Other	Female	0	2011
+ward	52404013	White	Male	0	2011
+ward	83001012	Indian or Asian	Male	0	2011
+ward	79900090	White	Male	0	2011
+ward	24402004	Other	Male	0	2011
+ward	21503007	Coloured	Female	0	2011
+ward	83005005	Indian or Asian	Female	0	2011
+ward	30904002	Other	Female	0	2011
+ward	93505028	Coloured	Male	0	2011
+ward	52902005	Coloured	Male	0	2011
+ward	29300055	White	Female	0	2011
+ward	93504033	Coloured	Male	0	2011
+ward	83201011	Indian or Asian	Female	0	2011
+ward	52103002	White	Female	0	2011
+ward	21401011	Indian or Asian	Female	0	2011
+ward	93504003	White	Female	0	2011
+ward	41901016	White	Female	0	2011
+ward	74804025	Other	Female	0	2011
+ward	21401007	Coloured	Male	0	2011
+ward	21201015	White	Female	0	2011
+ward	52804005	Other	Male	0	2011
+ward	94702017	White	Female	0	2011
+ward	24403014	White	Female	0	2011
+ward	52605003	Other	Male	0	2011
+ward	24401023	White	Male	0	2011
+ward	21504007	Other	Female	0	2011
+ward	94702015	White	Female	0	2011
+ward	93502004	Other	Female	0	2011
+ward	41804028	Other	Female	0	2011
+ward	21506024	Other	Female	0	2011
+ward	93607009	Coloured	Male	0	2011
+ward	52902008	Other	Female	0	2011
+ward	52202011	Coloured	Male	0	2011
+ward	41601005	Indian or Asian	Female	0	2011
+ward	83001003	Coloured	Female	0	2011
+ward	52703004	Indian or Asian	Female	0	2011
+ward	52606016	Coloured	Male	0	2011
+ward	10501003	Black African	Female	0	2011
+ward	63701001	White	Female	0	2011
+ward	83102010	Other	Male	0	2011
+ward	10403005	Indian or Asian	Male	0	2011
+ward	93404037	Indian or Asian	Male	0	2011
+ward	24404012	Other	Female	0	2011
+ward	41901005	Other	Female	0	2011
+ward	52902014	White	Female	0	2011
+ward	63701008	White	Male	0	2011
+ward	94702008	White	Female	0	2011
+ward	52602003	Other	Male	0	2011
+ward	93404019	Indian or Asian	Female	0	2011
+ward	52201008	Other	Female	0	2011
+ward	21005006	Other	Male	0	2011
+ward	21202025	Other	Male	0	2011
+ward	83007004	Other	Female	0	2011
+ward	93401005	Coloured	Female	0	2011
+ward	29200050	White	Female	0	2011
+ward	54305020	Other	Male	0	2011
+ward	21307019	Other	Male	0	2011
+ward	24403005	White	Female	0	2011
+ward	94703028	Coloured	Male	0	2011
+ward	34501006	Coloured	Female	0	2011
+ward	10101002	Other	Female	0	2011
+ward	21305017	White	Female	0	2011
+ward	21503012	Indian or Asian	Female	0	2011
+ward	64003021	Indian or Asian	Female	0	2011
+ward	52106021	White	Male	0	2011
+ward	59500022	White	Male	0	2011
+ward	21504003	Other	Male	0	2011
+ward	52806011	Other	Male	0	2011
+ward	94703004	Other	Male	0	2011
+ward	83002010	Other	Female	0	2011
+ward	83001004	Other	Female	0	2011
+ward	94705006	Other	Female	0	2011
+ward	74201043	White	Male	0	2011
+ward	63804017	White	Male	0	2011
+ward	94703009	Indian or Asian	Male	0	2011
+ward	52205021	Indian or Asian	Male	0	2011
+ward	63904015	Coloured	Male	0	2011
+ward	93305008	White	Male	0	2011
+ward	64002017	Indian or Asian	Male	0	2011
+ward	10203013	White	Female	0	2011
+ward	21402012	Indian or Asian	Female	0	2011
+ward	21305003	Coloured	Female	0	2011
+ward	21402001	Indian or Asian	Female	0	2011
+ward	94703023	Coloured	Male	0	2011
+ward	21401013	Coloured	Female	0	2011
+ward	21306017	White	Male	0	2011
+ward	52305007	Other	Female	0	2011
+ward	83105016	White	Male	0	2011
+ward	79900015	White	Male	0	2011
+ward	94701009	Indian or Asian	Female	0	2011
+ward	10407006	Coloured	Male	0	2011
+ward	41901018	Other	Female	0	2011
+ward	52205011	Other	Male	0	2011
+ward	74804005	Other	Female	0	2011
+ward	93304014	Coloured	Male	0	2011
+ward	10501004	Indian or Asian	Female	0	2011
+ward	79800041	Indian or Asian	Female	0	2011
+ward	21402006	White	Male	0	2011
+ward	21401005	Indian or Asian	Male	0	2011
+ward	42001010	White	Male	0	2011
+ward	52502016	Indian or Asian	Female	0	2011
+ward	21307017	White	Female	0	2011
+ward	34501011	White	Female	0	2011
+ward	21402011	Coloured	Female	0	2011
+ward	83205017	White	Female	0	2011
+ward	93301024	White	Female	0	2011
+ward	74201014	Other	Female	0	2011
+ward	52903011	White	Female	0	2011
+ward	93402011	Other	Male	0	2011
+ward	93303032	Indian or Asian	Female	0	2011
+ward	83106004	Coloured	Male	0	2011
+ward	52802016	White	Female	0	2011
+ward	83204016	Other	Male	0	2011
+ward	21204013	Other	Male	0	2011
+ward	83104001	Other	Female	0	2011
+ward	52705011	Coloured	Female	0	2011
+ward	34501012	Other	Male	0	2011
+ward	24404003	Coloured	Male	0	2011
+ward	52702006	White	Male	0	2011
+ward	21203002	Indian or Asian	Male	0	2011
+ward	21201021	Indian or Asian	Male	0	2011
+ward	34502010	White	Male	0	2011
+ward	93305003	Indian or Asian	Female	0	2011
+ward	83205027	Coloured	Male	0	2011
+ward	21503002	Indian or Asian	Male	0	2011
+ward	52701003	Other	Male	0	2011
+ward	93403025	Coloured	Male	0	2011
+ward	52104008	Coloured	Male	0	2011
+ward	21202010	Coloured	Male	0	2011
+ward	52104009	White	Male	0	2011
+ward	63705029	Coloured	Female	0	2011
+ward	21503008	Indian or Asian	Male	0	2011
+ward	21202011	Other	Male	0	2011
+ward	52804015	Coloured	Female	0	2011
+ward	21504016	Other	Female	0	2011
+ward	52801013	Other	Female	0	2011
+ward	93303005	Coloured	Female	0	2011
+ward	74203006	Other	Female	0	2011
+ward	24401016	White	Male	0	2011
+ward	93305006	Other	Female	0	2011
+ward	42004021	Coloured	Female	0	2011
+ward	34502004	Coloured	Male	0	2011
+ward	63804018	Indian or Asian	Female	0	2011
+ward	21202016	Coloured	Male	0	2011
+ward	34502012	Indian or Asian	Female	0	2011
+ward	63701007	White	Female	0	2011
+ward	52804017	White	Male	0	2011
+ward	93505021	Other	Female	0	2011
+ward	24401018	Other	Male	0	2011
+ward	29200048	White	Female	0	2011
+ward	93403031	Coloured	Male	0	2011
+ward	93404013	Other	Female	0	2011
+ward	24402006	Coloured	Female	0	2011
+ward	83005007	White	Male	0	2011
+ward	52302021	Coloured	Male	0	2011
+ward	29200014	Coloured	Female	0	2011
+ward	74802022	Other	Female	0	2011
+ward	21304014	Indian or Asian	Male	0	2011
+ward	21507027	Other	Male	0	2011
+ward	49400013	Other	Female	0	2011
+ward	10205009	White	Female	0	2011
+ward	21202017	Coloured	Male	0	2011
+ward	24403030	Other	Female	0	2011
+ward	52901009	Indian or Asian	Female	0	2011
+ward	54304012	Other	Female	0	2011
+ward	74804009	White	Female	0	2011
+ward	93303022	Coloured	Male	0	2011
+ward	52205008	Other	Female	0	2011
+ward	21307001	Coloured	Male	0	2011
+ward	93504035	Coloured	Male	0	2011
+ward	41902002	White	Female	0	2011
+ward	93303017	Coloured	Male	0	2011
+ward	41803002	Indian or Asian	Female	0	2011
+ward	21506007	Other	Female	0	2011
+ward	24403015	White	Female	0	2011
+ward	30901011	Indian or Asian	Female	0	2011
+ward	52605005	Coloured	Male	0	2011
+ward	93404027	Coloured	Female	0	2011
+ward	83103020	White	Male	0	2011
+ward	63804001	Other	Female	0	2011
+ward	52701011	Coloured	Female	0	2011
+ward	93503009	White	Male	0	2011
+ward	83005013	Indian or Asian	Male	0	2011
+ward	52705010	Indian or Asian	Male	0	2011
+ward	10302003	Other	Female	0	2011
+ward	21507003	Indian or Asian	Male	0	2011
+ward	21206003	Coloured	Female	0	2011
+ward	63904008	White	Male	0	2011
+ward	21307013	White	Female	0	2011
+ward	52404002	Other	Male	0	2011
+ward	93301018	Other	Female	0	2011
+ward	21402004	Indian or Asian	Female	0	2011
+ward	93404001	Indian or Asian	Male	0	2011
+ward	93403032	Coloured	Male	0	2011
+ward	42003017	White	Male	0	2011
+ward	94701001	White	Female	0	2011
+ward	83004002	Other	Female	0	2011
+ward	21207003	White	Female	0	2011
+ward	93505021	Indian or Asian	Female	0	2011
+ward	10301007	Indian or Asian	Female	0	2011
+ward	52404012	White	Female	0	2011
+ward	21306010	Coloured	Female	0	2011
+ward	74803003	White	Female	0	2011
+ward	52306002	Coloured	Female	0	2011
+ward	10503006	Other	Female	0	2011
+ward	52901009	Other	Female	0	2011
+ward	93504034	Coloured	Male	0	2011
+ward	42001015	White	Male	0	2011
+ward	21507027	Indian or Asian	Male	0	2011
+ward	93604005	Indian or Asian	Male	0	2011
+ward	24403029	Other	Female	0	2011
+ward	74802022	Indian or Asian	Female	0	2011
+ward	41803002	Other	Female	0	2011
+ward	54304012	Indian or Asian	Female	0	2011
+ward	52207004	Indian or Asian	Male	0	2011
+ward	30901019	White	Male	0	2011
+ward	30901011	Other	Female	0	2011
+ward	41902019	White	Male	0	2011
+ward	21506007	Indian or Asian	Female	0	2011
+ward	63904023	White	Male	0	2011
+ward	52304008	Other	Female	0	2011
+ward	63804001	Indian or Asian	Female	0	2011
+ward	21204001	White	Male	0	2011
+ward	21402004	Other	Female	0	2011
+ward	93404001	Other	Male	0	2011
+ward	21304009	White	Female	0	2011
+ward	52702015	White	Male	0	2011
+ward	93301018	Indian or Asian	Female	0	2011
+ward	10302003	Indian or Asian	Female	0	2011
+ward	52705010	Other	Male	0	2011
+ward	34502009	White	Female	0	2011
+ward	21207019	White	Female	0	2011
+ward	52701007	White	Female	0	2011
+ward	83102008	Other	Female	0	2011
+ward	83004002	Indian or Asian	Female	0	2011
+ward	21201027	White	Female	0	2011
+ward	52106007	White	Male	0	2011
+ward	74203012	Indian or Asian	Male	0	2011
+ward	93303011	Coloured	Male	0	2011
+ward	52304002	Other	Male	0	2011
+ward	21006004	Indian or Asian	Male	0	2011
+ward	83105021	Other	Male	0	2011
+ward	52802027	Indian or Asian	Male	0	2011
+ward	52101007	Other	Female	0	2011
+ward	79900025	White	Female	0	2011
+ward	52902027	Other	Female	0	2011
+ward	52606001	White	Male	0	2011
+ward	83003009	Indian or Asian	Female	0	2011
+ward	93303032	Other	Female	0	2011
+ward	74201024	Indian or Asian	Male	0	2011
+ward	79700061	Other	Female	0	2011
+ward	21201021	Other	Male	0	2011
+ward	21203002	Other	Male	0	2011
+ward	21204013	Indian or Asian	Male	0	2011
+ward	52605007	Other	Female	0	2011
+ward	83104001	Indian or Asian	Female	0	2011
+ward	93501020	Coloured	Male	0	2011
+ward	21503002	Other	Male	0	2011
+ward	93602006	White	Male	0	2011
+ward	52305013	Coloured	Male	0	2011
+ward	93305003	Other	Female	0	2011
+ward	83205024	White	Male	0	2011
+ward	21503008	Other	Male	0	2011
+ward	21504016	Indian or Asian	Female	0	2011
+ward	21201023	Other	Male	0	2011
+ward	41904013	Indian or Asian	Female	0	2011
+ward	63705017	Coloured	Female	0	2011
+ward	63701005	Coloured	Female	0	2011
+ward	94703014	White	Male	0	2011
+ward	83202039	Indian or Asian	Female	0	2011
+ward	52704006	White	Male	0	2011
+ward	93302013	White	Female	0	2011
+ward	63804018	Other	Female	0	2011
+ward	94705020	White	Female	0	2011
+ward	93504030	Other	Male	0	2011
+ward	93501002	Indian or Asian	Male	0	2011
+ward	52502015	Other	Male	0	2011
+ward	74801011	Other	Male	0	2011
+ward	52701005	Other	Male	0	2011
+ward	93401004	Coloured	Male	0	2011
+ward	74202008	Indian or Asian	Female	0	2011
+ward	52103009	Coloured	Female	0	2011
+ward	10205013	Indian or Asian	Female	0	2011
+ward	24403003	Coloured	Female	0	2011
+ward	93302001	Coloured	Female	0	2011
+ward	21008011	Indian or Asian	Female	0	2011
+ward	63805014	Indian or Asian	Female	0	2011
+ward	93301009	Coloured	Female	0	2011
+ward	94701008	White	Male	0	2011
+ward	21307020	Coloured	Female	0	2011
+ward	52801012	Other	Male	0	2011
+ward	74803011	White	Male	0	2011
+ward	52302004	White	Male	0	2011
+ward	10203005	White	Male	0	2011
+ward	52602006	Coloured	Male	0	2011
+ward	21307002	Other	Female	0	2011
+ward	10402004	Other	Female	0	2011
+ward	10204014	Other	Female	0	2011
+ward	93403014	White	Male	0	2011
+ward	52804001	White	Male	0	2011
+ward	83007009	Other	Female	0	2011
+ward	64001001	Indian or Asian	Male	0	2011
+ward	93303019	Other	Female	0	2011
+ward	21207010	Other	Female	0	2011
+ward	93302007	Other	Male	0	2011
+ward	10403003	Indian or Asian	Female	0	2011
+ward	93505029	Indian or Asian	Male	0	2011
+ward	21504017	Other	Female	0	2011
+ward	94702004	Coloured	Female	0	2011
+ward	52606009	Coloured	Male	0	2011
+ward	94703013	White	Female	0	2011
+ward	93404034	Coloured	Female	0	2011
+ward	83106008	Coloured	Female	0	2011
+ward	79800116	Indian or Asian	Female	0	2011
+ward	63804019	Other	Male	0	2011
+ward	10104012	Indian or Asian	Female	0	2011
+ward	30601001	Indian or Asian	Male	0	2011
+ward	94701011	Coloured	Male	0	2011
+ward	41804018	White	Male	0	2011
+ward	41904020	Other	Female	0	2011
+ward	63701004	Other	Female	0	2011
+ward	24402023	Other	Male	0	2011
+ward	93505015	Other	Female	0	2011
+ward	21202028	White	Female	0	2011
+ward	24401017	Indian or Asian	Male	0	2011
+ward	63907004	White	Female	0	2011
+ward	52605019	Coloured	Female	0	2011
+ward	63802008	Indian or Asian	Female	0	2011
+ward	10202003	Indian or Asian	Female	0	2011
+ward	52904007	Indian or Asian	Female	0	2011
+ward	52101002	Coloured	Male	0	2011
+ward	93403001	Other	Male	0	2011
+ward	83205031	Other	Female	0	2011
+ward	52605017	Other	Female	0	2011
+ward	64003009	Other	Female	0	2011
+ward	10503003	White	Female	0	2011
+ward	63803023	Coloured	Male	0	2011
+ward	24402019	Other	Female	0	2011
+ward	52804014	Coloured	Female	0	2011
+ward	93404018	White	Female	0	2011
+ward	52201006	Coloured	Male	0	2011
+ward	94703007	White	Female	0	2011
+ward	63803018	Other	Female	0	2011
+ward	34501013	Indian or Asian	Female	0	2011
+ward	93607018	White	Male	0	2011
+ward	42004011	Indian or Asian	Male	0	2011
+ward	64003011	Indian or Asian	Male	0	2011
+ward	21504017	Indian or Asian	Female	0	2011
+ward	79800019	White	Male	0	2011
+ward	52302018	White	Female	0	2011
+ward	52504003	Indian or Asian	Male	0	2011
+ward	52202002	Other	Female	0	2011
+ward	74804008	White	Male	0	2011
+ward	93504028	Coloured	Female	0	2011
+ward	41904020	Indian or Asian	Female	0	2011
+ward	83202007	White	Female	0	2011
+ward	21305019	Coloured	Male	0	2011
+ward	94704001	Coloured	Male	0	2011
+ward	93505015	Indian or Asian	Female	0	2011
+ward	83003016	White	Male	0	2011
+ward	21201014	Coloured	Female	0	2011
+ward	93505022	White	Male	0	2011
+ward	24402023	Indian or Asian	Male	0	2011
+ward	63701004	Indian or Asian	Female	0	2011
+ward	93502003	Coloured	Male	0	2011
+ward	93403012	Coloured	Male	0	2011
+ward	24401017	Other	Male	0	2011
+ward	93501017	Coloured	Female	0	2011
+ward	63705016	Indian or Asian	Female	0	2011
+ward	93607030	White	Male	0	2011
+ward	52605017	Indian or Asian	Female	0	2011
+ward	52701012	White	Female	0	2011
+ward	93403001	Indian or Asian	Male	0	2011
+ward	83205031	Indian or Asian	Female	0	2011
+ward	94703010	White	Female	0	2011
+ward	52904007	Other	Female	0	2011
+ward	21503030	Other	Male	0	2011
+ward	24403026	Coloured	Male	0	2011
+ward	24402019	Indian or Asian	Female	0	2011
+ward	34501013	Other	Female	0	2011
+ward	49400028	Other	Female	0	2011
+ward	63803018	Indian or Asian	Female	0	2011
+ward	52805003	Coloured	Male	0	2011
+ward	52801011	Other	Female	0	2011
+ward	21305006	White	Female	0	2011
+ward	41904024	White	Male	0	2011
+ward	21202014	Coloured	Male	0	2011
+ward	21507025	White	Female	0	2011
+ward	93607021	White	Female	0	2011
+ward	52105001	Coloured	Female	0	2011
+ward	93301014	White	Male	0	2011
+ward	52306003	White	Female	0	2011
+ward	21004006	White	Female	0	2011
+ward	63701019	White	Male	0	2011
+ward	52101003	Coloured	Female	0	2011
+ward	63805005	White	Female	0	2011
+ward	10205013	Other	Female	0	2011
+ward	74803016	Other	Female	0	2011
+ward	83204024	White	Male	0	2011
+ward	52701005	Indian or Asian	Male	0	2011
+ward	52801012	Indian or Asian	Male	0	2011
+ward	93303003	Coloured	Female	0	2011
+ward	21307004	Other	Female	0	2011
+ward	63805014	Other	Female	0	2011
+ward	21008011	Other	Female	0	2011
+ward	94704002	Other	Male	0	2011
+ward	94705004	White	Male	0	2011
+ward	52306008	Other	Male	0	2011
+ward	93505016	Indian or Asian	Male	0	2011
+ward	93302012	Coloured	Female	0	2011
+ward	21206005	Other	Female	0	2011
+ward	41804006	Coloured	Male	0	2011
+ward	94701012	White	Female	0	2011
+ward	21401008	White	Female	0	2011
+ward	83106021	Coloured	Male	0	2011
+ward	21506019	Other	Male	0	2011
+ward	64002014	Other	Female	0	2011
+ward	79800036	Indian or Asian	Female	0	2011
+ward	52605010	White	Female	0	2011
+ward	94703006	White	Female	0	2011
+ward	41804026	White	Female	0	2011
+ward	93501010	White	Male	0	2011
+ward	83007009	Indian or Asian	Female	0	2011
+ward	21202008	Coloured	Female	0	2011
+ward	21301007	Other	Female	0	2011
+ward	24403019	Coloured	Female	0	2011
+ward	41906005	White	Female	0	2011
+ward	52702009	Indian or Asian	Female	0	2011
+ward	10204014	Indian or Asian	Female	0	2011
+ward	21307002	Indian or Asian	Female	0	2011
+ward	93505029	Other	Male	0	2011
+ward	63904020	White	Female	0	2011
+ward	93502016	Coloured	Male	0	2011
+ward	93302007	Indian or Asian	Male	0	2011
+ward	21402016	Other	Female	0	2011
+ward	54304010	Indian or Asian	Male	0	2011
+ward	52603021	White	Female	0	2011
+ward	52705018	White	Male	0	2011
+ward	41904026	White	Male	0	2011
+ward	41904018	Indian or Asian	Male	0	2011
+ward	94702023	Other	Male	0	2011
+ward	94704004	White	Male	0	2011
+ward	52205019	Indian or Asian	Female	0	2011
+ward	21202009	Coloured	Male	0	2011
+ward	93304009	Coloured	Male	0	2011
+ward	24401002	White	Male	0	2011
+ward	83203005	Indian or Asian	Female	0	2011
+ward	41904002	Other	Female	0	2011
+ward	41906006	White	Male	0	2011
+ward	74202013	Other	Female	0	2011
+ward	83102007	White	Male	0	2011
+ward	93401003	Indian or Asian	Female	0	2011
+ward	30901015	White	Female	0	2011
+ward	42003009	Coloured	Female	0	2011
+ward	52306009	White	Female	0	2011
+ward	93303013	Indian or Asian	Female	0	2011
+ward	64004011	Other	Female	0	2011
+ward	52806009	Coloured	Male	0	2011
+ward	74202009	Other	Female	0	2011
+ward	93503011	Coloured	Female	0	2011
+ward	52603020	Indian or Asian	Female	0	2011
+ward	52303002	White	Male	0	2011
+ward	54305017	Other	Female	0	2011
+ward	83204015	Other	Female	0	2011
+ward	21304008	Indian or Asian	Female	0	2011
+ward	30607001	Indian or Asian	Male	0	2011
+ward	93607001	Coloured	Male	0	2011
+ward	93402013	Indian or Asian	Female	0	2011
+ward	24401003	White	Female	0	2011
+ward	93502012	Coloured	Female	0	2011
+ward	93502011	Coloured	Female	0	2011
+ward	94704013	Other	Male	0	2011
+ward	74202006	White	Female	0	2011
+ward	74802014	White	Male	0	2011
+ward	54304003	Coloured	Male	0	2011
+ward	52502029	Coloured	Female	0	2011
+ward	24401015	Coloured	Female	0	2011
+ward	41904023	White	Female	0	2011
+ward	41904015	Other	Female	0	2011
+ward	21201024	Coloured	Male	0	2011
+ward	74201041	Indian or Asian	Female	0	2011
+ward	21506011	White	Female	0	2011
+ward	52402003	White	Male	0	2011
+ward	93607002	Coloured	Male	0	2011
+ward	41804029	White	Female	0	2011
+ward	79700057	White	Male	0	2011
+ward	63703004	Other	Female	0	2011
+ward	63904022	Other	Female	0	2011
+ward	64003024	White	Male	0	2011
+ward	24402016	Indian or Asian	Male	0	2011
+ward	21201018	White	Male	0	2011
+ward	83101001	Indian or Asian	Female	0	2011
+ward	63702016	White	Female	0	2011
+ward	64002018	Indian or Asian	Female	0	2011
+ward	83204021	White	Male	0	2011
+ward	52405011	Other	Female	0	2011
+ward	21201029	Other	Female	0	2011
+ward	52302023	Other	Male	0	2011
+ward	93404009	White	Female	0	2011
+ward	52701016	Indian or Asian	Male	0	2011
+ward	93505014	Other	Female	0	2011
+ward	21401012	Coloured	Female	0	2011
+ward	94702010	White	Male	0	2011
+ward	21505004	Coloured	Female	0	2011
+ward	30901006	Indian or Asian	Female	0	2011
+ward	93301023	Coloured	Female	0	2011
+ward	93404026	Indian or Asian	Female	0	2011
+ward	83105029	Indian or Asian	Female	0	2011
+ward	93301016	White	Male	0	2011
+ward	93301022	Other	Female	0	2011
+ward	63701027	Indian or Asian	Female	0	2011
+ward	10104002	White	Female	0	2011
+ward	94701004	Indian or Asian	Female	0	2011
+ward	94702005	Coloured	Female	0	2011
+ward	83101002	Other	Female	0	2011
+ward	94703021	Indian or Asian	Male	0	2011
+ward	29200024	Indian or Asian	Male	0	2011
+ward	93305013	Other	Female	0	2011
+ward	24402010	White	Male	0	2011
+ward	93301013	White	Female	0	2011
+ward	52302017	Other	Female	0	2011
+ward	93301017	Indian or Asian	Female	0	2011
+ward	41901013	Coloured	Female	0	2011
+ward	41904015	Indian or Asian	Female	0	2011
+ward	74201041	Other	Female	0	2011
+ward	52804022	Coloured	Male	0	2011
+ward	94702016	Other	Female	0	2011
+ward	41904006	Other	Female	0	2011
+ward	21503010	White	Female	0	2011
+ward	41804035	Indian or Asian	Female	0	2011
+ward	63904022	Indian or Asian	Female	0	2011
+ward	63703004	Indian or Asian	Female	0	2011
+ward	52202001	Other	Male	0	2011
+ward	41904021	Other	Female	0	2011
+ward	83101001	Other	Female	0	2011
+ward	93607019	White	Female	0	2011
+ward	52502018	White	Female	0	2011
+ward	83202010	White	Male	0	2011
+ward	59500074	Other	Male	0	2011
+ward	52803008	Coloured	Male	0	2011
+ward	30903002	Other	Female	0	2011
+ward	30901006	Other	Female	0	2011
+ward	21504014	Other	Male	0	2011
+ward	93505014	Indian or Asian	Female	0	2011
+ward	52104001	White	Female	0	2011
+ward	83205029	Coloured	Male	0	2011
+ward	41904016	Indian or Asian	Female	0	2011
+ward	21201029	Indian or Asian	Female	0	2011
+ward	83007014	White	Male	0	2011
+ward	10203020	White	Male	0	2011
+ward	74804023	White	Male	0	2011
+ward	83007022	White	Female	0	2011
+ward	52702017	Coloured	Female	0	2011
+ward	93502001	White	Male	0	2011
+ward	93403024	White	Female	0	2011
+ward	94703021	Other	Male	0	2011
+ward	94703025	Coloured	Female	0	2011
+ward	83105003	Other	Male	0	2011
+ward	21201004	White	Male	0	2011
+ward	94701004	Other	Female	0	2011
+ward	42001020	White	Female	0	2011
+ward	52302017	Indian or Asian	Female	0	2011
+ward	93301017	Other	Female	0	2011
+ward	63802002	Coloured	Male	0	2011
+ward	63904012	White	Female	0	2011
+ward	21303001	Indian or Asian	Male	0	2011
+ward	94705021	Other	Female	0	2011
+ward	93305013	Indian or Asian	Female	0	2011
+ward	21505013	Indian or Asian	Female	0	2011
+ward	24404009	White	Male	0	2011
+ward	52902013	White	Male	0	2011
+ward	93504007	Coloured	Male	0	2011
+ward	54304010	Other	Male	0	2011
+ward	41904002	Indian or Asian	Female	0	2011
+ward	83203005	Other	Female	0	2011
+ward	21306002	Other	Male	0	2011
+ward	24403021	Other	Female	0	2011
+ward	52205019	Other	Female	0	2011
+ward	52606002	White	Male	0	2011
+ward	21308006	White	Female	0	2011
+ward	83105011	White	Female	0	2011
+ward	93301028	Coloured	Male	0	2011
+ward	21307008	White	Male	0	2011
+ward	74202009	Indian or Asian	Female	0	2011
+ward	94704006	White	Female	0	2011
+ward	52902018	White	Male	0	2011
+ward	21204007	White	Male	0	2011
+ward	64002011	Coloured	Male	0	2011
+ward	54305017	Indian or Asian	Female	0	2011
+ward	30601002	Indian or Asian	Male	0	2011
+ward	21202004	Other	Female	0	2011
+ward	52901001	White	Male	0	2011
+ward	83204015	Indian or Asian	Female	0	2011
+ward	83004008	Coloured	Female	0	2011
+ward	93304007	White	Female	0	2011
+ward	63701010	White	Male	0	2011
+ward	93403029	Indian or Asian	Male	0	2011
+ward	10408005	Indian or Asian	Female	0	2011
+ward	41904019	White	Female	0	2011
+ward	63805013	Indian or Asian	Female	0	2011
+ward	10204005	Other	Female	0	2011
+ward	21305018	Coloured	Male	0	2011
+ward	83001007	White	Male	0	2011
+ward	83005002	Other	Female	0	2011
+ward	10206008	Indian or Asian	Male	0	2011
+ward	52201010	Coloured	Female	0	2011
+ward	83105006	Coloured	Male	0	2011
+ward	24402024	Indian or Asian	Male	0	2011
+ward	64002016	Indian or Asian	Female	0	2011
+ward	52106008	Coloured	Male	0	2011
+ward	52306007	Other	Male	0	2011
+ward	30708003	White	Female	0	2011
+ward	63805002	Coloured	Female	0	2011
+ward	21504020	White	Female	0	2011
+ward	63701017	White	Male	0	2011
+ward	52803002	Other	Male	0	2011
+ward	63701009	Other	Male	0	2011
+ward	63802013	White	Male	0	2011
+ward	94703012	Other	Female	0	2011
+ward	83202004	Other	Female	0	2011
+ward	93303024	White	Female	0	2011
+ward	93504015	Other	Male	0	2011
+ward	24404008	White	Male	0	2011
+ward	83106023	Indian or Asian	Male	0	2011
+ward	41804013	Indian or Asian	Female	0	2011
+ward	93605003	Indian or Asian	Female	0	2011
+ward	21204008	White	Male	0	2011
+ward	93607028	Coloured	Male	0	2011
+ward	21505027	Other	Male	0	2011
+ward	63702015	Coloured	Female	0	2011
+ward	41803001	Other	Female	0	2011
+ward	93606007	Other	Female	0	2011
+ward	93505007	Coloured	Male	0	2011
+ward	94705026	Other	Male	0	2011
+ward	93607013	White	Female	0	2011
+ward	21307012	White	Female	0	2011
+ward	21505002	White	Male	0	2011
+ward	52702001	Other	Female	0	2011
+ward	52901016	Indian or Asian	Male	0	2011
+ward	63803026	Indian or Asian	Male	0	2011
+ward	54305005	Coloured	Male	0	2011
+ward	93502010	Coloured	Female	0	2011
+ward	10105011	Other	Female	0	2011
+ward	41603001	White	Female	0	2011
+ward	74201018	White	Male	0	2011
+ward	63803014	Other	Female	0	2011
+ward	74201032	Coloured	Male	0	2011
+ward	93501018	Coloured	Female	0	2011
+ward	52605015	White	Male	0	2011
+ward	83106015	Coloured	Male	0	2011
+ward	74201042	White	Female	0	2011
+ward	52802019	Coloured	Male	0	2011
+ward	93505020	Coloured	Male	0	2011
+ward	52705009	Indian or Asian	Male	0	2011
+ward	93404012	Other	Female	0	2011
+ward	93502008	Other	Male	0	2011
+ward	63903005	White	Male	0	2011
+ward	63805004	White	Male	0	2011
+ward	52404009	Other	Female	0	2011
+ward	52705017	Indian or Asian	Female	0	2011
+ward	54304008	White	Female	0	2011
+ward	29200032	Other	Female	0	2011
+ward	21306015	Other	Female	0	2011
+ward	79700064	Other	Female	0	2011
+ward	79800038	White	Female	0	2011
+ward	24403027	Indian or Asian	Male	0	2011
+ward	54304011	White	Male	0	2011
+ward	21308008	Other	Male	0	2011
+ward	21202026	White	Male	0	2011
+ward	63904016	Other	Female	0	2011
+ward	74804007	Other	Female	0	2011
+ward	83004001	Other	Female	0	2011
+ward	21403002	Indian or Asian	Female	0	2011
+ward	34502003	White	Male	0	2011
+ward	52904011	Coloured	Female	0	2011
+ward	52702001	Indian or Asian	Female	0	2011
+ward	52102001	White	Male	0	2011
+ward	21506005	White	Male	0	2011
+ward	93505001	White	Male	0	2011
+ward	93303009	Coloured	Male	0	2011
+ward	10105011	Indian or Asian	Female	0	2011
+ward	93404029	White	Male	0	2011
+ward	54305004	White	Male	0	2011
+ward	79900081	Other	Male	0	2011
+ward	52302015	Coloured	Female	0	2011
+ward	79900024	Indian or Asian	Female	0	2011
+ward	24402012	Coloured	Female	0	2011
+ward	93502008	Indian or Asian	Male	0	2011
+ward	52605001	White	Female	0	2011
+ward	94703020	Other	Male	0	2011
+ward	52303009	Coloured	Male	0	2011
+ward	93404012	Indian or Asian	Female	0	2011
+ward	52705017	Other	Female	0	2011
+ward	52904004	Indian or Asian	Female	0	2011
+ward	21208002	White	Female	0	2011
+ward	21506001	White	Male	0	2011
+ward	41804030	Indian or Asian	Male	0	2011
+ward	21505008	White	Female	0	2011
+ward	52903018	White	Female	0	2011
+ward	21306015	Indian or Asian	Female	0	2011
+ward	52804004	White	Female	0	2011
+ward	29200032	Indian or Asian	Female	0	2011
+ward	93505009	Coloured	Female	0	2011
+ward	42005003	Other	Female	0	2011
+ward	10303001	Other	Male	0	2011
+ward	83204020	Indian or Asian	Female	0	2011
+ward	24403027	Other	Male	0	2011
+ward	21202021	White	Female	0	2011
+ward	52106023	Other	Female	0	2011
+ward	79700046	White	Male	0	2011
+ward	74804007	Indian or Asian	Female	0	2011
+ward	42004003	Coloured	Male	0	2011
+ward	94705001	Coloured	Female	0	2011
+ward	52704005	Coloured	Male	0	2011
+ward	74804012	Indian or Asian	Male	0	2011
+ward	52606019	White	Male	0	2011
+ward	21503024	Other	Male	0	2011
+ward	24401008	Coloured	Female	0	2011
+ward	41902001	White	Male	0	2011
+ward	24402024	Other	Male	0	2011
+ward	83105015	White	Male	0	2011
+ward	83005002	Indian or Asian	Female	0	2011
+ward	83105019	Coloured	Female	0	2011
+ward	52204003	Coloured	Female	0	2011
+ward	41906003	Other	Male	0	2011
+ward	21504013	Other	Male	0	2011
+ward	10302009	Indian or Asian	Male	0	2011
+ward	41801002	Other	Female	0	2011
+ward	21507014	White	Male	0	2011
+ward	93503005	Coloured	Female	0	2011
+ward	54302001	Other	Male	0	2011
+ward	52201013	Other	Female	0	2011
+ward	63701009	Indian or Asian	Male	0	2011
+ward	19100094	White	Female	0	2011
+ward	49400043	Other	Male	0	2011
+ward	52306007	Indian or Asian	Male	0	2011
+ward	93403034	Coloured	Female	0	2011
+ward	94703017	White	Male	0	2011
+ward	10202010	Indian or Asian	Female	0	2011
+ward	41804013	Other	Female	0	2011
+ward	52601008	Other	Female	0	2011
+ward	83202004	Indian or Asian	Female	0	2011
+ward	93302016	White	Female	0	2011
+ward	21204005	Coloured	Female	0	2011
+ward	83205032	White	Male	0	2011
+ward	52601006	Coloured	Male	0	2011
+ward	93402002	Coloured	Female	0	2011
+ward	24403028	Coloured	Male	0	2011
+ward	94701013	Other	Male	0	2011
+ward	21505027	Indian or Asian	Male	0	2011
+ward	63701028	White	Female	0	2011
+ward	93302005	Coloured	Female	0	2011
+ward	24403024	White	Male	0	2011
+ward	93504027	Other	Female	0	2011
+ward	24402026	Other	Female	0	2011
+ward	21305004	Coloured	Male	0	2011
+ward	94705026	Indian or Asian	Male	0	2011
+ward	49400002	White	Female	0	2011
+ward	41603006	Other	Female	0	2011
+ward	74201035	White	Female	0	2011
+ward	52205016	White	Male	0	2011
+ward	93302021	Indian or Asian	Female	0	2011
+ward	52303004	Indian or Asian	Female	0	2011
+ward	52701004	White	Male	0	2011
+ward	21505019	Other	Female	0	2011
+ward	41902004	Indian or Asian	Female	0	2011
+ward	63802007	Indian or Asian	Female	0	2011
+ward	93302024	White	Female	0	2011
+ward	10203006	White	Female	0	2011
+ward	63702008	White	Female	0	2011
+ward	54305019	Other	Female	0	2011
+ward	52901013	Indian or Asian	Female	0	2011
+ward	93403007	Other	Female	0	2011
+ward	52606020	Other	Male	0	2011
+ward	52804024	Coloured	Male	0	2011
+ward	41903006	Indian or Asian	Female	0	2011
+ward	93303012	Coloured	Female	0	2011
+ward	79800059	Indian or Asian	Female	0	2011
+ward	21305012	Indian or Asian	Male	0	2011
+ward	63701013	Other	Female	0	2011
+ward	21207021	Coloured	Male	0	2011
+ward	52401005	White	Male	0	2011
+ward	64004004	Indian or Asian	Male	0	2011
+ward	21506022	Indian or Asian	Female	0	2011
+ward	83105028	White	Male	0	2011
+ward	79800022	White	Male	0	2011
+ward	63705024	Other	Female	0	2011
+ward	83105020	White	Female	0	2011
+ward	83106028	White	Male	0	2011
+ward	30706003	Indian or Asian	Female	0	2011
+ward	93601012	Indian or Asian	Male	0	2011
+ward	49400041	White	Male	0	2011
+ward	93501006	Coloured	Male	0	2011
+ward	52802008	White	Male	0	2011
+ward	93304004	Other	Female	0	2011
+ward	34501008	Coloured	Male	0	2011
+ward	41904035	Other	Male	0	2011
+ward	93301004	White	Male	0	2011
+ward	93303026	Indian or Asian	Male	0	2011
+ward	21301003	White	Male	0	2011
+ward	64003025	White	Female	0	2011
+ward	52701013	Coloured	Female	0	2011
+ward	83205003	Other	Female	0	2011
+ward	83002001	Other	Female	0	2011
+ward	63701026	Other	Female	0	2011
+ward	94703005	Other	Male	0	2011
+ward	93301010	Other	Female	0	2011
+ward	83002014	Coloured	Male	0	2011
+ward	52902017	White	Female	0	2011
+ward	52302020	White	Male	0	2011
+ward	63907006	Indian or Asian	Female	0	2011
+ward	83205013	Coloured	Male	0	2011
+ward	52205010	White	Male	0	2011
+ward	10404021	Indian or Asian	Male	0	2011
+ward	93302011	Indian or Asian	Male	0	2011
+ward	94704009	Other	Male	0	2011
+ward	63805020	Coloured	Female	0	2011
+ward	83205019	Indian or Asian	Male	0	2011
+ward	24403016	White	Female	0	2011
+ward	94704011	Other	Female	0	2011
+ward	21202018	Indian or Asian	Female	0	2011
+ward	21207017	White	Female	0	2011
+ward	94703002	Indian or Asian	Female	0	2011
+ward	41804031	White	Female	0	2011
+ward	52806004	Coloured	Female	0	2011
+ward	21506010	White	Male	0	2011
+ward	29300014	Coloured	Female	0	2011
+ward	94705030	White	Female	0	2011
+ward	41905002	Other	Female	0	2011
+ward	74801019	White	Male	0	2011
+ward	30806004	Other	Male	0	2011
+ward	52903017	Other	Female	0	2011
+ward	63904009	Indian or Asian	Female	0	2011
+ward	93301003	Coloured	Female	0	2011
+ward	93403030	Other	Female	0	2011
+ward	74801015	Indian or Asian	Male	0	2011
+ward	52402009	Other	Male	0	2011
+ward	63904014	Other	Male	0	2011
+ward	24404018	Indian or Asian	Female	0	2011
+ward	93402001	Indian or Asian	Male	0	2011
+ward	21201007	Indian or Asian	Male	0	2011
+ward	74804003	Other	Female	0	2011
+ward	52702018	Indian or Asian	Male	0	2011
+ward	93301025	Coloured	Male	0	2011
+ward	52904006	White	Female	0	2011
+ward	93403013	White	Male	0	2011
+ward	52404010	Other	Male	0	2011
+ward	63705031	Coloured	Female	0	2011
+ward	83001005	White	Female	0	2011
+ward	52802022	White	Female	0	2011
+ward	52805006	Coloured	Male	0	2011
+ward	24402005	Indian or Asian	Male	0	2011
+ward	63705019	Coloured	Male	0	2011
+ward	93301010	Indian or Asian	Female	0	2011
+ward	83002017	White	Male	0	2011
+ward	52802007	White	Female	0	2011
+ward	41904008	Indian or Asian	Female	0	2011
+ward	52902001	Coloured	Male	0	2011
+ward	63701026	Indian or Asian	Female	0	2011
+ward	94703005	Indian or Asian	Male	0	2011
+ward	83004011	White	Female	0	2011
+ward	21307006	Indian or Asian	Female	0	2011
+ward	93301001	Coloured	Male	0	2011
+ward	83106025	Coloured	Female	0	2011
+ward	52903008	Coloured	Male	0	2011
+ward	93303008	Indian or Asian	Male	0	2011
+ward	21202029	White	Female	0	2011
+ward	52606005	Coloured	Male	0	2011
+ward	94704009	Indian or Asian	Male	0	2011
+ward	83105014	Indian or Asian	Female	0	2011
+ward	83205019	Other	Male	0	2011
+ward	93305014	White	Female	0	2011
+ward	21507020	White	Female	0	2011
+ward	83202025	Indian or Asian	Female	0	2011
+ward	94703002	Other	Female	0	2011
+ward	52703002	White	Female	0	2011
+ward	52502017	White	Female	0	2011
+ward	94704011	Indian or Asian	Female	0	2011
+ward	63803012	White	Male	0	2011
+ward	30803002	Other	Female	0	2011
+ward	21503003	White	Male	0	2011
+ward	30604002	Indian or Asian	Female	0	2011
+ward	94702024	Coloured	Female	0	2011
+ward	63702032	White	Male	0	2011
+ward	30806004	Indian or Asian	Male	0	2011
+ward	52903017	Indian or Asian	Female	0	2011
+ward	21402002	White	Female	0	2011
+ward	52502012	White	Male	0	2011
+ward	52402002	Other	Female	0	2011
+ward	74201033	Indian or Asian	Male	0	2011
+ward	41905002	Indian or Asian	Female	0	2011
+ward	63904003	Indian or Asian	Female	0	2011
+ward	63904014	Indian or Asian	Male	0	2011
+ward	93403030	Indian or Asian	Female	0	2011
+ward	74801015	Other	Male	0	2011
+ward	52705014	Coloured	Female	0	2011
+ward	42001014	White	Female	0	2011
+ward	74804003	Indian or Asian	Female	0	2011
+ward	24404018	Other	Female	0	2011
+ward	41902010	Coloured	Female	0	2011
+ward	24402005	Other	Male	0	2011
+ward	52601005	Coloured	Male	0	2011
+ward	52404010	Indian or Asian	Male	0	2011
+ward	52603017	White	Female	0	2011
+ward	41603006	Indian or Asian	Female	0	2011
+ward	83205036	White	Male	0	2011
+ward	41902004	Other	Female	0	2011
+ward	52303004	Other	Female	0	2011
+ward	93302021	Other	Female	0	2011
+ward	21004010	Indian or Asian	Male	0	2011
+ward	52901008	Other	Female	0	2011
+ward	54305012	Other	Female	0	2011
+ward	42003004	Indian or Asian	Male	0	2011
+ward	21201002	Coloured	Male	0	2011
+ward	52901013	Other	Female	0	2011
+ward	52606022	Coloured	Female	0	2011
+ward	54305019	Indian or Asian	Female	0	2011
+ward	63803020	White	Male	0	2011
+ward	21305012	Other	Male	0	2011
+ward	79800059	Other	Female	0	2011
+ward	63804002	Coloured	Male	0	2011
+ward	10301008	Indian or Asian	Male	0	2011
+ward	21506022	Other	Female	0	2011
+ward	83205015	Coloured	Male	0	2011
+ward	93404005	White	Female	0	2011
+ward	83102013	White	Male	0	2011
+ward	83204003	White	Male	0	2011
+ward	64002001	Indian or Asian	Female	0	2011
+ward	30706003	Other	Female	0	2011
+ward	93601012	Other	Male	0	2011
+ward	52701008	White	Male	0	2011
+ward	63705024	Indian or Asian	Female	0	2011
+ward	83204012	Other	Female	0	2011
+ward	74804010	Coloured	Male	0	2011
+ward	10302012	Indian or Asian	Female	0	2011
+ward	49400009	White	Female	0	2011
+ward	52205003	White	Female	0	2011
+ward	21308003	Coloured	Male	0	2011
+ward	63805009	Other	Male	0	2011
+ward	41904035	Indian or Asian	Male	0	2011
+ward	94703016	Coloured	Female	0	2011
+ward	42004004	Coloured	Female	0	2011
+ward	93304004	Indian or Asian	Female	0	2011
+ward	42004006	White	Female	0	2011
+ward	74201044	Indian or Asian	Male	0	2011
+ward	79900104	White	Female	0	2011
+ward	41805003	Other	Male	0	2011
+ward	83205003	Indian or Asian	Female	0	2011
+ward	83002001	Indian or Asian	Female	0	2011
+ward	64003034	Other	Female	0	2011
+ward	94701014	Indian or Asian	Female	0	2011
+ward	83102001	White	Female	0	2011
+ward	93303026	Other	Male	0	2011
+ward	93502002	Coloured	Female	0	2011
+ward	83204023	Other	Female	0	2011
+ward	24402013	White	Male	0	2011
+ward	49400014	Indian or Asian	Female	0	2011
+ward	83106021	White	Male	0	2011
+ward	83205005	White	Female	0	2011
+ward	21505030	Other	Male	0	2011
+ward	21401008	Coloured	Female	0	2011
+ward	29200011	Indian or Asian	Female	0	2011
+ward	41804006	White	Male	0	2011
+ward	79700083	White	Male	0	2011
+ward	94701012	Coloured	Female	0	2011
+ward	83204008	White	Female	0	2011
+ward	93302012	White	Female	0	2011
+ward	24401012	Coloured	Female	0	2011
+ward	29300027	White	Female	0	2011
+ward	52206002	Other	Female	0	2011
+ward	93502016	White	Male	0	2011
+ward	21003002	White	Female	0	2011
+ward	10204020	Indian or Asian	Female	0	2011
+ward	83201012	Indian or Asian	Male	0	2011
+ward	30802005	Indian or Asian	Female	0	2011
+ward	52504008	Other	Male	0	2011
+ward	21202008	White	Female	0	2011
+ward	29300017	Indian or Asian	Female	0	2011
+ward	63801002	White	Female	0	2011
+ward	93505011	Other	Female	0	2011
+ward	52802005	Indian or Asian	Female	0	2011
+ward	93302023	Indian or Asian	Male	0	2011
+ward	52103001	Other	Female	0	2011
+ward	63805005	Coloured	Female	0	2011
+ward	52101003	White	Female	0	2011
+ward	52306003	Coloured	Female	0	2011
+ward	93301014	Coloured	Male	0	2011
+ward	93607021	Coloured	Female	0	2011
+ward	21202014	White	Male	0	2011
+ward	74202003	Other	Male	0	2011
+ward	21305006	Coloured	Female	0	2011
+ward	21503016	Other	Male	0	2011
+ward	52805003	White	Male	0	2011
+ward	94705004	Coloured	Male	0	2011
+ward	93501011	Other	Female	0	2011
+ward	52103007	Coloured	Male	0	2011
+ward	52101004	Indian or Asian	Male	0	2011
+ward	52402013	Other	Female	0	2011
+ward	52101006	Other	Male	0	2011
+ward	93504018	Coloured	Male	0	2011
+ward	21505024	Other	Female	0	2011
+ward	52103011	Other	Female	0	2011
+ward	41905005	Other	Male	0	2011
+ward	42001009	Indian or Asian	Female	0	2011
+ward	52504005	White	Female	0	2011
+ward	74802010	White	Male	0	2011
+ward	83201010	Indian or Asian	Male	0	2011
+ward	94703010	Coloured	Female	0	2011
+ward	79800061	Other	Female	0	2011
+ward	54301002	Indian or Asian	Male	0	2011
+ward	52701012	Coloured	Female	0	2011
+ward	83204018	Other	Male	0	2011
+ward	52605012	Other	Female	0	2011
+ward	63904021	Other	Female	0	2011
+ward	83205009	White	Female	0	2011
+ward	93502003	White	Male	0	2011
+ward	52104005	White	Female	0	2011
+ward	52103016	Other	Male	0	2011
+ward	93502015	Other	Female	0	2011
+ward	52801007	White	Female	0	2011
+ward	93607005	Other	Male	0	2011
+ward	30604004	Other	Female	0	2011
+ward	54302002	Indian or Asian	Male	0	2011
+ward	83001006	Indian or Asian	Female	0	2011
+ward	24403026	White	Male	0	2011
+ward	74803013	Indian or Asian	Female	0	2011
+ward	52402017	Indian or Asian	Female	0	2011
+ward	21503028	Indian or Asian	Female	0	2011
+ward	41601002	Other	Female	0	2011
+ward	52605002	Indian or Asian	Female	0	2011
+ward	83105004	White	Male	0	2011
+ward	83004006	Other	Male	0	2011
+ward	52302018	Coloured	Female	0	2011
+ward	21307003	Indian or Asian	Male	0	2011
+ward	93607018	Coloured	Male	0	2011
+ward	52801004	Other	Male	0	2011
+ward	93505022	Coloured	Male	0	2011
+ward	21201014	White	Female	0	2011
+ward	83003016	Coloured	Male	0	2011
+ward	93402008	Other	Male	0	2011
+ward	21506006	Other	Female	0	2011
+ward	94704001	White	Male	0	2011
+ward	41904004	Indian or Asian	Male	0	2011
+ward	74802016	Indian or Asian	Female	0	2011
+ward	64003022	White	Male	0	2011
+ward	21305019	White	Male	0	2011
+ward	74804011	Indian or Asian	Male	0	2011
+ward	93504028	White	Female	0	2011
+ward	21403006	Other	Male	0	2011
+ward	79800043	White	Male	0	2011
+ward	54301002	Other	Male	0	2011
+ward	63703023	White	Female	0	2011
+ward	52101002	White	Male	0	2011
+ward	63904018	White	Male	0	2011
+ward	63705013	White	Female	0	2011
+ward	52605019	White	Female	0	2011
+ward	63904021	Indian or Asian	Female	0	2011
+ward	21202028	Coloured	Female	0	2011
+ward	52605012	Indian or Asian	Female	0	2011
+ward	74803001	Coloured	Male	0	2011
+ward	52801010	Coloured	Female	0	2011
+ward	54302002	Other	Male	0	2011
+ward	30604004	Indian or Asian	Female	0	2011
+ward	94703007	Coloured	Female	0	2011
+ward	93502015	Indian or Asian	Female	0	2011
+ward	41903009	White	Female	0	2011
+ward	52201006	White	Male	0	2011
+ward	52705008	Indian or Asian	Female	0	2011
+ward	79700065	Indian or Asian	Female	0	2011
+ward	52804014	White	Female	0	2011
+ward	83001006	Other	Female	0	2011
+ward	63803023	White	Male	0	2011
+ward	93302027	Indian or Asian	Male	0	2011
+ward	83106008	White	Female	0	2011
+ward	21503028	Other	Female	0	2011
+ward	52605002	Other	Female	0	2011
+ward	63802001	Indian or Asian	Female	0	2011
+ward	94703013	Coloured	Female	0	2011
+ward	52402017	Other	Female	0	2011
+ward	52606009	White	Male	0	2011
+ward	93502005	Indian or Asian	Male	0	2011
+ward	93505002	White	Male	0	2011
+ward	94702004	White	Female	0	2011
+ward	52205017	Other	Male	0	2011
+ward	93504038	Indian or Asian	Female	0	2011
+ward	52603006	Coloured	Female	0	2011
+ward	41601001	Other	Female	0	2011
+ward	63907011	White	Male	0	2011
+ward	93505006	Other	Male	0	2011
+ward	94701011	White	Male	0	2011
+ward	21507015	White	Female	0	2011
+ward	74802016	Other	Female	0	2011
+ward	29200011	Other	Female	0	2011
+ward	21402009	Coloured	Female	0	2011
+ward	49400014	Other	Female	0	2011
+ward	79900038	White	Female	0	2011
+ward	21304015	Coloured	Male	0	2011
+ward	52602006	White	Male	0	2011
+ward	79700004	Other	Male	0	2011
+ward	19100052	Indian or Asian	Male	0	2011
+ward	52206002	Indian or Asian	Female	0	2011
+ward	93304008	Other	Female	0	2011
+ward	93505011	Indian or Asian	Female	0	2011
+ward	63701024	White	Male	0	2011
+ward	83201012	Other	Male	0	2011
+ward	21305002	Other	Female	0	2011
+ward	21505031	Indian or Asian	Male	0	2011
+ward	63702020	Coloured	Female	0	2011
+ward	63803021	White	Female	0	2011
+ward	63803010	Other	Male	0	2011
+ward	52103001	Indian or Asian	Female	0	2011
+ward	79700044	White	Female	0	2011
+ward	24403002	Other	Female	0	2011
+ward	21503016	Indian or Asian	Male	0	2011
+ward	52701009	Coloured	Male	0	2011
+ward	93602007	Indian or Asian	Female	0	2011
+ward	10205018	Indian or Asian	Male	0	2011
+ward	10205011	White	Male	0	2011
+ward	21505024	Indian or Asian	Female	0	2011
+ward	21307020	White	Female	0	2011
+ward	94701008	Coloured	Male	0	2011
+ward	93301009	White	Female	0	2011
+ward	93501011	Indian or Asian	Female	0	2011
+ward	52101006	Indian or Asian	Male	0	2011
+ward	93302001	White	Female	0	2011
+ward	24403003	White	Female	0	2011
+ward	63803016	White	Male	0	2011
+ward	79700096	White	Male	0	2011
+ward	63705003	Other	Female	0	2011
+ward	42001009	Other	Female	0	2011
+ward	52103009	White	Female	0	2011
+ward	21506014	Indian or Asian	Female	0	2011
+ward	59500081	Other	Female	0	2011
+ward	24402020	White	Female	0	2011
+ward	41905005	Indian or Asian	Male	0	2011
+ward	21506018	Other	Female	0	2011
+ward	21204015	White	Female	0	2011
+ward	49400011	Indian or Asian	Female	0	2011
+ward	52901001	Coloured	Male	0	2011
+ward	83106017	Indian or Asian	Female	0	2011
+ward	93304016	White	Male	0	2011
+ward	52104006	Indian or Asian	Female	0	2011
+ward	64002011	White	Male	0	2011
+ward	52901006	Other	Female	0	2011
+ward	93404003	Other	Female	0	2011
+ward	21204007	Coloured	Male	0	2011
+ward	83007031	Indian or Asian	Male	0	2011
+ward	63701010	Coloured	Male	0	2011
+ward	93304007	Coloured	Female	0	2011
+ward	93301008	Indian or Asian	Female	0	2011
+ward	74801007	Other	Male	0	2011
+ward	93304006	White	Male	0	2011
+ward	10404012	White	Female	0	2011
+ward	29200025	Coloured	Male	0	2011
+ward	41902013	Other	Female	0	2011
+ward	93501004	Coloured	Female	0	2011
+municipality	FS164	Other	Female	0	2011
+ward	52306010	Indian or Asian	Male	0	2011
+ward	74804002	Other	Female	0	2011
+ward	63703025	White	Female	0	2011
+ward	83007013	Indian or Asian	Female	0	2011
+ward	93504007	White	Male	0	2011
+ward	42004019	Other	Female	0	2011
+ward	41905004	White	Female	0	2011
+ward	93303006	Other	Female	0	2011
+ward	63702028	White	Male	0	2011
+ward	63801010	White	Female	0	2011
+ward	93501009	Other	Male	0	2011
+ward	52902018	Coloured	Male	0	2011
+ward	93301028	White	Male	0	2011
+ward	21204003	Other	Female	0	2011
+ward	21308006	Coloured	Female	0	2011
+ward	21306011	Indian or Asian	Female	0	2011
+ward	63702024	Indian or Asian	Female	0	2011
+ward	74801010	Indian or Asian	Female	0	2011
+ward	52801014	Other	Male	0	2011
+ward	52602005	Other	Female	0	2011
+ward	93502001	Coloured	Male	0	2011
+ward	21505018	Indian or Asian	Female	0	2011
+ward	52702017	White	Female	0	2011
+ward	21303002	Indian or Asian	Male	0	2011
+ward	63701011	Indian or Asian	Male	0	2011
+ward	83106031	Other	Male	0	2011
+ward	63702004	Other	Male	0	2011
+ward	93607007	Other	Female	0	2011
+ward	52104001	Coloured	Female	0	2011
+ward	83205029	White	Male	0	2011
+ward	52502027	Other	Male	0	2011
+ward	52106005	White	Male	0	2011
+ward	52901015	Other	Male	0	2011
+ward	63704004	White	Male	0	2011
+ward	42005002	White	Female	0	2011
+ward	63904012	Coloured	Female	0	2011
+ward	10103002	Other	Female	0	2011
+ward	41805010	Other	Male	0	2011
+ward	21201004	Coloured	Male	0	2011
+ward	52804012	Indian or Asian	Female	0	2011
+ward	21503020	Other	Male	0	2011
+ward	93301029	Indian or Asian	Male	0	2011
+ward	94703025	White	Female	0	2011
+ward	93502006	Indian or Asian	Female	0	2011
+ward	74804020	Coloured	Male	0	2011
+ward	74804024	Indian or Asian	Male	0	2011
+ward	41805005	Other	Male	0	2011
+ward	52804022	White	Male	0	2011
+ward	52502009	Other	Female	0	2011
+ward	21504010	Coloured	Female	0	2011
+ward	83102004	White	Male	0	2011
+ward	41603005	Other	Female	0	2011
+ward	21301004	White	Female	0	2011
+ward	30901009	White	Female	0	2011
+ward	63703020	Indian or Asian	Female	0	2011
+ward	41901013	White	Female	0	2011
+ward	41904005	White	Female	0	2011
+ward	79800035	Other	Female	0	2011
+ward	52901012	Other	Male	0	2011
+ward	83004009	Other	Male	0	2011
+ward	93607019	Coloured	Female	0	2011
+ward	21206012	Other	Female	0	2011
+ward	21201010	Other	Female	0	2011
+ward	83204019	Indian or Asian	Female	0	2011
+ward	83003001	Indian or Asian	Female	0	2011
+ward	10405010	Other	Female	0	2011
+ward	52202008	White	Male	0	2011
+ward	24402002	Indian or Asian	Female	0	2011
+ward	83007026	White	Female	0	2011
+ward	93304001	White	Male	0	2011
+ward	54304005	Other	Male	0	2011
+ward	93301016	Coloured	Male	0	2011
+ward	63701011	Other	Male	0	2011
+ward	93302003	White	Male	0	2011
+ward	21505018	Other	Female	0	2011
+ward	52602005	Indian or Asian	Female	0	2011
+ward	93301023	White	Female	0	2011
+ward	93601001	Indian or Asian	Male	0	2011
+ward	21505004	White	Female	0	2011
+ward	74802012	Other	Male	0	2011
+ward	30902007	White	Female	0	2011
+ward	21401012	White	Female	0	2011
+ward	93503001	Indian or Asian	Female	0	2011
+ward	93404009	Coloured	Female	0	2011
+ward	93607007	Indian or Asian	Female	0	2011
+ward	93302019	Indian or Asian	Female	0	2011
+ward	93303010	Indian or Asian	Male	0	2011
+ward	41805010	Indian or Asian	Male	0	2011
+ward	21207001	Indian or Asian	Male	0	2011
+ward	24402010	Coloured	Male	0	2011
+ward	52901015	Indian or Asian	Male	0	2011
+ward	93502006	Other	Female	0	2011
+ward	93301029	Other	Male	0	2011
+ward	63701006	Indian or Asian	Male	0	2011
+ward	94702005	White	Female	0	2011
+ward	52804012	Other	Female	0	2011
+ward	24402003	Other	Male	0	2011
+ward	52402003	Coloured	Male	0	2011
+ward	52901002	White	Female	0	2011
+ward	83204010	Other	Male	0	2011
+ward	21306005	Indian or Asian	Female	0	2011
+ward	74801005	White	Female	0	2011
+ward	21201024	White	Male	0	2011
+ward	52902023	Other	Female	0	2011
+ward	10404010	Indian or Asian	Male	0	2011
+ward	24401015	White	Female	0	2011
+ward	52502029	White	Female	0	2011
+ward	83007008	White	Female	0	2011
+ward	63703020	Other	Female	0	2011
+ward	54304003	White	Male	0	2011
+ward	94702018	White	Male	0	2011
+ward	21206012	Indian or Asian	Female	0	2011
+ward	52605021	Coloured	Female	0	2011
+ward	79900008	White	Female	0	2011
+ward	21201018	Coloured	Male	0	2011
+ward	79900062	Indian or Asian	Female	0	2011
+ward	83004009	Indian or Asian	Male	0	2011
+ward	21006005	White	Male	0	2011
+ward	24402002	Other	Female	0	2011
+ward	83204019	Other	Female	0	2011
+ward	93607002	White	Male	0	2011
+ward	93502012	White	Female	0	2011
+ward	52104006	Other	Female	0	2011
+ward	24401003	Coloured	Female	0	2011
+ward	63803002	Indian or Asian	Male	0	2011
+ward	83106017	Other	Female	0	2011
+ward	93607001	White	Male	0	2011
+ward	63703006	Indian or Asian	Female	0	2011
+ward	79800050	Indian or Asian	Female	0	2011
+ward	63902006	White	Male	0	2011
+ward	52802015	White	Male	0	2011
+ward	52901006	Indian or Asian	Female	0	2011
+ward	29200041	Indian or Asian	Female	0	2011
+ward	63702035	White	Female	0	2011
+ward	83007013	Other	Female	0	2011
+ward	41604003	Other	Female	0	2011
+ward	21202009	White	Male	0	2011
+ward	93304009	White	Male	0	2011
+ward	94704004	Coloured	Male	0	2011
+ward	83202029	Other	Female	0	2011
+ward	93305005	Indian or Asian	Female	0	2011
+ward	42004012	White	Female	0	2011
+ward	42004019	Indian or Asian	Female	0	2011
+ward	93303006	Indian or Asian	Female	0	2011
+ward	21505020	Other	Male	0	2011
+ward	52603021	Coloured	Female	0	2011
+ward	94702011	Indian or Asian	Male	0	2011
+ward	93602005	Other	Female	0	2011
+ward	21507007	White	Female	0	2011
+ward	83001019	Indian or Asian	Male	0	2011
+ward	93503011	White	Female	0	2011
+ward	10408009	Other	Male	0	2011
+ward	93505004	Indian or Asian	Female	0	2011
+ward	30704001	Indian or Asian	Male	0	2011
+ward	83202034	White	Female	0	2011
+ward	52806009	White	Male	0	2011
+ward	74801010	Other	Female	0	2011
+ward	63702024	Other	Female	0	2011
+ward	52306009	Coloured	Female	0	2011
+ward	42003009	White	Female	0	2011
+ward	21204003	Indian or Asian	Female	0	2011
+ward	63805006	Indian or Asian	Male	0	2011
+ward	93402002	White	Female	0	2011
+ward	52601006	White	Male	0	2011
+ward	21401010	White	Male	0	2011
+ward	93302016	Coloured	Female	0	2011
+ward	21204005	White	Female	0	2011
+ward	93301006	Coloured	Male	0	2011
+ward	30701001	Indian or Asian	Female	0	2011
+ward	93602010	Other	Female	0	2011
+ward	93403034	White	Female	0	2011
+ward	83006001	Coloured	Female	0	2011
+ward	21401001	Other	Female	0	2011
+ward	52503001	Indian or Asian	Male	0	2011
+ward	21305004	White	Male	0	2011
+ward	93302005	White	Female	0	2011
+ward	63701028	Coloured	Female	0	2011
+ward	30901012	Indian or Asian	Female	0	2011
+ward	34501009	Other	Female	0	2011
+ward	93302020	Indian or Asian	Female	0	2011
+ward	24403028	White	Male	0	2011
+ward	93501014	Indian or Asian	Male	0	2011
+ward	83205037	White	Male	0	2011
+ward	83105015	Coloured	Male	0	2011
+ward	83007007	Indian or Asian	Female	0	2011
+ward	21307014	Coloured	Male	0	2011
+ward	30901005	White	Female	0	2011
+ward	24401008	White	Female	0	2011
+ward	63703038	Indian or Asian	Female	0	2011
+ward	24402022	Other	Female	0	2011
+ward	52704005	White	Male	0	2011
+ward	63701012	Indian or Asian	Female	0	2011
+ward	94702022	Indian or Asian	Male	0	2011
+ward	83005006	Indian or Asian	Female	0	2011
+ward	21204011	Indian or Asian	Male	0	2011
+ward	93503005	White	Female	0	2011
+ward	52204003	White	Female	0	2011
+ward	24404005	Indian or Asian	Male	0	2011
+ward	52804004	Coloured	Female	0	2011
+ward	93504002	White	Female	0	2011
+ward	52903018	Coloured	Female	0	2011
+ward	52804006	Indian or Asian	Female	0	2011
+ward	52903013	Other	Female	0	2011
+ward	24404010	White	Female	0	2011
+ward	93607029	Indian or Asian	Female	0	2011
+ward	63702036	Indian or Asian	Female	0	2011
+ward	21005008	White	Male	0	2011
+ward	94701005	Coloured	Female	0	2011
+ward	52305009	White	Male	0	2011
+ward	94705016	Other	Female	0	2011
+ward	21202021	Coloured	Female	0	2011
+ward	21206008	Other	Female	0	2011
+ward	52106011	Indian or Asian	Male	0	2011
+ward	30801002	Other	Female	0	2011
+ward	93403015	Indian or Asian	Female	0	2011
+ward	52606021	Other	Male	0	2011
+ward	93302022	Other	Female	0	2011
+ward	63906002	White	Female	0	2011
+ward	21506026	White	Male	0	2011
+ward	93504029	Indian or Asian	Female	0	2011
+ward	63907001	Indian or Asian	Male	0	2011
+ward	93404031	Other	Female	0	2011
+ward	52602001	Other	Male	0	2011
+ward	21402014	Indian or Asian	Female	0	2011
+ward	93303009	White	Male	0	2011
+ward	93505001	Coloured	Male	0	2011
+ward	30801001	Indian or Asian	Male	0	2011
+ward	54303007	Indian or Asian	Male	0	2011
+ward	52102001	Coloured	Male	0	2011
+ward	52103015	Indian or Asian	Female	0	2011
+ward	83201001	Other	Female	0	2011
+ward	79700049	Indian or Asian	Female	0	2011
+ward	10204021	Indian or Asian	Male	0	2011
+ward	74202012	Other	Male	0	2011
+ward	93403026	Other	Male	0	2011
+ward	52303009	White	Male	0	2011
+ward	21302002	Indian or Asian	Male	0	2011
+ward	94705024	Coloured	Female	0	2011
+ward	24402012	White	Female	0	2011
+ward	63801011	Other	Male	0	2011
+ward	41906009	Other	Female	0	2011
+ward	52702008	White	Male	0	2011
+ward	52302015	White	Female	0	2011
+ward	21003004	Indian or Asian	Male	0	2011
+ward	93302004	Indian or Asian	Male	0	2011
+ward	21302003	White	Female	0	2011
+ward	74201027	White	Male	0	2011
+ward	63805007	Other	Female	0	2011
+ward	24404005	Other	Male	0	2011
+ward	93607008	Coloured	Female	0	2011
+ward	52903013	Indian or Asian	Female	0	2011
+ward	52401001	Other	Female	0	2011
+ward	52606014	White	Female	0	2011
+ward	52804006	Other	Female	0	2011
+ward	21503027	Other	Male	0	2011
+ward	41901002	White	Female	0	2011
+ward	21505012	Indian or Asian	Female	0	2011
+ward	21202026	Coloured	Male	0	2011
+ward	21304012	White	Male	0	2011
+ward	93302022	Indian or Asian	Female	0	2011
+ward	21201030	Other	Female	0	2011
+ward	52106011	Other	Male	0	2011
+ward	54304011	Coloured	Male	0	2011
+ward	93403015	Other	Female	0	2011
+ward	94704012	Coloured	Male	0	2011
+ward	52402007	Coloured	Female	0	2011
+ward	52106014	Other	Male	0	2011
+ward	21201003	Indian or Asian	Female	0	2011
+ward	21507031	Other	Male	0	2011
+ward	41902017	Indian or Asian	Female	0	2011
+ward	63907001	Other	Male	0	2011
+ward	52602001	Indian or Asian	Male	0	2011
+ward	93404031	Indian or Asian	Female	0	2011
+ward	93504029	Other	Female	0	2011
+ward	52704001	White	Male	0	2011
+ward	54303007	Other	Male	0	2011
+ward	52103015	Other	Female	0	2011
+ward	83201001	Indian or Asian	Female	0	2011
+ward	21505002	Coloured	Male	0	2011
+ward	30801001	Other	Male	0	2011
+ward	10203012	Indian or Asian	Female	0	2011
+ward	63907010	White	Female	0	2011
+ward	21004002	Other	Female	0	2011
+ward	21302002	Other	Male	0	2011
+ward	93403026	Indian or Asian	Male	0	2011
+ward	93505020	White	Male	0	2011
+ward	79700049	Other	Female	0	2011
+ward	52802019	White	Male	0	2011
+ward	52704003	White	Female	0	2011
+ward	41906009	Indian or Asian	Female	0	2011
+ward	52605015	Coloured	Male	0	2011
+ward	74201032	White	Male	0	2011
+ward	83005012	Other	Female	0	2011
+ward	63906005	White	Female	0	2011
+ward	63805006	Other	Male	0	2011
+ward	21507023	Coloured	Male	0	2011
+ward	29200001	White	Male	0	2011
+ward	30904003	White	Female	0	2011
+ward	49400032	Coloured	Female	0	2011
+ward	63703033	Indian or Asian	Female	0	2011
+ward	63805008	White	Female	0	2011
+ward	52503001	Other	Male	0	2011
+ward	21401001	Indian or Asian	Female	0	2011
+ward	21504020	Coloured	Female	0	2011
+ward	93602010	Indian or Asian	Female	0	2011
+ward	79800039	Other	Female	0	2011
+ward	52202006	Other	Female	0	2011
+ward	21307012	Coloured	Female	0	2011
+ward	93607013	Coloured	Female	0	2011
+ward	83103002	Other	Female	0	2011
+ward	52206005	Other	Female	0	2011
+ward	10408006	White	Male	0	2011
+ward	93505007	White	Male	0	2011
+ward	30805002	White	Female	0	2011
+ward	52306004	Coloured	Female	0	2011
+ward	52806003	Indian or Asian	Male	0	2011
+ward	41804019	White	Female	0	2011
+ward	42004002	Other	Female	0	2011
+ward	93503008	Indian or Asian	Female	0	2011
+ward	29200017	Other	Female	0	2011
+ward	93607028	White	Male	0	2011
+ward	34501009	Indian or Asian	Female	0	2011
+ward	93302020	Other	Female	0	2011
+ward	30901012	Other	Female	0	2011
+ward	21204008	Coloured	Male	0	2011
+ward	83204025	Coloured	Female	0	2011
+ward	83205026	Indian or Asian	Male	0	2011
+ward	21301001	White	Male	0	2011
+ward	83007007	Other	Female	0	2011
+ward	93501014	Other	Male	0	2011
+ward	79900023	White	Male	0	2011
+ward	52902024	White	Female	0	2011
+ward	93404036	Indian or Asian	Female	0	2011
+ward	83001007	Coloured	Male	0	2011
+ward	21305018	White	Male	0	2011
+ward	24402022	Indian or Asian	Female	0	2011
+ward	21507030	Indian or Asian	Male	0	2011
+ward	83007006	Coloured	Female	0	2011
+ward	64002006	Other	Female	0	2011
+ward	52602013	Other	Male	0	2011
+ward	94702022	Other	Male	0	2011
+ward	63701012	Other	Female	0	2011
+ward	63705027	Coloured	Female	0	2011
+ward	83002006	Other	Female	0	2011
+ward	93607026	White	Female	0	2011
+ward	21206002	White	Female	0	2011
+ward	21201026	White	Female	0	2011
+ward	74804010	White	Male	0	2011
+ward	83205014	Coloured	Female	0	2011
+ward	52802018	White	Male	0	2011
+ward	52402011	Coloured	Male	0	2011
+ward	52701008	Coloured	Male	0	2011
+ward	83202023	Indian or Asian	Male	0	2011
+ward	93404005	Coloured	Female	0	2011
+ward	93305004	Indian or Asian	Female	0	2011
+ward	21506003	White	Female	0	2011
+ward	29300020	Other	Female	0	2011
+ward	83205015	White	Male	0	2011
+ward	63705023	Indian or Asian	Female	0	2011
+ward	93502002	White	Female	0	2011
+ward	21203004	Indian or Asian	Female	0	2011
+ward	63803017	White	Female	0	2011
+ward	52504010	Other	Female	0	2011
+ward	59500003	Indian or Asian	Female	0	2011
+ward	94703011	Other	Female	0	2011
+ward	42004004	White	Female	0	2011
+ward	21308003	White	Male	0	2011
+ward	83204005	Coloured	Male	0	2011
+ward	52603018	White	Male	0	2011
+ward	21505009	Other	Female	0	2011
+ward	21201011	Other	Female	0	2011
+ward	63705011	Other	Male	0	2011
+ward	83205036	Coloured	Male	0	2011
+ward	94701016	Indian or Asian	Female	0	2011
+ward	83006006	Coloured	Male	0	2011
+ward	74202001	Indian or Asian	Female	0	2011
+ward	54302004	Other	Male	0	2011
+ward	83005015	Indian or Asian	Female	0	2011
+ward	21201012	Indian or Asian	Female	0	2011
+ward	52103019	Other	Male	0	2011
+ward	54304006	Other	Female	0	2011
+ward	63702034	Indian or Asian	Female	0	2011
+ward	52603017	Coloured	Female	0	2011
+ward	93403039	Indian or Asian	Male	0	2011
+ward	21201019	Indian or Asian	Female	0	2011
+ward	83002002	Coloured	Male	0	2011
+ward	63804002	White	Male	0	2011
+ward	74203005	Indian or Asian	Female	0	2011
+ward	83202037	Indian or Asian	Female	0	2011
+ward	93605009	Indian or Asian	Female	0	2011
+ward	21201002	White	Male	0	2011
+ward	63802011	White	Female	0	2011
+ward	94703030	White	Female	0	2011
+ward	93303029	White	Male	0	2011
+ward	30901018	White	Male	0	2011
+ward	93303030	Coloured	Male	0	2011
+ward	21402002	Coloured	Female	0	2011
+ward	74201013	White	Male	0	2011
+ward	52601005	White	Male	0	2011
+ward	93301015	Indian or Asian	Female	0	2011
+ward	52404018	Other	Male	0	2011
+ward	54305015	Other	Male	0	2011
+ward	41804001	Other	Male	0	2011
+ward	83202036	Other	Male	0	2011
+ward	52603004	Indian or Asian	Female	0	2011
+ward	52606005	White	Male	0	2011
+ward	52903008	White	Male	0	2011
+ward	83106025	White	Female	0	2011
+ward	74803009	Other	Female	0	2011
+ward	93301001	White	Male	0	2011
+ward	83004011	Coloured	Female	0	2011
+ward	10503002	Indian or Asian	Male	0	2011
+ward	52902001	White	Male	0	2011
+ward	21206001	Indian or Asian	Male	0	2011
+ward	63803030	Indian or Asian	Female	0	2011
+ward	74802019	Other	Male	0	2011
+ward	21305005	Indian or Asian	Female	0	2011
+ward	63805011	Coloured	Female	0	2011
+ward	94702024	White	Female	0	2011
+ward	21503003	Coloured	Male	0	2011
+ward	52602012	Indian or Asian	Male	0	2011
+ward	29300015	Indian or Asian	Male	0	2011
+ward	93305014	Coloured	Female	0	2011
+ward	24403004	Coloured	Male	0	2011
+ward	54305003	Indian or Asian	Male	0	2011
+municipality	KZN432	Indian or Asian	Female	0	2011
+ward	83106002	Other	Male	0	2011
+ward	42001019	White	Male	0	2011
+ward	10501002	Indian or Asian	Female	0	2011
+ward	64002020	White	Female	0	2011
+ward	24402021	Coloured	Female	0	2011
+ward	94705030	Coloured	Female	0	2011
+ward	24402008	Other	Female	0	2011
+ward	52805006	White	Male	0	2011
+ward	93403010	Coloured	Female	0	2011
+ward	93304018	Other	Male	0	2011
+ward	54301004	Indian or Asian	Male	0	2011
+ward	83001005	Coloured	Female	0	2011
+ward	63705031	White	Female	0	2011
+ward	93301015	Other	Female	0	2011
+ward	52903010	Indian or Asian	Male	0	2011
+ward	83106029	Other	Female	0	2011
+ward	52601001	Other	Female	0	2011
+ward	21307010	Other	Female	0	2011
+ward	93301025	White	Male	0	2011
+ward	21207002	Indian or Asian	Female	0	2011
+ward	52305004	Other	Female	0	2011
+ward	83205013	White	Male	0	2011
+ward	21305005	Other	Female	0	2011
+ward	74802019	Indian or Asian	Male	0	2011
+ward	21503031	Coloured	Female	0	2011
+ward	74803009	Indian or Asian	Female	0	2011
+ward	21506010	Coloured	Male	0	2011
+ward	52802020	White	Male	0	2011
+ward	21207017	Coloured	Female	0	2011
+ward	42001021	Indian or Asian	Female	0	2011
+ward	24403016	Coloured	Female	0	2011
+ward	79700006	White	Male	0	2011
+ward	63805020	White	Female	0	2011
+ward	83003005	Coloured	Female	0	2011
+ward	83001017	Coloured	Female	0	2011
+ward	52802008	Coloured	Male	0	2011
+ward	93501006	White	Male	0	2011
+ward	83106028	Coloured	Male	0	2011
+ward	74201012	White	Male	0	2011
+ward	94705003	Indian or Asian	Male	0	2011
+ward	83105020	Coloured	Female	0	2011
+ward	93501005	White	Female	0	2011
+ward	52106028	Coloured	Male	0	2011
+ward	93401001	Other	Male	0	2011
+ward	21207021	White	Male	0	2011
+ward	93305004	Other	Female	0	2011
+ward	83202023	Other	Male	0	2011
+ward	94703011	Indian or Asian	Female	0	2011
+ward	52504010	Indian or Asian	Female	0	2011
+ward	52701013	White	Female	0	2011
+ward	21203004	Other	Female	0	2011
+ward	63904011	Indian or Asian	Female	0	2011
+ward	63705023	Other	Female	0	2011
+ward	93301004	Coloured	Male	0	2011
+ward	83102016	White	Male	0	2011
+ward	34501008	White	Male	0	2011
+ward	52605006	Coloured	Male	0	2011
+ward	93301026	Coloured	Male	0	2011
+ward	52606004	Other	Male	0	2011
+ward	21503026	Other	Female	0	2011
+ward	93302024	Coloured	Female	0	2011
+ward	94701016	Other	Female	0	2011
+ward	63705011	Indian or Asian	Male	0	2011
+ward	63801014	Other	Female	0	2011
+ward	41902006	Other	Male	0	2011
+ward	93505024	Coloured	Male	0	2011
+ward	24404006	White	Female	0	2011
+ward	21201019	Other	Female	0	2011
+ward	63702034	Other	Female	0	2011
+ward	21507022	Other	Female	0	2011
+ward	52106004	White	Female	0	2011
+ward	94704007	White	Female	0	2011
+ward	21201012	Other	Female	0	2011
+ward	63902003	Other	Female	0	2011
+ward	83005015	Other	Female	0	2011
+ward	10301010	Indian or Asian	Female	0	2011
+ward	74203005	Other	Female	0	2011
+ward	30602007	Other	Female	0	2011
+ward	93303012	White	Female	0	2011
+ward	83001018	White	Female	0	2011
+ward	63907015	Coloured	Male	0	2011
+ward	21008012	Indian or Asian	Male	0	2011
+ward	93605009	Other	Female	0	2011
+ward	74203003	White	Male	0	2011
+ward	41801008	Other	Male	0	2011
+ward	52205014	Coloured	Male	0	2011
+ward	93301030	Coloured	Female	0	2011
+ward	54305014	Indian or Asian	Female	0	2011
+ward	30702004	White	Male	0	2011
+ward	19100087	White	Male	0	2011
+ward	94704005	Indian or Asian	Male	0	2011
+ward	21008001	Indian or Asian	Male	0	2011
+ward	41904025	White	Female	0	2011
+ward	24403025	Other	Female	0	2011
+ward	52903015	Coloured	Female	0	2011
+ward	24403006	Coloured	Female	0	2011
+ward	83106009	White	Male	0	2011
+ward	21503011	Other	Female	0	2011
+ward	21202013	Indian or Asian	Female	0	2011
+ward	94702020	Indian or Asian	Female	0	2011
+ward	93304010	Coloured	Female	0	2011
+ward	52302006	Indian or Asian	Male	0	2011
+ward	52903007	Other	Female	0	2011
+ward	52302013	Indian or Asian	Male	0	2011
+ward	93402009	Coloured	Male	0	2011
+ward	21204019	Indian or Asian	Female	0	2011
+ward	52302008	White	Female	0	2011
+ward	83106020	Coloured	Female	0	2011
+ward	83102018	Other	Male	0	2011
+ward	41805004	Coloured	Male	0	2011
+ward	93402007	Other	Female	0	2011
+ward	93305007	Coloured	Female	0	2011
+ward	52502031	Other	Male	0	2011
+ward	93403009	White	Female	0	2011
+ward	52303007	Other	Male	0	2011
+ward	63904004	Indian or Asian	Female	0	2011
+ward	21001005	Other	Male	0	2011
+ward	52402016	Other	Male	0	2011
+ward	94704010	White	Male	0	2011
+ward	52104004	Other	Female	0	2011
+ward	93505005	Indian or Asian	Male	0	2011
+ward	52405004	Other	Female	0	2011
+ward	79800042	White	Female	0	2011
+ward	83204032	Coloured	Male	0	2011
+ward	93303028	Coloured	Female	0	2011
+ward	24401004	Other	Male	0	2011
+ward	24402011	Other	Male	0	2011
+ward	83204031	Coloured	Male	0	2011
+ward	21203007	Other	Female	0	2011
+ward	42005004	Other	Female	0	2011
+ward	63701023	White	Male	0	2011
+ward	10205020	Indian or Asian	Male	0	2011
+ward	52806007	Indian or Asian	Female	0	2011
+ward	93504005	Coloured	Female	0	2011
+ward	52704007	Coloured	Female	0	2011
+ward	94703022	Indian or Asian	Female	0	2011
+ward	93301005	Other	Male	0	2011
+ward	74801008	White	Male	0	2011
+ward	74201039	White	Female	0	2011
+ward	83203007	White	Female	0	2011
+ward	29300023	White	Male	0	2011
+ward	21505014	Other	Female	0	2011
+ward	93505026	White	Male	0	2011
+ward	41901017	Coloured	Male	0	2011
+ward	83105025	Other	Female	0	2011
+ward	52105004	Other	Male	0	2011
+ward	52602007	Indian or Asian	Male	0	2011
+ward	93602012	Indian or Asian	Female	0	2011
+ward	93301007	Coloured	Male	0	2011
+ward	83106007	Indian or Asian	Male	0	2011
+ward	21207009	Indian or Asian	Male	0	2011
+ward	10203016	Indian or Asian	Female	0	2011
+ward	30803007	Indian or Asian	Female	0	2011
+ward	10203009	Indian or Asian	Female	0	2011
+ward	10103006	Other	Female	0	2011
+ward	54305009	Indian or Asian	Female	0	2011
+ward	21304002	Indian or Asian	Female	0	2011
+ward	21201006	Indian or Asian	Female	0	2011
+ward	63703002	White	Female	0	2011
+ward	93303034	Coloured	Female	0	2011
+ward	83103001	Indian or Asian	Female	0	2011
+ward	21304003	Coloured	Female	0	2011
+ward	93302017	Indian or Asian	Male	0	2011
+ward	93305002	Coloured	Female	0	2011
+ward	83106018	White	Female	0	2011
+ward	24401024	Coloured	Female	0	2011
+ward	63804005	Other	Female	0	2011
+ward	42005004	Indian or Asian	Female	0	2011
+ward	93404024	White	Male	0	2011
+ward	24402011	Indian or Asian	Male	0	2011
+ward	24401004	Indian or Asian	Male	0	2011
+ward	93301002	White	Male	0	2011
+ward	52901010	White	Male	0	2011
+ward	21004009	Coloured	Male	0	2011
+ward	93301005	Indian or Asian	Male	0	2011
+ward	94703022	Other	Female	0	2011
+ward	52806007	Other	Female	0	2011
+ward	93607023	Coloured	Female	0	2011
+ward	52105005	Coloured	Male	0	2011
+ward	83001009	White	Female	0	2011
+ward	21505014	Indian or Asian	Female	0	2011
+ward	52801006	Other	Female	0	2011
+ward	24404014	Other	Male	0	2011
+ward	52801009	White	Male	0	2011
+ward	74801032	Other	Female	0	2011
+ward	52603015	White	Male	0	2011
+ward	83105005	White	Female	0	2011
+ward	93602012	Other	Female	0	2011
+ward	83105025	Indian or Asian	Female	0	2011
+ward	42004008	White	Male	0	2011
+ward	83106007	Other	Male	0	2011
+ward	30707001	Other	Female	0	2011
+ward	21202012	White	Male	0	2011
+ward	52306011	Other	Female	0	2011
+ward	52801002	Other	Male	0	2011
+ward	93403033	Coloured	Female	0	2011
+ward	21404003	Indian or Asian	Female	0	2011
+ward	83007027	White	Female	0	2011
+ward	93505019	Other	Female	0	2011
+ward	21506020	White	Male	0	2011
+ward	83102023	Other	Female	0	2011
+ward	21201006	Other	Female	0	2011
+ward	93403003	White	Male	0	2011
+ward	54305009	Other	Female	0	2011
+ward	21505007	Other	Male	0	2011
+ward	63904006	Other	Female	0	2011
+ward	74201030	Other	Male	0	2011
+ward	41802004	Indian or Asian	Female	0	2011
+ward	52605013	Coloured	Male	0	2011
+ward	93302017	Other	Male	0	2011
+ward	24403012	Coloured	Male	0	2011
+ward	83103001	Other	Female	0	2011
+ward	41805009	Indian or Asian	Female	0	2011
+ward	63701002	White	Female	0	2011
+ward	10205017	Indian or Asian	Female	0	2011
+ward	83205025	White	Female	0	2011
+ward	94704005	Other	Male	0	2011
+ward	10204015	White	Female	0	2011
+ward	21504008	Coloured	Female	0	2011
+ward	63907007	White	Male	0	2011
+ward	52904009	Coloured	Male	0	2011
+ward	21202013	Other	Female	0	2011
+ward	21503011	Indian or Asian	Female	0	2011
+ward	42005005	Indian or Asian	Male	0	2011
+ward	21008001	Other	Male	0	2011
+ward	93503014	Coloured	Female	0	2011
+ward	24403025	Indian or Asian	Female	0	2011
+ward	83102003	Coloured	Male	0	2011
+ward	52701010	Coloured	Female	0	2011
+ward	83001025	Coloured	Male	0	2011
+ward	83006005	Other	Female	0	2011
+ward	21204019	Other	Female	0	2011
+ward	93501008	White	Male	0	2011
+ward	63802005	White	Male	0	2011
+ward	52804021	White	Female	0	2011
+ward	42004015	Indian or Asian	Female	0	2011
+ward	52302013	Other	Male	0	2011
+ward	79800027	White	Female	0	2011
+ward	93402007	Indian or Asian	Female	0	2011
+ward	79700051	White	Female	0	2011
+ward	41904034	Indian or Asian	Female	0	2011
+ward	83201002	Indian or Asian	Female	0	2011
+ward	63904004	Other	Female	0	2011
+ward	52502031	Indian or Asian	Male	0	2011
+ward	94701006	White	Female	0	2011
+ward	94702012	Coloured	Female	0	2011
+ward	21305010	Coloured	Male	0	2011
+ward	52702012	White	Female	0	2011
+ward	21505026	Indian or Asian	Male	0	2011
+ward	93505005	Other	Male	0	2011
+ward	52201004	Coloured	Female	0	2011
+ward	41906001	Indian or Asian	Female	0	2011
+ward	41804002	White	Female	0	2011
+ward	52303008	Coloured	Female	0	2011
+ward	52806013	Indian or Asian	Male	0	2011
+ward	93302006	White	Female	0	2011
+ward	83202011	Other	Female	0	2011
+ward	24403031	Other	Female	0	2011
+ward	21505006	Other	Female	0	2011
+ward	21202003	Other	Male	0	2011
+ward	21206013	White	Male	0	2011
+ward	94703001	White	Male	0	2011
+ward	93302028	Coloured	Male	0	2011
+ward	34501007	Other	Female	0	2011
+ward	93403006	Indian or Asian	Female	0	2011
+ward	83001013	White	Female	0	2011
+ward	52705013	White	Female	0	2011
+ward	83105007	White	Female	0	2011
+ward	83204014	White	Male	0	2011
+ward	21507010	Indian or Asian	Female	0	2011
+ward	21506017	Other	Female	0	2011
+ward	21204010	Other	Female	0	2011
+ward	52504009	Other	Male	0	2011
+ward	21402005	Coloured	Male	0	2011
+ward	52404003	Other	Female	0	2011
+ward	10403004	Indian or Asian	Female	0	2011
+ward	83106006	White	Female	0	2011
+ward	52702003	Indian or Asian	Female	0	2011
+ward	52806008	Indian or Asian	Female	0	2011
+ward	63701014	White	Female	0	2011
+ward	21507018	Other	Female	0	2011
+ward	41901011	Other	Female	0	2011
+ward	41804021	Other	Female	0	2011
+ward	30903003	Other	Male	0	2011
+ward	10104004	White	Male	0	2011
+ward	93402010	White	Female	0	2011
+ward	21308002	White	Female	0	2011
+ward	74802015	White	Female	0	2011
+ward	93303027	Other	Male	0	2011
+ward	63805003	Indian or Asian	Female	0	2011
+ward	83106022	Coloured	Female	0	2011
+ward	10205014	White	Male	0	2011
+ward	52903004	Indian or Asian	Female	0	2011
+ward	41905003	Coloured	Male	0	2011
+ward	52205005	Other	Female	0	2011
+ward	83103022	White	Female	0	2011
+ward	83001008	White	Female	0	2011
+ward	52101008	Indian or Asian	Male	0	2011
+ward	64002010	Indian or Asian	Female	0	2011
+ward	52806014	Other	Male	0	2011
+ward	21202020	Indian or Asian	Female	0	2011
+ward	54304009	Indian or Asian	Female	0	2011
+ward	21203001	Indian or Asian	Female	0	2011
+ward	52606006	Coloured	Female	0	2011
+ward	10405004	Indian or Asian	Female	0	2011
+ward	21303003	Indian or Asian	Male	0	2011
+ward	52804003	Coloured	Female	0	2011
+ward	21401014	Coloured	Male	0	2011
+ward	63907012	Indian or Asian	Female	0	2011
+ward	93505003	White	Female	0	2011
+ward	52102004	Other	Male	0	2011
+ward	52207005	Other	Male	0	2011
+ward	21506016	Indian or Asian	Female	0	2011
+ward	94702021	White	Female	0	2011
+ward	21201031	Indian or Asian	Female	0	2011
+ward	21307005	Coloured	Female	0	2011
+ward	21402003	Indian or Asian	Female	0	2011
+ward	21304010	White	Female	0	2011
+ward	83205021	Coloured	Female	0	2011
+ward	79700056	Indian or Asian	Female	0	2011
+ward	52504007	Other	Male	0	2011
+ward	52602002	Indian or Asian	Female	0	2011
+ward	94701010	Coloured	Female	0	2011
+ward	93404011	Indian or Asian	Male	0	2011
+ward	94705012	White	Male	0	2011
+ward	83003018	Indian or Asian	Male	0	2011
+ward	83102014	Indian or Asian	Female	0	2011
+ward	83001002	Coloured	Male	0	2011
+ward	52502006	Other	Female	0	2011
+ward	64003014	Other	Female	0	2011
+ward	83005001	Indian or Asian	Male	0	2011
+ward	10203024	Other	Female	0	2011
+ward	21308009	White	Male	0	2011
+ward	63803019	Coloured	Female	0	2011
+ward	52404007	Indian or Asian	Male	0	2011
+ward	83205002	Other	Female	0	2011
+ward	94702002	Indian or Asian	Female	0	2011
+ward	83205008	Coloured	Female	0	2011
+ward	93503002	Other	Female	0	2011
+ward	52904008	White	Female	0	2011
+ward	52803004	Indian or Asian	Female	0	2011
+ward	21302005	Indian or Asian	Female	0	2011
+ward	41902014	Other	Female	0	2011
+ward	24402007	Indian or Asian	Male	0	2011
+ward	52404008	Other	Male	0	2011
+ward	93303007	White	Male	0	2011
+ward	63705018	Coloured	Female	0	2011
+ward	21202024	White	Male	0	2011
+ward	21206009	White	Male	0	2011
+ward	24404011	Other	Male	0	2011
+ward	63705015	White	Female	0	2011
+ward	52502028	White	Female	0	2011
+ward	21506016	Other	Female	0	2011
+ward	52207005	Indian or Asian	Male	0	2011
+ward	83105031	Coloured	Female	0	2011
+ward	94705028	Coloured	Female	0	2011
+ward	52405006	Coloured	Female	0	2011
+ward	63907012	Other	Female	0	2011
+ward	29200030	Indian or Asian	Female	0	2011
+ward	63705020	Indian or Asian	Female	0	2011
+ward	21202007	Coloured	Female	0	2011
+ward	21402003	Other	Female	0	2011
+ward	54301003	Other	Male	0	2011
+ward	21201031	Other	Female	0	2011
+ward	52502023	Indian or Asian	Male	0	2011
+ward	64003014	Indian or Asian	Female	0	2011
+ward	10203024	Indian or Asian	Female	0	2011
+ward	93404011	Other	Male	0	2011
+ward	21505023	White	Male	0	2011
+ward	52602002	Other	Female	0	2011
+ward	52504007	Indian or Asian	Male	0	2011
+ward	83106010	White	Male	0	2011
+ward	93501015	Coloured	Male	0	2011
+ward	83205030	Coloured	Female	0	2011
+ward	83205002	Indian or Asian	Female	0	2011
+ward	94702002	Other	Female	0	2011
+ward	10104011	Indian or Asian	Male	0	2011
+ward	83105010	White	Female	0	2011
+ward	52404007	Other	Male	0	2011
+ward	52207002	White	Female	0	2011
+ward	79700050	White	Male	0	2011
+ward	52805004	White	Male	0	2011
+ward	30704002	White	Male	0	2011
+ward	21507026	Indian or Asian	Male	0	2011
+ward	63907005	Other	Male	0	2011
+ward	63701016	Other	Female	0	2011
+ward	21302005	Other	Female	0	2011
+ward	83202002	White	Male	0	2011
+ward	21504002	Other	Female	0	2011
+ward	52803004	Other	Female	0	2011
+ward	64003008	Other	Female	0	2011
+ward	42001022	Indian or Asian	Male	0	2011
+ward	41804014	White	Female	0	2011
+ward	52404008	Indian or Asian	Male	0	2011
+ward	41801010	White	Male	0	2011
+ward	52302009	Other	Female	0	2011
+ward	24404011	Indian or Asian	Male	0	2011
+ward	29300019	White	Male	0	2011
+ward	10403012	White	Male	0	2011
+ward	41904001	Indian or Asian	Female	0	2011
+ward	52904010	Other	Female	0	2011
+ward	21504015	Coloured	Male	0	2011
+ward	52806013	Other	Male	0	2011
+ward	83202011	Indian or Asian	Female	0	2011
+ward	21307007	White	Female	0	2011
+ward	52205006	White	Male	0	2011
+ward	52404015	Coloured	Male	0	2011
+ward	79900072	Indian or Asian	Female	0	2011
+ward	93403006	Other	Female	0	2011
+ward	34501007	Indian or Asian	Female	0	2011
+ward	24403007	Other	Female	0	2011
+ward	21201008	White	Male	0	2011
+ward	24403031	Indian or Asian	Female	0	2011
+ward	24404015	Coloured	Male	0	2011
+ward	93302002	Coloured	Female	0	2011
+ward	63904013	White	Male	0	2011
+ward	34502007	Indian or Asian	Female	0	2011
+ward	52205023	White	Female	0	2011
+ward	93302026	Indian or Asian	Male	0	2011
+ward	83204017	White	Male	0	2011
+ward	21507010	Other	Female	0	2011
+ward	83205022	Coloured	Female	0	2011
+ward	21204010	Indian or Asian	Female	0	2011
+ward	59500054	White	Female	0	2011
+ward	49400010	White	Male	0	2011
+ward	52605014	Other	Male	0	2011
+ward	94703031	White	Female	0	2011
+ward	30704003	Other	Female	0	2011
+ward	79800012	Coloured	Female	0	2011
+ward	52806008	Other	Female	0	2011
+ward	63903002	White	Female	0	2011
+ward	93403016	White	Male	0	2011
+ward	24403011	Indian or Asian	Male	0	2011
+ward	52304005	Indian or Asian	Male	0	2011
+ward	64003027	White	Male	0	2011
+ward	94703015	Other	Female	0	2011
+ward	54305007	Other	Male	0	2011
+ward	64002010	Other	Female	0	2011
+ward	52101008	Other	Male	0	2011
+ward	94705008	Coloured	Male	0	2011
+ward	54305006	Coloured	Female	0	2011
+ward	94703026	Coloured	Female	0	2011
+ward	63805003	Other	Female	0	2011
+ward	52903004	Other	Female	0	2011
+ward	93303027	Indian or Asian	Male	0	2011
+ward	59500085	White	Male	0	2011
+ward	30703004	White	Female	0	2011
+ward	52302027	White	Male	0	2011
+ward	21203001	Other	Female	0	2011
+ward	21204018	Coloured	Male	0	2011
+ward	24404007	White	Female	0	2011
+ward	74801009	Other	Female	0	2011
+ward	54304009	Other	Female	0	2011
+ward	21202020	Other	Female	0	2011
+ward	83106003	Coloured	Female	0	2011
+ward	63702007	White	Female	0	2011
+ward	63906003	White	Male	0	2011
+ward	21204016	Indian or Asian	Female	0	2011
+ward	21005007	Coloured	Female	0	2011
+ward	19100098	Indian or Asian	Female	0	2011
+ward	52702010	Other	Female	0	2011
+ward	41904011	Other	Female	0	2011
+ward	52606017	Other	Male	0	2011
+ward	21503007	Other	Female	0	2011
+ward	93505028	Other	Male	0	2011
+ward	93504033	Other	Male	0	2011
+ward	21506025	Other	Male	0	2011
+ward	41801003	Other	Female	0	2011
+ward	93501001	White	Male	0	2011
+ward	83205011	White	Female	0	2011
+ward	93302008	Indian or Asian	Female	0	2011
+ward	63803024	Indian or Asian	Female	0	2011
+ward	74802018	White	Male	0	2011
+ward	21504007	Coloured	Female	0	2011
+ward	63701015	White	Male	0	2011
+ward	41905001	Coloured	Male	0	2011
+ward	52605020	White	Male	0	2011
+ward	21506024	Coloured	Female	0	2011
+ward	30706004	Indian or Asian	Female	0	2011
+ward	74802017	Indian or Asian	Female	0	2011
+ward	93607025	White	Male	0	2011
+ward	93502004	Coloured	Female	0	2011
+ward	83202019	White	Male	0	2011
+ward	74203013	Coloured	Male	0	2011
+ward	10105009	White	Male	0	2011
+ward	93401002	Indian or Asian	Male	0	2011
+ward	64004003	Indian or Asian	Female	0	2011
+ward	93501012	Indian or Asian	Female	0	2011
+ward	52606018	White	Male	0	2011
+ward	24404012	Coloured	Female	0	2011
+ward	24401014	Indian or Asian	Female	0	2011
+ward	49400040	Other	Female	0	2011
+ward	52606016	Other	Male	0	2011
+ward	83102010	Coloured	Male	0	2011
+ward	21304004	Indian or Asian	Male	0	2011
+ward	41901005	Coloured	Female	0	2011
+ward	63702003	Indian or Asian	Female	0	2011
+ward	21202025	Coloured	Male	0	2011
+ward	54303008	Other	Female	0	2011
+ward	63803005	Indian or Asian	Female	0	2011
+ward	64003002	White	Male	0	2011
+ward	41904014	White	Male	0	2011
+ward	63702017	Other	Female	0	2011
+ward	52201008	Coloured	Female	0	2011
+ward	54303001	Indian or Asian	Female	0	2011
+ward	93602009	Other	Male	0	2011
+ward	52802021	Other	Female	0	2011
+ward	34501006	Other	Female	0	2011
+ward	94703028	Other	Male	0	2011
+ward	52102008	White	Female	0	2011
+ward	63801001	White	Male	0	2011
+ward	93503004	Coloured	Female	0	2011
+ward	52806011	Coloured	Male	0	2011
+ward	59500078	White	Female	0	2011
+ward	52904003	White	Female	0	2011
+ward	52302002	Other	Female	0	2011
+ward	79900027	White	Female	0	2011
+ward	93301019	Coloured	Female	0	2011
+ward	54301001	White	Female	0	2011
+ward	83001004	Coloured	Female	0	2011
+ward	52405001	Indian or Asian	Male	0	2011
+ward	83204026	Indian or Asian	Female	0	2011
+ward	94705006	Coloured	Female	0	2011
+ward	52603010	Indian or Asian	Male	0	2011
+ward	63904019	Coloured	Male	0	2011
+ward	94703004	Coloured	Male	0	2011
+ward	79900099	Indian or Asian	Female	0	2011
+ward	52801008	White	Female	0	2011
+ward	93504032	White	Male	0	2011
+ward	83203006	Other	Male	0	2011
+ward	52305007	Coloured	Female	0	2011
+ward	93303023	Indian or Asian	Male	0	2011
+ward	54305002	White	Female	0	2011
+ward	94703023	Other	Male	0	2011
+ward	21401013	Other	Female	0	2011
+ward	52201003	Indian or Asian	Male	0	2011
+ward	24403020	White	Male	0	2011
+ward	74804005	Coloured	Female	0	2011
+ward	93403019	Coloured	Male	0	2011
+ward	93304014	Other	Male	0	2011
+ward	21006006	Indian or Asian	Male	0	2011
+ward	34501010	White	Male	0	2011
+ward	21506008	White	Male	0	2011
+ward	93606002	White	Female	0	2011
+ward	63803005	Other	Female	0	2011
+ward	93402006	White	Female	0	2011
+ward	52606023	White	Female	0	2011
+ward	93505027	White	Female	0	2011
+ward	54303008	Indian or Asian	Female	0	2011
+ward	52803001	Other	Male	0	2011
+ward	52404011	Other	Male	0	2011
+ward	34501006	Indian or Asian	Female	0	2011
+ward	52601004	Coloured	Female	0	2011
+ward	24401010	White	Female	0	2011
+ward	74201008	Other	Female	0	2011
+ward	21506021	White	Male	0	2011
+ward	52603010	Other	Male	0	2011
+ward	93302015	White	Female	0	2011
+ward	29300047	Other	Female	0	2011
+ward	52405001	Other	Male	0	2011
+ward	94705023	White	Female	0	2011
+ward	83204026	Other	Female	0	2011
+ward	10204003	Indian or Asian	Male	0	2011
+ward	94703009	Coloured	Male	0	2011
+ward	24403010	Other	Female	0	2011
+ward	21402001	Coloured	Female	0	2011
+ward	21402012	Coloured	Female	0	2011
+ward	21305003	Indian or Asian	Female	0	2011
+ward	63701020	White	Female	0	2011
+ward	21401013	Indian or Asian	Female	0	2011
+ward	93601005	Other	Female	0	2011
+ward	52803007	White	Female	0	2011
+ward	10407006	Indian or Asian	Male	0	2011
+ward	94701009	Coloured	Female	0	2011
+ward	29300058	White	Male	0	2011
+ward	93607010	White	Female	0	2011
+ward	21204016	Other	Female	0	2011
+ward	93607027	Coloured	Female	0	2011
+ward	63705012	Other	Male	0	2011
+ward	83204013	White	Female	0	2011
+ward	52605008	White	Female	0	2011
+ward	42001008	White	Female	0	2011
+ward	94702019	White	Male	0	2011
+ward	21503007	Indian or Asian	Female	0	2011
+ward	93505028	Indian or Asian	Male	0	2011
+ward	21401015	Coloured	Male	0	2011
+ward	94705015	White	Female	0	2011
+ward	83201011	Coloured	Female	0	2011
+ward	63904010	Other	Male	0	2011
+ward	93607022	White	Female	0	2011
+ward	24403022	White	Female	0	2011
+ward	21401011	Coloured	Female	0	2011
+ward	21401007	Indian or Asian	Male	0	2011
+ward	41801003	Indian or Asian	Female	0	2011
+ward	21507017	Coloured	Male	0	2011
+ward	52103008	White	Female	0	2011
+ward	63803024	Other	Female	0	2011
+ward	52502011	Indian or Asian	Female	0	2011
+ward	21402018	White	Male	0	2011
+ward	79900013	White	Female	0	2011
+ward	93607016	Coloured	Male	0	2011
+ward	52202011	Indian or Asian	Male	0	2011
+ward	30706004	Other	Female	0	2011
+ward	49400006	White	Female	0	2011
+ward	52903009	Other	Male	0	2011
+ward	83002004	White	Male	0	2011
+ward	52902020	Other	Male	0	2011
+ward	93401002	Other	Male	0	2011
+ward	83106016	Other	Male	0	2011
+ward	52804016	White	Male	0	2011
+ward	52704008	Other	Female	0	2011
+ward	21304021	White	Male	0	2011
+ward	83205012	Coloured	Female	0	2011
+ward	41601003	Indian or Asian	Male	0	2011
+ward	93501012	Other	Female	0	2011
+ward	21503005	White	Male	0	2011
+ward	52605011	Indian or Asian	Female	0	2011
+ward	52306002	Other	Female	0	2011
+ward	52303003	White	Male	0	2011
+ward	83202020	White	Female	0	2011
+ward	29200008	Coloured	Male	0	2011
+ward	93403031	Indian or Asian	Male	0	2011
+ward	52103017	White	Female	0	2011
+ward	52302021	Indian or Asian	Male	0	2011
+ward	79800052	White	Female	0	2011
+ward	52402010	White	Female	0	2011
+ward	24402006	Indian or Asian	Female	0	2011
+ward	94705017	Coloured	Female	0	2011
+ward	21305007	Indian or Asian	Female	0	2011
+ward	52404016	White	Male	0	2011
+ward	52903005	Indian or Asian	Male	0	2011
+ward	29300030	Indian or Asian	Female	0	2011
+ward	93402003	White	Female	0	2011
+ward	93504034	Other	Male	0	2011
+ward	21202017	Indian or Asian	Male	0	2011
+ward	21307001	Indian or Asian	Male	0	2011
+ward	93607020	Other	Female	0	2011
+ward	41805002	Other	Male	0	2011
+ward	52902021	Coloured	Female	0	2011
+ward	41901007	White	Male	0	2011
+ward	52605005	Indian or Asian	Male	0	2011
+ward	93404027	Indian or Asian	Female	0	2011
+ward	54301008	Other	Male	0	2011
+ward	52802014	Indian or Asian	Female	0	2011
+ward	74803006	Other	Female	0	2011
+ward	21401003	Indian or Asian	Male	0	2011
+ward	54301006	Other	Female	0	2011
+ward	52801001	Other	Female	0	2011
+ward	52304008	Coloured	Female	0	2011
+ward	24403023	White	Female	0	2011
+ward	41804024	Indian or Asian	Male	0	2011
+ward	79900089	Indian or Asian	Female	0	2011
+ward	93402004	Other	Female	0	2011
+ward	21402004	Coloured	Female	0	2011
+ward	93404001	Coloured	Male	0	2011
+ward	21206003	Indian or Asian	Female	0	2011
+ward	93303011	Other	Male	0	2011
+ward	52304002	Coloured	Male	0	2011
+ward	83104006	Other	Male	0	2011
+ward	21005003	Indian or Asian	Female	0	2011
+ward	83102008	Coloured	Female	0	2011
+ward	63702005	White	Male	0	2011
+ward	21206010	White	Male	0	2011
+ward	21402011	Indian or Asian	Female	0	2011
+ward	52101007	Coloured	Female	0	2011
+ward	52504006	White	Male	0	2011
+ward	63803004	Indian or Asian	Female	0	2011
+ward	42004009	Indian or Asian	Female	0	2011
+ward	21006008	Indian or Asian	Female	0	2011
+ward	63704006	Indian or Asian	Male	0	2011
+ward	21504009	Other	Female	0	2011
+ward	63802004	Indian or Asian	Female	0	2011
+ward	10206011	Indian or Asian	Male	0	2011
+ward	52602008	White	Male	0	2011
+ward	52402006	White	Male	0	2011
+ward	93303032	Coloured	Female	0	2011
+ward	93304003	Indian or Asian	Female	0	2011
+ward	21504004	White	Female	0	2011
+ward	93304013	Other	Female	0	2011
+ward	93305009	White	Female	0	2011
+ward	10501001	Other	Female	0	2011
+ward	52703001	White	Female	0	2011
+ward	83105027	White	Male	0	2011
+ward	52603014	White	Male	0	2011
+ward	21203002	Coloured	Male	0	2011
+ward	21306003	Indian or Asian	Female	0	2011
+ward	21201021	Coloured	Male	0	2011
+ward	52605007	Coloured	Female	0	2011
+ward	74803008	Other	Male	0	2011
+ward	74801033	Indian or Asian	Female	0	2011
+ward	93501013	Other	Male	0	2011
+ward	21004001	Other	Female	0	2011
+ward	83106026	White	Male	0	2011
+ward	74801006	White	Female	0	2011
+ward	30803003	White	Male	0	2011
+ward	21503002	Coloured	Male	0	2011
+ward	52104008	Indian or Asian	Male	0	2011
+ward	21202010	Indian or Asian	Male	0	2011
+ward	63705029	Indian or Asian	Female	0	2011
+ward	21503008	Coloured	Male	0	2011
+ward	83202028	Other	Male	0	2011
+ward	21201023	Coloured	Male	0	2011
+ward	63802006	White	Female	0	2011
+ward	93303005	Indian or Asian	Female	0	2011
+ward	83004010	Indian or Asian	Female	0	2011
+ward	63701005	Other	Female	0	2011
+ward	41904010	Indian or Asian	Female	0	2011
+ward	93404010	Indian or Asian	Female	0	2011
+ward	63703030	White	Male	0	2011
+ward	10401002	Indian or Asian	Female	0	2011
+ward	93504030	Coloured	Male	0	2011
+ward	21306007	White	Male	0	2011
+ward	21202016	Indian or Asian	Male	0	2011
+ward	63804008	White	Male	0	2011
+ward	21004011	White	Male	0	2011
+ward	83103009	Indian or Asian	Male	0	2011
+ward	21402011	Other	Female	0	2011
+ward	52802027	Coloured	Male	0	2011
+ward	93601009	Indian or Asian	Female	0	2011
+ward	74203004	White	Female	0	2011
+ward	42004009	Other	Female	0	2011
+ward	10503005	White	Female	0	2011
+ward	63803004	Other	Female	0	2011
+ward	94702006	Other	Female	0	2011
+ward	10501001	Indian or Asian	Female	0	2011
+ward	21503009	Other	Female	0	2011
+ward	93304003	Other	Female	0	2011
+ward	21503015	White	Female	0	2011
+ward	83106004	Other	Male	0	2011
+ward	83003009	Coloured	Female	0	2011
+ward	63802004	Other	Female	0	2011
+ward	21204013	Coloured	Male	0	2011
+ward	83104001	Coloured	Female	0	2011
+ward	24404003	Other	Male	0	2011
+ward	34501012	Coloured	Male	0	2011
+ward	21306003	Other	Female	0	2011
+ward	42004007	White	Female	0	2011
+ward	52101010	Other	Male	0	2011
+ward	83204016	Coloured	Male	0	2011
+ward	52302005	Coloured	Male	0	2011
+ward	52705016	Coloured	Male	0	2011
+ward	63904007	Indian or Asian	Female	0	2011
+ward	42004016	Other	Male	0	2011
+ward	52701003	Coloured	Male	0	2011
+ward	21504018	White	Male	0	2011
+ward	93403025	Other	Male	0	2011
+ward	63801004	Other	Male	0	2011
+ward	21004001	Indian or Asian	Female	0	2011
+ward	93501013	Indian or Asian	Male	0	2011
+ward	83205027	Other	Male	0	2011
+ward	24402001	White	Male	0	2011
+ward	41904013	Coloured	Female	0	2011
+ward	63705029	Other	Female	0	2011
+ward	21202011	Coloured	Male	0	2011
+ward	21504016	Coloured	Female	0	2011
+ward	63705017	Indian or Asian	Female	0	2011
+ward	21202010	Other	Male	0	2011
+ward	21305011	White	Male	0	2011
+ward	24404016	White	Male	0	2011
+ward	63701005	Indian or Asian	Female	0	2011
+ward	93404010	Other	Female	0	2011
+ward	93305006	Coloured	Female	0	2011
+ward	41904010	Other	Female	0	2011
+ward	83001016	Coloured	Male	0	2011
+ward	83004010	Other	Female	0	2011
+ward	52801013	Coloured	Female	0	2011
+ward	74201034	White	Female	0	2011
+ward	93303005	Other	Female	0	2011
+ward	21004007	White	Female	0	2011
+ward	21202016	Other	Male	0	2011
+ward	42004021	Other	Female	0	2011
+ward	63904026	Other	Female	0	2011
+ward	93505021	Coloured	Female	0	2011
+ward	21503021	Other	Female	0	2011
+ward	52901011	White	Female	0	2011
+ward	52306002	Indian or Asian	Female	0	2011
+ward	21306010	Indian or Asian	Female	0	2011
+ward	93404013	Coloured	Female	0	2011
+ward	24402006	Other	Female	0	2011
+ward	83106024	White	Female	0	2011
+ward	29200014	Other	Female	0	2011
+ward	52904001	White	Male	0	2011
+ward	63803011	Coloured	Male	0	2011
+ward	21306009	White	Male	0	2011
+ward	93403031	Other	Male	0	2011
+ward	63803025	White	Female	0	2011
+ward	93504034	Indian or Asian	Male	0	2011
+ward	10404003	Indian or Asian	Female	0	2011
+ward	24403030	Coloured	Female	0	2011
+ward	29300030	Other	Female	0	2011
+ward	21201016	White	Female	0	2011
+ward	63701018	White	Female	0	2011
+ward	21507027	Coloured	Male	0	2011
+ward	52903005	Other	Male	0	2011
+ward	63705005	Coloured	Female	0	2011
+ward	63904024	White	Male	0	2011
+ward	54304012	Coloured	Female	0	2011
+ward	93607020	Indian or Asian	Female	0	2011
+ward	21307001	Other	Male	0	2011
+ward	24401006	White	Male	0	2011
+ward	93504035	Other	Male	0	2011
+ward	21001007	Other	Female	0	2011
+ward	21503018	White	Male	0	2011
+ward	21506007	Coloured	Female	0	2011
+ward	52605005	Other	Male	0	2011
+ward	93404027	Other	Female	0	2011
+ward	63804004	White	Female	0	2011
+ward	52801001	Indian or Asian	Female	0	2011
+ward	79900035	Indian or Asian	Female	0	2011
+ward	83105032	White	Female	0	2011
+ward	52404002	Coloured	Male	0	2011
+ward	93301018	Coloured	Female	0	2011
+ward	21206003	Other	Female	0	2011
+ward	93402004	Indian or Asian	Female	0	2011
+ward	21005003	Other	Female	0	2011
+ward	42003014	White	Female	0	2011
+ward	83007023	Other	Female	0	2011
+ward	30803006	White	Female	0	2011
+ward	52103004	Indian or Asian	Male	0	2011
+ward	83201009	Indian or Asian	Male	0	2011
+ward	52804021	Coloured	Female	0	2011
+ward	21202015	Indian or Asian	Female	0	2011
+ward	93501008	Coloured	Male	0	2011
+ward	79700087	Indian or Asian	Female	0	2011
+ward	21503001	Indian or Asian	Male	0	2011
+ward	52804009	Other	Female	0	2011
+ward	74201029	White	Female	0	2011
+ward	24404013	Indian or Asian	Male	0	2011
+ward	21305010	White	Male	0	2011
+ward	52702012	Coloured	Female	0	2011
+ward	21006007	Indian or Asian	Male	0	2011
+ward	52205004	Other	Male	0	2011
+ward	63705008	Other	Male	0	2011
+ward	24404017	Indian or Asian	Female	0	2011
+ward	93302018	Other	Male	0	2011
+ward	29200007	Indian or Asian	Male	0	2011
+ward	52405002	Indian or Asian	Female	0	2011
+ward	30903001	Indian or Asian	Female	0	2011
+ward	52306006	Indian or Asian	Male	0	2011
+ward	93302010	Indian or Asian	Male	0	2011
+ward	83205025	Coloured	Female	0	2011
+ward	63804015	White	Male	0	2011
+ward	21503025	Indian or Asian	Male	0	2011
+ward	10203027	White	Female	0	2011
+ward	79800046	Indian or Asian	Female	0	2011
+ward	74804006	Other	Male	0	2011
+ward	83103003	Indian or Asian	Female	0	2011
+ward	63701002	Coloured	Female	0	2011
+ward	93301027	Indian or Asian	Female	0	2011
+ward	83001025	White	Male	0	2011
+ward	52701010	White	Female	0	2011
+ward	83103029	Other	Female	0	2011
+ward	41904031	Other	Female	0	2011
+ward	83102003	White	Male	0	2011
+ward	52201005	Other	Female	0	2011
+ward	24401011	Coloured	Female	0	2011
+ward	93503014	White	Female	0	2011
+ward	21307009	Other	Male	0	2011
+ward	30901031	Other	Female	0	2011
+ward	64003012	Indian or Asian	Female	0	2011
+ward	63801013	Other	Female	0	2011
+ward	52904009	White	Male	0	2011
+ward	52101005	Other	Male	0	2011
+ward	30701004	Other	Female	0	2011
+ward	10104010	Other	Female	0	2011
+ward	63702001	Indian or Asian	Male	0	2011
+ward	30703005	Indian or Asian	Female	0	2011
+ward	52806002	White	Male	0	2011
+ward	52402004	Indian or Asian	Female	0	2011
+ward	30803008	Indian or Asian	Male	0	2011
+ward	21202012	Coloured	Male	0	2011
+ward	93402005	White	Male	0	2011
+ward	52805002	Other	Female	0	2011
+ward	52206001	Coloured	Female	0	2011
+ward	41902009	Other	Female	0	2011
+ward	52502013	Other	Female	0	2011
+ward	83102031	Other	Female	0	2011
+ward	21008002	White	Male	0	2011
+ward	29300059	White	Female	0	2011
+ward	93403003	Coloured	Male	0	2011
+ward	74801012	White	Male	0	2011
+ward	41903008	Indian or Asian	Male	0	2011
+ward	21304013	Other	Male	0	2011
+ward	54305016	White	Female	0	2011
+ward	21207005	Other	Male	0	2011
+ward	52901010	Coloured	Male	0	2011
+ward	93404006	Other	Male	0	2011
+ward	93301002	Coloured	Male	0	2011
+ward	93404024	Coloured	Male	0	2011
+ward	52302007	Other	Female	0	2011
+ward	30602003	Other	Female	0	2011
+ward	63803031	White	Male	0	2011
+ward	52603015	Coloured	Male	0	2011
+ward	52702004	Other	Female	0	2011
+ward	21506004	Other	Male	0	2011
+ward	42003007	Other	Female	0	2011
+ward	83104002	Other	Female	0	2011
+ward	41904009	Other	Female	0	2011
+ward	52306012	Indian or Asian	Female	0	2011
+ward	74201037	White	Male	0	2011
+ward	52105005	White	Male	0	2011
+ward	30703005	Other	Female	0	2011
+ward	74804016	Other	Female	0	2011
+ward	63702001	Other	Male	0	2011
+ward	29200049	Other	Female	0	2011
+ward	30701004	Indian or Asian	Female	0	2011
+ward	52901014	Indian or Asian	Female	0	2011
+ward	41901012	White	Male	0	2011
+ward	93601010	White	Female	0	2011
+ward	52402004	Other	Female	0	2011
+ward	52502013	Indian or Asian	Female	0	2011
+ward	21304003	White	Female	0	2011
+ward	93303034	White	Female	0	2011
+ward	83204007	Other	Female	0	2011
+ward	52606007	White	Female	0	2011
+ward	83202024	Other	Male	0	2011
+ward	42001018	White	Female	0	2011
+ward	52701014	Other	Male	0	2011
+ward	83102031	Indian or Asian	Female	0	2011
+ward	21202022	Other	Female	0	2011
+ward	21505003	Other	Male	0	2011
+ward	52704007	White	Female	0	2011
+ward	21304013	Indian or Asian	Male	0	2011
+ward	93504005	White	Female	0	2011
+ward	54301010	Coloured	Female	0	2011
+ward	79800051	White	Male	0	2011
+ward	93303028	White	Female	0	2011
+ward	42003007	Indian or Asian	Female	0	2011
+ward	21506004	Indian or Asian	Male	0	2011
+ward	94703027	Coloured	Female	0	2011
+ward	41901017	White	Male	0	2011
+ward	29300043	White	Male	0	2011
+ward	52302016	Coloured	Male	0	2011
+ward	52902006	Other	Male	0	2011
+ward	93304017	White	Female	0	2011
+ward	52804020	Indian or Asian	Male	0	2011
+ward	83203007	Coloured	Female	0	2011
+ward	52901005	Other	Female	0	2011
+ward	41902005	White	Male	0	2011
+ward	93305007	White	Female	0	2011
+ward	21201020	Other	Female	0	2011
+ward	41803003	Other	Male	0	2011
+ward	41805004	White	Male	0	2011
+ward	94702003	White	Female	0	2011
+ward	83106020	White	Female	0	2011
+ward	21503001	Other	Male	0	2011
+ward	93402009	White	Male	0	2011
+ward	21202015	Other	Female	0	2011
+ward	79700087	Other	Female	0	2011
+ward	21207018	Coloured	Female	0	2011
+ward	52704002	Indian or Asian	Female	0	2011
+ward	83204032	White	Male	0	2011
+ward	42001001	White	Male	0	2011
+ward	52201012	Coloured	Female	0	2011
+ward	63805001	Other	Male	0	2011
+ward	94704010	Coloured	Male	0	2011
+ward	52402012	Other	Female	0	2011
+ward	10502003	White	Female	0	2011
+ward	93302018	Indian or Asian	Male	0	2011
+ward	83103027	Indian or Asian	Male	0	2011
+ward	24404017	Other	Female	0	2011
+ward	93403009	Coloured	Female	0	2011
+ward	34501005	White	Male	0	2011
+ward	83204028	Other	Male	0	2011
+ward	30903001	Other	Female	0	2011
+ward	52306006	Other	Male	0	2011
+ward	93301030	White	Female	0	2011
+ward	54305018	White	Female	0	2011
+ward	21503025	Other	Male	0	2011
+ward	52902009	White	Female	0	2011
+ward	63804013	Indian or Asian	Male	0	2011
+ward	30702002	Other	Female	0	2011
+ward	59500020	White	Female	0	2011
+ward	93505023	Indian or Asian	Male	0	2011
+ward	93301027	Other	Female	0	2011
+ward	42001013	White	Female	0	2011
+ward	64001003	Other	Male	0	2011
+ward	63801013	Indian or Asian	Female	0	2011
+ward	52101005	Indian or Asian	Male	0	2011
+ward	49400004	White	Female	0	2011
+ward	83106009	Coloured	Male	0	2011
+ward	24403006	White	Female	0	2011
+ward	30901031	Indian or Asian	Female	0	2011
+ward	64003012	Other	Female	0	2011
+ward	21307009	Indian or Asian	Male	0	2011
+ward	52903015	White	Female	0	2011
+ward	24402025	Indian or Asian	Female	0	2011
+ward	83007011	Indian or Asian	Female	0	2011
+ward	93403016	Coloured	Male	0	2011
+ward	74201023	Other	Female	0	2011
+ward	52502022	Other	Male	0	2011
+ward	83003012	White	Male	0	2011
+ward	10407005	Indian or Asian	Male	0	2011
+ward	24401020	Other	Female	0	2011
+ward	52902025	White	Male	0	2011
+ward	83202003	Other	Male	0	2011
+ward	21204020	Indian or Asian	Male	0	2011
+ward	94703031	Coloured	Female	0	2011
+ward	52207007	Other	Female	0	2011
+ward	21204018	White	Male	0	2011
+ward	24404007	Coloured	Female	0	2011
+ward	10204018	Other	Female	0	2011
+ward	49400038	Other	Female	0	2011
+ward	10402008	Indian or Asian	Male	0	2011
+ward	94703026	White	Female	0	2011
+ward	54305006	White	Female	0	2011
+ward	94705008	White	Male	0	2011
+ward	52205009	Other	Male	0	2011
+ward	21201008	Coloured	Male	0	2011
+ward	21304007	Indian or Asian	Male	0	2011
+ward	21304005	Indian or Asian	Female	0	2011
+ward	93403002	Other	Female	0	2011
+ward	52404015	White	Male	0	2011
+ward	52305008	White	Female	0	2011
+ward	79900033	Indian or Asian	Female	0	2011
+ward	83106027	Indian or Asian	Male	0	2011
+ward	21307007	Coloured	Female	0	2011
+ward	83202031	White	Male	0	2011
+ward	41603004	Indian or Asian	Male	0	2011
+ward	94705011	Other	Female	0	2011
+ward	83205022	White	Female	0	2011
+ward	93305001	Other	Male	0	2011
+ward	24403013	White	Female	0	2011
+ward	63904013	Coloured	Male	0	2011
+ward	93302002	White	Female	0	2011
+ward	52605004	Indian or Asian	Female	0	2011
+ward	21504019	White	Male	0	2011
+ward	83007019	Other	Female	0	2011
+ward	74802004	Other	Female	0	2011
+ward	83205028	Indian or Asian	Male	0	2011
+ward	63907009	Other	Female	0	2011
+ward	93501003	Indian or Asian	Male	0	2011
+ward	21201022	Other	Male	0	2011
+ward	52404014	Indian or Asian	Male	0	2011
+ward	52305001	Coloured	Male	0	2011
+ward	83105010	Coloured	Female	0	2011
+ward	21305020	Other	Female	0	2011
+ward	64001002	White	Male	0	2011
+ward	21504015	White	Male	0	2011
+ward	52903014	White	Female	0	2011
+ward	29300019	Coloured	Male	0	2011
+ward	52606024	Other	Female	0	2011
+ward	52902026	White	Male	0	2011
+ward	83103018	White	Male	0	2011
+ward	30605005	Indian or Asian	Female	0	2011
+ward	21401016	Other	Female	0	2011
+ward	83103026	Other	Female	0	2011
+ward	10206006	Indian or Asian	Male	0	2011
+ward	52606010	Indian or Asian	Male	0	2011
+ward	83002019	Coloured	Female	0	2011
+ward	21201005	Other	Female	0	2011
+ward	83106014	Indian or Asian	Female	0	2011
+ward	52806012	Indian or Asian	Female	0	2011
+ward	52405006	White	Female	0	2011
+ward	94705028	White	Female	0	2011
+ward	83105031	White	Female	0	2011
+ward	41901014	Other	Male	0	2011
+ward	49400029	White	Female	0	2011
+ward	52502028	Coloured	Female	0	2011
+ward	83205030	White	Female	0	2011
+ward	93501015	White	Male	0	2011
+ward	21202019	Coloured	Male	0	2011
+ward	21505023	Coloured	Male	0	2011
+ward	21402013	Indian or Asian	Female	0	2011
+ward	52705001	Indian or Asian	Male	0	2011
+ward	21204012	Coloured	Female	0	2011
+ward	79800047	Other	Female	0	2011
+ward	41602006	Indian or Asian	Female	0	2011
+ward	52103013	Indian or Asian	Male	0	2011
+ward	74201031	White	Female	0	2011
+ward	93302009	Indian or Asian	Female	0	2011
+ward	52404014	Other	Male	0	2011
+ward	24402017	Other	Female	0	2011
+ward	93403027	Coloured	Female	0	2011
+ward	93305012	Coloured	Male	0	2011
+ward	93502013	Coloured	Male	0	2011
+ward	93606005	White	Male	0	2011
+ward	52904008	Coloured	Female	0	2011
+ward	83205008	White	Female	0	2011
+ward	63907009	Indian or Asian	Female	0	2011
+ward	74801013	White	Male	0	2011
+ward	63803019	White	Female	0	2011
+ward	21308009	Coloured	Male	0	2011
+ward	63705007	Other	Male	0	2011
+ward	93303021	Other	Male	0	2011
+ward	49400037	White	Female	0	2011
+ward	34502005	Other	Female	0	2011
+ward	21206009	Coloured	Male	0	2011
+ward	21202024	Coloured	Male	0	2011
+ward	21305020	Indian or Asian	Female	0	2011
+ward	21401016	Indian or Asian	Female	0	2011
+ward	83103026	Indian or Asian	Female	0	2011
+ward	74203007	Indian or Asian	Female	0	2011
+ward	30605005	Other	Female	0	2011
+ward	83106014	Other	Female	0	2011
+ward	94702021	Coloured	Female	0	2011
+ward	52102002	Other	Male	0	2011
+ward	21304022	White	Male	0	2011
+ward	41901014	Indian or Asian	Male	0	2011
+ward	52404005	Coloured	Female	0	2011
+ward	52902010	White	Male	0	2011
+ward	93505003	Coloured	Female	0	2011
+ward	52806012	Other	Female	0	2011
+ward	52504004	White	Female	0	2011
+ward	21401014	White	Male	0	2011
+ward	94703019	Other	Male	0	2011
+ward	83001002	White	Male	0	2011
+ward	52705001	Other	Male	0	2011
+ward	94705012	Coloured	Male	0	2011
+ward	21402013	Other	Female	0	2011
+ward	79800076	Indian or Asian	Male	0	2011
+ward	94701003	Other	Female	0	2011
+ward	52702013	Other	Female	0	2011
+ward	52103013	Other	Male	0	2011
+ward	41602006	Other	Female	0	2011
+ward	93302009	Other	Female	0	2011
+ward	83205021	White	Female	0	2011
+ward	94705025	White	Male	0	2011
+ward	64003007	White	Female	0	2011
+ward	21304010	Coloured	Female	0	2011
+ward	52701002	White	Female	0	2011
+ward	21303004	Other	Female	0	2011
+ward	52901007	White	Male	0	2011
+ward	93402010	Coloured	Female	0	2011
+ward	83007011	Other	Female	0	2011
+ward	10302011	Other	Female	0	2011
+ward	24402025	Other	Female	0	2011
+ward	21204020	Other	Male	0	2011
+ward	83202003	Indian or Asian	Male	0	2011
+ward	34501001	Coloured	Female	0	2011
+ward	52606006	White	Female	0	2011
+ward	52502021	Other	Male	0	2011
+ward	83001008	Coloured	Female	0	2011
+ward	10402008	Other	Male	0	2011
+ward	74203002	Other	Male	0	2011
+municipality	WC051	Indian or Asian	Female	0	2011
+ward	83106022	White	Female	0	2011
+ward	93302028	White	Male	0	2011
+ward	93403002	Indian or Asian	Female	0	2011
+ward	83003003	Other	Female	0	2011
+ward	63703019	White	Male	0	2011
+ward	21206013	Coloured	Male	0	2011
+ward	52103014	Other	Female	0	2011
+ward	93302006	Coloured	Female	0	2011
+ward	94705011	Indian or Asian	Female	0	2011
+ward	41603004	Other	Male	0	2011
+ward	52303008	White	Female	0	2011
+ward	41602004	Indian or Asian	Female	0	2011
+ward	83106006	Coloured	Female	0	2011
+ward	59500080	Indian or Asian	Female	0	2011
+ward	21402005	White	Male	0	2011
+ward	52805005	Other	Female	0	2011
+ward	30902001	Indian or Asian	Female	0	2011
+ward	41804009	Other	Female	0	2011
+ward	83204014	Coloured	Male	0	2011
+ward	29200042	Indian or Asian	Female	0	2011
+ward	52605004	Other	Female	0	2011
+ward	83001013	Coloured	Female	0	2011
+ward	21305016	Other	Female	0	2011
+ward	52701006	Other	Male	0	2011
+ward	83002004	Coloured	Male	0	2011
+ward	21302001	Indian or Asian	Female	0	2011
+ward	52103008	Coloured	Female	0	2011
+ward	21507017	White	Male	0	2011
+ward	94702015	Indian or Asian	Female	0	2011
+ward	24403014	Indian or Asian	Female	0	2011
+ward	94702017	Indian or Asian	Female	0	2011
+ward	74801024	White	Female	0	2011
+ward	93404037	White	Male	0	2011
+ward	63701001	Indian or Asian	Female	0	2011
+ward	41803007	Indian or Asian	Female	0	2011
+ward	21504011	Other	Female	0	2011
+ward	94705022	White	Female	0	2011
+ward	94702019	Coloured	Male	0	2011
+ward	63705025	Other	Female	0	2011
+ward	21507029	Other	Female	0	2011
+ward	79700060	Indian or Asian	Female	0	2011
+ward	93404038	Other	Female	0	2011
+ward	52605008	Coloured	Female	0	2011
+ward	59500029	White	Female	0	2011
+ward	83001012	White	Male	0	2011
+ward	21505022	Other	Female	0	2011
+ward	52404013	Indian or Asian	Male	0	2011
+ward	52502026	White	Female	0	2011
+ward	10501003	Other	Male	0	2011
+ward	93607010	Coloured	Female	0	2011
+ward	93404004	Coloured	Male	0	2011
+ward	24401007	White	Male	0	2011
+ward	21201015	Indian or Asian	Female	0	2011
+ward	21401011	White	Female	0	2011
+ward	21202023	Other	Female	0	2011
+ward	41901016	Indian or Asian	Female	0	2011
+ward	24403022	Coloured	Female	0	2011
+ward	29300004	White	Male	0	2011
+ward	93504003	Indian or Asian	Female	0	2011
+ward	93607022	Coloured	Female	0	2011
+ward	52103002	Indian or Asian	Female	0	2011
+ward	21308007	Other	Male	0	2011
+ward	41904017	Indian or Asian	Female	0	2011
+ward	21402012	White	Female	0	2011
+ward	49400007	Indian or Asian	Female	0	2011
+ward	21402001	White	Female	0	2011
+ward	52205021	White	Male	0	2011
+ward	94703009	White	Male	0	2011
+ward	64003020	Other	Female	0	2011
+ward	64002017	White	Male	0	2011
+ward	54301007	Other	Female	0	2011
+ward	93305008	Indian or Asian	Male	0	2011
+ward	74801004	White	Female	0	2011
+ward	52206006	Indian or Asian	Male	0	2011
+ward	21206011	Coloured	Male	0	2011
+ward	52206007	Coloured	Female	0	2011
+ward	94701002	Other	Female	0	2011
+ward	93302015	Coloured	Female	0	2011
+ward	21506021	Coloured	Male	0	2011
+ward	93404025	Indian or Asian	Female	0	2011
+ward	52502016	White	Female	0	2011
+ward	21401005	White	Male	0	2011
+ward	30606004	Other	Female	0	2011
+ward	94701009	White	Female	0	2011
+ward	83204033	Indian or Asian	Female	0	2011
+ward	21401006	Other	Female	0	2011
+ward	83103023	Other	Female	0	2011
+ward	21306017	Indian or Asian	Male	0	2011
+ward	83001022	White	Male	0	2011
+ward	63701020	Coloured	Female	0	2011
+ward	93505027	Coloured	Female	0	2011
+ward	21306001	Indian or Asian	Female	0	2011
+ward	63801003	Other	Female	0	2011
+ward	63801007	Other	Male	0	2011
+ward	63703026	White	Female	0	2011
+ward	93404019	White	Female	0	2011
+ward	21203005	Indian or Asian	Female	0	2011
+ward	49400030	Indian or Asian	Female	0	2011
+ward	93301020	Other	Female	0	2011
+ward	63701008	Indian or Asian	Male	0	2011
+ward	21505025	Other	Male	0	2011
+ward	41901008	Other	Male	0	2011
+ward	74803005	Other	Male	0	2011
+ward	93403035	Indian or Asian	Female	0	2011
+ward	24401010	Coloured	Female	0	2011
+ward	52106021	Indian or Asian	Male	0	2011
+ward	21503012	White	Female	0	2011
+ward	21305017	Indian or Asian	Female	0	2011
+ward	63701022	Indian or Asian	Female	0	2011
+ward	24403005	Indian or Asian	Female	0	2011
+ward	52601004	White	Female	0	2011
+ward	54305001	Other	Female	0	2011
+ward	83103024	Other	Female	0	2011
+ward	52804008	White	Female	0	2011
+ward	93501007	Other	Female	0	2011
+ward	64003020	Indian or Asian	Female	0	2011
+ward	93305008	Other	Male	0	2011
+ward	54301007	Indian or Asian	Female	0	2011
+ward	49400007	Other	Female	0	2011
+ward	94703004	White	Male	0	2011
+ward	52202010	Indian or Asian	Female	0	2011
+ward	63904019	White	Male	0	2011
+ward	24402009	Indian or Asian	Female	0	2011
+ward	94705006	White	Female	0	2011
+ward	93504010	Indian or Asian	Female	0	2011
+ward	83001004	White	Female	0	2011
+ward	21404004	White	Male	0	2011
+ward	41901018	White	Female	0	2011
+ward	52205011	White	Male	0	2011
+ward	93505013	Coloured	Male	0	2011
+ward	21402006	Other	Male	0	2011
+ward	42001010	Other	Male	0	2011
+ward	24403020	Coloured	Male	0	2011
+ward	93404025	Other	Female	0	2011
+ward	21401006	Indian or Asian	Female	0	2011
+ward	54305002	Coloured	Female	0	2011
+ward	52802006	White	Female	0	2011
+ward	83204033	Other	Female	0	2011
+ward	52305007	White	Female	0	2011
+ward	83105016	Other	Male	0	2011
+ward	93403040	White	Male	0	2011
+ward	52201008	White	Female	0	2011
+ward	63801007	Indian or Asian	Male	0	2011
+ward	63801003	Indian or Asian	Female	0	2011
+ward	21202025	White	Male	0	2011
+ward	41901005	White	Female	0	2011
+ward	93301020	Indian or Asian	Female	0	2011
+ward	10104001	White	Male	0	2011
+ward	83202012	Other	Male	0	2011
+ward	21203005	Other	Female	0	2011
+ward	94702008	Other	Female	0	2011
+ward	54301001	Coloured	Female	0	2011
+ward	21305017	Other	Female	0	2011
+ward	52804025	Indian or Asian	Female	0	2011
+ward	21504003	White	Male	0	2011
+ward	52806011	White	Male	0	2011
+ward	41901008	Indian or Asian	Male	0	2011
+ward	54305020	White	Male	0	2011
+ward	74801034	Indian or Asian	Female	0	2011
+ward	93503004	White	Female	0	2011
+ward	29200050	Other	Female	0	2011
+ward	10202009	Other	Male	0	2011
+ward	93501007	Indian or Asian	Female	0	2011
+ward	94704003	Indian or Asian	Female	0	2011
+ward	79700066	White	Male	0	2011
+ward	79800003	White	Male	0	2011
+ward	24403005	Other	Female	0	2011
+ward	54305001	Indian or Asian	Female	0	2011
+ward	21302001	Other	Female	0	2011
+ward	93502004	White	Female	0	2011
+ward	93607025	Coloured	Male	0	2011
+ward	30607003	Indian or Asian	Female	0	2011
+ward	52902008	White	Female	0	2011
+ward	29200005	White	Male	0	2011
+ward	21506024	White	Female	0	2011
+ward	24403014	Other	Female	0	2011
+ward	52804005	White	Male	0	2011
+ward	94702017	Other	Female	0	2011
+ward	94702015	Other	Female	0	2011
+ward	21504007	White	Female	0	2011
+ward	74802018	Coloured	Male	0	2011
+ward	24401023	Other	Male	0	2011
+ward	64002013	White	Male	0	2011
+ward	63701001	Other	Female	0	2011
+ward	83102010	White	Male	0	2011
+ward	41803007	Other	Female	0	2011
+ward	93304002	Indian or Asian	Female	0	2011
+ward	93505012	Indian or Asian	Male	0	2011
+ward	74803012	Indian or Asian	Male	0	2011
+ward	52202012	Other	Female	0	2011
+ward	93601011	Other	Female	0	2011
+ward	21005007	White	Female	0	2011
+ward	54305010	Coloured	Female	0	2011
+ward	93404038	Indian or Asian	Female	0	2011
+ward	24402004	White	Male	0	2011
+ward	21504011	Indian or Asian	Female	0	2011
+ward	63705025	Indian or Asian	Female	0	2011
+ward	10501003	Indian or Asian	Male	0	2011
+ward	83106003	White	Female	0	2011
+ward	52404001	Other	Male	0	2011
+ward	52404013	Other	Male	0	2011
+ward	83103019	White	Female	0	2011
+ward	24404002	Other	Female	0	2011
+ward	52802012	Coloured	Male	0	2011
+ward	52102009	Indian or Asian	Female	0	2011
+ward	21202023	Indian or Asian	Female	0	2011
+ward	41901016	Other	Female	0	2011
+ward	83205011	Coloured	Female	0	2011
+ward	93504003	Other	Female	0	2011
+ward	93402012	Coloured	Female	0	2011
+ward	93501001	Coloured	Male	0	2011
+ward	30904002	White	Female	0	2011
+ward	41904017	Other	Female	0	2011
+ward	21308007	Indian or Asian	Male	0	2011
+ward	83105032	Coloured	Female	0	2011
+ward	83106012	Coloured	Female	0	2011
+ward	21204001	Indian or Asian	Male	0	2011
+ward	63804001	White	Female	0	2011
+ward	63701025	Coloured	Male	0	2011
+ward	83201008	Other	Male	0	2011
+ward	30806001	White	Male	0	2011
+ward	42005006	White	Male	0	2011
+ward	30901019	Indian or Asian	Male	0	2011
+ward	24403015	Other	Female	0	2011
+ward	21506007	White	Female	0	2011
+ward	21503018	Coloured	Male	0	2011
+ward	52804013	White	Female	0	2011
+ward	52106007	Indian or Asian	Male	0	2011
+ward	52503004	Coloured	Female	0	2011
+ward	41804020	White	Male	0	2011
+ward	21207003	Other	Female	0	2011
+ward	21201027	Indian or Asian	Female	0	2011
+ward	94701001	Other	Female	0	2011
+ward	34502009	Indian or Asian	Female	0	2011
+ward	93504016	Indian or Asian	Male	0	2011
+ward	21207019	Indian or Asian	Female	0	2011
+ward	21304009	Indian or Asian	Female	0	2011
+ward	63904008	Other	Male	0	2011
+ward	21307013	Other	Female	0	2011
+ward	21202031	Coloured	Female	0	2011
+ward	21306009	Coloured	Male	0	2011
+ward	63801006	White	Male	0	2011
+ward	52802009	Other	Female	0	2011
+ward	63803011	White	Male	0	2011
+ward	52904001	Coloured	Male	0	2011
+ward	21004014	Other	Female	0	2011
+ward	83005007	Other	Male	0	2011
+ward	83106024	Coloured	Female	0	2011
+ward	93404013	White	Female	0	2011
+ward	93305010	Other	Female	0	2011
+ward	83103006	Other	Male	0	2011
+ward	74803003	Indian or Asian	Female	0	2011
+ward	52901011	Coloured	Female	0	2011
+ward	24401022	Other	Male	0	2011
+ward	52405003	Other	Female	0	2011
+ward	49400036	White	Male	0	2011
+ward	93505021	White	Female	0	2011
+ward	63701007	Other	Female	0	2011
+ward	41902002	Other	Female	0	2011
+ward	63704003	Other	Male	0	2011
+ward	24401006	Coloured	Male	0	2011
+ward	21009005	Other	Female	0	2011
+ward	52205008	White	Female	0	2011
+ward	74804009	Other	Female	0	2011
+ward	74804004	Other	Female	0	2011
+ward	30901002	White	Male	0	2011
+ward	21507027	White	Male	0	2011
+ward	94702007	White	Male	0	2011
+ward	42001015	Indian or Asian	Male	0	2011
+ward	63701018	Coloured	Female	0	2011
+ward	21201016	Coloured	Female	0	2011
+ward	74802022	White	Female	0	2011
+ward	24403030	White	Female	0	2011
+ward	52804026	Other	Male	0	2011
+ward	10205009	Other	Female	0	2011
+ward	21305011	Coloured	Male	0	2011
+ward	24404016	Coloured	Male	0	2011
+ward	52104009	Other	Male	0	2011
+ward	83205004	Indian or Asian	Male	0	2011
+ward	10301012	Other	Male	0	2011
+ward	21202011	White	Male	0	2011
+ward	21504016	White	Female	0	2011
+ward	24402001	Coloured	Male	0	2011
+ward	83205024	Indian or Asian	Male	0	2011
+ward	52703003	Other	Female	0	2011
+ward	93302025	Other	Female	0	2011
+ward	93404015	Other	Female	0	2011
+ward	52701003	White	Male	0	2011
+ward	94705020	Indian or Asian	Female	0	2011
+ward	52704006	Indian or Asian	Male	0	2011
+ward	63705022	Coloured	Female	0	2011
+ward	21507032	Indian or Asian	Female	0	2011
+ward	24402027	Other	Female	0	2011
+ward	83205020	Coloured	Female	0	2011
+ward	94703014	Indian or Asian	Male	0	2011
+ward	52801013	White	Female	0	2011
+ward	10204013	Indian or Asian	Female	0	2011
+ward	93607006	White	Female	0	2011
+ward	52402001	Indian or Asian	Female	0	2011
+ward	52903011	Other	Female	0	2011
+ward	83101004	Other	Female	0	2011
+ward	93402011	White	Male	0	2011
+ward	52504011	Coloured	Male	0	2011
+ward	52606001	Indian or Asian	Male	0	2011
+ward	52802027	White	Male	0	2011
+ward	83205017	Other	Female	0	2011
+ward	21004011	Coloured	Male	0	2011
+ward	93301024	Other	Female	0	2011
+ward	74201014	White	Female	0	2011
+ward	30602009	Indian or Asian	Male	0	2011
+ward	52302005	White	Male	0	2011
+ward	83205010	Other	Female	0	2011
+ward	52702006	Other	Male	0	2011
+ward	24401005	Other	Male	0	2011
+ward	59500044	White	Female	0	2011
+ward	74201024	White	Male	0	2011
+ward	52803006	Other	Female	0	2011
+ward	93504037	Coloured	Female	0	2011
+ward	21201023	White	Male	0	2011
+ward	83205004	Other	Male	0	2011
+ward	21503002	White	Male	0	2011
+ward	93302025	Indian or Asian	Female	0	2011
+ward	93305003	White	Female	0	2011
+ward	83205024	Other	Male	0	2011
+ward	21507032	Other	Female	0	2011
+ward	63804018	White	Female	0	2011
+ward	52704006	Other	Male	0	2011
+ward	21306007	Coloured	Male	0	2011
+ward	83106019	Coloured	Female	0	2011
+ward	94705020	Other	Female	0	2011
+ward	63703030	Coloured	Male	0	2011
+ward	24401016	Indian or Asian	Male	0	2011
+ward	52606001	Other	Male	0	2011
+ward	21307016	Indian or Asian	Male	0	2011
+ward	93505025	Coloured	Male	0	2011
+ward	93301024	Indian or Asian	Female	0	2011
+ward	21307017	Indian or Asian	Female	0	2011
+ward	83205017	Indian or Asian	Female	0	2011
+ward	34501011	Indian or Asian	Female	0	2011
+ward	52605007	White	Female	0	2011
+ward	21201021	White	Male	0	2011
+ward	19100024	White	Female	0	2011
+ward	52603014	Coloured	Male	0	2011
+ward	83205010	Indian or Asian	Female	0	2011
+ward	52703001	Coloured	Female	0	2011
+ward	93305009	Coloured	Female	0	2011
+ward	93403011	Coloured	Male	0	2011
+ward	52305012	Coloured	Female	0	2011
+ward	93303032	White	Female	0	2011
+ward	52602008	Coloured	Male	0	2011
+ward	63802010	Other	Male	0	2011
+ward	74802021	Other	Male	0	2011
+ward	63904023	Other	Male	0	2011
+ward	21306004	Other	Female	0	2011
+ward	21505028	Coloured	Male	0	2011
+ward	52305005	Coloured	Male	0	2011
+ward	30901011	White	Female	0	2011
+ward	21201027	Other	Female	0	2011
+ward	52502007	White	Female	0	2011
+ward	94701001	Indian or Asian	Female	0	2011
+ward	21207003	Indian or Asian	Female	0	2011
+ward	83102008	White	Female	0	2011
+ward	21402015	Other	Female	0	2011
+ward	21202027	Coloured	Female	0	2011
+ward	52106007	Other	Male	0	2011
+ward	21307013	Indian or Asian	Female	0	2011
+ward	21507003	White	Male	0	2011
+ward	10404013	Indian or Asian	Female	0	2011
+ward	21402004	White	Female	0	2011
+ward	93404001	White	Male	0	2011
+ward	21304009	Other	Female	0	2011
+ward	52702015	Other	Male	0	2011
+ward	21207019	Other	Female	0	2011
+ward	94705017	White	Female	0	2011
+ward	83005007	Indian or Asian	Male	0	2011
+ward	79700030	White	Female	0	2011
+ward	29200008	White	Male	0	2011
+ward	29200048	Indian or Asian	Female	0	2011
+ward	24403008	Other	Male	0	2011
+ward	63701007	Indian or Asian	Female	0	2011
+ward	83007002	Coloured	Female	0	2011
+ward	24401022	Indian or Asian	Male	0	2011
+ward	52405003	Indian or Asian	Female	0	2011
+ward	83103007	Indian or Asian	Male	0	2011
+ward	21503005	Coloured	Male	0	2011
+ward	93305010	Indian or Asian	Female	0	2011
+ward	74803003	Other	Female	0	2011
+ward	52404012	Other	Female	0	2011
+ward	74804004	Indian or Asian	Female	0	2011
+ward	41803002	White	Female	0	2011
+ward	21009005	Indian or Asian	Female	0	2011
+ward	41902002	Indian or Asian	Female	0	2011
+ward	93402003	Coloured	Female	0	2011
+ward	52901009	White	Female	0	2011
+ward	21304014	White	Male	0	2011
+ward	24403029	White	Female	0	2011
+ward	52404016	Coloured	Male	0	2011
+ward	94703010	Indian or Asian	Female	0	2011
+ward	52705012	Other	Male	0	2011
+ward	52605017	White	Female	0	2011
+ward	52701012	Indian or Asian	Female	0	2011
+ward	64003009	White	Female	0	2011
+ward	83205031	White	Female	0	2011
+ward	54301002	Coloured	Male	0	2011
+ward	93403001	White	Male	0	2011
+ward	63907004	Other	Female	0	2011
+ward	21202028	Other	Female	0	2011
+ward	74804019	Indian or Asian	Male	0	2011
+ward	94703007	Other	Female	0	2011
+ward	52801010	Other	Female	0	2011
+ward	24402019	White	Female	0	2011
+ward	83001006	Coloured	Female	0	2011
+ward	10503003	Other	Female	0	2011
+ward	30804001	Other	Female	0	2011
+ward	93404018	Other	Female	0	2011
+ward	21203003	Other	Female	0	2011
+ward	41903003	Indian or Asian	Female	0	2011
+ward	21506012	Indian or Asian	Male	0	2011
+ward	74804008	Indian or Asian	Male	0	2011
+ward	94703013	Other	Female	0	2011
+ward	83204004	Other	Female	0	2011
+ward	52402017	Coloured	Female	0	2011
+ward	21503028	Coloured	Female	0	2011
+ward	93605001	Coloured	Male	0	2011
+ward	30606003	Indian or Asian	Male	0	2011
+ward	64003011	White	Male	0	2011
+ward	21307003	Coloured	Male	0	2011
+ward	21504017	White	Female	0	2011
+ward	42004011	White	Male	0	2011
+ward	52603006	Other	Female	0	2011
+ward	63701004	White	Female	0	2011
+ward	24402023	White	Male	0	2011
+ward	79700048	White	Male	0	2011
+ward	64003032	Other	Female	0	2011
+ward	83003016	Indian or Asian	Male	0	2011
+ward	63804019	White	Male	0	2011
+ward	93304015	Indian or Asian	Male	0	2011
+ward	41904020	White	Female	0	2011
+ward	93505006	Coloured	Male	0	2011
+ward	74804011	Coloured	Male	0	2011
+ward	83003006	Other	Female	0	2011
+ward	93303033	White	Male	0	2011
+ward	21401008	Indian or Asian	Female	0	2011
+ward	29200011	Coloured	Female	0	2011
+ward	94701012	Indian or Asian	Female	0	2011
+ward	52603016	White	Male	0	2011
+ward	79700004	Coloured	Male	0	2011
+ward	24401012	Indian or Asian	Female	0	2011
+ward	52302004	Other	Male	0	2011
+ward	41805008	Other	Female	0	2011
+ward	93302007	White	Male	0	2011
+ward	93304008	Coloured	Female	0	2011
+ward	93303019	White	Female	0	2011
+ward	63904020	Indian or Asian	Female	0	2011
+ward	10204014	White	Female	0	2011
+ward	52702009	White	Female	0	2011
+ward	21307002	White	Female	0	2011
+ward	41803006	Other	Female	0	2011
+ward	41804026	Indian or Asian	Female	0	2011
+ward	94703006	Indian or Asian	Female	0	2011
+ward	63805005	Indian or Asian	Female	0	2011
+ward	64004002	White	Male	0	2011
+ward	41602001	Indian or Asian	Female	0	2011
+ward	93302023	Coloured	Male	0	2011
+ward	52903002	Coloured	Male	0	2011
+ward	93301014	Indian or Asian	Male	0	2011
+ward	21004006	Indian or Asian	Female	0	2011
+ward	63702020	Other	Female	0	2011
+ward	93607021	Indian or Asian	Female	0	2011
+ward	10104008	Indian or Asian	Male	0	2011
+ward	52502015	White	Male	0	2011
+ward	21305006	Indian or Asian	Female	0	2011
+ward	21507025	Indian or Asian	Female	0	2011
+ward	52101004	Coloured	Male	0	2011
+ward	41901010	Other	Female	0	2011
+ward	21402017	White	Female	0	2011
+ward	94705004	Indian or Asian	Male	0	2011
+ward	52801012	White	Male	0	2011
+ward	52903006	Coloured	Female	0	2011
+ward	52701005	White	Male	0	2011
+ward	21506018	Coloured	Female	0	2011
+ward	63705003	Coloured	Female	0	2011
+ward	52705019	White	Female	0	2011
+ward	83204023	Coloured	Female	0	2011
+ward	21402009	Indian or Asian	Female	0	2011
+ward	21401008	Other	Female	0	2011
+ward	52303006	Coloured	Male	0	2011
+ward	64002014	White	Female	0	2011
+ward	21206005	White	Female	0	2011
+ward	41805008	Indian or Asian	Female	0	2011
+ward	24401012	Other	Female	0	2011
+ward	94701012	Other	Female	0	2011
+ward	83105008	Coloured	Male	0	2011
+ward	93505029	White	Male	0	2011
+ward	52804010	Coloured	Male	0	2011
+ward	52605010	Other	Female	0	2011
+ward	94703006	Other	Female	0	2011
+ward	52804001	Indian or Asian	Male	0	2011
+ward	93403014	Indian or Asian	Male	0	2011
+ward	41803006	Indian or Asian	Female	0	2011
+ward	93505011	Coloured	Female	0	2011
+ward	64001001	White	Male	0	2011
+ward	41906005	Other	Female	0	2011
+ward	63702020	Indian or Asian	Female	0	2011
+ward	52103001	Coloured	Female	0	2011
+ward	63805005	Other	Female	0	2011
+ward	93403004	White	Male	0	2011
+ward	21507025	Other	Female	0	2011
+ward	74802007	Other	Female	0	2011
+ward	41904024	Other	Male	0	2011
+ward	21305006	Other	Female	0	2011
+ward	21503016	Coloured	Male	0	2011
+ward	52502010	White	Male	0	2011
+ward	93602007	Coloured	Female	0	2011
+ward	93504018	Other	Male	0	2011
+ward	21504001	Indian or Asian	Male	0	2011
+ward	21505024	Coloured	Female	0	2011
+ward	94705004	Other	Male	0	2011
+ward	94704002	White	Male	0	2011
+ward	93501011	Coloured	Female	0	2011
+ward	10502001	Other	Female	0	2011
+ward	10205013	White	Female	0	2011
+ward	10203031	Other	Male	0	2011
+ward	83106005	White	Male	0	2011
+ward	21503030	White	Male	0	2011
+ward	52705012	Indian or Asian	Male	0	2011
+ward	94703010	Other	Female	0	2011
+ward	94703008	Indian or Asian	Female	0	2011
+ward	52603013	Other	Female	0	2011
+ward	74804019	Other	Male	0	2011
+ward	83204018	Coloured	Male	0	2011
+ward	52605012	Coloured	Female	0	2011
+ward	63904021	Coloured	Female	0	2011
+ward	63907004	Indian or Asian	Female	0	2011
+ward	24401017	White	Male	0	2011
+ward	52801010	Indian or Asian	Female	0	2011
+ward	93502015	Coloured	Female	0	2011
+ward	52204002	Indian or Asian	Female	0	2011
+ward	93607005	Coloured	Male	0	2011
+ward	21203003	Indian or Asian	Female	0	2011
+ward	30604001	Other	Female	0	2011
+ward	30606003	Other	Male	0	2011
+ward	63805010	White	Male	0	2011
+ward	94703013	Indian or Asian	Female	0	2011
+ward	74804008	Other	Male	0	2011
+ward	21506012	Other	Male	0	2011
+ward	83204004	Indian or Asian	Female	0	2011
+ward	41903003	Other	Female	0	2011
+ward	52302018	Other	Female	0	2011
+ward	93504038	Coloured	Female	0	2011
+ward	93402008	Coloured	Male	0	2011
+ward	64003032	Indian or Asian	Female	0	2011
+ward	41906004	Other	Female	0	2011
+ward	21307018	White	Male	0	2011
+ward	93505022	Other	Male	0	2011
+ward	52902012	Indian or Asian	Male	0	2011
+ward	83003006	Indian or Asian	Female	0	2011
+ward	83202007	Other	Female	0	2011
+ward	30601001	White	Male	0	2011
+ward	10104012	White	Female	0	2011
+ward	93502001	Indian or Asian	Male	0	2011
+ward	21505018	Coloured	Female	0	2011
+ward	93403024	Indian or Asian	Female	0	2011
+ward	10104002	Other	Female	0	2011
+ward	74804023	Indian or Asian	Male	0	2011
+ward	52205001	Indian or Asian	Female	0	2011
+ward	54304005	Coloured	Male	0	2011
+ward	93301016	Other	Male	0	2011
+ward	93301022	White	Female	0	2011
+ward	52104001	Indian or Asian	Female	0	2011
+ward	93505014	White	Female	0	2011
+ward	52302023	White	Male	0	2011
+ward	93404009	Other	Female	0	2011
+ward	21303001	White	Male	0	2011
+ward	24402010	Other	Male	0	2011
+ward	52302017	White	Female	0	2011
+ward	42001020	Indian or Asian	Female	0	2011
+ward	63904012	Indian or Asian	Female	0	2011
+ward	21008003	Other	Male	0	2011
+ward	93301029	Coloured	Male	0	2011
+ward	21201004	Indian or Asian	Male	0	2011
+ward	24404001	Indian or Asian	Male	0	2011
+ward	29300026	White	Female	0	2011
+ward	52806006	Other	Female	0	2011
+ward	21504010	Indian or Asian	Female	0	2011
+ward	21506011	Other	Female	0	2011
+ward	52402003	Other	Male	0	2011
+ward	21305021	Coloured	Male	0	2011
+ward	41904023	Other	Female	0	2011
+ward	41904015	White	Female	0	2011
+ward	52605021	Other	Female	0	2011
+ward	21201018	Other	Male	0	2011
+ward	93604001	Indian or Asian	Female	0	2011
+ward	83001010	Coloured	Male	0	2011
+ward	93607019	Indian or Asian	Female	0	2011
+ward	83204019	Coloured	Female	0	2011
+ward	83003001	Coloured	Female	0	2011
+ward	41804029	Other	Female	0	2011
+ward	93502009	Other	Female	0	2011
+ward	21304017	White	Male	0	2011
+ward	21503010	Indian or Asian	Female	0	2011
+ward	63904022	White	Female	0	2011
+ward	24402002	Coloured	Female	0	2011
+ward	83204015	White	Female	0	2011
+ward	24401003	Other	Female	0	2011
+ward	52104006	Coloured	Female	0	2011
+ward	52601007	Indian or Asian	Female	0	2011
+ward	54305017	White	Female	0	2011
+ward	21204007	Indian or Asian	Male	0	2011
+ward	93304007	Indian or Asian	Female	0	2011
+ward	52803005	Other	Female	0	2011
+ward	63701010	Indian or Asian	Male	0	2011
+ward	93301008	Coloured	Female	0	2011
+ward	29200025	Indian or Asian	Male	0	2011
+ward	24401002	Other	Male	0	2011
+ward	93601004	Other	Male	0	2011
+ward	93501004	Indian or Asian	Female	0	2011
+ward	94704004	Other	Male	0	2011
+ward	52306010	Coloured	Male	0	2011
+ward	21505013	White	Female	0	2011
+ward	30602006	White	Male	0	2011
+ward	94702023	White	Male	0	2011
+ward	94704006	Indian or Asian	Female	0	2011
+ward	52902018	Indian or Asian	Male	0	2011
+ward	83105013	Coloured	Male	0	2011
+ward	52306009	Other	Female	0	2011
+ward	21308006	Indian or Asian	Female	0	2011
+ward	83105011	Indian or Asian	Female	0	2011
+ward	41603003	Other	Female	0	2011
+ward	52601007	Other	Female	0	2011
+ward	30804004	Indian or Asian	Male	0	2011
+ward	21304008	White	Female	0	2011
+ward	52901001	Other	Male	0	2011
+ward	94703029	White	Male	0	2011
+ward	52602010	Other	Male	0	2011
+ward	93607015	White	Male	0	2011
+ward	52606013	Coloured	Female	0	2011
+ward	93404003	Coloured	Female	0	2011
+ward	52901006	Coloured	Female	0	2011
+ward	63701010	Other	Male	0	2011
+ward	83106030	White	Male	0	2011
+ward	29200041	Coloured	Female	0	2011
+ward	49400003	Other	Male	0	2011
+ward	41902013	Coloured	Female	0	2011
+ward	74801007	Coloured	Male	0	2011
+ward	83203005	White	Female	0	2011
+ward	93501004	Other	Female	0	2011
+ward	93601004	Indian or Asian	Male	0	2011
+ward	94704004	Indian or Asian	Male	0	2011
+ward	24403021	White	Female	0	2011
+ward	21306002	White	Male	0	2011
+ward	93501009	Coloured	Male	0	2011
+ward	93305005	Coloured	Female	0	2011
+ward	30606002	Other	Male	0	2011
+ward	52603021	Indian or Asian	Female	0	2011
+ward	41904026	Indian or Asian	Male	0	2011
+ward	52705018	Indian or Asian	Male	0	2011
+ward	93303006	Coloured	Female	0	2011
+ward	83001019	Coloured	Male	0	2011
+ward	52603020	White	Female	0	2011
+ward	52802025	White	Male	0	2011
+ward	41603003	Indian or Asian	Female	0	2011
+ward	83105011	Other	Female	0	2011
+ward	21204003	Coloured	Female	0	2011
+ward	93401003	White	Female	0	2011
+ward	94702026	White	Male	0	2011
+ward	63701027	White	Female	0	2011
+ward	93301016	Indian or Asian	Male	0	2011
+ward	83105029	White	Female	0	2011
+ward	83007022	Other	Female	0	2011
+ward	83205016	Other	Male	0	2011
+ward	93403024	Other	Female	0	2011
+ward	93404022	Other	Male	0	2011
+ward	30901006	White	Female	0	2011
+ward	30903002	White	Female	0	2011
+ward	52701016	White	Male	0	2011
+ward	93607007	Coloured	Female	0	2011
+ward	52104001	Other	Female	0	2011
+ward	63904012	Other	Female	0	2011
+ward	93302019	Coloured	Female	0	2011
+ward	93303010	Coloured	Male	0	2011
+ward	42001020	Other	Female	0	2011
+ward	93301017	White	Female	0	2011
+ward	64002008	White	Male	0	2011
+ward	34501002	Indian or Asian	Female	0	2011
+ward	94705021	White	Female	0	2011
+ward	10405009	White	Male	0	2011
+ward	21201004	Other	Male	0	2011
+ward	21008003	Indian or Asian	Male	0	2011
+ward	83105003	White	Male	0	2011
+ward	21504010	Other	Female	0	2011
+ward	52806006	Indian or Asian	Female	0	2011
+ward	93607011	Indian or Asian	Female	0	2011
+ward	74804020	Other	Male	0	2011
+ward	94702016	White	Female	0	2011
+ward	24404001	Other	Male	0	2011
+ward	83005009	Indian or Asian	Male	0	2011
+ward	41904023	Indian or Asian	Female	0	2011
+ward	10104009	White	Female	0	2011
+ward	83101001	White	Female	0	2011
+ward	93607019	Other	Female	0	2011
+ward	52502018	Other	Female	0	2011
+ward	21201010	Coloured	Female	0	2011
+ward	21004012	Other	Male	0	2011
+ward	52605021	Indian or Asian	Female	0	2011
+ward	24402016	White	Male	0	2011
+ward	93502009	Indian or Asian	Female	0	2011
+ward	21503010	Other	Female	0	2011
+ward	63701021	Other	Male	0	2011
+ward	21306015	White	Female	0	2011
+ward	93303001	Coloured	Female	0	2011
+ward	63703005	White	Male	0	2011
+ward	52801003	Other	Male	0	2011
+ward	63903004	Indian or Asian	Male	0	2011
+ward	52804006	Coloured	Female	0	2011
+ward	41804030	White	Male	0	2011
+ward	21506001	Indian or Asian	Male	0	2011
+ward	52404009	White	Female	0	2011
+ward	83104003	White	Female	0	2011
+ward	63705002	White	Female	0	2011
+ward	74802011	Other	Female	0	2011
+ward	21308008	White	Male	0	2011
+ward	63904016	White	Female	0	2011
+ward	74803002	Other	Male	0	2011
+ward	52402007	Other	Female	0	2011
+ward	21202021	Indian or Asian	Female	0	2011
+ward	21201030	Coloured	Female	0	2011
+ward	54304011	Other	Male	0	2011
+ward	93403015	Coloured	Female	0	2011
+ward	41602005	Indian or Asian	Female	0	2011
+ward	93504029	Coloured	Female	0	2011
+ward	52106014	Coloured	Male	0	2011
+ward	63803014	White	Female	0	2011
+ward	10105011	White	Female	0	2011
+ward	41603001	Other	Female	0	2011
+ward	52701001	Coloured	Male	0	2011
+ward	21505010	White	Male	0	2011
+ward	21505002	Other	Male	0	2011
+ward	52806010	Indian or Asian	Female	0	2011
+ward	83204009	Other	Female	0	2011
+ward	93404012	White	Female	0	2011
+ward	29200038	Coloured	Male	0	2011
+ward	93502008	White	Male	0	2011
+ward	21302002	Coloured	Male	0	2011
+ward	52605015	Other	Male	0	2011
+ward	94705024	Indian or Asian	Female	0	2011
+ward	74201042	Other	Female	0	2011
+ward	10206009	Other	Female	0	2011
+ward	63802013	Other	Male	0	2011
+ward	83003017	Indian or Asian	Female	0	2011
+ward	63805006	Coloured	Male	0	2011
+ward	21204006	Indian or Asian	Male	0	2011
+ward	63702026	Indian or Asian	Female	0	2011
+ward	93301006	Indian or Asian	Male	0	2011
+ward	93504015	White	Male	0	2011
+ward	94703012	White	Female	0	2011
+ward	93302016	Indian or Asian	Female	0	2011
+ward	83202004	White	Female	0	2011
+ward	19100094	Indian or Asian	Female	0	2011
+ward	21504020	Other	Female	0	2011
+ward	63701017	Other	Male	0	2011
+ward	52103006	White	Male	0	2011
+ward	52306007	White	Male	0	2011
+ward	52803002	White	Male	0	2011
+ward	83106001	White	Male	0	2011
+ward	52503001	Coloured	Male	0	2011
+ward	83001014	White	Female	0	2011
+ward	49400002	Indian or Asian	Female	0	2011
+ward	94705026	White	Male	0	2011
+ward	52306004	Other	Female	0	2011
+ward	30904007	White	Female	0	2011
+ward	21307012	Other	Female	0	2011
+ward	52206005	Coloured	Female	0	2011
+ward	83204025	Other	Female	0	2011
+ward	83003008	Other	Male	0	2011
+ward	63701028	Indian or Asian	Female	0	2011
+ward	41803001	White	Female	0	2011
+ward	42004002	Coloured	Female	0	2011
+ward	29200017	Coloured	Female	0	2011
+ward	21505027	White	Male	0	2011
+ward	93302020	Coloured	Female	0	2011
+ward	93501014	Coloured	Male	0	2011
+ward	21005001	Coloured	Female	0	2011
+ward	83005002	White	Female	0	2011
+ward	41804023	Indian or Asian	Female	0	2011
+ward	83104005	Other	Male	0	2011
+ward	83007006	Other	Female	0	2011
+ward	52606019	Indian or Asian	Male	0	2011
+ward	83001007	Other	Male	0	2011
+ward	52804023	White	Male	0	2011
+ward	63703038	Coloured	Female	0	2011
+ward	41904019	Other	Female	0	2011
+ward	94702022	Coloured	Male	0	2011
+ward	63705027	Other	Female	0	2011
+ward	52602013	Coloured	Male	0	2011
+ward	21507014	Indian or Asian	Male	0	2011
+ward	52602009	White	Male	0	2011
+ward	93303024	Indian or Asian	Female	0	2011
+ward	41804013	White	Female	0	2011
+ward	83106023	White	Male	0	2011
+ward	93301006	Other	Male	0	2011
+ward	49400032	Indian or Asian	Female	0	2011
+ward	30901030	White	Male	0	2011
+ward	52201013	White	Female	0	2011
+ward	63703033	Coloured	Female	0	2011
+ward	54302001	White	Male	0	2011
+ward	93602010	Coloured	Female	0	2011
+ward	30708003	Indian or Asian	Female	0	2011
+ward	94703017	Other	Male	0	2011
+ward	21306006	Coloured	Male	0	2011
+ward	21504020	Indian or Asian	Female	0	2011
+ward	21307012	Indian or Asian	Female	0	2011
+ward	93607013	Indian or Asian	Female	0	2011
+ward	24402026	White	Female	0	2011
+ward	52806003	Coloured	Male	0	2011
+ward	83105024	Coloured	Male	0	2011
+ward	34501009	Coloured	Female	0	2011
+ward	52701015	Coloured	Female	0	2011
+ward	93503008	Coloured	Female	0	2011
+ward	94701013	White	Male	0	2011
+ward	83003008	Indian or Asian	Male	0	2011
+ward	21204008	Indian or Asian	Male	0	2011
+ward	21008006	White	Male	0	2011
+ward	41804023	Other	Female	0	2011
+ward	24402024	White	Male	0	2011
+ward	29300057	Coloured	Male	0	2011
+ward	94703024	Indian or Asian	Male	0	2011
+ward	63805013	White	Female	0	2011
+ward	41904019	Indian or Asian	Female	0	2011
+ward	83001007	Indian or Asian	Male	0	2011
+ward	93404036	Coloured	Female	0	2011
+ward	21307014	Other	Male	0	2011
+ward	41902001	Other	Male	0	2011
+ward	21503024	White	Male	0	2011
+ward	63705027	Indian or Asian	Female	0	2011
+ward	74801002	Coloured	Male	0	2011
+ward	52201001	Indian or Asian	Male	0	2011
+ward	21505008	Other	Female	0	2011
+ward	52903018	Other	Female	0	2011
+ward	42005003	White	Female	0	2011
+ward	52804004	Other	Female	0	2011
+ward	21504005	Other	Male	0	2011
+ward	93607008	Indian or Asian	Female	0	2011
+ward	21506001	Other	Male	0	2011
+ward	21208002	Other	Female	0	2011
+ward	74203001	Indian or Asian	Male	0	2011
+ward	63903004	Other	Male	0	2011
+ward	79700046	Other	Male	0	2011
+ward	42001011	Indian or Asian	Female	0	2011
+ward	93505008	White	Male	0	2011
+ward	54305013	Coloured	Male	0	2011
+ward	93302022	Coloured	Female	0	2011
+ward	21201017	White	Male	0	2011
+ward	52402007	Indian or Asian	Female	0	2011
+ward	52106023	White	Female	0	2011
+ward	21202021	Other	Female	0	2011
+ward	21308005	Coloured	Female	0	2011
+ward	83205018	Indian or Asian	Male	0	2011
+ward	21206008	Coloured	Female	0	2011
+ward	94704012	Indian or Asian	Male	0	2011
+ward	41603001	Indian or Asian	Female	0	2011
+ward	52901016	White	Male	0	2011
+ward	41602005	Other	Female	0	2011
+ward	54305004	Other	Male	0	2011
+ward	63803026	White	Male	0	2011
+ward	93404029	Other	Male	0	2011
+ward	52702014	Coloured	Male	0	2011
+ward	52806010	Other	Female	0	2011
+ward	30707002	White	Male	0	2011
+ward	21506023	White	Female	0	2011
+ward	52102001	Other	Male	0	2011
+ward	63703009	Indian or Asian	Female	0	2011
+ward	52605001	Other	Female	0	2011
+ward	94703020	White	Male	0	2011
+ward	94704008	White	Male	0	2011
+ward	74201042	Indian or Asian	Female	0	2011
+ward	10206009	Indian or Asian	Female	0	2011
+ward	94705024	Other	Female	0	2011
+ward	21208004	Other	Female	0	2011
+ward	63907002	Other	Male	0	2011
+ward	42001014	Indian or Asian	Female	0	2011
+ward	63904003	White	Female	0	2011
+ward	52402009	White	Male	0	2011
+ward	63904014	White	Male	0	2011
+ward	24402021	Other	Female	0	2011
+ward	21207014	Coloured	Male	0	2011
+ward	52404010	White	Male	0	2011
+ward	52904006	Other	Female	0	2011
+ward	93403010	Other	Female	0	2011
+ward	93304018	Coloured	Male	0	2011
+ward	52802022	Other	Female	0	2011
+ward	83001005	Other	Female	0	2011
+ward	74803007	Other	Female	0	2011
+ward	74804003	White	Female	0	2011
+ward	64004007	Coloured	Male	0	2011
+ward	52601001	Coloured	Female	0	2011
+ward	52603004	Coloured	Female	0	2011
+ward	24401025	White	Male	0	2011
+ward	63705009	White	Male	0	2011
+ward	83102020	Other	Female	0	2011
+ward	52205010	Other	Male	0	2011
+ward	93303008	White	Male	0	2011
+ward	52305004	Coloured	Female	0	2011
+ward	41904008	White	Female	0	2011
+ward	83002017	Indian or Asian	Male	0	2011
+ward	93301010	White	Female	0	2011
+ward	21307006	White	Female	0	2011
+ward	93502014	White	Male	0	2011
+ward	94703005	White	Male	0	2011
+ward	93605004	Other	Male	0	2011
+ward	21206001	Coloured	Male	0	2011
+ward	74203010	Other	Male	0	2011
+ward	21503031	Other	Female	0	2011
+ward	10404020	Indian or Asian	Female	0	2011
+ward	21506010	Other	Male	0	2011
+ward	41804031	Other	Female	0	2011
+ward	21207017	Other	Female	0	2011
+ward	52705002	Indian or Asian	Female	0	2011
+ward	21507020	Indian or Asian	Female	0	2011
+ward	93305014	Indian or Asian	Female	0	2011
+ward	19100040	Indian or Asian	Female	0	2011
+ward	52504001	Other	Male	0	2011
+ward	83105014	White	Female	0	2011
+ward	94704009	White	Male	0	2011
+ward	83003005	Other	Female	0	2011
+ward	83001017	Other	Female	0	2011
+ward	83205014	Indian or Asian	Female	0	2011
+ward	49400009	Indian or Asian	Female	0	2011
+ward	10302012	White	Female	0	2011
+ward	52106028	Other	Male	0	2011
+ward	52802008	Other	Male	0	2011
+ward	52701008	Indian or Asian	Male	0	2011
+ward	83106028	Other	Male	0	2011
+ward	63705024	White	Female	0	2011
+ward	79900076	White	Male	0	2011
+ward	21007001	Indian or Asian	Female	0	2011
+ward	52806001	Coloured	Female	0	2011
+ward	52401005	Other	Male	0	2011
+ward	93404005	Indian or Asian	Female	0	2011
+ward	93305004	Coloured	Female	0	2011
+ward	83102002	White	Male	0	2011
+ward	63705023	Coloured	Female	0	2011
+ward	83002001	White	Female	0	2011
+ward	83205003	White	Female	0	2011
+ward	59500003	Coloured	Female	0	2011
+ward	63702006	Coloured	Male	0	2011
+ward	93606008	Other	Female	0	2011
+ward	42004006	Indian or Asian	Female	0	2011
+ward	93304004	White	Female	0	2011
+ward	93301026	Other	Male	0	2011
+ward	93604002	Coloured	Female	0	2011
+ward	83204005	Indian or Asian	Male	0	2011
+ward	93301004	Other	Male	0	2011
+ward	21404005	White	Male	0	2011
+ward	10203008	White	Female	0	2011
+ward	41901004	Indian or Asian	Female	0	2011
+ward	52606004	Coloured	Male	0	2011
+ward	63702008	Other	Female	0	2011
+ward	93302024	Other	Female	0	2011
+ward	93502019	White	Male	0	2011
+ward	10203006	Other	Female	0	2011
+ward	74201035	Other	Female	0	2011
+ward	21201012	Coloured	Female	0	2011
+ward	74203009	Other	Female	0	2011
+ward	83006006	Indian or Asian	Male	0	2011
+ward	52603017	Indian or Asian	Female	0	2011
+ward	93403039	Coloured	Male	0	2011
+ward	10301008	White	Male	0	2011
+ward	19100041	Indian or Asian	Female	0	2011
+ward	93403007	White	Female	0	2011
+ward	54305019	White	Female	0	2011
+ward	42003004	White	Male	0	2011
+ward	63907015	Other	Male	0	2011
+ward	24401009	Indian or Asian	Female	0	2011
+ward	30706003	White	Female	0	2011
+ward	52402011	Other	Male	0	2011
+ward	49400009	Other	Female	0	2011
+ward	79800022	Indian or Asian	Male	0	2011
+ward	83204012	White	Female	0	2011
+ward	83205014	Other	Female	0	2011
+ward	93404005	Other	Female	0	2011
+ward	83102013	Other	Male	0	2011
+ward	52401005	Indian or Asian	Male	0	2011
+ward	29300020	Coloured	Female	0	2011
+ward	21506022	White	Female	0	2011
+ward	64004004	White	Male	0	2011
+ward	21007001	Other	Female	0	2011
+ward	41902007	Coloured	Male	0	2011
+ward	64003034	White	Female	0	2011
+ward	52504010	Coloured	Female	0	2011
+ward	21503019	White	Female	0	2011
+ward	30901017	White	Female	0	2011
+ward	63805009	White	Male	0	2011
+ward	52205029	White	Female	0	2011
+ward	52205003	Other	Female	0	2011
+ward	10403010	Other	Male	0	2011
+ward	93301004	Indian or Asian	Male	0	2011
+ward	41805003	White	Male	0	2011
+ward	93301026	Indian or Asian	Male	0	2011
+ward	42004006	Other	Female	0	2011
+ward	10203006	Indian or Asian	Female	0	2011
+ward	83106011	Coloured	Male	0	2011
+ward	83205036	Other	Male	0	2011
+ward	93302024	Indian or Asian	Female	0	2011
+ward	63702008	Indian or Asian	Female	0	2011
+ward	52201011	White	Female	0	2011
+ward	93505024	Indian or Asian	Male	0	2011
+ward	21201011	Coloured	Female	0	2011
+ward	52303004	White	Female	0	2011
+ward	93302021	White	Female	0	2011
+ward	63705011	Coloured	Male	0	2011
+ward	54304006	Coloured	Female	0	2011
+ward	52603017	Other	Female	0	2011
+ward	83002002	Other	Male	0	2011
+municipality	NC076	Indian or Asian	Female	0	2011
+ward	54302004	Coloured	Male	0	2011
+ward	74201035	Indian or Asian	Female	0	2011
+ward	83103016	Other	Female	0	2011
+ward	19100041	Other	Female	0	2011
+ward	93403008	Coloured	Male	0	2011
+ward	21305012	White	Male	0	2011
+ward	63803020	Other	Male	0	2011
+ward	63907015	Indian or Asian	Male	0	2011
+ward	94702001	White	Male	0	2011
+ward	63804003	Other	Male	0	2011
+ward	52901013	White	Female	0	2011
+ward	94702009	Coloured	Male	0	2011
+ward	63904009	White	Female	0	2011
+ward	42001014	Other	Female	0	2011
+ward	74801015	White	Male	0	2011
+ward	93404002	White	Male	0	2011
+ward	52402002	White	Female	0	2011
+ward	94702025	Other	Female	0	2011
+ward	83007029	White	Female	0	2011
+ward	24402021	Indian or Asian	Female	0	2011
+ward	94705030	Indian or Asian	Female	0	2011
+ward	54301004	Coloured	Male	0	2011
+ward	83001005	Indian or Asian	Female	0	2011
+ward	24402005	White	Male	0	2011
+ward	93403010	Indian or Asian	Female	0	2011
+ward	52903010	Coloured	Male	0	2011
+ward	52904006	Indian or Asian	Female	0	2011
+ward	52702018	White	Male	0	2011
+ward	21201007	White	Male	0	2011
+ward	93402001	White	Male	0	2011
+ward	52901017	White	Male	0	2011
+ward	24404018	White	Female	0	2011
+ward	93605004	Indian or Asian	Male	0	2011
+ward	63805011	Other	Female	0	2011
+ward	83004011	Other	Female	0	2011
+ward	21207017	Indian or Asian	Female	0	2011
+ward	52703002	Other	Female	0	2011
+ward	94703002	White	Female	0	2011
+ward	41904032	Indian or Asian	Male	0	2011
+ward	21503003	Other	Male	0	2011
+ward	24403016	Indian or Asian	Female	0	2011
+ward	83003005	Indian or Asian	Female	0	2011
+ward	93502018	Other	Male	0	2011
+ward	21505029	White	Male	0	2011
+ward	93302011	White	Male	0	2011
+ward	93504036	Coloured	Male	0	2011
+ward	21507020	Other	Female	0	2011
+ward	93305014	Other	Female	0	2011
+ward	93502005	White	Male	0	2011
+ward	94702004	Indian or Asian	Female	0	2011
+ward	93404034	Indian or Asian	Female	0	2011
+ward	83106008	Indian or Asian	Female	0	2011
+ward	63805010	Coloured	Male	0	2011
+ward	42003016	White	Male	0	2011
+ward	93504028	Other	Female	0	2011
+ward	21403006	White	Male	0	2011
+ward	21305019	Other	Male	0	2011
+ward	21201014	Other	Female	0	2011
+ward	10206002	Indian or Asian	Female	0	2011
+ward	21307018	Coloured	Male	0	2011
+ward	54305008	Other	Male	0	2011
+ward	41804022	Indian or Asian	Female	0	2011
+ward	93402008	White	Male	0	2011
+ward	93501017	Other	Female	0	2011
+ward	63904021	White	Female	0	2011
+ward	93601006	Indian or Asian	Male	0	2011
+ward	83204018	White	Male	0	2011
+ward	52605012	White	Female	0	2011
+ward	52104005	Other	Female	0	2011
+ward	74804014	Other	Female	0	2011
+ward	93502003	Other	Male	0	2011
+ward	52101002	Indian or Asian	Male	0	2011
+ward	52904007	Coloured	Female	0	2011
+ward	21503030	Coloured	Male	0	2011
+ward	79800043	Indian or Asian	Male	0	2011
+ward	52302014	Other	Female	0	2011
+ward	83202026	Other	Female	0	2011
+ward	63803023	Indian or Asian	Male	0	2011
+ward	30803013	Indian or Asian	Male	0	2011
+ward	93302027	White	Male	0	2011
+ward	10202001	White	Male	0	2011
+ward	52705008	White	Female	0	2011
+ward	52201006	Indian or Asian	Male	0	2011
+ward	41903009	Indian or Asian	Female	0	2011
+ward	24403026	Other	Male	0	2011
+ward	93607005	White	Male	0	2011
+ward	52801007	Other	Female	0	2011
+ward	93502015	White	Female	0	2011
+ward	93303031	Other	Female	0	2011
+ward	64002022	Other	Female	0	2011
+ward	93602007	White	Female	0	2011
+ward	93303016	Indian or Asian	Male	0	2011
+ward	94703018	White	Female	0	2011
+ward	93501002	Coloured	Male	0	2011
+ward	19100038	Indian or Asian	Female	0	2011
+ward	52105001	Other	Female	0	2011
+ward	52805003	Other	Male	0	2011
+ward	21207016	Indian or Asian	Male	0	2011
+ward	21503016	White	Male	0	2011
+ward	52101003	Other	Female	0	2011
+ward	93403004	Coloured	Male	0	2011
+ward	52103012	Indian or Asian	Female	0	2011
+ward	21505031	White	Male	0	2011
+ward	29300035	White	Female	0	2011
+ward	49400011	White	Female	0	2011
+ward	21204015	Indian or Asian	Female	0	2011
+ward	63804012	Other	Female	0	2011
+ward	74802010	Other	Male	0	2011
+ward	52103009	Indian or Asian	Female	0	2011
+ward	52504005	Other	Female	0	2011
+ward	52101006	White	Male	0	2011
+ward	52402013	White	Female	0	2011
+ward	63904025	Coloured	Male	0	2011
+ward	24403003	Indian or Asian	Female	0	2011
+ward	94704002	Coloured	Male	0	2011
+ward	93302001	Indian or Asian	Female	0	2011
+ward	21307020	Indian or Asian	Female	0	2011
+ward	93303003	Other	Female	0	2011
+ward	21505024	White	Female	0	2011
+ward	93301009	Indian or Asian	Female	0	2011
+ward	21307004	Coloured	Female	0	2011
+ward	52603003	Indian or Asian	Female	0	2011
+ward	42001005	White	Male	0	2011
+ward	79900040	Indian or Asian	Female	0	2011
+ward	52306008	Coloured	Male	0	2011
+ward	21206005	Coloured	Female	0	2011
+ward	21505030	White	Male	0	2011
+ward	79900038	Indian or Asian	Female	0	2011
+ward	24402013	Other	Male	0	2011
+ward	83205005	Other	Female	0	2011
+ward	52705019	Coloured	Female	0	2011
+ward	24403019	Other	Female	0	2011
+ward	21505016	Other	Female	0	2011
+ward	52504008	White	Male	0	2011
+ward	63804020	Other	Male	0	2011
+ward	93505011	White	Female	0	2011
+ward	52206002	White	Female	0	2011
+ward	21306013	Indian or Asian	Male	0	2011
+ward	29300027	Other	Female	0	2011
+ward	83103021	Other	Female	0	2011
+ward	21003002	Other	Female	0	2011
+ward	52804010	White	Male	0	2011
+ward	52106009	White	Female	0	2011
+ward	54301009	Other	Female	0	2011
+ward	54304001	Other	Male	0	2011
+ward	52701017	Coloured	Male	0	2011
+ward	10206005	Other	Male	0	2011
+ward	93302023	White	Male	0	2011
+ward	24403002	White	Female	0	2011
+ward	63803021	Other	Female	0	2011
+ward	52101003	Indian or Asian	Female	0	2011
+ward	74802010	Indian or Asian	Male	0	2011
+ward	52504005	Indian or Asian	Female	0	2011
+ward	21204002	Other	Female	0	2011
+ward	21506018	White	Female	0	2011
+ward	21204015	Other	Female	0	2011
+ward	24402020	Other	Female	0	2011
+ward	10302001	Other	Female	0	2011
+ward	93301009	Other	Female	0	2011
+ward	52302019	Other	Female	0	2011
+ward	21307020	Other	Female	0	2011
+ward	52801012	Coloured	Male	0	2011
+ward	93303003	Indian or Asian	Female	0	2011
+ward	24403003	Other	Female	0	2011
+ward	21402017	Coloured	Female	0	2011
+ward	93302001	Other	Female	0	2011
+ward	52101004	White	Male	0	2011
+ward	93505016	Coloured	Male	0	2011
+ward	93302012	Indian or Asian	Female	0	2011
+ward	83204008	Indian or Asian	Female	0	2011
+ward	52603016	Coloured	Male	0	2011
+ward	41804006	Indian or Asian	Male	0	2011
+ward	52603003	Other	Female	0	2011
+ward	83205005	Indian or Asian	Female	0	2011
+ward	24402013	Indian or Asian	Male	0	2011
+ward	49400014	White	Female	0	2011
+ward	79900038	Other	Female	0	2011
+ward	29200011	White	Female	0	2011
+ward	93303033	Coloured	Male	0	2011
+ward	52602006	Other	Male	0	2011
+ward	59500039	Indian or Asian	Female	0	2011
+ward	52602011	Coloured	Male	0	2011
+ward	63801002	Indian or Asian	Female	0	2011
+ward	93504004	White	Male	0	2011
+ward	29300017	White	Female	0	2011
+ward	83007009	Coloured	Female	0	2011
+ward	21202008	Indian or Asian	Female	0	2011
+ward	21307002	Coloured	Female	0	2011
+ward	21305002	White	Female	0	2011
+ward	52702009	Coloured	Female	0	2011
+ward	63701024	Other	Male	0	2011
+ward	93501021	Indian or Asian	Male	0	2011
+ward	21003002	Indian or Asian	Female	0	2011
+ward	21306013	Other	Male	0	2011
+ward	29300027	Indian or Asian	Female	0	2011
+ward	93502016	Indian or Asian	Male	0	2011
+ward	93302007	Coloured	Male	0	2011
+ward	94702004	Other	Female	0	2011
+ward	21504017	Coloured	Female	0	2011
+ward	21307003	White	Male	0	2011
+ward	52605002	White	Female	0	2011
+ward	94705014	Indian or Asian	Male	0	2011
+ward	83106008	Other	Female	0	2011
+ward	59500013	White	Female	0	2011
+ward	52402017	White	Female	0	2011
+ward	93404034	Other	Female	0	2011
+ward	21305019	Indian or Asian	Male	0	2011
+ward	94701011	Other	Male	0	2011
+ward	93505006	White	Male	0	2011
+ward	52205022	White	Female	0	2011
+ward	41804022	Other	Female	0	2011
+ward	93505015	Coloured	Female	0	2011
+ward	93403037	White	Female	0	2011
+ward	30705002	Other	Female	0	2011
+ward	52605019	Other	Female	0	2011
+ward	74801017	Other	Female	0	2011
+ward	93403012	Indian or Asian	Male	0	2011
+ward	52104005	Indian or Asian	Female	0	2011
+ward	63705013	Other	Female	0	2011
+ward	63903001	Other	Male	0	2011
+ward	93502003	Indian or Asian	Male	0	2011
+ward	93601006	Other	Male	0	2011
+ward	93501017	Indian or Asian	Female	0	2011
+ward	52302014	Indian or Asian	Female	0	2011
+ward	63703023	Other	Female	0	2011
+ward	93403001	Coloured	Male	0	2011
+ward	83205031	Coloured	Female	0	2011
+ward	79800043	Other	Male	0	2011
+ward	52605017	Coloured	Female	0	2011
+ward	52101002	Other	Male	0	2011
+ward	24403026	Indian or Asian	Male	0	2011
+ward	74803013	White	Female	0	2011
+ward	41903009	Other	Female	0	2011
+ward	21503022	White	Male	0	2011
+ward	24402019	Coloured	Female	0	2011
+ward	93303031	Indian or Asian	Female	0	2011
+ward	52305010	Indian or Asian	Female	0	2011
+ward	52801007	Indian or Asian	Female	0	2011
+ward	30901009	Other	Female	0	2011
+ward	52502029	Indian or Asian	Female	0	2011
+ward	24401015	Indian or Asian	Female	0	2011
+ward	63702013	White	Male	0	2011
+ward	54304003	Indian or Asian	Male	0	2011
+ward	41904005	Other	Female	0	2011
+ward	10404010	White	Male	0	2011
+ward	41901013	Other	Female	0	2011
+ward	41805005	White	Male	0	2011
+ward	52804022	Other	Male	0	2011
+ward	21201024	Indian or Asian	Male	0	2011
+ward	52502009	White	Female	0	2011
+ward	52303001	Other	Male	0	2011
+ward	83007026	Other	Female	0	2011
+ward	21006005	Indian or Asian	Male	0	2011
+ward	93304005	Indian or Asian	Female	0	2011
+ward	83004009	White	Male	0	2011
+ward	52803008	Other	Male	0	2011
+ward	52701016	Coloured	Male	0	2011
+ward	52106005	Other	Male	0	2011
+ward	54304004	Other	Female	0	2011
+ward	52502027	White	Male	0	2011
+ward	21401012	Indian or Asian	Female	0	2011
+ward	93301023	Indian or Asian	Female	0	2011
+ward	83101008	Indian or Asian	Female	0	2011
+ward	83105029	Coloured	Female	0	2011
+ward	83106031	White	Male	0	2011
+municipality	EC103	Indian or Asian	Female	0	2011
+ward	10402001	Other	Female	0	2011
+ward	21503020	White	Male	0	2011
+ward	83205033	Indian or Asian	Female	0	2011
+ward	94703025	Other	Female	0	2011
+ward	83105003	Coloured	Male	0	2011
+ward	94701004	Coloured	Female	0	2011
+ward	93303018	White	Male	0	2011
+ward	42003015	Other	Female	0	2011
+ward	63701006	White	Male	0	2011
+ward	79900105	Other	Male	0	2011
+ward	29200024	Coloured	Male	0	2011
+ward	94703021	Coloured	Male	0	2011
+ward	21207001	White	Male	0	2011
+ward	52901015	White	Male	0	2011
+ward	94705021	Coloured	Female	0	2011
+ward	93301017	Coloured	Female	0	2011
+ward	93302019	White	Female	0	2011
+ward	93303010	White	Male	0	2011
+ward	63802002	Other	Male	0	2011
+ward	10103002	White	Female	0	2011
+ward	52105002	Other	Female	0	2011
+ward	93303006	White	Female	0	2011
+ward	42004012	Indian or Asian	Female	0	2011
+ward	93305005	White	Female	0	2011
+ward	41904018	Coloured	Male	0	2011
+ward	63801010	Other	Female	0	2011
+ward	93501009	White	Male	0	2011
+ward	21202009	Indian or Asian	Male	0	2011
+ward	93304009	Indian or Asian	Male	0	2011
+ward	21306002	Coloured	Male	0	2011
+ward	63702035	Indian or Asian	Female	0	2011
+ward	74804027	Indian or Asian	Female	0	2011
+ward	94702026	Coloured	Male	0	2011
+ward	21204003	White	Female	0	2011
+ward	42003009	Indian or Asian	Female	0	2011
+ward	52806009	Indian or Asian	Male	0	2011
+ward	52801014	White	Male	0	2011
+ward	83202034	Indian or Asian	Female	0	2011
+ward	93505004	White	Female	0	2011
+ward	52804019	Other	Female	0	2011
+ward	63801008	White	Male	0	2011
+ward	21507007	Indian or Asian	Female	0	2011
+ward	52603020	Coloured	Female	0	2011
+ward	93301028	Other	Male	0	2011
+ward	83001019	White	Male	0	2011
+ward	64002011	Other	Male	0	2011
+ward	52901006	White	Female	0	2011
+ward	52802015	Indian or Asian	Male	0	2011
+ward	63902006	Indian or Asian	Male	0	2011
+ward	63703006	White	Female	0	2011
+ward	93503012	Other	Female	0	2011
+ward	63902008	Other	Female	0	2011
+ward	94703029	Coloured	Male	0	2011
+ward	10202002	Indian or Asian	Male	0	2011
+ward	93502012	Indian or Asian	Female	0	2011
+ward	93304016	Other	Male	0	2011
+ward	10404012	Other	Female	0	2011
+ward	74801007	White	Male	0	2011
+ward	93304006	Other	Male	0	2011
+ward	41902013	White	Female	0	2011
+ward	29200041	White	Female	0	2011
+ward	93502011	Indian or Asian	Female	0	2011
+ward	83004008	Other	Female	0	2011
+ward	94702023	Coloured	Male	0	2011
+ward	63801010	Indian or Asian	Female	0	2011
+ward	83202009	Other	Female	0	2011
+ward	93504007	Indian or Asian	Male	0	2011
+ward	41905004	Indian or Asian	Female	0	2011
+ward	93504031	Indian or Asian	Female	0	2011
+ward	52105002	Indian or Asian	Female	0	2011
+ward	42004012	Other	Female	0	2011
+ward	21202006	Other	Female	0	2011
+ward	63703025	Indian or Asian	Female	0	2011
+ward	52306010	White	Male	0	2011
+ward	74804027	Other	Female	0	2011
+ward	83007013	White	Female	0	2011
+ward	83202029	White	Female	0	2011
+ward	21202009	Other	Male	0	2011
+ward	93304009	Other	Male	0	2011
+ward	63702024	White	Female	0	2011
+ward	52304006	White	Male	0	2011
+ward	83202034	Other	Female	0	2011
+ward	74801010	White	Female	0	2011
+ward	42003009	Other	Female	0	2011
+ward	29300042	White	Female	0	2011
+ward	83105013	White	Male	0	2011
+ward	83007031	White	Male	0	2011
+ward	52303005	White	Female	0	2011
+ward	52802015	Other	Male	0	2011
+ward	93304016	Indian or Asian	Male	0	2011
+ward	83106017	White	Female	0	2011
+ward	52106013	Other	Female	0	2011
+ward	93502012	Other	Female	0	2011
+ward	63902008	Indian or Asian	Female	0	2011
+ward	93607001	Other	Male	0	2011
+ward	41902012	Coloured	Female	0	2011
+ward	94704013	Coloured	Male	0	2011
+ward	93304006	Indian or Asian	Male	0	2011
+ward	83004008	Indian or Asian	Female	0	2011
+ward	41902008	White	Male	0	2011
+ward	93403029	Coloured	Male	0	2011
+ward	41901013	Indian or Asian	Female	0	2011
+ward	21305021	White	Male	0	2011
+ward	10203021	White	Male	0	2011
+ward	41904005	Indian or Asian	Female	0	2011
+ward	19100039	Indian or Asian	Female	0	2011
+ward	54304003	Other	Male	0	2011
+ward	83007008	Other	Female	0	2011
+ward	30901009	Indian or Asian	Female	0	2011
+ward	63703020	White	Female	0	2011
+ward	24401015	Other	Female	0	2011
+ward	10304001	Indian or Asian	Female	0	2011
+ward	52502029	Other	Female	0	2011
+ward	10206004	Indian or Asian	Male	0	2011
+ward	83204010	White	Male	0	2011
+ward	52901002	Other	Female	0	2011
+ward	79700082	White	Female	0	2011
+ward	24402002	White	Female	0	2011
+ward	21304017	Coloured	Male	0	2011
+ward	83007026	Indian or Asian	Female	0	2011
+ward	83003001	White	Female	0	2011
+ward	83204019	White	Female	0	2011
+ward	10302007	Indian or Asian	Female	0	2011
+ward	83001010	White	Male	0	2011
+ward	93304005	Other	Female	0	2011
+ward	52305003	Indian or Asian	Female	0	2011
+ward	21401012	Other	Female	0	2011
+ward	93602011	Indian or Asian	Male	0	2011
+ward	74201040	White	Male	0	2011
+ward	52106005	Indian or Asian	Male	0	2011
+ward	21503017	Other	Female	0	2011
+ward	21505004	Other	Female	0	2011
+ward	41904016	Coloured	Female	0	2011
+ward	52302023	Coloured	Male	0	2011
+ward	83205029	Indian or Asian	Male	0	2011
+ward	93505014	Coloured	Female	0	2011
+municipality	EC103	Other	Female	0	2011
+ward	52702017	Indian or Asian	Female	0	2011
+ward	83101008	Other	Female	0	2011
+ward	93301023	Other	Female	0	2011
+ward	93302003	Other	Male	0	2011
+ward	93502006	White	Female	0	2011
+ward	42003005	White	Female	0	2011
+ward	42003015	Indian or Asian	Female	0	2011
+ward	94702005	Other	Female	0	2011
+ward	83205033	Other	Female	0	2011
+ward	93301029	White	Male	0	2011
+ward	63802002	Indian or Asian	Male	0	2011
+ward	42005002	Indian or Asian	Female	0	2011
+ward	52302017	Coloured	Female	0	2011
+ward	10203017	Indian or Asian	Female	0	2011
+ward	94705007	Indian or Asian	Female	0	2011
+ward	10203012	White	Female	0	2011
+ward	83201001	White	Female	0	2011
+ward	52904011	Other	Female	0	2011
+ward	52704001	Indian or Asian	Male	0	2011
+ward	21506023	Coloured	Female	0	2011
+ward	52702014	White	Male	0	2011
+ward	93502010	Indian or Asian	Female	0	2011
+ward	94705029	White	Male	0	2011
+ward	63906002	Other	Female	0	2011
+ward	21506026	Other	Male	0	2011
+ward	52901016	Coloured	Male	0	2011
+ward	83102009	Other	Female	0	2011
+ward	63907008	Other	Female	0	2011
+ward	21201003	White	Female	0	2011
+ward	93504014	White	Male	0	2011
+ward	63705028	White	Female	0	2011
+ward	24402012	Other	Female	0	2011
+ward	93501018	Indian or Asian	Female	0	2011
+ward	52302015	Other	Female	0	2011
+ward	52603007	Other	Female	0	2011
+ward	29200002	Indian or Asian	Male	0	2011
+ward	52702008	Other	Male	0	2011
+ward	94704008	Coloured	Male	0	2011
+ward	93403026	White	Male	0	2011
+ward	52705009	Coloured	Male	0	2011
+ward	93505020	Indian or Asian	Male	0	2011
+ward	52303009	Other	Male	0	2011
+ward	64003023	Other	Female	0	2011
+ward	30805001	Indian or Asian	Female	0	2011
+ward	24404010	Other	Female	0	2011
+ward	63902005	Indian or Asian	Male	0	2011
+ward	52705017	Coloured	Female	0	2011
+ward	93504002	Other	Female	0	2011
+ward	74201027	Indian or Asian	Male	0	2011
+ward	42004020	Indian or Asian	Female	0	2011
+ward	42005003	Coloured	Female	0	2011
+ward	93305011	White	Male	0	2011
+ward	21507034	Coloured	Male	0	2011
+ward	21206008	White	Female	0	2011
+ward	83002018	Coloured	Male	0	2011
+ward	21201017	Coloured	Male	0	2011
+ward	93302022	White	Female	0	2011
+ward	54305013	White	Male	0	2011
+ward	63907003	Indian or Asian	Female	0	2011
+ward	59500012	White	Male	0	2011
+ward	93505008	Coloured	Male	0	2011
+ward	21008005	Indian or Asian	Male	0	2011
+ward	30801001	Black African	Female	0	2011
+ward	21507030	White	Male	0	2011
+ward	24401008	Other	Female	0	2011
+ward	30904004	Indian or Asian	Female	0	2011
+ward	83102027	Other	Male	0	2011
+ward	21305018	Indian or Asian	Male	0	2011
+ward	93404036	White	Female	0	2011
+ward	24402022	White	Female	0	2011
+ward	83205001	Other	Male	0	2011
+ward	29300057	White	Male	0	2011
+ward	24402024	Coloured	Male	0	2011
+ward	93605005	Indian or Asian	Female	0	2011
+ward	21301001	Indian or Asian	Male	0	2011
+ward	42001007	Indian or Asian	Female	0	2011
+ward	52201010	Indian or Asian	Female	0	2011
+ward	21201026	Indian or Asian	Female	0	2011
+ward	52204003	Other	Female	0	2011
+ward	93607026	Indian or Asian	Female	0	2011
+ward	79700070	White	Female	0	2011
+ward	52401003	Other	Male	0	2011
+ward	74801002	White	Male	0	2011
+ward	52106008	Indian or Asian	Male	0	2011
+ward	93503005	Other	Female	0	2011
+ward	21304018	Other	Female	0	2011
+ward	63805002	Indian or Asian	Female	0	2011
+ward	21306006	White	Male	0	2011
+ward	93602010	White	Female	0	2011
+ward	93403034	Other	Female	0	2011
+ward	63805008	Indian or Asian	Female	0	2011
+ward	52201013	Coloured	Female	0	2011
+ward	34502006	White	Female	0	2011
+ward	93402002	Other	Female	0	2011
+ward	83106023	Coloured	Male	0	2011
+ward	52601008	Coloured	Female	0	2011
+ward	21401010	Other	Male	0	2011
+ward	83007012	Other	Female	0	2011
+ward	63803015	Other	Male	0	2011
+ward	83201004	Other	Female	0	2011
+ward	63702015	Indian or Asian	Female	0	2011
+ward	93503008	White	Female	0	2011
+ward	24403028	Other	Male	0	2011
+ward	41804019	Indian or Asian	Female	0	2011
+ward	52701015	White	Female	0	2011
+ward	34501009	White	Female	0	2011
+ward	83105024	White	Male	0	2011
+ward	30805002	Indian or Asian	Female	0	2011
+ward	93302005	Other	Female	0	2011
+ward	24402026	Coloured	Female	0	2011
+ward	94705019	Indian or Asian	Male	0	2011
+ward	29200023	Other	Female	0	2011
+ward	52804023	Coloured	Male	0	2011
+ward	63703038	White	Female	0	2011
+ward	63703021	White	Male	0	2011
+ward	21305018	Other	Male	0	2011
+ward	30904004	Other	Female	0	2011
+ward	30901005	Indian or Asian	Female	0	2011
+ward	24401008	Indian or Asian	Female	0	2011
+ward	41604002	Other	Female	0	2011
+ward	83005002	Coloured	Female	0	2011
+ward	64003001	Indian or Asian	Male	0	2011
+ward	52902024	Other	Female	0	2011
+ward	21005001	White	Female	0	2011
+ward	93501014	White	Male	0	2011
+ward	21206002	Other	Female	0	2011
+ward	21201026	Other	Female	0	2011
+ward	83005006	White	Female	0	2011
+ward	52602013	White	Male	0	2011
+ward	52106008	Other	Male	0	2011
+ward	21204011	White	Male	0	2011
+ward	63701012	White	Female	0	2011
+ward	94702022	White	Male	0	2011
+ward	83103005	Indian or Asian	Female	0	2011
+ward	83106001	Coloured	Male	0	2011
+ward	52803002	Coloured	Male	0	2011
+ward	79800020	White	Male	0	2011
+ward	63701009	Coloured	Male	0	2011
+ward	63906005	Other	Female	0	2011
+ward	21204005	Indian or Asian	Female	0	2011
+ward	94703012	Coloured	Female	0	2011
+ward	83002005	White	Male	0	2011
+ward	93504015	Coloured	Male	0	2011
+ward	93402002	Indian or Asian	Female	0	2011
+ward	52601006	Indian or Asian	Male	0	2011
+ward	94701015	White	Male	0	2011
+ward	93302020	White	Female	0	2011
+ward	21505027	Coloured	Male	0	2011
+ward	41804019	Other	Female	0	2011
+ward	24403028	Indian or Asian	Male	0	2011
+ward	29200017	White	Female	0	2011
+ward	63702015	Other	Female	0	2011
+ward	30901012	White	Female	0	2011
+ward	83103002	White	Female	0	2011
+ward	52206005	White	Female	0	2011
+ward	93302005	Indian or Asian	Female	0	2011
+ward	93505007	Other	Male	0	2011
+ward	52904011	Indian or Asian	Female	0	2011
+ward	52103015	White	Female	0	2011
+ward	52702001	Coloured	Female	0	2011
+ward	54303007	White	Male	0	2011
+ward	21505010	Coloured	Male	0	2011
+ward	93303009	Indian or Asian	Male	0	2011
+ward	63907008	Indian or Asian	Female	0	2011
+ward	52106014	White	Male	0	2011
+ward	93504029	White	Female	0	2011
+ward	93502010	Other	Female	0	2011
+ward	63906002	Indian or Asian	Female	0	2011
+ward	52702008	Indian or Asian	Male	0	2011
+ward	52603007	Indian or Asian	Female	0	2011
+ward	52704003	Other	Female	0	2011
+ward	21505001	White	Female	0	2011
+municipality	KZN285	Other	Female	0	2011
+ward	83106015	Other	Male	0	2011
+ward	24402012	Indian or Asian	Female	0	2011
+ward	64003023	Indian or Asian	Female	0	2011
+ward	29200038	White	Male	0	2011
+ward	93502008	Coloured	Male	0	2011
+ward	52802019	Other	Male	0	2011
+ward	24403009	Other	Female	0	2011
+ward	93404012	Coloured	Female	0	2011
+ward	52904004	Coloured	Female	0	2011
+ward	52404009	Coloured	Female	0	2011
+ward	63702036	White	Female	0	2011
+ward	24404010	Indian or Asian	Female	0	2011
+ward	41804030	Coloured	Male	0	2011
+ward	21503027	White	Male	0	2011
+ward	52804006	White	Female	0	2011
+ward	54303005	Indian or Asian	Female	0	2011
+ward	63703005	Coloured	Male	0	2011
+ward	29300016	White	Female	0	2011
+ward	10102006	Other	Female	0	2011
+ward	21302003	Other	Female	0	2011
+ward	24404005	White	Male	0	2011
+ward	93303001	White	Female	0	2011
+ward	63805007	White	Female	0	2011
+ward	93504002	Indian or Asian	Female	0	2011
+ward	21201030	White	Female	0	2011
+ward	52106011	White	Male	0	2011
+ward	94705001	Indian or Asian	Female	0	2011
+ward	21008005	Other	Male	0	2011
+ward	52305009	Indian or Asian	Male	0	2011
+ward	21304012	Other	Male	0	2011
+ward	21005008	Indian or Asian	Male	0	2011
+ward	74803009	White	Female	0	2011
+ward	93301001	Other	Male	0	2011
+ward	74802019	White	Male	0	2011
+ward	10405012	Indian or Asian	Female	0	2011
+ward	29200013	Other	Female	0	2011
+ward	52606005	Other	Male	0	2011
+ward	83106025	Other	Female	0	2011
+ward	29200039	Other	Female	0	2011
+ward	63803029	Indian or Asian	Female	0	2011
+ward	52903008	Other	Male	0	2011
+ward	93302011	Coloured	Male	0	2011
+ward	63805020	Indian or Asian	Female	0	2011
+ward	83205019	Coloured	Male	0	2011
+ward	93607004	Coloured	Male	0	2011
+ward	94702024	Other	Female	0	2011
+ward	94703002	Coloured	Female	0	2011
+ward	52802020	Indian or Asian	Male	0	2011
+ward	52806004	Indian or Asian	Female	0	2011
+ward	21504012	White	Female	0	2011
+ward	42001021	White	Female	0	2011
+ward	21305009	Other	Female	0	2011
+ward	29300014	Indian or Asian	Female	0	2011
+ward	83007029	Coloured	Female	0	2011
+ward	93404002	Coloured	Male	0	2011
+ward	93301003	Indian or Asian	Female	0	2011
+ward	94703030	Other	Female	0	2011
+ward	21505005	Indian or Asian	Male	0	2011
+ward	94702009	White	Male	0	2011
+ward	64002009	White	Female	0	2011
+ward	93403036	Other	Female	0	2011
+ward	21207002	White	Female	0	2011
+ward	54305015	White	Male	0	2011
+ward	93402001	Coloured	Male	0	2011
+ward	41902010	Other	Female	0	2011
+ward	52901017	Coloured	Male	0	2011
+ward	21201007	Coloured	Male	0	2011
+ward	93301025	Indian or Asian	Male	0	2011
+ward	83202036	White	Male	0	2011
+ward	52805006	Indian or Asian	Male	0	2011
+ward	52404006	Other	Male	0	2011
+ward	24402005	Coloured	Male	0	2011
+ward	63705031	Indian or Asian	Female	0	2011
+ward	54301004	White	Male	0	2011
+ward	94704007	Indian or Asian	Female	0	2011
+ward	54304006	White	Female	0	2011
+ward	63705011	White	Male	0	2011
+ward	93302021	Coloured	Female	0	2011
+ward	24404006	Indian or Asian	Female	0	2011
+ward	21201011	White	Female	0	2011
+ward	83106011	White	Male	0	2011
+ward	63802011	Other	Female	0	2011
+ward	42003012	Indian or Asian	Female	0	2011
+ward	64001004	Other	Female	0	2011
+ward	93303012	Indian or Asian	Female	0	2011
+ward	83003015	Indian or Asian	Female	0	2011
+ward	21305012	Coloured	Male	0	2011
+ward	83204022	White	Female	0	2011
+ward	21506022	Coloured	Female	0	2011
+ward	83205015	Other	Male	0	2011
+ward	21506003	Other	Female	0	2011
+ward	29300020	White	Female	0	2011
+ward	21207021	Indian or Asian	Male	0	2011
+ward	52101001	Other	Male	0	2011
+ward	52502020	White	Female	0	2011
+ward	74804010	Other	Male	0	2011
+ward	10405002	Indian or Asian	Female	0	2011
+ward	94705003	White	Male	0	2011
+ward	94703003	White	Male	0	2011
+ward	83102016	Indian or Asian	Male	0	2011
+ward	63805009	Coloured	Male	0	2011
+ward	94703016	Other	Female	0	2011
+ward	93502007	Coloured	Male	0	2011
+ward	63904011	White	Female	0	2011
+ward	93303026	Coloured	Male	0	2011
+ward	93502002	Other	Female	0	2011
+ward	52504010	White	Female	0	2011
+ward	63803017	Other	Female	0	2011
+ward	21507022	White	Female	0	2011
+ward	93403039	White	Male	0	2011
+ward	10403007	Other	Male	0	2011
+ward	21201012	White	Female	0	2011
+ward	63902003	White	Female	0	2011
+ward	83005015	White	Female	0	2011
+ward	94704007	Other	Female	0	2011
+ward	63904002	Indian or Asian	Male	0	2011
+ward	52606004	White	Male	0	2011
+ward	64003005	Other	Female	0	2011
+ward	24404006	Other	Female	0	2011
+ward	42003012	Other	Female	0	2011
+ward	21207012	Coloured	Male	0	2011
+ward	42003004	Coloured	Male	0	2011
+ward	83004005	Other	Female	0	2011
+ward	52606022	Indian or Asian	Female	0	2011
+ward	93605009	White	Female	0	2011
+ward	54305019	Coloured	Female	0	2011
+ward	83202037	White	Female	0	2011
+ward	93403007	Coloured	Female	0	2011
+ward	79900039	Indian or Asian	Female	0	2011
+ward	83003015	Other	Female	0	2011
+ward	74203005	White	Female	0	2011
+ward	63801009	White	Male	0	2011
+ward	93303012	Other	Female	0	2011
+ward	21207021	Other	Male	0	2011
+ward	52101001	Indian or Asian	Male	0	2011
+ward	52806001	White	Female	0	2011
+ward	21506003	Indian or Asian	Female	0	2011
+ward	83202023	White	Male	0	2011
+ward	52802018	Indian or Asian	Male	0	2011
+ward	63705024	Coloured	Female	0	2011
+ward	63801012	White	Male	0	2011
+ward	21003003	White	Male	0	2011
+ward	93501006	Other	Male	0	2011
+ward	93501005	Other	Female	0	2011
+ward	29300049	White	Male	0	2011
+ward	41904035	Coloured	Male	0	2011
+ward	42004004	Indian or Asian	Female	0	2011
+ward	52802010	White	Male	0	2011
+ward	21308003	Indian or Asian	Male	0	2011
+ward	93604002	White	Female	0	2011
+ward	93304004	Coloured	Female	0	2011
+ward	34501008	Other	Male	0	2011
+ward	63803017	Indian or Asian	Female	0	2011
+ward	94701014	Coloured	Female	0	2011
+ward	21203004	White	Female	0	2011
+ward	52701013	Other	Female	0	2011
+ward	83205003	Coloured	Female	0	2011
+ward	93502002	Indian or Asian	Female	0	2011
+ward	63705023	White	Female	0	2011
+ward	83103015	Other	Male	0	2011
+ward	63803030	White	Female	0	2011
+ward	21305005	White	Female	0	2011
+ward	63701026	Coloured	Female	0	2011
+ward	52502024	Coloured	Male	0	2011
+ward	21307006	Coloured	Female	0	2011
+ward	93301010	Coloured	Female	0	2011
+ward	41904008	Coloured	Female	0	2011
+ward	52305004	White	Female	0	2011
+ward	63803029	Other	Female	0	2011
+ward	52903008	Indian or Asian	Male	0	2011
+ward	93303008	Coloured	Male	0	2011
+ward	83106025	Indian or Asian	Female	0	2011
+ward	29200039	Indian or Asian	Female	0	2011
+ward	52606005	Indian or Asian	Male	0	2011
+ward	63705009	Coloured	Male	0	2011
+ward	94704009	Coloured	Male	0	2011
+ward	41603002	Indian or Asian	Female	0	2011
+ward	54305003	White	Male	0	2011
+ward	63805020	Other	Female	0	2011
+ward	52103003	Coloured	Male	0	2011
+ward	52802020	Other	Male	0	2011
+ward	52806004	Other	Female	0	2011
+ward	94702024	Indian or Asian	Female	0	2011
+ward	94704011	Coloured	Female	0	2011
+ward	21401009	Coloured	Female	0	2011
+ward	21207014	White	Male	0	2011
+ward	21305009	Indian or Asian	Female	0	2011
+ward	24402008	White	Female	0	2011
+ward	21505005	Other	Male	0	2011
+ward	52705014	Indian or Asian	Female	0	2011
+ward	93301003	Other	Female	0	2011
+ward	93403030	Coloured	Female	0	2011
+ward	93301025	Other	Male	0	2011
+ward	64004007	White	Male	0	2011
+ward	63705031	Other	Female	0	2011
+ward	52404006	Indian or Asian	Male	0	2011
+ward	52805006	Other	Male	0	2011
+ward	83106029	White	Female	0	2011
+ward	93301015	White	Female	0	2011
+ward	52404010	Coloured	Male	0	2011
+ward	83205025	Coloured	Male	0	2011
+ward	93302010	Indian or Asian	Female	0	2011
+ward	63804015	White	Female	0	2011
+ward	21504008	White	Male	0	2011
+ward	74804006	Other	Female	0	2011
+ward	21207007	White	Female	0	2011
+ward	63701002	Coloured	Male	0	2011
+ward	93303020	Other	Female	0	2011
+ward	21503025	Indian or Asian	Female	0	2011
+ward	52205015	Other	Male	0	2011
+ward	10203027	White	Male	0	2011
+ward	34502008	Coloured	Male	0	2011
+ward	83102003	White	Female	0	2011
+ward	41904031	Other	Male	0	2011
+ward	30702002	Indian or Asian	Male	0	2011
+ward	52201005	Other	Male	0	2011
+ward	93301027	Indian or Asian	Male	0	2011
+ward	79900075	Indian or Asian	Female	0	2011
+ward	93505023	Other	Female	0	2011
+ward	83103029	Other	Male	0	2011
+ward	83001025	White	Female	0	2011
+ward	52101005	Other	Female	0	2011
+ward	52904009	White	Female	0	2011
+ward	63801013	Other	Male	0	2011
+ward	64001003	Indian or Asian	Female	0	2011
+ward	93503014	White	Male	0	2011
+ward	21201020	Indian or Asian	Male	0	2011
+ward	41803003	Indian or Asian	Female	0	2011
+ward	63803003	Indian or Asian	Female	0	2011
+ward	42004018	Coloured	Female	0	2011
+ward	30803006	White	Male	0	2011
+ward	21503001	Indian or Asian	Female	0	2011
+ward	41801005	Other	Female	0	2011
+ward	74201029	White	Male	0	2011
+ward	79800075	Indian or Asian	Male	0	2011
+ward	52804021	Coloured	Male	0	2011
+ward	93501008	Coloured	Female	0	2011
+ward	21202015	Indian or Asian	Male	0	2011
+ward	64002012	Other	Female	0	2011
+ward	63805001	Indian or Asian	Female	0	2011
+ward	21006007	Indian or Asian	Female	0	2011
+ward	21305010	White	Female	0	2011
+ward	52702012	Coloured	Male	0	2011
+ward	21007004	Other	Female	0	2011
+ward	94701006	Coloured	Male	0	2011
+ward	52205004	Other	Female	0	2011
+ward	10407003	Indian or Asian	Male	0	2011
+ward	24404013	Indian or Asian	Female	0	2011
+ward	93302018	Other	Female	0	2011
+ward	29200007	Indian or Asian	Female	0	2011
+ward	63705008	Other	Female	0	2011
+ward	21202022	Indian or Asian	Male	0	2011
+ward	54305016	White	Male	0	2011
+ward	93301002	Coloured	Female	0	2011
+ward	41904003	Other	Female	0	2011
+ward	52901010	Coloured	Female	0	2011
+ward	30901029	Other	Male	0	2011
+ward	21207005	Other	Female	0	2011
+ward	21304013	Other	Female	0	2011
+ward	41903008	Indian or Asian	Female	0	2011
+ward	83003013	Indian or Asian	Female	0	2011
+ward	83106018	Coloured	Male	0	2011
+ward	52302007	Other	Male	0	2011
+ward	52603015	Coloured	Female	0	2011
+ward	63803031	White	Female	0	2011
+ward	41904009	Other	Male	0	2011
+ward	52105005	White	Female	0	2011
+ward	74201037	White	Female	0	2011
+ward	83104002	Other	Male	0	2011
+ward	52801009	Coloured	Female	0	2011
+ward	83201006	Other	Female	0	2011
+ward	29200049	Indian or Asian	Male	0	2011
+ward	63702001	Indian or Asian	Female	0	2011
+ward	79900006	White	Male	0	2011
+ward	21506020	Coloured	Female	0	2011
+ward	41801007	Other	Female	0	2011
+ward	21202012	Coloured	Female	0	2011
+ward	93402005	White	Female	0	2011
+ward	52806002	White	Female	0	2011
+ward	30803008	Indian or Asian	Female	0	2011
+ward	10205016	White	Male	0	2011
+ward	41902009	Other	Male	0	2011
+ward	63803022	Other	Female	0	2011
+ward	29300059	White	Male	0	2011
+ward	83202024	Indian or Asian	Female	0	2011
+ward	93403003	Coloured	Female	0	2011
+ward	74801012	White	Female	0	2011
+ward	83204007	Indian or Asian	Male	0	2011
+ward	93404016	Indian or Asian	Female	0	2011
+ward	79900017	Indian or Asian	Male	0	2011
+ward	79900067	White	Male	0	2011
+ward	54301010	Coloured	Male	0	2011
+ward	93504005	White	Male	0	2011
+ward	21304013	Indian or Asian	Female	0	2011
+ward	52704007	White	Male	0	2011
+ward	93404006	Indian or Asian	Female	0	2011
+ward	21207005	Indian or Asian	Female	0	2011
+ward	21505003	Other	Female	0	2011
+ward	21202022	Other	Male	0	2011
+ward	93303028	White	Male	0	2011
+ward	21304023	Indian or Asian	Female	0	2011
+ward	21206004	Coloured	Female	0	2011
+ward	79800031	Indian or Asian	Female	0	2011
+ward	79800051	White	Female	0	2011
+ward	41901017	White	Female	0	2011
+ward	52902006	Other	Female	0	2011
+ward	52302016	Coloured	Female	0	2011
+ward	30602003	Indian or Asian	Male	0	2011
+ward	21506004	Indian or Asian	Female	0	2011
+ward	42003007	Indian or Asian	Male	0	2011
+ward	52702004	Indian or Asian	Male	0	2011
+ward	52901005	Other	Male	0	2011
+ward	41902005	White	Female	0	2011
+ward	93505026	Coloured	Female	0	2011
+ward	93504011	Indian or Asian	Female	0	2011
+ward	41904009	Indian or Asian	Male	0	2011
+ward	52804020	Indian or Asian	Female	0	2011
+ward	74804016	Other	Male	0	2011
+ward	52901014	Indian or Asian	Male	0	2011
+ward	30701004	Indian or Asian	Male	0	2011
+ward	52402004	Other	Male	0	2011
+ward	52805002	Indian or Asian	Male	0	2011
+ward	93601010	White	Male	0	2011
+ward	41901012	White	Female	0	2011
+ward	41801007	Indian or Asian	Female	0	2011
+ward	93301007	White	Female	0	2011
+ward	74804013	Other	Female	0	2011
+ward	21304003	White	Male	0	2011
+ward	34501014	White	Female	0	2011
+ward	52106022	Coloured	Female	0	2011
+ward	52701014	Other	Female	0	2011
+ward	21206006	Other	Female	0	2011
+ward	93404016	Other	Female	0	2011
+ward	52606007	White	Male	0	2011
+ward	30903001	Other	Male	0	2011
+ward	52306006	Other	Female	0	2011
+ward	93301030	White	Male	0	2011
+ward	63903008	Other	Female	0	2011
+ward	34501005	White	Female	0	2011
+ward	83204028	Other	Female	0	2011
+ward	93302010	Other	Female	0	2011
+ward	21503025	Other	Female	0	2011
+ward	52902009	White	Male	0	2011
+ward	52205014	White	Female	0	2011
+ward	54305018	White	Male	0	2011
+ward	93303020	Indian or Asian	Female	0	2011
+ward	74804006	Indian or Asian	Female	0	2011
+ward	24403018	White	Male	0	2011
+ward	93301027	Other	Male	0	2011
+ward	93505023	Indian or Asian	Female	0	2011
+ward	59500020	White	Male	0	2011
+ward	52903015	White	Male	0	2011
+ward	64001003	Other	Female	0	2011
+ward	21505011	White	Female	0	2011
+ward	52803003	White	Female	0	2011
+ward	41805004	White	Female	0	2011
+ward	83204011	Coloured	Male	0	2011
+ward	63803003	Other	Female	0	2011
+ward	93305007	White	Male	0	2011
+ward	41803003	Other	Female	0	2011
+ward	21201020	Other	Male	0	2011
+ward	21202015	Other	Male	0	2011
+ward	93402009	White	Female	0	2011
+ward	83201009	Other	Female	0	2011
+ward	52804009	Indian or Asian	Male	0	2011
+ward	52302008	Coloured	Male	0	2011
+ward	21503001	Other	Female	0	2011
+ward	41801005	Indian or Asian	Female	0	2011
+ward	93404007	Coloured	Male	0	2011
+ward	94704010	Coloured	Female	0	2011
+ward	24404013	Other	Female	0	2011
+ward	52402012	Other	Male	0	2011
+ward	93504008	Indian or Asian	Female	0	2011
+ward	52704002	Indian or Asian	Male	0	2011
+ward	83204032	White	Female	0	2011
+ward	64002012	Indian or Asian	Female	0	2011
+ward	52201012	Coloured	Male	0	2011
+ward	24404017	Other	Male	0	2011
+ward	83103027	Indian or Asian	Female	0	2011
+ward	21206007	Indian or Asian	Female	0	2011
+ward	93403009	Coloured	Male	0	2011
+ward	29200007	Other	Female	0	2011
+ward	10502003	White	Male	0	2011
+ward	93302018	Indian or Asian	Female	0	2011
+ward	93403002	Other	Male	0	2011
+ward	10103005	Indian or Asian	Female	0	2011
+ward	41804015	White	Female	0	2011
+ward	52103014	Indian or Asian	Male	0	2011
+ward	21304007	Indian or Asian	Female	0	2011
+ward	21307007	Coloured	Male	0	2011
+ward	94705011	Other	Male	0	2011
+ward	41603004	Indian or Asian	Female	0	2011
+ward	52305008	White	Male	0	2011
+ward	52601002	White	Male	0	2011
+ward	52404015	White	Female	0	2011
+ward	83106027	Indian or Asian	Female	0	2011
+ward	52205006	Coloured	Female	0	2011
+ward	29200040	Indian or Asian	Female	0	2011
+ward	63904013	Coloured	Female	0	2011
+ward	24403013	White	Male	0	2011
+ward	42005009	Other	Female	0	2011
+ward	93501019	Indian or Asian	Female	0	2011
+ward	93302002	White	Male	0	2011
+ward	93607014	Other	Female	0	2011
+ward	52701006	Indian or Asian	Female	0	2011
+ward	93403016	Coloured	Female	0	2011
+ward	52502022	Other	Female	0	2011
+ward	24402025	Indian or Asian	Male	0	2011
+ward	83007011	Indian or Asian	Male	0	2011
+ward	21204020	Indian or Asian	Female	0	2011
+ward	94703031	Coloured	Male	0	2011
+ward	52903019	Other	Female	0	2011
+ward	79800012	White	Male	0	2011
+ward	83202003	Other	Female	0	2011
+ward	52902025	White	Female	0	2011
+ward	93607003	Other	Female	0	2011
+ward	93605007	Other	Female	0	2011
+ward	24404007	Coloured	Male	0	2011
+ward	52207007	Other	Male	0	2011
+ward	83201003	Indian or Asian	Female	0	2011
+ward	94705008	White	Female	0	2011
+ward	54305006	White	Male	0	2011
+ward	94703026	White	Male	0	2011
+ward	52205009	Other	Female	0	2011
+ward	49400038	Other	Male	0	2011
+ward	10206006	Indian or Asian	Female	0	2011
+ward	52606010	Indian or Asian	Female	0	2011
+ward	83002019	Coloured	Male	0	2011
+ward	83105031	White	Male	0	2011
+ward	63705015	Coloured	Male	0	2011
+ward	49400029	White	Male	0	2011
+ward	52405006	White	Male	0	2011
+ward	94703019	Indian or Asian	Female	0	2011
+ward	52806012	Indian or Asian	Male	0	2011
+ward	94705028	White	Male	0	2011
+ward	52705001	Indian or Asian	Female	0	2011
+ward	21204012	Coloured	Male	0	2011
+ward	21202019	Coloured	Female	0	2011
+ward	93504009	Other	Female	0	2011
+ward	21402007	Indian or Asian	Female	0	2011
+ward	93501015	White	Female	0	2011
+ward	94705002	Other	Male	0	2011
+ward	83205030	White	Male	0	2011
+ward	83106010	Coloured	Female	0	2011
+ward	21505023	Coloured	Female	0	2011
+ward	21202007	White	Male	0	2011
+ward	74201031	White	Male	0	2011
+ward	52603002	Other	Male	0	2011
+ward	21201022	Other	Female	0	2011
+ward	52404014	Indian or Asian	Female	0	2011
+ward	24402017	Indian or Asian	Male	0	2011
+ward	64003026	Other	Female	0	2011
+ward	83205028	Indian or Asian	Female	0	2011
+ward	74802004	Other	Male	0	2011
+ward	52402008	Coloured	Male	0	2011
+ward	93501003	Indian or Asian	Female	0	2011
+ward	30607002	Indian or Asian	Female	0	2011
+ward	10404024	Other	Female	0	2011
+ward	52106029	Indian or Asian	Female	0	2011
+ward	63705007	Indian or Asian	Female	0	2011
+ward	93303021	Indian or Asian	Female	0	2011
+ward	54302003	Coloured	Male	0	2011
+ward	29300019	Coloured	Female	0	2011
+ward	83205035	Other	Male	0	2011
+ward	21504015	White	Female	0	2011
+ward	64001002	White	Female	0	2011
+ward	21401016	Other	Male	0	2011
+ward	52606024	Other	Male	0	2011
+ward	83103018	White	Female	0	2011
+ward	52606010	Other	Female	0	2011
+ward	94702021	Coloured	Male	0	2011
+ward	21201005	Indian or Asian	Male	0	2011
+ward	93505003	Coloured	Male	0	2011
+ward	52804003	White	Male	0	2011
+ward	94703019	Other	Female	0	2011
+ward	21401014	White	Female	0	2011
+ward	52806012	Other	Male	0	2011
+ward	52804002	Other	Male	0	2011
+ward	52102002	Other	Female	0	2011
+ward	79800076	Indian or Asian	Female	0	2011
+ward	21402007	Other	Female	0	2011
+ward	79900020	White	Female	0	2011
+ward	21402013	Other	Male	0	2011
+ward	93302014	Coloured	Female	0	2011
+ward	83001002	White	Female	0	2011
+ward	52701002	White	Male	0	2011
+ward	64003007	White	Male	0	2011
+ward	52103013	Other	Female	0	2011
+ward	94705025	White	Female	0	2011
+ward	83205021	White	Male	0	2011
+ward	93606005	White	Female	0	2011
+ward	93502013	Coloured	Female	0	2011
+ward	52904008	Coloured	Male	0	2011
+ward	83205028	Other	Female	0	2011
+ward	24402017	Other	Male	0	2011
+ward	52404014	Other	Female	0	2011
+ward	21201022	Indian or Asian	Female	0	2011
+ward	93403027	Coloured	Male	0	2011
+ward	21308009	Coloured	Female	0	2011
+ward	29200020	White	Male	0	2011
+ward	63803019	White	Male	0	2011
+ward	63705007	Other	Female	0	2011
+ward	30607002	Other	Female	0	2011
+ward	63803013	Other	Female	0	2011
+ward	21304019	Other	Female	0	2011
+ward	63702012	White	Male	0	2011
+ward	74801013	White	Female	0	2011
+ward	21202024	Coloured	Female	0	2011
+ward	83103026	Indian or Asian	Male	0	2011
+ward	94703001	Coloured	Female	0	2011
+ward	93403002	Indian or Asian	Male	0	2011
+ward	93302028	White	Female	0	2011
+ward	41603004	Other	Female	0	2011
+ward	93302006	Coloured	Male	0	2011
+ward	52106027	Other	Female	0	2011
+ward	52805005	Other	Male	0	2011
+ward	29200040	Other	Female	0	2011
+ward	52701006	Other	Female	0	2011
+ward	93607014	Indian or Asian	Female	0	2011
+ward	29200042	Indian or Asian	Male	0	2011
+ward	24402025	Other	Male	0	2011
+ward	83202013	White	Female	0	2011
+ward	52502022	Indian or Asian	Female	0	2011
+ward	93402010	Coloured	Male	0	2011
+ward	52304001	White	Male	0	2011
+ward	52901007	White	Female	0	2011
+ward	74201023	Indian or Asian	Male	0	2011
+ward	93607003	Indian or Asian	Female	0	2011
+ward	21204020	Other	Female	0	2011
+ward	52502021	Other	Female	0	2011
+ward	93605007	Indian or Asian	Female	0	2011
+ward	34501001	Coloured	Male	0	2011
+ward	10205010	Other	Female	0	2011
+ward	52606006	White	Male	0	2011
+ward	83106022	White	Male	0	2011
+ward	83103022	Coloured	Male	0	2011
+ward	83001008	Coloured	Male	0	2011
+municipality	WC051	Indian or Asian	Male	0	2011
+ward	74203002	Other	Female	0	2011
+ward	10402008	Other	Female	0	2011
+ward	52605008	Coloured	Male	0	2011
+ward	21304001	Coloured	Female	0	2011
+ward	21505022	Other	Male	0	2011
+ward	93303004	Other	Female	0	2011
+ward	93606009	Indian or Asian	Male	0	2011
+ward	63705025	Other	Male	0	2011
+ward	94702019	Coloured	Female	0	2011
+ward	94705022	White	Male	0	2011
+ward	21504011	Other	Male	0	2011
+ward	21507029	Other	Male	0	2011
+ward	93607010	Coloured	Male	0	2011
+ward	52502026	White	Male	0	2011
+ward	93607022	Coloured	Male	0	2011
+ward	49400034	Other	Female	0	2011
+ward	29300004	White	Female	0	2011
+ward	21202023	Other	Male	0	2011
+ward	24401007	White	Female	0	2011
+ward	41904017	Indian or Asian	Male	0	2011
+ward	83005005	White	Male	0	2011
+ward	21401015	White	Female	0	2011
+ward	94705015	Coloured	Male	0	2011
+ward	21308007	Other	Female	0	2011
+ward	83003004	Other	Female	0	2011
+ward	52103002	Indian or Asian	Male	0	2011
+ward	93501016	Other	Female	0	2011
+ward	63703027	White	Female	0	2011
+ward	21402018	Coloured	Female	0	2011
+ward	83002004	Coloured	Female	0	2011
+ward	21507017	White	Female	0	2011
+ward	52103008	Coloured	Male	0	2011
+ward	63801005	Other	Female	0	2011
+ward	24401023	Indian or Asian	Female	0	2011
+ward	94702015	Indian or Asian	Male	0	2011
+ward	21507016	Other	Female	0	2011
+ward	41905008	Indian or Asian	Female	0	2011
+ward	30901013	Other	Female	0	2011
+ward	41904030	Coloured	Male	0	2011
+ward	93304002	Other	Male	0	2011
+ward	93404037	White	Female	0	2011
+ward	52703004	White	Male	0	2011
+ward	63703026	White	Male	0	2011
+ward	52606023	Coloured	Male	0	2011
+ward	21306001	Indian or Asian	Male	0	2011
+ward	63801003	Other	Male	0	2011
+ward	93505027	Coloured	Male	0	2011
+ward	93402006	Coloured	Male	0	2011
+ward	93301020	Other	Male	0	2011
+ward	52902014	Indian or Asian	Male	0	2011
+ward	63701008	Indian or Asian	Female	0	2011
+ward	21203005	Indian or Asian	Male	0	2011
+ward	94702008	Indian or Asian	Male	0	2011
+ward	83202012	Indian or Asian	Female	0	2011
+ward	93404019	White	Male	0	2011
+ward	24401010	Coloured	Male	0	2011
+ward	52804025	Other	Male	0	2011
+ward	21305017	Indian or Asian	Male	0	2011
+ward	63701022	Indian or Asian	Male	0	2011
+ward	21503012	White	Male	0	2011
+ward	52106021	Indian or Asian	Female	0	2011
+ward	41901008	Other	Female	0	2011
+ward	21505025	Other	Female	0	2011
+ward	74803005	Other	Female	0	2011
+ward	93501007	Other	Male	0	2011
+ward	52804008	White	Male	0	2011
+ward	83103024	Other	Male	0	2011
+ward	59500017	White	Female	0	2011
+ward	29200050	Indian or Asian	Male	0	2011
+ward	54305001	Other	Male	0	2011
+ward	24403005	Indian or Asian	Male	0	2011
+ward	52601004	White	Male	0	2011
+ward	52806005	Coloured	Male	0	2011
+ward	63804017	Indian or Asian	Female	0	2011
+ward	52205021	White	Female	0	2011
+ward	93305008	Indian or Asian	Female	0	2011
+ward	54301007	Other	Male	0	2011
+ward	64002017	White	Female	0	2011
+ward	21402012	White	Male	0	2011
+ward	93403038	Indian or Asian	Female	0	2011
+ward	52103010	Other	Female	0	2011
+ward	21402001	White	Male	0	2011
+ward	63705006	Indian or Asian	Female	0	2011
+ward	52202010	Other	Male	0	2011
+ward	93302015	Coloured	Male	0	2011
+ward	21506021	Coloured	Female	0	2011
+ward	94701002	Other	Male	0	2011
+ward	21206011	Coloured	Female	0	2011
+ward	94701009	White	Male	0	2011
+ward	83001020	Coloured	Female	0	2011
+ward	49400042	Indian or Asian	Female	0	2011
+ward	21402006	Indian or Asian	Female	0	2011
+ward	21401006	Other	Male	0	2011
+ward	63701020	Coloured	Male	0	2011
+ward	83001022	White	Female	0	2011
+ward	21306017	Indian or Asian	Female	0	2011
+ward	63805018	Other	Female	0	2011
+ward	41904014	Coloured	Female	0	2011
+ward	63801007	Indian or Asian	Female	0	2011
+ward	21202025	White	Female	0	2011
+ward	63801003	Indian or Asian	Male	0	2011
+ward	54305011	Indian or Asian	Male	0	2011
+ward	52201008	White	Male	0	2011
+ward	63903003	Other	Female	0	2011
+ward	93301020	Indian or Asian	Male	0	2011
+ward	41901005	White	Male	0	2011
+ward	74803005	Indian or Asian	Female	0	2011
+ward	41901008	Indian or Asian	Female	0	2011
+ward	21505025	Indian or Asian	Female	0	2011
+ward	54301001	Coloured	Male	0	2011
+ward	52904003	Coloured	Male	0	2011
+ward	94704003	Indian or Asian	Male	0	2011
+ward	24403005	Other	Male	0	2011
+ward	93503004	White	Male	0	2011
+ward	83103024	Indian or Asian	Male	0	2011
+ward	63705006	Other	Female	0	2011
+ward	49400007	Other	Male	0	2011
+ward	41804005	White	Male	0	2011
+ward	93305008	Other	Female	0	2011
+ward	41601004	Indian or Asian	Female	0	2011
+ward	63804017	Other	Female	0	2011
+ward	74201026	Other	Female	0	2011
+ward	94705006	White	Male	0	2011
+ward	83001004	White	Male	0	2011
+ward	52202010	Indian or Asian	Male	0	2011
+ward	52106015	Other	Male	0	2011
+ward	21402006	Other	Female	0	2011
+ward	93505013	Coloured	Female	0	2011
+ward	49400042	Other	Female	0	2011
+ward	41901018	White	Male	0	2011
+ward	52205011	White	Female	0	2011
+ward	52305007	White	Male	0	2011
+ward	63805018	Indian or Asian	Female	0	2011
+ward	83105016	Other	Female	0	2011
+ward	21306017	Other	Female	0	2011
+ward	52802006	White	Male	0	2011
+ward	54305002	Coloured	Male	0	2011
+ward	24402004	White	Female	0	2011
+ward	79700060	Other	Male	0	2011
+ward	21005007	White	Male	0	2011
+ward	93303004	Indian or Asian	Female	0	2011
+ward	93606009	Other	Male	0	2011
+ward	54305010	Coloured	Male	0	2011
+ward	52802012	Coloured	Female	0	2011
+ward	93605006	White	Male	0	2011
+ward	24404002	Other	Male	0	2011
+ward	52404013	Other	Female	0	2011
+ward	52404001	Other	Female	0	2011
+ward	10501003	Indian or Asian	Female	0	2011
+ward	21201015	Other	Male	0	2011
+ward	93402012	Coloured	Male	0	2011
+ward	93501001	Coloured	Female	0	2011
+ward	49400034	Indian or Asian	Female	0	2011
+ward	21202023	Indian or Asian	Male	0	2011
+ward	52103002	Other	Male	0	2011
+ward	93501016	Indian or Asian	Female	0	2011
+ward	74201019	White	Female	0	2011
+ward	30904002	White	Male	0	2011
+ward	63705021	Coloured	Male	0	2011
+ward	52902008	White	Male	0	2011
+ward	21506024	White	Male	0	2011
+ward	29200005	White	Female	0	2011
+ward	30607003	Indian or Asian	Male	0	2011
+ward	93607025	Coloured	Female	0	2011
+ward	63702019	Indian or Asian	Female	0	2011
+ward	93502004	White	Male	0	2011
+ward	63804011	Coloured	Male	0	2011
+ward	21504007	White	Male	0	2011
+ward	94702015	Other	Male	0	2011
+ward	24401023	Other	Female	0	2011
+ward	52605003	White	Female	0	2011
+ward	74802018	Coloured	Female	0	2011
+ward	63801005	Indian or Asian	Female	0	2011
+ward	52605020	Coloured	Female	0	2011
+ward	52804005	White	Female	0	2011
+ward	74201022	White	Female	0	2011
+ward	93502017	White	Male	0	2011
+ward	24403014	Other	Male	0	2011
+ward	24404012	White	Male	0	2011
+ward	10102004	Other	Female	0	2011
+ward	93304002	Indian or Asian	Male	0	2011
+ward	93505012	Indian or Asian	Female	0	2011
+ward	29300021	White	Female	0	2011
+ward	83102010	White	Female	0	2011
+ward	63701001	Other	Male	0	2011
+ward	21507016	Indian or Asian	Female	0	2011
+ward	59500096	Other	Female	0	2011
+ward	93601011	Other	Male	0	2011
+ward	83005007	Other	Female	0	2011
+ward	93404013	White	Male	0	2011
+ward	83106024	Coloured	Male	0	2011
+ward	21306009	Coloured	Female	0	2011
+ward	63801006	White	Female	0	2011
+ward	24401018	White	Female	0	2011
+ward	41803008	Other	Female	0	2011
+ward	52904001	Coloured	Female	0	2011
+ward	93505021	White	Male	0	2011
+ward	49400036	White	Female	0	2011
+ward	24401022	Other	Female	0	2011
+ward	52405003	Other	Male	0	2011
+ward	52901011	Coloured	Male	0	2011
+ward	63701007	Other	Male	0	2011
+ward	24403008	Indian or Asian	Female	0	2011
+ward	52804017	Other	Female	0	2011
+ward	74803003	Indian or Asian	Male	0	2011
+ward	83103006	Other	Female	0	2011
+ward	83103007	Other	Female	0	2011
+ward	93305010	Other	Male	0	2011
+ward	63705005	White	Male	0	2011
+ward	74804009	Other	Male	0	2011
+ward	52205008	White	Male	0	2011
+ward	24403030	White	Male	0	2011
+ward	83205007	Indian or Asian	Female	0	2011
+ward	42001015	Indian or Asian	Female	0	2011
+ward	49400013	White	Male	0	2011
+ward	63701018	Coloured	Male	0	2011
+ward	21507027	White	Female	0	2011
+ward	94702007	White	Female	0	2011
+ward	30901002	White	Female	0	2011
+ward	59500046	Other	Male	0	2011
+ward	74802022	White	Male	0	2011
+ward	21201016	Coloured	Male	0	2011
+ward	74802021	Indian or Asian	Female	0	2011
+ward	79900026	Indian or Asian	Female	0	2011
+ward	63701025	Coloured	Female	0	2011
+ward	63804001	White	Male	0	2011
+ward	83106012	Coloured	Male	0	2011
+ward	83105032	Coloured	Male	0	2011
+ward	21503018	Coloured	Female	0	2011
+ward	30901019	Indian or Asian	Female	0	2011
+ward	52606003	Other	Female	0	2011
+ward	42005006	White	Female	0	2011
+ward	63904023	Indian or Asian	Female	0	2011
+ward	24403015	Other	Male	0	2011
+ward	10102005	Indian or Asian	Female	0	2011
+ward	21201027	Indian or Asian	Male	0	2011
+ward	52106007	Indian or Asian	Female	0	2011
+ward	42003017	Other	Female	0	2011
+ward	52804013	White	Male	0	2011
+ward	52503004	Coloured	Male	0	2011
+ward	21304009	Indian or Asian	Male	0	2011
+ward	52702015	Indian or Asian	Female	0	2011
+ward	21202031	Coloured	Male	0	2011
+ward	21307013	Other	Male	0	2011
+ward	52404002	White	Female	0	2011
+ward	93301018	White	Male	0	2011
+ward	34502009	Indian or Asian	Male	0	2011
+ward	21207019	Indian or Asian	Male	0	2011
+ward	52701007	Indian or Asian	Male	0	2011
+ward	93504016	Indian or Asian	Female	0	2011
+ward	93402011	White	Female	0	2011
+ward	52606001	Indian or Asian	Female	0	2011
+ward	52402001	Indian or Asian	Male	0	2011
+ward	52903011	Other	Male	0	2011
+ward	21307016	Other	Female	0	2011
+ward	93301024	Other	Male	0	2011
+ward	52802027	White	Female	0	2011
+ward	42003001	Other	Female	0	2011
+ward	52702006	Other	Female	0	2011
+ward	42004007	Coloured	Male	0	2011
+ward	21204013	White	Female	0	2011
+ward	52402015	White	Female	0	2011
+ward	83205010	Other	Male	0	2011
+ward	52302005	White	Female	0	2011
+ward	63802010	Indian or Asian	Female	0	2011
+ward	24401005	Other	Female	0	2011
+ward	52803006	Other	Male	0	2011
+ward	74201024	White	Female	0	2011
+ward	21504016	White	Male	0	2011
+ward	21202011	White	Female	0	2011
+ward	30901003	White	Male	0	2011
+ward	41904013	White	Male	0	2011
+ward	83205004	Indian or Asian	Female	0	2011
+ward	52104009	Other	Female	0	2011
+ward	24404016	Coloured	Female	0	2011
+ward	10301012	Other	Female	0	2011
+ward	21504018	Coloured	Female	0	2011
+ward	93602006	Indian or Asian	Female	0	2011
+ward	83205024	Indian or Asian	Female	0	2011
+ward	52704006	Indian or Asian	Female	0	2011
+ward	21507032	Indian or Asian	Male	0	2011
+ward	29300024	Coloured	Male	0	2011
+ward	94705020	Indian or Asian	Male	0	2011
+ward	52305006	Indian or Asian	Female	0	2011
+ward	10204013	Indian or Asian	Male	0	2011
+ward	24401016	Other	Female	0	2011
+ward	83001016	White	Female	0	2011
+ward	94703014	Indian or Asian	Female	0	2011
+ward	83205020	Coloured	Male	0	2011
+ward	93505025	Coloured	Female	0	2011
+ward	21307016	Indian or Asian	Female	0	2011
+ward	42001012	Coloured	Female	0	2011
+ward	52402001	Other	Male	0	2011
+ward	52606001	Other	Female	0	2011
+ward	52902027	White	Male	0	2011
+ward	21307017	Indian or Asian	Male	0	2011
+ward	52802016	Indian or Asian	Male	0	2011
+ward	52703001	Coloured	Male	0	2011
+ward	52603014	Coloured	Female	0	2011
+ward	21203002	White	Female	0	2011
+ward	21201021	White	Female	0	2011
+ward	52402006	Coloured	Female	0	2011
+ward	52803006	Indian or Asian	Male	0	2011
+ward	93303032	White	Male	0	2011
+ward	63802010	Other	Female	0	2011
+ward	52602008	Coloured	Female	0	2011
+ward	83205004	Other	Female	0	2011
+ward	52104009	Indian or Asian	Female	0	2011
+ward	83205024	Other	Female	0	2011
+ward	34502010	Indian or Asian	Female	0	2011
+ward	93305003	White	Male	0	2011
+ward	83106026	Coloured	Female	0	2011
+ward	93602006	Other	Female	0	2011
+ward	21503002	White	Female	0	2011
+ward	93302025	Indian or Asian	Male	0	2011
+ward	93404015	Indian or Asian	Male	0	2011
+ward	52305006	Other	Female	0	2011
+ward	93504030	White	Female	0	2011
+ward	63703030	Coloured	Female	0	2011
+ward	94705020	Other	Male	0	2011
+ward	63804018	White	Male	0	2011
+ward	21507032	Other	Male	0	2011
+ward	83106019	Coloured	Male	0	2011
+ward	21306007	Coloured	Female	0	2011
+ward	94703014	Other	Female	0	2011
+ward	24401016	Indian or Asian	Female	0	2011
+ward	52302026	Indian or Asian	Female	0	2011
+ward	10204013	Other	Male	0	2011
+ward	52103017	Coloured	Male	0	2011
+ward	21301002	White	Female	0	2011
+ward	29200048	Indian or Asian	Male	0	2011
+ward	29200008	White	Female	0	2011
+ward	10503006	White	Male	0	2011
+ward	94705017	White	Male	0	2011
+ward	83005007	Indian or Asian	Female	0	2011
+ward	21503005	Coloured	Female	0	2011
+ward	83103007	Indian or Asian	Female	0	2011
+ward	52303003	Coloured	Female	0	2011
+ward	21207013	Coloured	Female	0	2011
+ward	74804009	Indian or Asian	Male	0	2011
+municipality	NC081	Other	Female	0	2011
+ward	41902002	Indian or Asian	Male	0	2011
+ward	21304014	White	Female	0	2011
+ward	42001015	Other	Female	0	2011
+ward	52404016	Coloured	Female	0	2011
+ward	52204004	Coloured	Female	0	2011
+ward	52901009	White	Male	0	2011
+ward	52603012	Coloured	Female	0	2011
+ward	21204001	Other	Female	0	2011
+ward	93503009	Indian or Asian	Female	0	2011
+ward	83201008	Indian or Asian	Female	0	2011
+ward	52205012	White	Male	0	2011
+ward	74802021	Other	Female	0	2011
+ward	63904023	Other	Female	0	2011
+ward	30901011	White	Male	0	2011
+ward	30901019	Other	Female	0	2011
+ward	52606011	Indian or Asian	Male	0	2011
+ward	83103020	Indian or Asian	Female	0	2011
+ward	63703029	White	Male	0	2011
+ward	52304002	White	Female	0	2011
+ward	52106007	Other	Female	0	2011
+ward	52502007	White	Male	0	2011
+ward	21201027	Other	Male	0	2011
+ward	10102005	Other	Female	0	2011
+ward	21402015	Other	Male	0	2011
+ward	93604003	Coloured	Male	0	2011
+ward	83102008	White	Male	0	2011
+ward	21207003	Indian or Asian	Male	0	2011
+ward	63702005	Coloured	Female	0	2011
+ward	21207019	Other	Male	0	2011
+ward	52701007	Other	Male	0	2011
+ward	34502009	Other	Male	0	2011
+ward	24402014	Other	Female	0	2011
+ward	21307013	Indian or Asian	Male	0	2011
+ward	52702015	Other	Female	0	2011
+ward	21402004	White	Male	0	2011
+ward	93404007	White	Male	0	2011
+ward	83007003	White	Female	0	2011
+ward	83106020	Coloured	Male	0	2011
+ward	52302008	White	Male	0	2011
+ward	21204019	Indian or Asian	Male	0	2011
+ward	42004015	Other	Male	0	2011
+ward	52302013	Indian or Asian	Female	0	2011
+ward	93402009	Coloured	Female	0	2011
+ward	30703002	White	Male	0	2011
+ward	74804017	Other	Female	0	2011
+ward	93305007	Coloured	Male	0	2011
+ward	41904034	Other	Male	0	2011
+ward	93303002	Other	Female	0	2011
+ward	94702003	Coloured	Male	0	2011
+ward	30702001	Indian or Asian	Female	0	2011
+ward	74804018	Other	Female	0	2011
+ward	94705005	Indian or Asian	Male	0	2011
+ward	63904004	Indian or Asian	Male	0	2011
+ward	64004001	White	Female	0	2011
+ward	63804009	Indian or Asian	Female	0	2011
+ward	52802013	White	Male	0	2011
+ward	93403009	White	Male	0	2011
+ward	52502031	Other	Female	0	2011
+ward	93404032	Coloured	Male	0	2011
+ward	52303007	Other	Female	0	2011
+ward	21505026	Other	Female	0	2011
+ward	52405004	Other	Male	0	2011
+ward	59500083	Other	Female	0	2011
+ward	79800042	White	Male	0	2011
+ward	52104004	Other	Male	0	2011
+ward	93505005	Indian or Asian	Female	0	2011
+ward	94704010	White	Female	0	2011
+ward	41602007	Other	Male	0	2011
+ward	54305018	Coloured	Male	0	2011
+ward	41801008	Other	Female	0	2011
+ward	21507028	Indian or Asian	Female	0	2011
+ward	94704005	Indian or Asian	Female	0	2011
+ward	83102032	Other	Female	0	2011
+ward	93403017	Other	Female	0	2011
+ward	10403001	White	Male	0	2011
+ward	19100093	White	Female	0	2011
+ward	93301030	Coloured	Male	0	2011
+ward	21202013	Indian or Asian	Male	0	2011
+ward	21503011	Other	Male	0	2011
+ward	24403025	Other	Male	0	2011
+ward	52903015	Coloured	Male	0	2011
+ward	41904025	White	Male	0	2011
+ward	21008001	Indian or Asian	Female	0	2011
+ward	83106009	White	Female	0	2011
+ward	93304010	Coloured	Male	0	2011
+ward	63702033	Other	Female	0	2011
+ward	52903007	Other	Male	0	2011
+ward	79700005	White	Female	0	2011
+ward	21404002	Indian or Asian	Female	0	2011
+ward	93301007	Coloured	Female	0	2011
+ward	59500087	White	Female	0	2011
+ward	93601010	Coloured	Male	0	2011
+ward	21207009	Indian or Asian	Female	0	2011
+ward	83106007	Indian or Asian	Female	0	2011
+ward	52306011	Indian or Asian	Male	0	2011
+ward	52606012	Coloured	Male	0	2011
+ward	93505019	Indian or Asian	Male	0	2011
+ward	10203016	Indian or Asian	Male	0	2011
+ward	54305009	Indian or Asian	Male	0	2011
+ward	52606007	Coloured	Male	0	2011
+ward	74201030	Indian or Asian	Female	0	2011
+ward	21505007	Indian or Asian	Female	0	2011
+ward	93602003	Indian or Asian	Female	0	2011
+ward	10103006	Other	Male	0	2011
+ward	41805007	Indian or Asian	Female	0	2011
+ward	93305002	Coloured	Male	0	2011
+ward	52106022	White	Female	0	2011
+ward	30602004	Indian or Asian	Male	0	2011
+ward	93302017	Indian or Asian	Female	0	2011
+ward	63703002	White	Male	0	2011
+ward	83105002	Other	Female	0	2011
+ward	21304003	Coloured	Male	0	2011
+ward	21506013	Indian or Asian	Female	0	2011
+ward	83103001	Indian or Asian	Male	0	2011
+ward	41903002	Coloured	Female	0	2011
+ward	93303034	Coloured	Male	0	2011
+ward	63701023	White	Female	0	2011
+ward	42005004	Other	Male	0	2011
+ward	21203007	Other	Male	0	2011
+ward	21206004	White	Female	0	2011
+ward	24402011	Other	Female	0	2011
+ward	24401004	Other	Female	0	2011
+ward	93303028	Coloured	Male	0	2011
+ward	52702019	Coloured	Male	0	2011
+ward	93301005	Other	Female	0	2011
+ward	74801008	White	Female	0	2011
+ward	52704007	Coloured	Male	0	2011
+ward	52806007	Indian or Asian	Male	0	2011
+ward	54301010	White	Male	0	2011
+ward	24404014	Indian or Asian	Female	0	2011
+ward	93505026	White	Female	0	2011
+ward	41902005	Coloured	Female	0	2011
+ward	74801032	Indian or Asian	Male	0	2011
+ward	29300023	White	Female	0	2011
+ward	83203007	White	Male	0	2011
+ward	79900021	White	Female	0	2011
+ward	74802001	Other	Male	0	2011
+ward	94703027	White	Male	0	2011
+ward	52302016	White	Female	0	2011
+ward	52602007	Indian or Asian	Female	0	2011
+ward	52105004	Other	Female	0	2011
+ward	74803015	White	Male	0	2011
+ward	63803001	Other	Female	0	2011
+ward	41901017	Coloured	Female	0	2011
+ward	52306011	Other	Male	0	2011
+ward	83106007	Other	Female	0	2011
+ward	21207009	Other	Female	0	2011
+ward	21202012	White	Female	0	2011
+ward	93402005	Coloured	Female	0	2011
+ward	83007027	White	Male	0	2011
+ward	93504017	Indian or Asian	Female	0	2011
+ward	21506020	White	Female	0	2011
+ward	93403033	Coloured	Male	0	2011
+ward	63705010	White	Female	0	2011
+ward	21505007	Other	Female	0	2011
+ward	29300036	White	Female	0	2011
+ward	74201030	Other	Female	0	2011
+ward	21201006	Other	Male	0	2011
+ward	49400035	Other	Female	0	2011
+ward	74801012	Coloured	Female	0	2011
+ward	59500040	Other	Female	0	2011
+ward	54305009	Other	Male	0	2011
+ward	93403003	White	Female	0	2011
+ward	21506013	Other	Female	0	2011
+ward	83103001	Other	Male	0	2011
+ward	24403012	Coloured	Female	0	2011
+ward	64002002	Other	Female	0	2011
+ward	24402011	Indian or Asian	Female	0	2011
+ward	93404024	White	Female	0	2011
+ward	83106018	White	Male	0	2011
+ward	41905006	Indian or Asian	Female	0	2011
+ward	24401024	Coloured	Male	0	2011
+ward	94703022	Other	Male	0	2011
+ward	93607023	Coloured	Male	0	2011
+ward	21307011	Coloured	Male	0	2011
+ward	52806007	Other	Male	0	2011
+ward	52901010	White	Female	0	2011
+ward	93301002	White	Female	0	2011
+ward	93301005	Indian or Asian	Female	0	2011
+ward	52801009	White	Female	0	2011
+ward	74801032	Other	Male	0	2011
+ward	83001009	White	Male	0	2011
+ward	52105005	Coloured	Female	0	2011
+ward	24404014	Other	Female	0	2011
+ward	63803001	Indian or Asian	Female	0	2011
+ward	83105005	White	Male	0	2011
+ward	42004008	White	Female	0	2011
+ward	30903004	Other	Female	0	2011
+ward	63802005	White	Female	0	2011
+ward	93501008	White	Female	0	2011
+ward	52302013	Other	Female	0	2011
+ward	42004015	Indian or Asian	Male	0	2011
+ward	52804021	White	Male	0	2011
+ward	21204019	Other	Male	0	2011
+ward	30702001	Other	Female	0	2011
+ward	93601007	Coloured	Male	0	2011
+ward	93303002	Indian or Asian	Female	0	2011
+ward	93402007	Indian or Asian	Male	0	2011
+ward	52502031	Indian or Asian	Female	0	2011
+ward	52402016	Indian or Asian	Female	0	2011
+ward	93505005	Other	Female	0	2011
+ward	30904001	Indian or Asian	Female	0	2011
+ward	52201004	Coloured	Male	0	2011
+ward	94701006	White	Male	0	2011
+ward	21505026	Indian or Asian	Female	0	2011
+ward	10102002	Indian or Asian	Male	0	2011
+ward	21305010	Coloured	Female	0	2011
+ward	52702012	White	Male	0	2011
+ward	94702012	Coloured	Male	0	2011
+ward	34502008	White	Male	0	2011
+ward	21507028	Other	Female	0	2011
+ward	41801008	Indian or Asian	Female	0	2011
+ward	10205017	Indian or Asian	Male	0	2011
+ward	63701002	White	Male	0	2011
+ward	21504008	Coloured	Male	0	2011
+ward	54305014	Other	Male	0	2011
+ward	83205025	White	Male	0	2011
+ward	24403025	Indian or Asian	Male	0	2011
+ward	21008001	Other	Female	0	2011
+ward	93503014	Coloured	Male	0	2011
+ward	21202013	Other	Male	0	2011
+ward	52904009	Coloured	Female	0	2011
+ward	83001025	Coloured	Female	0	2011
+ward	83006005	Other	Male	0	2011
+ward	52903007	Indian or Asian	Male	0	2011
+ward	52605014	Indian or Asian	Female	0	2011
+ward	52806008	Indian or Asian	Male	0	2011
+ward	30903003	Other	Female	0	2011
+ward	30704003	Indian or Asian	Male	0	2011
+ward	24403011	Other	Female	0	2011
+ward	21308002	White	Male	0	2011
+ward	74802015	White	Male	0	2011
+ward	93402010	White	Male	0	2011
+ward	94703015	Indian or Asian	Male	0	2011
+ward	10104004	White	Female	0	2011
+ward	52304005	Other	Female	0	2011
+ward	64002010	Indian or Asian	Male	0	2011
+ward	52101008	Indian or Asian	Female	0	2011
+ward	83001008	White	Male	0	2011
+ward	52205005	Other	Male	0	2011
+ward	83103022	White	Male	0	2011
+ward	93303027	Other	Female	0	2011
+ward	52903004	Indian or Asian	Male	0	2011
+ward	52606006	Coloured	Male	0	2011
+ward	21203001	Indian or Asian	Male	0	2011
+ward	21303003	Indian or Asian	Female	0	2011
+ward	21202020	Indian or Asian	Male	0	2011
+ward	52806014	Other	Female	0	2011
+ward	24404004	Other	Female	0	2011
+ward	83105001	White	Male	0	2011
+ward	83202011	Other	Male	0	2011
+ward	93302006	White	Male	0	2011
+ward	52303008	Coloured	Male	0	2011
+ward	93403018	Indian or Asian	Female	0	2011
+ward	93302028	Coloured	Female	0	2011
+ward	24403007	Indian or Asian	Male	0	2011
+ward	94702028	Indian or Asian	Female	0	2011
+ward	21505006	Other	Male	0	2011
+ward	94703001	White	Female	0	2011
+ward	21206013	White	Female	0	2011
+ward	21202003	Other	Female	0	2011
+ward	83205006	Indian or Asian	Female	0	2011
+ward	83001013	White	Male	0	2011
+ward	52404003	Other	Male	0	2011
+ward	83106006	White	Male	0	2011
+ward	52504009	Other	Female	0	2011
+ward	21506017	Other	Male	0	2011
+ward	93503006	White	Female	0	2011
+ward	21507010	Indian or Asian	Male	0	2011
+ward	21402005	Coloured	Female	0	2011
+ward	63702031	Other	Female	0	2011
+ward	52404007	Indian or Asian	Female	0	2011
+ward	10104011	Other	Female	0	2011
+ward	63803019	Coloured	Male	0	2011
+ward	21308009	White	Female	0	2011
+ward	21403003	White	Male	0	2011
+ward	63907005	Indian or Asian	Female	0	2011
+ward	21507026	Other	Female	0	2011
+ward	52803004	Indian or Asian	Male	0	2011
+ward	83205008	Coloured	Male	0	2011
+ward	93607024	Other	Female	0	2011
+ward	93502013	White	Female	0	2011
+ward	42001022	Other	Female	0	2011
+ward	93303007	White	Female	0	2011
+ward	52302009	Indian or Asian	Male	0	2011
+ward	10205002	Indian or Asian	Female	0	2011
+ward	52404008	Other	Female	0	2011
+ward	42003020	Other	Female	0	2011
+ward	24404011	Other	Female	0	2011
+ward	21206009	White	Female	0	2011
+ward	93601002	Other	Male	0	2011
+ward	21506016	Indian or Asian	Male	0	2011
+ward	93607017	Indian or Asian	Female	0	2011
+ward	21401014	Coloured	Female	0	2011
+ward	52504004	Coloured	Male	0	2011
+ward	10405005	White	Female	0	2011
+ward	52102004	Other	Female	0	2011
+ward	52404005	White	Male	0	2011
+ward	93505003	White	Male	0	2011
+ward	63705020	Other	Male	0	2011
+ward	79700007	White	Male	0	2011
+ward	94702021	White	Male	0	2011
+ward	83205021	Coloured	Male	0	2011
+ward	74801014	Other	Female	0	2011
+ward	21307005	Coloured	Male	0	2011
+ward	21201031	Indian or Asian	Male	0	2011
+ward	52502023	Other	Female	0	2011
+ward	93606006	Other	Female	0	2011
+ward	21304010	White	Male	0	2011
+ward	52502006	Other	Male	0	2011
+ward	83001002	Coloured	Female	0	2011
+ward	83003018	Indian or Asian	Female	0	2011
+ward	41604004	Other	Female	0	2011
+ward	94705012	White	Female	0	2011
+ward	83005001	Indian or Asian	Female	0	2011
+ward	52502008	White	Male	0	2011
+ward	79700101	Other	Female	0	2011
+ward	93404011	Indian or Asian	Female	0	2011
+ward	52602002	Indian or Asian	Male	0	2011
+ward	94701010	Coloured	Male	0	2011
+ward	52504007	Other	Female	0	2011
+ward	52207002	White	Male	0	2011
+ward	52805004	White	Female	0	2011
+ward	79700050	White	Female	0	2011
+ward	83205002	Indian or Asian	Male	0	2011
+ward	52404007	Other	Female	0	2011
+ward	83105010	White	Male	0	2011
+ward	21504002	Other	Male	0	2011
+ward	21302005	Other	Male	0	2011
+ward	63804007	Indian or Asian	Female	0	2011
+ward	52402008	White	Male	0	2011
+ward	93503002	Indian or Asian	Male	0	2011
+ward	30704002	White	Female	0	2011
+ward	21507026	Indian or Asian	Female	0	2011
+ward	41801010	White	Female	0	2011
+ward	52404008	Indian or Asian	Female	0	2011
+ward	24402007	Other	Female	0	2011
+ward	42001022	Indian or Asian	Female	0	2011
+ward	21504015	Coloured	Female	0	2011
+ward	52904010	Other	Male	0	2011
+ward	29300019	White	Female	0	2011
+ward	24404011	Indian or Asian	Female	0	2011
+ward	94705028	Coloured	Male	0	2011
+ward	21506009	Other	Female	0	2011
+ward	52502030	White	Male	0	2011
+ward	63907012	Other	Male	0	2011
+ward	52405006	Coloured	Male	0	2011
+ward	93404030	Coloured	Male	0	2011
+ward	21506016	Other	Male	0	2011
+ward	52502028	White	Male	0	2011
+ward	29300022	White	Male	0	2011
+ward	63705015	White	Male	0	2011
+ward	83105031	Coloured	Male	0	2011
+ward	10102003	Other	Female	0	2011
+ward	41901009	Other	Female	0	2011
+ward	63705020	Indian or Asian	Male	0	2011
+ward	52502023	Indian or Asian	Female	0	2011
+ward	74201031	Coloured	Male	0	2011
+ward	52504007	Indian or Asian	Female	0	2011
+ward	83106010	White	Female	0	2011
+ward	21505023	White	Female	0	2011
+ward	52602002	Other	Male	0	2011
+ward	83205030	Coloured	Male	0	2011
+ward	93404017	Indian or Asian	Female	0	2011
+ward	93501015	Coloured	Female	0	2011
+ward	21204012	White	Male	0	2011
+ward	83003018	Other	Female	0	2011
+ward	41604004	Indian or Asian	Female	0	2011
+ward	30704003	Other	Male	0	2011
+ward	52806008	Other	Male	0	2011
+ward	94703015	Other	Male	0	2011
+ward	21304011	Indian or Asian	Female	0	2011
+ward	63903002	White	Male	0	2011
+ward	24403011	Indian or Asian	Female	0	2011
+ward	93403016	White	Female	0	2011
+ward	52903004	Other	Male	0	2011
+ward	63805003	Other	Male	0	2011
+ward	59500085	White	Female	0	2011
+ward	93303027	Indian or Asian	Female	0	2011
+ward	52101008	Other	Female	0	2011
+ward	52106010	White	Male	0	2011
+ward	94703026	Coloured	Male	0	2011
+ward	94705008	Coloured	Female	0	2011
+ward	74801009	Other	Male	0	2011
+ward	52603005	Coloured	Male	0	2011
+ward	10205015	Other	Female	0	2011
+ward	24404004	Indian or Asian	Female	0	2011
+ward	24404007	White	Male	0	2011
+ward	21202020	Other	Male	0	2011
+ward	21303003	Other	Female	0	2011
+ward	21203001	Other	Male	0	2011
+ward	52205006	White	Female	0	2011
+ward	52404015	Coloured	Female	0	2011
+ward	52305008	Coloured	Male	0	2011
+ward	52806013	Other	Female	0	2011
+ward	21307007	White	Male	0	2011
+ward	24403031	Indian or Asian	Male	0	2011
+ward	24403007	Other	Male	0	2011
+ward	93403006	Other	Male	0	2011
+ward	93403018	Other	Female	0	2011
+ward	21001006	Other	Male	0	2011
+ward	21504019	Coloured	Female	0	2011
+ward	83205006	Other	Female	0	2011
+ward	93302002	Coloured	Male	0	2011
+ward	24404015	Coloured	Female	0	2011
+ward	63702031	Indian or Asian	Female	0	2011
+ward	93302026	Indian or Asian	Female	0	2011
+ward	52504009	Indian or Asian	Female	0	2011
+ward	10403004	Other	Male	0	2011
+ward	63904013	White	Female	0	2011
+ward	34502007	Indian or Asian	Male	0	2011
+ward	94702027	White	Female	0	2011
+ward	29200036	Other	Female	0	2011
+ward	52605020	White	Female	0	2011
+ward	74802018	White	Female	0	2011
+ward	21401002	Indian or Asian	Female	0	2011
+ward	83001001	White	Male	0	2011
+ward	63701015	White	Female	0	2011
+ward	21504007	Coloured	Male	0	2011
+ward	63804011	White	Male	0	2011
+ward	83105017	Indian or Asian	Female	0	2011
+ward	93502004	Coloured	Male	0	2011
+ward	93607025	White	Female	0	2011
+ward	74802017	Indian or Asian	Male	0	2011
+ward	52903009	Indian or Asian	Female	0	2011
+ward	21506024	Coloured	Male	0	2011
+ward	93607009	Other	Female	0	2011
+ward	64004003	Indian or Asian	Male	0	2011
+ward	93401002	Indian or Asian	Female	0	2011
+ward	83106016	Indian or Asian	Female	0	2011
+ward	10105009	White	Female	0	2011
+ward	83102010	Coloured	Female	0	2011
+ward	41601003	Other	Female	0	2011
+ward	83106013	Indian or Asian	Female	0	2011
+ward	24401014	Indian or Asian	Male	0	2011
+ward	24404012	Coloured	Male	0	2011
+ward	93605002	Other	Female	0	2011
+ward	63702007	White	Male	0	2011
+ward	63703037	Other	Female	0	2011
+ward	63703031	Other	Female	0	2011
+ward	83106003	Coloured	Male	0	2011
+ward	21204016	Indian or Asian	Male	0	2011
+ward	63906003	White	Female	0	2011
+ward	63705012	Indian or Asian	Female	0	2011
+ward	54305010	White	Male	0	2011
+ward	64003013	White	Female	0	2011
+ward	63705021	White	Male	0	2011
+ward	93505028	Other	Female	0	2011
+ward	52606017	Other	Female	0	2011
+ward	93504033	Other	Female	0	2011
+ward	52106003	Other	Male	0	2011
+ward	63904010	Indian or Asian	Female	0	2011
+ward	21204017	Indian or Asian	Female	0	2011
+ward	52702010	Other	Male	0	2011
+ward	83205011	White	Male	0	2011
+ward	83202035	Indian or Asian	Female	0	2011
+ward	21506025	Other	Female	0	2011
+ward	74804025	Coloured	Male	0	2011
+ward	21401007	Other	Female	0	2011
+ward	94703004	Coloured	Female	0	2011
+ward	52304009	Coloured	Male	0	2011
+ward	52603010	Indian or Asian	Female	0	2011
+ward	52405001	Indian or Asian	Female	0	2011
+ward	94705006	Coloured	Male	0	2011
+ward	83203006	Other	Female	0	2011
+ward	63904015	Other	Female	0	2011
+ward	10204003	Other	Female	0	2011
+ward	52801008	White	Male	0	2011
+ward	94703023	Other	Female	0	2011
+ward	93303023	Indian or Asian	Female	0	2011
+ward	52305007	Coloured	Male	0	2011
+ward	83202022	Indian or Asian	Female	0	2011
+ward	93304014	Other	Female	0	2011
+ward	74804005	Coloured	Male	0	2011
+ward	24403020	White	Female	0	2011
+ward	93505013	White	Female	0	2011
+ward	41901005	Coloured	Male	0	2011
+ward	21304004	Indian or Asian	Female	0	2011
+ward	63702003	Indian or Asian	Male	0	2011
+ward	10301011	Indian or Asian	Female	0	2011
+ward	52606015	Coloured	Male	0	2011
+ward	52602003	Coloured	Female	0	2011
+ward	52201008	Coloured	Male	0	2011
+ward	74201020	Other	Female	0	2011
+ward	54303008	Other	Male	0	2011
+ward	21202025	Coloured	Female	0	2011
+ward	41904014	White	Female	0	2011
+ward	64003002	White	Female	0	2011
+ward	52404011	Indian or Asian	Female	0	2011
+ward	83103017	Indian or Asian	Female	0	2011
+ward	52803001	Indian or Asian	Female	0	2011
+ward	54305020	Coloured	Female	0	2011
+ward	42001003	Other	Female	0	2011
+ward	93503004	Coloured	Male	0	2011
+ward	93602009	Other	Female	0	2011
+ward	21307019	Coloured	Female	0	2011
+ward	52102008	White	Male	0	2011
+ward	52802021	Other	Male	0	2011
+ward	52904003	White	Male	0	2011
+ward	54301001	White	Male	0	2011
+ward	93301019	Coloured	Male	0	2011
+ward	63705004	White	Female	0	2011
+ward	52806011	Coloured	Female	0	2011
+ward	59500078	White	Male	0	2011
+ward	94705023	White	Male	0	2011
+ward	21506021	White	Female	0	2011
+ward	42003011	Other	Female	0	2011
+ward	52603010	Other	Female	0	2011
+ward	21402001	Coloured	Male	0	2011
+ward	41904033	Indian or Asian	Female	0	2011
+ward	21305003	Indian or Asian	Male	0	2011
+ward	21402012	Coloured	Male	0	2011
+ward	63904015	Indian or Asian	Female	0	2011
+ward	63904017	White	Male	0	2011
+ward	24403010	Other	Male	0	2011
+ward	83203006	Indian or Asian	Female	0	2011
+ward	21401013	Indian or Asian	Male	0	2011
+ward	63701020	White	Male	0	2011
+ward	93601005	Other	Male	0	2011
+ward	52201003	Other	Female	0	2011
+ward	93304014	Indian or Asian	Female	0	2011
+ward	83202022	Other	Female	0	2011
+ward	93404019	Coloured	Male	0	2011
+ward	41801009	White	Female	0	2011
+ward	64002026	White	Female	0	2011
+ward	21006006	Indian or Asian	Female	0	2011
+ward	64003033	White	Female	0	2011
+ward	63702003	Other	Male	0	2011
+ward	63803005	Other	Male	0	2011
+ward	93402006	White	Male	0	2011
+ward	54303008	Indian or Asian	Male	0	2011
+ward	93505027	White	Male	0	2011
+ward	63703026	Coloured	Male	0	2011
+ward	93606002	White	Male	0	2011
+ward	52802021	Indian or Asian	Male	0	2011
+ward	34501006	Indian or Asian	Male	0	2011
+ward	94703028	Indian or Asian	Female	0	2011
+ward	52803001	Other	Female	0	2011
+ward	52404011	Other	Female	0	2011
+ward	52804008	Coloured	Male	0	2011
+ward	83202005	White	Female	0	2011
+ward	21503012	Coloured	Male	0	2011
+ward	52302002	Indian or Asian	Male	0	2011
+ward	21401002	Other	Female	0	2011
+ward	63803024	Other	Male	0	2011
+ward	52103008	White	Male	0	2011
+ward	21507017	Coloured	Female	0	2011
+ward	29200036	Indian or Asian	Female	0	2011
+ward	52802011	White	Male	0	2011
+ward	79700068	White	Male	0	2011
+ward	52202011	Indian or Asian	Female	0	2011
+ward	93607009	Indian or Asian	Female	0	2011
+ward	93607016	Coloured	Female	0	2011
+ward	83002004	White	Female	0	2011
+ward	52903009	Other	Female	0	2011
+ward	49400006	White	Male	0	2011
+ward	52702002	Other	Male	0	2011
+ward	79900013	White	Male	0	2011
+ward	21402018	White	Female	0	2011
+ward	83105017	Other	Female	0	2011
+ward	83106016	Other	Female	0	2011
+ward	52902020	Other	Female	0	2011
+ward	93401002	Other	Female	0	2011
+ward	64004003	Other	Male	0	2011
+ward	83106013	Other	Female	0	2011
+ward	83205012	Coloured	Male	0	2011
+ward	41904030	White	Male	0	2011
+ward	41601003	Indian or Asian	Female	0	2011
+ward	52804016	White	Female	0	2011
+ward	21304021	White	Female	0	2011
+ward	83204013	White	Male	0	2011
+ward	63705012	Other	Female	0	2011
+ward	93607010	White	Male	0	2011
+ward	42001008	White	Male	0	2011
+ward	52605008	White	Male	0	2011
+ward	41904011	Indian or Asian	Male	0	2011
+ward	52702010	Indian or Asian	Male	0	2011
+ward	64003035	White	Female	0	2011
+ward	63904010	Other	Female	0	2011
+ward	21204017	Other	Female	0	2011
+ward	94705015	White	Male	0	2011
+ward	21401015	Coloured	Female	0	2011
+ward	93505028	Indian or Asian	Female	0	2011
+ward	41804017	White	Female	0	2011
+ward	21401007	Indian or Asian	Female	0	2011
+ward	24403022	White	Male	0	2011
+ward	93607022	White	Male	0	2011
+ward	83202035	Other	Female	0	2011
+ward	21505028	White	Female	0	2011
+ward	93404027	Indian or Asian	Male	0	2011
+ward	21401003	Indian or Asian	Female	0	2011
+ward	52802014	Indian or Asian	Male	0	2011
+ward	54301008	Other	Female	0	2011
+ward	52304008	Coloured	Male	0	2011
+ward	52801001	Other	Male	0	2011
+ward	52705015	White	Female	0	2011
+ward	21402004	Coloured	Male	0	2011
+ward	93404001	Coloured	Female	0	2011
+ward	41804024	Indian or Asian	Female	0	2011
+ward	52705010	Coloured	Female	0	2011
+ward	93303011	Other	Female	0	2011
+ward	83104006	Other	Female	0	2011
+ward	21207013	White	Female	0	2011
+ward	83202020	White	Male	0	2011
+ward	52303003	White	Female	0	2011
+ward	52605011	Indian or Asian	Male	0	2011
+ward	79800052	White	Male	0	2011
+ward	94705017	Coloured	Male	0	2011
+ward	52402010	White	Male	0	2011
+ward	52103017	White	Male	0	2011
+ward	24403017	Other	Male	0	2011
+ward	83102017	Indian or Asian	Female	0	2011
+ward	93402003	White	Male	0	2011
+ward	52404016	White	Female	0	2011
+ward	10206010	Indian or Asian	Female	0	2011
+ward	93303017	Indian or Asian	Female	0	2011
+ward	41901007	White	Female	0	2011
+ward	52902021	Coloured	Male	0	2011
+ward	41805002	Other	Female	0	2011
+ward	63801004	Indian or Asian	Female	0	2011
+ward	93501020	Other	Female	0	2011
+ward	74801006	White	Male	0	2011
+ward	93403025	Indian or Asian	Female	0	2011
+ward	21503002	Coloured	Female	0	2011
+ward	30803003	White	Female	0	2011
+ward	41804016	Other	Female	0	2011
+ward	83205027	Indian or Asian	Female	0	2011
+ward	93501013	Other	Female	0	2011
+ward	83106026	White	Female	0	2011
+ward	21004001	Other	Male	0	2011
+ward	10203010	Other	Female	0	2011
+ward	52305013	Other	Female	0	2011
+ward	93305003	Coloured	Male	0	2011
+ward	83202028	Other	Female	0	2011
+ward	52804015	Indian or Asian	Male	0	2011
+ward	21503008	Coloured	Female	0	2011
+ward	21201023	Coloured	Female	0	2011
+ward	21202010	Indian or Asian	Female	0	2011
+ward	83102026	Other	Female	0	2011
+ward	83004010	Indian or Asian	Male	0	2011
+ward	93404010	Indian or Asian	Male	0	2011
+ward	10404015	White	Female	0	2011
+ward	63802006	White	Male	0	2011
+ward	21202016	Indian or Asian	Female	0	2011
+ward	21306007	White	Female	0	2011
+ward	79900063	Other	Male	0	2011
+ward	10401002	Indian or Asian	Male	0	2011
+ward	34502004	Indian or Asian	Female	0	2011
+ward	42004021	Indian or Asian	Male	0	2011
+ward	93504030	Coloured	Female	0	2011
+ward	83105021	Coloured	Female	0	2011
+ward	83103009	Other	Female	0	2011
+ward	52101007	Coloured	Male	0	2011
+ward	21004005	Indian or Asian	Female	0	2011
+ward	42001012	White	Female	0	2011
+ward	93505025	White	Female	0	2011
+ward	93403011	White	Female	0	2011
+ward	52602008	White	Female	0	2011
+ward	10206011	Indian or Asian	Female	0	2011
+ward	21504009	Other	Male	0	2011
+ward	93304003	Indian or Asian	Male	0	2011
+ward	52306005	Indian or Asian	Female	0	2011
+ward	21203002	Coloured	Female	0	2011
+ward	24404003	Indian or Asian	Female	0	2011
+ward	83101005	Indian or Asian	Female	0	2011
+ward	52603014	White	Female	0	2011
+ward	74801033	Indian or Asian	Male	0	2011
+ward	79800014	White	Male	0	2011
+ward	94702029	Other	Female	0	2011
+ward	83105027	White	Female	0	2011
+ward	83205027	Other	Female	0	2011
+ward	41804016	Indian or Asian	Female	0	2011
+ward	93404035	Indian or Asian	Male	0	2011
+ward	63705001	White	Male	0	2011
+ward	93403025	Other	Female	0	2011
+ward	21504018	White	Female	0	2011
+ward	83201007	Other	Female	0	2011
+ward	93501020	Indian or Asian	Female	0	2011
+ward	63801004	Other	Female	0	2011
+ward	21202010	Other	Female	0	2011
+ward	52104008	Other	Female	0	2011
+ward	54303004	Other	Female	0	2011
+ward	24404016	White	Female	0	2011
+ward	21305011	White	Female	0	2011
+ward	41904013	Coloured	Male	0	2011
+ward	24402001	White	Female	0	2011
+ward	21504016	Coloured	Male	0	2011
+ward	21202011	Coloured	Female	0	2011
+ward	52804015	Other	Male	0	2011
+ward	83202028	Indian or Asian	Female	0	2011
+ward	74201034	White	Male	0	2011
+ward	52801013	Coloured	Male	0	2011
+ward	21004007	White	Male	0	2011
+ward	83001016	Coloured	Female	0	2011
+ward	93305006	Coloured	Male	0	2011
+ward	83004010	Other	Male	0	2011
+ward	34502004	Other	Female	0	2011
+ward	21202016	Other	Female	0	2011
+ward	52602004	White	Female	0	2011
+ward	83103009	Indian or Asian	Female	0	2011
+ward	93403028	Indian or Asian	Male	0	2011
+ward	21402011	Other	Male	0	2011
+ward	52802027	Coloured	Female	0	2011
+ward	21004011	White	Female	0	2011
+ward	10503005	White	Male	0	2011
+ward	21006001	Indian or Asian	Female	0	2011
+ward	63803004	Other	Male	0	2011
+ward	74203004	White	Male	0	2011
+ward	83106004	Other	Female	0	2011
+ward	52306005	Other	Female	0	2011
+ward	93304003	Other	Male	0	2011
+ward	83003009	Coloured	Male	0	2011
+ward	21504009	Indian or Asian	Male	0	2011
+ward	10501001	Indian or Asian	Male	0	2011
+ward	93503003	White	Male	0	2011
+ward	52801005	Coloured	Female	0	2011
+ward	94702029	Indian or Asian	Female	0	2011
+ward	21204013	Coloured	Female	0	2011
+ward	74803008	Indian or Asian	Female	0	2011
+ward	42004007	White	Male	0	2011
+ward	52101010	Other	Female	0	2011
+ward	34501012	Coloured	Female	0	2011
+ward	24404003	Other	Female	0	2011
+ward	83101005	Other	Female	0	2011
+ward	21401003	Other	Female	0	2011
+ward	54301008	Indian or Asian	Female	0	2011
+ward	63804004	White	Male	0	2011
+ward	52605005	Other	Female	0	2011
+ward	93404027	Other	Male	0	2011
+ward	54301006	Indian or Asian	Male	0	2011
+ward	21503018	White	Female	0	2011
+ward	52207004	Coloured	Female	0	2011
+ward	52801001	Indian or Asian	Male	0	2011
+ward	83105032	White	Male	0	2011
+ward	83106012	White	Male	0	2011
+ward	83102005	Other	Female	0	2011
+ward	93402004	Indian or Asian	Male	0	2011
+ward	42003002	White	Male	0	2011
+ward	21206003	Other	Male	0	2011
+ward	52404002	Coloured	Female	0	2011
+ward	93301018	Coloured	Male	0	2011
+ward	21202031	White	Male	0	2011
+ward	83104006	Indian or Asian	Female	0	2011
+ward	93403032	Other	Female	0	2011
+ward	93303011	Indian or Asian	Female	0	2011
+ward	52306002	Indian or Asian	Male	0	2011
+ward	21306010	Indian or Asian	Male	0	2011
+ward	63904026	Other	Male	0	2011
+ward	10203030	Other	Female	0	2011
+ward	52904001	White	Female	0	2011
+ward	93403031	Other	Female	0	2011
+ward	24401018	Coloured	Female	0	2011
+ward	21306009	White	Female	0	2011
+ward	83106024	White	Male	0	2011
+ward	24402006	Other	Male	0	2011
+ward	93404013	Coloured	Male	0	2011
+ward	52104002	White	Female	0	2011
+ward	21201016	White	Male	0	2011
+ward	21305007	Other	Male	0	2011
+ward	52903005	Other	Female	0	2011
+ward	10206010	Other	Female	0	2011
+ward	21507027	Coloured	Female	0	2011
+ward	63701018	White	Male	0	2011
+ward	24403030	Coloured	Male	0	2011
+ward	10404003	Indian or Asian	Male	0	2011
+ward	52205008	Coloured	Male	0	2011
+ward	54304012	Coloured	Male	0	2011
+ward	24401006	White	Female	0	2011
+ward	21307001	Other	Female	0	2011
+ward	63904024	White	Female	0	2011
+ward	93303017	Other	Female	0	2011
+ward	63903001	Indian or Asian	Female	0	2011
+ward	93403012	Other	Female	0	2011
+ward	63904021	White	Male	0	2011
+ward	93501017	Other	Male	0	2011
+ward	52605012	White	Male	0	2011
+ward	93601006	Indian or Asian	Female	0	2011
+ward	83106005	Coloured	Female	0	2011
+ward	52202004	Other	Female	0	2011
+ward	30805004	Indian or Asian	Female	0	2011
+ward	52302014	Other	Male	0	2011
+ward	63703023	Indian or Asian	Male	0	2011
+ward	59500038	Coloured	Male	0	2011
+ward	83105023	Other	Female	0	2011
+ward	21503030	Coloured	Female	0	2011
+ward	52201006	Indian or Asian	Female	0	2011
+ward	52705008	White	Male	0	2011
+ward	24403026	Other	Female	0	2011
+ward	52804014	Indian or Asian	Male	0	2011
+ward	30803013	Indian or Asian	Female	0	2011
+ward	63803023	Indian or Asian	Female	0	2011
+ward	10202001	White	Female	0	2011
+ward	93302027	White	Female	0	2011
+ward	30604004	White	Male	0	2011
+ward	52801007	Other	Male	0	2011
+ward	93607005	White	Female	0	2011
+ward	93502015	White	Male	0	2011
+ward	52606009	Indian or Asian	Female	0	2011
+ward	93502005	White	Female	0	2011
+ward	93505002	Indian or Asian	Female	0	2011
+ward	41802001	Other	Female	0	2011
+ward	93606003	Indian or Asian	Female	0	2011
+ward	63805010	Coloured	Female	0	2011
+ward	21304020	White	Female	0	2011
+ward	94705014	Other	Female	0	2011
+ward	74201002	Indian or Asian	Female	0	2011
+ward	93404034	Indian or Asian	Male	0	2011
+ward	21402008	White	Male	0	2011
+ward	21403006	White	Female	0	2011
+ward	21305019	Other	Female	0	2011
+ward	94701011	Indian or Asian	Female	0	2011
+ward	21507015	Indian or Asian	Male	0	2011
+ward	94704001	Other	Female	0	2011
+ward	93504038	White	Male	0	2011
+ward	93402008	White	Female	0	2011
+ward	21307018	Coloured	Female	0	2011
+ward	54305008	Other	Female	0	2011
+ward	63907011	Indian or Asian	Female	0	2011
+ward	93302012	Other	Male	0	2011
+ward	42001005	White	Female	0	2011
+ward	52603003	Indian or Asian	Male	0	2011
+ward	79700083	Other	Female	0	2011
+ward	41804006	Other	Female	0	2011
+ward	52705019	Coloured	Male	0	2011
+ward	83205005	Other	Male	0	2011
+ward	24402013	Other	Female	0	2011
+ward	79900038	Indian or Asian	Male	0	2011
+ward	64002014	Coloured	Male	0	2011
+ward	52602006	Indian or Asian	Female	0	2011
+ward	93505011	White	Male	0	2011
+ward	63701024	Indian or Asian	Female	0	2011
+ward	21505016	Other	Male	0	2011
+ward	63804020	Other	Female	0	2011
+ward	19100052	White	Female	0	2011
+ward	93505029	Coloured	Female	0	2011
+ward	52804010	White	Female	0	2011
+ward	52106024	Other	Female	0	2011
+ward	52206002	White	Male	0	2011
+ward	93502016	Other	Female	0	2011
+ward	21306013	Indian or Asian	Female	0	2011
+ward	52801011	Coloured	Male	0	2011
+ward	21207016	Indian or Asian	Female	0	2011
+ward	52805003	Other	Female	0	2011
+ward	21202014	Other	Female	0	2011
+ward	94703018	White	Male	0	2011
+ward	63702009	Indian or Asian	Female	0	2011
+ward	93602007	White	Male	0	2011
+ward	52105001	Other	Male	0	2011
+ward	93501002	Coloured	Female	0	2011
+ward	52103012	Indian or Asian	Male	0	2011
+ward	21505031	White	Female	0	2011
+ward	93403004	Coloured	Female	0	2011
+ward	52101003	Other	Male	0	2011
+ward	52103001	White	Male	0	2011
+ward	63804012	Other	Male	0	2011
+ward	52103009	Indian or Asian	Male	0	2011
+ward	52504005	Other	Male	0	2011
+ward	21506014	White	Male	0	2011
+ward	74802010	Other	Female	0	2011
+ward	21204015	Indian or Asian	Male	0	2011
+ward	49400011	White	Male	0	2011
+ward	21505024	White	Male	0	2011
+ward	21307020	Indian or Asian	Male	0	2011
+ward	21307004	Coloured	Male	0	2011
+ward	10302001	Indian or Asian	Male	0	2011
+ward	93301009	Indian or Asian	Male	0	2011
+ward	93501011	White	Male	0	2011
+ward	52101006	White	Female	0	2011
+ward	63803016	Indian or Asian	Female	0	2011
+ward	94704002	Coloured	Female	0	2011
+ward	63904025	Coloured	Female	0	2011
+ward	52603016	Coloured	Female	0	2011
+ward	79700004	White	Female	0	2011
+ward	52603003	Other	Male	0	2011
+ward	64004008	Other	Female	0	2011
+ward	41804006	Indian or Asian	Female	0	2011
+ward	93302012	Indian or Asian	Male	0	2011
+ward	21401004	Indian or Asian	Female	0	2011
+ward	52602006	Other	Female	0	2011
+ward	79900038	Other	Male	0	2011
+ward	24402013	Indian or Asian	Female	0	2011
+ward	49400014	White	Male	0	2011
+ward	83106021	Indian or Asian	Female	0	2011
+ward	83205005	Indian or Asian	Male	0	2011
+ward	93303033	Coloured	Female	0	2011
+ward	21305002	White	Male	0	2011
+ward	63804020	Indian or Asian	Female	0	2011
+ward	21307002	Coloured	Male	0	2011
+ward	21505016	Indian or Asian	Male	0	2011
+ward	63701024	Other	Female	0	2011
+ward	24403019	Indian or Asian	Male	0	2011
+ward	52702009	Coloured	Male	0	2011
+ward	21306013	Other	Female	0	2011
+ward	29300027	Indian or Asian	Male	0	2011
+ward	83204029	Other	Female	0	2011
+ward	93302007	Coloured	Female	0	2011
+ward	93304008	White	Male	0	2011
+ward	93502016	Indian or Asian	Female	0	2011
+ward	93501021	Indian or Asian	Female	0	2011
+ward	93303016	Other	Female	0	2011
+ward	21202014	Indian or Asian	Female	0	2011
+ward	83104007	Other	Female	0	2011
+ward	52805003	Indian or Asian	Female	0	2011
+ward	24403002	White	Male	0	2011
+ward	93302023	White	Female	0	2011
+ward	52106009	White	Male	0	2011
+ward	10206005	Other	Female	0	2011
+ward	54304001	Other	Female	0	2011
+ward	21507019	Other	Female	0	2011
+ward	52701005	Coloured	Female	0	2011
+ward	21506018	White	Male	0	2011
+ward	52103009	Other	Male	0	2011
+ward	52504005	Indian or Asian	Male	0	2011
+ward	74802010	Indian or Asian	Female	0	2011
+ward	19100018	Indian or Asian	Male	0	2011
+ward	21402017	Coloured	Male	0	2011
+ward	24403003	Other	Male	0	2011
+ward	63803016	Other	Female	0	2011
+ward	52101004	White	Female	0	2011
+ward	52302019	Other	Male	0	2011
+ward	21307020	Other	Male	0	2011
+ward	52801012	Coloured	Female	0	2011
+ward	93303003	Indian or Asian	Male	0	2011
+ward	63705016	Coloured	Male	0	2011
+ward	93601006	Other	Female	0	2011
+ward	93501017	Indian or Asian	Male	0	2011
+ward	93502003	Indian or Asian	Female	0	2011
+ward	63904018	Other	Female	0	2011
+ward	52101002	Other	Female	0	2011
+ward	83202026	Indian or Asian	Male	0	2011
+ward	52302014	Indian or Asian	Male	0	2011
+ward	54301002	White	Female	0	2011
+ward	52605017	Coloured	Male	0	2011
+ward	21503022	White	Female	0	2011
+ward	83001006	White	Male	0	2011
+ward	24402019	Coloured	Male	0	2011
+ward	63803023	Other	Female	0	2011
+ward	52804014	Other	Male	0	2011
+ward	24403026	Indian or Asian	Female	0	2011
+ward	52201006	Other	Female	0	2011
+ward	74803013	White	Male	0	2011
+ward	52801007	Indian or Asian	Male	0	2011
+ward	93606003	Other	Female	0	2011
+ward	41802001	Indian or Asian	Female	0	2011
+ward	21504017	Coloured	Male	0	2011
+ward	21307003	White	Female	0	2011
+ward	52606009	Other	Female	0	2011
+ward	42004011	Coloured	Female	0	2011
+ward	93505002	Other	Female	0	2011
+ward	52402017	White	Male	0	2011
+ward	74201002	Other	Female	0	2011
+ward	93404034	Other	Male	0	2011
+ward	21503028	White	Male	0	2011
+ward	83106008	Other	Male	0	2011
+ward	94704001	Indian or Asian	Female	0	2011
+ward	52205022	White	Male	0	2011
+ward	41904004	White	Female	0	2011
+ward	64003022	Indian or Asian	Female	0	2011
+ward	21305019	Indian or Asian	Female	0	2011
+ward	94701011	Other	Female	0	2011
+ward	41904020	Coloured	Male	0	2011
+ward	93505006	White	Female	0	2011
+ward	30705002	Other	Male	0	2011
+ward	93404014	Other	Female	0	2011
+ward	54305008	Indian or Asian	Female	0	2011
+ward	24402023	Coloured	Female	0	2011
+ward	63701004	Coloured	Male	0	2011
+ward	93505015	Coloured	Male	0	2011
+ward	21504014	Coloured	Female	0	2011
+ward	93602011	Other	Female	0	2011
+ward	52106005	Other	Female	0	2011
+ward	52502027	White	Female	0	2011
+ward	83205029	Other	Female	0	2011
+ward	52701016	Coloured	Female	0	2011
+ward	64003029	Other	Female	0	2011
+ward	93302003	Indian or Asian	Female	0	2011
+ward	93301023	Indian or Asian	Male	0	2011
+ward	83105003	Coloured	Female	0	2011
+ward	21503029	White	Male	0	2011
+ward	63701006	White	Female	0	2011
+ward	93303018	White	Female	0	2011
+ward	94701004	Coloured	Male	0	2011
+ward	93302019	White	Male	0	2011
+ward	93303010	White	Female	0	2011
+ward	93301017	Coloured	Male	0	2011
+ward	10103002	White	Male	0	2011
+ward	63802002	Other	Female	0	2011
+ward	21207001	White	Female	0	2011
+ward	63704004	Other	Female	0	2011
+ward	94705021	Coloured	Male	0	2011
+ward	52901015	White	Female	0	2011
+ward	41901013	Other	Male	0	2011
+ward	10404010	White	Female	0	2011
+ward	52502029	Indian or Asian	Male	0	2011
+ward	54304003	Indian or Asian	Female	0	2011
+ward	63702013	White	Female	0	2011
+ward	83102004	Other	Female	0	2011
+ward	83204027	Coloured	Male	0	2011
+ward	52502009	White	Male	0	2011
+ward	52804022	Other	Female	0	2011
+ward	41805005	White	Female	0	2011
+ward	74801005	Indian or Asian	Male	0	2011
+ward	41805001	White	Female	0	2011
+ward	94702016	Coloured	Male	0	2011
+ward	21006005	Indian or Asian	Female	0	2011
+ward	10405010	White	Male	0	2011
+ward	64002019	White	Male	0	2011
+ward	52303001	Other	Female	0	2011
+ward	93607002	Indian or Asian	Female	0	2011
+ward	21201010	White	Male	0	2011
+ward	21206012	White	Male	0	2011
+ward	52602014	Coloured	Male	0	2011
+ward	10301003	Indian or Asian	Male	0	2011
+ward	52901012	White	Female	0	2011
+ward	93503013	Other	Female	0	2011
+ward	83003011	Coloured	Female	0	2011
+ward	63902006	Indian or Asian	Female	0	2011
+ward	52802015	Indian or Asian	Female	0	2011
+ward	52901006	White	Male	0	2011
+ward	64002011	Other	Female	0	2011
+ward	21202004	Coloured	Male	0	2011
+ward	93502012	Indian or Asian	Male	0	2011
+ward	10202002	Indian or Asian	Female	0	2011
+ward	93304016	Other	Female	0	2011
+ward	93607015	Coloured	Female	0	2011
+ward	93607001	Indian or Asian	Female	0	2011
+ward	94703029	Coloured	Female	0	2011
+ward	63902008	Other	Male	0	2011
+ward	83004008	Other	Male	0	2011
+ward	83202009	Indian or Asian	Male	0	2011
+ward	93501009	White	Female	0	2011
+ward	41904018	Coloured	Female	0	2011
+ward	63801010	Other	Male	0	2011
+ward	93305005	White	Male	0	2011
+ward	42004012	Indian or Asian	Male	0	2011
+ward	52105002	Other	Male	0	2011
+ward	21202001	Other	Male	0	2011
+ward	21306002	Coloured	Female	0	2011
+ward	93304009	Indian or Asian	Female	0	2011
+ward	52801014	White	Female	0	2011
+ward	83202034	Indian or Asian	Male	0	2011
+ward	52806009	Indian or Asian	Female	0	2011
+ward	21204003	White	Male	0	2011
+ward	93301028	Other	Female	0	2011
+ward	52603020	Coloured	Male	0	2011
+ward	10303003	White	Female	0	2011
+ward	63801008	White	Female	0	2011
+ward	64002011	Indian or Asian	Female	0	2011
+ward	93503013	Indian or Asian	Female	0	2011
+ward	64001005	Indian or Asian	Female	0	2011
+ward	83007031	White	Female	0	2011
+ward	93607001	Other	Female	0	2011
+ward	63902008	Indian or Asian	Male	0	2011
+ward	83106017	White	Male	0	2011
+ward	93304016	Indian or Asian	Female	0	2011
+ward	10202002	Other	Female	0	2011
+ward	29300054	Indian or Asian	Female	0	2011
+ward	94704013	Coloured	Female	0	2011
+ward	41902012	Coloured	Male	0	2011
+ward	93403029	Coloured	Female	0	2011
+ward	93301008	White	Male	0	2011
+ward	93504007	Indian or Asian	Female	0	2011
+ward	42004012	Other	Male	0	2011
+ward	52105002	Indian or Asian	Male	0	2011
+ward	83202009	Other	Male	0	2011
+ward	94702023	Coloured	Female	0	2011
+ward	21505013	Coloured	Male	0	2011
+ward	21202009	Other	Female	0	2011
+ward	93304009	Other	Female	0	2011
+ward	83007013	White	Male	0	2011
+ward	74804027	Other	Male	0	2011
+ward	52304006	White	Female	0	2011
+ward	63702024	White	Male	0	2011
+ward	52806009	Other	Female	0	2011
+ward	74801010	White	Male	0	2011
+ward	93503011	Other	Male	0	2011
+ward	29300042	White	Male	0	2011
+ward	93301028	Indian or Asian	Female	0	2011
+ward	21507007	Other	Male	0	2011
+ward	83105013	White	Female	0	2011
+ward	52302023	Coloured	Female	0	2011
+ward	93505014	Coloured	Male	0	2011
+ward	52305003	Indian or Asian	Male	0	2011
+ward	21505004	Other	Male	0	2011
+ward	74802012	White	Female	0	2011
+ward	21503017	Other	Male	0	2011
+ward	74201040	White	Female	0	2011
+ward	79700002	White	Female	0	2011
+ward	93302003	Other	Female	0	2011
+ward	21505018	White	Male	0	2011
+ward	52702017	Indian or Asian	Male	0	2011
+ward	93301022	Coloured	Male	0	2011
+ward	54304005	White	Female	0	2011
+ward	83101008	Other	Male	0	2011
+ward	42003015	Indian or Asian	Male	0	2011
+ward	52804012	White	Male	0	2011
+ward	83205033	Other	Male	0	2011
+ward	93301029	White	Female	0	2011
+ward	93502006	White	Male	0	2011
+ward	42003005	White	Male	0	2011
+ward	63704004	Indian or Asian	Female	0	2011
+ward	63802002	Indian or Asian	Female	0	2011
+ward	52302017	Coloured	Male	0	2011
+ward	54304003	Other	Female	0	2011
+ward	83102004	Indian or Asian	Female	0	2011
+ward	94702018	Other	Female	0	2011
+ward	52302001	Coloured	Female	0	2011
+ward	10304001	Indian or Asian	Male	0	2011
+ward	24401015	Other	Male	0	2011
+ward	30901009	Indian or Asian	Male	0	2011
+ward	63703020	White	Male	0	2011
+ward	21305021	White	Female	0	2011
+ward	52902023	White	Male	0	2011
+ward	10103002	Black African	Female	0	2011
+ward	41901013	Indian or Asian	Male	0	2011
+ward	41904015	Coloured	Male	0	2011
+ward	10203021	White	Female	0	2011
+ward	21201024	Other	Female	0	2011
+ward	83204010	White	Female	0	2011
+ward	52901002	Other	Male	0	2011
+ward	63702002	White	Female	0	2011
+ward	93607002	Other	Female	0	2011
+ward	83204019	White	Male	0	2011
+ward	83003001	White	Male	0	2011
+ward	52202008	Indian or Asian	Female	0	2011
+ward	24402002	White	Male	0	2011
+ward	21304017	Coloured	Female	0	2011
+ward	93304001	Indian or Asian	Female	0	2011
+ward	10302007	Indian or Asian	Male	0	2011
+ward	52705017	Coloured	Male	0	2011
+ward	63902005	Indian or Asian	Female	0	2011
+ward	24404010	Other	Male	0	2011
+ward	93305011	White	Female	0	2011
+ward	74803010	White	Female	0	2011
+ward	74201027	Indian or Asian	Female	0	2011
+ward	93505009	Other	Male	0	2011
+ward	42005003	Coloured	Male	0	2011
+ward	52603022	Other	Female	0	2011
+ward	21201017	Coloured	Female	0	2011
+ward	94705016	White	Male	0	2011
+ward	79900028	White	Male	0	2011
+ward	83002018	Coloured	Female	0	2011
+ward	21304012	Indian or Asian	Female	0	2011
+ward	42004003	Other	Female	0	2011
+ward	93505008	Coloured	Female	0	2011
+ward	59500012	White	Female	0	2011
+ward	83201001	White	Male	0	2011
+ward	21506023	Coloured	Male	0	2011
+ward	10203012	White	Male	0	2011
+ward	93303009	Other	Female	0	2011
+ward	83105030	White	Female	0	2011
+ward	21201003	White	Male	0	2011
+ward	21506026	Other	Female	0	2011
+ward	94705029	White	Female	0	2011
+ward	52302015	Other	Male	0	2011
+ward	52702008	Other	Female	0	2011
+ward	52603007	Other	Male	0	2011
+ward	24402012	Other	Male	0	2011
+ward	79900071	White	Male	0	2011
+ward	74201032	Indian or Asian	Female	0	2011
+ward	94703020	Coloured	Female	0	2011
+ward	52303009	Other	Female	0	2011
+ward	93403026	White	Female	0	2011
+ward	94704008	Coloured	Female	0	2011
+ward	93505020	Indian or Asian	Female	0	2011
+ward	52705009	Coloured	Female	0	2011
+ward	52201013	Coloured	Male	0	2011
+ward	54302001	Coloured	Female	0	2011
+ward	21005005	Other	Female	0	2011
+ward	63805002	Indian or Asian	Male	0	2011
+ward	21304018	Other	Male	0	2011
+ward	93403034	Other	Male	0	2011
+ward	93602010	White	Male	0	2011
+ward	21306006	White	Female	0	2011
+ward	52601008	Coloured	Male	0	2011
+ward	83106023	Coloured	Female	0	2011
+ward	34502006	White	Male	0	2011
+ward	52601006	Other	Female	0	2011
+ward	93402002	Other	Male	0	2011
+ward	52701015	White	Male	0	2011
+ward	24403028	Other	Female	0	2011
+ward	93503008	White	Male	0	2011
+ward	94701013	Coloured	Female	0	2011
+ward	34501009	White	Male	0	2011
+ward	52106025	Other	Male	0	2011
+ward	63803015	Other	Female	0	2011
+ward	83205026	White	Female	0	2011
+ward	93302005	Other	Male	0	2011
+ward	24402026	Coloured	Male	0	2011
+ward	93505007	Indian or Asian	Female	0	2011
+ward	93404036	White	Male	0	2011
+ward	21305018	Indian or Asian	Female	0	2011
+ward	24402022	White	Male	0	2011
+ward	63805013	Coloured	Male	0	2011
+ward	24401008	Other	Male	0	2011
+ward	21503024	Coloured	Female	0	2011
+ward	21507030	White	Female	0	2011
+ward	21301001	Indian or Asian	Female	0	2011
+ward	24402024	Coloured	Female	0	2011
+ward	52201010	Indian or Asian	Male	0	2011
+ward	59500091	White	Female	0	2011
+ward	83205037	Other	Female	0	2011
+ward	29300057	White	Female	0	2011
+ward	52401003	Other	Female	0	2011
+ward	21206002	Indian or Asian	Male	0	2011
+ward	52106008	Indian or Asian	Female	0	2011
+ward	74801002	White	Female	0	2011
+ward	52306007	Coloured	Female	0	2011
+ward	52103006	Coloured	Female	0	2011
+ward	83106001	Coloured	Female	0	2011
+ward	10404004	Other	Male	0	2011
+ward	52705003	Other	Male	0	2011
+ward	63701009	Coloured	Female	0	2011
+ward	52803002	Coloured	Female	0	2011
+ward	63805006	White	Female	0	2011
+ward	52601006	Indian or Asian	Female	0	2011
+ward	21401010	Indian or Asian	Female	0	2011
+ward	83002005	White	Female	0	2011
+ward	21204005	Indian or Asian	Male	0	2011
+ward	94703012	Coloured	Male	0	2011
+ward	63906005	Other	Male	0	2011
+ward	63803015	Indian or Asian	Female	0	2011
+ward	21505027	Coloured	Female	0	2011
+ward	93302020	White	Male	0	2011
+ward	94701015	White	Female	0	2011
+ward	42004002	White	Male	0	2011
+ward	24403028	Indian or Asian	Female	0	2011
+ward	93505007	Other	Female	0	2011
+ward	21305004	Indian or Asian	Female	0	2011
+ward	94705019	Other	Female	0	2011
+ward	93302005	Indian or Asian	Male	0	2011
+ward	52804023	Coloured	Female	0	2011
+ward	63703038	White	Male	0	2011
+ward	21305018	Other	Female	0	2011
+ward	52704005	Indian or Asian	Female	0	2011
+ward	83005002	Coloured	Male	0	2011
+ward	93501014	White	Female	0	2011
+ward	83205001	Indian or Asian	Female	0	2011
+ward	29300044	White	Male	0	2011
+ward	42001007	Other	Male	0	2011
+ward	21206002	Other	Male	0	2011
+ward	52204003	Indian or Asian	Male	0	2011
+ward	63701012	White	Male	0	2011
+ward	94702022	White	Female	0	2011
+ward	52602013	White	Female	0	2011
+ward	63703001	Indian or Asian	Female	0	2011
+ward	83005006	White	Male	0	2011
+ward	21204011	White	Female	0	2011
+ward	52804006	White	Male	0	2011
+ward	21503027	White	Female	0	2011
+ward	52606014	Other	Male	0	2011
+ward	54303005	Indian or Asian	Male	0	2011
+ward	52904004	Coloured	Male	0	2011
+ward	24404010	Indian or Asian	Male	0	2011
+ward	63902005	Other	Female	0	2011
+ward	93607029	White	Male	0	2011
+ward	63805007	White	Male	0	2011
+ward	93303001	White	Male	0	2011
+ward	24404005	White	Female	0	2011
+ward	21306015	Coloured	Male	0	2011
+ward	21201030	White	Male	0	2011
+ward	52106011	White	Female	0	2011
+ward	21005008	Indian or Asian	Female	0	2011
+ward	63705002	Coloured	Male	0	2011
+ward	42004003	Indian or Asian	Female	0	2011
+ward	74804007	Coloured	Male	0	2011
+ward	21304012	Other	Female	0	2011
+ward	52305009	Indian or Asian	Female	0	2011
+ward	63907010	Other	Male	0	2011
+ward	10203017	Other	Male	0	2011
+ward	30801001	White	Female	0	2011
+ward	52702001	Coloured	Male	0	2011
+ward	54303007	White	Female	0	2011
+ward	52103015	White	Male	0	2011
+ward	21506026	Indian or Asian	Female	0	2011
+ward	54305005	Other	Female	0	2011
+ward	93502010	Other	Male	0	2011
+ward	93504029	White	Male	0	2011
+ward	63907008	Indian or Asian	Male	0	2011
+ward	74201032	Other	Female	0	2011
+ward	83106015	Other	Female	0	2011
+ward	21505001	White	Male	0	2011
+ward	52603007	Indian or Asian	Male	0	2011
+ward	29200002	Other	Female	0	2011
+ward	52302015	Indian or Asian	Male	0	2011
+ward	93505020	Other	Female	0	2011
+ward	93404012	Coloured	Male	0	2011
+ward	29200038	White	Female	0	2011
+ward	93502008	Coloured	Female	0	2011
+ward	42001019	Indian or Asian	Female	0	2011
+ward	74804015	Other	Male	0	2011
+ward	29300014	Indian or Asian	Male	0	2011
+ward	83007029	Coloured	Male	0	2011
+ward	30901018	Other	Female	0	2011
+ward	52306001	Coloured	Female	0	2011
+ward	21505005	Indian or Asian	Female	0	2011
+ward	93303029	Other	Female	0	2011
+ward	94703030	Other	Male	0	2011
+ward	21507035	Coloured	Female	0	2011
+ward	93301025	Indian or Asian	Female	0	2011
+ward	52702018	Coloured	Female	0	2011
+ward	83202036	White	Female	0	2011
+ward	21201007	Coloured	Female	0	2011
+ward	93402001	Coloured	Female	0	2011
+ward	24404018	Coloured	Male	0	2011
+ward	54305015	White	Female	0	2011
+ward	24402005	Coloured	Female	0	2011
+ward	52805006	Indian or Asian	Female	0	2011
+ward	54301004	White	Female	0	2011
+ward	52601005	Other	Female	0	2011
+ward	10405012	Indian or Asian	Male	0	2011
+ward	74802019	White	Female	0	2011
+ward	64003010	White	Female	0	2011
+ward	63705019	Other	Female	0	2011
+ward	83002014	Indian or Asian	Female	0	2011
+ward	52902001	Other	Female	0	2011
+ward	74803009	White	Male	0	2011
+ward	93301001	Other	Female	0	2011
+ward	83106025	Other	Male	0	2011
+ward	52903008	Other	Female	0	2011
+ward	83205013	Indian or Asian	Female	0	2011
+ward	52606005	Other	Female	0	2011
+ward	83205019	Coloured	Female	0	2011
+ward	93302011	Coloured	Female	0	2011
+ward	52806004	Indian or Asian	Male	0	2011
+ward	52802020	Indian or Asian	Female	0	2011
+ward	94703002	Coloured	Male	0	2011
+ward	42001021	White	Male	0	2011
+ward	21504012	White	Male	0	2011
+ward	21506003	Other	Male	0	2011
+ward	21506022	Coloured	Male	0	2011
+ward	83205015	Other	Female	0	2011
+ward	21207021	Indian or Asian	Female	0	2011
+ward	83204022	White	Male	0	2011
+ward	93501006	Indian or Asian	Female	0	2011
+ward	10405002	Indian or Asian	Male	0	2011
+ward	93601012	Coloured	Female	0	2011
+ward	74201012	Indian or Asian	Female	0	2011
+ward	41904029	Indian or Asian	Female	0	2011
+ward	52802018	Other	Female	0	2011
+ward	21308003	Other	Female	0	2011
+ward	94703016	Other	Male	0	2011
+ward	83102016	Indian or Asian	Female	0	2011
+ward	34501008	Indian or Asian	Female	0	2011
+ward	94703003	White	Female	0	2011
+ward	41805003	Coloured	Female	0	2011
+ward	52504010	White	Male	0	2011
+ward	52701013	Indian or Asian	Male	0	2011
+ward	63803017	Other	Male	0	2011
+ward	93502007	Coloured	Female	0	2011
+ward	93502002	Other	Male	0	2011
+ward	93303026	Coloured	Female	0	2011
+ward	93301011	Coloured	Male	0	2011
+ward	83106011	White	Female	0	2011
+ward	63705011	White	Female	0	2011
+ward	52303004	Coloured	Male	0	2011
+ward	93302021	Coloured	Male	0	2011
+ward	94702001	Coloured	Female	0	2011
+ward	52901013	Coloured	Male	0	2011
+ward	10303002	Indian or Asian	Male	0	2011
+ward	74203003	Indian or Asian	Female	0	2011
+ward	21305012	Coloured	Female	0	2011
+ward	83003015	Indian or Asian	Male	0	2011
+ward	63804002	Other	Female	0	2011
+ward	93305004	White	Male	0	2011
+ward	21207021	Other	Female	0	2011
+ward	21506003	Indian or Asian	Male	0	2011
+ward	52806001	White	Male	0	2011
+ward	83205015	Indian or Asian	Female	0	2011
+ward	21201028	Other	Female	0	2011
+ward	74804010	Indian or Asian	Female	0	2011
+ward	29300049	White	Female	0	2011
+ward	21003003	White	Female	0	2011
+ward	63801012	White	Female	0	2011
+ward	63705024	Coloured	Male	0	2011
+ward	41904029	Other	Female	0	2011
+ward	41804007	Indian or Asian	Female	0	2011
+ward	34501008	Other	Female	0	2011
+ward	93304004	Coloured	Male	0	2011
+ward	41904035	Coloured	Female	0	2011
+ward	21308003	Indian or Asian	Female	0	2011
+ward	93604002	White	Male	0	2011
+ward	93502002	Indian or Asian	Male	0	2011
+ward	21203004	White	Male	0	2011
+ward	94701014	Coloured	Male	0	2011
+ward	52701013	Other	Male	0	2011
+ward	94704007	Other	Male	0	2011
+ward	83005015	White	Male	0	2011
+ward	21201012	White	Male	0	2011
+ward	63902003	White	Male	0	2011
+ward	52106004	Other	Male	0	2011
+ward	10403007	Other	Female	0	2011
+ward	93403039	White	Female	0	2011
+ward	52603018	Indian or Asian	Female	0	2011
+ward	24404006	Other	Male	0	2011
+ward	63904002	Indian or Asian	Female	0	2011
+ward	52606004	White	Female	0	2011
+ward	21503026	White	Male	0	2011
+ward	63701003	White	Female	0	2011
+ward	54305019	Coloured	Male	0	2011
+ward	83202037	White	Male	0	2011
+ward	74203003	Other	Female	0	2011
+ward	52606022	Indian or Asian	Male	0	2011
+ward	93403007	Coloured	Male	0	2011
+ward	21201002	Indian or Asian	Female	0	2011
+ward	21207012	Coloured	Female	0	2011
+ward	52606020	Coloured	Female	0	2011
+ward	42003012	Other	Male	0	2011
+ward	52804024	Other	Female	0	2011
+ward	63801009	White	Female	0	2011
+ward	93303012	Other	Male	0	2011
+ward	74203005	White	Male	0	2011
+ward	83003015	Other	Male	0	2011
+ward	30901018	Indian or Asian	Female	0	2011
+ward	21305009	Indian or Asian	Male	0	2011
+ward	21207014	White	Female	0	2011
+ward	74804015	Indian or Asian	Male	0	2011
+ward	42001019	Other	Female	0	2011
+ward	94705031	Other	Male	0	2011
+ward	52903017	Coloured	Male	0	2011
+ward	74201013	Indian or Asian	Female	0	2011
+ward	94703030	Indian or Asian	Male	0	2011
+ward	93403030	Coloured	Male	0	2011
+ward	83106002	White	Female	0	2011
+ward	63904014	Coloured	Female	0	2011
+ward	21505005	Other	Female	0	2011
+ward	64004007	White	Female	0	2011
+ward	24401025	Coloured	Female	0	2011
+ward	93301025	Other	Female	0	2011
+ward	52404010	Coloured	Female	0	2011
+ward	93301015	White	Male	0	2011
+ward	52805006	Other	Female	0	2011
+ward	52404006	Indian or Asian	Female	0	2011
+ward	21307006	Coloured	Male	0	2011
+ward	93502014	Coloured	Female	0	2011
+ward	93301001	Indian or Asian	Female	0	2011
+ward	52502024	Coloured	Female	0	2011
+ward	94703005	Coloured	Female	0	2011
+ward	41904008	Coloured	Male	0	2011
+ward	93301010	Coloured	Male	0	2011
+ward	21206001	White	Female	0	2011
+ward	21305005	White	Male	0	2011
+ward	52606005	Indian or Asian	Female	0	2011
+ward	83205013	Other	Female	0	2011
+ward	63705009	Coloured	Female	0	2011
+ward	93303008	Coloured	Female	0	2011
+ward	52305004	White	Male	0	2011
+ward	54305003	White	Female	0	2011
+ward	63805020	Other	Male	0	2011
+ward	94704009	Coloured	Female	0	2011
+ward	21401009	Coloured	Male	0	2011
+ward	94704011	Coloured	Male	0	2011
+ward	52602012	White	Female	0	2011
+ward	52103003	Coloured	Female	0	2011
+ward	83003002	Coloured	Female	0	2011
+ward	52806004	Other	Male	0	2011
+ward	30606003	Indian or Asian	Female	0	2011
+ward	93605001	Coloured	Female	0	2011
+ward	52402017	Coloured	Male	0	2011
+ward	94703013	Other	Male	0	2011
+ward	79900074	White	Male	0	2011
+ward	93607018	Indian or Asian	Female	0	2011
+ward	42004011	White	Female	0	2011
+ward	21307003	Coloured	Female	0	2011
+ward	64003011	White	Female	0	2011
+ward	21504017	White	Male	0	2011
+ward	52302018	Indian or Asian	Male	0	2011
+ward	64003032	Other	Male	0	2011
+ward	93505015	White	Male	0	2011
+ward	83003016	Indian or Asian	Female	0	2011
+ward	52603006	Other	Male	0	2011
+ward	93505022	Indian or Asian	Female	0	2011
+ward	79700048	White	Female	0	2011
+ward	63701004	White	Male	0	2011
+ward	93505006	Coloured	Female	0	2011
+ward	41904020	White	Male	0	2011
+ward	83003006	Other	Male	0	2011
+ward	74804011	Coloured	Female	0	2011
+ward	63804019	White	Female	0	2011
+ward	64003009	White	Male	0	2011
+ward	52605017	White	Male	0	2011
+ward	54301002	Coloured	Female	0	2011
+ward	93403001	White	Female	0	2011
+ward	94703010	Indian or Asian	Male	0	2011
+ward	21202028	Other	Male	0	2011
+ward	74803001	Other	Female	0	2011
+ward	74804019	Indian or Asian	Female	0	2011
+ward	93607030	Indian or Asian	Female	0	2011
+ward	52801010	Other	Male	0	2011
+ward	52204002	Other	Male	0	2011
+ward	94703007	Other	Male	0	2011
+ward	30804001	Other	Male	0	2011
+ward	24402019	White	Male	0	2011
+ward	30604001	Indian or Asian	Male	0	2011
+ward	10503003	Other	Male	0	2011
+ward	52903002	Coloured	Female	0	2011
+ward	52106009	Coloured	Male	0	2011
+ward	21004006	Indian or Asian	Male	0	2011
+ward	63701019	Indian or Asian	Female	0	2011
+ward	83204001	Other	Male	0	2011
+ward	24403002	Coloured	Male	0	2011
+ward	93302023	Coloured	Female	0	2011
+ward	52701009	Other	Female	0	2011
+ward	21507025	Indian or Asian	Male	0	2011
+ward	93607021	Indian or Asian	Male	0	2011
+ward	93303025	Indian or Asian	Female	0	2011
+ward	52206003	Other	Female	0	2011
+ward	52502015	White	Female	0	2011
+ward	52801012	White	Female	0	2011
+ward	79900009	Indian or Asian	Female	0	2011
+ward	93504018	Indian or Asian	Female	0	2011
+ward	41905007	Indian or Asian	Female	0	2011
+ward	52101004	Coloured	Female	0	2011
+ward	21402017	White	Male	0	2011
+ward	63705030	White	Female	0	2011
+ward	21506018	Coloured	Male	0	2011
+ward	21401008	Indian or Asian	Male	0	2011
+ward	93303033	White	Female	0	2011
+ward	21503014	White	Female	0	2011
+ward	21304015	Other	Female	0	2011
+ward	52302004	Other	Female	0	2011
+ward	74803011	Other	Female	0	2011
+ward	79700004	Coloured	Female	0	2011
+ward	52603016	White	Female	0	2011
+ward	93304008	Coloured	Male	0	2011
+ward	93302007	White	Female	0	2011
+ward	93303019	White	Male	0	2011
+ward	41803006	Other	Male	0	2011
+ward	94703006	Indian or Asian	Male	0	2011
+ward	52804001	Other	Female	0	2011
+ward	93501010	Indian or Asian	Female	0	2011
+ward	29300017	Coloured	Male	0	2011
+ward	30901007	White	Male	0	2011
+ward	63903006	White	Female	0	2011
+ward	52103001	Coloured	Male	0	2011
+ward	93403004	White	Female	0	2011
+ward	63805005	Other	Male	0	2011
+ward	52306003	Other	Male	0	2011
+ward	63702020	Indian or Asian	Male	0	2011
+ward	21004006	Other	Male	0	2011
+ward	21505031	Coloured	Female	0	2011
+ward	63701019	Other	Female	0	2011
+ward	93301014	Other	Female	0	2011
+ward	93501002	White	Female	0	2011
+ward	52502010	White	Female	0	2011
+ward	93602007	Coloured	Male	0	2011
+ward	93607021	Other	Male	0	2011
+ward	79800040	White	Female	0	2011
+ward	94703018	Coloured	Male	0	2011
+ward	41904024	Other	Female	0	2011
+ward	21507025	Other	Male	0	2011
+ward	74802007	Other	Male	0	2011
+ward	21305006	Other	Male	0	2011
+ward	21503016	Coloured	Female	0	2011
+ward	52801011	White	Male	0	2011
+ward	63904025	White	Female	0	2011
+ward	94704002	White	Female	0	2011
+ward	94705004	Other	Female	0	2011
+ward	52103007	Other	Female	0	2011
+ward	21307004	White	Male	0	2011
+ward	94701008	Indian or Asian	Female	0	2011
+ward	21504001	Indian or Asian	Female	0	2011
+ward	21505024	Coloured	Male	0	2011
+ward	83204024	Other	Female	0	2011
+ward	30805005	Indian or Asian	Female	0	2011
+ward	63702011	White	Female	0	2011
+ward	10203005	Indian or Asian	Female	0	2011
+ward	52303006	Coloured	Female	0	2011
+ward	21304015	Indian or Asian	Female	0	2011
+ward	83204023	Coloured	Male	0	2011
+ward	21506019	White	Female	0	2011
+ward	74803011	Indian or Asian	Female	0	2011
+ward	42001005	Coloured	Female	0	2011
+ward	21206005	White	Male	0	2011
+ward	52302004	Indian or Asian	Female	0	2011
+ward	24401012	Other	Male	0	2011
+ward	52206002	Coloured	Male	0	2011
+ward	52804010	Coloured	Female	0	2011
+ward	52504008	Coloured	Female	0	2011
+ward	93501010	Other	Female	0	2011
+ward	93403014	Indian or Asian	Female	0	2011
+ward	41804026	Other	Male	0	2011
+ward	52804001	Indian or Asian	Female	0	2011
+ward	52605010	Other	Male	0	2011
+ward	94703006	Other	Male	0	2011
+ward	64001001	White	Female	0	2011
+ward	93505011	Coloured	Male	0	2011
+ward	21506012	Other	Female	0	2011
+ward	74804008	Other	Female	0	2011
+ward	94703013	Indian or Asian	Male	0	2011
+ward	41903003	Other	Male	0	2011
+ward	30606003	Other	Female	0	2011
+ward	63805010	White	Female	0	2011
+ward	52302018	Other	Male	0	2011
+ward	79800019	Other	Female	0	2011
+ward	93502005	Coloured	Female	0	2011
+ward	21307018	White	Female	0	2011
+ward	93505022	Other	Female	0	2011
+ward	83003016	Other	Female	0	2011
+ward	93402008	Coloured	Female	0	2011
+ward	79800116	White	Male	0	2011
+ward	83003006	Indian or Asian	Male	0	2011
+ward	52902012	Indian or Asian	Female	0	2011
+ward	21403006	Coloured	Female	0	2011
+ward	83202007	Other	Male	0	2011
+ward	93304015	Other	Female	0	2011
+ward	52904007	White	Male	0	2011
+ward	21503030	White	Female	0	2011
+ward	94703008	Indian or Asian	Male	0	2011
+ward	94703010	Other	Male	0	2011
+ward	83106005	White	Female	0	2011
+ward	52701012	Other	Male	0	2011
+ward	74803001	Indian or Asian	Female	0	2011
+ward	52605012	Coloured	Male	0	2011
+ward	93607030	Other	Female	0	2011
+ward	83204018	Coloured	Female	0	2011
+ward	74804019	Other	Female	0	2011
+ward	21202028	Indian or Asian	Male	0	2011
+ward	24401017	White	Female	0	2011
+ward	64002025	Other	Female	0	2011
+ward	63904021	Coloured	Male	0	2011
+ward	93502015	Coloured	Male	0	2011
+ward	93607005	Coloured	Female	0	2011
+ward	49400028	White	Male	0	2011
+ward	52801010	Indian or Asian	Male	0	2011
+ward	93302027	Coloured	Female	0	2011
+ward	30604001	Other	Male	0	2011
+ward	21203003	Indian or Asian	Male	0	2011
+ward	93404018	Indian or Asian	Male	0	2011
+ward	21506011	Other	Male	0	2011
+ward	52402003	Other	Female	0	2011
+ward	83204010	Coloured	Female	0	2011
+ward	29300026	White	Male	0	2011
+ward	74804024	Coloured	Female	0	2011
+ward	52806006	Other	Male	0	2011
+ward	74804020	Indian or Asian	Female	0	2011
+ward	41904015	White	Male	0	2011
+ward	52302001	White	Female	0	2011
+ward	83204021	Other	Female	0	2011
+ward	83001010	Coloured	Female	0	2011
+ward	83202010	Indian or Asian	Female	0	2011
+ward	21201018	Other	Female	0	2011
+ward	52605021	Other	Male	0	2011
+ward	21503010	Indian or Asian	Male	0	2011
+ward	21304017	White	Female	0	2011
+ward	24402002	Coloured	Male	0	2011
+ward	63904022	White	Male	0	2011
+ward	79700057	Other	Female	0	2011
+ward	63703004	White	Male	0	2011
+ward	63701021	Indian or Asian	Female	0	2011
+ward	10203020	Indian or Asian	Female	0	2011
+ward	83007022	Indian or Asian	Male	0	2011
+ward	93301022	White	Male	0	2011
+ward	54304005	Coloured	Female	0	2011
+ward	93301016	Other	Female	0	2011
+ward	52205001	Indian or Asian	Male	0	2011
+ward	63701011	Coloured	Female	0	2011
+ward	21505018	Coloured	Male	0	2011
+ward	93502001	Indian or Asian	Female	0	2011
+ward	83102006	White	Female	0	2011
+ward	94702010	Other	Female	0	2011
+ward	93404022	Indian or Asian	Female	0	2011
+ward	93505014	White	Male	0	2011
+ward	21201029	White	Male	0	2011
+ward	93503007	White	Male	0	2011
+ward	52302017	White	Male	0	2011
+ward	93301013	Other	Male	0	2011
+ward	24402010	Other	Female	0	2011
+ward	21303001	White	Female	0	2011
+ward	93502006	Coloured	Male	0	2011
+ward	93301029	Coloured	Female	0	2011
+ward	21201004	Indian or Asian	Female	0	2011
+ward	83007013	Coloured	Male	0	2011
+ward	83102007	Other	Female	0	2011
+ward	41906006	Other	Female	0	2011
+ward	52306010	Coloured	Female	0	2011
+ward	24401002	Other	Female	0	2011
+ward	94704004	Other	Female	0	2011
+ward	93501004	Indian or Asian	Male	0	2011
+ward	93601004	Other	Female	0	2011
+ward	94702023	White	Female	0	2011
+ward	30602006	White	Female	0	2011
+ward	52705018	Other	Female	0	2011
+ward	41904026	Other	Female	0	2011
+ward	52603021	Other	Male	0	2011
+ward	10407004	Other	Female	0	2011
+ward	83105013	Coloured	Female	0	2011
+ward	21307008	Indian or Asian	Female	0	2011
+ward	52902018	Indian or Asian	Female	0	2011
+ward	52306009	Other	Male	0	2011
+ward	30901015	Other	Male	0	2011
+ward	30804004	Other	Female	0	2011
+ward	52104006	Coloured	Male	0	2011
+ward	52601007	Indian or Asian	Male	0	2011
+ward	52602010	Indian or Asian	Female	0	2011
+ward	52901001	Indian or Asian	Female	0	2011
+ward	52303005	Coloured	Male	0	2011
+ward	21204007	Indian or Asian	Female	0	2011
+ward	74802014	Other	Female	0	2011
+ward	93301008	Coloured	Male	0	2011
+ward	93304007	Indian or Asian	Male	0	2011
+ward	63701010	Indian or Asian	Female	0	2011
+ward	93403029	White	Female	0	2011
+ward	52803005	Other	Male	0	2011
+ward	24403021	White	Male	0	2011
+ward	52405007	White	Male	0	2011
+ward	93601004	Indian or Asian	Female	0	2011
+ward	93501004	Other	Male	0	2011
+ward	21306002	White	Female	0	2011
+ward	24401002	Indian or Asian	Female	0	2011
+ward	83203005	White	Male	0	2011
+ward	41906006	Indian or Asian	Female	0	2011
+ward	83102007	Indian or Asian	Female	0	2011
+ward	52603021	Indian or Asian	Male	0	2011
+ward	93303006	Coloured	Male	0	2011
+ward	41904026	Indian or Asian	Female	0	2011
+ward	24404009	Other	Female	0	2011
+ward	41904018	White	Female	0	2011
+ward	93305005	Coloured	Male	0	2011
+ward	93501009	Coloured	Female	0	2011
+ward	59500100	Coloured	Female	0	2011
+ward	83001019	Coloured	Female	0	2011
+ward	52603020	White	Male	0	2011
+ward	93401003	White	Male	0	2011
+ward	52306009	Indian or Asian	Male	0	2011
+ward	21308006	Other	Male	0	2011
+ward	52606002	Other	Female	0	2011
+ward	52602010	Other	Female	0	2011
+ward	94703029	White	Female	0	2011
+ward	19100047	White	Male	0	2011
+ward	21304008	White	Male	0	2011
+ward	52606013	Coloured	Male	0	2011
+ward	63803002	Coloured	Female	0	2011
+ward	30804004	Indian or Asian	Female	0	2011
+ward	21202004	White	Male	0	2011
+ward	52901006	Coloured	Male	0	2011
+ward	83003011	White	Female	0	2011
+ward	93404003	Coloured	Male	0	2011
+ward	21204007	Other	Female	0	2011
+ward	10203011	Other	Female	0	2011
+ward	93304007	Other	Male	0	2011
+ward	74802014	Indian or Asian	Female	0	2011
+ward	83106030	White	Female	0	2011
+ward	29200025	Other	Female	0	2011
+ward	52806006	Indian or Asian	Male	0	2011
+ward	24404001	Other	Female	0	2011
+ward	74201041	White	Male	0	2011
+ward	21506011	Indian or Asian	Male	0	2011
+ward	52402003	Indian or Asian	Female	0	2011
+ward	83204027	White	Male	0	2011
+ward	41904023	Indian or Asian	Male	0	2011
+ward	83005009	Indian or Asian	Female	0	2011
+ward	59500074	White	Female	0	2011
+ward	83004009	Coloured	Female	0	2011
+ward	21201018	Indian or Asian	Female	0	2011
+ward	52502018	Other	Male	0	2011
+ward	83101001	White	Male	0	2011
+ward	93607019	Other	Male	0	2011
+ward	64002018	White	Male	0	2011
+ward	21201010	Coloured	Male	0	2011
+ward	63701021	Other	Female	0	2011
+ward	64003024	Indian or Asian	Female	0	2011
+ward	21503010	Other	Male	0	2011
+ward	83006004	White	Female	0	2011
+ward	93403024	Other	Male	0	2011
+ward	93502001	Other	Female	0	2011
+ward	52602005	Coloured	Male	0	2011
+ward	83105029	White	Male	0	2011
+ward	93301016	Indian or Asian	Female	0	2011
+ward	63701027	White	Male	0	2011
+ward	83205016	Other	Female	0	2011
+ward	93404009	Indian or Asian	Male	0	2011
+ward	52104001	Other	Male	0	2011
+ward	52502027	Coloured	Female	0	2011
+ward	93404022	Other	Female	0	2011
+ward	30903002	White	Male	0	2011
+ward	21504014	White	Female	0	2011
+ward	30901006	White	Male	0	2011
+ward	94705021	White	Male	0	2011
+ward	64002008	White	Female	0	2011
+ward	10405009	White	Female	0	2011
+ward	21207001	Coloured	Female	0	2011
+ward	93504024	White	Female	0	2011
+ward	93301017	White	Male	0	2011
+ward	93302019	Coloured	Male	0	2011
+ward	93303010	Coloured	Female	0	2011
+ward	83105003	White	Female	0	2011
+ward	21008003	Indian or Asian	Female	0	2011
+ward	74804028	Other	Female	0	2011
+ward	29200024	White	Female	0	2011
+ward	21507031	Coloured	Female	0	2011
+ward	63803014	White	Male	0	2011
+ward	52106014	Coloured	Female	0	2011
+ward	41603001	Other	Male	0	2011
+ward	10105011	White	Male	0	2011
+ward	93404029	Indian or Asian	Female	0	2011
+ward	93504029	Coloured	Male	0	2011
+ward	54305004	Indian or Asian	Female	0	2011
+ward	21305013	White	Female	0	2011
+ward	52103015	Coloured	Male	0	2011
+ward	49400031	Indian or Asian	Male	0	2011
+ward	83204009	Other	Male	0	2011
+ward	21506005	Indian or Asian	Female	0	2011
+ward	21505002	Other	Female	0	2011
+ward	93505001	Indian or Asian	Female	0	2011
+ward	21004002	Coloured	Male	0	2011
+ward	63703009	Other	Male	0	2011
+ward	52701001	Coloured	Female	0	2011
+ward	21505001	Coloured	Male	0	2011
+ward	21208004	Indian or Asian	Male	0	2011
+ward	94705024	Indian or Asian	Male	0	2011
+ward	52605015	Other	Female	0	2011
+ward	79800038	Other	Male	0	2011
+ward	21306015	White	Male	0	2011
+ward	24404005	Coloured	Female	0	2011
+ward	54304008	Other	Male	0	2011
+ward	63805007	Coloured	Male	0	2011
+ward	83104003	White	Male	0	2011
+ward	21504005	Indian or Asian	Female	0	2011
+ward	63903005	Other	Female	0	2011
+ward	63903004	Indian or Asian	Female	0	2011
+ward	63805004	Other	Female	0	2011
+ward	52801003	Other	Female	0	2011
+ward	21506001	Indian or Asian	Female	0	2011
+ward	21503027	Coloured	Female	0	2011
+ward	52804006	Coloured	Male	0	2011
+ward	21202026	Other	Female	0	2011
+ward	34502003	Other	Female	0	2011
+ward	74804007	White	Male	0	2011
+ward	74803002	Other	Female	0	2011
+ward	63705002	White	Male	0	2011
+ward	94701005	Indian or Asian	Male	0	2011
+ward	21308008	White	Female	0	2011
+ward	54304011	Other	Female	0	2011
+ward	94704012	Other	Female	0	2011
+ward	83204020	White	Male	0	2011
+ward	21202021	Indian or Asian	Male	0	2011
+ward	52402007	Other	Male	0	2011
+ward	10402003	Indian or Asian	Female	0	2011
+ward	83007007	Coloured	Male	0	2011
+ward	64002005	Indian or Asian	Female	0	2011
+ward	21005001	Coloured	Male	0	2011
+ward	94705027	Coloured	Female	0	2011
+ward	93501014	Coloured	Female	0	2011
+ward	83005002	White	Male	0	2011
+ward	83001007	Other	Female	0	2011
+ward	83001011	Indian or Asian	Female	0	2011
+ward	41904019	Other	Male	0	2011
+ward	94703024	Other	Female	0	2011
+ward	52804023	White	Female	0	2011
+ward	52606019	Indian or Asian	Female	0	2011
+ward	83104005	Other	Female	0	2011
+ward	41902001	Indian or Asian	Female	0	2011
+ward	21307014	Indian or Asian	Female	0	2011
+ward	21204011	Coloured	Female	0	2011
+ward	52602013	Coloured	Female	0	2011
+ward	94702022	Coloured	Female	0	2011
+ward	63705027	Other	Male	0	2011
+ward	63701012	Coloured	Male	0	2011
+ward	52602009	White	Female	0	2011
+ward	93301006	Indian or Asian	Female	0	2011
+ward	83002005	Coloured	Female	0	2011
+ward	94703012	White	Male	0	2011
+ward	24404008	Other	Female	0	2011
+ward	93504015	White	Female	0	2011
+ward	63802013	Other	Female	0	2011
+ward	83205032	Indian or Asian	Female	0	2011
+ward	63805006	Coloured	Female	0	2011
+ward	21507023	Other	Female	0	2011
+ward	63701009	White	Female	0	2011
+ward	83001014	White	Male	0	2011
+ward	83106001	White	Female	0	2011
+ward	52103006	White	Female	0	2011
+ward	63701017	Other	Female	0	2011
+ward	52306007	White	Female	0	2011
+ward	24403024	Indian or Asian	Female	0	2011
+ward	52206005	Coloured	Male	0	2011
+ward	21307012	Other	Male	0	2011
+ward	94705026	White	Female	0	2011
+ward	30904007	White	Male	0	2011
+ward	52306004	Other	Male	0	2011
+ward	29200017	Coloured	Male	0	2011
+ward	42004002	Coloured	Male	0	2011
+ward	41803001	White	Male	0	2011
+ward	94701015	Coloured	Female	0	2011
+ward	93302020	Coloured	Male	0	2011
+ward	21505027	White	Female	0	2011
+ward	52805001	Other	Female	0	2011
+ward	21204008	Other	Female	0	2011
+ward	83204025	Other	Male	0	2011
+ward	83003008	Other	Female	0	2011
+ward	24402024	White	Female	0	2011
+ward	21008006	White	Female	0	2011
+ward	41902001	Other	Female	0	2011
+ward	21307014	Other	Female	0	2011
+ward	83007006	Indian or Asian	Male	0	2011
+ward	21503024	White	Female	0	2011
+ward	83104005	Indian or Asian	Female	0	2011
+ward	41904019	Indian or Asian	Male	0	2011
+ward	83001011	Other	Female	0	2011
+ward	93404036	Coloured	Male	0	2011
+ward	83001007	Indian or Asian	Female	0	2011
+ward	52705006	Other	Female	0	2011
+ward	34501003	Indian or Asian	Female	0	2011
+ward	21507023	Indian or Asian	Female	0	2011
+ward	83003017	Other	Male	0	2011
+ward	63802013	Indian or Asian	Female	0	2011
+ward	30901030	White	Female	0	2011
+ward	83205032	Other	Female	0	2011
+ward	93303024	Indian or Asian	Male	0	2011
+ward	24404008	Indian or Asian	Female	0	2011
+ward	83007020	Other	Female	0	2011
+ward	93301006	Other	Female	0	2011
+ward	83106023	White	Female	0	2011
+ward	41804013	White	Male	0	2011
+ward	21306006	Coloured	Female	0	2011
+ward	30708003	Indian or Asian	Male	0	2011
+ward	42004010	White	Female	0	2011
+ward	93602010	Coloured	Male	0	2011
+ward	21504020	Indian or Asian	Male	0	2011
+ward	63701017	Indian or Asian	Female	0	2011
+ward	54302001	White	Female	0	2011
+ward	63703033	Coloured	Male	0	2011
+ward	52201013	White	Male	0	2011
+ward	52806003	Coloured	Female	0	2011
+ward	24402026	White	Male	0	2011
+ward	93504027	White	Male	0	2011
+ward	83205026	Coloured	Female	0	2011
+ward	83204025	Indian or Asian	Male	0	2011
+ward	34501009	Coloured	Male	0	2011
+ward	94701013	White	Female	0	2011
+ward	52901016	White	Female	0	2011
+ward	63803026	White	Female	0	2011
+ward	93404029	Other	Female	0	2011
+ward	54305004	Other	Female	0	2011
+ward	93404031	Coloured	Male	0	2011
+ward	41603001	Indian or Asian	Male	0	2011
+ward	52602001	Coloured	Female	0	2011
+ward	30801003	Other	Female	0	2011
+ward	74201018	Indian or Asian	Female	0	2011
+ward	21201003	Coloured	Male	0	2011
+ward	21503013	Indian or Asian	Male	0	2011
+ward	52302024	Other	Male	0	2011
+ward	21506023	White	Male	0	2011
+ward	21505002	Indian or Asian	Female	0	2011
+ward	21506005	Other	Female	0	2011
+ward	52806010	Other	Male	0	2011
+ward	52102001	Other	Female	0	2011
+ward	21505021	Indian or Asian	Female	0	2011
+ward	52705009	White	Female	0	2011
+ward	93403026	Coloured	Female	0	2011
+ward	94703020	White	Female	0	2011
+ward	52605001	Other	Male	0	2011
+ward	94705024	Other	Male	0	2011
+ward	79900071	Coloured	Male	0	2011
+ward	10206009	Indian or Asian	Male	0	2011
+ward	10105005	Indian or Asian	Female	0	2011
+ward	42005003	White	Male	0	2011
+ward	52804004	Other	Male	0	2011
+ward	79800038	Indian or Asian	Male	0	2011
+ward	52903018	Other	Male	0	2011
+ward	21505008	Other	Male	0	2011
+ward	93305011	Coloured	Female	0	2011
+ward	21506001	Other	Female	0	2011
+ward	74203001	Indian or Asian	Female	0	2011
+ward	63903005	Indian or Asian	Female	0	2011
+ward	21504005	Other	Female	0	2011
+ward	52705017	White	Male	0	2011
+ward	93505008	White	Female	0	2011
+ward	74802011	Indian or Asian	Male	0	2011
+ward	74803002	Indian or Asian	Female	0	2011
+ward	21202026	Indian or Asian	Female	0	2011
+ward	21308005	Coloured	Male	0	2011
+ward	94705016	Coloured	Male	0	2011
+ward	52106023	White	Male	0	2011
+ward	21507034	White	Female	0	2011
+ward	21206008	Coloured	Male	0	2011
+ward	94704012	Indian or Asian	Female	0	2011
+ward	24403027	White	Female	0	2011
+ward	54304011	Indian or Asian	Female	0	2011
+ward	52606021	Coloured	Female	0	2011
+ward	93303008	White	Female	0	2011
+ward	63705009	White	Female	0	2011
+ward	93605004	Other	Female	0	2011
+ward	21305005	Coloured	Male	0	2011
+ward	21503031	Other	Male	0	2011
+ward	21206001	Coloured	Female	0	2011
+ward	93301010	White	Male	0	2011
+ward	83002017	Indian or Asian	Female	0	2011
+ward	41904008	White	Male	0	2011
+ward	63701026	White	Male	0	2011
+ward	52502024	White	Female	0	2011
+ward	21307006	White	Male	0	2011
+ward	41904032	Other	Female	0	2011
+ward	10404020	Indian or Asian	Male	0	2011
+ward	94704011	White	Male	0	2011
+ward	52602012	Coloured	Female	0	2011
+ward	21401009	White	Male	0	2011
+ward	21503003	Indian or Asian	Female	0	2011
+ward	24403016	Other	Male	0	2011
+ward	63702032	Indian or Asian	Female	0	2011
+ward	83105014	White	Male	0	2011
+ward	54305003	Coloured	Female	0	2011
+ward	93502018	Indian or Asian	Female	0	2011
+ward	24403004	Indian or Asian	Female	0	2011
+ward	83001017	Other	Male	0	2011
+ward	83003005	Other	Male	0	2011
+ward	93305014	Indian or Asian	Male	0	2011
+ward	63904014	White	Female	0	2011
+ward	52402009	White	Female	0	2011
+ward	93403030	White	Male	0	2011
+ward	42001014	Indian or Asian	Male	0	2011
+ward	52903017	White	Male	0	2011
+ward	52502012	Indian or Asian	Female	0	2011
+ward	21207014	Coloured	Female	0	2011
+ward	93304018	Coloured	Female	0	2011
+ward	93403010	Other	Male	0	2011
+ward	83001005	Other	Male	0	2011
+ward	93301015	Coloured	Male	0	2011
+ward	52404010	White	Female	0	2011
+ward	52904006	Other	Male	0	2011
+ward	52601001	Coloured	Male	0	2011
+ward	74803007	Other	Male	0	2011
+ward	74804003	White	Male	0	2011
+ward	64004007	Coloured	Female	0	2011
+ward	83101003	Other	Female	0	2011
+ward	52606004	Coloured	Female	0	2011
+ward	94701016	Coloured	Male	0	2011
+ward	93502019	White	Female	0	2011
+ward	83205036	Indian or Asian	Female	0	2011
+ward	93302024	Other	Male	0	2011
+ward	52701004	Other	Female	0	2011
+ward	10203008	White	Male	0	2011
+ward	41901004	Indian or Asian	Male	0	2011
+ward	93505024	Other	Female	0	2011
+ward	83002002	Indian or Asian	Female	0	2011
+ward	93403039	Coloured	Female	0	2011
+ward	52603017	Indian or Asian	Male	0	2011
+ward	21507022	Coloured	Male	0	2011
+ward	74203009	Other	Male	0	2011
+ward	83006006	Indian or Asian	Female	0	2011
+ward	63803020	Indian or Asian	Female	0	2011
+ward	52704004	Other	Male	0	2011
+ward	10301008	White	Female	0	2011
+ward	21207012	White	Female	0	2011
+ward	52606020	White	Female	0	2011
+ward	63907015	Other	Female	0	2011
+ward	42003004	White	Female	0	2011
+ward	93403007	White	Male	0	2011
+ward	93605009	Coloured	Male	0	2011
+ward	63701003	Coloured	Female	0	2011
+ward	63804003	Indian or Asian	Female	0	2011
+ward	54305019	White	Male	0	2011
+ward	93404028	Coloured	Female	0	2011
+ward	52701008	Indian or Asian	Female	0	2011
+ward	83106028	Other	Female	0	2011
+ward	52802008	Other	Female	0	2011
+ward	24401009	Other	Male	0	2011
+ward	63705024	White	Male	0	2011
+ward	41902011	Indian or Asian	Male	0	2011
+ward	83205014	Indian or Asian	Male	0	2011
+ward	52605018	Coloured	Female	0	2011
+ward	79800022	Other	Female	0	2011
+ward	10302012	White	Male	0	2011
+ward	83105028	Other	Female	0	2011
+ward	83102013	Indian or Asian	Female	0	2011
+ward	93401001	Coloured	Female	0	2011
+ward	79900076	White	Female	0	2011
+ward	21007001	Indian or Asian	Male	0	2011
+ward	83205003	White	Male	0	2011
+ward	83002001	White	Male	0	2011
+ward	21203004	Coloured	Male	0	2011
+ward	83204005	Indian or Asian	Female	0	2011
+ward	93301004	Other	Female	0	2011
+ward	21404005	White	Female	0	2011
+ward	21304027	Indian or Asian	Female	0	2011
+ward	41904035	White	Female	0	2011
+ward	93304004	White	Male	0	2011
+ward	74201044	White	Female	0	2011
+ward	63702006	Coloured	Female	0	2011
+ward	52605006	Other	Female	0	2011
+ward	93301026	Other	Female	0	2011
+ward	93302021	White	Male	0	2011
+ward	21201011	Coloured	Male	0	2011
+ward	52303004	White	Male	0	2011
+ward	93505024	Indian or Asian	Female	0	2011
+ward	52701004	Indian or Asian	Female	0	2011
+ward	41902004	White	Male	0	2011
+ward	63705011	Coloured	Female	0	2011
+ward	24401013	White	Male	0	2011
+ward	83205036	Other	Female	0	2011
+ward	83106011	Coloured	Female	0	2011
+ward	10203006	Indian or Asian	Male	0	2011
+ward	54301011	Other	Male	0	2011
+ward	83006006	Other	Female	0	2011
+ward	54302004	Coloured	Female	0	2011
+ward	52305002	Other	Male	0	2011
+ward	52103019	Coloured	Female	0	2011
+ward	83002002	Other	Female	0	2011
+ward	93403008	Coloured	Female	0	2011
+ward	79800059	White	Male	0	2011
+ward	63803020	Other	Female	0	2011
+ward	21305012	White	Female	0	2011
+ward	63804003	Other	Female	0	2011
+ward	52901013	White	Male	0	2011
+ward	52901008	White	Male	0	2011
+ward	94702001	White	Female	0	2011
+ward	63907015	Indian or Asian	Female	0	2011
+ward	79800022	Indian or Asian	Female	0	2011
+ward	94705003	Coloured	Female	0	2011
+ward	83106028	Indian or Asian	Female	0	2011
+ward	30706003	White	Male	0	2011
+ward	52402011	Other	Female	0	2011
+ward	49400041	Indian or Asian	Female	0	2011
+ward	24401009	Indian or Asian	Male	0	2011
+ward	52401005	Indian or Asian	Female	0	2011
+ward	21506022	White	Male	0	2011
+ward	29300020	Coloured	Male	0	2011
+ward	21301003	Indian or Asian	Female	0	2011
+ward	93502007	White	Female	0	2011
+ward	52206004	Other	Female	0	2011
+ward	64003034	White	Male	0	2011
+ward	41902007	Coloured	Female	0	2011
+ward	52504010	Coloured	Male	0	2011
+ward	10405008	White	Female	0	2011
+ward	93301026	Indian or Asian	Female	0	2011
+ward	41805003	White	Female	0	2011
+ward	94703003	Coloured	Female	0	2011
+ward	63805009	White	Female	0	2011
+ward	83204005	Other	Female	0	2011
+ward	93301004	Indian or Asian	Female	0	2011
+ward	10403010	Other	Female	0	2011
+ward	21202029	Other	Male	0	2011
+ward	21503031	Indian or Asian	Male	0	2011
+ward	93605004	Indian or Asian	Female	0	2011
+ward	21503003	Other	Female	0	2011
+ward	24403016	Indian or Asian	Male	0	2011
+ward	30803002	White	Male	0	2011
+ward	93403005	Coloured	Female	0	2011
+ward	63803012	Other	Female	0	2011
+ward	41904032	Indian or Asian	Female	0	2011
+ward	94703002	White	Male	0	2011
+ward	21506010	Indian or Asian	Female	0	2011
+ward	10404021	White	Female	0	2011
+ward	93302011	White	Female	0	2011
+ward	21505029	White	Female	0	2011
+ward	93607004	White	Female	0	2011
+ward	24403004	Other	Female	0	2011
+ward	83003005	Indian or Asian	Male	0	2011
+ward	83205019	White	Female	0	2011
+ward	63904009	White	Male	0	2011
+ward	74801015	White	Female	0	2011
+ward	63907002	Indian or Asian	Female	0	2011
+ward	94702009	Coloured	Female	0	2011
+ward	83007029	White	Male	0	2011
+ward	93303030	Other	Female	0	2011
+ward	93404002	White	Female	0	2011
+ward	74801019	Indian or Asian	Female	0	2011
+ward	52903010	Coloured	Female	0	2011
+ward	93403013	Indian or Asian	Female	0	2011
+ward	54301004	Coloured	Female	0	2011
+ward	93403010	Indian or Asian	Male	0	2011
+ward	24402005	White	Female	0	2011
+ward	52404018	Coloured	Female	0	2011
+ward	54305015	Coloured	Female	0	2011
+ward	24404018	White	Male	0	2011
+ward	52901017	White	Female	0	2011
+ward	93402001	White	Female	0	2011
+ward	21201007	White	Female	0	2011
+ward	21207002	Coloured	Male	0	2011
+ward	52702018	White	Female	0	2011
 \.
 
 

@@ -145,8 +145,11 @@ elif settings.WAZIMAP['default_profile'] == 'youth':
     FieldTable(['age in completed years', 'gender'], id='youth_gender_age_in_completed_years', universe='Youth', year='2011')
     FieldTable([ 'gender', 'population group'], id='youth_gender_population_group', universe='Youth', year='2011')
     FieldTable(['population group', 'gender'], id='youth_population_group_gender', universe='Youth', year='2011', db_table='youth_gender_population_group')
-    FieldTable(['age group in 10 years'], id='age_group_in_10_years', universe='Population', year='2011')
-
+    FieldTable(['age groups in 10 years'], id='youth_age_groups_in_10_years', universe='Population', year='2011')
+    FieldTable(['language'], id='youth_language', universe='Youth', year='2011')
+    FieldTable(['province of birth'], id='youth_province_of_birth', universe='Youth', year='2011')
+    FieldTable(['region of birth'], id='youth_region_of_birth', universe='Youth', year='2011')
+    FieldTable(['citizenship'], id='youth_citizenship', universe='Youth', year='2011')
     # Education
     FieldTable(['completed grade9', 'gender'], id='youth_age_16_to_17_gender_completed_grade9', universe='Youth aged 16 to 17', year='2011')
     FieldTable(['education level', 'gender'], id='youth_age_20_to_24_gender_education_level', universe='Youth aged 20 to 24', year='2011')
