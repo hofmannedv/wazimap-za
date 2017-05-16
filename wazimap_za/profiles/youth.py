@@ -29,6 +29,7 @@ GENDER_ORDER = ('Female', 'Male')
 PROVINCE_ORDER = ('Eastern Cape', 'Free State', 'Gauteng', 'KwaZulu-Natal', 'Limpopo', 'Mpumalanga', 'North West',
     'Northern Cape', 'Western Cape', 'Outside South Africa', 'Unspecified')
 REGION_ORDER = ('South Africa', 'SADC', 'Rest of Africa', 'Other', 'Unspecified')
+CITIZENSHIP_ORDER = ('Yes', 'No', 'Unspecified')
 
 def get_profile(geo, profile_name, request):
     session = get_session()
@@ -117,6 +118,11 @@ def get_demographics_profile(geo, session, comparative=False):
 
     youth_region_birth_data['SADC']['name'] = 'SADC*'
 
+    youth_citizenship_data, _ = get_stat_data(
+        ['citizenship'], geo, session,
+        table_name='youth_citizenship',
+        key_order=CITIZENSHIP_ORDER)
+
     final_data = {
         'total_population': {
             "name": "People",
@@ -140,7 +146,12 @@ def get_demographics_profile(geo, session, comparative=False):
             "values": {"this": youth_region_birth_data['South Africa']['values']['this']},
         },
         'youth_by_province_of_birth': youth_province_birth_data,
-        'youth_by_region_of_birth': youth_region_birth_data
+        'youth_by_region_of_birth': youth_region_birth_data,
+        'youth_sa_citizenship': {
+            'name': 'of the youth population are South African citizens',
+            'values': {'this': youth_citizenship_data['Yes']['values']['this']}
+        },
+        'youth_by_citizenship': youth_citizenship_data,
     }
 
     # The following info is displayed in the block over the map
@@ -188,6 +199,11 @@ def get_demographics_za_profile(geo, session, comparative=False):
 
     youth_region_birth_data['SADC']['name'] = 'SADC*'
 
+    youth_citizenship_data, _ = get_stat_data(
+        ['citizenship'], geo, session,
+        table_name='youth_citizenship',
+        key_order=CITIZENSHIP_ORDER)
+
     final_data = {
         'total_population': {
             "name": "People",
@@ -212,7 +228,12 @@ def get_demographics_za_profile(geo, session, comparative=False):
             "values": {"this": youth_region_birth_data['South Africa']['values']['this']},
         },
         'youth_by_province_of_birth': youth_province_birth_data,
-        'youth_by_region_of_birth': youth_region_birth_data
+        'youth_by_region_of_birth': youth_region_birth_data,
+        'youth_sa_citizenship': {
+            'name': 'of the youth population are South African citizens',
+            'values': {'this': youth_citizenship_data['Yes']['values']['this']}
+        },
+        'youth_by_citizenship': youth_citizenship_data,
     }
 
     # The following info is displayed in the block over the map

@@ -65,7 +65,16 @@
                 {% include 'profile/_blocks/_stat_list.html' with stat=demographics.youth_born_in_sa stat_type='percentage' %}
             </div>
             <div class="column-half" id="chart-pie-demographics-youth_by_region_of_birth" data-stat-type="percentage" data-chart-title="Youth by region of birth" data-qualifier="Southern African Development Community"></div>
-            <div class="column-full" id="chart-histogram-demographics-youth_by_province_of_birth" data-stat-type="scaled-percentage" data-chart-title="Youth by province of birth"></div>
+        </section>
+        <section class="clearfix stat-row grouped-row">
+            <div class="column-three-quarters" id="chart-histogram-demographics-youth_by_province_of_birth" data-stat-type="scaled-percentage" data-chart-title="Youth by province of birth"></div>
+        </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#citizenship" id="population">Citizenship<i class="fa fa-link"></i></a></h2>
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=demographics.youth_sa_citizenship stat_type='percentage' %}
+            </div>
+            <div class="column-half" id="chart-pie-demographics-youth_by_citizenship" data-stat-type="percentage" data-chart-title="Youth population by South African citizenship"></div>
         </section>
     </div>
 </article>
@@ -107,7 +116,16 @@
                 {% include 'profile/_blocks/_stat_list.html' with stat=demographics.youth_born_in_sa stat_type='percentage' %}
             </div>
             <div class="column-half" id="chart-pie-demographics-youth_by_region_of_birth" data-stat-type="percentage" data-chart-title="Youth by region of birth" data-qualifier="Southern African Development Community"></div>
-            <div class="column-full" id="chart-histogram-demographics-youth_by_province_of_birth" data-stat-type="scaled-percentage" data-chart-title="Youth by province of birth"></div>
+        </section>
+        <section class="clearfix stat-row grouped-row">
+            <div class="column-three-quarters" id="chart-histogram-demographics-youth_by_province_of_birth" data-stat-type="scaled-percentage" data-chart-title="Youth by province of birth"></div>
+        </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#citizenship" id="population">Citizenship<i class="fa fa-link"></i></a></h2>
+            <div class="column-quarter">
+                {% include 'profile/_blocks/_stat_list.html' with stat=demographics.youth_sa_citizenship stat_type='percentage' %}
+            </div>
+            <div class="column-half" id="chart-pie-demographics-youth_by_citizenship" data-stat-type="percentage" data-chart-title="Youth population by South African citizenship"></div>
         </section>
     </div>
 </article>

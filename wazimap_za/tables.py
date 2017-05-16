@@ -149,6 +149,7 @@ elif settings.WAZIMAP['default_profile'] == 'youth':
     FieldTable(['language'], id='youth_language', universe='Youth', year='2011')
     FieldTable(['province of birth'], id='youth_province_of_birth', universe='Youth', year='2011')
     FieldTable(['region of birth'], id='youth_region_of_birth', universe='Youth', year='2011')
+    FieldTable(['citizenship'], id='youth_citizenship', universe='Youth', year='2011')
     # Education
     FieldTable(['completed grade9', 'gender'], id='youth_age_16_to_17_gender_completed_grade9', universe='Youth aged 16 to 17', year='2011')
     FieldTable(['education level', 'gender'], id='youth_age_20_to_24_gender_education_level', universe='Youth aged 20 to 24', year='2011')
