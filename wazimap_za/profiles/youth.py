@@ -48,7 +48,7 @@ def get_profile(geo, profile_name, request):
         This will be removed once we have imported all the data.
         """
         display_profile = 'ZA'
-        if geo.geo_code == 'WC' or 'WC' in [comp_geo.geo_code for comp_geo in comp_geos]:
+        if geo.geo_code == 'WC' or 'WC' in [cg.geo_code for cg in comp_geos]:
             display_profile = 'WC'
             geo_data.comparative_levels = ['this', 'district', 'province']
             comp_geos = geo_data.get_comparative_geos(geo)
