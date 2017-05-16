@@ -255,7 +255,8 @@ def get_education_profile(geo, session, comparative=False):
     youth_completed_grade9_by_gender, _ = get_stat_data(
         ['completed grade9', 'gender'], geo, session,
         percent_grouping=['gender'], slices=['Completed'],
-        table_name='youth_age_16_to_17_gender_completed_grade9')
+        table_name='youth_age_16_to_17_gender_completed_grade9',
+        key_order={'gender': GENDER_ORDER})
 
     youth_education_level, youth_pop_20_to_24 = get_stat_data(
         ['education level'], geo, session,
@@ -284,7 +285,8 @@ def get_education_profile(geo, session, comparative=False):
     youth_education_attending_by_gender, _ = get_stat_data(
         ['attendance', 'gender'], geo, session,
         percent_grouping=['gender'], slices=['Yes'],
-        table_name='youth_education_attendance_gender_age_incompleted_years')
+        table_name='youth_education_attendance_gender_age_incompleted_years',
+        key_order={'gender': GENDER_ORDER})
 
     youth_average_mean_score_by_year, _ = get_stat_data(
         ['year'], geo, session,
@@ -459,7 +461,8 @@ def get_economic_opportunities_profile(geo, session, comparative=False):
     youth_neet_by_gender, _ = get_stat_data(
         ['employment education training', 'gender'], geo, session,
         percent_grouping=['gender'], slices=['NEET'],
-        table_name='youth_employment_education_training_gender')
+        table_name='youth_employment_education_training_gender',
+        key_order={'gender': GENDER_ORDER})
 
     youth_household_employment, _ = get_stat_data(
         ['household employment'], geo, session,
@@ -529,7 +532,8 @@ def get_living_environment_profile(geo, session, comparative=False):
     youth_income_poor_by_gender, _ = get_stat_data(
         ['income poverty', 'gender'], geo, session,
         percent_grouping=['gender'], slices=['Income-poor'],
-        table_name='youth_income_poverty_gender_population_group')
+        table_name='youth_income_poverty_gender_population_group',
+        key_order={'gender': GENDER_ORDER})
 
     youth_multid_poverty, _ = get_stat_data(
         ['multidimensionally poor'], geo, session,
@@ -545,7 +549,8 @@ def get_living_environment_profile(geo, session, comparative=False):
     youth_multid_poor_by_gender, _ = get_stat_data(
         ['multidimensionally poor', 'gender'], geo, session,
         percent_grouping=['gender'], slices=['Multidimensionally poor'],
-        table_name='youth_multidimensionally_poor_gender_population_group')
+        table_name='youth_multidimensionally_poor_gender_population_group',
+        key_order={'gender': GENDER_ORDER})
 
     youth_mpi_table = get_datatable('youth_mpi_score')
     youth_mpi_score, _ = youth_mpi_table.get_stat_data(
@@ -631,11 +636,13 @@ def get_safety_profile(geo, session, comparative=False):
     youth_victims_by_gender_per_10k, _ = get_stat_data(
         ['gender'], geo, session,
         table_name='youth_victims_gender',
-        percent=False)
+        percent=False,
+        key_order=GENDER_ORDER)
     youth_accused_by_gender_per_10k, _ = get_stat_data(
         ['gender'], geo, session,
         table_name='youth_accused_gender',
-        percent=False)
+        percent=False,
+        key_order=GENDER_ORDER)
 
     youth_victims_by_year, _ = get_stat_data(
         ['year'], geo, session,
