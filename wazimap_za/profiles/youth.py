@@ -362,6 +362,11 @@ def get_economic_opportunities_profile(geo, session, display_profile, comparativ
     ))
     youth_unemployment_by_definition['metadata'] = youth_labour_force_official['metadata']
 
+    youth_employment_status, _ = get_stat_data(
+        ['employment status'], geo, session,
+        key_order=('Employed', 'Unemployed', 'Discouraged work-seeker', 'Other not economically active'),
+        table_name='youth_employment_status_gender')
+
     final_data = {
         'youth_official_unemployment': {
             "name": "Youth (aged 15-24) unemployment rate using the official definition *",
@@ -369,14 +374,15 @@ def get_economic_opportunities_profile(geo, session, display_profile, comparativ
             }
         },
         'youth_unemployment_by_definition': youth_unemployment_by_definition,
+        'youth_employed': {
+            "name": "Of youth are employed",
+            "values": {"this": youth_employment_status['Employed']['values']['this'],
+            }
+        },
+        'youth_employment_status': youth_employment_status,
     }
 
     if display_profile == 'WC':
-        youth_employment_status, _ = get_stat_data(
-            ['employment status'], geo, session,
-            key_order=('Employed', 'Unemployed', 'Discouraged work-seeker', 'Other not economically active'),
-            table_name='youth_employment_status_gender')
-
         youth_emp_edu_train_status, _ = get_stat_data(
             ['employment education training'], geo, session,
             key_order=('Employed', 'School/post-school', 'NEET'),
@@ -394,7 +400,6 @@ def get_economic_opportunities_profile(geo, session, display_profile, comparativ
             table_name='youth_household_employment')
 
         final_data.update({
-            'youth_employment_status': youth_employment_status,
             'youth_neet': {
                 "name": "Of youth are not in employment, education or training (NEET)",
                 "values": {"this": youth_emp_edu_train_status['NEET']['values']['this']
