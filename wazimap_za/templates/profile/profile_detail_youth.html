@@ -179,7 +179,6 @@
     </div>
 </article>
 
-{% if display_profile == 'WC' %}
 <article id="economic_opportunities" class="clearfix">
     <header class="section-contents">
         <h1>Youth economic opportunities</h1>
@@ -194,9 +193,11 @@
                 {% include 'profile/_blocks/_stat_list.html' with stat=economic_opportunities.youth_official_unemployment stat_type='percentage' decimals='-1' %}
             </div>
             <div class="column-third" id="chart-histogram-economic_opportunities-youth_unemployment_by_definition" data-stat-type="scaled-percentage" data-chart-title="Youth unemployment rate by definition"></div>
+        </section>
+        {% if display_profile == 'WC' %}
+        <section class="clearfix stat-row">
             <div class="column-third" id="chart-pie-economic_opportunities-youth_employment_status" data-stat-type="percentage" data-chart-title="Youth by employment status"></div>
         </section>
-
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#emp_edu_train_status" id="emp_edu_train_status">Employment, education and training status<i class="fa fa-link"></i></a></h2>
             <div class="column-third">
@@ -212,9 +213,11 @@
             </div>
             <div class="column-third" id="chart-pie-economic_opportunities-youth_household_employment" data-stat-type="percentage" data-chart-title="Youth in households by adult employment"></div>
         </section>
+        {% endif %}
     </div>
 </article>
 
+{% if display_profile == 'WC' %}
 <article id="living_environment" class="clearfix">
     <header class="section-contents">
         <h1>Youth family and living environment</h1>
