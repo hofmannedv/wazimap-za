@@ -16,6 +16,7 @@ PROFILE_SECTIONS_WC = (
 
 PROFILE_SECTIONS = (
     "demographics",
+    "education"
 )
 
 EDUCATION_LEVELS_RECODE = {
@@ -61,19 +62,16 @@ def get_profile(geo, profile_name, request):
         data['display_profile'] = display_profile
 
         for section in sections:
-            if display_profile == 'ZA':
-                function_name = 'get_%s_za_profile' % section
-            else:
-                function_name = 'get_%s_profile' % section
+            function_name = 'get_%s_profile' % section
 
             if function_name in globals():
                 func = globals()[function_name]
-                data[section] = func(geo, session)
+                data[section] = func(geo, session, display_profile)
 
                 # get profiles for province and/or country
                 for comp_geo in comp_geos:
                     # merge summary profile into current geo profile
-                    merge_dicts(data[section], func(comp_geo, session, comparative=True), comp_geo.geo_level)
+                    merge_dicts(data[section], func(comp_geo, session, display_profile, comparative=True), comp_geo.geo_level)
 
         return data
 
@@ -81,7 +79,7 @@ def get_profile(geo, profile_name, request):
         session.close()
 
 
-def get_demographics_profile(geo, session, comparative=False):
+def get_demographics_profile(geo, session, display_profile, comparative=False):
     youth_pop_table = get_datatable('youth_population')
     youth_pop, pop_total = youth_pop_table.get_stat_data(
         geo, total='total_pop', percent='False')
@@ -163,269 +161,191 @@ def get_demographics_profile(geo, session, comparative=False):
 
     return final_data
 
-def get_demographics_za_profile(geo, session, comparative=False):
-    youth_pop_table = get_datatable('youth_population')
-    youth_pop, pop_total = youth_pop_table.get_stat_data(
-        geo, total='total_pop', percent='False')
 
-    youth_age_group_data, _ = get_stat_data(
-        ['age groups in 10 years'], geo, session,
-        table_name='youth_age_groups_in_10_years')
-
-    youth_gender_data, _ = get_stat_data(
-        ['gender'], geo, session,
-        table_name='youth_gender_population_group',
-        key_order=GENDER_ORDER)
-    youth_pop_group_data, _ = get_stat_data(
-        ['population group'], geo, session,
-        table_name='youth_population_group_gender',
-        key_order=POPULATION_GROUP_ORDER)
-
-    youth_language_data, _ = get_stat_data(
-        ['language'], geo, session,
-        table_name='youth_language',
-        order_by='-total'
-    )
-    youth_language_most_spoken = youth_language_data[youth_language_data.keys()[0]]
-
-    youth_province_birth_data, _ = get_stat_data(
-        ['province of birth'], geo, session,
-        table_name='youth_province_of_birth',
-        key_order=PROVINCE_ORDER)
-    youth_region_birth_data, _ = get_stat_data(
-        ['region of birth'], geo, session,
-        table_name='youth_region_of_birth',
-        key_order=REGION_ORDER)
-
-    youth_region_birth_data['SADC']['name'] = 'SADC*'
-
-    youth_citizenship_data, _ = get_stat_data(
-        ['citizenship'], geo, session,
-        table_name='youth_citizenship',
-        key_order=CITIZENSHIP_ORDER)
-
-    final_data = {
-        'total_population': {
-            "name": "People",
-            "values": {"this": pop_total}
-        },
-        'youth_population_total': {
-            "name": "Youth aged 15-24",
-            "values": {"this": youth_pop['youth_pop']['numerators']['this']}
-        },
-        'youth_population_perc': {
-            "name": "Of population are youth aged 15-24",
-            "values": {"this": youth_pop['youth_pop']['values']['this']},
-        },
-        'youth_population_by_age_group': youth_age_group_data,
-        'youth_population_by_gender': youth_gender_data,
-        'youth_population_by_pop_group': youth_pop_group_data,
-        'youth_population_by_pop_group': youth_pop_group_data,
-        'youth_language_most_spoken': youth_language_most_spoken,
-        'youth_population_by_language': youth_language_data,
-        'youth_born_in_sa': {
-            "name": "Of the youth population were born in South Africa",
-            "values": {"this": youth_region_birth_data['South Africa']['values']['this']},
-        },
-        'youth_by_province_of_birth': youth_province_birth_data,
-        'youth_by_region_of_birth': youth_region_birth_data,
-        'youth_sa_citizenship': {
-            'name': 'of the youth population are South African citizens',
-            'values': {'this': youth_citizenship_data['Yes']['values']['this']}
-        },
-        'youth_by_citizenship': youth_citizenship_data,
-    }
-
-    # The following info is displayed in the block over the map
-    if geo.square_kms:
-        final_data['population_density'] = {
-            'name': "youth per square kilometre",
-            'values': {"this": youth_pop['youth_pop']['numerators']['this'] / geo.square_kms}
-        }
-
-    return final_data
-
-
-def get_education_profile(geo, session, comparative=False):
+def get_education_profile(geo, session, display_profile, comparative=False):
     youth_completed_grade9, _ = get_stat_data(
-        ['completed grade9'], geo, session,
-        key_order=('Completed', 'Not completed'),
-        table_name='youth_age_16_to_17_gender_completed_grade9')
+            ['completed grade9'], geo, session,
+            key_order=('Completed', 'Not completed'),
+            table_name='youth_age_16_to_17_gender_completed_grade9')
 
     youth_completed_grade9_by_gender, _ = get_stat_data(
-        ['completed grade9', 'gender'], geo, session,
-        percent_grouping=['gender'], slices=['Completed'],
-        table_name='youth_age_16_to_17_gender_completed_grade9',
-        key_order={'gender': GENDER_ORDER})
+            ['completed grade9', 'gender'], geo, session,
+            percent_grouping=['gender'], slices=['Completed'],
+            table_name='youth_age_16_to_17_gender_completed_grade9',
+            key_order={'gender': GENDER_ORDER})
 
-    youth_education_level, youth_pop_20_to_24 = get_stat_data(
-        ['education level'], geo, session,
-        table_name='youth_age_20_to_24_gender_education_level',
-        recode=EDUCATION_LEVELS_RECODE,
-        key_order=(
-            'Less than Grade9',
-            'Grade 9',
-            'Grade 10/11',
-            'Matric/matric equivalent',
-            'Any tertiary'))
-
-    matric_or_equiv = (
-        youth_education_level['Matric/matric equivalent']['numerators']['this'] +
-        youth_education_level['Any tertiary']['numerators']['this'])
-
-    youth_education_attendance, _ = get_stat_data(
-        ['attendance'], geo, session,
-        table_name='youth_education_attendance_gender_age_incompleted_years')
-
-    youth_education_attending_by_age, _ = get_stat_data(
-        ['attendance', 'age in completed years'], geo, session,
-        percent_grouping=['age in completed years'], slices=['Yes'],
-        table_name='youth_education_attendance_age_incompleted_years_gender')
-
-    youth_education_attending_by_gender, _ = get_stat_data(
-        ['attendance', 'gender'], geo, session,
-        percent_grouping=['gender'], slices=['Yes'],
-        table_name='youth_education_attendance_gender_age_incompleted_years',
-        key_order={'gender': GENDER_ORDER})
-
-    youth_average_mean_score_by_year, _ = get_stat_data(
-        ['year'], geo, session,
-        table_name='youth_average_mean_score_by_year',
-        percent=False)
-
-    youth_average_language_score_by_year, _ = get_stat_data(
-        ['year'], geo, session,
-        table_name='youth_average_language_score_by_year',
-        percent=False)
-
-    youth_average_maths_score_by_year, _ = get_stat_data(
-        ['year'], geo, session,
-        table_name='youth_average_maths_score_by_year',
-        percent=False)
-
-    youth_language_outcome_latest, _ = get_stat_data(
-        ['year', 'outcome'], geo, session,
-        table_name='youth_language_outcome_by_year',
-        key_order={'outcome': ['Passed', 'Failed']},
-        percent=False, slices=['2015'])
-
-    youth_maths_outcome_latest, _ = get_stat_data(
-        ['year', 'outcome'], geo, session,
-        table_name='youth_maths_outcome_by_year',
-        key_order={'outcome': ['Passed', 'Failed']},
-        percent=False, slices=['2015'])
-
-    youth_matric_outcome_by_year, _ = get_stat_data(
-        ['year'], geo, session,
-        table_name='youth_matric_outcome_by_year',
-        only={'outcome': ['Passed']},
-        percent=False)
-
-    youth_matric_outcome_latest, _ = get_stat_data(
-        ['year', 'outcome'], geo, session,
-        table_name='youth_matric_outcome_by_year',
-        key_order={'outcome': ['Passed', 'Failed']},
-        percent=False, slices=['2015'])
-
-    youth_matric_throughput_rate_by_year, _ = get_stat_data(
-        ['year'], geo, session,
-        table_name='youth_matric_passes_as_percentage_of_grade8_enrolment_by_year',
-        only={'outcome': ['Passed']},
-        percent=False)
-
-    youth_matric_throughput_latest, _ = get_stat_data(
-        ['year', 'outcome'], geo, session,
-        table_name='youth_matric_passes_as_percentage_of_grade8_enrolment_by_year',
-        key_order={'outcome': ['Passed', 'Dropped out or failed']},
-        percent=False, slices=['2015'])
-
-    youth_bachelor_passes_by_year, _ = get_stat_data(
-        ['year'], geo, session,
-        table_name='youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year',
-        only={'outcome': ['Bachelor pass']},
-        percent=False)
-
-    youth_bachelor_outcome_latest, _ = get_stat_data(
-        ['year', 'outcome'], geo, session,
-        table_name='youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year',
-        key_order={'outcome': ['Bachelor pass', 'No bachelor pass']},
-        percent=False, slices=['2015'])
-
-    youth_student_dropout_rate_by_year, _ = get_stat_data(
-        ['year'], geo, session,
-        table_name='youth_student_dropout_rate_by_year',
-        only={'outcome': ['Dropped out']},
-        percent=False)
-
-    youth_student_dropout_rate_latest, _ = get_stat_data(
-        ['year', 'outcome'], geo, session,
-        table_name='youth_student_dropout_rate_by_year',
-        percent=False, slices=['2015'])
-
-    final_data  = {
+    final_data = {
         'youth_completed_grade9': youth_completed_grade9,
         'youth_perc_completed_grade9': {
-            "name": "Of youth aged 16-17 have completed grade 9 or higher",
-            "values": {"this": youth_completed_grade9['Completed']['values']['this']}
+            'name': 'Of youth aged 16-17 have completed grade 9 or higher',
+            'values': {'this': youth_completed_grade9['Completed']['values']['this']}
         },
         'youth_completed_grade9_by_gender': youth_completed_grade9_by_gender,
-        'youth_perc_matric': {
-            "name": "Of youth aged 20-24 have completed matric/matric equivalent or higher",
-            "values": {"this": percent(matric_or_equiv, youth_pop_20_to_24)}
-        },
-        'youth_education_level': youth_education_level,
-        'youth_perc_attending': {
-            "name": "Of youth aged 15-24 attend an educational institution",
-            "values": {"this": youth_education_attendance['Yes']['values']['this']}
-        },
-        'youth_education_attending_by_age': youth_education_attending_by_age,
-        'youth_education_attending_by_gender': youth_education_attending_by_gender,
-        'youth_ave_mean_score_latest': {
-            "name": "Average mean score in both language and mathematics",
-            "values": {"this": youth_average_mean_score_by_year['2015']['values']['this']}
-        },
-        'youth_ave_mean_score_by_year': youth_average_mean_score_by_year,
-        'youth_ave_language_score_latest': {
-            "name": "Average score in language",
-            "values": {"this": youth_average_language_score_by_year['2015']['values']['this']}
-        },
-        'youth_ave_language_score_by_year': youth_average_language_score_by_year,
-        'youth_ave_maths_score_latest': {
-            "name": "Average score in mathematics",
-            "values": {"this": youth_average_maths_score_by_year['2015']['values']['this']}
-        },
-        'youth_ave_maths_score_by_year': youth_average_maths_score_by_year,
-        'youth_language_outcome_latest': youth_language_outcome_latest,
-        'youth_maths_outcome_latest': youth_maths_outcome_latest,
-        'youth_matric_pass_rate_latest': {
-            "name": "Of students writing matric passed",
-            "values": {"this": youth_matric_outcome_latest['Passed']['values']['this']}
-        },
-        'youth_matric_outcome_latest': youth_matric_outcome_latest,
-        'youth_matric_outcome_by_year': youth_matric_outcome_by_year,
-        'youth_matric_throughput_rate_latest': {
-            "name": "Of Grade 8 students go on to pass matric",
-            "values": {"this": youth_matric_throughput_latest['Passed']['values']['this']}
-        },
-        'youth_matric_throughput_latest': youth_matric_throughput_latest,
-        'youth_matric_throughput_rate_by_year': youth_matric_throughput_rate_by_year,
-        'youth_bachelor_passes_latest': {
-            "name": "Of Grade 8 students go on to pass matric with a bachelor's pass",
-            "values": {"this": youth_bachelor_outcome_latest['Bachelor pass']['values']['this']}
-        },
-        'youth_bachelor_outcome_latest': youth_bachelor_outcome_latest,
-        'youth_bachelor_passes_by_year': youth_bachelor_passes_by_year,
-        'youth_student_dropout_rate_latest': {
-            "name": "Of students drop out between grade 10 and matric",
-            "values": {"this": youth_student_dropout_rate_latest['Dropped out']['values']['this']}
-        },
-        'youth_student_dropout_rate_by_year': youth_student_dropout_rate_by_year
     }
+
+    if display_profile == 'WC':
+        youth_education_level, youth_pop_20_to_24 = get_stat_data(
+            ['education level'], geo, session,
+            table_name='youth_age_20_to_24_gender_education_level',
+            recode=EDUCATION_LEVELS_RECODE,
+            key_order=(
+                'Less than Grade9',
+                'Grade 9',
+                'Grade 10/11',
+                'Matric/matric equivalent',
+                'Any tertiary'))
+
+        matric_or_equiv = (
+            youth_education_level['Matric/matric equivalent']['numerators']['this'] +
+            youth_education_level['Any tertiary']['numerators']['this'])
+
+        youth_education_attendance, _ = get_stat_data(
+            ['attendance'], geo, session,
+            table_name='youth_education_attendance_gender_age_incompleted_years')
+
+        youth_education_attending_by_age, _ = get_stat_data(
+            ['attendance', 'age in completed years'], geo, session,
+            percent_grouping=['age in completed years'], slices=['Yes'],
+            table_name='youth_education_attendance_age_incompleted_years_gender')
+
+        youth_education_attending_by_gender, _ = get_stat_data(
+            ['attendance', 'gender'], geo, session,
+            percent_grouping=['gender'], slices=['Yes'],
+            table_name='youth_education_attendance_gender_age_incompleted_years',
+            key_order={'gender': GENDER_ORDER})
+
+        youth_average_mean_score_by_year, _ = get_stat_data(
+            ['year'], geo, session,
+            table_name='youth_average_mean_score_by_year',
+            percent=False)
+
+        youth_average_language_score_by_year, _ = get_stat_data(
+            ['year'], geo, session,
+            table_name='youth_average_language_score_by_year',
+            percent=False)
+
+        youth_average_maths_score_by_year, _ = get_stat_data(
+            ['year'], geo, session,
+            table_name='youth_average_maths_score_by_year',
+            percent=False)
+
+        youth_language_outcome_latest, _ = get_stat_data(
+            ['year', 'outcome'], geo, session,
+            table_name='youth_language_outcome_by_year',
+            key_order={'outcome': ['Passed', 'Failed']},
+            percent=False, slices=['2015'])
+
+        youth_maths_outcome_latest, _ = get_stat_data(
+            ['year', 'outcome'], geo, session,
+            table_name='youth_maths_outcome_by_year',
+            key_order={'outcome': ['Passed', 'Failed']},
+            percent=False, slices=['2015'])
+
+        youth_matric_outcome_by_year, _ = get_stat_data(
+            ['year'], geo, session,
+            table_name='youth_matric_outcome_by_year',
+            only={'outcome': ['Passed']},
+            percent=False)
+
+        youth_matric_outcome_latest, _ = get_stat_data(
+            ['year', 'outcome'], geo, session,
+            table_name='youth_matric_outcome_by_year',
+            key_order={'outcome': ['Passed', 'Failed']},
+            percent=False, slices=['2015'])
+
+        youth_matric_throughput_rate_by_year, _ = get_stat_data(
+            ['year'], geo, session,
+            table_name='youth_matric_passes_as_percentage_of_grade8_enrolment_by_year',
+            only={'outcome': ['Passed']},
+            percent=False)
+
+        youth_matric_throughput_latest, _ = get_stat_data(
+            ['year', 'outcome'], geo, session,
+            table_name='youth_matric_passes_as_percentage_of_grade8_enrolment_by_year',
+            key_order={'outcome': ['Passed', 'Dropped out or failed']},
+            percent=False, slices=['2015'])
+
+        youth_bachelor_passes_by_year, _ = get_stat_data(
+            ['year'], geo, session,
+            table_name='youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year',
+            only={'outcome': ['Bachelor pass']},
+            percent=False)
+
+        youth_bachelor_outcome_latest, _ = get_stat_data(
+            ['year', 'outcome'], geo, session,
+            table_name='youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year',
+            key_order={'outcome': ['Bachelor pass', 'No bachelor pass']},
+            percent=False, slices=['2015'])
+
+        youth_student_dropout_rate_by_year, _ = get_stat_data(
+            ['year'], geo, session,
+            table_name='youth_student_dropout_rate_by_year',
+            only={'outcome': ['Dropped out']},
+            percent=False)
+
+        youth_student_dropout_rate_latest, _ = get_stat_data(
+            ['year', 'outcome'], geo, session,
+            table_name='youth_student_dropout_rate_by_year',
+            percent=False, slices=['2015'])
+
+        final_data.update({
+            'youth_perc_matric': {
+                "name": "Of youth aged 20-24 have completed matric/matric equivalent or higher",
+                "values": {"this": percent(matric_or_equiv, youth_pop_20_to_24)}
+            },
+            'youth_education_level': youth_education_level,
+            'youth_perc_attending': {
+                "name": "Of youth aged 15-24 attend an educational institution",
+                "values": {"this": youth_education_attendance['Yes']['values']['this']}
+            },
+            'youth_education_attending_by_age': youth_education_attending_by_age,
+            'youth_education_attending_by_gender': youth_education_attending_by_gender,
+            'youth_ave_mean_score_latest': {
+                "name": "Average mean score in both language and mathematics",
+                "values": {"this": youth_average_mean_score_by_year['2015']['values']['this']}
+            },
+            'youth_ave_mean_score_by_year': youth_average_mean_score_by_year,
+            'youth_ave_language_score_latest': {
+                "name": "Average score in language",
+                "values": {"this": youth_average_language_score_by_year['2015']['values']['this']}
+            },
+            'youth_ave_language_score_by_year': youth_average_language_score_by_year,
+            'youth_ave_maths_score_latest': {
+                "name": "Average score in mathematics",
+                "values": {"this": youth_average_maths_score_by_year['2015']['values']['this']}
+            },
+            'youth_ave_maths_score_by_year': youth_average_maths_score_by_year,
+            'youth_language_outcome_latest': youth_language_outcome_latest,
+            'youth_maths_outcome_latest': youth_maths_outcome_latest,
+            'youth_matric_pass_rate_latest': {
+                "name": "Of students writing matric passed",
+                "values": {"this": youth_matric_outcome_latest['Passed']['values']['this']}
+            },
+            'youth_matric_outcome_latest': youth_matric_outcome_latest,
+            'youth_matric_outcome_by_year': youth_matric_outcome_by_year,
+            'youth_matric_throughput_rate_latest': {
+                "name": "Of Grade 8 students go on to pass matric",
+                "values": {"this": youth_matric_throughput_latest['Passed']['values']['this']}
+            },
+            'youth_matric_throughput_latest': youth_matric_throughput_latest,
+            'youth_matric_throughput_rate_by_year': youth_matric_throughput_rate_by_year,
+            'youth_bachelor_passes_latest': {
+                "name": "Of Grade 8 students go on to pass matric with a bachelor's pass",
+                "values": {"this": youth_bachelor_outcome_latest['Bachelor pass']['values']['this']}
+            },
+            'youth_bachelor_outcome_latest': youth_bachelor_outcome_latest,
+            'youth_bachelor_passes_by_year': youth_bachelor_passes_by_year,
+            'youth_student_dropout_rate_latest': {
+                "name": "Of students drop out between grade 10 and matric",
+                "values": {"this": youth_student_dropout_rate_latest['Dropped out']['values']['this']}
+            },
+            'youth_student_dropout_rate_by_year': youth_student_dropout_rate_by_year
+        })
 
     return final_data
 
 
-def get_economic_opportunities_profile(geo, session, comparative=False):
+def get_economic_opportunities_profile(geo, session, display_profile, comparative=False):
     youth_labour_force_official, _ = get_stat_data(
         ['employment status'], geo, session,
         table_name='youth_labour_force_official_gender')
@@ -494,7 +414,7 @@ def get_economic_opportunities_profile(geo, session, comparative=False):
     return final_data
 
 
-def get_living_environment_profile(geo, session, comparative=False):
+def get_living_environment_profile(geo, session, display_profile, comparative=False):
     youth_electricity_access, _ = get_stat_data(
         ['electricity access'], geo, session,
         key_order=('No electricity', 'Have electricity for some things', 'Have electricity for everything'),
@@ -596,7 +516,7 @@ def get_living_environment_profile(geo, session, comparative=False):
     return final_data
 
 
-def get_safety_profile(geo, session, comparative=False):
+def get_safety_profile(geo, session, display_profile, comparative=False):
 
     def rate_per_10k_pop(value, population):
         return value / population * 10000
@@ -700,7 +620,7 @@ def get_safety_profile(geo, session, comparative=False):
     return final_data
 
 
-def get_health_profile(geo, session, comparative=False):
+def get_health_profile(geo, session, display_profile, comparative=False):
     youth_difficulty_by_function, _ = get_stat_data(
         ['function type'], geo, session,
         key_order=['Seeing, even when using eye glasses', 'Hearing, even when using a hearing aid', 'Communication', 'Walking', 'Remembering', 'Self care'],
