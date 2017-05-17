@@ -172,6 +172,7 @@ elif settings.WAZIMAP['default_profile'] == 'youth':
     FieldTable(['employment status', 'gender'], id='youth_labour_force_official_gender', universe='Youth in the labour force - Official definition', description='Employment status of youth in the labour force', year='2011')
     FieldTable(['employment status', 'gender'], id='youth_labour_force_expanded_gender', universe='Youth in the labour force - Expanded definition', description='Employment status of youth in the labour force', year='2011')
     FieldTable(['employment status', 'gender'], id='youth_employment_status_gender', universe='Youth', year='2011')
+    FieldTable(['employment status', 'gender'], id='population_employment_status_gender', universe='Population', year='2011')
     FieldTable(['employment education training', 'gender'], id='youth_employment_education_training_gender', universe='Youth', year='2011')
     FieldTable(['household employment'], id='youth_household_employment', universe='Youth living in households', description='Youth in households by adult employment', year='2011')
     FieldTable(['function type'], id='youth_difficulty_functioning', description='Youth experiencing difficulty in functioning', year='2011', universe='Youth with non-missing responses to the general health and functioning questions', denominator_key='youth')

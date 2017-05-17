@@ -367,6 +367,11 @@ def get_economic_opportunities_profile(geo, session, display_profile, comparativ
         key_order=('Employed', 'Unemployed', 'Discouraged work-seeker', 'Other not economically active'),
         table_name='youth_employment_status_gender')
 
+    pop_employment_status, _ = get_stat_data(
+        ['employment status'], geo, session,
+        key_order=('Employed', 'Unemployed', 'Discouraged work-seeker', 'Other not economically active'),
+        table_name='population_employment_status_gender')
+
     final_data = {
         'youth_official_unemployment': {
             "name": "Youth (aged 15-24) unemployment rate using the official definition *",
@@ -380,6 +385,7 @@ def get_economic_opportunities_profile(geo, session, display_profile, comparativ
             }
         },
         'youth_employment_status': youth_employment_status,
+        'pop_employment_status': pop_employment_status,
     }
 
     if display_profile == 'WC':
