@@ -372,6 +372,17 @@ def get_economic_opportunities_profile(geo, session, display_profile, comparativ
         key_order=('Employed', 'Unemployed', 'Discouraged work-seeker', 'Other not economically active'),
         table_name='population_employment_status_gender')
 
+    youth_emp_edu_train_status, _ = get_stat_data(
+        ['employment education training'], geo, session,
+        key_order=('Employed', 'School/post-school', 'NEET'),
+        table_name='youth_employment_education_training_gender')
+
+    youth_neet_by_gender, _ = get_stat_data(
+        ['employment education training', 'gender'], geo, session,
+        percent_grouping=['gender'], slices=['NEET'],
+        table_name='youth_employment_education_training_gender',
+        key_order={'gender': GENDER_ORDER})
+
     final_data = {
         'youth_official_unemployment': {
             "name": "Youth (aged 15-24) unemployment rate using the official definition *",
@@ -386,33 +397,23 @@ def get_economic_opportunities_profile(geo, session, display_profile, comparativ
         },
         'youth_employment_status': youth_employment_status,
         'pop_employment_status': pop_employment_status,
+        'youth_neet': {
+            "name": "Of youth are not in employment, education or training (NEET)",
+            "values": {"this": youth_emp_edu_train_status['NEET']['values']['this']
+            }
+        },
+        'youth_emp_edu_train_status': youth_emp_edu_train_status,
+        'youth_neet_by_gender': youth_neet_by_gender,
     }
 
     if display_profile == 'WC':
-        youth_emp_edu_train_status, _ = get_stat_data(
-            ['employment education training'], geo, session,
-            key_order=('Employed', 'School/post-school', 'NEET'),
-            table_name='youth_employment_education_training_gender')
-
-        youth_neet_by_gender, _ = get_stat_data(
-            ['employment education training', 'gender'], geo, session,
-            percent_grouping=['gender'], slices=['NEET'],
-            table_name='youth_employment_education_training_gender',
-            key_order={'gender': GENDER_ORDER})
-
         youth_household_employment, _ = get_stat_data(
             ['household employment'], geo, session,
             key_order=('No employed adult', 'At least one employed adult'),
             table_name='youth_household_employment')
 
         final_data.update({
-            'youth_neet': {
-                "name": "Of youth are not in employment, education or training (NEET)",
-                "values": {"this": youth_emp_edu_train_status['NEET']['values']['this']
-                }
-            },
-            'youth_emp_edu_train_status': youth_emp_edu_train_status,
-            'youth_neet_by_gender': youth_neet_by_gender,
+
             'youth_no_working_adults': {
                 "name": "Of youth live in households without an employed adult",
                 "values": {"this": youth_household_employment['No employed adult']['values']['this']}
