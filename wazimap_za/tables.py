@@ -175,7 +175,6 @@ elif settings.WAZIMAP['default_profile'] == 'youth':
     FieldTable(['employment status', 'gender'], id='population_employment_status_gender', universe='Population', year='2011')
     FieldTable(['employment education training', 'gender'], id='youth_employment_education_training_gender', universe='Youth', year='2011')
     FieldTable(['household employment'], id='youth_household_employment', universe='Youth living in households', description='Youth in households by adult employment', year='2011')
-    FieldTable(['function type'], id='youth_difficulty_functioning', description='Youth experiencing difficulty in functioning', year='2011', universe='Youth with non-missing responses to the general health and functioning questions', denominator_key='youth')
 
     # Living environment
     FieldTable(['electricity access'], id='youth_electricity_access', universe='Youth living in households', year='2011')
@@ -202,6 +201,7 @@ elif settings.WAZIMAP['default_profile'] == 'youth':
     FieldTable(['type of crime', 'year'], id='crimes_type_of_crime_year', description='Contact and property crimes by year', year='2015', has_total=False, universe='Crimes', dataset='Police Crime Statistics 2006-2015')
 
     # Health
+    FieldTable(['function type'], id='youth_difficulty_functioning', description='Youth experiencing difficulty in functioning', year='2011', universe='Youth with non-missing responses to the general health and functioning questions', denominator_key='youth')
     FieldTable(['year'], id='youth_pregnancy_rate_year', universe='Teenage pregnancy rate by year', year='2015', value_type='Float', stat_type='percentage', has_total=False)
     FieldTable(['year'], id='youth_delivery_rate_year', universe='Teenage delivery rate by year', year='2015', value_type='Float', stat_type='percentage', has_total=False)
 
