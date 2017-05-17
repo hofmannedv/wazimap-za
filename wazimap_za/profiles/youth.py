@@ -19,12 +19,6 @@ PROFILE_SECTIONS = (
     "education"
 )
 
-EDUCATION_LEVELS_RECODE = {
-    'Some secondary': 'Grade 10/11',
-    'Matric': 'Matric/matric equivalent',
-    'Tertiary': 'Any tertiary'
-}
-
 POPULATION_GROUP_ORDER = ('Black African', 'Coloured', 'Indian or Asian', 'White', 'Other')
 GENDER_ORDER = ('Female', 'Male')
 PROVINCE_ORDER = ('Eastern Cape', 'Free State', 'Gauteng', 'KwaZulu-Natal', 'Limpopo', 'Mpumalanga', 'North West',
@@ -174,20 +168,9 @@ def get_education_profile(geo, session, display_profile, comparative=False):
             table_name='youth_age_16_to_17_gender_completed_grade9',
             key_order={'gender': GENDER_ORDER})
 
-    final_data = {
-        'youth_completed_grade9': youth_completed_grade9,
-        'youth_perc_completed_grade9': {
-            'name': 'Of youth aged 16-17 have completed grade 9 or higher',
-            'values': {'this': youth_completed_grade9['Completed']['values']['this']}
-        },
-        'youth_completed_grade9_by_gender': youth_completed_grade9_by_gender,
-    }
-
-    if display_profile == 'WC':
-        youth_education_level, youth_pop_20_to_24 = get_stat_data(
+    youth_education_level, youth_pop_20_to_24 = get_stat_data(
             ['education level'], geo, session,
             table_name='youth_age_20_to_24_gender_education_level',
-            recode=EDUCATION_LEVELS_RECODE,
             key_order=(
                 'Less than Grade9',
                 'Grade 9',
@@ -195,25 +178,46 @@ def get_education_profile(geo, session, display_profile, comparative=False):
                 'Matric/matric equivalent',
                 'Any tertiary'))
 
-        matric_or_equiv = (
+    matric_or_equiv = (
             youth_education_level['Matric/matric equivalent']['numerators']['this'] +
             youth_education_level['Any tertiary']['numerators']['this'])
 
-        youth_education_attendance, _ = get_stat_data(
-            ['attendance'], geo, session,
-            table_name='youth_education_attendance_gender_age_incompleted_years')
+    youth_education_attendance, _ = get_stat_data(
+        ['attendance'], geo, session,
+        table_name='youth_education_attendance_gender_age_incompleted_years')
 
-        youth_education_attending_by_age, _ = get_stat_data(
-            ['attendance', 'age in completed years'], geo, session,
-            percent_grouping=['age in completed years'], slices=['Yes'],
-            table_name='youth_education_attendance_age_incompleted_years_gender')
+    youth_education_attending_by_age, _ = get_stat_data(
+        ['attendance', 'age in completed years'], geo, session,
+        percent_grouping=['age in completed years'], slices=['Yes'],
+        table_name='youth_education_attendance_age_incompleted_years_gender')
 
-        youth_education_attending_by_gender, _ = get_stat_data(
-            ['attendance', 'gender'], geo, session,
-            percent_grouping=['gender'], slices=['Yes'],
-            table_name='youth_education_attendance_gender_age_incompleted_years',
-            key_order={'gender': GENDER_ORDER})
+    youth_education_attending_by_gender, _ = get_stat_data(
+        ['attendance', 'gender'], geo, session,
+        percent_grouping=['gender'], slices=['Yes'],
+        table_name='youth_education_attendance_gender_age_incompleted_years',
+        key_order={'gender': GENDER_ORDER})
 
+    final_data = {
+        'youth_completed_grade9': youth_completed_grade9,
+        'youth_perc_completed_grade9': {
+            'name': 'Of youth aged 16-17 have completed grade 9 or higher',
+            'values': {'this': youth_completed_grade9['Completed']['values']['this']}
+        },
+        'youth_completed_grade9_by_gender': youth_completed_grade9_by_gender,
+        'youth_education_level': youth_education_level,
+        'youth_perc_matric': {
+            "name": "Of youth aged 20-24 have completed matric/matric equivalent or higher",
+            "values": {"this": percent(matric_or_equiv, youth_pop_20_to_24)}
+        },
+        'youth_perc_attending': {
+            "name": "Of youth aged 15-24 attend an educational institution",
+            "values": {"this": youth_education_attendance['Yes']['values']['this']}
+        },
+        'youth_education_attending_by_age': youth_education_attending_by_age,
+        'youth_education_attending_by_gender': youth_education_attending_by_gender,
+    }
+
+    if display_profile == 'WC':
         youth_average_mean_score_by_year, _ = get_stat_data(
             ['year'], geo, session,
             table_name='youth_average_mean_score_by_year',
@@ -289,17 +293,6 @@ def get_education_profile(geo, session, display_profile, comparative=False):
             percent=False, slices=['2015'])
 
         final_data.update({
-            'youth_perc_matric': {
-                "name": "Of youth aged 20-24 have completed matric/matric equivalent or higher",
-                "values": {"this": percent(matric_or_equiv, youth_pop_20_to_24)}
-            },
-            'youth_education_level': youth_education_level,
-            'youth_perc_attending': {
-                "name": "Of youth aged 15-24 attend an educational institution",
-                "values": {"this": youth_education_attendance['Yes']['values']['this']}
-            },
-            'youth_education_attending_by_age': youth_education_attending_by_age,
-            'youth_education_attending_by_gender': youth_education_attending_by_gender,
             'youth_ave_mean_score_latest': {
                 "name": "Average mean score in both language and mathematics",
                 "values": {"this": youth_average_mean_score_by_year['2015']['values']['this']}

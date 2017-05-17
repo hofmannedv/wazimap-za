@@ -89,12 +89,6 @@
             <div class="column-half" id="chart-pie-education-youth_completed_grade9" data-stat-type="percentage" data-chart-title="Youth aged 16-17 by grade 9 completion"></div>
             <div class="column-quarter" id="chart-histogram-education-youth_completed_grade9_by_gender" data-stat-type="scaled-percentage" data-chart-title="Youth aged 16-17 who completed grade 9 by gender"></div>
         </section>
-{% if display_profile == 'ZA' %}
-    </div>
-</article>
-
-{% else %}
-
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#education_levels" id="education_levels">Highest educational level<i class="fa fa-link"></i></a></h2>
             <div class="column-quarter">
@@ -110,6 +104,8 @@
             <div class="column-half" id="chart-histogram-education-youth_education_attending_by_age" data-stat-type="scaled-percentage" data-chart-title="Youth attendance at an educational institution by age"></div>
             <div class="column-quarter" id="chart-histogram-education-youth_education_attending_by_gender" data-stat-type="scaled-percentage" data-chart-title="Youth attending an educational institution by gender"></div>
         </section>
+
+    {% if display_profile == 'WC' %}
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#systemic_evaluations" id="systemic_evaluations">Grade 9 Systemic evaluations<i class="fa fa-link"></i></a></h2>
             <aside>
@@ -179,9 +175,11 @@
             </div>
             <div class="column-half" id="chart-histogram-education-youth_student_dropout_rate_by_year" data-stat-type="scaled-percentage" data-chart-title="% dropout between grade 10 and matric  by year"></div>
         </section>
+    {% endif %}
     </div>
 </article>
 
+{% if display_profile == 'WC' %}
 <article id="economic_opportunities" class="clearfix">
     <header class="section-contents">
         <h1>Youth economic opportunities</h1>
