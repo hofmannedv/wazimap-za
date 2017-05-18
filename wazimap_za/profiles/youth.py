@@ -9,8 +9,8 @@ PROFILE_SECTIONS_WC = (
     "demographics",
     "education",
     "economic_opportunities",
-    "health",
     "living_environment",
+    "health",
     "safety"
 )
 
@@ -18,12 +18,14 @@ PROFILE_SECTIONS = (
     "demographics",
     "education",
     "economic_opportunities",
+    "living_environment"
 )
 
 POPULATION_GROUP_ORDER = ('Black African', 'Coloured', 'Indian or Asian', 'White', 'Other')
 GENDER_ORDER = ('Female', 'Male')
-PROVINCE_ORDER = ('Eastern Cape', 'Free State', 'Gauteng', 'KwaZulu-Natal', 'Limpopo', 'Mpumalanga', 'North West',
-    'Northern Cape', 'Western Cape', 'Outside South Africa', 'Unspecified')
+PROVINCE_ORDER = (
+    'Eastern Cape', 'Free State', 'Gauteng', 'KwaZulu-Natal', 'Limpopo', 'Mpumalanga',
+    'North West', 'Northern Cape', 'Western Cape', 'Outside South Africa', 'Unspecified')
 REGION_ORDER = ('South Africa', 'SADC', 'Rest of Africa', 'Other', 'Unspecified')
 CITIZENSHIP_ORDER = ('Yes', 'No', 'Unspecified')
 
@@ -433,90 +435,94 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
         key_order=('On site', '< 1km', '> 1km', 'No piped water'),
         table_name='youth_water_access')
 
-    youth_dwelling_type, _ = get_stat_data(
-        ['dwelling type'], geo, session,
-        key_order=('Formal', 'Informal not in backyard', 'Informal in backyard', 'Traditional', 'Other'),
-        table_name='youth_dwelling_type')
-
-    youth_household_crowded, _ = get_stat_data(
-        ['household crowded'], geo, session,
-        key_order=('Overcrowded', 'Non-overcrowded'),
-        table_name='youth_household_crowded')
-
-    youth_income_poverty, _ = get_stat_data(
-        ['income poverty'], geo, session,
-        key_order=('Income-poor', 'Non-poor'),
-        table_name='youth_income_poverty_gender_population_group')
-
-    youth_income_poor_by_pop_group, _ = get_stat_data(
-        ['income poverty', 'population group'], geo, session,
-        percent_grouping=['population group'], slices=['Income-poor'],
-        key_order={'population group': POPULATION_GROUP_ORDER},
-        table_name='youth_income_poverty_population_group_gender')
-
-    youth_income_poor_by_gender, _ = get_stat_data(
-        ['income poverty', 'gender'], geo, session,
-        percent_grouping=['gender'], slices=['Income-poor'],
-        table_name='youth_income_poverty_gender_population_group',
-        key_order={'gender': GENDER_ORDER})
-
-    youth_multid_poverty, _ = get_stat_data(
-        ['multidimensionally poor'], geo, session,
-        key_order=('Multidimensionally poor', 'Non-poor'),
-        table_name='youth_multidimensionally_poor_gender_population_group')
-
-    youth_multid_poor_by_pop_group, _ = get_stat_data(
-        ['multidimensionally poor', 'population group'], geo, session,
-        percent_grouping=['population group'], slices=['Multidimensionally poor'],
-        key_order={'population group': POPULATION_GROUP_ORDER},
-        table_name='youth_multidimensionally_poor_population_group_gender')
-
-    youth_multid_poor_by_gender, _ = get_stat_data(
-        ['multidimensionally poor', 'gender'], geo, session,
-        percent_grouping=['gender'], slices=['Multidimensionally poor'],
-        table_name='youth_multidimensionally_poor_gender_population_group',
-        key_order={'gender': GENDER_ORDER})
-
-    youth_mpi_table = get_datatable('youth_mpi_score')
-    youth_mpi_score, _ = youth_mpi_table.get_stat_data(
-        geo, percent=False)
-    youth_mpi_score['youth_mpi_score']['name'] = 'Youth MPI score (0-1)*'
-
-
-    informal_not_in_backyard = youth_dwelling_type.get('Informal not in backyard', {}).get('values', {}).get('this', 0)
-    informal_in_backyard = youth_dwelling_type.get('Informal in backyard', {}).get('values', {}).get('this', 0)
-
     final_data = {
         'youth_electricity_access': youth_electricity_access,
         'youth_toilet_access': youth_toilet_access,
         'youth_water_access': youth_water_access,
-        'youth_dwelling_informal': {
-            "name": "Of youth live in households that are informal dwellings (shacks)",
-            "values": {"this": informal_not_in_backyard + informal_in_backyard}
-        },
-        'youth_dwelling_type': youth_dwelling_type,
-        'youth_households_overcrowded': {
-            "name": "Of youth live in households that are overcrowded *",
-            "values": {"this": youth_household_crowded['Overcrowded']['values']['this']}
-        },
-        'youth_household_crowded': youth_household_crowded,
-        'youth_income_poor': {
-            "name": "Of youth live in income-poor households *",
-            "values": {"this": youth_income_poverty['Income-poor']['values']['this']}
-        },
-        'youth_income_poverty': youth_income_poverty,
-        'youth_income_poor_by_pop_group': youth_income_poor_by_pop_group,
-        'youth_income_poor_by_gender': youth_income_poor_by_gender,
-        'youth_multid_poor': {
-            "name": "Of youth are multidimensionally poor*",
-            "values": {"this": youth_multid_poverty['Multidimensionally poor']['values']['this']}
-        },
-        'youth_multid_poor_by_pop_group': youth_multid_poor_by_pop_group,
-        'youth_multid_poor_by_gender': youth_multid_poor_by_gender,
-        'youth_multid_poverty': youth_multid_poverty,
-        'youth_mpi_score_stat': youth_mpi_score['youth_mpi_score'],
-        'youth_mpi_score': youth_mpi_score
     }
+
+    if display_profile == 'WC':
+        youth_dwelling_type, _ = get_stat_data(
+            ['dwelling type'], geo, session,
+            key_order=('Formal', 'Informal not in backyard', 'Informal in backyard', 'Traditional', 'Other'),
+            table_name='youth_dwelling_type')
+
+        youth_household_crowded, _ = get_stat_data(
+            ['household crowded'], geo, session,
+            key_order=('Overcrowded', 'Non-overcrowded'),
+            table_name='youth_household_crowded')
+
+        youth_income_poverty, _ = get_stat_data(
+            ['income poverty'], geo, session,
+            key_order=('Income-poor', 'Non-poor'),
+            table_name='youth_income_poverty_gender_population_group')
+
+        youth_income_poor_by_pop_group, _ = get_stat_data(
+            ['income poverty', 'population group'], geo, session,
+            percent_grouping=['population group'], slices=['Income-poor'],
+            key_order={'population group': POPULATION_GROUP_ORDER},
+            table_name='youth_income_poverty_population_group_gender')
+
+        youth_income_poor_by_gender, _ = get_stat_data(
+            ['income poverty', 'gender'], geo, session,
+            percent_grouping=['gender'], slices=['Income-poor'],
+            table_name='youth_income_poverty_gender_population_group',
+            key_order={'gender': GENDER_ORDER})
+
+        youth_multid_poverty, _ = get_stat_data(
+            ['multidimensionally poor'], geo, session,
+            key_order=('Multidimensionally poor', 'Non-poor'),
+            table_name='youth_multidimensionally_poor_gender_population_group')
+
+        youth_multid_poor_by_pop_group, _ = get_stat_data(
+            ['multidimensionally poor', 'population group'], geo, session,
+            percent_grouping=['population group'], slices=['Multidimensionally poor'],
+            key_order={'population group': POPULATION_GROUP_ORDER},
+            table_name='youth_multidimensionally_poor_population_group_gender')
+
+        youth_multid_poor_by_gender, _ = get_stat_data(
+            ['multidimensionally poor', 'gender'], geo, session,
+            percent_grouping=['gender'], slices=['Multidimensionally poor'],
+            table_name='youth_multidimensionally_poor_gender_population_group',
+            key_order={'gender': GENDER_ORDER})
+
+        youth_mpi_table = get_datatable('youth_mpi_score')
+        youth_mpi_score, _ = youth_mpi_table.get_stat_data(
+            geo, percent=False)
+        youth_mpi_score['youth_mpi_score']['name'] = 'Youth MPI score (0-1)*'
+
+
+        informal_not_in_backyard = youth_dwelling_type.get('Informal not in backyard', {}).get('values', {}).get('this', 0)
+        informal_in_backyard = youth_dwelling_type.get('Informal in backyard', {}).get('values', {}).get('this', 0)
+
+        final_data.update({
+            'youth_dwelling_informal': {
+                "name": "Of youth live in households that are informal dwellings (shacks)",
+                "values": {"this": informal_not_in_backyard + informal_in_backyard}
+            },
+            'youth_dwelling_type': youth_dwelling_type,
+            'youth_households_overcrowded': {
+                "name": "Of youth live in households that are overcrowded *",
+                "values": {"this": youth_household_crowded['Overcrowded']['values']['this']}
+            },
+            'youth_household_crowded': youth_household_crowded,
+            'youth_income_poor': {
+                "name": "Of youth live in income-poor households *",
+                "values": {"this": youth_income_poverty['Income-poor']['values']['this']}
+            },
+            'youth_income_poverty': youth_income_poverty,
+            'youth_income_poor_by_pop_group': youth_income_poor_by_pop_group,
+            'youth_income_poor_by_gender': youth_income_poor_by_gender,
+            'youth_multid_poor': {
+                "name": "Of youth are multidimensionally poor*",
+                "values": {"this": youth_multid_poverty['Multidimensionally poor']['values']['this']}
+            },
+            'youth_multid_poor_by_pop_group': youth_multid_poor_by_pop_group,
+            'youth_multid_poor_by_gender': youth_multid_poor_by_gender,
+            'youth_multid_poverty': youth_multid_poverty,
+            'youth_mpi_score_stat': youth_mpi_score['youth_mpi_score'],
+            'youth_mpi_score': youth_mpi_score
+        })
 
     return final_data
 

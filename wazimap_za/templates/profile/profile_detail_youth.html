@@ -219,7 +219,6 @@
     </div>
 </article>
 
-{% if display_profile == 'WC' %}
 <article id="living_environment" class="clearfix">
     <header class="section-contents">
         <h1>Youth family and living environment</h1>
@@ -231,6 +230,7 @@
             <div class="column-third" id="chart-pie-living_environment-youth_toilet_access" data-stat-type="percentage" data-chart-title="Youth in households by type of toilet"></div>
             <div class="column-third" id="chart-pie-living_environment-youth_water_access" data-stat-type="percentage" data-chart-title="Youth in households by distance to piped water"></div>
         </section>
+        {% if display_profile == 'WC' %}
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#dwelling" id="dwelling">Type of dwelling<i class="fa fa-link"></i></a></h2>
             <div class="column-third">
@@ -248,8 +248,10 @@
             </div>
             <div class="column-third" id="chart-pie-living_environment-youth_household_crowded" data-stat-type="percentage" data-chart-title="Youth in households by overcrowding"></div>
         </section>
+        {% endif %}
     </div>
 </article>
+{% if display_profile == 'WC' %}
 <article id="poverty" class="clearfix">
     <header class="section-contents">
         <h1>Youth poverty</h1>
