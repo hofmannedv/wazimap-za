@@ -8,15 +8,16 @@ from wazimap.geo import geo_data
 PROFILE_SECTIONS_WC = (
     "demographics",
     "education",
+    "economic_opportunities",
     "health",
     "living_environment",
-    "economic_opportunities",
     "safety"
 )
 
 PROFILE_SECTIONS = (
     "demographics",
-    "education"
+    "education",
+    "economic_opportunities",
 )
 
 POPULATION_GROUP_ORDER = ('Black African', 'Coloured', 'Indian or Asian', 'White', 'Other')
@@ -366,6 +367,11 @@ def get_economic_opportunities_profile(geo, session, display_profile, comparativ
         key_order=('Employed', 'Unemployed', 'Discouraged work-seeker', 'Other not economically active'),
         table_name='youth_employment_status_gender')
 
+    pop_employment_status, _ = get_stat_data(
+        ['employment status'], geo, session,
+        key_order=('Employed', 'Unemployed', 'Discouraged work-seeker', 'Other not economically active'),
+        table_name='population_employment_status_gender')
+
     youth_emp_edu_train_status, _ = get_stat_data(
         ['employment education training'], geo, session,
         key_order=('Employed', 'School/post-school', 'NEET'),
@@ -389,7 +395,13 @@ def get_economic_opportunities_profile(geo, session, display_profile, comparativ
             }
         },
         'youth_unemployment_by_definition': youth_unemployment_by_definition,
+        'youth_employed': {
+            "name": "Of youth are employed",
+            "values": {"this": youth_employment_status['Employed']['values']['this'],
+            }
+        },
         'youth_employment_status': youth_employment_status,
+        'pop_employment_status': pop_employment_status,
         'youth_neet': {
             "name": "Of youth are not in employment, education or training (NEET)",
             "values": {"this": youth_emp_edu_train_status['NEET']['values']['this']
