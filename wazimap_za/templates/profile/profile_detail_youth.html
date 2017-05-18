@@ -230,7 +230,6 @@
             <div class="column-third" id="chart-pie-living_environment-youth_toilet_access" data-stat-type="percentage" data-chart-title="Youth in households by type of toilet"></div>
             <div class="column-third" id="chart-pie-living_environment-youth_water_access" data-stat-type="percentage" data-chart-title="Youth in households by distance to piped water"></div>
         </section>
-        {% if display_profile == 'WC' %}
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#dwelling" id="dwelling">Type of dwelling<i class="fa fa-link"></i></a></h2>
             <div class="column-third">
@@ -238,6 +237,7 @@
             </div>
             <div class="column-half" id="chart-histogram-living_environment-youth_dwelling_type" data-stat-type="scaled-percentage" data-chart-title="Youth in households by type of dwelling"></div>
         </section>
+        {% if display_profile == 'WC' %}
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#overcrowding" id="overcrowding">Overcrowding<i class="fa fa-link"></i></a></h2>
             <aside>

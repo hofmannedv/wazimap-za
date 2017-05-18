@@ -435,18 +435,26 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
         key_order=('On site', '< 1km', '> 1km', 'No piped water'),
         table_name='youth_water_access')
 
+    youth_dwelling_type, _ = get_stat_data(
+        ['dwelling type'], geo, session,
+        key_order=('Formal', 'Informal not in backyard', 'Informal in backyard', 'Traditional', 'Other'),
+        table_name='youth_dwelling_type')
+
+    informal_not_in_backyard = youth_dwelling_type.get('Informal not in backyard', {}).get('values', {}).get('this', 0)
+    informal_in_backyard = youth_dwelling_type.get('Informal in backyard', {}).get('values', {}).get('this', 0)
+
     final_data = {
         'youth_electricity_access': youth_electricity_access,
         'youth_toilet_access': youth_toilet_access,
         'youth_water_access': youth_water_access,
+        'youth_dwelling_informal': {
+            "name": "Of youth live in households that are informal dwellings (shacks)",
+            "values": {"this": informal_not_in_backyard + informal_in_backyard}
+        },
+        'youth_dwelling_type': youth_dwelling_type,
     }
 
     if display_profile == 'WC':
-        youth_dwelling_type, _ = get_stat_data(
-            ['dwelling type'], geo, session,
-            key_order=('Formal', 'Informal not in backyard', 'Informal in backyard', 'Traditional', 'Other'),
-            table_name='youth_dwelling_type')
-
         youth_household_crowded, _ = get_stat_data(
             ['household crowded'], geo, session,
             key_order=('Overcrowded', 'Non-overcrowded'),
@@ -491,16 +499,7 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
             geo, percent=False)
         youth_mpi_score['youth_mpi_score']['name'] = 'Youth MPI score (0-1)*'
 
-
-        informal_not_in_backyard = youth_dwelling_type.get('Informal not in backyard', {}).get('values', {}).get('this', 0)
-        informal_in_backyard = youth_dwelling_type.get('Informal in backyard', {}).get('values', {}).get('this', 0)
-
         final_data.update({
-            'youth_dwelling_informal': {
-                "name": "Of youth live in households that are informal dwellings (shacks)",
-                "values": {"this": informal_not_in_backyard + informal_in_backyard}
-            },
-            'youth_dwelling_type': youth_dwelling_type,
             'youth_households_overcrowded': {
                 "name": "Of youth live in households that are overcrowded *",
                 "values": {"this": youth_household_crowded['Overcrowded']['values']['this']}
