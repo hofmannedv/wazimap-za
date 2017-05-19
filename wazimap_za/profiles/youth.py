@@ -21,14 +21,23 @@ PROFILE_SECTIONS = (
     "living_environment"
 )
 
-POPULATION_GROUP_ORDER = ('Black African', 'Coloured', 'Indian or Asian', 'White', 'Other')
-GENDER_ORDER = ('Female', 'Male')
+POPULATION_GROUP_ORDER = (
+    'Black African', 'Coloured', 'Indian or Asian', 'White', 'Other')
+GENDER_ORDER = (
+    'Female', 'Male')
 PROVINCE_ORDER = (
     'Eastern Cape', 'Free State', 'Gauteng', 'KwaZulu-Natal', 'Limpopo', 'Mpumalanga',
     'North West', 'Northern Cape', 'Western Cape', 'Outside South Africa', 'Unspecified')
-REGION_ORDER = ('South Africa', 'SADC', 'Rest of Africa', 'Other', 'Unspecified')
-CITIZENSHIP_ORDER = ('Yes', 'No', 'Unspecified')
-INTERNET_ACCESS_ORDER = ('From home', 'From cell phone', 'From work', 'From elsewhere', 'No access to internet')
+REGION_ORDER = (
+    'South Africa', 'SADC', 'Rest of Africa', 'Other', 'Unspecified')
+CITIZENSHIP_ORDER = (
+    'Yes', 'No', 'Unspecified')
+INTERNET_ACCESS_ORDER = (
+    'From home', 'From cell phone', 'From work', 'From elsewhere', 'No access to internet')
+TYPE_OF_AREA_ORDER = (
+    'Formal residential', 'Informal residential', 'Traditional residential', 'Farms',
+    'Parks and recreation', 'Collective living quarters', 'Industrial', 'Small holdings',
+    'Vacant', 'Commercial')
 
 def get_profile(geo, profile_name, request):
     session = get_session()
@@ -444,6 +453,11 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
     informal_not_in_backyard = youth_dwelling_type.get('Informal not in backyard', {}).get('values', {}).get('this', 0)
     informal_in_backyard = youth_dwelling_type.get('Informal in backyard', {}).get('values', {}).get('this', 0)
 
+    youth_type_of_area, _ = get_stat_data(
+        ['type of area'], geo, session,
+        key_order=TYPE_OF_AREA_ORDER,
+        table_name='youth_type_of_area')
+
     youth_household_crowded, _ = get_stat_data(
         ['household crowded'], geo, session,
         key_order=('Overcrowded', 'Non-overcrowded'),
@@ -463,6 +477,7 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
             "values": {"this": informal_not_in_backyard + informal_in_backyard}
         },
         'youth_dwelling_type': youth_dwelling_type,
+        'youth_type_of_area': youth_type_of_area,
         'youth_households_overcrowded': {
             "name": "Of youth live in households that are overcrowded *",
             "values": {"this": youth_household_crowded['Overcrowded']['values']['this']}
