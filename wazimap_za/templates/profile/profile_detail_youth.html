@@ -262,12 +262,9 @@
             </div>
             <div class="column-third" id="chart-pie-living_environment-youth_access_to_internet" data-stat-type="percentage" data-chart-title="Youth in households by primary means of internet access"></div>
         </section>
-        {% if display_profile == 'WC' %}
-
-        {% endif %}
     </div>
 </article>
-{% if display_profile == 'WC' %}
+
 <article id="poverty" class="clearfix">
     <header class="section-contents">
         <h1>Youth poverty</h1>
@@ -278,15 +275,19 @@
             <aside>
                 <p>* Stats SA’s 2015 upper-bound poverty line of R779 per person per month in 2011 prices is used to define income poverty</p>
             </aside>
+            <div class="column-half" id="chart-histogram-poverty-youth_income_poor_by_age_group" data-stat-type="scaled-percentage" data-chart-title="Population in income-poor households by age group"></div>
+        </section>
+    {% if display_profile == 'WC' %}
+        <section class="clearfix stat-row">
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_income_poor stat_type='percentage' decimals='-1' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=poverty.youth_income_poor stat_type='percentage' decimals='-1' %}
             </div>
-            <div class="column-third" id="chart-pie-living_environment-youth_income_poverty" data-stat-type="percentage" data-chart-title="Youth in households by income poverty status"></div>
-            <div class="column-third" id="chart-histogram-living_environment-youth_income_poor_by_gender" data-stat-type="scaled-percentage" data-chart-title="Youth in income-poor households by gender"></div>
+            <div class="column-third" id="chart-pie-poverty-youth_income_poverty" data-stat-type="percentage" data-chart-title="Youth in households by income poverty status"></div>
+            <div class="column-third" id="chart-histogram-poverty-youth_income_poor_by_gender" data-stat-type="scaled-percentage" data-chart-title="Youth in income-poor households by gender"></div>
         </section>
         <section class="clearfix stat-row grouped-row">
             <div class="column-third">&nbsp;</div>
-            <div class="column-half" id="chart-histogram-living_environment-youth_income_poor_by_pop_group" data-stat-type="scaled-percentage" data-chart-title="Youth in income-poor households by race"></div>
+            <div class="column-half" id="chart-histogram-poverty-youth_income_poor_by_pop_group" data-stat-type="scaled-percentage" data-chart-title="Youth in income-poor households by race"></div>
         </section>
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#multid-poor" id="multid-poor">Multidimensional poverty<i class="fa fa-link"></i></a></h2>
@@ -294,14 +295,14 @@
                 <p>* See <a href="http://opensaldru.uct.ac.za/bitstream/handle/11090/818/2016_169_Saldruwp.pdf?sequence=3" target="_blank">here</a> for the definition of multidimensional youth poverty</p>
             </aside>
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_multid_poor stat_type='percentage' decimals='-1' %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=poverty.youth_multid_poor stat_type='percentage' decimals='-1' %}
             </div>
-            <div class="column-third" id="chart-pie-living_environment-youth_multid_poverty" data-stat-type="percentage" data-chart-title="Youth by multidimensional poverty status"></div>
-            <div class="column-third" id="chart-histogram-living_environment-youth_multid_poor_by_gender" data-stat-type="scaled-percentage" data-chart-title="Multidimensionally poor youth by gender"></div>
+            <div class="column-third" id="chart-pie-poverty-youth_multid_poverty" data-stat-type="percentage" data-chart-title="Youth by multidimensional poverty status"></div>
+            <div class="column-third" id="chart-histogram-poverty-youth_multid_poor_by_gender" data-stat-type="scaled-percentage" data-chart-title="Multidimensionally poor youth by gender"></div>
         </section>
         <section class="clearfix stat-row grouped-row">
             <div class="column-third">&nbsp;</div>
-            <div class="column-half" id="chart-histogram-living_environment-youth_multid_poor_by_pop_group" data-stat-type="scaled-percentage" data-chart-title="Multidimensionally poor youth by race"></div>
+            <div class="column-half" id="chart-histogram-poverty-youth_multid_poor_by_pop_group" data-stat-type="scaled-percentage" data-chart-title="Multidimensionally poor youth by race"></div>
         </section>
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#mpi-score" id="mpi-score">Youth Multidimensional Poverty Index (MPI)<i class="fa fa-link"></i></a></h2>
@@ -309,13 +310,15 @@
                 <p>* See <a href="http://opensaldru.uct.ac.za/bitstream/handle/11090/818/2016_169_Saldruwp.pdf?sequence=3" target="_blank">here</a> for details on the design and methodology of the Youth Multidimensional Poverty Index</p>
             </aside>
             <div class="column-third">
-                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_mpi_score_stat stat_type='number' decimals="-3" %}
+                {% include 'profile/_blocks/_stat_list.html' with stat=poverty.youth_mpi_score_stat stat_type='number' decimals="-3" %}
             </div>
-            <div class="column-quarter" id="chart-histogram-living_environment-youth_mpi_score" data-stat-type="number" data-decimal-places="3" data-chart-title="Youth MPI score (0-1)"></div>
+            <div class="column-quarter" id="chart-histogram-poverty-youth_mpi_score" data-stat-type="number" data-decimal-places="3" data-chart-title="Youth MPI score (0-1)"></div>
         </section>
+        {% endif %}
     </div>
 </article>
 
+{% if display_profile == 'WC' %}
 <article id="identity_belonging_safety" class="clearfix">
     <header class="section-contents">
         <h1>Youth identity, belonging and safety</h1>

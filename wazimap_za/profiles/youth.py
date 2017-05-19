@@ -10,6 +10,7 @@ PROFILE_SECTIONS_WC = (
     "education",
     "economic_opportunities",
     "living_environment",
+    "poverty",
     "health",
     "safety"
 )
@@ -18,7 +19,8 @@ PROFILE_SECTIONS = (
     "demographics",
     "education",
     "economic_opportunities",
-    "living_environment"
+    "living_environment",
+    "poverty"
 )
 
 POPULATION_GROUP_ORDER = (
@@ -490,9 +492,19 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
         'youth_access_to_internet': youth_access_to_internet
     }
 
+    return final_data
+
+def get_poverty_profile(geo, session, display_profile, comparative=False):
+    youth_income_poor_by_age_group, _ = get_stat_data(
+        ['income poverty', 'age group'], geo, session,
+        percent_grouping=['age group'], slices=['Income-poor'],
+        table_name='youth_income_poverty_age_group')
+
+    final_data = {
+        'youth_income_poor_by_age_group': youth_income_poor_by_age_group,
+    }
+
     if display_profile == 'WC':
-
-
         youth_income_poverty, _ = get_stat_data(
             ['income poverty'], geo, session,
             key_order=('Income-poor', 'Non-poor'),
@@ -552,7 +564,6 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
         })
 
     return final_data
-
 
 def get_safety_profile(geo, session, display_profile, comparative=False):
 
