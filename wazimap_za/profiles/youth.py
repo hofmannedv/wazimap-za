@@ -28,6 +28,7 @@ PROVINCE_ORDER = (
     'North West', 'Northern Cape', 'Western Cape', 'Outside South Africa', 'Unspecified')
 REGION_ORDER = ('South Africa', 'SADC', 'Rest of Africa', 'Other', 'Unspecified')
 CITIZENSHIP_ORDER = ('Yes', 'No', 'Unspecified')
+INTERNET_ACCESS_ORDER = ('From home', 'From cell phone', 'From work', 'From elsewhere', 'No access to internet')
 
 def get_profile(geo, profile_name, request):
     session = get_session()
@@ -448,6 +449,11 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
         key_order=('Overcrowded', 'Non-overcrowded'),
         table_name='youth_household_crowded')
 
+    youth_access_to_internet, _ = get_stat_data(
+        ['access to internet'], geo, session,
+        key_order=INTERNET_ACCESS_ORDER,
+        table_name='youth_access_to_internet')
+
     final_data = {
         'youth_electricity_access': youth_electricity_access,
         'youth_toilet_access': youth_toilet_access,
@@ -462,6 +468,11 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
             "values": {"this": youth_household_crowded['Overcrowded']['values']['this']}
         },
         'youth_household_crowded': youth_household_crowded,
+        'youth_no_access_to_internet': {
+            "name": "Of youth live in households with no access to internet",
+            "values": {"this": youth_access_to_internet['No access to internet']['values']['this']}
+        },
+        'youth_access_to_internet': youth_access_to_internet
     }
 
     if display_profile == 'WC':
