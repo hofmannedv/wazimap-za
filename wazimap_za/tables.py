@@ -180,8 +180,12 @@ elif settings.WAZIMAP['default_profile'] == 'youth':
     FieldTable(['electricity access'], id='youth_electricity_access', universe='Youth living in households', year='2011')
     FieldTable(['toilet access'], id='youth_toilet_access', universe='Youth living in households', year='2011')
     FieldTable(['water access'], id='youth_water_access', universe='Youth living in households', year='2011')
-    FieldTable(['dwelling type'], id='youth_dwelling_type', universe='Youth living in households', year='2011')
+    FieldTable(['type of dwelling'], id='youth_type_of_dwelling', universe='Youth living in households', year='2011')
+    FieldTable(['type of area'], id='youth_type_of_area', universe='Youth living in households', year='2011')
     FieldTable(['household crowded'], id='youth_household_crowded', universe='Youth living in households', year='2011')
+    FieldTable(['access to internet'], id='youth_access_to_internet', universe='Youth living in households', year='2011')
+
+    # Poverty
     FieldTable(['income poverty', 'gender', 'population group'], id='youth_income_poverty_gender_population_group', universe='Youth', year='2011')
     FieldTable(['income poverty', 'population group', 'gender'], id='youth_income_poverty_population_group_gender', universe='Youth', year='2011', db_table='youth_income_poverty_gender_population_group')
     FieldTable(['multidimensionally poor', 'gender', 'population group',], id='youth_multidimensionally_poor_gender_population_group', universe='Youth', year='2011')
