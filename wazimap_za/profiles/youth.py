@@ -443,6 +443,11 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
     informal_not_in_backyard = youth_dwelling_type.get('Informal not in backyard', {}).get('values', {}).get('this', 0)
     informal_in_backyard = youth_dwelling_type.get('Informal in backyard', {}).get('values', {}).get('this', 0)
 
+    youth_household_crowded, _ = get_stat_data(
+        ['household crowded'], geo, session,
+        key_order=('Overcrowded', 'Non-overcrowded'),
+        table_name='youth_household_crowded')
+
     final_data = {
         'youth_electricity_access': youth_electricity_access,
         'youth_toilet_access': youth_toilet_access,
@@ -452,13 +457,15 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
             "values": {"this": informal_not_in_backyard + informal_in_backyard}
         },
         'youth_dwelling_type': youth_dwelling_type,
+        'youth_households_overcrowded': {
+            "name": "Of youth live in households that are overcrowded *",
+            "values": {"this": youth_household_crowded['Overcrowded']['values']['this']}
+        },
+        'youth_household_crowded': youth_household_crowded,
     }
 
     if display_profile == 'WC':
-        youth_household_crowded, _ = get_stat_data(
-            ['household crowded'], geo, session,
-            key_order=('Overcrowded', 'Non-overcrowded'),
-            table_name='youth_household_crowded')
+
 
         youth_income_poverty, _ = get_stat_data(
             ['income poverty'], geo, session,
@@ -500,11 +507,6 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
         youth_mpi_score['youth_mpi_score']['name'] = 'Youth MPI score (0-1)*'
 
         final_data.update({
-            'youth_households_overcrowded': {
-                "name": "Of youth live in households that are overcrowded *",
-                "values": {"this": youth_household_crowded['Overcrowded']['values']['this']}
-            },
-            'youth_household_crowded': youth_household_crowded,
             'youth_income_poor': {
                 "name": "Of youth live in income-poor households *",
                 "values": {"this": youth_income_poverty['Income-poor']['values']['this']}
