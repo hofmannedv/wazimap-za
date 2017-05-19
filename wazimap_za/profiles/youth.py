@@ -445,13 +445,13 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
         key_order=('On site', '< 1km', '> 1km', 'No piped water'),
         table_name='youth_water_access')
 
-    youth_dwelling_type, _ = get_stat_data(
-        ['dwelling type'], geo, session,
+    youth_type_of_dwelling, _ = get_stat_data(
+        ['type of dwelling'], geo, session,
         key_order=('Formal', 'Informal not in backyard', 'Informal in backyard', 'Traditional', 'Other'),
-        table_name='youth_dwelling_type')
+        table_name='youth_type_of_dwelling')
 
-    informal_not_in_backyard = youth_dwelling_type.get('Informal not in backyard', {}).get('values', {}).get('this', 0)
-    informal_in_backyard = youth_dwelling_type.get('Informal in backyard', {}).get('values', {}).get('this', 0)
+    informal_not_in_backyard = youth_type_of_dwelling.get('Informal not in backyard', {}).get('values', {}).get('this', 0)
+    informal_in_backyard = youth_type_of_dwelling.get('Informal in backyard', {}).get('values', {}).get('this', 0)
 
     youth_type_of_area, _ = get_stat_data(
         ['type of area'], geo, session,
@@ -476,7 +476,7 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
             "name": "Of youth live in households that are informal dwellings (shacks)",
             "values": {"this": informal_not_in_backyard + informal_in_backyard}
         },
-        'youth_dwelling_type': youth_dwelling_type,
+        'youth_type_of_dwelling': youth_type_of_dwelling,
         'youth_type_of_area': youth_type_of_area,
         'youth_households_overcrowded': {
             "name": "Of youth live in households that are overcrowded *",
