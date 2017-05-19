@@ -534,6 +534,11 @@ def get_poverty_profile(geo, session, display_profile, comparative=False):
         table_name='youth_multidimensionally_poor_gender_population_group',
         key_order={'gender': GENDER_ORDER})
 
+    youth_mpi_table = get_datatable('youth_mpi_score')
+    youth_mpi_score, _ = youth_mpi_table.get_stat_data(
+        geo, percent=False)
+    youth_mpi_score['youth_mpi_score']['name'] = 'Youth MPI score (0-1)*'
+
     final_data = {
         'youth_income_poor': {
             "name": "Of youth live in income-poor households *",
@@ -550,18 +555,9 @@ def get_poverty_profile(geo, session, display_profile, comparative=False):
         'youth_multid_poor_by_pop_group': youth_multid_poor_by_pop_group,
         'youth_multid_poor_by_gender': youth_multid_poor_by_gender,
         'youth_multid_poverty': youth_multid_poverty,
+        'youth_mpi_score_stat': youth_mpi_score['youth_mpi_score'],
+        'youth_mpi_score': youth_mpi_score
     }
-
-    if display_profile == 'WC':
-        youth_mpi_table = get_datatable('youth_mpi_score')
-        youth_mpi_score, _ = youth_mpi_table.get_stat_data(
-            geo, percent=False)
-        youth_mpi_score['youth_mpi_score']['name'] = 'Youth MPI score (0-1)*'
-
-        final_data.update({
-            'youth_mpi_score_stat': youth_mpi_score['youth_mpi_score'],
-            'youth_mpi_score': youth_mpi_score
-        })
 
     return final_data
 
