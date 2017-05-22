@@ -11,8 +11,8 @@ PROFILE_SECTIONS_WC = (
     "economic_opportunities",
     "living_environment",
     "poverty",
-    "health",
-    "safety"
+    "safety",
+    "health"
 )
 
 PROFILE_SECTIONS = (
@@ -20,7 +20,8 @@ PROFILE_SECTIONS = (
     "education",
     "economic_opportunities",
     "living_environment",
-    "poverty"
+    "poverty",
+    "health"
 )
 
 POPULATION_GROUP_ORDER = (
@@ -40,6 +41,9 @@ TYPE_OF_AREA_ORDER = (
     'Formal residential', 'Informal residential', 'Traditional residential', 'Farms',
     'Parks and recreation', 'Collective living quarters', 'Industrial', 'Small holdings',
     'Vacant', 'Commercial')
+DIFFICULTY_FUNCTIONING_KEY_ORDER = (
+    'Seeing, even when using eye glasses', 'Hearing, even when using a hearing aid',
+    'Communication', 'Walking', 'Remembering', 'Self care')
 
 def get_profile(geo, profile_name, request):
     session = get_session()
@@ -662,7 +666,7 @@ def get_safety_profile(geo, session, display_profile, comparative=False):
 def get_health_profile(geo, session, display_profile, comparative=False):
     youth_difficulty_by_function, _ = get_stat_data(
         ['function type'], geo, session,
-        key_order=['Seeing, even when using eye glasses', 'Hearing, even when using a hearing aid', 'Communication', 'Walking', 'Remembering', 'Self care'],
+        key_order=DIFFICULTY_FUNCTIONING_KEY_ORDER,
         table_name='youth_difficulty_functioning')
 
     final_data = {
@@ -673,7 +677,7 @@ def get_health_profile(geo, session, display_profile, comparative=False):
         'youth_difficulty_by_function': youth_difficulty_by_function
     }
 
-    if geo.geo_level != 'ward':
+    if display_profile == 'WC' and geo.geo_level != 'ward':
         # We don't have data on ward level for the following
         youth_pregnancy_rate_by_year, _ = get_stat_data(
             ['year'], geo, session,

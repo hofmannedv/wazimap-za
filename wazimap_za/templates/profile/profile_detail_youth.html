@@ -374,6 +374,7 @@
         </section>
     </div>
 </article>
+{% endif %}
 
 <article id="health" class="clearfix">
     <header class="section-contents">
@@ -390,7 +391,7 @@
             </div>
             <div class="column-two-thirds" id="chart-histogram-health-youth_difficulty_by_function" data-stat-type="scaled-percentage" data-chart-title="Youth experiencing difficulty in functioning by type *"></div>
         </section>
-        {% if geography.this.geo_level != 'ward' %}
+        {% if display_profile == 'WC' and geography.this.geo_level != 'ward'%}
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#teenage-pregnancy" id="teenage-pregnancy">Teenage pregnancy<i class="fa fa-link"></i></a></h2>
             <aside>
@@ -427,5 +428,4 @@
         {% endif %}
     </div>
 </article>
-{% endif %}
 {% endblock %}
