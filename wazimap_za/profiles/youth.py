@@ -10,6 +10,7 @@ PROFILE_SECTIONS_WC = (
     "education",
     "economic_opportunities",
     "living_environment",
+    "poverty",
     "health",
     "safety"
 )
@@ -18,7 +19,8 @@ PROFILE_SECTIONS = (
     "demographics",
     "education",
     "economic_opportunities",
-    "living_environment"
+    "living_environment",
+    "poverty"
 )
 
 POPULATION_GROUP_ORDER = (
@@ -490,69 +492,74 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
         'youth_access_to_internet': youth_access_to_internet
     }
 
-    if display_profile == 'WC':
+    return final_data
 
+def get_poverty_profile(geo, session, display_profile, comparative=False):
+    youth_income_poverty, _ = get_stat_data(
+        ['income poverty'], geo, session,
+        key_order=('Income-poor', 'Non-poor'),
+        table_name='youth_income_poverty_gender_population_group')
 
-        youth_income_poverty, _ = get_stat_data(
-            ['income poverty'], geo, session,
-            key_order=('Income-poor', 'Non-poor'),
-            table_name='youth_income_poverty_gender_population_group')
+    youth_income_poor_by_age_group, _ = get_stat_data(
+        ['income poverty', 'age group'], geo, session,
+        percent_grouping=['age group'], slices=['Income-poor'],
+        table_name='youth_income_poverty_age_group')
 
-        youth_income_poor_by_pop_group, _ = get_stat_data(
-            ['income poverty', 'population group'], geo, session,
-            percent_grouping=['population group'], slices=['Income-poor'],
-            key_order={'population group': POPULATION_GROUP_ORDER},
-            table_name='youth_income_poverty_population_group_gender')
+    youth_income_poor_by_pop_group, _ = get_stat_data(
+        ['income poverty', 'population group'], geo, session,
+        percent_grouping=['population group'], slices=['Income-poor'],
+        key_order={'population group': POPULATION_GROUP_ORDER},
+        table_name='youth_income_poverty_population_group_gender')
 
-        youth_income_poor_by_gender, _ = get_stat_data(
-            ['income poverty', 'gender'], geo, session,
-            percent_grouping=['gender'], slices=['Income-poor'],
-            table_name='youth_income_poverty_gender_population_group',
-            key_order={'gender': GENDER_ORDER})
+    youth_income_poor_by_gender, _ = get_stat_data(
+        ['income poverty', 'gender'], geo, session,
+        percent_grouping=['gender'], slices=['Income-poor'],
+        table_name='youth_income_poverty_gender_population_group',
+        key_order={'gender': GENDER_ORDER})
 
-        youth_multid_poverty, _ = get_stat_data(
+    youth_multid_poverty, _ = get_stat_data(
             ['multidimensionally poor'], geo, session,
             key_order=('Multidimensionally poor', 'Non-poor'),
             table_name='youth_multidimensionally_poor_gender_population_group')
 
-        youth_multid_poor_by_pop_group, _ = get_stat_data(
-            ['multidimensionally poor', 'population group'], geo, session,
-            percent_grouping=['population group'], slices=['Multidimensionally poor'],
-            key_order={'population group': POPULATION_GROUP_ORDER},
-            table_name='youth_multidimensionally_poor_population_group_gender')
+    youth_multid_poor_by_pop_group, _ = get_stat_data(
+        ['multidimensionally poor', 'population group'], geo, session,
+        percent_grouping=['population group'], slices=['Multidimensionally poor'],
+        key_order={'population group': POPULATION_GROUP_ORDER},
+        table_name='youth_multidimensionally_poor_population_group_gender')
 
-        youth_multid_poor_by_gender, _ = get_stat_data(
-            ['multidimensionally poor', 'gender'], geo, session,
-            percent_grouping=['gender'], slices=['Multidimensionally poor'],
-            table_name='youth_multidimensionally_poor_gender_population_group',
-            key_order={'gender': GENDER_ORDER})
+    youth_multid_poor_by_gender, _ = get_stat_data(
+        ['multidimensionally poor', 'gender'], geo, session,
+        percent_grouping=['gender'], slices=['Multidimensionally poor'],
+        table_name='youth_multidimensionally_poor_gender_population_group',
+        key_order={'gender': GENDER_ORDER})
 
-        youth_mpi_table = get_datatable('youth_mpi_score')
-        youth_mpi_score, _ = youth_mpi_table.get_stat_data(
-            geo, percent=False)
-        youth_mpi_score['youth_mpi_score']['name'] = 'Youth MPI score (0-1)*'
+    youth_mpi_table = get_datatable('youth_mpi_score')
+    youth_mpi_score, _ = youth_mpi_table.get_stat_data(
+        geo, percent=False)
+    youth_mpi_score['youth_mpi_score']['name'] = 'Youth MPI score (0-1)*'
 
-        final_data.update({
-            'youth_income_poor': {
-                "name": "Of youth live in income-poor households *",
-                "values": {"this": youth_income_poverty['Income-poor']['values']['this']}
-            },
-            'youth_income_poverty': youth_income_poverty,
-            'youth_income_poor_by_pop_group': youth_income_poor_by_pop_group,
-            'youth_income_poor_by_gender': youth_income_poor_by_gender,
-            'youth_multid_poor': {
-                "name": "Of youth are multidimensionally poor*",
-                "values": {"this": youth_multid_poverty['Multidimensionally poor']['values']['this']}
-            },
-            'youth_multid_poor_by_pop_group': youth_multid_poor_by_pop_group,
-            'youth_multid_poor_by_gender': youth_multid_poor_by_gender,
-            'youth_multid_poverty': youth_multid_poverty,
-            'youth_mpi_score_stat': youth_mpi_score['youth_mpi_score'],
-            'youth_mpi_score': youth_mpi_score
-        })
+    final_data = {
+        'youth_income_poor': {
+            "name": "Of youth live in income-poor households *",
+            "values": {"this": youth_income_poverty['Income-poor']['values']['this']}
+        },
+        'youth_income_poor_by_age_group': youth_income_poor_by_age_group,
+        'youth_income_poverty': youth_income_poverty,
+        'youth_income_poor_by_pop_group': youth_income_poor_by_pop_group,
+        'youth_income_poor_by_gender': youth_income_poor_by_gender,
+        'youth_multid_poor': {
+            "name": "Of youth are multidimensionally poor*",
+            "values": {"this": youth_multid_poverty['Multidimensionally poor']['values']['this']}
+        },
+        'youth_multid_poor_by_pop_group': youth_multid_poor_by_pop_group,
+        'youth_multid_poor_by_gender': youth_multid_poor_by_gender,
+        'youth_multid_poverty': youth_multid_poverty,
+        'youth_mpi_score_stat': youth_mpi_score['youth_mpi_score'],
+        'youth_mpi_score': youth_mpi_score
+    }
 
     return final_data
-
 
 def get_safety_profile(geo, session, display_profile, comparative=False):
 

@@ -186,6 +186,7 @@ elif settings.WAZIMAP['default_profile'] == 'youth':
     FieldTable(['access to internet'], id='youth_access_to_internet', universe='Youth living in households', year='2011')
 
     # Poverty
+    FieldTable(['income poverty', 'age group'], id='youth_income_poverty_age_group', universe='Youth', year='2011')
     FieldTable(['income poverty', 'gender', 'population group'], id='youth_income_poverty_gender_population_group', universe='Youth', year='2011')
     FieldTable(['income poverty', 'population group', 'gender'], id='youth_income_poverty_population_group_gender', universe='Youth', year='2011', db_table='youth_income_poverty_gender_population_group')
     FieldTable(['multidimensionally poor', 'gender', 'population group',], id='youth_multidimensionally_poor_gender_population_group', universe='Youth', year='2011')
