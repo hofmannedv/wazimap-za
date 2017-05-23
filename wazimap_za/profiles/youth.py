@@ -47,19 +47,6 @@ DIFFICULTY_FUNCTIONING_KEY_ORDER = (
 GIVEN_BIRTH_KEY_ORDER = (
     'Given birth', 'Never given birth', 'Do not know', 'Unspecified')
 
-AGE_GROUP_RECODE = {
-    '15':'15-19',
-    '16':'15-19',
-    '17':'15-19',
-    '18':'15-19',
-    '19':'15-19',
-    '20':'20-24',
-    '21':'20-24',
-    '22':'20-24',
-    '23':'20-24',
-    '24':'20-24'
-}
-
 GIVEN_BIRTH_AGE_GROUP_RECODE = {
     'age in completed years': {
         '15':'15-19',
@@ -709,7 +696,6 @@ def get_health_profile(geo, session, display_profile, comparative=False):
         key_order={'given birth': GIVEN_BIRTH_KEY_ORDER},
         recode=GIVEN_BIRTH_AGE_GROUP_RECODE,
         table_name='youth_female_given_birth_age_in_completed_years')
-    import ipdb; ipdb.set_trace()
 
     final_data = {
         'youth_difficulty_seeing': {
