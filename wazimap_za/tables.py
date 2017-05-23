@@ -207,6 +207,9 @@ elif settings.WAZIMAP['default_profile'] == 'youth':
 
     # Health
     FieldTable(['function type'], id='youth_difficulty_functioning', description='Youth experiencing difficulty in functioning', year='2011', universe='Youth with non-missing responses to the general health and functioning questions', denominator_key='youth')
+    FieldTable(['given birth'], id='youth_female_given_birth', year='2011', universe='Female youth')
+    FieldTable(['given birth', 'age in completed years'], id='youth_female_given_birth_age_in_completed_years', year='2011', universe='Female youth')
+
     FieldTable(['year'], id='youth_pregnancy_rate_year', universe='Teenage pregnancy rate by year', year='2015', value_type='Float', stat_type='percentage', has_total=False)
     FieldTable(['year'], id='youth_delivery_rate_year', universe='Teenage delivery rate by year', year='2015', value_type='Float', stat_type='percentage', has_total=False)
 
