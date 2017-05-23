@@ -11,8 +11,8 @@ PROFILE_SECTIONS_WC = (
     "economic_opportunities",
     "living_environment",
     "poverty",
-    "health",
-    "safety"
+    "safety",
+    "health"
 )
 
 PROFILE_SECTIONS = (
@@ -20,7 +20,8 @@ PROFILE_SECTIONS = (
     "education",
     "economic_opportunities",
     "living_environment",
-    "poverty"
+    "poverty",
+    "health"
 )
 
 POPULATION_GROUP_ORDER = (
@@ -40,6 +41,26 @@ TYPE_OF_AREA_ORDER = (
     'Formal residential', 'Informal residential', 'Traditional residential', 'Farms',
     'Parks and recreation', 'Collective living quarters', 'Industrial', 'Small holdings',
     'Vacant', 'Commercial')
+DIFFICULTY_FUNCTIONING_KEY_ORDER = (
+    'Seeing, even when using eye glasses', 'Hearing, even when using a hearing aid',
+    'Communication', 'Walking', 'Remembering', 'Self care')
+GIVEN_BIRTH_KEY_ORDER = (
+    'Given birth', 'Never given birth', 'Do not know', 'Unspecified')
+
+GIVEN_BIRTH_AGE_GROUP_RECODE = {
+    'age in completed years': {
+        '15':'15-19',
+        '16':'15-19',
+        '17':'15-19',
+        '18':'15-19',
+        '19':'15-19',
+        '20':'20-24',
+        '21':'20-24',
+        '22':'20-24',
+        '23':'20-24',
+        '24':'20-24'
+    }
+}
 
 def get_profile(geo, profile_name, request):
     session = get_session()
@@ -662,18 +683,35 @@ def get_safety_profile(geo, session, display_profile, comparative=False):
 def get_health_profile(geo, session, display_profile, comparative=False):
     youth_difficulty_by_function, _ = get_stat_data(
         ['function type'], geo, session,
-        key_order=['Seeing, even when using eye glasses', 'Hearing, even when using a hearing aid', 'Communication', 'Walking', 'Remembering', 'Self care'],
+        key_order=DIFFICULTY_FUNCTIONING_KEY_ORDER,
         table_name='youth_difficulty_functioning')
+
+    youth_female_given_birth, _ = get_stat_data(
+        ['given birth'], geo, session,
+        key_order=GIVEN_BIRTH_KEY_ORDER,
+        table_name='youth_female_given_birth')
+    youth_female_given_birth_by_age_group, _ = get_stat_data(
+        ['given birth', 'age in completed years'], geo, session,
+        percent_grouping=['age in completed years'], slices=['Given birth'],
+        key_order={'given birth': GIVEN_BIRTH_KEY_ORDER},
+        recode=GIVEN_BIRTH_AGE_GROUP_RECODE,
+        table_name='youth_female_given_birth_age_in_completed_years')
 
     final_data = {
         'youth_difficulty_seeing': {
             "name": "Of youth experience difficulty in seeing even when using eye glasses",
             "values": {"this": youth_difficulty_by_function['Seeing, even when using eye glasses']['values']['this']}
         },
-        'youth_difficulty_by_function': youth_difficulty_by_function
+        'youth_difficulty_by_function': youth_difficulty_by_function,
+        'youth_female_have_given_birth': {
+            "name": "Of females aged 15-24 have given birth to a live child",
+            "values": {"this": youth_female_given_birth['Given birth']['values']['this']}
+        },
+        'youth_female_given_birth': youth_female_given_birth,
+        'youth_female_given_birth_by_age_group': youth_female_given_birth_by_age_group
     }
 
-    if geo.geo_level != 'ward':
+    if display_profile == 'WC' and geo.geo_level != 'ward':
         # We don't have data on ward level for the following
         youth_pregnancy_rate_by_year, _ = get_stat_data(
             ['year'], geo, session,

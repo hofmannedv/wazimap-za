@@ -374,6 +374,7 @@
         </section>
     </div>
 </article>
+{% endif %}
 
 <article id="health" class="clearfix">
     <header class="section-contents">
@@ -381,7 +382,7 @@
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
-            <h2 class="header-for-columns"><a class="permalink" href="#health" id="health">General health and functioning<i class="fa fa-link"></i></a></h2>
+            <h2 class="header-for-columns"><a class="permalink" href="#general_health" id="general_health">General health and functioning<i class="fa fa-link"></i></a></h2>
             <aside>
                 <p>* This includes youth with both mild and severe difficulties</p>
             </aside>
@@ -390,7 +391,18 @@
             </div>
             <div class="column-two-thirds" id="chart-histogram-health-youth_difficulty_by_function" data-stat-type="scaled-percentage" data-chart-title="Youth experiencing difficulty in functioning by type *"></div>
         </section>
-        {% if geography.this.geo_level != 'ward' %}
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#childbearing" id="childbearing">Live births/childbearing<i class="fa fa-link"></i></a></h2>
+            <aside>
+                <p>* There were many unspecified responses for this item, be careful with this statistic</p>
+            </aside>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=health.youth_female_have_given_birth stat_type='percentage' decimals='-1' %}
+            </div>
+            <div class="column-third" id="chart-pie-health-youth_female_given_birth" data-stat-type="percentage" data-chart-title="Female youth aged 15-24 by children ever born" data-qualifier=""Unspecified refers to cases where no response was given></div>
+            <div class="column-third" id="chart-histogram-health-youth_female_given_birth_by_age_group" data-stat-type="scaled-percentage" data-chart-title="Female youth reported to have given birth to a live child by age"></div>
+        </section>
+        {% if display_profile == 'WC' and geography.this.geo_level != 'ward'%}
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#teenage-pregnancy" id="teenage-pregnancy">Teenage pregnancy<i class="fa fa-link"></i></a></h2>
             <aside>
@@ -427,5 +439,4 @@
         {% endif %}
     </div>
 </article>
-{% endif %}
 {% endblock %}
