@@ -133,3 +133,7 @@ button.action-button {
   padding: 5px 8px;
   border: 0px;
 }
+
+.fa.fa-child.fa-tiny {
+  font-size: 12px !important;
+}
