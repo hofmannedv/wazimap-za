@@ -2,6 +2,29 @@
 
 {% block head_meta_description %}Population data and election figures from {{ geography.this.short_name}}, broken down by category: Demographics, Service delivery, Economics and Education.{% endblock %}
 
+{% block header_content %}
+<div class="floating-nav-wrapper">
+    <nav class="floating-nav">
+        <div class="wrapper clearfix">
+            <h3><img src="{% static 'img/youth-logo.png' %}">{{ geography.this.name }}</h3>
+            <ul>
+                <li><a href="#demographics"><i class="fa fa-user"></i> <span>Demographics</span></a></li>
+                <li><a href="#education"><i class="fa fa-graduation-cap"></i> <span>Education</span></a></li>
+                <li><a href="#economic_opportunities"><i class="fa fa-line-chart"></i> <span>Economic opportunities</span></a></li>
+                <li><a href="#living_environment"><i class="fa fa-home"></i> <span>Family and living environment</span></a></li>
+                <li><a href="#poverty"><i class="fa fa-money"></i> <span>Poverty</span></a></li>
+                {% if display_profile == 'WC' %}
+                <li><a href="#identity_belonging_safety"><i class="fa fa-street-view"></i> <span>Identity, belonging and safety</span></a></li>
+                {% endif %}
+                <li><a href="#health"><i class="fa fa-heartbeat"></i> <span>Health and wellness</span></a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+{{ block.super }}
+{% endblock %}
+
 {% block profile_header_population %}
 <span class="value">{{ demographics.youth_population_total.values.this|floatformat:"0" }}</span>
 <span class="name">Youth aged 15-24 population</span>
@@ -29,7 +52,7 @@
 {% block profile_detail %}
 <article id="demographics" class="clearfix">
     <header class="section-contents">
-        <h1>Youth demographics</h1>
+        <h1><i class="fa fa-fw fa-user"></i> Youth demographics</h1>
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
@@ -78,7 +101,7 @@
 
 <article id="education" class="clearfix">
     <header class="section-contents">
-        <h1>Youth education</h1>
+        <h1><i class="fa fa-fw fa-graduation-cap"></i> Youth education</h1>
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
@@ -181,7 +204,7 @@
 
 <article id="economic_opportunities" class="clearfix">
     <header class="section-contents">
-        <h1>Youth economic opportunities</h1>
+        <h1><i class="fa fa-fw fa-line-chart"></i> Youth economic opportunities</h1>
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
@@ -222,7 +245,7 @@
 
 <article id="living_environment" class="clearfix">
     <header class="section-contents">
-        <h1>Youth family and living environment</h1>
+        <h1><i class="fa fa-fw fa-home"></i> Youth family and living environment</h1>
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
@@ -267,7 +290,7 @@
 
 <article id="poverty" class="clearfix">
     <header class="section-contents">
-        <h1>Youth poverty</h1>
+        <h1><i class="fa fa-fw fa-money"></i> Youth poverty</h1>
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
@@ -315,7 +338,7 @@
 {% if display_profile == 'WC' %}
 <article id="identity_belonging_safety" class="clearfix">
     <header class="section-contents">
-        <h1>Youth identity, belonging and safety</h1>
+        <h1><i class="fa fa-fw fa-street-view"></i> Youth identity, belonging and safety</h1>
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
@@ -378,7 +401,7 @@
 
 <article id="health" class="clearfix">
     <header class="section-contents">
-        <h1>Youth health and wellness</h1>
+        <h1><i class="fa fa-fw fa-heartbeat"></i> Youth health and wellness</h1>
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
