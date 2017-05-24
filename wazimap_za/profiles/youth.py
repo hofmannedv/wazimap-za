@@ -47,6 +47,18 @@ DIFFICULTY_FUNCTIONING_KEY_ORDER = (
 GIVEN_BIRTH_KEY_ORDER = (
     'Given birth', 'Never given birth', 'Do not know', 'Unspecified')
 
+INCOME_POVERTY_AGE_GROUP_RECODE = {
+    'age group': {
+        '0-14': 'Children (0-14)',
+        '15-24': 'Youth (15-24)',
+        '25-34': 'Adults (25+)',
+        '35-44': 'Adults (25+)',
+        '45-54': 'Adults (25+)',
+        '55-64': 'Adults (25+)',
+        '65+': 'Adults (25+)',
+    }
+}
+
 GIVEN_BIRTH_AGE_GROUP_RECODE = {
     'age in completed years': {
         '15':'15-19',
@@ -519,6 +531,7 @@ def get_poverty_profile(geo, session, display_profile, comparative=False):
     youth_income_poor_by_age_group, _ = get_stat_data(
         ['income poverty', 'age group'], geo, session,
         percent_grouping=['age group'], slices=['Income-poor'],
+        recode=INCOME_POVERTY_AGE_GROUP_RECODE,
         table_name='youth_income_poverty_age_group')
 
     youth_income_poor_by_pop_group, _ = get_stat_data(
@@ -558,7 +571,7 @@ def get_poverty_profile(geo, session, display_profile, comparative=False):
     final_data = {
         'youth_income_poor': {
             "name": "Of youth live in income-poor households *",
-            "values": {"this": youth_income_poor_by_age_group['15-24']['values']['this']}
+            "values": {"this": youth_income_poor_by_age_group['Youth (15-24)']['values']['this']}
         },
         'youth_income_poor_by_age_group': youth_income_poor_by_age_group,
         'youth_income_poor_by_pop_group': youth_income_poor_by_pop_group,
