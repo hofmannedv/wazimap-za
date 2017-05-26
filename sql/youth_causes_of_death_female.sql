@@ -30,7 +30,7 @@ CREATE TABLE youth_causes_of_death_female (
     geo_level character varying(15) NOT NULL,
     geo_code character varying(10) NOT NULL,
     "cause of death" character varying(128) NOT NULL,
-    total double precision NOT NULL,
+    total double precision,
     geo_version character varying(100) NOT NULL
 );
 

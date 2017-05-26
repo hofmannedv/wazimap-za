@@ -28,7 +28,7 @@ CREATE TABLE youth_labour_force_expanded_gender (
     geo_code character varying(10) NOT NULL,
     "employment status" character varying(128) NOT NULL,
     gender character varying(128) NOT NULL,
-    total integer NOT NULL,
+    total integer,
     geo_version character varying(100) NOT NULL
 );
 

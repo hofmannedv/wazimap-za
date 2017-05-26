@@ -28,7 +28,7 @@ CREATE TABLE youth_age_16_to_17_gender_completed_grade9 (
     geo_code character varying(10) NOT NULL,
     "completed grade9" character varying(128) NOT NULL,
     gender character varying(128) NOT NULL,
-    total integer NOT NULL,
+    total integer,
     geo_version character varying(100) NOT NULL
 );
 

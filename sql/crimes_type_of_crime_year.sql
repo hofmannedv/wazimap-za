@@ -31,7 +31,7 @@ CREATE TABLE crimes_type_of_crime_year (
     geo_code character varying(10) NOT NULL,
     "type of crime" character varying(128) NOT NULL,
     year character varying(128) NOT NULL,
-    total integer NOT NULL,
+    total integer,
     geo_version character varying(100) NOT NULL
 );
 

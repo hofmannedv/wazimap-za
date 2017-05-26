@@ -31,7 +31,7 @@ CREATE TABLE youth_gender_age_in_completed_years (
     geo_code character varying(10) NOT NULL,
     gender character varying(128) NOT NULL,
     "age in completed years" character varying(128) NOT NULL,
-    total integer NOT NULL,
+    total integer,
     geo_version character varying(100) NOT NULL
 );
 

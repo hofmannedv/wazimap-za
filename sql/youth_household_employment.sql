@@ -27,7 +27,7 @@ CREATE TABLE youth_household_employment (
     geo_level character varying(15) NOT NULL,
     geo_code character varying(10) NOT NULL,
     "household employment" character varying(128) NOT NULL,
-    total integer NOT NULL,
+    total integer,
     geo_version character varying(100) NOT NULL
 );
 
