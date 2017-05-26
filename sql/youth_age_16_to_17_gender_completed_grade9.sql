@@ -20,16 +20,16 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: youth_age_16_to_17_gender_completed_grade9; Type: TABLE; Schema: public; Owner: -; Tablespace:
+-- Name: youth_age_16_to_17_gender_completed_grade9; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE youth_age_16_to_17_gender_completed_grade9 (
     geo_level character varying(15) NOT NULL,
     geo_code character varying(10) NOT NULL,
+    geo_version character varying(100) NOT NULL,
     "completed grade9" character varying(128) NOT NULL,
     gender character varying(128) NOT NULL,
-    total integer,
-    geo_version character varying(100) NOT NULL
+    total integer
 );
 
 
@@ -475,6 +475,7 @@ municipality	FS182	2011	Completed	Female	303
 municipality	FS182	2011	Not completed	Male	216
 municipality	FS182	2011	Not completed	Female	200
 municipality	FS183	2011	Completed	Male	485
+ward	10202006	2011	Completed	Female	190
 municipality	FS183	2011	Completed	Female	600
 municipality	FS183	2011	Not completed	Male	372
 municipality	FS183	2011	Not completed	Female	285
@@ -579,6 +580,7 @@ municipality	KZN215	2011	Completed	Male	687
 municipality	KZN215	2011	Completed	Female	823
 municipality	KZN215	2011	Not completed	Male	691
 municipality	KZN215	2011	Not completed	Female	453
+ward	10206006	2011	Completed	Male	107
 municipality	KZN216	2011	Completed	Male	3094
 municipality	KZN216	2011	Completed	Female	3968
 municipality	KZN216	2011	Not completed	Male	1894
@@ -1427,7 +1429,6 @@ ward	10202005	2011	Completed	Female	115
 ward	10202005	2011	Not completed	Male	47
 ward	10202005	2011	Not completed	Female	51
 ward	10202006	2011	Completed	Male	156
-ward	10202006	2011	Completed	Female	190
 ward	10202006	2011	Not completed	Male	82
 ward	10202006	2011	Not completed	Female	48
 ward	10202007	2011	Completed	Male	174
@@ -1767,7 +1768,6 @@ ward	10206005	2011	Completed	Male	65
 ward	10206005	2011	Completed	Female	86
 ward	10206005	2011	Not completed	Male	36
 ward	10206005	2011	Not completed	Female	26
-ward	10206006	2011	Completed	Male	107
 ward	10206006	2011	Completed	Female	122
 ward	10206006	2011	Not completed	Male	73
 ward	10206006	2011	Not completed	Female	78
@@ -18312,7 +18312,7 @@ ward	94705031	2011	Not completed	Female	40
 
 
 --
--- Name: pk_youth_age_16_to_17_gender_completed_grade9; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace:
+-- Name: pk_youth_age_16_to_17_gender_completed_grade9; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY youth_age_16_to_17_gender_completed_grade9
