@@ -85,6 +85,7 @@ class Command(BaseCommand):
 
         self.geos = self.get_geos(self.geo_version)
 
+        self.db_tables = []
         self.fields_by_table = {}
         self.keys_by_table = {}
         self.missing_keys_by_table = {}
@@ -102,6 +103,10 @@ class Command(BaseCommand):
             self.simple_tables = {k: v for k, v in DATA_TABLES.iteritems() if k not in FIELD_TABLES.keys()}
 
         for table_id, table in self.field_tables.iteritems():
+            if table.db_table in self.db_tables:
+                # Multiple field tables can refer to the same underlying db table
+                continue
+            self.db_tables.append(table.db_table)
             self.stdout.write("Checking table: %s" % (table.id))
 
             self.fields_by_table[table.id] = table.fields
@@ -210,8 +215,8 @@ class Command(BaseCommand):
             table = self.field_tables[table_id]
 
             for geo in missing_geos:
+                # Entry for each possible key combination for each missing geo
                 for keys in self.keys_by_table[table_id]:
-                    # Entry for each possible key combination
                     count += 1
                     entry = {
                         'geo_level': geo[0],
