@@ -10,11 +10,11 @@
             <ul>
                 <li><a href="#demographics"><i class="fa fa-user"></i> <span>Demographics</span></a></li>
                 <li><a href="#education"><i class="fa fa-graduation-cap"></i> <span>Education</span></a></li>
-                <li><a href="#economic_opportunities"><i class="fa fa-line-chart"></i> <span>Economic opportunities</span></a></li>
+                <li><a href="#economic_opportunities"><i class="fa fa-money"></i> <span>Economic opportunities</span></a></li>
                 <li><a href="#living_environment"><i class="fa fa-home"></i> <span>Family and living environment</span></a></li>
-                <li><a href="#poverty"><i class="fa fa-money"></i> <span>Poverty</span></a></li>
+                <li><a href="#poverty"><i class="fa fa-universal-access"></i> <span>Poverty</span></a></li>
                 {% if display_profile == 'WC' %}
-                <li><a href="#identity_belonging_safety"><i class="fa fa-street-view"></i> <span>Identity, belonging and safety</span></a></li>
+                <li><a href="#identity_belonging_safety"><i class="fa fa-group"></i> <span>Identity, belonging and safety</span></a></li>
                 {% endif %}
                 <li><a href="#health"><i class="fa fa-heartbeat"></i> <span>Health and wellness</span></a></li>
             </ul>
@@ -40,11 +40,13 @@
     <p class="caption">
         <strong>Census data:</strong> 2011
         <br>
+        {% if display_profile == 'WC' %}
         <strong>SAPS data:</strong> 2006-2015
         <br>
         <strong>WC Education Dept data:</strong> 2005-2016
         <br>
         <strong>WC Dept of Health data:</strong> 2005-2016
+        {% endif %}
     </p>
 </div>
 {% endblock %}
@@ -204,7 +206,7 @@
 
 <article id="economic_opportunities" class="clearfix">
     <header class="section-contents">
-        <h1><i class="fa fa-fw fa-line-chart"></i> Youth economic opportunities</h1>
+        <h1><i class="fa fa-fw fa-money"></i> Youth economic opportunities</h1>
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
@@ -290,7 +292,7 @@
 
 <article id="poverty" class="clearfix">
     <header class="section-contents">
-        <h1><i class="fa fa-fw fa-money"></i> Youth poverty</h1>
+        <h1><i class="fa fa-fw fa-universal-access"></i> Youth poverty</h1>
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
@@ -338,7 +340,7 @@
 {% if display_profile == 'WC' %}
 <article id="identity_belonging_safety" class="clearfix">
     <header class="section-contents">
-        <h1><i class="fa fa-fw fa-street-view"></i> Youth identity, belonging and safety</h1>
+        <h1><i class="fa fa-fw fa-group"></i> Youth identity, belonging and safety</h1>
     </header>
     <div class="section-container">
         <section class="clearfix stat-row">
@@ -406,7 +408,7 @@
     <div class="section-container">
         <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#general_health" id="general_health">General health and functioning<i class="fa fa-link"></i></a></h2>
-            <aside>
+            <aside class="multi-line-header">
                 <p>* This includes youth with both mild and severe difficulties</p>
             </aside>
             <div class="column-third">
