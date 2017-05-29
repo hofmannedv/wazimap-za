@@ -142,7 +142,6 @@ if settings.WAZIMAP['default_profile'] == 'census':
 # Youth
 elif settings.WAZIMAP['default_profile'] == 'youth':
     # Demographics
-    FieldTable(['age in completed years', 'gender'], id='youth_gender_age_in_completed_years', universe='Youth', year='2011')
     FieldTable([ 'gender', 'population group'], id='youth_gender_population_group', universe='Youth', year='2011')
     FieldTable(['population group', 'gender'], id='youth_population_group_gender', universe='Youth', year='2011', db_table='youth_gender_population_group')
     FieldTable(['age groups in 10 years'], id='youth_age_groups_in_10_years', universe='Population', year='2011')
@@ -217,14 +216,6 @@ elif settings.WAZIMAP['default_profile'] == 'youth':
     FieldTable(['cause of death'], id='youth_causes_of_death_male', universe='Male youth causes of death', year='2013', value_type='Float')
 
     # Simple Tables
-    SimpleTable(
-        id='youth',
-        universe='Youth',
-        total_column=None,
-        description='Youth statistics',
-        dataset='Census 2011',
-        year='2011'
-    )
     SimpleTable(
         id='youth_population',
         universe='Youth',
