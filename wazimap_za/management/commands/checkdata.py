@@ -66,28 +66,14 @@ class Command(BaseCommand):
             help='The name of the database table to check'
         )
         parser.add_argument(
-            '--geo_code',
-            action='store',
-            dest='geo_code',
-            default='ZA',
-            help='The geo_code for the base geo that contains entries for all keys, for all fields e.g. ZA'
-        )
-        parser.add_argument(
-            '--geo_level',
-            action='store',
-            dest='geo_level',
-            default='country',
-            help='The geo_level for the base geo that contains entries for all keys, for all fields e.g. country'
-        )
-        parser.add_argument(
-            '--geo_version',
+            '--geo-version',
             action='store',
             dest='geo_version',
             default='2011',
             help='The geo_version of the data which should be checked.'
         )
         parser.add_argument(
-            '--store_missing_entries',
+            '--store-missing-entries',
             action='store_true',
             dest='store_missing_entries',
             default=False,
@@ -137,13 +123,14 @@ class Command(BaseCommand):
             if table.db_table in self.db_tables:
                 # Multiple field tables can refer to the same underlying db table
                 continue
+
             self.db_tables.append(table.db_table)
             self.stdout.write("Checking table: %s" % (table.id))
 
             self.fields_by_table[table.id] = table.fields
-            rows = self.session.query(table.model).filter(table.model.geo_version == self.geo_version).all()
-
             self.keys_by_table[table_id] = self.get_table_keys(table, table.fields)
+
+            rows = self.session.query(table.model).filter(table.model.geo_version == self.geo_version).all()
 
             missing_keys = self.get_missing_keys(table, rows, table.fields)
             if missing_keys:
