@@ -28,7 +28,7 @@ CREATE TABLE youth_labour_force_official_gender (
     geo_code character varying(10) NOT NULL,
     "employment status" character varying(128) NOT NULL,
     gender character varying(128) NOT NULL,
-    total integer NOT NULL,
+    total integer,
     geo_version character varying(100) NOT NULL
 );
 
@@ -18322,6 +18322,14 @@ ward	94705031	unemployed	Male	236	2011
 ward	94705031	employed	Female	131	2011
 ward	94705031	unemployed	Female	279	2011
 ward	21004012	unemployed	Female	0	2011
+ward	93601011	employed	Female	\N	2011
+ward	93601011	employed	Male	\N	2011
+ward	93601011	unemployed	Female	\N	2011
+ward	93601011	unemployed	Male	\N	2011
+ward	74804019	employed	Female	\N	2011
+ward	74804019	employed	Male	\N	2011
+ward	74804019	unemployed	Female	\N	2011
+ward	74804019	unemployed	Male	\N	2011
 \.
 
 

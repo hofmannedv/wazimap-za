@@ -28,7 +28,7 @@ CREATE TABLE youth_employment_education_training_gender (
     geo_code character varying(10) NOT NULL,
     "employment education training" character varying(128) NOT NULL,
     gender character varying(128) NOT NULL,
-    total integer NOT NULL,
+    total integer,
     geo_version character varying(100) NOT NULL
 );
 
@@ -32042,6 +32042,13 @@ ward	83003013	School/post-school	employment education training	0	2011
 ward	41903008	School/post-school	employment education training	0	2011
 municipality	FS161	School/post-school	employment education training	0	2011
 ward	52902006	School/post-school	employment education training	0	2011
+ward	74804019	Employed	Female	\N	2011
+ward	74804019	Employed	Male	\N	2011
+ward	74804019	NEET	Female	\N	2011
+ward	74804019	NEET	Male	\N	2011
+ward	74804019	School/post-school	Female	\N	2011
+ward	74804019	School/post-school	Male	\N	2011
+ward	74804019	School/post-school	employment education training	\N	2011
 \.
 
 

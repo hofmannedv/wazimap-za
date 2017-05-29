@@ -2,9 +2,6 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 9.6.2
--- Dumped by pg_dump version 9.6.2
-
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET client_encoding = 'UTF8';
@@ -23,14 +20,14 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: youth_victims_gender; Type: TABLE; Schema: public; Owner: -
+-- Name: youth_victims_gender; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE youth_victims_gender (
     geo_level character varying(15) NOT NULL,
     geo_code character varying(10) NOT NULL,
     gender character varying(128) NOT NULL,
-    total integer NOT NULL,
+    total integer,
     geo_version character varying(100) NOT NULL
 );
 
@@ -926,7 +923,7 @@ ward	19100085	Male	111	2011
 
 
 --
--- Name: youth_victims_gender pk_youth_victims_gender; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: pk_youth_victims_gender; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY youth_victims_gender

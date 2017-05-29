@@ -36614,6 +36614,14 @@ ward	64002022	2011	Discouraged work-seeker	Female	0
 ward	21004012	2011	Unemployed	Female	0
 ward	74803003	2011	Discouraged work-seeker	Female	0
 ward	93601011	2011	Discouraged work-seeker	Female	0
+ward	74804019	2011	Discouraged work-seeker	Female	\N
+ward	74804019	2011	Discouraged work-seeker	Male	\N
+ward	74804019	2011	Employed	Female	\N
+ward	74804019	2011	Employed	Male	\N
+ward	74804019	2011	Other not economically active	Female	\N
+ward	74804019	2011	Other not economically active	Male	\N
+ward	74804019	2011	Unemployed	Female	\N
+ward	74804019	2011	Unemployed	Male	\N
 \.
 
 

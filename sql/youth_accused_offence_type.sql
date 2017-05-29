@@ -2,9 +2,6 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 9.6.2
--- Dumped by pg_dump version 9.6.2
-
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET client_encoding = 'UTF8';
@@ -23,14 +20,14 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: youth_accused_offence_type; Type: TABLE; Schema: public; Owner: -
+-- Name: youth_accused_offence_type; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE youth_accused_offence_type (
     geo_level character varying(15) NOT NULL,
     geo_code character varying(10) NOT NULL,
     "type of offence" character varying(128) NOT NULL,
-    total integer NOT NULL,
+    total integer,
     geo_version character varying(100) NOT NULL
 );
 
@@ -566,6 +563,7 @@ ward	10202007	Common robbery	30	2011
 ward	10202007	Common assault	76	2011
 ward	10202007	Attempted murder	3	2011
 ward	10202007	Assualt with purpose to inflict harm	137	2011
+ward	19100103	Murder	20	2011
 ward	10202007	Aggravated robbery	22	2011
 ward	19100027	Sexual offences	2	2011
 ward	19100027	Murder	2	2011
@@ -672,7 +670,6 @@ ward	10303004	Attempted murder	26	2011
 ward	10303004	Assualt with purpose to inflict harm	147	2011
 ward	10303004	Aggravated robbery	40	2011
 ward	19100103	Sexual offences	13	2011
-ward	19100103	Murder	20	2011
 ward	19100103	Common robbery	11	2011
 ward	19100103	Common assault	74	2011
 ward	19100103	Attempted murder	13	2011
@@ -3131,7 +3128,7 @@ ward	10301011	Aggravated robbery	32	2011
 
 
 --
--- Name: youth_accused_offence_type pk_youth_accused_offence_type; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: pk_youth_accused_offence_type; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY youth_accused_offence_type

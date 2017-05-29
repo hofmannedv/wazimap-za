@@ -2,9 +2,6 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 9.6.2
--- Dumped by pg_dump version 9.6.2
-
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET client_encoding = 'UTF8';
@@ -23,7 +20,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year; Type: TABLE; Schema: public; Owner: -
+-- Name: youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year (
@@ -234,6 +231,7 @@ municipality	WC024	2014	No bachelor pass	69	2011
 municipality	WC024	2015	Bachelor pass	37.1000000000000014	2011
 municipality	WC024	2015	No bachelor pass	62.8999999999999986	2011
 municipality	WC025	2010	Bachelor pass	22.3999999999999986	2011
+ward	10104005	2013	Bachelor pass	\N	2011
 municipality	WC025	2010	No bachelor pass	77.5999999999999943	2011
 municipality	WC025	2011	Bachelor pass	25.8000000000000007	2011
 municipality	WC025	2011	No bachelor pass	74.2000000000000028	2011
@@ -326,6 +324,7 @@ municipality	WC042	2012	No bachelor pass	59.6000000000000014	2011
 municipality	WC042	2013	Bachelor pass	42.1000000000000014	2011
 municipality	WC042	2013	No bachelor pass	57.8999999999999986	2011
 municipality	WC042	2014	Bachelor pass	32	2011
+ward	10303005	2010	Bachelor pass	\N	2011
 municipality	WC042	2014	No bachelor pass	68	2011
 municipality	WC042	2015	Bachelor pass	32.8999999999999986	2011
 municipality	WC042	2015	No bachelor pass	67.0999999999999943	2011
@@ -418,6 +417,7 @@ municipality	WC053	2010	No bachelor pass	86.2000000000000028	2011
 municipality	WC053	2011	Bachelor pass	15.8000000000000007	2011
 municipality	WC053	2011	No bachelor pass	84.2000000000000028	2011
 municipality	WC053	2012	Bachelor pass	17.6999999999999993	2011
+ward	10401003	2015	Bachelor pass	\N	2011
 municipality	WC053	2012	No bachelor pass	82.2999999999999972	2011
 municipality	WC053	2013	Bachelor pass	15.5	2011
 municipality	WC053	2013	No bachelor pass	84.5	2011
@@ -731,7 +731,6 @@ ward	10104005	2011	Bachelor pass	\N	2011
 ward	10104005	2011	No bachelor pass	\N	2011
 ward	10104005	2012	Bachelor pass	\N	2011
 ward	10104005	2012	No bachelor pass	\N	2011
-ward	10104005	2013	Bachelor pass	\N	2011
 ward	10104005	2013	No bachelor pass	\N	2011
 ward	10104005	2014	Bachelor pass	\N	2011
 ward	10104005	2014	No bachelor pass	\N	2011
@@ -1470,6 +1469,7 @@ ward	10203029	2014	No bachelor pass	19.6999999999999993	2011
 ward	10203029	2015	Bachelor pass	71	2011
 ward	10203029	2015	No bachelor pass	29	2011
 ward	10203030	2010	Bachelor pass	8.80000000000000071	2011
+ward	10408003	2013	Bachelor pass	\N	2011
 ward	10203030	2010	No bachelor pass	91.2000000000000028	2011
 ward	10203030	2011	Bachelor pass	8.80000000000000071	2011
 ward	10203030	2011	No bachelor pass	91.2000000000000028	2011
@@ -1785,6 +1785,7 @@ ward	10205003	2010	Bachelor pass	4.29999999999999982	2011
 ward	10205003	2010	No bachelor pass	95.7000000000000028	2011
 ward	10205003	2011	Bachelor pass	6.29999999999999982	2011
 ward	10205003	2011	No bachelor pass	93.7000000000000028	2011
+ward	10501002	2013	Bachelor pass	\N	2011
 ward	10205003	2012	Bachelor pass	20	2011
 ward	10205003	2012	No bachelor pass	80	2011
 ward	10205003	2013	Bachelor pass	17	2011
@@ -2197,6 +2198,7 @@ ward	10301004	2012	Bachelor pass	53.1000000000000014	2011
 ward	10301004	2012	No bachelor pass	46.8999999999999986	2011
 ward	10301004	2013	Bachelor pass	55.6000000000000014	2011
 ward	10301004	2013	No bachelor pass	44.3999999999999986	2011
+ward	19100037	2012	Bachelor pass	\N	2011
 ward	10301004	2014	Bachelor pass	62	2011
 ward	10301004	2014	No bachelor pass	38	2011
 ward	10301004	2015	Bachelor pass	56.7999999999999972	2011
@@ -2514,7 +2516,6 @@ ward	10303004	2014	Bachelor pass	67	2011
 ward	10303004	2014	No bachelor pass	33	2011
 ward	10303004	2015	Bachelor pass	62.3999999999999986	2011
 ward	10303004	2015	No bachelor pass	37.6000000000000014	2011
-ward	10303005	2010	Bachelor pass	\N	2011
 ward	10303005	2010	No bachelor pass	\N	2011
 ward	10303005	2011	Bachelor pass	\N	2011
 ward	10303005	2011	No bachelor pass	\N	2011
@@ -2619,7 +2620,6 @@ ward	10401003	2012	No bachelor pass	\N	2011
 ward	10401003	2013	Bachelor pass	\N	2011
 ward	10401003	2014	Bachelor pass	\N	2011
 ward	10401003	2014	No bachelor pass	\N	2011
-ward	10401003	2015	Bachelor pass	\N	2011
 ward	10401003	2015	No bachelor pass	\N	2011
 ward	10401004	2010	Bachelor pass	\N	2011
 ward	10401004	2010	No bachelor pass	\N	2011
@@ -3467,7 +3467,6 @@ ward	10408003	2011	Bachelor pass	\N	2011
 ward	10408003	2011	No bachelor pass	\N	2011
 ward	10408003	2012	Bachelor pass	\N	2011
 ward	10408003	2012	No bachelor pass	\N	2011
-ward	10408003	2013	Bachelor pass	\N	2011
 ward	10408003	2013	No bachelor pass	\N	2011
 ward	10408003	2014	Bachelor pass	\N	2011
 ward	10408003	2014	No bachelor pass	\N	2011
@@ -3575,7 +3574,6 @@ ward	10501002	2011	Bachelor pass	\N	2011
 ward	10501002	2011	No bachelor pass	\N	2011
 ward	10501002	2012	Bachelor pass	\N	2011
 ward	10501002	2012	No bachelor pass	\N	2011
-ward	10501002	2013	Bachelor pass	\N	2011
 ward	10501002	2013	No bachelor pass	\N	2011
 ward	10501002	2014	Bachelor pass	\N	2011
 ward	10501002	2014	No bachelor pass	\N	2011
@@ -3881,6 +3879,7 @@ ward	19100012	2014	Bachelor pass	6.59999999999999964	2011
 ward	19100012	2014	No bachelor pass	93.4000000000000057	2011
 ward	19100012	2015	Bachelor pass	18.5	2011
 ward	19100012	2015	No bachelor pass	81.5	2011
+ward	19100095	2011	Bachelor pass	\N	2011
 ward	19100013	2010	Bachelor pass	1.39999999999999991	2011
 ward	19100013	2010	No bachelor pass	98.5999999999999943	2011
 ward	19100013	2011	Bachelor pass	5	2011
@@ -4173,7 +4172,6 @@ ward	19100037	2010	Bachelor pass	100	2011
 ward	19100037	2010	No bachelor pass	0	2011
 ward	19100037	2011	Bachelor pass	53.2000000000000028	2011
 ward	19100037	2011	No bachelor pass	46.7999999999999972	2011
-ward	19100037	2012	Bachelor pass	\N	2011
 ward	19100037	2012	No bachelor pass	\N	2011
 ward	19100037	2013	Bachelor pass	\N	2011
 ward	19100037	2013	No bachelor pass	\N	2011
@@ -4867,7 +4865,6 @@ ward	19100094	2015	Bachelor pass	22.1000000000000014	2011
 ward	19100094	2015	No bachelor pass	77.9000000000000057	2011
 ward	19100095	2010	Bachelor pass	\N	2011
 ward	19100095	2010	No bachelor pass	\N	2011
-ward	19100095	2011	Bachelor pass	\N	2011
 ward	19100095	2011	No bachelor pass	\N	2011
 ward	19100095	2012	Bachelor pass	\N	2011
 ward	19100095	2012	No bachelor pass	\N	2011
@@ -5073,7 +5070,7 @@ ward	19100111	2015	No bachelor pass	84	2011
 
 
 --
--- Name: youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year pk_youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_y; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: pk_youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_y; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year

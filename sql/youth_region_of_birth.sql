@@ -22897,6 +22897,11 @@ ward	94705029	2011	Unspecified	0
 ward	94705030	2011	Unspecified	0
 ward	94705031	2011	Other	0
 ward	94705031	2011	Rest of Africa	0
+ward	74804019	2011	Other	\N
+ward	74804019	2011	Rest of Africa	\N
+ward	74804019	2011	SADC	\N
+ward	74804019	2011	South Africa	\N
+ward	74804019	2011	Unspecified	\N
 \.
 
 

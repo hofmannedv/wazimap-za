@@ -59473,6 +59473,19 @@ ward	94705026	2011	Sesotho	0
 ward	94705027	2011	Sign language	0
 ward	94705029	2011	Afrikaans	0
 ward	94705029	2011	Sign language	0
+ward	74804019	2011	Afrikaans	\N
+ward	74804019	2011	English	\N
+ward	74804019	2011	IsiNdebele	\N
+ward	74804019	2011	IsiXhosa	\N
+ward	74804019	2011	IsiZulu	\N
+ward	74804019	2011	Other	\N
+ward	74804019	2011	Sepedi	\N
+ward	74804019	2011	Sesotho	\N
+ward	74804019	2011	Setswana	\N
+ward	74804019	2011	Sign language	\N
+ward	74804019	2011	Siswati	\N
+ward	74804019	2011	Tshivenda	\N
+ward	74804019	2011	Xitsonga	\N
 \.
 
 

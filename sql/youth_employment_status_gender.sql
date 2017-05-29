@@ -28,7 +28,7 @@ CREATE TABLE youth_employment_status_gender (
     geo_code character varying(10) NOT NULL,
     "employment status" character varying(128) NOT NULL,
     gender character varying(128) NOT NULL,
-    total integer NOT NULL,
+    total integer,
     geo_version character varying(100) NOT NULL
 );
 
@@ -36614,6 +36614,14 @@ ward	74803003	Discouraged work-seeker	Female	0	2011
 ward	93601011	Discouraged work-seeker	Female	0	2011
 ward	10501003	Discouraged work-seeker	Male	0	2011
 ward	49400025	Discouraged work-seeker	Female	0	2011
+ward	74804019	Discouraged work-seeker	Female	\N	2011
+ward	74804019	Discouraged work-seeker	Male	\N	2011
+ward	74804019	Employed	Female	\N	2011
+ward	74804019	Employed	Male	\N	2011
+ward	74804019	Other not economically active	Female	\N	2011
+ward	74804019	Other not economically active	Male	\N	2011
+ward	74804019	Unemployed	Female	\N	2011
+ward	74804019	Unemployed	Male	\N	2011
 \.
 
 

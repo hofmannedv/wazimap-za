@@ -2,9 +2,6 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 9.6.2
--- Dumped by pg_dump version 9.6.2
-
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET client_encoding = 'UTF8';
@@ -23,14 +20,14 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: crimes_victims_age_group; Type: TABLE; Schema: public; Owner: -
+-- Name: crimes_victims_age_group; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE crimes_victims_age_group (
     geo_level character varying(15) NOT NULL,
     geo_code character varying(10) NOT NULL,
     "age group" character varying(128) NOT NULL,
-    total integer NOT NULL,
+    total integer,
     geo_version character varying(100) NOT NULL
 );
 
@@ -3131,7 +3128,7 @@ ward	10402002	25-34	372	2011
 
 
 --
--- Name: crimes_victims_age_group pk_crimes_victims_age_group; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: pk_crimes_victims_age_group; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY crimes_victims_age_group

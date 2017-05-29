@@ -2,9 +2,6 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 9.6.2
--- Dumped by pg_dump version 9.6.2
-
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET client_encoding = 'UTF8';
@@ -23,7 +20,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: youth_student_dropout_rate_by_year; Type: TABLE; Schema: public; Owner: -
+-- Name: youth_student_dropout_rate_by_year; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE youth_student_dropout_rate_by_year (
@@ -1217,6 +1214,7 @@ ward	10105008	2010	Dropped out	50	2011
 ward	10105008	2010	Wrote matric	50	2011
 ward	10105008	2011	Dropped out	67.0999999999999943	2011
 ward	10105008	2011	Wrote matric	32.8999999999999986	2011
+ward	10202010	2013	Wrote matric	\N	2011
 ward	10105008	2012	Dropped out	36.7000000000000028	2011
 ward	10105008	2012	Wrote matric	63.2999999999999972	2011
 ward	10105008	2013	Dropped out	43.7000000000000028	2011
@@ -1444,7 +1442,6 @@ ward	10202010	2011	Wrote matric	\N	2011
 ward	10202010	2012	Dropped out	\N	2011
 ward	10202010	2012	Wrote matric	\N	2011
 ward	10202010	2013	Dropped out	\N	2011
-ward	10202010	2013	Wrote matric	\N	2011
 ward	10202010	2014	Dropped out	\N	2011
 ward	10202010	2014	Wrote matric	\N	2011
 ward	10202010	2015	Dropped out	\N	2011
@@ -2690,6 +2687,7 @@ ward	10206002	2010	Wrote matric	62.2999999999999972	2011
 ward	10206002	2011	Dropped out	43.7999999999999972	2011
 ward	10206002	2011	Wrote matric	56.2000000000000028	2011
 ward	10206002	2012	Dropped out	31.8000000000000007	2011
+ward	10301011	2012	Wrote matric	\N	2011
 ward	10206002	2012	Wrote matric	68.2000000000000028	2011
 ward	10206002	2013	Dropped out	30.3999999999999986	2011
 ward	10206002	2013	Wrote matric	69.5999999999999943	2011
@@ -3026,7 +3024,6 @@ ward	10301011	2010	Wrote matric	\N	2011
 ward	10301011	2011	Dropped out	\N	2011
 ward	10301011	2011	Wrote matric	\N	2011
 ward	10301011	2012	Dropped out	\N	2011
-ward	10301011	2012	Wrote matric	\N	2011
 ward	10301011	2013	Dropped out	\N	2011
 ward	10301011	2013	Wrote matric	\N	2011
 ward	10301011	2014	Dropped out	\N	2011
@@ -6749,7 +6746,7 @@ ward	19100111	2015	Wrote matric	73.7999999999999972	2011
 
 
 --
--- Name: youth_student_dropout_rate_by_year pk_youth_student_dropout_rate_by_year; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: pk_youth_student_dropout_rate_by_year; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY youth_student_dropout_rate_by_year

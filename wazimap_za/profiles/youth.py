@@ -226,9 +226,12 @@ def get_education_profile(geo, session, display_profile, comparative=False):
                 'Matric/matric equivalent',
                 'Any tertiary'))
 
-    matric_or_equiv = (
-            youth_education_level['Matric/matric equivalent']['numerators']['this'] +
-            youth_education_level['Any tertiary']['numerators']['this'])
+    youth_perc_matric = None
+    if youth_education_level['Matric/matric equivalent']['numerators']['this']:
+        matric_or_equiv = (
+                youth_education_level['Matric/matric equivalent']['numerators']['this'] +
+                youth_education_level['Any tertiary']['numerators']['this'])
+        youth_perc_matric = percent(matric_or_equiv, youth_pop_20_to_24)
 
     youth_education_attendance, _ = get_stat_data(
         ['attendance'], geo, session,
@@ -255,7 +258,7 @@ def get_education_profile(geo, session, display_profile, comparative=False):
         'youth_education_level': youth_education_level,
         'youth_perc_matric': {
             "name": "Of youth aged 20-24 have completed matric/matric equivalent or higher",
-            "values": {"this": percent(matric_or_equiv, youth_pop_20_to_24)}
+            "values": {"this": youth_perc_matric}
         },
         'youth_perc_attending': {
             "name": "Of youth aged 15-24 attend an educational institution",
@@ -488,6 +491,10 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
     informal_not_in_backyard = youth_type_of_dwelling.get('Informal not in backyard', {}).get('values', {}).get('this', 0)
     informal_in_backyard = youth_type_of_dwelling.get('Informal in backyard', {}).get('values', {}).get('this', 0)
 
+    youth_dwelling_informal = None
+    if informal_not_in_backyard and informal_in_backyard:
+        youth_dwelling_informal = informal_not_in_backyard + informal_in_backyard
+
     youth_type_of_area, _ = get_stat_data(
         ['type of area'], geo, session,
         key_order=TYPE_OF_AREA_ORDER,
@@ -509,7 +516,7 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
         'youth_water_access': youth_water_access,
         'youth_dwelling_informal': {
             "name": "Of youth live in households that are informal dwellings (shacks)",
-            "values": {"this": informal_not_in_backyard + informal_in_backyard}
+            "values": {"this": youth_dwelling_informal}
         },
         'youth_type_of_dwelling': youth_type_of_dwelling,
         'youth_type_of_area': youth_type_of_area,
@@ -606,9 +613,6 @@ def get_safety_profile(geo, session, display_profile, comparative=False):
         ['age group'], geo, session,
         table_name='crimes_accused_age_group',
         percent=False)
-
-    youth_victims_per_10k_youth = victims_by_age_group_per_10k_pop['15-24']['values']['this']
-    youth_accused_per_10k_youth = accused_by_age_group_per_10k_pop['15-24']['values']['this']
 
     youth_victims_by_offence_per_10k_youth, _ = get_stat_data(
         ['type of offence'], geo, session,

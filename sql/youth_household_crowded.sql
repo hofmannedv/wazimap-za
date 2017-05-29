@@ -27,7 +27,7 @@ CREATE TABLE youth_household_crowded (
     geo_level character varying(15) NOT NULL,
     geo_code character varying(10) NOT NULL,
     "household crowded" character varying(128) NOT NULL,
-    total integer NOT NULL,
+    total integer,
     geo_version character varying(100) NOT NULL
 );
 
@@ -9181,6 +9181,8 @@ ward	10203002	Overcrowded	0	2011
 ward	21004012	Overcrowded	0	2011
 ward	10204009	Overcrowded	0	2011
 ward	10404002	Overcrowded	0	2011
+ward	74804019	Non-overcrowded	\N	2011
+ward	74804019	Overcrowded	\N	2011
 \.
 
 
