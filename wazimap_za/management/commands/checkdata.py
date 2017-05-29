@@ -22,6 +22,36 @@ and missing key values are populated with 0.
 
 """
 
+WC_ONLY_TABLES = [
+    # Education
+    'youth_average_mean_score_by_year',
+    'youth_average_language_score_by_year',
+    'youth_language_outcome_by_year',
+    'youth_average_maths_score_by_year',
+    'youth_maths_outcome_by_year',
+    'youth_matric_outcome_by_year',
+    'youth_matric_passes_as_percentage_of_grade8_enrolment_by_year',
+    'youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year',
+    'youth_student_dropout_rate_by_year',
+    # Crime
+    'crimes_victims_age_group',
+    'crimes_accused_age_group',
+    'youth_victims_offence_type',
+    'youth_accused_offence_type',
+    'youth_victims_population_group',
+    'youth_accused_population_group',
+    'youth_victims_gender',
+    'youth_accused_gender',
+    'youth_victims_year',
+    'youth_accused_year',
+    'crimes_type_of_crime_year',
+    # Health
+    'youth_pregnancy_rate_year',
+    'youth_delivery_rate_year',
+    'youth_causes_of_death_female',
+    'youth_causes_of_death_male',
+]
+
 
 class Command(BaseCommand):
     help = ("Checks the database for completeness (or a single table if passed)." +
@@ -194,7 +224,14 @@ class Command(BaseCommand):
         if not table_geos:
             sys.exit("Empty table: %s" % (table.id))
 
-        all_geos = set((g.geo_level, g.geo_code) for g in self.geos)
+        if table.id.lower() in WC_ONLY_TABLES:
+            all_geos = set(
+                (g.geo_level, g.geo_code) for g in self.geos
+                if g.geo_code == 'WC'
+                or 'WC' in [cg.geo_code for cg in geo_data.get_comparative_geos(g)])
+        else:
+            all_geos = set((g.geo_level, g.geo_code) for g in self.geos)
+
         missing_geos = [g for g in all_geos if g not in table_geos]
 
         if missing_geos:
