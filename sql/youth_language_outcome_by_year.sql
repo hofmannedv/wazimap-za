@@ -2,9 +2,6 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 9.6.2
--- Dumped by pg_dump version 9.6.2
-
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET client_encoding = 'UTF8';
@@ -23,7 +20,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: youth_language_outcome_by_year; Type: TABLE; Schema: public; Owner: -
+-- Name: youth_language_outcome_by_year; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE youth_language_outcome_by_year (
@@ -4235,7 +4232,7 @@ ward	19100111	2015	Failed	47	2011
 
 
 --
--- Name: youth_language_outcome_by_year pk_youth_language_outcome_by_year; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: pk_youth_language_outcome_by_year; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY youth_language_outcome_by_year

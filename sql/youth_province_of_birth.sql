@@ -50329,6 +50329,17 @@ ward	30901019	2011	Limpopo	0
 ward	29300044	2011	North West	0
 ward	93305005	2011	Northern Cape	0
 ward	93502012	2011	Eastern Cape	0
+ward	74804019	2011	Eastern Cape	\N
+ward	74804019	2011	Free State	\N
+ward	74804019	2011	Gauteng	\N
+ward	74804019	2011	KwaZulu-Natal	\N
+ward	74804019	2011	Limpopo	\N
+ward	74804019	2011	Mpumalanga	\N
+ward	74804019	2011	North West	\N
+ward	74804019	2011	Northern Cape	\N
+ward	74804019	2011	Outside South Africa	\N
+ward	74804019	2011	Unspecified	\N
+ward	74804019	2011	Western Cape	\N
 \.
 
 

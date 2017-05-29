@@ -32034,6 +32034,20 @@ ward	94705031	Seeing, even when using eye glasses	50	2011
 ward	94705031	Self care	16	2011
 ward	94705031	Walking	10	2011
 ward	94705031	youth	1957	2011
+ward	93601011	Communication	\N	2011
+ward	93601011	Hearing, even when using a hearing aid	\N	2011
+ward	93601011	Remembering	\N	2011
+ward	93601011	Seeing, even when using eye glasses	\N	2011
+ward	93601011	Self care	\N	2011
+ward	93601011	Walking	\N	2011
+ward	93601011	youth	\N	2011
+ward	74804019	Communication	\N	2011
+ward	74804019	Hearing, even when using a hearing aid	\N	2011
+ward	74804019	Remembering	\N	2011
+ward	74804019	Seeing, even when using eye glasses	\N	2011
+ward	74804019	Self care	\N	2011
+ward	74804019	Walking	\N	2011
+ward	74804019	youth	\N	2011
 \.
 
 

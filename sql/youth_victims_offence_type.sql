@@ -2,9 +2,6 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 9.6.2
--- Dumped by pg_dump version 9.6.2
-
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET client_encoding = 'UTF8';
@@ -23,7 +20,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: youth_victims_offence_type; Type: TABLE; Schema: public; Owner: -
+-- Name: youth_victims_offence_type; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE youth_victims_offence_type (
@@ -566,6 +563,7 @@ ward	10202007	Common robbery	19	2011
 ward	10202007	Common assault	60	2011
 ward	10202007	Attempted murder	0	2011
 ward	10202007	Assualt with purpose to inflict harm	125	2011
+ward	19100103	Murder	6	2011
 ward	10202007	Aggravated robbery	7	2011
 ward	19100027	Sexual offences	7	2011
 ward	19100027	Murder	2	2011
@@ -672,7 +670,6 @@ ward	10303004	Attempted murder	13	2011
 ward	10303004	Assualt with purpose to inflict harm	134	2011
 ward	10303004	Aggravated robbery	13	2011
 ward	19100103	Sexual offences	13	2011
-ward	19100103	Murder	6	2011
 ward	19100103	Common robbery	6	2011
 ward	19100103	Common assault	65	2011
 ward	19100103	Attempted murder	4	2011
@@ -3131,7 +3128,7 @@ ward	10301011	Aggravated robbery	21	2011
 
 
 --
--- Name: youth_victims_offence_type pk_youth_victims_offence_type; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: pk_youth_victims_offence_type; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY youth_victims_offence_type

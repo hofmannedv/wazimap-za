@@ -22897,6 +22897,11 @@ ward	21304026	2011	Informal in backyard	0
 ward	30703003	2011	Other	0
 ward	64003029	2011	Informal not in backyard	0
 ward	93304004	2011	Informal in backyard	0
+ward	74804019	2011	Formal	\N
+ward	74804019	2011	Informal in backyard	\N
+ward	74804019	2011	Informal not in backyard	\N
+ward	74804019	2011	Other	\N
+ward	74804019	2011	Traditional	\N
 \.
 
 

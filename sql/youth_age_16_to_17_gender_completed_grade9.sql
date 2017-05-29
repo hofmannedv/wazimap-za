@@ -18308,6 +18308,28 @@ ward	94705031	2011	Completed	Male	115
 ward	94705031	2011	Completed	Female	146
 ward	94705031	2011	Not completed	Male	86
 ward	94705031	2011	Not completed	Female	40
+ward	10302003	2011	Not completed	Male	0
+ward	10204009	2011	Not completed	Female	0
+ward	10204009	2011	Not completed	Male	0
+ward	10204008	2011	Not completed	Male	0
+ward	21004012	2011	Not completed	Female	0
+ward	21004012	2011	Not completed	Male	0
+ward	74803003	2011	Completed	Female	0
+ward	52202002	2011	Not completed	Female	0
+ward	10501003	2011	Not completed	Female	0
+ward	10501002	2011	Not completed	Male	0
+ward	30801001	2011	Completed	Female	0
+ward	30801001	2011	Not completed	Female	0
+ward	30801001	2011	Not completed	Male	0
+ward	64002022	2011	Not completed	Male	0
+ward	93601011	2011	Completed	Female	\N
+ward	93601011	2011	Completed	Male	\N
+ward	93601011	2011	Not completed	Female	\N
+ward	93601011	2011	Not completed	Male	\N
+ward	74804019	2011	Completed	Female	\N
+ward	74804019	2011	Completed	Male	\N
+ward	74804019	2011	Not completed	Female	\N
+ward	74804019	2011	Not completed	Male	\N
 \.
 
 

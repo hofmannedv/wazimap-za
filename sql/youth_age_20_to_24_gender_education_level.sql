@@ -1181,6 +1181,7 @@ ward	21003002	Male	Matric/matric equivalent	56	2011
 ward	21003002	Female	Matric/matric equivalent	51	2011
 ward	21003002	Male	Any tertiary	1	2011
 ward	21003002	Female	Any tertiary	1	2011
+ward	21202018	Male	Grade 9	47	2011
 ward	21003003	Male	Less than Grade9	12	2011
 ward	21003003	Female	Less than Grade9	15	2011
 ward	21003003	Male	Grade 9	2	2011
@@ -2533,7 +2534,6 @@ ward	21202017	Male	Any tertiary	2	2011
 ward	21202017	Female	Any tertiary	2	2011
 ward	21202018	Male	Less than Grade9	69	2011
 ward	21202018	Female	Less than Grade9	21	2011
-ward	21202018	Male	Grade 9	47	2011
 ward	21202018	Female	Grade 9	24	2011
 ward	21202018	Male	Grade 10/11	141	2011
 ward	21202018	Female	Grade 10/11	112	2011
@@ -5197,6 +5197,7 @@ municipality	KZN213	Female	Matric/matric equivalent	2936	2011
 municipality	KZN213	Male	Any tertiary	92	2011
 municipality	KZN213	Female	Any tertiary	164	2011
 municipality	KZN214	Male	Less than Grade9	1061	2011
+ward	10101004	Male	Grade 9	60	2011
 municipality	KZN214	Female	Less than Grade9	921	2011
 municipality	KZN214	Male	Grade 9	319	2011
 municipality	KZN214	Female	Grade 9	338	2011
@@ -6858,7 +6859,6 @@ ward	10101003	Male	Any tertiary	2	2011
 ward	10101003	Female	Any tertiary	8	2011
 ward	10101004	Male	Less than Grade9	129	2011
 ward	10101004	Female	Less than Grade9	95	2011
-ward	10101004	Male	Grade 9	60	2011
 ward	10101004	Female	Grade 9	43	2011
 ward	10101004	Male	Grade 10/11	109	2011
 ward	10101004	Female	Grade 10/11	130	2011
@@ -9042,6 +9042,7 @@ ward	10405013	Female	Matric/matric equivalent	99	2011
 ward	10405013	Male	Any tertiary	6	2011
 ward	10405013	Female	Any tertiary	9	2011
 ward	10407001	Male	Less than Grade9	95	2011
+ward	29200010	Male	Grade 9	86	2011
 ward	10407001	Female	Less than Grade9	73	2011
 ward	10407001	Male	Grade 9	62	2011
 ward	10407001	Female	Grade 9	33	2011
@@ -12889,7 +12890,6 @@ ward	29200009	Male	Any tertiary	90	2011
 ward	29200009	Female	Any tertiary	142	2011
 ward	29200010	Male	Less than Grade9	157	2011
 ward	29200010	Female	Less than Grade9	103	2011
-ward	29200010	Male	Grade 9	86	2011
 ward	29200010	Female	Grade 9	87	2011
 ward	29200010	Male	Grade 10/11	340	2011
 ward	29200010	Female	Grade 10/11	329	2011
@@ -15385,6 +15385,7 @@ ward	30903005	Female	Matric/matric equivalent	42	2011
 ward	30903005	Male	Any tertiary	3	2011
 ward	30903005	Female	Any tertiary	6	2011
 ward	30904001	Male	Less than Grade9	86	2011
+ward	52205006	Male	Grade 9	44	2011
 ward	30904001	Female	Less than Grade9	109	2011
 ward	30904001	Male	Grade 9	27	2011
 ward	30904001	Female	Grade 9	33	2011
@@ -19440,6 +19441,7 @@ ward	52104010	Female	Matric/matric equivalent	117	2011
 ward	52104010	Male	Any tertiary	8	2011
 ward	52104010	Female	Any tertiary	6	2011
 ward	52105001	Male	Less than Grade9	65	2011
+ward	52601003	Male	Grade 9	24	2011
 ward	52105001	Female	Less than Grade9	44	2011
 ward	52105001	Male	Grade 9	52	2011
 ward	52105001	Female	Grade 9	23	2011
@@ -20168,7 +20170,6 @@ ward	52205005	Male	Any tertiary	17	2011
 ward	52205005	Female	Any tertiary	24	2011
 ward	52205006	Male	Less than Grade9	80	2011
 ward	52205006	Female	Less than Grade9	76	2011
-ward	52205006	Male	Grade 9	44	2011
 ward	52205006	Female	Grade 9	29	2011
 ward	52205006	Male	Grade 10/11	270	2011
 ward	52205006	Female	Grade 10/11	274	2011
@@ -21832,6 +21833,7 @@ ward	52405007	Female	Matric/matric equivalent	313	2011
 ward	52405007	Male	Any tertiary	12	2011
 ward	52405007	Female	Any tertiary	15	2011
 ward	52405008	Male	Less than Grade9	112	2011
+ward	52902025	Male	Grade 9	18	2011
 ward	52405008	Female	Less than Grade9	185	2011
 ward	52405008	Male	Grade 9	59	2011
 ward	52405008	Female	Grade 9	44	2011
@@ -22352,7 +22354,6 @@ ward	52601002	Male	Any tertiary	5	2011
 ward	52601002	Female	Any tertiary	14	2011
 ward	52601003	Male	Less than Grade9	76	2011
 ward	52601003	Female	Less than Grade9	67	2011
-ward	52601003	Male	Grade 9	24	2011
 ward	52601003	Female	Grade 9	39	2011
 ward	52601003	Male	Grade 10/11	135	2011
 ward	52601003	Female	Grade 10/11	167	2011
@@ -23080,6 +23081,7 @@ ward	52606011	Female	Matric/matric equivalent	351	2011
 ward	52606011	Male	Any tertiary	9	2011
 ward	52606011	Female	Any tertiary	19	2011
 ward	52606012	Male	Less than Grade9	13	2011
+ward	63703038	Male	Grade 9	27	2011
 ward	52606012	Female	Less than Grade9	10	2011
 ward	52606012	Male	Grade 9	2	2011
 ward	52606012	Female	Grade 9	2	2011
@@ -25264,7 +25266,6 @@ ward	52902024	Male	Any tertiary	10	2011
 ward	52902024	Female	Any tertiary	13	2011
 ward	52902025	Male	Less than Grade9	69	2011
 ward	52902025	Female	Less than Grade9	78	2011
-ward	52902025	Male	Grade 9	18	2011
 ward	52902025	Female	Grade 9	12	2011
 ward	52902025	Male	Grade 10/11	98	2011
 ward	52902025	Female	Grade 10/11	138	2011
@@ -25992,6 +25993,7 @@ ward	54305006	Female	Grade 9	76	2011
 ward	54305006	Male	Grade 10/11	138	2011
 ward	54305006	Female	Grade 10/11	196	2011
 ward	54305006	Male	Matric/matric equivalent	44	2011
+ward	63802012	Male	Grade 9	64	2011
 ward	54305006	Female	Matric/matric equivalent	137	2011
 ward	54305006	Male	Any tertiary	5	2011
 ward	54305006	Female	Any tertiary	2	2011
@@ -28176,7 +28178,6 @@ ward	63703037	Male	Any tertiary	15	2011
 ward	63703037	Female	Any tertiary	19	2011
 ward	63703038	Male	Less than Grade9	69	2011
 ward	63703038	Female	Less than Grade9	24	2011
-ward	63703038	Male	Grade 9	27	2011
 ward	63703038	Female	Grade 9	17	2011
 ward	63703038	Male	Grade 10/11	46	2011
 ward	63703038	Female	Grade 10/11	37	2011
@@ -28801,7 +28802,6 @@ ward	63802011	Female	Matric/matric equivalent	99	2011
 ward	63802011	Male	Any tertiary	2	2011
 ward	63802012	Male	Less than Grade9	209	2011
 ward	63802012	Female	Less than Grade9	177	2011
-ward	63802012	Male	Grade 9	64	2011
 ward	63802012	Female	Grade 9	76	2011
 ward	63802012	Male	Grade 10/11	134	2011
 ward	63802012	Female	Grade 10/11	133	2011
@@ -35457,6 +35457,7 @@ ward	79900048	Female	Matric/matric equivalent	1039	2011
 ward	79900048	Male	Any tertiary	121	2011
 ward	79900048	Female	Any tertiary	128	2011
 ward	79900049	Male	Less than Grade9	262	2011
+ward	83007006	Male	Grade 9	19	2011
 ward	79900049	Female	Less than Grade9	185	2011
 ward	79900049	Male	Grade 9	128	2011
 ward	79900049	Female	Grade 9	70	2011
@@ -37017,7 +37018,6 @@ ward	83007005	Male	Any tertiary	42	2011
 ward	83007005	Female	Any tertiary	50	2011
 ward	83007006	Male	Less than Grade9	50	2011
 ward	83007006	Female	Less than Grade9	40	2011
-ward	83007006	Male	Grade 9	19	2011
 ward	83007006	Female	Grade 9	13	2011
 ward	83007006	Male	Grade 10/11	108	2011
 ward	83007006	Female	Grade 10/11	107	2011
@@ -37121,6 +37121,7 @@ ward	83007016	Female	Grade 9	36	2011
 ward	83007016	Male	Grade 10/11	203	2011
 ward	83007016	Female	Grade 10/11	202	2011
 ward	83007016	Male	Matric/matric equivalent	321	2011
+ward	83007027	Male	Grade 9	10	2011
 ward	83007016	Female	Matric/matric equivalent	309	2011
 ward	83007016	Male	Any tertiary	37	2011
 ward	83007016	Female	Any tertiary	32	2011
@@ -37225,7 +37226,6 @@ ward	83007026	Male	Any tertiary	8	2011
 ward	83007026	Female	Any tertiary	15	2011
 ward	83007027	Male	Less than Grade9	42	2011
 ward	83007027	Female	Less than Grade9	17	2011
-ward	83007027	Male	Grade 9	10	2011
 ward	83007027	Female	Grade 9	8	2011
 ward	83007027	Male	Grade 10/11	85	2011
 ward	83007027	Female	Grade 10/11	60	2011
@@ -37329,6 +37329,7 @@ ward	83101005	Female	Grade 9	31	2011
 ward	83101005	Male	Grade 10/11	157	2011
 ward	83101005	Female	Grade 10/11	147	2011
 ward	83101005	Male	Matric/matric equivalent	163	2011
+ward	83204019	Male	Grade 9	41	2011
 ward	83101005	Female	Matric/matric equivalent	186	2011
 ward	83101005	Male	Any tertiary	7	2011
 ward	83101005	Female	Any tertiary	10	2011
@@ -39513,7 +39514,6 @@ ward	83204018	Male	Any tertiary	20	2011
 ward	83204018	Female	Any tertiary	29	2011
 ward	83204019	Male	Less than Grade9	74	2011
 ward	83204019	Female	Less than Grade9	58	2011
-ward	83204019	Male	Grade 9	41	2011
 ward	83204019	Female	Grade 9	36	2011
 ward	83204019	Male	Grade 10/11	161	2011
 ward	83204019	Female	Grade 10/11	160	2011
@@ -39617,6 +39617,7 @@ ward	83204029	Female	Grade 9	43	2011
 ward	83204029	Male	Grade 10/11	169	2011
 ward	83204029	Female	Grade 10/11	161	2011
 ward	83204029	Male	Matric/matric equivalent	204	2011
+ward	93301022	Male	Grade 9	37	2011
 ward	83204029	Female	Matric/matric equivalent	162	2011
 ward	83204029	Male	Any tertiary	8	2011
 ward	83204029	Female	Any tertiary	14	2011
@@ -40241,7 +40242,6 @@ ward	93301021	Male	Any tertiary	10	2011
 ward	93301021	Female	Any tertiary	26	2011
 ward	93301022	Male	Less than Grade9	39	2011
 ward	93301022	Female	Less than Grade9	29	2011
-ward	93301022	Male	Grade 9	37	2011
 ward	93301022	Female	Grade 9	38	2011
 ward	93301022	Male	Grade 10/11	114	2011
 ward	93301022	Female	Grade 10/11	144	2011
@@ -42841,6 +42841,7 @@ ward	93504006	Female	Grade 9	20	2011
 ward	93504006	Male	Grade 10/11	322	2011
 ward	93504006	Female	Grade 10/11	271	2011
 ward	93504006	Male	Matric/matric equivalent	413	2011
+ward	93601002	Male	Grade 9	34	2011
 ward	93504006	Female	Matric/matric equivalent	459	2011
 ward	93504006	Male	Any tertiary	46	2011
 ward	93504006	Female	Any tertiary	92	2011
@@ -43465,7 +43466,6 @@ ward	93601001	Male	Any tertiary	9	2011
 ward	93601001	Female	Any tertiary	5	2011
 ward	93601002	Male	Less than Grade9	72	2011
 ward	93601002	Female	Less than Grade9	66	2011
-ward	93601002	Male	Grade 9	34	2011
 ward	93601002	Female	Grade 9	21	2011
 ward	93601002	Male	Grade 10/11	104	2011
 ward	93601002	Female	Grade 10/11	80	2011
@@ -45337,6 +45337,7 @@ ward	94705021	Female	Grade 9	18	2011
 ward	94705021	Male	Grade 10/11	104	2011
 ward	94705021	Female	Grade 10/11	149	2011
 ward	94705021	Male	Matric/matric equivalent	86	2011
+ward	10302003	Male	Grade 9	0	2011
 ward	94705021	Female	Matric/matric equivalent	92	2011
 ward	94705021	Male	Any tertiary	11	2011
 ward	94705021	Female	Any tertiary	12	2011
@@ -45655,7 +45656,6 @@ ward	93501008	Male	Any tertiary	0	2011
 ward	30704002	Male	Any tertiary	0	2011
 ward	64002025	Female	Grade 9	0	2011
 ward	63907008	Female	Any tertiary	0	2011
-ward	10302003	Male	Grade 9	0	2011
 ward	83203004	Male	Any tertiary	0	2011
 ward	10403010	Female	Grade 9	0	2011
 ward	41901002	Female	Any tertiary	0	2011
@@ -45758,6 +45758,16 @@ ward	63904017	Male	Any tertiary	0	2011
 ward	52704001	Female	Any tertiary	0	2011
 ward	63705001	Male	Any tertiary	0	2011
 ward	21201016	Male	Any tertiary	0	2011
+ward	74804019	Female	Any tertiary	\N	2011
+ward	74804019	Male	Any tertiary	\N	2011
+ward	74804019	Female	Grade 10/11	\N	2011
+ward	74804019	Male	Grade 10/11	\N	2011
+ward	74804019	Female	Grade 9	\N	2011
+ward	74804019	Male	Grade 9	\N	2011
+ward	74804019	Female	Less than Grade9	\N	2011
+ward	74804019	Male	Less than Grade9	\N	2011
+ward	74804019	Female	Matric/matric equivalent	\N	2011
+ward	74804019	Male	Matric/matric equivalent	\N	2011
 \.
 
 

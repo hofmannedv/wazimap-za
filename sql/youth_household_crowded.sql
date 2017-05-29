@@ -9181,6 +9181,8 @@ ward	10203002	Overcrowded	0	2011
 ward	21004012	Overcrowded	0	2011
 ward	10204009	Overcrowded	0	2011
 ward	10404002	Overcrowded	0	2011
+ward	74804019	Non-overcrowded	\N	2011
+ward	74804019	Overcrowded	\N	2011
 \.
 
 

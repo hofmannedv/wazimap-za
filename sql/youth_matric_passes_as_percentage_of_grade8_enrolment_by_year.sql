@@ -2,9 +2,6 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 9.6.2
--- Dumped by pg_dump version 9.6.2
-
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET client_encoding = 'UTF8';
@@ -23,7 +20,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: youth_matric_passes_as_percentage_of_grade8_enrolment_by_year; Type: TABLE; Schema: public; Owner: -
+-- Name: youth_matric_passes_as_percentage_of_grade8_enrolment_by_year; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE youth_matric_passes_as_percentage_of_grade8_enrolment_by_year (
@@ -142,6 +139,7 @@ municipality	WC011	2010	Dropped out or failed	24.8000000000000007	2011
 municipality	WC011	2011	Passed	81.2000000000000028	2011
 municipality	WC011	2011	Dropped out or failed	18.8000000000000007	2011
 municipality	WC011	2012	Passed	84.4000000000000057	2011
+ward	10202010	2010	Passed	\N	2011
 municipality	WC011	2012	Dropped out or failed	15.5999999999999996	2011
 municipality	WC011	2013	Passed	71.9000000000000057	2011
 municipality	WC011	2013	Dropped out or failed	28.1000000000000014	2011
@@ -1087,7 +1085,6 @@ ward	10202009	2014	Passed	100	2011
 ward	10202009	2014	Dropped out or failed	0	2011
 ward	10202009	2015	Passed	98.7999999999999972	2011
 ward	10202009	2015	Dropped out or failed	1.30000000000000004	2011
-ward	10202010	2010	Passed	\N	2011
 ward	10202010	2010	Dropped out or failed	\N	2011
 ward	10202010	2011	Passed	\N	2011
 ward	10202010	2011	Dropped out or failed	\N	2011
@@ -1738,6 +1735,7 @@ ward	10204021	2010	Dropped out or failed	77.7000000000000028	2011
 ward	10204021	2011	Passed	34.6000000000000014	2011
 ward	10204021	2011	Dropped out or failed	65.4000000000000057	2011
 ward	10204021	2012	Passed	28.6999999999999993	2011
+ward	10402006	2012	Passed	\N	2011
 ward	10204021	2012	Dropped out or failed	71.2999999999999972	2011
 ward	10204021	2013	Passed	23.8000000000000007	2011
 ward	10204021	2013	Dropped out or failed	76.2000000000000028	2011
@@ -2483,6 +2481,7 @@ ward	10303002	2011	Passed	34.1000000000000014	2011
 ward	10303002	2011	Dropped out or failed	65.9000000000000057	2011
 ward	10303002	2012	Passed	32.6000000000000014	2011
 ward	10303002	2012	Dropped out or failed	67.4000000000000057	2011
+ward	10404002	2015	Passed	\N	2011
 ward	10303002	2013	Passed	50	2011
 ward	10303002	2013	Dropped out or failed	50	2011
 ward	10303002	2014	Passed	50	2011
@@ -2697,7 +2696,6 @@ ward	10402006	2010	Passed	\N	2011
 ward	10402006	2010	Dropped out or failed	\N	2011
 ward	10402006	2011	Passed	\N	2011
 ward	10402006	2011	Dropped out or failed	\N	2011
-ward	10402006	2012	Passed	\N	2011
 ward	10402006	2012	Dropped out or failed	\N	2011
 ward	10402006	2013	Passed	\N	2011
 ward	10402006	2013	Dropped out or failed	\N	2011
@@ -2919,7 +2917,6 @@ ward	10404002	2013	Passed	\N	2011
 ward	10404002	2013	Dropped out or failed	\N	2011
 ward	10404002	2014	Passed	\N	2011
 ward	10404002	2014	Dropped out or failed	\N	2011
-ward	10404002	2015	Passed	\N	2011
 ward	10404002	2015	Dropped out or failed	\N	2011
 ward	10404003	2010	Passed	\N	2011
 ward	10404003	2010	Dropped out or failed	\N	2011
@@ -4280,6 +4277,7 @@ ward	19100045	2015	Dropped out or failed	84.0999999999999943	2011
 ward	19100046	2010	Passed	13.1999999999999993	2011
 ward	19100046	2010	Dropped out or failed	86.7999999999999972	2011
 ward	19100046	2011	Passed	45.2999999999999972	2011
+ward	19100087	2010	Passed	\N	2011
 ward	19100046	2011	Dropped out or failed	54.7000000000000028	2011
 ward	19100046	2012	Passed	41.2999999999999972	2011
 ward	19100046	2012	Dropped out or failed	58.7000000000000028	2011
@@ -4769,7 +4767,6 @@ ward	19100086	2014	Passed	38.7999999999999972	2011
 ward	19100086	2014	Dropped out or failed	61.2000000000000028	2011
 ward	19100086	2015	Passed	55.5	2011
 ward	19100086	2015	Dropped out or failed	44.5	2011
-ward	19100087	2010	Passed	\N	2011
 ward	19100087	2010	Dropped out or failed	\N	2011
 ward	19100087	2011	Passed	\N	2011
 ward	19100087	2011	Dropped out or failed	\N	2011
@@ -5073,7 +5070,7 @@ ward	19100111	2015	Dropped out or failed	34.2000000000000028	2011
 
 
 --
--- Name: youth_matric_passes_as_percentage_of_grade8_enrolment_by_year pk_youth_matric_passes_as_percentage_of_grade8_enrolment_by_yea; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: pk_youth_matric_passes_as_percentage_of_grade8_enrolment_by_yea; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY youth_matric_passes_as_percentage_of_grade8_enrolment_by_year

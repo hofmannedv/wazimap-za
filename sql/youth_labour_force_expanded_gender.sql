@@ -1091,6 +1091,7 @@ municipality	TSH	employed	Male	66649	2011
 municipality	TSH	unemployed	Male	76307	2011
 municipality	TSH	employed	Female	53178	2011
 municipality	TSH	unemployed	Female	87878	2011
+province	GT	unemployed	Male	329840	2011
 municipality	WC011	employed	Male	2301	2011
 municipality	WC011	unemployed	Male	1094	2011
 municipality	WC011	employed	Female	1613	2011
@@ -1196,7 +1197,6 @@ province	FS	unemployed	Male	69234	2011
 province	FS	employed	Female	28561	2011
 province	FS	unemployed	Female	86534	2011
 province	GT	employed	Male	295424	2011
-province	GT	unemployed	Male	329840	2011
 province	GT	employed	Female	220644	2011
 province	GT	unemployed	Female	381999	2011
 province	KZN	employed	Male	150943	2011
@@ -18322,6 +18322,14 @@ ward	94705031	unemployed	Male	281	2011
 ward	94705031	employed	Female	131	2011
 ward	94705031	unemployed	Female	336	2011
 ward	21004012	unemployed	Female	3	2011
+ward	93601011	employed	Female	\N	2011
+ward	93601011	employed	Male	\N	2011
+ward	93601011	unemployed	Female	\N	2011
+ward	93601011	unemployed	Male	\N	2011
+ward	74804019	employed	Female	\N	2011
+ward	74804019	employed	Male	\N	2011
+ward	74804019	unemployed	Female	\N	2011
+ward	74804019	unemployed	Male	\N	2011
 \.
 
 

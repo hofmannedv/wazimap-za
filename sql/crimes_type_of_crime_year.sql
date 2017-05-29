@@ -2,9 +2,6 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 9.6.2
--- Dumped by pg_dump version 9.6.2
-
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET client_encoding = 'UTF8';
@@ -23,7 +20,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: crimes_type_of_crime_year; Type: TABLE; Schema: public; Owner: -
+-- Name: crimes_type_of_crime_year; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE crimes_type_of_crime_year (
@@ -8865,7 +8862,7 @@ municipality	WC051	Contact crime	2006-07	115	2011
 
 
 --
--- Name: crimes_type_of_crime_year pk_crimes_type_of_crime_year; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: pk_crimes_type_of_crime_year; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY crimes_type_of_crime_year

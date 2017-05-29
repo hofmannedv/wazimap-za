@@ -9181,6 +9181,8 @@ ward	94705030	At least one employed adult	1279	2011
 ward	94705031	No employed adult	977	2011
 ward	94705031	At least one employed adult	1101	2011
 ward	93601011	At least one employed adult	0	2011
+ward	74804019	At least one employed adult	\N	2011
+ward	74804019	No employed adult	\N	2011
 \.
 
 

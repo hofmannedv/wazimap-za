@@ -2,9 +2,6 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 9.6.2
--- Dumped by pg_dump version 9.6.2
-
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET client_encoding = 'UTF8';
@@ -23,7 +20,7 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
--- Name: youth_accused_gender; Type: TABLE; Schema: public; Owner: -
+-- Name: youth_accused_gender; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
 CREATE TABLE youth_accused_gender (
@@ -926,7 +923,7 @@ ward	19100085	Female	41	2011
 
 
 --
--- Name: youth_accused_gender pk_youth_accused_gender; Type: CONSTRAINT; Schema: public; Owner: -
+-- Name: pk_youth_accused_gender; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
 ALTER TABLE ONLY youth_accused_gender
