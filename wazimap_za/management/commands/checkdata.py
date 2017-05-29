@@ -4,8 +4,10 @@ from collections import defaultdict
 from django.core.management.base import BaseCommand
 
 from wazimap.data.utils import get_session
-from wazimap.data.tables import get_datatable, get_table_id, DATA_TABLES, FIELD_TABLES, FieldTable, SimpleTable
+from wazimap.data.tables import get_datatable, DATA_TABLES, FIELD_TABLES, FieldTable
 from wazimap.geo import geo_data
+
+from wazimap_za.models import GeographyYouth
 
 import logging
 
@@ -100,6 +102,7 @@ class Command(BaseCommand):
         self.dryrun = options.get('dryrun')
 
         self.geos = self.get_geos(self.geo_version)
+        self.wc_geos = GeographyYouth.objects.filter(version='2011')
 
         self.db_tables = []
         self.fields_by_table = {}
@@ -212,14 +215,12 @@ class Command(BaseCommand):
             sys.exit("Empty table: %s" % (table.id))
 
         if table.id.lower() in WC_ONLY_TABLES:
-            all_geos = set(
-                (g.geo_level, g.geo_code) for g in self.geos
-                if g.geo_code == 'WC'
-                or 'WC' in [cg.geo_code for cg in geo_data.get_comparative_geos(g)])
+            req_geos = set(
+                (g.geo_level, g.geo_code) for g in self.wc_geos)
         else:
-            all_geos = set((g.geo_level, g.geo_code) for g in self.geos)
+            req_geos = set((g.geo_level, g.geo_code) for g in self.geos)
 
-        missing_geos = [g for g in all_geos if g not in table_geos]
+        missing_geos = [g for g in req_geos if g not in table_geos]
 
         if missing_geos:
             self.missing_geos_by_table[table.id] = missing_geos
