@@ -721,7 +721,7 @@ def get_health_profile(geo, session, display_profile, comparative=False):
         },
         'youth_difficulty_by_function': youth_difficulty_by_function,
         'youth_female_have_given_birth': {
-            "name": "Of females aged 15-24 have given birth to a live child",
+            "name": "Of females aged 15-24 have given birth to a child",
             "values": {"this": youth_female_given_birth['Given birth']['values']['this']}
         },
         'youth_female_given_birth': youth_female_given_birth,
