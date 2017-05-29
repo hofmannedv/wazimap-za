@@ -90,6 +90,7 @@ class Command(BaseCommand):
         self.keys_by_table = {}
         self.missing_keys_by_table = {}
         self.missing_geos_by_table = {}
+        self.missing_geos_by_simple_table = {}
 
         if self.table_id:
             table = get_datatable(self.table_id)
@@ -133,12 +134,31 @@ class Command(BaseCommand):
                 self.stdout.write("%s" % table)
 
         if self.store_missing_entries:
-            self.store_missing_keys()
-            self.stdout.write("Missing keys stored in database.")
-            self.store_missing_geos()
-            self.stdout.write("Missing geos stored in database.")
+            if self.missing_keys_by_table:
+                self.store_missing_keys()
+                self.stdout.write("Missing keys stored in database.")
+            if self.missing_geos_by_table:
+                self.store_missing_geos()
+                self.stdout.write("Missing geos stored in database.")
         else:
             self.stdout.write("Run command with --store_missing_entries=True to populate missing keys with 0 and missing geos with null")
+
+
+        for table_id, table in self.simple_tables.iteritems():
+            self.stdout.write("Checking table: %s" % (table.id))
+            rows = self.session.query(table.model).filter(table.model.geo_version == self.geo_version).all()
+            missing_geos = self.get_missing_geos(table, rows)
+            if missing_geos:
+                self.missing_geos_by_simple_table[table.id] = missing_geos
+
+        if self.missing_geos_by_simple_table:
+            self.stdout.write("Missing geos for Simple tables:")
+            for table in self.missing_geos_by_simple_table.iterkeys():
+                self.stdout.write("%s" % table)
+
+            if self.store_missing_entries:
+                self.store_simple_table_missing_geos()
+                self.stdout.write("Missing geos for Simple tables stored in database.")
 
         self.session.close()
 
@@ -186,6 +206,7 @@ class Command(BaseCommand):
         count = 0
         for table_id, missing_keys_by_geo in self.missing_keys_by_table.iteritems():
             table = self.field_tables[table_id]
+            self.stdout.write("Storing missing keys for : %s" % (table_id))
             for geo, missing_keys in missing_keys_by_geo.iteritems():
                 for key_combo in missing_keys:
                     count += 1
@@ -213,26 +234,49 @@ class Command(BaseCommand):
         count = 0
         for table_id, missing_geos in self.missing_geos_by_table.iteritems():
             table = self.field_tables[table_id]
-
+            self.stdout.write("Storing missing geos for : %s" % (table_id))
             for geo in missing_geos:
                 # Entry for each possible key combination for each missing geo
                 for keys in self.keys_by_table[table_id]:
                     count += 1
-                    entry = {
+                    row = {
                         'geo_level': geo[0],
                         'geo_code': geo[1],
                         'total': None,
                         'geo_version': self.geo_version}
                     for i, field in enumerate(self.fields_by_table[table_id]):
-                        entry[field] = keys[i]
+                        row[field] = keys[i]
 
-                    entry = table.model(**entry)
+                    entry = table.model(**row)
 
                     if not self.dryrun:
                         self.session.add(entry)
 
                     if count % 100 == 0:
                         self.session.flush()
+
+        if not self.dryrun:
+            self.session.commit()
+
+    def store_simple_table_missing_geos(self):
+        count = 0
+        for table_id, missing_geos in self.missing_geos_by_simple_table.iteritems():
+            table = self.simple_tables[table_id]
+            self.stdout.write("Storing missing geos for : %s" % (table_id))
+            for geo in missing_geos:
+                count += 1
+                row = {
+                    'geo_level': geo[0],
+                    'geo_code': geo[1],
+                    'geo_version': self.geo_version}
+
+                entry = table.model(**row)
+
+                if not self.dryrun:
+                    self.session.add(entry)
+
+                if count % 100 == 0:
+                    self.session.flush()
 
         if not self.dryrun:
             self.session.commit()
