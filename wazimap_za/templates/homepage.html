@@ -1,5 +1,21 @@
 {% extends 'homepage.html' %}{% load staticfiles %}
 
+{% block head_title %}
+  {% if WAZIMAP.default_profile == 'youth' %}
+    {{ WAZIMAP.name }} - Explore, visualise and interact with youth-centered data
+  {% else %}
+    {{ block.super }}
+  {% endif %}
+{% endblock %}
+
+{% block head_meta_description %}
+    {% if WAZIMAP.default_profile == 'youth' %}
+    {{ WAZIMAP.name }} provides useful facts about young people living in {{ root_geo.name }}. Compare places using tables and maps, download data, and embed charts on your site!
+  {% else %}
+    {{ block.super }}
+  {% endif %}
+{% endblock %}
+
 {% block place_finder %}
   {% if WAZIMAP.default_profile == 'youth' %}
     {% include 'homepage_youth_place_finder.html' %}
