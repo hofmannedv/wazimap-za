@@ -1,5 +1,13 @@
 {% extends 'homepage.html' %}{% load staticfiles %}
 
+{% block head_title %}
+    {{ WAZIMAP.name }} - Explore, visualise and interact with data on Early Childhood Development
+{% endblock %}
+
+{% block head_meta_description %}
+    {{ WAZIMAP.name }} provides useful facts on Early Childhood Development in {{ root_geo.name }}. Compare places using tables and maps, download data, and embed charts on your site!
+{% endblock %}
+
 {% block head_css_extra %}
 {{ block.super }}
 <link rel="stylesheet" href="{% static 'css/ecd.css' %}">
