@@ -1,0 +1,74 @@
+{% extends '_base.html' %}
+{% load staticfiles %}
+
+{% block head_meta_description %}{{ WAZIMAP.name }} provides useful facts about the youth in {{ root_geo.name }}. Compare places using tables and maps, download data, and embed charts on your site!{% endblock %}
+
+{% block head_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/wazimap_za.css' %}">
+    <link rel="stylesheet" href="{% static 'css/youth.css' %}">
+{% endblock %}
+
+{% block favicon %}
+    <link rel="shortcut icon" href="{% static 'img/youth-favicon.ico' %}"/>
+{% endblock %}
+
+{% block body %}
+
+<div class="content-container clearfix">
+    <article class="clearfix wrapper">
+        <section class="column-full clearfix branding">
+            <img src="{% static 'img/youth-logo.png' %}">
+            <h2>Youth Explorer</h2>
+            <p>Explore, visualise and interact with youth-centered data for places in South Africa.</p>
+            <h3>Launching 16 June 2017</h3>
+        </section>
+    </article>
+</div>
+
+<div class="content-container clearfix tan-stripe callouts">
+    <article class="wrapper">
+        <section class="column-quarter">
+            <p>&nbsp;</p>
+        </section>
+        <section class="column-half clearfix">
+            <div class="column-half callout with-icon">
+                <a href="">
+                    <h3>
+                        <i class="fa fa-envelope-o"></i>
+                        Stay in touch
+                    </h3>
+                </a>
+                <p>by joining our mailing list</p>
+            </div>
+            <div class="column-half callout with-icon">
+                <a href="https://beta.youthexplorer.org.za/">
+                    <h3>
+                        <i class="fa fa-bar-chart"></i>
+                        Take a peek
+                    </h3>
+                </a>
+                <p>and explore the data we have so far!</p>
+            </div>
+        </section>
+    </article>
+</div>
+
+<section class="wrapper footer-container clearfix">
+    <div class="clearfix">
+        <div class="footer-logos">
+            <a href="http://www.povertyandinequality.uct.ac.za/"><img img="" class="footer-logo" src="/static/img/uct-logo.png"></a>
+            <a href="http://www.povertyandinequality.uct.ac.za/"><img img="" class="footer-logo" src="/static/img/pii-logo.png"></a>
+            <a href="https://www.westerncape.gov.za/"><img img="" class="footer-logo" src="/static/img/wcgov-logo.png"></a>
+            <a href="https://www.capetown.gov.za/en/Pages/default.aspx"><img img="" class="footer-logo" src="/static/img/cct-logo.png"></a>
+            <a href="http://www.statssa.gov.za/?page_id=7944"><img img="" class="footer-logo" src="/static/img/statssa-logo.png"></a>
+            <a href="http://www.code4sa.org/"><img class="footer-logo" src="/static/img/c4sa-logo.png"></a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+
+{% block body_javascript %}
+{% endblock %}

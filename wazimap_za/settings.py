@@ -88,7 +88,7 @@ elif wazi_profile == 'youth':
         }
     }
     WAZIMAP['url'] = 'https://youthexplorer.org.za'
-    WAZIMAP['name'] = 'Western Cape Youth Explorer'
+    WAZIMAP['name'] = 'Youth Explorer'
     WAZIMAP['ga_tracking_id'] = 'UA-48399585-46'
 
     WAZIMAP['video_links'] = OrderedDict([

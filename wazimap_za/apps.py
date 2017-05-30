@@ -17,3 +17,7 @@ class WazimapConfig(AppConfig):
             from wazimap.geo import geo_data
             from wazimap_za.models import GeographyYouth
             geo_data.geo_model = GeographyYouth
+
+            # This is to be used for the launch of the national YE
+            from wazimap.views import HomepageView
+            HomepageView.template_name = 'launch_youth.html'

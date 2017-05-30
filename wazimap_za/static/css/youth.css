@@ -38,3 +38,51 @@ h1.article-header {
     }
 }
 
+
+html {
+    background-color: #f7f8f3;
+}
+
+.branding {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.branding h2 {
+    color: #FF4A00;
+    font-size: 1.4em;
+    margin-top: 1em;
+}
+
+.branding h3 {
+    font-size: 1.2em;
+}
+
+.branding p {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.callout a {
+    text-decoration: none;
+}
+
+.callout h3 {
+    color: #33B5B5;
+}
+
+.callout i.fa {
+    background-color: #33B5B5;
+}
+
+p {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.footer-container {
+    margin-top: 50px;
+}
+
+.footer-logos {
+    margin-left: 100px;
+}
+
