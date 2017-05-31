@@ -47,6 +47,7 @@ DIFFICULTY_FUNCTIONING_KEY_ORDER = (
 GIVEN_BIRTH_KEY_ORDER = (
     'Given birth', 'Never given birth', 'Do not know', 'Unspecified')
 
+
 INCOME_POVERTY_AGE_GROUP_RECODE = {
     'age group': {
         '0-14': 'Children (0-14)',
@@ -510,6 +511,17 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
         key_order=INTERNET_ACCESS_ORDER,
         table_name='youth_access_to_internet')
 
+    youth_by_living_with_parents_status, _ = get_stat_data(
+        ['living with parents'], geo, session,
+        key_order=('Both parents', 'Mother only', 'Father only', 'Neither parent'),
+        table_name='youth_living_with_parents_gender')
+
+    living_with_parent_keys = ('Both parents', 'Mother only', 'Father only')
+    living_with_parents_stat = sum(
+        v['values']['this'] or 0
+        for k, v in youth_by_living_with_parents_status.iteritems()
+        if k in living_with_parent_keys)
+
     final_data = {
         'youth_electricity_access': youth_electricity_access,
         'youth_toilet_access': youth_toilet_access,
@@ -529,7 +541,12 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
             "name": "Of youth live in households with no access to internet",
             "values": {"this": youth_access_to_internet['No access to internet']['values']['this']}
         },
-        'youth_access_to_internet': youth_access_to_internet
+        'youth_access_to_internet': youth_access_to_internet,
+        'youth_living_with_parents': {
+            "name": "Of youth aged 15-19 live with at least one biological parent",
+            "values": {"this": living_with_parents_stat}
+        },
+        'youth_by_living_with_parents_status': youth_by_living_with_parents_status
     }
 
     return final_data

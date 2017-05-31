@@ -111,12 +111,15 @@ class Command(BaseCommand):
         self.missing_geos_by_table = {}
         self.missing_geos_by_simple_table = {}
 
+        self.simple_tables = {}
+        self.field_tables = {}
+
         if self.table_id:
             table = get_datatable(self.table_id)
             if type(table) == FieldTable:
-                self.field_tables = {table.id:table}
+                self.field_tables[table.id] = table
             else:
-                self.simple_tables = {table.id:table}
+                self.simple_tables[table.id] = table
         else:
             self.tables = DATA_TABLES
             self.field_tables = FIELD_TABLES
@@ -161,7 +164,7 @@ class Command(BaseCommand):
                 self.store_missing_geos()
                 self.stdout.write("Missing geos stored in database.")
         else:
-            self.stdout.write("Run command with --store_missing_entries=True to populate missing keys with 0 and missing geos with null")
+            self.stdout.write("Run command with --store-missing-entries to populate missing keys with 0 and missing geos with null")
 
 
         for table_id, table in self.simple_tables.iteritems():

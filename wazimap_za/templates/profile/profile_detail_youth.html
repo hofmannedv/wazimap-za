@@ -287,6 +287,13 @@
             </div>
             <div class="column-third" id="chart-pie-living_environment-youth_access_to_internet" data-stat-type="percentage" data-chart-title="Youth in households by primary means of internet access"></div>
         </section>
+        <section class="clearfix stat-row">
+            <h2 class="header-for-columns"><a class="permalink" href="#living_with_parents" id="living_with_parents">Living with parents<i class="fa fa-link"></i></a></h2>
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=living_environment.youth_living_with_parents stat_type='percentage' stat_note='true'  decimals='-1'%}
+            </div>
+            <div class="column-third" id="chart-pie-living_environment-youth_by_living_with_parents_status" data-stat-type="percentage" data-chart-title="Youth aged 15-19 living with parents"></div>
+        </section>
     </div>
 </article>
 
