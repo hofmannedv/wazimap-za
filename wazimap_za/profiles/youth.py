@@ -413,6 +413,12 @@ def get_economic_opportunities_profile(geo, session, display_profile, comparativ
     ))
     youth_unemployment_by_definition['metadata'] = youth_labour_force_official['metadata']
 
+    youth_official_unemployment_by_gender, _ = get_stat_data(
+        ['employment status', 'gender'], geo, session,
+        percent_grouping=['gender'], slices=['Unemployed'],
+        table_name='youth_labour_force_official_gender',
+        key_order={'gender': GENDER_ORDER})
+
     youth_employment_status, _ = get_stat_data(
         ['employment status'], geo, session,
         key_order=('Employed', 'Unemployed', 'Discouraged work-seeker', 'Other not economically active'),
@@ -446,6 +452,7 @@ def get_economic_opportunities_profile(geo, session, display_profile, comparativ
             }
         },
         'youth_unemployment_by_definition': youth_unemployment_by_definition,
+        'youth_official_unemployment_by_gender': youth_official_unemployment_by_gender,
         'youth_employed': {
             "name": "Of youth are employed",
             "values": {"this": youth_employment_status['Employed']['values']['this'],
