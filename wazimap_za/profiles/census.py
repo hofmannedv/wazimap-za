@@ -26,6 +26,11 @@ PROFILE_SECTIONS = (
 
 # Education categories
 
+COLLAPSED_ATTENDANCE_CATEGORIES = {
+    'Unspecified': 'Other',
+    'Not applicable': 'Other',
+    'Do not know': 'Other',
+}
 COLLAPSED_EDUCATION_CATEGORIES = {
     'Gade 0': 'Some primary',
     'Grade 1 / Sub A': 'Some primary',
@@ -238,7 +243,11 @@ HOUSEHOLD_INCOME_ESTIMATE['R1.2M - R2.5M'] = 1843200
 HOUSEHOLD_INCOME_ESTIMATE['Over R2.5M'] = 2500000
 HOUSEHOLD_INCOME_ESTIMATE['Unspecified'] = None
 
-
+HOUSEHOLD_OWNERSHIP_RECODE = {
+    'Unspecified': 'Other',
+    'Not applicable': 'Other',
+    'Do not know': 'Other',
+}
 
 # Sanitation categories
 
@@ -462,7 +471,9 @@ def get_demographics_profile(geo, session):
         if key == 'Born in South Africa':
             return 'South Africa'
         else:
-            return key
+            return {
+                'Not applicable': 'Other',
+                }.get(key, key)
 
     region_of_birth_dist, _ = get_stat_data(
             ['region of birth'], geo, session,
@@ -503,6 +514,7 @@ def get_households_profile(geo, session):
     # tenure
     tenure_data, _ = get_stat_data(
             ['tenure status'], geo, session,
+            recode=HOUSEHOLD_OWNERSHIP_RECODE,
             order_by='tenure status')
     owned = 0
     for key, data in tenure_data.iteritems():
@@ -516,7 +528,7 @@ def get_households_profile(geo, session):
         HOUSEHOLD_INCOME_RECODE = COLLAPSED_ANNUAL_INCOME_CATEGORIES
     income_dist_data, _ = get_stat_data(
             ['annual household income'], geo, session,
-            exclude=['Unspecified'],
+            exclude=['Unspecified', 'Not applicable'],
             recode=HOUSEHOLD_INCOME_RECODE,
             key_order=HOUSEHOLD_INCOME_RECODE.values(),
             table_name='annualhouseholdincome_genderofhouseholdhead')
@@ -896,6 +908,7 @@ def get_children_profile(geo, session):
     school_attendance_dist, total_school_aged = get_stat_data(
         ['present school attendance'],
         geo, session,
+        recode=COLLAPSED_ATTENDANCE_CATEGORIES,
     )
     total_attendance = school_attendance_dist['Yes']['numerators']['this']
 
