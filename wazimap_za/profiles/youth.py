@@ -397,11 +397,11 @@ def get_education_profile(geo, session, display_profile, comparative=False):
 def get_economic_opportunities_profile(geo, session, display_profile, comparative=False):
     youth_labour_force_official, _ = get_stat_data(
         ['employment status'], geo, session,
-        table_name='youth_labour_force_official_gender')
+        table_name='youth_labour_force_official_age_group_gender')
 
     youth_labour_force_expanded, _ = get_stat_data(
         ['employment status'], geo, session,
-        table_name='youth_labour_force_expanded_gender')
+        table_name='youth_labour_force_expanded_age_group_gender')
 
     youth_unemployment_by_definition = OrderedDict((
         ('Official', {
@@ -420,7 +420,7 @@ def get_economic_opportunities_profile(geo, session, display_profile, comparativ
     youth_official_unemployment_by_gender, _ = get_stat_data(
         ['employment status', 'gender'], geo, session,
         percent_grouping=['gender'], slices=['Unemployed'],
-        table_name='youth_labour_force_official_gender',
+        table_name='youth_labour_force_official_age_group_gender',
         key_order={'gender': GENDER_ORDER})
 
     youth_employment_status, _ = get_stat_data(
