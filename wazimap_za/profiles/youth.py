@@ -35,6 +35,9 @@ REGION_ORDER = (
     'South Africa', 'SADC', 'Rest of Africa', 'Other', 'Unspecified')
 CITIZENSHIP_ORDER = (
     'Yes', 'No', 'Unspecified')
+TOILET_ACCESS_KEY_ORDER = (
+    'No toilet facilities', 'Flush toilet', 'Pit latrine-ventilated', 'Chemical toilet',
+    'Unventilated pit latrine/Bucket toilet', 'Other')
 INTERNET_ACCESS_ORDER = (
     'From home', 'From cell phone', 'From work', 'From elsewhere', 'No access to internet')
 TYPE_OF_AREA_ORDER = (
@@ -445,7 +448,7 @@ def get_economic_opportunities_profile(geo, session, display_profile, comparativ
 
     youth_emp_edu_train_status, _ = get_stat_data(
         ['employment education training'], geo, session,
-        key_order=('Employed', 'School/post-school', 'NEET'),
+        key_order=('NEET','School/post-school', 'Employed'),
         table_name='youth_employment_education_training_gender')
 
     youth_neet_by_gender, _ = get_stat_data(
@@ -505,11 +508,11 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
         table_name='youth_electricity_access')
     youth_toilet_access, _ = get_stat_data(
         ['toilet access'], geo, session,
-        key_order=('Flush toilet', 'Pit latrine-ventilated', 'Chemical toilet', 'Unventilated pit latrine/Bucket toilet', 'Other', 'No toilet facilities'),
+        key_order=TOILET_ACCESS_KEY_ORDER,
         table_name='youth_toilet_access')
     youth_water_access, _ = get_stat_data(
         ['water access'], geo, session,
-        key_order=('On site', '< 1km', '> 1km', 'No piped water'),
+        key_order=('No piped water', 'On site', '< 1km', '> 1km'),
         table_name='youth_water_access')
 
     youth_type_of_dwelling, _ = get_stat_data(
