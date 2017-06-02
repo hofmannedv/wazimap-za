@@ -168,8 +168,8 @@ elif settings.WAZIMAP['default_profile'] == 'youth':
     FieldTable(['year', 'outcome'], id='youth_student_dropout_rate_by_year', universe='Dropout rates between grade 10 and matric', year='2015', value_type='Float', stat_type='percentage', has_total=False)
 
     # Economic opportunities
-    FieldTable(['employment status', 'gender'], id='youth_labour_force_official_gender', universe='Youth in the labour force - Official definition', description='Employment status of youth in the labour force', year='2011')
-    FieldTable(['employment status', 'gender'], id='youth_labour_force_expanded_gender', universe='Youth in the labour force - Expanded definition', description='Employment status of youth in the labour force', year='2011')
+    FieldTable(['employment status', 'age group', 'gender'], id='youth_labour_force_official_age_group_gender', universe='Youth in the labour force - Official definition', description='Employment status of youth in the labour force', year='2011')
+    FieldTable(['employment status', 'age group', 'gender'], id='youth_labour_force_expanded_age_group_gender', universe='Youth in the labour force - Expanded definition', description='Employment status of youth in the labour force', year='2011')
     FieldTable(['employment status', 'gender'], id='youth_employment_status_gender', universe='Youth', year='2011')
     FieldTable(['employment status', 'gender'], id='population_employment_status_gender', universe='Population', year='2011')
     FieldTable(['employment education training', 'gender'], id='youth_employment_education_training_gender', universe='Youth', year='2011')
