@@ -229,6 +229,13 @@
             <div class="column-third" id="chart-pie-economic_opportunities-pop_employment_status" data-stat-type="percentage" data-chart-title="Population by employment status"></div>
         </section>
         <section class="clearfix stat-row">
+            <div class="column-third">
+                {% include 'profile/_blocks/_stat_list.html' with stat=economic_opportunities.youth_formal_sector stat_type='percentage' decimals='-1' %}
+            </div>
+            <div class="column-third" id="chart-pie-economic_opportunities-youth_employment_sector" data-stat-type="percentage" data-chart-title="Youth by sector of employment"></div>
+            <div class="column-third" id="chart-pie-economic_opportunities-pop_employment_sector" data-stat-type="percentage" data-chart-title="Population by sector of employment"></div>
+        </section>
+        <section class="clearfix stat-row">
             <h2 class="header-for-columns"><a class="permalink" href="#emp_edu_train_status" id="emp_edu_train_status">Employment, education and training status<i class="fa fa-link"></i></a></h2>
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=economic_opportunities.youth_neet stat_type='percentage' decimals='-1' %}

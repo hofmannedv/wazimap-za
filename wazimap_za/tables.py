@@ -174,6 +174,8 @@ elif settings.WAZIMAP['default_profile'] == 'youth':
     FieldTable(['employment status', 'gender'], id='population_employment_status_gender', universe='Population', year='2011')
     FieldTable(['employment education training', 'gender'], id='youth_employment_education_training_gender', universe='Youth', year='2011')
     FieldTable(['household employment'], id='youth_household_employment', universe='Youth living in households', description='Youth in households by adult employment', year='2011')
+    FieldTable(['employment sector', 'gender'], id='youth_employment_sector_gender', universe='Youth', year='2011')
+    FieldTable(['employment sector', 'gender'], id='population_employment_sector_gender', universe='Population', year='2011')
 
     # Living environment
     FieldTable(['electricity access'], id='youth_electricity_access', universe='Youth living in households', year='2011')
