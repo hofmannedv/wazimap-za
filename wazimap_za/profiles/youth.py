@@ -505,20 +505,20 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
     youth_electricity_access, _ = get_stat_data(
         ['electricity access'], geo, session,
         key_order=('No electricity', 'Have electricity for some things', 'Have electricity for everything'),
-        table_name='youth_electricity_access')
+        table_name='youth_electricity_access_gender')
     youth_toilet_access, _ = get_stat_data(
         ['toilet access'], geo, session,
         key_order=TOILET_ACCESS_KEY_ORDER,
-        table_name='youth_toilet_access')
+        table_name='youth_toilet_access_gender')
     youth_water_access, _ = get_stat_data(
         ['water access'], geo, session,
         key_order=('No piped water', 'On site', '< 1km', '> 1km'),
-        table_name='youth_water_access')
+        table_name='youth_water_access_gender')
 
     youth_type_of_dwelling, _ = get_stat_data(
         ['type of dwelling'], geo, session,
         key_order=('Formal', 'Informal not in backyard', 'Informal in backyard', 'Traditional', 'Other'),
-        table_name='youth_type_of_dwelling')
+        table_name='youth_type_of_dwelling_gender')
 
     informal_not_in_backyard = youth_type_of_dwelling.get('Informal not in backyard', {}).get('values', {}).get('this', 0)
     informal_in_backyard = youth_type_of_dwelling.get('Informal in backyard', {}).get('values', {}).get('this', 0)
@@ -535,12 +535,12 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
     youth_household_crowded, _ = get_stat_data(
         ['household crowded'], geo, session,
         key_order=('Overcrowded', 'Non-overcrowded'),
-        table_name='youth_household_crowded')
+        table_name='youth_household_crowded_gender')
 
     youth_access_to_internet, _ = get_stat_data(
         ['access to internet'], geo, session,
         key_order=INTERNET_ACCESS_ORDER,
-        table_name='youth_access_to_internet')
+        table_name='youth_access_to_internet_gender')
 
     youth_by_living_with_parents_status, _ = get_stat_data(
         ['living with parents'], geo, session,
