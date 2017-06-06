@@ -25,39 +25,15 @@ and missing key values are populated with 0.
 """
 
 WC_ONLY_TABLES = [
-    # Education
-    'youth_average_mean_score_by_year',
-    'youth_average_language_score_by_year',
-    'youth_language_outcome_by_year',
-    'youth_average_maths_score_by_year',
-    'youth_maths_outcome_by_year',
-    'youth_matric_outcome_by_year',
-    'youth_matric_passes_as_percentage_of_grade8_enrolment_by_year',
-    'youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year',
-    'youth_student_dropout_rate_by_year',
-    # Crime
-    'crimes_victims_age_group',
-    'crimes_accused_age_group',
-    'youth_victims_offence_type',
-    'youth_accused_offence_type',
-    'youth_victims_population_group',
-    'youth_accused_population_group',
-    'youth_victims_gender',
-    'youth_accused_gender',
-    'youth_victims_year',
-    'youth_accused_year',
-    'crimes_type_of_crime_year',
-    # Health
-    'youth_pregnancy_rate_year',
-    'youth_delivery_rate_year',
-    'youth_causes_of_death_female',
-    'youth_causes_of_death_male',
+]
+
+ONLY_CHECK_TABLES = [
 ]
 
 
 class Command(BaseCommand):
     help = ("Checks the database for completeness (or a single table if passed)." +
-        "Populates the missing entries if populate_missing_values=True")
+        "Populates the missing entries if --store-missing-entries is passed")
 
     def add_arguments(self, parser):
         parser.add_argument(
@@ -120,6 +96,14 @@ class Command(BaseCommand):
                 self.field_tables[table.id] = table
             else:
                 self.simple_tables[table.id] = table
+
+        elif ONLY_CHECK_TABLES:
+            for table_id in ONLY_CHECK_TABLES:
+                table = get_datatable(table_id)
+                if type(table) == FieldTable:
+                    self.field_tables[table.id] = table
+                else:
+                    self.simple_tables[table.id] = table
         else:
             self.tables = DATA_TABLES
             self.field_tables = FIELD_TABLES
