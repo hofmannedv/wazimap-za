@@ -203,6 +203,7 @@ elif settings.WAZIMAP['default_profile'] == 'youth':
     FieldTable(['population group'], id='youth_accused_population_group', universe='Youth accused of crimes, per 10,000 youth', year='2015', dataset='Police Crime Statistics 2006-2015', has_total=False)
     FieldTable(['gender'], id='youth_victims_gender', universe='Youth victims of crime, per 10,000 youth', year='2015', has_total=False, dataset='Police Crime Statistics 2006-2015')
     FieldTable(['gender'], id='youth_accused_gender', universe='Youth accused of crimes, per 10,000 youth', year='2015', has_total=False, dataset='Police Crime Statistics 2006-2015')
+
     FieldTable(['year'], id='youth_victims_year', universe='Youth victims of crime', year='2015', has_total=False, dataset='Police Crime Statistics 2006-2015')
     FieldTable(['year'], id='youth_accused_year', universe='Youth accused of crimes', year='2015', has_total=False, dataset='Police Crime Statistics 2006-2015')
     FieldTable(['type of crime', 'year'], id='crimes_type_of_crime_year', description='Contact and property crimes by year', year='2015', has_total=False, universe='Crimes', dataset='Police Crime Statistics 2006-2015')
