@@ -5,22 +5,13 @@ from wazimap.data.utils import get_session, merge_dicts, get_stat_data, percent
 from wazimap.geo import geo_data
 
 
-PROFILE_SECTIONS_WC = (
-    "demographics",
-    "education",
-    "economic_opportunities",
-    "living_environment",
-    "poverty",
-    "safety",
-    "health"
-)
-
 PROFILE_SECTIONS = (
     "demographics",
     "education",
     "economic_opportunities",
     "living_environment",
     "poverty",
+    "safety",
     "health"
 )
 
@@ -102,12 +93,8 @@ def get_profile(geo, profile_name, request):
         This is beacause Wazimap expects data for all geos.
         This will be removed once we have imported all the data.
         """
-        display_profile = 'ZA'
-        if geo.geo_code == 'WC' or 'WC' in [cg.geo_code for cg in comp_geos]:
-            display_profile = 'WC'
-            geo_data.comparative_levels = ['this', 'district', 'province']
-            comp_geos = geo_data.get_comparative_geos(geo)
-            sections = list(PROFILE_SECTIONS_WC)
+        # There are datasets with only WC information
+        display_profile = 'WC' if (geo.geo_code == 'WC' or 'WC' in [cg.geo_code for cg in comp_geos]) else 'ZA'
 
         data['display_profile'] = display_profile
 
@@ -647,100 +634,105 @@ def get_poverty_profile(geo, session, display_profile, comparative=False):
 def get_safety_profile(geo, session, display_profile, comparative=False):
 
     def rate_per_10k_pop(value, population):
+        if not value:
+            return None
         return value / population * 10000
 
-    youth_pop_table = get_datatable('youth_population')
-    youth, pop_total = youth_pop_table.get_stat_data(
-        geo, total='total_pop', percent='False')
+    final_data = {}
 
-    victims_by_age_group_per_10k_pop, total_victims_per_10k_pop = get_stat_data(
-        ['age group'], geo, session,
-        table_name='crimes_victims_age_group',
-        percent=False)
-    accused_by_age_group_per_10k_pop, total_accused_per_10k_pop = get_stat_data(
-        ['age group'], geo, session,
-        table_name='crimes_accused_age_group',
-        percent=False)
+    if display_profile == 'WC':
+        youth_pop_table = get_datatable('youth_population')
+        youth, pop_total = youth_pop_table.get_stat_data(
+            geo, total='total_pop', percent='False')
 
-    youth_victims_by_offence_per_10k_youth, _ = get_stat_data(
-        ['type of offence'], geo, session,
-        table_name='youth_victims_offence_type')
-    youth_accused_by_offence_per_10k_youth, _ = get_stat_data(
-        ['type of offence'], geo, session,
-        table_name='youth_accused_offence_type')
+        victims_by_age_group_per_10k_pop, total_victims_per_10k_pop = get_stat_data(
+            ['age group'], geo, session,
+            table_name='crimes_victims_age_group',
+            percent=False)
+        accused_by_age_group_per_10k_pop, total_accused_per_10k_pop = get_stat_data(
+            ['age group'], geo, session,
+            table_name='crimes_accused_age_group',
+            percent=False)
 
-    youth_victims_by_pop_group_per_10k, _ = get_stat_data(
-        ['population group'], geo, session,
-        table_name='youth_victims_population_group',
-        percent=False)
-    youth_accused_by_pop_group_per_10k, _ = get_stat_data(
-        ['population group'], geo, session,
-        table_name='youth_accused_population_group',
-        percent=False)
+        youth_victims_by_offence_per_10k_youth, _ = get_stat_data(
+            ['type of offence'], geo, session,
+            table_name='youth_victims_offence_type')
+        youth_accused_by_offence_per_10k_youth, _ = get_stat_data(
+            ['type of offence'], geo, session,
+            table_name='youth_accused_offence_type')
 
-    youth_victims_by_gender_per_10k, _ = get_stat_data(
-        ['gender'], geo, session,
-        table_name='youth_victims_gender',
-        percent=False,
-        key_order=GENDER_ORDER)
-    youth_accused_by_gender_per_10k, _ = get_stat_data(
-        ['gender'], geo, session,
-        table_name='youth_accused_gender',
-        percent=False,
-        key_order=GENDER_ORDER)
+        youth_victims_by_pop_group_per_10k, _ = get_stat_data(
+            ['population group'], geo, session,
+            table_name='youth_victims_population_group',
+            percent=False)
+        youth_accused_by_pop_group_per_10k, _ = get_stat_data(
+            ['population group'], geo, session,
+            table_name='youth_accused_population_group',
+            percent=False)
 
-    youth_victims_by_year, _ = get_stat_data(
-        ['year'], geo, session,
-        table_name='youth_victims_year',
-        percent=False)
-    youth_accused_by_year, _ = get_stat_data(
-        ['year'], geo, session,
-        table_name='youth_accused_year',
-        percent=False)
+        youth_victims_by_gender_per_10k, _ = get_stat_data(
+            ['gender'], geo, session,
+            table_name='youth_victims_gender',
+            percent=False,
+            key_order=GENDER_ORDER)
+        youth_accused_by_gender_per_10k, _ = get_stat_data(
+            ['gender'], geo, session,
+            table_name='youth_accused_gender',
+            percent=False,
+            key_order=GENDER_ORDER)
 
-    crimes_by_year, _ = get_stat_data(
-        ['type of crime', 'year'], geo, session,
-        table_name='crimes_type_of_crime_year',
-        percent=False)
+        youth_victims_by_year, _ = get_stat_data(
+            ['year'], geo, session,
+            table_name='youth_victims_year',
+            percent=False)
+        youth_accused_by_year, _ = get_stat_data(
+            ['year'], geo, session,
+            table_name='youth_accused_year',
+            percent=False)
 
-    contact_crimes_by_year = crimes_by_year['Contact crime']
-    contact_crimes_by_year['metadata'] = crimes_by_year['metadata']
-    property_crimes_by_year = crimes_by_year['Property crime']
-    property_crimes_by_year['metadata'] = crimes_by_year['metadata']
+        crimes_by_year, _ = get_stat_data(
+            ['type of crime', 'year'], geo, session,
+            table_name='crimes_type_of_crime_year',
+            percent=False)
 
-    contact_crimes_per_10k_pop = rate_per_10k_pop(contact_crimes_by_year['2014-15']['values']['this'], pop_total)
-    property_crimes_per_10k_pop = rate_per_10k_pop(property_crimes_by_year['2014-15']['values']['this'], pop_total)
+        contact_crimes_by_year = crimes_by_year['Contact crime']
+        contact_crimes_by_year['metadata'] = crimes_by_year['metadata']
+        property_crimes_by_year = crimes_by_year['Property crime']
+        property_crimes_by_year['metadata'] = crimes_by_year['metadata']
 
-    final_data = {
-        'youth_victims_per_10k_youth': {
-            "name": "Youth victims of contact crime per 10,000 youth",
-            "values": {"this": victims_by_age_group_per_10k_pop['15-24']['values']['this']}
-        },
-        'youth_accused_per_10k_youth': {
-            "name": "Youth accused of contact crime per 10,000 youth",
-            "values": {"this": accused_by_age_group_per_10k_pop['15-24']['values']['this']}
-        },
-        'victims_by_age_group_per_10k_pop': victims_by_age_group_per_10k_pop,
-        'accused_by_age_group_per_10k_pop': accused_by_age_group_per_10k_pop,
-        'youth_victims_by_offence_per_10k_youth': youth_victims_by_offence_per_10k_youth,
-        'youth_accused_by_offence_per_10k_youth': youth_accused_by_offence_per_10k_youth,
-        'youth_victims_by_pop_group_per_10k': youth_victims_by_pop_group_per_10k,
-        'youth_accused_by_pop_group_per_10k': youth_accused_by_pop_group_per_10k,
-        'youth_victims_by_gender_per_10k': youth_victims_by_gender_per_10k,
-        'youth_accused_by_gender_per_10k': youth_accused_by_gender_per_10k,
-        'youth_victims_by_year': youth_victims_by_year,
-        'youth_accused_by_year': youth_accused_by_year,
-        'contact_crimes_per_10k_pop': {
-            "name": "Contact crimes per 10,000 population",
-            "values": {"this": contact_crimes_per_10k_pop}
-        },
-        'property_crimes_per_10k_pop': {
-            "name": "Property-related crime per 10,000 population",
-            "values": {"this": property_crimes_per_10k_pop}
-        },
-        'contact_crimes_by_year': contact_crimes_by_year,
-        'property_crimes_by_year': property_crimes_by_year
-    }
+        contact_crimes_per_10k_pop = rate_per_10k_pop(contact_crimes_by_year['2014-15']['values']['this'], pop_total)
+        property_crimes_per_10k_pop = rate_per_10k_pop(property_crimes_by_year['2014-15']['values']['this'], pop_total)
+
+        final_data = {
+            'youth_victims_per_10k_youth': {
+                "name": "Youth victims of contact crime per 10,000 youth",
+                "values": {"this": victims_by_age_group_per_10k_pop['15-24']['values']['this']}
+            },
+            'youth_accused_per_10k_youth': {
+                "name": "Youth accused of contact crime per 10,000 youth",
+                "values": {"this": accused_by_age_group_per_10k_pop['15-24']['values']['this']}
+            },
+            'victims_by_age_group_per_10k_pop': victims_by_age_group_per_10k_pop,
+            'accused_by_age_group_per_10k_pop': accused_by_age_group_per_10k_pop,
+            'youth_victims_by_offence_per_10k_youth': youth_victims_by_offence_per_10k_youth,
+            'youth_accused_by_offence_per_10k_youth': youth_accused_by_offence_per_10k_youth,
+            'youth_victims_by_pop_group_per_10k': youth_victims_by_pop_group_per_10k,
+            'youth_accused_by_pop_group_per_10k': youth_accused_by_pop_group_per_10k,
+            'youth_victims_by_gender_per_10k': youth_victims_by_gender_per_10k,
+            'youth_accused_by_gender_per_10k': youth_accused_by_gender_per_10k,
+            'youth_victims_by_year': youth_victims_by_year,
+            'youth_accused_by_year': youth_accused_by_year,
+            'contact_crimes_per_10k_pop': {
+                "name": "Contact crimes per 10,000 population",
+                "values": {"this": contact_crimes_per_10k_pop}
+            },
+            'property_crimes_per_10k_pop': {
+                "name": "Property-related crime per 10,000 population",
+                "values": {"this": property_crimes_per_10k_pop}
+            },
+            'contact_crimes_by_year': contact_crimes_by_year,
+            'property_crimes_by_year': property_crimes_by_year
+        }
 
     return final_data
 
