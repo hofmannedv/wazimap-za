@@ -83,6 +83,14 @@ elif wazi_profile == 'youth':
         ("comparing_places", 'https://www.youtube.com/embed/1I8RPPJ0g1c?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx')
     ])
 
+    WAZIMAP['mapit'] = {
+        'generations': {
+            '2011': '1',
+            '2016': '2',
+            None: '1',
+        }
+    }
+
 LANGUAGE_CODE = 'en-za'
 USE_THOUSAND_SEPARATOR = True
 FORMAT_MODULE_PATH = 'wazimap_za.formats'

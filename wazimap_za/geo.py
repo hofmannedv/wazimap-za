@@ -13,7 +13,7 @@ SETTINGS.setdefault('url', 'https://mapit.code4sa.org')
 SETTINGS.setdefault('generations', {
     '2011': '1',
     '2016': '2',
-    None: '2',
+    None: '2',  # TODO: this should be based on the default_geo_version wazimap setting
 })
 SETTINGS.setdefault('level_codes', {
     'ward': 'WD',
