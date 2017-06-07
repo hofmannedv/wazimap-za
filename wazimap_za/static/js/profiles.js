@@ -12,5 +12,6 @@ $('a[href^="#"]').on('click', function(e) {
 
   if ($target.length) {
     window.scroll(0, $target.offset().top - 90);
+    if ('pushState' in window.history) window.history.pushState({}, null, target);
   }
 });
