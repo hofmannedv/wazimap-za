@@ -1,7 +1,14 @@
 {% extends '_base.html' %}
 {% load staticfiles %}
 
-{% block head_meta_description %}{{ WAZIMAP.name }} provides useful facts about the youth in {{ root_geo.name }}. Compare places using tables and maps, download data, and embed charts on your site!{% endblock %}
+{% block head_title %}Youth Explorer: Explore youth-centered data in South Africa{% endblock %}
+{% block head_meta_description %}Youth Explorer provides useful facts about the young people in South Africa. Compare places using tables and maps, download data, and embed charts on your site!{% endblock %}
+
+{% block head_facebook_tags %}
+<meta property="og:url" content="{{ WAZIMAP.url }}" />
+<meta property="og:title" content="Youth Explorer: Explore youth-centered data in South Africa" />
+<meta property="og:description" content="Youth Explorer provides useful facts about the young people in South Africa. Compare places using tables and maps, download data, and embed charts on your site!" />
+{% endblock %}
 
 {% block head_css %}
     {{ block.super }}
