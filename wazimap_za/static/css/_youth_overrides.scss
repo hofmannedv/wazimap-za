@@ -1,1 +1,17 @@
-$teal: "red";
+// colours for wazimap youth
+
+$brand-primary-color: darken(#8ECC4C, 10%);
+
+$brand-secondary-color: lighten(#45677A, 10%);
+$brand-secondary-lighter-color: lighten($brand-secondary-color, 10%);
+$brand-secondary-lightest-color: lighten($brand-secondary-color, 20%);
+$brand-secondary-darker-color: darken($brand-secondary-color, 10%);
+$brand-secondary-darkest-color: darken($brand-secondary-color, 20%);
+
+$general-bg-color: lighten(#c6c6c6, 10%);
+$general-bg-lighter-color: lighten($general-bg-color, 10%);
+$general-bg-darker-color: darken($general-bg-color, 10%);
+$general-bg-darkest-color: darken($general-bg-color, 20%);
+
+$header-fg-color: white;
+$link-active-color: $brand-primary-color;
