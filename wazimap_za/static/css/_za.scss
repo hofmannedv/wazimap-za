@@ -26,11 +26,11 @@
 }
 
 .wazi-lightbox .featherlight-content {
-  background: #F7F8F3;
+  background: $background-bg-color;
 }
 
 .wazi-lightbox .featherlight-close {
-  background: #1A9D95;
+  background: $brand-secondary-color;
   color: #fff;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .wazi-lightbox hr {
-  border-color: #1A9D95;
+  border-color: $brand-secondary-color;
 }
 
 #profile.profile-head2head-frame .floating-nav-wrapper {
@@ -55,7 +55,7 @@
   z-index: 1500;
   width: 100%;
   padding: 0.5em;
-  background-color: #e0e4d4;
+  background-color: $footer-bg-color;
 }
 
 #profile .floating-nav.affix {
@@ -114,7 +114,7 @@
 }
 
 #banner {
-  background-color: #f55b2c;
+  background-color: $brand-primary-bg-color;
   color: white;
 }
 
