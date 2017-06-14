@@ -1,14 +1,15 @@
 {% extends '_base.html' %}
 {% load staticfiles %}
+{% load sass_tags %}
 
 {% block head_css %}
-    {{ block.super }}
+  <link rel="stylesheet" href="{% static 'css/vendor/featherlight.min.css' %}">
 
-    <link rel="stylesheet" href="{% static 'css/vendor/featherlight.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/wazimap_za.css' %}">
-    {% if WAZIMAP.default_profile == 'youth' %}
-      <link rel="stylesheet" href="{% static 'css/youth.css' %}">
-    {% endif %}
+  {% if WAZIMAP.default_profile == 'youth' %}
+  <link rel="stylesheet" href="{% sass_src 'css/wazimap_youth.scss' %}">
+  {% else %}
+  <link rel="stylesheet" href="{% sass_src 'css/wazimap_za.scss' %}">
+  {% endif %}
 {% endblock %}
 
 
