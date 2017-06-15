@@ -79,9 +79,5 @@
 {{ block.super }}
 <script src="{% static 'js/maps_mapit.js' %}"></script>
 
-{% if WAZIMAP.default_profile == 'youth' %}
-<script src="{% static 'js/profile_maps_youth.js' %}"></script>
-{% endif %}
-
 {% endblock %}
 

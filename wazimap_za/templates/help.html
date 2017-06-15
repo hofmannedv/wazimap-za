@@ -41,6 +41,7 @@
       </section>
       {% endif %}
 
+      {% if WAZIMAP.default_profile == 'census' %}
       <section>
         <h2 class="subhead" id="faq">Frequently Asked Questions</h2>
 
@@ -71,5 +72,6 @@
           </li>
         </ul>
       </section>
+      {% endif %}
   </article>
 {% endblock %}

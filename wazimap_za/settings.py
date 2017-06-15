@@ -70,26 +70,10 @@ elif wazi_profile == 'ecd':
     WAZIMAP['name'] = 'Wazimap ECD'
 
 elif wazi_profile == 'youth':
-    WAZIMAP['twitter'] = None
-    WAZIMAP['comparative_levels'] = ['district', 'province']
-    WAZIMAP['levels'] = {
-        'province': {
-            'children': ['district', 'municipality', 'ward'],
-        },
-        'district': {
-            'children': ['municipality', 'ward'],
-        },
-        'municipality': {
-            'plural': 'municipalities',
-            'children': ['ward'],
-        },
-        'ward': {
-            'children': [],
-        }
-    }
     WAZIMAP['url'] = 'https://youthexplorer.org.za'
-    WAZIMAP['name'] = 'Western Cape Youth Explorer'
+    WAZIMAP['name'] = 'Youth Explorer'
     WAZIMAP['ga_tracking_id'] = 'UA-48399585-46'
+    WAZIMAP['twitter'] = None
 
     WAZIMAP['video_links'] = OrderedDict([
         ('intro', 'https://www.youtube.com/embed/do5XexPJhDc?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx',),
@@ -98,6 +82,14 @@ elif wazi_profile == 'youth':
         ('distribution_view', 'https://www.youtube.com/embed/jhzGFGSAJ9o?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx',),
         ("comparing_places", 'https://www.youtube.com/embed/1I8RPPJ0g1c?list=PL7MJ_sFHs952rlUTNpQr7-n9UwQWkBXyx')
     ])
+
+    WAZIMAP['mapit'] = {
+        'generations': {
+            '2011': '1',
+            '2016': '2',
+            None: '1',
+        }
+    }
 
 LANGUAGE_CODE = 'en-za'
 USE_THOUSAND_SEPARATOR = True

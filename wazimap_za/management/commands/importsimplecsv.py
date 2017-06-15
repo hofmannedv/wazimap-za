@@ -40,6 +40,13 @@ class Command(BaseCommand):
                  'If not provided, it is generated from the field names'
         )
         parser.add_argument(
+            '--geo_version',
+            action='store',
+            dest='geo_version',
+            default='2011',
+            help='The the value for the geo_version column for this data. Default: 2011'
+        )
+        parser.add_argument(
             '--value_type',
             action='store',
             dest='value_type',
@@ -63,6 +70,7 @@ class Command(BaseCommand):
 
         self.verbosity = options.get('verbosity', 1)
         self.table_id = options.get('table')
+        self.geo_version = options.get('geo_version')
         self.value_type = options.get('value_type', 'Integer')
         self.dryrun = options.get('dryrun', False)
 
@@ -91,6 +99,7 @@ class Command(BaseCommand):
         count = 0
         for row in self.reader:
             count += 1
+            row['geo_version'] = self.geo_version
             if row['total'] == 'no data':
                 row['total'] = None
             else:
