@@ -28,8 +28,12 @@
   {% endif %}
 {% endblock %}
 
+{% block header_menu %}
+  <li><a href="/about">About</a></li>
+  <li><a href="/help">Help</a></li>
+{% endblock %}
+
 {% block header_branding %}
-  <a class="header-help" href="{% url 'help' %}"><i class="fa fa-question-circle"></i></a>
   {% if WAZIMAP.default_profile != 'youth' %}
     {{ block.super }}
   {% endif %}

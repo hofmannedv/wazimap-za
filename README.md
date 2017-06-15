@@ -102,6 +102,7 @@ do
       > sql/$(basename $t .sql).sql
 done
 ```
+
 # License
 
 MIT License

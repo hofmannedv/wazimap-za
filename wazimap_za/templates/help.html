@@ -4,17 +4,42 @@
   <article id="help">
       <header>
         <h1 class="article-header">Using {{ WAZIMAP.name }}</h1>
-        <p>Check out the videos below for tips on how to use {{ WAZIMAP.name }}.</p>
       </header>
+      {% if WAZIMAP.video_links %}
       <section class="clearfix">
-      {% for key, link in WAZIMAP.video_links.iteritems %}
+        <p>Check out the videos below for tips on how to use {{ WAZIMAP.name }}.</p>
         <span class="column-half">
+          <h2 class="subhead">A quick introduction to {{ WAZIMAP.name }}</h2>
           <div class="video-wrapper">
-            <iframe width="560" height="315" src="{{ link }}" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="{{ WAZIMAP.video_links.intro }}" frameborder="0" allowfullscreen></iframe>
           </div>
         </span>
-      {% endfor %}
+        <span class="column-half">
+          <h2 class="subhead">Viewing data in tables</h2>
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="{{ WAZIMAP.video_links.table_view }}" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </span>
+        <span class="column-half">
+          <h2 class="subhead">Exploring data on a map</h2>
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="{{ WAZIMAP.video_links.map_view }}" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </span>
+        <span class="column-half">
+          <h2 class="subhead">Comparing the distribution of data between places</h2>
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="{{ WAZIMAP.video_links.distribution_view }}" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </span>
+        <span class="column-half">
+          <h2 class="subhead">Comparing places side-by-side</h2>
+          <div class="video-wrapper">
+            <iframe width="560" height="315" src="{{ WAZIMAP.video_links.comparing_places }}" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </span>
       </section>
+      {% endif %}
 
       {% if WAZIMAP.default_profile == 'census' %}
       <section>
