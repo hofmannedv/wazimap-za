@@ -1,17 +1,27 @@
 // colours for wazimap youth
 
-$brand-primary-color: darken(#8ECC4C, 10%);
+$green: #74b233;
+$blue: #086390;
+$ice-grey: #f4f9fb;
 
-$brand-secondary-darkest-color: #086390;
+$brand-primary-color: $green;
+
+$brand-secondary-darkest-color: $blue;
 $brand-secondary-color: lighten($brand-secondary-darkest-color, 20%);
 $brand-secondary-lighter-color: lighten($brand-secondary-darkest-color, 30%);
 $brand-secondary-lightest-color: lighten($brand-secondary-darkest-color, 40%);
 $brand-secondary-darker-color: lighten($brand-secondary-darkest-color, 10%);
 
-$general-bg-lighter-color: #f4f9fb;
-$general-bg-color: darken($general-bg-lighter-color, 10%);
+$general-bg-lighter-color: $ice-grey;
+$general-bg-color: darken($general-bg-lighter-color, 5%);
 $general-bg-darker-color: darken($general-bg-color, 10%);
 $general-bg-darkest-color: darken($general-bg-color, 20%);
+
+$btn-muted-bg-color: $green;
+$btn-muted-fg-color: white;
+
+$btn-active-bg-color: lighten($btn-muted-bg-color, 10%);
+$btn-active-fg-color: white;
 
 $header-fg-color: white;
 $footer-bg-color: #dae7ec;
