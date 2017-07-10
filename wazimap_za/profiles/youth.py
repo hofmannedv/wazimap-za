@@ -168,7 +168,7 @@ def get_demographics_profile(geo, session, display_profile, comparative=False):
             "values": {"this": youth_pop['youth_pop']['numerators']['this']}
         },
         'youth_population_perc': {
-            "name": "Of population are youth aged 15-24",
+            "name": "Of the population are youth aged 15-24",
             "values": {"this": youth_pop['youth_pop']['values']['this']},
         },
         'youth_population_by_age_group': youth_age_group_data,
