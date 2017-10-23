@@ -4,6 +4,6 @@ gevent==1.0.1
 greenlet==0.4.6
 gunicorn==18.0
 newrelic==2.40.0.34
-wazimap[gdal]==1.0.1
+wazimap[gdal]==1.1.0
 GDAL==1.11.0
 Shapely>=1.5.13
