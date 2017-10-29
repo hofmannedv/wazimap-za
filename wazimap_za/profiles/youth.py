@@ -7,12 +7,12 @@ from wazimap.geo import geo_data
 
 PROFILE_SECTIONS = (
     "demographics",
-    "education",
-    "economic_opportunities",
-    "living_environment",
-    "poverty",
-    "safety",
-    "health"
+    # "education",
+    # "economic_opportunities",
+    # "living_environment",
+    # "poverty",
+    # "safety",
+    # "health"
 )
 
 POPULATION_GROUP_ORDER = (
@@ -123,7 +123,8 @@ def get_demographics_profile(geo, session, display_profile, comparative=False):
 
     youth_age_group_data, _ = get_stat_data(
         ['age groups in 10 years'], geo, session,
-        table_name='youth_age_groups_in_10_years')
+        table_universe='Population',
+        table_dataset='Census and Community Survey')
 
     youth_gender_data, _ = get_stat_data(
         ['gender'], geo, session,
