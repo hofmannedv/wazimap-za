@@ -128,7 +128,8 @@ def get_demographics_profile(geo, session, display_profile, comparative=False):
 
     youth_gender_data, _ = get_stat_data(
         ['gender'], geo, session,
-        table_name='youth_gender_population_group',
+        table_fields = ['gender', 'population group'],
+        table_universe='Youth',
         key_order=GENDER_ORDER)
 
     youth_pop_group_data, _ = get_stat_data(
