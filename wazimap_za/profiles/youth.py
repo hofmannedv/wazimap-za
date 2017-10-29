@@ -155,9 +155,11 @@ def get_demographics_profile(geo, session, display_profile, comparative=False):
         table_universe='Youth',
         table_dataset='Census and Community Survey',
         key_order=PROVINCE_ORDER)
+
     youth_region_birth_data, _ = get_stat_data(
         ['region of birth'], geo, session,
-        table_name='youth_region_of_birth',
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
         key_order=REGION_ORDER)
 
     youth_region_birth_data['SADC']['name'] = 'SADC*'
