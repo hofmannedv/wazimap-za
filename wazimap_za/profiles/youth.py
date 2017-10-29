@@ -166,7 +166,8 @@ def get_demographics_profile(geo, session, display_profile, comparative=False):
 
     youth_citizenship_data, _ = get_stat_data(
         ['citizenship'], geo, session,
-        table_name='youth_citizenship',
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
         key_order=CITIZENSHIP_ORDER)
 
     final_data = {
