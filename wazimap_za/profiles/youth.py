@@ -130,6 +130,7 @@ def get_demographics_profile(geo, session, display_profile, comparative=False):
         ['gender'], geo, session,
         table_fields = ['gender', 'population group'],
         table_universe='Youth',
+        table_dataset='Census and Community Survey',
         key_order=GENDER_ORDER)
 
     # TODO: Ensure this works properly
@@ -138,11 +139,13 @@ def get_demographics_profile(geo, session, display_profile, comparative=False):
         table_name='youth_population_group_gender',
         table_fields = ['population group', 'gender'],
         table_universe='Youth',
+        table_dataset='Census and Community Survey',
         key_order=POPULATION_GROUP_ORDER)
 
     youth_language_data, _ = get_stat_data(
         ['language'], geo, session,
-        table_name='youth_language',
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
         order_by='-total'
     )
     youth_language_most_spoken = youth_language_data[youth_language_data.keys()[0]]
