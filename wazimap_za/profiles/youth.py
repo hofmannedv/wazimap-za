@@ -132,9 +132,12 @@ def get_demographics_profile(geo, session, display_profile, comparative=False):
         table_universe='Youth',
         key_order=GENDER_ORDER)
 
+    # TODO: Ensure this works properly
     youth_pop_group_data, _ = get_stat_data(
         ['population group'], geo, session,
         table_name='youth_population_group_gender',
+        table_fields = ['population group', 'gender'],
+        table_universe='Youth',
         key_order=POPULATION_GROUP_ORDER)
 
     youth_language_data, _ = get_stat_data(
