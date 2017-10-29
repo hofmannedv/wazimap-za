@@ -117,6 +117,7 @@ def get_profile(geo, profile_name, request):
 
 
 def get_demographics_profile(geo, session, display_profile, comparative=False):
+    import ipdb; ipdb.set_trace()
     youth_pop_table = get_datatable('youth_population')
     youth_pop, pop_total = youth_pop_table.get_stat_data(
         geo, total='total_pop', percent='False')
