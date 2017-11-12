@@ -16,7 +16,7 @@ PROFILE_SECTIONS = (
 )
 
 POPULATION_GROUP_ORDER = (
-    'Black African', 'Coloured', 'Indian or Asian', 'White', 'Other')
+    'Black African', 'Coloured', 'Indian or Asian', 'White')
 GENDER_ORDER = (
     'Female', 'Male')
 PROVINCE_ORDER = (
@@ -117,7 +117,6 @@ def get_profile(geo, profile_name, request):
 
 
 def get_demographics_profile(geo, session, display_profile, comparative=False):
-    import ipdb; ipdb.set_trace()
     youth_pop_table = get_datatable('youth_population')
     youth_pop, pop_total = youth_pop_table.get_stat_data(
         geo, total='total_pop', percent='False')
@@ -134,7 +133,6 @@ def get_demographics_profile(geo, session, display_profile, comparative=False):
         table_dataset='Census and Community Survey',
         key_order=GENDER_ORDER)
 
-    # TODO: Ensure this works properly
     youth_pop_group_data, _ = get_stat_data(
         ['population group'], geo, session,
         table_name='youth_population_group_gender',
