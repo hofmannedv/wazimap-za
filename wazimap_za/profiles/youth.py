@@ -7,12 +7,12 @@ from wazimap.geo import geo_data
 
 PROFILE_SECTIONS = (
     "demographics",
-    # "education",
-    # "economic_opportunities",
-    # "living_environment",
-    # "poverty",
-    # "safety",
-    # "health"
+    "education",
+    "economic_opportunities",
+    "living_environment",
+    "poverty",
+    "safety",
+    "health"
 )
 
 POPULATION_GROUP_ORDER = (
@@ -502,8 +502,10 @@ def get_economic_opportunities_profile(geo, session, display_profile, comparativ
 def get_living_environment_profile(geo, session, display_profile, comparative=False):
     youth_electricity_access, _ = get_stat_data(
         ['electricity access'], geo, session,
-        key_order=('No electricity', 'Have electricity for some things', 'Have electricity for everything'),
-        table_name='youth_electricity_access_gender')
+        table_universe='Youth living in households',
+        table_dataset='Census and Community Survey',
+        key_order=('No electricity', 'Have electricity for some things', 'Have electricity for everything'))
+
     youth_toilet_access, _ = get_stat_data(
         ['toilet access'], geo, session,
         key_order=TOILET_ACCESS_KEY_ORDER,
