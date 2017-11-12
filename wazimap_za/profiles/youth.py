@@ -7,16 +7,16 @@ from wazimap.geo import geo_data
 
 PROFILE_SECTIONS = (
     "demographics",
-    "education",
-    "economic_opportunities",
-    "living_environment",
-    "poverty",
-    "safety",
-    "health"
+    # "education",
+    # "economic_opportunities",
+    # "living_environment",
+    # "poverty",
+    # "safety",
+    # "health"
 )
 
 POPULATION_GROUP_ORDER = (
-    'Black African', 'Coloured', 'Indian or Asian', 'White', 'Other')
+    'Black African', 'Coloured', 'Indian or Asian', 'White')
 GENDER_ORDER = (
     'Female', 'Male')
 PROVINCE_ORDER = (
@@ -123,39 +123,50 @@ def get_demographics_profile(geo, session, display_profile, comparative=False):
 
     youth_age_group_data, _ = get_stat_data(
         ['age groups in 10 years'], geo, session,
-        table_name='youth_age_groups_in_10_years')
+        table_universe='Population',
+        table_dataset='Census and Community Survey')
 
     youth_gender_data, _ = get_stat_data(
         ['gender'], geo, session,
-        table_name='youth_gender_population_group',
+        table_fields = ['gender', 'population group'],
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
         key_order=GENDER_ORDER)
 
     youth_pop_group_data, _ = get_stat_data(
         ['population group'], geo, session,
         table_name='youth_population_group_gender',
+        table_fields = ['population group', 'gender'],
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
         key_order=POPULATION_GROUP_ORDER)
 
     youth_language_data, _ = get_stat_data(
         ['language'], geo, session,
-        table_name='youth_language',
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
         order_by='-total'
     )
     youth_language_most_spoken = youth_language_data[youth_language_data.keys()[0]]
 
     youth_province_birth_data, _ = get_stat_data(
         ['province of birth'], geo, session,
-        table_name='youth_province_of_birth',
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
         key_order=PROVINCE_ORDER)
+
     youth_region_birth_data, _ = get_stat_data(
         ['region of birth'], geo, session,
-        table_name='youth_region_of_birth',
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
         key_order=REGION_ORDER)
 
     youth_region_birth_data['SADC']['name'] = 'SADC*'
 
     youth_citizenship_data, _ = get_stat_data(
         ['citizenship'], geo, session,
-        table_name='youth_citizenship',
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
         key_order=CITIZENSHIP_ORDER)
 
     final_data = {
