@@ -762,10 +762,11 @@ def get_health_profile(geo, session, display_profile, comparative=False):
 
     youth_female_given_birth_by_age_group, _ = get_stat_data(
         ['given birth', 'age in completed years'], geo, session,
+        table_universe='Female youth',
+        table_dataset='Census and Community Survey',
         percent_grouping=['age in completed years'], slices=['Given birth'],
         key_order={'given birth': GIVEN_BIRTH_KEY_ORDER},
-        recode=GIVEN_BIRTH_AGE_GROUP_RECODE,
-        table_name='youth_female_given_birth_age_in_completed_years')
+        recode=GIVEN_BIRTH_AGE_GROUP_RECODE)
 
     final_data = {
         'youth_difficulty_seeing': {
