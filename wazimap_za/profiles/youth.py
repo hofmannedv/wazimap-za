@@ -26,6 +26,8 @@ REGION_ORDER = (
     'South Africa', 'SADC', 'Rest of Africa', 'Other', 'Unspecified')
 CITIZENSHIP_ORDER = (
     'Yes', 'No', 'Unspecified')
+ELECTRICITY_ACCESS_KEY_ORDER = (
+    'No electricity', 'Have electricity for some things', 'Have electricity for everything')
 TOILET_ACCESS_KEY_ORDER = (
     'No toilet facilities', 'Flush toilet', 'Pit latrine-ventilated', 'Chemical toilet',
     'Unventilated pit latrine/Bucket toilet', 'Other')
@@ -504,12 +506,14 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
         ['electricity access'], geo, session,
         table_universe='Youth living in households',
         table_dataset='Census and Community Survey',
-        key_order=('No electricity', 'Have electricity for some things', 'Have electricity for everything'))
+        key_order=ELECTRICITY_ACCESS_KEY_ORDER)
 
     youth_toilet_access, _ = get_stat_data(
         ['toilet access'], geo, session,
-        key_order=TOILET_ACCESS_KEY_ORDER,
-        table_name='youth_toilet_access_gender')
+        table_universe='Youth living in households',
+        table_dataset='Census and Community Survey',
+        key_order=TOILET_ACCESS_KEY_ORDER)
+
     youth_water_access, _ = get_stat_data(
         ['water access'], geo, session,
         key_order=('No piped water', 'On site', '< 1km', '> 1km'),
