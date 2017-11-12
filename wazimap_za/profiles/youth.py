@@ -33,6 +33,8 @@ TOILET_ACCESS_KEY_ORDER = (
     'Unventilated pit latrine/Bucket toilet', 'Other')
 WATER_ACCESS_KEY_ORDER = (
     'No piped water', 'On site', '< 1km', '> 1km')
+TYPE_OF_DWELLING_ORDER = (
+    'Formal', 'Informal not in backyard', 'Informal in backyard', 'Traditional', 'Other')
 INTERNET_ACCESS_ORDER = (
     'From home', 'From cell phone', 'From work', 'From elsewhere', 'No access to internet')
 TYPE_OF_AREA_ORDER = (
@@ -524,15 +526,16 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
 
     youth_type_of_dwelling, _ = get_stat_data(
         ['type of dwelling'], geo, session,
-        key_order=('Formal', 'Informal not in backyard', 'Informal in backyard', 'Traditional', 'Other'),
-        table_name='youth_type_of_dwelling_gender')
+        table_universe='Youth living in households',
+        table_dataset='Census and Community Survey',
+        key_order=TYPE_OF_DWELLING_ORDER)
 
-    informal_not_in_backyard = youth_type_of_dwelling.get('Informal not in backyard', {}).get('values', {}).get('this', 0)
-    informal_in_backyard = youth_type_of_dwelling.get('Informal in backyard', {}).get('values', {}).get('this', 0)
+    informal_not_in_backyard = youth_type_of_dwelling.get('Informal not in backyard', {}).get('values', {}).get('this', None)
+    informal_in_backyard = youth_type_of_dwelling.get('Informal in backyard', {}).get('values', {}).get('this', None)
 
     youth_dwelling_informal = None
-    if informal_not_in_backyard and informal_in_backyard:
-        youth_dwelling_informal = informal_not_in_backyard + informal_in_backyard
+    if informal_not_in_backyard or informal_in_backyard:
+        youth_dwelling_informal = (informal_not_in_backyard or 0) + (informal_in_backyard or 0)
 
     youth_type_of_area, _ = get_stat_data(
         ['type of area'], geo, session,
