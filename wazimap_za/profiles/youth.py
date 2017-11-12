@@ -31,6 +31,8 @@ ELECTRICITY_ACCESS_KEY_ORDER = (
 TOILET_ACCESS_KEY_ORDER = (
     'No toilet facilities', 'Flush toilet', 'Pit latrine-ventilated', 'Chemical toilet',
     'Unventilated pit latrine/Bucket toilet', 'Other')
+WATER_ACCESS_KEY_ORDER = (
+    'No piped water', 'On site', '< 1km', '> 1km')
 INTERNET_ACCESS_ORDER = (
     'From home', 'From cell phone', 'From work', 'From elsewhere', 'No access to internet')
 TYPE_OF_AREA_ORDER = (
@@ -516,8 +518,9 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
 
     youth_water_access, _ = get_stat_data(
         ['water access'], geo, session,
-        key_order=('No piped water', 'On site', '< 1km', '> 1km'),
-        table_name='youth_water_access_gender')
+        table_universe='Youth living in households',
+        table_dataset='Census and Community Survey',
+        key_order=WATER_ACCESS_KEY_ORDER)
 
     youth_type_of_dwelling, _ = get_stat_data(
         ['type of dwelling'], geo, session,
