@@ -41,6 +41,8 @@ TYPE_OF_AREA_ORDER = (
     'Formal residential', 'Informal residential', 'Traditional residential', 'Farms',
     'Parks and recreation', 'Collective living quarters', 'Industrial', 'Small holdings',
     'Vacant', 'Commercial')
+LIVING_WITH_PARENTS_KEY_ORDER = (
+    'Both parents', 'Mother only', 'Father only', 'Neither parent')
 DIFFICULTY_FUNCTIONING_KEY_ORDER = (
     'Seeing, even when using eye glasses', 'Hearing, even when using a hearing aid',
     'Communication', 'Walking', 'Remembering', 'Self care')
@@ -554,8 +556,9 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
 
     youth_by_living_with_parents_status, _ = get_stat_data(
         ['living with parents'], geo, session,
-        key_order=('Both parents', 'Mother only', 'Father only', 'Neither parent'),
-        table_name='youth_living_with_parents_gender')
+        table_universe='Youth aged 15-19 living in households',
+        table_dataset='Census and Community Survey',
+        key_order=LIVING_WITH_PARENTS_KEY_ORDER)
 
     living_with_parent_keys = ('Both parents', 'Mother only', 'Father only')
     living_with_parents_stat = sum(
