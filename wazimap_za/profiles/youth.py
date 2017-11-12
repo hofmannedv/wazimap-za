@@ -7,12 +7,12 @@ from wazimap.geo import geo_data
 
 PROFILE_SECTIONS = (
     "demographics",
-    # "education",
-    # "economic_opportunities",
-    # "living_environment",
-    # "poverty",
-    # "safety",
-    # "health"
+    "education",
+    "economic_opportunities",
+    "living_environment",
+    "poverty",
+    "safety",
+    "health"
 )
 
 POPULATION_GROUP_ORDER = (
@@ -756,8 +756,10 @@ def get_health_profile(geo, session, display_profile, comparative=False):
 
     youth_female_given_birth, _ = get_stat_data(
         ['given birth'], geo, session,
-        key_order=GIVEN_BIRTH_KEY_ORDER,
-        table_name='youth_female_given_birth')
+        table_universe='Female youth',
+        table_dataset='Census and Community Survey',
+        key_order=GIVEN_BIRTH_KEY_ORDER)
+
     youth_female_given_birth_by_age_group, _ = get_stat_data(
         ['given birth', 'age in completed years'], geo, session,
         percent_grouping=['age in completed years'], slices=['Given birth'],
