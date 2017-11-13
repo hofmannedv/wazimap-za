@@ -751,8 +751,9 @@ def get_safety_profile(geo, session, display_profile, comparative=False):
 def get_health_profile(geo, session, display_profile, comparative=False):
     youth_difficulty_by_function, _ = get_stat_data(
         ['function type'], geo, session,
-        key_order=DIFFICULTY_FUNCTIONING_KEY_ORDER,
-        table_name='youth_difficulty_functioning')
+        table_universe='Youth with non-missing responses to the general health and functioning questions',
+        table_dataset='Census and Community Survey',
+        key_order=DIFFICULTY_FUNCTIONING_KEY_ORDER)
 
     youth_female_given_birth, _ = get_stat_data(
         ['given birth'], geo, session,
