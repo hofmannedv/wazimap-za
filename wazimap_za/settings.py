@@ -51,6 +51,10 @@ WAZIMAP['default_profile'] = wazi_profile
 WAZIMAP['profile_builder'] = 'wazimap_za.profiles.{}.get_profile'.format(wazi_profile)
 WAZIMAP['default_geo_version'] = os.environ.get('DEFAULT_GEO_VERSION', None)
 WAZIMAP['legacy_embed_geo_version'] = '2011'
+WAZIMAP['primary_release_year'] = {
+    # use the 2011 release for wards, use the latest (2016) for everything else
+    'ward': 2011,
+}
 
 if wazi_profile == 'census':
     WAZIMAP['ga_tracking_id'] = 'UA-48399585-5'
