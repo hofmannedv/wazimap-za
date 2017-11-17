@@ -26,15 +26,23 @@ REGION_ORDER = (
     'South Africa', 'SADC', 'Rest of Africa', 'Other', 'Unspecified')
 CITIZENSHIP_ORDER = (
     'Yes', 'No', 'Unspecified')
+ELECTRICITY_ACCESS_KEY_ORDER = (
+    'No electricity', 'Have electricity for some things', 'Have electricity for everything')
 TOILET_ACCESS_KEY_ORDER = (
     'No toilet facilities', 'Flush toilet', 'Pit latrine-ventilated', 'Chemical toilet',
     'Unventilated pit latrine/Bucket toilet', 'Other')
+WATER_ACCESS_KEY_ORDER = (
+    'No piped water', 'On site', '< 1km', '> 1km')
+TYPE_OF_DWELLING_ORDER = (
+    'Formal', 'Informal not in backyard', 'Informal in backyard', 'Traditional', 'Other')
 INTERNET_ACCESS_ORDER = (
     'From home', 'From cell phone', 'From work', 'From elsewhere', 'No access to internet')
 TYPE_OF_AREA_ORDER = (
     'Formal residential', 'Informal residential', 'Traditional residential', 'Farms',
     'Parks and recreation', 'Collective living quarters', 'Industrial', 'Small holdings',
     'Vacant', 'Commercial')
+LIVING_WITH_PARENTS_KEY_ORDER = (
+    'Both parents', 'Mother only', 'Father only', 'Neither parent')
 DIFFICULTY_FUNCTIONING_KEY_ORDER = (
     'Seeing, even when using eye glasses', 'Hearing, even when using a hearing aid',
     'Communication', 'Walking', 'Remembering', 'Self care')
@@ -502,33 +510,40 @@ def get_economic_opportunities_profile(geo, session, display_profile, comparativ
 def get_living_environment_profile(geo, session, display_profile, comparative=False):
     youth_electricity_access, _ = get_stat_data(
         ['electricity access'], geo, session,
-        key_order=('No electricity', 'Have electricity for some things', 'Have electricity for everything'),
-        table_name='youth_electricity_access_gender')
+        table_universe='Youth living in households',
+        table_dataset='Census and Community Survey',
+        key_order=ELECTRICITY_ACCESS_KEY_ORDER)
+
     youth_toilet_access, _ = get_stat_data(
         ['toilet access'], geo, session,
-        key_order=TOILET_ACCESS_KEY_ORDER,
-        table_name='youth_toilet_access_gender')
+        table_universe='Youth living in households',
+        table_dataset='Census and Community Survey',
+        key_order=TOILET_ACCESS_KEY_ORDER)
+
     youth_water_access, _ = get_stat_data(
         ['water access'], geo, session,
-        key_order=('No piped water', 'On site', '< 1km', '> 1km'),
-        table_name='youth_water_access_gender')
+        table_universe='Youth living in households',
+        table_dataset='Census and Community Survey',
+        key_order=WATER_ACCESS_KEY_ORDER)
 
     youth_type_of_dwelling, _ = get_stat_data(
         ['type of dwelling'], geo, session,
-        key_order=('Formal', 'Informal not in backyard', 'Informal in backyard', 'Traditional', 'Other'),
-        table_name='youth_type_of_dwelling_gender')
+        table_universe='Youth living in households',
+        table_dataset='Census and Community Survey',
+        key_order=TYPE_OF_DWELLING_ORDER)
 
-    informal_not_in_backyard = youth_type_of_dwelling.get('Informal not in backyard', {}).get('values', {}).get('this', 0)
-    informal_in_backyard = youth_type_of_dwelling.get('Informal in backyard', {}).get('values', {}).get('this', 0)
+    informal_not_in_backyard = youth_type_of_dwelling.get('Informal not in backyard', {}).get('values', {}).get('this', None)
+    informal_in_backyard = youth_type_of_dwelling.get('Informal in backyard', {}).get('values', {}).get('this', None)
 
     youth_dwelling_informal = None
-    if informal_not_in_backyard and informal_in_backyard:
-        youth_dwelling_informal = informal_not_in_backyard + informal_in_backyard
+    if informal_not_in_backyard or informal_in_backyard:
+        youth_dwelling_informal = (informal_not_in_backyard or 0) + (informal_in_backyard or 0)
 
     youth_type_of_area, _ = get_stat_data(
         ['type of area'], geo, session,
-        key_order=TYPE_OF_AREA_ORDER,
-        table_name='youth_type_of_area')
+        table_universe='Youth living in households',
+        table_dataset='Census and Community Survey',
+        key_order=TYPE_OF_AREA_ORDER)
 
     youth_household_crowded, _ = get_stat_data(
         ['household crowded'], geo, session,
@@ -542,8 +557,9 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
 
     youth_by_living_with_parents_status, _ = get_stat_data(
         ['living with parents'], geo, session,
-        key_order=('Both parents', 'Mother only', 'Father only', 'Neither parent'),
-        table_name='youth_living_with_parents_gender')
+        table_universe='Youth aged 15-19 living in households',
+        table_dataset='Census and Community Survey',
+        key_order=LIVING_WITH_PARENTS_KEY_ORDER)
 
     living_with_parent_keys = ('Both parents', 'Mother only', 'Father only')
     living_with_parents_stat = sum(
