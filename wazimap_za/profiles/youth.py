@@ -541,8 +541,9 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
 
     youth_type_of_area, _ = get_stat_data(
         ['type of area'], geo, session,
-        key_order=TYPE_OF_AREA_ORDER,
-        table_name='youth_type_of_area')
+        table_universe='Youth living in households',
+        table_dataset='Census and Community Survey',
+        key_order=TYPE_OF_AREA_ORDER)
 
     youth_household_crowded, _ = get_stat_data(
         ['household crowded'], geo, session,

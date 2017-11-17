@@ -91,6 +91,7 @@ class Command(BaseCommand):
         self.field_tables = {}
 
         if self.table_id:
+            # use normal django models method here
             table = get_datatable(self.table_id)
             if type(table) == FieldTable:
                 self.field_tables[table.id] = table
