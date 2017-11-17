@@ -16,7 +16,10 @@ PROFILE_SECTIONS = (
 )
 
 POPULATION_GROUP_ORDER = (
+    'Black African', 'Coloured', 'Indian or Asian', 'White', 'Other')
+POPULATION_GROUP_ORDER_2016 = (
     'Black African', 'Coloured', 'Indian or Asian', 'White')
+
 GENDER_ORDER = (
     'Female', 'Male')
 PROVINCE_ORDER = (
@@ -41,6 +44,8 @@ TYPE_OF_AREA_ORDER = (
     'Formal residential', 'Informal residential', 'Traditional residential', 'Farms',
     'Parks and recreation', 'Collective living quarters', 'Industrial', 'Small holdings',
     'Vacant', 'Commercial')
+TYPE_OF_AREA_ORDER_2016 = (
+    'Farm areas', 'Tribal/Traditional areas', 'Urban areas')
 LIVING_WITH_PARENTS_KEY_ORDER = (
     'Both parents', 'Mother only', 'Father only', 'Neither parent')
 DIFFICULTY_FUNCTIONING_KEY_ORDER = (
@@ -141,13 +146,17 @@ def get_demographics_profile(geo, session, display_profile, comparative=False):
         table_dataset='Census and Community Survey',
         key_order=GENDER_ORDER)
 
+    population_group_order = (POPULATION_GROUP_ORDER_2016
+        if geo_data.primary_release_year(geo) == 'latest'
+        else POPULATION_GROUP_ORDER)
+
     youth_pop_group_data, _ = get_stat_data(
         ['population group'], geo, session,
         table_name='youth_population_group_gender',
         table_fields = ['population group', 'gender'],
         table_universe='Youth',
         table_dataset='Census and Community Survey',
-        key_order=POPULATION_GROUP_ORDER)
+        key_order=population_group_order)
 
     youth_language_data, _ = get_stat_data(
         ['language'], geo, session,
@@ -539,11 +548,15 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
     if informal_not_in_backyard or informal_in_backyard:
         youth_dwelling_informal = (informal_not_in_backyard or 0) + (informal_in_backyard or 0)
 
+    type_of_area_order = (TYPE_OF_AREA_ORDER_2016
+        if geo_data.primary_release_year(geo) == 'latest'
+        else TYPE_OF_AREA_ORDER)
+
     youth_type_of_area, _ = get_stat_data(
         ['type of area'], geo, session,
         table_universe='Youth living in households',
         table_dataset='Census and Community Survey',
-        key_order=TYPE_OF_AREA_ORDER)
+        key_order=type_of_area_order)
 
     youth_household_crowded, _ = get_stat_data(
         ['household crowded'], geo, session,
