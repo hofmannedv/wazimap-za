@@ -1,7 +1,7 @@
 from collections import OrderedDict
 
 from wazimap.data.tables import get_datatable
-from wazimap.data.utils import get_session, merge_dicts, get_stat_data, percent
+from wazimap.data.utils import get_session, merge_dicts, get_stat_data, percent, group_remainder
 from wazimap.geo import geo_data
 
 
@@ -155,6 +155,10 @@ def get_demographics_profile(geo, session, display_profile, comparative=False):
         table_dataset='Census and Community Survey',
         order_by='-total'
     )
+    # Show the 11 most spoken languages and group the rest into Other
+    # import ipdb; ipdb.set_trace()
+    # group_remainder(youth_language_data, 12)
+
     youth_language_most_spoken = youth_language_data[youth_language_data.keys()[0]]
 
     youth_province_birth_data, _ = get_stat_data(
