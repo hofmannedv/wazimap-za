@@ -30,35 +30,6 @@ WC_ONLY_TABLES = [
 ]
 
 CHECK_TABLES = [
-    'youth_province_of_birth',
-    'youth_gender_population_group',
-    'youth_electricity_access_gender',
-    'youth_toilet_access_gender',
-    'youth_female_given_birth_age_in_completed_years',
-    'youth_region_of_birth',
-    'youth_female_given_birth',
-    'youth_type_of_dwelling_gender',
-    'youth_water_access_gender',
-    'youth_language',
-    'youth_citizenship',
-    'youth_living_with_parents_gender',
-    'youth_type_of_area',
-    'youth_province_of_birth',
-    'youth_gender_population_group',
-    'youth_electricity_access_gender',
-    'youth_toilet_access_gender',
-    'youth_female_given_birth_age_in_completed_years',
-    'youth_region_of_birth',
-    'youth_female_given_birth',
-    'youth_difficulty_functioning',
-    'youth_type_of_dwelling_gender',
-    'youth_age_groups_in_10_years',
-    'youth_water_access_gender',
-    'youth_language',
-    'youth_citizenship',
-    'youth_living_with_parents_gender',
-    'youth_type_of_area',
-    'youth_mpi_score'
 ]
 
 
