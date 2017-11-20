@@ -1,7 +1,7 @@
 from collections import OrderedDict
 
 from wazimap.data.tables import get_datatable
-from wazimap.data.utils import get_session, merge_dicts, get_stat_data, percent
+from wazimap.data.utils import get_session, merge_dicts, get_stat_data, percent, current_context
 from wazimap.geo import geo_data
 
 
@@ -147,7 +147,7 @@ def get_demographics_profile(geo, session, display_profile, comparative=False):
         key_order=GENDER_ORDER)
 
     population_group_order = (POPULATION_GROUP_ORDER_2016
-        if geo_data.primary_release_year(geo) == 'latest'
+        if current_context().get('year') == 'latest'
         else POPULATION_GROUP_ORDER)
 
     youth_pop_group_data, _ = get_stat_data(
@@ -549,7 +549,7 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
         youth_dwelling_informal = (informal_not_in_backyard or 0) + (informal_in_backyard or 0)
 
     type_of_area_order = (TYPE_OF_AREA_ORDER_2016
-        if geo_data.primary_release_year(geo) == 'latest'
+        if current_context().get('year') == 'latest'
         else TYPE_OF_AREA_ORDER)
 
     youth_type_of_area, _ = get_stat_data(
