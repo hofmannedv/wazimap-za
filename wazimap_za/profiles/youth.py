@@ -1,7 +1,7 @@
 from collections import OrderedDict
 
 from wazimap.data.tables import get_datatable
-from wazimap.data.utils import get_session, merge_dicts, get_stat_data, percent, current_context
+from wazimap.data.utils import get_session, merge_dicts, get_stat_data, percent, current_context, dataset_context
 from wazimap.geo import geo_data
 
 
@@ -152,7 +152,6 @@ def get_demographics_profile(geo, session, display_profile, comparative=False):
 
     youth_pop_group_data, _ = get_stat_data(
         ['population group'], geo, session,
-        table_name='youth_population_group_gender',
         table_fields = ['population group', 'gender'],
         table_universe='Youth',
         table_dataset='Census and Community Survey',
@@ -292,79 +291,81 @@ def get_education_profile(geo, session, display_profile, comparative=False):
     }
 
     if display_profile == 'WC':
-        youth_average_mean_score_by_year, _ = get_stat_data(
-            ['year'], geo, session,
-            table_name='youth_average_mean_score_by_year',
-            percent=False)
+        with dataset_context(year='2014'):
+            youth_average_mean_score_by_year, _ = get_stat_data(
+                ['year'], geo, session,
+                table_name='youth_average_mean_score_by_year',
+                percent=False)
 
-        youth_average_language_score_by_year, _ = get_stat_data(
-            ['year'], geo, session,
-            table_name='youth_average_language_score_by_year',
-            percent=False)
+            youth_average_language_score_by_year, _ = get_stat_data(
+                ['year'], geo, session,
+                table_name='youth_average_language_score_by_year',
+                percent=False)
 
-        youth_average_maths_score_by_year, _ = get_stat_data(
-            ['year'], geo, session,
-            table_name='youth_average_maths_score_by_year',
-            percent=False)
+            youth_average_maths_score_by_year, _ = get_stat_data(
+                ['year'], geo, session,
+                table_name='youth_average_maths_score_by_year',
+                percent=False)
 
-        youth_language_outcome_latest, _ = get_stat_data(
-            ['year', 'outcome'], geo, session,
-            table_name='youth_language_outcome_by_year',
-            key_order={'outcome': ['Passed', 'Failed']},
-            percent=False, slices=['2015'])
+            youth_language_outcome_latest, _ = get_stat_data(
+                ['year', 'outcome'], geo, session,
+                table_name='youth_language_outcome_by_year',
+                key_order={'outcome': ['Passed', 'Failed']},
+                percent=False, slices=['2015'])
 
-        youth_maths_outcome_latest, _ = get_stat_data(
-            ['year', 'outcome'], geo, session,
-            table_name='youth_maths_outcome_by_year',
-            key_order={'outcome': ['Passed', 'Failed']},
-            percent=False, slices=['2015'])
+            youth_maths_outcome_latest, _ = get_stat_data(
+                ['year', 'outcome'], geo, session,
+                table_name='youth_maths_outcome_by_year',
+                key_order={'outcome': ['Passed', 'Failed']},
+                percent=False, slices=['2015'])
 
-        youth_matric_outcome_by_year, _ = get_stat_data(
-            ['year'], geo, session,
-            table_name='youth_matric_outcome_by_year',
-            only={'outcome': ['Passed']},
-            percent=False)
+        with dataset_context(year='2015'):
+            youth_matric_outcome_by_year, _ = get_stat_data(
+                ['year'], geo, session,
+                table_name='youth_matric_outcome_by_year',
+                only={'outcome': ['Passed']},
+                percent=False)
 
-        youth_matric_outcome_latest, _ = get_stat_data(
-            ['year', 'outcome'], geo, session,
-            table_name='youth_matric_outcome_by_year',
-            key_order={'outcome': ['Passed', 'Failed']},
-            percent=False, slices=['2015'])
+            youth_matric_outcome_latest, _ = get_stat_data(
+                ['year', 'outcome'], geo, session,
+                table_name='youth_matric_outcome_by_year',
+                key_order={'outcome': ['Passed', 'Failed']},
+                percent=False, slices=['2015'])
 
-        youth_matric_throughput_rate_by_year, _ = get_stat_data(
-            ['year'], geo, session,
-            table_name='youth_matric_passes_as_percentage_of_grade8_enrolment_by_year',
-            only={'outcome': ['Passed']},
-            percent=False)
+            youth_matric_throughput_rate_by_year, _ = get_stat_data(
+                ['year'], geo, session,
+                table_name='youth_matric_passes_as_percentage_of_grade8_enrolment_by_year',
+                only={'outcome': ['Passed']},
+                percent=False)
 
-        youth_matric_throughput_latest, _ = get_stat_data(
-            ['year', 'outcome'], geo, session,
-            table_name='youth_matric_passes_as_percentage_of_grade8_enrolment_by_year',
-            key_order={'outcome': ['Passed', 'Dropped out or failed']},
-            percent=False, slices=['2015'])
+            youth_matric_throughput_latest, _ = get_stat_data(
+                ['year', 'outcome'], geo, session,
+                table_name='youth_matric_passes_as_percentage_of_grade8_enrolment_by_year',
+                key_order={'outcome': ['Passed', 'Dropped out or failed']},
+                percent=False, slices=['2015'])
 
-        youth_bachelor_passes_by_year, _ = get_stat_data(
-            ['year'], geo, session,
-            table_name='youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year',
-            only={'outcome': ['Bachelor pass']},
-            percent=False)
+            youth_bachelor_passes_by_year, _ = get_stat_data(
+                ['year'], geo, session,
+                table_name='youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year',
+                only={'outcome': ['Bachelor pass']},
+                percent=False)
 
-        youth_bachelor_outcome_latest, _ = get_stat_data(
-            ['year', 'outcome'], geo, session,
-            table_name='youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year',
-            key_order={'outcome': ['Bachelor pass', 'No bachelor pass']},
-            percent=False, slices=['2015'])
+            youth_bachelor_outcome_latest, _ = get_stat_data(
+                ['year', 'outcome'], geo, session,
+                table_name='youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year',
+                key_order={'outcome': ['Bachelor pass', 'No bachelor pass']},
+                percent=False, slices=['2015'])
 
-        youth_student_dropout_rate_by_year, _ = get_stat_data(
-            ['year'], geo, session,
-            table_name='youth_student_dropout_rate_by_year',
-            only={'outcome': ['Dropped out']},
-            percent=False)
+            youth_student_dropout_rate_by_year, _ = get_stat_data(
+                ['year'], geo, session,
+                table_name='youth_student_dropout_rate_by_year',
+                only={'outcome': ['Dropped out']},
+                percent=False)
 
-        youth_student_dropout_rate_latest, _ = get_stat_data(
-            ['year', 'outcome'], geo, session,
-            table_name='youth_student_dropout_rate_by_year',
-            percent=False, slices=['2015'])
+            youth_student_dropout_rate_latest, _ = get_stat_data(
+                ['year', 'outcome'], geo, session,
+                table_name='youth_student_dropout_rate_by_year',
+                percent=False, slices=['2015'])
 
         final_data.update({
             'youth_ave_mean_score_latest': {
@@ -646,8 +647,9 @@ def get_poverty_profile(geo, session, display_profile, comparative=False):
         key_order={'gender': GENDER_ORDER})
 
     youth_mpi_table = get_datatable('youth_mpi_score')
-    youth_mpi_score, _ = youth_mpi_table.get_stat_data(
-        geo, percent=False)
+    with dataset_context(year='2015'):
+        youth_mpi_score, _ = youth_mpi_table.get_stat_data(
+            geo, percent=False)
     youth_mpi_score['youth_mpi_score']['name'] = 'Youth MPI score (0-1)*'
 
     final_data = {
@@ -685,55 +687,56 @@ def get_safety_profile(geo, session, display_profile, comparative=False):
         youth, pop_total = youth_pop_table.get_stat_data(
             geo, total='total_pop', percent='False')
 
-        victims_by_age_group_per_10k_pop, total_victims_per_10k_pop = get_stat_data(
-            ['age group'], geo, session,
-            table_name='crimes_victims_age_group',
-            percent=False)
-        accused_by_age_group_per_10k_pop, total_accused_per_10k_pop = get_stat_data(
-            ['age group'], geo, session,
-            table_name='crimes_accused_age_group',
-            percent=False)
+        with dataset_context(year='2015'):
+            victims_by_age_group_per_10k_pop, total_victims_per_10k_pop = get_stat_data(
+                ['age group'], geo, session,
+                table_name='crimes_victims_age_group',
+                percent=False)
+            accused_by_age_group_per_10k_pop, total_accused_per_10k_pop = get_stat_data(
+                ['age group'], geo, session,
+                table_name='crimes_accused_age_group',
+                percent=False)
 
-        youth_victims_by_offence_per_10k_youth, _ = get_stat_data(
-            ['type of offence'], geo, session,
-            table_name='youth_victims_offence_type')
-        youth_accused_by_offence_per_10k_youth, _ = get_stat_data(
-            ['type of offence'], geo, session,
-            table_name='youth_accused_offence_type')
+            youth_victims_by_offence_per_10k_youth, _ = get_stat_data(
+                ['type of offence'], geo, session,
+                table_name='youth_victims_offence_type')
+            youth_accused_by_offence_per_10k_youth, _ = get_stat_data(
+                ['type of offence'], geo, session,
+                table_name='youth_accused_offence_type')
 
-        youth_victims_by_pop_group_per_10k, _ = get_stat_data(
-            ['population group'], geo, session,
-            table_name='youth_victims_population_group',
-            percent=False)
-        youth_accused_by_pop_group_per_10k, _ = get_stat_data(
-            ['population group'], geo, session,
-            table_name='youth_accused_population_group',
-            percent=False)
+            youth_victims_by_pop_group_per_10k, _ = get_stat_data(
+                ['population group'], geo, session,
+                table_name='youth_victims_population_group',
+                percent=False)
+            youth_accused_by_pop_group_per_10k, _ = get_stat_data(
+                ['population group'], geo, session,
+                table_name='youth_accused_population_group',
+                percent=False)
 
-        youth_victims_by_gender_per_10k, _ = get_stat_data(
-            ['gender'], geo, session,
-            table_name='youth_victims_gender',
-            percent=False,
-            key_order=GENDER_ORDER)
-        youth_accused_by_gender_per_10k, _ = get_stat_data(
-            ['gender'], geo, session,
-            table_name='youth_accused_gender',
-            percent=False,
-            key_order=GENDER_ORDER)
+            youth_victims_by_gender_per_10k, _ = get_stat_data(
+                ['gender'], geo, session,
+                table_name='youth_victims_gender',
+                percent=False,
+                key_order=GENDER_ORDER)
+            youth_accused_by_gender_per_10k, _ = get_stat_data(
+                ['gender'], geo, session,
+                table_name='youth_accused_gender',
+                percent=False,
+                key_order=GENDER_ORDER)
 
-        youth_victims_by_year, _ = get_stat_data(
-            ['year'], geo, session,
-            table_name='youth_victims_year',
-            percent=False)
-        youth_accused_by_year, _ = get_stat_data(
-            ['year'], geo, session,
-            table_name='youth_accused_year',
-            percent=False)
+            youth_victims_by_year, _ = get_stat_data(
+                ['year'], geo, session,
+                table_name='youth_victims_year',
+                percent=False)
+            youth_accused_by_year, _ = get_stat_data(
+                ['year'], geo, session,
+                table_name='youth_accused_year',
+                percent=False)
 
-        crimes_by_year, _ = get_stat_data(
-            ['type of crime', 'year'], geo, session,
-            table_name='crimes_type_of_crime_year',
-            percent=False)
+            crimes_by_year, _ = get_stat_data(
+                ['type of crime', 'year'], geo, session,
+                table_name='crimes_type_of_crime_year',
+                percent=False)
 
         contact_crimes_by_year = crimes_by_year['Contact crime']
         contact_crimes_by_year['metadata'] = crimes_by_year['metadata']
@@ -814,33 +817,35 @@ def get_health_profile(geo, session, display_profile, comparative=False):
 
     if display_profile == 'WC' and geo.geo_level != 'ward':
         # We don't have data on ward level for the following
-        youth_pregnancy_rate_by_year, _ = get_stat_data(
-            ['year'], geo, session,
-            table_name='youth_pregnancy_rate_year',
-            percent=False)
+        with dataset_context(year='2015'):
+            youth_pregnancy_rate_by_year, _ = get_stat_data(
+                ['year'], geo, session,
+                table_name='youth_pregnancy_rate_year',
+                percent=False)
 
-        youth_delivery_rate_by_year, _ = get_stat_data(
-            ['year'], geo, session,
-            table_name='youth_delivery_rate_year',
-            percent=False)
+            youth_delivery_rate_by_year, _ = get_stat_data(
+                ['year'], geo, session,
+                table_name='youth_delivery_rate_year',
+                percent=False)
 
-        youth_female_causes_of_death_perc, _ = get_stat_data(
-            ['cause of death'], geo, session,
-            order_by='-total',
-            table_name='youth_causes_of_death_female')
-        youth_male_causes_of_death_perc, _ = get_stat_data(
-            ['cause of death'], geo, session,
-            order_by='-total',
-            table_name='youth_causes_of_death_male')
+        with dataset_context(year='2013'):
+            youth_female_causes_of_death_perc, _ = get_stat_data(
+                ['cause of death'], geo, session,
+                order_by='-total',
+                table_name='youth_causes_of_death_female')
+            youth_male_causes_of_death_perc, _ = get_stat_data(
+                ['cause of death'], geo, session,
+                order_by='-total',
+                table_name='youth_causes_of_death_male')
 
-        youth_female_causes_of_death, _ = get_stat_data(
-            ['cause of death'], geo, session,
-            order_by='-total',
-            table_name='youth_causes_of_death_female')
-        youth_male_causes_of_death, _ = get_stat_data(
-            ['cause of death'], geo, session,
-            order_by='-total',
-            table_name='youth_causes_of_death_male')
+            youth_female_causes_of_death, _ = get_stat_data(
+                ['cause of death'], geo, session,
+                order_by='-total',
+                table_name='youth_causes_of_death_female')
+            youth_male_causes_of_death, _ = get_stat_data(
+                ['cause of death'], geo, session,
+                order_by='-total',
+                table_name='youth_causes_of_death_male')
 
         if not comparative:
             youth_female_top10_causes_of_death = OrderedDict()
