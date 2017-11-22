@@ -19,7 +19,6 @@ POPULATION_GROUP_ORDER = (
     'Black African', 'Coloured', 'Indian or Asian', 'White', 'Other')
 POPULATION_GROUP_ORDER_2016 = (
     'Black African', 'Coloured', 'Indian or Asian', 'White')
-
 GENDER_ORDER = (
     'Female', 'Male')
 PROVINCE_ORDER = (
@@ -29,6 +28,8 @@ REGION_ORDER = (
     'South Africa', 'SADC', 'Rest of Africa', 'Other', 'Unspecified')
 CITIZENSHIP_ORDER = (
     'Yes', 'No', 'Unspecified')
+EDUCATION_LEVEL_KEY_ORDER = (
+    'Less than Grade9', 'Grade 9', 'Grade 10/11', 'Matric/matric equivalent', 'Any tertiary')
 ELECTRICITY_ACCESS_KEY_ORDER = (
     'No electricity', 'Have electricity for some things', 'Have electricity for everything')
 TOILET_ACCESS_KEY_ORDER = (
@@ -228,25 +229,23 @@ def get_demographics_profile(geo, session, display_profile, comparative=False):
 
 def get_education_profile(geo, session, display_profile, comparative=False):
     youth_completed_grade9, _ = get_stat_data(
-            ['completed grade9'], geo, session,
-            key_order=('Completed', 'Not completed'),
-            table_name='youth_age_16_to_17_gender_completed_grade9')
+        ['completed grade9'], geo, session,
+        table_universe='Youth aged 16 to 17',
+        table_dataset='Census and Community Survey',
+        key_order=('Completed', 'Not completed'))
 
     youth_completed_grade9_by_gender, _ = get_stat_data(
-            ['completed grade9', 'gender'], geo, session,
-            percent_grouping=['gender'], slices=['Completed'],
-            table_name='youth_age_16_to_17_gender_completed_grade9',
-            key_order={'gender': GENDER_ORDER})
+        ['completed grade9', 'gender'], geo, session,
+        table_universe='Youth aged 16 to 17',
+        table_dataset='Census and Community Survey',
+        percent_grouping=['gender'], slices=['Completed'],
+        key_order={'gender': GENDER_ORDER})
 
     youth_education_level, youth_pop_20_to_24 = get_stat_data(
-            ['education level'], geo, session,
-            table_name='youth_age_20_to_24_gender_education_level',
-            key_order=(
-                'Less than Grade9',
-                'Grade 9',
-                'Grade 10/11',
-                'Matric/matric equivalent',
-                'Any tertiary'))
+        ['education level'], geo, session,
+        table_universe='Youth aged 20 to 24',
+        table_dataset='Census and Community Survey',
+        key_order=EDUCATION_LEVEL_KEY_ORDER)
 
     youth_perc_matric = None
     if youth_education_level['Matric/matric equivalent']['numerators']['this']:
@@ -257,17 +256,23 @@ def get_education_profile(geo, session, display_profile, comparative=False):
 
     youth_education_attendance, _ = get_stat_data(
         ['attendance'], geo, session,
-        table_name='youth_education_attendance_gender_age_incompleted_years')
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
+        table_fields=['attendance', 'age in completed years', 'gender'])
 
     youth_education_attending_by_age, _ = get_stat_data(
         ['attendance', 'age in completed years'], geo, session,
-        percent_grouping=['age in completed years'], slices=['Yes'],
-        table_name='youth_education_attendance_age_incompleted_years_gender')
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
+        table_fields=['attendance', 'age in completed years', 'gender'],
+        percent_grouping=['age in completed years'], slices=['Yes'])
 
     youth_education_attending_by_gender, _ = get_stat_data(
         ['attendance', 'gender'], geo, session,
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
+        table_fields=['attendance', 'age in completed years', 'gender'],
         percent_grouping=['gender'], slices=['Yes'],
-        table_name='youth_education_attendance_gender_age_incompleted_years',
         key_order={'gender': GENDER_ORDER})
 
     final_data = {
@@ -294,77 +299,90 @@ def get_education_profile(geo, session, display_profile, comparative=False):
         with dataset_context(year='2014'):
             youth_average_mean_score_by_year, _ = get_stat_data(
                 ['year'], geo, session,
-                table_name='youth_average_mean_score_by_year',
+                table_universe='Average mean score in both language and mathematics',
+                table_dataset='Census and Community Survey',
                 percent=False)
 
             youth_average_language_score_by_year, _ = get_stat_data(
                 ['year'], geo, session,
-                table_name='youth_average_language_score_by_year',
+                table_universe='Average score in language',
+                table_dataset='Census and Community Survey',
                 percent=False)
 
             youth_average_maths_score_by_year, _ = get_stat_data(
                 ['year'], geo, session,
-                table_name='youth_average_maths_score_by_year',
+                table_universe='Average score in mathematics',
+                table_dataset='Census and Community Survey',
                 percent=False)
 
             youth_language_outcome_latest, _ = get_stat_data(
                 ['year', 'outcome'], geo, session,
-                table_name='youth_language_outcome_by_year',
+                table_universe='Percentage passed in language',
+                table_dataset='Census and Community Survey',
                 key_order={'outcome': ['Passed', 'Failed']},
                 percent=False, slices=['2015'])
 
             youth_maths_outcome_latest, _ = get_stat_data(
                 ['year', 'outcome'], geo, session,
-                table_name='youth_maths_outcome_by_year',
+                table_universe='Percentage passed in mathematics',
+                table_dataset='Census and Community Survey',
                 key_order={'outcome': ['Passed', 'Failed']},
                 percent=False, slices=['2015'])
 
         with dataset_context(year='2015'):
             youth_matric_outcome_by_year, _ = get_stat_data(
                 ['year'], geo, session,
-                table_name='youth_matric_outcome_by_year',
+                table_universe='Matric pass rate',
+                table_dataset='Census and Community Survey',
                 only={'outcome': ['Passed']},
                 percent=False)
 
             youth_matric_outcome_latest, _ = get_stat_data(
                 ['year', 'outcome'], geo, session,
-                table_name='youth_matric_outcome_by_year',
+                table_universe='Matric pass rate',
+                table_dataset='Census and Community Survey',
                 key_order={'outcome': ['Passed', 'Failed']},
                 percent=False, slices=['2015'])
 
             youth_matric_throughput_rate_by_year, _ = get_stat_data(
                 ['year'], geo, session,
-                table_name='youth_matric_passes_as_percentage_of_grade8_enrolment_by_year',
+                table_universe='Matric passes as a % of grade 8 enrolment',
+                table_dataset='Census and Community Survey',
                 only={'outcome': ['Passed']},
                 percent=False)
 
             youth_matric_throughput_latest, _ = get_stat_data(
                 ['year', 'outcome'], geo, session,
-                table_name='youth_matric_passes_as_percentage_of_grade8_enrolment_by_year',
+                table_universe='Matric passes as a % of grade 8 enrolment',
+                table_dataset='Census and Community Survey',
                 key_order={'outcome': ['Passed', 'Dropped out or failed']},
                 percent=False, slices=['2015'])
 
             youth_bachelor_passes_by_year, _ = get_stat_data(
                 ['year'], geo, session,
-                table_name='youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year',
+                table_universe='Bachelor passes as a % of grade 8 enrolment',
+                table_dataset='Census and Community Survey',
                 only={'outcome': ['Bachelor pass']},
                 percent=False)
 
             youth_bachelor_outcome_latest, _ = get_stat_data(
                 ['year', 'outcome'], geo, session,
-                table_name='youth_bachelor_passes_as_percentage_of_grade8_enrolment_by_year',
+                table_universe='Bachelor passes as a % of grade 8 enrolment',
+                table_dataset='Census and Community Survey',
                 key_order={'outcome': ['Bachelor pass', 'No bachelor pass']},
                 percent=False, slices=['2015'])
 
             youth_student_dropout_rate_by_year, _ = get_stat_data(
                 ['year'], geo, session,
-                table_name='youth_student_dropout_rate_by_year',
+                table_universe='Dropout rates between grade 10 and matric',
+                table_dataset='Census and Community Survey',
                 only={'outcome': ['Dropped out']},
                 percent=False)
 
             youth_student_dropout_rate_latest, _ = get_stat_data(
                 ['year', 'outcome'], geo, session,
-                table_name='youth_student_dropout_rate_by_year',
+                table_universe='Dropout rates between grade 10 and matric',
+                table_dataset='Census and Community Survey',
                 percent=False, slices=['2015'])
 
         final_data.update({
