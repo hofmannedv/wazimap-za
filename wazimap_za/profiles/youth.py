@@ -649,37 +649,43 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
 def get_poverty_profile(geo, session, display_profile, comparative=False):
     youth_income_poor_by_age_group, _ = get_stat_data(
         ['income poverty', 'age group'], geo, session,
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
         percent_grouping=['age group'], slices=['Income-poor'],
-        recode=INCOME_POVERTY_AGE_GROUP_RECODE,
-        table_name='youth_income_poverty_age_group')
+        recode=INCOME_POVERTY_AGE_GROUP_RECODE)
 
     youth_income_poor_by_pop_group, _ = get_stat_data(
         ['income poverty', 'population group'], geo, session,
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
         percent_grouping=['population group'], slices=['Income-poor'],
-        key_order={'population group': POPULATION_GROUP_ORDER},
-        table_name='youth_income_poverty_population_group_gender')
+        key_order={'population group': POPULATION_GROUP_ORDER})
 
     youth_income_poor_by_gender, _ = get_stat_data(
         ['income poverty', 'gender'], geo, session,
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
         percent_grouping=['gender'], slices=['Income-poor'],
-        table_name='youth_income_poverty_gender_population_group',
         key_order={'gender': GENDER_ORDER})
 
     youth_multid_poverty, _ = get_stat_data(
-            ['multidimensionally poor'], geo, session,
-            key_order=('Multidimensionally poor', 'Non-poor'),
-            table_name='youth_multidimensionally_poor_gender_population_group')
+        ['multidimensionally poor'], geo, session,
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
+        key_order=('Multidimensionally poor', 'Non-poor'),)
 
     youth_multid_poor_by_pop_group, _ = get_stat_data(
         ['multidimensionally poor', 'population group'], geo, session,
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
         percent_grouping=['population group'], slices=['Multidimensionally poor'],
-        key_order={'population group': POPULATION_GROUP_ORDER},
-        table_name='youth_multidimensionally_poor_population_group_gender')
+        key_order={'population group': POPULATION_GROUP_ORDER})
 
     youth_multid_poor_by_gender, _ = get_stat_data(
         ['multidimensionally poor', 'gender'], geo, session,
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
         percent_grouping=['gender'], slices=['Multidimensionally poor'],
-        table_name='youth_multidimensionally_poor_gender_population_group',
         key_order={'gender': GENDER_ORDER})
 
     youth_mpi_table = get_datatable('youth_mpi_score')
