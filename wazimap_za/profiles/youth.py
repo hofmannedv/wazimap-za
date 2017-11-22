@@ -55,6 +55,8 @@ TYPE_OF_AREA_ORDER = (
     'Vacant', 'Commercial')
 TYPE_OF_AREA_ORDER_2016 = (
     'Farm areas', 'Tribal/Traditional areas', 'Urban areas')
+HH_CROWDED_KEY_ORDER = (
+    'Overcrowded', 'Non-overcrowded')
 LIVING_WITH_PARENTS_KEY_ORDER = (
     'Both parents', 'Mother only', 'Father only', 'Neither parent')
 DIFFICULTY_FUNCTIONING_KEY_ORDER = (
@@ -593,13 +595,15 @@ def get_living_environment_profile(geo, session, display_profile, comparative=Fa
 
     youth_household_crowded, _ = get_stat_data(
         ['household crowded'], geo, session,
-        key_order=('Overcrowded', 'Non-overcrowded'),
-        table_name='youth_household_crowded_gender')
+        table_universe='Youth living in households',
+        table_dataset='Census and Community Survey',
+        key_order=HH_CROWDED_KEY_ORDER)
 
     youth_access_to_internet, _ = get_stat_data(
         ['access to internet'], geo, session,
-        key_order=INTERNET_ACCESS_ORDER,
-        table_name='youth_access_to_internet_gender')
+        table_universe='Youth living in households',
+        table_dataset='Census and Community Survey',
+        key_order=INTERNET_ACCESS_ORDER)
 
     youth_by_living_with_parents_status, _ = get_stat_data(
         ['living with parents'], geo, session,
