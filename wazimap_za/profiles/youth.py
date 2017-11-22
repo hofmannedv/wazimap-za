@@ -873,32 +873,38 @@ def get_health_profile(geo, session, display_profile, comparative=False):
         with dataset_context(year='2015'):
             youth_pregnancy_rate_by_year, _ = get_stat_data(
                 ['year'], geo, session,
-                table_name='youth_pregnancy_rate_year',
+                table_universe='Teenage pregnancy rate by year',
+                table_dataset='Census and Community Survey',
                 percent=False)
 
             youth_delivery_rate_by_year, _ = get_stat_data(
                 ['year'], geo, session,
-                table_name='youth_delivery_rate_year',
+                table_universe='Teenage delivery rate by year',
+                table_dataset='Census and Community Survey',
                 percent=False)
 
         with dataset_context(year='2013'):
             youth_female_causes_of_death_perc, _ = get_stat_data(
                 ['cause of death'], geo, session,
-                order_by='-total',
-                table_name='youth_causes_of_death_female')
+                table_universe='Female youth causes of death',
+                table_dataset='Census and Community Survey',
+                order_by='-total')
             youth_male_causes_of_death_perc, _ = get_stat_data(
                 ['cause of death'], geo, session,
-                order_by='-total',
-                table_name='youth_causes_of_death_male')
+                table_universe='Male youth causes of death',
+                table_dataset='Census and Community Survey',
+                order_by='-total')
 
             youth_female_causes_of_death, _ = get_stat_data(
                 ['cause of death'], geo, session,
-                order_by='-total',
-                table_name='youth_causes_of_death_female')
+                table_universe='Female youth causes of death',
+                table_dataset='Census and Community Survey',
+                order_by='-total')
             youth_male_causes_of_death, _ = get_stat_data(
                 ['cause of death'], geo, session,
-                order_by='-total',
-                table_name='youth_causes_of_death_male')
+                table_universe='Male youth causes of death',
+                table_dataset='Census and Community Survey',
+                order_by='-total')
 
         if not comparative:
             youth_female_top10_causes_of_death = OrderedDict()
