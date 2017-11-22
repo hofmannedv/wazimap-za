@@ -30,6 +30,14 @@ CITIZENSHIP_ORDER = (
     'Yes', 'No', 'Unspecified')
 EDUCATION_LEVEL_KEY_ORDER = (
     'Less than Grade9', 'Grade 9', 'Grade 10/11', 'Matric/matric equivalent', 'Any tertiary')
+EMPLOYMENT_STATUS_KEY_ORDER = (
+    'Employed', 'Unemployed', 'Discouraged work-seeker', 'Other not economically active')
+EMPLOYMENT_SECTOR_KEY_ORDER = (
+    'Formal sector', 'Informal sector', 'Private household', 'Do not know')
+EMP_EDU_TRAIN_KEY_ORDER = (
+    'NEET','School/post-school', 'Employed')
+HH_EMPLOYMENT_KEY_ORDER = (
+    'No employed adult', 'At least one employed adult')
 ELECTRICITY_ACCESS_KEY_ORDER = (
     'No electricity', 'Have electricity for some things', 'Have electricity for everything')
 TOILET_ACCESS_KEY_ORDER = (
@@ -54,10 +62,6 @@ DIFFICULTY_FUNCTIONING_KEY_ORDER = (
     'Communication', 'Walking', 'Remembering', 'Self care')
 GIVEN_BIRTH_KEY_ORDER = (
     'Given birth', 'Never given birth', 'Do not know', 'Unspecified')
-EMPLOYMENT_STATUS_KEY_ORDER = (
-    'Employed', 'Unemployed', 'Discouraged work-seeker', 'Other not economically active')
-EMPLOYMENT_SECTOR_KEY_ORDER = (
-    'Formal sector', 'Informal sector', 'Private household', 'Do not know')
 
 
 INCOME_POVERTY_AGE_GROUP_RECODE = {
@@ -434,11 +438,13 @@ def get_education_profile(geo, session, display_profile, comparative=False):
 def get_economic_opportunities_profile(geo, session, display_profile, comparative=False):
     youth_labour_force_official, _ = get_stat_data(
         ['employment status'], geo, session,
-        table_name='youth_labour_force_official_age_group_gender')
+        table_universe='Youth in the labour force - Official definition',
+        table_dataset='Census and Community Survey')
 
     youth_labour_force_expanded, _ = get_stat_data(
         ['employment status'], geo, session,
-        table_name='youth_labour_force_expanded_age_group_gender')
+        table_universe='Youth in the labour force - Expanded definition',
+        table_dataset='Census and Community Survey')
 
     youth_unemployment_by_definition = OrderedDict((
         ('Official', {
@@ -456,45 +462,53 @@ def get_economic_opportunities_profile(geo, session, display_profile, comparativ
 
     youth_official_unemployment_by_gender, _ = get_stat_data(
         ['employment status', 'gender'], geo, session,
+        table_universe='Youth in the labour force - Official definition',
+        table_dataset='Census and Community Survey',
         percent_grouping=['gender'], slices=['Unemployed'],
-        table_name='youth_labour_force_official_age_group_gender',
         key_order={'gender': GENDER_ORDER})
 
     youth_employment_status, _ = get_stat_data(
         ['employment status'], geo, session,
-        key_order=EMPLOYMENT_STATUS_KEY_ORDER,
-        table_name='youth_employment_status_gender')
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
+        key_order=EMPLOYMENT_STATUS_KEY_ORDER)
 
     pop_employment_status, _ = get_stat_data(
         ['employment status'], geo, session,
-        key_order=EMPLOYMENT_STATUS_KEY_ORDER,
-        table_name='population_employment_status_gender')
+        table_universe='Population',
+        table_dataset='Census and Community Survey',
+        key_order=EMPLOYMENT_STATUS_KEY_ORDER)
 
     youth_employment_sector, _ = get_stat_data(
         ['employment sector'], geo, session,
-        key_order=EMPLOYMENT_SECTOR_KEY_ORDER,
-        table_name='youth_employment_sector_gender')
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
+        key_order=EMPLOYMENT_SECTOR_KEY_ORDER)
 
     pop_employment_sector, _ = get_stat_data(
         ['employment sector'], geo, session,
-        key_order=EMPLOYMENT_SECTOR_KEY_ORDER,
-        table_name='population_employment_sector_gender')
+        table_universe='Population',
+        table_dataset='Census and Community Survey',
+        key_order=EMPLOYMENT_SECTOR_KEY_ORDER)
 
     youth_emp_edu_train_status, _ = get_stat_data(
         ['employment education training'], geo, session,
-        key_order=('NEET','School/post-school', 'Employed'),
-        table_name='youth_employment_education_training_gender')
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
+        key_order=EMP_EDU_TRAIN_KEY_ORDER)
 
     youth_neet_by_gender, _ = get_stat_data(
         ['employment education training', 'gender'], geo, session,
+        table_universe='Youth',
+        table_dataset='Census and Community Survey',
         percent_grouping=['gender'], slices=['NEET'],
-        table_name='youth_employment_education_training_gender',
         key_order={'gender': GENDER_ORDER})
 
     youth_household_employment, _ = get_stat_data(
         ['household employment'], geo, session,
-        key_order=('No employed adult', 'At least one employed adult'),
-        table_name='youth_household_employment')
+        table_universe='Youth living in households',
+        table_dataset='Census and Community Survey',
+        key_order=HH_EMPLOYMENT_KEY_ORDER)
 
     final_data = {
         'youth_official_unemployment': {
