@@ -732,52 +732,63 @@ def get_safety_profile(geo, session, display_profile, comparative=False):
         with dataset_context(year='2015'):
             victims_by_age_group_per_10k_pop, total_victims_per_10k_pop = get_stat_data(
                 ['age group'], geo, session,
-                table_name='crimes_victims_age_group',
+                table_universe='Victims of crime per 10,000 population in age group',
+                table_dataset='Census and Community Survey',
                 percent=False)
             accused_by_age_group_per_10k_pop, total_accused_per_10k_pop = get_stat_data(
                 ['age group'], geo, session,
-                table_name='crimes_accused_age_group',
+                table_universe='Accused of crime per 10,000 population in age group',
+                table_dataset='Census and Community Survey',
                 percent=False)
 
             youth_victims_by_offence_per_10k_youth, _ = get_stat_data(
                 ['type of offence'], geo, session,
-                table_name='youth_victims_offence_type')
+                table_universe='Youth victims of crime, per 10,000 youth',
+                table_dataset='Police Crime Statistics 2006-2015')
             youth_accused_by_offence_per_10k_youth, _ = get_stat_data(
                 ['type of offence'], geo, session,
-                table_name='youth_accused_offence_type')
+                table_universe='Youth accused of crimes, per 10,000 youth',
+                table_dataset='Police Crime Statistics 2006-2015')
 
             youth_victims_by_pop_group_per_10k, _ = get_stat_data(
                 ['population group'], geo, session,
-                table_name='youth_victims_population_group',
+                table_universe='Youth victims of crime, per 10,000 youth',
+                table_dataset='Police Crime Statistics 2006-2015',
                 percent=False)
             youth_accused_by_pop_group_per_10k, _ = get_stat_data(
                 ['population group'], geo, session,
-                table_name='youth_accused_population_group',
+                table_universe='Youth accused of crimes, per 10,000 youth',
+                table_dataset='Police Crime Statistics 2006-2015',
                 percent=False)
 
             youth_victims_by_gender_per_10k, _ = get_stat_data(
                 ['gender'], geo, session,
-                table_name='youth_victims_gender',
+                table_universe='Youth victims of crime, per 10,000 youth',
+                table_dataset='Police Crime Statistics 2006-2015',
                 percent=False,
                 key_order=GENDER_ORDER)
             youth_accused_by_gender_per_10k, _ = get_stat_data(
                 ['gender'], geo, session,
-                table_name='youth_accused_gender',
+                table_universe='Youth accused of crimes, per 10,000 youth',
+                table_dataset='Police Crime Statistics 2006-2015',
                 percent=False,
                 key_order=GENDER_ORDER)
 
             youth_victims_by_year, _ = get_stat_data(
                 ['year'], geo, session,
-                table_name='youth_victims_year',
+                table_universe='Youth victims of crime',
+                table_dataset='Police Crime Statistics 2006-2015',
                 percent=False)
             youth_accused_by_year, _ = get_stat_data(
                 ['year'], geo, session,
-                table_name='youth_accused_year',
+                table_universe='Youth accused of crimes',
+                table_dataset='Police Crime Statistics 2006-2015',
                 percent=False)
 
             crimes_by_year, _ = get_stat_data(
                 ['type of crime', 'year'], geo, session,
-                table_name='crimes_type_of_crime_year',
+                table_universe='Crimes',
+                table_dataset='Police Crime Statistics 2006-2015',
                 percent=False)
 
         contact_crimes_by_year = crimes_by_year['Contact crime']
