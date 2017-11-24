@@ -38,14 +38,20 @@
 {% block profile_header_tail %}
 <div class="column-full">
     <p class="caption">
+        {% if geography.this.geo_level != 'ward'%}
+        <strong>Community Survey data:</strong> 2016
+        <br>
+        {% endif %}
         <strong>Census data:</strong> 2011
         <br>
         {% if display_profile == 'WC' %}
         <strong>SAPS data:</strong> 2006-2015
         <br>
         <strong>WC Education Dept data:</strong> 2005-2016
+        {% if geography.this.geo_level != 'ward'%}
         <br>
         <strong>WC Dept of Health data:</strong> 2005-2016
+        {% endif %}
         {% endif %}
     </p>
 </div>
@@ -468,15 +474,35 @@
             <div class="column-quarter">
                 {% include 'profile/_blocks/_stat_list.html' with stat=health.youth_female_HIV_deaths stat_type='percentage' decimals='-1' %}
             </div>
-            <div class="column-three-quarters" id="chart-histogram-health-youth_female_top10_causes_of_death" data-stat-type="scaled-percentage" data-chart-title="Leading causes of death for female youth, 2010-2013" data-decimal-places="0"></div>
+            <div class="column-three-quarters" id="chart-histogram-health-youth_female_top10_causes_of_death" data-stat-type="scaled-percentage" data-chart-title="Leading causes of death for female youth, 2010-2013" data-decimal-places="0" data-source="{{ health.youth_female_top10_causes_of_death.metadata.source }}"></div>
         </section>
         <section class="clearfix stat-row">
             <div class="column-quarter">
                 {% include 'profile/_blocks/_stat_list.html' with stat=health.youth_male_interpersonal_violence_deaths stat_type='percentage' decimals='-1' %}
             </div>
-            <div class="column-three-quarters" id="chart-histogram-health-youth_male_top10_causes_of_death" data-stat-type="scaled-percentage" data-chart-title="Leading causes of death for male youth, 2010-2013" data-decimal-places="0"></div>
+            <div class="column-three-quarters" id="chart-histogram-health-youth_male_top10_causes_of_death" data-stat-type="scaled-percentage" data-chart-title="Leading causes of death for male youth, 2010-2013" data-decimal-places="0" data-source="{{ health.youth_male_top10_causes_of_death.metadata.source }}"></div>
         </section>
         {% endif %}
     </div>
 </article>
+{% block citations %}
+<div class="citations">
+    <p>This page displays data from more than one data source. Unless otherwise noted, data is from the {% if geography.this.geo_level != 'ward' %}Community Survey 2016{% else %}Census 2011{% endif %}</p>
+    <ul>
+        {% if geography.this.geo_level != 'ward' %}
+        <li><b>Community Survey 2016:</b> Statistics South Africa (2016) South African Community Survey 2016. Indicators derived from the full population Community Survey.</li>
+        {% endif %}
+        <li><b>Census 2011:</b> Statistics South Africa (2011) South African Population Census 2011. Indicators derived from the full population Census.</li>
+        <li><b>MPI:</b> Frame, E., De Lannoy, A., Koka, P., Leibbrandt, M. (2016). Multidimensional Youth Poverty: Estimating the Youth MPI in South Africa at ward level. A Southern Africa Labour and Development Research Unit Working Paper Number 189. Cape Town: SALDRU, University of Cape Town</li>
+        <li><b>Multidimensionally poor:</b> Frame, E., De Lannoy, A., Leibbrandt, M. (2016). Measuring multidimensional poverty among youth in South Africa at the sub-national level. A Southern Africa Labour and Development Research Unit Working Paper Number 169. Cape Town: SALDRU, University of Cape Town</li>
+        {% if display_profile == 'WC'%}
+        <li><b>WC Education Dept data:</b> Western Cape Department of Education. Administrative data on Systemic evaluations, Matric successes and dropouts for the period 2010/2015 provided by the PGWC</li>
+        <li><b>Police Crime Statistics 2006-2015:</b> South African Police Service. Crime Situation in South Africa for the period 2005/2015</li>
+        {% if geography.this.geo_level != 'ward'%}
+        <li><b>WC Dept of Health data:</b> Western Cape Department of Health. Administrative data on causes of deaths, pregnancy and delivery for the period 2005/2016 provided by the PGWC</li>
+        {% endif %}
+        {% endif %}
+    </ul>
+</div>
+{% endblock %}
 {% endblock %}

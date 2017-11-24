@@ -4,6 +4,22 @@
     vertical-align: baseline;
 }
 
+
+.citations {
+    font-size: 0.8em;
+    ul {
+        list-style: none;
+        margin-bottom: 30px;
+        padding-left: 0;
+
+        li {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+
+
 aside.multi-line-header {
     padding-top: 1.2em;
 }
