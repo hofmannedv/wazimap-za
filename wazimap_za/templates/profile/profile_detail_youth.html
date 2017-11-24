@@ -474,25 +474,25 @@
             <div class="column-quarter">
                 {% include 'profile/_blocks/_stat_list.html' with stat=health.youth_female_HIV_deaths stat_type='percentage' decimals='-1' %}
             </div>
-            <div class="column-three-quarters" id="chart-histogram-health-youth_female_top10_causes_of_death" data-stat-type="scaled-percentage" data-chart-title="Leading causes of death for female youth, 2010-2013" data-decimal-places="0" data-source="{{ health.youth_female_top10_causes_of_death.metadata.source }}"></div>
+            <div class="column-three-quarters" id="chart-histogram-health-youth_female_top10_causes_of_death" data-stat-type="scaled-percentage" data-chart-title="Leading causes of death for female youth, 2010-2013" data-decimal-places="0"></div>
         </section>
         <section class="clearfix stat-row">
             <div class="column-quarter">
                 {% include 'profile/_blocks/_stat_list.html' with stat=health.youth_male_interpersonal_violence_deaths stat_type='percentage' decimals='-1' %}
             </div>
-            <div class="column-three-quarters" id="chart-histogram-health-youth_male_top10_causes_of_death" data-stat-type="scaled-percentage" data-chart-title="Leading causes of death for male youth, 2010-2013" data-decimal-places="0" data-source="{{ health.youth_male_top10_causes_of_death.metadata.source }}"></div>
+            <div class="column-three-quarters" id="chart-histogram-health-youth_male_top10_causes_of_death" data-stat-type="scaled-percentage" data-chart-title="Leading causes of death for male youth, 2010-2013" data-decimal-places="0"></div>
         </section>
         {% endif %}
     </div>
 </article>
 {% block citations %}
 <div class="citations">
-    <p>This page displays data from more than one data source. Unless otherwise noted, data is from the {% if geography.this.geo_level != 'ward' %}Community Survey 2016{% else %}Census 2011{% endif %}</p>
+    <p>This page displays data from more than one data release. Unless otherwise noted, data is from the Census 2011</p>
     <ul>
+        <li><b>Census 2011:</b> Statistics South Africa (2011) South African Population Census 2011. Indicators derived from the full population Census.</li>
         {% if geography.this.geo_level != 'ward' %}
         <li><b>Community Survey 2016:</b> Statistics South Africa (2016) South African Community Survey 2016. Indicators derived from the full population Community Survey.</li>
         {% endif %}
-        <li><b>Census 2011:</b> Statistics South Africa (2011) South African Population Census 2011. Indicators derived from the full population Census.</li>
         <li><b>MPI:</b> Frame, E., De Lannoy, A., Koka, P., Leibbrandt, M. (2016). Multidimensional Youth Poverty: Estimating the Youth MPI in South Africa at ward level. A Southern Africa Labour and Development Research Unit Working Paper Number 189. Cape Town: SALDRU, University of Cape Town</li>
         <li><b>Multidimensionally poor:</b> Frame, E., De Lannoy, A., Leibbrandt, M. (2016). Measuring multidimensional poverty among youth in South Africa at the sub-national level. A Southern Africa Labour and Development Research Unit Working Paper Number 169. Cape Town: SALDRU, University of Cape Town</li>
         {% if display_profile == 'WC'%}
