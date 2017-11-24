@@ -117,6 +117,7 @@ def get_profile(geo, profile_name, request):
         display_profile = 'WC' if (geo.geo_code == 'WC' or 'WC' in [cg.geo_code for cg in comp_geos]) else 'ZA'
 
         data['display_profile'] = display_profile
+        data['primary_release'] = 'Census 2011'
 
         for section in sections:
             function_name = 'get_%s_profile' % section
@@ -162,6 +163,7 @@ def get_demographics_profile(geo, session, display_profile, comparative=False):
         table_fields = ['population group', 'gender'],
         table_universe='Youth',
         table_dataset='Census and Community Survey',
+        table_name='youth_population_group_gender',
         key_order=population_group_order)
 
     youth_language_data, _ = get_stat_data(
@@ -271,6 +273,7 @@ def get_education_profile(geo, session, display_profile, comparative=False):
         table_universe='Youth',
         table_dataset='Census and Community Survey',
         table_fields=['attendance', 'age in completed years', 'gender'],
+        table_name='youth_education_attendance_age_incompleted_years_gender',
         percent_grouping=['age in completed years'], slices=['Yes'])
 
     youth_education_attending_by_gender, _ = get_stat_data(
@@ -658,6 +661,7 @@ def get_poverty_profile(geo, session, display_profile, comparative=False):
         ['income poverty', 'population group'], geo, session,
         table_universe='Youth',
         table_dataset='Census and Community Survey',
+        table_name='youth_income_poverty_population_group_gender',
         percent_grouping=['population group'], slices=['Income-poor'],
         key_order={'population group': POPULATION_GROUP_ORDER})
 
@@ -678,6 +682,7 @@ def get_poverty_profile(geo, session, display_profile, comparative=False):
         ['multidimensionally poor', 'population group'], geo, session,
         table_universe='Youth',
         table_dataset='Census and Community Survey',
+        table_name='youth_multidimensionally_poor_population_group_gender',
         percent_grouping=['population group'], slices=['Multidimensionally poor'],
         key_order={'population group': POPULATION_GROUP_ORDER})
 
