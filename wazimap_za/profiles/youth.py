@@ -306,32 +306,32 @@ def get_education_profile(geo, session, display_profile, comparative=False):
             youth_average_mean_score_by_year, _ = get_stat_data(
                 ['year'], geo, session,
                 table_universe='Average mean score in both language and mathematics',
-                table_dataset='Census and Community Survey',
+                table_dataset='Administrative data',
                 percent=False)
 
             youth_average_language_score_by_year, _ = get_stat_data(
                 ['year'], geo, session,
                 table_universe='Average score in language',
-                table_dataset='Census and Community Survey',
+                table_dataset='Administrative data',
                 percent=False)
 
             youth_average_maths_score_by_year, _ = get_stat_data(
                 ['year'], geo, session,
                 table_universe='Average score in mathematics',
-                table_dataset='Census and Community Survey',
+                table_dataset='Administrative data',
                 percent=False)
 
             youth_language_outcome_latest, _ = get_stat_data(
                 ['year', 'outcome'], geo, session,
                 table_universe='Percentage passed in language',
-                table_dataset='Census and Community Survey',
+                table_dataset='Administrative data',
                 key_order={'outcome': ['Passed', 'Failed']},
                 percent=False, slices=['2015'])
 
             youth_maths_outcome_latest, _ = get_stat_data(
                 ['year', 'outcome'], geo, session,
                 table_universe='Percentage passed in mathematics',
-                table_dataset='Census and Community Survey',
+                table_dataset='Administrative data',
                 key_order={'outcome': ['Passed', 'Failed']},
                 percent=False, slices=['2015'])
 
@@ -339,56 +339,56 @@ def get_education_profile(geo, session, display_profile, comparative=False):
             youth_matric_outcome_by_year, _ = get_stat_data(
                 ['year'], geo, session,
                 table_universe='Matric pass rate',
-                table_dataset='Census and Community Survey',
+                table_dataset='Administrative data',
                 only={'outcome': ['Passed']},
                 percent=False)
 
             youth_matric_outcome_latest, _ = get_stat_data(
                 ['year', 'outcome'], geo, session,
                 table_universe='Matric pass rate',
-                table_dataset='Census and Community Survey',
+                table_dataset='Administrative data',
                 key_order={'outcome': ['Passed', 'Failed']},
                 percent=False, slices=['2015'])
 
             youth_matric_throughput_rate_by_year, _ = get_stat_data(
                 ['year'], geo, session,
                 table_universe='Matric passes as a % of grade 8 enrolment',
-                table_dataset='Census and Community Survey',
+                table_dataset='Administrative data',
                 only={'outcome': ['Passed']},
                 percent=False)
 
             youth_matric_throughput_latest, _ = get_stat_data(
                 ['year', 'outcome'], geo, session,
                 table_universe='Matric passes as a % of grade 8 enrolment',
-                table_dataset='Census and Community Survey',
+                table_dataset='Administrative data',
                 key_order={'outcome': ['Passed', 'Dropped out or failed']},
                 percent=False, slices=['2015'])
 
             youth_bachelor_passes_by_year, _ = get_stat_data(
                 ['year'], geo, session,
                 table_universe='Bachelor passes as a % of grade 8 enrolment',
-                table_dataset='Census and Community Survey',
+                table_dataset='Administrative data',
                 only={'outcome': ['Bachelor pass']},
                 percent=False)
 
             youth_bachelor_outcome_latest, _ = get_stat_data(
                 ['year', 'outcome'], geo, session,
                 table_universe='Bachelor passes as a % of grade 8 enrolment',
-                table_dataset='Census and Community Survey',
+                table_dataset='Administrative data',
                 key_order={'outcome': ['Bachelor pass', 'No bachelor pass']},
                 percent=False, slices=['2015'])
 
             youth_student_dropout_rate_by_year, _ = get_stat_data(
                 ['year'], geo, session,
                 table_universe='Dropout rates between grade 10 and matric',
-                table_dataset='Census and Community Survey',
+                table_dataset='Administrative data',
                 only={'outcome': ['Dropped out']},
                 percent=False)
 
             youth_student_dropout_rate_latest, _ = get_stat_data(
                 ['year', 'outcome'], geo, session,
                 table_universe='Dropout rates between grade 10 and matric',
-                table_dataset='Census and Community Survey',
+                table_dataset='Administrative data',
                 percent=False, slices=['2015'])
 
         final_data.update({
@@ -874,36 +874,36 @@ def get_health_profile(geo, session, display_profile, comparative=False):
             youth_pregnancy_rate_by_year, _ = get_stat_data(
                 ['year'], geo, session,
                 table_universe='Teenage pregnancy rate by year',
-                table_dataset='Census and Community Survey',
+                table_dataset='Administrative data',
                 percent=False)
 
             youth_delivery_rate_by_year, _ = get_stat_data(
                 ['year'], geo, session,
                 table_universe='Teenage delivery rate by year',
-                table_dataset='Census and Community Survey',
+                table_dataset='Administrative data',
                 percent=False)
 
         with dataset_context(year='2013'):
             youth_female_causes_of_death_perc, _ = get_stat_data(
                 ['cause of death'], geo, session,
                 table_universe='Female youth causes of death',
-                table_dataset='Census and Community Survey',
+                table_dataset='Administrative data',
                 order_by='-total')
             youth_male_causes_of_death_perc, _ = get_stat_data(
                 ['cause of death'], geo, session,
                 table_universe='Male youth causes of death',
-                table_dataset='Census and Community Survey',
+                table_dataset='Administrative data',
                 order_by='-total')
 
             youth_female_causes_of_death, _ = get_stat_data(
                 ['cause of death'], geo, session,
                 table_universe='Female youth causes of death',
-                table_dataset='Census and Community Survey',
+                table_dataset='Administrative data',
                 order_by='-total')
             youth_male_causes_of_death, _ = get_stat_data(
                 ['cause of death'], geo, session,
                 table_universe='Male youth causes of death',
-                table_dataset='Census and Community Survey',
+                table_dataset='Administrative data',
                 order_by='-total')
 
         if not comparative:
