@@ -117,7 +117,7 @@ def get_profile(geo, profile_name, request):
         display_profile = 'WC' if (geo.geo_code == 'WC' or 'WC' in [cg.geo_code for cg in comp_geos]) else 'ZA'
 
         data['display_profile'] = display_profile
-        data['primary_release'] = 'Census 2011'
+        data['primary_release_year'] = current_context().get('year')
 
         for section in sections:
             function_name = 'get_%s_profile' % section
