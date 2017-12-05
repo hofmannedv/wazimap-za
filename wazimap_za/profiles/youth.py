@@ -672,32 +672,33 @@ def get_poverty_profile(geo, session, display_profile, comparative=False):
         percent_grouping=['gender'], slices=['Income-poor'],
         key_order={'gender': GENDER_ORDER})
 
-    youth_multid_poverty, _ = get_stat_data(
-        ['multidimensionally poor'], geo, session,
-        table_universe='Youth',
-        table_dataset='Multidimensional poverty',
-        key_order=('Multidimensionally poor', 'Non-poor'),)
-
-    youth_multid_poor_by_pop_group, _ = get_stat_data(
-        ['multidimensionally poor', 'population group'], geo, session,
-        table_universe='Youth',
-        table_dataset='Multidimensional poverty',
-        table_name='youth_multidimensionally_poor_population_group_gender',
-        percent_grouping=['population group'], slices=['Multidimensionally poor'],
-        key_order={'population group': POPULATION_GROUP_ORDER})
-
-    youth_multid_poor_by_gender, _ = get_stat_data(
-        ['multidimensionally poor', 'gender'], geo, session,
-        table_universe='Youth',
-        table_dataset='Multidimensional poverty',
-        percent_grouping=['gender'], slices=['Multidimensionally poor'],
-        key_order={'gender': GENDER_ORDER})
-
-    youth_mpi_table = get_datatable('youth_mpi_score')
     with dataset_context(year='2016'):
+        youth_multid_poverty, _ = get_stat_data(
+            ['multidimensionally poor'], geo, session,
+            table_universe='Youth',
+            table_dataset='Multidimensional poverty',
+            key_order=('Multidimensionally poor', 'Non-poor'),)
+
+        youth_multid_poor_by_pop_group, _ = get_stat_data(
+            ['multidimensionally poor', 'population group'], geo, session,
+            table_universe='Youth',
+            table_dataset='Multidimensional poverty',
+            table_name='youth_multidimensionally_poor_population_group_gender',
+            percent_grouping=['population group'], slices=['Multidimensionally poor'],
+            key_order={'population group': POPULATION_GROUP_ORDER})
+
+        youth_multid_poor_by_gender, _ = get_stat_data(
+            ['multidimensionally poor', 'gender'], geo, session,
+            table_universe='Youth',
+            table_dataset='Multidimensional poverty',
+            percent_grouping=['gender'], slices=['Multidimensionally poor'],
+            key_order={'gender': GENDER_ORDER})
+
+        youth_mpi_table = get_datatable('youth_mpi_score')
+
         youth_mpi_score, _ = youth_mpi_table.get_stat_data(
             geo, percent=False)
-    youth_mpi_score['youth_mpi_score']['name'] = 'Youth MPI score (0-1)*'
+        youth_mpi_score['youth_mpi_score']['name'] = 'Youth MPI score (0-1)*'
 
     final_data = {
         'youth_income_poor': {
