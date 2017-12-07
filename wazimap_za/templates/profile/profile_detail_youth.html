@@ -487,22 +487,7 @@
 </article>
 {% block citations %}
 <div id="citations">
-    <p>This page displays data from more than one data release. Unless otherwise noted, data is from the Census 2011</p>
-    <ul>
-        <li><b>Census 2011:</b> Statistics South Africa (2011) South African Population Census 2011. Indicators derived from the full population Census.</li>
-        {% if geography.this.geo_level != 'ward' %}
-        <li><b>Community Survey 2016:</b> Statistics South Africa (2016) South African Community Survey 2016. Indicators derived from the full population Community Survey.</li>
-        {% endif %}
-        <li><b>Multidimensional Poverty Index:</b> Frame, E., De Lannoy, A., Koka, P., Leibbrandt, M. (2016). Multidimensional Youth Poverty: Estimating the Youth MPI in South Africa at ward level. A Southern Africa Labour and Development Research Unit Working Paper Number 189. Cape Town: SALDRU, University of Cape Town</li>
-        <li><b>Multidimensional Poverty:</b> Frame, E., De Lannoy, A., Leibbrandt, M. (2016). Measuring multidimensional poverty among youth in South Africa at the sub-national level. A Southern Africa Labour and Development Research Unit Working Paper Number 169. Cape Town: SALDRU, University of Cape Town</li>
-        {% if display_profile == 'WC'%}
-        <li><b>Systemic evaluations:</b> Western Cape Department of Education. Administrative data on Systemic evaluations, Matric successes and dropouts for the period 2010/2015 provided by the PGWC</li>
-        <li><b>Police Crime Statistics 2006-2015:</b> South African Police Service. Crime Situation in South Africa for the period 2005/2015</li>
-        {% if geography.this.geo_level != 'ward'%}
-        <li><b>Causes of deaths; Pregnancy and delivery rates:</b> Western Cape Department of Health. Administrative data on causes of deaths, pregnancy and delivery for the period 2005/2016 provided by the PGWC</li>
-        {% endif %}
-        {% endif %}
-    </ul>
+    <ul></ul>
 </div>
 {% endblock %}
 {% endblock %}
