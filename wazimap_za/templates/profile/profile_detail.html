@@ -7,11 +7,4 @@
 <script src="{% static 'js/affix.js' %}"></script>
 <script src="{% static 'js/profiles.js' %}"></script>
 
-
-{% if WAZIMAP.default_profile == 'youth' %}
-  {% if primary_release_year == 'latest' %}
-    <script type="text/javascript" src="{% static 'js/wazimap-youth.js' %}"></script>
-  {% endif %}
-{% endif %}
-
 {% endblock %}

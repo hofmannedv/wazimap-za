@@ -1,5 +1,5 @@
 $(function() {
-  // add banner for pages with data from the latest Community Survey release
-  var banner = $('<div id="banner"><div class="wrapper">This page displays data from more than one data release. Unless otherwise noted, data is from the Census 2011</div></div>');
+  // add banner on head2head pages
+  var banner = $('<div id="banner"><div class="wrapper centered">Be careful when comparing numbers from different releases.</div></div>');
   $('#page-header').append(banner);
 });
