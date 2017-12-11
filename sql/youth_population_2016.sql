@@ -1,0 +1,346 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.4.4
+-- Dumped by pg_dump version 10.1
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET search_path = public, pg_catalog;
+
+DROP TABLE IF EXISTS public.youth_population_2016;
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- Name: youth_population_2016; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE youth_population_2016 (
+    geo_level character varying(16) NOT NULL,
+    geo_code character varying(8) NOT NULL,
+    geo_version character varying(100) NOT NULL,
+    youth_pop integer,
+    total_pop integer
+);
+
+
+--
+-- Data for Name: youth_population_2016; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY youth_population_2016 (geo_level, geo_code, geo_version, youth_pop, total_pop) FROM stdin;
+country	ZA	2011	10406817	55653654
+province	EC	2011	1489372	6996976
+province	FS	2011	546229	2834714
+province	GT	2011	2104755	13399724
+province	KZN	2011	2151150	11065240
+province	LIM	2011	1271857	5799090
+province	MP	2011	855899	4335964
+province	NC	2011	228404	1193780
+province	NW	2011	696234	3748435
+province	WC	2011	1062917	6279730
+district	BUF	2011	140358	834997
+district	CPT	2011	651856	4005016
+district	DC1	2011	75926	436403
+district	DC10	2011	85097	479923
+district	DC12	2011	219999	880790
+district	DC13	2011	176767	840055
+district	DC14	2011	86277	372912
+district	DC15	2011	362843	1457384
+district	DC16	2011	25780	125884
+district	DC18	2011	120846	646920
+district	DC19	2011	164069	779330
+district	DC2	2011	167717	866001
+district	DC20	2011	90490	494777
+district	DC21	2011	161072	753336
+district	DC22	2011	207177	1095865
+district	DC23	2011	152104	706588
+district	DC24	2011	136238	554882
+district	DC25	2011	116289	531327
+district	DC26	2011	202868	892310
+district	DC27	2011	150569	689090
+district	DC28	2011	187251	971135
+district	DC29	2011	142584	657612
+district	DC3	2011	47317	286786
+district	DC30	2011	228498	1135409
+district	DC31	2011	287162	1445624
+district	DC32	2011	340239	1754931
+district	DC33	2011	256926	1159185
+district	DC34	2011	316376	1393949
+district	DC35	2011	290880	1330436
+district	DC36	2011	130427	745758
+district	DC37	2011	266488	1657148
+district	DC38	2011	202711	889108
+district	DC39	2011	96563	459357
+district	DC4	2011	104505	611278
+district	DC40	2011	130473	742821
+district	DC42	2011	166594	957528
+district	DC43	2011	112622	510865
+district	DC44	2011	211539	867864
+district	DC45	2011	48596	242264
+district	DC47	2011	277248	1169762
+district	DC48	2011	135130	838594
+district	DC5	2011	15596	74247
+district	DC6	2011	18401	115488
+district	DC7	2011	42603	195595
+district	DC8	2011	52304	252692
+district	DC9	2011	66500	387741
+district	EKU	2011	528168	3379104
+district	ETH	2011	582376	3702231
+district	JHB	2011	736016	4949347
+district	MAN	2011	145045	787803
+district	NMA	2011	206492	1263051
+district	TSH	2011	538847	3275152
+municipality	BUF	2011	135093	810528
+municipality	CPT	2011	651856	4004793
+municipality	EC101	2011	10151	53441
+municipality	EC102	2011	5898	36063
+municipality	EC103	2011	1897	10625
+municipality	EC104	2011	16474	82060
+municipality	EC105	2011	10098	63180
+municipality	EC106	2011	11257	59793
+municipality	EC107	2011	2728	18131
+municipality	EC108	2011	19915	112941
+municipality	EC109	2011	6680	43688
+municipality	EC121	2011	76199	270068
+municipality	EC122	2011	65039	254013
+municipality	EC123	2011	8506	39476
+municipality	EC124	2011	27061	122548
+municipality	EC126	2011	14086	69200
+municipality	EC127	2011	31454	134058
+municipality	EC128	2011	4986	25458
+municipality	EC131	2011	14461	70493
+municipality	EC132	2011	7023	35065
+municipality	EC133	2011	5434	24087
+municipality	EC134	2011	44359	204111
+municipality	EC135	2011	28793	146341
+municipality	EC136	2011	26186	122691
+municipality	EC137	2011	33637	162014
+municipality	EC138	2011	14806	65693
+municipality	EC141	2011	35088	145358
+municipality	EC142	2011	32712	140720
+municipality	EC143	2011	11189	50778
+municipality	EC144	2011	7435	36485
+municipality	EC153	2011	74132	303379
+municipality	EC154	2011	42192	166779
+municipality	EC155	2011	76719	309702
+municipality	EC156	2011	43380	186860
+municipality	EC157	2011	126271	490207
+municipality	EC441	2011	51209	219477
+municipality	EC442	2011	48857	199315
+municipality	EC443	2011	79333	319948
+municipality	EC444	2011	32143	129154
+municipality	EKU	2011	528168	3379104
+municipality	ETH	2011	574425	3661911
+municipality	FS161	2011	8925	40044
+municipality	FS162	2011	9458	49999
+municipality	FS163	2011	7397	35840
+municipality	FS164	2011	5257	24797
+municipality	FS181	2011	11863	66084
+municipality	FS182	2011	5394	29149
+municipality	FS183	2011	9208	47373
+municipality	FS184	2011	81193	428843
+municipality	FS185	2011	13652	78515
+municipality	FS191	2011	23892	117632
+municipality	FS192	2011	27710	140044
+municipality	FS193	2011	12627	64893
+municipality	FS194	2011	78480	353452
+municipality	FS195	2011	10705	50054
+municipality	FS196	2011	10693	53525
+municipality	FS201	2011	27872	154732
+municipality	FS203	2011	20961	118907
+municipality	FS204	2011	30568	163564
+municipality	FS205	2011	11089	57574
+municipality	GT421	2011	130227	733445
+municipality	GT422	2011	17728	111612
+municipality	GT423	2011	18639	112472
+municipality	GT481	2011	63041	383864
+municipality	GT482	2011	25193	156985
+municipality	GT483	2011	18207	108902
+municipality	GT484	2011	28690	188843
+municipality	JHB	2011	736016	4949347
+municipality	KZN211	2011	17051	80739
+municipality	KZN212	2011	19870	92100
+municipality	KZN213	2011	33618	160005
+municipality	KZN214	2011	22639	108576
+municipality	KZN215	2011	11482	56315
+municipality	KZN216	2011	63705	292219
+municipality	KZN221	2011	21560	111645
+municipality	KZN222	2011	20059	105609
+municipality	KZN223	2011	7330	41096
+municipality	KZN224	2011	6176	33328
+municipality	KZN225	2011	128060	679766
+municipality	KZN226	2011	13231	68881
+municipality	KZN227	2011	13761	71547
+municipality	KZN232	2011	53353	253382
+municipality	KZN233	2011	22597	103113
+municipality	KZN234	2011	21267	100265
+municipality	KZN235	2011	27996	135132
+municipality	KZN236	2011	26925	114917
+municipality	KZN241	2011	18336	76639
+municipality	KZN242	2011	41814	171325
+municipality	KZN244	2011	46770	189578
+municipality	KZN245	2011	28680	113635
+municipality	KZN252	2011	85078	389117
+municipality	KZN253	2011	7348	36869
+municipality	KZN254	2011	23828	105121
+municipality	KZN261	2011	19777	89614
+municipality	KZN262	2011	35186	143845
+municipality	KZN263	2011	53423	241196
+municipality	KZN265	2011	49637	211892
+municipality	KZN266	2011	44846	205762
+municipality	KZN271	2011	36280	172077
+municipality	KZN272	2011	44909	198215
+municipality	KZN273	2011	9061	39357
+municipality	KZN274	2011	17584	77265
+municipality	KZN275	2011	42735	202176
+municipality	KZN281	2011	26057	138561
+municipality	KZN282	2011	74447	370579
+municipality	KZN283	2011	14193	74792
+municipality	KZN284	2011	40927	223140
+municipality	KZN285	2011	9360	49778
+municipality	KZN286	2011	22266	114284
+municipality	KZN291	2011	32557	147808
+municipality	KZN292	2011	59810	276719
+municipality	KZN293	2011	31090	143117
+municipality	KZN294	2011	19127	89969
+municipality	KZN431	2011	22928	105061
+municipality	KZN432	2011	2908	14537
+municipality	KZN433	2011	17040	76753
+municipality	KZN434	2011	23464	108628
+municipality	KZN435	2011	44579	197286
+municipality	LIM331	2011	59076	256127
+municipality	LIM332	2011	51029	218030
+municipality	LIM333	2011	89009	416488
+municipality	LIM334	2011	35953	168937
+municipality	LIM335	2011	21858	99605
+municipality	LIM341	2011	19421	94461
+municipality	LIM342	2011	22799	99090
+municipality	LIM343	2011	153886	657982
+municipality	LIM344	2011	120270	542416
+municipality	LIM351	2011	36169	160604
+municipality	LIM352	2011	25176	125072
+municipality	LIM353	2011	22687	108645
+municipality	LIM354	2011	160506	702190
+municipality	LIM355	2011	46343	233925
+municipality	LIM361	2011	15953	96232
+municipality	LIM362	2011	26539	136626
+municipality	LIM364	2011	5622	36655
+municipality	LIM365	2011	11779	71044
+municipality	LIM366	2011	12506	76296
+municipality	LIM367	2011	58028	328905
+municipality	LIM471	2011	30592	127168
+municipality	LIM472	2011	64260	268256
+municipality	LIM473	2011	64136	283956
+municipality	LIM474	2011	21743	96668
+municipality	LIM475	2011	96517	393713
+municipality	MAN	2011	139286	759693
+municipality	MP301	2011	41215	187629
+municipality	MP302	2011	33550	164608
+municipality	MP303	2011	40220	189036
+municipality	MP304	2011	17135	85395
+municipality	MP305	2011	22305	123419
+municipality	MP306	2011	8787	45232
+municipality	MP307	2011	65286	340091
+municipality	MP311	2011	15963	84151
+municipality	MP312	2011	90005	455228
+municipality	MP313	2011	52520	278749
+municipality	MP314	2011	9816	48149
+municipality	MP315	2011	69496	333331
+municipality	MP316	2011	49362	246016
+municipality	MP321	2011	17466	101895
+municipality	MP322	2011	114920	622158
+municipality	MP323	2011	13339	71211
+municipality	MP324	2011	86320	410907
+municipality	MP325	2011	108194	548760
+municipality	NC061	2011	2092	12487
+municipality	NC062	2011	7476	46512
+municipality	NC064	2011	1263	9605
+municipality	NC065	2011	3693	21342
+municipality	NC066	2011	1682	13069
+municipality	NC067	2011	2194	12473
+municipality	NC071	2011	4311	19471
+municipality	NC072	2011	7057	30883
+municipality	NC073	2011	10136	45404
+municipality	NC074	2011	2726	12772
+municipality	NC075	2011	2334	11818
+municipality	NC076	2011	3155	16230
+municipality	NC077	2011	4597	23075
+municipality	NC078	2011	8285	35941
+municipality	NC081	2011	1286	6879
+municipality	NC082	2011	15982	68929
+municipality	NC083	2011	20168	100282
+municipality	NC084	2011	2849	16566
+municipality	NC085	2011	7737	39345
+municipality	NC086	2011	4282	20691
+municipality	NC091	2011	44500	255351
+municipality	NC092	2011	8291	48164
+municipality	NC093	2011	4377	24059
+municipality	NC094	2011	9333	60168
+municipality	NC451	2011	15523	84201
+municipality	NC452	2011	20311	104408
+municipality	NC453	2011	12762	53656
+municipality	NMA	2011	206492	1263051
+municipality	NW371	2011	30471	189900
+municipality	NW372	2011	88896	537515
+municipality	NW373	2011	100066	626522
+municipality	NW374	2011	9154	59562
+municipality	NW375	2011	37901	243648
+municipality	NW381	2011	24156	106108
+municipality	NW382	2011	29362	129052
+municipality	NW383	2011	76619	314394
+municipality	NW384	2011	39085	181865
+municipality	NW385	2011	33489	157690
+municipality	NW392	2011	13532	68803
+municipality	NW393	2011	13331	64000
+municipality	NW394	2011	37458	167827
+municipality	NW396	2011	11110	56025
+municipality	NW397	2011	21132	102703
+municipality	NW401	2011	10620	63923
+municipality	NW402	2011	37621	179604
+municipality	NW403	2011	69044	417282
+municipality	NW404	2011	13187	82012
+municipality	TSH	2011	538847	3275152
+municipality	WC011	2011	12355	71045
+municipality	WC012	2011	9586	52949
+municipality	WC013	2011	10873	67474
+municipality	WC014	2011	19340	111173
+municipality	WC015	2011	23772	133762
+municipality	WC022	2011	25993	130548
+municipality	WC023	2011	50957	280195
+municipality	WC024	2011	39752	173419
+municipality	WC025	2011	32460	176578
+municipality	WC026	2011	18554	105483
+municipality	WC031	2011	20724	117109
+municipality	WC032	2011	14317	93466
+municipality	WC033	2011	5515	36000
+municipality	WC034	2011	6761	40211
+municipality	WC041	2011	3601	24168
+municipality	WC042	2011	7849	54237
+municipality	WC043	2011	15921	94135
+municipality	WC044	2011	37063	208237
+municipality	WC045	2011	17422	97509
+municipality	WC047	2011	9693	59157
+municipality	WC048	2011	12955	73835
+municipality	WC051	2011	1777	8895
+municipality	WC052	2011	3265	14272
+municipality	WC053	2011	10554	51080
+\.
+
+
+--
+-- PostgreSQL database dump complete
+--
+
