@@ -14,7 +14,7 @@ function MapItGeometryLoader() {
         // load all country, province, municipality and ward geo data
         var counter = comparison.geoIDs.length;
         var featureMap = {};
-        var generation = MAPIT.generations[null];
+        var generation = MAPIT.generations[comparison.geoVersion];
 
         _.each(comparison.geoIDs, function(geoid) {
             // eg. province-WC
@@ -75,11 +75,14 @@ function MapItGeometryLoader() {
         feature.properties.geoid = feature.properties.level + '-' + feature.properties.code;
     };
 
-    this.loadGeometryForLevel = function(level, success) {
+    this.loadGeometryForLevel = function(level, geo_version, success) {
         var url = '/areas/' + MAPIT.level_codes[level] + '.geojson';
+        var generation = MAPIT.generations[geo_version];
         var simplify = MAPIT.level_simplify[MAPIT.level_codes[level]];
+
+        url = url + '?generation=' + generation;
         if (simplify) {
-            url = url + '?simplify_tolerance=' + simplify;
+            url = url + '&simplify_tolerance=' + simplify;
         }
 
         d3.json(this.mapit_url + url, function(error, geojson) {

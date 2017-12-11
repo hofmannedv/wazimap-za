@@ -9,8 +9,6 @@ from wazimap.data.utils import get_datatable
 from wazimap.models import FieldTable, SimpleTable
 from wazimap.geo import geo_data
 
-from wazimap_za.models import GeographyYouth
-
 import logging
 
 logging.basicConfig()
@@ -89,8 +87,6 @@ class Command(BaseCommand):
         self.dumppsql = options.get('dumppsql')
 
         self.geos = self.get_geos(self.geo_version)
-        # looks like we don't use this anymore:
-        self.wc_geos = GeographyYouth.objects.filter(version='2011')
 
         self.db_tables = []
 

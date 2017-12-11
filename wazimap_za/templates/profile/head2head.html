@@ -1,0 +1,11 @@
+{% extends 'profile/head2head.html' %}
+{% load static %}
+{% block body_javascript_extra %}
+{{ block.super }}
+
+{% if WAZIMAP.default_profile == 'youth' %}
+  {% if geo1.geo_level == 'ward' or geo2.geo_level == 'ward' and geo1.geo_level != geo2.geo_level %}
+  <script type="text/javascript" src="{% static 'js/wazimap-youth.js' %}"></script>
+  {% endif %}
+{% endif %}
+{% endblock %}

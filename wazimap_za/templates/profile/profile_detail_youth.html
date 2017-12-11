@@ -38,14 +38,20 @@
 {% block profile_header_tail %}
 <div class="column-full">
     <p class="caption">
+        {% if geography.this.geo_level != 'ward'%}
+        <strong>Community Survey data:</strong> 2016
+        <br>
+        {% endif %}
         <strong>Census data:</strong> 2011
         <br>
         {% if display_profile == 'WC' %}
         <strong>SAPS data:</strong> 2006-2015
         <br>
-        <strong>WC Education Dept data:</strong> 2005-2016
+        <strong>WC Dept of Education data:</strong> 2005-2016
+        {% if geography.this.geo_level != 'ward'%}
         <br>
         <strong>WC Dept of Health data:</strong> 2005-2016
+        {% endif %}
         {% endif %}
     </p>
 </div>
@@ -439,7 +445,7 @@
             <div class="column-third">
                 {% include 'profile/_blocks/_stat_list.html' with stat=health.youth_female_have_given_birth stat_type='percentage' decimals='-1' %}
             </div>
-            <div class="column-third" id="chart-pie-health-youth_female_given_birth" data-stat-type="percentage" data-chart-title="Female youth aged 15-24 by children ever born" data-qualifier=""Unspecified refers to cases where no response was given></div>
+            <div class="column-third" id="chart-pie-health-youth_female_given_birth" data-stat-type="percentage" data-chart-title="Female youth aged 15-24 by children ever born" data-qualifier="Unspecified refers to cases where no response was given"></div>
             <div class="column-third" id="chart-histogram-health-youth_female_given_birth_by_age_group" data-stat-type="scaled-percentage" data-chart-title="Female youth reported to have given birth to a child by age"></div>
         </section>
         {% if display_profile == 'WC' and geography.this.geo_level != 'ward'%}
@@ -479,4 +485,9 @@
         {% endif %}
     </div>
 </article>
+{% block citations %}
+<div id="citations">
+    <ul></ul>
+</div>
+{% endblock %}
 {% endblock %}
